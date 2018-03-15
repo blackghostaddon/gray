@@ -1,0 +1,459 @@
+http://dl.my-film.org/hasan/film/
+http://sv1.bia2dl.xyz/Movies/
+
+IPTV:"Server 1" URL="http://www.geantsat.com/freeiptv/s1.m3u";
+IPTV:"Server 2" URL="http://www.geantsat.com/freeiptv/s2.m3u";
+IPTV:"Server 3" URL="http://www.geantsat.com/freeiptv/s3.m3u";
+IPTV:"Server 4" URL="http://www.geantsat.com/freeiptv/s4.m3u";
+IPTV:"Server 5" URL="http://www.geantsat.com/freeiptv/s5.m3u";
+IPTV:"Server 6" URL="http://www.geantsat.com/freeiptv/s6.m3u";
+IPTV:"Server 7" URL="http://www.geantsat.com/freeiptv/s7.m3u";
+IPTV:"Server 8" URL="http://www.geantsat.com/freeiptv/s8.m3u";
+IPTV:"Server 9" URL="http://www.geantsat.com/freeiptv/s9.m3u";
+IPTV:"Server 10" URL="http://www.geantsat.com/freeiptv/s10.m3u";
+ 
+ 
+ 
+ 
+ 
+Server:"2860" URL="http://158.69.52.43/listas/get.php?user=DEMOPRUEBA&pass=DEMOPRUEBA&adult=true&movie=true&type=.ts
+ [COLOR aquamarine](ES)[/COLOR]
+ 
+ 
+ 
+
+ 
+Server:"[COLOR lightyellow] :::  October. updated  09:00 -06 UTC ::: [/COLOR]" URL="http://xcmain.mine.nu:8080/get.php?username=internal_stalker&password=internal_use&type=m3u
+
+Server:"2742 [COLOR aquamarine](ES)[/COLOR]" URL="http://37.187.128.169:8000/get.php?username=dkkkasd4545rrrpp&password=akqpp33845hvnajur&type=m3u
+
+
+ 
+Server:"[COLOR lightyellow] :::  pasts months ::: [/COLOR]" URL="http://xcmain.mine.nu:8080/get.php?username=internal_stalker&password=internal_use&type=m3u
+Server:"2689" URL="http://5.39.73.224:8000/get.php?username=gordian&password=gordian&type=m3u
+Server:"2690" URL="http://5.39.73.224:8000/get.php?username=alhena&password=alhena&type=m3u
+Server:"2568 [COLOR aquamarine](ES)[/COLOR]" URL="http://163.172.52.83:8000/get.php?username=59hkV7fNS2U&password=21g2yiAUkP4&type=m3u
+
+ 
+ 
+ 
+ http://cdn.megaplay.xyz/live/Megaplay/Vacations/496.ts|User-Agent=Lavf/57.41.100
+ http://cdn.megaplay.xyz/get.php?username=Megaplay&password=Vacations&type=m3u
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+cinestrenos:" Plus 0 " url="plus0_b0xk990";
+cinestrenos:" Toros " url="toros_9frbv56";
+cinestrenos:" BarcaTV " url="barcatv_aw3h4aq";
+cinestrenos:" Eurosports1 " url="eurosport1_aiyry92";
+cinestrenos:" Bein " url="bein_alwkqfq";
+cinestrenos:" LaLiga " url="ligarincon_a539aod";
+cinestrenos:" GolTV " url="goltv_b2kycdj";
+cinestrenos:" Partidazo " url="partidazo_bb1r7mx";
+cinestrenos:" Deportes " url="deportes_bijr3le";
+cinestrenos:" Deportes 2 " url="deportes2_ardgdvv";
+cinestrenos:" Golf " url="golf_asn535f";
+
+
+cinestrenos:" Futbol " url="tvb112";
+cinestrenos:" Formula1 " url="tvb116";
+cinestrenos:" MotoGP " url="tvb117";
+
+cinestrenos:" 141  " url="tvb141";
+cinestrenos:" Liga123 -1  " url="tvb151";
+cinestrenos:" Liga123 -2  " url="tvb152";
+cinestrenos:" Liga123 -3  " url="tvb153";
+cinestrenos:" Liga123 -4  " url="tvb154";
+
+
+cinestrenos2:" Plus 0 " url="cGx1czBfYjB4azk5MA==";
+cinestrenos2:" Toros " url="dG9yb3NfOWZyYnY1Ng==";
+cinestrenos2:" BarcaTV " url="YmFyY2F0dl9hdzNoNGFx";
+cinestrenos2:" Eurosports1 " url="ZXVyb3Nwb3J0MV9haXlyeTky";
+cinestrenos2:" Bein " url="YmVpbl9hbHdrcWZx";
+cinestrenos2:" LaLiga " url="bGlnYXJpbmNvbl9hNTM5YW9k";
+cinestrenos2:" GolTV " url="Z29sdHZfYjJreWNkag==";
+cinestrenos2:" Partidazo " url="cGFydGlkYXpvX2JiMXI3bXg=";
+cinestrenos2:" Deportes " url="ZGVwb3J0ZXNfYmlqcjNsZQ==";
+cinestrenos2:" Deportes 2 " url="ZGVwb3J0ZXMyX2FyZGdkdnY=";
+cinestrenos2:" Golf " url="Z29sZl9hc241MzVm";
+
+
+cinestrenos2:" Futbol " url="dHZiMTEy";
+cinestrenos2:" Formula1 " url="dHZiMTE2";
+cinestrenos2:" MotoGP " url="dHZiMTE3";
+
+cinestrenos2:" 141  " url="tvb141";
+cinestrenos2:" Liga123 -1  " url="tvb151";
+cinestrenos2:" Liga123 -2  " url="tvb152";
+cinestrenos2:" Liga123 -3  " url="tvb153";
+cinestrenos2:" Liga123 -4  " url="tvb154";
+
+
+
+
+cinestrenos3:" #0 " url="plus0_b0xk990";
+cinestrenos3:" GH 17 " url="cinestrenostvgh17_bfo6ov9";
+cinestrenos3:" Estrenos " url="plusestrenos_ahnxk7j";
+cinestrenos3:" Acción " url="accion_bijd7ld";
+cinestrenos3:" Comedia " url="comedia_az50b5a";
+cinestrenos3:" SeriesXtra " url="xtra_bhsjbi8";
+cinestrenos3:" Series " url="series_aw3d82v";
+cinestrenos3:" DCine " url="dcine_bijdglp";
+cinestrenos3:" SERIES XTRA " url="seriesxtra_axgtru5";
+cinestrenos3:" DISCOVERY MAX " url="dismax_9c7n25t";
+cinestrenos3:" Caza y Pesca " url="caza_aulqd78";
+cinestrenos3:" Nat Geographic " url="national_alwka53";
+cinestrenos3:" Nat Geo Wild " url="natgeowild_br8pb5x";
+cinestrenos3:" DISCOVERY CHANNEL " url="discoverydino_9dm3fgv";
+cinestrenos3:" HISTORIA " url="historia_9dm8skt";
+cinestrenos3:" ODISEA " url="odiseass_ab1rhro";
+cinestrenos3:" C.I(crimen/Investigacion) " url="ci_aaqtqg7";
+cinestrenos3:" AE " url="AE_13mz39m";
+cinestrenos3:" Cocina " url="cocina_am9cifh";
+
+
+cinestrenos3:" Toros " url="toros_9frbv56";
+cinestrenos3:" BarçaTV " url="barcatv_aw3h4aq";
+cinestrenos3:" Eurosports1 " url="eurosport1_aiyry92";
+cinestrenos3:" Bein " url="bein_alwkqfq";
+cinestrenos3:" LaLiga " url="ligarincon_a539aod";
+cinestrenos3:" GolTV " url="goltv_b2kycdj";
+cinestrenos3:" Partidazo " url="partidazo_bb1r7mx";
+cinestrenos3:" Deportes " url="deportes_bijr3le";
+cinestrenos3:" Deportes 2 " url="deportes2_ardgdvv";
+cinestrenos3:" Golf " url="golf_asn535f";
+cinestrenos3:" Bein Partidazo " url="verliga_bbsglgi";
+cinestrenos3:" Bein Ver Liga " url="verliga2_bbt0ajw";
+cinestrenos3:" Teledeportes " url="teledeporte_aw3kx97";
+cinestrenos3:" Eurosports2 " url="eurosport2_b11qmaz";
+cinestrenos3:" Futbol " url="tvb112";
+cinestrenos3:" Formula1 " url="tvb116";
+cinestrenos3:" MotoGP " url="tvb117";
+cinestrenos3:" 141  " url="tvb141";
+cinestrenos3:" Liga123 -1  " url="tvb151";
+cinestrenos3:" Liga123 -2  " url="tvb152";
+cinestrenos3:" Liga123 -3  " url="tvb153";
+cinestrenos3:" Liga123 -4  " url="tvb154";
+
+
+
+title3="Gran Hermano 17"  name="cinestrenostvgh17_bfo6ov9",
+title3="La 1"  name="tve1_b0bqgib",
+title3="NOVA"  name="nova2_acolsfq",                         
+title3="BEMAD"  name="bemad_azhj93f",                       
+title3="ENERGY"  name="energy_azhls60",                      
+title3="COSMO"  name="COSMO_bpyu6of",                     
+title3="TEEN"  name="ten_azj987s",                       
+title3="MEGA"  name="megatdt_9o35160",                        
+title3="NEOX"  name="neox_alwkw2n",                         
+title3="FDF"  name="fdfhd_xrewtt",                         1
+title3="MTV"  name="mtv_bijdrwm",                        L0tF39WeDncnqCheg79pcg&e=1484932912
+title3="LOS40"  name="40PRINCIPALES_bkyrn6x",                        iwiwSrMUleqQI41ivcXpkg&e=1484928537
+title3="D KISS"  name="dkiss_bqzm41c",                        j6rwDY5NswSZj2cDQc6yhg&e=1484928568
+title3="FOX"  name="fox_alwk17k",                        Ihw2srA31SD2XrsuZd5wcg&e=1484932987
+title3="TNT"  name="tnt_alwl3qm",                        KldJs9ajw9mkVYdJUgP_0Q&e=1484932994
+title3="FOX LIFE"  name="foxlive_bv2lv40",                        ub5o7l0y1_50727.ts?st=zjrxbIbdfICUFMkRNnvI2Q&e=1484932991
+title3="AXN"  name="axn_alwla94",                        udp9g2sdn_53322.ts?st=WzzkY49yQcBNSrRAJsdtIA&e=1484928641
+title3="AXN WHITE"  name="axnwahit_bv3iab2",                        up5KGxG3-GZJZVy4TLKc2Q&e=1484928646
+title3="TCM"  name="tcm_bpjusw1",                        mZjmK8PtO8SLI6J6GblSvg&e=1484933190
+title3="Paramount"  name="paramount_b2betoz",                        urgxfbq90_33490.ts?st=xAYJbFJNHh6xElBaSv59uA&e=1484928842
+title3="COMEDY CENTRAL"  name="comedycentral_bqkjft1",                        xohYdOVN7j2YmdnhJr6aJQ&e=1484928857
+title3="HOLLYWOOD"  name="Hollywood_1672y33",                        I0NydDoOWsXmzxSx69F0tA&e=1484928868
+title3="DARK"  name="dark_bxtnuez",                        kxLog72XoHDHWo0L6jowiA&e=1484933284
+title3="BOING"  name="boing_aaquham",                        zgxqZ-RSdPfCHpESgmAtwQ&e=1484928967
+title3="DISCOVERY"  name="discoverydino_9dm3fgv",                        r6Op8FmxQ0mnFEAj--s6FQ&e=1484933479
+title3="DISCOVERY MAX"  name="dismax_9c7n25t",                        T8H4PcFciYD4f5PYrAMpDw&e=1484933482
+title3="NAT GEO"  name="national_alwka53",                        xve2y4TYHNU-CM1HrQ-8wg&e=1484933487
+title3="A Y E"  name="aande_bsjrp77",                        1mqRa8lsQRawjQ_RH2ySAw&e=1484929102
+title3="HISTORIA"  name="historia_9dm8skt",                        FfoFjPrR-XE8qMJFtTCrXg&e=1484929334
+title3="CI"  name="ci_aaqtqg7",                        npz_r0WtSbPNqeztPByGew&e=1484929211
+title3="ODISEA"  name="odiseass_ab1rhro",                        TrASsEAvHstStXqfD3o4dA&e=1484929218
+title3="CAZA"  name="caza_aulqd78",                        Nz1UUFU6fUHyve8iJ47uMQ&e=1484929361
+title3="DE CASA"  name="decasa_bsorhd2",                        u667en33t_26450.ts?st=bovfOQ75hgQ5GfpeIaPzSQ&e=1484933829
+title3="VIAJAR"  name="viajar_brnjtxq",                        V7bGSQYOsRPfu8n3N6zkOg&e=1484933823
+title3="VTV URUGUAY"  name="vtv_bp4ugl9",                        uc57s31ki_2081.ts?st=In1P9O5VlXL19uwwPzz-BQ&e=1484929438
+title3="TOROS"  name="toros_9frbv56",                        MgGYDpCGgxWty0HPJsAkrQ&e=1484929761
+title3="PLUS"  name="plus0_b0xk990",                        M9IdZ4FxXJ4vla5vGMX-hg&e=1484934150
+title3="BARCA TV"  name="barcatv_byof5og",                        OM_E9ay3hmGO329XEn1njw&e=1484934164
+title3="TELEDEPORTE"  name="teledeporte_aw3kx97",                        iOQbjaha5P0G9xjFir6_0A&e=1484929812
+title3="BEIN"  name="bein_alwkqfq",                        AjKn8gSkPhV6mUrJ45rLZg&e=1484929834
+title3="GOLTV"  name="goltvverdirecto_16vtp2q",                        u3xrkm8d2_31568.ts?st=DqGiVtuTuW7sYlsIonwZxA&e=1484929841
+title3="LIGA"  name="tvb151",                        o9OhFAtBOP_-OAJvGAHK0A&e=1484929845
+title3="PARTIDAZO"  name="partidazo_bt3kkc2",                        X00B2fjb77MT_cvwoIsFuw&e=1484929849
+title3="DEPORTES"  name="deportes_bijr3le",                        Vd6ACyDvREOifDDFXaO8Tw&e=1484929907
+title3="DEPORTES2"  name="movideportes2_bqbw8ob",                        udzG0f6cGPd_C-FLWEHmXg&e=1484929911
+title3="GOLF"  name="golf_byofjzy",                        CeYdLMym-qkP6lDHLsSQEA&e=1484929914
+title3="M ACCION"  name="accion_bitzwzh",                        Vd9AgFCDp-PRr5T7E6WHjQ&e=1484930025
+title3="M ESTRENOS"  name="plusestrenos_ahnxk7j",                        uz9fuhxhz_120224.ts?st=WPHVwuqa5WVzGZpU0JzhYQ&e=1484930022
+title3="M D CINE"  name="dcine_bvrt0n2",                        uxd9gu0aq_6618.ts?st=pI35O0HWGT7mIukTXFadOA&e=1484934429
+title3="M SERIES XTRA"  name="mseries_buebxr8",                        uaaz4dvai_8197.ts?st=TUronwlappnvmrpyB5IexA&e=1484930121
+
+
+
+
+
+
+ 
+title3="SKY SPORTS 1 ALEMANIA"  name="tvb128",                        Zgi58JHRw5xI3yzc1MByCw&e=1484929534
+title3="SKY SPORTS 2 ALEMANIA"  name="tvb129",                        bdyE-h3jXURrWEhkHp3lRw&e=1484929548
+title3="BEIN FR 1"  name="tvb122",                        Sz8gZTDrWYzSf6UXPY5p6A&e=1484929580
+title3="BEIN FR 2"  name="tvb123",                        Sz8gZTDrWYzSf6UXPY5p6A&e=1484929580
+title3="BEIN FR 3"  name="tvb124",                        Sz8gZTDrWYzSf6UXPY5p6A&e=1484929580
+title3="NFL"  name="tvb131",                        uj81d7cbj_162.ts?st=qxszNgLl-lDWLHzh8pqrcQ&e=1484929618
+
+
+title3="XXX HUSTLER"  name="hustlertv_9c7o2m2",                        ud4xm5px8_39323.ts?st=bj0LfCaqPsCsK45EnBfCCw&e=1484934021
+title3="XXX PLAYBOY"  name="playboy_13t2qf3",                        ujpl8uapr_5240.ts?st=_fpVnh7GRSng_yq_Eq98Kg&e=1484934019
+title3="XXX VENUS"  name="venus_157y379",                        u4dj9m64b_28.ts?st=5YINQf5Ti9ebquh7Be4QCw&e=1484929675
+
+
+title3="Telecinco"  name="telecinco55_ao7nqiq", 
+title3="Cuatro"  name="cuatro_xrf2a3", 
+title3="Antena 3"  name="antena3_9dm4nop", 
+title3="LA 2"  name="tv2_bl58c8j", 
+title3="La 1"  name="tve1_b0bqgib", 
+
+title3="Movistar Partidazó"  name="partidazo_bb1r7mx", 
+title3="Movistar Fútbol"  name="tvb112", 
+title3="La Liga"  name="tvb141", 
+title3="Liga 2"  name="tvb142", 
+title3="Liga 3"  name="tvb143", 
+title3="La liga 4"  name="tvb144", 
+
+title3="beIN Sports la liga"  name="ligarincon_a539aod", 
+title3="BEIN sport 2"  name="tvb122", 
+title3="BEIN sport 3"  name="tvb124", 
+title3="Movistar Formula 1"  name="tvb116", 
+title3="MotoGP"  name="tvb117", 
+title3="Eurosport 1"  name="eurosport1_b8omvr8", 
+title3="Eurosport 2"  name="eurosport2_bijr9eh", 
+
+title3="Panda"  name="panda_bicy4aj", 
+
+
+title3="Play boy"  name="playboy_13t2qf3", 
+title3="hustler tv"  name="hustlertv_9c7o2m2", 
+title3="venus"  name="venus_157y379", 
+title3="PhentHouse"  name="penthouse_bid0u1q", 
+title3="Redlight"  name="hot_asn3cnv",
+
+
+
+
+
+
+http://www.247bay.tv/embedplayer//2/600/400
+rtmp://80.82.64.38/stream<playpath>?id=17425&pk=996dc9658a8f690a789c615883988616a399b6a98b772c06673840ef37518067 <swfUrl>http://www.247bay.tv/static/scripts/eplayer.swf <pageUrl>http://www.247bay.tv/embedplayer//2/600/400
+
+
+ 
+ 
+  ----- http://tvpor-internet.com/canal-f1-latinoamerica-en-vivo.html--
+
+
+ 
+
+
+
+
+
+type:"Ent" canal="Canal de las Estrellas" channel="starmar2017okk" pub="cdn.pubzony.com" server="zony.tv" 
+type:"Ent" canal="Canal Cinco Mexico" channel="zincomay17" pub="cdn.pubzony.com" server="zony.tv" 
+type:"Ent" canal="Azetca 7" channel="zietemar2017" pub="cdn.pubzony.com" server="zony.tv" 
+ 
+ 
+ 
+type:"Ent" canal="Cartoon Network  " channel="cartoonsusy" pub="www.janjuapublisher.com" server="janjua.tv"
+type:"Ent" canal="Discovery " channel="discoverysusy" pub="www.janjuapublisher.com" server="janjua.tv"
+type:"Ent" canal="Disney   " channel="lunavalen" pub="www.janjuapublisher.com" server="janjua.tv"
+type:"Ent" canal="Disney XD  " channel="xdsusy" pub="www.janjuapublisher.com" server="janjua.tv"
+type:"Ent" canal="FOX1" channel="fox1peru" pub="www.publish247.xyz" server="247bay.tv" 
+type:"Ent" canal="FOX action" channel="actionverde" pub="cdn.pubzony.com" server="zony.tv"  
+type:"Ent" canal="FOX  " channel="foxamalia" pub="www.janjuapublisher.com" server="janjua.tv"
+type:"Ent" canal="Golden  " channel="madurotv" pub="www.janjuapublisher.com" server="janjua.tv"
+type:"Ent" canal="HBO" channel="hbokenji" pub="cdn.pubzony.com" server="zony.tv" 
+type:"Ent" canal="MTV Latino   " channel="mtvverde" pub="www.janjuapublisher.com" server="janjua.tv"
+type:"Ent" canal="Mundo Fox   " channel="mundofox" pub="www.janjuapublisher.com" server="janjua.tv"
+type:"Ent" canal="space   " channel="spaceperucho" pub="www.janjuapublisher.com" server="janjua.tv"
+type:"Ent" canal="Telehit  " channel="telehitperu" pub="www.janjuapublisher.com" server="janjua.tv"
+type:"Ent" canal="tlnovelas   " channel="tlnovelassusy" pub="www.janjuapublisher.com" server="janjua.tv"
+type:"Ent" canal="TNT  " channel="tntperucho" pub="www.janjuapublisher.com" server="janjua.tv"
+type:"Ent" canal="venevision  / cnn " channel="cnnperu" pub="www.janjuapublisher.com" server="janjua.tv"
+type:"Ent" canal="Warner   " channel="warnerperu" pub="www.janjuapublisher.com" server="janjua.tv"
+type:"Ent" canal="Canal Fox   " channel="foxamalia" pub="www.janjuapublisher.com" server="janjua.tv"
+type:"Ent" canal="History  " channel="historysusy" pub="www.janjuapublisher.com" server="janjua.tv"
+
+
+
+
+
+
+
+view-source:http://tvpor-internet.com/envivo/
+type:"Deportes" canal="Formula 1 " channel="f1caballona" pub="www.publish247.xyz" server="247bay.tv" 
+type:"Deportes" canal="DirecTV Sports" channel="directvcaballona" pub="www.publish247.xyz" server="247bay.tv" 
+
+type:"Deportes" canal="Espn 2" channel="espn2gladys" pub="cdn.pubzony.com" server="www.zony.tv" 
+type:"Deportes" canal="Espn   " channel="espn1gladys" pub="cdn.pubzony.com" server="www.zony.tv" 
+type:"Deportes" canal="FoxSports" channel="sports1gladys" pub="cdn.pubzony.com" server="www.zony.tv" 
+type:"Deportes" canal="Fox Sports 2   " channel="sports2gladys" pub="cdn.pubzony.com" server="www.zony.tv"  
+
+type:"Deportes" canal="FoxSports 3" channel="sports3666" pub="www.publish247.xyz" server="247bay.tv"  
+type:"Deportes" canal="WWE Latino  " channel="actioncaballona" pub="www.publish247.xyz" server="247bay.tv"  
+
+
+
+
+http://www.pelotafuera.com/agendadeportiva.php
+tpe:"Deportes" canal="DirecTV" channel="roj967ikd" pub="www.pubucaster.com" server="embeducaster.com"
+tpe:"Deportes" canal="Gol Peru " channel="rivo9d6" pub="www.pubucaster.com" server="embeducaster.com"
+tpe:"Deportes" canal="ESPN 2" channel="rivo09s" pub="www.pubucaster.com" server="embeducaster.com"
+tpe:"Deportes" canal="DirecTV Sports " channel="directv6522q" pub="www.pubfstream.com" server="fstream.me"
+tpe:"Deportes" canal="Gol Peru " channel="gol678ism" pub="wwww.zenexpublisher.com" server="zenexplayer.com"
+
+
+ 
+
+ 
+
+
+ 
+server="www.ezcast.tv" pub="cdn.pubezcast.com" 
+server="www.247bay.tv" pub="www.publish247.xyz" 
+server="www.zony.tv" pub="cdn.pubzony.com"
+server="www.embeducaster.com" pub="www.pubucaster.com" 
+server="www.mipsplayer.com" pub="cdn.mipspublisher.com" 
+server="www.zenexplayer.com" pub="www.zenexpublisher.com" 
+server="www.liveflashplayer.net" pub="www.liveflashpublisher.com" 
+server="www.janjua.tv" pub="www.janjuapublisher.com" 
+server="www.streamifyplayer.com" pub="www.janjuapublisher.com" 
+server="www.cast4u.tv" pub="live.cast4u.tv" 
+pub="www.pubfstream.com" server="fstream.me"
+ 
+
+
+
+
+foxito23
+
+canal="Bein" channel="classic" pub="cdn.mipspublisher.com" server="mipsplayer.com" http://www.tvonlinegratis.mobi/embed/bein.html
+canal="M Deportes 2" channel="cagatelorito2" pub="cdn.mipspublisher.com" server="mipsplayer.com" http://www.tvonlinegratis.mobi/embed/pdeportes2.html
+canal="Teledeporte" channel="ctdphda" pub="cdn.mipspublisher.com" server="mipsplayer.com" http://www.tvonlinegratis.mobi/embed/pdeportes2.html
+canal="Moto" channel="chamlee7" pub="cdn.pubezcast.com" server="ezcast.tv"
+canal="f1" channel="channele" pub="cdn.pubezcast.com" server="ezcast.tv"
+ 
+
+
+
+ 
+vip:"739" name:"MAX01 [COLOR skyblue]MultiCanal Directv Sports[/COLOR]"
+vip:"15183" name:"MAX04 [COLOR skyblue]MultiCanal [/COLOR]"
+vip:"16036" name:"MAX05 [COLOR skyblue]MultiCanal [/COLOR]"
+vip:"715" name:"MAX08 [COLOR skyblue]MultiCanal Directv Sports[/COLOR]" 
+vip:"17220" name:"MAX09 [COLOR skyblue]MultiCanal Directv Sports[/COLOR]" 
+
+vip:"15308" name:"MAX14 [COLOR skyblue]  [/COLOR]"
+vip:"16042" name:"MAX15 [COLOR skyblue]  [/COLOR]"
+vip:"15445" name:"MAX17 [COLOR skyblue]  [/COLOR]"
+vip:"15129" name:"MAX29 [COLOR skyblue]MultiCanal Bein n | Univision Deportes |  [/COLOR]"
+
+vip:"17263" name:"MAX30 [COLOR skyblue]  [/COLOR]"
+
+vip:"10762" name:"MAX33 [COLOR skyblue]MultiCanal Colombia  [/COLOR]"
+vip:"15226" name:"MAX35 [COLOR skyblue]MultiCanal [/COLOR]"
+vip:"13137" name:"MAX42 [COLOR skyblue]MultiCanal Bein n | Univision Deportes |  [/COLOR]"
+vip:"15183" name:"MAX43 [COLOR skyblue]MultiCanal [/COLOR]"
+
+
+vip:"13638" name:"MAX51 [COLOR skyblue]MultiCanal [/COLOR]"
+vip:"13631" name:"MAX53 [COLOR skyblue]MultiCanal [/COLOR]"
+vip:"13525" name:"MAX54 [COLOR skyblue]MultiCanal Colombia[/COLOR]"
+vip:"13637" name:"MAX55 [COLOR skyblue]MultiCanal [/COLOR]"
+vip:"13634" name:"MAX56 [COLOR skyblue]MultiCanal [/COLOR]"
+vip:"15446" name:"MAX58 [COLOR skyblue]MultiCanal [/COLOR]"
+vip:"16687" name:"MAX59 [COLOR skyblue]MultiCanal [/COLOR]"
+vip:"13633" name:"MAX60 [COLOR skyblue]MultiCanal [/COLOR]"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+vip2:"32" name:"MAX02  [COLOR skyblue]MultiCanal [/COLOR]"
+vip2:"44" name:"MAX03  [COLOR skyblue]MultiCanal [/COLOR]"
+vip2:"40" name:"MAX05  [COLOR skyblue]MultiCanal ESPN  [/COLOR]"
+vip2:"43" name:"MAX07  [COLOR skyblue]MultiCanal  DirecTV [/COLOR]"
+vip2:"41" name:"MAX10  [COLOR skyblue]MultiCanal    [/COLOR]"
+
+vip2:"38" name:"MAX20  [COLOR skyblue]MultiCanal    [/COLOR]"
+vip2:"47" name:"MAX31  [COLOR skyblue]MultiCanal    [/COLOR]"
+vip2:"34" name:"MAX32  [COLOR skyblue]MultiCanal    [/COLOR]"
+vip2:"36" name:"MAX34  [COLOR skyblue]MultiCanal    [/COLOR]"
+vip2:"35" name:"MAX36  [COLOR skyblue]MultiCanal  Univision Deportes | Bein n |  [/COLOR]"
+vip2:"66" name:"MAX66  [COLOR skyblue]MultiCanal   [/COLOR]"
+
+vip3:"30293" name:"MAX08  [COLOR skyblue]MultiCanal [/COLOR]"
+vip3:"31114" name:"MAX09  [COLOR skyblue]MultiCanal DirecTV Sports [/COLOR]"
+vip3:"30287" name:"MAX11  [COLOR skyblue]MultiCanal [/COLOR]"
+vip3:"30808" name:"MAX12  [COLOR skyblue]MultiCanal [/COLOR]"
+vip3:"30059" name:"MAX14  [COLOR skyblue]MultiCanal [/COLOR]"
+vip3:"30674" name:"MAX15  [COLOR skyblue]MultiCanal [/COLOR]"
+vip3:"30276" name:"MAX17  [COLOR skyblue]MultiCanal [/COLOR]"
+vip3:"29835" name:"MAX19  [COLOR skyblue]MultiCanal Telemundo[/COLOR]"
+vip3:"31094" name:"MAX30  [COLOR skyblue]MultiCanal [/COLOR]"
+vip3:"31090" name:"MAX33  [COLOR skyblue]MultiCanal [/COLOR]"
+vip3:"31086" name:"MAX35  [COLOR skyblue]MultiCanal [/COLOR]"
+vip3:"35240" name:"MAX52  [COLOR skyblue]MultiCanal [/COLOR]"
+
+IPTV:"USA";
+IPTV:"UK";
+IPTV:"ITA";
+IPTV:"NLD";
+IPTV:"ESP";
+IPTV:"PRT";
+IPTV:"SAU";
+IPTV:"ALB";
+IPTV:"FRA";
+IPTV:"DEU";
+IPTV:"TUR";
+IPTV:"IND";
+
+
+load="cdn.pubzony.com" server="zony.tv"
+load="www.pubucaster.com" server="embeducaster.com"
+load="cdn.mipspublisher.com" server="mipsplayer.com"
+load="www.publish247.xyz" server="247bay.tv"
+load="www.pubucaster.com" server="embeducaster.com"
+load="www.zenexpublisher.com" server="zenexplayer.com"
+load="www.pubucaster.com" server="embeducaster.com"
+load="www.zenexpublisher.com" server="zenexplayer.com"
+load="cdn.mipspublisher.com" server="mipsplayer.com"
+load="cdn.mipspublisher.com" server="mipsplayer.com"
+load="www.liveflashpublisher.com" server="liveflashplayer.net" 
+load="www.liveflashpublisher.com" server="liveflashplayer.net"
+load="www.liveflashpublisher.com" server="liveflashplayer.net"
+load="www.liveflashpublisher.com" server="liveflashplayer.net"
+
