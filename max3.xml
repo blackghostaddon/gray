@@ -1,0 +1,44 @@
+  
+  <item>
+<title>[B][COLOR aquamarine]Multicanales [/COLOR][COLOR lightblue] MaxDeportes [/B][/COLOR]  [COLOR lightslategray]Bro.cast[/COLOR] </title>
+
+<link>$doregex[makelist]</link>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+   <title>[COLOR lightblue]   [makelist.param2]    [/COLOR]   </title>
+   <link>$doregex[bro.adca.st]</link>
+   <thumbnail>http://adryanlist.org/adryan/img/deportes.jpg</thumbnail><info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+]]></listrepeat>
+<expres>vip:"(.*?)" name:"(.*?)"</expres>
+<page>http://adryanlist.org/adryan/servers.txt</page>
+</regex>
+
+
+
+<regex>
+<name>bro.adca.st</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream.php?id=[makelist.param1]&p=1&c=0&stretching=uniform&old=0'):
+ import requests, re, urllib
+ headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:52.0) Gecko/20100101 Firefox/52.0'}
+ headers['Referer'] = 'http://maxdeportv.net/indexa.php?canal=1'
+ source = requests.get(url, headers=headers)
+ m3u8 = re.findall('trap = "(.+?)"', source.text)[0]
+ m3u8 = m3u8.decode('base64')
+ tokenpage = re.findall('nws1 = "(.+?)"', source.text)[0]
+ headers['Referer'] = url
+ headers['X-Requested-With'] = 'XMLHttpRequest'
+ headers['Accept'] = 'application/json, text/javascript, */*; q=0.01'
+ headers['Accept-Language'] = 'en-US,en;q=0.5'
+ source = requests.get('http://bro.adca.st/%s'%tokenpage, headers=headers)
+ m3u8 = m3u8 + re.findall(':"(.+?)"', source.text)[0] + '|User-Agent=%s&Referer=http://bro.adca.st/&Origin=http://bro.adca.st'%headers['User-Agent']
+ return m3u8
+]]></expres>
+<page></page>
+</regex>
+ <thumbnail>http://adryanlist.org/adryan/img/deportes.jpg</thumbnail>
+<fanart></fanart>
+<info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info></item>
+  

@@ -1,0 +1,309 @@
+<item>
+<title>[B]Sala 1 en Audio Latino [/B]</title>
+<link>$doregex[makelist]</link>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>$pyFunction:'[makelist.param3]'.replace(".mp4", " [COLOR blue][I]by Adryanlist[/I]").replace(".avi", " [COLOR blue][I]by Adryanlist[/I]")</title>
+<link>$doregex[getUrl]</link>
+<thumbnail>http://blackaddon.rf.gd/gray/img/navidad.png</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
+<page>http://diskokosmiko.mx/trivianita/peliculas-navidenas-el-rockero-41241/list,1,15</page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=[makelist.param1]</page>
+<rawpost>fileId=[makelist.param1]&__RequestVerificationToken=$doregex[tok]</rawpost>
+<referer>http://diskokosmiko.mx/[makelist.param2]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/[makelist.param2]</page>
+<referer>http://diskokosmiko.mx/trivianita/peliculas-navidenas-el-rockero-41241/list,1,15</referer>
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/navidad.png</thumbnail>
+</item>
+
+
+
+
+
+<item>
+<title>[B]Sala 2 en Audio Castellano [/B]</title>
+<link>$doregex[makelist]</link>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param3]</title>
+<link>$doregex[getUrl]</link>
+<thumbnail>http://blackaddon.rf.gd/gray/img/navidad.png</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
+<page>http://diskokosmiko.mx/BellaNapoli/peliculas-navidenas-85927/list,1,15</page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=[makelist.param1]</page>
+<rawpost>fileId=[makelist.param1]&__RequestVerificationToken=$doregex[tok]</rawpost>
+<referer>http://diskokosmiko.mx/[makelist.param2]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/[makelist.param2]</page>
+<referer>http://diskokosmiko.mx/trivianita/peliculas-navidenas-el-rockero-41241/list,1,15</referer>
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/navidad.png</thumbnail>
+</item>
+
+
+
+
+
+
+<item>
+<title>[B]Sala 3 en Audio Castellano [/B]</title>
+<link>$doregex[makelist]</link>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param3]</title>
+<link>$doregex[getUrl]</link>
+<thumbnail>http://blackaddon.rf.gd/gray/img/navidad.png</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
+<page>http://diskokosmiko.mx/frankiepentangelli/cine-club-navidad-41970/list,1,15</page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=[makelist.param1]</page>
+<rawpost>fileId=[makelist.param1]&__RequestVerificationToken=$doregex[tok]</rawpost>
+<referer>http://diskokosmiko.mx/[makelist.param2]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/[makelist.param2]</page>
+<referer>http://diskokosmiko.mx/trivianita/peliculas-navidenas-el-rockero-41241/list,1,15</referer>
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/navidad.png</thumbnail>
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>[B]Sala 4 (YT) [/B]</title>
+<link>ignorme</link>
+<jsonrpc>plugin://plugin.video.youtube/playlist/PLMA7GiLPB6GVN5J9eiNRucmJP5yqSK903/</jsonrpc>
+<thumbnail>http://blackaddon.rf.gd/gray/img/navidad.png</thumbnail><info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en
+ http://paypal.me/Adryanlist</info>
+ </item>
+
+
+
+
+
+
+
+<item>
+<title>[B]Sala 5 (YT) [/B]</title>
+<link>ignorme</link>
+<jsonrpc>plugin://plugin.video.youtube/playlist/PLf4hTfKh-jZlFu0FIJ8oKHNqDpdUeRX-O/</jsonrpc>
+<thumbnail>http://blackaddon.rf.gd/gray/img/navidad.png</thumbnail><info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en
+ http://paypal.me/Adryanlist</info>
+ </item>
+
+
+
+
+
+
+
+<item>
+<title>[B]Sala 6 (YT) [/B]</title>
+<link>ignorme</link>
+<jsonrpc>plugin://plugin.video.youtube/playlist/PL8BTOBXVW1JK0XxfqV9x7aucdyXTDrVG1/</jsonrpc>
+<thumbnail>http://blackaddon.rf.gd/gray/img/navidad.png</thumbnail><info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en
+ http://paypal.me/Adryanlist</info>
+ </item>
+
+
+
+
+
+
+
+<item>
+<title>[B]Sala 7 (YT) [/B]</title>
+<link>ignorme</link>
+<jsonrpc>plugin://plugin.video.youtube/playlist/PL3qfPnrkBYFKD_TBhdwmKmh0CtBWajqk3/</jsonrpc>
+<thumbnail>http://blackaddon.rf.gd/gray/img/navidad.png</thumbnail><info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en
+ http://paypal.me/Adryanlist</info>
+ </item>
+
+
+
+
+
+
+
+<item>
+<title>[B]Sala 8 (YT) [/B]</title>
+<link>ignorme</link>
+<jsonrpc>plugin://plugin.video.youtube/playlist/PLwufSdaHTbMYXD3qyJq-SWUQ63Ui3kH5q/</jsonrpc>
+<thumbnail>http://blackaddon.rf.gd/gray/img/navidad.png</thumbnail><info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en
+ http://paypal.me/Adryanlist</info>
+ </item>
+
+
+
+
+
+
+
+<item>
+<title>[B]Sala 9 (YT) [/B]</title>
+<link>ignorme</link>
+<jsonrpc>plugin://plugin.video.youtube/playlist/PLwufSdaHTbMYXD3qyJq-SWUQ63Ui3kH5q/</jsonrpc>
+<thumbnail>http://blackaddon.rf.gd/gray/img/navidad.png</thumbnail><info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en
+ http://paypal.me/Adryanlist</info>
+ </item>
+
+
+
+
+
+
+
+<item>
+<title>[B]Sala 10 (YT) [/B]</title>
+<link>ignorme</link>
+<jsonrpc>plugin://plugin.video.youtube/playlist/PLIi481lff3ql0WD9AC-QTma9zXmOHDzPN/</jsonrpc>
+<thumbnail>http://blackaddon.rf.gd/gray/img/navidad.png</thumbnail><info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en
+ http://paypal.me/Adryanlist</info>
+ </item>
+
+
+
+
+
+
+
+<item>
+<title>[B]Sala 11 (YT) [/B]</title>
+<link>ignorme</link>
+<jsonrpc>plugin://plugin.video.youtube/playlist/PLo34wgdDFqmgXUeZj3DhCYoFmnhzux2iu/</jsonrpc>
+<thumbnail>http://blackaddon.rf.gd/gray/img/navidad.png</thumbnail><info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en
+ http://paypal.me/Adryanlist</info>
+ </item>
+
+
+
+
+
+
+
+<item>
+<title>[B]Sala 12 (YT) [/B]</title>
+<link>ignorme</link>
+<jsonrpc>plugin://plugin.video.youtube/playlist/PLT2MzuDMz4E6rGaplOWJYmsvKwa2LLs2J/</jsonrpc>
+<thumbnail>http://blackaddon.rf.gd/gray/img/navidad.png</thumbnail><info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en
+ http://paypal.me/Adryanlist</info>
+ </item>
+
+
+
+
+
+
+
+<item>
+<title>[B]Sala 13 (YT) [/B]</title>
+<link>ignorme</link>
+<jsonrpc>plugin://plugin.video.youtube/playlist/PLK3fpvD2fiZ9hsm6904D1gHIinGuMxbtm/</jsonrpc>
+<thumbnail>http://blackaddon.rf.gd/gray/img/navidad.png</thumbnail><info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en
+ http://paypal.me/Adryanlist</info>
+ </item>
+
+
+
+
+
+
+
+<item>
+<title>[B]Sala 14 (YT) [/B]</title>
+<link>ignorme</link>
+<jsonrpc>plugin://plugin.video.youtube/playlist/PLCnAvcGzE6B1UtKYBle3Kj75oHH_wZ96v/</jsonrpc>
+<thumbnail>http://blackaddon.rf.gd/gray/img/navidad.png</thumbnail><info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en
+ http://paypal.me/Adryanlist</info>
+ </item>
+
+
+
+
+
+
+
+<item>
+<title>[B]Sala 15 (YT) [/B]</title>
+<link>ignorme</link>
+<jsonrpc>plugin://plugin.video.youtube/playlist/PL3qIVDdwBa9FdD7fEjpSDazMx9yIkJI_W/</jsonrpc>
+<thumbnail>http://blackaddon.rf.gd/gray/img/navidad.png</thumbnail><info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en
+ http://paypal.me/Adryanlist</info>
+ </item>
+
+
+
+
+
+
+
+
+
+
+
+ 

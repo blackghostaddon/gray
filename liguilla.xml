@@ -1,0 +1,2183 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<channels>
+
+
+
+
+
+ 
+
+
+<channel>
+<name>[COLOR lightblue]    ---------- [COLOR deepskyblue] Sabado 25 Junio[/COLOR] --------[/COLOR]</name>
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+<items>
+
+</items>
+</channel>
+
+
+
+
+
+
+
+<channel>
+<name>[COLOR lightblue]Sabado 19:00 hrs [/COLOR] [COLOR deepskyblue][COLOR yellow]Colombia[/COLOR] vs [COLOR white]EEUU[/COLOR][/COLOR]</name>
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+<items>
+
+
+
+	
+	<item>	
+<title>[COLOR lightblue]Sabado 19:00 hrs [/COLOR] [COLOR deepskyblue][COLOR yellow]Colombia[/COLOR] vs [COLOR white]EEUU[/COLOR][/COLOR][COLOR lightslategray][I] TyC Sport HD[/I]  [/COLOR] </title>
+<link>http://kalseglive-a.akamaihd.net/dc-0/m/pa-live-publish1/kLive/smil:1_3j5azqiu_all.smil/32/chunklist.m3u8</link>
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+</item>
+	<item>	
+<title>[COLOR lightblue]Sabado 19:00 hrs [/COLOR] [COLOR deepskyblue][COLOR yellow]Colombia[/COLOR] vs [COLOR white]EEUU[/COLOR][/COLOR][COLOR lightslategray][I] TyC Sport HD[/I]  [/COLOR] </title>
+<link>http://kalseglive-a.akamaihd.net/dc-0/m/pa-live-publish1/kLive/smil:1_3j5azqiu_all.smil/33/chunklist.m3u8</link>
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+</item>
+
+
+	<item>	
+<title>[COLOR lightblue]Sabado 19:00 hrs [/COLOR] [COLOR deepskyblue][COLOR yellow]Colombia[/COLOR] vs [COLOR white]EEUU[/COLOR][/COLOR][COLOR lightslategray][I] TyC Sport HD[/I]  [/COLOR] </title>
+<link>http://kalseglive-a.akamaihd.net/dc-0/m/pa-live-publish1/kLive/smil:1_3j5azqiu_all.smil/35/chunklist.m3u8</link>
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+</item>
+
+
+
+
+<item>
+<title>[COLOR lightblue]Sabado 19:00 hrs [/COLOR] [COLOR deepskyblue][COLOR yellow]Colombia[/COLOR] vs [COLOR white]EEUU[/COLOR][/COLOR][COLOR lightslategray][I] UnivisionDeportes [/I]  [/COLOR] </title>
+<link>$doregex[getUrl]</link>
+ <regex>
+<name>getUrl</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m, param=''):
+   
+    import requests
+    import re
+    import base64
+   
+    try:
+       
+        id = re.findall("javascript.*?id='(.*?)'", page_data)[0]
+        url = 'http://bro.adca.st/stream.php?id=' + id + '&amp;width=640&amp;height=480'
+        headers = {'User-Agent': 'Mozilla/5.0 (X11 Linux i686 rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': 'http://agenda.futligatv.net/unidep.html'}
+        source = requests.get(url, headers = headers)
+        curl = re.findall('curl = "(.*?)"', source.text)[0]
+        m3u8 = base64.b64decode(curl)
+ 
+        url2 = 'http://bro.adca.st/getToken.php'    
+        headers2 = {'User-Agent': 'Mozilla/5.0 (X11 Linux i686 rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': url, 'X-Requested-With': 'XMLHttpRequest'}
+        source2 = requests.get(url2, headers = headers2)
+        token = re.findall('"token":"(.*?)"', source2.text)[0]
+ 
+        return m3u8 + token + '|Referer=http://cdn.bro.adca.st/jwplayer.flash.swf&User-Agent=Mozilla/5.0 (X11 Linux i686 rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0'
+ 
+    except Exception as e:
+        print 'wizhdsports: Error: '
+        if hasattr(e, 'code'):
+            print str(e.code)              
+        if hasattr(e, 'reason'):
+            print " " + str(e.reason)
+]]></expres>
+<page>http://agenda.futligatv.net/unidep.html</page>
+<referer>http://agenda.futligatv.net</referer>
+<agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:19.0) Gecko/20100101 Firefox/19.0</agent>
+<cookieJar></cookieJar>
+</regex>
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+</item>	
+
+
+
+
+
+<!--- zonasport link-->	
+
+	
+	
+<tem>
+<title>[COLOR lightblue]Sabado 19:00 hrs [/COLOR] [COLOR deepskyblue][COLOR yellow]Colombia[/COLOR] vs [COLOR white]EEUU[/COLOR][/COLOR][COLOR lightslategray][I] Zonasport1 [/I]  [/COLOR] </title>
+ <link>https://$doregex[get-response]/app/$doregex[get-id]_aac/chunklist.m3u8</link><regex><name>get-response</name><expres>(.*)</expres><page>https://lancer.streamup.com/api/redirect/$doregex[get-id]</page></regex><regex><name>get-id</name><expres>"roomSlug": "(.*?)"</expres>
+<page>https://streamup.com/zponax4</page></regex>
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+</item>	
+	
+	<tem>
+<title>[COLOR lightblue]Sabado 19:00 hrs [/COLOR] [COLOR deepskyblue][COLOR yellow]Colombia[/COLOR] vs [COLOR white]EEUU[/COLOR][/COLOR][COLOR lightslategray][I] Zonasport2 [/I]  [/COLOR] </title>
+ <link>https://$doregex[get-response]/app/$doregex[get-id]_aac/chunklist.m3u8</link><regex><name>get-response</name><expres>(.*)</expres><page>https://lancer.streamup.com/api/redirect/$doregex[get-id]</page></regex><regex><name>get-id</name><expres>"roomSlug": "(.*?)"</expres>
+<page>https://streamup.com/zonasnbaa</page></regex>
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+</item>	
+
+ 
+<item>
+<title>[COLOR lightblue]Sabado 19:00 hrs [/COLOR] [COLOR deepskyblue][COLOR yellow]Colombia[/COLOR] vs [COLOR white]EEUU[/COLOR][/COLOR][COLOR lightslategray][I] Univision Deportes [/I]  [/COLOR] </title>
+<link>$doregex[url]</link>
+<regex>
+<name>url</name>
+<expres>$pyFunction:vipracing.decrypt_vipracing('http://www.streamlive.to/embedplayer_new2.php?channel=72001',False,False,'http://vipracing.info/')</expres>
+<page></page>
+</regex>
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+</item>
+
+	<item>
+<title>[COLOR lightblue]Sabado 19:00 hrs [/COLOR] [COLOR deepskyblue][COLOR yellow]Colombia[/COLOR] vs [COLOR white]EEUU[/COLOR][/COLOR][COLOR lightslategray][I] Zonasport9 HD[/I]  [/COLOR] </title>
+	<link>http://$doregex[ip]$doregex[m3u8]</link>
+			<regex>
+			<name>ip</name>
+			<expres>redirect=(.*)</expres>
+			<page>http://cdn.pubzony.com:1935/loadbalancer</page>
+			</regex>
+			<regex>
+			<name>m3u8</name>
+			<expres>ea \+ "(.*?)"</expres>
+			<page>http://www.zony.tv/membedplayer/ZonaSportsx9n/1/500/400</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.zony.tv</referer>
+			</regex>
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+</item>	
+
+	<item>
+<title>[COLOR lightblue]Sabado 19:00 hrs [/COLOR] [COLOR deepskyblue][COLOR yellow]Colombia[/COLOR] vs [COLOR white]EEUU[/COLOR][/COLOR][COLOR lightslategray][I] Zonasport10 HD[/I]  [/COLOR] </title>
+ <link>http://$doregex[ip]$doregex[m3u8]</link>
+			<regex>
+			<name>ip</name>
+			<expres>redirect=(.*)</expres>
+			<page>http://cdn.pubzony.com:1935/loadbalancer</page>
+			</regex>
+			<regex>
+			<name>m3u8</name>
+			<expres>ea \+ "(.*?)"</expres>
+			<page>http://www.zony.tv/membedplayer/ZonaSportsx10n/1/500/400</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.zony.tv</referer>
+			</regex>
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+</item>	
+
+
+
+
+<item>
+<title>[COLOR lightblue]Sabado 19:00 hrs [/COLOR] [COLOR deepskyblue][COLOR yellow]Colombia[/COLOR] vs [COLOR white]EEUU[/COLOR][/COLOR][COLOR lightslategray][I] Zonasport5 [/I]  [/COLOR] </title>
+ <link>$doregex[getUrl]</link>
+ <regex>
+<name>getUrl</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m, param=''):
+   
+    import requests
+    import re
+    import base64
+   
+    try:
+       
+        id = re.findall("javascript.*?id='(.*?)'", page_data)[0]
+        url = 'http://bro.adca.st/stream.php?id=' + id + '&amp;width=640&amp;height=480'
+        headers = {'User-Agent': 'Mozilla/5.0 (X11 Linux i686 rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': 'http://zonasports.to/channel.php?id=5'}
+        source = requests.get(url, headers = headers)
+        curl = re.findall('curl = "(.*?)"', source.text)[0]
+        m3u8 = base64.b64decode(curl)
+ 
+        url2 = 'http://bro.adca.st/getToken.php'    
+        headers2 = {'User-Agent': 'Mozilla/5.0 (X11 Linux i686 rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': url, 'X-Requested-With': 'XMLHttpRequest'}
+        source2 = requests.get(url2, headers = headers2)
+        token = re.findall('"token":"(.*?)"', source2.text)[0]
+ 
+        return m3u8 + token + '|Referer=http://cdn.bro.adca.st/jwplayer.flash.swf&User-Agent=Mozilla/5.0 (X11 Linux i686 rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0'
+ 
+    except Exception as e:
+        print 'wizhdsports: Error: '
+        if hasattr(e, 'code'):
+            print str(e.code)              
+        if hasattr(e, 'reason'):
+            print " " + str(e.reason)
+]]></expres>
+<page>http://zonasports.to/channel.php?id=5</page>
+<referer>http://zonasports.to</referer>
+<agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:19.0) Gecko/20100101 Firefox/19.0</agent>
+<cookieJar></cookieJar>
+</regex>
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+</item>	
+
+
+
+<item>
+<title>[COLOR lightblue]Sabado 19:00 hrs [/COLOR] [COLOR deepskyblue][COLOR yellow]Colombia[/COLOR] vs [COLOR white]EEUU[/COLOR][/COLOR][COLOR lightslategray][I] zonasport6 [/I]  [/COLOR] </title>
+ <link>$doregex[getUrl]</link>
+ <regex>
+<name>getUrl</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m, param=''):
+   
+    import requests
+    import re
+    import base64
+   
+    try:
+       
+        id = re.findall("javascript.*?id='(.*?)'", page_data)[0]
+        url = 'http://bro.adca.st/stream.php?id=' + id + '&amp;width=640&amp;height=480'
+        headers = {'User-Agent': 'Mozilla/5.0 (X11 Linux i686 rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': 'http://zonasports.to/channel.php?id=6'}
+        source = requests.get(url, headers = headers)
+        curl = re.findall('curl = "(.*?)"', source.text)[0]
+        m3u8 = base64.b64decode(curl)
+ 
+        url2 = 'http://bro.adca.st/getToken.php'    
+        headers2 = {'User-Agent': 'Mozilla/5.0 (X11 Linux i686 rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': url, 'X-Requested-With': 'XMLHttpRequest'}
+        source2 = requests.get(url2, headers = headers2)
+        token = re.findall('"token":"(.*?)"', source2.text)[0]
+ 
+        return m3u8 + token + '|Referer=http://cdn.bro.adca.st/jwplayer.flash.swf&User-Agent=Mozilla/5.0 (X11 Linux i686 rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0'
+ 
+    except Exception as e:
+        print 'wizhdsports: Error: '
+        if hasattr(e, 'code'):
+            print str(e.code)              
+        if hasattr(e, 'reason'):
+            print " " + str(e.reason)
+]]></expres>
+<page>http://zonasports.to/channel.php?id=6</page>
+<referer>http://zonasports.to</referer>
+<agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:19.0) Gecko/20100101 Firefox/19.0</agent>
+<cookieJar></cookieJar>
+</regex>
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+</item>	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>	
+<title>[COLOR lightblue]Sabado 19:00 hrs [/COLOR] [COLOR deepskyblue][COLOR yellow]Colombia[/COLOR] vs [COLOR white]EEUU[/COLOR][/COLOR][COLOR lightslategray][I] SD - bull [/I]  [/COLOR] </title>
+  <link>$doregex[getVipRacing]</link>
+			<regex>
+			<name>getVipRacing</name>
+			<expres>$pyFunction:vipracing.decrypt_vipracing('http://ffftmxxt.blogspot.cl')</expres>
+			<page></page>
+			</regex>
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+</item>
+
+ 
+
+
+		
+	
+
+
+
+	<item>	
+<title>[COLOR lightblue]Sabado 19:00 hrs [/COLOR] [COLOR deepskyblue][COLOR yellow]Colombia[/COLOR] vs [COLOR white]EEUU[/COLOR][/COLOR][COLOR lightslategray][I]C+ Futbol [/I]  [/COLOR] </title>
+<link>$doregex[m3u8]|User-Agent=iPhone</link>
+<regex>
+<name>m3u8</name>
+<expres>hls.+?(http[^\']+)</expres>
+<page>$doregex[getpage]</page>
+<referer>http://www.streamgaroo.com/live-television/spain/canal-plus-futbol-live-stream</referer>
+<agent>Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36</agent>
+<accept>*/*;q=0.8</accept>
+<cookieJar></cookieJar>
+</regex>
+  
+<regex>
+<name>getpage</name>
+<expres>$pyFunction:'$doregex[get_xpage]'.replace('\/','/')</expres>
+<page></page>
+</regex>
+
+<regex>
+<name>get_xpage</name>
+<expres>["'](http[^'"]*)["']</expres>
+<page>http://www.streamgaroo.com/calls/get/source</page>
+<rawpost>h=$doregex[hrawpost]</rawpost>
+<referer>http://www.streamgaroo.com/live-television/spain/canal-plus-futbol-live-stream</referer>
+<agent>Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36</agent>
+<x-req>XMLHttpRequest</x-req>
+<accept>*/*</accept>
+</regex>
+
+<regex>
+<name>hrawpost</name>
+<expres>data-sh="(.*?)"</expres>
+<page>http://www.streamgaroo.com/live-television/spain/canal-plus-futbol-live-stream</page>
+</regex>
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+</item>
+
+
+<item>
+<title>[COLOR lightblue]Sabado 19:00 hrs [/COLOR] [COLOR deepskyblue][COLOR yellow]Colombia[/COLOR] vs [COLOR white]EEUU[/COLOR][/COLOR][COLOR lightslategray][I] Canal+ Futbol  [/I]  [/COLOR] </title>
+<link>$doregex[get_sxstream]|User-Agent=Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25</link>
+<regex>
+<name>get_sxstream</name>
+<expres>src=.*[",'](.*m3u8.*?)[",']</expres>
+<page>http://www.liveonlinetv247.info/embed/canal+futbol.php</page>
+<referer>http://www.liveonlinetv247.info/</referer>
+</regex>
+ 
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+</item>
+
+
+<item>
+<title>[COLOR lightblue]Sabado 19:00 hrs [/COLOR] [COLOR deepskyblue][COLOR yellow]Colombia[/COLOR] vs [COLOR white]EEUU[/COLOR][/COLOR][COLOR lightslategray][I] tugoleada [/I]  [/COLOR] </title>
+<link>$doregex[get-decode]</link>
+<regex>
+<name>get-decode</name>
+<expres>source: '(.*?)'</expres>
+<page>http://tugoleada.com/canal4.php</page>
+</regex>
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+</item>
+
+
+  
+ <item>	
+<title>[COLOR lightblue]Sabado 19:00 hrs [/COLOR] [COLOR deepskyblue][COLOR yellow]Colombia[/COLOR] vs [COLOR white]EEUU[/COLOR][/COLOR][COLOR lightslategray][I] malaga [/I]  [/COLOR] </title>
+ <link>$doregex[url]</link>
+<regex>
+	<name>url</name>
+	<expres>$pyFunction:vipracing.decrypt_vipracing('http://www.iguide.to/embedplayer_new.php?width=650&amp;height=400&amp;channel=$doregex[ch]&amp;autoplay=true',False,False,'http://malaga65.org')</expres>
+	<page></page>
+</regex>
+<regex>
+<name>ch</name> 
+<expres>http://www.iguide.to/embed/(.*?)&</expres>
+<page>http://malaga65.org/p/ch3.php</page>			
+</regex>
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+</item>
+ 
+
+ 
+ <item>	
+<title>[COLOR lightblue]Sabado 19:00 hrs [/COLOR] [COLOR deepskyblue][COLOR yellow]Colombia[/COLOR] vs [COLOR white]EEUU[/COLOR][/COLOR][COLOR lightslategray][I] tito  [/I]  [/COLOR] </title>
+ <link>$doregex[url]</link>
+<regex>
+	<name>url</name>
+	<expres>$pyFunction:vipracing.decrypt_vipracing('http://www.iguide.to/embedplayer_new.php?width=650&amp;height=400&amp;channel=$doregex[ch]&amp;autoplay=true',False,False,'http://titosportstv.com')</expres>
+	<page></page>
+</regex>
+<regex>
+<name>ch</name> 
+<expres>http://www.iguide.to/embed/(.*?)&</expres>
+<page>http://titosportstv.com/live2.html</page>			
+</regex>
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+</item>
+ 
+
+<!--- streamlive-->	
+
+<item>
+<title>[COLOR lightblue]Sabado 19:00 hrs [/COLOR] [COLOR deepskyblue][COLOR yellow]Colombia[/COLOR] vs [COLOR white]EEUU[/COLOR][/COLOR][COLOR lightslategray][I] english [/I]  [/COLOR] </title>
+<link>$doregex[url]</link>
+<regex>
+<name>url</name>
+<expres>$pyFunction:vipracing.decrypt_vipracing('http://www.streamlive.to/embedplayer_new2.php?channel=73260',False,False,'http://vipracing.info/')</expres>
+<page></page>
+</regex>
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+</item>
+<item>
+<title>[COLOR lightblue]Sabado 19:00 hrs [/COLOR] [COLOR deepskyblue][COLOR yellow]Colombia[/COLOR] vs [COLOR white]EEUU[/COLOR][/COLOR][COLOR lightslategray][I] Biwin FR [/I]  [/COLOR] </title>
+<link>$doregex[url]</link>
+<regex>
+<name>url</name>
+<expres>$pyFunction:vipracing.decrypt_vipracing('http://www.streamlive.to/embedplayer_new2.php?channel=69690',False,False,'http://vipracing.info/')</expres>
+<page></page>
+</regex>
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+</item>
+
+ 
+<item>
+<title>[COLOR lightblue]Sabado 19:00 hrs [/COLOR] [COLOR deepskyblue][COLOR yellow]Colombia[/COLOR] vs [COLOR white]EEUU[/COLOR][/COLOR][COLOR lightslategray][I] Bein Fr [/I]  [/COLOR] </title>
+<link>$doregex[url]</link>
+<regex>
+<name>url</name>
+<expres>$pyFunction:vipracing.decrypt_vipracing('http://www.streamlive.to/embedplayer_new2.php?channel=71395',False,False,'http://vipracing.info/')</expres>
+<page></page>
+</regex>
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+</item>
+
+ 
+ 
+<item>
+<title>[COLOR lightblue]Sabado 19:00 hrs [/COLOR] [COLOR deepskyblue][COLOR yellow]Colombia[/COLOR] vs [COLOR white]EEUU[/COLOR][/COLOR][COLOR lightslategray][I] DirectTV [/I]  [/COLOR] </title>
+<link>$doregex[url]</link>
+<regex>
+<name>url</name>
+<expres>$pyFunction:vipracing.decrypt_vipracing('http://www.streamlive.to/embedplayer_new2.php?channel=53682',False,False,'http://vipracing.info/')</expres>
+<page></page>
+</regex>
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+</item>
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 	<item>
+<title>[COLOR lightblue]Sabado 19:00 hrs [/COLOR] [COLOR deepskyblue][COLOR yellow]Colombia[/COLOR] vs [COLOR white]EEUU[/COLOR][/COLOR]  [COLOR lightslategray][I] PlanetaFutbol [/I]  [/COLOR] </title>
+ <link>http://stream.ssh101.com:1935/live/PLANETA/playlist.m3u8</link>
+			
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+</item>	
+
+
+	<item>
+<title>[COLOR lightblue]Sabado 19:00 hrs [/COLOR] [COLOR deepskyblue][COLOR yellow]Colombia[/COLOR] vs [COLOR white]EEUU[/COLOR][/COLOR]  [COLOR lightslategray][I] TDN [/I]  [/COLOR] </title>
+ <link>http://stream.ssh101.com:1935/live/TDNDEP/playlist.m3u8</link>
+			
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+</item>	
+
+
+	<item>
+<title>[COLOR lightblue]Sabado 19:00 hrs [/COLOR] [COLOR deepskyblue][COLOR yellow]Colombia[/COLOR] vs [COLOR white]EEUU[/COLOR][/COLOR]  [COLOR lightslategray][I] Sky Deportes [/I]  [/COLOR] </title>
+ <link>http://stream.ssh101.com:1935/live/SKYDEP/playlist.m3u8</link>
+			
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+</item>	
+
+
+<item>
+<title>[COLOR lightblue]Sabado 19:00 hrs [/COLOR] [COLOR deepskyblue][COLOR yellow]Colombia[/COLOR] vs [COLOR white]EEUU[/COLOR][/COLOR]  [COLOR lightslategray][I] Azte7 [/I]  [/COLOR] </title>
+ <link>http://stream.ssh101.com:1935/live/AZTECA7/playlist.m3u8</link>
+		
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+</item>	
+
+
+
+
+	<item>
+<title>[COLOR lightblue]Sabado 19:00 hrs [/COLOR] [COLOR deepskyblue][COLOR yellow]Colombia[/COLOR] vs [COLOR white]EEUU[/COLOR][/COLOR] [COLOR lightslategray][I] PlanetaFutbol [/I]  [/COLOR] </title>
+ <link>http://$doregex[ip]$doregex[m3u8]</link>
+			<regex>
+			<name>ip</name>
+			<expres>redirect=(.*)</expres>
+			<page>http://cdn.pubzony.com:1935/loadbalancer</page>
+			</regex>
+			<regex>
+			<name>m3u8</name>
+			<expres>ea \+ "(.*?)"</expres>
+			<page>http://www.zony.tv/membedplayer/planeta01/1/500/400</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.zony.tv</referer>
+			</regex>
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+</item>	
+
+
+
+
+
+	<item>
+<title>[COLOR lightblue]Sabado 19:00 hrs [/COLOR] [COLOR deepskyblue][COLOR yellow]Colombia[/COLOR] vs [COLOR white]EEUU[/COLOR][/COLOR] [COLOR lightslategray][I] Canal5 [/I]  [/COLOR] </title>
+ <link>http://stream.ssh101.com:1935/live/televall/playlist.m3u8</link>
+		 
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+</item>	
+
+	<item>
+<title>[COLOR lightblue]Sabado 19:00 hrs [/COLOR] [COLOR deepskyblue][COLOR yellow]Colombia[/COLOR] vs [COLOR white]EEUU[/COLOR][/COLOR] [COLOR lightslategray][I] Fiera [/I]  [/COLOR] </title>
+ <link>http://$doregex[ip]$doregex[m3u8]</link>
+			<regex>
+			<name>ip</name>
+			<expres>redirect=(.*)</expres>
+			<page>http://cdn.pubzony.com:1935/loadbalancer</page>
+			</regex>
+			<regex>
+			<name>m3u8</name>
+			<expres>ea \+ "(.*?)"</expres>
+			<page>http://www.zony.tv/membedplayer/fxsjstag/1/500/400</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.zony.tv</referer>
+			</regex>
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+</item>	
+
+ 
+
+
+ 
+<item>	
+<title>[COLOR lightblue]Sabado 19:00 hrs [/COLOR] [COLOR deepskyblue][COLOR yellow]Colombia[/COLOR] vs [COLOR white]EEUU[/COLOR][/COLOR][COLOR lightslategray][I] IBROD30 [/I]  [/COLOR] </title>
+<link>$doregex[get-decode] swfUrl=http://cdn.ibrod.tv/player/jwplayer.flash.swf swfVfy=1 live=1 timeout=13 pageUrl=http://miplayer.net/</link>
+<regex>
+<name>get-decode</name>
+<expres>$pyFunction:base64.b64decode("$doregex[get-enctext]")</expres>
+<page></page>
+</regex>
+<regex>
+<name>get-enctext</name>
+<expres>curl = "(.*?)"</expres>
+<page>http://miplayer.net/embedplayer.php?id=ibrodtv30</page>
+</regex>
+</item>
+
+
+<item>	
+<title>[COLOR lightblue]Sabado 19:00 hrs [/COLOR] [COLOR deepskyblue][COLOR yellow]Colombia[/COLOR] vs [COLOR white]EEUU[/COLOR][/COLOR][COLOR lightslategray][I] IBROD10 [/I]  [/COLOR] </title>
+<link>$doregex[get-decode] swfUrl=http://cdn.ibrod.tv/player/jwplayer.flash.swf swfVfy=1 live=1 timeout=13 pageUrl=http://miplayer.net/</link>
+<regex>
+<name>get-decode</name>
+<expres>$pyFunction:base64.b64decode("$doregex[get-enctext]")</expres>
+<page></page>
+</regex>
+<regex>
+<name>get-enctext</name>
+<expres>curl = "(.*?)"</expres>
+<page>http://miplayer.net/embedplayer.php?id=tvtt10</page>
+</regex>
+</item>
+
+
+
+<item>
+<title>[COLOR lightblue]Sabado 19:00 hrs [/COLOR] [COLOR deepskyblue][COLOR yellow]Colombia[/COLOR] vs [COLOR white]EEUU[/COLOR][/COLOR][COLOR lightslategray][I] futandres2 [/I]  [/COLOR] </title>
+ <link>$doregex[getUrl]</link>
+ <regex>
+<name>getUrl</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m, param=''):
+   
+    import requests
+    import re
+    import base64
+   
+    try:
+       
+        id = re.findall("javascript.*?id='(.*?)'", page_data)[0]
+        url = 'http://bro.adca.st/stream.php?id=' + id + '&amp;width=640&amp;height=480'
+        headers = {'User-Agent': 'Mozilla/5.0 (X11 Linux i686 rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': 'http://andreztv.ucoz.com/canal2.html'}
+        source = requests.get(url, headers = headers)
+        curl = re.findall('curl = "(.*?)"', source.text)[0]
+        m3u8 = base64.b64decode(curl)
+ 
+        url2 = 'http://bro.adca.st/getToken.php'    
+        headers2 = {'User-Agent': 'Mozilla/5.0 (X11 Linux i686 rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': url, 'X-Requested-With': 'XMLHttpRequest'}
+        source2 = requests.get(url2, headers = headers2)
+        token = re.findall('"token":"(.*?)"', source2.text)[0]
+ 
+        return m3u8 + token + '|Referer=http://cdn.bro.adca.st/jwplayer.flash.swf&User-Agent=Mozilla/5.0 (X11 Linux i686 rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0'
+ 
+    except Exception as e:
+        print 'wizhdsports: Error: '
+        if hasattr(e, 'code'):
+            print str(e.code)              
+        if hasattr(e, 'reason'):
+            print " " + str(e.reason)
+]]></expres>
+<page>http://andreztv.ucoz.com/canal2.html</page>
+<referer>http://andreztv.ucoz.com</referer>
+<agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:19.0) Gecko/20100101 Firefox/19.0</agent>
+<cookieJar></cookieJar>
+</regex>
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+</item>	
+
+
+
+
+<item>	
+<title>[COLOR lightblue]Sabado 19:00 hrs [/COLOR] [COLOR deepskyblue][COLOR yellow]Colombia[/COLOR] vs [COLOR white]EEUU[/COLOR][/COLOR][COLOR lightslategray][I] andresfutbol3 [/I]  [/COLOR] </title>
+<link>$doregex[get-decode] swfUrl=http://cdn.ibrod.tv/player/jwplayer.flash.swf swfVfy=1 live=1 timeout=13 pageUrl=http://miplayer.net/</link>
+<regex>
+<name>get-decode</name>
+<expres>$pyFunction:base64.b64decode("$doregex[get-enctext]")</expres>
+<page></page>
+</regex>
+<regex>
+<name>get-enctext</name>
+<expres>curl = "(.*?)"</expres>
+<page>http://miplayer.net/embedplayer.php?id=zxxxxxxxx1223</page>
+</regex>
+
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+</item>
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <item>
+<title>[COLOR lightblue]Sabado 19:00 hrs [/COLOR] [COLOR deepskyblue][COLOR yellow]Colombia[/COLOR] vs [COLOR white]EEUU[/COLOR][/COLOR]  [COLOR lightslategray][I] canal13 chile [/I]  [/COLOR] </title>
+<link>$doregex[rtmp] swfUrl=http://cdn.shidurlive.com/player.swf swfVfy=1 live=true pageUrl=http://www.shidurlive.com</link>
+<regex>
+<name>rtmp</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,): 
+ import re, requests, urllib
+ headers = {'User-Agent': 'Mozilla/5.0', 'Referer': 'http://www.chilenext.com/'}
+ source = requests.get('http://shidurlive.com/embed/canal13hd1b', headers=headers)
+ embed = re.findall('src=\"(.*?)\"', source.text)[0]
+ source2 = requests.get(embed, headers=headers)
+ file = re.search('unescape\(\'(.*?)\'.*\n.*streamer.*(rtmp.*?)\'', source2.text)
+ rtmp = file.group(2) + '/' + urllib.unquote(file.group(1))
+ return rtmp 
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+</item>
+ 
+ 
+ 
+
+ 
+
+<item>	
+<title>[COLOR lightblue]Sabado 19:00 hrs [/COLOR] [COLOR deepskyblue][COLOR yellow]Colombia[/COLOR] vs [COLOR white]EEUU[/COLOR][/COLOR][COLOR lightslategray][I] deportesmax1 [/I]  [/COLOR] </title>
+ <link>$doregex[url]</link>
+<regex>
+	<name>url</name>
+	<expres>$pyFunction:vipracing.decrypt_vipracing('http://www.iguide.to/embedplayer_new.php?width=650&amp;height=400&amp;channel=$doregex[ch]&amp;autoplay=true',False,False,'http://deportesmax.com/')</expres>
+	<page></page>
+</regex>
+<regex>
+<name>ch</name> 
+<expres>http://www.iguide.to/embed/(.*?)&</expres>
+<page>http://deportesmax.com/?canal=1</page>			
+</regex>
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+</item>
+
+<item>	
+<title>[COLOR lightblue]Sabado 19:00 hrs [/COLOR] [COLOR deepskyblue][COLOR yellow]Colombia[/COLOR] vs [COLOR white]EEUU[/COLOR][/COLOR][COLOR lightslategray][I] deportesmax4 [/I]  [/COLOR] </title>
+ <link>$doregex[url]</link>
+<regex>
+	<name>url</name>
+	<expres>$pyFunction:vipracing.decrypt_vipracing('http://www.iguide.to/embedplayer_new.php?width=650&amp;height=400&amp;channel=$doregex[ch]&amp;autoplay=true',False,False,'http://deportesmax.com/')</expres>
+	<page></page>
+</regex>
+<regex>
+<name>ch</name> 
+<expres>http://www.iguide.to/embed/(.*?)&</expres>
+<page>http://deportesmax.com/?canal=4</page>			
+</regex>
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+</item>
+
+<item>	
+<title>[COLOR lightblue]Sabado 19:00 hrs [/COLOR] [COLOR deepskyblue][COLOR yellow]Colombia[/COLOR] vs [COLOR white]EEUU[/COLOR][/COLOR][COLOR lightslategray][I] deportesmax8 [/I]  [/COLOR] </title>
+ <link>$doregex[url]</link>
+<regex>
+	<name>url</name>
+	<expres>$pyFunction:vipracing.decrypt_vipracing('http://www.iguide.to/embedplayer_new.php?width=650&amp;height=400&amp;channel=$doregex[ch]&amp;autoplay=true',False,False,'http://deportesmax.com/')</expres>
+	<page></page>
+</regex>
+<regex>
+<name>ch</name> 
+<expres>http://www.iguide.to/embed/(.*?)&</expres>
+<page>http://deportesmax.com/?canal=8</page>			
+</regex>
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+</item>
+
+<item>	
+<title>[COLOR lightblue]Sabado 19:00 hrs [/COLOR] [COLOR deepskyblue][COLOR yellow]Colombia[/COLOR] vs [COLOR white]EEUU[/COLOR][/COLOR][COLOR lightslategray][I] deportesmax10 [/I]  [/COLOR] </title>
+ <link>$doregex[url]</link>
+<regex>
+	<name>url</name>
+	<expres>$pyFunction:vipracing.decrypt_vipracing('http://www.iguide.to/embedplayer_new.php?width=650&amp;height=400&amp;channel=$doregex[ch]&amp;autoplay=true',False,False,'http://deportesmax.com/')</expres>
+	<page></page>
+</regex>
+<regex>
+<name>ch</name> 
+<expres>http://www.iguide.to/embed/(.*?)&</expres>
+<page>http://deportesmax.com/?canal=10</page>			
+</regex>
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+</item>
+
+
+<item>	
+<title>[COLOR lightblue]Sabado 19:00 hrs [/COLOR] [COLOR deepskyblue][COLOR yellow]Colombia[/COLOR] vs [COLOR white]EEUU[/COLOR][/COLOR][COLOR lightslategray][I] deportesmax11 [/I]  [/COLOR] </title>
+ <link>$doregex[url]</link>
+<regex>
+	<name>url</name>
+	<expres>$pyFunction:vipracing.decrypt_vipracing('http://www.iguide.to/embedplayer_new.php?width=650&amp;height=400&amp;channel=$doregex[ch]&amp;autoplay=true',False,False,'http://deportesmax.com/')</expres>
+	<page></page>
+</regex>
+<regex>
+<name>ch</name> 
+<expres>http://www.iguide.to/embed/(.*?)&</expres>
+<page>http://deportesmax.com/?canal=11</page>			
+</regex>
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+</item>
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>[COLOR lightblue]Sabado 19:00 hrs [/COLOR] [COLOR deepskyblue][COLOR yellow]Colombia[/COLOR] vs [COLOR white]EEUU[/COLOR][/COLOR][COLOR lightslategray][I] wiz [/I]  [/COLOR] </title>
+ <link>$doregex[getUrl]</link>
+ <regex>
+<name>getUrl</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m, param=''):
+   
+    import requests
+    import re
+    import base64
+   
+    try:
+       
+        id = re.findall("javascript.*?id='(.*?)'", page_data)[0]
+        url = 'http://bro.adca.st/stream.php?id=' + id + '&amp;width=640&amp;height=480'
+        headers = {'User-Agent': 'Mozilla/5.0 (X11 Linux i686 rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': 'http://wizhdsports.sx/live/stream5.php'}
+        source = requests.get(url, headers = headers)
+        curl = re.findall('curl = "(.*?)"', source.text)[0]
+        m3u8 = base64.b64decode(curl)
+ 
+        url2 = 'http://bro.adca.st/getToken.php'    
+        headers2 = {'User-Agent': 'Mozilla/5.0 (X11 Linux i686 rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': url, 'X-Requested-With': 'XMLHttpRequest'}
+        source2 = requests.get(url2, headers = headers2)
+        token = re.findall('"token":"(.*?)"', source2.text)[0]
+ 
+        return m3u8 + token + '|Referer=http://cdn.bro.adca.st/jwplayer.flash.swf&User-Agent=Mozilla/5.0 (X11 Linux i686 rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0'
+ 
+    except Exception as e:
+        print 'wizhdsports: Error: '
+        if hasattr(e, 'code'):
+            print str(e.code)              
+        if hasattr(e, 'reason'):
+            print " " + str(e.reason)
+]]></expres>
+<page>http://wizhdsports.sx/live/stream5.php</page>
+<referer>http://wizhdsports.sx</referer>
+<agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:19.0) Gecko/20100101 Firefox/19.0</agent>
+<cookieJar></cookieJar>
+</regex>
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+</item>	
+
+
+
+
+
+
+
+
+<item>	
+<title>[COLOR lightblue]Sabado 19:00 hrs [/COLOR] [COLOR deepskyblue][COLOR yellow]Colombia[/COLOR] vs [COLOR white]EEUU[/COLOR][/COLOR][COLOR lightslategray][I] dailydeportes11 [/I]  [/COLOR] </title>
+<link>$doregex[get-decode]</link>
+<regex>
+<name>get-decode</name>
+<expres>rtmp":"(.*)"</expres>
+<page>http://www.sostart.pw/tk.php?id=$doregex[get-num]</page>
+<referer>http://dailydeportes.com/</referer>
+<agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:19.0) Gecko/20100101 Firefox/19.0</agent>
+</regex>
+<regex>
+<name>get-num</name>
+<expres>fid="(.*?)"</expres>
+<page>http://www.dailydeportes.pw/stream11.html</page>
+<referer>http://dailydeportes.com</referer>
+</regex>
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+</item>
+
+<item>	
+<title>[COLOR lightblue]Sabado 19:00 hrs [/COLOR] [COLOR deepskyblue][COLOR yellow]Colombia[/COLOR] vs [COLOR white]EEUU[/COLOR][/COLOR][COLOR lightslategray][I] dailydeportes12 [/I]  [/COLOR] </title>
+<link>$doregex[get-decode]</link>
+<regex>
+<name>get-decode</name>
+<expres>rtmp":"(.*)"</expres>
+<page>http://www.sostart.pw/tk.php?id=$doregex[get-num]</page>
+<referer>http://dailydeportes.com/</referer>
+<agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:19.0) Gecko/20100101 Firefox/19.0</agent>
+</regex>
+<regex>
+<name>get-num</name>
+<expres>fid="(.*?)"</expres>
+<page>http://www.dailydeportes.pw/stream12.html</page>
+<referer>http://dailydeportes.com</referer>
+</regex>
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+</item>
+
+
+ 
+<item>	
+<title>[COLOR lightblue]Sabado 19:00 hrs [/COLOR] [COLOR deepskyblue][COLOR yellow]Colombia[/COLOR] vs [COLOR white]EEUU[/COLOR][/COLOR][COLOR lightslategray][I] dailydeportes13 [/I]  [/COLOR] </title>
+<link>$doregex[get-decode]</link>
+<regex>
+<name>get-decode</name>
+<expres>rtmp":"(.*)"</expres>
+<page>http://www.sostart.pw/tk.php?id=$doregex[get-num]</page>
+<referer>http://dailydeportes.com/</referer>
+<agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:19.0) Gecko/20100101 Firefox/19.0</agent>
+</regex>
+<regex>
+<name>get-num</name>
+<expres>fid="(.*?)"</expres>
+<page>http://www.dailydeportes.pw/stream13.html</page>
+<referer>http://dailydeportes.com</referer>
+</regex>
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+</item>
+
+
+
+
+
+
+
+
+
+
+
+<item>	
+<title>[COLOR lightblue]Sabado 19:00 hrs [/COLOR] [COLOR deepskyblue][COLOR yellow]Colombia[/COLOR] vs [COLOR white]EEUU[/COLOR][/COLOR][COLOR lightslategray][I] Acestream [/I]  [/COLOR] </title>
+<link>plugin://program.plexus/?url=a7ad346e500e0bae17e6e6c70694606946243925&amp;mode=1&amp;name=Adryanlist+Acestreams</link><regex><name>hash</name><expres>this.loadPlayer\("(.*?)"</expres><page>http://www.arenavision.in/av7</page><referer>http://www.arenavision.in</referer><setcookie>beget=begetok</setcookie></regex>
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+</item>	
+
+
+<item>	
+<title>[COLOR lightblue]Sabado 19:00 hrs [/COLOR] [COLOR deepskyblue][COLOR yellow]Colombia[/COLOR] vs [COLOR white]EEUU[/COLOR][/COLOR][COLOR lightslategray][I] Acestream [/I]  [/COLOR] </title>
+<link>plugin://program.plexus/?url=$doregex[hash]&amp;mode=1&amp;name=Adryanlist+Acestreams</link><regex><name>hash</name><expres>this.loadPlayer\("(.*?)"</expres><page>http://www.arenavision.in/av7</page><referer>http://www.arenavision.in</referer><setcookie>beget=begetok</setcookie></regex>
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+</item>	
+	
+<item>	
+<title>[COLOR lightblue]Sabado 19:00 hrs [/COLOR] [COLOR deepskyblue][COLOR yellow]Colombia[/COLOR] vs [COLOR white]EEUU[/COLOR][/COLOR][COLOR lightslategray][I] Acestream [/I]  [/COLOR] </title>
+<link>plugin://program.plexus/?url=$doregex[hash]&amp;mode=1&amp;name=Adryanlist+Acestreams</link><regex><name>hash</name><expres>this.loadPlayer\("(.*?)"</expres><page>http://www.arenavision.in/av8</page><referer>http://www.arenavision.in</referer><setcookie>beget=begetok</setcookie></regex>
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+</item>		
+
+	
+
+	
+	
+	
+	
+</items>
+</channel>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+ 
+ 
+
+
+<channel>
+<name>[COLOR lightblue]Domingo[/COLOR] [COLOR deepskyblue][COLOR blue]Argentina[/COLOR] vs [COLOR red]Chile[/COLOR][/COLOR]</name>
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+<items>
+
+
+
+	<item>	
+<title>[COLOR lightblue]Domingo[/COLOR] [COLOR deepskyblue][COLOR blue]Argentina[/COLOR] vs [COLOR red]Chile[/COLOR][/COLOR][COLOR lightslategray][I] MX[/I]  [/COLOR] </title>
+<link>http://0nlym3x-lh.akamaihd.net/i/c4nst02_1@175273/master.m3u8</link>
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+</item>
+
+
+
+	<item>	
+<title>[COLOR lightblue]Domingo[/COLOR] [COLOR deepskyblue][COLOR blue]Argentina[/COLOR] vs [COLOR red]Chile[/COLOR][/COLOR][COLOR lightslategray][I] MX[/I]  [/COLOR] </title>
+<link>http://tvsawpdvr-lh.akamaihd.net/i/stch02wp_1@119660/master.m3u8</link>
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+</item>
+
+
+
+	<item>	
+<title>[COLOR lightblue]Domingo[/COLOR] [COLOR deepskyblue][COLOR blue]Argentina[/COLOR] vs [COLOR red]Chile[/COLOR][/COLOR][COLOR lightslategray][I] MX[/I]  [/COLOR] </title>
+<link>http://aztecalive-lh.akamaihd.net/i/0oxnvzh8a_1@175671/index_1_av-b.m3u8</link>
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+</item>
+
+
+
+<item>
+<title>[COLOR lightblue]Domingo[/COLOR] [COLOR deepskyblue][COLOR blue]Argentina[/COLOR] vs [COLOR red]Chile[/COLOR][/COLOR][COLOR lightslategray][I] UnivisionDeportes [/I]  [/COLOR] </title>
+<link>$doregex[getUrl]</link>
+ <regex>
+<name>getUrl</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m, param=''):
+   
+    import requests
+    import re
+    import base64
+   
+    try:
+       
+        id = re.findall("javascript.*?id='(.*?)'", page_data)[0]
+        url = 'http://bro.adca.st/stream.php?id=' + id + '&amp;width=640&amp;height=480'
+        headers = {'User-Agent': 'Mozilla/5.0 (X11 Linux i686 rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': 'http://agenda.futligatv.net/unidep.html'}
+        source = requests.get(url, headers = headers)
+        curl = re.findall('curl = "(.*?)"', source.text)[0]
+        m3u8 = base64.b64decode(curl)
+ 
+        url2 = 'http://bro.adca.st/getToken.php'    
+        headers2 = {'User-Agent': 'Mozilla/5.0 (X11 Linux i686 rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': url, 'X-Requested-With': 'XMLHttpRequest'}
+        source2 = requests.get(url2, headers = headers2)
+        token = re.findall('"token":"(.*?)"', source2.text)[0]
+ 
+        return m3u8 + token + '|Referer=http://cdn.bro.adca.st/jwplayer.flash.swf&User-Agent=Mozilla/5.0 (X11 Linux i686 rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0'
+ 
+    except Exception as e:
+        print 'wizhdsports: Error: '
+        if hasattr(e, 'code'):
+            print str(e.code)              
+        if hasattr(e, 'reason'):
+            print " " + str(e.reason)
+]]></expres>
+<page>http://agenda.futligatv.net/unidep.html</page>
+<referer>http://agenda.futligatv.net</referer>
+<agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:19.0) Gecko/20100101 Firefox/19.0</agent>
+<cookieJar></cookieJar>
+</regex>
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+</item>	
+
+
+
+
+
+<!--- zonasport link-->	
+
+	
+	
+<tem>
+<title>[COLOR lightblue]Domingo[/COLOR] [COLOR deepskyblue][COLOR blue]Argentina[/COLOR] vs [COLOR red]Chile[/COLOR][/COLOR][COLOR lightslategray][I] Zonasport1 [/I]  [/COLOR] </title>
+ <link>https://$doregex[get-response]/app/$doregex[get-id]_aac/chunklist.m3u8</link><regex><name>get-response</name><expres>(.*)</expres><page>https://lancer.streamup.com/api/redirect/$doregex[get-id]</page></regex><regex><name>get-id</name><expres>"roomSlug": "(.*?)"</expres>
+<page>https://streamup.com/zponax4</page></regex>
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+</item>	
+	
+	<tem>
+<title>[COLOR lightblue]Domingo[/COLOR] [COLOR deepskyblue][COLOR blue]Argentina[/COLOR] vs [COLOR red]Chile[/COLOR][/COLOR][COLOR lightslategray][I] Zonasport2 [/I]  [/COLOR] </title>
+ <link>https://$doregex[get-response]/app/$doregex[get-id]_aac/chunklist.m3u8</link><regex><name>get-response</name><expres>(.*)</expres><page>https://lancer.streamup.com/api/redirect/$doregex[get-id]</page></regex><regex><name>get-id</name><expres>"roomSlug": "(.*?)"</expres>
+<page>https://streamup.com/zonasnbaa</page></regex>
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+</item>	
+
+ 
+<item>
+<title>[COLOR lightblue]Domingo[/COLOR] [COLOR deepskyblue][COLOR blue]Argentina[/COLOR] vs [COLOR red]Chile[/COLOR][/COLOR][COLOR lightslategray][I] Univision Deportes [/I]  [/COLOR] </title>
+<link>$doregex[url]</link>
+<regex>
+<name>url</name>
+<expres>$pyFunction:vipracing.decrypt_vipracing('http://www.streamlive.to/embedplayer_new2.php?channel=72001',False,False,'http://vipracing.info/')</expres>
+<page></page>
+</regex>
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+</item>
+
+	<item>
+<title>[COLOR lightblue]Domingo[/COLOR] [COLOR deepskyblue][COLOR blue]Argentina[/COLOR] vs [COLOR red]Chile[/COLOR][/COLOR][COLOR lightslategray][I] Zonasport9 HD[/I]  [/COLOR] </title>
+	<link>http://$doregex[ip]$doregex[m3u8]</link>
+			<regex>
+			<name>ip</name>
+			<expres>redirect=(.*)</expres>
+			<page>http://cdn.pubzony.com:1935/loadbalancer</page>
+			</regex>
+			<regex>
+			<name>m3u8</name>
+			<expres>ea \+ "(.*?)"</expres>
+			<page>http://www.zony.tv/membedplayer/ZonaSportsx9n/1/500/400</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.zony.tv</referer>
+			</regex>
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+</item>	
+
+	<item>
+<title>[COLOR lightblue]Domingo[/COLOR] [COLOR deepskyblue][COLOR blue]Argentina[/COLOR] vs [COLOR red]Chile[/COLOR][/COLOR][COLOR lightslategray][I] Zonasport10 HD[/I]  [/COLOR] </title>
+ <link>http://$doregex[ip]$doregex[m3u8]</link>
+			<regex>
+			<name>ip</name>
+			<expres>redirect=(.*)</expres>
+			<page>http://cdn.pubzony.com:1935/loadbalancer</page>
+			</regex>
+			<regex>
+			<name>m3u8</name>
+			<expres>ea \+ "(.*?)"</expres>
+			<page>http://www.zony.tv/membedplayer/ZonaSportsx10n/1/500/400</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.zony.tv</referer>
+			</regex>
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+</item>	
+
+
+
+
+<item>
+<title>[COLOR lightblue]Domingo[/COLOR] [COLOR deepskyblue][COLOR blue]Argentina[/COLOR] vs [COLOR red]Chile[/COLOR][/COLOR][COLOR lightslategray][I] Zonasport5 [/I]  [/COLOR] </title>
+ <link>$doregex[getUrl]</link>
+ <regex>
+<name>getUrl</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m, param=''):
+   
+    import requests
+    import re
+    import base64
+   
+    try:
+       
+        id = re.findall("javascript.*?id='(.*?)'", page_data)[0]
+        url = 'http://bro.adca.st/stream.php?id=' + id + '&amp;width=640&amp;height=480'
+        headers = {'User-Agent': 'Mozilla/5.0 (X11 Linux i686 rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': 'http://zonasports.to/channel.php?id=5'}
+        source = requests.get(url, headers = headers)
+        curl = re.findall('curl = "(.*?)"', source.text)[0]
+        m3u8 = base64.b64decode(curl)
+ 
+        url2 = 'http://bro.adca.st/getToken.php'    
+        headers2 = {'User-Agent': 'Mozilla/5.0 (X11 Linux i686 rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': url, 'X-Requested-With': 'XMLHttpRequest'}
+        source2 = requests.get(url2, headers = headers2)
+        token = re.findall('"token":"(.*?)"', source2.text)[0]
+ 
+        return m3u8 + token + '|Referer=http://cdn.bro.adca.st/jwplayer.flash.swf&User-Agent=Mozilla/5.0 (X11 Linux i686 rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0'
+ 
+    except Exception as e:
+        print 'wizhdsports: Error: '
+        if hasattr(e, 'code'):
+            print str(e.code)              
+        if hasattr(e, 'reason'):
+            print " " + str(e.reason)
+]]></expres>
+<page>http://zonasports.to/channel.php?id=5</page>
+<referer>http://zonasports.to</referer>
+<agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:19.0) Gecko/20100101 Firefox/19.0</agent>
+<cookieJar></cookieJar>
+</regex>
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+</item>	
+
+
+
+<item>
+<title>[COLOR lightblue]Domingo[/COLOR] [COLOR deepskyblue][COLOR blue]Argentina[/COLOR] vs [COLOR red]Chile[/COLOR][/COLOR][COLOR lightslategray][I] zonasport6 [/I]  [/COLOR] </title>
+ <link>$doregex[getUrl]</link>
+ <regex>
+<name>getUrl</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m, param=''):
+   
+    import requests
+    import re
+    import base64
+   
+    try:
+       
+        id = re.findall("javascript.*?id='(.*?)'", page_data)[0]
+        url = 'http://bro.adca.st/stream.php?id=' + id + '&amp;width=640&amp;height=480'
+        headers = {'User-Agent': 'Mozilla/5.0 (X11 Linux i686 rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': 'http://zonasports.to/channel.php?id=6'}
+        source = requests.get(url, headers = headers)
+        curl = re.findall('curl = "(.*?)"', source.text)[0]
+        m3u8 = base64.b64decode(curl)
+ 
+        url2 = 'http://bro.adca.st/getToken.php'    
+        headers2 = {'User-Agent': 'Mozilla/5.0 (X11 Linux i686 rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': url, 'X-Requested-With': 'XMLHttpRequest'}
+        source2 = requests.get(url2, headers = headers2)
+        token = re.findall('"token":"(.*?)"', source2.text)[0]
+ 
+        return m3u8 + token + '|Referer=http://cdn.bro.adca.st/jwplayer.flash.swf&User-Agent=Mozilla/5.0 (X11 Linux i686 rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0'
+ 
+    except Exception as e:
+        print 'wizhdsports: Error: '
+        if hasattr(e, 'code'):
+            print str(e.code)              
+        if hasattr(e, 'reason'):
+            print " " + str(e.reason)
+]]></expres>
+<page>http://zonasports.to/channel.php?id=6</page>
+<referer>http://zonasports.to</referer>
+<agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:19.0) Gecko/20100101 Firefox/19.0</agent>
+<cookieJar></cookieJar>
+</regex>
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+</item>	
+
+
+
+
+
+
+	
+<item>	
+<title>[COLOR lightblue]Domingo[/COLOR] [COLOR deepskyblue][COLOR blue]Argentina[/COLOR] vs [COLOR red]Chile[/COLOR][/COLOR][COLOR lightslategray][I] TyC Sport HD[/I]  [/COLOR] </title>
+<link>http://kalseglive-a.akamaihd.net/dc-0/m/pa-live-publish1/kLive/smil:1_3j5azqiu_all.smil/32/chunklist.m3u8</link>
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+</item>
+	<item>	
+<title>[COLOR lightblue]Domingo[/COLOR] [COLOR deepskyblue][COLOR blue]Argentina[/COLOR] vs [COLOR red]Chile[/COLOR][/COLOR][COLOR lightslategray][I] TyC Sport HD[/I]  [/COLOR] </title>
+<link>http://kalseglive-a.akamaihd.net/dc-0/m/pa-live-publish1/kLive/smil:1_3j5azqiu_all.smil/33/chunklist.m3u8</link>
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+</item>
+
+
+	<item>	
+<title>[COLOR lightblue]Domingo[/COLOR] [COLOR deepskyblue][COLOR blue]Argentina[/COLOR] vs [COLOR red]Chile[/COLOR][/COLOR][COLOR lightslategray][I] TyC Sport HD[/I]  [/COLOR] </title>
+<link>http://kalseglive-a.akamaihd.net/dc-0/m/pa-live-publish1/kLive/smil:1_3j5azqiu_all.smil/35/chunklist.m3u8</link>
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>	
+<title>[COLOR lightblue]Domingo[/COLOR] [COLOR deepskyblue][COLOR blue]Argentina[/COLOR] vs [COLOR red]Chile[/COLOR][/COLOR][COLOR lightslategray][I] SD - bull [/I]  [/COLOR] </title>
+  <link>$doregex[getVipRacing]</link>
+			<regex>
+			<name>getVipRacing</name>
+			<expres>$pyFunction:vipracing.decrypt_vipracing('http://ffftmxxt.blogspot.cl')</expres>
+			<page></page>
+			</regex>
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+</item>
+
+ 
+
+
+		
+	
+
+
+
+	<item>	
+<title>[COLOR lightblue]Domingo[/COLOR] [COLOR deepskyblue][COLOR blue]Argentina[/COLOR] vs [COLOR red]Chile[/COLOR][/COLOR][COLOR lightslategray][I]C+ Futbol [/I]  [/COLOR] </title>
+<link>$doregex[m3u8]|User-Agent=iPhone</link>
+<regex>
+<name>m3u8</name>
+<expres>hls.+?(http[^\']+)</expres>
+<page>$doregex[getpage]</page>
+<referer>http://www.streamgaroo.com/live-television/spain/canal-plus-futbol-live-stream</referer>
+<agent>Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36</agent>
+<accept>*/*;q=0.8</accept>
+<cookieJar></cookieJar>
+</regex>
+  
+<regex>
+<name>getpage</name>
+<expres>$pyFunction:'$doregex[get_xpage]'.replace('\/','/')</expres>
+<page></page>
+</regex>
+
+<regex>
+<name>get_xpage</name>
+<expres>["'](http[^'"]*)["']</expres>
+<page>http://www.streamgaroo.com/calls/get/source</page>
+<rawpost>h=$doregex[hrawpost]</rawpost>
+<referer>http://www.streamgaroo.com/live-television/spain/canal-plus-futbol-live-stream</referer>
+<agent>Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36</agent>
+<x-req>XMLHttpRequest</x-req>
+<accept>*/*</accept>
+</regex>
+
+<regex>
+<name>hrawpost</name>
+<expres>data-sh="(.*?)"</expres>
+<page>http://www.streamgaroo.com/live-television/spain/canal-plus-futbol-live-stream</page>
+</regex>
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+</item>
+
+
+<item>
+<title>[COLOR lightblue]Domingo[/COLOR] [COLOR deepskyblue][COLOR blue]Argentina[/COLOR] vs [COLOR red]Chile[/COLOR][/COLOR][COLOR lightslategray][I] Canal+ Futbol  [/I]  [/COLOR] </title>
+<link>$doregex[get_sxstream]|User-Agent=Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25</link>
+<regex>
+<name>get_sxstream</name>
+<expres>src=.*[",'](.*m3u8.*?)[",']</expres>
+<page>http://www.liveonlinetv247.info/embed/canal+futbol.php</page>
+<referer>http://www.liveonlinetv247.info/</referer>
+</regex>
+ 
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+</item>
+
+
+<item>
+<title>[COLOR lightblue]Domingo[/COLOR] [COLOR deepskyblue][COLOR blue]Argentina[/COLOR] vs [COLOR red]Chile[/COLOR][/COLOR][COLOR lightslategray][I] tugoleada [/I]  [/COLOR] </title>
+<link>$doregex[get-decode]</link>
+<regex>
+<name>get-decode</name>
+<expres>source: '(.*?)'</expres>
+<page>http://tugoleada.com/canal4.php</page>
+</regex>
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+</item>
+
+
+  
+ <item>	
+<title>[COLOR lightblue]Domingo[/COLOR] [COLOR deepskyblue][COLOR blue]Argentina[/COLOR] vs [COLOR red]Chile[/COLOR][/COLOR][COLOR lightslategray][I] malaga [/I]  [/COLOR] </title>
+ <link>$doregex[url]</link>
+<regex>
+	<name>url</name>
+	<expres>$pyFunction:vipracing.decrypt_vipracing('http://www.iguide.to/embedplayer_new.php?width=650&amp;height=400&amp;channel=$doregex[ch]&amp;autoplay=true',False,False,'http://malaga65.org')</expres>
+	<page></page>
+</regex>
+<regex>
+<name>ch</name> 
+<expres>http://www.iguide.to/embed/(.*?)&</expres>
+<page>http://malaga65.org/p/ch3.php</page>			
+</regex>
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+</item>
+ 
+
+ 
+ <item>	
+<title>[COLOR lightblue]Domingo[/COLOR] [COLOR deepskyblue][COLOR blue]Argentina[/COLOR] vs [COLOR red]Chile[/COLOR][/COLOR][COLOR lightslategray][I] tito  [/I]  [/COLOR] </title>
+ <link>$doregex[url]</link>
+<regex>
+	<name>url</name>
+	<expres>$pyFunction:vipracing.decrypt_vipracing('http://www.iguide.to/embedplayer_new.php?width=650&amp;height=400&amp;channel=$doregex[ch]&amp;autoplay=true',False,False,'http://titosportstv.com')</expres>
+	<page></page>
+</regex>
+<regex>
+<name>ch</name> 
+<expres>http://www.iguide.to/embed/(.*?)&</expres>
+<page>http://titosportstv.com/live2.html</page>			
+</regex>
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+</item>
+ 
+
+<!--- streamlive-->	
+
+<item>
+<title>[COLOR lightblue]Domingo[/COLOR] [COLOR deepskyblue][COLOR blue]Argentina[/COLOR] vs [COLOR red]Chile[/COLOR][/COLOR][COLOR lightslategray][I] english [/I]  [/COLOR] </title>
+<link>$doregex[url]</link>
+<regex>
+<name>url</name>
+<expres>$pyFunction:vipracing.decrypt_vipracing('http://www.streamlive.to/embedplayer_new2.php?channel=73260',False,False,'http://vipracing.info/')</expres>
+<page></page>
+</regex>
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+</item>
+<item>
+<title>[COLOR lightblue]Domingo[/COLOR] [COLOR deepskyblue][COLOR blue]Argentina[/COLOR] vs [COLOR red]Chile[/COLOR][/COLOR][COLOR lightslategray][I] Biwin FR [/I]  [/COLOR] </title>
+<link>$doregex[url]</link>
+<regex>
+<name>url</name>
+<expres>$pyFunction:vipracing.decrypt_vipracing('http://www.streamlive.to/embedplayer_new2.php?channel=69690',False,False,'http://vipracing.info/')</expres>
+<page></page>
+</regex>
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+</item>
+
+ 
+<item>
+<title>[COLOR lightblue]Domingo[/COLOR] [COLOR deepskyblue][COLOR blue]Argentina[/COLOR] vs [COLOR red]Chile[/COLOR][/COLOR][COLOR lightslategray][I] Bein Fr [/I]  [/COLOR] </title>
+<link>$doregex[url]</link>
+<regex>
+<name>url</name>
+<expres>$pyFunction:vipracing.decrypt_vipracing('http://www.streamlive.to/embedplayer_new2.php?channel=71395',False,False,'http://vipracing.info/')</expres>
+<page></page>
+</regex>
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+</item>
+
+ 
+ 
+<item>
+<title>[COLOR lightblue]Domingo[/COLOR] [COLOR deepskyblue][COLOR blue]Argentina[/COLOR] vs [COLOR red]Chile[/COLOR][/COLOR][COLOR lightslategray][I] DirectTV [/I]  [/COLOR] </title>
+<link>$doregex[url]</link>
+<regex>
+<name>url</name>
+<expres>$pyFunction:vipracing.decrypt_vipracing('http://www.streamlive.to/embedplayer_new2.php?channel=53682',False,False,'http://vipracing.info/')</expres>
+<page></page>
+</regex>
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+</item>
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+	<item>
+<title>[COLOR lightblue]Domingo[/COLOR] [COLOR deepskyblue][COLOR blue]Argentina[/COLOR] vs [COLOR red]Chile[/COLOR][/COLOR]  [COLOR lightslategray][I] TDN [/I]  [/COLOR] </title>
+ <link>http://$doregex[ip]$doregex[m3u8]</link>
+			<regex>
+			<name>ip</name>
+			<expres>redirect=(.*)</expres>
+			<page>http://cdn.pubzony.com:1935/loadbalancer</page>
+			</regex>
+			<regex>
+			<name>m3u8</name>
+			<expres>ea \+ "(.*?)"</expres>
+			<page>http://www.zony.tv/membedplayer/tdn01/1/500/400</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.zony.tv</referer>
+			</regex>
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+</item>	
+
+
+
+<item>
+<title>[COLOR lightblue]Domingo[/COLOR] [COLOR deepskyblue][COLOR blue]Argentina[/COLOR] vs [COLOR red]Chile[/COLOR][/COLOR]  [COLOR lightslategray][I] Azte7 [/I]  [/COLOR] </title>
+ <link>http://stream.ssh101.com:1935/live/AZTECA7/playlist.m3u8</link>
+		
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+</item>	
+
+
+
+
+	<item>
+<title>[COLOR lightblue]Domingo[/COLOR] [COLOR deepskyblue][COLOR blue]Argentina[/COLOR] vs [COLOR red]Chile[/COLOR][/COLOR] [COLOR lightslategray][I] PlanetaFutbol [/I]  [/COLOR] </title>
+ <link>http://$doregex[ip]$doregex[m3u8]</link>
+			<regex>
+			<name>ip</name>
+			<expres>redirect=(.*)</expres>
+			<page>http://cdn.pubzony.com:1935/loadbalancer</page>
+			</regex>
+			<regex>
+			<name>m3u8</name>
+			<expres>ea \+ "(.*?)"</expres>
+			<page>http://www.zony.tv/membedplayer/planeta01/1/500/400</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.zony.tv</referer>
+			</regex>
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+</item>	
+
+
+
+
+
+	<item>
+<title>[COLOR lightblue]Domingo[/COLOR] [COLOR deepskyblue][COLOR blue]Argentina[/COLOR] vs [COLOR red]Chile[/COLOR][/COLOR] [COLOR lightslategray][I] Canal5 [/I]  [/COLOR] </title>
+ <link>http://stream.ssh101.com:1935/live/televall/playlist.m3u8</link>
+		 
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+</item>	
+
+	<item>
+<title>[COLOR lightblue]Domingo[/COLOR] [COLOR deepskyblue][COLOR blue]Argentina[/COLOR] vs [COLOR red]Chile[/COLOR][/COLOR] [COLOR lightslategray][I] Fiera [/I]  [/COLOR] </title>
+ <link>http://$doregex[ip]$doregex[m3u8]</link>
+			<regex>
+			<name>ip</name>
+			<expres>redirect=(.*)</expres>
+			<page>http://cdn.pubzony.com:1935/loadbalancer</page>
+			</regex>
+			<regex>
+			<name>m3u8</name>
+			<expres>ea \+ "(.*?)"</expres>
+			<page>http://www.zony.tv/membedplayer/fxsjstag/1/500/400</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.zony.tv</referer>
+			</regex>
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+</item>	
+
+ 
+
+
+ 
+<item>	
+<title>[COLOR lightblue]Domingo[/COLOR] [COLOR deepskyblue][COLOR blue]Argentina[/COLOR] vs [COLOR red]Chile[/COLOR][/COLOR][COLOR lightslategray][I] IBROD30 [/I]  [/COLOR] </title>
+<link>$doregex[get-decode] swfUrl=http://cdn.ibrod.tv/player/jwplayer.flash.swf swfVfy=1 live=1 timeout=13 pageUrl=http://miplayer.net/</link>
+<regex>
+<name>get-decode</name>
+<expres>$pyFunction:base64.b64decode("$doregex[get-enctext]")</expres>
+<page></page>
+</regex>
+<regex>
+<name>get-enctext</name>
+<expres>curl = "(.*?)"</expres>
+<page>http://miplayer.net/embedplayer.php?id=ibrodtv30</page>
+</regex>
+</item>
+
+
+<item>	
+<title>[COLOR lightblue]Domingo[/COLOR] [COLOR deepskyblue][COLOR blue]Argentina[/COLOR] vs [COLOR red]Chile[/COLOR][/COLOR][COLOR lightslategray][I] IBROD10 [/I]  [/COLOR] </title>
+<link>$doregex[get-decode] swfUrl=http://cdn.ibrod.tv/player/jwplayer.flash.swf swfVfy=1 live=1 timeout=13 pageUrl=http://miplayer.net/</link>
+<regex>
+<name>get-decode</name>
+<expres>$pyFunction:base64.b64decode("$doregex[get-enctext]")</expres>
+<page></page>
+</regex>
+<regex>
+<name>get-enctext</name>
+<expres>curl = "(.*?)"</expres>
+<page>http://miplayer.net/embedplayer.php?id=tvtt10</page>
+</regex>
+</item>
+
+
+
+<item>
+<title>[COLOR lightblue]Domingo[/COLOR] [COLOR deepskyblue][COLOR blue]Argentina[/COLOR] vs [COLOR red]Chile[/COLOR][/COLOR][COLOR lightslategray][I] futandres2 [/I]  [/COLOR] </title>
+ <link>$doregex[getUrl]</link>
+ <regex>
+<name>getUrl</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m, param=''):
+   
+    import requests
+    import re
+    import base64
+   
+    try:
+       
+        id = re.findall("javascript.*?id='(.*?)'", page_data)[0]
+        url = 'http://bro.adca.st/stream.php?id=' + id + '&amp;width=640&amp;height=480'
+        headers = {'User-Agent': 'Mozilla/5.0 (X11 Linux i686 rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': 'http://andreztv.ucoz.com/canal2.html'}
+        source = requests.get(url, headers = headers)
+        curl = re.findall('curl = "(.*?)"', source.text)[0]
+        m3u8 = base64.b64decode(curl)
+ 
+        url2 = 'http://bro.adca.st/getToken.php'    
+        headers2 = {'User-Agent': 'Mozilla/5.0 (X11 Linux i686 rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': url, 'X-Requested-With': 'XMLHttpRequest'}
+        source2 = requests.get(url2, headers = headers2)
+        token = re.findall('"token":"(.*?)"', source2.text)[0]
+ 
+        return m3u8 + token + '|Referer=http://cdn.bro.adca.st/jwplayer.flash.swf&User-Agent=Mozilla/5.0 (X11 Linux i686 rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0'
+ 
+    except Exception as e:
+        print 'wizhdsports: Error: '
+        if hasattr(e, 'code'):
+            print str(e.code)              
+        if hasattr(e, 'reason'):
+            print " " + str(e.reason)
+]]></expres>
+<page>http://andreztv.ucoz.com/canal2.html</page>
+<referer>http://andreztv.ucoz.com</referer>
+<agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:19.0) Gecko/20100101 Firefox/19.0</agent>
+<cookieJar></cookieJar>
+</regex>
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+</item>	
+
+
+
+
+<item>	
+<title>[COLOR lightblue]Domingo[/COLOR] [COLOR deepskyblue][COLOR blue]Argentina[/COLOR] vs [COLOR red]Chile[/COLOR][/COLOR][COLOR lightslategray][I] andresfutbol3 [/I]  [/COLOR] </title>
+<link>$doregex[get-decode] swfUrl=http://cdn.ibrod.tv/player/jwplayer.flash.swf swfVfy=1 live=1 timeout=13 pageUrl=http://miplayer.net/</link>
+<regex>
+<name>get-decode</name>
+<expres>$pyFunction:base64.b64decode("$doregex[get-enctext]")</expres>
+<page></page>
+</regex>
+<regex>
+<name>get-enctext</name>
+<expres>curl = "(.*?)"</expres>
+<page>http://miplayer.net/embedplayer.php?id=zxxxxxxxx1223</page>
+</regex>
+
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+</item>
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <item>
+<title>[COLOR lightblue]Domingo[/COLOR] [COLOR deepskyblue][COLOR blue]Argentina[/COLOR] vs [COLOR red]Chile[/COLOR][/COLOR]  [COLOR lightslategray][I] canal13 chile [/I]  [/COLOR] </title>
+<link>$doregex[rtmp] swfUrl=http://cdn.shidurlive.com/player.swf swfVfy=1 live=true pageUrl=http://www.shidurlive.com</link>
+<regex>
+<name>rtmp</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,): 
+ import re, requests, urllib
+ headers = {'User-Agent': 'Mozilla/5.0', 'Referer': 'http://www.chilenext.com/'}
+ source = requests.get('http://shidurlive.com/embed/canal13hd1b', headers=headers)
+ embed = re.findall('src=\"(.*?)\"', source.text)[0]
+ source2 = requests.get(embed, headers=headers)
+ file = re.search('unescape\(\'(.*?)\'.*\n.*streamer.*(rtmp.*?)\'', source2.text)
+ rtmp = file.group(2) + '/' + urllib.unquote(file.group(1))
+ return rtmp 
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+</item>
+ 
+ 
+ 
+
+ 
+
+<item>	
+<title>[COLOR lightblue]Domingo[/COLOR] [COLOR deepskyblue][COLOR blue]Argentina[/COLOR] vs [COLOR red]Chile[/COLOR][/COLOR][COLOR lightslategray][I] deportesmax1 [/I]  [/COLOR] </title>
+ <link>$doregex[url]</link>
+<regex>
+	<name>url</name>
+	<expres>$pyFunction:vipracing.decrypt_vipracing('http://www.iguide.to/embedplayer_new.php?width=650&amp;height=400&amp;channel=$doregex[ch]&amp;autoplay=true',False,False,'http://deportesmax.com/')</expres>
+	<page></page>
+</regex>
+<regex>
+<name>ch</name> 
+<expres>http://www.iguide.to/embed/(.*?)&</expres>
+<page>http://deportesmax.com/?canal=1</page>			
+</regex>
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+</item>
+
+<item>	
+<title>[COLOR lightblue]Domingo[/COLOR] [COLOR deepskyblue][COLOR blue]Argentina[/COLOR] vs [COLOR red]Chile[/COLOR][/COLOR][COLOR lightslategray][I] deportesmax4 [/I]  [/COLOR] </title>
+ <link>$doregex[url]</link>
+<regex>
+	<name>url</name>
+	<expres>$pyFunction:vipracing.decrypt_vipracing('http://www.iguide.to/embedplayer_new.php?width=650&amp;height=400&amp;channel=$doregex[ch]&amp;autoplay=true',False,False,'http://deportesmax.com/')</expres>
+	<page></page>
+</regex>
+<regex>
+<name>ch</name> 
+<expres>http://www.iguide.to/embed/(.*?)&</expres>
+<page>http://deportesmax.com/?canal=4</page>			
+</regex>
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+</item>
+
+<item>	
+<title>[COLOR lightblue]Domingo[/COLOR] [COLOR deepskyblue][COLOR blue]Argentina[/COLOR] vs [COLOR red]Chile[/COLOR][/COLOR][COLOR lightslategray][I] deportesmax8 [/I]  [/COLOR] </title>
+ <link>$doregex[url]</link>
+<regex>
+	<name>url</name>
+	<expres>$pyFunction:vipracing.decrypt_vipracing('http://www.iguide.to/embedplayer_new.php?width=650&amp;height=400&amp;channel=$doregex[ch]&amp;autoplay=true',False,False,'http://deportesmax.com/')</expres>
+	<page></page>
+</regex>
+<regex>
+<name>ch</name> 
+<expres>http://www.iguide.to/embed/(.*?)&</expres>
+<page>http://deportesmax.com/?canal=8</page>			
+</regex>
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+</item>
+
+<item>	
+<title>[COLOR lightblue]Domingo[/COLOR] [COLOR deepskyblue][COLOR blue]Argentina[/COLOR] vs [COLOR red]Chile[/COLOR][/COLOR][COLOR lightslategray][I] deportesmax10 [/I]  [/COLOR] </title>
+ <link>$doregex[url]</link>
+<regex>
+	<name>url</name>
+	<expres>$pyFunction:vipracing.decrypt_vipracing('http://www.iguide.to/embedplayer_new.php?width=650&amp;height=400&amp;channel=$doregex[ch]&amp;autoplay=true',False,False,'http://deportesmax.com/')</expres>
+	<page></page>
+</regex>
+<regex>
+<name>ch</name> 
+<expres>http://www.iguide.to/embed/(.*?)&</expres>
+<page>http://deportesmax.com/?canal=10</page>			
+</regex>
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+</item>
+
+
+<item>	
+<title>[COLOR lightblue]Domingo[/COLOR] [COLOR deepskyblue][COLOR blue]Argentina[/COLOR] vs [COLOR red]Chile[/COLOR][/COLOR][COLOR lightslategray][I] deportesmax11 [/I]  [/COLOR] </title>
+ <link>$doregex[url]</link>
+<regex>
+	<name>url</name>
+	<expres>$pyFunction:vipracing.decrypt_vipracing('http://www.iguide.to/embedplayer_new.php?width=650&amp;height=400&amp;channel=$doregex[ch]&amp;autoplay=true',False,False,'http://deportesmax.com/')</expres>
+	<page></page>
+</regex>
+<regex>
+<name>ch</name> 
+<expres>http://www.iguide.to/embed/(.*?)&</expres>
+<page>http://deportesmax.com/?canal=11</page>			
+</regex>
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+</item>
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>[COLOR lightblue]Domingo[/COLOR] [COLOR deepskyblue][COLOR blue]Argentina[/COLOR] vs [COLOR red]Chile[/COLOR][/COLOR][COLOR lightslategray][I] wiz [/I]  [/COLOR] </title>
+ <link>$doregex[getUrl]</link>
+ <regex>
+<name>getUrl</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m, param=''):
+   
+    import requests
+    import re
+    import base64
+   
+    try:
+       
+        id = re.findall("javascript.*?id='(.*?)'", page_data)[0]
+        url = 'http://bro.adca.st/stream.php?id=' + id + '&amp;width=640&amp;height=480'
+        headers = {'User-Agent': 'Mozilla/5.0 (X11 Linux i686 rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': 'http://wizhdsports.sx/live/stream5.php'}
+        source = requests.get(url, headers = headers)
+        curl = re.findall('curl = "(.*?)"', source.text)[0]
+        m3u8 = base64.b64decode(curl)
+ 
+        url2 = 'http://bro.adca.st/getToken.php'    
+        headers2 = {'User-Agent': 'Mozilla/5.0 (X11 Linux i686 rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': url, 'X-Requested-With': 'XMLHttpRequest'}
+        source2 = requests.get(url2, headers = headers2)
+        token = re.findall('"token":"(.*?)"', source2.text)[0]
+ 
+        return m3u8 + token + '|Referer=http://cdn.bro.adca.st/jwplayer.flash.swf&User-Agent=Mozilla/5.0 (X11 Linux i686 rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0'
+ 
+    except Exception as e:
+        print 'wizhdsports: Error: '
+        if hasattr(e, 'code'):
+            print str(e.code)              
+        if hasattr(e, 'reason'):
+            print " " + str(e.reason)
+]]></expres>
+<page>http://wizhdsports.sx/live/stream5.php</page>
+<referer>http://wizhdsports.sx</referer>
+<agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:19.0) Gecko/20100101 Firefox/19.0</agent>
+<cookieJar></cookieJar>
+</regex>
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+</item>	
+
+
+
+
+
+
+
+
+<item>	
+<title>[COLOR lightblue]Domingo[/COLOR] [COLOR deepskyblue][COLOR blue]Argentina[/COLOR] vs [COLOR red]Chile[/COLOR][/COLOR][COLOR lightslategray][I] dailydeportes11 [/I]  [/COLOR] </title>
+<link>$doregex[get-decode]</link>
+<regex>
+<name>get-decode</name>
+<expres>rtmp":"(.*)"</expres>
+<page>http://www.sostart.pw/tk.php?id=$doregex[get-num]</page>
+<referer>http://dailydeportes.com/</referer>
+<agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:19.0) Gecko/20100101 Firefox/19.0</agent>
+</regex>
+<regex>
+<name>get-num</name>
+<expres>fid="(.*?)"</expres>
+<page>http://www.dailydeportes.pw/stream11.html</page>
+<referer>http://dailydeportes.com</referer>
+</regex>
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+</item>
+
+<item>	
+<title>[COLOR lightblue]Domingo[/COLOR] [COLOR deepskyblue][COLOR blue]Argentina[/COLOR] vs [COLOR red]Chile[/COLOR][/COLOR][COLOR lightslategray][I] dailydeportes12 [/I]  [/COLOR] </title>
+<link>$doregex[get-decode]</link>
+<regex>
+<name>get-decode</name>
+<expres>rtmp":"(.*)"</expres>
+<page>http://www.sostart.pw/tk.php?id=$doregex[get-num]</page>
+<referer>http://dailydeportes.com/</referer>
+<agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:19.0) Gecko/20100101 Firefox/19.0</agent>
+</regex>
+<regex>
+<name>get-num</name>
+<expres>fid="(.*?)"</expres>
+<page>http://www.dailydeportes.pw/stream12.html</page>
+<referer>http://dailydeportes.com</referer>
+</regex>
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+</item>
+
+
+ 
+<item>	
+<title>[COLOR lightblue]Domingo [/COLOR] [COLOR deepskyblue][COLOR blue]Argentina[/COLOR] vs [COLOR red]Chile[/COLOR][/COLOR][COLOR lightslategray][I] dailydeportes13 [/I]  [/COLOR] </title>
+<link>$doregex[get-decode]</link>
+<regex>
+<name>get-decode</name>
+<expres>rtmp":"(.*)"</expres>
+<page>http://www.sostart.pw/tk.php?id=$doregex[get-num]</page>
+<referer>http://dailydeportes.com/</referer>
+<agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:19.0) Gecko/20100101 Firefox/19.0</agent>
+</regex>
+<regex>
+<name>get-num</name>
+<expres>fid="(.*?)"</expres>
+<page>http://www.dailydeportes.pw/stream13.html</page>
+<referer>http://dailydeportes.com</referer>
+</regex>
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+</item>
+
+
+
+
+
+
+
+
+
+
+
+<item>	
+<title>[COLOR lightblue]Domingo[/COLOR] [COLOR deepskyblue][COLOR blue]Argentina[/COLOR] vs [COLOR red]Chile[/COLOR][/COLOR][COLOR lightslategray][I] Acestream [/I]  [/COLOR] </title>
+<link>plugin://program.plexus/?url=a7ad346e500e0bae17e6e6c70694606946243925&amp;mode=1&amp;name=Adryanlist+Acestreams</link><regex><name>hash</name><expres>this.loadPlayer\("(.*?)"</expres><page>http://www.arenavision.in/av7</page><referer>http://www.arenavision.in</referer><setcookie>beget=begetok</setcookie></regex>
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+</item>	
+
+
+<item>	
+<title>[COLOR lightblue]Domingo[/COLOR] [COLOR deepskyblue][COLOR blue]Argentina[/COLOR] vs [COLOR red]Chile[/COLOR][/COLOR][COLOR lightslategray][I] Acestream [/I]  [/COLOR] </title>
+<link>plugin://program.plexus/?url=$doregex[hash]&amp;mode=1&amp;name=Adryanlist+Acestreams</link><regex><name>hash</name><expres>this.loadPlayer\("(.*?)"</expres><page>http://www.arenavision.in/av7</page><referer>http://www.arenavision.in</referer><setcookie>beget=begetok</setcookie></regex>
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+</item>	
+	
+<item>	
+<title>[COLOR lightblue]Domingo[/COLOR] [COLOR deepskyblue][COLOR blue]Argentina[/COLOR] vs [COLOR red]Chile[/COLOR][/COLOR][COLOR lightslategray][I] Acestream [/I]  [/COLOR] </title>
+<link>plugin://program.plexus/?url=$doregex[hash]&amp;mode=1&amp;name=Adryanlist+Acestreams</link><regex><name>hash</name><expres>this.loadPlayer\("(.*?)"</expres><page>http://www.arenavision.in/av8</page><referer>http://www.arenavision.in</referer><setcookie>beget=begetok</setcookie></regex>
+<fanart>http://cde.americadeportes.pe/ima/0/0/2/2/6/226063/790x495.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/copaamericaa.jpg</thumbnail>
+</item>		
+
+	
+
+	
+	
+	
+	
+</items>
+</channel>
+
+
+
+
+
+</channels>

@@ -1,0 +1,365 @@
+
+
+<item>
+<title>[COLOR deepskyblue]Buscar Pelicula[/COLOR]</title>
+<link>$doregex[makelist]</link>
+
+
+<regex>
+   <name>makelist</name>
+   <listrepeat><![CDATA[
+       <title>[COLOR lightblue][UPPERCASE][makelist.param2][/COLOR][/UPPERCASE]</title>
+    
+    <link>plugin://plugin.video.quasar/play?uri=magnet:?xt=urn:btih:$doregex[id]</link>
+   <regex>
+  <name>id</name>
+<expres>urn:btih:(.*?)\sclass</expres>
+<page>http://pelismag.net/peliculas/[makelist.param2]</page>
+<referer></referer>
+</regex>
+   ]]></listrepeat>
+   <expres>href="(https://pelismag.net/peliculas/(.+?))"</expres>
+   <page>https://www.bing.com/search?q=$doregex[search]+site%3Apelismag.net%2Fpeliculas</page>
+   <cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>search</name>
+<expres><![CDATA[#$pyFunction
+import xbmc
+import xbmcaddon
+import xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+    dialog = xbmcgui.Dialog()
+    d = dialog.input('Buscar Pelicula', type=xbmcgui.INPUT_ALPHANUM).replace(" ", "+")
+    return d
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+</item>
+
+
+
+
+
+
+
+
+
+<item>
+<title>[COLOR skyblue]Buscar Serie[/COLOR]</title>
+<link>$doregex[makelist]</link>
+
+<regex>
+   <name>makelist</name>
+   <listrepeat><![CDATA[
+    <title>[COLOR lightblue][UPPERCASE][makelist.param2][/COLOR][/UPPERCASE]</title>
+	<link>$doregex[makelist2]</link>
+   ]]></listrepeat>
+   <expres>href="(https://pelismag.net/serie/(.+?))"</expres>
+   <page>https://www.bing.com/search?q=$doregex[search]+site%3Apelismag.net%2Fserie</page>
+   <cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+    <title>[makelist2.param1]</title>
+    <link>plugin://plugin.video.quasar/play?uri=magnet:?xt=urn:btih:[makelist2.param2]</link>
+ <thumbnail>[makelist.param3]</thumbnail>          
+]]></listrepeat>
+<expres>sub-group.*">(.*?)<[\w\W\s]{0,37}urn:btih:(.*?)><</expres>
+<page>http://pelismag.net/serie/[makelist.param2]</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+
+
+
+<regex>
+<name>search</name>
+<expres><![CDATA[#$pyFunction
+import xbmc
+import xbmcaddon
+import xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+    dialog = xbmcgui.Dialog()
+    d = dialog.input('Buscar Pelicula', type=xbmcgui.INPUT_ALPHANUM).replace(" ", "+")
+    return d
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>Estrenos </title>
+
+<link>$doregex[makelist2]</link>
+
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>Pagina [makelist2.param1]</title>
+<link>$doregex[makelist]</link>
+]]></listrepeat>
+<expres>'(.*?)'</expres>
+<page>'0''1''2''3''4''5''6''7''8''9''10''11''12''13''14''15''16''17''18''19''20''21''22''23''24''25'</page>
+</regex>
+
+<thumbnail> </thumbnail>       <!--thumb del sitio  web-->
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param4]</title>
+
+<link>$doregex[makelist0]</link>
+ 
+ <thumbnail>[makelist.param3]</thumbnail>          
+]]></listrepeat>
+<expres>href="peliculas/(.*?)".*?title="(.*?)".*?src=(.*?jpg)\salt="(.*?)"</expres>
+<page>https://pelismag.net/estrenos?p=[makelist2.param1]</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+
+
+
+<regex>
+<name>makelist0</name>
+<listrepeat><![CDATA[
+<title>[makelist.param4] - [makelist0.param1]</title>
+<link>plugin://plugin.video.quasar/play?uri=[makelist0.param2]</link>
+
+ <thumbnail>[makelist.param3]</thumbnail>          
+]]></listrepeat>
+<expres>bttns\sa.(.*?)'[\w\W\s]{0,57}href=(.*?)\sclass</expres>
+<page>https://pelismag.net/peliculas/[makelist.param1]</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+
+</item>
+
+
+
+
+
+
+
+
+
+<item>
+<title>Mas Valoradas </title>
+<link>$doregex[makelist2]</link>
+
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>Pagina [makelist2.param1]</title>
+<link>$doregex[makelist]</link>
+]]></listrepeat>
+<expres>'(.*?)'</expres>
+<page>'0''1''2''3''4''5''6''7''8''9''10''11''12''13''14''15''16''17''18''19''20''21''22''23''24''25'</page>
+</regex>
+
+
+<thumbnail> </thumbnail>       <!--thumb del sitio  web-->
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param4]</title>
+
+<link>$doregex[makelist0]</link>
+ 
+ <thumbnail>[makelist.param3]</thumbnail>          
+]]></listrepeat>
+<expres>href="peliculas/(.*?)".*?title="(.*?)".*?src=(.*?jpg)\salt="(.*?)"</expres>
+<page>https://pelismag.net/rating?p=[makelist2.param1]</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+
+
+
+<regex>
+<name>makelist0</name>
+<listrepeat><![CDATA[
+<title>[makelist.param4] - [makelist0.param1]</title>
+<link>plugin://plugin.video.quasar/play?uri=[makelist0.param2]</link>
+
+ <thumbnail>[makelist.param3]</thumbnail>          
+]]></listrepeat>
+<expres>bttns\sa.(.*?)'[\w\W\s]{0,57}href=(.*?)\sclass</expres>
+<page>https://pelismag.net/peliculas/[makelist.param1]</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+
+</item>
+
+
+
+
+
+
+
+
+
+<item>
+<title>Mas Vistas </title>
+
+<link>$doregex[makelist2]</link>
+
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>Pagina [makelist2.param1]</title>
+<link>$doregex[makelist]</link>
+]]></listrepeat>
+<expres>'(.*?)'</expres>
+<page>'0''1''2''3''4''5''6''7''8''9''10''11''12''13''14''15''16''17''18''19''20''21''22''23''24''25'</page>
+</regex>
+
+<thumbnail> </thumbnail>       <!--thumb del sitio  web-->
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param4]</title>
+
+<link>$doregex[makelist0]</link>
+ 
+ <thumbnail>[makelist.param3]</thumbnail>          
+]]></listrepeat>
+<expres>href="peliculas/(.*?)".*?title="(.*?)".*?src=(.*?jpg)\salt="(.*?)"</expres>
+<page>https://pelismag.net/principal?p=[makelist2.param1]</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+
+
+
+<regex>
+<name>makelist0</name>
+<listrepeat><![CDATA[
+<title>[makelist.param4] - [makelist0.param1]</title>
+<link>plugin://plugin.video.quasar/play?uri=[makelist0.param2]</link>
+
+ <thumbnail>[makelist.param3]</thumbnail>          
+]]></listrepeat>
+<expres>bttns\sa.(.*?)'[\w\W\s]{0,57}href=(.*?)\sclass</expres>
+<page>https://pelismag.net/peliculas/[makelist.param1]</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>Series </title>
+<link>$doregex[makelist2]</link>
+
+<regex>
+   <name>makelist2</name>
+   <listrepeat><![CDATA[
+       <title>[makelist2.param2]</title>
+    
+    <link>$doregex[makelist]</link>
+<fanart>[makelist2.param3]</fanart>
+<thumbnail>[makelist2.param3]</thumbnail>
+   ]]></listrepeat>
+   <expres><![CDATA[href="(.*?)"[\w\W\s]{0,20}gratis(.*?)Esp[\w\W\s]{0,90}src=(.*?)\s]]></expres>
+   <page>https://pelismag.net/series</page>
+</regex>
+
+
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+    <title>[makelist.param2]</title>
+    <link>plugin://plugin.video.quasar/play?uri=[makelist.param3]</link>
+	<thumbnail>[makelist2.param3]</thumbnail>
+	<fanart>[makelist2.param3]</fanart>
+]]></listrepeat>
+<expres><![CDATA[sub-group-(.*?)">(.*?)<[\w\W\s]{0,20}href=(.*?)>]]></expres>
+<page>https://pelismag.net/[makelist2.param1]</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<regex>
+   <name>makelist2</name>
+   <listrepeat><![CDATA[
+       <title>Page [makelist2.param1]</title>
+    
+    <link>$doregex[makelist]</link>
+
+<thumbnail></thumbnail>
+   ]]></listrepeat>
+   <expres><![CDATA[paginado:"(.*?)";]]></expres>
+   <page>http://adryanlist.org/adryan/kozm.txt</page>
+   <cookieJar></cookieJar>
+</regex>
+
+
+
+
+
+
+
+
+
+<expres>href="peliculas/(.*?)".*?title="(.*?)".*?src=(.*?jpg)\salt="(.*?)"</expres>
+<page>http://pelismag.net/series?p=[makelist2.param1]</page>

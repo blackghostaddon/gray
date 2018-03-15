@@ -1,0 +1,2408 @@
+
+
+   <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+
+<channel>
+    <name>EXTRATIME</name>
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail>
+    <fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+        <items>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <item>
+<title>[B]EVENTO LIGA MX 2018 opciones 1 [/B]      </title>
+<link>$doregex[bro.adca.st]</link>
+
+
+<regex>
+<name>bro.adca.st</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/$doregex[select].html'):
+ import requests, re, urllib
+ headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:52.0) Gecko/20100101 Firefox/52.0'}
+ headers['Referer'] = 'http://vipracing.info/channel/canal-2'
+ source = requests.get(url, headers=headers)
+ m3u8 = re.findall('tambor = "(.+?)"', source.text)[0]
+ tokenpage = re.findall('firme = "\/(.+?)"', source.text)[0]
+ headers['Referer'] = url
+ headers['X-Requested-With'] = 'XMLHttpRequest'
+ headers['Accept'] = 'application/json, text/javascript, */*; q=0.01'
+ headers['Accept-Language'] = 'en-US,en;q=0.5'
+ source = requests.get('http://bro.adca.st/%s'%tokenpage, headers=headers)
+ m3u8 = m3u8 + re.findall(':"(.+?)"', source.text)[0] + '|User-Agent=%s&Referer=http://bro.adca.st/&Origin=http://bro.adca.st'%headers['User-Agent']
+ return m3u8
+]]></expres>
+<page></page>
+</regex>
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+   import xbmcgui
+   dialog = xbmcgui.Dialog()
+   ret = dialog.select('Elige un Canal ', ['Opcion 1', 'Opcion 2', 'Opcion 3', 'Opcion 4', 'Opcion 5', 'Opcion 6', 'Opcion 7', 'Opcion 8'])
+   lists = ['248', '15129', '13137', '715', '13525', '10762', '7386', '7387']
+   return lists[ret]
+]]></expres>
+<page></page>
+</regex>
+
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail>
+
+</item>
+
+
+http://bro.adca.st/chinchan.php
+
+
+
+
+
+
+
+
+ <iem>
+<title>[B]Canales Arenavision Selecciona un Canal [/B]  por Acestreams   </title>
+<link>plugin://program.plexus/?url=$doregex[hash]&amp;mode=1&amp;name=BlackAddon+Acestreams</link>
+			<regex>
+			<name>hash</name>
+			<expres>this.loadPlayer\("(.*?)"</expres>
+			<page>http://arenavision2017.tk/$doregex[select]</page>
+			<referer>http://arenavision2017.tk</referer>
+			<setcookie>beget=begetok</setcookie>
+			</regex>
+
+			 <regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+   import xbmcgui
+   dialog = xbmcgui.Dialog()
+   ret = dialog.select('Elige un Canal ', ['AV 1 LaLiga','AV 2','AV 3','AV 4','AV 5','AV 6','AV 7','AV 8','AV 9','AV 10','AV 11','AV 12','AV 13','AV 14','AV 15','AV 16','AV 17 Liga MX','AV 18','AV 19','AV 20','AV 21','AV 22','AV 23','AV 24','AV 25','AV 26','AV 27','AV 28','AV 29','AV 30','AV 31','AV 32','AV 33','AV 34','AV 35',])
+   lists = ['01','02','03','04','05','06','07','08','09','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35']
+   return lists[ret]
+]]></expres>
+<page></page>
+</regex>
+
+ <thumbnail>http://blackaddon.rf.gd/gray/img/acestream.png</thumbnail>
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>[B]Canales Sudamerica ESPN | FOXSPORTS | DIRECTV SPORTS | F1 [/B]  Baja Resolucion  </title>
+
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param1]  [makelist.param4]</title>
+<link>http://$doregex[ip]$doregex[m3u8]</link>
+<regex>
+<name>ip</name>
+<expres>redirect=(.*)</expres>
+<page>http://[makelist.param3]:1935/loadbalancer</page>
+<referer>www.http://[makelist.param4]</referer>
+</regex>
+<regex>
+<name>m3u8</name>
+<expres>ea \+ "(.*?)"</expres>
+<page>http://[makelist.param4]/membedplayer/[makelist.param2]/1/500/400</page>
+<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+<referer>http://www.[makelist.param4]</referer>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail>
+]]></listrepeat>
+<expres>type:"Deportes" canal="(.*?)" channel="(.*?)" pub="(.*?)" server="(.*?)"</expres>
+<page>http://blackaddon.rf.gd/gray/servers.txt</page>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>[B]Multicanales MaxDeportes LigaSantander | LigaMX | LigaColombia | Ligas Sudamerica [/B]  [mips]    </title>
+
+ <link>http://$doregex[ip]$doregex[m3u8]$doregex[hls]</link>
+			<regex>
+			<name>ip</name>
+			<expres>redirect=(.*)</expres>
+			<page>http://cdn.mipspublisher.com:1935/loadbalancer</page>
+			</regex>
+			<regex>
+			<name>m3u8</name>
+			<expres>ea \+ "(.*?)"</expres>
+			<page>http://www.mipsplayer.net/membedplayer/$doregex[ch]/1/650/400</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.mipsplayer.net</referer>
+			</regex>
+			<regex>
+			<name>hls</name>
+			<expres>hlsUrl \+ \(\"(.*?)"</expres>
+			<page>http://www.mipsplayer.net/membedplayer/$doregex[ch]/1/650/400</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.mipsplayer.net</referer>
+			</regex>
+			<regex>
+			<name>ch</name>
+			<expres>$doregex[select]</expres>
+			<page></page>
+			</regex>
+
+ <regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+   import xbmcgui
+   dialog = xbmcgui.Dialog()
+   ret = dialog.select('Elige un Canal ', ['max2a3', 'max3a3', 'max7a3', 'max10a2', 'max13a1', 'max16a2', 'max18a5', 'max20a1', 'max31a3', 'max32a2', 'max34a4', 'max36a1'])
+   lists = ['max2a3', 'max3a3', 'max7a3', 'max10a2', 'max13a1', 'max16a2', 'max18a5', 'max20a1', 'max31a3', 'max32a2', 'max34a4', 'max36a1']
+   return lists[ret]
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail>
+
+</item>
+
+
+
+
+
+
+
+<item>
+<title>[B]Multicanal Motorsport: Rolex 24 at Daytona[/B]         </title>
+ <link>$doregex[bro.adca.st]</link>
+<regex>
+<name>bro.adca.st</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/17220.html'):
+ import requests, re, urllib
+ headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:52.0) Gecko/20100101 Firefox/52.0'}
+ headers['Referer'] = 'http://vipracing.info/channel/canal-2'
+ source = requests.get(url, headers=headers)
+ m3u8 = re.findall('tambor = "(.+?)"', source.text)[0]
+ tokenpage = re.findall('firme = "\/(.+?)"', source.text)[0]
+ headers['Referer'] = url
+ headers['X-Requested-With'] = 'XMLHttpRequest'
+ headers['Accept'] = 'application/json, text/javascript, */*; q=0.01'
+ headers['Accept-Language'] = 'en-US,en;q=0.5'
+ source = requests.get('http://bro.adca.st/%s'%tokenpage, headers=headers)
+ m3u8 = m3u8 + re.findall(':"(.+?)"', source.text)[0] + '|User-Agent=%s&Referer=http://bro.adca.st/&Origin=http://bro.adca.st'%headers['User-Agent']
+ return m3u8
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+
+
+
+<item>
+ <title>[B]Multicanal NFL Network[/B]   op2  </title>
+<link>$doregex[ip]</link>
+			<regex>
+			<name>ip</name>
+			<expres>file:\s\"(.*?)\"</expres>
+			<page>http://www.hdca.st/embedmob.php?id=nfltv</page>
+			<agent>Mozilla/5.0 (iPad; CPU OS 5_1 like Mac OS X; en-us) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.1 Mobile/9B176 Safari/7534.48.3</agent>
+			<referer>http://m.ibrod.tv/ae-live-stream.html</referer>
+<cookieJar>$doregex[createCFCookie]</cookieJar>
+</regex>
+<regex>
+        <name>createCFCookie</name>
+        <expres></expres>
+        <page>$pyFunction:cloudflare.createCookie('http://m.ibrod.tv',Cookie_Jar,'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36')</page>
+        <cookieJar></cookieJar>
+</regex>
+
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+
+
+ 
+
+ <item>
+ <title>[B]Multicanal PSN [/B]      </title>
+<link>https://clutch.vaughnsoft.net/ord/vl/psn88v.m3u8</link>
+
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+
+
+
+
+ <item>
+ <title>[B]Multicanal  [/B]   Canal 5   </title>
+<link>http://189.216.247.113/Content/HLS/Live/Channel(XHGC)/index.m3u8?sd=10&amp;rebase=on</link>
+
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+<item>
+<title>[B]Multicanal VIP 01[/B]         </title>
+ <link>$doregex[bro.adca.st]</link>
+<regex>
+<name>bro.adca.st</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/739.html'):
+ import requests, re, urllib
+ headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:52.0) Gecko/20100101 Firefox/52.0'}
+ headers['Referer'] = 'http://vipracing.info/channel/canal-2'
+ source = requests.get(url, headers=headers)
+ m3u8 = re.findall('tambor = "(.+?)"', source.text)[0]
+ tokenpage = re.findall('firme = "\/(.+?)"', source.text)[0]
+ headers['Referer'] = url
+ headers['X-Requested-With'] = 'XMLHttpRequest'
+ headers['Accept'] = 'application/json, text/javascript, */*; q=0.01'
+ headers['Accept-Language'] = 'en-US,en;q=0.5'
+ source = requests.get('http://bro.adca.st/%s'%tokenpage, headers=headers)
+ m3u8 = m3u8 + re.findall(':"(.+?)"', source.text)[0] + '|User-Agent=%s&Referer=http://bro.adca.st/&Origin=http://bro.adca.st'%headers['User-Agent']
+ return m3u8
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>[B]Multicanal VIP 19[/B]         </title>
+ <link>$doregex[bro.adca.st]</link>
+<regex>
+<name>bro.adca.st</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/23506.html'):
+ import requests, re, urllib
+ headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:52.0) Gecko/20100101 Firefox/52.0'}
+ headers['Referer'] = 'http://vipracing.info/channel/canal-2'
+ source = requests.get(url, headers=headers)
+ m3u8 = re.findall('tambor = "(.+?)"', source.text)[0]
+ tokenpage = re.findall('firme = "\/(.+?)"', source.text)[0]
+ headers['Referer'] = url
+ headers['X-Requested-With'] = 'XMLHttpRequest'
+ headers['Accept'] = 'application/json, text/javascript, */*; q=0.01'
+ headers['Accept-Language'] = 'en-US,en;q=0.5'
+ source = requests.get('http://bro.adca.st/%s'%tokenpage, headers=headers)
+ m3u8 = m3u8 + re.findall(':"(.+?)"', source.text)[0] + '|User-Agent=%s&Referer=http://bro.adca.st/&Origin=http://bro.adca.st'%headers['User-Agent']
+ return m3u8
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>[B]Multicanal MaxDeportes 01[/B]     </title>
+ <link>$doregex[bro.adca.st]</link>
+<regex>
+<name>bro.adca.st</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/739.html'):
+ import requests, re, urllib
+ headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:52.0) Gecko/20100101 Firefox/52.0'}
+ headers['Referer'] = 'http://vipracing.info/channel/canal-2'
+ source = requests.get(url, headers=headers)
+ m3u8 = re.findall('tambor = "(.+?)"', source.text)[0]
+ tokenpage = re.findall('firme = "\/(.+?)"', source.text)[0]
+ headers['Referer'] = url
+ headers['X-Requested-With'] = 'XMLHttpRequest'
+ headers['Accept'] = 'application/json, text/javascript, */*; q=0.01'
+ headers['Accept-Language'] = 'en-US,en;q=0.5'
+ source = requests.get('http://bro.adca.st/%s'%tokenpage, headers=headers)
+ m3u8 = m3u8 + re.findall(':"(.+?)"', source.text)[0] + '|User-Agent=%s&Referer=http://bro.adca.st/&Origin=http://bro.adca.st'%headers['User-Agent']
+ return m3u8
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+
+
+
+<item>
+<title>[B]Multicanal MaxDeportes 08[/B]     </title>
+ <link>$doregex[bro.adca.st]</link>
+<regex>
+<name>bro.adca.st</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/15558.html'):
+ import requests, re, urllib
+ headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:52.0) Gecko/20100101 Firefox/52.0'}
+ headers['Referer'] = 'http://vipracing.info/channel/canal-2'
+ source = requests.get(url, headers=headers)
+ m3u8 = re.findall('tambor = "(.+?)"', source.text)[0]
+ tokenpage = re.findall('firme = "\/(.+?)"', source.text)[0]
+ headers['Referer'] = url
+ headers['X-Requested-With'] = 'XMLHttpRequest'
+ headers['Accept'] = 'application/json, text/javascript, */*; q=0.01'
+ headers['Accept-Language'] = 'en-US,en;q=0.5'
+ source = requests.get('http://bro.adca.st/%s'%tokenpage, headers=headers)
+ m3u8 = m3u8 + re.findall(':"(.+?)"', source.text)[0] + '|User-Agent=%s&Referer=http://bro.adca.st/&Origin=http://bro.adca.st'%headers['User-Agent']
+ return m3u8
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>[B]Multicanal RivoSports [/B]     </title>
+<link>$doregex[bro.adca.st]</link>
+<regex>
+<name>bro.adca.st</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/248.html'):
+ import requests, re, urllib
+ headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:52.0) Gecko/20100101 Firefox/52.0'}
+ headers['Referer'] = 'http://www.virocu.com/p/futbol-online-en-directo.html'
+ source = requests.get(url, headers=headers)
+ m3u8 = re.findall('tambor = "(.+?)"', source.text)[0]
+ tokenpage = re.findall('firme = "\/(.+?)"', source.text)[0]
+ headers['Referer'] = url
+ headers['X-Requested-With'] = 'XMLHttpRequest'
+ headers['Accept'] = 'application/json, text/javascript, */*; q=0.01'
+ headers['Accept-Language'] = 'en-US,en;q=0.5'
+ source = requests.get('http://bro.adca.st/%s'%tokenpage, headers=headers)
+ m3u8 = m3u8 + re.findall(':"(.+?)"', source.text)[0] + '|User-Agent=%s&Referer=http://bro.adca.st/&Origin=http://bro.adca.st'%headers['User-Agent']
+ return m3u8
+]]></expres>
+<page></page>
+</regex>
+ <thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail>
+<fanart></fanart>
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>[B]AGENDA ZONASPORTS[/B]  [I] [Solo Agenda][/I] ---- </title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title> [makelist.param1] [B] [makelist.param2][/B]  [makelist.param3]  [makelist.param4]  </title>
+<sportsdevil>http://zonasports.me/channel.php[makelist.param1]</sportsdevil>
+<referer>http://zonasports.be/</referer>
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+]]></listrepeat>
+<expres><![CDATA[t\'>(.*?)<[\w\W\s]{0,110}left\'>(.*?)\:.*b>(.*?)\n.*?\((.*?)\)]]></expres>
+<page>http://zonasports.be/</page>
+<agent>Mozilla/5.0 (Windows NT 6.3; rv:36.0) Gecko/20100101 Firefox/36.04</agent>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>[B]Multicanal Zonasport01[/B]     fstream    </title>
+
+<link>http://$doregex[ip]$doregex[m3u8]$doregex[hls]|User-Agent=iPad</link>
+			<regex>
+			<name>ip</name>
+			<expres>redirect=(.*)</expres>
+			<page>http://www.pubfstream.com:1935/loadbalancer</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.fstream.me</referer>
+			</regex>
+			<regex>
+			<name>m3u8</name>
+			<expres>ea \+ "(.*?)"</expres>
+			<page>http://www.fstream.me/sharedcdn/membedplayer/$doregex[canal]/1/700/400/$doregex[stream]</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.fstream.me</referer>
+			</regex>
+			<regex>
+			<name>hls</name>
+			<expres>hlsUrl \+ \(\"(.*?)"</expres>
+			<page>http://www.fstream.me/sharedcdn/membedplayer/$doregex[canal]/1/700/400/$doregex[stream]</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.fstream.me</referer>
+			</regex>
+		<regex>
+			<name>stream</name>
+			<expres>fid="(.*?)"</expres>
+			<page>http://www.fstream.me/sharedcdn/sharedcdnEmbed.js?channel=$doregex[canal]</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.fstream.me</referer>
+			</regex>
+
+
+			<regex>
+			<name>canal</name>
+			<expres>channel='(.*?)'</expres>
+			<page>http://gozonasports.me/channel.php?id=1</page>
+			</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+
+
+
+<item>
+<title>[B]Multicanal Zonasport02[/B]     fstream    </title>
+<link>http://$doregex[ip]$doregex[m3u8]$doregex[hls]|User-Agent=iPad</link>
+			<regex>
+			<name>ip</name>
+			<expres>redirect=(.*)</expres>
+			<page>http://www.pubfstream.com:1935/loadbalancer</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.fstream.me</referer>
+			</regex>
+			<regex>
+			<name>m3u8</name>
+			<expres>ea \+ "(.*?)"</expres>
+			<page>http://www.fstream.me/sharedcdn/membedplayer/$doregex[canal]/1/700/400/$doregex[stream]</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.fstream.me</referer>
+			</regex>
+			<regex>
+			<name>hls</name>
+			<expres>hlsUrl \+ \(\"(.*?)"</expres>
+			<page>http://www.fstream.me/sharedcdn/membedplayer/$doregex[canal]/1/700/400/$doregex[stream]</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.fstream.me</referer>
+			</regex>
+		<regex>
+			<name>stream</name>
+			<expres>fid="(.*?)"</expres>
+			<page>http://www.fstream.me/sharedcdn/sharedcdnEmbed.js?channel=$doregex[canal]</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.fstream.me</referer>
+			</regex>
+			<regex>
+			<name>canal</name>
+			<expres>channel='(.*?)'</expres>
+			<page>http://gozonasports.me/channel.php?id=2</page>
+			</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+
+
+
+<item>
+<title>[B]Multicanal Zonasport03[/B]     fstream    </title>
+<link>http://$doregex[ip]$doregex[m3u8]$doregex[hls]|User-Agent=iPad</link>
+			<regex>
+			<name>ip</name>
+			<expres>redirect=(.*)</expres>
+			<page>http://www.pubfstream.com:1935/loadbalancer</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.fstream.me</referer>
+			</regex>
+			<regex>
+			<name>m3u8</name>
+			<expres>ea \+ "(.*?)"</expres>
+			<page>http://www.fstream.me/sharedcdn/membedplayer/$doregex[canal]/1/700/400/$doregex[stream]</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.fstream.me</referer>
+			</regex>
+			<regex>
+			<name>hls</name>
+			<expres>hlsUrl \+ \(\"(.*?)"</expres>
+			<page>http://www.fstream.me/sharedcdn/membedplayer/$doregex[canal]/1/700/400/$doregex[stream]</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.fstream.me</referer>
+			</regex>
+		<regex>
+			<name>stream</name>
+			<expres>fid="(.*?)"</expres>
+			<page>http://www.fstream.me/sharedcdn/sharedcdnEmbed.js?channel=$doregex[canal]</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.fstream.me</referer>
+			</regex>
+			<regex>
+			<name>canal</name>
+			<expres>channel='(.*?)'</expres>
+			<page>http://gozonasports.me/channel.php?id=3</page>
+			</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+<item>
+<title>[B]Multicanal Zonasport04[/B]     fstream    </title>
+<link>http://$doregex[ip]$doregex[m3u8]$doregex[hls]|User-Agent=iPad</link>
+			<regex>
+			<name>ip</name>
+			<expres>redirect=(.*)</expres>
+			<page>http://www.pubfstream.com:1935/loadbalancer</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.fstream.me</referer>
+			</regex>
+			<regex>
+			<name>m3u8</name>
+			<expres>ea \+ "(.*?)"</expres>
+			<page>http://www.fstream.me/sharedcdn/membedplayer/$doregex[canal]/1/700/400/$doregex[stream]</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.fstream.me</referer>
+			</regex>
+			<regex>
+			<name>hls</name>
+			<expres>hlsUrl \+ \(\"(.*?)"</expres>
+			<page>http://www.fstream.me/sharedcdn/membedplayer/$doregex[canal]/1/700/400/$doregex[stream]</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.fstream.me</referer>
+			</regex>
+		<regex>
+			<name>stream</name>
+			<expres>fid="(.*?)"</expres>
+			<page>http://www.fstream.me/sharedcdn/sharedcdnEmbed.js?channel=$doregex[canal]</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.fstream.me</referer>
+			</regex>
+			<regex>
+			<name>canal</name>
+			<expres>channel='(.*?)'</expres>
+			<page>http://gozonasports.me/channel.php?id=3</page>
+			</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+
+
+
+
+
+
+<item>
+<title>[B]Multicanal Zonasport05[/B]  bro.adca.st     </title>
+<link>$doregex[bro.adca.st]</link>
+<regex>
+<name>bro.adca.st</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/365.html'):
+ import requests, re, urllib
+ headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:52.0) Gecko/20100101 Firefox/52.0'}
+ headers['Referer'] = 'http://cdn.zonasports.me/c-5x.php'
+ source = requests.get(url, headers=headers)
+ m3u8 = re.findall('tambor = "(.+?)"', source.text)[0]
+ tokenpage = re.findall('firme = "\/(.+?)"', source.text)[0]
+ headers['Referer'] = url
+ headers['X-Requested-With'] = 'XMLHttpRequest'
+ headers['Accept'] = 'application/json, text/javascript, */*; q=0.01'
+ headers['Accept-Language'] = 'en-US,en;q=0.5'
+ source = requests.get('http://bro.adca.st/%s'%tokenpage, headers=headers)
+ m3u8 = m3u8 + re.findall(':"(.+?)"', source.text)[0] + '|User-Agent=%s&Referer=http://bro.adca.st/&Origin=http://bro.adca.st'%headers['User-Agent']
+ return m3u8
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+
+
+<item>
+<title>[B]Multicanal Zonasport06[/B]  bro.adca.st </title>
+<link>$doregex[bro.adca.st]</link>
+<regex>
+<name>bro.adca.st</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/414.html'):
+ import requests, re, urllib
+ headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:52.0) Gecko/20100101 Firefox/52.0'}
+ headers['Referer'] = 'http://zonasports.be/channel.php?id=6'
+ source = requests.get(url, headers=headers)
+ m3u8 = re.findall('tambor = "(.+?)"', source.text)[0]
+ tokenpage = re.findall('firme = "\/(.+?)"', source.text)[0]
+ headers['Referer'] = url
+ headers['X-Requested-With'] = 'XMLHttpRequest'
+ headers['Accept'] = 'application/json, text/javascript, */*; q=0.01'
+ headers['Accept-Language'] = 'en-US,en;q=0.5'
+ source = requests.get('http://bro.adca.st/%s'%tokenpage, headers=headers)
+ m3u8 = m3u8 + re.findall(':"(.+?)"', source.text)[0] + '|User-Agent=%s&Referer=http://bro.adca.st/&Origin=http://bro.adca.st'%headers['User-Agent']
+ return m3u8
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+
+
+
+
+
+<item>
+<title>[B]Multicanal Zonasport07[/B]  bro.adca.st    </title>
+<link>$doregex[bro.adca.st]</link>
+<regex>
+<name>bro.adca.st</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/1827.html'):
+ import requests, re, urllib
+ headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:52.0) Gecko/20100101 Firefox/52.0'}
+ headers['Referer'] = 'http://zonasports.be/channel.php?id=7'
+ source = requests.get(url, headers=headers)
+ m3u8 = re.findall('tambor = "(.+?)"', source.text)[0]
+ tokenpage = re.findall('firme = "\/(.+?)"', source.text)[0]
+ headers['Referer'] = url
+ headers['X-Requested-With'] = 'XMLHttpRequest'
+ headers['Accept'] = 'application/json, text/javascript, */*; q=0.01'
+ headers['Accept-Language'] = 'en-US,en;q=0.5'
+ source = requests.get('http://bro.adca.st/%s'%tokenpage, headers=headers)
+ m3u8 = m3u8 + re.findall(':"(.+?)"', source.text)[0] + '|User-Agent=%s&Referer=http://bro.adca.st/&Origin=http://bro.adca.st'%headers['User-Agent']
+ return m3u8
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+
+
+
+
+
+
+<item>
+<title>[B]Multicanal Zonasport08[/B]  bro.adca.st </title>
+<link>$doregex[bro.adca.st]</link>
+<regex>
+<name>bro.adca.st</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/411.html'):
+ import requests, re, urllib
+ headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:52.0) Gecko/20100101 Firefox/52.0'}
+ headers['Referer'] = 'http://zonasports.be/channel.php?id=8'
+ source = requests.get(url, headers=headers)
+ m3u8 = re.findall('tambor = "(.+?)"', source.text)[0]
+ tokenpage = re.findall('firme = "\/(.+?)"', source.text)[0]
+ headers['Referer'] = url
+ headers['X-Requested-With'] = 'XMLHttpRequest'
+ headers['Accept'] = 'application/json, text/javascript, */*; q=0.01'
+ headers['Accept-Language'] = 'en-US,en;q=0.5'
+ source = requests.get('http://bro.adca.st/%s'%tokenpage, headers=headers)
+ m3u8 = m3u8 + re.findall(':"(.+?)"', source.text)[0] + '|User-Agent=%s&Referer=http://bro.adca.st/&Origin=http://bro.adca.st'%headers['User-Agent']
+ return m3u8
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+
+
+
+
+
+ <item>
+<title>[B]Multicanal Zonasport09[/B]    wide     </title>
+<link>$doregex[get-id]</link>
+<regex>
+<name>get-id</name>
+<expres>file:"(.*?)"</expres>
+<page>http://widestream.io/embed-7230</page>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+<item>
+<title>[B]Multicanal Zonasport10[/B]     wide   </title>
+<link>$doregex[get-id]</link>
+<regex>
+<name>get-id</name>
+<expres>file:"(.*?)"</expres>
+<page>http://widestream.io/embed-7231</page>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+
+
+
+
+
+<item>
+<title>[B]Multicanal Zonasport11[/B]     247bay    </title>
+<link>http://$doregex[ip]$doregex[m3u8]</link>
+			<regex>
+			<name>ip</name>
+			<expres>redirect=(.*)</expres>
+			<page>http://www.publish247.xyz:1935/loadbalancer</page>
+			</regex>
+			<regex>
+			<name>m3u8</name>
+			<expres>ea \+ "(.*?)"</expres>
+			<page>http://www.247bay.tv/membedplayer/zonas1/2/750/420</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.247bay.tv</referer>
+			</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+<item>
+<title>[B]Multicanal Zonasport12[/B]    247bay    </title>
+<link>http://$doregex[ip]$doregex[m3u8]</link>
+			<regex>
+			<name>ip</name>
+			<expres>redirect=(.*)</expres>
+			<page>http://www.publish247.xyz:1935/loadbalancer</page>
+			</regex>
+			<regex>
+			<name>m3u8</name>
+			<expres>ea \+ "(.*?)"</expres>
+			<page>http://www.247bay.tv/membedplayer/zona11ad/2/750/420</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.247bay.tv</referer>
+			</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+
+
+
+
+
+
+
+<item>
+<title>[B]Multicanal Zonasport13[/B]         </title>
+<link>http://stream.zonasports.me/envivo/hls13/playlist.m3u8|Referer=http://gozonasports.me/channel.php?id=14&amp;User-Agent=iPad</link>
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+
+
+
+<item>
+<title>[B]Multicanal Zonasport14[/B]       </title>
+<link>http://live.zonasports.me/envivo/ch14/playlist.m3u8|Referer=http://gozonasports.me/channel.php?id=14&amp;User-Agent=iPad</link>
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>[B]Multicanal Futbol Andres[/B]     wide   </title>
+<link>$doregex[get-id]</link>
+<regex>
+<name>get-id</name>
+<expres>file:"(.*?)"</expres>
+<page>http://widestream.io/embed-7231</page>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+
+
+
+
+<item>
+<title>[B]Multicanal [/B]    MLB   </title>
+<link>$doregex[get-id]</link>
+<regex>
+<name>get-id</name>
+<expres>file:"(.*?)"</expres>
+<page>http://widestream.io/embed-14405</page>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+
+
+ <item>
+<title>[B]Multicanal Win Sports[/B]    Colombia      </title>
+<link>$doregex[get-id]|Referer=http://vercanalestv.com/tv/colombia/win-sports.html&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
+<regex>
+<name>get-id</name>
+<expres>source: '(.*?)'</expres>
+<page>http://vergol.com/live1/winsport.php</page>
+<referer>http://vercanalestv.com/tv/colombia/win-sports.html</referer>
+<agent>iPad</agent>
+</regex>
+
+ <thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+
+
+
+
+
+
+ <item>
+<title>[B]Multicanal TyC Sport HD[/B]    Argentina      </title>
+<link>https://cf98fa7b2ee4450e.mediapackage.us-east-1.amazonaws.com/out/v1/2bf9213f418f4445ad9bc3fd0454ddf2/index_1.m3u8</link>
+
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+
+
+ <item>
+<title>[B]Multicanal TyC Sport[/B]    Argentina      </title>
+<link>$doregex[GetPageUrl]|User-Agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+rv%3A11.0%29+like+Gecko</link>
+<regex>
+<name>GetPageUrl</name>
+<expres>videoUrl = '(.*?)'</expres>
+<page>http://livesports.pw/embed.php?file=tycsport&amp;width=650&amp;height=397</page>
+<agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+
+
+
+
+
+    <item>
+<title>[B]Multicanal WIZHD 10[I]  [/I][/B]</title>
+<link>$doregex[url]</link>
+<regex>
+<name>url</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import re,requests
+  headers = {'User-Agent': 'Mozilla/5.0 (X11 Linux i686 rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': 'http://schedule.racing/sevenembed.php?id=wiz10&p=0&c=0&stretching=uniform'}
+  url = '$doregex[url2]'
+  source = requests.get(url, headers=headers).text
+  data1 = re.findall('return\(\[([^\]]+)', source)[0]
+  data2 = re.findall('\+ ([^\.]+).join', source)[0]
+  data2 = re.findall(data2 + ' = \W(.+)\]', source)[0]
+  data1 = ''.join(data1).replace('"','').replace(',', '').replace(' ', '').replace('\/','/')
+  data2 = ''.join(data2).replace('"','').replace(',', '').replace(' ', '').replace('\/','/')
+  data3 = re.findall('getElementById\W"([^"]+)', source)[0]
+  data3 = re.findall(data3 + '\W*(.+?=*)\W', source)[0]
+  return data1 + data2 + data3
+]]></expres>
+<page></page>
+</regex>
+
+<regex>
+<name>url2</name>
+<expres><![CDATA[src="(.*?)"]]></expres>
+<page>http://schedule.racing/sevenembed.php?id=wiz10&amp;p=0&amp;c=0&amp;stretching=uniform</page>
+<referer>http://wizhdsports.is/live/stream10.html</referer>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <item>
+ <title>[B]Multicanal ESPN[/B]     </title>
+<link>$doregex[url]</link>
+ 
+ <regex>
+<name>url</name>
+<expres><![CDATA[file: '(.*?)']]></expres>
+<page>http://depo.superligatv.com/espn.php</page>
+</regex>
+ 
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+
+
+  <item>
+ <title>[B]Multicanal ESPN 2[/B]     </title>
+<link>$doregex[url]</link>
+ 
+ <regex>
+<name>url</name>
+<expres><![CDATA[file: '(.*?)']]></expres>
+<page>http://depo.superligatv.com/espn2.php</page>
+</regex>
+ 
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+  <item>
+ <title>[B]Multicanal ESPN 3[/B]     </title>
+<link>$doregex[url]</link>
+ 
+ <regex>
+<name>url</name>
+<expres><![CDATA[file: '(.*?)']]></expres>
+<page>http://depo.superligatv.com/espn3.php</page>
+</regex>
+ 
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+
+
+  <item>
+ <title>[B]Multicanal ESPN Deportes[/B]     </title>
+<link>$doregex[url]</link>
+ 
+ <regex>
+<name>url</name>
+<expres><![CDATA[source: '(.*?)']]></expres>
+<page>http://depo.superligatv.com/espndep.php</page>
+</regex>
+ 
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+
+
+
+
+  <item>
+ <title>[B]Multicanal Fox Sports[/B]     </title>
+<link>$doregex[url]</link>
+ 
+ <regex>
+<name>url</name>
+<expres><![CDATA[source: '(.*?)']]></expres>
+<page>http://depo.superligatv.com/foxsport.php</page>
+</regex>
+ 
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+  <item>
+ <title>[B]Multicanal Fox Sports 2[/B]     </title>
+<link>$doregex[url]</link>
+ 
+ <regex>
+<name>url</name>
+<expres><![CDATA[source: '(.*?)']]></expres>
+<page>http://depo.superligatv.com/foxsport2.php</page>
+</regex>
+ 
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+
+
+  <item>
+ <title>[B]Multicanal Fox Sports 3[/B]     </title>
+<link>$doregex[url]</link>
+ 
+ <regex>
+<name>url</name>
+<expres><![CDATA[source: '(.*?)']]></expres>
+<page>http://depo.superligatv.com/foxsport3.php</page>
+</regex>
+ 
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+
+
+
+
+
+
+
+
+
+
+  <!--item>
+ <title>[B]Multicanal Formula 1[/B]     </title>
+<link>$doregex[url]</link>
+ 
+ <regex>
+<name>url</name>
+<expres><![CDATA[file: '(.*?)']]></expres>
+<page>http://depo.superligatv.com/f1.php</page>
+</regex>
+ 
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+
+
+  <item>
+ <title>[B]Multicanal MLB HD[/B]     </title>
+<link>$doregex[url]</link>
+ 
+ <regex>
+<name>url</name>
+<expres><![CDATA[source: '(.*?)']]></expres>
+<page>http://depo.superligatv.com/mlbhd.php</page>
+</regex>
+ 
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+
+
+  <item>
+ <title>[B]Multicanal TDN[/B]     </title>
+<link>$doregex[url]|Referer=http://depo.superligatv.com/tdn.php</link>
+ 
+ <regex>
+<name>url</name>
+<expres><![CDATA[source: '(.*?)']]></expres>
+<page>http://depo.superligatv.com/tdn.php</page>
+</regex>
+ 
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+
+
+  <item>
+ <title>[B]Multicanal Univision TDN[/B]     </title>
+<link>$doregex[url]</link>
+ 
+ <regex>
+<name>url</name>
+<expres><![CDATA[source: '(.*?)']]></expres>
+<page>http://depo.superligatv.com/unitdn.php</page>
+</regex>
+ 
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+
+
+
+
+
+
+
+
+
+
+  <item>
+ <title>[B]Multicanal TVC Deportes[/B]     </title>
+<link>$doregex[url]</link>
+ 
+ <regex>
+<name>url</name>
+<expres><![CDATA[source: '(.*?)']]></expres>
+<page>http://depo.superligatv.com/tvcdep.php</page>
+</regex>
+ 
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+
+
+ 
+  <item>
+ <title>[B]Multicanal TVC Deportes 2[/B]     </title>
+<link>$doregex[url]</link>
+ 
+ <regex>
+<name>url</name>
+<expres><![CDATA[source: '(.*?)']]></expres>
+<page>http://depo.superligatv.com/tvcdep2.php</page>
+</regex>
+ 
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+
+
+
+
+
+
+
+
+
+  <item>
+ <title>[B]Multicanal Planeta[/B]     </title>
+<link>$doregex[url]</link>
+ 
+ <regex>
+<name>url</name>
+<expres><![CDATA[source: '(.*?)']]></expres>
+<page>http://depo.superligatv.com/planeta.php</page>
+</regex>
+ 
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+
+
+  <item>
+ <title>[B]Multicanal sky1[/B]     </title>
+<link>$doregex[url]</link>
+ 
+ <regex>
+<name>url</name>
+<expres><![CDATA[source: '(.*?)']]></expres>
+<page>http://depo.superligatv.com/sky1.php</page>
+</regex>
+ 
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+
+
+
+
+
+  <item>
+ <title>[B]Multicanal sky2[/B]     </title>
+<link>$doregex[url]</link>
+ 
+ <regex>
+<name>url</name>
+<expres><![CDATA[source: '(.*?)']]></expres>
+<page>http://depo.superligatv.com/sky2.php</page>
+</regex>
+ 
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+
+
+
+
+  <item>
+ <title>[B]Multicanal sky3[/B]     </title>
+<link>$doregex[url]</link>
+ 
+ <regex>
+<name>url</name>
+<expres><![CDATA[source: '(.*?)']]></expres>
+<page>http://depo.superligatv.com/sky3.php</page>
+</regex>
+ 
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+
+
+-->
+
+
+  <item>
+ <title>[B]Multicanal TVC Deportes[/B]   (sportsdevil requerido)  </title>
+<sportsdevil>http://shidurlive.com/embed/tvdepno</sportsdevil>
+<referer>http://depo.superligatv.com</referer>
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+
+
+  <item>
+ <title>[B]Multicanal unitdn[/B]   (sportsdevil requerido)  </title>
+<sportsdevil>http://shidurlive.com/embed/unitdnno</sportsdevil>
+<referer>http://depo.superligatv.com</referer>
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+
+
+<item>
+<title>[B]Multicanal Sky[/B]   (sportsdevil requerido)  </title>
+<sportsdevil>http://shidurlive.com/embed/sky</sportsdevil>
+<referer>http://depo.superligatv.com</referer>
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<item><title>                           </title><link>http://ignora.me</link><thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+	<item><title> [B]C A N A L E S  D E  E S P A Ñ A  [/B] </title><link>http://ignora.me</link><thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+
+
+   <item>
+ <title>[B]Multicanal MotoGP[/B]   (sportsdevil requerido)  </title>
+<sportsdevil>http://www.vipgoal.net/MovistarMotoGP/35597/Movistar-MotoGP-en-directo.html</sportsdevil>
+<referer>http://www.vipgoal.net</referer>
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+   <item>
+ <title>[B]Multicanal Formula 1[/B]   (sportsdevil requerido)  </title>
+<sportsdevil>http://www.vipgoal.net/MovistarF1/35596/Movistar-F1-en-directo.html</sportsdevil>
+<referer>http://www.vipgoal.net</referer>
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+
+
+
+
+  <item>
+ <title>[B]Multicanal LaLiga 123[/B]    multicanal 1     (sportsdevil requerido)  </title>
+<sportsdevil>http://cinestrenostv.tv/canales/envivo/laliga123multi1.html</sportsdevil>
+<referer>http://cinestrenostv.tv</referer>
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+
+
+
+  <item>
+ <title>[B]Multicanal LaLiga 123[/B]    multicanal 2     (sportsdevil requerido)  </title>
+<sportsdevil>http://cinestrenostv.tv/canales/envivo/laliga123multi2.html</sportsdevil>
+<referer>http://cinestrenostv.tv</referer>
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+
+
+  <item>
+ <title>[B]Multicanal LaLiga 123[/B]    multicanal 3     (sportsdevil requerido)  </title>
+<sportsdevil>http://cinestrenostv.tv/canales/envivo/laliga123multi3.html</sportsdevil>
+<referer>http://cinestrenostv.tv</referer>
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+
+   <item>
+ <title>[B]Multicanal LaLiga 123[/B]    multicanal 4     (sportsdevil requerido)  </title>
+<sportsdevil>http://cinestrenostv.tv/canales/envivo/laliga123multi4.html</sportsdevil>
+<referer>http://cinestrenostv.tv</referer>
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+
+
+
+
+
+
+
+
+
+server="www.zony.tv" pub="cdn.pubzony.com"
+
+12 channel='uttrfgr4' src='http://www.zony.tv
+16 channel='uredfcv' http://www.zony.tv/static/scripts/hzony.js'>
+14 channel='hgyytgfr4  src='http://www.ucasterplayer.com
+13 channel='iuhhy6' src='http://www.ezcast.tv
+
+
+
+
+
+<item>
+<title>[B]Multicanal ELGoles[/B]     12    </title>
+  <link>http://$doregex[ip]$doregex[m3u8]$doregex[hls]</link>
+			<regex>
+			<name>ip</name>
+			<expres>redirect=(.*)</expres>
+			<page>http://cdn.pubzony.com:1935/loadbalancer</page>
+			</regex>
+			<regex>
+			<name>m3u8</name>
+			<expres>ea \+ "(.*?)"</expres>
+			<page>http://www.zony.tv/membedplayer/$doregex[canal]/1/750/420</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.zony.tv</referer>
+			</regex>
+			<regex>
+			<name>hls</name>
+			<expres>hlsUrl \+ \(\"(.*?)"</expres>
+			<page>http://www.zony.tv/membedplayer/$doregex[canal]/1/500/400</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.zony.tv</referer>
+			</regex>
+			<regex>
+			<name>canal</name>
+			<expres>channel='(.*?)'</expres>
+			<page>$doregex[canal2]</page>
+			</regex>
+			<regex>
+			<name>canal2</name>
+			<expres>href="(.*?)">canal-12<</expres>
+			<page>http://elgoles.ru/</page>
+			</regex>
+
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+
+<item>
+<title>[B]Multicanal ELGoles[/B]     16    </title>
+  <link>http://$doregex[ip]$doregex[m3u8]$doregex[hls]</link>
+			<regex>
+			<name>ip</name>
+			<expres>redirect=(.*)</expres>
+			<page>http://cdn.pubzony.com:1935/loadbalancer</page>
+			</regex>
+			<regex>
+			<name>m3u8</name>
+			<expres>ea \+ "(.*?)"</expres>
+			<page>http://www.zony.tv/membedplayer/$doregex[canal]/1/750/420</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.zony.tv</referer>
+			</regex>
+			<regex>
+			<name>hls</name>
+			<expres>hlsUrl \+ \(\"(.*?)"</expres>
+			<page>http://www.zony.tv/membedplayer/$doregex[canal]/1/500/400</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.zony.tv</referer>
+			</regex>
+			<regex>
+			<name>canal</name>
+			<expres>channel='(.*?)'</expres>
+			<page>$doregex[canal2]</page>
+			</regex>
+			<regex>
+			<name>canal2</name>
+			<expres>href="(.*?)">canal-16<</expres>
+			<page>http://elgoles.ru/</page>
+			</regex>
+
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+
+
+<item>
+<title>[B]Multicanal ELGoles[/B]     13    </title>
+  <link>http://$doregex[ip]$doregex[m3u8]$doregex[hls]</link>
+			<regex>
+			<name>ip</name>
+			<expres>redirect=(.*)</expres>
+			<page>http://cdn.pubezcast.com:1935/loadbalancer</page>
+			</regex>
+			<regex>
+			<name>m3u8</name>
+			<expres>ea \+ "(.*?)"</expres>
+			<page>http://www.ezcast.tv/membedplayer/$doregex[canal]/1/750/420</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.zony.tv</referer>
+			</regex>
+			<regex>
+			<name>hls</name>
+			<expres>hlsUrl \+ \(\"(.*?)"</expres>
+			<page>http://www.ezcast.tv/membedplayer/$doregex[canal]/1/500/400</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.ezcast.tv</referer>
+			</regex>
+			<regex>
+			<name>canal</name>
+			<expres>channel='(.*?)'</expres>
+			<page>$doregex[canal2]</page>
+			</regex>
+			<regex>
+			<name>canal2</name>
+			<expres>href="(.*?)">canal-13<</expres>
+			<page>http://elgoles.ru/</page>
+			</regex>
+
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+
+
+
+<item>
+<title>[B]Multicanal ELGoles[/B]     14    </title>
+ <link>http://$doregex[ip]$doregex[m3u8]$doregex[hls]</link>
+			<regex>
+			<name>ip</name>
+			<expres>redirect=(.*)</expres>
+			<page>http://www.pubucaster.com:1935/loadbalancer</page>
+			</regex>
+			<regex>
+			<name>m3u8</name>
+			<expres>ea \+ "(.*?)"</expres>
+			<page>http://www.ucasterplayer.com/membedplayer/$doregex[canal]/1/720/430</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.ucasterplayer.com</referer>
+			</regex>
+			<regex>
+			<name>hls</name>
+			<expres>hlsUrl \+ \(\"(.*?)"</expres>
+			<page>http://www.ucasterplayer.com/membedplayer/$doregex[canal]/1/720/430</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.ucasterplayer.com</referer>
+			</regex>
+			<name>canal</name>
+			<expres>channel='(.*?)'</expres>
+			<page>$doregex[canal2]</page>
+			</regex>
+			<regex>
+			<name>canal2</name>
+			<expres>href="(.*?)">canal-14<</expres>
+			<page>http://elgoles.ru/</page>
+			</regex>
+
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>[B]Multicanal ELGoles[/B]     11    </title>
+<link>$doregex[bro.adca.st]</link>
+<regex>
+<name>bro.adca.st</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/23283.html'):
+ import requests, re, urllib
+ headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:52.0) Gecko/20100101 Firefox/52.0'}
+ headers['Referer'] = 'http://elgoles.ru/11-15/'
+ source = requests.get(url, headers=headers)
+ m3u8 = re.findall('tambor = "(.+?)"', source.text)[0]
+ tokenpage = re.findall('firme = "\/(.+?)"', source.text)[0]
+ headers['Referer'] = url
+ headers['X-Requested-With'] = 'XMLHttpRequest'
+ headers['Accept'] = 'application/json, text/javascript, */*; q=0.01'
+ headers['Accept-Language'] = 'en-US,en;q=0.5'
+ source = requests.get('http://bro.adca.st/%s'%tokenpage, headers=headers)
+ m3u8 = m3u8 + re.findall(':"(.+?)"', source.text)[0] + '|User-Agent=%s&Referer=http://bro.adca.st/&Origin=http://bro.adca.st'%headers['User-Agent']
+ return m3u8
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+
+
+
+
+
+
+
+<item>
+<title>[B]Multicanal ELGoles[/B]     15    </title>
+<link>$doregex[bro.adca.st]</link>
+<regex>
+<name>bro.adca.st</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/23166.html'):
+ import requests, re, urllib
+ headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:52.0) Gecko/20100101 Firefox/52.0'}
+ headers['Referer'] = 'http://elgoles.ru/canal-tx15/'
+ source = requests.get(url, headers=headers)
+ m3u8 = re.findall('tambor = "(.+?)"', source.text)[0]
+ tokenpage = re.findall('firme = "\/(.+?)"', source.text)[0]
+ headers['Referer'] = url
+ headers['X-Requested-With'] = 'XMLHttpRequest'
+ headers['Accept'] = 'application/json, text/javascript, */*; q=0.01'
+ headers['Accept-Language'] = 'en-US,en;q=0.5'
+ source = requests.get('http://bro.adca.st/%s'%tokenpage, headers=headers)
+ m3u8 = m3u8 + re.findall(':"(.+?)"', source.text)[0] + '|User-Agent=%s&Referer=http://bro.adca.st/&Origin=http://bro.adca.st'%headers['User-Agent']
+ return m3u8
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>[B]Multicanal[/B] Revo 01  [I] [/I]</title>
+
+<link>http://$doregex[ip]$doregex[m3u8]$doregex[hls]|User-Agent=iPad</link>
+			<regex>
+			<name>ip</name>
+			<expres>redirect=(.*)</expres>
+			<page>http://www.pubfstream.com:1935/loadbalancer</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.fstream.me</referer>
+			</regex>
+			<regex>
+			<name>m3u8</name>
+			<expres>ea \+ "(.*?)"</expres>
+			<page>http://www.fstream.me/sharedcdn/membedplayer/$doregex[canal]/1/700/400/$doregex[stream]</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.fstream.me</referer>
+			</regex>
+			<regex>
+			<name>hls</name>
+			<expres>hlsUrl \+ \(\"(.*?)"</expres>
+			<page>http://www.fstream.me/sharedcdn/membedplayer/$doregex[canal]/1/700/400/$doregex[stream]</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.fstream.me</referer>
+			</regex>
+		<regex>
+			<name>stream</name>
+			<expres>fid="(.*?)"</expres>
+			<page>http://www.fstream.me/sharedcdn/sharedcdnEmbed.js?channel=$doregex[canal]</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.fstream.me</referer>
+			</regex>
+			<regex>
+			<name>canal</name>
+			<expres>channel='(.*?)'</expres>
+			<page>http://revolucionariostv.eu/elitegol/Repros/c1.php</page>
+			</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+
+
+
+<item>
+<title>[B]Multicanal[/B] Revo 02  [I] bro [/I]</title>
+<link>$doregex[bro.adca.st]</link>
+<regex>
+<name>bro.adca.st</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/21616.html'):
+ import requests, re, urllib
+ headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:52.0) Gecko/20100101 Firefox/52.0'}
+ headers['Referer'] = 'http://revolucionariostv.eu/elitegol/Repros/c1.php'
+ source = requests.get(url, headers=headers)
+ m3u8 = re.findall('tambor = "(.+?)"', source.text)[0]
+ tokenpage = re.findall('firme = "\/(.+?)"', source.text)[0]
+ headers['Referer'] = url
+ headers['X-Requested-With'] = 'XMLHttpRequest'
+ headers['Accept'] = 'application/json, text/javascript, */*; q=0.01'
+ headers['Accept-Language'] = 'en-US,en;q=0.5'
+ source = requests.get('http://bro.adca.st/%s'%tokenpage, headers=headers)
+ m3u8 = m3u8 + re.findall(':"(.+?)"', source.text)[0] + '|User-Agent=%s&Referer=http://bro.adca.st/&Origin=http://bro.adca.st'%headers['User-Agent']
+ return m3u8
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+
+
+
+
+
+
+
+
+
+ <itm>
+<title>[B]Multicanal[/B] Revo 02  [I] letslive [/I]</title>
+  <link>http://$doregex[ip]$doregex[m3u8]|User-Agent=iPad</link>
+			<regex>
+			<name>ip</name>
+			<expres>redirect=(.*)</expres>
+			<page>http://www.publetslive.xyz:1935/loadbalancer</page>
+			<referer>http://www.letslive.tv/membedplayer/$doregex[canal]/1/750/480</referer>
+			</regex>
+			<regex>
+			<name>m3u8</name>
+			<expres>ea \+ \'(.*?)'</expres>
+			<page>http://www.letslive.tv/membedplayer/$doregex[canal]/1/750/480</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://nowwatchtvlive.cc/channel-tab-frame/nflnetwork-1.php</referer>
+			</regex>
+			<regex>
+			<name>canal</name>
+			<expres>channel='(.*?)'</expres>
+			<page>http://revolucionariostv.eu/elitegol/Repros/c2.php</page>
+			</regex>
+ <thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+
+
+
+
+
+<item>
+<title>[B]Multicanal[/B] TikiTaka 01 [I]   [/I]</title>
+ <link>http://$doregex[ip]$doregex[m3u8]$doregex[hls]</link>
+			<regex>
+			<name>ip</name>
+			<expres>redirect=(.*)</expres>
+			<page>http://www.pubucaster.com:1935/loadbalancer</page>
+			</regex>
+			<regex>
+			<name>m3u8</name>
+			<expres>ea \+ "(.*?)"</expres>
+			<page>http://www.ucasterplayer.com/membedplayer/locosporelfutbol099/1/720/430</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.ucasterplayer.com</referer>
+			</regex>
+			<regex>
+			<name>hls</name>
+			<expres>hlsUrl \+ \(\"(.*?)"</expres>
+			<page>http://www.ucasterplayer.com/membedplayer/locosporelfutbol099/1/720/430</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.ucasterplayer.com</referer>
+			</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail>
+</item>
+
+
+
+<item>
+<title>[B]Multicanal[/B] TikiTaka 02 [I]   [/I]</title>
+ <link>http://$doregex[ip]$doregex[m3u8]$doregex[hls]</link>
+			<regex>
+			<name>ip</name>
+			<expres>redirect=(.*)</expres>
+			<page>http://www.pubucaster.com:1935/loadbalancer</page>
+			</regex>
+			<regex>
+			<name>m3u8</name>
+			<expres>ea \+ "(.*?)"</expres>
+			<page>http://www.ucasterplayer.com/membedplayer/freddy49canal2/1/720/430</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.ucasterplayer.com</referer>
+			</regex>
+			<regex>
+			<name>hls</name>
+			<expres>hlsUrl \+ \(\"(.*?)"</expres>
+			<page>http://www.ucasterplayer.com/membedplayer/freddy49canal2/1/720/430</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.ucasterplayer.com</referer>
+			</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail>
+</item>
+
+
+
+
+
+
+
+
+<iem>
+<title>[B]Multicanal[/B] TikiTaka 01 [I]   [/I]</title>
+<link>$doregex[ip]</link>
+<regex>
+    <name>ip</name>
+    <expres>source: '(.*?)'</expres>
+    <page>http://www.srkcast.com/embed.php?player=4&amp;live=CANALVIP1&amp;vw=720&amp;vh=420</page>
+	<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+    <referer>http://lacasadeltikitaka.club/directo/canal1.php</referer>
+    </regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail>
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<im>
+<title>[B]Multicanal[/B] TikiTaka 01 [I]  updated 20/12[/I]</title>
+<link>$doregex[ip]</link>
+<regex>
+    <name>ip</name>
+    <expres>source: "(.*?)"</expres>
+    <page>http://abcast.net/embed3.php?file=lacasadeltikitaka</page>
+	<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+    <referer>http://lacasadeltikitaka.club/directo/canal1.php</referer>
+    </regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail>
+</item>
+
+
+
+
+
+
+
+
+<item>
+<title>[B]Multicanal[/B] Tiki01  [I] sportsdevil [/I]</title>
+<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://lacasadeltikitaka.club/directo/canal1.php</link>
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+
+<item>
+<title>[B]Multicanal[/B] Tiki02  [I] sportsdevil [/I]</title>
+<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://lacasadeltikitaka.club/directo/canal2.php</link>
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+
+
+
+
+<iem>
+<title>[B]Multicanal[/B] TikiTaka 02 [I] * [/I]</title>
+<link>http://$doregex[uno]$doregex[dos]|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:56.0) Gecko/20100101 Firefox/56.0&amp;Referer=http://privatestream.tv/player?streamname=maniacoshd</link>
+<regex>
+<name>uno</name>
+<expres>addr_part = '(.*?)'</expres>
+<page>http://privatestream.tv/player?streamname=maniacoshd</page>
+</regex>
+<regex>
+<name>dos</name>
+<expres>v_part_m = '(.*?)'</expres>
+<page>http://privatestream.tv/player?streamname=maniacoshd</page>
+</regex>
+
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <iem>
+<title>[B]Multicanal[/B] TikiTaka 02 [I]  [/I]</title>
+<link>http://$doregex[Igor_Rangel_IP]/loadbalance/63895542913919338661/playlist.m3u8$doregex[Igor_Rangel_AuthSign]|User-Agent=iPhone</link>
+<regex>
+<name>Igor_Rangel_IP</name>
+<expres>location:http://(.*)/loadbalance</expres>
+<page>$doregex[Igor_Rangel_Page]</page>
+<noredirect>true</noredirect>
+<includeheaders></includeheaders>
+</regex>
+<regex>
+<name>Igor_Rangel_AuthSign</name>
+<expres>m3u8(.*)</expres>
+<page>$doregex[Igor_Rangel_Page]</page>
+</regex>
+
+<regex>
+<name>Igor_Rangel_Page</name>
+<expres>"(.*m3u8.*?)"</expres>
+<page>http://pxstream.tv/embed/vtb3rb1wbx70/</page>
+<referer>http://lacasadeltikitaka.club</referer>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>[B]Multicanal[/B] VerLiga [I] PlusDeportes 1 [/I]</title>
+<link>$doregex[get-id]|Referer=http://www.verliga.net/live/verliga1.php&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
+<regex>
+<name>get-id</name>
+<expres>source: '(.*?)'</expres>
+<page>http://vergol.com/live1/plusdeportes1.php</page>
+<referer>http://www.verliga.net/live/verliga1.php</referer>
+<agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/esp.jpg</thumbnail></item>
+
+
+
+
+
+<item>
+<title>[B]Multicanal[/B] VerLiga 01[I]   [/I]</title>
+<link>$doregex[get-id]|Referer=http://www.verliga.net/live/verliga1.php&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
+<regex>
+<name>get-id</name>
+<expres>source: '(.*?)'</expres>
+<page>$doregex[get-url]</page>
+<referer>http://www.verliga.net/live/verliga1.php</referer>
+<agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
+</regex>
+<regex>
+<name>get-url</name>
+<expres>allowfullscreen\ssrc="(.*?)"</expres>
+<page>http://www.verliga.net/live/verliga1.php</page>
+<referer>http://www.verliga.net/verliga.html</referer>
+<agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
+</regex>
+
+<thumbnail>http://blackaddon.rf.gd/gray/img/esp.jpg</thumbnail></item>
+
+
+
+
+
+
+
+
+<item>
+<title>[B]Multicanal[/B] VerLiga 02[I]   [/I]</title>
+<link>$doregex[get-id]|Referer=http://www.verliga.net/live/verliga1.php&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
+<regex>
+<name>get-id</name>
+<expres>source: '(.*?)'</expres>
+<page>$doregex[get-url]</page>
+<referer>http://www.verliga.net/live/verliga2.php</referer>
+<agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
+</regex>
+<regex>
+<name>get-url</name>
+<expres>allowfullscreen\ssrc="(.*?)"</expres>
+<page>http://www.verliga.net/live/verliga2.php</page>
+<referer>http://www.verliga.net/verliga.html</referer>
+<agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
+</regex>
+
+<thumbnail>http://blackaddon.rf.gd/gray/img/esp.jpg</thumbnail></item>
+
+
+  <item>
+<title>[B]Multicanal[/B] VerLiga 03[I]   [/I]</title>
+<link>$doregex[get-id]|Referer=http://www.verliga.net/live/verliga1.php&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
+<regex>
+<name>get-id</name>
+<expres>source: '(.*?)'</expres>
+<page>$doregex[get-url]</page>
+<referer>http://www.verliga.net/live/verliga3.php</referer>
+<agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
+</regex>
+<regex>
+<name>get-url</name>
+<expres>allowfullscreen\ssrc="(.*?)"</expres>
+<page>http://www.verliga.net/live/verliga3.php</page>
+<referer>http://www.verliga.net/verliga.html</referer>
+<agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
+</regex>
+
+<thumbnail>http://blackaddon.rf.gd/gray/img/esp.jpg</thumbnail></item>
+
+
+
+
+  <item>
+<title>[B]Multicanal[/B] VerLiga 04[I]   [/I]</title>
+<link>$doregex[get-id]|Referer=http://www.verliga.net/live/verliga1.php&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
+<regex>
+<name>get-id</name>
+<expres>source: '(.*?)'</expres>
+<page>$doregex[get-url]</page>
+<referer>http://www.verliga.net/live/verliga4.php</referer>
+<agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
+</regex>
+<regex>
+<name>get-url</name>
+<expres>allowfullscreen\ssrc="(.*?)"</expres>
+<page>http://www.verliga.net/live/verliga4.php</page>
+<referer>http://www.verliga.net/verliga.html</referer>
+<agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
+</regex>
+
+<thumbnail>http://blackaddon.rf.gd/gray/img/esp.jpg</thumbnail></item>
+
+
+
+
+
+
+
+
+
+
+
+  <item>
+ <title>       </title>
+
+<link>$$LSPlayOnlyOne$$</link>
+
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item><title> TLT Venezuela: Venezuela Deportes</title><link>http://enc-fwt.lorini.net/telet/telet/index.m3u8|User-Agent=iPad</link><thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+   <item>
+<title> BetisTV  [I]    [/I]</title>
+<link>http://rbetis-hls.flumotion.com/rbetis/live/chunklist.m3u8</link>
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+
+<item>
+<title> Real Madrid TV</title>
+<link>http://rmtv24hweblive-lh.akamaihd.net/i/rmtv24hwebes_1@300661/master.m3u8</link>
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+
+<item>
+<title> Real Madrid TV</title>
+<link>http://rmtvlive-lh.akamaihd.net/i/rmtv_1@154306/index_1000_av-p.m3u8?</link>
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+
+
+
+
+
+<item>
+<title> TD TV  [I]    [/I]</title>
+<link>http://190.92.0.43:1935/securelive/tdtv85jd5EKL3xWq3/chunklist_w1241310319.m3u8</link>
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+
+
+
+	<itm>
+<title> fasldgusd  [I]    [/I]</title>
+<link>$$LSPlayOnlyOne$$</link>
+<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://soloveo.com/afox1.html</link>
+ <link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://soloveo.com/afox2.html</link>
+ <link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://soloveo.com/afox3.html</link>
+ <link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://soloveo.com/afox4.html</link>
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+
+
+<item>
+<title>MAMA HD1</title>
+<link>http://cdn.whostreams.net:8081/wsedge/$doregex[get-id1]/playlist.m3u8?wmsAuthSign=$doregex[get-id2]</link>
+<regex>
+<name>get-id2</name>
+<expres>logo\|\|(.*?)\|</expres>
+<page>http://whostreams.net/embed/$doregex[get-id1]</page>
+</regex>
+<regex>
+<name>get-id1</name>
+<expres>src=\"\/\/whostreams.net\/embed\/(.*?)"</expres>
+<page>http://sportsonline.pw/channels/hd/hd1.html</page>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+<item>
+<title>MAMA HD2</title>
+<link>http://cdn.whostreams.net:8081/wsedge/$doregex[get-id1]/playlist.m3u8?wmsAuthSign=$doregex[get-id2]</link>
+<regex>
+<name>get-id2</name>
+<expres>logo\|\|(.*?)\|</expres>
+<page>http://whostreams.net/embed/$doregex[get-id1]</page>
+</regex>
+<regex>
+<name>get-id1</name>
+<expres>src=\"\/\/whostreams.net\/embed\/(.*?)"</expres>
+<page>http://sportsonline.pw/channels/hd/hd2.html</page>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+<item>
+<title>MAMA HD3</title>
+<link>http://cdn.whostreams.net:8081/wsedge/$doregex[get-id1]/playlist.m3u8?wmsAuthSign=$doregex[get-id2]</link>
+<regex>
+<name>get-id2</name>
+<expres>logo\|\|(.*?)\|</expres>
+<page>http://whostreams.net/embed/$doregex[get-id1]</page>
+</regex>
+<regex>
+<name>get-id1</name>
+<expres>src=\"\/\/whostreams.net\/embed\/(.*?)"</expres>
+<page>http://sportsonline.pw/channels/hd/hd3.html</page>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+<item>
+<title>MAMA HD4</title>
+<link>http://cdn.whostreams.net:8081/wsedge/$doregex[get-id1]/playlist.m3u8?wmsAuthSign=$doregex[get-id2]</link>
+<regex>
+<name>get-id2</name>
+<expres>logo\|\|(.*?)\|</expres>
+<page>http://whostreams.net/embed/$doregex[get-id1]</page>
+</regex>
+<regex>
+<name>get-id1</name>
+<expres>src=\"\/\/whostreams.net\/embed\/(.*?)"</expres>
+<page>http://sportsonline.pw/channels/hd/hd4.html</page>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>NFL</title>
+<link>http://cdn.whostreams.net:8081/wsedge/$doregex[get-id1]/playlist.m3u8?wmsAuthSign=$doregex[get-id2]</link>
+<regex>
+<name>get-id2</name>
+<expres>logo\|\|(.*?)\|</expres>
+<page>http://whostreams.net/embed/$doregex[get-id1]</page>
+</regex>
+<regex>
+<name>get-id1</name>
+<expres>src=\"\/\/whostreams.net\/embed\/(.*?)"</expres>
+<page>http://sportsonline.pw/channels/hd/nfl.html</page>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+
+
+<item>
+<title>PT SportsTV 1</title>
+<link>http://cdn.whostreams.net:8081/wsedge/$doregex[get-id1]/playlist.m3u8?wmsAuthSign=$doregex[get-id2]</link>
+<regex>
+<name>get-id2</name>
+<expres>logo\|\|(.*?)\|</expres>
+<page>http://whostreams.net/embed/$doregex[get-id1]</page>
+</regex>
+<regex>
+<name>get-id1</name>
+<expres>src=\"\/\/whostreams.net\/embed\/(.*?)"</expres>
+<page>http://sportsonline.pw/channels/pt/sporttv1.html</page>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+<item>
+<title>PT SportsTV 2</title>
+<link>http://cdn.whostreams.net:8081/wsedge/$doregex[get-id1]/playlist.m3u8?wmsAuthSign=$doregex[get-id2]</link>
+<regex>
+<name>get-id2</name>
+<expres>logo\|\|(.*?)\|</expres>
+<page>http://whostreams.net/embed/$doregex[get-id1]</page>
+</regex>
+<regex>
+<name>get-id1</name>
+<expres>src=\"\/\/whostreams.net\/embed\/(.*?)"</expres>
+<page>http://sportsonline.pw/channels/pt/sporttv2.html</page>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+
+<item>
+<title>PT SportsTV 3</title>
+<link>http://cdn.whostreams.net:8081/wsedge/$doregex[get-id1]/playlist.m3u8?wmsAuthSign=$doregex[get-id2]</link>
+<regex>
+<name>get-id2</name>
+<expres>logo\|\|(.*?)\|</expres>
+<page>http://whostreams.net/embed/$doregex[get-id1]</page>
+</regex>
+<regex>
+<name>get-id1</name>
+<expres>src=\"\/\/whostreams.net\/embed\/(.*?)"</expres>
+<page>http://sportsonline.pw/channels/pt/sporttv3.html</page>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+
+
+<item>
+<title>PT SportsTV 4</title>
+<link>http://cdn.whostreams.net:8081/wsedge/$doregex[get-id1]/playlist.m3u8?wmsAuthSign=$doregex[get-id2]</link>
+<regex>
+<name>get-id2</name>
+<expres>logo\|\|(.*?)\|</expres>
+<page>http://whostreams.net/embed/$doregex[get-id1]</page>
+</regex>
+<regex>
+<name>get-id1</name>
+<expres>src=\"\/\/whostreams.net\/embed\/(.*?)"</expres>
+<page>http://sportsonline.pw/channels/pt/sporttv4.html</page>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+
+
+<item>
+<title>PT SportsTV 5</title>
+<link>http://cdn.whostreams.net:8081/wsedge/$doregex[get-id1]/playlist.m3u8?wmsAuthSign=$doregex[get-id2]</link>
+<regex>
+<name>get-id2</name>
+<expres>logo\|\|(.*?)\|</expres>
+<page>http://whostreams.net/embed/$doregex[get-id1]</page>
+</regex>
+<regex>
+<name>get-id1</name>
+<expres>src=\"\/\/whostreams.net\/embed\/(.*?)"</expres>
+<page>http://sportsonline.pw/channels/pt/sporttv5.html</page>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

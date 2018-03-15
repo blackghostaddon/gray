@@ -1,0 +1,527 @@
+
+<item>
+<title>[COLOR skyblue][B]Buscar [/B][/COLOR] [COLOR deepskyblue] [/COLOR][COLOR gray] [/COLOR] </title>
+
+<link>$doregex[makelist]</link>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+   	<item>
+	<title>[makelist.param3]</title>
+	<link>plugin://plugin.video.quasar/play?uri=magnet:?xt=urn:btih:$doregex[uno]&amp;tr=http%3A%2F%2Ftracker.trackerfix.com%3A80%2Fannounce</link>
+		 
+	<regex>
+    <name>uno</name>
+    <expres>btih:(.*?)&amp;dn</expres>
+    <page>https://rarbg.to[makelist.param2]</page>
+    <agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+    </regex>
+	<thumbnail>http://dyncdn.me/static/over/[makelist.param1].jpg</thumbnail>
+	</item>
+	]]></listrepeat>
+<expres>dyncdn.me/static/over/(.*?).jpg[\w\W\s]{0,42}href="(.*?)"\stitle="(.*?)"</expres>
+<page>https://rarbg.to/torrents.php?search=$doregex[search]&amp;order=seeders&amp;by=DESC</page>
+</regex>
+
+<regex>
+<name>search</name>
+<expres><![CDATA[#$pyFunction
+import xbmc
+import xbmcaddon
+import xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+    dialog = xbmcgui.Dialog()
+    d = dialog.input('Buscar Pelicula', type=xbmcgui.INPUT_ALPHANUM).replace(" ", "+")
+    return d
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+
+</item>	
+
+
+
+
+
+
+
+<item>
+<title>[COLOR skyblue][B]1080p [/B][/COLOR] [COLOR deepskyblue]HD [/COLOR][COLOR gray] +Popular[/COLOR] </title>
+<link>$doregex[makelist2]</link>
+
+
+<regex>
+   <name>makelist2</name>
+   <listrepeat><![CDATA[
+       <title>Page [makelist2.param1]</title>
+    
+    <link>$doregex[makelist]</link>
+
+<thumbnail></thumbnail>
+   ]]></listrepeat>
+   <expres><![CDATA[paginado:"(.*?)";]]></expres>
+   <page>http://adryanlist.org/adryan/kozm.txt</page>
+   <cookieJar></cookieJar>
+</regex>
+
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+   	<item>
+	<title>[makelist.param3]</title>
+	<link>plugin://plugin.video.quasar/play?uri=magnet:?xt=urn:btih:$doregex[uno]&amp;tr=http%3A%2F%2Ftracker.trackerfix.com%3A80%2Fannounce</link>
+		 
+	<regex>
+    <name>uno</name>
+    <expres>btih:(.*?)&amp;dn</expres>
+    <page>https://rarbg.to[makelist.param2]</page>
+    <referer>https://rarbg.to</referer>
+<agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36</agent>
+<cookieJar>$doregex[createCFCookie]</cookieJar>
+</regex>
+
+<regex>
+        <name>createCFCookie</name>
+        <expres></expres>
+        <page>$pyFunction:cloudflare.createCookie('https://rarbg.to',Cookie_Jar,'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36')</page>
+        <cookieJar></cookieJar>
+</regex>
+	<thumbnail>http://dyncdn.me/static/over/[makelist.param1].jpg</thumbnail>
+	</item>
+	]]></listrepeat>
+<expres>dyncdn.me/static/over/(.*?).jpg[\w\W\s]{0,42}href="(.*?)"\stitle="(.*?)"</expres>
+<page>https://rarbg.to/torrents.php?category=44&amp;search=&amp;order=seeders&amp;by=DESC&amp;page=[makelist2.param1]</page>
+<referer>https://rarbg.to</referer>
+<agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36</agent>
+<cookieJar>$doregex[createCFCookie]</cookieJar>
+</regex>
+
+<regex>
+        <name>createCFCookie</name>
+        <expres></expres>
+        <page>$pyFunction:cloudflare.createCookie('https://rarbg.to',Cookie_Jar,'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36')</page>
+        <cookieJar></cookieJar>
+</regex>
+</item>	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>[COLOR skyblue][B]1080p [/B][/COLOR] [COLOR deepskyblue]HD [/COLOR][COLOR gray] ultimos agregados[/COLOR] </title>
+<link>$doregex[makelist2]</link>
+
+
+<regex>
+   <name>makelist2</name>
+   <listrepeat><![CDATA[
+       <title>Page [makelist2.param1]</title>
+    
+    <link>$doregex[makelist]</link>
+
+<thumbnail></thumbnail>
+   ]]></listrepeat>
+   <expres><![CDATA[paginado:"(.*?)";]]></expres>
+   <page>http://adryanlist.org/adryan/kozm.txt</page>
+   <cookieJar></cookieJar>
+</regex>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+   	<item>
+	<title>[makelist.param3]</title>
+	<link>plugin://plugin.video.quasar/play?uri=magnet:?xt=urn:btih:$doregex[uno]&amp;tr=http%3A%2F%2Ftracker.trackerfix.com%3A80%2Fannounce</link>
+		 
+	<regex>
+    <name>uno</name>
+    <expres>btih:(.*?)&amp;dn</expres>
+    <page>https://rarbg.to[makelist.param2]</page>
+    <agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+    </regex>
+	<thumbnail>http://dyncdn.me/static/over/[makelist.param1].jpg</thumbnail>
+	</item>
+	]]></listrepeat>
+<expres>dyncdn.me/static/over/(.*?).jpg[\w\W\s]{0,42}href="(.*?)"\stitle="(.*?)"</expres>
+<page>https://rarbg.to/torrents.php?category=44&amp;search=&amp;order=data&amp;by=DESC&amp;page=[makelist2.param1]</page>
+<referer>https://rarbg.to</referer>
+<agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36</agent>
+<cookieJar>$doregex[createCFCookie]</cookieJar>
+</regex>
+
+<regex>
+        <name>createCFCookie</name>
+        <expres></expres>
+        <page>$pyFunction:cloudflare.createCookie('https://rarbg.to',Cookie_Jar,'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36')</page>
+        <cookieJar></cookieJar>
+</regex>
+</item>	
+
+
+
+
+
+
+
+<item>
+<title>[COLOR skyblue][B]720p [/B][/COLOR] [COLOR deepskyblue]HD [/COLOR][COLOR gray] Populares[/COLOR] </title>
+<link>$doregex[makelist2]</link>
+
+
+<regex>
+   <name>makelist2</name>
+   <listrepeat><![CDATA[
+       <title>Page [makelist2.param1]</title>
+    
+    <link>$doregex[makelist]</link>
+
+<thumbnail></thumbnail>
+   ]]></listrepeat>
+   <expres><![CDATA[paginado:"(.*?)";]]></expres>
+   <page>http://adryanlist.org/adryan/kozm.txt</page>
+   <cookieJar></cookieJar>
+</regex>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+   	<item>
+	<title>[makelist.param3]</title>
+	<link>plugin://plugin.video.quasar/play?uri=magnet:?xt=urn:btih:$doregex[uno]&amp;tr=http%3A%2F%2Ftracker.trackerfix.com%3A80%2Fannounce</link>
+		 
+	<regex>
+    <name>uno</name>
+    <expres>btih:(.*?)&amp;dn</expres>
+    <page>https://rarbg.to[makelist.param2]</page>
+    <agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+    </regex>
+	<thumbnail>http://dyncdn.me/static/over/[makelist.param1].jpg</thumbnail>
+	</item>
+	]]></listrepeat>
+<expres>dyncdn.me/static/over/(.*?).jpg[\w\W\s]{0,42}href="(.*?)"\stitle="(.*?)"</expres>
+<page>https://rarbg.to/torrents.php?category=48;45&amp;search=&amp;order=seeders&amp;by=DESC&amp;page=[makelist2.param1]</page>
+<referer>https://rarbg.to</referer>
+<agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36</agent>
+<cookieJar>$doregex[createCFCookie]</cookieJar>
+</regex>
+
+<regex>
+        <name>createCFCookie</name>
+        <expres></expres>
+        <page>$pyFunction:cloudflare.createCookie('https://rarbg.to',Cookie_Jar,'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36')</page>
+        <cookieJar></cookieJar>
+</regex>
+</item>	
+
+
+<item>
+<title>[COLOR skyblue][B]720p [/B][/COLOR] [COLOR deepskyblue]HD [/COLOR][COLOR gray] Mas Recientes[/COLOR] </title>
+<link>$doregex[makelist2]</link>
+
+
+<regex>
+   <name>makelist2</name>
+   <listrepeat><![CDATA[
+       <title>Page [makelist2.param1]</title>
+    
+    <link>$doregex[makelist]</link>
+
+<thumbnail></thumbnail>
+   ]]></listrepeat>
+   <expres><![CDATA[paginado:"(.*?)";]]></expres>
+   <page>http://adryanlist.org/adryan/kozm.txt</page>
+   <cookieJar></cookieJar>
+</regex>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+   	<item>
+	<title>[makelist.param3]</title>
+	<link>plugin://plugin.video.quasar/play?uri=magnet:?xt=urn:btih:$doregex[uno]&amp;tr=http%3A%2F%2Ftracker.trackerfix.com%3A80%2Fannounce</link>
+		 
+	<regex>
+    <name>uno</name>
+    <expres>btih:(.*?)&amp;dn</expres>
+    <page>https://rarbg.to[makelist.param2]</page>
+    <agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+    </regex>
+	<thumbnail>http://dyncdn.me/static/over/[makelist.param1].jpg</thumbnail>
+	</item>
+	]]></listrepeat>
+<expres>dyncdn.me/static/over/(.*?).jpg[\w\W\s]{0,42}href="(.*?)"\stitle="(.*?)"</expres>
+<page>https://rarbg.to/torrents.php?category=48;45&amp;search=&amp;order=data&amp;by=DESC&amp;page=[makelist2.param1]</page>
+<referer>https://rarbg.to</referer>
+<agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36</agent>
+<cookieJar>$doregex[createCFCookie]</cookieJar>
+</regex>
+
+<regex>
+        <name>createCFCookie</name>
+        <expres></expres>
+        <page>$pyFunction:cloudflare.createCookie('https://rarbg.to',Cookie_Jar,'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36')</page>
+        <cookieJar></cookieJar>
+</regex>
+</item>	
+
+
+<item>
+<title>[COLOR skyblue][B]3D [/B][/COLOR] [COLOR deepskyblue] [/COLOR][COLOR gray][/COLOR] </title>
+<link>$doregex[makelist2]</link>
+
+
+<regex>
+   <name>makelist2</name>
+   <listrepeat><![CDATA[
+       <title>Page [makelist2.param1]</title>
+    
+    <link>$doregex[makelist]</link>
+
+<thumbnail></thumbnail>
+   ]]></listrepeat>
+   <expres><![CDATA[paginado:"(.*?)";]]></expres>
+   <page>http://adryanlist.org/adryan/kozm.txt</page>
+   <cookieJar></cookieJar>
+</regex>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+   	<item>
+	<title>[makelist.param3]</title>
+	<link>plugin://plugin.video.quasar/play?uri=magnet:?xt=urn:btih:$doregex[uno]&amp;tr=http%3A%2F%2Ftracker.trackerfix.com%3A80%2Fannounce</link>
+		 
+	<regex>
+    <name>uno</name>
+    <expres>btih:(.*?)&amp;dn</expres>
+    <page>https://rarbg.to[makelist.param2]</page>
+    <agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+    </regex>
+	<thumbnail>http://dyncdn.me/static/over/[makelist.param1].jpg</thumbnail>
+	</item>
+	]]></listrepeat>
+<expres>dyncdn.me/static/over/(.*?).jpg[\w\W\s]{0,42}href="(.*?)"\stitle="(.*?)"</expres>
+<page>https://rarbg.to/torrents.php?category=47&amp;search=&amp;order=seeders&amp;by=DESC&amp;page=[makelist2.param1]</page>
+<referer>https://rarbg.to</referer>
+<agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36</agent>
+<cookieJar>$doregex[createCFCookie]</cookieJar>
+</regex>
+
+<regex>
+        <name>createCFCookie</name>
+        <expres></expres>
+        <page>$pyFunction:cloudflare.createCookie('https://rarbg.to',Cookie_Jar,'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36')</page>
+        <cookieJar></cookieJar>
+</regex>
+</item>	
+
+
+
+<item>
+<title>[COLOR skyblue][B]DVDRip • WebRip • HDRip • BDRip [/B][/COLOR] [COLOR deepskyblue][SD][/COLOR][COLOR gray] Populares[/COLOR] </title>
+<link>$doregex[makelist2]</link>
+
+
+<regex>
+   <name>makelist2</name>
+   <listrepeat><![CDATA[
+       <title>Page [makelist2.param1]</title>
+    
+    <link>$doregex[makelist]</link>
+
+<thumbnail></thumbnail>
+   ]]></listrepeat>
+   <expres><![CDATA[paginado:"(.*?)";]]></expres>
+   <page>http://adryanlist.org/adryan/kozm.txt</page>
+   <cookieJar></cookieJar>
+</regex>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+   	<item>
+	<title>[makelist.param3]</title>
+	<link>plugin://plugin.video.quasar/play?uri=magnet:?xt=urn:btih:$doregex[uno]&amp;tr=http%3A%2F%2Ftracker.trackerfix.com%3A80%2Fannounce</link>
+		 
+	<regex>
+    <name>uno</name>
+    <expres>btih:(.*?)&amp;dn</expres>
+    <page>https://rarbg.to[makelist.param2]</page>
+    <agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+    </regex>
+	<thumbnail>http://dyncdn.me/static/over/[makelist.param1].jpg</thumbnail>
+	</item>
+	]]></listrepeat>
+<expres>dyncdn.me/static/over/(.*?).jpg[\w\W\s]{0,42}href="(.*?)"\stitle="(.*?)"</expres>
+<page>https://rarbg.to/torrents.php?category=14;17&amp;search=&amp;order=seeders&amp;by=DESC</page>
+<referer>https://rarbg.to</referer>
+<agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36</agent>
+<cookieJar>$doregex[createCFCookie]</cookieJar>
+</regex>
+
+<regex>
+        <name>createCFCookie</name>
+        <expres></expres>
+        <page>$pyFunction:cloudflare.createCookie('https://rarbg.to',Cookie_Jar,'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36')</page>
+        <cookieJar></cookieJar>
+</regex>
+</item>	
+
+
+
+<item>
+<title>[COLOR skyblue][B]DVDRip • WebRip • HDRip • BDRip [/B][/COLOR] [COLOR deepskyblue][SD][/COLOR][COLOR gray] ultimas agregadas[/COLOR] </title>
+<link>$doregex[makelist2]</link>
+
+
+<regex>
+   <name>makelist2</name>
+   <listrepeat><![CDATA[
+       <title>Page [makelist2.param1]</title>
+    
+    <link>$doregex[makelist]</link>
+
+<thumbnail></thumbnail>
+   ]]></listrepeat>
+   <expres><![CDATA[paginado:"(.*?)";]]></expres>
+   <page>http://adryanlist.org/adryan/kozm.txt</page>
+   <cookieJar></cookieJar>
+</regex>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+   	<item>
+	<title>[makelist.param3]</title>
+	<link>plugin://plugin.video.quasar/play?uri=magnet:?xt=urn:btih:$doregex[uno]&amp;tr=http%3A%2F%2Ftracker.trackerfix.com%3A80%2Fannounce</link>
+		 
+	<regex>
+    <name>uno</name>
+    <expres>btih:(.*?)&amp;dn</expres>
+    <page>https://rarbg.to[makelist.param2]</page>
+    <agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+    </regex>
+	<thumbnail>http://dyncdn.me/static/over/[makelist.param1].jpg</thumbnail>
+	</item>
+	]]></listrepeat>
+<expres>dyncdn.me/static/over/(.*?).jpg[\w\W\s]{0,42}href="(.*?)"\stitle="(.*?)"</expres>
+<page>https://rarbg.to/torrents.php?category=14;17&amp;search=&amp;order=data&amp;by=DESC&amp;page=[makelist2.param1]</page>
+<referer>https://rarbg.to</referer>
+<agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36</agent>
+<cookieJar>$doregex[createCFCookie]</cookieJar>
+</regex>
+
+<regex>
+        <name>createCFCookie</name>
+        <expres></expres>
+        <page>$pyFunction:cloudflare.createCookie('https://rarbg.to',Cookie_Jar,'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36')</page>
+        <cookieJar></cookieJar>
+</regex>
+</item>	
+
+
+
+<item>
+<title>[COLOR skyblue][B]SERIES [/B][/COLOR] [COLOR deepskyblue][SD][/COLOR][COLOR gray]Populares[/COLOR] </title>
+<link>$doregex[makelist2]</link>
+
+
+<regex>
+   <name>makelist2</name>
+   <listrepeat><![CDATA[
+       <title>Page [makelist2.param1]</title>
+    
+    <link>$doregex[makelist]</link>
+
+<thumbnail></thumbnail>
+   ]]></listrepeat>
+   <expres><![CDATA[paginado:"(.*?)";]]></expres>
+   <page>http://adryanlist.org/adryan/kozm.txt</page>
+   <cookieJar></cookieJar>
+</regex>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+   	<item>
+	<title>[makelist.param2]</title>
+	<link>plugin://plugin.video.quasar/play?uri=magnet:?xt=urn:btih:$doregex[uno]&amp;tr=http%3A%2F%2Ftracker.trackerfix.com%3A80%2Fannounce</link>
+		 
+	<regex>
+    <name>uno</name>
+    <expres>btih:(.*?)&amp;dn</expres>
+    <page>https://rarbg.to[makelist.param1]</page>
+    <agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+    </regex>
+	<thumbnail>http://dyncdn.me/static/over/[makelist.param1].jpg</thumbnail>
+	</item>
+	]]></listrepeat>
+<expres>onmouseout[\w\W\s]{0,16}href="(.*?)"[\w\W\s]{0,2}title="(.*?)"</expres>
+<page>https://rarbg.to/torrents.php?category=1;18;41&amp;search=&amp;order=seeders&amp;by=DESC&amp;page=[makelist2.param1]</page>
+<referer>https://rarbg.to</referer>
+<agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36</agent>
+<cookieJar>$doregex[createCFCookie]</cookieJar>
+</regex>
+
+<regex>
+        <name>createCFCookie</name>
+        <expres></expres>
+        <page>$pyFunction:cloudflare.createCookie('https://rarbg.to',Cookie_Jar,'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36')</page>
+        <cookieJar></cookieJar>
+</regex>
+</item>	
+
+<item>
+<title>[COLOR skyblue][B]SERIES [/B][/COLOR] [COLOR deepskyblue][SD][/COLOR][COLOR gray]Mas recientes[/COLOR] </title>
+<link>$doregex[makelist2]</link>
+
+
+<regex>
+   <name>makelist2</name>
+   <listrepeat><![CDATA[
+       <title>Page [makelist2.param1]</title>
+    
+    <link>$doregex[makelist]</link>
+
+<thumbnail></thumbnail>
+   ]]></listrepeat>
+   <expres><![CDATA[paginado:"(.*?)";]]></expres>
+   <page>http://adryanlist.org/adryan/kozm.txt</page>
+   <cookieJar></cookieJar>
+</regex>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+   	<item>
+	<title>[makelist.param2]</title>
+	<link>plugin://plugin.video.quasar/play?uri=magnet:?xt=urn:btih:$doregex[uno]&amp;tr=http%3A%2F%2Ftracker.trackerfix.com%3A80%2Fannounce</link>
+		 
+	<regex>
+    <name>uno</name>
+    <expres>btih:(.*?)&amp;dn</expres>
+    <page>https://rarbg.to[makelist.param1]</page>
+    <agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+    </regex>
+	<thumbnail>http://dyncdn.me/static/over/[makelist.param1].jpg</thumbnail>
+	</item>
+	]]></listrepeat>
+<expres>onmouseout[\w\W\s]{0,16}href="(.*?)"[\w\W\s]{0,2}title="(.*?)"</expres>
+<page>https://rarbg.to/torrents.php?category=1;18;41&amp;page=[makelist2.param1]</page>
+<referer>https://rarbg.to</referer>
+<agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36</agent>
+<cookieJar>$doregex[createCFCookie]</cookieJar>
+</regex>
+
+<regex>
+        <name>createCFCookie</name>
+        <expres></expres>
+        <page>$pyFunction:cloudflare.createCookie('https://rarbg.to',Cookie_Jar,'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36')</page>
+        <cookieJar></cookieJar>
+</regex>
+</item>	

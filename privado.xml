@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<channels>
+    <channels_info> <!-- this is opitonal -->
+      <title>Adryan list</title> <!-- if channels_info, a title is required, other elements are optional -->
+      <genre>Television</genre>
+      <description>Lista de Canales de Adrian  </description>
+       <thumbnail>http://adryanlist.solforo.com/18.png</thumbnail><fanart>http://adryanlist.solforo.com/fondo.png</fanart>
+      <date>17.11.2014</date>
+      <credits>adryan@mail.com</credits>
+    </channels_info>
+	
+	
+	
+	
+	
+      <channel>
+    <name>Canales Solo Para +18</name>
+    <thumbnail>http://adryanlist.solforo.com/18.png</thumbnail>
+    <fanart>http://adryanlist.solforo.com/fondo.png</fanart>
+        <items>
+                
+			<item><title>[COLOR=green]-----[/COLOR][COLOR=orange] PRIVADO +18[/COLOR][COLOR=green]-----[/COLOR]</title><link>http://about.me/adryan</link></item>
+			
+			
+
+			<item><title>Private</title>
+			<link>http://185.38.12.20:8088/private/</link></item>
+
+			
+
+
+<item><title>Russian night</title>
+			<link>http://185.38.12.20:8088/rusnoch/
+Brasileirinhas,http://212.129.30.215/brasileirinhas/brasileirinhas/chunklist_w219953667.m3u8</link></item> 
+			
+			
+
+
+<item><title>OLALA</title>
+			<link>http://hlsstr04.svc.iptv.rt.ru/hls/CH_OLALA/variant.m3u8?version=2</link></item> 
+
+
+
+
+<item><title>BLUE HUSTLER</title>
+			<link>http://hlsstr04.svc.iptv.rt.ru/hls/CH_BLUEHUSTLER/variant.m3u8?version=2</link></item> 
+
+
+
+<item><title>BABES SPORTING</title>
+			<link>http://46.249.213.93/iPhone/broadcast/babespotting-tablet.3gp/babespotting-tablet.3gp-mr397k.m3u8</link></item> 		
+
+
+<item><title>HOT SHOTS</title>
+			<link>http://46.249.213.93/iPhone/HLS_TS/broadcast/hotshots-tablet.3gp/hotshots-tablet.3gp-mr649k.m3u8</link></item> 		
+
+
+
+<item><title>XXL</title>
+			<link>http://hlsstr01.svc.iptv.rt.ru/hls/CH_XXL/variant.m3u8?version=2</link></item> 
+
+
+
+
+<item><title>PLAYBOY</title>
+			<link>http://iptv4.zargacum.net/iptv/8KRZ8Q8AMD/527/index.m3u8</link></item> 
+
+
+
+
+<item><title>Power Girls TV HD</title>
+			<link>http://46.249.213.93/iPhone/broadcast/powergirls-tablet.3gp/powergirls-tablet.3gp-mr648k.m3u8</link></item> 
+
+
+
+
+<item><title>ILive</title>
+			<link>http://46.105.116.159:1935/iptv_cellcast_24/livestream1/player.m3u8</link></item> 
+
+
+
+
+<item><title>Jasmin</title>
+			<link>rtmp://109.71.162.112:1935/live/sd.jasminchannel.stream</link></item> 
+
+
+
+
+<item><title>Babestation</title>
+			<link>http://46.105.116.159:1935/cellcast/encoder22/.m3u8</link></item> 
+
+
+
+
+<item><title>Babestation Xtra</title>
+			<link>http://46.105.116.159:1935/cellcast/encoder72/.m3u8</link></item> 
+
+
+
+
+<item><title>Babestation Blue</title>
+			<link>http://178.33.126.213:1935/cellcast/encoder32/.m3u8</link></item>
+
+
+
+
+<item><title>Babestation Unleashed</title>
+			<link>http://46.105.116.159:1935/iptv_cellcast_24/livestream_three2/.m3u8</link></item>
+
+
+
+
+<item><title>Babestation Unleashed2</title>
+			<link>http://178.33.126.213:1935/iptv_cellcast_24/livestream_two2/.m3u8</link></item>
+
+
+
+
+<item><title>Babestation Live Sex Latinas</title>
+			<link>http://178.33.126.213:1935/leved/livesexlatinas/.m3u8</link></item>
+
+
+
+<item><title>vodlive 1</title>
+			<link>http://cdn5.iviplanet.com:1935/VODLive1/_definst_/smil:vodlive1.smil/chunklist_w1867210502_b1300000.m3u8</link></item>
+
+
+
+<item><title>vodlive 2</title>
+			<link>http://cdn5.iviplanet.com:1935/VODLive2/_definst_/smil:vodlive2.smil/chunklist_w1354878964_b1300000.m3u8</link></item>
+
+
+
+<item><title>vodlive 3</title>
+			<link>http://cdn5.iviplanet.com:1935/VODLive3/_definst_/smil:vodlive3.smil/chunklist_w1633630483_b1200000.m3u8</link></item>
+
+
+
+
+<item><title>vodlive 4</title>
+			<link>http://cdn5.iviplanet.com:1935/VODLive4/_definst_/smil:vodlive4.smil/chunklist_w1686320855_b1200000.m3u8</link></item>
+
+
+</items>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			</channel>
+	
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	</channels>
+    
+  

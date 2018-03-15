@@ -1,0 +1,4747 @@
+
+ 
+ 
+ 
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/1p8t4ImKlG1R'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/j38QfMHw3GSqfC3UElC427ETg3N.jpg</thumbnail> 
+<fanart>https://image.tmdb.org/t/p/original/gUwgZP3cG1PSooe2kKmeU7RfLDn.jpg</fanart>
+<info>
+"espués de que el FBI recibe una amenaza que pone en peligro a toda la ciudad, un interrogador (Copeland) y un I.T. especialista (Perry) se sumergió en una serie de juegos de la mente con una mente criminal, compitiendo desesperadamente contra el tiempo para descubrir la verdadera agenda del villano en su lucha por proteger a miles de vidas. Copeland y Perry entregan un golpe de gracia en este thriller electrizante que crepita con suspenso al filo de su asiento.
+
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]Interrogation [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/0X1FVgmomd85'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/gca2PXL0Mmuy0bCSoc68LeU42LO.jpg</thumbnail> 
+<fanart>https://image.tmdb.org/t/p/original/gca2PXL0Mmuy0bCSoc68LeU42LO.jpg</fanart>
+<info>
+"Captain Underpants: The First Epic Movie","genre_ids":[35,16,10751,28],"backdrop_path":"\/3MSrtN9M6V8te4XYWeaO2x8EesO.jpg","adult":false,"overview":"George y Harold son dos niños de primaria a los que les encantan los cómics y se dedican a pintar y dibujar historietas cuyo personaje central es el 'Capitán Calzoncillos'. Un día, de manera accidental, hipnotizan al director de su escuela, provocando su transformación en el mismo Capitán Calzoncillos de sus alocados tebeos. Cada vez que alguien chasquea los dedos, el Sr. Krupp se convierte en este superhéroe, que debe sus poderes a sus turbocalzones. Para volver a ser el Sr. Krupp, basta con que se le eche agua por encima.
+
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]Capitan Calzoncillos Su Primer Peliculon[/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/u1r7wB8R0eUs'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/aJAjH8JOB8FDVHwJINYsOt8VT73.jpg</thumbnail> 
+<fanart>https://image.tmdb.org/t/p/original/lpbYLjwxuEdVQrqLnAuujBR4vZs.jpg</fanart>
+<info>
+Un fin de semana en la vida de cinco jóvenes adinerados, cuya característica común es la apatía y los excesos, se ve interrumpido por la aparición momentánea de la violencia nacional y la muerte accidental de uno de sus integrantes
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]Los Muertos [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/Flm7GiwHecm3'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/j9D07xEvszh4YXWwJZFYkBIOCNp.jpg</thumbnail> 
+<fanart>https://image.tmdb.org/t/p/original/j9D07xEvszh4YXWwJZFYkBIOCNp.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]Max 2 El Heroe De La Casa Blanca[/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/0253ScKVaU1V'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/sDlafquO1IvypRLbNdcC4b3oSoa.jpg</thumbnail> 
+<fanart>https://image.tmdb.org/t/p/original/sDlafquO1IvypRLbNdcC4b3oSoa.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]Premonicion[/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/d24Y4cD08420'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/5GUrTeOyHELrf7TjcR0okAFpeSw.jpg</thumbnail> 
+<fanart>https://image.tmdb.org/t/p/original/22eFfWlar6MtXO5qG25TkjLphoj.jpg</fanart>
+<info>
+Knights of the Roundtable nos introduce a un joven Arturo callejero que dirige a su pandilla por los callejones de Londonium. Tras sacar la espada de Excalibur, se verá obligado a tomar algunas duras decisiones. Junto a una misteriosa mujer llamada Guinevere, deberá aprender a manejar la espada, vencer a sus demonios y unir al pueblo para derrotar al tirano Vortigern, quien robó su corona y asesinó a sus padres antes de convertirse en rey. (FILMAFFINITY
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]Rey Arturo La leyenda De Excalibur[/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/M3JA0vjiq007'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/wQNPewYaVr1BtEeJRAT26cRGSXu.jpg</thumbnail> 
+<fanart>https://image.tmdb.org/t/p/original/wQNPewYaVr1BtEeJRAT26cRGSXu.jpg</fanart>
+<info>
+Soldado Argentino solo conocido por Dios","genre_ids":[],"backdrop_path":"\/aETxrLWLQ7xJRk4MGRHMTVdNKbi.jpg","adult":false,"overview":"Soldado Argentino sólo conocido por Dios es un largometraje de ficción bélico, centrado en el drama humano de tres jóvenes de un pequeño pueblo de Traslasierra, Córdoba, quienes desde lugares ideológicos muy distintos, se ven transformados para siempre por la Guerra de Malvinas.
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]Soldado Argentino Solo Conocido Por Dios [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://streamango.com/f/oclapmbnmtdnkdac/LEGO_DC_Superhero_Girls_Trampa_Mental_Bluray_Rip_Ac3_2_0_Espa_ol_Latino_2017_avi'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>http://www.newpct.com/imgBank/d/94192_-1501058802-lego-dc-superhero-girls-trampa-mental-blurayrip.jpg</thumbnail> 
+<fanart>http://www.newpct.com/imgBank/d/94192_-1501058802-lego-dc-superhero-girls-trampa-mental-blurayrip.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]LEGO DC Superhero Girls Trampa Mental[/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://streamango.com/f/molqktpotdapbsap/LORD_Legend_of_Ravaging_Dynastie_Bluray_Rip_Ac3_2_0_Espa_ol_Latino_2017_avi'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/qVGUC1DuCMUF9s8z7h7Wy74LKLv.jpg</thumbnail> 
+<fanart>https://image.tmdb.org/t/p/original/lKilKeX1rlIhRcY4xQPP4bmuct9.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]LORD Legend of Ravaging Dynastie [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/ITu6neWc18F5'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/vg11iLI2cyluDO48Zc8CzXzNV9t.jpg</thumbnail> 
+<fanart>https://image.tmdb.org/t/p/original/hWblkxAPZ0SjCO9YV9UWO1RQH65.jpg</fanart>
+<info>
+La historia gira en torno a Olivia y Matthew Grey, gemelos de 18 años de edad, nacidos en un mundo de privilegios y altas expectativas. Casi no hay límites entre ellos, incluso sus sueños están conectados. Los gemelos se preparan para su último año de instituto juntos, pero una tragedia inesperada los separa…
+
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]Feed[/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+ 
+ 
+ 
+ 
+ 
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/hIk110ev3p62'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>http://www.newpct.com/imgBank/d/94046_-1500713913-tres-idiotas-blurayrip.jpg</thumbnail> 
+<fanart>http://www.newpct.com/imgBank/d/94046_-1500713913-tres-idiotas-blurayrip.jpg</fanart>
+<info>
+
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]Tres Idiotas[/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/86VMYO7GfC4e'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/sPGza1quER8EDclD4gQ56V0wjen.jpg</thumbnail> 
+<fanart>https://image.tmdb.org/t/p/original/sPGza1quER8EDclD4gQ56V0wjen.jpg</fanart>
+<info>Stacey, una joven que vive en una urbanización de los suburbios con sus padres y su hermana Emma, verá cómo su vida cambia por completo cuando un virus letal comienza a extenderse por el vecindario en una ciudad que se declara en cuarentena.
+
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]Viral [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+     
+ 
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'http://uptobox.com/53budwktq68c'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/bPcuzfmOCR7OoxCPHX6mYI29F9V.jpg</thumbnail> 
+<fanart>https://image.tmdb.org/t/p/original/iAwIkeh8YaRvelFRtmc9VOw1X6x.jpg</fanart>
+<info>
+Scooby Doo! y sus amigos Fred, Daphne, Velma y Shaggy no son ajenos a la solución de misterios espeluznantes llenos de todo tipo de espíritus y duendes. Esta vez no es diferente. Como Scooby-Doo! y sus amigos están de camino a Blowout Beach para una verdadera fiesta en la playa en la Mystery Machine, Los Piratas Fantasmas amenazan con arruinar las buenas vibraciones de la banda. Scooby y la pandilla tienen la tarea de hacer que la fiesta vuelva a la pista, sin perder el ritmo.
+
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]Lego Scooby-Doo! Fiesta en la playa de Blowout   [/COLOR][COLOR aquamarine]1080p[/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+  
+  
+  
+   
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/63BE5bX0OXN8'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/2pXwCOt0VruKStK9roEby6cwn14.jpg</thumbnail> 
+<fanart>https://image.tmdb.org/t/p/original/7aL6zzsaJdu0QxDbPpeGqGIgCIr.jpg</fanart>
+<info>
+Willie (Morgan Freeman), Joe (Michael Caine) y Al (Alan Arkin) son tres amigos jubilados a los que el sistema les ha congelado su plan de pensiones. Desesperados porque no pueden pagar las facturas, están decididos a recuperar su dinero. Los tres ancianos deciden entonces arriesgarlo todo y embarcarse en un temerario plan que consiste en atracar al mismísimo banco que se quedó con su dinero.
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]Un Golpe con Estilo [/COLOR][COLOR aquamarine]1080p [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+ 
+   
+   
+   
+ 
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'http://uptobox.com/vnt1an5rrigz'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/ms96FQkuBbmOlxgIHZZS3Ac8iO.jpg</thumbnail> 
+<fanart>https://image.tmdb.org/t/p/original/1l9PSOAzbog9DylSmeC0Rww1odF.jpg</fanart>
+<info>
+Cuando el hijo de una mujer desaparece y el principal sospechoso es liberado debido a la falta de pruebas, ella y su hija adolescente deciden jugar vigilante
+
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]El Instinto De Una Madre   [/COLOR][COLOR aquamarine]BRrip[/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+ 
+  
+
+ 
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'http://uptobox.com/ovlh8ye8m1oo'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/tl2QZ5jZuB3ohn42GW62aK9wFJc.jpg</thumbnail> 
+<fanart>https://image.tmdb.org/t/p/original/tl2QZ5jZuB3ohn42GW62aK9wFJc.jpg</fanart>
+<info>
+Una joven de carácter despreocupado acompaña a su novio en una búsqueda del tesoro en un crucero, pero pronto se verá luchando por su vida en un juego mortal.
+
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]Skyline El Ultimo Crucero   [/COLOR][COLOR aquamarine]BRrip [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+ 
+  
+   
+   
+   
+ 
+   <item><link>https://goo.gl/tXqTqA</link>
+ <thumbnail>https://image.tmdb.org/t/p/original/38q8NGZ4sKA4fzUOtMRkS7WAJXq.jpg</thumbnail> 
+<fanart>https://image.tmdb.org/t/p/original/tvbqvMg3QAT2A8Rfy8MqtIVDdT4.jpg</fanart>
+<info>
+Máximo, es un conquistador. Dentro de su carismático y popular barrio del cercado se le conoce como un verdadero “Macho que se respeta”, sin embargo es un mil oficios que va de mal en peor. Con tan buena fama, uno de sus amigos y discípulos le hará una apuesta que no podrá rechazar: enamorar a la nueva vecina: Carol. A ella se le conoce como la más pituca y difícil mujer; lograrlo significaría pagar la deuda de su taller y obtener más reputación. Se sentirá atraído fuertemente por Sarita, la chica más dulce que haya conocido, obligándolo a llevar una doble vida: entre ser un casanova o actuar como un verdadero hombre enamorado. En medio de este barrio lleno de peruanismo, sazonado con personajes memorables que nos harán delirar, Máximo y sus amigos nos sorprenderán con sus divertidas ocurrencias y anécdotas
+
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]Macho Peruano que se Respeta   [/COLOR][COLOR aquamarine] 1080p[/COLOR][COLOR lightslategray] 21/7[/COLOR]</title></item>
+
+ 
+ 
+ 
+ 
+   <item><link>https://goo.gl/oTGjE4</link>
+ <thumbnail>https://image.tmdb.org/t/p/original/sWfRro6FF6o1b7EkO1kpHJ0QY00.jpg</thumbnail> 
+<fanart>https://image.tmdb.org/t/p/original/fsr9tIjmc90vggEqZLl0l9MbOnY.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]Siete Semillas   [/COLOR][COLOR aquamarine] 1080p[/COLOR][COLOR lightslategray] 20/7[/COLOR]</title></item>
+
+ 
+ 
+ 
+ 
+ 
+   <item><link>https://goo.gl/QNER3M</link>
+ <thumbnail>https://image.tmdb.org/t/p/original/5eV0mIQqSztD3McjO22EOFlQDj1.jpg</thumbnail> 
+<fanart>https://image.tmdb.org/t/p/original/AWOAe3S3aDKYWDjSOBwgy1eG9N.jpg</fanart>
+<info>
+Tyler está enamorado de su novia Ali, pero tras una discusión pasa una noche inolvidable con la sexy Holly. Al día siguente descubre que Holly es una estudiante nueva en su escuela.
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]Tu me Entiendes   [/COLOR][COLOR aquamarine] 1080p[/COLOR][COLOR lightslategray] 20/7[/COLOR]</title></item>
+
+
+
+ 
+ <item><link>https://goo.gl/Ug6qwz</link>
+ <thumbnail>https://image.tmdb.org/t/p/original/lIkFQ9v48x90raKZlN7K1R8RYLn.jpg</thumbnail> 
+<fanart>https://image.tmdb.org/t/p/original/eWJhXbTdXavKWHLeYmlLpTyrRXg.jpg</fanart>
+<info>
+Cuando tres estudiantes universitarios se mudan a una vieja casa fuera del campus, sin querer, liberan a \"Bye Bye Man\", un ente sobrenatural que persigue a quien descubre su nombre. Intentarán mantener su existencia en secreto para alejar al resto de una muerte segura.
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]Nunca Digas Su Nombre [/COLOR][COLOR aquamarine]BRrip [/COLOR][COLOR lightslategray]20/7 [/COLOR]</title></item>
+ 
+ 
+ 
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/7hu8oVgOJ6D3'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/iOkAKdYQ8IEQauQesPwUCnmebDA.jpg</thumbnail> 
+<fanart>https://image.tmdb.org/t/p/original/iOkAKdYQ8IEQauQesPwUCnmebDA.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]Badoet [/COLOR][COLOR aquamarine]BRrip [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+ 
+ 
+ 
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/0OPar70Xc33r'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/lTwp3vdxcewkaLw41w0mVGRsHYw.jpg</thumbnail> 
+<fanart>https://image.tmdb.org/t/p/original/w4ZYFLJbiqZyvCcGHgvaHD6lTqQ.jpg</fanart>
+<info>César y sus monos son forzados a encarar un conflicto mortal contra un ejército de humanos liderado por un brutal coronel. Después de sufrir pérdidas enormes, César lucha con sus instintos más oscuros en una búsqueda por vengar a su especie. Cuando finalmente se encuentren, Cesar y el Coronel protagonizarán una batalla que pondrá en juego el futuro de ambas especies y el del mismo planeta. Tercera película de la nueva saga de El Planeta de los Simios.
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]La Guerra Del Planeta De Los Simios  [/COLOR][COLOR aquamarine]TS [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+ 
+ 
+ 
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/at5182ve4Yh2'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/tkw8Dbt4U3THeXmRKLfsLfVcJ8v.jpg</thumbnail> 
+<fanart>https://image.tmdb.org/t/p/original/jWMYenro2dEtzoEYnVcdK2vkuKq.jpg</fanart>
+<info>
+En una pequeña isla en China, la vida cotidiana de unos patos mandarines se convierte en caos en un instante: Una bandada de patos reales militares que se dirigían a Hawaii se confunden de isla. El jefe de los patos reales, Duckmus, no quiere respetar las tradiciones locales de los mandarinos y a su vez el Emperador de los patos chinos no esta de acuerdo con la llegada de los forasteros. Comienza una guerra fría entre los dos clanes pero el heredero del Emperador, Longway se acaba enamorando de Erica, la hija del jefe de los patos reales. Mientras que sus padres discuten ellos continúan su amor. Hasta que un día raptan a Longway porque es el mágico 'Pato del Sol', que según dice la leyenda, está dotado de habilidades sobrehumanas y le permite tomar poder del sol. Una vieja hechicera quiere este poder del sol para encontrar la juventud eterna.
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]Quackerz  [/COLOR][COLOR aquamarine]DVDrip [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+ 
+ 
+ 
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/M4Hv0fTELgqH'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/9nURtvaqA4MzJPClDgAC8eGXStg.jpg</thumbnail> 
+<fanart>https://image.tmdb.org/t/p/original/qy1UO1worTZyudcy4YkPsobnbKa.jpg</fanart>
+<info>
+Hace 13 años el malvado General Zhong tomó el control del planeta Bana. Ahora no solo quiere gobernar el planeta sino también hacerse con el poder del universo con la ayuda del Kraken. Spark, un mono adolescente y sus amigos, Vix un zorro y Chunk un cerdo deciden reconquistar el planeta Bana y detener de una vez a Zhong. Emprenderán una aventura peligrosa y llena de acción que cambiará la vida de su Spark.
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]Spark A Space Tail  [/COLOR][COLOR aquamarine]BRrip [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+ 
+ 
+ 
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/IC0I10ifuAv7'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/rgPysl0uMpxllv43r4udHuRAhn4.jpg</thumbnail> 
+<fanart>https://image.tmdb.org/t/p/original/en6RCcsjVPeuWBjIwne6eogHhrz.jpg</fanart>
+<info>
+Una joven anoréxica (Lily Collins) empieza un tratamiento poco convencional en un centro donde crea lazos con otros internos que también sufren trastornos alimentarios.
+
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]To.the.bone.2017 [/COLOR][COLOR aquamarine]1080p [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+ 
+ 
+ 
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/M32Y23aeWq4D'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/u7UWq5cvNiaZbnA2ym165n4pD0C.jpg</thumbnail> 
+<fanart>https://image.tmdb.org/t/p/original/ci6ypDj4zCfa5QrsQ3QIUnmZji5.jpg</fanart>
+<info>
+Dos hermanas que tienen la habilidad de comunicarse con los fantasmas, todo se complica cuando sus caminos se cruzan con un productor de cine francés mientras están actuando en el París de los años 30.
+
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]Planetarium  [/COLOR][COLOR aquamarine]BRrip [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/n7ynjv5bYu03'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/7WqR10HKafhzE9LXEYg0AtM4J6O.jpg</thumbnail> 
+<fanart>https://image.tmdb.org/t/p/original/rjODfN7jhGrG5aklXmsqtOKPJPT.jpg</fanart>
+<info>Cuando uno de los atracos que lleva a cabo Casey Stein sale terriblemente mal, este se encuentra en la carrera que encabeza el despiadado jefe de la mafia, Hagen. Ahora Casey tiene una preciada y cara carga entre sus manos que debe proteger para pagar la emergencia médica de su novia, Juliette, que está en el extranjero. Por ello, Casey llama a un ex empleado y contrabandista, Geran, para que proteja a su novia antes de que el mafioso ponga las manos sobre ella.
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]Collide [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+ 
+ 
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/IJ2856rjvWOt'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/9KNLfCgF6lMc4585i5tM4al12JQ.jpg</thumbnail> 
+<fanart>https://image.tmdb.org/t/p/original/jGPSVArC0GS2VVc0aGAqGTjfFOG.jpg</fanart>
+<info>Nueva versión de la película del 1995, que nos sitúa en un Japón del futuro. Allí, nos encontramos con una cíborg atormentada por dudas existenciales. Su principal duda se centra en el “ghost”, es decir, el elemento que define aquello que conocemos como conciencia o alma. Cree que solamente sabiendo con exactitud qué es el ghost podrá ser capaz de darle sentido a su propia existencia.
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]Ghost.in.the.shell.2017 [/COLOR][COLOR aquamarine]1080p [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+ 
+ 
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/opAgH3RQe3fw'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/rgPysl0uMpxllv43r4udHuRAhn4.jpg</thumbnail> 
+<fanart>https://image.tmdb.org/t/p/original/en6RCcsjVPeuWBjIwne6eogHhrz.jpg</fanart>
+
+<info>
+"Una joven anoréxica (Lily Collins) empieza un tratamiento poco convencional en un centro donde crea lazos con otros internos que también sufren trastornos alimentarios.
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]To.the.bone.2017 [/COLOR][COLOR aquamarine]1080p [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+ 
+ 
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/q6J04HAAd71d'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/jKyjJu3N0bcF9TzcyGLb0Nn6Uqq.jpg</thumbnail> 
+<fanart>https://image.tmdb.org/t/p/original/yR4UgI9AslQ4kd3qa1kDwxChJWs.jpg</fanart>
+<info>
+Tessa Connover (Katherine Heigl) apenas lidia con el final de su matrimonio cuando su ex- marido, David (Geoff Stults), se compromete dichosamente con Julia Banks (Rosario Dawson), no solo llevando a Julia al hogar que una vez compartieron Sino más bien asimismo en la vida de su hija, Lilly (Isabella Rice).  Tratando de asentarse en su nuevo papel como esposa y madrastra, Julia piensa que por último ha conocido al hombre de sus sueños, el hombre que puede asistirla a poner su pasado trastocado detrás de ella. Mas los celos de Tessa toman pronto un giro patológico hasta el momento en que no se detendrá ante cosa alguna para transformar el sueño de Julia en su última pesadilla.
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]Unforgettable.2017 [/COLOR][COLOR aquamarine]1080p [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+ 
+ 
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/L6AvqIn1waiQ'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/iOkAKdYQ8IEQauQesPwUCnmebDA.jpg</thumbnail> 
+<fanart>https://image.tmdb.org/t/p/original/iOkAKdYQ8IEQauQesPwUCnmebDA.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]Badoet [/COLOR][COLOR aquamarine]BRip [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+ 
+ 
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/hP5p4G20Wh42'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/tbqVaDiFOe410jh1tdHrKb59fp6.jpg</thumbnail> 
+<fanart>https://image.tmdb.org/t/p/original/70loJS5za74GaaP2OLLpCyciiOY.jpg</fanart>
+<info>
+Adaptación de la comedia inglesa \"Dad's Army\" que versa sobre un pequeño pelotón de soldados voluntarios que fueron rechazados para el servicio militar activo. Mientras la Segunda Guerra Mundial (1939-1945) se acerca a su fin, el grupo intenta mantener el honor local durante las visitas de una seductora periodista y de un espía alemán.
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]Dads Army El Peloton Rechazado  [/COLOR][COLOR aquamarine]BRip [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+ 
+ 
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/p3xLv6MyACp1'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/6RmwtI6fxPIJspNrtlCuiPjhH3k.jpg</thumbnail> 
+<fanart>https://image.tmdb.org/t/p/original/seR3AM88RvHGIxA0DbSuf9Iosm.jpg</fanart>
+<info>La acción tiene lugar en un futuro lejano. En Moscú tiene lugar el programa de televisión más popular del mundo, en el que once personas se reunirán para descubrir quién es civil y quién es un mafioso. Hay mucho en juego: el ganador recibirá un gran premio en efectivo, pero los perdedores obtendrán la muerte.
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]Mafia Survival  [/COLOR][COLOR aquamarine]BRip [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+ 
+ 
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/SnRI7IYCWy2G'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/1KsfwNzIpj3U0rHLG1uhkVS8Em7.jpg</thumbnail> 
+<fanart>https://image.tmdb.org/t/p/original/vLMdYjlarhyGZLsoJ9vtCpQSaC2.jpg</fanart>
+<info>
+Cuando la famosa historiadora norteamericana Deborah E. Lipstadt acusa a determinados periodistas e historiadores de negacionistas en su libro \"La Negación del Holocausto\", es denunciada por el negacionista británico David Irving, el famoso periodista e historiador admirador de Hitler, y se querella contra ella en 1996 por difamaciones. Entonces Lipstadt se propone derrotar a Irving y los negacionistas en Inglaterra sólo con expertos en el ámbito académico: sin llamar a declarar siquiera a un sólo superviviente de la Shoah
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]Negacion [/COLOR][COLOR aquamarine]BRrip [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+ 
+ 
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/eCuy4p0t5Ed4'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/vLcEDKUbqFmyJzAsPFaxjad19mM.jpg</thumbnail> 
+<fanart>https://image.tmdb.org/t/p/original/2wCGvIfbY3skp3T1YAvRC4v17or.jpg</fanart>
+<info>
+Jack Campbell (Nicolas Cage) es un egocéntrico broker de Wall Street cuya única obsesión es el trabajo y una vida llena de lujo. Un día, tras un incidente en una tienda durante la Nochebuena, se despierta viviendo otra vida alternativa: ahora es un humilde vendedor de neumáticos de Nueva Jersey, casado con su antigua novia Kate (Téa Leoni), a la que había abandonado hace años para no obstaculizar su carrera en el mundo de las finanzas.
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]Un Hombre De Familia [/COLOR][COLOR aquamarine]BRrip [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+ 
+ 
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://openload.co/f/NBFF3yEkY4g/La_Momia_%5BWeb_Screener%5D%5BEspa%C3%B1ol_Latino%5D%5B2017%5D.avi'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/6kCPiZ0eG3BoWvxgTq2Z8AYnEo.jpg</thumbnail> 
+<fanart>https://image.tmdb.org/t/p/original/qedJJ2z9oBYKxxO4Pp8qAkfgPst.jpg</fanart>
+<info>
+A pesar de estar enterrada en una tumba en lo más profundo del desierto, una antigua princesa (Sofia Boutella) cuyo destino le fue arrebatado injustamente, se despierta en la época actual, trayendo consigo una maldición que ha crecido hasta límites insospechados con el paso de miles de años.
+
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]La Momia [/COLOR][COLOR aquamarine]HC [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+ 
+ 
+ 
+ 
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://openload.co/f/m4YecNidCfM/The.boss.baby.2017.1080p-dual-lat.mp4'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/gZvei43AEMRn9iOehJZeOQ5l7QZ.jpg</thumbnail> 
+<fanart>https://image.tmdb.org/t/p/original/frlfy7RFqx5J4jrcMo25PqyasL3.jpg</fanart>
+<info>
+Boss Baby es una comedia familiar que se centra en un bebé muy maduro para su edad y Tim, su hermano de siete años que siente celos de él.  Tim busca volver a ganarse el cariño de sus padres, pero cuando descubre una trama secreta del director general de Puppy Co. con la que pretender destruir el amor en el mundo y que su hermano pequeño es en realidad un ejecutivo encubierto, ambos tienen que unirse como una verdadera familia para restablecer el orden del mundo y demostrar que el amor es una fuerza indestructible.
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]El Bebe Jefazo  [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+ 
+ 
+ 
+ 
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://openload.co/f/_MIV7FYXSno/Un_Don_Excepcional_%5BBluRay_Rip%5D%5BAC3_2.0_Espa%C3%B1ol_Latino%5D%5B2017%5D.avi'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/44Cox0xu7kpLgxLxFvvxyB3kLFu.jpg</thumbnail> 
+<fanart>https://image.tmdb.org/t/p/original/gYtXT7fJNBRZBbBulO11DoRveLT.jpg</fanart>
+<info>
+Ambientada en un pueblo costero de Florida, Gifted cuenta la historia de Frank Adler, un hombre soltero que cría a su sobrina Mary tras el fallecimiento de su madre. La niña tiene una gran habilidad para las matemáticas y su abuela Evelyn lo sabe bien. Mientras que su tío intenta que la vida de la pequeña sea lo más normal posible y que disfrute de su infancia, Evelyn tiene otros planes para ella. Como consecuencia, Frank se verá obligado a luchar desesperadamente por su custodia.
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]Un Don Excepcional [/COLOR][COLOR aquamarine] BRip [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+ 
+ 
+ 
+ 
+ 
+ 
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://openload.co/f/ASjH62-Gt8A/Un_Golpe_Con_Estilo_%5BBluRay_rip%5D%5BAC3_2.0_Espa%C3%B1ol_Latino%5D%5B2017%5D.avi'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail> 
+<fanart>https://image.tmdb.org/t/p/original/7aL6zzsaJdu0QxDbPpeGqGIgCIr.jpg</fanart>
+<info>Willie (Morgan Freeman), Joe (Michael Caine) y Al (Alan Arkin) son tres amigos jubilados a los que el sistema les ha congelado su plan de pensiones. Desesperados porque no pueden pagar las facturas, están decididos a recuperar su dinero. Los tres ancianos deciden entonces arriesgarlo todo y embarcarse en un temerario plan que consiste en atracar al mismísimo banco que se quedó con su dinero.
+
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]Un Golpe Con Estilo[/COLOR][COLOR aquamarine] BRrip[/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+ 
+ 
+ 
+ 
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://openload.co/f/UQQDWXSCx6w/Miss_%5BBluRay_Rip%5D%5BAC3_2.0_Espa%C3%B1ol_Latino%5D%5B2017%5D.avi'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/2pXwCOt0VruKStK9roEby6cwn14.jpg</thumbnail> 
+<fanart>https://image.tmdb.org/t/p/original/</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]Miss[/COLOR][COLOR aquamarine] BRip [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+ 
+ 
+ 
+ 
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://openload.co/f/nGkRrczVNe0/Una_Noche_De_Amor_%5BBluRay_Rip%5D%5BAC3_2.0_Espa%C3%B1ol_Latino%5D%5B2017%5D.avi'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/hh0yCOYziZmoQqdR6XmejLU8748.jpg</thumbnail> 
+<fanart>https://image.tmdb.org/t/p/original/ieE4lZAyGnqLfhmSCDCuCcl8T6j.jpg</fanart>
+<info>
+Leonel y Paola están casados hace 12 años y tienen dos hijos. Él es guionista, ella es psicóloga y les va bien en sus trabajos. Es una pareja que funciona: aman a sus hijos, sus hijos los aman, comparten gustos y formas de ver la vida. Pero, ¿el amor? ¿La diversión? ¿La pasión? Esta noche deciden salir solos y los chicos se quedan a dormir en la casa de la madre de Leo.
+
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]Una Noche De Amor[/COLOR][COLOR aquamarine] BRip [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://openload.co/f/ZBlsZUipDJc/April_Apocalypse_%5BBluRay_Rip%5D%5BAC3_2.0_Espa%C3%B1ol_Latino%5D%5B2017%5D.avi'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/9w1wQfngYzjJxuhwt9HXH05JaEi.jpg</thumbnail> 
+<fanart>https://image.tmdb.org/t/p/original/efnhTTMdsBFGXYlAso25RW0czkx.jpg</fanart>
+<info>
+Artie está profundamente enamorado de April. Tras un accidente de coche, el chico despierta en medio de un Apocalipsis Zombi. El deseo de salvar a su amada hará de Artie una letal máquina que masacrará a todos los muertos vivientes que se crucen en su camino. 
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue] April Apocalypse   [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+ 
+ 
+ 
+ 
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://openload.co/f/Msu4rB5Jw00/Encuentrame_%5BBluRay_Rip%5D%5BAC3_2.0_Espa%C3%B1ol_Latino%5D%5B2017%5D.avi'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/9xferigjA87Zjzke9LcTbuyDz0w.jpg</thumbnail> 
+<fanart>https://image.tmdb.org/t/p/original/5kZMSB5farZsUkyDhONGGOlHmxZ.jpg</fanart>
+<info>
+Cuando 2 personas, David y Claire, dejan un autobús en exactamente la misma parada, David prosigue a Claire. Ella lo acusa de avizorar, solo para avergonzadamente descubrir que viven en exactamente el mismo hogar. Al pasear y localizar fotografías del resto juntos determinan que se conocen entre sí y sencillamente tienen amnesia. Con el objetivo de recobrar sus recuerdos, David sugiere que los 2 tengan relaciones íntimas.  Pronto se percata de que David y Claire no tienen amnesia mas salen y sencillamente juegan un juego. Un día, Claire desaparece súbitamente. Tras contactar a sus amigos y sitio de trabajo, David va a la policía. El detective Sloan puede ofrecer poca esperanza alén de publicar volantes restantes.
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue] Encuentrame  [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+ 
+ 
+ 
+ 
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://openload.co/f/Ly8CTJEsqLI/Girlfriends.day.2017.1080p-dual-lat.mp4'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/gbcqaRde24jd0wfYPWCf0wqrTJi.jpg</thumbnail> 
+<fanart>https://image.tmdb.org/t/p/original/ic7xEevZKahKnEb0HOMYhB5peHg.jpg</fanart>
+<info>
+En una ciudad donde los escritores de tarjetas de felicitación son considerados como estrellas de cine, el escritor Ray solía ser el rey. Pero intentando volver a tener la inspiración que una vez le hizo ser el más grande, Ray se enreda en una red de asesinatos y engaños cuando los escritores comienzan a competir por crear la tarjeta perfecta para una nueva festividad: el día de la novia.
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue] Girlfriends Day 2017  [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://openload.co/f/gORY0D03Mtg/I.dont.feel.at.home.in.this.world.anymore.2017.1080p-dual-lat.mp4'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/s8eN1gbBLaD4RbXWOCR7O4L2Dy1.jpg</thumbnail> 
+<fanart>https://image.tmdb.org/t/p/original/8pXUXMe1LFXvpPFb5CaObacDN9J.jpg</fanart>
+<info>
+Cuando una mujer deprimida sufre un robo, encuentra un nuevo sentido a su vida persiguiendo a los ladrones junto a su odioso vecino.
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue] Ya no me siento a gusto en este mundo .2017  [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+ 
+ 
+ 
+ 
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://openload.co/f/bftXEzZPDZc/Madre_%5BBluRay_Rip%5D%5BAC3_2.0_Espa%C3%B1ol_Latino%5D%5B2017%5D.avi'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/iR80pPMnSuX03g66Qo5u6poNyPA.jpg</thumbnail> 
+<fanart>https://image.tmdb.org/t/p/original/ukbw9BKMFPRFECt8Yd5ZlJ2bnia.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue] Madre  [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+ 
+ 
+ 
+ 
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://openload.co/f/xPLmRaL7amQ/Mclaren.2016.1080p-dual-lat.mp4'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/zvGipOPJ03Vfqte6jhC6qRppNiM.jpg</thumbnail> 
+<fanart>https://image.tmdb.org/t/p/original/mQ5pHTMTBBxZv52xl1iORdK7Pqt.jpg</fanart>
+<info>
+La historia de Bruce McLaren, el neozelandes fundador del equipo McLaren Motor Racing team. Un hombre que le mostro al mundo que alguien de raices humildes puede alcanzar la elite del automovilismo deportivo y triunfar.
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue] Mclaren.2016  [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://openload.co/f/qD417g8BtKU/Nicky_y_El_Hechizo_Del_Dragon_%5BBluRay_Rip%5D%5BAC3_2.0_Espa%C3%B1ol_Latino%5D%5B2017%5D.mk'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>http://www.newpct.com/imgBank/d/93554_-1499592513-nicky-y-el-hechizo-del-dragon-blurayrip.jpg</thumbnail> 
+<fanart>http://www.newpct.com/imgBank/d/93554_-1499592513-nicky-y-el-hechizo-del-dragon-blurayrip.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue] Nicky y El Hechizo Del Dragon   [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+ 
+ 
+ 
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://openload.co/f/TIBMkmQiqwQ/Tom_y_Jerry_And_Charlie_y_La_Fabrica_De_Chocolate_%5BBluRay_Rip%5D%5BAC3_2.0_Espa%C3%B1ol_Latino%5D%5B2017%5D.avi'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+  <thumbnail>http://www.newpct.com/imgBank/d/93555_-1499592602-tom-y-jerry-and-charlie-y-la-fabrica-de-chocolate-blurayrip.jpg</thumbnail> 
+<fanart>http://www.newpct.com/imgBank/d/93555_-1499592602-tom-y-jerry-and-charlie-y-la-fabrica-de-chocolate-blurayrip.jpg</fanart> 
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue] Tom y Jerry And Charlie y La Fabrica De Chocolate   [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://openload.co/f/_cofw94-DdI/Spider-Man_Homecoming_%5BTS_Screener%5D%5BEspa%C3%B1ol_Latino%5D%5B2017%5D.avi'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/6EPT7DpDfayNSV9y3gzxskp29V9.jpg</thumbnail> 
+<fanart>https://image.tmdb.org/t/p/original/tPpYGm2mVecue7Bk3gNVoSPA5qn.jpg</fanart>
+<info>
+Peter (Tom Holland) vuelve a casa emocionado después de su experiencia con los Vengadores en Capitán América: Civil War. Allí vive con su tía May (Marisa Tomei), bajo la atenta mirada de su nuevo mentor Tony Stark (Robert Downey Jr.). Peter trata de volver a su rutina diaria, aunque siempre distraído en sus pensamientos, intentando demostrar que es alguien más que el amigable vecino Spider-Man. Pero cuando alguien conocido como el Buitre emerge como villano, todo lo que Peter considera más importante en su vida se verá amenazado.
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]Spider-Man Homecoming (Hombre Araña: Regreso a casa) [/COLOR][COLOR aquamarine] TS[/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+ 
+ 
+ 
+ 
+ 
+  
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://openload.co/f/to62Az7asFk/Ghost_In_The_Shell_%5BBluRay_Rip%5D%5BAC3_2.0_Espa%C3%B1ol_Latino%5D%5B2017%5D.avi'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/9KNLfCgF6lMc4585i5tM4al12JQ.jpg</thumbnail> 
+<fanart>https://image.tmdb.org/t/p/original/jGPSVArC0GS2VVc0aGAqGTjfFOG.jpg</fanart>
+<info>
+Nueva versión de la película del 1995, que nos sitúa en un Japón del futuro. Allí, nos encontramos con una cíborg atormentada por dudas existenciales. Su principal duda se centra en el “ghost”, es decir, el elemento que define aquello que conocemos como conciencia o alma. Cree que solamente sabiendo con exactitud qué es el ghost podrá ser capaz de darle sentido a su propia existencia.
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]Ghost In The Shell [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+ 
+
+
+
+ 
+ 
+ 
+ <item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://openload.co/f/tTvDC8a1o5o/El_Circulo_%5BBluRay_Screener%5D%5BEspa%C3%B1ol_Latino%5D%5B2017%5D.avi'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/7SWuIePReXbQvUJGb104MHPXjSd.jpg</thumbnail> 
+<fanart>https://image.tmdb.org/t/p/original/hENBbG0J4zf4fFB3OVAC50poojR.jpg</fanart>
+<info>
+El día que Mae Holland es contratada para trabajar en el Círculo, la empresa de internet más influyente del mundo, sabe que se le ha concedido la oportunidad de su vida. A través de un innovador sistema operativo, el Círculo unifica direcciones de email, perfiles de redes sociales, operaciones bancarias y contraseñas de usuarios dando lugar a una única identidad virtual y veraz, en pos de una nueva era marcada por la transparencia.
+
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]El Circulo [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+ 
+ 
+ 
+ <item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://openload.co/f/89t14KHO_4s/Alien_Convergence_%5BBluRay_Rip%5D%5BAC3_2.0_Espa%C3%B1ol_Latino%5D%5B2017%5D.avi'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/roazHrQjgnc2jOnY9wdTAYmcckX.jpg</thumbnail> 
+<fanart>https://image.tmdb.org/t/p/original/</fanart>
+<info>
+uando una serie de alienígenas reptilianos toma control del mundo, los supervivientes que quedan deben hacer piña para enfrentarse a ellos. Mockbuster de Asylum lanzado a rebufo de \"Alien: Covenant\" de Ridley Scott.
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]Alien Convergence [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+ 
+ 
+ <item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://openload.co/f/IE3PTuswnUA/El_Otro_Hermano_%5BBluRay_Rip%5D%5BAC3_2.0_Espa%C3%B1ol_Latino%5D%5B2017%5D.avi'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/rpLsI0JNJkJlCqwpNKXPMXpCAHw.jpg</thumbnail> 
+<fanart>https://image.tmdb.org/t/p/original/1AfrO2aqvw9I7oGwXXdqZIXOSta.jpg</fanart>
+<info>
+Cetarti, un empleado público que acaba de ser despedido, viaja desde Buenos Aires a Lapachito, un solitario pueblo en la provincia del Chaco. Debe hacerse cargo de los cadáveres de su madre y su hermano que han sido brutalmente asesinados, y con quienes no lo une ningún lazo afectivo. Lo único que moviliza a Cetarti a emprender el viaje es la posibilidad de cobrar un modesto seguro de vida para poder radicarse en Brasil. Allí conoce a Duarte, una suerte de capo del pueblo y amigo del asesino de su madre, con quien establece una extraña sociedad para gestionar y cobrar ese dinero.
+
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]El Otro Hermano [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+ 
+ 
+ 
+ 
+ <item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://openload.co/f/Eg6Aa5rW34g/Socios_Por_Accidente_2_%5BHDTV%5D%5BEspa%C3%B1ol_Latino%5D%5B2017%5D.avi'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/gWnGBE2nSNZj4XDNcI2BAxXkfZW.jpg</thumbnail> 
+<fanart>https://image.tmdb.org/t/p/original/</fanart>
+<info>
+Matías está en el mejor momento de su vida: su hija Rocío lo admira, su nueva novia Jessi es increíblemente hermosa, y es elegido por el Primer Ministro ruso para que oficie como traductor en su visita a la Argentina. Lo que Matías no sabe es que se encuentra en peligro, ya que van a usarlo como herramienta para matar al líder ruso. Es entonces cuando, un año después, y siguiendo una pista para Interpol, Rody vuelve a meterse en la vida de Matías, con el fin de protegerlo y custodiarlo.
+
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]Socios Por Accidente 2[/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+
+
+
+
+ 
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/3Mt3HB8q03d7'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/7SWuIePReXbQvUJGb104MHPXjSd.jpg</thumbnail> 
+<fanart>https://image.tmdb.org/t/p/original/hENBbG0J4zf4fFB3OVAC50poojR.jpg</fanart>
+<info>El día que Mae Holland es contratada para trabajar en el Círculo, la empresa de internet más influyente del mundo, sabe que se le ha concedido la oportunidad de su vida. A través de un innovador sistema operativo, el Círculo unifica direcciones de email, perfiles de redes sociales, operaciones bancarias y contraseñas de usuarios dando lugar a una única identidad virtual y veraz, en pos de una nueva era marcada por la transparencia.
+
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]El Circulo  [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+ 
+ 
+ 
+<itm>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/ibLjW0S70uJ7'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/9KNLfCgF6lMc4585i5tM4al12JQ.jpg</thumbnail> 
+<fanart>https://image.tmdb.org/t/p/original/jGPSVArC0GS2VVc0aGAqGTjfFOG.jpg</fanart>
+<info>Nueva versión de la película del 1995, que nos sitúa en un Japón del futuro. Allí, nos encontramos con una cíborg atormentada por dudas existenciales. Su principal duda se centra en el “ghost”, es decir, el elemento que define aquello que conocemos como conciencia o alma. Cree que solamente sabiendo con exactitud qué es el ghost podrá ser capaz de darle sentido a su propia existencia.
+
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]Ghost In The Shell   [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+
+
+
+
+
+<itm>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/6fWyg8jBQptc'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/p9Kd2FA18xGN2ssB8R7rBnLsf1L.jpg</thumbnail> 
+<fanart>https://image.tmdb.org/t/p/original/1uXe0SYwB7ZEHYjpH3SU94eiaR6.jpg</fanart>
+<info>Sebastián (Rodrigo de la Serna) es un joven recién casado, fanático de Vox Dei. El protagonista, motivado por una necesidad económica, comienza a trabajar de remisero con su Peugeot 505. En este trabajo conoce a Khalil (Ernesto Suarez), un anciano poco gentil. Juntos emprenderán un largo viaje desde Buenos Aires hasta La Paz (Bolivia), donde se pondrá a prueba la relación de los dos protagonistas. El camino y la mala salud de Khalil les plantearán un viaje plagado de contratiempos.
+
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]Camino a La Paz  [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+ 
+ 
+ 
+ 
+ 
+ <item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/u2eDf2khNm6T'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/gZvei43AEMRn9iOehJZeOQ5l7QZ.jpg</thumbnail> 
+<fanart>https://image.tmdb.org/t/p/original/frlfy7RFqx5J4jrcMo25PqyasL3.jpg</fanart>
+<info>
+Boss Baby es una comedia familiar que se centra en un bebé muy maduro para su edad y Tim, su hermano de siete años que siente celos de él.  Tim busca volver a ganarse el cariño de sus padres, pero cuando descubre una trama secreta del director general de Puppy Co. con la que pretender destruir el amor en el mundo y que su hermano pequeño es en realidad un ejecutivo encubierto, ambos tienen que unirse como una verdadera familia para restablecer el orden del mundo y demostrar que el amor es una fuerza indestructible.
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]El Bebe Jefazo  [/COLOR][COLOR aquamarine]BRip [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+ 
+ 
+ 
+ 
+ 
+ 
+ <item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/7fgm7s83r476'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/meIYd5PXco904aLUEJjtTsEmHyf.jpg</thumbnail> 
+<fanart>https://image.tmdb.org/t/p/original/53cSjh7SEQaa9114r7cjfUNfkWW.jpg</fanart>
+<info>
+Es diciembre cuando el padre de Hortensia muere electrocutado abriendo la heladera. Ella contrae pánico a los electrodomésticos. Unas horas antes de fin de año la echan del trabajo. Durante la fiesta del 31 su novio la engaña con su mejor amiga… Angustiada, sola y sin dinero abre un sobre escrito a sus 13 años y lee: “Objetivos para ser feliz: casarme con un chico rubio como mi padre y diseñar el zapato más hermoso del mundo”. Su vida recobra el sentido. Sin perder tiempo y apurada, toma muchas decisiones para cumplir estos dos objetivos… Las soluciones no llegan; todo empeora. Cuando se queda sin salidas, la conducta de una nueva amiga la hace reflexionar. Comienza a enfrentar sus miedos y su soledad persiguiendo solamente sus más auténticos deseos.
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]Hortensia [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/wEu11P2aQ34c'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/2tuLuZ6pYHgx69uMgoiEoVlONpB.jpg</thumbnail> 
+<fanart>https://image.tmdb.org/t/p/original/rE6W3KHdIuTdgRDLOOOMR3gfGgc.jpg</fanart>
+<info>
+Jan y Antonina Zabinski, el director del zoo de Varsovia y su esposa, ayudaron a salvar a cientos de personas (y también a muchos animales del Zoo) de los nazis tras la invasión de Polonia por las tropas alemanas en septiembre de 1939.
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]La Casa De La Esperanza [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/NQL0i4UxhSsG'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/pHlRr2MfjK77VIIAO7p0R4jhsJI.jpg</thumbnail> 
+<fanart>https://image.tmdb.org/t/p/original/hZyZP7eTGpGzbgNZkkghZp3q0a7.jpg</fanart>
+<info>
+Narra la historia de Mija, una joven coreana de viaje en Estados Unidos que debe arriesgarlo todo para detener a una poderosa multinacional que pretende secuestrar a su mejor amigo: un animal gigantesco llamado ‘Okja’
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]Okja.2017 [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/DB8T7Kxj1rQr'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/5KjsxnEWRcJFRk2ZUEDtcOs1eSZ.jpg</thumbnail> 
+<fanart>https://image.tmdb.org/t/p/original/x5nDunTxz8JUYraHo9ut23ByOhq.jpg</fanart>
+<info>
+Una joven periodista neoyorquina vuelve a la idílica comunidad granjera de California donde creció para descubrir que es un lugar castigado por la sequía y que se ha vuelto violento y peligroso. Se verá obligada a investigar las misteriosas circunstancias que rodean a la muerte de su padre, aunque esto sea algo arriesgado.
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]Pray For Rain [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/4jj1njNjIxJF'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/87LUY0NnhiL6Anm8IHxTfGArarn.jpg</thumbnail> 
+<fanart>https://image.tmdb.org/t/p/original/AeMtzbw7shxtLvwKKqeITabpTrD.jpg</fanart>
+<info>
+A Pitufina le parece que todos los demás habitantes de la aldea tienen un propósito: Papá Pitufo (dirigir), Pitufo Panadero (preparar pan y pasteles), incluso Pitufo Gruñón (gruñir); salvo ella. Así que, ¿qué puede hacer la única chica de la aldea? ¡Pues partir en busca del suyo, naturalmente! Cuando se cruza por casualidad con una misteriosa criatura que huye hacia el Bosque Encantado, la sigue y se interna por territorio inexplorado y totalmente prohibido. A ella se le unen sus hermanos Filósofo, Valiente y Torpe y con el malvado mago Gargamel siguiéndolos de cerca. El equipo pitufo emprenderá así un alocado viaje lleno de acción, peligro y descubrimientos, que los conducirá al mayor misterio de la historia Pitufa.  Dirigida por Kelly Asbury, con la producción ejecutiva de Raja Gosnell y Ben Waisbren. La película, completamente animada, supone un regreso al tono y el estilo de las queridas creaciones del cómic de Peyo.
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]Smurfs.the.lost.village  [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/Tp6SHLJMbBeo'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/5b1zDwWxoDG8p8aHoRYfzOd7Lvy.jpg</thumbnail> 
+<fanart>https://image.tmdb.org/t/p/original/jzdnhRhG0dsuYorwvSqPqqnM1cV.jpg</fanart>
+<info>
+La carrera ha comenzado. Dom Toretto y su equipo volverán en esta ocasión con más ganas de guerra que nunca. No faltarán los excesos de velocidad y la adrenalina a raudales para un filme del que se espera que sea la entrega con más acción de esta saga callejera por excelencia.
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]The.fate.of.the.furious.2017  [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+ 
+ 
+ 
+ 
+ <item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/3NBKcS8T4Iku'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/f8Ng1Sgb3VLiSwAvrfKeQPzvlfr.jpg</thumbnail> 
+<fanart>https://image.tmdb.org/t/p/original/Ytv7P13rbwQ3mLpCAY8lBTqI5s.jpg</fanart>
+<info>
+Paramount dio a conocer el primer avance y título de la quinta entrega de 'Transformers', la película tiene por nombre \"Transformers: The Last Knight\". La actriz Isabela Moner será la encargada de interpretar a Izabella, una chica de la calle que creció en un orfanato, su único amigo es un pequeño Transformer, al huir del orfanato conoce a Cade Yeager (Mark Wahlberg).  En la cinta, Optimus Prime busca a los creadores de su especie en un viaje por el espacio, encontrando a los Quintessons y al gigantesco villano Unicron, una entidad que devora planetas. En paralelo, el personaje de Mark Wahlberg se une a los Dinobots y los Autobots para salvar al Planeta Tierra de la inminente llegada de Unicron - que destruirá toda la raza human
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]Transformers El Ultimo Caballero   [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+ 
+ 
+ 
+ 
+ <item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/e42J00cBSqP3'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/tMnguDH1bz0U9cLYc9JeES0HxIe.jpg</thumbnail> 
+<fanart>https://image.tmdb.org/t/p/original/mcYU2odPVZuzw9HwBiF4enrX7BY.jpg</fanart>
+<info>
+Jesús, a young hairdresser, works at a Havana nightclub for drag performers, and dreams of being a performer himself. Encouraged by his mentor, Mama, Jesús finally gets his chance to take the stage. But when Angel, his estranged father, abruptly reenters his life, his world is quickly turned upside down. The macho Angel, recently released from a 15-year stint in prison, tries to squelch his son’s ambition to perform in drag. Father and son clash over their opposing expectations of each other, struggling to understand one another and reconcile as a family. Shot in a gritty neighbourhood far from the Havana most tourists know, Viva is a heartrending story of music, performance and survival.
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]Viva  [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+ 
+ 
+ 
+ <item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/n4pXoU3igGCs'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/PBgckNbWJjn61hAGSheAAi3bg9.jpg</thumbnail> 
+<fanart>https://image.tmdb.org/t/p/original/hA5oCgvgCxj5MEWcLpjXXTwEANF.jpg</fanart>
+<info>
+Antes de ser Wonder Woman, era Diana, princesa de las amazonas, entrenada para ser una guerrera imparable. Criada en una isla paraíso escondida del resto del mundo, cuando un piloto americano se estrella en sus costas y le explica el gran conflicto que está desatándose en el exterior, Diana decidirá abandonar su hogar convencida de que puede detener la amenaza. Luchando junto al hombre en una guerra para detener todas las guerras, Diana descubrirá todos sus poderes… y su verdadero destino
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]Wonder Woman    [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+ 
+ 
+ 
+ <item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/y2qqbr8srf28'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/bPI2Wcmyxmc17qqiIi1Ww7HU6nS.jpg</thumbnail> 
+<fanart>https://image.tmdb.org/t/p/original/7YoKt3hzTg38iPlpCumqcriaNTV.jpg</fanart>
+<info>
+Nueva película de la saga de animación Gru. Mi villano favorito  (2010) y Gru. Mi villano favorito 2 (2013). Los dos anteriores filmes fueron dirigidos por Chris Renaud y Pierre Coffin, pero aún se desconoce quién será el encargado de dirigir este, de la misma forma que tampoco se sabe quiénes pondrán voz  a los animados personajes ni cuál será el argumento.
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]Gru 3 Mi Villano Favorito   [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/1323V0dG7a5L'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/f8Ng1Sgb3VLiSwAvrfKeQPzvlfr.jpg</thumbnail> 
+<fanart>https://image.tmdb.org/t/p/original/Ytv7P13rbwQ3mLpCAY8lBTqI5s.jpg</fanart><info>
+ Paramount dio a conocer el primer avance y título de la quinta entrega de 'Transformers', la película tiene por nombre \"Transformers: The Last Knight\". La actriz Isabela Moner será la encargada de interpretar a Izabella, una chica de la calle que creció en un orfanato, su único amigo es un pequeño Transformer, al huir del orfanato conoce a Cade Yeager (Mark Wahlberg).  En la cinta, Optimus Prime busca a los creadores de su especie en un viaje por el espacio, encontrando a los Quintessons y al gigantesco villano Unicron, una entidad que devora planetas. En paralelo, el personaje de Mark Wahlberg se une a los Dinobots y los Autobots para salvar al Planeta Tierra de la inminente llegada de Unicron - que destruirá toda la raza humana
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]Transformers El Ultimo Caballero [/COLOR][COLOR aquamarine]TS  [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+ 
+ 
+ 
+ 
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/51vNS832i35C'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/1KsfwNzIpj3U0rHLG1uhkVS8Em7.jpg</thumbnail> 
+<fanart>https://image.tmdb.org/t/p/original/vLMdYjlarhyGZLsoJ9vtCpQSaC2.jpg</fanart><info>
+Cuando la famosa historiadora norteamericana Deborah E. Lipstadt acusa a determinados periodistas e historiadores de negacionistas en su libro \"La Negación del Holocausto\", es denunciada por el negacionista británico David Irving, el famoso periodista e historiador admirador de Hitler, y se querella contra ella en 1996 por difamaciones. Entonces Lipstadt se propone derrotar a Irving y los negacionistas en Inglaterra sólo con expertos en el ámbito académico: sin llamar a declarar siquiera a un sólo superviviente de la Shoah.
+ 
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]Denial 2016  [/COLOR][COLOR aquamarine]1080p  [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+ 
+ 
+
+
+ 
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/A3O35a3pVqpa'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/myOdovPayRRitZDZSutI07eNANM.jpg</thumbnail> 
+<fanart>https://image.tmdb.org/t/p/original/pGwChWiAY1bdoxL79sXmaFBlYJH.jpg</fanart><info>
+ Explore the mysterious and dangerous home of the king of the apes as a team of explorers ventures deep inside the treacherous, primordial island.
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]Kong.skull.island.2017  [/COLOR][COLOR aquamarine]1080p  [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+ 
+ 
+ 
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/2N7guP743ja8'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/2tuLuZ6pYHgx69uMgoiEoVlONpB.jpg</thumbnail> 
+<fanart>https://image.tmdb.org/t/p/original/dLF9DtyuSMTz7pNftMgLCT3LoDp.jpg</fanart><info>
+ Jan y Antonina Zabinski, el director del zoo de Varsovia y su esposa, ayudaron a salvar a cientos de personas (y también a muchos animales del Zoo) de los nazis tras la invasión de Polonia por las tropas alemanas en septiembre de 1939.
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]The.zookeepers.wife.2017 [/COLOR][COLOR aquamarine] 1080p [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+ 
+ 
+ 
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/1n7t51Y2112J'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/lZQoY6L9DcSLa7mUJTYv6oybjTj.jpg</thumbnail> 
+<fanart>https://image.tmdb.org/t/p/original/dAQzSsITJVxyk9ChqPLyBEwtGuC.jpg</fanart><info>
+ "Película basada en el libro de no-ficción escrito por David Grann. En 1925 el explorador británico Percy Fawcett se aventuró en el Amazonas junto con su grupo en busca de una antigua civilización, cuya existencia los europeos llevaban siglos intentando demostrar. La ciudad perdida se conocía como ciudad 'Z', y en su búsqueda habían fallecido cientos de personas. Con su iniciativa, Fawcett quería hacer uno de los descubrimientos más importantes de la historia y esperaba tener éxito allí donde tantos otros habían fracasado. Sin embargo, la expedición de Fawcett desapareció en la profundidad de la selva, y nunca más se volvió a saber nada de ellos. Ninguna de las expediciones que han seguido los pasos de Fawcett ha conseguido hallar la ciudad 'Z'.
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]Z La Ciudad Perdida  [/COLOR][COLOR aquamarine]BRrip  [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+ 
+ 
+ 
+ 
+ 
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/0SX2vI65S4oR'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/rhVUf19thXnZam5a6ok9UU6LjFR.jpg</thumbnail> 
+<fanart>https://image.tmdb.org/t/p/original/8qTdPiog7Yw8HfhNgOZAWrcr4IX.jpg</fanart><info>
+ Minnesota, 1990. El detective Bruce Kenner (Ethan Hawke) investiga el caso de la joven Angela (Emma Watson), que acusa a su padre, John Gray (David Dencik), de cometer un crimen inconfesable. Cuando John, de forma inesperada y sin recordar lo sucedido, admite su culpa, el reconocido psicólogo Dr. Raines (David Thewlis) se incorpora al caso para ayudarle a revivir sus recuerdos reprimidos. Lo que descubren desenmascara una siniestra conspiración.
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]Regression.2015   [/COLOR][COLOR aquamarine]  1080p[/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+ 
+ 
+ 
+ 
+
+ 
+ 
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/4Ax5s8tP0clj'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/qyXPqzlCWf3T9VEpBtquUQZwsgi.jpg</thumbnail> 
+<fanart>https://image.tmdb.org/t/p/original/22eFfWlar6MtXO5qG25TkjLphoj.jpg</fanart><info>
+Knights of the Roundtable nos introduce a un joven Arturo callejero que dirige a su pandilla por los callejones de Londonium. Tras sacar la espada de Excalibur, se verá obligado a tomar algunas duras decisiones. Junto a una misteriosa mujer llamada Guinevere, deberá aprender a manejar la espada, vencer a sus demonios y unir al pueblo para derrotar al tirano Vortigern, quien robó su corona y asesinó a sus padres antes de convertirse en rey.
+
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]Rey Arturo La leyenda De Excalibur  [/COLOR][COLOR aquamarine] BRrip [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+ 
+ 
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/FyAO1U4ip47w'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/87LUY0NnhiL6Anm8IHxTfGArarn.jpg</thumbnail> 
+<fanart>https://image.tmdb.org/t/p/original/AeMtzbw7shxtLvwKKqeITabpTrD.jpg</fanart><info>
+ A Pitufina le parece que todos los demás habitantes de la aldea tienen un propósito: Papá Pitufo (dirigir), Pitufo Panadero (preparar pan y pasteles), incluso Pitufo Gruñón (gruñir); salvo ella. Así que, ¿qué puede hacer la única chica de la aldea? ¡Pues partir en busca del suyo, naturalmente! Cuando se cruza por casualidad con una misteriosa criatura que huye hacia el Bosque Encantado, la sigue y se interna por territorio inexplorado y totalmente prohibido. A ella se le unen sus hermanos Filósofo, Valiente y Torpe y con el malvado mago Gargamel siguiéndolos de cerca. El equipo pitufo emprenderá así un alocado viaje lleno de acción, peligro y descubrimientos, que los conducirá al mayor misterio de la historia Pitufa.  Dirigida por Kelly Asbury, con la producción ejecutiva de Raja Gosnell y Ben Waisbren. La película, completamente animada, supone un regreso al tono y el estilo de las queridas creaciones del cómic de Peyo.
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]Smurfs.the.lost.village  [/COLOR][COLOR aquamarine]  1080p[/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+ 
+ 
+
+
+
+
+ <item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/a3uRm2X6k2x4'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail></thumbnail> 
+<fanart></fanart><info>
+ 
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]El Jiron De Niebla   [/COLOR][COLOR aquamarine] BRrip [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+ 
+ 
+ 
+ 
+ 
+ 
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/ym742d5Vj4oC'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/5ua4rxPI2KLlVA6TowSgyRzpfLH.jpg</thumbnail> 
+<fanart>https://image.tmdb.org/t/p/original/pqFJY09YexhZSQY800xtCsAANbE.jpg</fanart>
+ <info>Con el trasfondo de un subterráneo, bohemio Londres, niños en el amor ofrece una nueva toma en el próximo tradicional de la historia de la edad. A la deriva a través de su año sabático con prácticas y planes de viaje, Jack siempre ha sospechado que había más en la vida que esto. Un encuentro casual con la bella y etérea Evelyn y sus amigos, entre ellos Viola espíritu libre, se desvía radicalmente su vida fuera de curso. Ella es como nadie que ha conocido antes, y rápidamente se queda atrapada en un torbellino de partidos todos los días y noches salvajes en inmersiones ocultas de Londres con sus amigos carismáticos. Renunciar a todo para seguir a su estilo de vida hedonista y Evelyn, toma Jack un tiempo para darse cuenta de lo que está dejando tras de que el amor no es un juego que desea perder y que estas personas podrían no ser las almas gemelas que se pensaba.
+ 
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]Kids.in.love.2016  [/COLOR][COLOR aquamarine]  [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+ 
+ 
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/NOpn4eJ0JPFb'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/88qfHWhlOBYXp69277QFhdPYnWf.jpg</thumbnail> 
+<fanart>https://image.tmdb.org/t/p/original/lAC9VhlVph6I0Xpm9OuSVwl8KqI.jpg</fanart>
+ <info>"La trama se centra en Rebecca Chambers, quien ahora es profesora de universidad y se encuentra investigando un misterioso incidente en donde los muertos están regresando a la vida, ello la lleva a descubrir un nuevo tipo de virus y eventualmente la cura del mismo… A su vez, Chris Redfield está tras la pista de una organización secreta que vende Armas Biológicas. Todo ello juntará a Chris y a Rebbeca con Leon S. Kennedy.
+ 
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]Resident Evil Vendetta   [/COLOR][COLOR aquamarine]  [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+ 
+ 
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/GDC6dfIDao1m'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/87LUY0NnhiL6Anm8IHxTfGArarn.jpg</thumbnail> 
+<fanart>https://image.tmdb.org/t/p/original/AeMtzbw7shxtLvwKKqeITabpTrD.jpg</fanart>
+ <info>A Pitufina le parece que todos los demás habitantes de la aldea tienen un propósito: Papá Pitufo (dirigir), Pitufo Panadero (preparar pan y pasteles), incluso Pitufo Gruñón (gruñir); salvo ella. Así que, ¿qué puede hacer la única chica de la aldea? ¡Pues partir en busca del suyo, naturalmente! Cuando se cruza por casualidad con una misteriosa criatura que huye hacia el Bosque Encantado, la sigue y se interna por territorio inexplorado y totalmente prohibido. A ella se le unen sus hermanos Filósofo, Valiente y Torpe y con el malvado mago Gargamel siguiéndolos de cerca. El equipo pitufo emprenderá así un alocado viaje lleno de acción, peligro y descubrimientos, que los conducirá al mayor misterio de la historia Pitufa.  Dirigida por Kelly Asbury, con la producción ejecutiva de Raja Gosnell y Ben Waisbren. La película, completamente animada, supone un regreso al tono y el estilo de las queridas creaciones del cómic de Peyo.
+ 
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]Los Pitufos La Aldea Escondida  [/COLOR][COLOR aquamarine]  [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+
+ 
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/LOUpxWv7y216'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/xtAWnkPVxrcLw9LGh51ZC0cTGnv.jpg</thumbnail> 
+<fanart>https://image.tmdb.org/t/p/original/xtAWnkPVxrcLw9LGh51ZC0cTGnv.jpg</fanart>
+ <info>cuenta la historia de cómo tres desconocidos con historias desafortunadas, un chileno, un peruano y un argentino coinciden y deciden ir a ver la final del mundial Brasil 2014. En el camino terminan perdidos en medio del Amazonas y comienzan una historia de aventuras. Con el paso de los días empiezan a desarrollar una amistad sin fronteras. Dentro del viaje, son perseguidos por Pedro, quien fue enviado por Angie o \"la Viuda Negra\" quien cree que uno de los personajes es quien le ha estado robando las ganancias que le dejan sus tan amados diamantes.
+ 
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]Lusers  [/COLOR][COLOR aquamarine]  [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+ 
+ 
+ 
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/30xOPsEd5FuI'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/58Boe16M1DDNdlSGnT7NptKoPFX.jpg</thumbnail> 
+<fanart>https://image.tmdb.org/t/p/original/9msBT5W26PAYzdQbJxhz2NvvDUs.jpg</fanart>
+ <info>"El legal e ilegal estatus de inmigrantes y la discriminación endurecida por un segmento el cual solo busca un modo de vida mejor
+ 
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]Norte Estrecho [  [/COLOR][COLOR aquamarine]  [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/Gls3s0M22M7o'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/g4lbA6mtdm801mi1LVdTf44G8gQ.jpg</thumbnail> 
+<fanart>https://image.tmdb.org/t/p/original/kR48L1E3OLOkQcnlmpi5wDj7ZZt.jpg</fanart>
+ <info>Han pasado 20 años desde que Mark Renton abandonara Escocia, y la heroína. Ahora, Renton vuelve a su Edimburgo natal con el objetivo de rehacer su vida y reencontrarse con sus amigos de toda la vida: David \"Spud\" Murphy, y Simon \"Sick Boy\" Williamson; al mismo tiempo que Francis \"Franco\" Begbie sale de la prisión con sed de venganza.  Secuela de 'Trainspotting' (1996), basada en 'Porno', la siguiente novela de Irvine Welsh, aunque el director Boyle aseguró que el guión de John Hodge no será demasiado fiel al libro
+ 
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]T2 Trainspotting 2017  [/COLOR][COLOR aquamarine]  [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+
+
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/eMy3Pge6VtnL'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/95VDu5cEzJABv5Qwak0FfORxqhn.jpg</thumbnail> 
+ <fanart>https://image.tmdb.org/t/p/original/fQnUWu7Sle87lPPnXRUjSAgFG4o.jpg</fanart>
+ <info>"Cuatro jóvenes estudiantes de instituto tratan de definir su futuro tras graduarse."
+ 
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]Good Kids (2016)     [/COLOR][COLOR aquamarine]  [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/0MAkoX6xsUc3'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/frf7zxnpK5KiFrh5feAaA36GvQf.jpg</thumbnail> 
+ <fanart>https://image.tmdb.org/t/p/original/4IrZC1uuaDpGScO4TDyEe4E4bq2.jpg</fanart>
+ <info>Boss Baby es una comedia familiar que se centra en un bebé muy maduro para su edad y Tim, su hermano de siete años que siente celos de él.  Tim busca volver a ganarse el cariño de sus padres, pero cuando descubre una trama secreta del director general de Puppy Co. con la que pretender destruir el amor en el mundo y que su hermano pequeño es en realidad un ejecutivo encubierto, ambos tienen que unirse como una verdadera familia para restablecer el orden del mundo y demostrar que el amor es una fuerza indestructible.
+
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info> </info>
+ <title>[COLOR skyblue]The Boss Baby (2017)     [/COLOR][COLOR aquamarine]  [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+ <item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/GH5idoX1jxqR'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/spuftWtVIYSHhxt8LLpTscAGdfL.jpg</thumbnail> 
+ <fanart>https://image.tmdb.org/t/p/original/mYcFOyjFzEMldjL4N7fb0MnljSa.jpg</fanart>
+ <info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]Shimmer Lake (2017)     [/COLOR][COLOR aquamarine]  [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+ 
+ 
+ <item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/8704CJVg1k1u'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/sWBmFOor2S6nGXTkMq6of8M5ozj.jpg</thumbnail> 
+ <fanart>https://image.tmdb.org/t/p/original/rhya0ioZ4ovtAmFC9FNo5UuEg4k.jpg</fanart>
+ <info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]BayWatch (Guardianes de la bahía)        [/COLOR][COLOR aquamarine] TS [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+ 
+ 
+ <item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/GFX64OKD6C6W'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/l7aCuJGVtf9OqhUYH8JQuIEYfl6.jpg</thumbnail> 
+ <fanart>https://image.tmdb.org/t/p/original/zWPQ9eM9nEcv3rSAFqBnDjsjOuq.jpg</fanart>
+ <info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]Power Rangers          [/COLOR][COLOR aquamarine]  [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+ 
+ 
+ <item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/X8U3FRp61iMb'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/5CDLWtmmNZZrq2s4uWNLIzT0c4P.jpg</thumbnail> 
+ <fanart>https://image.tmdb.org/t/p/original/eKusydUrRlHpfTWu6fqMZO2a3tw.jpg</fanart>
+ <info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]Dragonheart          [/COLOR][COLOR aquamarine]  [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+ 
+ 
+ <item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/uOP473wJFOI4'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/758hvDZWrgDlxOWXdMLykdd5IZf.jpg</thumbnail> 
+ <fanart>https://image.tmdb.org/t/p/original/a0GBftsaeysbiJSl6idKsiV0WaU.jpg</fanart>
+ <info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]Fragmentos de Amor           [/COLOR][COLOR aquamarine]  [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+ 
+ 
+ <item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/ts4o10PK7Aip'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/vaXOuodDDqfnK8EPg3hxILr2uL7.jpg</thumbnail> 
+ <fanart>https://image.tmdb.org/t/p/original/j6GM6nH5jg0nIac7I3mFlWRoVFa.jpg</fanart>
+ <info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]Hombre de Familia           [/COLOR][COLOR aquamarine]  [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+ 
+ 
+ <item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/036FU6E84dwW'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/5qtySjfuJfOLvVrVXuwNo2BIVPH.jpg</thumbnail> 
+ <fanart>https://image.tmdb.org/t/p/original/sSAcOEXdhS7PcVsGt5GptE0gBJz.jpg</fanart>
+ <info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]King Arthur: Legend of the Sword       [/COLOR][COLOR aquamarine]  [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+ 
+ 
+ <item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/36yuAsLp43A1'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/4xXSQG8RNN7HDRM3Td9JsfHoYWj.jpg</thumbnail> 
+ <fanart>https://image.tmdb.org/t/p/original/cckgtzQJaU8IuBGbst7772iIGZI.jpg</fanart>
+ <info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue] Birth of the Nation         [/COLOR][COLOR aquamarine]  [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+ 
+ 
+ <item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/6O2xbQWQ417K'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/4qT5Ioksd7bJMwOo8FyWa6HMsa5.jpg</thumbnail> 
+ <fanart>https://image.tmdb.org/t/p/original/d1zfVkdmp1ITPfdMtRHVYRQ6z2H.jpg</fanart>
+ <info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]Cars 3          [/COLOR][COLOR aquamarine] TS [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+ 
+ 
+ <item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/X143hevm13Q4'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/2KpL9DG4aAgpkFr87wreXKTyFDW.jpg</thumbnail> 
+ <fanart>https://image.tmdb.org/t/p/original/7LXpO3QmOV9IWlOLAXsTmBa8D1r.jpg</fanart>
+
+ <info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]The Good Neighbor          [/COLOR][COLOR aquamarine]  [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+
+ <item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/WDQAr6y620ro'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/l7aCuJGVtf9OqhUYH8JQuIEYfl6.jpg</thumbnail> 
+ <fanart>https://image.tmdb.org/t/p/original/zWPQ9eM9nEcv3rSAFqBnDjsjOuq.jpg</fanart>
+ <info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]Power Rangers  [/COLOR][COLOR aquamarine] Castellano BR[/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+ 
+ 
+ <item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/pS60b5RBhSUN'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/gxK80WUwkQePpXpzRdpob0i7DD5.jpg</thumbnail> 
+ <fanart>https://image.tmdb.org/t/p/original/kUFyesae4lsy5m2y8UIHY4u0gsK.jpg</fanart>
+ <info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]The edge of seventeen 2016 [/COLOR][COLOR aquamarine] 1080p[/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+ 
+ 
+ 
+ <item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/5PKg7Ek4Y13n'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/tQtzCe970e0r7mDizZNW0wrrDKM.jpg</thumbnail> 
+ <fanart>https://image.tmdb.org/t/p/original/uorAlMTgYZ9mdvj5MVcaNjyUuxp.jpg</fanart>
+ <info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]Headshot 2016 [/COLOR][COLOR aquamarine] 1080p[/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+ 
+ 
+ 
+ <item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/4C83cQ268KHp'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/oyPcsfGWL5Se6RGW1JCVgpHlASH.jpg</thumbnail> 
+ <fanart>https://image.tmdb.org/t/p/original/rjOTZfuDCtcbLkufdqLG8ITvlbD.jpg</fanart>
+ <info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]CHiPs  [/COLOR][COLOR aquamarine] 1080p[/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+ 
+ 
+
+
+
+
+ <item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/7n3li032207T'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/wztfli5NgYDgurVgShNflvnyA3Z.jpg</thumbnail> 
+ <fanart>https://image.tmdb.org/t/p/original/gGp4eJafuQiBwbPXRBWFEvtNEXg.jpg</fanart>
+ <info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]Life 2017  [/COLOR][COLOR aquamarine] 1080p[/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+ 
+ 
+ 
+ <item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/u8P3uU0D07TJ'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/s1wbGJudXOwfZMGdSjzxVosijye.jpg</thumbnail> 
+ <fanart>https://image.tmdb.org/t/p/original/iGkULYSbuOM0QWITo9gWOM06pns.jpg</fanart>
+ <info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]Mindhorn 2017  [/COLOR][COLOR aquamarine] 1080p[/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+ 
+ 
+ 
+ <item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/n42v00uVwiF7'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ 
+ <thumbnail>https://image.tmdb.org/t/p/original/gIgj48ZIietr7Oke8wW5e74BYaG.jpg</thumbnail>
+ <fanart>https://image.tmdb.org/t/p/original/cZr5milmwj3hLbcMxZc4yszwn0O.jpg</fanart><info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]Wilson 2017  [/COLOR][COLOR aquamarine] 1080p[/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+ 
+ 
+ 
+ <item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/mQB1ng26r6Rf'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/b10lfSS24qN7urkv6TuBTSTRaTX.jpg</thumbnail>
+ <fanart>https://image.tmdb.org/t/p/original/i4ZougHEyBAboDpi6jsaTUDTjUl.jpg</fanart><info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]La Momia  [/COLOR][COLOR aquamarine] TS [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+ 
+ 
+ <item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/K3R01Ifq4kLb'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/f06yRFZ7zjMCnAIO4a92fOLBr26.jpg</thumbnail> 
+ <fanart>https://image.tmdb.org/t/p/original/zsBOXI64n9Ca6fPjvVWeKm0TFHg.jpg</fanart><info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]El Que Busca Encuentra  [/COLOR][COLOR aquamarine] BR  [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+
+
+ <item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/77Jp3FkEju81'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+<thumbnail>https://image.tmdb.org/t/p/w640/yjzHtHSAPDdRQejnTyFbifX2gef.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/w640/yjzHtHSAPDdRQejnTyFbifX2gef.jpg</fanart>
+<info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue] Mujer Maravilla  [/COLOR][COLOR aquamarine] TS HD  [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+ 
+
+
+ <item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://openload.co/f/6ImtDTG5SZE/Table.19.2017.1080p-dual-lat.mp4'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail></thumbnail>
+ <fanart></fanart>
+<info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue] Mesa 19  [/COLOR][COLOR aquamarine] 1080p  [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+ <item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://openload.co/f/OEJt8vFKnf8/w0nd3r.w0m4n.2017.tshq.subesp.gnula.mp4'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+<thumbnail>https://image.tmdb.org/t/p/w640/yjzHtHSAPDdRQejnTyFbifX2gef.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/w640/yjzHtHSAPDdRQejnTyFbifX2gef.jpg</fanart>
+<info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]Wonder Woman "La mujer maravilla" [/COLOR][COLOR aquamarine]  CAM Subtitulada [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+ <item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://openload.co/f/hneN-_JqcqU/w0nd3r.w0m4n.2017.tshq.latino.gnula.mp4'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+<thumbnail>https://image.tmdb.org/t/p/w640/yjzHtHSAPDdRQejnTyFbifX2gef.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/w640/yjzHtHSAPDdRQejnTyFbifX2gef.jpg</fanart>
+<info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]Wonder Woman "La mujer maravilla" [/COLOR][COLOR aquamarine]  CAM Latino [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+
+
+ <item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://openload.co/f/sMqYGsxHbJo/Countdown_%5BBluRay_Rip%5D%5BEspa%C3%B1ol_Latino%5D%5B2017%5D.avi'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+<thumbnail>https://image.tmdb.org/t/p/w640/sIy3iJgFA3pz5yMRNez5OP97Oqh.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/w640/sIy3iJgFA3pz5yMRNez5OP97Oqh.jpg</fanart>
+<info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]Countdown [/COLOR][COLOR aquamarine]  BR  [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+ <item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://openload.co/f/eZkPCcJpOVM/Life_%5BBluRay_Rip%5D%5BAC3_2.0_Espa%C3%B1ol_Latino%5D%5B2017%5D.avi'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+<thumbnail>https://image.tmdb.org/t/p/w640/zwh9yd3CYhspyUhC2TeQED3u60f.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/w640/zwh9yd3CYhspyUhC2TeQED3u60f.jpg</fanart>
+<info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]LIFE [/COLOR][COLOR aquamarine] BR  [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+ <item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://openload.co/f/ExRjC89GEYw/Rumble_%5BBluray_Rip%5D%5BAC3_2.0_Espa%C3%B1ol_Castellano%5D%5B2017%5D.avi'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+<thumbnail>https://image.tmdb.org/t/p/w640/tOE27z1qQyxV7U2sZIYMTw6c3Zx.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/w640/tOE27z1qQyxV7U2sZIYMTw6c3Zx.jpg</fanart>
+<info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]Rumble[/COLOR][COLOR aquamarine] BR  [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+ <item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://openload.co/f/nkx49IiH9YI/Se_Nos_Armo_La_Gorda_Las_Vegas_%5BBluRay_Rip%5D%5BAC3_2.0_Espa%C3%B1ol_Latino%5D%5B2017%5D.avi'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+<thumbnail>https://image.tmdb.org/t/p/w640/tOE27z1qQyxV7U2sZIYMTw6c3Zx.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/w640/tOE27z1qQyxV7U2sZIYMTw6c3Zx.jpg</fanart>
+<info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]Se nos armo la gorda [/COLOR][COLOR aquamarine] BR  [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+
+
+
+ <item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://openload.co/f/9VRGrRZvE6w/John.Wick.Chapter.2.2017.1080p.WEB-DL.DD5.1.H264-FGT.mkv'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+<thumbnail>https://image.tmdb.org/t/p/w640/bUie6wrbHEThBhpKoPbqZ6KQrU6.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/w640/bUie6wrbHEThBhpKoPbqZ6KQrU6.jpg</fanart>
+<info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]John.Wick.Chapter.2 [/COLOR][COLOR aquamarine] 1080p  [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+ <item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://openload.co/f/jrXASaLtiR4/A.cure.for.wellness.2016.1080p-dual-lat.mp4'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+<thumbnail>https://image.tmdb.org/t/p/w640/k4XZ47wFZF1aUv7bjLM4Pae2TYm.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/w640/k4XZ47wFZF1aUv7bjLM4Pae2TYm.jpg</fanart>
+<info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]A.cure.for.wellness [/COLOR][COLOR aquamarine] 1080p  [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+ <item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://openload.co/f/k7wUkZUn_X0/Busco_Novio_Para_Mi_Mujer_%5BBluRay_Rip%5D%5BAC3_2.0_Espa%C3%B1ol_Latino%5D%5B2017%5D.avi'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+<thumbnail>https://image.tmdb.org/t/p/w640/9q09alroCs3IidJyDaGqH6VZpPM.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/w640/9q09alroCs3IidJyDaGqH6VZpPM.jpg</fanart>
+<info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]Busco_Novio_Para_Mi_Mujer [/COLOR][COLOR aquamarine] BRrip  [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+ <item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://openload.co/f/aYWTFWdWY8g/Dolores_%5BBluRay_Rip%5D%5BAC3_2.0_Espa%C3%B1ol_Latino%5D%5B2017%5D.avi'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+<thumbnail>https://images-na.ssl-images-amazon.com/images/M/MV5BMTE2MGI4YzEtMDg0YS00YWNlLTkwNzMtMDI3NWFlMDhiZWQ0XkEyXkFqcGdeQXVyNjc3OTE3NTM@._V1_SY1000_CR0,0,699,1000_AL_.jpg</thumbnail>
+<fanart>https://images-na.ssl-images-amazon.com/images/M/MV5BMTE2MGI4YzEtMDg0YS00YWNlLTkwNzMtMDI3NWFlMDhiZWQ0XkEyXkFqcGdeQXVyNjc3OTE3NTM@._V1_SY1000_CR0,0,699,1000_AL_.jpg</fanart>
+<info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]Dolores [/COLOR][COLOR aquamarine]  BRrip [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+ <item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://openload.co/f/3MWSFXsfOU4/Guardians.of.the.Galaxy.Vol.2.2017.720p.HDTC.mp4'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+<thumbnail>https://image.tmdb.org/t/p/w640/1YIJDlsw9XkTgO44q94ZHjH5MY2.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/w640/1YIJDlsw9XkTgO44q94ZHjH5MY2.jpg</fanart>
+<info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]Guardians.of.the.Galaxy.Vol.2 [/COLOR][COLOR aquamarine] HC  [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+ <item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://openload.co/f/6fKkxVho8qU/John_Wick_Pacto_De_Sangre_%5BBluRay_Rip%5D%5BAC3_2.0_Espa%C3%B1ol_Latino%5D%5B2017%5D.avi'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+<thumbnail>https://image.tmdb.org/t/p/w640/bUie6wrbHEThBhpKoPbqZ6KQrU6.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/w640/bUie6wrbHEThBhpKoPbqZ6KQrU6.jpg</fanart>
+<info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]John_Wick_Pacto_De_Sangre [/COLOR][COLOR aquamarine] BRrip  [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+ <item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://openload.co/f/1-TWmUNInVM/Kong.Skull_Island.2017.HC.HDRip.XViD.AC3-ETRG.avi'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+<thumbnail>https://image.tmdb.org/t/p/w640/l52r8cYpyAqveBaMJM4I6BlSllh.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/w640/l52r8cYpyAqveBaMJM4I6BlSllh.jpg</fanart>
+<info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]Kong.Skull_Island [/COLOR][COLOR aquamarine]  HC [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+ <item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://openload.co/f/Skhv8n4p-ls/Me_Case_Con_Un_Boludo_%5BBluRay_Rip%5D%5BAC3_2.0_Espa%C3%B1ol_Latino%5D%5B2017%5D.avi'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+<thumbnail>https://image.tmdb.org/t/p/w640/bM8ewohIiHr8dyo2QCxutYlGcrM.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/w640/bM8ewohIiHr8dyo2QCxutYlGcrM.jpg</fanart>
+<info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]Me case con un Boludo [/COLOR][COLOR aquamarine] BRrip  [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+
+
+ <item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://openload.co/f/f-0g7Lr59zQ/Satanic.2016.1080p-dual-lat.mp4'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+<thumbnail>https://image.tmdb.org/t/p/w640/ii9kWdyB8dyAekx5dQ6f2kU88Sy.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/w640/ii9kWdyB8dyAekx5dQ6f2kU88Sy.jpg</fanart>
+<info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]Satanic [/COLOR][COLOR aquamarine] 1080p   [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+
+ <item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://openload.co/f/tSGp9bLIjLg/The.Fate.of.the.Furious.2017.720p.HDTC.x264.ShAaNiG.mkv'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+<thumbnail>https://image.tmdb.org/t/p/w640/iNpz2DgTsTMPaDRZq2tnbqjL2vF.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/w640/iNpz2DgTsTMPaDRZq2tnbqjL2vF.jpg</fanart>
+<info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]The.Fate.of.the.Furious [/COLOR][COLOR aquamarine] HC  [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+ <item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://openload.co/f/KNuuAoqER-w/The.lego.batman.movie.2017.1080p-dual-lat.mp4'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+<thumbnail>https://image.tmdb.org/t/p/w640/7YQ6FR7vuPkktPGQ0iUjLfmKI2K.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/w640/7YQ6FR7vuPkktPGQ0iUjLfmKI2K.jpg</fanart>
+<info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]The Lego Batman Movie [/COLOR][COLOR aquamarine] 1080p  [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+ <item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://openload.co/f/Joz1WxtH8fk/The.space.between.us.2017.1080p-dual-lat.mp4'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+<thumbnail>https://image.tmdb.org/t/p/w640/zzlRLxYcNM2PIdqEFnWxtCODOZ.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/w640/zzlRLxYcNM2PIdqEFnWxtCODOZ.jpg</fanart>
+<info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]El Espacio entre nosotros [/COLOR][COLOR aquamarine]   [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+ <item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://openload.co/f/tpe-k1LhhGU/Trolls_2016_720p_BRRip_Latino.mkv'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+<thumbnail>https://image.tmdb.org/t/p/w640/A6MPuFHcl3FD8pyEhMe6tSzKo8s.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/w640/A6MPuFHcl3FD8pyEhMe6tSzKo8s.jpg</fanart>
+<info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]Trolls Latino [/COLOR][COLOR aquamarine]  1080p [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+ <item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://openload.co/f/U8cdJYLYN0M/War.machine.2017.1080p-dual-lat.mp4'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+<thumbnail>https://image.tmdb.org/t/p/w640/vbgzbWxmshdTzgzTAVnmBiM4Uxf.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/w640/vbgzbWxmshdTzgzTAVnmBiM4Uxf.jpg</fanart>
+<info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]War Machine [/COLOR][COLOR aquamarine] 1080p  [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+
+
+
+ <item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://openload.co/f/K86GFMLy76Y/Kong.Skull_Island.2017.HC.HDRip.XViD.AC3-ETRG.avi'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+<thumbnail>https://image.tmdb.org/t/p/w640/l52r8cYpyAqveBaMJM4I6BlSllh.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/w640/l52r8cYpyAqveBaMJM4I6BlSllh.jpg</fanart>
+<info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]Kong: la Isla Calavera   [/COLOR][COLOR aquamarine] HC  [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+ <item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://openload.co/f/JXTkeiH22PI/Cosmopolis_%5BDVDrip%5D%5BV.O_Subtitulado_Espa%C3%B1ol%5D%5B2012%5D.avi'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+<thumbnail>https://image.tmdb.org/t/p/w640/7QoEMB61viWttZVI6GCiuen8iAo.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/w640/7QoEMB61viWttZVI6GCiuen8iAo.jpg</fanart>
+<info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]Cosmopolis  [/COLOR][COLOR aquamarine] Sub  [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+ <item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://openload.co/f/6rrgvIO69dA/Sahara.2017.1080p-dual-lat.mp4'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+<thumbnail>https://image.tmdb.org/t/p/w640/9p8SQYNazWavpMzhN0OIuZm0HgI.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/w640/9p8SQYNazWavpMzhN0OIuZm0HgI.jpg</fanart>
+<info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]Sahara   [/COLOR][COLOR aquamarine]   [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/FV8Uf65r7Ydh'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+<thumbnail>https://image.tmdb.org/t/p/w640/1YIJDlsw9XkTgO44q94ZHjH5MY2.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/w640/1YIJDlsw9XkTgO44q94ZHjH5MY2.jpg</fanart>
+<info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]Guardians of the Galaxy   [/COLOR][COLOR aquamarine]VO | HDCAM[/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/X40U18BVNw1i'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+<thumbnail>https://image.tmdb.org/t/p/w640/ewVHnq4lUiovxBCu64qxq5bT2lu.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/w640/ewVHnq4lUiovxBCu64qxq5bT2lu.jpg</fanart>
+<info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]Alien Covenant   [/COLOR][COLOR aquamarine]TS[/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+
+
+
+ <item>
+<title> [COLOR skyblue]John Wick 2 [BluRay Screener Line]  [/COLOR][COLOR lightslategray] [/COLOR]</title>
+
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/OlG8iKHVau0c'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+<thumbnail>https://images-na.ssl-images-amazon.com/images/M/MV5BMjE2NDkxNTY2M15BMl5BanBnXkFtZTgwMDc2NzE0MTI@._V1_SY1000_CR0,0,648,1000_AL_.jpg</thumbnail>
+<fanart>https://images-na.ssl-images-amazon.com/images/M/MV5BMjE2NDkxNTY2M15BMl5BanBnXkFtZTgwMDc2NzE0MTI@._V1_SY1000_CR0,0,648,1000_AL_.jpg</fanart>
+<info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+<description>Disfruta de esta pelicula gracias a ADRYANLIST; El addon mas grande y completo de KODI</description>
+
+
+
+ <item>
+<title> [COLOR skyblue]Si No Despierto [BluRay Screener] [/COLOR][COLOR lightslategray] [/COLOR]</title>
+
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/554a0k02NW2E'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+<thumbnail>https://images-na.ssl-images-amazon.com/images/M/MV5BNDYwOTY0MDI2OV5BMl5BanBnXkFtZTgwOTE5NzM2MDI@._V1_SY1000_SX675_AL_.jpg</thumbnail>
+<fanart>https://images-na.ssl-images-amazon.com/images/M/MV5BNDYwOTY0MDI2OV5BMl5BanBnXkFtZTgwOTE5NzM2MDI@._V1_SY1000_SX675_AL_.jpg</fanart>
+<info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+<description>Disfruta de esta pelicula gracias a ADRYANLIST; El addon mas grande y completo de KODI</description>
+
+
+
+
+
+ <item>
+<title> [COLOR skyblue]La Bella y la Bestia HD  [Latino] 2017 [/COLOR][COLOR lightslategray] [/COLOR]</title>
+
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://openload.co/f/rYpByv31rOQ/La_Bella_y_La_Bestia_%5BBluRay_Rip%5D%5BAC3_2.0_Espa%C3%B1ol_Latino%5D%5B2017%5D.avi'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+<thumbnail>https://images-na.ssl-images-amazon.com/images/M/MV5BMTUwNjUxMTM4NV5BMl5BanBnXkFtZTgwODExMDQzMTI@._V1_SX300.jpg</thumbnail>
+<fanart>https://images-na.ssl-images-amazon.com/images/M/MV5BMTUwNjUxMTM4NV5BMl5BanBnXkFtZTgwODExMDQzMTI@._V1_SX300.jpg</fanart>
+<info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+<description>Disfruta de esta pelicula gracias a ADRYANLIST; El addon mas grande y completo de KODI</description>
+</item>
+
+
+
+ <item>
+<title> [COLOR skyblue]Logan  [Latino] 2017 [/COLOR][COLOR lightslategray] [/COLOR]</title>
+
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/425aiSJ1hY16'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+<thumbnail>http://www.cinecalidad.to/wp-content/uploads/2017/05/logan.jpg</thumbnail>
+<fanart>http://www.cinecalidad.to/wp-content/uploads/2017/05/logan.jpg</fanart>
+<info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+<description>Disfruta de esta pelicula gracias a ADRYANLIST; El addon mas grande y completo de KODI</description>
+<date>23-05-2017</date>
+</item>
+
+ 
+
+
+ <item>
+<title> [COLOR skyblue] Ballerina  [/COLOR][COLOR lightslategray] [/COLOR]</title>
+
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://openload.co/f/Rl8hprKFJLs/Ballerina.2016.1080p-dual-lat.mp4'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+<thumbnail>https://image.tmdb.org/t/p/w640/w8wbS7YRoi4kmlrigRHOaATsX6G.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/w640/w8wbS7YRoi4kmlrigRHOaATsX6G.jpg</fanart>
+<info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+<description>Disfruta de esta pelicula gracias a ADRYANLIST; El addon mas grande y completo de KODI</description>
+</item>
+
+
+ <item>
+<title> [COLOR skyblue]Eliminators   [/COLOR][COLOR lightslategray] [/COLOR]</title>
+
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://openload.co/f/PrMZDXRkVfc/Eliminators.2016.1080p-dual-lat.mp4'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+<thumbnail>https://image.tmdb.org/t/p/w640/2zylzsqPXz38ZaQO6g0yNrk5l38.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/w640/2zylzsqPXz38ZaQO6g0yNrk5l38.jpg</fanart>
+<info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+<description>Disfruta de esta pelicula gracias a ADRYANLIST; El addon mas grande y completo de KODI</description>
+</item>
+
+
+ <item>
+<title> [COLOR skyblue] 50 Sombras mas Oscuras  [/COLOR][COLOR lightslategray] [/COLOR]</title>
+
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://openload.co/f/u-hZU86TsuI/Fifty.shades.darker.2017.1080p.unrated-dual-lat.mp4'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+<thumbnail>https://image.tmdb.org/t/p/w640/skinwcpFhGykt4gE2jSg916L7AS.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/w640/skinwcpFhGykt4gE2jSg916L7AS.jpg</fanart>
+<info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+<description>Disfruta de esta pelicula gracias a ADRYANLIST; El addon mas grande y completo de KODI</description>
+</item>
+
+
+ <item>
+<title> [COLOR skyblue]Kicks   [/COLOR][COLOR lightslategray] [/COLOR]</title>
+
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://openload.co/f/9GcJazzNzZk/Kicks.2016.1080p-dual-lat.mp4'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+<thumbnail>https://image.tmdb.org/t/p/w640/tDgSxVWVuGDdvLUUlp5FsUnD3vu.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/w640/tDgSxVWVuGDdvLUUlp5FsUnD3vu.jpg</fanart>
+<info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+<description>Disfruta de esta pelicula gracias a ADRYANLIST; El addon mas grande y completo de KODI</description>
+</item>
+
+
+ <item>
+<title> [COLOR skyblue] La Cabaña  [/COLOR][COLOR lightslategray] [/COLOR]</title>
+
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://openload.co/f/G4R_o6ur2yE/La_Caba%C3%B1a_%5BBluRay_rip%5D%5BAC3_2.0_Espa%C3%B1ol_Latino%5D%5B2017%5D.avi'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+<thumbnail>https://image.tmdb.org/t/p/w640/lsdgSzYd7CI37gADzA6rzgeim61.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/w640/lsdgSzYd7CI37gADzA6rzgeim61.jpg</fanart>
+<info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+<description>Disfruta de esta pelicula gracias a ADRYANLIST; El addon mas grande y completo de KODI</description>
+</item>
+
+
+ <item>
+<title> [COLOR skyblue]La La Land   [/COLOR][COLOR lightslategray] [/COLOR]</title>
+
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://openload.co/f/db5m3EEOGxI/La.la.land.2016.1080p-dual-lat.mp4'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+<thumbnail>https://image.tmdb.org/t/p/w640/i712GLJklSVeuuNiz4egs7L1BvF.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/w640/i712GLJklSVeuuNiz4egs7L1BvF.jpg</fanart>
+<info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+<description>Disfruta de esta pelicula gracias a ADRYANLIST; El addon mas grande y completo de KODI</description>
+</item>
+
+
+ <item>
+<title> [COLOR skyblue]Resident Evil The Final Chapter   [/COLOR][COLOR lightslategray] [/COLOR]</title>
+
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://openload.co/f/Vv6d6T5Iv0w/Resident.evil.the.final.chapter.2016.1080p-dual-lat.mp4'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+<thumbnail>https://image.tmdb.org/t/p/w640/8Tqc5bafK2kdY4j8qwVH5zIwIIx.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/w640/8Tqc5bafK2kdY4j8qwVH5zIwIIx.jpg</fanart>
+<info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+<description>Disfruta de esta pelicula gracias a ADRYANLIST; El addon mas grande y completo de KODI</description>
+</item>
+
+
+ <item>
+<title> [COLOR skyblue] T2 Trainspotting  [/COLOR][COLOR lightslategray]SUB [/COLOR]</title>
+
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://openload.co/f/Q-Fy4xRxGN4/T2.Trainspotting.2017.HDRip.XviD.AC3-EVO.avi'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+<thumbnail>https://image.tmdb.org/t/p/w640/A84pxL5z86KbV9u8GAK2mVOoXK.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/w640/A84pxL5z86KbV9u8GAK2mVOoXK.jpg</fanart>
+<info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+<description>Disfruta de esta pelicula gracias a ADRYANLIST; El addon mas grande y completo de KODI</description>
+</item>
+
+
+ <item>
+<title> [COLOR skyblue] La gran Muralla  [/COLOR][COLOR lightslategray] [/COLOR]</title>
+
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://openload.co/f/sfpOq-x7YMc/The.great.wall.2016.1080p-dual-lat.mp4'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+<thumbnail>https://image.tmdb.org/t/p/w640/8VenQvaBTOM2By4rsJbCZhl6hFU.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/w640/8VenQvaBTOM2By4rsJbCZhl6hFU.jpg</fanart>
+<info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+<description>Disfruta de esta pelicula gracias a ADRYANLIST; El addon mas grande y completo de KODI</description>
+</item>
+
+
+ <item>
+<title> [COLOR skyblue]Los Siete Magnificos   [/COLOR][COLOR lightslategray] [/COLOR]</title>
+
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://openload.co/f/kplZcitCKrk/The.magnificent.seven.2016.1080p-dual-lat.mp4'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+<thumbnail>https://image.tmdb.org/t/p/w640/2tZ4yKJyHb7UR1zCfcUwHclPwNs.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/w640/2tZ4yKJyHb7UR1zCfcUwHclPwNs.jpg</fanart>
+<info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+<description>Disfruta de esta pelicula gracias a ADRYANLIST; El addon mas grande y completo de KODI</description>
+</item>
+
+
+ <item>
+<title> [COLOR skyblue] XXX: Reactivado  [/COLOR][COLOR lightslategray] [/COLOR]</title>
+
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://openload.co/f/XMbkSdoWw90/Xxx.return.of.xander.cage.2017.1080p-dual-lat.mp4'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+<thumbnail>https://image.tmdb.org/t/p/w640/rc830XBY2h8HBtHeISpR9qb2PU6.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/w640/rc830XBY2h8HBtHeISpR9qb2PU6.jpg</fanart>
+<info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+<description>Disfruta de esta pelicula gracias a ADRYANLIST; El addon mas grande y completo de KODI</description>
+</item>
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/jV0DHgVfKG8u'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+<thumbnail>https://images-na.ssl-images-amazon.com/images/M/MV5BMTQ5Njk4OTgzNV5BMl5BanBnXkFtZTgwMDc0OTAxMDI@._V1_SY1000_SX675_AL_.jpg</thumbnail>
+<fanart>https://images-na.ssl-images-amazon.com/images/M/MV5BMTQ5Njk4OTgzNV5BMl5BanBnXkFtZTgwMDc0OTAxMDI@._V1_SY1000_SX675_AL_.jpg</fanart>
+<info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]Trespass Against Us  [/COLOR][COLOR aquamarine][/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/26W51ey27Lv5'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+<thumbnail>https://2.bp.blogspot.com/-3lt_g9wxovM/WR8g7yeTlpI/AAAAAAAAN0w/4R31JoPYt9kbs4fsRtZ8CNwd31R6GUh_wCLcB/s1600/Erase_una_vez_en_Buenos_Aires_poster_argentina.jpg</thumbnail>
+<fanart>https://2.bp.blogspot.com/-3lt_g9wxovM/WR8g7yeTlpI/AAAAAAAAN0w/4R31JoPYt9kbs4fsRtZ8CNwd31R6GUh_wCLcB/s1600/Erase_una_vez_en_Buenos_Aires_poster_argentina.jpg</fanart>
+<info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]Erase Una Vez En Buenos Aires [/COLOR][COLOR aquamarine][/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/4v2tvUp78B5a'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+<thumbnail>https://s-media-cache-ak0.pinimg.com/originals/34/02/01/3402011230f70c452a6b1743278755fc.jpg</thumbnail>
+<fanart>https://s-media-cache-ak0.pinimg.com/originals/34/02/01/3402011230f70c452a6b1743278755fc.jpg</fanart>
+<info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]Taekwondo [/COLOR][COLOR aquamarine][/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/Jmm0qVu5jt43'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+<thumbnail>https://mir-s3-cdn-cf.behance.net/project_modules/disp/f6eeeb37306979.573bd709078fa.png</thumbnail>
+<fanart>https://mir-s3-cdn-cf.behance.net/project_modules/disp/f6eeeb37306979.573bd709078fa.png</fanart>
+<info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]Terror 5  [/COLOR][COLOR aquamarine][/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/kEh7Lr2BC3KN'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+<thumbnail>https://images-na.ssl-images-amazon.com/images/M/MV5BMTcyNTEyOTY0M15BMl5BanBnXkFtZTgwOTAyNzU3MDI@._V1_SY1000_CR0,0,674,1000_AL_.jpg</thumbnail>
+<fanart>https://images-na.ssl-images-amazon.com/images/M/MV5BMTcyNTEyOTY0M15BMl5BanBnXkFtZTgwOTAyNzU3MDI@._V1_SY1000_CR0,0,674,1000_AL_.jpg</fanart>
+<info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]Batman La Lego Pelicula [/COLOR][COLOR aquamarine][/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/7lx6By6WNP6v'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+<thumbnail>http://www.cinecalidad.to/wp-content/uploads/2017/05/pelea-de-maestros.jpg</thumbnail>
+<fanart>http://www.cinecalidad.to/wp-content/uploads/2017/05/pelea-de-maestros.jpg</fanart>
+<info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]Fist.fight  [/COLOR][COLOR aquamarine][/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/6dLfq11UM5k1'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+<thumbnail>http://www.cinecalidad.to/wp-content/uploads/2017/05/huye.jpg</thumbnail>
+<fanart>http://www.cinecalidad.to/wp-content/uploads/2017/05/huye.jpg</fanart>
+<info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]Get.out  [/COLOR][COLOR aquamarine][/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/6F2GLS0cT581'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+<thumbnail>http://www.cinecalidad.to/wp-content/uploads/2017/05/justice-league-throne-of-atlantis.jpg</thumbnail>
+<fanart>http://www.cinecalidad.to/wp-content/uploads/2017/05/justice-league-throne-of-atlantis.jpg</fanart>
+<info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]Justice.league.throne.of.atlantis [/COLOR][COLOR aquamarine][/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/Y82cYE283X7C'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+<thumbnail>http://www.cinecalidad.to/wp-content/uploads/2017/05/manchester-junto-al-mar.jpg</thumbnail>
+<fanart>http://www.cinecalidad.to/wp-content/uploads/2017/05/manchester-junto-al-mar.jpg</fanart>
+<info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]Manchester.by.the.sea [/COLOR][COLOR aquamarine][/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/LccLTJQ8rkcW'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+<thumbnail>http://www.cinecalidad.to/wp-content/uploads/2017/05/mine.jpg</thumbnail>
+<fanart>http://www.cinecalidad.to/wp-content/uploads/2017/05/mine.jpg</fanart>
+<info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]Mine [/COLOR][COLOR aquamarine][/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/QRonnMaDrA25'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+<thumbnail>http://www.cinecalidad.to/wp-content/uploads/2017/05/luz-de-luna.jpg</thumbnail>
+<fanart>http://www.cinecalidad.to/wp-content/uploads/2017/05/luz-de-luna.jpg</fanart>
+<info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]Moonlight.2016.1080p-dual-lat.mp4 [/COLOR][COLOR aquamarine][/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/337rXGPfBc4o'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+<thumbnail>http://www.cinecalidad.to/wp-content/uploads/2017/05/neruda.jpg</thumbnail>
+<fanart>http://www.cinecalidad.to/wp-content/uploads/2017/05/neruda.jpg</fanart>
+<info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]Neruda [/COLOR][COLOR aquamarine][/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/G7PWL7nUA2rr'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+<thumbnail>https://images-na.ssl-images-amazon.com/images/M/MV5BMjM3ODY3Njc5Ml5BMl5BanBnXkFtZTgwMjQ5NjM5MTI@._V1_SY1000_CR0,0,674,1000_AL_.jpg</thumbnail>
+<fanart>https://images-na.ssl-images-amazon.com/images/M/MV5BMjM3ODY3Njc5Ml5BMl5BanBnXkFtZTgwMjQ5NjM5MTI@._V1_SY1000_CR0,0,674,1000_AL_.jpg</fanart>
+<info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]Rey Arturo La Leyenda de Excalibur [TS Screener] [/COLOR][COLOR aquamarine][/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/i4i1CUUtEa57'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+<thumbnail>http://www.cinecalidad.to/wp-content/uploads/2017/05/sand-castle.jpg</thumbnail>
+<fanart>http://www.cinecalidad.to/wp-content/uploads/2017/05/sand-castle.jpg</fanart>
+<info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]Sand.castle  [/COLOR][COLOR aquamarine][/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+
+
+ <item>
+<title> [COLOR skyblue]La Bella y la Bestia  [Latino] 2017 [/COLOR][COLOR lightslategray] [/COLOR]</title>
+
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://openload.co/f/HwbhKRSzP-U/La_Bella_y_La_Bestia_%5BBluRay_Screecner%5D%5BEspa%C3%B1ol_Latino%5D%5B2017%5D.avi'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+<thumbnail>https://images-na.ssl-images-amazon.com/images/M/MV5BMTUwNjUxMTM4NV5BMl5BanBnXkFtZTgwODExMDQzMTI@._V1_SX300.jpg</thumbnail>
+<fanart>https://images-na.ssl-images-amazon.com/images/M/MV5BMTUwNjUxMTM4NV5BMl5BanBnXkFtZTgwODExMDQzMTI@._V1_SX300.jpg</fanart>
+<info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+</item>
+
+
+
+
+
+
+
+<item>
+<title>[COLOR gold]alien covenant [/COLOR][COLOR aquamarine][/COLOR][COLOR pink] [I]   2017[/I][/COLOR]</title>
+
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/YlJAp0HAU0rX'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+<thumbnail>http://www.scified.com/u/IMG_20170323_0950491.jpg</thumbnail>
+<fanart>http://www.alien-covenant.com/aliencovenant_uploads/alien_poster.png</fanart>
+</item>
+
+
+
+
+
+<item>
+<title>[COLOR gold]Neruda [/COLOR][COLOR aquamarine][/COLOR][COLOR pink] [I][/I]   2017[/COLOR]</title>
+
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/337rXGPfBc4o'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+<thumbnail>http://www.cinecalidad.to/wp-content/uploads/2017/05/neruda.jpg</thumbnail>
+<fanart>http://www.cinecalidad.to/wp-content/uploads/2017/05/neruda.jpg</fanart>
+</item>
+
+
+
+<item>
+<title>[COLOR gold]Assassins Creed [/COLOR][COLOR aquamarine][/COLOR][COLOR pink] [I]   2016 HD 1080[/I][/COLOR]</title>
+
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://www.yourupload.com/watch/6KL6T6N6V1ci'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+<thumbnail>http://www.cinecalidad.to/wp-content/uploads/2017/05/neruda.jpg</thumbnail>
+<fanart>http://www.cinecalidad.to/wp-content/uploads/2017/05/neruda.jpg</fanart>
+</item>
+
+
+
+
+ <item>
+
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://streamango.com/f/protopecmnbcseka/Trasgredire_2000_HDrip_avi_mp4'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail> 
+<fanart>https://image.tmdb.org/t/p/original/</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]Trasgredire [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

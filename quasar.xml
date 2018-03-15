@@ -1,0 +1,1941 @@
+<SetViewMode>55</SetViewMode>
+
+
+
+
+
+<item>
+<title>     [B] BUSCADOR [/B]  SkyTorrents   VO </title>
+<link>$doregex[makelist2]</link>
+
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+ <SetViewMode>55</SetViewMode>
+ <title>[UPPERCASE][B] [makelist2.param2][/B][/UPPERCASE]  </title>
+<link>plugin://plugin.video.quasar/play?uri=[makelist2.param1]</link>
+<thumbnail>[makelist2.param2]</thumbnail>
+</regex>
+]]></listrepeat>
+<expres><![CDATA[href="(magnet.*?)"[\w\W\s]{0,34}Download\s(.*?)using]]></expres>
+<page>https://www.skytorrents.in/search/all/ed/1/?q=$doregex[search]</page>
+</regex>
+
+
+
+
+<regex>
+<name>search</name>
+<expres><![CDATA[#$pyFunction
+import xbmc
+import xbmcaddon
+import xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+    dialog = xbmcgui.Dialog()
+    d = dialog.input('Buscar Pelicula: ejemplo: Batman', type=xbmcgui.INPUT_ALPHANUM).replace(" ", "+")
+    return d
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+
+
+
+
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+
+</item>
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>     [B] BUSCADOR [/B]  GranTorrent  ** Castellano </title>
+<link>$doregex[makelist2]</link>
+
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+ <SetViewMode>55</SetViewMode>
+ <title>[UPPERCASE][B] [makelist2.param3][/B][/UPPERCASE]  </title>
+<link>$doregex[makelist]</link>
+<thumbnail>[makelist2.param2]</thumbnail>
+</regex>
+]]></listrepeat>
+<expres><![CDATA[imagen-post[\w\W\s]{0,8}href="(.*?)"[\w\W\s]{0,7}src="(.*?)"[\w\W\s]{0,400}bloque-inferior">\n(.*?)<]]></expres>
+<page>https://grantorrent.com/?s=$doregex[search]</page>
+</regex>
+
+<regex>
+<name>search</name>
+<expres><![CDATA[#$pyFunction
+import xbmc
+import xbmcaddon
+import xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+    dialog = xbmcgui.Dialog()
+    d = dialog.input('Buscar Pelicula: ejemplo: Batman', type=xbmcgui.INPUT_ALPHANUM).replace(" ", "+")
+    return d
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+
+
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+ <SetViewMode>55</SetViewMode>
+ <title>[UPPERCASE][B] [makelist2.param3][/B][/UPPERCASE]  Calidad:[makelist.param2]  Tamaño:[makelist.param3]  </title>
+<link>plugin://plugin.video.quasar/play?uri=[makelist.param4]</link>
+<thumbnail>[makelist2.param2]</thumbnail>
+</regex>
+]]></listrepeat>
+<expres><![CDATA[alt="(.*?)".*?td>\n<td>(.*?)<.*?\n<td>(.*?)<.*?\n.*?href="(.*?torrent)"]]></expres>
+<page>[makelist2.param1]</page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+
+</item>
+
+
+alt="(.*?)".*?td>\n<td>(.*?)<.*?\n<td>(.*?)<.*?\n.*?href="(.*?torrent)"
+
+
+
+
+
+
+
+<item>
+<title>     [B] BUSCADOR [/B]  ElMejorTorrent   Castellano </title>
+<link>$doregex[makelist2]</link>
+
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+ <SetViewMode>55</SetViewMode>
+ <title>[UPPERCASE][B] [makelist2.param2][/B][/UPPERCASE] [I][makelist2.param3][/I]  </title>
+<link>$doregex[makelist]</link>
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+
+</regex>
+]]></listrepeat>
+<expres><![CDATA[peli-descargar-torrent-(.*?)-.*?darkblue\'>(.*?)<.*?gray\;\'>(.*?)<]]></expres>
+<page>http://www.mejortorrent.com/secciones.php?sec=buscador&amp;valor=$doregex[search]</page>
+</regex>
+
+
+
+
+<regex>
+<name>search</name>
+<expres><![CDATA[#$pyFunction
+import xbmc
+import xbmcaddon
+import xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+    dialog = xbmcgui.Dialog()
+    d = dialog.input('Buscar Pelicula: ejemplo: Batman', type=xbmcgui.INPUT_ALPHANUM).replace(" ", "+")
+    return d
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+
+
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+   <title>Reproducir [B][makelist2.param2][/B] </title>
+
+    <link>plugin://plugin.video.quasar/play?uri=http://www.mejortorrent.com[makelist.param2]</link>
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+
+]]></listrepeat>
+<expres>href=\'(.*?torrent)\'</expres>
+<page>http://www.mejortorrent.com/secciones.php?sec=descargas&amp;ap=contar&amp;tabla=peliculas&amp;id=[makelist2.param1]&amp;link_bajar=1</page>
+</regex>
+
+
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+
+</item>
+
+
+
+
+<item>
+<title>     [B] BUSCADOR [/B]  TorrentKing    </title>
+<link>$doregex[makelist2]</link>
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+   <SetViewMode>55</SetViewMode>
+   <title>[B][makelist2.param2][/B]  [makelist2.param3]</title>
+<link>$doregex[makelist]</link>
+ <thumbnail>[makelist2.param4]</thumbnail>
+
+]]></listrepeat>
+<expres><![CDATA[href="(.*?)"\stitle="(.*?)"[\w\W\s]{0,199}title="(.*?)".*?data-src="(.*?)"]]></expres>
+<page>https://torrentking.eu/search?mk=$doregex[search]</page>
+</regex>
+
+
+href="(.*?)"\stitle="(.*?)"[\w\W\s]{0,180}movie-image.*?data-src="(.*?)"
+
+
+
+
+<regex>
+<name>search</name>
+<expres><![CDATA[#$pyFunction
+import xbmc
+import xbmcaddon
+import xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+    dialog = xbmcgui.Dialog()
+    d = dialog.input('Buscar Pelicula: ejemplo: Batman', type=xbmcgui.INPUT_ALPHANUM).replace(" ", "+")
+    return d
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+   <SetViewMode>55</SetViewMode>
+   <title>[B][makelist.param2][/B] Tamaño: [makelist.param3] Seed:[makelist.param4] - Peers:[makelist.param5] </title>
+   <link>plugin://plugin.video.quasar/play?uri=[makelist.param1]</link>
+ <thumbnail>[makelist2.param4]</thumbnail>
+
+]]></listrepeat>
+<expres><![CDATA[href="(magnet.*?)"\s[\w\W\s]{0,222}Stream[\w\W\s]{0,13}<td>(.*?)<[\w\W\s]{0,23}white-transparent">(.*?)<[\w\W\s]{0,23}white-transparent">(.*?)<[\w\W\s]{0,20}white-transparent">(.*?)<]]></expres>
+<page>[makelist2.param1]</page>
+</regex>
+
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>     [B]PasateATorrent[/B]  CARTELERA   Castellano </title>
+<link>$doregex[makelist3]</link>
+
+
+<regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+<title>Pagina [makelist3.param1]</title>
+<link>$doregex[makelist2]</link>
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+
+]]></listrepeat>
+<expres>'(.*?)'</expres>
+<page>'1''2''3''4''5''6''7''8''9''10''11''12''13''14''15''16''17''18''19''20''21''22''23''24''25'</page>
+</regex>
+
+
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+ <SetViewMode>55</SetViewMode>
+ <title>[UPPERCASE][B][makelist2.param3]   [/B][/UPPERCASE]  </title>
+<link>$doregex[makelist]</link>
+<thumbnail>[makelist2.param2]</thumbnail>
+</regex>
+]]></listrepeat>
+<expres><![CDATA[imagen-post[\w\W\s]{0,8}href="(.*?)".*?src=(.*?)".*?\n.*?bloque-inferior">\n(.*?)<]]></expres>
+<page>https://grantorrent.com/page/[makelist3.param1]/</page>
+</regex>
+
+
+
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+ <SetViewMode>55</SetViewMode>
+ <title>[UPPERCASE][B] [makelist2.param3][/B][/UPPERCASE]  Calidad:[makelist.param2]  Tamaño:[makelist.param3]  </title>
+<link>plugin://plugin.video.quasar/play?uri=[makelist.param4]</link>
+<thumbnail>[makelist2.param2]</thumbnail>
+</regex>
+]]></listrepeat>
+<expres><![CDATA[alt="(.*?)".*?td>\n<td>(.*?)<.*?\n<td>(.*?)<.*?\n.*?href="(.*?torrent)"]]></expres>
+<page>[makelist2.param1]</page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+
+</item>
+
+
+
+
+
+
+
+
+
+<item>
+<title>     [B]ElMejorTorrent[/B]  ESTRENOS   Castellano </title>
+<link>$doregex[makelist2]</link>
+
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>$doregex[name] </title>
+<link>$doregex[makelist]</link>
+<thumbnail>http://www.mejortorrent.com/uploads/imagenes/peliculas/$doregex[imagen].jpg</thumbnail>
+]]></listrepeat>
+<expres>peli-descargar-torrent-(.*?)-.*?\n.*?\/uploads\/imagenes\/peliculas\/(.*?)\.jpg</expres>
+<page>$doregex[select]</page>
+</regex>
+
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+   import xbmcgui
+   dialog = xbmcgui.Dialog()
+   ret = dialog.select('Elige una Calidad ', ['Peliculas en DVDRIP', 'Peliculas en HD'])
+   lists = ['http://www.mejortorrent.com/torrents-de-peliculas.html','http://www.mejortorrent.com/torrents-de-peliculas-hd-alta-definicion.html']
+   return lists[ret]
+]]></expres>
+<page></page>
+</regex>
+
+<regex>
+<name>imagen</name>
+<expres>$pyFunction:'[makelist2.param2]'.replace(" ", "%20")</expres>
+<page></page>
+</regex>
+<regex>
+<name>name</name>
+<expres>$pyFunction:'[makelist2.param2]'.replace(".", " ").replace("_", " ").replace("-", " ")</expres>
+<page></page>
+</regex>
+
+
+
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+   <title>Reproducir torrent with Quasar</title>
+
+    <link>plugin://plugin.video.quasar/play?uri=http://www.mejortorrent.com[makelist.param2]</link>
+<thumbnail>http://www.mejortorrent.com/uploads/imagenes/peliculas/$doregex[imagen].jpg</thumbnail>
+]]></listrepeat>
+<expres>href=\'(.*?torrent)\'</expres>
+<page>http://www.mejortorrent.com/secciones.php?sec=descargas&amp;ap=contar&amp;tabla=peliculas&amp;id=[makelist2.param1]&amp;link_bajar=1</page>
+</regex>
+
+
+
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+
+</item>
+
+
+
+
+
+
+<item>
+<title>     [B]Estrenos[/B] Castellano </title>
+<link>$doregex[makelist2]</link>
+
+
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+ <SetViewMode>55</SetViewMode>
+ <title>[UPPERCASE][B] [makelist2.param5][/B][/UPPERCASE]   Calidad:[makelist2.param3]  </title>
+<link>$doregex[makelist]</link>
+<thumbnail>[makelist2.param2]</thumbnail>
+</regex>
+]]></listrepeat>
+<expres><![CDATA[href="(.*?)".*?src="(.*?)"[\w\W\s]{0,350}bloque_superior">\n(.*?)<[\w\W\s]{0,110}icono\_(.*?).png[\w\W\s]{0,40}bloque_inferior">\n(.*?)<]]></expres>
+<page>https://grantorrent.com</page>
+</regex>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+ <SetViewMode>55</SetViewMode>
+ <title>[UPPERCASE][B] [makelist2.param5][/B][/UPPERCASE]  Calidad:[makelist.param1]  Tamaño:[makelist.param2]  </title>
+<link>plugin://plugin.video.quasar/play?uri=[makelist.param3]</link>
+<thumbnail>[makelist2.param2]</thumbnail>
+</regex>
+]]></listrepeat>
+<expres>d>(.*?)<[\w\W\s]{0,7}td>(.*?)\.[\w\W\s]{0,16}href="(.*?)"</expres>
+<page>[makelist2.param1]</page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+
+</item>
+
+
+
+
+<item>
+<title>     [B]Estrenos[/B]  Latino    </title>
+<link>$doregex[makelist]</link>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+ <title>[makelist.param2]</title>
+<link>plugin://plugin.video.quasar/play?uri=[makelist.param1]</link>
+<thumbnail>[makelist2.param2]</thumbnail>
+</regex>
+]]></listrepeat>
+<expres><![CDATA[href="(magnet.*?)[\w\W\s]{0,30}Download\s(.*?)using]]></expres>
+<page>https://www.skytorrents.in/search/all/ad/1/?l=en-us&amp;q=latino</page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+
+</item>
+
+<itm>
+<title>     [B]Estrenos[/B]  Castelano    </title>
+<link>$doregex[makelist]</link>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+ <title>[makelist.param2]</title>
+<link>plugin://plugin.video.quasar/play?uri=[makelist.param1]</link>
+<thumbnail>[makelist2.param2]</thumbnail>
+</regex>
+]]></listrepeat>
+<expres><![CDATA[href="(magnet.*?)[\w\W\s]{0,30}Download\s(.*?)using]]></expres>
+<page>https://www.skytorrents.in/search/all/ad/1/?l=en-us&amp;q=castellano</page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+
+</item>
+
+
+
+
+<item>
+<title>     [B]TOP 40[/B]  Latino   </title>
+<link>$doregex[makelist]</link>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+ <title>[makelist.param2]</title>
+<link>plugin://plugin.video.quasar/play?uri=[makelist.param1]</link>
+<thumbnail>[makelist2.param2]</thumbnail>
+</regex>
+]]></listrepeat>
+<expres><![CDATA[href="(magnet.*?)[\w\W\s]{0,30}Download\s(.*?)using]]></expres>
+<page>https://www.skytorrents.in/search/all/ed/1/?l=en-us&amp;q=latino</page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+
+</item>
+
+
+<item>
+<title>     [B]TOP 40[/B]  Castellano    </title>
+<link>$doregex[makelist]</link>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+ <title>[makelist.param2]</title>
+<link>plugin://plugin.video.quasar/play?uri=[makelist.param1]</link>
+<thumbnail>[makelist2.param2]</thumbnail>
+</regex>
+]]></listrepeat>
+<expres><![CDATA[href="(magnet.*?)[\w\W\s]{0,30}Download\s(.*?)using]]></expres>
+<page>https://www.skytorrents.in/search/all/ed/1/?l=en-us&amp;q=castellano</page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>     [B]MOVIES  MIX[/B]  Estrenos / Audio Latino / Subtituladas  </title>
+<link>$doregex[makelist4]</link>
+
+<regex>
+<name>makelist4</name>
+<listrepeat><![CDATA[
+<title>[B][makelist4.param2][/B] </title>
+<link>$doregex[makelist3]</link>
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+
+]]></listrepeat>
+<expres>ddmix.net\/peliculas\/(.*?)\/" title="(.*?)"</expres>
+<page>https://ddmix.net/</page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+<title>Page [makelist3.param1] </title>
+<link>$doregex[makelist2]</link>
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+
+]]></listrepeat>
+<expres><![CDATA[paginado:"(.*?)";]]></expres>
+<page>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/kozm.txt</page>
+<cookieJar></cookieJar>
+</regex>
+
+
+ <regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>[makelist2.param2]</title>
+<link>$doregex[makelist]</link>
+<thumbnail>http:[makelist2.param3]</thumbnail>
+]]></listrepeat>
+<expres>href="(.*?\/)"[\w\W\s]{0,30}alt="(.*?)"[\w\W\s]{0,2}src="(.*?)"</expres>
+<page>https://ddmix.net/peliculas/[makelist4.param1]/page/[makelist3.param1]/</page>
+</regex>
+
+ <regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param2] </title>
+<link>plugin://plugin.video.quasar/play?uri=[makelist.param1]</link>
+<thumbnail>http:[makelist2.param3]</thumbnail>
+]]></listrepeat>
+<expres>href="(magnet.*?)"[\w\W\s]{0,150}tooltiptext">(.*?)<</expres>
+<page>[makelist2.param1]</page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<itm>
+<title>     [B]DivxaTope[/B]  Castellano </title>
+<link>$doregex[makelist]</link>
+<thumbnail>http://www.divxatope.com/newtemp/template/images/logo.png</thumbnail>       <!--thumb del sitio  web-->
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+    <title>[makelist.param2]  ( [makelist.param3])</title>
+
+    <link>plugin://plugin.video.quasar/play?uri=$doregex[link-torrent]</link>
+  <regex>
+    <name>link-torrent</name>
+    <expres>br\s\/&gt;\n.*?&lt;a\shref="(http.*?)"</expres>
+    <page>http://www.divxatope.com/descarga-torrent/[makelist.param1]</page>
+    <referer>http://www.divxatope.com/categoria/peliculas</referer>
+    </regex>
+
+    <referer>http://www.divxatope.com/categoria/peliculas</referer>
+    <thumbnail>http://www.divxatope.com/uploads/images/fichas/f/[makelist.param4]</thumbnail>
+]]></listrepeat>
+<expres>a\shref="http:\/\/www.divxatope.com\/descargar\/(.*?)"\stitle=.*?escargar(.*?)\sen\s(.*?lu.*?ay.*?)gratis".*?\/thumbs\/(.*?)"</expres>
+<page>http://www.divxatope.com/categoria/peliculas</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+
+</item>
+
+
+
+
+
+
+
+
+
+ <item>
+<title>     [B]PelisMag.Net[/B]  Castellano + Buscador de Peliculas y Series </title>
+<link>http://ignora.me</link>
+<externallink>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/pelismag.xml</externallink>
+
+
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+
+</item>
+
+
+  <iem>
+<title>     [B]ZPeliculas[/B]  Castellano </title>
+<link>http://ignora.me</link>
+<externallink>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/zpeliculas.xml</externallink>
+
+
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
+<item>
+<title>     [B]CineTux.COM[/B]  </title>
+<link>http://ignora.me</link>
+<externallink>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/cinetux.xml</externallink>
+
+
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+
+</item>
+
+
+
+
+
+<item>
+<title>     [B]Youtube[/B] Peliculas </title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+    <title>[makelist.param2]</title>
+    <utube>[makelist.param1]</utube>
+]]></listrepeat>
+<expres>\sid="(.*?)"[\w\W]*?\t{4}(.*?)\t{3}</expres>
+<page>http://app1.vuelo-digital.org/multipremier.php</page>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+
+</item>
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+<item>
+<title>[B]YOUTUBE[/B] []</title>
+<link>http://ignora.me</link>
+<externallink>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/youtubemovies.xml</externallink>
+
+
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+
+<info></info>
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+
+</item>
+
+
+
+<item>
+<title>[B]Estrenos[/B] [AlienMovies][V.O. Subtituladas]</title>
+<link>http://ignora.me</link>
+<externallink>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/pelialien.xml</externallink>
+
+
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+
+<info></info>
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+
+</item>
+
+<item>
+<title>[B]Solo Estrenos [/B]HD [JessMax]</title>
+<link>http://ignora.me</link>
+<externallink>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/jessmax.xml</externallink>
+
+
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+
+<info></info>
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+
+</item>
+
+
+<item>
+<title>[B]Estrenos[/B] [Latino]</title>
+<link>http://ignora.me</link>
+<externallink>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/peliculas.xml</externallink>
+
+
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+
+<info></info>
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+
+</item>
+-->
+<!--
+<item>
+<title>[B]Estrenos[/B] [Castellano]</title>
+<link>http://ignora.me</link>
+<externallink>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/peliculaspa.xml</externallink>
+
+
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+
+<info></info>
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+
+</item>
+
+<item>
+<title>[B]Recien Actualizadas[/B]</title>
+<link>http://ignora.me</link>
+<externallink>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/series/p_actuales.xml</externallink>
+
+
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+
+<info></info>
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+
+</item>
+<item>
+<title>[B]Mas Vistas[/B]</title>
+<link>http://ignora.me</link>
+<externallink>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/series/movies_populares.xml</externallink>
+
+
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+
+<info></info>
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+
+</item>
+<item>
+<title>[B]INFANTILES[/B]</title>
+<link>http://ignora.me</link>
+<externallink>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/series/p_infantiles.xml</externallink>
+
+
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+
+<info></info>
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+
+</item>
+<item>
+<title>Mexicanas [Audio Latino]</title>
+<link>http://ignora.me</link>
+<externallink>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/series/p_mex.xml</externallink>
+
+
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+
+<info></info>
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+
+</item>
+
+
+<item>
+<title>Ultimas Agregadas [Audio Español & Latino]</title>
+<link>http://ignora.me</link>
+<externallink>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/ultimas.xml</externallink>
+
+
+<thumbnail>https://cdn1.iconfinder.com/data/icons/devices-media-circle-style/48/film_strip-512.png</thumbnail>
+<info></info>
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+
+</item>
+
+
+<item>
+<title>Audio Castellano</title>
+<link>http://ignora.me</link>
+<externallink>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/p_esp.xml</externallink>
+
+
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+
+<info></info>
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+
+</item>
+
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <item>
+<title>     [B]YourbitTorrents[/B]  Top100   Recientes </title>
+<link>$doregex[makelist]</link>
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+ <title>[makelist.param3]</title>
+<link>plugin://plugin.video.quasar/play?uri=https://yourbittorrent.com/down/[makelist.param1].torrent</link>
+</regex>
+]]></listrepeat>
+<expres><![CDATA[href="\/torrent\/(.*?)\/(.*?)">(.*?)<]]></expres>
+<page>https://yourbittorrent.com/movies.html</page>
+<agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36</agent>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+
+</item>
+
+
+
+
+
+
+
+
+<itm>
+<title>     [B]ShaaningTorrents[/B]  hvec  only KODI17  </title>
+
+ <link>$doregex[makelist0]</link>
+
+
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/fanart.jpg</fanart>
+
+
+<regex>
+<name>makelist0</name>
+<listrepeat><![CDATA[
+<title>[makelist0.param2]</title>
+<link>$doregex[showPages]</link>
+   <thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/fanart.jpg</fanart>
+]]></listrepeat>
+<expres>class="forumtitle[\w\W\s]{0,6}href="https://www.shaanig.org/(.*?)/">(.*?)<</expres>
+<page>https://www.shaanig.org/f4/</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+
+
+
+
+
+<regex>
+<name>showPages</name>
+<listrepeat><![CDATA[
+   <title>Page# [showPages.param1]</title>
+    <link>$doregex[makelist2]</link>
+     <thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/fanart.jpg</fanart>
+]]></listrepeat>
+<expres>([0-9]+),?</expres>
+<page>$doregex[getPageNumbers]</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+
+
+<regex>
+<name>getPageNumbers</name>
+<expres><![CDATA[#$pyFunction
+import re
+def GetLSProData(page_data,Cookie_Jar,m):
+  frompage,topage=re.findall( "class=\"popupctrl\">Page ([0-9]+) of ([0-9]+)",page_data)[0]
+  frompage=int(frompage)
+  topage=int(topage)
+  print range(frompage,topage)
+  return range(frompage,topage)
+]]></expres>
+<page>https://www.shaanig.org/[makelist0.param1]/</page>
+<referer>https://www.shaanig.org/[makelist0.param1]/</referer>
+<agent>Mozilla/5.0 (Linux; Android 5.1.1; Nexus 6 Build/LYZ28E) AppleWebKit/537.36</agent>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>[makelist2.param2]</title>
+<link>$doregex[makelist]</link>
+]]></listrepeat>
+<expres>class="title" href="https://www.shaanig.org/[makelist0.param1]/(.*?)"[\w\W\s]{0,30}">(.*?)<</expres>
+<page>https://www.shaanig.org/[makelist0.param1]/index[showPages.param1].html</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param2]</title>
+<link>plugin://plugin.video.quasar/play?uri=[makelist.param1]</link>
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/fanart.jpg</fanart>
+]]></listrepeat>
+<expres>href="(.*?.torrent)">(.*?)torrent</expres>
+<page>https://www.shaanig.org/[makelist0.param1]/[makelist2.param1]</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <itm>
+<title>     [B]ExtraTorrents[/B]     </title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+ <title>[makelist.param2]</title>
+<link>plugin://plugin.video.quasar/play?uri=http://extratorrent.one//download/[makelist.param1]</link>
+
+</regex>
+]]></listrepeat>
+<expres>href="/torrent_download/(.*?)"[\w\W\s]{0,8}Download(.*?)torrent</expres>
+<page>http://extratorrent.one/search/?new=1&amp;search=latino&amp;s_cat=4</page>
+<referer>http://extratorrent.one/</referer>
+<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+
+</item>
+
+<itm>
+<title>     [B]ExtraTorrents[/B] First CAMS    </title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+ <title>[makelist.param1]</title>
+<link>plugin://plugin.video.quasar/play?uri=http://extra.to/download/[makelist.param3].torrent</link>
+<thumbnail>http:[makelist.param1]</thumbnail>
+</regex>
+]]></listrepeat>
+<expres>url="https://extra.to/download/(.*?).torrent"</expres>
+<page>http://extratorrent.ch/rss.xml?type=hot&amp;cat=First+Cams</page>
+<referer>http://extratorrent.ch/</referer>
+<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+
+</item>
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>     [B]NEWPCT[/B]  Estrenos     [Audio Latino]  </title>
+
+ <link>$doregex[makelist3]</link>
+
+ <regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+<title>[makelist3.param2]</title>
+<link>plugin://plugin.video.quasar/play?uri=$doregex[link].torrent</link>
+ <thumbnail>[makelist3.param3]</thumbnail>
+]]></listrepeat>
+<expres>href="(.*?)".*?Descargar(.*?)gratis.*?src="(.*?)</expres>
+<page>http://www.newpct.com/peliculas-latino/</page>
+<referer>http://www.newpct.com/</referer>
+</regex>
+
+
+
+<regex>
+<name>link</name>
+<expres>href='(.*?).torrent'</expres>
+<page>[makelist3.param1]</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+
+</item>
+
+
+<item>
+<title>     [B]NEWPCT[/B]  -Estrenos     [Audio Castellano]  </title>
+
+ <link>$doregex[makelist3]</link>
+
+ <regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+<title>[makelist3.param2]</title>
+<link>plugin://plugin.video.quasar/play?uri=$doregex[link].torrent</link>
+ <thumbnail>[makelist3.param2]</thumbnail>
+]]></listrepeat>
+<expres>href="(.*?)".*?Descargar(.*?)gratis.*?src="(.*?)</expres>
+<page>http://www.newpct.com/estrenos-de-cine/</page>
+<referer>http://www.newpct.com/</referer>
+</regex>
+
+<regex>
+<name>link</name>
+<expres>href='(.*?).torrent'</expres>
+<page>[makelist3.param1]</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+
+</item>
+
+
+
+
+
+<item>
+<title>     [B]NEWPCT[/B]  -Peliculas BRRIP     [Audio Castellano]  </title>
+
+ <link>$doregex[makelist3]</link>
+
+ <regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+<title>[makelist3.param2]</title>
+<link>plugin://plugin.video.quasar/play?uri=$doregex[link].torrent</link>
+ <thumbnail>[makelist3.param2]</thumbnail>
+]]></listrepeat>
+<expres>href="(.*?)".*?Descargar(.*?)gratis.*?src="(.*?)</expres>
+<page>http://www.newpct.com/peliculas/</page>
+<referer>http://www.newpct.com/</referer>
+</regex>
+
+<regex>
+<name>link</name>
+<expres>href='(.*?).torrent'</expres>
+<page>[makelist3.param1]</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <item>
+<title>     [B]O Torrents [/B]  VO </title>
+<link>http://ignora.me</link>
+<externallink>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/otorrents.xml</externallink>
+
+
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+
+<info></info>
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>     [B]YIFY MOVIES [/B]  VO  </title>
+<link>http://ignora.me</link>
+<externallink>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/yify.xml</externallink>
+
+
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+
+<info></info>
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+
+</item>
+
+
+<item>
+<title>     [B]YIFY MOVIES RE[/B]  VO  </title>
+<link>$doregex[makelist2]</link>
+
+
+ <regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+ <title>[makelist2.param3]  - [makelist2.param4] </title>
+<link>$doregex[makelist]</link>
+<thumbnail>[makelist2.param2]</thumbnail>
+</regex>
+]]></listrepeat>
+<expres>a\shref="(.*?)"[\w\W\s]{0,30}src="(.*?)"[\w\W\s]{0,60}alt="(.*)"[\w\W\s]{0,60}images\/q\/(.*)\..</expres>
+<page>https://yifymovie.re/recent</page>
+</regex>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+ <title>[makelist.param1]</title>
+<link>plugin://plugin.video.quasar/play?uri=magnet:?xt=urn:btih:[makelist.param1]</link>
+<thumbnail>[makelist2.param2]</thumbnail>
+</regex>
+]]></listrepeat>
+<expres><![CDATA[ href="(magnet.*)"]]></expres>
+<page>[makelist2.param1]</page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+
+</item>
+
+
+
+
+
+
+<tem>
+<title>     [B]YIFY [/B]  VO  </title>
+<link>http://ignora.me</link>
+<externallink>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/yify2.xml</externallink>
+
+
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+
+<info></info>
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>     Top 100 Movies </title>
+<link>$doregex[makelist]</link>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+   <title>[makelist.param1]</title>
+
+    <link>plugin://plugin.video.quasar/play?uri=[makelist.param2]</link>
+ <thumbnail>[makelist.param2]</thumbnail>
+]]></listrepeat>
+<expres>CDATA\[(.*?)\][\w\W\s]{0,20}link>(.*?)<</expres>
+<page>https://thepiratebay.org/rss/top100/201</page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+
+</item>
+
+
+<item>
+<title>     Top 100 Movies HD </title>
+<link>$doregex[makelist]</link>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+   <title>[makelist.param1]</title>
+
+    <link>plugin://plugin.video.quasar/play?uri=[makelist.param2]</link>
+ <thumbnail>[makelist.param2]</thumbnail>
+]]></listrepeat>
+<expres>CDATA\[(.*?)\][\w\W\s]{0,20}link>(.*?)<</expres>
+<page>https://thepiratebay.org/rss/top100/207</page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+
+</item>
+
+
+<item>
+<title>     Top 100 [B]3D [/B] Movies  </title>
+<link>$doregex[makelist]</link>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+   <title>[makelist.param1]</title>
+
+    <link>plugin://plugin.video.quasar/play?uri=[makelist.param2]</link>
+ <thumbnail>[makelist.param2]</thumbnail>
+]]></listrepeat>
+<expres>CDATA\[(.*?)\][\w\W\s]{0,20}link>(.*?)<</expres>
+<page>https://thepiratebay.org/rss/top100/207</page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+
+</item>
+
+
+
+<item>
+<title>     Top 100 TV-Shows HD </title>
+<link>$doregex[makelist]</link>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+   <title>[makelist.param1]</title>
+
+    <link>plugin://plugin.video.quasar/play?uri=[makelist.param2]</link>
+ <thumbnail>[makelist.param2]</thumbnail>
+]]></listrepeat>
+<expres>CDATA\[(.*?)\][\w\W\s]{0,20}link>(.*?)<</expres>
+<page>https://thepiratebay.org/rss/top100/208</page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+
+</item>
+
+
+
+
+
+
+
+
+<item>
+<title>     Top 100 TV-Shows </title>
+<link>$doregex[makelist]</link>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+   <title>[makelist.param1]</title>
+
+    <link>plugin://plugin.video.quasar/play?uri=[makelist.param2]</link>
+ <thumbnail>[makelist.param2]</thumbnail>
+]]></listrepeat>
+<expres>CDATA\[(.*?)\][\w\W\s]{0,20}link>(.*?)<</expres>
+<page>https://thepiratebay.org/rss/top100/205</page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+
+</item>
+
+
+
+
+
+
+
+
+<item>
+<title>     [B] NEW MOVIES[/B]  TorrentKing    </title>
+<link>$doregex[makelist]</link>
+
+
+<regex>
+    <name>makelist</name> movies  (all pages)
+ <listrepeat><![CDATA[
+   <title>[B][makelist.param2][/B]  [makelist.param3]</title>
+   <link>$doregex[makelist2]</link>
+   <thumbnail>[makelist.param4]</thumbnail>
+   <info>[makelist.param3]</info>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re, requests
+def GetLSProData(page_data,Cookie_Jar,m):
+
+################################################################## FORMULARY #################################################################
+ starturl = 'https://torrentking.eu/'     ### usually, ~ 'http://website.com/category/' ###
+ categorylink = '' ### check the number of the param ###
+ centerurl = '/movies/'      ### something like  '/page/' ###
+ firstpage = 1 ### probably  = 1 ###
+ endurl = '/' ### can be empty ###    ### endurl without final / (SLASH) ###
+#
+ dataregex = 'href="(.*?)"\stitle="(.*?)"[\w\W\s]{0,199}title="(.*?)".*?data-src="(.*?)"'      ### To adapt ###
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:50.0) Gecko/20100101 Firefox/50.0', 'Referer': ''}      ### To adapt ###
+##############################################################################################################################################
+
+############################## GENERIC PART #####################################
+ fullurl = starturl + categorylink + centerurl + str(firstpage) + endurl #
+ source = requests.get(fullurl, headers= headers).text #
+ data = [] #
+#
+ last = 9 #
+ while firstpage <= last: #
+    try: #
+        fullurl = starturl + categorylink + centerurl + str(firstpage) + endurl #
+        source = requests.get(fullurl, headers=headers).text #
+        data += re.findall(dataregex, source) #
+        firstpage += 1 #
+    except: #
+        pass #
+ return data #
+##########################################################by#twogun#and#jujuuj###
+]]></expres><page></page>
+</regex>
+
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+   <SetViewMode>55</SetViewMode>
+   <title>[B][makelist2.param2][/B] Tamaño: [makelist2.param3] Seed:[makelist2.param4] - Peers:[makelist2.param5] </title>
+   <link>plugin://plugin.video.quasar/play?uri=[makelist.param1]</link>
+ <thumbnail>[makelist.param4]</thumbnail>
+
+]]></listrepeat>
+<expres><![CDATA[href="(magnet.*?)"\s[\w\W\s]{0,222}Stream[\w\W\s]{0,13}<td>(.*?)<[\w\W\s]{0,23}white-transparent">(.*?)<[\w\W\s]{0,23}white-transparent">(.*?)<[\w\W\s]{0,20}white-transparent">(.*?)<]]></expres>
+<page>[makelist.param1]</page>
+</regex>
+
+
+
+
+
+
+
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>     [B] MOST POPULAR MOVIES[/B]  TorrentKing    </title>
+<link>$doregex[makelist]</link>
+
+
+<regex>
+    <name>makelist</name> movies  (all pages)
+ <listrepeat><![CDATA[
+   <title>[B][makelist.param2][/B]  [makelist.param3]</title>
+   <link>$doregex[makelist2]</link>
+   <thumbnail>[makelist.param4]</thumbnail>
+   <info>[makelist.param3]</info>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re, requests
+def GetLSProData(page_data,Cookie_Jar,m):
+
+################################################################## FORMULARY #################################################################
+ starturl = 'https://torrentking.eu/most-popular-movies'     ### usually, ~ 'http://website.com/category/' ###
+ categorylink = '' ### check the number of the param ###
+ centerurl = '-'      ### something like  '/page/' ###
+ firstpage = 1 ### probably  = 1 ###
+ endurl = '/' ### can be empty ###    ### endurl without final / (SLASH) ###
+#
+ dataregex = 'href="(.*?)"\stitle="(.*?)"[\w\W\s]{0,199}title="(.*?)".*?data-src="(.*?)"'      ### To adapt ###
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:50.0) Gecko/20100101 Firefox/50.0', 'Referer': ''}      ### To adapt ###
+##############################################################################################################################################
+
+############################## GENERIC PART #####################################
+ fullurl = starturl + categorylink + centerurl + str(firstpage) + endurl #
+ source = requests.get(fullurl, headers= headers).text #
+ data = [] #
+#
+ last = 9 #
+ while firstpage <= last: #
+    try: #
+        fullurl = starturl + categorylink + centerurl + str(firstpage) + endurl #
+        source = requests.get(fullurl, headers=headers).text #
+        data += re.findall(dataregex, source) #
+        firstpage += 1 #
+    except: #
+        pass #
+ return data #
+##########################################################by#twogun#and#jujuuj###
+]]></expres><page></page>
+</regex>
+
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+   <SetViewMode>55</SetViewMode>
+   <title>[B][makelist2.param2][/B] Tamaño: [makelist2.param3] Seed:[makelist2.param4] - Peers:[makelist2.param5] </title>
+   <link>plugin://plugin.video.quasar/play?uri=[makelist.param1]</link>
+ <thumbnail>[makelist.param4]</thumbnail>
+
+]]></listrepeat>
+<expres><![CDATA[href="(magnet.*?)"\s[\w\W\s]{0,222}Stream[\w\W\s]{0,13}<td>(.*?)<[\w\W\s]{0,23}white-transparent">(.*?)<[\w\W\s]{0,23}white-transparent">(.*?)<[\w\W\s]{0,20}white-transparent">(.*?)<]]></expres>
+<page>[makelist.param1]</page>
+</regex>
+
+
+
+
+
+
+
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+
+</item>
+
+
+-->
+
+
+
+
+
+
+<item>
+<title>     [B] MOST HOT MOVIES[/B]  TorrentKing    </title>
+<link>$doregex[makelist]</link>
+
+
+<regex>
+    <name>makelist</name> movies  (all pages)
+ <listrepeat><![CDATA[
+   <title>[B][makelist.param2][/B]  [makelist.param3]</title>
+   <link>$doregex[makelist2]</link>
+   <thumbnail>[makelist.param4]</thumbnail>
+   <info>[makelist.param3]</info>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re, requests
+def GetLSProData(page_data,Cookie_Jar,m):
+
+################################################################## FORMULARY #################################################################
+ starturl = 'https://torrentking.eu/most-hot-movies'     ### usually, ~ 'http://website.com/category/' ###
+ categorylink = '' ### check the number of the param ###
+ centerurl = '-'      ### something like  '/page/' ###
+ firstpage = 1 ### probably  = 1 ###
+ endurl = '/' ### can be empty ###    ### endurl without final / (SLASH) ###
+#
+ dataregex = 'href="(.*?)"\stitle="(.*?)"[\w\W\s]{0,199}title="(.*?)".*?data-src="(.*?)"'      ### To adapt ###
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:50.0) Gecko/20100101 Firefox/50.0', 'Referer': ''}      ### To adapt ###
+##############################################################################################################################################
+
+############################## GENERIC PART #####################################
+ fullurl = starturl + categorylink + centerurl + str(firstpage) + endurl #
+ source = requests.get(fullurl, headers= headers).text #
+ data = [] #
+#
+ last = 9 #
+ while firstpage <= last: #
+    try: #
+        fullurl = starturl + categorylink + centerurl + str(firstpage) + endurl #
+        source = requests.get(fullurl, headers=headers).text #
+        data += re.findall(dataregex, source) #
+        firstpage += 1 #
+    except: #
+        pass #
+ return data #
+##########################################################by#twogun#and#jujuuj###
+]]></expres><page></page>
+</regex>
+
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+   <SetViewMode>55</SetViewMode>
+   <title>[B][makelist2.param2][/B] Tamaño: [makelist2.param3] Seed:[makelist2.param4] - Peers:[makelist2.param5] </title>
+   <link>plugin://plugin.video.quasar/play?uri=[makelist.param1]</link>
+ <thumbnail>[makelist.param4]</thumbnail>
+
+]]></listrepeat>
+<expres><![CDATA[href="(magnet.*?)"\s[\w\W\s]{0,222}Stream[\w\W\s]{0,13}<td>(.*?)<[\w\W\s]{0,23}white-transparent">(.*?)<[\w\W\s]{0,23}white-transparent">(.*?)<[\w\W\s]{0,20}white-transparent">(.*?)<]]></expres>
+<page>[makelist.param1]</page>
+</regex>
+
+
+
+
+
+
+
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>     [B] BUSCADOR [/B] DE SERIES    </title>
+<link>$doregex[makelist]</link>
+
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+   <SetViewMode>55</SetViewMode>
+   <title>[B][makelist.param2][/B] Tamaño: [makelist.param3] Subido:[makelist.param4] Seed:[makelist.param5]    </title>
+   <link>plugin://plugin.video.quasar/play?uri=[makelist.param1]</link>
+ <thumbnail>[makelist2.param4]</thumbnail>
+
+]]></listrepeat>
+<expres><![CDATA[href="(.*?torrent)".*?title="(.*?)-[\w\W\s]{0,80}forum_thread_post">(.*?)<[\w\W\s]{0,35}forum_thread_post">(.*?)<[\w\W\s]{0,80}green">(.*?)<]]></expres>
+<page>https://eztv.ag/search/$doregex[search]</page>
+</regex>
+
+<regex>
+<name>search</name>
+<expres><![CDATA[#$pyFunction
+import xbmc
+import xbmcaddon
+import xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+    dialog = xbmcgui.Dialog()
+    d = dialog.input('Buscar Serie: ejemplo: The Walking Dead', type=xbmcgui.INPUT_ALPHANUM).replace(" ", "-")
+    return d
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+
+</item>
+
+
+
+
+
+
+
+<itm>
+<title> netai test</title>
+<link>$doregex[makelist]</link>
+
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+   <SetViewMode>55</SetViewMode>
+   <title>[B][makelist.param3][/B]   </title>
+   <link>plugin://plugin.video.quasar/play?uri=$doregex[torrent]</link>
+ <thumbnail>[makelist.param1]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[171.*?src="(.*?)"[\w\W\s]{0,430}href="(.*?)".*?trong>(.*?)<\/]]></expres>
+<page>http://gruponetai.com/portal/Genero/animacion/</page>
+</regex>
+
+<regex>
+<name>torrent</name>
+<expres><![CDATA[href="(.*?\.torrent)"]]></expres>
+<page>[makelist.param2]</page>
+</regex>
+
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+
+</item>
+
+
+
+
+
+
+<item>
+  <title>     [B] LATEST TORRENTS[/B]  ETTV    </title>
+<link>$doregex[makelist]</link>
+
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+   <SetViewMode>55</SetViewMode>
+   <title>[B][makelist.param1][/B]   </title>
+   <link>plugin://plugin.video.quasar/play?uri=$doregex[torrent]</link>
+ <thumbnail>[makelist.param1]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[nowrap.*?title="(.*?)"\shref="(.*?)"]]></expres>
+<page>https://www.ettv.tv/torrents.php</page>
+</regex>
+
+<regex>
+<name>torrent</name>
+<expres><![CDATA[href="(magnet.*?)"]]></expres>
+<page>https://www.ettv.tv[makelist.param2]</page>
+</regex>
+
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+
+</item>
+
+
+
+
+<item>
+  <title>     [B] LATEST MOVIES[/B]  ETTV    </title>
+<link>$doregex[makelist]</link>
+
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+   <SetViewMode>55</SetViewMode>
+   <title>[B][makelist.param1][/B]   </title>
+   <link>plugin://plugin.video.quasar/play?uri=$doregex[torrent]</link>
+ <thumbnail>[makelist.param1]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[nowrap.*?title="(.*?)"\shref="(.*?)"]]></expres>
+<page>https://www.ettv.tv/torrents.php?parent_cat=Movies</page>
+</regex>
+
+<regex>
+<name>torrent</name>
+<expres><![CDATA[href="(magnet.*?)"]]></expres>
+<page>https://www.ettv.tv[makelist.param2]</page>
+</regex>
+
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+
+</item>
+
+
+
+<item>
+  <title>     [B] LATEST TVSHOWS[/B]  ETTV    </title>
+<link>$doregex[makelist]</link>
+
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+   <SetViewMode>55</SetViewMode>
+   <title>[B][makelist.param1][/B]   </title>
+   <link>plugin://plugin.video.quasar/play?uri=$doregex[torrent]</link>
+ <thumbnail>[makelist.param1]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[nowrap.*?title="(.*?)"\shref="(.*?)"]]></expres>
+<page>https://www.ettv.tv/torrents.php?parent_cat=TV&parent_cat=TV&amp;sort=seeders&amp;order=desc</page>
+</regex>
+
+<regex>
+<name>torrent</name>
+<expres><![CDATA[href="(magnet.*?)"]]></expres>
+<page>https://www.ettv.tv[makelist.param2]</page>
+</regex>
+
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+
+</item>
+
+<item>
+  <title>     [B] CATEGORIES[/B]  ETTV    </title>
+<link>$doregex[makelist2]</link>
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+   <SetViewMode>55</SetViewMode>
+   <title>[B][makelist2.param2][/B]   </title>
+   <link>$doregex[makelist]</link>
+
+]]></listrepeat>
+<expres><![CDATA[checkbox.*?href='(.*?)'>(.*?)<]]></expres>
+<page>https://www.ettv.tv/torrents.php</page>
+</regex>
+
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+   <SetViewMode>55</SetViewMode>
+   <title>[B][makelist.param1][/B]   </title>
+   <link>plugin://plugin.video.quasar/play?uri=$doregex[torrent]</link>
+
+]]></listrepeat>
+<expres><![CDATA[nowrap.*?title="(.*?)"\shref="(.*?)"]]></expres>
+<page>https://www.ettv.tv/[makelist2.param1]</page>
+</regex>
+
+<regex>
+<name>torrent</name>
+<expres><![CDATA[href="(magnet.*?)"]]></expres>
+<page>https://www.ettv.tv[makelist.param2]</page>
+</regex>
+
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+
+</item>
+
+
+
+
+
+
+
+
+
+<item>
+  <title>     [B] SEARCH | BUSCAR [/B]  ETTV    </title>
+<link>$doregex[makelist]</link>
+
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+   <SetViewMode>55</SetViewMode>
+   <title>[B][makelist.param2][/B] [makelist.param3] Uploaded:[makelist.param4] Seeds:[makelist.param5]  </title>
+   <link>plugin://plugin.video.quasar/play?uri=$doregex[torrent]</link>
+
+]]></listrepeat>
+<expres><![CDATA[nowrap.*?href="(.*?)"><b>(.*?)<.*?nowrap;'>(.*?)<.*?nowrap;'>(.*?)[\w\W\s]{0,160}green'><b>(.*?)<]]></expres>
+<page>https://www.ettv.tv/torrents-search.php?search=$doregex[search]</page>
+</regex>
+
+<regex>
+<name>search</name>
+<expres><![CDATA[#$pyFunction
+import xbmc
+import xbmcaddon
+import xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+    dialog = xbmcgui.Dialog()
+    d = dialog.input('Buscar Pelicula: ejemplo: Batman', type=xbmcgui.INPUT_ALPHANUM).replace(" ", "+")
+    return d
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>torrent</name>
+<expres><![CDATA[href="(magnet.*?)"]]></expres>
+<page>https://www.ettv.tv[makelist.param1]</page>
+</regex>
+
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+
+</item>

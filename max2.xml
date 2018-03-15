@@ -1,0 +1,28 @@
+
+      <item>
+<title>[B][COLOR aquamarine]Multicanales [/COLOR][COLOR lightblue] MaxDeportes [/B][/COLOR]  [COLOR lightslategray]iguide[/COLOR] </title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+   <title>[COLOR lightblue]   [makelist.param2]    [/COLOR]   </title>
+   	<link>http://$doregex[ip]</link> 
+   <thumbnail>http://adryanlist.org/adryan/img/deportes.jpg</thumbnail><info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+]]></listrepeat>
+<expres>vip3:"(.*?)" name:"(.*?)"</expres>
+<page>http://adryanlist.org/adryan/servers.txt</page>
+</regex>
+ <regex>
+<name>ip</name>
+<expres>"file": "\/\/([^"']+)</expres>
+<page>http://www.iguide.to/embedplayer_new_hls.php?width=650&amp;height=400&amp;channel=[makelist.param2]&amp;autoplay=true</page>
+<referer>http://maxdeportv.net/indexa.php?canal=14</referer>
+</regex>	
+ 
+<thumbnail>http://adryanlist.org/adryan/img/deportes.jpg</thumbnail><info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info>
+</item>
+  
+  
+    
+ 
+  

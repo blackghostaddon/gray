@@ -1,0 +1,301 @@
+
+
+
+
+
+<item>
+<title>Super Bowl LII [Patriotas vs Aguilas] #AdryanList [Acestream SPA]</title>
+
+<link>plugin://program.plexus/?url=7dec8b9689264d00b8a10bc5c3bcede0c069634e&amp;mode=1&amp;name=Adryanlist+SuperBowl52</link>
+
+<fanart>https://pmcvariety.files.wordpress.com/2018/02/super-bowl-lii-patriots-vs-eagles.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/deportes.png</thumbnail><info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info></item>
+
+
+
+<item>
+<title>Super Bowl LII [Patriotas vs Aguilas] #AdryanList [Acestream SPA]</title>
+
+<link>plugin://program.plexus/?url=7dec8b9689264d00b8a10bc5c3bcede0c069634e&amp;mode=1&amp;name=Adryanlist+SuperBowl52</link>
+
+<fanart>https://pmcvariety.files.wordpress.com/2018/02/super-bowl-lii-patriots-vs-eagles.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/deportes.png</thumbnail><info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info></item>
+
+
+<item>
+<title>Super Bowl LII [Patriotas vs Aguilas] #AdryanList [Acestream POR]</title>
+
+<link>plugin://program.plexus/?url=093944897dc5f00512ffc5622e75bc9eb70a78d8&amp;mode=1&amp;name=Adryanlist+SuperBowl52</link>
+
+<fanart>https://pmcvariety.files.wordpress.com/2018/02/super-bowl-lii-patriots-vs-eagles.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/deportes.png</thumbnail><info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info></item>
+
+
+<item>
+<title>Super Bowl LII [Patriotas vs Aguilas] #AdryanList [Acestream ENG]</title>
+
+<link>plugin://program.plexus/?url=246632587de1dacf0c6bcaf812a0c11e80bb9fa9&amp;mode=1&amp;name=Adryanlist+SuperBowl52</link>
+
+<fanart>https://pmcvariety.files.wordpress.com/2018/02/super-bowl-lii-patriots-vs-eagles.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/deportes.png</thumbnail><info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info></item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>Super Bowl LII [Patriotas vs Aguilas] #AdryanList  [ESPN SD]</title>
+<link>http://$doregex[ip]$doregex[m3u8]$doregex[hls]</link>
+<regex>
+<name>ip</name>
+<expres>redirect=(.*)</expres>
+<page>http://cdn.pubzony.com:1935/loadbalancer?17089</page>
+</regex>
+<regex>
+<name>m3u8</name>
+<expres>ea \+ "(.*?)"</expres>
+<page>http://www.zony.tv/membedplayer/$doregex[canal]/2/680/380</page>
+<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+<referer>http://www.zony.tv</referer>
+</regex>
+<regex>
+<name>hls</name>
+<expres><![CDATA[hlsUrl \+ \(\"(.*?)"]]></expres>
+<page>http://www.zony.tv/membedplayer/$doregex[canal]/2/680/380</page>
+<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+<referer>http://www.zony.tv</referer>
+</regex>
+<regex>
+<name>canal</name>
+<expres>channel='(.*?)'</expres>
+<page>http://tvpor-internet.com/Espn-en-vivo.html</page>
+</regex>
+
+<fanart>https://pmcvariety.files.wordpress.com/2018/02/super-bowl-lii-patriots-vs-eagles.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/deportes.png</thumbnail><info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info></item>
+
+
+
+
+<item>
+<title>Super Bowl LII [Patriotas vs Aguilas] #AdryanList  [ESPN2 SD]</title>
+<link>http://$doregex[ip]$doregex[m3u8]$doregex[hls]</link>
+<regex>
+<name>ip</name>
+<expres>redirect=(.*)</expres>
+<page>http://cdn.pubzony.com:1935/loadbalancer?17089</page>
+</regex>
+<regex>
+<name>m3u8</name>
+<expres>ea \+ "(.*?)"</expres>
+<page>http://www.zony.tv/membedplayer/$doregex[canal]/2/680/380</page>
+<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+<referer>http://www.zony.tv</referer>
+</regex>
+<regex>
+<name>hls</name>
+<expres><![CDATA[hlsUrl \+ \(\"(.*?)"]]></expres>
+<page>http://www.zony.tv/membedplayer/$doregex[canal]/2/680/380</page>
+<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+<referer>http://www.zony.tv</referer>
+</regex>
+<regex>
+<name>canal</name>
+<expres>channel='(.*?)'</expres>
+<page>http://tvpor-internet.com/espn-2-en-vivo.html</page>
+</regex>
+
+<fanart>https://pmcvariety.files.wordpress.com/2018/02/super-bowl-lii-patriots-vs-eagles.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/deportes.png</thumbnail><info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info></item>
+
+
+
+
+<item>
+<title>Super Bowl LII [Patriotas vs Aguilas] #AdryanList  [FOX Sports SD]</title>
+<link>http://$doregex[ip]$doregex[m3u8]$doregex[hls]</link>
+<regex>
+<name>ip</name>
+<expres>redirect=(.*)</expres>
+<page>http://cdn.pubzony.com:1935/loadbalancer?17089</page>
+</regex>
+<regex>
+<name>m3u8</name>
+<expres>ea \+ "(.*?)"</expres>
+<page>http://www.zony.tv/membedplayer/$doregex[canal]/2/680/380</page>
+<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+<referer>http://www.zony.tv</referer>
+</regex>
+<regex>
+<name>hls</name>
+<expres><![CDATA[hlsUrl \+ \(\"(.*?)"]]></expres>
+<page>http://www.zony.tv/membedplayer/$doregex[canal]/2/680/380</page>
+<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+<referer>http://www.zony.tv</referer>
+</regex>
+<regex>
+<name>canal</name>
+<expres>channel='(.*?)'</expres>
+<page>http://tvpor-internet.com/fox-sports-en-vivo.html</page>
+</regex>
+
+<fanart>https://pmcvariety.files.wordpress.com/2018/02/super-bowl-lii-patriots-vs-eagles.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/deportes.png</thumbnail><info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info></item>
+
+
+<item>
+<title>Super Bowl LII [Patriotas vs Aguilas] #AdryanList  [FOX Sports 2 SD]</title>
+<link>http://$doregex[ip]$doregex[m3u8]$doregex[hls]</link>
+<regex>
+<name>ip</name>
+<expres>redirect=(.*)</expres>
+<page>http://cdn.pubzony.com:1935/loadbalancer?17089</page>
+</regex>
+<regex>
+<name>m3u8</name>
+<expres>ea \+ "(.*?)"</expres>
+<page>http://www.zony.tv/membedplayer/$doregex[canal]/2/680/380</page>
+<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+<referer>http://www.zony.tv</referer>
+</regex>
+<regex>
+<name>hls</name>
+<expres><![CDATA[hlsUrl \+ \(\"(.*?)"]]></expres>
+<page>http://www.zony.tv/membedplayer/$doregex[canal]/2/680/380</page>
+<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+<referer>http://www.zony.tv</referer>
+</regex>
+<regex>
+<name>canal</name>
+<expres>channel='(.*?)'</expres>
+<page>http://tvpor-internet.com/fox-sports-2-en-vivo.html</page>
+</regex>
+
+<fanart>https://pmcvariety.files.wordpress.com/2018/02/super-bowl-lii-patriots-vs-eagles.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/deportes.png</thumbnail><info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info></item>
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>Super Bowl LII [Patriotas vs Aguilas] #AdryanList</title>
+<link>http://cdn.whostreams.net:8081/wsedge/$doregex[get-id1]/playlist.m3u8?wmsAuthSign=$doregex[get-id2]</link>
+<regex>
+<name>get-id2</name>
+<expres>logo\|\|(.*?)\|</expres>
+<page>http://whostreams.net/embed/$doregex[get-id1]</page>
+</regex>
+<regex>
+<name>get-id1</name>
+<expres>src=\"\/\/whostreams.net\/embed\/(.*?)"</expres>
+<page>http://sportsonline.pw/channels/hd/nfl.html</page>
+</regex>
+<fanart>https://pmcvariety.files.wordpress.com/2018/02/super-bowl-lii-patriots-vs-eagles.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/deportes.png</thumbnail><info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info></item>
+
+
+
+<item>
+<title>Super Bowl LII [Patriotas vs Aguilas] #AdryanList</title>
+<link>http://cdn.whostreams.net:8081/wsedge/$doregex[get-id1]/playlist.m3u8?wmsAuthSign=$doregex[get-id2]</link>
+<regex>
+<name>get-id2</name>
+<expres>logo\|\|(.*?)\|</expres>
+<page>http://whostreams.net/embed/$doregex[get-id1]</page>
+</regex>
+<regex>
+<name>get-id1</name>
+<expres>src=\"\/\/whostreams.net\/embed\/(.*?)"</expres>
+<page>http://sportsonline.pw/channels/hd/hd1.html</page>
+</regex>
+<fanart>https://pmcvariety.files.wordpress.com/2018/02/super-bowl-lii-patriots-vs-eagles.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/deportes.png</thumbnail><info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info></item>
+
+
+<item>
+<title>Super Bowl LII [Patriotas vs Aguilas] #AdryanList</title>
+<link>http://cdn.whostreams.net:8081/wsedge/$doregex[get-id1]/playlist.m3u8?wmsAuthSign=$doregex[get-id2]</link>
+<regex>
+<name>get-id2</name>
+<expres>logo\|\|(.*?)\|</expres>
+<page>http://whostreams.net/embed/$doregex[get-id1]</page>
+</regex>
+<regex>
+<name>get-id1</name>
+<expres>src=\"\/\/whostreams.net\/embed\/(.*?)"</expres>
+<page>http://sportsonline.pw/channels/hd/hd2.html</page>
+</regex>
+<fanart>https://pmcvariety.files.wordpress.com/2018/02/super-bowl-lii-patriots-vs-eagles.jpg</fanart>
+<thumbnail>http://adryanlist.org/adryan/img/deportes.png</thumbnail><info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info></item>
+
+
+
+
+
+
+
+<item>
+<title>Espn 2</title>
+<link>http://3-120heat.pulsedmedia.com/public-llave1/kr/espn2_kr.php</link>
+<thumbnail>http://adryanlist.org/adryan/img/deportes.png</thumbnail><info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info></item>
+
+
+<item>
+<title>Espn 3</title>
+<link>http://3-120heat.pulsedmedia.com/public-llave1/kr/espn3_kr.php</link>
+<thumbnail>http://adryanlist.org/adryan/img/deportes.png</thumbnail><info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info></item>
+
+
+<item>
+<title>Espn</title>
+<link>http://3-120heat.pulsedmedia.com/public-llave1/kr/espn_kr.php</link>
+<thumbnail>http://adryanlist.org/adryan/img/deportes.png</thumbnail><info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info></item>
+
+
+<item>
+<title>Espn plus</title>
+<link>http://3-120heat.pulsedmedia.com/public-llave1/kr/espn_plus.php</link>
+<thumbnail>http://adryanlist.org/adryan/img/deportes.png</thumbnail><info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info></item>
+
+
+<item>
+<title>Fox Sports</title>
+<link>http://3-120heat.pulsedmedia.com/public-llave1/kr/foxsports.php</link>
+<thumbnail>http://adryanlist.org/adryan/img/deportes.png</thumbnail><info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info></item>
+
+
+<item>
+<title>Fox Sports 2</title>
+<link>http://3-120heat.pulsedmedia.com/public-llave1/kr/foxsports2.php</link>
+<thumbnail>http://adryanlist.org/adryan/img/deportes.png</thumbnail><info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info></item>
+
+	
+<item>
+<title>Fox Sports 3</title>
+<link>http://3-120heat.pulsedmedia.com/public-llave1/kr/foxsports3.php</link>
+<thumbnail>http://adryanlist.org/adryan/img/deportes.png</thumbnail><info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info></item>
+
+	
