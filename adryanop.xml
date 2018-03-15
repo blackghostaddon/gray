@@ -1,0 +1,140 @@
+<item>
+<title>New oneplay utf8</title>
+<link>$doregex[finalurl]$doregex[cross]|Cookie=$get_cookies$&amp;Referer=http://p.jwpcdn.com/6/12/jwplayer.flash.swf&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; rv:14.0) Gecko/20100101 Firefox/14.0.1</link><regex>	<name>cross</name>	<expres></expres>	<page>http://oneplay.tv/crossdomain.xml</page>	<referer>http://p.jwpcdn.com/6/12/jwplayer.flash.swf</referer>
+	<cookiejar></cookiejar></regex><regex>	<name>finalurl</name>	<expres>file: "(.*?)"</expres>	<page>http://oneplay.tv/embed/embed.php?s=$doregex[url]</page>	<referer>http://oneplay.tv/embed/</referer>	<cookieJar></cookieJar></regex>
+<regex>	<name>url</name>	<expres>$pyFunction:'$doregex[jsonurl]'.replace('\/','/')</expres>	<page></page></regex>
+<regex>	<name>jsonurl</name>	<expres>(http.*?)"</expres>
+	<page>http://oneplay.tv/embed/chp</page>	<rawpost>type=chp&amp;action=SELF&amp;token=$doregex[token]&amp;channelID=94&amp;w=100%25&amp;h=480</rawpost>	<referer>http://oneplay.tv/embed/</referer>    <Origin>http://oneplay.tv</Origin>    <X-Req>XMLHttpRequest</X-Req>
+	<cookieJar>$doregex[cookie]</cookieJar></regex>
+<regex>	<name>cookie</name>	<expres></expres>	<page>$doregex[iframe]&amp;token=$doregex[token]</page>	<referer>http://oneplay.tv/embed/</referer>
+	<cookieJar></cookieJar>	<ignorecache/></regex><regex>
+	<name>token</name>	<expres>$pyFunction:oneplay.decrypt_oneplaypage(page_data,Cookie_Jar).split('token" value="')[1].split('"')[0]</expres>
+	<page>$doregex[iframe]</page>    <cookieJar></cookieJar></regex><regex>
+	<name>iframe</name>	<expres>embed.*?iframe src="(.*?)"</expres>	<page>http://oneplay.tv/ver/canal/94/vh1</page>	<cookiejar></cookiejar>
+</regex><thumbnail></thumbnail></item>
+
+
+
+<item>
+<title>VH1</title> <link>$doregex[finalurl]$doregex[cross]|Cookie=$get_cookies$&amp;Referer=http://p.jwpcdn.com/6/12/jwplayer.flash.swf&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; rv:14.0) Gecko/20100101 Firefox/14.0.1</link><regex>	<name>cross</name>	<expres></expres>	<page>http://oneplay.tv/crossdomain.xml</page>	<referer>http://p.jwpcdn.com/6/12/jwplayer.flash.swf</referer>
+	<cookiejar></cookiejar></regex><regex>	<name>finalurl</name>	<expres>file: "(.*?)"</expres>	<page>http://oneplay.tv/embed/embed.php?s=$doregex[url]</page>	<referer>http://oneplay.tv/embed/</referer>	<cookieJar></cookieJar></regex>
+<regex>	<name>url</name>	<expres>$pyFunction:'$doregex[jsonurl]'.replace('\/','/')</expres>	<page></page></regex>
+<regex>	<name>jsonurl</name>	<expres>(http.*?)"</expres>
+	<page>http://oneplay.tv/embed/chp</page>	<rawpost>type=chp&amp;action=SELF&amp;token=$doregex[token]&amp;channelID=84&amp;w=100%25&amp;h=480</rawpost>	<referer>http://oneplay.tv/embed/</referer>    <Origin>http://oneplay.tv</Origin>    <X-Req>XMLHttpRequest</X-Req>
+	<cookieJar>$doregex[cookie]</cookieJar></regex>
+<regex>	<name>cookie</name>	<expres></expres>	<page>$doregex[iframe]&amp;token=$doregex[token]</page>	<referer>http://oneplay.tv/embed/</referer>
+	<cookieJar></cookieJar>	<ignorecache/></regex><regex>
+	<name>token</name>	<expres>$pyFunction:oneplay.decrypt_oneplaypage(page_data,Cookie_Jar).split('token" value="')[1].split('"')[0]</expres>
+	<page>$doregex[iframe]</page>    <cookieJar></cookieJar></regex><regex>
+	<name>iframe</name>	<expres>embed.*?iframe src="(.*?)"</expres>	<page>http://oneplay.tv/ver/canal/94/vh1</page>	<cookiejar></cookiejar>
+</regex>
+<thumbnail></thumbnail>
+</item>
+
+
+
+<item>
+<title>Cinecanal</title><link>$doregex[finalurl]$doregex[cross]|Cookie=$get_cookies$&amp;Referer=http://p.jwpcdn.com/6/12/jwplayer.flash.swf&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; rv:14.0) Gecko/20100101 Firefox/14.0.1</link><regex>	<name>cross</name>	<expres></expres>	<page>http://oneplay.tv/crossdomain.xml</page>	<referer>http://p.jwpcdn.com/6/12/jwplayer.flash.swf</referer>
+	<cookiejar></cookiejar></regex><regex>	<name>finalurl</name>	<expres>file: "(.*?)"</expres>	<page>http://oneplay.tv/embed/embed.php?s=$doregex[url]</page>	<referer>http://oneplay.tv/embed/</referer>	<cookieJar></cookieJar></regex>
+<regex>	<name>url</name>	<expres>$pyFunction:'$doregex[jsonurl]'.replace('\/','/')</expres>	<page></page></regex>
+<regex>	<name>jsonurl</name>	<expres>(http.*?)"</expres>
+	<page>http://oneplay.tv/embed/chp</page>	<rawpost>type=chp&amp;action=SELF&amp;token=$doregex[token]&amp;channelID=98&amp;w=100%25&amp;h=480</rawpost>	<referer>http://oneplay.tv/embed/</referer>    <Origin>http://oneplay.tv</Origin>    <X-Req>XMLHttpRequest</X-Req>
+	<cookieJar>$doregex[cookie]</cookieJar></regex>
+<regex>	<name>cookie</name>	<expres></expres>	<page>$doregex[iframe]&amp;token=$doregex[token]</page>	<referer>http://oneplay.tv/embed/</referer>
+	<cookieJar></cookieJar>	<ignorecache/></regex><regex>
+	<name>token</name>	<expres>$pyFunction:oneplay.decrypt_oneplaypage(page_data,Cookie_Jar).split('token" value="')[1].split('"')[0]</expres>
+	<page>$doregex[iframe]</page>    <cookieJar></cookieJar></regex><regex>
+	<name>iframe</name>	<expres>embed.*?iframe src="(.*?)"</expres>	<page>http://oneplay.tv/ver/canal/94/vh1</page>	<cookiejar></cookiejar>
+</regex>
+</item>
+	
+	<item>
+<title>ESPN2</title><link>$doregex[finalurl]$doregex[cross]|Cookie=$get_cookies$&amp;Referer=http://p.jwpcdn.com/6/12/jwplayer.flash.swf&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; rv:14.0) Gecko/20100101 Firefox/14.0.1</link><regex>	<name>cross</name>	<expres></expres>	<page>http://oneplay.tv/crossdomain.xml</page>	<referer>http://p.jwpcdn.com/6/12/jwplayer.flash.swf</referer>
+	<cookiejar></cookiejar></regex><regex>	<name>finalurl</name>	<expres>file: "(.*?)"</expres>	<page>http://oneplay.tv/embed/embed.php?s=$doregex[url]</page>	<referer>http://oneplay.tv/embed/</referer>	<cookieJar></cookieJar></regex>
+<regex>	<name>url</name>	<expres>$pyFunction:'$doregex[jsonurl]'.replace('\/','/')</expres>	<page></page></regex>
+<regex>	<name>jsonurl</name>	<expres>(http.*?)"</expres>
+	<page>http://oneplay.tv/embed/chp</page>	<rawpost>type=chp&amp;action=SELF&amp;token=$doregex[token]&amp;channelID=91&amp;w=100%25&amp;h=480</rawpost>	<referer>http://oneplay.tv/embed/</referer>    <Origin>http://oneplay.tv</Origin>    <X-Req>XMLHttpRequest</X-Req>
+	<cookieJar>$doregex[cookie]</cookieJar></regex>
+<regex>	<name>cookie</name>	<expres></expres>	<page>$doregex[iframe]&amp;token=$doregex[token]</page>	<referer>http://oneplay.tv/embed/</referer>
+	<cookieJar></cookieJar>	<ignorecache/></regex><regex>
+	<name>token</name>	<expres>$pyFunction:oneplay.decrypt_oneplaypage(page_data,Cookie_Jar).split('token" value="')[1].split('"')[0]</expres>
+	<page>$doregex[iframe]</page>    <cookieJar></cookieJar></regex><regex>
+	<name>iframe</name>	<expres>embed.*?iframe src="(.*?)"</expres>	<page>http://oneplay.tv/ver/canal/94/vh1</page>	<cookiejar></cookiejar>
+</regex>
+</item>
+
+
+
+
+
+	<item>
+<title>Fox Sports 2</title><link>$doregex[finalurl]$doregex[cross]|Cookie=$get_cookies$&amp;Referer=http://p.jwpcdn.com/6/12/jwplayer.flash.swf&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; rv:14.0) Gecko/20100101 Firefox/14.0.1</link><regex>	<name>cross</name>	<expres></expres>	<page>http://oneplay.tv/crossdomain.xml</page>	<referer>http://p.jwpcdn.com/6/12/jwplayer.flash.swf</referer>
+	<cookiejar></cookiejar></regex><regex>	<name>finalurl</name>	<expres>file: "(.*?)"</expres>	<page>http://oneplay.tv/embed/embed.php?s=$doregex[url]</page>	<referer>http://oneplay.tv/embed/</referer>	<cookieJar></cookieJar></regex>
+<regex>	<name>url</name>	<expres>$pyFunction:'$doregex[jsonurl]'.replace('\/','/')</expres>	<page></page></regex>
+<regex>	<name>jsonurl</name>	<expres>(http.*?)"</expres>
+	<page>http://oneplay.tv/embed/chp</page>	<rawpost>type=chp&amp;action=SELF&amp;token=$doregex[token]&amp;channelID=90&amp;w=100%25&amp;h=480</rawpost>	<referer>http://oneplay.tv/embed/</referer>    <Origin>http://oneplay.tv</Origin>    <X-Req>XMLHttpRequest</X-Req>
+	<cookieJar>$doregex[cookie]</cookieJar></regex>
+<regex>	<name>cookie</name>	<expres></expres>	<page>$doregex[iframe]&amp;token=$doregex[token]</page>	<referer>http://oneplay.tv/embed/</referer>
+	<cookieJar></cookieJar>	<ignorecache/></regex><regex>
+	<name>token</name>	<expres>$pyFunction:oneplay.decrypt_oneplaypage(page_data,Cookie_Jar).split('token" value="')[1].split('"')[0]</expres>
+	<page>$doregex[iframe]</page>    <cookieJar></cookieJar></regex><regex>
+	<name>iframe</name>	<expres>embed.*?iframe src="(.*?)"</expres>	<page>http://oneplay.tv/ver/canal/94/vh1</page>	<cookiejar></cookiejar>
+</regex>
+		
+</item>
+
+
+	
+	<item>
+<title>Fox Sports </title><link>$doregex[finalurl]$doregex[cross]|Cookie=$get_cookies$&amp;Referer=http://p.jwpcdn.com/6/12/jwplayer.flash.swf&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; rv:14.0) Gecko/20100101 Firefox/14.0.1</link><regex>	<name>cross</name>	<expres></expres>	<page>http://oneplay.tv/crossdomain.xml</page>	<referer>http://p.jwpcdn.com/6/12/jwplayer.flash.swf</referer>
+	<cookiejar></cookiejar></regex><regex>	<name>finalurl</name>	<expres>file: "(.*?)"</expres>	<page>http://oneplay.tv/embed/embed.php?s=$doregex[url]</page>	<referer>http://oneplay.tv/embed/</referer>	<cookieJar></cookieJar></regex>
+<regex>	<name>url</name>	<expres>$pyFunction:'$doregex[jsonurl]'.replace('\/','/')</expres>	<page></page></regex>
+<regex>	<name>jsonurl</name>	<expres>(http.*?)"</expres>
+	<page>http://oneplay.tv/embed/chp</page>	<rawpost>type=chp&amp;action=SELF&amp;token=$doregex[token]&amp;channelID=89&amp;w=100%25&amp;h=480</rawpost>	<referer>http://oneplay.tv/embed/</referer>    <Origin>http://oneplay.tv</Origin>    <X-Req>XMLHttpRequest</X-Req>
+	<cookieJar>$doregex[cookie]</cookieJar></regex>
+<regex>	<name>cookie</name>	<expres></expres>	<page>$doregex[iframe]&amp;token=$doregex[token]</page>	<referer>http://oneplay.tv/embed/</referer>
+	<cookieJar></cookieJar>	<ignorecache/></regex><regex>
+	<name>token</name>	<expres>$pyFunction:oneplay.decrypt_oneplaypage(page_data,Cookie_Jar).split('token" value="')[1].split('"')[0]</expres>
+	<page>$doregex[iframe]</page>    <cookieJar></cookieJar></regex><regex>
+	<name>iframe</name>	<expres>embed.*?iframe src="(.*?)"</expres>	<page>http://oneplay.tv/ver/canal/94/vh1</page>	<cookiejar></cookiejar>
+</regex>
+</item>
+
+
+
+	<item>
+<title>ESPN 3</title><link>$doregex[finalurl]$doregex[cross]|Cookie=$get_cookies$&amp;Referer=http://p.jwpcdn.com/6/12/jwplayer.flash.swf&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; rv:14.0) Gecko/20100101 Firefox/14.0.1</link><regex>	<name>cross</name>	<expres></expres>	<page>http://oneplay.tv/crossdomain.xml</page>	<referer>http://p.jwpcdn.com/6/12/jwplayer.flash.swf</referer>
+	<cookiejar></cookiejar></regex><regex>	<name>finalurl</name>	<expres>file: "(.*?)"</expres>	<page>http://oneplay.tv/embed/embed.php?s=$doregex[url]</page>	<referer>http://oneplay.tv/embed/</referer>	<cookieJar></cookieJar></regex>
+<regex>	<name>url</name>	<expres>$pyFunction:'$doregex[jsonurl]'.replace('\/','/')</expres>	<page></page></regex>
+<regex>	<name>jsonurl</name>	<expres>(http.*?)"</expres>
+	<page>http://oneplay.tv/embed/chp</page>	<rawpost>type=chp&amp;action=SELF&amp;token=$doregex[token]&amp;channelID=88&amp;w=100%25&amp;h=480</rawpost>	<referer>http://oneplay.tv/embed/</referer>    <Origin>http://oneplay.tv</Origin>    <X-Req>XMLHttpRequest</X-Req>
+	<cookieJar>$doregex[cookie]</cookieJar></regex>
+<regex>	<name>cookie</name>	<expres></expres>	<page>$doregex[iframe]&amp;token=$doregex[token]</page>	<referer>http://oneplay.tv/embed/</referer>
+	<cookieJar></cookieJar>	<ignorecache/></regex><regex>
+	<name>token</name>	<expres>$pyFunction:oneplay.decrypt_oneplaypage(page_data,Cookie_Jar).split('token" value="')[1].split('"')[0]</expres>
+	<page>$doregex[iframe]</page>    <cookieJar></cookieJar></regex><regex>
+	<name>iframe</name>	<expres>embed.*?iframe src="(.*?)"</expres>	<page>http://oneplay.tv/ver/canal/94/vh1</page>	<cookiejar></cookiejar>
+</regex>
+</item>
+
+
+
+
+
+	<item>
+<title>ESPN</title><link>$doregex[finalurl]$doregex[cross]|Cookie=$get_cookies$&amp;Referer=http://p.jwpcdn.com/6/12/jwplayer.flash.swf&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; rv:14.0) Gecko/20100101 Firefox/14.0.1</link><regex>	<name>cross</name>	<expres></expres>	<page>http://oneplay.tv/crossdomain.xml</page>	<referer>http://p.jwpcdn.com/6/12/jwplayer.flash.swf</referer>
+	<cookiejar></cookiejar></regex><regex>	<name>finalurl</name>	<expres>file: "(.*?)"</expres>	<page>http://oneplay.tv/embed/embed.php?s=$doregex[url]</page>	<referer>http://oneplay.tv/embed/</referer>	<cookieJar></cookieJar></regex>
+<regex>	<name>url</name>	<expres>$pyFunction:'$doregex[jsonurl]'.replace('\/','/')</expres>	<page></page></regex>
+<regex>	<name>jsonurl</name>	<expres>(http.*?)"</expres>
+	<page>http://oneplay.tv/embed/chp</page>	<rawpost>type=chp&amp;action=SELF&amp;token=$doregex[token]&amp;channelID=7&amp;w=100%25&amp;h=480</rawpost>	<referer>http://oneplay.tv/embed/</referer>    <Origin>http://oneplay.tv</Origin>    <X-Req>XMLHttpRequest</X-Req>
+	<cookieJar>$doregex[cookie]</cookieJar></regex>
+<regex>	<name>cookie</name>	<expres></expres>	<page>$doregex[iframe]&amp;token=$doregex[token]</page>	<referer>http://oneplay.tv/embed/</referer>
+	<cookieJar></cookieJar>	<ignorecache/></regex><regex>
+	<name>token</name>	<expres>$pyFunction:oneplay.decrypt_oneplaypage(page_data,Cookie_Jar).split('token" value="')[1].split('"')[0]</expres>
+	<page>$doregex[iframe]</page>    <cookieJar></cookieJar></regex><regex>
+	<name>iframe</name>	<expres>embed.*?iframe src="(.*?)"</expres>	<page>http://oneplay.tv/ver/canal/94/vh1</page>	<cookiejar></cookiejar>
+</regex>
+</item>
+
+
+

@@ -1,0 +1,172 @@
+
+
+
+
+
+
+<tem>
+<title>[COLOR skyblue][B]Canales Internacionales[/B][/COLOR] [COLOR lightslategray][/COLOR]</title>
+<link>$doregex[makelist2]</link>
+<regex>
+   <name>makelist2</name>
+   <listrepeat><![CDATA[
+          <title>[UPPERCASE][COLOR skyblue][makelist2.param2][/COLOR][/UPPERCASE]</title>
+          <link>http://freedom.duki.me/LIVE/H04/[makelist2.param1]/master.m3u8</link>
+		  <thumbnail></thumbnail>
+   ]]></listrepeat>
+   <expres><![CDATA[href="(.*?)/">(.*?)/]]></expres>
+   <page>http://freedom.duki.me/LIVE/H04/</page>
+</regex>
+<tem>
+<title>[COLOR skyblue][B]Canales TotalPlay[/B][/COLOR] [COLOR lightslategray][/COLOR]</title>
+<link>$doregex[makelist2]</link>
+<regex>
+   <name>makelist2</name>
+   <listrepeat><![CDATA[
+          <title>[UPPERCASE][COLOR skyblue][makelist2.param2][/COLOR][/UPPERCASE]</title>
+          <link>http://freedom.duki.me/LIVE/H01/[makelist2.param1]/PROFILE03.m3u8?user=demo</link>
+		  <thumbnail></thumbnail>
+   ]]></listrepeat>
+   <expres><![CDATA[href="(.*?)/">(.*?)/]]></expres>
+   <page>http://freedom.duki.me/LIVE/H01/</page>
+</regex>
+<tem>
+<title>[COLOR skyblue][B]Canales Stalker[/B][/COLOR] [COLOR lightslategray][/COLOR]</title>
+<link>$doregex[makelist2]</link>
+<regex>
+   <name>makelist2</name>
+   <listrepeat><![CDATA[
+          <title>[UPPERCASE][COLOR skyblue][makelist2.param2][/COLOR][/UPPERCASE]</title>
+          <link>http://freedom.duki.me/LIVE/H02/[makelist2.param1]/master.m3u8?user=demo</link>
+		  <thumbnail></thumbnail>
+   ]]></listrepeat>
+   <expres><![CDATA[href="(.*?)/">(.*?)/]]></expres>
+   <page>http://freedom.duki.me/LIVE/H02/</page>
+</regex>
+<tem>
+<title>[COLOR skyblue][B]Canales Locales[/B][/COLOR] [COLOR lightslategray][/COLOR]</title>
+<link>$doregex[makelist2]</link>
+<regex>
+   <name>makelist2</name>
+   <listrepeat><![CDATA[
+          <title>[UPPERCASE][COLOR skyblue][makelist2.param2][/COLOR][/UPPERCASE]</title>
+          <link>http://freedom.duki.me/LIVE/H03/[makelist2.param1]/playlist.m3u8?user=demo</link>
+		  <thumbnail></thumbnail>
+   ]]></listrepeat>
+   <expres><![CDATA[href="(.*?)/">(.*?)/]]></expres>
+   <page>http://freedom.duki.me/LIVE/H03/</page>
+</regex>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>[COLOR skyblue][B]Canales Internacionales Latinos[/B][/COLOR] [COLOR lightslategray][/COLOR]</title>
+<link>$doregex[makelist2]</link>
+<regex>
+   <name>makelist2</name>
+   <listrepeat><![CDATA[
+          <title>[UPPERCASE][COLOR skyblue][makelist2.param2][/COLOR][/UPPERCASE]</title>
+          <link>http://stream.latino-webtv.com:8880/[makelist2.param1]/playlist.m3u8|User-Agent=iPad&amp;Referer=http://latino-webtv.com/player/jwplayer.flash.swf</link>
+		  <thumbnail></thumbnail>
+   ]]></listrepeat>
+   <expres><![CDATA[href="(.*?)/">(.*?)/]]></expres>
+   <page>http://stream.latino-webtv.com:8880</page>
+</regex>
+</title>
+
+
+
+<item>
+<title>[COLOR skyblue][B]Canales Argentinos GX[/B][/COLOR] [COLOR lightslategray][/COLOR]</title>
+<link>$doregex[makelist2]</link>
+<regex>
+   <name>makelist2</name>
+   <listrepeat><![CDATA[
+          <title>[UPPERCASE][COLOR skyblue][makelist2.param2][/COLOR][/UPPERCASE]</title>
+          <link>http://stream.latino-webtv.com:8880/gx/[makelist2.param1]/playlist.m3u8|User-Agent=iPad&amp;Referer=http://latino-webtv.com/player/jwplayer.flash.swf</link>
+		  <thumbnail></thumbnail>
+   ]]></listrepeat>
+   <expres><![CDATA[href="(.*?)/">(.*?)/]]></expres>
+   <page>http://stream.latino-webtv.com:8880/gx/</page>
+</regex>
+</title>
+
+
+
+<item>
+<title>[COLOR skyblue][B]STALKER[/B][/COLOR] [COLOR lightslategray][/COLOR]</title>
+<link>$doregex[makelist2]</link>
+<regex>
+   <name>makelist2</name>
+   <listrepeat><![CDATA[
+          <title>[UPPERCASE][COLOR skyblue][makelist2.param2][/COLOR][/UPPERCASE]</title>
+          <link>http://stream.latino-webtv.com:8880/stalker/[makelist2.param1]/playlist.m3u8|User-Agent=iPad&amp;Referer=http://latino-webtv.com/player/jwplayer.flash.swf</link>
+		  <thumbnail></thumbnail>
+   ]]></listrepeat>
+   <expres><![CDATA[href="(.*?)/">(.*?)/]]></expres>
+   <page>http://stream.latino-webtv.com:8880/stalker/</page>
+</regex>
+</title>
+
+
+<item>
+<title>[COLOR skyblue][B]TotalPlay[/B][/COLOR] [COLOR lightslategray][/COLOR]</title>
+<link>$doregex[makelist2]</link>
+<regex>
+   <name>makelist2</name>
+   <listrepeat><![CDATA[
+          <title>[UPPERCASE][COLOR skyblue][makelist2.param2][/COLOR][/UPPERCASE]</title>
+          <link>http://stream.latino-webtv.com:8880/tp/[makelist2.param1]/PROFILE03.m3u8|User-Agent=iPad&amp;Referer=http://latino-webtv.com/player/jwplayer.flash.swf</link>
+		  <thumbnail></thumbnail>
+   ]]></listrepeat>
+   <expres><![CDATA[href="(.*?)/">(.*?)/]]></expres>
+   <page>http://stream.latino-webtv.com:8880/tp/</page>
+</regex>
+</title>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

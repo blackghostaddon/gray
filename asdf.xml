@@ -1,0 +1,492 @@
+<item>
+<title>[COLOR grey][B][I]CANAL + P2P [/I][/B][/COLOR]</title>
+<link>plugin://PLD-Plexus/?url=8865d45b76b0e8b70dd9eed64930d3b218204520&amp;mode=1&amp;name=Test</link>
+<thumbnail>https://chinoataku.files.wordpress.com/2011/08/canal.jpg</thumbnail>
+<fanart>https://chinoataku.files.wordpress.com/2011/08/canal.jpg</fanart>
+</item>
+<item>
+
+<item>
+<title>[COLOR grey][B][I]CANAL PLUS LIGA [/I][/B][/COLOR]</title>
+<link>http://Ignoreme</link>
+<thumbnail>https://chinoataku.files.wordpress.com/2011/08/canal.jpg</thumbnail>
+<fanart>https://chinoataku.files.wordpress.com/2011/08/canal.jpg</fanart>
+<externallink>http://listapld.proyectoluzdigital.com/cliga.xml</externallink>
+</item>
+<item>
+<title>[COLOR grey][B][I]CANAL + partidazo (P2P) [/I][/B][/COLOR]</title>
+<link>plugin://PLD-Plexus/?url=a3d65e20dbc3b4f34b5078de3e3cb6ef64ca9856&amp;mode=1&amp;name=Test</link>
+<thumbnail>http://www.formulatv.com/images/noticias/28100/28157/1.jpg</thumbnail>
+<fanart>http://www.formulatv.com/images/noticias/28100/28157/1.jpg</fanart>
+</item>
+<item>
+<title>[COLOR grey][B][I]CANAL PLUS PARTIDAZO[/I][/B][/COLOR]</title>
+<link>rtmp://185.39.11.76/live?token=$doregex[rtmp] playpath=$doregex[path] swfUrl=http://gblackstreaming.com/player.swf live=1 timeout=15 pageUrl=http://gblackstreaming.com token=$doregex[tok]</link>
+<regex>
+<name>rtmp</name>
+<expres>token=(.*?)'</expres>
+<page>http://gblackstreaming.com/embed.php?a=25&amp;id=&amp;width=650&amp;height=400&amp;autostart=true&amp;strech=</page>
+<referer>http://gblackstreaming.com</referer>
+</regex>
+<regex>
+<name>path</name>
+<expres>file', '(.*?)'</expres>
+<page>http://gblackstreaming.com/embed.php?a=25&amp;id=&amp;width=650&amp;height=400&amp;autostart=true&amp;strech=</page>
+<referer>http://gblackstreaming.com</referer>
+</regex>
+<regex>
+<name>tok</name>
+<expres>token', '(.*?)'</expres>
+<page>http://gblackstreaming.com/embed.php?a=25&amp;id=&amp;width=650&amp;height=400&amp;autostart=true&amp;strech=</page>
+<referer>http://gblackstreaming.com</referer>
+</regex>
+<thumbnail>http://www.formulatv.com/images/noticias/28100/28157/1.jpg</thumbnail>
+<fanart>http://www.formulatv.com/images/noticias/28100/28157/1.jpg</fanart>
+</item>
+<item>
+<title>[COLOR grey][B][I]CANAL PLUS PARTIDAZO[/I][/B][/COLOR]</title>
+<link>$doregex[get-rtmp] swfUrl=http://files.leton.tv/jwplayer.flash.swf live=1 timeout=15 swfVfy=1 pageUrl=http://leton.tv/</link>
+<regex>
+<name>get-rtmp</name>
+<expres>$pyFunction:get_leton_rtmp('http://leton.tv/player.php?streampage=partdz456&width=650&height=400','http://leton.tv/')</expres>
+<page></page>
+</regex>
+<thumbnail>http://www.formulatv.com/images/noticias/28100/28157/1.jpg</thumbnail>
+<fanart>http://www.formulatv.com/images/noticias/28100/28157/1.jpg</fanart>
+</item>
+<item>
+<title>[COLOR grey][B][I]CANAL + partidazo [/I][/B][/COLOR]</title>
+<link>rtmp://185.39.11.76/live?token=$doregex[rtmp] playpath=$doregex[path] swfUrl=http://gblackstreaming.com/player.swf live=1 timeout=15 pageUrl=http://gblackstreaming.com token=$doregex[tok]</link>
+<regex>
+<name>rtmp</name>
+<expres>token=(.*?)'</expres>
+<page>http://gblackstreaming.com/embed.php?a=25&amp;id=&amp;width=650&amp;height=400&amp;autostart=true&amp;strech=</page>
+<referer>http://gblackstreaming.com</referer>
+</regex>
+<regex>
+<name>path</name>
+<expres>file', '(.*?)'</expres>
+<page>http://gblackstreaming.com/embed.php?a=25&amp;id=&amp;width=650&amp;height=400&amp;autostart=true&amp;strech=</page>
+<referer>http://gblackstreaming.com</referer>
+</regex>
+<regex>
+<name>tok</name>
+<expres>token', '(.*?)'</expres>
+<page>http://gblackstreaming.com/embed.php?a=25&amp;id=&amp;width=650&amp;height=400&amp;autostart=true&amp;strech=</page>
+<referer>http://gblackstreaming.com</referer>
+</regex>
+<thumbnail>http://www.formulatv.com/images/noticias/28100/28157/1.jpg</thumbnail>
+<fanart>http://www.formulatv.com/images/noticias/28100/28157/1.jpg</fanart>
+</item>
+<item>
+    <title>[COLOR grey][B][I]being sport espa�a[/I][/B][/COLOR]</title> 
+        <sportsdevil>http://verdirectotv.com/ver-gol-tv-online-y-directo-gratis-mundial-brasil-2014-en-directo/</sportsdevil> 
+<referer>http://verdirectotv.com</referer>
+<thumbnail>http://worldsoccertalk.com/wp-content/uploads/2013/09/beIN-SPORT-logo.jpg</thumbnail>
+<fanart>http://worldsoccertalk.com/wp-content/uploads/2013/09/beIN-SPORT-logo.jpg</fanart>
+</item>
+
+<item>
+<title>[COLOR grey][B][I]being sport espa�a  [/I][/B][/COLOR]</title>
+<link>rtmp://185.39.11.76/live?token=$doregex[rtmp] playpath=$doregex[path] swfUrl=http://gblackstreaming.com/player.swf live=1 timeout=15 pageUrl=http://gblackstreaming.com token=$doregex[tok]</link>
+<regex>
+<name>rtmp</name>
+<expres>token=(.*?)'</expres>
+<page>http://gblackstreaming.com/embed.php?a=15848&amp;id=&amp;width=650&amp;height=400&amp;autostart=true&amp;strech=</page>
+<referer>http://gblackstreaming.com</referer>
+</regex>
+<regex>
+<name>path</name>
+<expres>file', '(.*?)'</expres>
+<page>http://gblackstreaming.com/embed.php?a=15848&amp;id=&amp;width=650&amp;height=400&amp;autostart=true&amp;strech=</page>
+<referer>http://gblackstreaming.com</referer>
+</regex>
+<regex>
+<name>tok</name>
+<expres>token', '(.*?)'</expres>
+<page>http://gblackstreaming.com/embed.php?a=15848&amp;id=&amp;width=650&amp;height=400&amp;autostart=true&amp;strech=</page>
+<referer>http://gblackstreaming.com</referer>
+</regex>
+
+<thumbnail>http://worldsoccertalk.com/wp-content/uploads/2013/09/beIN-SPORT-logo.jpg</thumbnail>
+<fanart>http://worldsoccertalk.com/wp-content/uploads/2013/09/beIN-SPORT-logo.jpg</fanart>
+</item>
+<item>
+<title>[COLOR grey][B][I]being sport espa�a  [/I][/B][/COLOR]</title>
+<link>$doregex[get-rtmp] swfUrl=http://files.leton.tv/jwplayer.flash.swf live=1 timeout=15 swfVfy=1 pageUrl=http://leton.tv/</link>
+<regex>
+<name>get-rtmp</name>
+<expres>$pyFunction:get_leton_rtmp('http://leton.tv/player.php?streampage=beinte&width=650&height=400','http://leton.tv/')</expres>
+<page></page>
+</regex>
+<thumbnail>http://worldsoccertalk.com/wp-content/uploads/2013/09/beIN-SPORT-logo.jpg</thumbnail>
+<fanart>http://worldsoccertalk.com/wp-content/uploads/2013/09/beIN-SPORT-logo.jpg</fanart>
+</item>
+<item>
+<title>[COLOR grey][B][I]CANAL FUTBOL EVENTOS [/I][/B][/COLOR]</title>      
+<link>http://cctv2-lh.akamaihd.net/i/MRC1HD1_live@125196/index_1080p_av-p.m3u8</link>
+<thumbnail>http://tech.batanga.com/sites/tech.batanga.com/files/Siri-te-ayuda-a-mantenerte-al-tanto-de-los-resultados-del-futbol-2.jpg</thumbnail>
+<fanart>http://tech.batanga.com/sites/tech.batanga.com/files/Siri-te-ayuda-a-mantenerte-al-tanto-de-los-resultados-del-futbol-2.jpg</fanart>
+</item>
+<item>
+
+<item>
+<title>[COLOR grey][B][I]GOL TV/CANAL + LIGA (P2P) [/I][/B][/COLOR]</title>   
+<link>plugin://PLD-Plexus/?url=dd70dfe213f9cb4bf3d60d9801bfbdd3fcce7efa&amp;mode=1&amp;name=Test</link>
+<thumbnail>http://tech.batanga.com/sites/tech.batanga.com/files/Siri-te-ayuda-a-mantenerte-al-tanto-de-los-resultados-del-futbol-2.jpg</thumbnail>
+<fanart>http://tech.batanga.com/sites/tech.batanga.com/files/Siri-te-ayuda-a-mantenerte-al-tanto-de-los-resultados-del-futbol-2.jpg</fanart>
+</item>
+
+<item>
+ <title>[COLOR grey][B][I]CANAL+ LIGA DE CAMPEONES  [/I][/B][/COLOR]</title> 
+<link>http://Ignoreme</link>
+<thumbnail>http://www.movistar.es/rpmm/estaticos/videoclub_agosto/canal_mes_liga_campeones_700x394.png</thumbnail>
+<fanart>http://www.movistar.es/rpmm/estaticos/videoclub_agosto/canal_mes_liga_campeones_700x394.png</fanart>
+<externallink>http://listapld.proyectoluzdigital.com/ligacampeones.xml</externallink>
+</item>
+
+<item>
+ <title>[COLOR grey][B][I]CANAL+ DEPORTES  [/I][/B][/COLOR]</title> 
+<link>http://Ignoreme</link>
+<thumbnail>http://www.telebasura.net/wp-content/2011/02/tie_break_en_canal+_deportes.jpg</thumbnail>
+<fanart>http://www.telebasura.net/wp-content/2011/02/tie_break_en_canal+_deportes.jpg</fanart>
+<externallink>http://listapld.proyectoluzdigital.com/c+deportes.xml</externallink>
+</item>
+<item>
+<title>[COLOR grey][B][I]CANAL + FUTBOL (P2P) [/I][/B][/COLOR]</title>
+<link>plugin://PLD-Plexus/?url=$doregex[id]&amp;mode=1&amp;name=Acestream</link>
+<regex>
+<name>id</name> 
+<expres>this.loadPlayer\("(.*?)"</expres>
+<page>http://1ttv.net/iframe.php?site=2058&amp;channel=13162</page>
+<referer>http://www.serbiaplus.com</referer>
+</regex>
+<thumbnail>http://www.cveca.info/imagenes/canal-plus-bar.png</thumbnail>
+<fanart>http://www.cveca.info/imagenes/canal-plus-bar.png</fanart> 
+</item>
+<item>
+ <title>[COLOR grey][B][I]CANAL + FUTBOL  [/I][/B][/COLOR]</title>
+ <link>$doregex[get-rtmp] swfUrl=http://files.leton.tv/jwplayer.flash.swf live=1 timeout=15 swfVfy=1 pageUrl=http://leton.tv/</link>
+<regex>
+<name>get-rtmp</name>
+<expres>$pyFunction:get_leton_rtmp('http://leton.tv/player.php?streampage=futbollpls&width=650&height=400','http://leton.tv/')</expres>
+<page></page>
+</regex>
+<thumbnail>http://www.cveca.info/imagenes/canal-plus-bar.png</thumbnail>
+<fanart>http://www.cveca.info/imagenes/canal-plus-bar.png</fanart> 
+</item>
+<item>
+
+<item>
+<title>[COLOR grey][B][I]CANAL+ FUTBOL  [/I][/B][/COLOR]</title>
+  <link>rtmp://185.39.11.76/live?token=$doregex[rtmp] playpath=$doregex[path] swfUrl=http://gblackstreaming.com/player.swf live=1 timeout=15 pageUrl=http://gblackstreaming.com token=$doregex[tok]</link>
+<regex>
+<name>rtmp</name>
+<expres>token=(.*?)'</expres>
+<page>http://gblackstreaming.com/embed.php?a=15969&amp;id=&amp;width=650&amp;height=400&amp;autostart=true&amp;strech=</page>
+<referer>http://gblackstreaming.com</referer>
+</regex>
+<regex>
+<name>path</name>
+<expres>file', '(.*?)'</expres>
+<page>http://gblackstreaming.com/embed.php?a=15969&amp;id=&amp;width=650&amp;height=400&amp;autostart=true&amp;strech=</page>
+<referer>http://gblackstreaming.com</referer>
+</regex>
+<regex>
+<name>tok</name>
+<expres>token', '(.*?)'</expres>
+<page>http://gblackstreaming.com/embed.php?a=15969&amp;id=&amp;width=650&amp;height=400&amp;autostart=true&amp;strech=</page>
+<referer>http://gblackstreaming.com</referer>
+</regex>
+<thumbnail>http://www.cveca.info/imagenes/canal-plus-bar.png</thumbnail>
+<fanart>http://www.cveca.info/imagenes/canal-plus-bar.png</fanart>
+        </item>
+<item>
+<title>[COLOR grey][B][I]SPORTMANIA p2p [/I][/B][/COLOR]</title>  
+<link>plugin://PLD-Plexus/?url=07a06e487ff5b56f8f9036c8cd547f9331d56b4e&amp;mode=1&amp;name=Test</link>
+<thumbnail>http://www.alesli.esy.es/LOGOS%20SERVIIO/sportmania.png</thumbnail>
+<fanart>https://lh6.googleusercontent.com/-LEtUibES7no/UuuJwG5KHiI/AAAAAAAABQA/2OqKhwlwxzI/s536/sportmania.jpg</fanart>
+</item>
+<item>
+<item>
+<title>[COLOR grey][B][I]SPORTMANIA [/I][/B][/COLOR]</title>   
+<link>$doregex[rtmp] playpath=tvb105  swfUrl=http://rdmcast.com/player.swf pageUrl=http://rdmcast.com/player.swf token=$doregex[tok] live=true timeout=15</link>
+<regex>
+<name>rtmp</name>
+<expres>streamer', '(.*?)'</expres>
+<page>http://rdmcast.com/embed.php?a=84&id=&width=670&height=400&autostart=true&strech=</page>
+<referer>http://streamingfreetv.net/</referer>
+</regex>
+<regex>
+<name>file</name>
+<expres>file', '(.*?)'</expres>
+<page>http://rdmcast.com/embed.php?a=84&id=&width=670&height=400&autostart=true&strech=</page>
+<referer>http://streamingfreetv.net/</referer>
+</regex>
+<regex>
+<name>tok</name>
+<expres>token', '(.*?)'</expres>
+<page>http://rdmcast.com/embed.php?a=84&id=&width=670&height=400&autostart=true&strech=</page>
+<referer>http://streamingfreetv.net/</referer>
+</regex>
+<thumbnail>http://www.alesli.esy.es/LOGOS%20SERVIIO/sportmania.png</thumbnail>
+<fanart>https://lh6.googleusercontent.com/-LEtUibES7no/UuuJwG5KHiI/AAAAAAAABQA/2OqKhwlwxzI/s536/sportmania.jpg</fanart>
+</item>
+
+<item>
+<item>
+<title>[COLOR grey][B][I]REAL MADRID  [/I][/B][/COLOR]</title>
+<link>http://rmtvlive-lh.akamaihd.net/i/rmtv_1@154306/index_1250_av-b.m3u8?sd=10&rebase=on</link>
+<thumbnail>http://3.bp.blogspot.com/-hiLx0PwgHyA/UYoM47C9BSI/AAAAAAAAXFM/MTvX_OsBKeQ/s1600/realmadrid-tv.jpg</thumbnail>
+<fanart>http://3.bp.blogspot.com/-hiLx0PwgHyA/UYoM47C9BSI/AAAAAAAAXFM/MTvX_OsBKeQ/s1600/realmadrid-tv.jpg</fanart>
+</item>
+<item>
+
+<item>
+<title>[COLOR grey][B][I]BAR�A TV [/I][/B][/COLOR]</title>
+<link>rtmp://185.39.11.76/live?token=$doregex[rtmp] playpath=$doregex[path] swfUrl=http://gblackstreaming.com/player.swf live=1 timeout=15 pageUrl=http://gblackstreaming.com token=$doregex[tok]</link>
+<regex>
+<name>rtmp</name>
+<expres>token=(.*?)'</expres>
+<page>http://gblackstreaming.com/embed.php?a=14855&amp;id=&amp;width=650&amp;height=400&amp;autostart=true&amp;strech=</page>
+<referer>http://gblackstreaming.com</referer>
+</regex>
+<regex>
+<name>path</name>
+<expres>file', '(.*?)'</expres>
+<page>http://gblackstreaming.com/embed.php?a=14855&amp;id=&amp;width=650&amp;height=400&amp;autostart=true&amp;strech=</page>
+<referer>http://gblackstreaming.com</referer>
+</regex>
+<regex>
+<name>tok</name>
+<expres>token', '(.*?)'</expres>
+<page>http://gblackstreaming.com/embed.php?a=14855&amp;id=&amp;width=650&amp;height=400&amp;autostart=true&amp;strech=</page>
+<referer>http://gblackstreaming.com</referer>
+</regex>
+<thumbnail>http://www.chefuri.com/v4/fotos/chefuritv/c-BarcaTV.jpg</thumbnail>
+<fanart>http://www.chefuri.com/v4/fotos/chefuritv/c-BarcaTV.jpg</fanart>
+</item>
+<item>
+<title>[COLOR grey][B][I]BAR�A TV [/I][/B][/COLOR]</title>
+<link>$doregex[get-rtmp] swfUrl=http://files.leton.tv/jwplayer.flash.swf live=1 timeout=15 swfVfy=1 pageUrl=http://leton.tv/</link>
+<regex>
+<name>get-rtmp</name>
+<expres>$pyFunction:get_leton_rtmp('http://leton.tv/player.php?streampage=barztv&width=650&height=400','http://leton.tv/')</expres>
+<page></page>
+</regex>
+<thumbnail>http://www.chefuri.com/v4/fotos/chefuritv/c-BarcaTV.jpg</thumbnail>
+<fanart>http://www.chefuri.com/v4/fotos/chefuritv/c-BarcaTV.jpg</fanart>
+</item>
+<item>
+<item>
+<title>[COLOR grey][B][I]EUROSPORT [/I][/B][/COLOR]</title>
+<link>$doregex[get-rtmp] swfUrl=http://files.leton.tv/jwplayer.flash.swf live=1 timeout=15 swfVfy=1 pageUrl=http://leton.tv/</link>
+<regex>
+<name>get-rtmp</name>
+<expres>$pyFunction:get_leton_rtmp('http://leton.tv/player.php?streampage=eurosprt&width=650&height=400','http://leton.tv/')</expres>
+<page></page>
+</regex>
+         <thumbnail>http://adrianypatricia.com/wp-content/uploads/2012/11/eurosport.jpg</thumbnail>
+<fanart>http://adrianypatricia.com/wp-content/uploads/2012/11/eurosport.jpg</fanart>
+        </item>
+<item>
+   <title>[COLOR grey][B][I]SEVILLA FC[/I][/B][/COLOR]</title>
+   <link>http://flash0.80137-live0.dna.qbrick.com:1935/80137-live0/sevillafc/playlist.m3u8</link>
+    <thumbnail>http://oi47.tinypic.com/2943uwp.jpg</thumbnail>
+<fanart>http://oi47.tinypic.com/2943uwp.jpg</fanart>
+    </item>
+	<item>
+<item>
+<title>[COLOR grey][B][I]FOX SPORT [/I][/B][/COLOR]</title>
+<link>http://200.76.77.237/LIVE/H01/CANAL522/PROFILE03.m3u8?</link>
+<thumbnail>http://www.marcadegol.com/fotos/2012/01/FOX_SPORTS.jpg</thumbnail>
+<fanart>http://www.marcadegol.com/fotos/2012/01/FOX_SPORTS.jpg</fanart>
+</item>
+<item>
+<title>[COLOR grey][B][I]FOX SPORT 2 [/I][/B][/COLOR]</title>
+<link>http://200.76.77.237/LIVE/H01/CANAL527/PROFILE03.m3u8?</link>
+<thumbnail>http://www.marcadegol.com/fotos/2012/01/FOX_SPORTS.jpg</thumbnail>
+<fanart>http://www.marcadegol.com/fotos/2012/01/FOX_SPORTS.jpg</fanart>
+</item>
+<item>
+<title>[COLOR grey][B][I]VIP RACING  SPORTDEVIL(SOLO EVENTOS) [/I][/B][/COLOR]</title>	
+<sportsdevil>http://vipracing.tv/channel/opcion-1</sportsdevil>
+<referer>http://vipracing.tv</referer>
+<thumbnail>http://f1setupblog.com/wp-content/uploads/2013/09/Logo-01-steel.jpg</thumbnail>
+<fanart>http://f1setupblog.com/wp-content/uploads/2013/09/Logo-01-steel.jpg</fanart>
+</item>
+
+<item>
+<title>[COLOR grey][B][I]VIP RACING  (SOLO EVENTOS)[/I][/B][/COLOR]</title>	
+<link>$doregex[url]</link>
+<regex>
+<name>url</name>
+<expres>file: "(.*?)"</expres>
+<page>http://www.direct2watch.com/embedplayer.php?channel=$doregex[id]</page>
+<referer>http://vipracing.tv/</referer>
+</regex>
+<regex>
+<name>id</name>
+<expres>embed/(.*?)&amp;</expres>
+<page>http://vipracing.tv/channel/opcion-5</page>
+<referer>http://vipracing.tv/</referer>
+</regex>
+<thumbnail>http://f1setupblog.com/wp-content/uploads/2013/09/Logo-01-steel.jpg</thumbnail>
+<fanart>http://f1setupblog.com/wp-content/uploads/2013/09/Logo-01-steel.jpg</fanart>
+</item>
+<item> 
+<title>[COLOR grey][B][I]VIP RACING  2(SOLO EVENTOS)[/I][/B][/COLOR]</title>	
+<link>$doregex[rtmp] playpath=$doregex[id] swfUrl=http://static.castalba.tv/player5.9.swf pageUrl=http://castalba.tv live=true timeout=20</link>
+<regex>
+<name>rtmp</name>
+<expres>'streamer': '(.*?)'</expres>
+<page>http://castalba.tv/embed.php?cid=27122</page>
+<referer>http://vipracing.tv/</referer>
+</regex>
+<regex>
+<name>id</name>
+<expres>'file': '(.*?)'</expres>
+<page>http://castalba.tv/embed.php?cid=27122</page>
+<referer>http://vipracing.tv/</referer>
+</regex>
+<thumbnail>http://f1setupblog.com/wp-content/uploads/2013/09/Logo-01-steel.jpg</thumbnail>
+<fanart>http://f1setupblog.com/wp-content/uploads/2013/09/Logo-01-steel.jpg</fanart>
+</item>
+
+<item>
+			<title>[COLOR grey][B][I]BEIN SPORTS   � HD[/I][/B][/COLOR]</title>
+			<link>rtmp://watch4.streamlive.to:1935/edge app=edge/_definst_/$doregex[xs] playpath=$doregex[path] swfVfy=1 token=$doregex[tok] swfUrl=https://www.streamlive.to/ads/streamlive.swf pageUrl=https://www.streamlive.to live=1 timeout=15</link>
+			<regex>
+			<name>path</name>
+			<page>http://www.streamlive.to/view/68873</page>
+			<expres>file: "(.*).flv</expres>
+			</regex>
+			<regex>
+			<name>tok</name>
+			<expres>token":"([^"]*)</expres>
+			<page>$doregex[tokpg]</page>
+			<referer>https://www.streamlive.to</referer>
+			</regex>
+			<regex>
+			<name>tokpg</name>
+			<expres>getJSON\("([^"]*)</expres>
+			<page>http://www.streamlive.to/view/68873</page>
+			</regex>
+			<regex>
+			<name>xs</name>
+			<expres>/(\?xs=.*?)"</expres>
+			<page>http://www.streamlive.to/view/68873</page>
+			<rawpost>captcha=$doregex[answer]</rawpost>
+			<referer>https://www.streamlive.to</referer>
+			<cookieJar></cookieJar>
+			<ignorecache/>
+			</regex>
+			<regex>
+			<name>answer</name>
+			<expres>$pyFunction:($doregex[captcha])</expres>
+			<page></page>
+			</regex>
+			<regex>
+			<name>captcha</name>
+			<expres>$pyFunction:'$doregex[xcaptcha]'.replace('x','*')</expres>
+			<page></page>
+			</regex>
+			<regex>
+			<name>xcaptcha</name>
+			<expres>Question: (.*) =</expres>
+			<page>http://www.streamlive.to/view/68873</page>
+			<referer>http://www.streamlive.to</referer>
+			<cookieJar></cookieJar>
+			</regex>
+			<thumbnail>http://worldsoccertalk.com/wp-content/uploads/2013/09/beIN-SPORT-logo.jpg</thumbnail>
+<fanart>http://worldsoccertalk.com/wp-content/uploads/2013/09/beIN-SPORT-logo.jpg</fanart>
+			</item>
+<item>
+			<title>[COLOR grey][B][I]BEIN SPORTS   � (opcion 2)[/I][/B][/COLOR]</title>
+			<thumbnail>http://worldsoccertalk.com/wp-content/uploads/2013/09/beIN-SPORT-logo.jpg</thumbnail>
+<fanart>http://worldsoccertalk.com/wp-content/uploads/2013/09/beIN-SPORT-logo.jpg</fanart>
+			<link>$doregex[streamer] playpath=$doregex[file] swfUrl=http://static.castalba.tv/player5.9.swf live=true timeout=15 swfVfy=true pageUrl=http://castalba.tv/</link>
+                        <thumbnail></thumbnail>
+                        <regex>
+                        <name>streamer</name>
+                        <expres>'streamer': '([^']*)</expres>
+                        <page>http://castalba.tv/embed.php?cid=24090&amp;wh=650&amp;ht=450&amp;r=televall.com.mx</page>
+                        <referer>http://tv.televall.com.mx/beinsporthd.html?width=650&amp;height=450</referer>
+                        </regex>
+                        <regex>
+                        <name>file</name>
+                        <expres>'file': '([^']*)</expres>
+                        <page>http://castalba.tv/embed.php?cid=24090&amp;wh=650&amp;ht=450&amp;r=televall.com.mx</page>
+                        <referer>http://tv.televall.com.mx/beinsporthd.html?width=650&;height=450</referer>
+                        </regex>
+
+			</item>
+<item>
+ <title>[COLOR grey][B][I]BEIN SPORTS   SPORTDEVIL [/I][/B][/COLOR]</title>
+ <sportsdevil>http://biophobia.tv/?p=831</sportsdevil>
+ <referer>http://biophobia.tv</referer>
+<thumbnail>http://worldsoccertalk.com/wp-content/uploads/2013/09/beIN-SPORT-logo.jpg</thumbnail>
+<fanart>http://worldsoccertalk.com/wp-content/uploads/2013/09/beIN-SPORT-logo.jpg</fanart>
+</item>
+<item>
+ <title>[COLOR grey][B][I]BEIN SPORTS   SPORTDEVIL (OPCION2)[/I][/B][/COLOR]</title>
+<sportsdevil>http://castalba.tv/channel/24090</sportsdevil>
+<referer>http://castalba.tv</referer>
+<thumbnail>http://worldsoccertalk.com/wp-content/uploads/2013/09/beIN-SPORT-logo.jpg</thumbnail>
+<fanart>http://worldsoccertalk.com/wp-content/uploads/2013/09/beIN-SPORT-logo.jpg</fanart>
+</item>
+<item>
+<title>[COLOR grey][B][I]BEIN SPORTS 1   [/I][/B][/COLOR]</title>
+<link>http://streamindo.ddns.net/jhos/beib1_5/streamindo/playlist.m3u8</link>
+<thumbnail>http://worldsoccertalk.com/wp-content/uploads/2013/09/beIN-SPORT-logo.jpg</thumbnail>
+<fanart>http://worldsoccertalk.com/wp-content/uploads/2013/09/beIN-SPORT-logo.jpg</fanart>
+</item>
+<item>
+<item>
+<title>[COLOR grey][B][I]BEIN SPORTS 2  [/I][/B][/COLOR]</title>
+<link>http://streamindo.ddns.net/jhos/beib2_3/streamindo/playlist.m3u8</link>
+<thumbnail>http://worldsoccertalk.com/wp-content/uploads/2013/09/beIN-SPORT-logo.jpg</thumbnail>
+<fanart>http://worldsoccertalk.com/wp-content/uploads/2013/09/beIN-SPORT-logo.jpg</fanart>
+</item>
+<item>
+<item>
+<title>[COLOR grey][B][I]TODO DEPORTE[/I][/B][/COLOR]</title>
+<link>http://190.92.0.43:1935/securelive/tdtv85jd5EKL3xWq3/chunklist_w1241310319.m3u8</link>
+<thumbnail>http://1.bp.blogspot.com/_IfxkkWbyhxk/TKJQJuWCGPI/AAAAAAAANuM/QwXlsBoudjU/s1600/TODO_DEPORTE.jpg</thumbnail>
+<fanart>http://1.bp.blogspot.com/_IfxkkWbyhxk/TKJQJuWCGPI/AAAAAAAANuM/QwXlsBoudjU/s1600/TODO_DEPORTE.jpg</fanart>
+</item>
+<item>
+<item>   
+   <title>[COLOR grey][B][I] ESPN [/I][/B][/COLOR]</title>
+<link>http://206.190.150.95/hash/526/10/asd/389.m3u8</link>
+<thumbnail>http://idents.org/lightbox/espnhdBIG.jpg</thumbnail>
+<fanart>http://idents.org/lightbox/espnhdBIG.jpg</fanart>
+</item>
+<item>
+
+<item>   
+   <title>[COLOR grey][B][I] ESPN 2[/I][/B][/COLOR]</title>
+<link>http://206.190.150.95/hash/526/10/asd/409.m3u8</link>
+			
+<thumbnail>http://idents.org/lightbox/espnhdBIG.jpg</thumbnail>
+<fanart>http://idents.org/lightbox/espnhdBIG.jpg</fanart>
+</item>
+
+<item>
+<item>   
+   <title>[COLOR grey][B][I] ESPN 3[/I][/B][/COLOR]</title>
+<link>http://206.190.150.95/hash/526/10/asd/393.m3u8</link>
+<thumbnail>http://www.panoramaaudiovisual.com/wp-content/uploads/2010/05/espn_3d.jpg</thumbnail>
+<fanart>http://www.panoramaaudiovisual.com/wp-content/uploads/2010/05/espn_3d.jpg</fanart>
+</item>
+<item>
+<item>
+<title>[COLOR grey][B][I]FOX SPORT[/I][/B][/COLOR]</title>
+<link>http://206.190.150.95/hash/526/10/asd/397.m3u8</link>
+<thumbnail>http://z.cdn.entutele.com/media/channels/big/fox-sports.gif</thumbnail>
+</item>
+			<item>
+			<title>[COLOR grey][B][I]FOX SPORT 2[/I][/B][/COLOR]</title>
+			<link>http://206.190.150.95/hash/526/10/asd/401.m3u8</link>
+			<thumbnail>http://y.cdn.entutele.com/media/channels/big/fox-sports-2.gif</thumbnail>
+			</item>

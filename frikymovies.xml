@@ -1,0 +1,402 @@
+
+
+
+
+
+
+
+
+<!-- Ivan Friky Presenta -->
+
+
+
+
+
+	<!-- formato como podras ver  solo tienes  que modiicar  2 parametros la url de imagen de fondo yposter de peliculas son opcionales claro que se  ve mejor la lista con imagenes..  pero eso ya es estetico ..
+
+solo nencesitas  el titulo de la pelicula  y el ID de  la pelicula en streamin.to
+
+cualquier duda ando en el telegram
+	-->
+
+	
+	
+	
+<item><title>Ben Hur BR Screener [friky] </title>  		<!-- titulo de la pelicula -->
+<link>$doregex[id]</link><regex><name>id</name><expres>file: "(.*?)",</expres><page>http://streamin.to/embed-ugkn0rl4cqmu-740x360.html</page><referer>http://streamin.to</referer></regex>      		<!-- enlace  -->
+<fanart>https://images-na.ssl-images-amazon.com/images/M/MV5BNjg2NjA3NDY2OV5BMl5BanBnXkFtZTgwNzE3NTkxMTE@._V1_SX300.jpg</fanart>															<!-- url del la imagen de fondo -->
+<thumbnail>https://images-na.ssl-images-amazon.com/images/M/MV5BNjg2NjA3NDY2OV5BMl5BanBnXkFtZTgwNzE3NTkxMTE@._V1_SX300.jpg</thumbnail>											<!-- poster de la pelicula -->
+</item>
+
+
+
+......
+<item><title>El hijo prodigo (HDRip) (friky)  </title>
+<link>$doregex[id]</link><regex><name>id</name><expres>file: "(.*?)",</expres><page>http://streamin.to/embed-m84iu09pl7oa-740x360.html</page><referer>http://streamin.to</referer></regex>    
+<fanart></fanart>
+<thumbnail></thumbnail>
+</item>
+
+
+...
+<item><title>Mi amigo el gigante (HDRip) (friky) </title>
+<link>$doregex[id]</link><regex><name>id</name><expres>file: "(.*?)",</expres><page>http://streamin.to/embed-cwcemdm5dayf-740x360.html</page><referer>http://streamin.to</referer></regex>    
+<fanart></fanart>
+<thumbnail></thumbnail>
+</item>
+
+
+..
+<item><title>Malas madres (HDRip) (friky)</title>
+<link>$doregex[id]</link><regex><name>id</name><expres>file: "(.*?)",</expres><page>http://streamin.to/embed-t0jee8gh5211-740x360.html</page><referer>http://streamin.to</referer></regex>    
+<fanart></fanart>
+<thumbnail></thumbnail>
+</item>
+
+
+....
+<item><title>Heidi (HDRip) (friky) </title>
+<link>$doregex[id]</link><regex><name>id</name><expres>file: "(.*?)",</expres><page>http://streamin.to/embed-9j807fgv6tnt-740x360.html</page><referer>http://streamin.to</referer></regex>    
+<fanart></fanart>
+<thumbnail></thumbnail>
+</item>
+
+
+..
+<item><title>Mercy (HDRip) (friky) </title>
+<link>$doregex[id]</link><regex><name>id</name><expres>file: "(.*?)",</expres><page>http://streamin.to/embed-s84jd560pccs-740x360.html</page><referer>http://streamin.to</referer></regex>    
+<fanart></fanart>
+<thumbnail></thumbnail>
+</item>
+
+
+.
+<item><title>Regreso a casa (HDRip) (friky) </title>
+<link>$doregex[id]</link><regex><name>id</name><expres>file: "(.*?)",</expres><page>http://streamin.to/embed-kvnu4l09za0i-740x360.html</page><referer>http://streamin.to</referer></regex>    
+<fanart></fanart>
+<thumbnail></thumbnail>
+</item>
+
+
+<item><title>------------------------------
+<item><title>Cuento de verano (HDRip) (friky) </title>
+<link>$doregex[id]</link><regex><name>id</name><expres>file: "(.*?)",</expres><page>http://streamin.to/embed-xj1zvhyqc521-740x360.html</page><referer>http://streamin.to</referer></regex>    
+<fanart></fanart>
+<thumbnail></thumbnail>
+</item>
+
+
+			--------------------------------
+<item><title>La fiesta de despedida (HDRip) (friky) </title>
+<link>$doregex[id]</link><regex><name>id</name><expres>file: "(.*?)",</expres><page>http://streamin.to/embed-8uy5k7sdqj25-740x360.html</page><referer>http://streamin.to</referer></regex>    
+<fanart></fanart>
+<thumbnail></thumbnail>
+</item>
+
+
+.
+<item><title>Miles ahead (HDRip) (friky) </title>
+<link>$doregex[id]</link><regex><name>id</name><expres>file: "(.*?)",</expres><page>http://streamin.to/embed-zomjqa0oj8js-740x360.html</page><referer>http://streamin.to</referer></regex>    
+<fanart></fanart>
+<thumbnail></thumbnail>
+</item>
+
+
+.
+<item><title>Once upon a holiday (HDRip) (friky)   </title>
+<link>$doregex[id]</link><regex><name>id</name><expres>file: "(.*?)",</expres><page>http://streamin.to/embed-m9hdw5xucprb-740x360.html</page><referer>http://streamin.to</referer></regex>    
+<fanart></fanart>
+<thumbnail></thumbnail>
+</item>
+
+
+......
+<item><title>Divinas (HDRip) (friky)   </title>
+<link>$doregex[id]</link><regex><name>id</name><expres>file: "(.*?)",</expres><page>http://streamin.to/embed-47l67vslx8r5-740x360.html</page><referer>http://streamin.to</referer></regex>    
+<fanart></fanart>
+<thumbnail></thumbnail>
+</item>
+
+
+.
+<item><title>I T (HDRip) (friky)  </title>
+<link>$doregex[id]</link><regex><name>id</name><expres>file: "(.*?)",</expres><page>http://streamin.to/embed-p5pp99c8fpl5-740x360.html</page><referer>http://streamin.to</referer></regex>    
+<fanart></fanart>
+<thumbnail></thumbnail>
+</item>
+
+
+....
+<item><title>Infierno azul (HDRip) (friky) </title>
+<link>$doregex[id]</link><regex><name>id</name><expres>file: "(.*?)",</expres><page>http://streamin.to/embed-gsq0vt6aceot-740x360.html</page><referer>http://streamin.to</referer></regex>    
+<fanart></fanart>
+<thumbnail></thumbnail>
+</item>
+
+
+.
+<item><title>Drug war La guerra de la droga (HDRip) (friky) </title>
+<link>$doregex[id]</link><regex><name>id</name><expres>file: "(.*?)",</expres><page>http://streamin.to/embed-ugidi0dwtcix-740x360.html</page><referer>http://streamin.to</referer></regex>    
+<fanart></fanart>
+<thumbnail></thumbnail>
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item><title> File Title: Ash vs Evil dead 1x01 (ivan friky)  </title>
+<link>$doregex[id]</link><regex><name>id</name><expres>file: "(.*?)",</expres><page>http://streamin.to/embed-16ud7lsf0g2c-740x360.html</page><referer>http://streamin.to</referer></regex>    
+<fanart></fanart>
+<thumbnail></thumbnail>
+</item>
+
+
+
+<item><title>Ash vs Evil dead 1x02 (ivan friky)</title>
+<link>$doregex[id]</link><regex><name>id</name><expres>file: "(.*?)",</expres><page>http://streamin.to/embed-kcmyo7enmmpt-740x360.html</page><referer>http://streamin.to</referer></regex>    
+<fanart></fanart>
+<thumbnail></thumbnail>
+</item>
+
+
+
+<item><title> Ash vs Evil dead 1x03 (ivan friky) </title>
+<link>$doregex[id]</link><regex><name>id</name><expres>file: "(.*?)",</expres><page>http://streamin.to/embed-y9wgs3uzdw6p-740x360.html</page><referer>http://streamin.to</referer></regex>    
+<fanart></fanart>
+<thumbnail></thumbnail>
+</item>
+
+
+
+<item><title>Ash vs Evil dead 1x04 (ivan friky) </title>
+<link>$doregex[id]</link><regex><name>id</name><expres>file: "(.*?)",</expres><page>http://streamin.to/embed-gtnqao2edpcp-740x360.html</page><referer>http://streamin.to</referer></regex>    
+<fanart></fanart>
+<thumbnail></thumbnail>
+</item>
+
+
+
+<item><title>Ash vs Evil dead 1x05 (ivan friky) </title>
+<link>$doregex[id]</link><regex><name>id</name><expres>file: "(.*?)",</expres><page>http://streamin.to/embed-qt0gbdhbcgep-740x360.html</page><referer>http://streamin.to</referer></regex>    
+<fanart></fanart>
+<thumbnail></thumbnail>
+</item>
+
+
+..
+<item><title>Ash vs Evil dead 1x06 (ivan friky) </title>
+<link>$doregex[id]</link><regex><name>id</name><expres>file: "(.*?)",</expres><page>http://streamin.to/embed-w6piass7ryys-740x360.html</page><referer>http://streamin.to</referer></regex>    
+<fanart></fanart>
+<thumbnail></thumbnail>
+</item>
+
+
+..
+<item><title> Ash vs Evil dead 1x07 (ivan friky)</title>
+<link>$doregex[id]</link><regex><name>id</name><expres>file: "(.*?)",</expres><page>http://streamin.to/embed-a1mb8ptzv46z-740x360.html</page><referer>http://streamin.to</referer></regex>    
+<fanart></fanart>
+<thumbnail></thumbnail>
+</item>
+
+
+ 
+<item><title>Ash vs Evil dead 1x08 (ivan friky) </title>
+<link>$doregex[id]</link><regex><name>id</name><expres>file: "(.*?)",</expres><page>http://streamin.to/embed-4w1pdvvmbg0q-740x360.html</page><referer>http://streamin.to</referer></regex>    
+<fanart></fanart>
+<thumbnail></thumbnail>
+</item>
+
+
+..
+<item><title>Ash vs Evil dead 1x09 (ivan friky) </title>
+<link>$doregex[id]</link><regex><name>id</name><expres>file: "(.*?)",</expres><page>http://streamin.to/embed-pbmfso29xnye-740x360.html</page><referer>http://streamin.to</referer></regex>    
+<fanart></fanart>
+<thumbnail></thumbnail>
+</item>
+
+
+
+<item><title>Ash vs Evil dead 1x10 (ivan friky)</title>
+<link>$doregex[id]</link><regex><name>id</name><expres>file: "(.*?)",</expres><page>http://streamin.to/embed-j1b7yi232erq-740x360.html</page><referer>http://streamin.to</referer></regex>    
+<fanart></fanart>
+<thumbnail></thumbnail>
+</item>
+
+
+.
+<item><title>Juego De Armas BR Screener XviD[ ivaṇ friky]</title>
+<link>$doregex[id]</link><regex><name>id</name><expres>file: "(.*?)",</expres><page>http://streamin.to/embed-l8ebn14c2y3m-740x360.html</page><referer>http://streamin.to</referer></regex>    
+<fanart></fanart>
+<thumbnail></thumbnail>
+</item>
+
+
+ 
+<item><title>Animales Fantasticos Y Donde Encontrarlos TS Screener [friky]  </title>
+<link>$doregex[id]</link><regex><name>id</name><expres>file: "(.*?)",</expres><page>http://streamin.to/embed-qloghsp2m5xa-740x360.html</page><referer>http://streamin.to</referer></regex>    
+<fanart></fanart>
+<thumbnail></thumbnail>
+</item>
+
+
+
+<item><title>Peter Y El Dragon BR Screener [friky] </title>
+<link>$doregex[id]</link><regex><name>id</name><expres>file: "(.*?)",</expres><page>http://streamin.to/embed-kdq0rgi3o8n9-740x360.html</page><referer>http://streamin.to</referer></regex>    
+<fanart></fanart>
+<thumbnail></thumbnail>
+</item>
+
+
+
+<item><title> Escuadron Suicida BR Screener [friky] </title>
+<link>$doregex[id]</link><regex><name>id</name><expres>file: "(.*?)",</expres><page>http://streamin.to/embed-kvx0mf051bun-740x360.html</page><referer>http://streamin.to</referer></regex>    
+<fanart></fanart>
+<thumbnail></thumbnail>
+</item>
+
+
+
+<item><title>Jack Reacher Nunca Vuelvas Atras HDTS Screener [friky] </title>
+
+<link>$doregex[id]</link><regex><name>id</name><expres>file: "(.*?)",</expres><page>http://streamin.to/embed-ty520n8ar947-740x360.html</page><referer>http://streamin.to</referer></regex>    
+<fanart></fanart>
+<thumbnail></thumbnail>
+</item>
+
+
+
+<item><title>Ouija El Origen Del Mal HDTV Screener [friky] </title>
+<link>$doregex[id]</link><regex><name>id</name><expres>file: "(.*?)",</expres><page>http://streamin.to/embed-z2r4b9r7bd1y-740x360.html</page><referer>http://streamin.to</referer></regex>    
+<fanart></fanart>
+<thumbnail></thumbnail>
+</item>
+
+
+..
+<item><title>El Hogar De Miss Peregrine Para Ninyos Peculiares HDTV Screener [friky] </title>
+<link>$doregex[id]</link><regex><name>id</name><expres>file: "(.*?)",</expres><page>http://streamin.to/embed-xrz2729776v2-740x360.html</page><referer>http://streamin.to</referer></regex>    
+<fanart></fanart>
+<thumbnail></thumbnail>
+</item>
+
+
+
+<item><title> Sully HDTV Screener [friky]  </title>
+<link>$doregex[id]</link><regex><name>id</name><expres>file: "(.*?)",</expres><page>http://streamin.to/embed-w58tduwdh4f0-740x360.html</page><referer>http://streamin.to</referer></regex>    
+<fanart></fanart>
+<thumbnail></thumbnail>
+</item>
+
+
+
+<item><title>Bridget Jones S Baby BR Screener [friky] </title>
+<link>$doregex[id]</link><regex><name>id</name><expres>file: "(.*?)",</expres><page>http://streamin.to/embed-d3klbf6s2jw5-740x360.html</page><referer>http://streamin.to</referer></regex>    
+<fanart></fanart>
+<thumbnail></thumbnail>
+</item>
+
+
+
+<item><title>Mechanic Resurrection BR Screener [friky] </title>
+<link>$doregex[id]</link><regex><name>id</name><expres>file: "(.*?)",</expres><page>http://streamin.to/embed-bby80vcihlux-740x360.html</page><referer>http://streamin.to</referer></regex>    
+<fanart></fanart>
+<thumbnail></thumbnail>
+</item>
+
+
+. 
+<item><title> Juego De Armas BR Screener XviD[ friky] </title>
+<link>$doregex[id]</link><regex><name>id</name><expres>file: "(.*?)",</expres><page>http://streamin.to/embed-5nxh05vnth3c-740x360.html</page><referer>http://streamin.to</referer></regex>    
+<fanart></fanart>
+<thumbnail></thumbnail>
+</item>
+
+
+.
+<item><title>No Respires BR Screener [friky] </title>
+<link>$doregex[id]</link><regex><name>id</name><expres>file: "(.*?)",</expres><page>http://streamin.to/embed-ydove0d3b55b-740x360.html</page><referer>http://streamin.to</referer></regex>    
+<fanart></fanart>
+<thumbnail></thumbnail>
+</item>
+
+
+
+<item><title>Barbie y hermanas en busca de sus perritos (HDRip) ( friky) </title>
+<link>$doregex[id]</link><regex><name>id</name><expres>file: "(.*?)",</expres><page>http://streamin.to/embed-z7yari0204q0-740x360.html</page><referer>http://streamin.to</referer></regex>    
+<fanart></fanart>
+<thumbnail></thumbnail>
+</item>
+
+
+ 
+<item><title>Cronicas vampiricas 7x01 (ivan friky)  </title>
+<link>$doregex[id]</link><regex><name>id</name><expres>file: "(.*?)",</expres><page>http://streamin.to/embed-0msbpu98o4z8-740x360.html</page><referer>http://streamin.to</referer></regex>    
+<fanart></fanart>
+<thumbnail></thumbnail>
+</item>
+
+
+
+.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

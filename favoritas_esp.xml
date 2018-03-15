@@ -1,0 +1,6166 @@
+<SetwatchMode>55</SetwatchMode>
+
+ <item>
+<title>[COLOR aquamarine][B]LAS PELICULAS [I]en Castellano[/I]  [/B]  [/COLOR]         </title>
+ <link>$doregex[id3]</link>
+</item>
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+<link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+   import urlresolver
+   url = 'https://streamango.com/f/rdnnompqoakdroll/Atomic_blonde_2017_1080p-dual-cast_mp4'
+   try:
+     u = urlresolver.resolve(url)
+   except:
+     u = 'http://adryanlist.org/error.mp4'
+   return u
+]]></expres>
+<page></page>
+</regex>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres>
+<page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine][/COLOR][COLOR lightslategray][/COLOR]</title>
+<regex><name>nombre</name><expres>Atomic Blonde</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+
+
+
+
+
+
+<item>
+<thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+<link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+   import urlresolver
+   url = 'https://streamango.com/f/tpbdtcrmplpelmaa/Huset_2016_1080p-dual-cast_mp4'
+   try:
+     u = urlresolver.resolve(url)
+   except:
+     u = 'http://adryanlist.org/error.mp4'
+   return u
+]]></expres>
+<page></page>
+</regex>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres>
+<page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine][/COLOR][COLOR lightslategray][/COLOR]</title>
+<regex><name>nombre</name><expres>Huset</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+
+
+
+
+
+
+<item>
+<thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+<link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+   import urlresolver
+   url = 'https://streamango.com/f/oandsmfdfnkamboq/Wish_upon_2017_1080p-dual-cast_mp4'
+   try:
+     u = urlresolver.resolve(url)
+   except:
+     u = 'http://adryanlist.org/error.mp4'
+   return u
+]]></expres>
+<page></page>
+</regex>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres>
+<page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine][/COLOR][COLOR lightslategray][/COLOR]</title>
+<regex><name>nombre</name><expres>Wish upon</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+
+<item>
+<thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+<link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+   import urlresolver
+   url = 'https://streamango.com/f/edqqrfkbtabcakee/The_recall_2017_1080p-dual-cast_mp4'
+   try:
+     u = urlresolver.resolve(url)
+   except:
+     u = 'http://adryanlist.org/error.mp4'
+   return u
+]]></expres>
+<page></page>
+</regex>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres>
+<page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine][/COLOR][COLOR lightslategray][/COLOR]</title>
+<regex><name>nombre</name><expres>The recall</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+<link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+   import urlresolver
+   url = 'https://streamango.com/f/ptpkntpbbpnadflb/The_dark_tower_2017_1080p-dual-cast_mp4'
+   try:
+     u = urlresolver.resolve(url)
+   except:
+     u = 'http://adryanlist.org/error.mp4'
+   return u
+]]></expres>
+<page></page>
+</regex>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres>
+<page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine][/COLOR][COLOR lightslategray][/COLOR]</title>
+<regex><name>nombre</name><expres>The dark tower</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+<link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+   import urlresolver
+   url = 'https://streamango.com/f/bktkkpqrmpctrsla/A_christmas_prince_2017_1080p-dual-cast_mp4'
+   try:
+     u = urlresolver.resolve(url)
+   except:
+     u = 'http://adryanlist.org/error.mp4'
+   return u
+]]></expres>
+<page></page>
+</regex>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres>
+<page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine][/COLOR][COLOR lightslategray][/COLOR]</title>
+<regex><name>nombre</name><expres>A christmas prince</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+<link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+   import urlresolver
+   url = 'https://streamango.com/f/sofasqfectekereb/Americons_2017_1080p-dual-cast_mp4'
+   try:
+     u = urlresolver.resolve(url)
+   except:
+     u = 'http://adryanlist.org/error.mp4'
+   return u
+]]></expres>
+<page></page>
+</regex>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres>
+<page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine][/COLOR][COLOR lightslategray][/COLOR]</title>
+<regex><name>nombre</name><expres>Americons</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+
+
+
+
+
+
+<item>
+<thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+<link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+   import urlresolver
+   url = 'https://streamango.com/f/sftoobfnefsdtdrq/Mudbound_2017_1080p-dual-cast_mp4'
+   try:
+     u = urlresolver.resolve(url)
+   except:
+     u = 'http://adryanlist.org/error.mp4'
+   return u
+]]></expres>
+<page></page>
+</regex>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres>
+<page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine][/COLOR][COLOR lightslategray][/COLOR]</title>
+<regex><name>nombre</name><expres>Mudbound</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+<link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+   import urlresolver
+   url = 'https://streamango.com/f/dktoseqfnsakolle/Annabelle_2_creation_2017_1080p-dual-cast_mp4'
+   try:
+     u = urlresolver.resolve(url)
+   except:
+     u = 'http://adryanlist.org/error.mp4'
+   return u
+]]></expres>
+<page></page>
+</regex>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres>
+<page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine][/COLOR][COLOR lightslategray][/COLOR]</title>
+<regex><name>nombre</name><expres>Annabelle 2 </expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+
+
+
+
+
+<item>
+<thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+<link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+   import urlresolver
+   url = 'https://streamango.com/f/qmqfaococctroppq/Strange_weather_2016_1080p-dual-cast_mp4'
+   try:
+     u = urlresolver.resolve(url)
+   except:
+     u = 'http://adryanlist.org/error.mp4'
+   return u
+]]></expres>
+<page></page>
+</regex>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres>
+<page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine][/COLOR][COLOR lightslategray][/COLOR]</title>
+<regex><name>nombre</name><expres>Strange weather </expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+
+
+
+
+
+<item>
+<thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+<link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+   import urlresolver
+   url = 'https://streamango.com/f/smdtqrdrlpackqso/Rough_night_2017_1080p-dual-cast_mp4'
+   try:
+     u = urlresolver.resolve(url)
+   except:
+     u = 'http://adryanlist.org/error.mp4'
+   return u
+]]></expres>
+<page></page>
+</regex>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres>
+<page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine][/COLOR][COLOR lightslategray][/COLOR]</title>
+<regex><name>nombre</name><expres>Rough night</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+
+
+
+
+
+<item>
+<thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+<link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+   import urlresolver
+   url = 'https://streamango.com/f/cccdsfrtdednnpnm/The_healer_2017_1080p-dual-cast_mp4'
+   try:
+     u = urlresolver.resolve(url)
+   except:
+     u = 'http://adryanlist.org/error.mp4'
+   return u
+]]></expres>
+<page></page>
+</regex>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres>
+<page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine][/COLOR][COLOR lightslategray][/COLOR]</title>
+<regex><name>nombre</name><expres>The healer</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+<link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+   import urlresolver
+   url = 'https://streamango.com/f/dsdpdqblkcbddfda/Brigsby_bear_2017_1080p-dual-cast_mp4'
+   try:
+     u = urlresolver.resolve(url)
+   except:
+     u = 'http://adryanlist.org/error.mp4'
+   return u
+]]></expres>
+<page></page>
+</regex>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres>
+<page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine][/COLOR][COLOR lightslategray][/COLOR]</title>
+<regex><name>nombre</name><expres>Brigsby bear</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+
+
+
+
+
+<item>
+<thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+<link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+   import urlresolver
+   url = 'https://streamango.com/f/moqdqqpqbsldtsfl/Spider-man_homecoming_2017_1080p-dual-cast_mp4'
+   try:
+     u = urlresolver.resolve(url)
+   except:
+     u = 'http://adryanlist.org/error.mp4'
+   return u
+]]></expres>
+<page></page>
+</regex>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres>
+<page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine][/COLOR][COLOR lightslategray][/COLOR]</title>
+<regex><name>nombre</name><expres>Spiderman homecoming</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+
+
+
+
+
+<item>
+<thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+<link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+   import urlresolver
+   url = 'https://streamango.com/f/clkannmeedspporp/Realityhigh_2017_1080p-dual-cast_mp4'
+   try:
+     u = urlresolver.resolve(url)
+   except:
+     u = 'http://adryanlist.org/error.mp4'
+   return u
+]]></expres>
+<page></page>
+</regex>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres>
+<page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine][/COLOR][COLOR lightslategray][/COLOR]</title>
+<regex><name>nombre</name><expres>Realityhigh</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+
+
+<item>
+<thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+<link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+   import urlresolver
+   url = 'https://streamango.com/f/elekrfqsmdfsnnrr/Veronica_2017_1080p-cast_mp4'
+   try:
+     u = urlresolver.resolve(url)
+   except:
+     u = 'http://adryanlist.org/error.mp4'
+   return u
+]]></expres>
+<page></page>
+</regex>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres>
+<page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine][/COLOR][COLOR lightslategray][/COLOR]</title>
+<regex><name>nombre</name><expres>Veronica</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+
+
+
+
+
+<item>
+<thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+<link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+   import urlresolver
+   url = 'https://streamango.com/f/eeqarbstoaadnqbd/Aquarius_2016_1080p-dual-cast_mp4'
+   try:
+     u = urlresolver.resolve(url)
+   except:
+     u = 'http://adryanlist.org/error.mp4'
+   return u
+]]></expres>
+<page></page>
+</regex>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres>
+<page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine][/COLOR][COLOR lightslategray][/COLOR]</title>
+<regex><name>nombre</name><expres>Aquarius</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+
+
+
+
+
+<item>
+<thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+<link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+   import urlresolver
+   url = 'https://streamango.com/f/ebeltarplcpbalek/Mudbound_2017_1080p-dual-cast_mp4'
+   try:
+     u = urlresolver.resolve(url)
+   except:
+     u = 'http://adryanlist.org/error.mp4'
+   return u
+]]></expres>
+<page></page>
+</regex>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres>
+<page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine][/COLOR][COLOR lightslategray][/COLOR]</title>
+<regex><name>nombre</name><expres>Mudbound</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+
+
+
+
+
+<item>
+<thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+<link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+   import urlresolver
+   url = 'https://streamango.com/f/ofokpbcbbqfoertd/A_christmas_prince_2017_1080p-dual-cast_mp4'
+   try:
+     u = urlresolver.resolve(url)
+   except:
+     u = 'http://adryanlist.org/error.mp4'
+   return u
+]]></expres>
+<page></page>
+</regex>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres>
+<page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine][/COLOR][COLOR lightslategray][/COLOR]</title>
+<regex><name>nombre</name><expres>A christmas prince</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+<link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+   import urlresolver
+   url = 'https://streamango.com/f/qlbqlodcqdkbcono/Maudie_2016_1080p-dual-cast_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres>
+<page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine][/COLOR][COLOR lightslategray][/COLOR]</title>
+<regex><name>nombre</name><expres>Maudie</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+
+
+
+
+
+
+<item>
+<thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+
+<link>$doregex[id3]</link>
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+   import urlresolver
+   url = 'https://streamango.com/f/tcqnbtrqanbpqdmd/The_boss_baby_2017_1080p-dual-cast_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres>
+<page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine][/COLOR][COLOR lightslategray][/COLOR]</title>
+<regex><name>nombre</name><expres>The boss baby</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+
+
+
+
+<item>
+<thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+
+<link>$doregex[id3]</link>
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+   import urlresolver
+   url = 'https://streamango.com/f/adbsdqnlcccokard/Cars_3_2017_1080p-dual-cast_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres>
+<page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine][/COLOR][COLOR lightslategray][/COLOR]</title>
+<regex><name>nombre</name><expres>Cars 3</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+
+
+
+
+<item>
+<thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+
+<link>$doregex[id3]</link>
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+   import urlresolver
+   url = 'https://streamango.com/f/amlfaadnndpktfqm/Patriots_day_2016_1080p-dual-cast_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres>
+<page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine][/COLOR][COLOR lightslategray][/COLOR]</title>
+<regex><name>nombre</name><expres>Patriots day</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+
+
+
+
+<item>
+<thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+
+<link>$doregex[id3]</link>
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+   import urlresolver
+   url = 'https://streamango.com/f/qpfqbrbmoopmprnl/The_beguiled_2017_1080p-dual-cast_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres>
+<page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine][/COLOR][COLOR lightslategray][/COLOR]</title>
+<regex><name>nombre</name><expres>The beguiled</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+
+
+
+
+<item>
+<thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+
+<link>$doregex[id3]</link>
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+   import urlresolver
+   url = 'https://streamango.com/f/edensodpmemsfsco/Marjorie_prime_2017_1080p-dual-lat_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres>
+<page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine][/COLOR][COLOR lightslategray][/COLOR]</title>
+<regex><name>nombre</name><expres>Marjorie prime</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+
+
+
+
+<item>
+<thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+
+<link>$doregex[id3]</link>
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+   import urlresolver
+   url = 'https://streamango.com/f/nsmopdaplmrnplad/It_comes_at_night_2017_1080p-dual-cast_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres>
+<page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine][/COLOR][COLOR lightslategray][/COLOR]</title>
+<regex><name>nombre</name><expres>It comes at night</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+
+
+
+
+<item>
+<thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+
+<link>$doregex[id3]</link>
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+   import urlresolver
+   url = 'https://streamango.com/f/okroqfbbcepodqme/The_beguiled_2017_1080p-dual-cast_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres>
+<page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine][/COLOR][COLOR lightslategray][/COLOR]</title>
+<regex><name>nombre</name><expres>The beguiled</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+
+
+
+
+<item>
+<thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+
+<link>$doregex[id3]</link>
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+   import urlresolver
+   url = 'https://streamango.com/f/tnbdkblotqbqpsbt/Hhhh_2017_1080p-dual-cast_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres>
+<page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine][/COLOR][COLOR lightslategray][/COLOR]</title>
+<regex><name>nombre</name><expres>Hhhh</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+
+
+
+
+<item>
+<thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+
+<link>$doregex[id3]</link>
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+   import urlresolver
+   url = 'https://streamango.com/f/cemodopctrsfcrml/War_for_the_planet_of_the_apes_2017_1080p-dual-cast_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres>
+<page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine][/COLOR][COLOR lightslategray][/COLOR]</title>
+<regex><name>nombre</name><expres>War for the planet of the apes</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+
+
+
+
+<item>
+<thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+
+<link>$doregex[id3]</link>
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+   import urlresolver
+   url = 'https://streamango.com/f/nldcdfakpamcqaqm/Maudie_2016_1080p-dual-cast_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres>
+<page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine][/COLOR][COLOR lightslategray][/COLOR]</title>
+<regex><name>nombre</name><expres>Maudie</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+
+
+
+
+<item>
+<thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+
+<link>$doregex[id3]</link>
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+   import urlresolver
+   url = 'https://streamango.com/f/dptdclekrlmkqcac/Dirty_dancing_2017_1080p-dual-cast_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres>
+<page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine][/COLOR][COLOR lightslategray][/COLOR]</title>
+<regex><name>nombre</name><expres>Dirty dancing</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+
+
+
+
+<item>
+<thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+
+<link>$doregex[id3]</link>
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+   import urlresolver
+   url = 'https://streamango.com/f/cfrdqmndqpdekpdm/The_space_between_us_2017_1080p-dual-cast_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres>
+<page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine][/COLOR][COLOR lightslategray][/COLOR]</title>
+<regex><name>nombre</name><expres>The space between us</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+
+
+
+
+<item>
+<thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+
+<link>$doregex[id3]</link>
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+   import urlresolver
+   url = 'https://streamango.com/f/cdsdpblassoasqro/1922_2017_1080p-dual-cast_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres>
+<page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine][/COLOR][COLOR lightslategray][/COLOR]</title>
+<regex><name>nombre</name><expres>1922</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+
+
+
+
+<item>
+<thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+
+<link>$doregex[id3]</link>
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+   import urlresolver
+   url = 'https://streamango.com/f/fsmpdalldoddqmrp/Hhhh_2017_1080p-dual-cast_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres>
+<page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine][/COLOR][COLOR lightslategray][/COLOR]</title>
+<regex><name>nombre</name><expres>Hhhh</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+
+
+
+
+<item>
+<thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+
+<link>$doregex[id3]</link>
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+   import urlresolver
+   url = 'https://streamango.com/f/ckebsdscbdrpaqfa/Wheelman_2017_1080p-dual-cast_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres>
+<page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine][/COLOR][COLOR lightslategray][/COLOR]</title>
+<regex><name>nombre</name><expres>Wheelman</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+
+
+
+
+<item>
+<thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+
+<link>$doregex[id3]</link>
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+   import urlresolver
+   url = 'https://streamango.com/f/nqapdoqfnlnorfse/Cult_of_chucky_2017_1080p-dual-cast_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres>
+<page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine][/COLOR][COLOR lightslategray][/COLOR]</title>
+<regex><name>nombre</name><expres>Cult of chucky</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+
+
+
+
+<item>
+<thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+
+<link>$doregex[id3]</link>
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+   import urlresolver
+   url = 'https://streamango.com/f/mtebeemapbedatel/Cars_3_2017_1080p-dual-lat_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres>
+<page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine][/COLOR][COLOR lightslategray][/COLOR]</title>
+<regex><name>nombre</name><expres>Cars 3</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+
+ <link>$doregex[id3]</link>
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/pmqmcecocqqmrlfe/Baby_driver_2017_1080p-dual-cast_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres><page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<info> ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] sm  [/COLOR]</title>
+
+<regex><name>nombre</name><expres>Baby driver</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+
+
+
+
+<item>
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+
+ <link>$doregex[id3]</link>
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/sscoqnkdrpasqrpf/Kidnap_2017_1080p-dual-cast_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres><page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<info> ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] sm  [/COLOR]</title>
+
+<regex><name>nombre</name><expres>Kidnap</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+
+
+
+<item>
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+
+ <link>$doregex[id3]</link>
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/acrpotdfsfadcspp/Marie_curie_2016_1080p-dual-cast_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres><page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<info> ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] sm  [/COLOR]</title>
+
+<regex><name>nombre</name><expres>Marie curie</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+
+
+
+
+
+
+
+<item>
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+
+ <link>$doregex[id3]</link>
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/aptoecctlaodcsdk/Drone_2017_1080p-dual-cast_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres><page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<info> ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] sm  [/COLOR]</title>
+
+<regex><name>nombre</name><expres>Drone</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+
+
+
+
+
+
+
+
+<item>
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+
+ <link>$doregex[id3]</link>
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/osddkortrnkaqqdd/A_united_kingdom_2016_1080p-dual-cast_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres><page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<info> ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] sm  [/COLOR]</title>
+
+<regex><name>nombre</name><expres>A united kingdom</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+
+
+
+
+
+
+
+
+<item>
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+
+ <link>$doregex[id3]</link>
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/ffcdcdtldlqsepse/Despicable_me_3_2017_1080p-dual-cast_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres><page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<info> ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] sm  [/COLOR]</title>
+
+<regex><name>nombre</name><expres>Despicable me 3</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+
+ <link>$doregex[id3]</link>
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/atnotqqnscosbofr/Rules_dont_apply_2016_1080p-dual-cast_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres><page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<info> ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] sm  [/COLOR]</title>
+
+<regex><name>nombre</name><expres>Rules dont apply</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+
+
+
+
+
+<item>
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+
+ <link>$doregex[id3]</link>
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/pkfsrcadppqqafad/Good_kids_2016_1080p-dual-cast_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres><page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<info> ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] sm  [/COLOR]</title>
+
+<regex><name>nombre</name><expres>Good Kids</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+
+
+
+
+
+<item>
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+
+ <link>$doregex[id3]</link>
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/actkackfkqnlmrfb/Captain_underpants_the_first_epic_movie_2017_1080p-dual-cast_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres><page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<info> ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] sm  [/COLOR]</title>
+
+<regex><name>nombre</name><expres>Captain underpants the first epic movie</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+
+
+
+
+
+<item>
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+
+ <link>$doregex[id3]</link>
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/rbqakpmsbcpkfsbn/Our_souls_at_night_2017_1080p-dual-cast_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres><page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<info> ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] sm  [/COLOR]</title>
+
+<regex><name>nombre</name><expres>Our souls at night</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+
+
+
+
+
+<item>
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+
+ <link>$doregex[id3]</link>
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/cqtamqfknscscopd/The_promise_2016_1080p-dual-cast_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres><page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<info> ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] sm  [/COLOR]</title>
+
+<regex><name>nombre</name><expres>The promise</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+
+
+
+
+
+
+
+<item>
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+
+ <link>$doregex[id3]</link>
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/dttednnetfkneame/Raid_dingue_2016_1080p-dual-cast_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres><page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<info> ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] sm  [/COLOR]</title>
+
+<regex><name>nombre</name><expres>Raid dingue</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+
+
+
+
+
+
+
+<item>
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+
+ <link>$doregex[id3]</link>
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/arpokncsrtprckmo/American_pastoral_2016_1080p-dual-cast_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres><page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<info> ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] sm  [/COLOR]</title>
+
+<regex><name>nombre</name><expres>American pastoral</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+
+
+
+
+
+
+<item>
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+
+ <link>$doregex[id3]</link>
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/molfooeaalomqapq/Raid_dingue_2016_1080p-dual-cast_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres><page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<info> ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] sm  [/COLOR]</title>
+
+<regex><name>nombre</name><expres>Raid dingue</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+
+
+
+
+
+
+<item>
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+
+ <link>$doregex[id3]</link>
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/fcfplpqcnfrnlerc/Wakefield_2016_1080p-dual-cast_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres><page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<info> ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] sm  [/COLOR]</title>
+
+<regex><name>nombre</name><expres>Wakefield</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+
+
+
+
+
+
+
+<item>
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+
+ <link>$doregex[id3]</link>
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/kprfarlaqrqnddda/Unforgettable_2017_1080p-dual-cast_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres><page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<info> ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] sm  [/COLOR]</title>
+
+<regex><name>nombre</name><expres>Unforgettable</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+
+
+
+
+
+
+<item>
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+
+ <link>$doregex[id3]</link>
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/anaresqcpbrpadmq/American_pastoral_2016_1080p-dual-cast_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres><page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<info> ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] sm  [/COLOR]</title>
+
+<regex><name>nombre</name><expres>American pastoral</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+
+ <link>$doregex[id3]</link>
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/mrkrfprodmmnsqke/The_bad_batch_2016_1080p-dual-cast_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres><page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<info> ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] sm  [/COLOR]</title>
+
+<regex><name>nombre</name><expres>The Bad batch</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+<item>
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+
+ <link>$doregex[id3]</link>
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'http://uptobox.com/5gcg62omk6z6'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres><page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<info> ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] uptobox  [/COLOR]</title>
+
+<regex><name>nombre</name><expres>The Bad batch</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+<item>
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+
+ <link>$doregex[id3]</link>
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/fmefmmmplfbetpto/Kiss_and_cry_2017_1080p-dual-cast_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres><page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<info> ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] sm   [/COLOR]</title>
+
+<regex><name>nombre</name><expres>Kiss and Cry</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'Beijar e Chorar'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+
+<item>
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+
+ <link>$doregex[id3]</link>
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://www.yourupload.com/watch/63FIO528Bqmp'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres><page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<info> ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] yu   [/COLOR]</title>
+
+<regex><name>nombre</name><expres>Fist fight</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+
+
+
+<item>
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+
+ <link>$doregex[id3]</link>
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://openload.co/f/QLIo8tPIPoA'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres><page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<info> ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] ol   [/COLOR]</title>
+
+<regex><name>nombre</name><expres>Fist fight</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+
+
+
+<item>
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+
+ <link>$doregex[id3]</link>
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://openload.co/f/NI2dY9EbJwg/Fist.fight.2017.1080p-dual-cast.mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres><page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<info> ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray]ol  [/COLOR]</title>
+
+<regex><name>nombre</name><expres>Fist fight</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+
+
+
+
+
+
+
+
+<item>
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+
+ <link>$doregex[id3]</link>
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://www.yourupload.com/watch/T28KPc882E1U'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres><page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<info> ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] yu   [/COLOR]</title>
+
+<regex><name>nombre</name><expres>Wonder Woman</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+
+
+
+<item>
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+
+ <link>$doregex[id3]</link>
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/cklmecpsddnnmkol/Wonder_woman_2017_1080p-dual-cast_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres><page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<info> ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray]sm  [/COLOR]</title>
+
+<regex><name>nombre</name><expres>Wonder Woman</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+
+
+
+<item>
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+
+ <link>$doregex[id3]</link>
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://openload.co/f/-arse9MkdhY/Wonder.woman.2017.1080p-dual-cast.mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres><page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<info> ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray]  ol  [/COLOR]</title>
+
+<regex><name>nombre</name><expres>Wonder Woman</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+
+
+
+
+
+
+<item>
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+
+<link>$doregex[id3]</link>
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://www.yourupload.com/watch/i6NMJ1bsF873'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+<regex>
+<name>id2</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/fmocmmemnekbkcbp/Before_i_fall_2017_1080p-dual-cast_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+<regex>
+<name>id1</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://openload.co/f/vRdYEddcFps/Before.i.fall.2017.1080p-dual-cast.mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres><page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<info> ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine]1080p [/COLOR][COLOR lightslategray]  [/COLOR]</title>
+
+<regex><name>nombre</name><expres>Before I Fall</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+
+
+
+<item>
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+
+<link>$doregex[id3]</link>
+
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/fmocmmemnekbkcbp/Before_i_fall_2017_1080p-dual-cast_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres><page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<info> ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine]1080p [/COLOR][COLOR lightslategray]  [/COLOR]</title>
+
+<regex><name>nombre</name><expres>Before I Fall</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+
+
+
+
+
+
+
+<item>
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+
+<link>$doregex[id3]</link>
+
+
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://openload.co/f/vRdYEddcFps/Before.i.fall.2017.1080p-dual-cast.mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres><page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<info> ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine]1080p [/COLOR][COLOR lightslategray]  [/COLOR]</title>
+
+<regex><name>nombre</name><expres>Before I Fall</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+
+
+
+
+
+
+
+
+<item>
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/etmplfmolcplccqs/The_mummy_2017_1080p-dual-cast_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres><page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<info> ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine]1080p [/COLOR][COLOR lightslategray] sm [/COLOR]</title>
+
+<regex><name>nombre</name><expres>La momia</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+       <item>
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/moffbrkdqpseafte/Starship_troopers_traitor_of_mars_2017_1080p-dual-cast_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres><page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<info> ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine]1080p [/COLOR][COLOR lightslategray] sm [/COLOR]</title>
+
+<regex><name>nombre</name><expres>Starship troopers traitor</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+      <item>
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/fpemqnaedmtlfpdn/Security_2017_1080p-dual-cast_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres><page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<info> ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine]1080p [/COLOR][COLOR lightslategray] sm [/COLOR]</title>
+
+<regex><name>nombre</name><expres>Security</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+       <item>
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/ssnsbefotocpbetc/Dead_again_in_tombstone_2017_1080p-dual-lat_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres><page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<info> ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine]1080p [/COLOR][COLOR lightslategray] sm [/COLOR]</title>
+
+<regex><name>nombre</name><expres>Dead again in tombstone</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+       <item>
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/ktbssodlfdrdpdlq/The_drowning_2016_1080p-dual-cast_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres><page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<info> ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine]1080p [/COLOR][COLOR lightslategray] sm [/COLOR]</title>
+
+<regex><name>nombre</name><expres>The drowning</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+       <item>
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/srsrpetspnqpptka/Baywatch_2017_1080p_unrated-dual-cast_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres><page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<info> ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine]1080p [/COLOR][COLOR lightslategray] sm [/COLOR]</title>
+
+<regex><name>nombre</name><expres>Baywatch</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+       <item>
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/cntsrrmcdqlseqls/Shin_gojira_2016_1080p-dual-cast_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres><page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<info> ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine]1080p [/COLOR][COLOR lightslategray] sm [/COLOR]</title>
+
+<regex><name>nombre</name><expres>Shin gojira</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+      <item>
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/mnsttaodlsspdqob/20th_century_women_2016_1080p-dual-cast_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres><page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<info> ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine]1080p [/COLOR][COLOR lightslategray] sm [/COLOR]</title>
+
+<regex><name>nombre</name><expres>20th century women</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+      <item>
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/qskplkbaoqeqrbsk/The_lost_city_of_z_2016_1080p-dual-cast_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres><page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<info> ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine]1080p [/COLOR][COLOR lightslategray] sm [/COLOR]</title>
+
+<regex><name>nombre</name><expres>The lost city of z</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+       <item>
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/kqdbpostopbctrmf/A_family_man_2016_1080p-dual-cast_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres><page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<info> ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine]1080p [/COLOR][COLOR lightslategray] sm [/COLOR]</title>
+
+<regex><name>nombre</name><expres>A family man</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+       <item>
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/qnqnpcssrardkmpd/Free_fire_2016_1080p-dual-cast_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres><page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<info> ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine]1080p [/COLOR][COLOR lightslategray] sm [/COLOR]</title>
+
+<regex><name>nombre</name><expres>Free fire</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+      <item>
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/anntsorfapbddcbr/Quo_vado_2016_1080p-dual-cast_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres><page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<info> ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine]1080p [/COLOR][COLOR lightslategray] sm [/COLOR]</title>
+
+<regex><name>nombre</name><expres>Quo vado</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+       <item>
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/qqbbktralmakmtsb/Little_evil_2017_1080p-dual-cast_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres><page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<info> ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine]1080p [/COLOR][COLOR lightslategray] sm [/COLOR]</title>
+
+<regex><name>nombre</name><expres>Little evil</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+      <item>
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/kcrrostesmbslabk/Personal_shopper_2016_1080p-dual-cast_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres><page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<info> ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine]1080p [/COLOR][COLOR lightslategray] sm [/COLOR]</title>
+
+<regex><name>nombre</name><expres>Personal shopper</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+     <item>
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/ofnrcdptmlfqspkt/While_the_women_are_sleeping_2016_1080p-dual-cast_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres><page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<info> ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine]1080p [/COLOR][COLOR lightslategray] sm [/COLOR]</title>
+
+<regex><name>nombre</name><expres>While the women are sleeping</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+       <item>
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/mmldtsnrnktodldp/Pirates_of_the_caribbean_dead_men_tell_no_tales_2017_1080p-dual-cast_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres><page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<info> ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine]1080p [/COLOR][COLOR lightslategray] sm [/COLOR]</title>
+
+<regex><name>nombre</name><expres>Pirates of the caribbean dead men tell no tales  </expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+
+
+
+ <item>
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'http://uptobox.com/rha092zqqfu5'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres><page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<info> ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine]1080p [/COLOR][COLOR lightslategray] sm [/COLOR]</title>
+
+<regex><name>nombre</name><expres>20th century women</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+
+
+ <item>
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'http://uptobox.com/iovqrjhar5nc'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres><page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<info> ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine]1080p [/COLOR][COLOR lightslategray] uptobox [/COLOR]</title>
+
+<regex><name>nombre</name><expres>Baywatch</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+
+
+ <item>
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'http://uptobox.com/yz1y3zyt3ynf'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres><page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<info> ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine]1080p [/COLOR][COLOR lightslategray] uptobox [/COLOR]</title>
+
+<regex><name>nombre</name><expres>Free fire</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+
+
+ <item>
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'http://uptobox.com/7kr0gj9mbjad'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres><page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<info> ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine]1080p [/COLOR][COLOR lightslategray] uptobox [/COLOR]</title>
+
+<regex><name>nombre</name><expres>Personal shopper</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+
+
+ <item>
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'http://uptobox.com/hem0hdwqnsek'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres><page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<info> ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine]1080p [/COLOR][COLOR lightslategray] uptobox [/COLOR]</title>
+
+<regex><name>nombre</name><expres>Pirates of the caribbean dead men tell no tales</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+
+
+ <item>
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'http://uptobox.com/v953513xhdsy'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres><page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<info> ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine]1080p [/COLOR][COLOR lightslategray] uptobox [/COLOR]</title>
+
+<regex><name>nombre</name><expres>Quo vado</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+
+
+ <item>
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'http://uptobox.com/wj6a5dtl3mcu'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres><page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<info> ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine]1080p [/COLOR][COLOR lightslategray] uptobox [/COLOR]</title>
+
+<regex><name>nombre</name><expres>The drowning</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+
+
+ <item>
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'http://uptobox.com/feezdhwhd80e'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres><page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<info> ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine]1080p [/COLOR][COLOR lightslategray] uptobox [/COLOR]</title>
+
+<regex><name>nombre</name><expres>The lost city of z</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+
+
+ <item>
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'http://uptobox.com/6abhxexuis96'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres><page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<info> ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine]1080p [/COLOR][COLOR lightslategray] uptobox [/COLOR]</title>
+
+<regex><name>nombre</name><expres>While the women are sleeping</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <item>
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
+
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/qflbctrqofllentf/Terra_formars_2017_1080p-dual-cast_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+ <thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+<regex><name>imagen</name><expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres><page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page></regex>
+<info> ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]$doregex[nombre]  [/COLOR][COLOR aquamarine]1080p [/COLOR][COLOR lightslategray] uptobox [/COLOR]</title>
+
+<regex><name>nombre</name><expres>Terra Formars</expres><page></page></regex>
+<regex><name>nombre2</name><expres>$pyFunction:'$doregex[nombre]'.replace(" ", "+")</expres>
+<page></page></regex>
+</item>
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/kbbnkaoatbcolakc/Batman_and_harley_quinn_2017_1080p-dual-cast_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/ev90LOaW2COmsScsuVz5pPFzQSI.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/ev90LOaW2COmsScsuVz5pPFzQSI.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]Batman.and.harley.quinn[/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+</item>
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/fmbdnkcrsmqqkbaa/LadyMacbeth_www_torrentlocura_com_avi_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/riImvrWE0GHFyML6tD2FwpkDb0R.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/riImvrWE0GHFyML6tD2FwpkDb0R.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]Lady Macbeth [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+</item>
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/fcsrnafcpmoslppd/HiddenTruth_www_torrentlocura_com_mkv_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/u8dgbTGCtbgt1Mlkbn9jGukIavT.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/u8dgbTGCtbgt1Mlkbn9jGukIavT.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]Hidden Truth [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+</item>
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/sqnbrnsabaorqqcn/Rufus2_www_torrentlocura_com_avi_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/n5RikV29yCTd3GYWnT3h7MWOa9k.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/n5RikV29yCTd3GYWnT3h7MWOa9k.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]Rufus 2[/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+</item>
+
+
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/tmoaeedosqmpfdfa/A_family_man_2016_1080p-dual-lat_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/vaXOuodDDqfnK8EPg3hxILr2uL7.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/vaXOuodDDqfnK8EPg3hxILr2uL7.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]A family man[/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+</item>
+
+
+
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/kfpreffoptrbflds/Death_note_2017_1080p-dual-cast_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/fJAvGOitU8y53ByeHnM4avtKFaG.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/fJAvGOitU8y53ByeHnM4avtKFaG.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]Death note[/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+</item>
+
+
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/ksccomaqttpqcfqq/JohnWick2_BluRay_Rip_www_divxatope1_com_avi_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/bUie6wrbHEThBhpKoPbqZ6KQrU6.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/bUie6wrbHEThBhpKoPbqZ6KQrU6.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]John Wick 2 [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+</item>
+
+
+
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/fekcqsldsppbkpbd/LaAltaSociedad_www_torrentlocura_com_avi_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/9Foi0qjOtCN2vlezYtNag687KeH.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/9Foi0qjOtCN2vlezYtNag687KeH.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]La Alta Sociedad[/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+</item>
+
+
+
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/mpodalsolaalfobk/Nunca_Digas_Su_Nombre_BluRay_Rip_AC3_2_0_Espa_ol_Castellano_2017_avi_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/yQcYGucF3IKa7nPGHESmkeiXvpZ.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/yQcYGucF3IKa7nPGHESmkeiXvpZ.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]Nunca Digas Su Nombre[/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+</item>
+
+
+
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/celcofnolampeneb/10000Dias_www_torrentlocura_com_avi_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/vxrdHZqbF0YCcDtlwTVi4fzwuKS.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/vxrdHZqbF0YCcDtlwTVi4fzwuKS.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]10000 Dias [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+</item>
+
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/mdmalaksrsskqdcd/ElImperioDeLosTiburones_torrentlocura_com_avi_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/6DZ6TWmcqUtiLq1TtuEJktfTVhY.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/6DZ6TWmcqUtiLq1TtuEJktfTVhY.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]El Imperio De Los Tiburones[/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+</item>
+
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/rpmcqckoptsfqocm/BeyondtheCalltoDuty_www_torrentrapid_com_avi_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/j5iby97AvVREebMJpxMKbc0XrFL.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/j5iby97AvVREebMJpxMKbc0XrFL.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]Beyond the Call to Duty [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+</item>
+
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/kbeorfttaracfsrf/TomyJerryAndCharlieyLaFabricaDeChocolate_torrentlocura_com_avi_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/w640/vh5iYhj80l1inSdep61sF8g1S8m.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/w640/vh5iYhj80l1inSdep61sF8g1S8m.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]Tom y Jerry: Charlie y La Fabrica De Chocolate[/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+</item>
+
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/rebetpdsrqqosass/ComoLaEspuma_BluRayRIP_www_tumejortorrent_com_avi_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/mlb2BYXwS9blOkhuk8OgSffNzlt.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/mlb2BYXwS9blOkhuk8OgSffNzlt.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]Como La Espuma [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+</item>
+
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/rlecdckostbqsate/LaUltimaOportunidad_BluRayRIP_www_tumejortorrent_com_avi_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/oVTYLF4D14p1fvXj6UeP7x0D8hA.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/oVTYLF4D14p1fvXj6UeP7x0D8hA.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]La Ultima Oportunidad [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+</item>
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/nrqldlonpblpaked/BigSky_www_torrentlocura_com_avi_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/5RhJKVfXChP9HfRZBoJIE2qoQ8u.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/5RhJKVfXChP9HfRZBoJIE2qoQ8u.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]Big Sky[/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+</item>
+
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/mlcrdcordrrteptn/LaPuertaDeAlLado_BluRayRIP_www_newpct1_com_avi_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/2t2GG8lhLuxK4PWGndq5KuRUhep.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/2t2GG8lhLuxK4PWGndq5KuRUhep.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]La Puerta De Al Lado [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+</item>
+
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/tqkmakoreoadnaaa/ExPatriot_Traidora_BluRay_Rip_AC3_2_0_Espa_ol_Castellano_2017_avi_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/noPnbURTzyk83mEPfAptMmz7RgK.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/noPnbURTzyk83mEPfAptMmz7RgK.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]ExPatriot (Traidora)[/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/rtebcofqsdprnkol/UnaHistoriaDeAmoryOscuridad_torrentlocura_com_avi_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/7n4aQYGyr6YBpVuScEWZJGaLxq5.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/7n4aQYGyr6YBpVuScEWZJGaLxq5.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]Una Historia De Amor y Oscuridad[/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+</item>
+
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/rlpnfrrbonpmnkdt/UnaNocheFueraDeControl_www_torrentrapid_com_avi_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/gY3yFNM2MM9k0cAFxClyKtzR31T.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/gY3yFNM2MM9k0cAFxClyKtzR31T.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]Una Noche Fuera De Control[/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+</item>
+
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/dpadbafllefkekfq/Sensoria_BluRay_Rip_AC3_2_0_Espa_ol_Castellano_2017_avi_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/gC5KeAvpiKLx5NuRsA4aKjLGkVt.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/gC5KeAvpiKLx5NuRsA4aKjLGkVt.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]Sensoria [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+</item>
+
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/serrbsdaasrkfart/GuardianesDeLaGalaxiaVol2_BluRay_Rip_www_tumejortorrent_com_avi_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/kdg6Y06jfq9FV7qknWNcKLYtBJn.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/kdg6Y06jfq9FV7qknWNcKLYtBJn.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]Guardianes De La Galaxia Vol 2 [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+</item>
+
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/fslcklnqbtoftqcm/La_Autopsia_De_Jane_Doe_brrip_Castellano_avi_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/uPHYfUZLgMFhmufqNrZFRsqaByo.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/uPHYfUZLgMFhmufqNrZFRsqaByo.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]La Autopsia De Jane Doe[/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+</item>
+
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/cqnpqeofbkallmbp/Negacion_www_torrentlocura_com_avi_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/fAQ8StdThqEWEvrFhRrGmm2OMVI.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/fAQ8StdThqEWEvrFhRrGmm2OMVI.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]Negacion [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+</item>
+
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/lacspnpacqelfrna/Marginados_torrentrapid_com_avi_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/44jotbmLRwHSIcd4wVAYCVmli8D.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/44jotbmLRwHSIcd4wVAYCVmli8D.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]Marginados[/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+</item>
+
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/tntstcosqpbbocoa/ReyArturoLaLeyendaDeExcalibur_BluRayRIP_www_tumejortorrent_com_avi_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/5GUrTeOyHELrf7TjcR0okAFpeSw.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/5GUrTeOyHELrf7TjcR0okAFpeSw.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]Rey Arturo La Leyenda De Excalibur[/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+</item>
+
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/aonoeetmtnkfmamm/AlguienEstaVigilandote_torrentrapid_com_avi_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/ymiDPbfLCRQo0PSlwPwf6Yh8iRr.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/ymiDPbfLCRQo0PSlwPwf6Yh8iRr.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]Alguien Esta Vigilandote[/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+</item>
+
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/fbkdskaelanlraal/BlancoEscurridizo_BluRayRIP_www_divxatope1_com_avi_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/uZ3MDYjX4VYToRX5ILtjMR7sVWL.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/uZ3MDYjX4VYToRX5ILtjMR7sVWL.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]Blanco Escurridizo[/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+</item>
+
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/tscrsddaslelmbkn/Plan_de_fuga_2016_1080p-cast_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/fCnFO90hoQufEHYdRYUpsbfOb8T.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/fCnFO90hoQufEHYdRYUpsbfOb8T.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]Plan de fuga[/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+</item>
+
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/npfbelmtnsmntrqt/Raw_2016_1080p-dual-cast_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/zCSYCgLpdMNMIhPyrBEh2PuxN0G.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/zCSYCgLpdMNMIhPyrBEh2PuxN0G.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]Raw 2016[/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+</item>
+
+
+
+
+
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/mnpqcdnqnfttatsl/City_of_tiny_lights_2016_1080p-dual-cast_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/eX9iEZdU2w1elGQhNY50DmKqiaE.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/eX9iEZdU2w1elGQhNY50DmKqiaE.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]City of tiny lights 2016.1080p[/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+</item>
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/cqrqmqbtqdrpbfcf/El_guardian_invisible_2017_1080p-cast_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/hV03WNm0BMl9OYZNkPbtF4m0RNL.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/hV03WNm0BMl9OYZNkPbtF4m0RNL.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]El guardian invisible 2017.1080p[/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+</item>
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/mpbkqktksmafceoe/Opening_night_2016_1080p-dual-cast_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/inaxmeEYwAT3o7jA3mXUI503uiy.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/inaxmeEYwAT3o7jA3mXUI503uiy.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]Opening.night.2016.1080p[/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+</item>
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/qqdfcnasfnbsaomp/Naked_2017_1080p-dual-cast_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/yV95cXcHhmuUAW8bjAayPynf7Lf.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/yV95cXcHhmuUAW8bjAayPynf7Lf.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]Naked.2017.1080p[/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+</item>
+
+
+
+
+
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/rbclotmctoeofrrs/Intruders_www_torrentrapid_com_avi_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/slnVDrdDc4DjGYE4GtJ107SUmIt.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/slnVDrdDc4DjGYE4GtJ107SUmIt.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]Intruders  [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title> </item>
+
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/ommpcebtcfmfqled/AcosadaEnLaRed_www_torrentrapid_com_avi_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/5fQ2bwOus2WlDOiN3waDhevqTPW.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/5fQ2bwOus2WlDOiN3waDhevqTPW.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]Acosada En La Red[/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title> </item>
+
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/klqqtamocmsqfoqt/Security_BluRayRIP_www_newpct1_com_avi_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/fG2SZwAAY4mNscLfvSiKyBxaVQy.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/fG2SZwAAY4mNscLfvSiKyBxaVQy.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]Security [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title> </item>
+
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/ocprsdbeosmmerqk/Guardians_BluRayRIP_www_newpct1_com_avi_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/qQB4RKFeUMqLBiMdwMbpgdePBeO.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/qQB4RKFeUMqLBiMdwMbpgdePBeO.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]Guardians [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title> </item>
+
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/qmnmarcpskpftcep/ElTemplo_BluRayRIP_www_newpct1_com_avi_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/2qSm5Ru9LeAnzSb3oWJtsogwfxb.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/2qSm5Ru9LeAnzSb3oWJtsogwfxb.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]El Templo[/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title> </item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/ebmopdoqdqpnrokt/Ejecta_www_torrentlocura_com_avi_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/kV7qvP63zcmKIRL4vO49n4duzXQ.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/kV7qvP63zcmKIRL4vO49n4duzXQ.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]Ejecta[/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title> </item>
+
+
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/klpmalsqcoamnmnp/SimbadElQuintoViaje_www_torrentlocura_com_avi_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/l6dYn7kQV1eSFLyPHvCNkl63Am7.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/l6dYn7kQV1eSFLyPHvCNkl63Am7.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]Simbad El Quinto Viaje[/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title> </item>
+
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/emqnasoaabsndsrb/FueraDelMapa_www_newpct1_com_avi_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/x3SLmtWUuWyiNrpkTdTpJhyexGu.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/x3SLmtWUuWyiNrpkTdTpJhyexGu.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]Fuera Del Mapa[/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title> </item>
+
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/slonktdtllpeddsk/GermanAngst_www_torrentlocura_com_avi_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/8U8qUjXsMWY7gPEWJiGzpV4sdaC.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/8U8qUjXsMWY7gPEWJiGzpV4sdaC.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]German Angst[/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title> </item>
+
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/ddkanlkfqameqbom/Sharknado5AletamientoGlobal_www_torrentrapid_com_avi_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/wrDjVTyREUAEiS1gtbnZky10Qip.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/wrDjVTyREUAEiS1gtbnZky10Qip.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]Sharknado 5 Aletamiento Global[/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title> </item>
+
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/oterpdeqmkebmsrp/Desnudo_BluRayRIP_www_newpct1_com_avi_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/dXu1LbSCch4ysm0Ky9I0aMPQXGE.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/dXu1LbSCch4ysm0Ky9I0aMPQXGE.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]Desnudo [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title> </item>
+
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/rarsppnfekfnencr/TheSaint_BluRayRIP_www_tumejortorrent_com_avi_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/pPo6WIj2X0dodejoxZyE6eKS5VI.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/pPo6WIj2X0dodejoxZyE6eKS5VI.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]The Saint[/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title> </item>
+
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/ponllnbkkafppcam/QuienSeQuedaConWesley_www_torrentlocura_com_avi_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/1Zl62Ws2GvttUiVu5iLkmYGiEgT.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/1Zl62Ws2GvttUiVu5iLkmYGiEgT.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]Quien Se Queda Con Wesley[/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title> </item>
+
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/pmrosktssrqfsomo/BadSanta2_BluRayRIP_www_tumejortorrent_com_avi_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/tlgTK26t4sAo5k3qT6CcpKlfvIR.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/tlgTK26t4sAo5k3qT6CcpKlfvIR.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]Bad Santa 2[/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title> </item>
+
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/qctmkbpcbfeectqt/BeyondTheGates_BluRayRIP_www_newpct1_com_avi_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/7YRzCtieoHsVJdAYij5lFlay7ch.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/7YRzCtieoHsVJdAYij5lFlay7ch.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]Beyond The Gates[/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title> </item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/rrmebsodprscofkm/Slashercom_DVDRIP_www_newpct1_com_avi_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/sEUVbq3KoMgB8Jf37PNrUNSiW1H.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/sEUVbq3KoMgB8Jf37PNrUNSiW1H.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]Slasher.com  [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title> </item>
+
+
+
+
+
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/dqktdkqsscbttmde/LaMadrePerfecta_BluRayRIP_www_divxatope1_com_avi_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/2bghzTAXTR3V5DPYGqECqow2u4l.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/2bghzTAXTR3V5DPYGqECqow2u4l.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]La Madre Perfecta [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title> </item>
+
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/kfolfrrtktbrlrbc/LaHuida_RunningAway_BluRayRIP_www_newpct1_com_avi_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/ipuhr7RGLZ40WlA2R6LPPjeWA2l.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/ipuhr7RGLZ40WlA2R6LPPjeWA2l.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]La Huida (RunningAway) [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title> </item>
+
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/cnqsseqosennlqeo/ElAtaqueDelTiburonDeCincoCabezas_torrentlocura_com_avi_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/7ri8UINqW7ixMLliTlPnBWPJE7N.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/7ri8UINqW7ixMLliTlPnBWPJE7N.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]El Ataque Del Tiburon De Cinco Cabezas [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title> </item>
+
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/mdaqormnotbfrmeb/TheBlackRoom_BluRayRIP_www_divxatope1_com_avi_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/9UOHnG8acTyKW0qxICGNekJ0JAv.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/9UOHnG8acTyKW0qxICGNekJ0JAv.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]The Black Room [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title> </item>
+
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/nclnaeosoceddlfr/TheDemolisher_torrentrapid_com_avi_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/ciJU1MyGWNRLMhdQ1DrU9RCnM4z.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/ciJU1MyGWNRLMhdQ1DrU9RCnM4z.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]The Demolisher  [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title> </item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/dapccbmbeapnmots/PiranhaSharks_torrentlocura_com_avi_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/iwukU7nUUNfdxIQwOfM4kZ40LGz.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/iwukU7nUUNfdxIQwOfM4kZ40LGz.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]Piranha Sharks  [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title> </item>
+
+
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/efoaqaelnkflksff/TheEvilinUs_torrentlocura_com_avi_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/5hjpfY7faXYclLRK0DDPPWtShyp.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/5hjpfY7faXYclLRK0DDPPWtShyp.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]The Evil in Us [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title> </item>
+
+
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/sklaltsmordrsefs/PrimerMinistro_torrentlocura_com_avi_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/fvdLWJgAhjaXqbhB6dlBqOxoeh0.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/fvdLWJgAhjaXqbhB6dlBqOxoeh0.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]Primer Ministro [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title> </item>
+
+
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/paekfcqntddkqecd/UnaNocheConMiExsuegro_torrentlocura_com_avi_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/3YVpkVjbCGhzK9aiTae8RIHhtmh.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/3YVpkVjbCGhzK9aiTae8RIHhtmh.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]Una Noche Con Mi Exsuegro  [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title> </item>
+
+
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/mrnpkkqftfamfpks/Orbita9_BluRayRIP_www_divxatope1_com_avi_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/77XZdVMnUAlQtYWiDetX1k37L9K.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/77XZdVMnUAlQtYWiDetX1k37L9K.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]Orbita 9  [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title> </item>
+
+
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/qdsnqbssmotlaafb/OpeningNight_BluRayRIP_www_divxatope1_com_avi_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/inaxmeEYwAT3o7jA3mXUI503uiy.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/inaxmeEYwAT3o7jA3mXUI503uiy.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]Opening Night  [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title> </item>
+
+
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/ltlrclpondolemke/LaListaDeJessicaDarling_www_torrentrapid_com_avi_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/g71ffZ2tC3RhxHpY3ScqdspmuuQ.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/g71ffZ2tC3RhxHpY3ScqdspmuuQ.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]La Lista De Jessica Darling [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title> </item>
+
+
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/ccfdelfqdpafnbbl/LostBoy_torrentlocura_com_avi_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/1JrF1Y9mJkABp59GZELTGEG6kM2.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/1JrF1Y9mJkABp59GZELTGEG6kM2.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]Lost Boy [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title> </item>
+
+
+
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/plqmoetfcnaektda/FastAndFurious8_BluRay_Rip_www_divxatope1_com_avi_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/5b1zDwWxoDG8p8aHoRYfzOd7Lvy.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/5b1zDwWxoDG8p8aHoRYfzOd7Lvy.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]Fast And Furious 8 [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title> </item>
+
+
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/orbenemocdaefdea/MessageFromTheKing_torrentlocura_com_avi_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/lQeMIscify0kGiNsgqxmuVMshnI.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/lQeMIscify0kGiNsgqxmuVMshnI.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]Message From The King [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title> </item>
+
+
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/clqcbodbfeqptkke/ElTtiempoDeLosAmantes_BluRay_Rip_www_torrentrapid_com_avi_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/yeLR8pdgtGXSj7JzDoClMxsSdCi.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/yeLR8pdgtGXSj7JzDoClMxsSdCi.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]El Tiempo De Los Amantes [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title> </item>
+
+
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/tmknrnbblftqnmmf/Boost_BluRayRIP_www_divxatope1_com_avi_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/aFE9loQYUkbgEvGtPKms8UBn7Ii.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/aFE9loQYUkbgEvGtPKms8UBn7Ii.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]Boost [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title> </item>
+
+
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/baasatftbkkqnrfb/ElHijoDeJean_www_torrentlocura_com_avi_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/1BMryyUR0XT6ySPpDKSdjVBQWvX.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/1BMryyUR0XT6ySPpDKSdjVBQWvX.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]El Hijo De Jean [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title> </item>
+
+
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/tpsonorbnbkbadro/UnPlusUne_torrenrapid_com_avi_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/gfsi9okwZnh7XqGKInPhAjcJ2i8.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/gfsi9okwZnh7XqGKInPhAjcJ2i8.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]Un Plus Une  [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title> </item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <item> <item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://openload.co/f/jBAmHxSSU78/Te_Vigilo_%5BBluRay_Rip%5D%5BAC3_2.0_Espa%C3%B1ol_Castellano%5D%5B2017%5D.avi'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/jzgeijqp3ly2s93jxgE7kBsYZVb.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/jzgeijqp3ly2s93jxgE7kBsYZVb.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]Te Vigilo [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+
+
+ <item> <item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://openload.co/f/caTN66Wv-Y4/City_of_Tiny_Lights_%5BBluRay_Rip%5D%5BAC3_5.1_Espa%C3%B1ol_Castellano%5D%5B2017%5D.avi'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/eX9iEZdU2w1elGQhNY50DmKqiaE.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/eX9iEZdU2w1elGQhNY50DmKqiaE.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]City of Tiny Lights [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+
+
+ <item> <item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://openload.co/f/e4_e2zwP6qU/Crudo_%5BBLURayRIP%5D%5Bwww.newpct1.com%5D.avi'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/zCSYCgLpdMNMIhPyrBEh2PuxN0G.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/zCSYCgLpdMNMIhPyrBEh2PuxN0G.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]Crudo  [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+
+
+
+
+
+
+ <item> <item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://openload.co/f/SqDN2rJZLW8/Indignacion_%5BBluRay_Rip%5D%5BAC3_5.1_Espa%C3%B1ol_Castellano%5D%5B2017%5D.avi'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/w640/tAnm6pUTSkCxmvzfLWV4VJbHwSt.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/w640/tAnm6pUTSkCxmvzfLWV4VJbHwSt.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]Indignacion [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+
+
+
+ <item> <item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://openload.co/f/S5zGEaqvoYQ/La_Novia_Perfecta_%5BBluRay_Rip%5D%5BAC3_2.0_Espa%C3%B1ol_Castellano%5D%5B2017%5D.avi'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/haAMFKYUvCCVw9Gqo1AAShilwlG.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/haAMFKYUvCCVw9Gqo1AAShilwlG.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]La Novia Perfecta [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+
+
+ <item> <item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://openload.co/f/i7S-RmDZY3E/La_Otra_Mujer_%5BBluRay_Rip%5D%5BAC3_2.0_Espa%C3%B1ol_Castellano%5D%5B2017%5D.avi'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/w640/k4sLETi3sAPXpcxTFMOml7XeMMU.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/w640/k4sLETi3sAPXpcxTFMOml7XeMMU.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]La Otra Mujer  [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+
+
+ <item> <item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://openload.co/f/7uRFY8ubrm8/La_Sospecha_De_Una_Madre_%5BBluRay_Rip%5D%5BAC3_2.0_Espa%C3%B1ol_Castellano%5D%5B2017%5D.avi'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/zwXXvPg49BUMuUrgF1jrYZqfDQp.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/zwXXvPg49BUMuUrgF1jrYZqfDQp.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]La Sospecha De Una Madre [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+
+
+ <item> <item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://openload.co/f/H__5x-nHjoQ/Summer_Shark_Attack_%5BBluRay_Rip%5D%5BAC3_2.0_Espa%C3%B1ol_Castellano%5D%5B2017%5D.avi'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/lphJuUkFlGNTLBH0NNrSHf2X9zE.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/lphJuUkFlGNTLBH0NNrSHf2X9zE.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]Summer Shark Attack [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+
+
+ <item> <item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://openload.co/f/mJCbvYXsB5o/This_Beautiful_Fantastic_%5BBluRay_Rip%5D%5BAC3_2.0_Espa%C3%B1ol_Latino%5D%5B2017%5D.avi'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/pkbxIuntAf1zq96K9855AwKGMr.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/pkbxIuntAf1zq96K9855AwKGMr.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]This Beautiful Fantastic [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+
+
+ <item> <item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://openload.co/f/o0SdgxaiLfw/Un_Verano_Para_Recordar_%5BBluRay_Rip%5D%5BAC3_2.0_Espa%C3%B1ol_Castellano%5D%5B2017%5D.avi'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original//oYDALaC6ke1hzQHIRjmeffpEEP3.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original//oYDALaC6ke1hzQHIRjmeffpEEP3.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]Un Verano Para Recordar  [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+
+
+ <item> <item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://openload.co/f/0RabByMwltc/Across_The_River_%5BBluaRayRIP%5D%5Bwww.tumejortorrent.com%5D.avi'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/16Hwyy2YYONr8reUAiyUJIaXQs2.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/16Hwyy2YYONr8reUAiyUJIaXQs2.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]Across The River [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+
+
+ <item> <item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://openload.co/f/gWjMxMGeK-w/Al_Filo_De_Los_Diecisiete_%5BBluRayRIP%5D%5Bwww.newpct1.com%5D.avi'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/seTB8Awb1HPmoREbkETH4fO2fJ2.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/seTB8Awb1HPmoREbkETH4fO2fJ2.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]Al Filo De Los Diecisiete [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+
+
+ <item> <item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://openload.co/f/xBFQ7J8W41Q/Big_Driver_%5BBluRay_Rip%5D%5BAC3_2.0_Espa%C3%B1ol_Castellano%5D%5B2017%5D.avi'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/yC5E0UgyjUKU2uyW2fGVnrTmAY8.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/yC5E0UgyjUKU2uyW2fGVnrTmAY8.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]Big Driver [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+
+
+ <item> <item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://openload.co/f/ZibbEISmMNY/Black.butterfly.2017.1080p-dual-cast.mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]Black.butterfly [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+
+
+ <item> <item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://openload.co/f/qEQkK_RWTmU/Dejame_Salir_%5BBluRay_Rip%5D%5BAC3_2.0_Espa%C3%B1ol_Castellano%5D%5B2017%5D.avi'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/k5W0WTRtnjS7jdILC8p97ovpfQG.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/k5W0WTRtnjS7jdILC8p97ovpfQG.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]Dejame Salir  [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+
+
+ <item> <item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://openload.co/f/BtUZX6FlR3o/El_Teniente_Otomano_%5BBluRay_Rip%5D%5BAC3_5.1_Espa%C3%B1ol_Castellano%5D%5B2017%5D.avi'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/5orNI85HBUSiSHozB4f1utjjvnP.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/5orNI85HBUSiSHozB4f1utjjvnP.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]El Teniente Otomano  [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+
+
+ <item> <item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://openload.co/f/iQc7tP3C_54/El_Viaje_De_Max_%5BBluRay_Rip%5D%5BAC3_5.1_Espa%C3%B1ol_Castellano%5D%5B2017%5D.avi'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/8j9MhnsdM8MB9wXjDWYRCIyR8i7.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/8j9MhnsdM8MB9wXjDWYRCIyR8i7.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]El Viaje De Max  [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+
+
+ <item> <item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://openload.co/f/nnoq_Y1i4_U/Estacion_Espacial_76_%5BBluRayRIP%5D%5Bwww.newpct1.com%5D.avi'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/ruj4uRO7tuMJj2sKMAGEyjKzD6Z.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/ruj4uRO7tuMJj2sKMAGEyjKzD6Z.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]Estacion Espacial 76 [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+
+
+ <item> <item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://openload.co/f/Ir1OkiGKiao/Follow_%5BDVD_Rip%5D%5BAC3_5.1_Espa%C3%B1ol_Castellano%5D%5B2017%5D.avi'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/lYUrFPD2zBp7ufi3WOH8INTBzTi.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/lYUrFPD2zBp7ufi3WOH8INTBzTi.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]Follow [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+
+
+ <item> <item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://openload.co/f/ST_QB-VzXSE/Invicto_%28Boyka_Undisputed_IV%29_%5BBluRayRIP%5D%5Bwww.divxatope1.com%5D.avi'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/mWiqc87iTs1qujxm2Q0NRzGvWSN.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/mWiqc87iTs1qujxm2Q0NRzGvWSN.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]Invicto (Boyka Undisputed IV) [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+
+
+ <item> <item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://openload.co/f/mpQn5k7gzg0/La_Increible_Jessica_James_%5BBluRayRIP%5D%5Bwww.newpct1.com%5D.avi'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/r7tDHGsFzHY0YBCaaNctvAxZhpc.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/r7tDHGsFzHY0YBCaaNctvAxZhpc.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]La Increible Jessica James [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+
+
+ <item> <item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://openload.co/f/609jjY7990g/La_Profesora_%5BBluRay_Rip%5D%5BAC3_5.1_Espa%C3%B1ol_Castellano%5D%5B2017%5D.avi'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/mGxnjJIDLVbHeN3vzxYoOQ0S65t.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/mGxnjJIDLVbHeN3vzxYoOQ0S65t.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]La Profesora [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+
+
+ <item> <item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://openload.co/f/EDtSBm14jDI/Lethal_Seduction_%5BBluRay_Rip%5D%5BAC3_2.0_Espa%C3%B1ol_Castellano%5D%5B2017%5D.avi'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/kMGCtLqZEedeIJqfzKpRCFmHVIu.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/kMGCtLqZEedeIJqfzKpRCFmHVIu.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]Lethal Seduction [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+
+
+ <item> <item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://openload.co/f/DDmrMqX0p-A/Psycho-Pass_%5BBluRay_Rip%5D%5BAC3_5.1_Espa%C3%B1ol_Castellano%5D%5B2017%5D.avi'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/t7GCogR4nNYpK6buK1jb4KiPV7y.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/t7GCogR4nNYpK6buK1jb4KiPV7y.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+ <title>[COLOR skyblue]Psycho-Pass [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title></item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/csammqbombbtanem/Crudo_BLURayRIP_www_newpct1_com_avi">Crudo [BLURayRIP][www.newpct1.com].avi</a>
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/kqsekfecctbnroot/Arrasando_El_Campo_De_Batalla_BluRay_Rip_AC3_2_0_Esap_ol_Castellano_2017_avi'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/yFE5ALjp94oYIAnCDVhhCerH0ve.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/fR0NPtsOy0BpYY4axTfi8KgfAnh.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]Arrasando El Campo De Batalla [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title> </item>
+
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/tmaptdffpmceatqo/Ghost_in_the_shell_2017_1080p-dual-cast_mp4'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/F8Wb1Qi5IiFEpTsnSnKYEfX0Ki.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/jGPSVArC0GS2VVc0aGAqGTjfFOG.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]Ghost.in.the.shell [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title> </item>
+
+
+
+
+
+<item>
+ <link>$doregex[id3]</link>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver
+  url = 'https://streamango.com/f/ollpmqqmbtkosoln/La_Espada_Sagrada_BluRay_Rip_AC3_5_1_Espa_ol_Castellano_2017_avi'
+  try:
+    u = urlresolver.resolve(url)
+  except:
+    u = 'http://adryanlist.org/error.mp4'
+  return u
+]]></expres>
+<page></page>
+</regex>
+
+
+ <thumbnail>https://image.tmdb.org/t/p/original/t6xZjzexBG94KOsoGJQ8USRA8SS.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/hRIWza0mi7myTxZWq7I5GoBWFd1.jpg</fanart>
+<info>
+ ---- Recuerda hacer tu donacion para seguir mejorando Adryanlist en   http://paypal.me/Adryanlist</info>
+<title>[COLOR skyblue]La Espada Sagrada  [/COLOR][COLOR aquamarine] [/COLOR][COLOR lightslategray] [/COLOR]</title> </item>
+
+
+
+
+
+ 			<item>
+<title>>>  Pagina 2</title>
+<link>NA</link>
+<externallink>http://adryanlist.org/adryan/favoritas_esp2.xml</externallink>
+<fanart>http://adryanlist.org/adryan/img/fanart.jpg</fanart></item>

@@ -1,0 +1,893 @@
+<item>
+<title>FOX SPORT ARGENTINA</title>
+<link>http://link.theplatform.com/s/flac/nM8cCUC8Vx9L?mbr=true&amp;feed=FoxPlay%20Live%20Events&amp;manifest=M3U&amp;auth=lZ4PzsEq7QN8IlnWAxo20eCAcFCgoHBm&amp;manifest=m3u8</link>
+<thumbnail>https://upload.wikimedia.org/wikipedia/en/d/dd/Fox_Sports_Logo.png</thumbnail>
+<fanart>http://b.vimeocdn.com/ts/433/184/433184834_640.jpg</fanart>
+<info>[B] Señal disponible en todos los países del continente de habla hispana[/B]</info>
+</item> 
+
+
+  <item>
+<title>FOX SPORT MEXICO</title>
+<link>http://link.theplatform.com/s/flac/xr8_wTxx_f5i?mbr=true&amp;feed=FoxPlay%20Live%20Events&amp;manifest=M3U&amp;auth=lZ4PzsEq7QN8IlnWAxo20eCAcFCgoHBm&amp;manifest=m3u8?pungatv?club.m3u8</link>
+<thumbnail>https://upload.wikimedia.org/wikipedia/en/d/dd/Fox_Sports_Logo.png</thumbnail>
+<fanart>http://b.vimeocdn.com/ts/433/184/433184834_640.jpg</fanart>
+<info>[B] Señal disponible en todos los países del continente de habla hispana[/B]</info>
+</item> 
+
+ 
+ <item>
+<title>MULTICANAL DEPORTIVOS EN ESPAÑOL[COLOR=red]Indefinido - Por Evento[/COLOR] </title>
+<link>$doregex[rtmp] playpath=sky1dep_$doregex[playpath]$doregex[playpath2] swfUrl=http://p.castamp.com/cplayer.swf live=true timeout=15 swfVfy=1 pageUrl=http://www.castamp.com/embed.php?c=sky1dep&amp;tk=$doregex[it]&amp;vwidth=680&amp;vheight=440</link>
+
+<regex>
+<name>canal</name>  
+<expres>channel="(.*?)";</expres>  
+<page>http://fut.superligatv.com/planeta.php</page> 
+</regex>
+ 
+<regex>
+<name>it</name>  
+<expres>Agent:"(.*?)";</expres>  
+<page>http://fut.superligatv.com/planeta.php</page> 
+</regex>
+
+<regex>
+<name>rtmp</name>
+<expres>.*(?![^"']+50.7.118.3)(?![^"']+50.7.128.2)(rtmp:[^"']+)</expres>
+<page>http://www.castamp.com/embed.php?c=sky1dep&amp;tk=$doregex[it]&amp;vwidth=680&amp;vheight=440</page>
+ <referer>http://fut.superligatv.com</referer>
+</regex>
+
+<regex>
+<name>playpath</name>
+<expres>fuifa.*?_(.*?)'</expres>
+<page>http://www.castamp.com/embed.php?c=sky1dep&amp;tk=$doregex[it]&amp;vwidth=680&amp;vheight=440</page>
+ <referer>http://fut.superligatv.com</referer>
+</regex>
+<regex>
+<name>playpath2</name>
+<expres>fuifa.*?unescape.*?'(.*?)'\W</expres>
+<page>http://www.castamp.com/embed.php?c=sky1dep&amp;tk=$doregex[it]&amp;vwidth=680&amp;vheight=440</page>
+ <referer>http://fut.superligatv.com</referer>
+</regex>
+<thumbnail></thumbnail>
+</item>
+
+
+
+<item>
+   <title>TDN  </title>
+<link>rtmp://$doregex[ip]/live playpath=YouTVOp1?id=256441$doregex[pk] swfUrl=http://www.mipsplayer.com/content/scripts/fplayer.swf tcUrl=rtmp://mips.tv:1935/live/
+pageUrl=http://www.mipsplayer.com swfVfy=1 timeout=13 live=1 conn=S:OK</link>
+<regex>
+<name>ip</name>
+<expres>redirect=(.*)<expres>
+<page>http://cdn.mipspublisher.com:1935/loadbalancer</page>
+</regex>
+
+<regex>
+<name>pk</name>
+<expres>ea=(.*)'</expres>
+<page>http://www.mipsplayer.com/embedplayer/YouTVOp1/1/830/500</page>
+<referer>http://www.mipsplayer.com/YouTVOp1</referer>
+</regex>
+<thumbnail>http://upload.wikimedia.org/wikipedia/commons/8/84/Logo_TDN.png</thumbnail>
+   <fanart>http://fc00.deviantart.net/fs71/f/2011/303/e/0/cute_robot_watching_tv_by_the3dleopard-d4eh7jz.jpg</fanart>
+             <info>[B]TDN o Televisa Deportes Network es un canal especializado en deportes. Comenzó a emitir el 22 de julio de 2009. La señal a América Latina, se dará a conocer más adelante. Pertenece a Grupo Televisa[/B]</info>
+   </item>
+   
+    
+    <item>
+   <title>TVC DEPORTES</title>
+<link>$doregex[rtmp] playpath=$doregex[canal]_$doregex[playpath]$doregex[playpath2] swfUrl=http://p.castamp.com/cplayer.swf live=true timeout=15 swfVfy=1 pageUrl=http://www.castamp.com/embed.php?c=$doregex[canal]&amp;tk=$doregex[it]&amp;vwidth=680&amp;vheight=440</link>
+
+<regex>
+<name>canal</name>  
+<expres>channel="(.*?)";</expres>  
+<page>http://fut.superligatv.com/tvcdep.php</page> 
+</regex>
+ 
+<regex>
+<name>it</name>  
+<expres>Agent:"(.*?)";</expres>  
+<page>http://fut.superligatv.com/tvcdep.php</page> 
+</regex>
+
+<regex>
+<name>rtmp</name>
+<expres>.*(?![^"']+50.7.118.3)(?![^"']+50.7.128.2)(rtmp:[^"']+)</expres>
+<page>http://www.castamp.com/embed.php?c=$doregex[canal]&amp;tk=$doregex[it]&amp;vwidth=680&amp;vheight=440</page>
+ <referer>http://fut.superligatv.com/</referer>
+</regex>
+
+<regex>
+<name>playpath</name>
+<expres>fuifa.*?_(.*?)'</expres>
+<page>http://www.castamp.com/embed.php?c=$doregex[canal]&amp;tk=$doregex[it]&amp;vwidth=680&amp;vheight=440</page>
+ <referer>http://fut.superligatv.com/</referer>
+</regex>
+<regex>
+<name>playpath2</name>
+<expres>fuifa.*?unescape.*?'(.*?)'\W</expres>
+<page>http://www.castamp.com/embed.php?c=$doregex[canal]&amp;tk=$doregex[it]&amp;vwidth=680&amp;vheight=440</page>
+ <referer>http://fut.superligatv.com/</referer>
+</regex>
+<thumbnail>http://superluchas.com/wp-content/uploads/2010/05/tvc_deportes.png</thumbnail>
+   <fanart>http://www.tvcnetworks.mx/Portals/_default/Skins/Incredible/css/tvc/tvc-networks-streaming-en-vivo.jpg</fanart>
+             <info>[B]TVC Deportes, es un canal deportivo producido por PCTV, dueña de TVC Networks, que se trasmite por medio de la señal de cable en México [/B]</info>
+   </item>
+   
+   <item>
+<title>TYC SPORTS </title>
+<link>http://clairinlive-a.akamaihd.net/dc-1/live/hls/p/1885581/e/1_8xzo6fux/t/YO19xXbHgW_22sNZezlmTg/master.m3u8</link>
+<thumbnail>http://latelete.tv/img/tyc.png</thumbnail>
+<fanart>http://www.martinferdkin.com.ar/news/tycsports/tyc1.jpg</fanart>
+<info>[B] TyC Sports es un canal de televisión de deportes argentino. Su programación se basa íntegramente en relación al deporte.[/B]</info>
+</item>
+   
+   
+  
+  <item>
+<title>UNIVISION TDN  </title>
+ <link>rtmp://$doregex[ip]/live playpath=YouTVOp2?id=256442$doregex[pk] swfUrl=http://www.mipsplayer.com/content/scripts/fplayer.swf tcUrl=rtmp://mips.tv:1935/live/
+pageUrl=http://www.mipsplayer.com swfVfy=1 timeout=13 live=1 conn=S:OK</link>
+<regex>
+<name>ip</name>
+<expres>redirect=(.*)<expres>
+<page>http://cdn.mipspublisher.com:1935/loadbalancer</page>
+</regex>
+
+<regex>
+<name>pk</name>
+<expres>ea=(.*)'</expres>
+<page>http://www.mipsplayer.com/embedplayer/YouTVOp2/1/830/500</page>
+<referer>http://www.mipsplayer.com/YouTVOp2</referer>
+</regex>  
+<thumbnail>https://upload.wikimedia.org/wikipedia/commons/a/a3/Univision_-_Televisa_Deportes_Network_logo_-_2012.png</thumbnail>
+<info>Univisión Deportes Network, mejor conocido como UDN, es un canal deportivo dedicado a los eventos de esta clase y a la programación relacionada con el deporte. Propiedad de Univisión Communications, que sirve a la comunidad latina e hispana en los Estados Unidos</info>
+</item>
+
+
+
+
+<item>
+<title>VTV </title>
+<link>http://edge9.verliga.me/live/vtv/index.m3u8|User-Agent=iPad</link>
+<thumbnail>http://veratv.cdn.antel.net.uy/dynamic/for_sale_images/1/240/default.jpg</thumbnail>
+            <fanart>http://fc00.deviantart.net/fs71/f/2011/303/e/0/cute_robot_watching_tv_by_the3dleopard-d4eh7jz.jpg</fanart>
+        <info>[B]VTV es un canal de cable uruguayo que transmite 24 horas de programación para todo el país y América. Ofrece una programación que incluye los partidos de las división del Fútbol uruguayo[/B]</info>
+  </item>
+
+
+<item>
+<title>VTV OPC 2</title>
+<sportsdevil>http://vercanalestv.com/tv/uruguay/vtv.html</sportsdevil>
+<referer>http://vercanalestv.com/tv/uruguay/vtv.html</referer>
+<thumbnail>http://veratv.cdn.antel.net.uy/dynamic/for_sale_images/1/240/default.jpg</thumbnail>
+            <fanart>http://fc00.deviantart.net/fs71/f/2011/303/e/0/cute_robot_watching_tv_by_the3dleopard-d4eh7jz.jpg</fanart>
+        <info>[B]VTV es un canal de cable uruguayo que transmite 24 horas de programación para todo el país y América. Ofrece una programación que incluye los partidos de las división del Fútbol uruguayo[/B]</info>
+  </item>
+  
+
+<item>
+<title>[COLOR=cyan][B] CANALES DE DEPORTE ESPAÑA BASSFOX[/B][/COLOR]</title>
+<thumbnail>http://www.twitip.com/wp-content/uploads/2011/06/TV_REMOTE_02.jpg</thumbnail>
+<fanart>http://www.ytel.je/wp-content/uploads/2014/06/CABLE-TV-LARGE.png</fanart>
+<info>[B]Canales de España las 24 hrs en vivo (Si un canal deja de funcionar comunicalo a su autor para una pronta solución)[/B]</info>
+<link>http://ignoreme</link>
+</item>
+
+ 
+
+<item> 
+<title>M+ FUTBOL</title>
+<link>$doregex[select_Url]</link>
+<regex>
+<name>select_Url</name>
+<expres>$pyFunction: '$doregex[get_sxstream]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36' if not '$doregex[get_sxstream]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'=='' else '$doregex[get_sxstream1]|User-Agent=iPhone'</expres>
+<page></page>
+</regex>
+<regex>
+<name>get_sxstream</name>
+<expres>src=.*[",'](.*m3u8.*?)[",']</expres>
+<page>http://www.liveonlinetv247.info/embed/canal+futbol.php</page>
+<referer>http://www.liveonlinetv247.info/</referer>
+<agent></agent>
+</regex>
+<regex>
+<name>get_sxstream1</name>
+<expres>src=.*[",'](.*m3u8.*?)[",']</expres>
+<page>http://www.liveonlinetv247.info/embed/canal+futbol.php</page>
+<referer>http://www.liveonlinetv247.info/</referer>
+<agent></agent>
+</regex>
+<thumbnail>https://upload.wikimedia.org/wikipedia/commons/1/15/Logo-futbol.png</thumbnail>
+<fanart>http://vignette1.wikia.nocookie.net/logopedia/images/0/05/MovistarFutbol.png</fanart>
+<info>[B]Todo el futbol,una programacion exclusiva dirigida al mejor deporte del mundo [/B] </info>
+</item>
+
+<item>
+<title>M+ DEPORTES 1</title>
+<sportsdevil>http://cinestrenostv.tv/canales/envivo/plusdeportes.html</sportsdevil>
+<referer>http://cinestrenostv.tv</referer>
+<thumbnail>http://vignette3.wikia.nocookie.net/logopedia/images/c/c3/MovistarDeportes1.png</thumbnail>
+<fanart>http://www.desktopwallpaperhd.net/wallpapers/17/d/wallpaper-sports-computer-jvfree-olympics-sport-175149.jpg</fanart>
+<info>[B]Todo el futbol,una programacion exclusiva dirigida al mejor deporte del mundo [/B] </info>
+</item>
+
+<item>
+<title>M+ DEPORTES 2</title>
+<sportsdevil>http://cinestrenostv.tv/canales/deportes/plusdeportes2.php</sportsdevil>
+<referer>http://cinestrenostv.tv</referer>
+<thumbnail>http://vignette1.wikia.nocookie.net/logopedia/images/6/63/MovistarDeportes2.png</thumbnail>
+<fanart>http://www.desktopwallpaperhd.net/wallpapers/17/d/wallpaper-sports-computer-jvfree-olympics-sport-175149.jpg</fanart>
+<info>[B]Canal+ Deportes es un canal de televisión español de pago, propiedad de Telefónica y disponible exclusivamente a través de Canal+[/B]</info>
+</item>
+
+<item>
+<title>BEIN + LIGA</title>
+<sportsdevil>http://cinestrenostv.tv/canales/deportes/plusliga.php</sportsdevil>
+<referer>http://cinestrenostv.tv</referer>
+<thumbnail>http://cdn8.staztic.com/app/a/4766/4766724/la-liga-tv-official-12-b-512x250.jpg</thumbnail>
+<fanart>http://www.1footballwallpaper.com/wp-content/uploads/Liga%20BBVA/Atletico%20de%20Madrid%20Wallpapers%2017.jpg</fanart>
+<info>[B]Todo el futbol,una programacion exclusiva dirigida al mejor deporte del mundo [/B] </info>
+</item>
+
+ <item>
+<title>CANAL BEIN + LIGA </title>
+<link>$doregex[select_Url]</link>
+<regex>
+<name>select_Url</name>
+<expres>$pyFunction: '$doregex[get_sxstream]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36' if not '$doregex[get_sxstream]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'=='' else '$doregex[get_sxstream1]|User-Agent=iPhone'</expres>
+<page></page>
+</regex>
+<regex>
+<name>get_sxstream</name>
+<expres>src=.*[",'](.*m3u8.*?)[",']</expres>
+<page>http://www.liveonlinetv247.info/embed/canal+liga.php</page>
+<referer>http://www.liveonlinetv247.info/</referer>
+<agent></agent>
+</regex>
+<regex>
+<name>get_sxstream1</name>
+<expres>src=.*[",'](.*m3u8.*?)[",']</expres>
+<page>http://www.liveonlinetv247.info/embed/canal+liga.php</page>
+<referer>http://www.liveonlinetv247.info/</referer>
+<agent></agent>
+</regex>
+<thumbnail>http://cdn8.staztic.com/app/a/4766/4766724/la-liga-tv-official-12-b-512x250.jpg</thumbnail>
+<fanart>http://www.1footballwallpaper.com/wp-content/uploads/Liga%20BBVA/Atletico%20de%20Madrid%20Wallpapers%2017.jpg</fanart>
+<info>[B]Todo el futbol,una programacion exclusiva dirigida al mejor deporte del mundo [/B] </info>
+</item>
+
+
+<item>
+<title>CANAL+ PARTIDAZO</title>
+<sportsdevil>http://cinestrenostv.tv/canales/envivo/plus-partidazo.html</sportsdevil>
+<referer>http://cinestrenostv.tv/</referer>
+<thumbnail>http://satcesc.com/web/wp-content/uploads/2015/08/canal-plus-partidazo.jpg</thumbnail>
+<fanart>http://static.batanga.com/sites/default/files/tech.batanga.com/files/Siri-te-ayuda-a-mantenerte-al-tanto-de-los-resultados-del-futbol-2.jpg</fanart>
+<info>[B]Canal+ Partidazo te ofrece el mejor partido de la Liga BBVA y la Copa del Rey. Todo acompañado de los mejores programas deportivos [/B] </info>
+</item>
+
+<item>
+<title>MOTOS GP</title>
+<sportsdevil>http://cinestrenostv.tv/canales/deportes/motogp.php</sportsdevil>
+<referer>http://cinestrenostv.tv</referer>
+<thumbnail>http://www.scooterrace.eu/web_images/motogp_logo.png</thumbnail>
+<fanart>http://www.dailymotos.com/wp-content/uploads/2009/09/fim-firma-acuerdo-sportmania-c-deportes-tv3-cobertura-las-8-hrs-doha-126340918847721.jpg</fanart>
+<info>[B]MotoGP es la máxima categoría del Mundial de Motociclismo, considerado éste como el certamen internacional más importante en el ámbito de motociclismo[/B] </info>
+</item>
+
+<item>
+<title>MOTOS GP</title>
+<link>$doregex[get-m3u8]|User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36&amp;Referer=http://www.dinozap.info/redirect/embedredi.php</link>
+<regex>
+<name>get-m3u8</name>
+<expres>$pyFunction:base64.b64decode('$doregex[m3u8-3]')</expres>
+<page></page>
+</regex>
+ <regex>
+<name>m3u8-3</name>
+<expres>$pyFunction:base64.b64decode('$doregex[m3u8-2]')</expres>
+<page></page>
+</regex>
+ <regex>
+<name>m3u8-2</name>
+<expres>$pyFunction:base64.b64decode('$doregex[m3u8]')</expres>
+<page></page>
+</regex>
+<regex>
+<name>m3u8</name>
+<expres>$doregex[gada]".*value="(.*?)"</expres> 
+<page>$doregex[pagina]</page>
+<agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
+<referer>http://www.vipgoal.net/C+Liga/35576/Canal-plus-liga-en-directo.html</referer>
+</regex>
+<regex>
+<name>gada</name>
+<expres>GADA  = document.getElementById\(\'(.*?)\'</expres>
+<page>$doregex[pagina]</page>
+<agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
+<referer>http://www.vipgoal.net/C+Liga/35576/Canal-plus-liga-en-directo.html</referer>
+</regex>
+<regex>
+<name>pagina</name>
+<expres>src="(.*?)"</expres>
+<page>http://www.sunhd.info/channelsa.php?file=117&amp;width=650&amp;height=410&amp;autostart=true</page>
+<agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
+<referer>http://www.vipgoal.net/C+Liga/35576/Canal-plus-liga-en-directo.html</referer>
+</regex>
+<thumbnail>http://www.scooterrace.eu/web_images/motogp_logo.png</thumbnail>
+<fanart>http://www.dailymotos.com/wp-content/uploads/2009/09/fim-firma-acuerdo-sportmania-c-deportes-tv3-cobertura-las-8-hrs-doha-126340918847721.jpg</fanart>
+<info>[B]MotoGP es la máxima categoría del Mundial de Motociclismo, considerado éste como el certamen internacional más importante en el ámbito de motociclismo[/B] </info>
+</item>
+
+<item>
+<title>FORMULA 1 </title>
+<sportsdevil>http://cinestrenostv.tv/canales/envivo/formula1.html</sportsdevil>
+<referer>http://cinestrenostv.tv</referer>
+<thumbnail>http://i64.photobucket.com/albums/h182/sunfun_dc/formula_one_logo1.png</thumbnail>
+<fanart>http://ps3media.ign.com/ps3/image/article/734/734195/formula-one-06-20060921090942649.jpg</fanart>
+<info>[B] Fórmula1 Canal de producción propia de Movistar para seguir en directo todas las citas del campeonato, los entrenamientos libres y las sesiones de clasificación de Formula 1[/B] </info>
+</item>
+
+<item>
+<title>REAL MADRID TV </title>
+<link>http://rmtvlive-lh.akamaihd.net/i/rmtv_1@154306/master.m3u8</link>
+<thumbnail>http://www.defensacentral.com/userfiles/2013/Dec_27/real_madrid_tv_interior.jpg</thumbnail>
+<fanart>http://wallpaperspal.com/wp-content/uploads/Real-Madrid-CF-2015-First-XI-Football-Team-HD-Wallpaper.jpg</fanart>
+<info>[B]Real Madrid TV es un canal de televisión español, de ámbito internacional, propiedad del Real Madrid CF. Es el medio televisivo oficial del club y realiza la función de promover el conocimiento y difusión de la institución. [/B] </info>
+</item>
+
+<item>
+<title>TDP Teledeporte</title>
+<sportsdevil>http://verdirectotv.com/tv/deportes2/teledeporte.html</sportsdevil>
+<referer>http://cinestrenostv.tv</referer>
+<thumbnail>http://www.elsalpicadero.com/wp-content/uploads/2014/08/Logotipo_de_Teledeporte_tdp.svg_-620x400.jpg?</thumbnail>
+<fanart>http://img52.imageshack.us/img52/7885/14052011nadalgasquet1br.jpg</fanart>
+<info>[B]Teledeporte (TDP) es un canal deportivo de España propiedad de TVE, puesto en marcha en 1994 a través de Hispasat[/B] </info>
+</item>
+
+
+<item>
+<title>     [COLOR=cyan][B] ** INTERNATIONAL SPORTS **[/B][/COLOR]</title>
+<thumbnail>https://i.ytimg.com/vi/7jzSpHxljow/maxresdefault.jpg</thumbnail>
+<fanart>http://www.digitalavmagazine.com/wp-content/uploads/2013/09/Estadio-Dallas-Cowboys.jpg</fanart>
+<info>[B]Canales de Perú las 24 hrs en vivo (Si un canal deja de funcionar comunicalo a su autor para una pronta solución)[/B]</info>
+<link>http://ignoreme</link>
+</item>
+
+<item>
+<title>BT SPORTS 1**SD**</title>
+<sportsdevil>http://crichd.tv/update/bt1.php</sportsdevil>
+<referer>http://crichd.tv</referer>
+<thumbnail>http://images3.wikia.nocookie.net/__cb20130806193246/logopedia/images/thumb/6/68/BT_Sport_1_%28pre-launch%29.svg/300px-BT_Sport_1_%28pre-launch%29.svg.png</thumbnail>
+<fanart>http://tvnewsroom.org/wp-content/uploads/2013/08/BT-Sport-1-eng-BT-Sports-Panel-08-03-10-22-32.jpg</fanart>
+<info>BT Sport es una cadena de televisión por suscripción de deportes de BT Group que se ofrece en las operadores de televisión paga BT TV, </info>
+</item>
+
+<item>
+<title>BT SPORTS 1</title>
+<link>$doregex[select_Url]</link>
+<regex>
+<name>select_Url</name>
+<expres>$pyFunction: '$doregex[get_sxstream]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36' if not '$doregex[get_sxstream]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'=='' else '$doregex[get_sxstream1]|User-Agent=iPhone'</expres>
+<page></page>
+</regex>
+<regex>
+<name>get_sxstream</name>
+<expres>src=.*[",'](.*m3u8.*?)[",']</expres>
+<page>http://www.liveonlinetv247.info/embed/btsport1.php</page>
+<referer>http://www.liveonlinetv247.info/</referer>
+<agent></agent>
+</regex>
+<regex>
+<name>get_sxstream1</name>
+<expres>src=.*[",'](.*m3u8.*?)[",']</expres>
+<page>http://www.liveonlinetv247.info/embed/btsport1.php</page>
+<referer>http://www.liveonlinetv247.info/</referer>
+<agent></agent>
+</regex>
+<thumbnail>http://images3.wikia.nocookie.net/__cb20130806193246/logopedia/images/thumb/6/68/BT_Sport_1_%28pre-launch%29.svg/300px-BT_Sport_1_%28pre-launch%29.svg.png</thumbnail>
+<fanart>http://tvnewsroom.org/wp-content/uploads/2013/08/BT-Sport-1-eng-BT-Sports-Panel-08-03-10-22-32.jpg</fanart>
+<info>BT Sport es una cadena de televisión por suscripción de deportes de BT Group que se ofrece en las operadores de televisión paga BT TV, </info>
+</item>
+
+<item>
+<title>BT SPORTS 2**SD** </title>
+<sportsdevil>http://crichd.tv/update/bt2.php</sportsdevil>
+   <referer>http://crichd.tv</referer>
+<thumbnail>http://www.bearage.co.uk/images/sports_logo/bt_sport_2.png</thumbnail>
+<fanart>http://tvnewsroom.org/wp-content/uploads/2013/08/BT-Sport-1-eng-BT-Sports-Panel-08-03-10-22-32.jpg</fanart>
+<info>BT Sport es una cadena de televisión por suscripción de deportes de BT Group que se ofrece en las operadores de televisión paga BT TV, </info>
+</item>
+
+<item>
+<title>BT SPORTS 2 HQ</title>
+<link>$doregex[select_Url]</link>
+<regex>
+<name>select_Url</name>
+<expres>$pyFunction: '$doregex[get_sxstream]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36' if not '$doregex[get_sxstream]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'=='' else '$doregex[get_sxstream1]|User-Agent=iPhone'</expres>
+<page></page>
+</regex>
+<regex>
+<name>get_sxstream</name>
+<expres>src=.*[",'](.*m3u8.*?)[",']</expres>
+<page>http://www.liveonlinetv247.info/embed/btsport2.php</page>
+<referer>http://www.liveonlinetv247.info/</referer>
+<agent></agent>
+</regex>
+<regex>
+<name>get_sxstream1</name>
+<expres>src=.*[",'](.*m3u8.*?)[",']</expres>
+<page>http://www.liveonlinetv247.info/embed/btsport2.php</page>
+<referer>http://www.liveonlinetv247.info/</referer>
+<agent></agent>
+</regex>
+<thumbnail>http://www.bearage.co.uk/images/sports_logo/bt_sport_2.png</thumbnail>
+<fanart>http://tvnewsroom.org/wp-content/uploads/2013/08/BT-Sport-1-eng-BT-Sports-Panel-08-03-10-22-32.jpg</fanart>
+<info>BT Sport es una cadena de televisión por suscripción de deportes de BT Group que se ofrece en las operadores de televisión paga BT TV, </info>
+</item>
+
+<item>
+<title>BT SPORTS ESPN HQ</title>
+<link>$doregex[select_Url]</link>
+<regex>
+<name>select_Url</name>
+<expres>$pyFunction: '$doregex[get_sxstream]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36' if not '$doregex[get_sxstream]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'=='' else '$doregex[get_sxstream1]|User-Agent=iPhone'</expres>
+<page></page>
+</regex>
+<regex>
+<name>get_sxstream</name>
+<expres>src=.*[",'](.*m3u8.*?)[",']</expres>
+<page>http://www.liveonlinetv247.info/embed/btsportespn.php</page>
+<referer>http://www.liveonlinetv247.info/</referer>
+<agent></agent>
+</regex>
+<regex>
+<name>get_sxstream1</name>
+<expres>src=.*[",'](.*m3u8.*?)[",']</expres>
+<page>http://www.liveonlinetv247.info/embed/btsportespn.php</page>
+<referer>http://www.liveonlinetv247.info/</referer>
+<agent></agent>
+</regex>
+<thumbnail>http://i2.wp.com/seenit.co.uk/wp-content/uploads/BT-ESPN.png</thumbnail>
+<fanart>http://tvnewsroom.org/wp-content/uploads/2013/08/BT-Sport-1-eng-BT-Sports-Panel-08-03-10-22-32.jpg</fanart>
+<info>BT Sport es una cadena de televisión por suscripción de deportes de BT Group que se ofrece en las operadores de televisión paga BT TV, </info>
+</item>     
+      
+      
+      
+<item>
+<title>ESPN HQ</title>
+<link>$doregex[select_Url]</link>
+<regex>
+<name>select_Url</name>
+<expres>$pyFunction: '$doregex[get_sxstream]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36' if not '$doregex[get_sxstream]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'=='' else '$doregex[get_sxstream1]|User-Agent=iPhone'</expres>
+<page></page>
+</regex>
+<regex>
+<name>get_sxstream</name>
+<expres>src=.*[",'](.*m3u8.*?)[",']</expres>
+<page>http://www.liveonlinetv247.info/embed/espn.php</page>
+<referer>http://www.liveonlinetv247.info/</referer>
+<agent></agent>
+</regex>
+<regex>
+<name>get_sxstream1</name>
+<expres>src=.*[",'](.*m3u8.*?)[",']</expres>
+<page>http://www.liveonlinetv247.info/embed/espn.php</page>
+<referer>http://www.liveonlinetv247.info/</referer>
+<agent></agent>
+</regex>
+<info>ESPN, Inc. (siglas de Entertainment and Sports Programming Network, hoy en desuso), es un grupo mediático con sede en los Estados Unidos, que opera y produce canales de televisión por cable, satélite, radio, sitios web, revistas y libros relacionados con el deporte</info>
+</item>    
+      
+ <title>EUROSPORT (ENG)</title>
+ <link>http://esioslive6-i.akamaihd.net/hls/live/202874/AL_P_ESP1_INTER_ENG/playlist_1800.m3u8</link>
+    <thumbnail>http://advanced-television.com/wp-content/uploads/2013/05/Eurosport.gif</thumbnail>
+     <fanart>http://www.ciclismoafondo.es/media/cache/article_middle/upload/images/article/article-eurosport-celebra-el-centenario-del-tour-de-francia-con-una-programacion-historica.png</fanart>
+ <info>Eurosport es un canal de televisión europeo especializado en deporte, que se emite por satélite y cable. Está disponible en 59 países y se distribuye en 20 idiomas, incluido el español.</info>
+ </item>
+   
+<item>
+<title>EUROSPORT 1(ENG) [COLOR  orange]Necessary Sportsdevil[/COLOR]</title>
+<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://cricfree.sx/update/euro.php&id=&amp;width=640&amp;height=480&amp;autostart=true&amp;strech=exactfit</link>
+<thumbnail>http://advanced-television.com/wp-content/uploads/2013/05/Eurosport.gif</thumbnail>
+     <fanart>http://www.ciclismoafondo.es/media/cache/article_middle/upload/images/article/article-eurosport-celebra-el-centenario-del-tour-de-francia-con-una-programacion-historica.png</fanart>
+ <info>Eurosport es un canal de televisión europeo especializado en deporte, que se emite por satélite y cable. Está disponible en 59 países y se distribuye en 20 idiomas, incluido el español.</info>
+ </item>
+ 
+         <item>
+<title>EUROSPORT 2(ENG)</title>
+<link>$doregex[select_Url]</link>
+<regex>
+<name>select_Url</name>
+<expres>$pyFunction: '$doregex[get_sxstream]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36' if not '$doregex[get_sxstream]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'=='' else '$doregex[get_sxstream1]|User-Agent=iPhone'</expres>
+<page></page>
+</regex>
+<regex>
+<name>get_sxstream</name>
+<expres>src=.*[",'](.*m3u8.*?)[",']</expres>
+<page>http://www.liveonlinetv247.info/embed/eurosport2.php</page>
+<referer>http://www.liveonlinetv247.info/</referer>
+<agent></agent>
+</regex>
+<regex>
+<name>get_sxstream1</name>
+<expres>src=.*[",'](.*m3u8.*?)[",']</expres>
+<page>http://www.liveonlinetv247.info/embed/eurosport2.php</page>
+<referer>http://www.liveonlinetv247.info/</referer>
+<agent></agent>
+</regex>
+    <thumbnail>http://advanced-television.com/wp-content/uploads/2013/05/Eurosport.gif</thumbnail>
+     <fanart>http://www.ciclismoafondo.es/media/cache/article_middle/upload/images/article/article-eurosport-celebra-el-centenario-del-tour-de-francia-con-una-programacion-historica.png</fanart>
+ <info>Eurosport es un canal de televisión europeo especializado en deporte, que se emite por satélite y cable. Está disponible en 59 países y se distribuye en 20 idiomas, incluido el español.</info>
+ </item> 
+
+
+
+
+
+
+<item>
+<title>FOX SPORTS 1 HQ</title>
+<link>$doregex[select_Url]</link>
+<regex>
+<name>select_Url</name>
+<expres>$pyFunction: '$doregex[get_sxstream]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36' if not '$doregex[get_sxstream]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'=='' else '$doregex[get_sxstream1]|User-Agent=iPhone'</expres>
+<page></page>
+</regex>
+<regex>
+<name>get_sxstream</name>
+<expres>src=.*[",'](.*m3u8.*?)[",']</expres>
+<page>http://www.liveonlinetv247.info/embed/skysports1.php</page>
+<referer>http://www.liveonlinetv247.info/</referer>
+<agent></agent>
+</regex>
+<regex>
+<name>get_sxstream1</name>
+<expres>src=.*[",'](.*m3u8.*?)[",']</expres>
+<page>http://www.liveonlinetv247.info/embed/foxsports1.php</page>
+<referer>http://www.liveonlinetv247.info/</referer>
+<agent></agent>
+</regex>
+<thumbnail>http://vignette2.wikia.nocookie.net/logosfake/images/4/4d/Fox_Sports_1.png</thumbnail>
+<fanart>http://www.foxsports.com/speed/wp-content/uploads/2013/08/1129922_article_img_xlarge6.jpg</fanart>
+<info>Fox Sports 1 (FS1) is an American sports-oriented cable and satellite television channel that is owned by the Fox Sports Media Group, a unit of the Fox</info>
+</item>
+
+
+<item>
+<title>FOX SPORTS 2 HQ</title>
+<link>$doregex[select_Url]</link>
+<regex>
+<name>select_Url</name>
+<expres>$pyFunction: '$doregex[get_sxstream]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36' if not '$doregex[get_sxstream]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'=='' else '$doregex[get_sxstream1]|User-Agent=iPhone'</expres>
+<page></page>
+</regex>
+<regex>
+<name>get_sxstream</name>
+<expres>src=.*[",'](.*m3u8.*?)[",']</expres>
+<page>http://www.liveonlinetv247.info/embed/foxsports2.php</page>
+<referer>http://www.liveonlinetv247.info/</referer>
+<agent></agent>
+</regex>
+<regex>
+<name>get_sxstream1</name>
+<expres>src=.*[",'](.*m3u8.*?)[",']</expres>
+<page>http://www.liveonlinetv247.info/embed/foxsports2.php</page>
+<referer>http://www.liveonlinetv247.info/</referer>
+<agent></agent>
+</regex>
+<thumbnail>https://upload.wikimedia.org/wikipedia/en/7/7e/Fox_Sports_2_logo.png</thumbnail>
+<fanart>http://www.foxsports.com/speed/wp-content/uploads/2013/08/1129922_article_img_xlarge6.jpg</fanart>
+<info>Fox Sports 1 (FS1) is an American sports-oriented cable and satellite television channel that is owned by the Fox Sports Media Group, a unit of the Fox</info>
+</item>
+
+                <item>
+<title>SKY SPORTS 1 [COLOR  orange]Necessary Sporstdevil[/COLOR]</title>
+<sportsdevil>http://crichd.tv/update/skys1.php</sportsdevil>
+   <referer>http://crichd.tv</referer>
+<thumbnail>http://4.bp.blogspot.com/-pcgRsJ6mEjY/UZdsDBj0J5I/AAAAAAAAALc/iNVH-d0a2F0/s1600/Sky+Sports+1.png</thumbnail>        
+<fanart>http://store.virginmedia.com/content/dam/eSales/TV/responsive/channels/tv-add-sky-sports-now.png</fanart>
+<info>Sky Sports es el canal de deportes más importante del Reino Unido, conocido por su extensa emisión de fútbol. Fue fundado el 25 de marzo de 1990.</info>
+               </item>
+      
+       <item>
+<title>SKY SPORTS 1 HD</title>
+<link>$doregex[m3u8]|User-Agent=iPad</link>
+<regex>
+<name>m3u8</name>
+<expres>playStream\(\'hls','(.*?)'</expres>
+<page>http://embratoria.com/player/is.php?s=skysports1</page>
+<referer>http://embratoria.com/</referer>
+</regex>
+<thumbnail>http://4.bp.blogspot.com/-pcgRsJ6mEjY/UZdsDBj0J5I/AAAAAAAAALc/iNVH-d0a2F0/s1600/Sky+Sports+1.png</thumbnail>        
+<fanart>http://store.virginmedia.com/content/dam/eSales/TV/responsive/channels/tv-add-sky-sports-now.png</fanart>
+<info>Sky Sports es el canal de deportes más importante del Reino Unido, conocido por su extensa emisión de fútbol. Fue fundado el 25 de marzo de 1990.</info>
+               </item>
+
+<item>
+<title>SKY SPORTS 2 [COLOR  orange]Necessary Sporstdevil[/COLOR]</title>
+<sportsdevil>http://crichd.tv/update/skys2.php</sportsdevil>
+   <referer>http://crichd.tv</referer>
+<thumbnail>http://4.bp.blogspot.com/-jYg8ovLGy-g/VAW6cF2XvII/AAAAAAAAFUc/PuxutEG0yto/s1600/sky%2Bsports%2B2%2Blive%2Bmykora.png</thumbnail>
+<fanart>http://store.virginmedia.com/content/dam/eSales/TV/responsive/channels/tv-add-sky-sports-now.png</fanart>
+<info>Sky Sports es el canal de deportes más importante del Reino Unido, conocido por su extensa emisión de fútbol. Fue fundado el 25 de marzo de 1990.</info>
+</item>
+
+<item>
+<title>SKY SPORTS 2 </title>
+<link>$doregex[m3u8]|User-Agent=iPad</link>
+<regex>
+<name>m3u8</name>
+<expres>playStream\(\'hls','(.*?)'</expres>
+<page>http://embratoria.com/player/is.php?s=skysports2</page>
+<referer>http://embratoria.com/</referer>
+</regex>
+<thumbnail>http://4.bp.blogspot.com/-jYg8ovLGy-g/VAW6cF2XvII/AAAAAAAAFUc/PuxutEG0yto/s1600/sky%2Bsports%2B2%2Blive%2Bmykora.png</thumbnail>
+<fanart>http://store.virginmedia.com/content/dam/eSales/TV/responsive/channels/tv-add-sky-sports-now.png</fanart>
+<info>Sky Sports es el canal de deportes más importante del Reino Unido, conocido por su extensa emisión de fútbol. Fue fundado el 25 de marzo de 1990.</info>
+</item>
+
+
+<item>
+<title>SKY SPORTS 3**SD**</title>
+<sportsdevil>http://crichd.tv/update/skys3.php</sportsdevil>
+   <referer>http://crichd.tv</referer>
+<thumbnail>http://3.bp.blogspot.com/-8V4y1J-wk6M/UjyRh6UAu5I/AAAAAAAAA30/4hvmVC9H2q0/s320/timthumb.php.png</thumbnail>
+<fanart>http://store.virginmedia.com/content/dam/eSales/TV/responsive/channels/tv-add-sky-sports-now.png</fanart>
+<info>Sky Sports es el canal de deportes más importante del Reino Unido, conocido por su extensa emisión de fútbol. Fue fundado el 25 de marzo de 1990.</info>
+</item>
+
+<item>
+          <title>SKY SPORTS 3 HQ</title>
+<link>$doregex[m3u8]|User-Agent=iPad</link>
+<regex>
+<name>m3u8</name>
+<expres>playStream\(\'hls','(.*?)'</expres>
+<page>http://embratoria.com/player/is.php?s=skysports3</page>
+<referer>http://embratoria.com/</referer>
+</regex>
+<thumbnail>http://3.bp.blogspot.com/-8V4y1J-wk6M/UjyRh6UAu5I/AAAAAAAAA30/4hvmVC9H2q0/s320/timthumb.php.png</thumbnail>
+<fanart>http://store.virginmedia.com/content/dam/eSales/TV/responsive/channels/tv-add-sky-sports-now.png</fanart>
+<info>Sky Sports es el canal de deportes más importante del Reino Unido, conocido por su extensa emisión de fútbol. Fue fundado el 25 de marzo de 1990.</info>
+               </item>  
+      
+   <item>
+<title>SKY SPORTS 4</title>
+<sportsdevil>http://crichd.tv/update/skys4.php</sportsdevil>
+   <referer>http://crichd.tv</referer>
+<thumbnail>http://www.skysports.com/core/img/channels/Sky-Sports-4-Logo.png</thumbnail>
+<fanart>http://store.virginmedia.com/content/dam/eSales/TV/responsive/channels/tv-add-sky-sports-now.png</fanart>
+<info>Sky Sports es el canal de deportes más importante del Reino Unido, conocido por su extensa emisión de fútbol. Fue fundado el 25 de marzo de 1990.</info>
+</item>
+
+   <item>
+          <title>SKY SPORTS 4 HQ</title>
+<link>$doregex[m3u8]|User-Agent=iPad</link>
+<regex>
+<name>m3u8</name>
+<expres>playStream\(\'hls','(.*?)'</expres>
+<page>http://embratoria.com/player/is.php?s=skysports4</page>
+<referer>http://embratoria.com/</referer>
+</regex>
+         <thumbnail>http://www.skysports.com/core/img/channels/Sky-Sports-4-Logo.png</thumbnail>
+<fanart>http://store.virginmedia.com/content/dam/eSales/TV/responsive/channels/tv-add-sky-sports-now.png</fanart>
+<info>Sky Sports es el canal de deportes más importante del Reino Unido, conocido por su extensa emisión de fútbol. Fue fundado el 25 de marzo de 1990.</info>
+               </item>
+      
+     <item>
+<title>SKY SPORTS 5 **SD**</title>
+<sportsdevil>http://crichd.tv/update/skys5.php</sportsdevil>
+   <referer>http://crichd.tv</referer>
+<thumbnail>http://www.skysports.com/core/img/channels/Sky-Sports-5-Logo.png</thumbnail>
+<fanart>http://store.virginmedia.com/content/dam/eSales/TV/responsive/channels/tv-add-sky-sports-now.png</fanart>
+<info>Sky Sports es el canal de deportes más importante del Reino Unido, conocido por su extensa emisión de fútbol. Fue fundado el 25 de marzo de 1990.</info>
+</item>
+
+
+<item>
+<title>SKY SPORTS 5 HQ</title>
+<link>$doregex[m3u8]|User-Agent=iPad</link>
+<regex>
+<name>m3u8</name>
+<expres>playStream\(\'hls','(.*?)'</expres>
+<page>http://embratoria.com/player/is.php?s=skysports5</page>
+<referer>http://embratoria.com/</referer>
+</regex>
+<thumbnail>http://www.skysports.com/core/img/channels/Sky-Sports-5-Logo.png</thumbnail>
+<fanart>http://store.virginmedia.com/content/dam/eSales/TV/responsive/channels/tv-add-sky-sports-now.png</fanart>
+<info>Sky Sports es el canal de deportes más importante del Reino Unido, conocido por su extensa emisión de fútbol. Fue fundado el 25 de marzo de 1990.</info>
+</item> 
+      
+  <item> 
+<title>SKY CALCIO</title>
+<link>$doregex[select_Url]</link>
+<regex>
+<name>select_Url</name>
+<expres>$pyFunction: '$doregex[get_sxstream]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36' if not '$doregex[get_sxstream]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'=='' else '$doregex[get_sxstream1]|User-Agent=iPhone'</expres>
+<page></page>
+</regex>
+<regex>
+<name>get_sxstream</name>
+<expres>src=.*[",'](.*m3u8.*?)[",']</expres>
+<page>http://www.liveonlinetv247.info/embed/skycalcio.php</page>
+<referer>http://www.liveonlinetv247.info/</referer>
+<agent></agent>
+</regex>
+<regex>
+<name>get_sxstream1</name>
+<expres>src=.*[",'](.*m3u8.*?)[",']</expres>
+<page>http://www.liveonlinetv247.info/embed/skycalcio.php</page>
+<referer>http://www.liveonlinetv247.info/</referer>
+<agent></agent>
+</regex>
+ <thumbnail>http://wikitv.eu/wp-content/uploads/2015/03/SKY-CALCIO.jpg</thumbnail>        
+<fanart>http://store.virginmedia.com/content/dam/eSales/TV/responsive/channels/tv-add-sky-sports-now.png</fanart>
+<info></info>
+  </item>
+               
+             <item>
+               <title>PREMIER SPORTS</title>
+<link>$doregex[select_Url]</link>
+<regex>
+<name>select_Url</name>
+<expres>$pyFunction: '$doregex[get_sxstream]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36' if not '$doregex[get_sxstream]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'=='' else '$doregex[get_sxstream1]|User-Agent=iPhone'</expres>
+<page></page>
+</regex>
+<regex>
+<name>get_sxstream</name>
+<expres>src=.*[",'](.*m3u8.*?)[",']</expres>
+<page>http://www.liveonlinetv247.info/embed/premiersports.php</page>
+<referer>http://www.liveonlinetv247.info/</referer>
+<agent></agent>
+</regex>
+<regex>
+<name>get_sxstream1</name>
+<expres>src=.*[",'](.*m3u8.*?)[",']</expres>
+<page>http://www.liveonlinetv247.info/embed/espn.php</page>
+<referer>http://www.liveonlinetv247.info/</referer>
+<agent></agent>
+</regex>
+         <thumbnail>https://upload.wikimedia.org/wikipedia/en/8/83/Premier_Sports_logo.png</thumbnail>
+<fanart>https://marchhockeymadness.files.wordpress.com/2015/07/premier-sports-logo-full-res-master.png</fanart>
+<info>Premiere Sport deportes variados.</info>
+               </item>http://crichd.tv/update/premier.php
+
+<item>
+               <title>PREMIER SPORTS</title>
+<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://crichd.tv/update/premier.php&id=&amp;width=640&amp;height=480&amp;autostart=true&amp;strech=exactfit</link>
+         <thumbnail>https://upload.wikimedia.org/wikipedia/en/8/83/Premier_Sports_logo.png</thumbnail>
+<fanart>https://marchhockeymadness.files.wordpress.com/2015/07/premier-sports-logo-full-res-master.png</fanart>
+<info>Premiere Sport deportes variados.</info>
+               </item>
+
+ 
+ 
+
+
+
+            <item>
+<title>Mountain 1080p</title>
+ <link>http://xrxs.net/video/live-p12moun-4728.m3u8</link>
+    <thumbnail>https://pbs.twimg.com/profile_images/514436572477792259/hFAmbhIh_400x400.png</thumbnail>
+    </item>
+ 
+ <item>
+<title>NBC GOLF 1080p</title>
+<link>http://tvegolf-i.Akamaihd.net/hls/live/218225/golfx/4296k/prog.m3u8|X-Forwarded-For=209.239.112.104</link>
+<thumbnail>https://upload.wikimedia.org/wikipedia/en/e/e4/NBC_Golf_logo.png</thumbnail>
+<fanart>http://kodi.tv/wp-content/uploads/zappy-frodo-background-680-600x336.jpg</fanart>
+<info>[B]Golf Channel on NBC is the branding used for broadcasts of golf tournaments produced by NBC Sports in conjunction with Golf Channel, on the NBC television[/B]</info>
+</item>
+
+<item>
+<title>NBC GOLF 720p</title>
+<link>http://tvegolf-i.Akamaihd.net/hls/live/218225/golfx/2596k/prog.m3u8|X-Forwarded-For=209.239.112.104</link>
+<thumbnail>https://upload.wikimedia.org/wikipedia/en/e/e4/NBC_Golf_logo.png</thumbnail>
+<fanart>http://kodi.tv/wp-content/uploads/zappy-frodo-background-680-600x336.jpg</fanart>
+<info>[B]Golf Channel on NBC is the branding used for broadcasts of golf tournaments produced by NBC Sports in conjunction with Golf Channel, on the NBC television[/B]</info>
+</item>
+
+<item>
+<title>NBC GOLF</title>
+<link>http://tvegolf-i.Akamaihd.net/hls/live/218225/golfx/1896k/prog.m3u8|X-Forwarded-For=209.239.112.104</link>
+<thumbnail>https://upload.wikimedia.org/wikipedia/en/e/e4/NBC_Golf_logo.png</thumbnail>
+<fanart>http://kodi.tv/wp-content/uploads/zappy-frodo-background-680-600x336.jpg</fanart>
+<info>[B]NFL Network es un canal de televisión de la National Football League (NFL), la liga estadounidense de fútbol americano.[/B]</info>
+</item>
+
+<item>
+<title>NFL HD</title>
+<link>http://nlds21.cdnak.neulion.com/nlds/nfl/nfltv/as/live/nfltv_hd_4500.m3u8?nltid=nflgp&nltdt=6&nltnt=1&uid=716458&hdnea=expires=1474309313~access=/nlds/nfl/nfltv/as/live/*~md5=4f168d439aba73344c5a37b2a406bad8|User-Agent=Safari/537.36 Mozilla/5.0 AppleWebKit/537.36 Chrome/31.0.1650.57</link>
+<thumbnail>http://www.clipartbest.com/cliparts/dT7/jy5/dT7jy5Xrc.png</thumbnail>
+<fanart>http://media-cache-ec0.pinimg.com/originals/19/50/d4/1950d414def2df8bce434f7ea8882fcb.jpg</fanart>
+<info>[B]NFL Network (occasionally abbreviated on-air as NFLN) is an American sports-oriented cable and satellite television network that is owned by the National[/B]</info>
+</item>
+
+
+<item>
+<title>NFL SD [COLOR  orange] Op 2[/COLOR]</title>
+<link>http://nlds21.cdnak.neulion.com/nlds/nfl/nfltv/as/live/nfltv_hd_1600.m3u8?nltid=nflgp&nltdt=6&nltnt=1&uid=716458&hdnea=expires=1474309313~access=/nlds/nfl/nfltv/as/live/*~md5=4f168d439aba73344c5a37b2a406bad8|User-Agent=Safari/537.36 Mozilla/5.0 AppleWebKit/537.36 Chrome/31.0.1650.57</link>
+<thumbnail>http://www.clipartbest.com/cliparts/dT7/jy5/dT7jy5Xrc.png</thumbnail>
+<fanart>http://media-cache-ec0.pinimg.com/originals/19/50/d4/1950d414def2df8bce434f7ea8882fcb.jpg</fanart>
+<info>[B]NFL Network (occasionally abbreviated on-air as NFLN) is an American sports-oriented cable and satellite television network that is owned by the National[/B]</info>
+</item>
+
+
+ <item>
+<title>PAC National 720p</title>
+ <link>http://xrxs.net/video/live-p12netw-2328.m3u8</link>
+    <thumbnail>https://pbs.twimg.com/profile_images/514436572477792259/hFAmbhIh_400x400.png</thumbnail>
+    </item>
+ 
+ <item>
+<title>PAC-12 net (Arizona) 720p</title>
+ <link>http://xrxs.net/video/live-p12ariz-2328.m3u8</link>
+    <thumbnail>https://pbs.twimg.com/profile_images/514436572477792259/hFAmbhIh_400x400.png</thumbnail>
+    </item>
+ 
+ <item>
+<title>PAC-12 Net. (Arizona) 1080p</title>
+ <link>http://xrxs.net/video/live-p12ariz-4728.m3u8</link>
+    <thumbnail>https://pbs.twimg.com/profile_images/514436572477792259/hFAmbhIh_400x400.png</thumbnail>
+    </item>
+ 
+ <item>
+<title>PAC-12 Net. (Bat Area) 720p</title>
+ <link>http://xrxs.net/video/live-p12baya-2328.m3u8</link>
+    <thumbnail>https://pbs.twimg.com/profile_images/514436572477792259/hFAmbhIh_400x400.png</thumbnail>
+    </item>
+ 
+ <item>
+<title>PAC-12 Net. (Bay Area) 1080p</title>
+ <link>http://xrxs.net/video/live-p12baya-4728.m3u8</link>
+    <thumbnail>https://pbs.twimg.com/profile_images/514436572477792259/hFAmbhIh_400x400.png</thumbnail>
+    </item>
+ 
+ <item>
+<title>PAC-12 Net. (Los Angeles) 720P</title>
+ <link>http://xrxs.net/video/live-p12losa-2328.m3u8</link>
+    <thumbnail>https://pbs.twimg.com/profile_images/514436572477792259/hFAmbhIh_400x400.png</thumbnail>
+    </item>
+ 
+ <item>
+<title>PAC-12 Net. (Oregon) 720P</title>
+ <link>http://xrxs.net/video/live-p12oreg-2328.m3u8</link>
+    <thumbnail>https://pbs.twimg.com/profile_images/514436572477792259/hFAmbhIh_400x400.png</thumbnail>
+    </item>
+ 
+ <item>
+<title>PAC-12 Net. (Oregon) 1080P</title>
+ <link>http://xrxs.net/video/live-p12oreg-4728.m3u8</link>
+    <thumbnail>https://pbs.twimg.com/profile_images/514436572477792259/hFAmbhIh_400x400.png</thumbnail>
+    </item>
+ 
+ <item>
+<title>PAC-12 Net. (Washington) 720P</title>
+ <link>http://xrxs.net/video/live-p12wash-2328.m3u8</link>
+    <thumbnail>https://pbs.twimg.com/profile_images/514436572477792259/hFAmbhIh_400x400.png</thumbnail>
+    </item>
+ 
+ <item>
+<title>PAC-12 Net. (Washington) 1080P</title>
+ <link>http://xrxs.net/video/live-p12wash-4728.m3u8</link>
+    <thumbnail>https://pbs.twimg.com/profile_images/514436572477792259/hFAmbhIh_400x400.png</thumbnail>
+    </item>
+ 
+ 
+ 
+ 
+ 
+<item>
+<title>WWE Network Live **SD**</title>
+<sportsdevil>http://www.crichd.tv/wwe-network.php</sportsdevil>
+   <referer>http://crichd.tv</referer>
+<thumbnail>http://vignette4.wikia.nocookie.net/logopedia/images/3/37/GoGo_Toys_2015.png</thumbnail>
+   <fanart>http://i.ytimg.com/vi/tWgcy55_A4g/maxresdefault.jpg</fanart>
+            <info>[B]WWE Network es un servicio de transmisión de video propiedad de WWE. El concepto fue originalmente anunciado en 2011[/B]</info>
+</item>

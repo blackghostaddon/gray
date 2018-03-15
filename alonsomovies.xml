@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<items>
+<view>movies</view>
+
+<!-- Alonso Perez Presenta -->
+
+<item>
+<title>Dead Rising</title>
+<link>$doregex[id]</link>
+<regex>
+<name>id</name>
+<expres>file:'(.*)'</expres>
+<page>http://streamin.to/embed-9qqxgi1rvdsi-740x360.html</page>
+<referer>http://streamin.to</referer>
+</regex>
+<fanart>https://image.tmdb.org/t/p/original/puZVaJYsgoxC2Ek7tiA6UK0FodA.jpg</fanart>
+<thumbnail>https://image.tmdb.org/t/p/w500/ysTty2OpMud8RTda60yvf6AhFuj.jpg</thumbnail> 
+<info></info>
+</item>
+
+<item>
+<title>Golpe de Estado</title>
+<link>$doregex[id]</link>
+<regex>
+<name>id</name>
+<expres>file:'(.*)'</expres>
+<page>http://streamin.to/embed-atdz9wizzb85-740x360.html</page>
+<referer>http://streamin.to</referer>
+</regex>
+<fanart>https://image.tmdb.org/t/p/original/sMuPoR2lVnsPELvLKpqvkNWHcRT.jpg</fanart>
+<thumbnail>https://image.tmdb.org/t/p/w500/ytHBqoNEC7gnOgFSYgEyAXoO7J8.jpg</thumbnail> 
+<info></info>
+</item>
+
+<item>
+<title>The Culling</title>
+<link>$doregex[id]</link>
+<regex>
+<name>id</name>
+<expres>file:'(.*)'</expres>
+<page>http://streamin.to/embed-jk20fmudy47m-740x360.html</page>
+<referer>http://streamin.to</referer>
+</regex>
+<fanart>https://image.tmdb.org/t/p/original/fFpaOzmoBzChM8drdI23MxDJa4L.jpg</fanart>
+<thumbnail>https://image.tmdb.org/t/p/w500/sdzqYgphFQsnALwu2wlTtq10zw1.jpg</thumbnail> 
+<info></info>
+</item>
+
+<item>
+<title>Los 4 Fantasticos</title>
+<link>$doregex[id]</link>
+<regex>
+<name>id</name>
+<expres>file:'(.*)'</expres>
+<page>http://streamin.to/embed-s1zihvrr3als-740x360.html</page>
+<referer>http://streamin.to</referer>
+</regex>
+<fanart>https://image.tmdb.org/t/p/original/3Kgu3ys6W6UZWWFty7rlTWgST63.jpg</fanart>
+<thumbnail>https://image.tmdb.org/t/p/w500/yd2alNpqpz08UFaxDa4lSldAMnj.jpg</thumbnail> 
+<info></info>
+</item>
+
+<item>
+<title>Mision Imposible: Nacion Secreta</title>
+<link>$doregex[id]</link>
+<regex>
+<name>id</name>
+<expres>file:'(.*)'</expres>
+<page>http://streamin.to/embed-usdfys0yw9l6-740x360.html</page>
+<referer>http://streamin.to</referer>
+</regex>
+<fanart>https://image.tmdb.org/t/p/original/vZMSji6u1Kfg5TcWWi4IAzfqXfC.jpg</fanart>
+<thumbnail>https://image.tmdb.org/t/p/w500/z2sJd1OvAGZLxgjBdSnQoLCfn3M.jpg</thumbnail> 
+<info></info>
+</item>

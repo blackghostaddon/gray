@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<!----------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					BIENVENIDO  A ADRYANLIST
+					
+					
+					www.adryanlist.info
+					
+					LISTA DE CANALES PARA KODI
+					
+					
+					
+
+
+					
+
+					
+					1. instalar el Addon AdryanList 
+						Descargar: http://addon.adryanlist.info
+						Mirror Mediafire: http://bit.ly/addonal
+
+					2.- tambien puedes buscar el addon RobinHood  o Livestreamspro
+						2.1: en el Livestreamspro agregar la url http://adryanlist.info
+
+
+					3.- Disfrutar ! 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					
+					
+					
+					PARA QUE LA LISTA SIGA ACTIVA , APOYAME INVITANDOME UN CAFE 
+					
+					A TRAVES DE UNA DONACION POR PAYPAL
+					
+					
+					a la cuenta adrian.bu@gmail.com
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					AYUDA  , SOPORTE, QUEJAS Y SUGERENCIAS
+					
+					
+					
+					twitter: @adryan
+					fb: adrian.bu
+					whatsapp / line / Telegram / +521 462 123 35 81
+
+					
+					
+					
+					
+					http://blog.adryanlist.info
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-->
+
+
+
+<items>
+<items_info> <!-- this is opitonal -->
+      <title>Adryan List </title> 
+      <genre>Tv Live</genre>
+      <description>: Lista de Canales para el Livestreamspro :</description>
+      <thumbnail>http://i.imgur.com/MWSXNtp.png</thumbnail>
+      <fanart>http://i.imgur.com/7izulmv.jpg</fanart>
+      <date>13.02.2015</date>
+      <credits>adryan</credits>
+    </items_info>
+	
+	
+	
+		
+	
+	
+
+
+
+<item>
+<title>                                    [COLOR skyblue][B]A D R Y A N [/COLOR][COLOR deepskyblue]L I S T[/B][/COLOR]</title>
+<link>http://shadowcrew.info/adryan/liist.xml</link><thumbnail>http://i.imgur.com/MWSXNtp.png</thumbnail><fanart>http://i.imgur.com/7izulmv.jpg</fanart>
+</item>
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>[COLOR lime]  •[/COLOR][COLOR deepskyblue]    AdryanList[/COLOR] </title>
+<link>http://ignorame</link><thumbnail>http://i.imgur.com/MWSXNtp.png</thumbnail><fanart>http://i.imgur.com/7izulmv.jpg</fanart>
+<externallink>http://shadowcrew.info/adryan/list.xml</externallink>
+</item>
+<item>
+<title>[COLOR lime]  •[/COLOR][COLOR deepskyblue]    1P   [/COLOR][COLOR skyblue] [/COLOR]</title>
+<link>http://ignorame</link><thumbnail>http://i.imgur.com/MWSXNtp.png</thumbnail><fanart>http://i.imgur.com/7izulmv.jpg</fanart>
+<externallink>http://shadowcrew.info/adryan/adryanop.xml</externallink>
+</item>
+
+<item>
+<title>[COLOR lime]  •[/COLOR][COLOR deepskyblue]    TP [/COLOR]</title>
+<link>http://ignorame</link><thumbnail>http://i.imgur.com/MWSXNtp.png</thumbnail><fanart>http://i.imgur.com/7izulmv.jpg</fanart>
+<externallink>http://shadowcrew.info/adryan/adryantotalplay.m3u</externallink>
+</item>
+<item>
+<title>[COLOR lime]  •[/COLOR][COLOR deepskyblue]    TP(2) [/COLOR]</title>
+<link>http://ignorame</link><thumbnail>http://i.imgur.com/MWSXNtp.png</thumbnail><fanart>http://i.imgur.com/7izulmv.jpg</fanart>
+<externallink>http://shadowcrew.info/adryan/adryantp.m3u</externallink>
+</item>
+
+</items>

@@ -1,0 +1,244 @@
+<item>
+<title>eltest</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title> [makelist.param3]</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>http://diskokosmiko.mx/img/fixed_logo_black.png</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
+<page>http://diskokosmiko.mx/pacharico/peliculas-hd-19324/list,1,32</page>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=[makelist.param1]</page>
+<rawpost>fileId=[makelist.param1]&__RequestVerificationToken=$doregex[tok]</rawpost>
+<referer>http://diskokosmiko.mx/[makelist.param2]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/[makelist.param2]</page>
+<referer>http://diskokosmiko.mx/pacharico/peliculas-hd-19324/list,1,32</referer>
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://diskokosmiko.mx/img/fixed_logo_black.png</thumbnail>
+</item>
+
+
+
+
+
+
+
+<item>
+<title> </title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title> [makelist.param3]</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>http://diskokosmiko.mx/img/fixed_logo_black.png</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
+<page>http://diskokosmiko.mx/pacharico/peliculas-hd-19324/list,1,1</page>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=[makelist.param1]</page>
+<rawpost>fileId=[makelist.param1]&__RequestVerificationToken=$doregex[tok]</rawpost>
+<referer>http://diskokosmiko.mx/[makelist.param2]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/[makelist.param2]</page>
+<referer>http://diskokosmiko.mx/pacharico/peliculas-hd-19324/list,1,1</referer>
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://diskokosmiko.mx/img/fixed_logo_black.png</thumbnail>
+</item>
+
+
+
+
+
+
+<item>
+<title>Agente Carter Temporada 1</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title> [makelist.param3]</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail></thumbnail>
+]]></listrepeat>
+<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
+<page>http://diskokosmiko.mx/shipwreck/marvel-agente-carter-temp-1-20675</page>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=[makelist.param1]</page>
+<rawpost>fileId=[makelist.param1]&__RequestVerificationToken=$doregex[tok]</rawpost>
+<referer>http://diskokosmiko.mx/[makelist.param2]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/[makelist.param2]</page>
+<referer>http://diskokosmiko.mx/shipwreck/marvel-agente-carter-temp-1-20675</referer>
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail> </thumbnail>
+</item>
+
+
+<item>
+<title>Prision School Temporada 1</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title> [makelist.param3]</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail></thumbnail>
+]]></listrepeat>
+<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
+<page>http://diskokosmiko.mx/shipwreck/prision-school-20581</page>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=[makelist.param1]</page>
+<rawpost>fileId=[makelist.param1]&__RequestVerificationToken=$doregex[tok]</rawpost>
+<referer>http://diskokosmiko.mx/[makelist.param2]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/[makelist.param2]</page>
+<referer>http://diskokosmiko.mx/shipwreck/prision-school-20581</referer>
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail> </thumbnail>
+</item>
+
+
+<item>
+<title>Jessica jones Temporada 1</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title> [makelist.param3]</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail></thumbnail>
+]]></listrepeat>
+<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
+<page>http://diskokosmiko.mx/shipwreck/jessica-jones-temporada-1-20569</page>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=[makelist.param1]</page>
+<rawpost>fileId=[makelist.param1]&__RequestVerificationToken=$doregex[tok]</rawpost>
+<referer>http://diskokosmiko.mx/[makelist.param2]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/[makelist.param2]</page>
+<referer>http://diskokosmiko.mx/shipwreck/jessica-jones-temporada-1-20569</referer>
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail> </thumbnail>
+</item>
+
+
+
+
+
+
+<item>
+<title>Penny dreadfull Temporada 2</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title> [makelist.param3]</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail></thumbnail>
+]]></listrepeat>
+<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
+<page>http://diskokosmiko.mx/Nightwing/penny-dreadful-episodios-temporada-2-latino-20391</page>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=[makelist.param1]</page>
+<rawpost>fileId=[makelist.param1]&__RequestVerificationToken=$doregex[tok]</rawpost>
+<referer>http://diskokosmiko.mx/[makelist.param2]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/[makelist.param2]</page>
+<referer>http://diskokosmiko.mx/Nightwing/penny-dreadful-episodios-temporada-2-latino-20391</referer>
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail> </thumbnail>
+</item>
+
+
+
+
+
+
+
+
+
+
+

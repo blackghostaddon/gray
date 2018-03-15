@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<!----------------------
+					BIENVENIDO  A KODI PARA TODOS
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					AYUDA  , SOPORTE, QUEJAS Y SUGERENCIAS
+					
+					
+					FACEBOOK : KODI PARA TODOS
+					
+-->
+
+
+
+<items>
+<items_info> <!-- this is opitonal -->
+      <title>KODI PARA TODOS</title> 
+      <genre>Tv Live</genre>
+      <description>: Lista de Canales para el Livestreamspro :</description>
+      <thumbnail>http://i.imgur.com/1uqsJ8r.jpg</thumbnail>
+      <fanart>http://i.imgur.com/1uqsJ8r.jpg</fanart>
+      <date>13.02.2015</date>
+      <credits>adryanlist</credits>
+    </items_info>
+	
+	
+	
+
+
+
+
+
+
+<item>
+<title>                           [COLOR white][B]KODI para TODOS[/B][/COLOR]</title>
+<link>http://IGNORA.ME</link><thumbnail>http://i.imgur.com/1uqsJ8r.jpg</thumbnail><fanart>http://i.imgur.com/1uqsJ8r.jpg</fanart>
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>[COLOR lime]  Lista Princicpal[/COLOR]</title>
+<link>http://ignorame</link>
+<thumbnail>http://i.imgur.com/1uqsJ8r.jpg</thumbnail>
+<fanart>http://i.imgur.com/1uqsJ8r.jpg</fanart>
+<externallink>https://dl.dropboxusercontent.com/s/ntxajtmuf2a3pfh/kodi%20Para%20Todos.text</externallink>
+</item>
+
+<item>
+<title>[COLOR cyan]  Peliculas Infantiles[/COLOR]</title>
+<link>http://ignorame</link>
+<thumbnail>http://i.imgur.com/1uqsJ8r.jpg</thumbnail>
+<fanart>http://i.imgur.com/1uqsJ8r.jpg</fanart>
+<externallink>http://dl.dropboxusercontent.com/s/vvy01d414jfkclp/Pel%C3%ADculas%20Infantiles.text</externallink>
+</item>
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>      </title>
+<link>http://ignora.me</link><thumbnail>http://i.imgur.com/1uqsJ8r.jpg</thumbnail><fanart>http://i.imgur.com/1uqsJ8r.jpg</fanart>
+</item>	
+
+
+
+
+<item>
+<title>[COLOR red]Unete a nuestro Grupo en facebook[KODIPARATODOS] o envia tu lista a kodiparatodos@gmail.com[/COLOR]</title>
+<link>http://ignorame</link>
+<thumbnail>http://i.imgur.com/1uqsJ8r.jpg</thumbnail>
+<fanart>http://i.imgur.com/1uqsJ8r.jpg</fanart>
+</item>	
+
+
+</items>
+
+

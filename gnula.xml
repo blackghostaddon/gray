@@ -1,0 +1,3488 @@
+
+<SetViewMode>55</SetViewMode>
+
+
+
+<item>
+<title>[B][  ][/B]    [B]BUSCAR SERIE[/B] seriespapaya</title>
+<link>$doregex[makelist1]</link>
+
+
+
+
+
+
+<regex>
+<name>makelist1</name>
+<listrepeat><![CDATA[
+<SetViewMode>55</SetViewMode>
+<title>[makelist1.param1]   </title>
+<link>$doregex[makelist2]</link>
+<thumbnail>http://www.seriespapaya.com/uploads/[makelist1.param2]</thumbnail>
+<fanart>http://www.seriespapaya.com/uploads/[makelist1.param2]</fanart>
+]]></listrepeat>
+<expres><![CDATA[titulo\":\"(.*?)\".*?uploads\\/(.*?)\".*?serie\\\/(.*?)\"]]></expres>
+<page>http://www.seriespapaya.com/buscar.php?term=$doregex[search]</page>
+</regex>
+
+<regex>
+<name>search</name>
+<expres><![CDATA[#$pyFunction
+import xbmc
+import xbmcaddon
+import xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+    dialog = xbmcgui.Dialog()
+    d = dialog.input('Buscar Serie: ejemplo: flash o the walking dead', type=xbmcgui.INPUT_ALPHANUM).replace(" ", "+")
+    return d
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+
+
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<SetViewMode>55</SetViewMode>
+<title>[makelist1.param1] [makelist2.param2]     </title>
+<link>$doregex[makelist3]</link>
+<thumbnail>http://www.seriespapaya.com/[makelist1.param1]</thumbnail>
+<fanart>http://www.seriespapaya.com/[makelist1.param1]</fanart>
+]]></listrepeat>
+<expres><![CDATA[href="(.*?)".*?nbsp\;(.*?)<]]></expres>
+<page>http://www.seriespapaya.com/serie/[makelist1.param3]</page>
+</regex>
+
+
+
+<regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+<SetViewMode>55</SetViewMode>
+<title>[makelist1.param1] [makelist2.param2] | Idioma:[B][makelist3.param1][/B]  Calidad:[B][makelist3.param5][/B]  Server:[B][makelist3.param3][/B]        </title>
+<link>$doregex[id3]</link>
+<thumbnail>http://www.seriespapaya.com/[makelist1.param1]</thumbnail>
+<fanart>http://www.seriespapaya.com/[makelist1.param1]</fanart>
+]]></listrepeat>
+<expres><![CDATA[idioma[\w\W\s]{0,17}images\/(.*?)\.p[\w\W\s]{0,30}fecha\"\>\n(.*?)<[\w\W\s]{0,117}(Streama.*?|Gamo.*?|Vidoz.*?|Openlo.*?|Kingv.*?)<[\w\W\s]{0,37}href="(.*?)"[\w\W\s]{0,87}calidad">\n(.*?)<]]></expres>
+<page>http://www.seriespapaya.com/[makelist2.param1]</page>
+</regex>
+
+
+
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = '$doregex[link]'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://blackaddon.rf.gd/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+<regex>
+<name>link</name>
+<expres>location\.href=\'(.*?)\'</expres>
+<page>[makelist3.param4]</page>[makelist3.param2]
+</regex>
+
+
+<thumbnail>http://blackaddon.rf.gd/gray/img/adryflix.png</thumbnail><fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart></item>
+
+
+
+
+
+
+
+
+
+<item>
+<title>[B][  ][/B]    [B]BUSCAR SERIE[/B] metaseries</title>
+<link>$doregex[makelist4]</link>
+
+
+<regex>
+<name>makelist4</name>
+<listrepeat><![CDATA[
+<SetViewMode>55</SetViewMode>
+<title>[makelist4.param2]</title>
+<link>$doregex[makelist3]</link>
+<thumbnail>http://blackaddon.rf.gd/gray/img/adryflix.png</thumbnail>
+]]></listrepeat>
+<expres>entry-title.*?href="(.*?)".*?bookmark">(.*?)en\ses</expres>
+<page>http://metaserie.com/?s=$doregex[search]</page>
+</regex>
+
+
+
+<regex>
+<name>search</name>
+<expres><![CDATA[#$pyFunction
+import xbmc
+import xbmcaddon
+import xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+    dialog = xbmcgui.Dialog()
+    d = dialog.input('Buscar Serie: ejemplo: Futurama', type=xbmcgui.INPUT_ALPHANUM).replace(" ", "+")
+    return d
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+
+
+
+
+
+<regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+<SetViewMode>55</SetViewMode>
+<title>[makelist3.param2]</title>
+<link>$doregex[makelist2]</link>
+<thumbnail>http://blackaddon.rf.gd/gray/img/adryflix.png</thumbnail>
+]]></listrepeat>
+<expres>href="(.*?)">(Tempo.*?)<</expres>
+<page>[makelist4.param1]</page>
+</regex>
+
+
+
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<SetViewMode>55</SetViewMode>
+<title>[makelist2.param2]</title>
+<link>$doregex[makelist]</link>
+<thumbnail>http://blackaddon.rf.gd/gray/img/adryflix.png</thumbnail>
+]]></listrepeat>
+<expres>entry-title.*?href="(.*?)".*?bookmark">(.*?)<</expres>
+<page>[makelist3.param1]</page>
+</regex>
+
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<SetViewMode>55</SetViewMode>
+<title>server:[makelist.param3] - idioma:[makelist.param1]</title>
+<link>$doregex[id3]</link>
+<thumbnail>http://blackaddon.rf.gd/gray/img/adryflix.png</thumbnail>
+]]></listrepeat>
+<expres>img\/(.*?)\.png[\w\W\s]{0,80}domain=(.*?)\"[\w\W\s]{0,5}nbsp\;(.*?)<</expres>
+<page>[makelist2.param1]</page>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/adryflix.png</thumbnail><fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+</item>
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = '[makelist.param2]'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://blackaddon.rf.gd/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+<thumbnail>http://blackaddon.rf.gd/gray/img/adryflix.png</thumbnail><fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+</item>
+
+
+
+
+ <item>
+<title>[B]The Walking Dead[/B]  Seccion Especial </title>
+<link>http://ignorame</link>
+<thumbnail>http://blackaddon.rf.gd/gray/img/adryflix.png</thumbnail><fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<externallink>http://blackaddon.rf.gd/gray/twd8.xml</externallink>
+</item>
+
+
+
+
+
+ <item>
+<title>[B]Juego de Tronos[/B]  Seccion Especial </title>
+<link>http://ignorame</link>
+<thumbnail>http://blackaddon.rf.gd/gray/img/got.png</thumbnail><fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<externallink>http://blackaddon.rf.gd/gray/evento.xml</externallink>
+</item>
+
+
+
+ <iem>
+<title>[B][  ][/B]    [B]BUSCAR SERIE[/B]   </title>
+<link>http://ignora.me</link>
+<externallink>http://blackaddon.rf.gd/gray/buscarserie.xml</externallink>
+<thumbnail>http://blackaddon.rf.gd/gray/img/adryflix.png</thumbnail><fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+</item>
+
+
+ <item>
+<title>[B]MIS SERIES FAVORITAS[/B]  VO </title>
+<link>http://ignora.me</link>
+<externallink>http://blackaddon.rf.gd/gray/favoritas.xml</externallink>
+<thumbnail>http://blackaddon.rf.gd/gray/img/adryflix.png</thumbnail><fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+</item>
+
+
+
+
+
+<item>
+<title>[B]SERIES PLUS[/B]    </title>
+<link>$doregex[makelist2]</link>
+
+
+<regex>
+  <name>makelist2</name>
+  <listrepeat><![CDATA[
+  <SetViewMode>55</SetViewMode>
+        <title>[makelist2.param1]</title>
+<link>$doregex[makelist]</link>
+		<thumbnail>[makelist2.param3]</thumbnail>
+<fanart>[makelist2.param3]</fanart>
+]]></listrepeat>
+<expres>Name:"(.*?)" url:"(.*?)" img:"(.*?)"; server:"(.*?)"</expres>
+<page>http://blackaddon.rf.gd/gray/seriesdb.txt</page>
+<cookieJar></cookieJar>
+</regex>
+
+
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>$pyFunction:('[makelist.param3]').replace('Espa&#241;ol','')</title>
+        <link>$doregex[getUrl]</link>
+				<thumbnail>[makelist2.param3]</thumbnail>
+	<fanart>[makelist2.param3]</fanart>
+        ]]></listrepeat>
+<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
+<page>[makelist2.param2]/list,1,15</page>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>[makelist2.param4]/action/DownloadFile?location=fi&amp;f=[makelist.param1]</page>
+<rawpost>fileId=[makelist.param1]&__RequestVerificationToken=$doregex[tok]</rawpost>
+<referer>[makelist2.param4]/[makelist.param2]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>[makelist2.param4]/[makelist.param2]</page>
+<referer>[makelist2.param4]/adryanlist/fileuploader-67183/list,4,15</referer>
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/adryflix.png</thumbnail>
+</item>
+
+
+
+
+
+
+<iem>
+<title>[B]TV-SHOWS[/B]  English Audio [VO]  </title>
+<link>$doregex[makelist3]</link>
+
+<regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+<title> [makelist3.param2]  </title>
+<link>$doregex[makelist2]</link>
+]]></listrepeat>
+<expres>href="(.*?)">(.*?)<</expres>
+<page>http://dl.tehmovies.com/94/series/</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>[makelist2.param2] </title>
+<link>$doregex[makelist]</link>
+]]></listrepeat>
+<expres>href="(.*?)">(.*?)<</expres>
+<page>http://dl.tehmovies.com/94/series/[makelist3.param1]</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+
+
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title> [makelist.param2]</title>
+<link>http://dl.tehmovies.com/94/series/[makelist3.param1][makelist2.param2][makelist.param1]</link>
+]]></listrepeat>
+<expres>href="(.*?)">(.*?)<</expres>
+<page>http://dl.tehmovies.com/94/series/[makelist3.param1][makelist2.param2]</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+ <thumbnail>http://blackaddon.rf.gd/gray/img/adryflix.png</thumbnail><fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+</item>
+
+
+
+
+
+
+
+
+
+<item>
+<title>[B]Series[/B] PLAYLIST I </title>
+<link>$doregex[makelist3]</link>
+
+<regex>
+  <name>makelist3</name>
+  <listrepeat><![CDATA[
+        <title>[makelist3.param2] - [makelist3.param3]</title>
+        <link>$doregex[makelist2]</link>
+		<thumbnail></thumbnail>
+        ]]></listrepeat>
+<expres>playlist:"(.*?)" name:"(.*?)" info:"(.*?)";</expres>
+<page>http://blackaddon.rf.gd/gray/kozm.txt</page>
+<cookieJar></cookieJar>
+</regex>
+
+
+
+
+
+<regex>
+  <name>makelist2</name>
+  <listrepeat><![CDATA[
+        <title>[makelist2.param2]</title>
+        <link>$doregex[makelist]</link>
+		<thumbnail>[makelist2.param3]</thumbnail>
+        ]]></listrepeat>
+<expres>class="name" href="(.*?)">(.*?)<[\w\W\s]{0,190}src="(.*?)"</expres>
+<page>[makelist3.param1]</page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title> [makelist.param3]</title>
+        <link>$doregex[getUrl]</link>
+        ]]></listrepeat>
+<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
+<page>http://diskokosmiko.mx[makelist2.param1]/list,1,20</page>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=[makelist.param1]</page>
+<rawpost>fileId=[makelist.param1]&__RequestVerificationToken=$doregex[tok]</rawpost>
+<referer>http://diskokosmiko.mx/[makelist.param2]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/[makelist.param2]</page>
+<referer>http://diskokosmiko.mx[makelist2.param1]/list,1,15</referer>
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/adryflix.png</thumbnail><fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<iem>
+<title>[B]SERIES GNULA[/B] [-] </title>
+
+<link>$doregex[makelist0]</link>
+
+<regex>
+<name>makelist0</name>
+<listrepeat><![CDATA[
+<SetViewMode>55</SetViewMode>
+<title>[makelist0.param2]   </title>
+<link>$doregex[makelist1]</link>
+]]></listrepeat>
+<expres><![CDATA[href=\"\/(lista-de-series.*?)">(.*?)<]]></expres>
+<page>http://gnula.se/lista-de-series/</page>
+</regex>
+
+
+
+
+<regex>
+<name>makelist1</name>
+<listrepeat><![CDATA[
+<SetViewMode>55</SetViewMode>
+<title>[makelist1.param2]   </title>
+<link>$doregex[makelist2]</link>
+]]></listrepeat>
+<expres><![CDATA[a\shref="(.*?)"\stitle="([makelist0.param2].*?)">(.*?)<]]></expres>
+<page>http://gnula.se/[makelist0.param1]</page>
+</regex>
+
+
+
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<SetViewMode>55</SetViewMode>
+<title>[makelist2.param3]  [makelist2.param2]   </title>
+<link>$doregex[makelist3]</link>
+]]></listrepeat>
+<expres><![CDATA[blank\"\shref="(.*?)".*?strong>(.*?)<.*?rong>(.*?)<]]></expres>
+<page>http://gnula.se[makelist1.param1]</page>
+</regex>
+
+
+
+<regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+<SetViewMode>55</SetViewMode>
+<title>[makelist2.param3][makelist2.param2] | Idioma:[B][makelist3.param3][/B]  Server:[B][makelist3.param2][/B]</title>
+<link>$doregex[id3]</link>
+<thumbnail>[makelist2.param2]</thumbnail>
+<fanart>[makelist2.param2]</fanart>
+]]></listrepeat>
+<expres><![CDATA[href="(.*?)"[\w\W\s]{0,230}domain=(gamovideo.*?|vidoza.*?|kingvid.*?|openload.*?|streamango.*?)"[\w\W\s]{0,230}img\/lng\/(.*?)\.png]]></expres>
+<page>[makelist2.param1]</page>
+</regex>
+
+
+
+
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = '$doregex[link]'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://blackaddon.rf.gd/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+<thumbnail>http://blackaddon.rf.gd/gray/img/adryflix.png</thumbnail><fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart></item>
+
+
+
+
+
+<item>
+<title>[B]SERIES PAPAYA[/B] [-] </title>
+<link>$doregex[makelist1]</link>
+
+
+
+
+
+
+<regex>
+<name>makelist1</name>
+<listrepeat><![CDATA[
+<SetViewMode>55</SetViewMode>
+<title>[makelist1.param3]   </title>
+<link>$doregex[makelist2]</link>
+<thumbnail>http://www.seriespapaya.com/[makelist1.param1]</thumbnail>
+<fanart>http://www.seriespapaya.com/[makelist1.param1]</fanart>
+]]></listrepeat>
+<expres><![CDATA[src="(.*?)"[\w\W\s]{0,60}href="(.*?)".*?\">(.*?)<]]></expres>
+<page>$doregex[select]</page>
+</regex>
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+   import xbmcgui
+   dialog = xbmcgui.Dialog()
+   ret = dialog.select('Elige tu Audio preferido ', ['Series Populares', 'Series Recomendadas', 'Series de Estreno'])
+   lists = ['http://www.seriespapaya.com/lista-series-populares/', 'http://www.seriespapaya.com/lista-series-recomendadas/','http://www.seriespapaya.com/lista-series-estrenos/']
+   return lists[ret]
+]]></expres>
+<page></page>
+</regex>
+
+
+
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<SetViewMode>55</SetViewMode>
+<title>[makelist1.param3] [makelist2.param2]     </title>
+<link>$doregex[makelist3]</link>
+<thumbnail>http://www.seriespapaya.com/[makelist1.param1]</thumbnail>
+<fanart>http://www.seriespapaya.com/[makelist1.param1]</fanart>
+]]></listrepeat>
+<expres><![CDATA[href="(.*?)".*?nbsp\;(.*?)<]]></expres>
+<page>http://www.seriespapaya.com/[makelist1.param2]</page>
+</regex>
+
+
+
+<regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+<SetViewMode>55</SetViewMode>
+<title>[makelist1.param3] [makelist2.param2] | Idioma:[B][makelist3.param1][/B]  Calidad:[B][makelist3.param5][/B]  Server:[B][makelist3.param3][/B]        </title>
+<link>$doregex[id3]</link>
+<thumbnail>http://www.seriespapaya.com/[makelist1.param1]</thumbnail>
+<fanart>http://www.seriespapaya.com/[makelist1.param1]</fanart>
+]]></listrepeat>
+<expres><![CDATA[idioma[\w\W\s]{0,17}images\/(.*?)\.p[\w\W\s]{0,30}fecha\"\>\n(.*?)<[\w\W\s]{0,117}(Streama.*?|Gamo.*?|Vidoz.*?|Openlo.*?|Kingv.*?)<[\w\W\s]{0,37}href="(.*?)"[\w\W\s]{0,87}calidad">\n(.*?)<]]></expres>
+<page>http://www.seriespapaya.com/[makelist2.param1]</page>
+</regex>
+
+
+
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = '$doregex[link]'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://blackaddon.rf.gd/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+<regex>
+<name>link</name>
+<expres>location\.href=\'(.*?)\'</expres>
+<page>[makelist3.param4]</page>[makelist3.param2]
+</regex>
+
+
+<thumbnail>http://blackaddon.rf.gd/gray/img/adryflix.png</thumbnail><fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart></item>
+
+
+
+
+
+
+
+<item>
+<title>[B]INKA SERIES [/B] [-] </title>
+
+<link>$doregex[makelist0]</link>
+
+<regex>
+<name>makelist0</name>
+<listrepeat><![CDATA[
+<title>Pagina [makelist0.param1]</title>
+<link>$doregex[makelist1]</link>
+]]></listrepeat>
+<expres>'(.*?)'</expres>
+<page>'1''2''3''4''5''6''7''8''9''10''11''12''13''14''15''16''17''18''19''20''21''22''23''24''25'</page>
+</regex>
+
+
+<regex>
+<name>makelist1</name>
+<listrepeat><![CDATA[
+<SetViewMode>55</SetViewMode>
+<title>[makelist1.param2]   </title>
+<link>$doregex[makelist2]</link>
+<fanart>[makelist1.param3]</fanart>
+<thumbnail>[makelist1.param3]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[poster\"\shref="(.*?)"\stitle="(.*?)".*?src="(.*?)"]]></expres>
+<page>http://www.inkaseries.com/ultimas-series-agregadas/page/[makelist0.param1]/</page>
+</regex>
+
+
+
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<SetViewMode>55</SetViewMode>
+<title>[makelist1.param2] - [makelist2.param3]    </title>
+<link>$doregex[makelist3]</link>
+<fanart>[makelist1.param3]</fanart>
+<thumbnail>[makelist1.param3]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[a\shref="(.*?)"\stitle="(T.*?)">(.*?)-]]></expres>
+<page>[makelist1.param1]</page>
+</regex>
+
+
+
+<regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+<SetViewMode>55</SetViewMode>
+<title>[makelist1.param2] - [makelist2.param3]  | [B][makelist3.param4][/B]  [B][makelist3.param5][/B]  Server:[B][makelist3.param3][/B]        </title>
+<urlsolve>[makelist3.param1]</urlsolve>
+<fanart>[makelist1.param3]</fanart>
+<thumbnail>[makelist1.param3]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[domain=(http://gamovideo.*?|https://vidoza.*?|https://kingvid.*?|https://openload.*?|https://streamango.*?)"\s.*?title="(.*?)".*?span>(.*?)<.*?<td>(.*?)<.*?<td>(.*?)<]]></expres>
+<page>[makelist2.param1]</page>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/adryflix.png</thumbnail><fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart></item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>[B]MiradeTodo[/B]  Series    </title>
+<link>$doregex[makelist0]</link>
+
+
+
+
+<regex>
+    <name>makelist0</name> movies  (all pages)
+ <listrepeat><![CDATA[
+   <title> [makelist0.param3]</title>
+   <link>$doregex[makelist5]</link>
+   <thumbnail>[makelist0.param2]</thumbnail>
+<fanart>[makelist0.param2]</fanart>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re, requests
+def GetLSProData(page_data,Cookie_Jar,m):
+
+################################################################## FORMULARY #################################################################
+ starturl = 'http://miradetodo.io/'     ### usually, ~ 'http://website.com/category/' ###
+ categorylink = 'series' ### check the number of the param ###
+ centerurl = '/page/'      ### something like  '/page/' ###
+ firstpage = 1 ### probably  = 1 ###
+ endurl = '' ### can be empty ###    ### endurl without final / (SLASH) ###
+#
+ dataregex = 'class=\"item.*?href="(.*?)".*?src="(.*?)".*?alt="(.*?)"'      ### To adapt ###
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:50.0) Gecko/20100101 Firefox/50.0', 'Referer': ''}      ### To adapt ###
+##############################################################################################################################################
+
+############################## GENERIC PART #####################################
+ fullurl = starturl + categorylink + centerurl + str(firstpage) + endurl #
+ source = requests.get(fullurl, headers= headers).text #
+ data = [] #
+#
+ last = 10 #
+ while firstpage <= last: #
+    try: #
+        fullurl = starturl + categorylink + centerurl + str(firstpage) + endurl #
+        source = requests.get(fullurl, headers=headers).text #
+        data += re.findall(dataregex, source) #
+        firstpage += 1 #
+    except: #
+        pass #
+ return data #
+##########################################################by#twogun#and#jujuuj###
+]]></expres><page></page>
+</regex>
+
+
+
+
+
+<regex>
+<name>makelist5</name>
+<listrepeat><![CDATA[
+<SetViewMode>55</SetViewMode>
+<title>[makelist5.param1][makelist5.param3]    </title>
+<link>$doregex[makelist2]</link>
+<thumbnail>[makelist4.param2]</thumbnail>
+<fanart>[makelist4.param2]</fanart>
+]]></listrepeat>
+<expres><![CDATA[numerando">(.*?)<.*?href="(.*?)">(.*?)<]]></expres>
+<page>[makelist0.param1]</page>
+</regex>
+
+
+
+
+
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<SetViewMode>55</SetViewMode>
+<title>MOSTRAR OPCIONES:[makelist5.param1][makelist5.param3] </title>
+<link>$doregex[makelist3]</link>
+<thumbnail>[makelist2.param3]</thumbnail>
+<fanart>[makelist2.param3]</fanart>
+]]></listrepeat>
+<expres><![CDATA[data-lazy-src=\"(.*?)\"]]></expres>
+<page>[makelist5.param2]</page>
+</regex>
+
+
+<regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+<SetViewMode>55</SetViewMode>
+<title>[makelist5.param1][makelist5.param3]   Server:[B][makelist3.param2][/B]</title>
+<link>$doregex[id3]</link>
+<thumbnail>[makelist2.param3]</thumbnail>
+<fanart>[makelist2.param3]</fanart>
+]]></listrepeat>
+<expres><![CDATA[.*?id=(.*?)\&[\w\W\s]{0,150}span>(.*?)<]]></expres>
+<page>[makelist2.param1]</page>
+</regex>
+
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = '$doregex[uno]'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://blackaddon.rf.gd/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+<regex>
+<name>uno</name>
+<expres>$pyFunction:base64.b64decode('[makelist3.param1]')</expres>
+<page></page>
+</regex>
+
+
+<thumbnail>http://blackaddon.rf.gd/gray/img/adryflix.png</thumbnail><fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart></item>
+
+
+
+
+
+
+
+
+<item>
+<title>[B]MetaSeries[/B]  Series en Audio Latino   </title>
+<link>$doregex[makelist5]</link>
+<regex>
+   <name>makelist5</name>
+   <listrepeat><![CDATA[
+       <SetViewMode>55</SetViewMode>
+	   <title>Pagina [makelist5.param1]</title>
+       <link>$doregex[makelist4]</link>
+<thumbnail>http://blackaddon.rf.gd/gray/img/adryflix.png</thumbnail><fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+   ]]></listrepeat>
+   <expres><![CDATA[paginado:"(.*?)";]]></expres>
+   <page>http://blackaddon.rf.gd/gray/kozm.txt</page>
+   <cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>makelist4</name>
+<listrepeat><![CDATA[
+<SetViewMode>55</SetViewMode>
+<title>[makelist4.param2]</title>
+<link>$doregex[makelist3]</link>
+<info>[makelist4.param3]</info>
+<fanart>[makelist4.param4]</fanart>
+<thumbnail>[makelist4.param4]</thumbnail>
+]]></listrepeat>
+<expres>href="(.*?)"[\w\W\s]{0,3}title="(.*?)"[\w\W\s]{0,35}span>(.*?)[\w\W\s]{0,50}src="(.*?)"</expres>
+<page>http://metaserie.com/series-agregadas/page/[makelist5.param1]/</page>
+</regex>
+
+<regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+<SetViewMode>55</SetViewMode>
+<title>[makelist3.param2]</title>
+<link>$doregex[makelist2]</link>
+<info>[makelist4.param3]</info>
+<fanart>[makelist4.param4]</fanart>
+<thumbnail>[makelist4.param4]</thumbnail>
+]]></listrepeat>
+<expres>href="(.*?)">(Tempo.*?)<</expres>
+<page>[makelist4.param1]</page>
+</regex>
+
+
+
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<SetViewMode>55</SetViewMode>
+<title>[makelist2.param2]</title>
+<link>$doregex[makelist]</link>
+<info>[makelist4.param3]</info>
+<fanart>[makelist4.param4]</fanart>
+<thumbnail>[makelist4.param4]</thumbnail>
+]]></listrepeat>
+<expres>entry-title.*?href="(.*?)".*?bookmark">(.*?)<</expres>
+<page>[makelist3.param1]</page>
+</regex>
+
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<SetViewMode>55</SetViewMode>
+<title>server:[makelist.param3] - idioma:[makelist.param1]</title>
+<link>$doregex[id3]</link>
+<info>[makelist4.param3]</info>
+<fanart>[makelist4.param4]</fanart>
+<thumbnail>[makelist4.param4]</thumbnail>
+]]></listrepeat>
+<expres>img\/(.*?)\.png[\w\W\s]{0,80}domain=(.*?)\"[\w\W\s]{0,5}nbsp\;(.*?)<</expres>
+<page>[makelist2.param1]</page>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/adryflix.png</thumbnail><fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+</item>
+
+
+
+
+
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = '[makelist.param2]'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://blackaddon.rf.gd/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+<thumbnail>http://blackaddon.rf.gd/gray/img/adryflix.png</thumbnail><fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>[B]Series Bajui[/B] Categorias | (multiservers) </title>
+<link>$doregex[makelist0]</link>
+
+
+
+<regex>
+   <name>makelist0</name>
+   <listrepeat><![CDATA[
+       <title>[makelist0.param2]</title>
+       <link>$doregex[makelist]</link>
+<thumbnail>http://blackaddon.rf.gd/gray/img/adryflix.png</thumbnail><fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+   ]]></listrepeat>
+   <expres><![CDATA[baju:"(.*?)" name:"(.*?)";]]></expres>
+   <page>http://blackaddon.rf.gd/gray/kozm.txt</page>
+   <cookieJar></cookieJar>
+</regex>
+
+
+
+
+<regex>
+   <name>makelist</name>
+   <listrepeat><![CDATA[
+       <title>Pagina [makelist.param1]</title>
+       <link>$doregex[makelist2]</link>
+<thumbnail>http://blackaddon.rf.gd/gray/img/adryflix.png</thumbnail><fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+   ]]></listrepeat>
+   <expres><![CDATA[paginado:"(.*?)";]]></expres>
+   <page>http://blackaddon.rf.gd/gray/kozm.txt</page>
+   <cookieJar></cookieJar>
+</regex>
+
+
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>   [makelist2.param3]    </title>
+<link>$doregex[makelist3]</link>
+<thumbnail>http://www.bajui.com/[makelist2.param2]</thumbnail>
+<fanart>http://www.bajui.com/[makelist2.param2]</fanart>
+]]></listrepeat>
+<expres><![CDATA[href="(.*?)"[\w\W\s]{0,15}src="(.*?)".*Imagen(.*?)"]]></expres>
+<page>[makelist0.param1]/pag:[makelist.param1]</page>
+</regex>
+
+
+
+
+
+
+<regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+<title>   [makelist3.param1]  [makelist3.param2]    </title>
+<link>$doregex[makelist4]</link>
+<thumbnail>http://www.bajui.com/[makelist2.param2]</thumbnail>
+<fanart>http://www.bajui.com/[makelist2.param2]</fanart>
+]]></listrepeat>
+<expres><![CDATA[\/usuario\/(.*?)"[\w\W\s]{0,40}datos-act">(.*?)<[\w\W\s]{0,140}boton-mostrar-(.*?)".*mostrar_enlaces.*,'(.*)']]></expres>
+<page>http://www.bajui.com[makelist2.param1] </page>
+</regex>
+
+
+
+<regex>
+<name>makelist4</name>
+<listrepeat><![CDATA[
+<title>[makelist4.param1]</title>
+<urlsolve>[makelist4.param1]</urlsolve>
+<thumbnail>http://www.bajui.com/[makelist2.param2]</thumbnail>
+<fanart>http://www.bajui.com/[makelist2.param2]</fanart>
+]]></listrepeat>
+<expres>href="(.*?)"\starget</expres>
+<page>http://www.bajui.com/ajax/mostrar-enlaces.php?id=[makelist3.param3]&amp;code=[makelist3.param4]</page>
+<thumbnail>http://blackaddon.rf.gd/gray/img/adryflix.png</thumbnail><fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tem>
+<title>[B]SeriesBlanco[/B] Indice Alfabetico </title>
+
+<link>$doregex[makelist2]</link>
+
+
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>Letra [makelist2.param2]</title>
+<link>$doregex[makelist4]</link>
+]]></listrepeat>
+<expres><![CDATA[seriesblanco.com(.*?)"[\w\W\s]{0,16}label-primary'>(.*?)<]]></expres>
+<page>http://seriesblanco.com/listado/accion/</page>
+</regex>
+
+
+
+
+	<regex>
+   <name>makelist4</name>
+   <listrepeat><![CDATA[
+       <title>Pagina [makelist4.param1]</title>
+       <link>$doregex[makelist1]</link>
+<thumbnail></thumbnail>
+   ]]></listrepeat>
+   <expres><![CDATA[paginado:"(.*?)";]]></expres>
+   <page>http://blackaddon.rf.gd/gray/kozm.txt</page>
+   <cookieJar></cookieJar>
+</regex>
+
+
+
+
+<regex>
+<name>makelist1</name>
+<listrepeat><![CDATA[
+<title>[makelist1.param3]</title>
+<link>$doregex[makelist0]</link>
+<thumbnail>[makelist1.param2]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[href='(.*?)'[\w\W\s]{0,55}src='(.*?)'[\w\W\s]{0,2}title='(.*?)']]></expres>
+<page>http://seriesblanco.com[makelist2.param1]?pagina=[makelist4.param1]</page>
+</regex>
+
+
+
+
+
+<regex>
+<name>makelist0</name>
+<listrepeat><![CDATA[
+<title>[makelist1.param3]- [makelist0.param2]</title>
+<link>$doregex[makelist]</link>
+<thumbnail>[makelist1.param2]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[ref='(.*?)'[\w\W\s]{0,36}btn-rounded[\w\W\s]{0,14}'>(.*?)<]]></expres>
+<page>http://seriesblanco.com[makelist1.param1]</page>
+</regex>
+
+
+
+
+
+
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist1.param3]:[makelist0.param2] - idioma:[makelist.param2]</title>
+<link>$doregex[url]/$doregex[id2]/v.flv</link>
+<thumbnail>[makelist1.param2]</thumbnail>
+<regex>
+<name>url</name>
+<expres>vplayer[\w\W\s]{0,8}src="(.*?)\/i</expres>
+<page>http://streamin.to/embed-$doregex[id]-740x360.html</page>
+<referer>http://streamin.to</referer>
+</regex>
+<regex>
+<name>id2</name>
+<expres>image\|[\w\W\s]{0,3}\|(.*?)\|file</expres>
+<page>http://streamin.to/embed-$doregex[id]-740x360.html</page>
+<referer>http://streamin.to</referer>
+</regex>
+<regex>
+<name>id</name>
+<expres>http://streamin.to/(.*?)"</expres>
+<page>http://seriesblanco.com[makelist.param1]</page>
+<referer>http://streamin.to</referer>
+</regex>
+]]></listrepeat>
+<expres><![CDATA[href="(.*?)"[\w\W\s]{0,45}streamin[\w\W\s]{0,370}banderas/(.*).png]]></expres>
+<page>http://seriesblanco.com[makelist0.param1]</page>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/adryflix.png</thumbnail><fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tem>
+<title>[B]SeriesPlus[/B] Generos-OpenLoad </title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param2] </title>
+<link>$doregex[makelist2]</link>
+
+]]></listrepeat>
+<expres><![CDATA[class="s-movie">\s+<a href="(.*?)".*\n.\w.*\n.span>(.*?)<]]></expres>
+<page>http://www.pelisplus.tv/series/</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+
+
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title> [makelist2.param2] </title>
+<link>$doregex[makelist3]</link>
+<thumbnail></thumbnail>
+]]></listrepeat>
+<expres><![CDATA[class="title title-serie">\n.a href="(.*?)" title="(.*?)"]]></expres>
+<page>[makelist.param1]</page>
+<referer>http://www.pelisplus.tv/series/</referer>
+</regex>
+
+
+
+
+<regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+<title>[makelist3.param1][makelist3.param2]     </title>
+<link>$doregex[makelist4]</link>  ( will use [makelist3.param3] )
+<thumbnail></thumbnail>
+]]></listrepeat>
+<expres>(Temporada.*?)\n|season_play[\w\W\s]{0,18}span>(.*?)<[\w\W\s]{0,8}href="(.*?)"</expres>
+<page>[makelist2.param1]</page>
+<referer>http://www.pelisplus.tv/series/</referer>
+</regex>
+
+
+
+
+<regex>
+   <name>makelist4</name>
+   <listrepeat><![CDATA[
+          <title>[makelist3.param1][makelist3.param2]  server:_[makelist4.param1]  </title>
+          <urlsolve>https://openload.co/embed/[makelist4.param1]</urlsolve>
+   ]]></listrepeat>
+   <expres><![CDATA[src='https://openload.co/embed\/(.*?)\/]]></expres>
+   <page>[makelist3.param3]</page>
+   <cookieJar></cookieJar>
+</regex>
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tem>
+<title>[B]NewPCT1[/B]  Mas Recientes </title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param2]</title>
+<link>$doregex[url]/$doregex[id2]/v.flv</link>
+<regex>
+<name>url</name>
+<expres>vplayer[\w\W\s]{0,8}src="(.*?)\/i</expres>
+<page>http://streamin.to/embed-$doregex[link]-740x360.html</page>
+<referer>http://streamin.to</referer>
+</regex>
+<regex>
+<name>id2</name>
+<expres>image\|[\w\W\s]{0,3}\|(.*?)\|file</expres>
+<page>http://streamin.to/embed-$doregex[link]-740x360.html</page>
+<referer>http://streamin.to</referer>
+</regex>
+<regex>
+<name>link</name>
+<expres>href='http://streamin.to/(.*?)'</expres>
+<page>http://www.newpct1.com/ver-online/serie/[makelist.param1]/</page>
+<referer>http://streamin.to</referer>
+</regex>
+
+<thumbnail>[makelist.param3]</thumbnail>
+<fanart>[makelist.param3]</fanart>
+]]></listrepeat>
+
+<expres>serie/(.*?)/"[\w\W\s]{0,9}Descargar(.*?)gratis[\w\W\s]{0,10}src="(.*?)"</expres>
+<page>http://www.newpct1.com/series</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>[B]SeriesTOTALES[/B]   </title>
+
+       <link>$doregex[makelist4]</link>
+
+	<regex>
+   <name>makelist4</name>
+   <listrepeat><![CDATA[
+       <title>Pagina [makelist4.param1]</title>
+       <link>$doregex[makelist3]</link>
+<thumbnail></thumbnail>
+   ]]></listrepeat>
+   <expres><![CDATA[paginado:"(.*?)";]]></expres>
+   <page>http://blackaddon.rf.gd/gray/kozm.txt</page>
+   <cookieJar></cookieJar>
+</regex>
+
+ <regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+<title> [makelist3.param3]</title>
+<link>$doregex[makelist2]</link>
+<thumbnail>[makelist3.param2]</thumbnail>
+<fanart>[makelist3.param2]</fanart>
+]]></listrepeat>
+<expres><![CDATA[eventLabel: '(.*?)'[\w\W\s]{0,92}src="(.*?)"[\w\W\s]{0,22}title="(.*?)"]]></expres>
+<page>http://www.seriestotales.com/?p=[makelist4.param1]</page>
+ </regex>
+
+
+
+
+
+
+ <regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>[makelist2.param1]  [makelist2.param4] </title>
+<link>$doregex[makelist]</link>
+<thumbnail>[makelist3.param2]</thumbnail>
+<fanart>[makelist3.param2]</fanart>
+]]></listrepeat>
+<expres><![CDATA[">(Temporada.*?)<|href="/capitulo/(.*?)/(.*?)">(.*?)<]]></expres>
+<page>http://www.seriestotales.com[makelist3.param1]</page>
+ </regex>
+
+
+
+ 
+
+<regex>
+   <name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist2.param3]  server:[makelist.param1][makelist.param2][makelist.param3]</title>
+<urlsolve>[makelist.param1]</urlsolve>
+<thumbnail>[makelist3.param2]</thumbnail>
+<fanart>[makelist3.param2]</fanart>
+]]></listrepeat>
+   <expres><![CDATA[href=\"(.*?)\".*?class=\"(flag.*?)\".*?col-xs-5\">(.*?)<]]></expres>
+   <page>http://www.seriestotales.com/caps?id=[makelist2.param2]</page>
+</regex>
+ <thumbnail>http://blackaddon.rf.gd/gray/img/adryflix.png</thumbnail>
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<iem>
+<title>[B]EZTV TV-Shows[/B]   Quasar requerido</title>
+<link>$doregex[makelist2]</link>
+<thumbnail> </thumbnail>
+
+
+
+ <regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+ <title>[makelist2.param2] </title>
+<link>$doregex[makelist]</link>
+<thumbnail>[makelist2.param2]</thumbnail>
+</regex>
+]]></listrepeat>
+<expres>forum_thread_post[\w\W\s]{0,12}shows/(.*?)"[\w\W\s]{0,8}thread_link">(.*?)<</expres>
+<page>https://eztv.ag/showlist/</page>
+</regex>
+
+
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+ <title>[makelist.param2]</title>
+<link>plugin://plugin.video.quasar/play?uri=magnet:?xt=urn:btih:[makelist.param1]</link>
+<thumbnail>[makelist2.param2]</thumbnail>
+</regex>
+]]></listrepeat>
+<expres><![CDATA[urn:btih:(.*?)"[\w\W\s]{0,8}magnet[\w\W\s]{0,2}title="(.*?)Torrent]]></expres>
+<page>https://eztv.ag/shows/[makelist2.param1]</page>
+</regex>
+
+<thumbnail>http://blackaddon.rf.gd/gray/img/adryflix.png</thumbnail>
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
+
+<item>
+<title> [test</title>
+<link>$doregex[makelist]</link>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+
+
+<title>[makelist.param1]</title>
+<link>rtmp://216.227.135.204:1935/vod playpath=mp4:clip[makelist.param2]normal.mp4 swfUrl=http://www.streaminglatam.com/vod/public/common/player.swf pageUrl=http://www.streaminglatam.com/vod/embed.php live=1 timeout=15</link>
+
+
+]]></listrepeat>
+<expres>title="(.*?)"[\w\W\s]{0,63}clip(.*?)thumb.jpg"</expres>
+<page>http://www.streaminglatam.com/vod/playlist.php?type=channel&amp;id=1</page>
+</regex>
+
+</item>
+
+
+<item>
+<title>[makelist.param1]</title>
+<link>rtmp://216.227.135.204:1935/vod playpath=mp4:clip_6605_1459194549_normal.mp4 swfUrl=http://www.streaminglatam.com/vod/public/common/player.swf pageUrl=http://www.streaminglatam.com/vod/embed.php live=1 timeout=15</link>
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-->
+
+
+
+
+
+
+
+<item>
+<title>[B]Anime[/B] animeyt  [I]Alfabeticamente  [/I]</title>
+<link>$doregex[makelist]</link>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+        <title> Letra [makelist.param2] </title>
+        <link>$doregex[makelist2]</link>
+]]></listrepeat>
+<expres><![CDATA[<option value="([A-Z])">(\w)]]></expres>
+<page>http://www.animeyt.tv/animes</page>
+<referer>http://www.animeyt.tv</referer>
+<agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36</agent>
+<cookieJar>$doregex[createCFCookie]</cookieJar>
+
+</regex>
+
+<regex>
+        <name>createCFCookie</name>
+        <expres></expres>
+        <page>$pyFunction:cloudflare.createCookie('http://www.animeyt.tv',Cookie_Jar,'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36')</page>
+        <cookieJar></cookieJar>
+		<thumbnail>http://blackaddon.rf.gd/gray/img/adryflix.png</thumbnail>
+</regex>
+
+
+
+
+
+
+
+
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+        <title>Pagina [makelist2.param1]</title>
+        <link>$doregex[makelist3]</link>
+]]></listrepeat>
+<expres><![CDATA[pager__link.*?>(\d{1})<]]></expres>
+<page><![CDATA[http://www.animeyt.tv/animes?letra=[makelist.param1]]]></page>
+<referer>http://www.animeyt.tv</referer>
+<agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36</agent>
+<cookieJar>$doregex[createCFCookie]</cookieJar>
+
+</regex>
+
+<regex>
+        <name>createCFCookie</name>
+        <expres></expres>
+        <page>$pyFunction:cloudflare.createCookie('http://www.animeyt.tv',Cookie_Jar,'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36')</page>
+        <cookieJar></cookieJar>
+</regex>
+
+
+<regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+        <title> [makelist3.param1]</title>
+        <link>$doregex[makelist4]</link>
+]]></listrepeat>
+<expres><![CDATA[alt="(.*?)".*"anime__img".*\s.*\s.*\s.*\s.*href="(.*?)"]]></expres>
+<page><![CDATA[http://www.animeyt.tv/animes?letra=[makelist.param1]&page=[makelist2.param1]]]></page>
+<referer>http://www.animeyt.tv</referer>
+<agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36</agent>
+<cookieJar>$doregex[createCFCookie]</cookieJar>
+
+</regex>
+
+<regex>
+        <name>createCFCookie</name>
+        <expres></expres>
+        <page>$pyFunction:cloudflare.createCookie('http://www.animeyt.tv',Cookie_Jar,'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36')</page>
+        <cookieJar></cookieJar>
+</regex>
+
+<regex>
+  <name>makelist4</name>
+
+  <listrepeat><![CDATA[
+        <title> [makelist4.param2]</title>
+	<link>$doregex[makelist5]</link>
+
+]]></listrepeat>
+
+<expres><![CDATA[href="(.*ver.*?)">*\n(.*)]]></expres>
+<page>[makelist3.param2]</page>
+<referer>http://www.animeyt.tv</referer>
+<agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36</agent>
+<cookieJar>$doregex[createCFCookie]</cookieJar>
+
+</regex>
+
+<regex>
+        <name>createCFCookie</name>
+        <expres></expres>
+        <page>$pyFunction:cloudflare.createCookie('http://www.animeyt.tv',Cookie_Jar,'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36')</page>
+        <cookieJar></cookieJar>
+</regex>
+
+<regex>
+  <name>makelist5</name>
+
+  <listrepeat><![CDATA[
+        <title> [makelist4.param2]  Servidor [makelist5.param1] [makelist5.param2]</title>
+	<link>[makelist5.param2]</link>
+
+]]></listrepeat>
+
+<expres><![CDATA[mirror == (.*[^158])\).*\s.*mirrorPlayer\("(.*?)"]]></expres>
+<page>[makelist4.param1]</page>
+<referer>http://www.animeyt.tv</referer>
+<agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36</agent>
+<cookieJar>$doregex[createCFCookie]</cookieJar>
+
+</regex>
+
+
+<regex>
+        <name>createCFCookie</name>
+        <expres></expres>
+        <page>$pyFunction:cloudflare.createCookie('http://www.animeyt.tv',Cookie_Jar,'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36')</page>
+        <cookieJar></cookieJar>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/adryflix.png</thumbnail><fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>[B]Anime[/B] animeyt  [I]En Emision  [/I]</title>
+<link>$doregex[makelist2]</link>
+
+
+
+<regex>
+		<name>makelist2</name>
+                <listrepeat><![CDATA[
+                <title>[makelist2.param3]</title>
+                <link>$doregex[makelist]</link>
+				<thumbnail>[makelist2.param2]</thumbnail>
+				<fanart>[makelist2.param2]</fanart>
+                ]]></listrepeat>
+
+        <expres>href="(.*?)"[\w\W\s]{0,37}src="(.*?)"[\w\W\s]{0,2}alt="(.*?)"[\w\W\s]{0,8}anime__img</expres>
+		<page>http://www.animeyt.tv/emision</page>
+		<referer>http://www.animeyt.tv</referer>
+<agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36</agent>
+<cookieJar>$doregex[createCFCookie]</cookieJar>
+</regex><regex><name>createCFCookie</name><expres></expres><page>$pyFunction:cloudflare.createCookie('http://www.animeyt.tv',Cookie_Jar,'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36')</page><cookieJar></cookieJar></regex>
+
+
+
+
+<regex>
+		<name>makelist</name>
+                <listrepeat><![CDATA[
+                <title>[I][makelist.param1][/I]</title>
+                <link>$doregex[lista]</link>
+				<thumbnail>[makelist2.param2]</thumbnail>
+				<fanart>[makelist2.param2]</fanart>
+                ]]></listrepeat>
+
+                <expres>www.animeyt.tv\/ver\/(.*?)"</expres>
+		<page>[makelist2.param1]</page>
+		<referer>http://www.animeyt.tv</referer>
+<agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36</agent>
+<cookieJar>$doregex[createCFCookie]</cookieJar>
+</regex>
+
+
+
+<regex>
+        <name>createCFCookie</name>
+        <expres></expres>
+        <page>$pyFunction:cloudflare.createCookie('http://www.animeyt.tv',Cookie_Jar,'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36')</page>
+        <cookieJar></cookieJar>
+</regex>
+
+
+
+
+		<regex>
+		<name>lista</name>
+                <listrepeat><![CDATA[
+                <title>[makelist.param1]</title>
+                <link>$doregex[link]|Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36</link>
+				<thumbnail>[makelist2.param2]</thumbnail>
+				<fanart>[makelist2.param2]</fanart>
+                ]]></listrepeat>
+
+                <expres>mirrorPlayer\(\"(http://.*?)\"</expres>
+		<page>http://www.animeyt.tv/ver/[makelist.param1]</page>
+		<referer>http://www.animeyt.tv</referer>
+<agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36</agent>
+<cookieJar>$doregex[createCFCookie]</cookieJar>
+
+</regex>
+
+
+
+
+<regex>
+<name>link</name>
+<expres>$pyFunction: '$doregex[dura]' if not '$doregex[dura]'=='' else '$doregex[dragon]' if not '$doregex[dragon]'=='' else '$doregex[dbs]'</expres>
+<page></page>
+</regex>
+
+<regex>
+<name>dragon</name>
+<expres>location:(.+)\s*</expres>
+<page>[lista.param1]</page>
+<noredirect>true</noredirect>
+<referer>http://s2.animeyt.tv</referer>
+<agent>Mozilla/5.0 (Linux; Android 5.1.1; Nexus 6 Build/LYZ28E) AppleWebKit/537.36</agent>
+<includeheaders>true</includeheaders>
+<cookieJar></cookieJar>
+</regex>
+
+
+<regex>
+<name>dbs</name>
+<expres>location:(.+)\s*</expres>
+<page>[lista.param1]</page>
+<referer>http://s2.animeyt.tv</referer>
+<noredirect>true</noredirect>
+<includeheaders>true</includeheaders>
+<agent>Mozilla/5.0 (Linux; Android 5.1.1; Nexus 6 Build/LYZ28E) AppleWebKit/537.36</agent>
+</regex>
+
+<regex>
+<name>dura</name>
+<expres>location:(.+)\s*</expres>
+<page>[lista.param1]</page>
+<referer>http://s2.animeyt.tv</referer>
+<noredirect>true</noredirect>
+<includeheaders>true</includeheaders>
+<agent>Mozilla/5.0 (Linux; Android 5.1.1; Nexus 6 Build/LYZ28E) AppleWebKit/537.36</agent>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/adryflix.png</thumbnail><fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tem><title>test</title>
+ <link>$doregex[rtmp] playpath=$doregex[playpath]</link>
+<regex>
+<name>playpath</name>
+<expres>(mp4.*)</expres>
+<page>$doregex[src]</page>
+</regex>
+<regex>
+<name>rtmp</name>
+<expres>(.*?)mp4</expres>
+<page>$doregex[src]</page>
+</regex>
+<regex>
+<name>src</name>
+<expres>src:'(rtmp.*?)'</expres>
+<page>$doregex[unpacked]</page>
+</regex>
+<regex>
+<name>unpacked</name>
+<expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)')</expres>
+<page>$doregex[get-source-page]</page>
+</regex>
+<regex>
+<name>get-source-page</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+ import requests
+ import re
+ import time
+ url ='http://powvideo.net/lbh2vwhcucuv'
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2'}
+ source = requests.get(url, headers=headers)
+ cookie1 = source.cookies['__cfduid']
+ id = re.findall('id" value="(.*?)"', source.text)[0]
+ op = re.findall('op" value="(.*?)"', source.text)[0]
+ fname = re.findall('fname" value="(.*?)"', source.text)[0]
+ imhuman = re.findall('imhuman".*value="(.*?)"', source.text)[0]
+ usr_login = re.findall('usr_login" value="(.*?)"', source.text)[0]
+ hash = re.findall('hash" value="(.*?)"', source.text)[0]
+ referer = re.findall('referer" value="(.*?)"', source.text)[0]
+ time.sleep(10)
+ cookie = {'__cfduid': cookie1}
+ data = {'op': op, 'usr_login': usr_login, 'id': id, 'fname': fname, 'referer': referer, 'hash':  hash, 'imhuman': imhuman}
+ r1 = requests.post(url, headers = headers, data= data, cookies=cookie)
+ return r1.text
+]]></expres>
+<page></page>
+</regex>
+</item>
+
+
+
+
+
+
+
+<item>
+<title>[B]SeriesDanko[/B]  Por Letra </title>
+
+
+
+<link>$doregex[makelist0]</link>
+
+<regex>
+<name>makelist0</name>
+<listrepeat><![CDATA[
+<title>Letra [makelist0.param1]</title>
+<link>$doregex[makelist4]</link>
+]]></listrepeat>
+<expres>'(.*?)'</expres>
+<page>'A''B''C''D''E''F''G''H''I''J''K''L''M''N''O''P''Q''R''S''T''U''V''W''X''Y''Z''0'</page>
+</regex>
+
+<regex>
+<name>makelist4</name>
+<listrepeat><![CDATA[
+<title>[makelist4.param2] </title>
+<link>$doregex[makelist3]</link>
+<thumbnail>$pyFunction:('[makelist4.param3]').replace('/fotos','http://seriesdanko.to/fotos')</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[align\:center\;\'><a\shref=\'(.*?)\'\stitle=\'(.*?)\'.*?src='(.*?)']]></expres>
+<page>http://seriesdanko.to/series.php?id=[makelist0.param1]</page>
+</regex>
+
+
+
+
+<regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+<title> [makelist3.param2]  </title>
+<link>$doregex[makelist2]</link>
+<thumbnail>$pyFunction:('[makelist4.param3]').replace('/fotos','http://seriesdanko.to/fotos')</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[br><br><a href=\'(.*?)\'>(.*?)<]]></expres>
+<page>http://seriesdanko.to/[makelist4.param1]</page>
+</regex>
+
+
+
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title> Idioma:[makelist2.param1] [[makelist2.param2]] [I] Calidad[makelist2.param4] [/I] </title>
+<link>$doregex[id3]</link>
+<thumbnail>$pyFunction:('[makelist4.param3]').replace('/fotos','http://seriesdanko.to/fotos')</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[banderas\/(.*?)\.png.*?servidores\/(.*?)\..*?href='(.*?)\&.*?tam12\'(.*?)\<]]></expres>
+<page>http://seriesdanko.to/[makelist3.param1]</page>
+</regex>
+
+
+
+
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = '$doregex[id2]'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://blackaddon.rf.gd/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+ <regex>
+<name>id2</name>
+<expres><![CDATA[a\shref="(http.*?)"]]></expres>
+<page>http://seriesdanko.to/[makelist2.param3]</page>
+</regex>
+
+
+<thumbnail>http://blackaddon.rf.gd/gray/img/adryflix.png</thumbnail>
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>[B]SeriesDanko[/B]  Ultimas Actualizaciones </title>
+<link>$doregex[makelist4]</link>
+
+<regex>
+<name>makelist4</name>
+<listrepeat><![CDATA[
+<title>[makelist4.param1]</title>
+<link>$doregex[makelist3]</link>
+]]></listrepeat>
+<expres><![CDATA[title>(.*?)<.*?\n.*?link>(.*?)<]]></expres>
+<page>http://seriesdanko.to/feed200.php</page>
+</regex>
+
+
+
+<regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+<title> [makelist3.param2]  </title>
+<link>$doregex[makelist2]</link>
+]]></listrepeat>
+<expres><![CDATA[br><br><a href=\'(.*?)\'>(.*?)<]]></expres>
+<page>[makelist4.param2]</page>
+</regex>
+
+
+
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title> Idioma:[makelist2.param1] [[makelist2.param2]] [I] Calidad[makelist2.param4] [/I] </title>
+<link>$doregex[id3]</link>
+]]></listrepeat>
+<expres><![CDATA[banderas\/(.*?)\.png.*?servidores\/(.*?)\..*?href='(.*?)\&.*?tam12\'(.*?)\<]]></expres>
+<page>http://seriesdanko.to/[makelist3.param1]</page>
+</regex>
+
+
+
+
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = '$doregex[id2]'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://blackaddon.rf.gd/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+ <regex>
+<name>id2</name>
+<expres><![CDATA[a\shref="(http.*?)"]]></expres>
+<page>http://seriesdanko.to/[makelist2.param3]</page>
+</regex>
+
+
+<thumbnail>http://blackaddon.rf.gd/gray/img/adryflix.png</thumbnail>
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>[B]SeriesPapaya[/B]  Nuevas Series </title>
+<link>$doregex[makelist3]</link>
+
+
+<regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+<title>[makelist3.param3]  [makelist3.param4]</title>
+<link>$doregex[makelist2]</link>
+<fanart>http://www.seriespapaya.com/[makelist3.param1]</fanart>
+<thumbnail>http://www.seriespapaya.com/[makelist3.param1]</thumbnail>
+   ]]></listrepeat>
+   <expres><![CDATA[src="(.*?)"[\w\W\s]{0,60}href="(.*?)".*?">(.*?)<.*?>(.*?)<]]></expres>
+<page>http://www.seriespapaya.com/lista-series-estrenos/</page>
+</regex>
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title> [makelist2.param2] </title>
+<link>$doregex[makelist]</link>
+<fanart>http://www.seriespapaya.com/[makelist3.param1]</fanart>
+<thumbnail>http://www.seriespapaya.com/[makelist3.param1]</thumbnail>
+   ]]></listrepeat>
+   <expres><![CDATA[visco.*?href="(.*?)".*?nbsp\;(.*?)<]]></expres>
+<page>http://www.seriespapaya.com/[makelist3.param2]</page>
+</regex>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title> [B][makelist2.param2][/B]    idioma: [makelist.param1]  Calidad:[makelist.param4]     </title>
+<link>$doregex[makelist0]</link>
+<fanart>http://www.seriespapaya.com/[makelist3.param1]</fanart>
+<thumbnail>http://www.seriespapaya.com/[makelist3.param1]</thumbnail>
+
+   ]]></listrepeat>
+   <expres><![CDATA[src="images\/(.*?)png[\w\W\s]{0,115}\/images\/online\/(open.*?)png[\w\W\s]{0,50}href="(.*?)"[\w\W\s]{0,85}dcalidad">\n(.*?)<]]></expres>
+<page>http://www.seriespapaya.com/[makelist2.param1]</page>
+</regex>
+
+
+<regex>
+<name>makelist0</name>
+<listrepeat><![CDATA[
+<title> [B][makelist2.param2][/B]    idioma: [makelist.param1]  Calidad:[makelist.param4]     (server openload)</title>
+<urlsolve>[makelist0.param1]</urlsolve>
+<fanart>http://www.seriespapaya.com/[makelist3.param1]</fanart>
+<thumbnail>http://www.seriespapaya.com/[makelist3.param1]</thumbnail>
+   ]]></listrepeat>
+<expres>location.href='(.*?)'</expres>
+<page>[makelist.param3]</page>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/adryflix.png</thumbnail>
+</item>
+
+
+
+
+
+<item>
+<title>[B]SeriesPapaya[/B]  Populares </title>
+<link>$doregex[makelist3]</link>
+
+
+<regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+<title>[makelist3.param3]  [makelist3.param4]</title>
+<link>$doregex[makelist2]</link>
+<fanart>http://www.seriespapaya.com/[makelist3.param1]</fanart>
+<thumbnail>http://www.seriespapaya.com/[makelist3.param1]</thumbnail>
+   ]]></listrepeat>
+   <expres><![CDATA[src="(.*?)"[\w\W\s]{0,60}href="(.*?)".*?">(.*?)<.*?>(.*?)<]]></expres>
+<page>http://www.seriespapaya.com/lista-series-populares/</page>
+</regex>
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title> [makelist2.param2] </title>
+<link>$doregex[makelist]</link>
+<fanart>http://www.seriespapaya.com/[makelist3.param1]</fanart>
+<thumbnail>http://www.seriespapaya.com/[makelist3.param1]</thumbnail>
+   ]]></listrepeat>
+   <expres><![CDATA[visco.*?href="(.*?)".*?nbsp\;(.*?)<]]></expres>
+<page>http://www.seriespapaya.com/[makelist3.param2]</page>
+</regex>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title> [B][makelist2.param2][/B]    idioma: [makelist.param1]  Calidad:[makelist.param4]     </title>
+<link>$doregex[makelist0]</link>
+<fanart>http://www.seriespapaya.com/[makelist3.param1]</fanart>
+<thumbnail>http://www.seriespapaya.com/[makelist3.param1]</thumbnail>
+
+   ]]></listrepeat>
+   <expres><![CDATA[src="images\/(.*?)png[\w\W\s]{0,115}\/images\/online\/(open.*?)png[\w\W\s]{0,50}href="(.*?)"[\w\W\s]{0,85}dcalidad">\n(.*?)<]]></expres>
+<page>http://www.seriespapaya.com/[makelist2.param1]</page>
+</regex>
+
+
+<regex>
+<name>makelist0</name>
+<listrepeat><![CDATA[
+<title> [B][makelist2.param2][/B]    idioma: [makelist.param1]  Calidad:[makelist.param4]     (server openload)</title>
+<urlsolve>[makelist0.param1]</urlsolve>
+<fanart>http://www.seriespapaya.com/[makelist3.param1]</fanart>
+<thumbnail>http://www.seriespapaya.com/[makelist3.param1]</thumbnail>
+   ]]></listrepeat>
+<expres>location.href='(.*?)'</expres>
+<page>[makelist.param3]</page>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/adryflix.png</thumbnail>
+</item>
+
+
+
+
+
+<item>
+<title>[B]SeriesPapaya[/B]  Recomendadas </title>
+<link>$doregex[makelist3]</link>
+
+
+<regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+<title>[makelist3.param3]  [makelist3.param4]</title>
+<link>$doregex[makelist2]</link>
+<fanart>http://www.seriespapaya.com/[makelist3.param1]</fanart>
+<thumbnail>http://www.seriespapaya.com/[makelist3.param1]</thumbnail>
+   ]]></listrepeat>
+   <expres><![CDATA[src="(.*?)"[\w\W\s]{0,60}href="(.*?)".*?">(.*?)<.*?>(.*?)<]]></expres>
+<page>http://www.seriespapaya.com/lista-series-recomendadas/</page>
+</regex>
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title> [makelist2.param2] </title>
+<link>$doregex[makelist]</link>
+<fanart>http://www.seriespapaya.com/[makelist3.param1]</fanart>
+<thumbnail>http://www.seriespapaya.com/[makelist3.param1]</thumbnail>
+   ]]></listrepeat>
+   <expres><![CDATA[visco.*?href="(.*?)".*?nbsp\;(.*?)<]]></expres>
+<page>http://www.seriespapaya.com/[makelist3.param2]</page>
+</regex>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title> [B][makelist2.param2][/B]    idioma: [makelist.param1]  Calidad:[makelist.param4]     </title>
+<link>$doregex[makelist0]</link>
+<fanart>http://www.seriespapaya.com/[makelist3.param1]</fanart>
+<thumbnail>http://www.seriespapaya.com/[makelist3.param1]</thumbnail>
+
+   ]]></listrepeat>
+   <expres><![CDATA[src="images\/(.*?)png[\w\W\s]{0,115}\/images\/online\/(open.*?)png[\w\W\s]{0,50}href="(.*?)"[\w\W\s]{0,85}dcalidad">\n(.*?)<]]></expres>
+<page>http://www.seriespapaya.com/[makelist2.param1]</page>
+</regex>
+
+
+<regex>
+<name>makelist0</name>
+<listrepeat><![CDATA[
+<title> [B][makelist2.param2][/B]    idioma: [makelist.param1]  Calidad:[makelist.param4]     (server openload)</title>
+<urlsolve>[makelist0.param1]</urlsolve>
+<fanart>http://www.seriespapaya.com/[makelist3.param1]</fanart>
+<thumbnail>http://www.seriespapaya.com/[makelist3.param1]</thumbnail>
+   ]]></listrepeat>
+<expres>location.href='(.*?)'</expres>
+<page>[makelist.param3]</page>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/adryflix.png</thumbnail>
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tem>
+<title>[B][  ][/B]    [B]BUSCAR SERIE[/B] en SeriesDanko </title>
+<link>$doregex[makelist3]</link>
+
+
+<regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+<title> [makelist3.param2]  </title>
+<link>$doregex[makelist2]</link>
+<thumbnail>[makelist3.param3]</thumbnail>
+<fanart>[makelist3.param3]</fanart>
+]]></listrepeat>
+<expres><![CDATA[href='../(.*?)'[\w\W\s]{0,2}title='Capitulos de:(.*?)'[\w\W\s]{0,20}src='(.*?)']]></expres>
+<page>http://seriesdanko.com/pag_search.php?q1=$doregex[search]</page>
+</regex>
+
+<regex>
+<name>search</name>
+<expres><![CDATA[#$pyFunction
+import xbmc
+import xbmcaddon
+import xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+    dialog = xbmcgui.Dialog()
+    d = dialog.input('Buscar Serie: ejemplo: flash 2x22', type=xbmcgui.INPUT_ALPHANUM).replace(" ", "+")
+    return d
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+
+
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title> [makelist2.param2]  </title>
+<link>$doregex[makelist]</link>
+<thumbnail>[makelist3.param3]</thumbnail>
+<fanart>[makelist3.param3]</fanart>
+]]></listrepeat>
+<expres><![CDATA[href='capitulo(.*?)'>(.*?)<]]></expres>
+<page>http://seriesdanko.com/[makelist3.param1]</page>
+</regex>
+
+
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist2.param2]    - idioma:[makelist.param1]</title>
+<link>$doregex[id]</link>
+ <regex>
+ <name>id</name>
+ <expres>file: "(.*?)",</expres>
+ <page>http://streamin.to/embed-$doregex[id2]-740x360.html</page>
+ <referer>http://streamin.to</referer>
+ </regex>
+
+  <regex>
+ <name>id2</name>
+ <expres>streamin.to/(.*?)"</expres>
+ <page>http://seriesdanko.com/[makelist.param2]</page>
+ <referer></referer>
+ </regex>
+<thumbnail>[makelist3.param3]</thumbnail>
+<fanart>[makelist3.param3]</fanart>
+]]></listrepeat>
+<expres>banderas/(.*?)p[\w\W\s]{0,150}streamin[\w\W\s]{0,120}href='(.*?)'</expres>
+<page>http://seriesdanko.com/capitulo[makelist2.param1]</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+</item>
+
+
+
+
+
+
+
+<tem>
+<title>[B][  ][/B]    [B]BUSCAR SERIE[/B] en SeriesDanko +servers </title>
+<link>$doregex[makelist3]</link>
+
+
+<regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+<title> [makelist3.param2]  </title>
+<link>$doregex[makelist2]</link>
+<thumbnail>[makelist3.param3]</thumbnail>
+<fanart>[makelist3.param3]</fanart>
+]]></listrepeat>
+<expres><![CDATA[href='../(.*?)'[\w\W\s]{0,2}title='Capitulos de:(.*?)'[\w\W\s]{0,20}src='(.*?)']]></expres>
+<page>http://seriesdanko.com/pag_search.php?q1=$doregex[search]</page>
+</regex>
+
+<regex>
+<name>search</name>
+<expres><![CDATA[#$pyFunction
+import xbmc
+import xbmcaddon
+import xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+    dialog = xbmcgui.Dialog()
+    d = dialog.input('Buscar Serie: ejemplo: flash 2x22', type=xbmcgui.INPUT_ALPHANUM).replace(" ", "+")
+    return d
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+
+
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title> [makelist2.param2]  </title>
+<link>$doregex[makelist]</link>
+<thumbnail>[makelist3.param3]</thumbnail>
+<fanart>[makelist3.param3]</fanart>
+]]></listrepeat>
+<expres><![CDATA[href='capitulo(.*?)'>(.*?)<]]></expres>
+<page>http://seriesdanko.com/[makelist3.param1]</page>
+</regex>
+
+
+
+<regex>
+   <name>makelist</name>
+   <listrepeat><![CDATA[
+          <title>[makelist2.param2] - idioma:[makelist.param1] - server:[makelist.param2]</title>
+          <link>$doregex[id3]</link>
+   ]]></listrepeat>
+   <expres>banderas/(.*?).png[\w\W\s]{0,106}servidores/(.*?).jpg[\w\W\s]{0,85}href='(.*?)'</expres>
+   <page>http://seriesdanko.com/capitulo[makelist2.param1]</page>
+   <cookieJar></cookieJar>
+</regex>
+
+
+
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'http://$doregex[id2]'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://blackaddon.rf.gd/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+ <regex>
+<name>id2</name>
+<expres><![CDATA[<a href="http://(.*?)"]]></expres>
+<page>http://seriesdanko.com/[makelist.param3]</page>
+</regex>
+
+</item>
+
+
+
+
+
+
+<tem>
+<title> Buscar titulo exacto </title>
+<link>$doregex[makelist]</link>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param1][makelist.param2]  </title>
+<link>plugin://plugin.video.exodus/?action=play&amp;title=[makelist.param1]&amp;imdb=[makelist.param5]</link>
+<info>[makelist.param3]</info>
+<fanart>[makelist.param4]</fanart>
+<thumbnail>[makelist.param4]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[Title":"(.*?)".*Year":"(.*?)".*Plot":"(.*?)".*Poster":"(.*?)".*imdbID":"(.*?)"]]></expres>
+<page>http://www.omdbapi.com/?t=$doregex[search]</page>
+</regex>
+
+
+
+<regex>
+<name>search</name>
+<expres><![CDATA[#$pyFunction
+import xbmc
+import xbmcaddon
+import xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+    dialog = xbmcgui.Dialog()
+    d = dialog.input('Buscar Serie: ejemplo: flash 2x22', type=xbmcgui.INPUT_ALPHANUM).replace(" ", "+")
+    return d
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+
+
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tem>
+<title>[B]DarkKiller -  NOVELAS- ultimos capitulos[/B]   openload / urlresolver  </title>
+<link>$doregex[makelist2]</link>
+
+
+
+
+
+
+
+
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title> [makelist2.param2]   </title>
+<link>$doregex[makelist]</link>
+<thumbnail>[makelist2.param3]</thumbnail>
+<fanart>[makelist2.param3]</fanart>
+<info>[makelist2.param4]</info>
+]]></listrepeat>
+<expres><![CDATA[href="(.*?)" title="(.*?)"><img src="h(.*?)" alt="(.*?)"]]></expres>
+<page>http://www.darkiller.com/</page>
+
+ </regex>
+
+
+
+
+<regex>
+   <name>makelist</name>
+   <listrepeat><![CDATA[
+          <title>[makelist2.param2] - open/[makelist.param1]</title>
+          <link>$doregex[id3]</link>
+		  <thumbnail>[makelist2.param1]</thumbnail>
+		<fanart>[makelist2.param1]</fanart>
+		<info>[makelist3.param2]</info>
+   ]]></listrepeat>
+   <expres><![CDATA[open\("(.*?)"]]></expres>
+   <page>[makelist2.param1]</page>
+   <cookieJar></cookieJar>
+</regex>
+
+
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = 'https://openload.co/embed/[makelist.param1]'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://blackaddon.rf.gd/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <tem>
+<title>Series por Torrent en Castellano</title>
+<link>$doregex[makelist2]</link>
+
+<regex>
+   <name>makelist2</name>
+   <listrepeat><![CDATA[
+       <title>[makelist2.param2]</title>
+
+    <link>$doregex[makelist]</link>
+<fanart>[makelist2.param3]</fanart>
+<thumbnail>[makelist2.param3]</thumbnail>
+   ]]></listrepeat>
+   <expres><![CDATA[href="(.*?)"[\w\W\s]{0,20}gratis(.*?)Esp[\w\W\s]{0,90}src=(.*?)\s]]></expres>
+   <page>http://pelismag.net/series</page>
+</regex>
+
+
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+    <title>[makelist.param2]</title>
+    <link>plugin://plugin.video.quasar/play?uri=[makelist.param3]</link>
+	<thumbnail>[makelist2.param3]</thumbnail>
+	<fanart>[makelist2.param3]</fanart>
+]]></listrepeat>
+<expres><![CDATA[sub-group-(.*?)">(.*?)<[\w\W\s]{0,20}href=(.*?)>]]></expres>
+<page>http://pelismag.net/[makelist2.param1]</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>[B]ONWatchSeries[/B]  VO </title>
+
+      <link>$doregex[makelist4]</link>
+
+	<regex>
+   <name>makelist4</name>
+   <listrepeat><![CDATA[
+       <title>Pagina [makelist4.param1]</title>
+       <link>$doregex[makelist3]</link>
+<thumbnail></thumbnail>
+   ]]></listrepeat>
+   <expres><![CDATA[paginado:"(.*?)";]]></expres>
+   <page>http://blackaddon.rf.gd/gray/kozm.txt</page>
+   <cookieJar></cookieJar>
+</regex>
+
+
+  <regex>
+	<name>makelist3</name>
+	<listrepeat><![CDATA[
+	   <title>[makelist3.param1] </title>
+	   <link>$doregex[makelist2]</link>
+	       <thumbnail>[makelist3.param2]</thumbnail>
+		   <fanart>[makelist3.param2]</fanart>
+	  	]]></listrepeat>
+	<expres><![CDATA[title="Track(.*?)Online[\w\W\s]{0,60}src="(.*?)"[\w\W\s]{0,12}Series(.*?)"[\w\W\s]{0,770}href="(.*?)"]]></expres>
+	<page>http://onwatchseries.to/series/[makelist4.param1]</page>
+ </regex>
+
+
+
+
+
+  <regex>
+	<name>makelist2</name>
+	<listrepeat><![CDATA[
+	   <title>[B][makelist2.param1] [/B][makelist2.param3]-[makelist2.param4]</title>
+	   <link>$doregex[makelist]</link>
+	       <thumbnail>[makelist3.param2]</thumbnail>
+	  	]]></listrepeat>
+	<expres><![CDATA[itemprop="name">(Season.*?)<|href="(.*?)"[\w\W\s]{0,70}itemprop="name.*>(.*?)\&[\w\W\s]{0,12}nbsp;(.*?)<]]></expres>
+	<page>[makelist3.param4]</page>
+ </regex>
+
+
+
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+  <title>[makelist3.param1] [makelist2.param3] // server: [makelist.param1] </title>
+  <urlsolve>[makelist.param2]</urlsolve>
+      <thumbnail>[makelist3.param2]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[download_link_(.*?)\.[\w\W\s]{0,1090}Delete link (http.*?)']]></expres>
+<page>[makelist2.param2]</page>
+</regex>
+
+<thumbnail>http://blackaddon.rf.gd/gray/img/adryflix.png</thumbnail>
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>[B]NOVELAS[/B]  OFFLINE </title>
+<link>$doregex[makelist4]</link>
+<regex>
+<name>makelist4</name>
+<listrepeat><![CDATA[
+<title>   [makelist4.param2]     </title>
+<link>$doregex[makelist3]</link>
+]]></listrepeat>
+<expres>href="/(letra.*?)">(.*?)<</expres>
+<page>http://www.novelashdgratis.tv/</page>
+</regex>
+<regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+<title>   [makelist3.param2]     </title>
+<link>$doregex[makelist2]</link>
+]]></listrepeat>
+<expres>href="(.*?)"[\w\W\s]{0,2}title="(.*?)"[\w\W\s]{0,8}src="(.*?)"</expres>
+<page>http://www.novelashdgratis.tv/[makelist4.param1]</page>
+</regex>
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>  [makelist2.param3]   </title>
+<link>$doregex[makelist]</link>
+]]></listrepeat>
+<expres>href="(.*?)" title="(.*?)" class="lcc">(.*?)<</expres>
+<page>http://www.novelashdgratis.tv/[makelist3.param1]</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title> [makelist2.param3] -  opcion:_[makelist.param1]</title>
+ <link>$doregex[url]/$doregex[id2]/v.flv</link>
+ <regex>
+<name>url</name>
+<expres>vplayer[\w\W\s]{0,8}src="(.*?)\/i</expres>
+<page>http://streamin.to/embed-[makelist.param1]-740x360.html</page>
+<referer>http://streamin.to</referer>
+</regex>
+<regex>
+<name>id2</name>
+<expres>image\|[\w\W\s]{0,3}\|(.*?)\|file</expres>
+<page>http://streamin.to/embed-[makelist.param1]-740x360.html</page>
+<referer>http://streamin.to</referer>
+</regex>
+]]></listrepeat>
+<expres>streamin\(\"(.*?)\"</expres>
+<page>http://www.novelashdgratis.tv[makelist2.param1]</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/adryflix.png</thumbnail>
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>[B]NOVELAS FAVORITAS[/B]   </title>
+<link>$doregex[makelist3]</link>
+
+
+<regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+<title>   [makelist3.param2]       </title>
+<link>$doregex[makelist4]</link>
+<fanart>[makelist3.param3]</fanart>
+<thumbnail>[makelist3.param3]</thumbnail>
+]]></listrepeat>
+<expres>\/h2[\w\W\s]{0,4}href="(.*?)"[\w\W\s]{0,2}title="(.*?)"[\w\W\s]{0,6}src="(.*?)"</expres>
+<page>http://www.tusnovelasfavoritas.in/</page>
+</regex>
+
+
+
+<regex>
+<name>makelist4</name>
+<listrepeat><![CDATA[
+<title>   [makelist4.param2]     </title>
+<link>$doregex[makelist]</link>
+<fanart>[makelist3.param3]</fanart>
+<thumbnail>[makelist3.param3]</thumbnail>
+]]></listrepeat>
+<expres>tit-cap[\w\W\s]{0,12}href="(.*?)"[\w\W\s]{0,2}title="(.*?)"[\w\W\s]{0,8}src="(.*?)"</expres>
+<page>[makelist3.param1]</page>
+</regex>
+
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>  [makelist4.param2] -  opcion: [makelist.param1]</title>
+          <urlsolve>https://openload.co/embed/[makelist.param1]</urlsolve>
+		  <fanart>[makelist3.param3]</fanart>
+<thumbnail>[makelist3.param3]</thumbnail>
+   ]]></listrepeat>
+   <expres><![CDATA[src="https://openload.co/embed\/(.*?)\/]]></expres>
+<page>[makelist4.param1]</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/adryflix.png</thumbnail>
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <itm>
+<title>[B]ANIMEFLV[/B]  en proceso </title>
+ <link>$doregex[makelist3]</link>
+
+
+ <regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+<title>[makelist3.param2] [makelist3.param3] </title>
+ <link>$doregex[id3]</link>
+   ]]></listrepeat>
+   <expres><![CDATA[href="(.*?)">\n(.*?)<[\w\W\s]{0,102}<td>(.*?)<]]></expres>
+<page>http://animeflv.co/Anime/6585/golden-boy-subbed</page>
+<referer>http://animeflv.co</referer>
+<agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36</agent>
+<cookieJar>$doregex[createCFCookie2]</cookieJar>
+</regex>
+<regex>
+        <name>createCFCookie2</name>
+        <expres></expres>
+        <page>$pyFunction:cloudflare.createCookie('http://animeflv.co',Cookie_Jar,'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36')</page>
+        <cookieJar></cookieJar>
+</regex>
+
+
+
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = '$doregex[id2]'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://blackaddon.rf.gd/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+	<regex>
+   <name>id2</name>
+   <expres><![CDATA[iframe\ssrc="(.*?)"]]></expres>
+   <page>$doregex[id]</page>
+		<referer>http://animeflv.co</referer>
+<agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36</agent>
+<cookieJar>$doregex[createCFCookie]</cookieJar>
+</regex>
+<regex>
+        <name>createCFCookie</name>
+        <expres></expres>
+        <page>$pyFunction:cloudflare.createCookie('http://animeflv.co',Cookie_Jar,'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36')</page>
+        <cookieJar></cookieJar>
+</regex>
+
+	<regex>
+   <name>id</name>
+   <expres><![CDATA[source\ssrc="(.*?)"]]></expres>
+   <page>[makelist3.param1]</page>
+		<referer>http://animeflv.co</referer>
+<agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36</agent>
+<cookieJar>$doregex[createCFCookie]</cookieJar>
+</regex>
+
+
+<thumbnail>http://blackaddon.rf.gd/gray/img/adryflix.png</thumbnail>
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<itm>
+<title>[B]animeyt ORG[/B] [-] </title>
+
+<link>$doregex[makelist2]</link>
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<SetViewMode>55</SetViewMode>
+<title> [makelist2.param2]   </title>
+<link>$doregex[makelist3]</link>
+]]></listrepeat>
+<expres><![CDATA[nowrap\;"\shref="(.*?)"\stitle="(.*?)"]]></expres>
+<page>http://animeyt.org/anime/dragon-ball-super-audio-espanol/</page>
+</regex>
+
+
+
+<regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+<SetViewMode>55</SetViewMode>
+<title>[makelist2.param3] [makelist2.param2] | server:[B][makelist3.param1][/B]   </title>
+<urlsolve>[makelist3.param1]</urlsolve>
+<thumbnail>[makelist2.param2]</thumbnail>
+<fanart>[makelist2.param2]</fanart>
+]]></listrepeat>
+<expres><![CDATA["(https://openload.co.*?)"]]></expres>
+<page>[makelist2.param1]</page>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/adryflix.png</thumbnail><fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart></item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>[B]ONSERIES[/B] [VO] BUSCAR </title>
+
+<link>$doregex[makelist2]</link>
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<SetViewMode>55</SetViewMode>
+<title>[B][makelist2.param4][/B]</title>
+<link>$doregex[makelist1]</link>
+<thumbnail>[makelist2.param1]</thumbnail>
+<fanart>[makelist2.param1]</fanart>
+]]></listrepeat>
+<expres><![CDATA[img65x90[\w\W\s]{0,24}src="(.*?)"[\w\W\s]{0,400}href="(.*?)"\stitle="(.*?)".*?strong>(.*?)<]]></expres>
+<page>http://ewatchseries.to/search/$doregex[search]</page>
+</regex>
+
+
+
+<regex>
+<name>search</name>
+<expres><![CDATA[#$pyFunction
+import xbmc
+import xbmcaddon
+import xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+    dialog = xbmcgui.Dialog()
+    d = dialog.input('Buscar Serie: ejemplo: Arrow', type=xbmcgui.INPUT_ALPHANUM).replace(" ", "+")
+    return d
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+
+
+
+<regex>
+<name>makelist1</name>
+<listrepeat><![CDATA[
+<SetViewMode>55</SetViewMode>
+<title>[B][makelist1.param1][/B] [makelist1.param3]</title>
+<link>$doregex[makelist3]</link>
+<thumbnail>[makelist2.param1]</thumbnail>
+<fanart>[makelist2.param1]</fanart>
+]]></listrepeat>
+<expres><![CDATA[name\">(Sea.*?)<|a\shref="(http://ewatchseries.to/episode/(.+?).html)"]]></expres>
+<page>[makelist2.param2]</page>
+</regex>
+
+
+
+
+
+
+
+
+<regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+<SetViewMode>55</SetViewMode>
+<title>[makelist1.param3]   Server:[B][makelist3.param2][/B]</title>
+<link>$doregex[id3]</link>
+<thumbnail>[makelist2.param1]</thumbnail>
+<fanart>[makelist2.param1]</fanart>
+]]></listrepeat>
+<expres><![CDATA[cale.html\?r=(.*?)\".*?title="(.*?)"]]></expres>
+<page>[makelist1.param2]</page>
+</regex>
+
+
+
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = '$doregex[uno]'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://blackaddon.rf.gd/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+<regex>
+<name>uno</name>
+<expres>$pyFunction:base64.b64decode('[makelist3.param1]')</expres>
+<page></page>
+</regex>
+
+
+<thumbnail>http://blackaddon.rf.gd/gray/img/adryflix.png</thumbnail><fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart></item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>[B]ONSERIES[/B] [VO] </title>
+
+<link>$doregex[makelist2]</link>
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<SetViewMode>55</SetViewMode>
+<title>[B][makelist2.param2][/B]</title>
+<link>$doregex[makelist1]</link>
+<thumbnail>[makelist2.param3]</thumbnail>
+<fanart>[makelist2.param3]</fanart>
+]]></listrepeat>
+<expres><![CDATA[mask\"[\w\W\s]{0,40}href="(.*?)"\stitle="(.*?)"[\w\W\s]{0,45}src="(.*?)"]]></expres>
+<page>http://ewatchseries.to/series</page>
+</regex>
+
+
+
+
+
+<regex>
+<name>makelist1</name>
+<listrepeat><![CDATA[
+<SetViewMode>55</SetViewMode>
+<title>[B][makelist1.param1][/B] [makelist1.param3]</title>
+<link>$doregex[makelist3]</link>
+<thumbnail>[makelist2.param3]</thumbnail>
+<fanart>[makelist2.param3]</fanart>
+]]></listrepeat>
+<expres><![CDATA[name\">(Sea.*?)<|a\shref="(http://ewatchseries.to/episode/(.+?).html)"]]></expres>
+<page>[makelist2.param1]</page>
+</regex>
+
+
+<regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+<SetViewMode>55</SetViewMode>
+<title>[makelist1.param3]   Server:[B][makelist3.param2][/B]</title>
+<link>$doregex[id3]</link>
+<thumbnail>[makelist2.param3]</thumbnail>
+<fanart>[makelist2.param3]</fanart>
+]]></listrepeat>
+<expres><![CDATA[cale.html\?r=(.*?)\".*?title="(.*?)"]]></expres>
+<page>[makelist1.param2]</page>
+</regex>
+
+
+
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = '$doregex[uno]'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://blackaddon.rf.gd/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+<regex>
+<name>uno</name>
+<expres>$pyFunction:base64.b64decode('[makelist3.param1]')</expres>
+<page></page>
+</regex>
+
+
+<thumbnail>http://blackaddon.rf.gd/gray/img/adryflix.png</thumbnail><fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart></item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title> test</title>
+<link>$doregex[makelist4]</link>
+
+
+
+<regex>
+  <name>makelist4</name>
+  <listrepeat><![CDATA[
+        <title>[makelist4.param2]</title>
+        <link>$doregex[makelist]</link>
+		<thumbnail>http://blackaddon.rf.gd/gray/img/adryflix.png</thumbnail>
+        ]]></listrepeat>
+<expres>class="name" href="/Maruxa/(.*?)">(.*?)<</expres>
+<page>http://kbagi.com/Maruxa</page>
+</regex>
+
+
+
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title> [makelist.param2]</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>/thumbnail>
+]]></listrepeat>
+<expres><![CDATA[class="name[\w\W\s]{0,35}href="(.*?)"[\w\W\s]{0,50}preview">(.*?)<]]></expres>
+<page>http://kbagi.com/Maruxa/[makelist4.param1]/list,1,20</page>
+<cookieJar></cookieJar>
+</regex>
+
+
+
+
+
+
+<regex><name>getUrl</name>
+<expres><![CDATA[#$pyFunction
+import re , requests ,json
+def GetLSProData(page_data,Cookie_Jar,m):
+
+ ref = 'http://kbagi.com/'
+ url='http://kbagi.com[makelist.param1]'
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': ref ,
+            'X-Requested-With' : 'XMLHttpRequest' , 'Accept' : '*/*'}
+ session = requests.Session()
+ r = session.get(url, headers=headers)
+ rv1 = r.cookies
+
+ vfile , vtoken = re.findall('action/DownloadFile.*?fileId.*?value="(.*?)".*?Token".*?value="(.*?)"', r.text)[0]
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr = requests.post('http://kbagi.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers,cookies=rv1 , data=data_a).text
+ nrj=json.loads(nr)
+ nr = nrj['Content']
+ r2 = re.findall(r'(?s)value=\"(.*?)\"', nr)[0]
+ data_a ={'__RequestVerificationToken': r2 , 'Username': 'demodemo' , 'Password' : 'adryanlist'}
+ nr1 = requests.post('http://kbagi.com/action/Account/Login', headers=headers,cookies = rv1 , data=data_a)
+ print nr1.headers['Set-Cookie']
+ rasp = re.findall('ASPXAUTH_v2=(.*?);', nr1.headers['Set-Cookie'])[0]
+ rv1['.ASPXAUTH_v2'] = rasp
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr3 = requests.post('http://kbagi.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers, cookies = rv1 , data=data_a).text
+ r3 = re.findall('DownloadUrl":"(.*?)"', nr3)[0]
+ print r3
+ return r3
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/adryflix.png</thumbnail>
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>[B]SERIES PLUS[/B]  en proceso *  </title>
+<link>$doregex[makelist2]</link>
+
+
+<regex>
+ <name>makelist2</name>
+ <listrepeat><![CDATA[
+  <SetViewMode>55</SetViewMode>
+        <title>[B][makelist2.param1] [/B] [makelist2.param6]  </title>
+<link>$doregex[makelist]</link>
+<thumbnail>https://www.thetvdb.com/banners/posters/[makelist2.param7]-1.jpg</thumbnail>
+]]></listrepeat>
+<expres>Name:(.*?)\|\surl:(.*?)\|\sFecha:(.*?)\|\sClase:(.*?)\|\sIdioma:(.*?)\|\sTemporada:(.*?)\|\sid:(.*?)\|</expres>
+<page>http://blackaddon.rf.gd/gray/listascompartidas.txt</page>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>$pyFunction:('[makelist.param3]').replace('Espa&#241;ol','')</title>
+        <link>$doregex[getUrl]</link>
+				<thumbnail>[makelist2.param3]</thumbnail>
+	<fanart>[makelist2.param3]</fanart>
+        ]]></listrepeat>
+<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
+<page>[makelist2.param2]/list,1,15</page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>[makelist2.param4]/action/DownloadFile?location=fi&amp;f=[makelist.param1]</page>
+<rawpost>fileId=[makelist.param1]&__RequestVerificationToken=$doregex[tok]</rawpost>
+<referer>[makelist2.param4]/[makelist.param2]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>[makelist2.param4]/[makelist.param2]</page>
+<referer>[makelist2.param4]/adryanlist/fileuploader-67183/list,4,15</referer>
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/adryflix.png</thumbnail>
+</item>
+
+
+
+
+
+
+
+
+<item>
+<title>[B]PELICULAS PLUS[/B]  en proceso  </title>
+<link>$doregex[makelist2]</link>
+<externallink>http://blackaddon.rf.gd/gray/projectx.xml</externallink>
+<thumbnail>http://blackaddon.rf.gd/gray/img/adryflix.png</thumbnail>
+</item>

@@ -1,0 +1,1928 @@
+<item>
+  titulo="**www.filmon.com/tv/ufc-next**</title>
+  <link>$doregex[sxlink]</link>
+  <regex>
+    <name>sxlink</name>
+    <expres><![CDATA[high.stream.*?(http.*?)[",']\W]]></expres>
+    <page>http://www.filmon.com/api-v2/channel/$doregex[ch_id]</page>
+    <referer>http://www.filmon.com/tv/channel/export?channel_id=$doregex[ch_id]</referer>
+    <agent>Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.110 Safari/537.36</agent>
+    <accept>*/*; q=0.01</accept>
+    <cookieJar></cookieJar>
+    </includeheaders>
+  </regex>
+  <regex>
+    <name>ch_id</name>
+    <expres><![CDATA[clicked_channel_id.*?[",'](.*?)[",']\W]]></expres>
+    <page>https://www.filmon.com/tv/ufc-next</page>
+    <agent>Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.110 Safari/537.36</agent>
+    <accept>*/*; q=0.01</accept>
+    <cookieJar></cookieJar>
+    </includeheaders>
+  </regex>
+</item>
+			
+<item>
+titulo="Courtesy of Filmon list maker   You Need Install Sportsdevil and FilmonTV addons</title>
+<link>http://www.filmon.com/tv/channel/export?channel_id=713</link>
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Channel4", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=2", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Al Jazeera", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=4", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="CBS Miami", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=5", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Viva", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=8", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="FilmOn Martial Arts", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=10", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="ITV1", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=11", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Film4", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=13", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="BBC One", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=14", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="BBC One", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=14", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="BBC One", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=14", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+titulo="Food Network", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=20", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Fashion TV", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=21", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Channel5", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=22", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="RTVE", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=23", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="BBC Two", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=25", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="BBC Two", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=25", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="BBC Two", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=25", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="ITV3", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=26", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="BBC News", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=27", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="E4", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=65", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="ITV2", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=67", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Dubai Sports", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=79", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Bloomberg", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=81", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Russia Today", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=93", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="4 Music", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=95", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="More4", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=97", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="ITV4", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=101", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="CBEEBIES/BBC Four", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=103", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="CBEEBIES/BBC Four", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=103", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="CBBC/BBC Three", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=113", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="CBBC/BBC Three", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=113", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="ABC 7 NY", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=124", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="KPBS", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=131", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="FOX 5 NY", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=136", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Qubo", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=153", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="NBC NY", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=154", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="KTLA LA Los Angeles", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=181", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Test", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=190", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="CBS NY", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=196", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="KDOC DT LA Los Angeles", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=200", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="FilmOn Classics", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=206", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="WPIX", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=209", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="CORNERSTONE TV", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=212", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="TVC Latino", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=213", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="World", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=233", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="UNRELIABLE SOURCES", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=239", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="RSquared", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=256", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="FilmOn Music Legends TV", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=257", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Berea-V", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=259", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Motorz", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=262", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Wine Channel TV", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=263", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="The Ski Channel", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=265", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="The Spirit Word Channel", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=289", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Mini Movies", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=290", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="My Combat Channel", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=295", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="France24", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=298", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="RT Espanol", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=299", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="My Family TV", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=301", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="FilmOn Breaking News", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=302", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="RTP international", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=303", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Supreme Master TV", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=304", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="The Florida Channel", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=305", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Jewelry TV", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=306", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="V Me", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=308", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="FilmOn Grab Bag TV", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=310", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="FilmOn Rock TV", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=311", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Macabre Theatre", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=315", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="X-Treme Sports", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=326", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="WeatherNation", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=329", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="NASA HD", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=330", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Jewish Life TV", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=332", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="The Pentagon", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=333", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="University of California", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=334", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Havoc Television", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=335", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Cultra", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=336", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Terror-Flix", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=339", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="The Walk TV", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=340", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="eScapes HD TV", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=341", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="The Country Network", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=342", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="BizTV", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=343", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="ComedyTime TV", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=344", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="After Dark TV", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=345", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Urban Music Network", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=347", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Corner Store TV", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=348", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Pursuit channel", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=349", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="The Soundtrack Channel", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=350", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="QVC Deutschland", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=354", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="QVC PLUS", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=355", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="zdf.kultur", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=359", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="ZDFneo", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=360", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="BBC 1 North Ireland", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=361", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Renault TV", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=363", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="M6 BOUTIQUE LA CHAINE", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=364", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Al Arabiya", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=366", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="MBC", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=367", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="MBC2", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=368", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="MBC Action", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=369", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Dave", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=370", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="PickTV", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=371", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Really", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=372", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="NWA Wrestling", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=373", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="FilmOn Football", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=374", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Rai1", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=375", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Rai2", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=376", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Rai News 24", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=378", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Camera dei Deputati", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=379", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Bikini TeeVee", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=380", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="War Crime Network", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=381", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Sci-Fi Telly", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=382", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Veg TV", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=383", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="The Western Channel", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=384", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="The Noise Network", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=385", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="GeoBeats Travel", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=386", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Kevin Spencer TV", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=387", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Eighteen Holes TV", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=389", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="ftvct Network", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=390", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="WNET", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=392", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="American Horrors", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=393", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="WW Extreme", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=394", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Films On Reels", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=395", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Men7", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=396", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Wheels TV", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=397", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="TBN", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=398", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="The Church Channel", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=399", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="JCTV", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=400", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Smile of Child", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=401", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="R&amp;R Television", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=402", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="World of Martial Arts Television", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=406", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Skiers World TV", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=408", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="FITNESS LIFESTYLE TV", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=410", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Hollywoodland Channel", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=411", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="QVC HD", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=413", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Time TV", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=414", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Eins Extra", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=415", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Eins Plus", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=418", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Eins Festival", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=421", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Phoenix", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=424", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="ITALIA1", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=427", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Rete4", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=430", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="CANALE5", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=433", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Canale Italia 84", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=442", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Canale Italia", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=445", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="BLU", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=448", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Studio Europa", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=451", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Justice TV", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=454", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Passionepesca", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=457", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="QVC Italia", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=463", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="FilmOn College Basketball", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=485", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="FilmOn College Football", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=488", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="War in Color", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=491", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Filmon Stars", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=494", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Urban Comedy", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=497", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Action Cinema", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=500", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Inspirational films", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=503", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="ShockORama", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=509", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Threshold", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=514", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="TV5MONDE EUROPE", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=517", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="ProSieben Austria", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=520", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Kabeleins", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=523", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Andalucia TV", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=526", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="FilmOn Jazz and Blues", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=530", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="GALAXIE ADULT ALTERNATIVE", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=536", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="GALAXIE CLASSIC MASTERS", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=539", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="GALAXIE CLASSIC ROCK", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=542", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="GALAXIE COUNTRY CLASSICS", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=545", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="GALAXIE EASY LISTENING", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=548", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="GALAXIE FLASHBACK 70S", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=551", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="GALAXIE FOLK ROOTS", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=554", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="GALAXIE HIT LIST", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=557", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="GALAXIE HOT COUNTRY", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=560", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="GALAXIE JAMMIN", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=563", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="GALAXIE JAZZ MASTERS", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=566", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="GALAXIE JUKEBOX OLDIES", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=569", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="GALAXIE KIDS STUFF", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=572", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="GALAXIE LATINO TROPICAL", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=575", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="GALAXIE POP ADULT", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=578", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="GALAXIE POP CLASSICS", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=581", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="GALAXIE EVERYTHING 80S", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=584", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="GALAXIE ROCK", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=587", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="GALAXIE ROCK ALTERNATIVE", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=590", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="GALAXIE SMOOTH JAZZ", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=593", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="GALAXIE SOUL STORM", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=596", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="GALAXIE STANDARDS", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=599", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="GALAXIE THE BLUES", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=602", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="GALAXIE THE LIGHT", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=605", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="GALAXIE URBAN BEATS", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=608", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="GALAXIE NOTHIN' BUT 90'S", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=611", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="GALAXIE MAXIMUM PARTY", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=614", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="GALAXIE DANCE CLUBBN'", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=617", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="GALAXIE BLUEGRASS", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=620", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="GALAXIE BIG BAND", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=623", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="GALAXIE JAZZ NOW", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=626", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="GALAXIE THE CHILL LOUNGE", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=629", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="GALAXIE THE SPA", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=632", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="GALAXIE BAROQUE", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=635", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="GALAXIE OPERA PLUS", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=638", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="GALAXIE CHAMBER MUSIC", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=641", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="GALAXIE TODAY'S LATIN POP", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=644", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="GALAXIE RETRO R&amp;B", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=647", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="GALAXIE NO FENCES", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=650", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="GALAXIE DANCE CLASSICS", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=653", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="GALAXIE HOLIDAY HITS", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=656", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="GALAXIE HARD ROCK", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=659", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="GALAXIE ALT ROCK CLASSICS", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=662", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="GALAXIE ROCK ALT-COUNTRY AMERICANA", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=665", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="GALAXIE GOSPEL", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=668", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="GALAXIE CELTIC", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=671", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="GALAXIE RETRO LATINO", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=674", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="GALAXIE LATINO URBANA", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=677", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="GALAXIE LATINO TEJANO", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=680", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="GALAXIE REGIONAL MEXICAN", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=683", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Sportskool", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=686", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Clubbing TV", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=691", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="HRTV", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=694", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Free Speech TV", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=697", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="INSP", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=700", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Halogen TV", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=703", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Sonnenklar TV", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=706", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="American Primetime Television", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=707", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Eco-Rico", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=710", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="UFC Next", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=713", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Popcorn TV", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=716", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Emba Kids", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=719", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="DVIDs TV", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=725", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="The Miki Show", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=728", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="YouToo", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=773", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="MyFamily TV East", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=779", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="BUZZ TV", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=782", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Steel Dreams", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=784", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Distant Roads", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=787", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Party TeeVee", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=790", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Kartoon Klassics", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=793", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Ginx", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=796", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Animal Atlas", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=799", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Masked Republic AAA Lucha Libre", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=802", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="The war channel", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=805", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="UWTV", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=808", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Trans TV", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=812", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Trans7", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=813", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="ERT World", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=815", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="BOUNCE", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=821", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Telemundo NY", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=827", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="DAYSTAR", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=833", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="horror channel", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=836", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Travel Channel+1", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=842", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="5USA", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=845", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="KIDS", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=863", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="MiamiTV", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=866", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="PBS CH", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=869", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="CW CH", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=872", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="CBS CH", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=875", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="NBC CH", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=878", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Fox 32 CH", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=881", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="ABC CH", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=884", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Press TV", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=905", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="iFilm", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=908", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Eye for an Eye", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=911", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Ebru", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=914", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Arirang TV", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=932", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Fox 4 Dallas", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=934", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="NBC Dallas", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=937", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="ABC 10 Dallas", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=940", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="CBS Dallas", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=943", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Ebru TV US", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=979", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="AFL Classic", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=980", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Punch TV", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=983", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="NBC Miami", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=986", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="ABC Miami", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=989", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="NBC Washington", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=997", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="ABC Washington", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=998", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Fox 5 Washington", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1001", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="CBS Washington", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1004", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="ABC Australia", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1007", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Supa Pirate Booty Hunt", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1013", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="World of...", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1016", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Cheer Channel", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1019", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Simply Me", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1022", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="HSN", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1025", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Yesterday", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1039", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Vintage Music TV", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1042", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Action Zone", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1045", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="RMC On Air", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1046", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="OBXTV", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1049", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Matriarch TV", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1052", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Fitness TV", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1123", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="ABC Denver", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1591", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="NBC Denver", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1594", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="CBS Denver", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1597", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Fox 31 Denver", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1600", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Revival Television Network", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1601", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="CTN", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1604", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="CTN Lifestyle", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1607", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="CTN International", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1610", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Paranormal TV", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1618", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="FightBox", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1621", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="DocuBox", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1624", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="FashionBox", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1627", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="COZI TV", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1630", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="WXTV Univision", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1654", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="BBC Parliament", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1666", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="EuroNews", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1672", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="CCTV News", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1675", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Filmon Studio", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1676", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Job Channel Network", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1678", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Music Mix USA", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1681", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="ABC 5 Boston", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1699", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="NBC Boston", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1702", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="CBS Boston", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1705", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Fox 25 Boston", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1708", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Psychic Today", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1711", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="30a TV", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1714", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="France2", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1717", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="France5", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1720", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="France3", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1723", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="iTELE", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1726", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Fun little movies", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1727", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="ARTE Francais", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1729", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="RIK", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1732", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Perviy kanal Europa", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1735", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="RTR Planeta", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1738", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Music Box Russia", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1741", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Rossiya 24", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1744", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="RBC TV", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1747", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Filmon Home", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1753", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Game Time", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1756", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="What America Thinks", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1759", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Abu Dhabi Sports", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1760", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="National Geographic Abu Dhabi", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1763", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Infinity TV", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1766", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Ajman TV", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1769", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Noor Dubai", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1772", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Saudi Arabian TV1", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1775", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Saudi Arabian TV2", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1778", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Saudi Arabian TV Sports", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1781", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Al Fayhaa TV", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1790", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Eri TV", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1793", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Suryoyo Sat", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1796", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Mediaset Italia", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1799", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="TGCom 24", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1802", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="CBS Drama", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1805", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="CBS Reality", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1808", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="CBS Reality+1", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1811", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Jazeera Children", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1814", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="ITV+1", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1817", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="ITV2+1", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1820", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="ITV3+1", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1823", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="ITV4+1", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1826", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Food Network+1", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1829", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="ABC 2 Atlanta", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1832", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="NBC Atlanta", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1835", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="CBS Atlanta", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1838", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Fox 5 Atlanta", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1841", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Almavision TV Phoenix", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1844", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="The CW Phoenix", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1847", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="TBN Phoenix", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1850", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Univision Phoenix", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1853", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="College hotties", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1858", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Fun Little Kids", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1861", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="LIVE BOXING", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1864", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Omniverse Health and Wellness", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1867", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Bible Discovery TV", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1870", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Catholic TV", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1876", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Church Channel", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1879", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Enlace Juvinel", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1885", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="GodTV", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1891", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="iPoint TV", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1897", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Jesus Christ TV", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1900", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="KGPF", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1903", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Safe TV", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1912", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Sonlife Broadcast Network", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1915", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Tabernacle Real", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1918", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Trinity Broadcasting Network", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1921", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Vida Atlanta", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1924", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Vida Mundial", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1927", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="WCTV", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1930", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Word Broadcasting Network", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1933", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Bounce Washington", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1936", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="The CW Washington", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1939", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="Cozi TV Washington", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1942", final
+<referer>http://www.filmon.com</referer>
+</item>
+ 
+<item>
+titulo="PBS Washington", sportsdevil="http://www.filmon.com/tv/channel/export?channel_id=1945", final
+<referer>http://www.filmon.com</referer>
+</item>

@@ -1,0 +1,877 @@
+
+<item>
+<title> [COLOR lime]•[/COLOR]    [COLOR skyblue][B]Gnula[/B] [/COLOR][COLOR skyblue]Alfabeticamente[/COLOR] </title>
+<link>$doregex[makelist4]</link>
+
+
+
+<regex>
+<name>makelist4</name>
+<listrepeat><![CDATA[
+<title>[COLOR skyblue] Letra [makelist4.param2] [/COLOR] </title>
+<link>$doregex[makelist3]</link>
+]]></listrepeat>
+<expres>href="/lista-de-series/(.*?)">(.*?)<</expres>
+<page>http://gnula.se/lista-de-series/</page>
+<referer>http://gnula.se</referer>
+<agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36</agent>
+<cookieJar>$doregex[createCFCookie]</cookieJar>
+
+</regex>
+
+<regex>
+        <name>createCFCookie</name>
+        <expres></expres>
+        <page>$pyFunction:cloudflare.createCookie('http://gnula.se',Cookie_Jar,'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36')</page>
+        <cookieJar></cookieJar>
+</regex>
+
+
+
+
+
+<regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+<title>[COLOR skyblue] [makelist3.param2] [/COLOR] </title>
+<link>$doregex[makelist2]</link>
+]]></listrepeat>
+<expres>capitulos/(.*?)" title="(.*?)"</expres>
+<page>http://gnula.se/lista-de-series/[makelist4.param1]</page>
+<referer>http://gnula.se</referer>
+<agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36</agent>
+<cookieJar>$doregex[createCFCookie]</cookieJar>
+
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>[COLOR skyblue] [makelist2.param3] [makelist2.param2][/COLOR] </title>
+<link>$doregex[makelist]</link>
+]]></listrepeat>
+<expres>href="http://gnula.se/capitulo/(.*?)"[\w\W\s]{0,9}>(.*?)<[\w\W\s]{0,9}-(.*?)<</expres>
+<page>http://gnula.se/capitulos/[makelist3.param1]</page>
+<referer>http://gnula.se</referer>
+<agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36</agent>
+<cookieJar>$doregex[createCFCookie]</cookieJar>
+
+<!-- href="http://gnula.se/capitulo/(.*?)"[\w\W\s]{0,3}strong>(.*?)<[\w\W\s]{0,7}> - (.*?)< -->
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+
+<title>[makelist2.param3] [makelist2.param2] - [COLOR lightblue]Idioma:[makelist.param2][/COLOR]</title>
+<link>$doregex[url]/$doregex[id2]/v.flv</link>
+<regex>
+<name>url</name>
+<expres>vplayer[\w\W\s]{0,8}src="(.*?)\/i</expres>
+<page>http://streamin.to/embed-[makelist.param1]-740x360.html</page>	 
+<referer>http://streamin.to</referer>
+</regex>
+<regex>
+<name>id2</name>
+<expres>image\|[\w\W\s]{0,3}\|(.*?)\|file</expres>
+<page>http://streamin.to/embed-[makelist.param1]-740x360.html</page>	 
+<referer>http://streamin.to</referer>
+</regex>
+
+
+
+]]></listrepeat>
+
+<expres>href="http://streamin.to/(.*?)"[\w\W\s]{0,420}lng/(.*?).png</expres>
+<page>http://gnula.se/capitulo/[makelist2.param1]</page>
+<referer>http://gnula.se</referer>
+<agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36</agent>
+<cookieJar>$doregex[createCFCookie]</cookieJar>
+
+</item>
+
+
+
+
+
+
+
+
+
+<item>
+<title> [COLOR lime]•[/COLOR]    [COLOR skyblue][B]Gnula[/B] [/COLOR][COLOR skyblue]Mas Vistas***[/COLOR] </title>
+<link>$doregex[makelist4]</link>
+
+
+
+<regex>
+<name>makelist4</name>
+<listrepeat><![CDATA[
+<title>[COLOR lightblue] [makelist4.param2] [/COLOR] </title>
+<link>$doregex[makelist2]</link>
+<thumbnail>[makelist2.param3]</thumbnail>
+]]></listrepeat>
+<expres>capitulos/(.*?)" title="(.*?)".*src="(http://gnula.se/img/.*?)"</expres>
+<page>http://gnula.se/series-mas-vistas/</page>
+<referer>http://gnula.se</referer>
+<agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36</agent>
+<cookieJar>$doregex[createCFCookie]</cookieJar>
+
+</regex>
+
+<regex>
+        <name>createCFCookie</name>
+        <expres></expres>
+        <page>$pyFunction:cloudflare.createCookie('http://gnula.se',Cookie_Jar,'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36')</page>
+        <cookieJar></cookieJar>
+</regex>
+
+
+
+
+
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>[COLOR skyblue] [makelist2.param3] [makelist2.param2][/COLOR] </title>
+<link>$doregex[makelist]</link>
+]]></listrepeat>
+<expres>href="http://gnula.se/capitulo/(.*?)"[\w\W\s]{0,9}>(.*?)<[\w\W\s]{0,9}-(.*?)<</expres>
+<page>http://gnula.se/capitulos/[makelist4.param1]</page>
+<referer>http://gnula.se</referer>
+<agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36</agent>
+<cookieJar>$doregex[createCFCookie]</cookieJar>
+</regex>
+
+<!-- href="http://gnula.se/capitulo/(.*?)"[\w\W\s]{0,3}strong>(.*?)<[\w\W\s]{0,7}> - (.*?)< -->
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+
+<title>[makelist2.param3] [makelist2.param2] - [COLOR lightblue]Idioma:[makelist.param2][/COLOR]</title>
+<link>$doregex[url]/$doregex[id2]/v.flv</link>
+<regex>
+<name>url</name>
+<expres>vplayer[\w\W\s]{0,8}src="(.*?)\/i</expres>
+<page>http://streamin.to/embed-[makelist.param1]-740x360.html</page>	 
+<referer>http://streamin.to</referer>
+</regex>
+<regex>
+<name>id2</name>
+<expres>image\|[\w\W\s]{0,3}\|(.*?)\|file</expres>
+<page>http://streamin.to/embed-[makelist.param1]-740x360.html</page>	 
+<referer>http://streamin.to</referer>
+</regex>
+
+
+<thumbnail> </thumbnail>
+<fanart> </fanart>
+
+]]></listrepeat>
+
+<expres>href="http://streamin.to/(.*?)"[\w\W\s]{0,420}lng/(.*?).png</expres>
+<page>http://gnula.se/capitulo/[makelist2.param1]</page>
+<referer>http://gnula.se</referer>
+<agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36</agent>
+<cookieJar>$doregex[createCFCookie]</cookieJar>
+</regex>
+
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title> [COLOR lime]•[/COLOR]    [COLOR deepskyblue][B]Gnula[/B] [/COLOR][COLOR skyblue]Ultimos Capitulos subidos[/COLOR] </title>
+<link>$doregex[makelist]</link>
+
+
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<item>
+<title>[makelist.param6]  </title>
+<link>$doregex[url]/$doregex[id2]/v.flv</link>
+<regex>
+<regex>
+<name>url</name>
+<expres>vplayer[\w\W\s]{0,8}src="(.*?)\/i</expres>
+<page>http://streamin.to/embed-$doregex[link]-740x360.html</page>	 
+<referer>http://streamin.to</referer>
+</regex>
+<regex>
+<name>id2</name>
+<expres>image\|[\w\W\s]{0,3}\|(.*?)\|file</expres>
+<page>http://streamin.to/embed-$doregex[link]-740x360.html</page>	 
+<referer>http://streamin.to</referer>
+</regex>
+
+
+<regex>
+<name>link</name>
+<expres>http://streamin.to/(.*?)\"</expres>
+<page>[makelist.param1]</page>
+<referer>http://streamin.to</referer>
+</regex>
+<thumbnail>[makelist.param2]</thumbnail>
+<fanart>[makelist.param2]</fanart>
+<info>[makelist.param3]</info>
+
+</item>
+]]></listrepeat>
+
+<expres>href="(.*?)"[\w\W\s]{0,7}src="(.*?)"[\w\W\s]{0,22}de(.*?)"[\w\W\s]{0,155}lng/(.*?)\.[\w\W\s]{0,19}title="(.*?)"[\w\W\s]{0,38}gnula.se/capitulo/(.*?)"</expres>
+<page>http://gnula.se/</page>
+<referer>http://gnula.se</referer>
+<agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36</agent>
+<cookieJar>$doregex[createCFCookie]</cookieJar>
+
+</regex>
+
+<regex>
+        <name>createCFCookie</name>
+        <expres></expres>
+        <page>$pyFunction:cloudflare.createCookie('http://gnula.se',Cookie_Jar,'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36')</page>
+        <cookieJar></cookieJar>
+</regex>
+
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title> [COLOR lime]•[/COLOR]    [COLOR deepskyblue][B]Gnula[/B] [/COLOR][COLOR skyblue]Todas la Series[/COLOR] </title>
+<link>$doregex[makelist2]</link>
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>[COLOR coral] [makelist2.param1] [/COLOR] </title>
+<link>$doregex[makelist]</link>
+]]></listrepeat>
+<expres>a title="(.*?)" href="(.*?)"</expres>
+<page>http://gnula.se/</page>
+<referer>http://gnula.se</referer>
+<agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36</agent>
+<cookieJar>$doregex[createCFCookie]</cookieJar>
+
+</regex>
+
+<regex>
+        <name>createCFCookie</name>
+        <expres></expres>
+        <page>$pyFunction:cloudflare.createCookie('http://gnula.se',Cookie_Jar,'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36')</page>
+        <cookieJar></cookieJar>
+</regex>
+
+
+
+
+
+
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<item>
+<title>[makelist.param3] - [makelist.param2]</title>
+<link>$doregex[url]/$doregex[id2]/v.flv</link>
+<regex>
+<regex>
+<name>url</name>
+<expres>vplayer[\w\W\s]{0,8}src="(.*?)\/i</expres>
+<page>http://streamin.to/embed-$doregex[link]-740x360.html</page>	 
+<referer>http://streamin.to</referer>
+</regex>
+<regex>
+<name>id2</name>
+<expres>image\|[\w\W\s]{0,3}\|(.*?)\|file</expres>
+<page>http://streamin.to/embed-$doregex[link]-740x360.html</page>	 
+<referer>http://streamin.to</referer>
+</regex>
+
+
+<regex>
+<name>link</name>
+<expres>http://streamin.to/(.*?)\"</expres>
+<page>[makelist.param1]</page>
+<referer>http://streamin.to</referer>
+</regex>
+
+
+<regex>
+<name>link</name>
+<expres>http://streamin.to/(.*?)\"</expres>
+<page>http://gnula.se/capitulo/[makelist.param1]</page>
+<referer>http://streamin.to</referer>
+</regex>
+
+<thumbnail> </thumbnail>
+<fanart> </fanart>
+
+</item>
+]]></listrepeat>
+
+<expres>href="http://gnula.se/capitulo/(.*?)"[\w\W\s]{0,9}>(.*?)<[\w\W\s]{9}-(.*?)<</expres>
+<page>http://gnula.se/[makelist2.param2]/</page>
+<referer>http://gnula.se</referer>
+<agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36</agent>
+<cookieJar>$doregex[createCFCookie]</cookieJar>
+</item>
+
+
+
+
+<item>
+<title> [COLOR lime]•[/COLOR]    [COLOR deepskyblue][B]Gnula[/B] [/COLOR][COLOR skyblue]Por Generos[/COLOR] </title>
+<link>$doregex[makelist3]</link>
+
+
+<regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+<title>[COLOR coral] [makelist3.param1] [/COLOR] </title>
+<link>$doregex[makelist2]</link>
+
+]]></listrepeat>
+<expres>href="/genero/(.*?)"</expres> 
+<page>http://gnula.se</page>
+<referer>http://gnula.se</referer>
+<agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36</agent>
+<cookieJar>$doregex[createCFCookie]</cookieJar>
+
+</regex>
+
+<regex>
+        <name>createCFCookie</name>
+        <expres></expres>
+        <page>$pyFunction:cloudflare.createCookie('http://gnula.se',Cookie_Jar,'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36')</page>
+        <cookieJar></cookieJar>
+</regex>
+
+
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>[COLOR coral] [makelist2.param1] [/COLOR] </title>
+<link>$doregex[makelist]</link>
+<thumbnail>[makelist2.param3]<thumbnail>
+<fanart>[makelist2.param3]</fanart>
+]]></listrepeat>
+<expres>title="(.*?)"[\w\W\s]{0,2}href="(.*?)"[\w\W\s]{0,22}src="(.*?)"</expres> 
+<page>http://gnula.se/genero/[makelist3.param1]</page>
+<referer>http://gnula.se</referer>
+<agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36</agent>
+<cookieJar>$doregex[createCFCookie]</cookieJar>
+
+</regex>
+
+<regex>
+        <name>createCFCookie</name>
+        <expres></expres>
+        <page>$pyFunction:cloudflare.createCookie('http://gnula.se',Cookie_Jar,'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36')</page>
+        <cookieJar></cookieJar>
+</regex>
+
+
+
+
+
+
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<item>
+<title>[makelist.param3] - [makelist.param2]</title>
+<link>$doregex[url]/$doregex[id2]/v.flv</link>
+<regex>
+<regex>
+<name>url</name>
+<expres>vplayer[\w\W\s]{0,8}src="(.*?)\/i</expres>
+<page>http://streamin.to/embed-$doregex[link]-740x360.html</page>	 
+<referer>http://streamin.to</referer>
+</regex>
+<regex>
+<name>id2</name>
+<expres>image\|[\w\W\s]{0,3}\|(.*?)\|file</expres>
+<page>http://streamin.to/embed-$doregex[link]-740x360.html</page>	 
+<referer>http://streamin.to</referer>
+</regex>
+
+
+<regex>
+<name>link</name>
+<expres>http://streamin.to/(.*?)\"</expres>
+<page>[makelist.param1]</page>
+<referer>http://streamin.to</referer>
+</regex>
+
+<thumbnail> </thumbnail>
+<fanart> </fanart>
+
+</item>
+]]></listrepeat>
+
+<expres>href="http://gnula.se/capitulo/(.*?)"[\w\W\s]{0,9}>(.*?)<[\w\W\s]{9}-(.*?)<</expres>
+<page>http://gnula.se/[makelist2.param2]</page>
+<referer>http://gnula.se</referer>
+<agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36</agent>
+<cookieJar>$doregex[createCFCookie]</cookieJar>
+
+</regex>
+
+<regex>
+        <name>createCFCookie</name>
+        <expres></expres>
+        <page>$pyFunction:cloudflare.createCookie('http://gnula.se',Cookie_Jar,'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36')</page>
+        <cookieJar></cookieJar>
+</regex>
+
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>         </title>
+<link>$doregex[makelist4]</link>
+
+</item>
+
+
+
+
+
+<item>
+<title> [COLOR lime]•[/COLOR]    [COLOR deepskyblue][B]Gnula[/B] [/COLOR][COLOR skyblue]ALFABETICAMENTE  +Servers[/COLOR] </title>
+<link>$doregex[makelist4]</link>
+
+
+
+<regex>
+<name>makelist4</name>
+<listrepeat><![CDATA[
+<title>[COLOR skyblue] Letra [makelist4.param2] [/COLOR] </title>
+<link>$doregex[makelist3]</link>
+]]></listrepeat>
+<expres>href="/lista-de-series/(.*?)">(.*?)<</expres>
+<page>http://gnula.se/lista-de-series/</page>
+<referer>http://gnula.se</referer>
+<agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36</agent>
+<cookieJar>$doregex[createCFCookie]</cookieJar>
+
+</regex>
+
+<regex>
+        <name>createCFCookie</name>
+        <expres></expres>
+        <page>$pyFunction:cloudflare.createCookie('http://gnula.se',Cookie_Jar,'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36')</page>
+        <cookieJar></cookieJar>
+</regex>
+
+
+
+
+
+<regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+<title>[COLOR skyblue] [makelist3.param2] [/COLOR] </title>
+<link>$doregex[makelist2]</link>
+]]></listrepeat>
+<expres>capitulos/(.*?)" title="(.*?)"</expres>
+<page>http://gnula.se/lista-de-series/[makelist4.param1]</page>
+<referer>http://gnula.se</referer>
+<agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36</agent>
+<cookieJar>$doregex[createCFCookie]</cookieJar>
+</regex>
+
+
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>[COLOR skyblue] [makelist2.param3] [makelist2.param2][/COLOR] </title>
+<link>$doregex[makelist]</link>
+]]></listrepeat>
+<expres>href="http://gnula.se/capitulo/(.*?)"[\w\W\s]{0,9}>(.*?)<[\w\W\s]{0,9}-(.*?)<</expres>
+<page>http://gnula.se/capitulos/[makelist3.param1]</page>
+<referer>http://gnula.se</referer>
+<agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36</agent>
+<cookieJar>$doregex[createCFCookie]</cookieJar>
+
+</regex>
+
+<regex>
+        <name>createCFCookie</name>
+        <expres></expres>
+        <page>$pyFunction:cloudflare.createCookie('http://gnula.se',Cookie_Jar,'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36')</page>
+        <cookieJar></cookieJar>
+</regex>
+
+
+<!-- href="http://gnula.se/capitulo/(.*?)"[\w\W\s]{0,3}strong>(.*?)<[\w\W\s]{0,7}> - (.*?)< -->
+ 
+<regex>
+   <name>makelist</name>
+   <listrepeat><![CDATA[
+          <title>[COLOR deepskyblue][makelist2.param3] [makelist2.param2] [COLOR lightslategray][I](idioma:idioma:[COLOR lightgreen][UPPERCASE][makelist.param3][/UPPERCASE][/COLOR] - server [COLOR lightyellow][makelist.param2][/COLOR])[/I][/COLOR][/COLOR]</title>
+          <link>$doregex[id3]$$lsname=10x4</link>
+   ]]></listrepeat>
+   <expres>episode-server[\w\W\s]{0,42}href="(.*?)"[\w\W\s]{0,250}domain=(.*?)"[\w\W\s]{0,130}lng/(.*?).png</expres>
+   <page>http://gnula.se/capitulo/[makelist2.param1]</page>
+<referer>http://gnula.se</referer>
+<agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36</agent>
+<cookieJar>$doregex[createCFCookie]</cookieJar>
+</regex>
+
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = '[makelist.param1]'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://projects.net.in.tum.de/projects/videoaufzeichnungen/export/339/andre/public/vids/ilab1/video.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+</item>
+
+
+
+
+
+<item>
+<title> [COLOR lime]•[/COLOR]    [COLOR deepskyblue][B]Gnula[/B] [/COLOR][COLOR skyblue]MAS VISTAS  +Servers[/COLOR] </title>
+<link>$doregex[makelist4]</link>
+
+
+
+<regex>
+<name>makelist4</name>
+<listrepeat><![CDATA[
+<title>[COLOR lightblue] [makelist4.param2] [/COLOR] </title>
+<link>$doregex[makelist2]</link>
+<thumbnail>[makelist2.param3]</thumbnail>
+]]></listrepeat>
+<expres>capitulos/(.*?)" title="(.*?)".*src="(http://gnula.se/img/.*?)"</expres>
+<page>http://gnula.se/series-mas-vistas/</page>
+<referer>http://gnula.se</referer>
+<agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36</agent>
+<cookieJar>$doregex[createCFCookie]</cookieJar>
+</regex>
+
+ 
+
+
+<regex>
+        <name>createCFCookie</name>
+        <expres></expres>
+        <page>$pyFunction:cloudflare.createCookie('http://gnula.se',Cookie_Jar,'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36')</page>
+        <cookieJar></cookieJar>
+</regex>
+
+
+
+
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>[COLOR skyblue] [makelist2.param3] [makelist2.param2][/COLOR] </title>
+<link>$doregex[makelist]</link>
+]]></listrepeat>
+<expres>href="http://gnula.se/capitulo/(.*?)"[\w\W\s]{0,9}>(.*?)<[\w\W\s]{0,9}-(.*?)<</expres>
+<page>http://gnula.se/capitulos/[makelist4.param1]</page>
+<referer>http://gnula.se</referer>
+<agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36</agent>
+<cookieJar>$doregex[createCFCookie]</cookieJar>
+</regex>
+
+<!-- href="http://gnula.se/capitulo/(.*?)"[\w\W\s]{0,3}strong>(.*?)<[\w\W\s]{0,7}> - (.*?)< -->
+ 
+<regex>
+   <name>makelist</name>
+   <listrepeat><![CDATA[
+          <title>[COLOR deepskyblue][makelist2.param3] [makelist2.param2] [COLOR lightslategray][I](idioma:idioma:[COLOR lightgreen][UPPERCASE][makelist.param3][/UPPERCASE][/COLOR] - server [COLOR lightyellow][makelist.param2][/COLOR])[/I][/COLOR][/COLOR] [makelist.param1]</title>
+          <urlsolve>[makelist.param1]</urlsolve>
+   ]]></listrepeat>
+   <expres>episode-server[\w\W\s]{0,40}href="(.*?)"[\w\W\s]{0,250}domain=(.*?)"[\w\W\s]{0,130}lng/(.*?).png</expres>
+   <page>http://gnula.se/capitulo/[makelist2.param1]</page>
+<referer>http://gnula.se</referer>
+<agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36</agent>
+<cookieJar>$doregex[createCFCookie]</cookieJar>
+</regex>
+
+
+
+
+</item>
+
+
+
+
+
+<item>
+<title> [COLOR lime]•[/COLOR]    [COLOR deepskyblue][B]Gnula[/B] [/COLOR][COLOR skyblue]GENEROS  +Servers[/COLOR] </title>
+<link>$doregex[makelist3]</link>
+
+
+
+<regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+<title>[COLOR coral] [makelist3.param1] [/COLOR] </title>
+<link>$doregex[makelist2]</link>
+
+]]></listrepeat>
+<expres>href="/genero/(.*?)"</expres> 
+<page>http://gnula.se</page>
+<referer>http://gnula.se</referer>
+<agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36</agent>
+<cookieJar>$doregex[createCFCookie]</cookieJar>
+
+</regex>
+
+<regex>
+        <name>createCFCookie</name>
+        <expres></expres>
+        <page>$pyFunction:cloudflare.createCookie('http://gnula.se',Cookie_Jar,'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36')</page>
+        <cookieJar></cookieJar>
+</regex>
+
+
+
+
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>[COLOR skyblue] [makelist2.param3] [makelist2.param2][/COLOR] </title>
+<link>$doregex[makelist]</link>
+]]></listrepeat>
+<expres>href="http://gnula.se/capitulo/(.*?)"[\w\W\s]{0,9}>(.*?)<[\w\W\s]{0,9}-(.*?)<</expres>
+<page>http://gnula.se/capitulos/[makelist3.param1]</page>
+<referer>http://gnula.se</referer>
+<agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36</agent>
+<cookieJar>$doregex[createCFCookie]</cookieJar>
+</regex>
+
+<!-- href="http://gnula.se/capitulo/(.*?)"[\w\W\s]{0,3}strong>(.*?)<[\w\W\s]{0,7}> - (.*?)< -->
+ 
+<regex>
+   <name>makelist</name>
+   <listrepeat><![CDATA[
+          <title>[COLOR deepskyblue][makelist2.param3] [makelist2.param2] [COLOR lightslategray][I](idioma:idioma:[COLOR lightgreen][UPPERCASE][makelist.param3][/UPPERCASE][/COLOR] - server [COLOR lightyellow][makelist.param2][/COLOR])[/I][/COLOR][/COLOR]</title>
+          <link>$doregex[id3]$$lsname=10x4</link>
+   ]]></listrepeat>
+   <expres>episode-server[\w\W\s]{0,42}href="(.*?)"[\w\W\s]{0,250}domain=(.*?)"[\w\W\s]{0,130}lng/(.*?).png</expres>
+   <page>http://gnula.se/capitulo/[makelist2.param1]</page>
+<referer>http://gnula.se</referer>
+<agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36</agent>
+<cookieJar>$doregex[createCFCookie]</cookieJar>
+</regex>
+
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = '[makelist.param1]'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://projects.net.in.tum.de/projects/videoaufzeichnungen/export/339/andre/public/vids/ilab1/video.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

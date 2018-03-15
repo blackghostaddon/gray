@@ -1,0 +1,654 @@
+
+<item>
+<title> [COLOR lime]•[/COLOR]    [COLOR deepskyblue]  [/COLOR][COLOR skyblue]Sala 01[/COLOR] </title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param3]</title>
+<link>$doregex[link2]</link>
+
+<regex>
+<name>link2</name>
+<expres>file:'(.*?)'</expres>
+<page>http://streamin.to/embed-$doregex[link]-740x360.html</page>
+<referer>http://streamin.to</referer>
+</regex>
+	 
+<regex>	 
+<name>link</name>	 
+<expres>SRC="http://streamin.to/embed-(.*?)</expres>	 
+<page>$doregex[numero2]</page>
+<referer>http://adryanlist.info</referer>	 
+</regex>	 
+
+
+<regex>	 
+<name>numero2</name>	 
+<expres>src="(http://peliculasaudiolatino.*?)"</expres>	 
+<page>$doregex[numero]</page>
+<agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36</agent>
+<cookieJar>$doregex[createCFCookie]</cookieJar>
+</regex>
+
+<regex>
+        <name>createCFCookie</name>
+        <expres></expres>
+        <page>$pyFunction:cloudflare.createCookie('http://peliculasaudiolatino.com',Cookie_Jar,'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36')</page>
+        <cookieJar></cookieJar>
+</regex>
+
+<regex>	 
+<name>numero</name>	 
+<expres>streamin.to[\w\W\s]{0,370}window.open\(\'(.*?)\'</expres>	 
+<page>[makelist.param1]</page> 
+<referer>http://peliculasaudiolatino.com/lista-completa.html</referer>
+<agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36</agent>
+<cookieJar>$doregex[createCFCookie]</cookieJar>
+</regex>
+<regex>
+        <name>createCFCookie</name>
+        <expres></expres>
+        <page>$pyFunction:cloudflare.createCookie('http://peliculasaudiolatino.com',Cookie_Jar,'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36')</page>
+        <cookieJar></cookieJar>
+</regex>
+
+
+
+<thumbnail>[makelist.param2]</thumbnail>
+<fanart>[makelist.param2]</fanart>
+]]></listrepeat>
+<expres>href="(.*?)"[\w\W\s]{0,10}"(.*?)"[\w\W\s]{0,5}"(.*?)"</expres>
+<page>http://peliculasaudiolatino.com/lista-completa.html</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+</item>
+
+
+
+
+
+
+<item>
+<title> [COLOR lime]•[/COLOR]    [COLOR deepskyblue]  [/COLOR][COLOR skyblue]Sala 02[/COLOR] </title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param3]</title>
+<link>$doregex[id]</link>
+ <regex>
+ <name>id</name>
+ <expres>file: "(.*?)",</expres>
+ <page>http://streamin.to/embed-$doregex[link]-740x360.html</page>	
+ <referer>http://streamin.to</referer>
+ </regex>
+<name>link</name>	 
+<expres>url=(.*?)\"</expres>	 
+<page>$doregex[numero]</page>	 
+<referer>http://adryanlist.info</referer>	 
+</regex>	 <regex>	 
+<name>numero</name>	 
+<expres>streamin.to[\w\W\s]{0,370}window.open\(\'(.*?)\'</expres>	 
+<page>[makelist.param1]</page> 
+<referer>http://adryanlist.info</referer>
+</regex>
+<thumbnail>[makelist.param2]</thumbnail>
+<fanart>[makelist.param2]</fanart>
+]]></listrepeat>
+<expres>href="(.*?)"[\w\W\s]{0,10}"(.*?)"[\w\W\s]{0,5}"(.*?)"</expres>
+<page>http://peliculasaudiolatino.com/lista-completa/pagina/2.html</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title> [COLOR lime]•[/COLOR]    [COLOR deepskyblue]  [/COLOR][COLOR skyblue]Sala 03[/COLOR] </title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param3]</title>
+<link>$doregex[id]</link>
+ <regex>
+ <name>id</name>
+ <expres>file: "(.*?)",</expres>
+ <page>http://streamin.to/embed-$doregex[link]-740x360.html</page>	
+ <referer>http://streamin.to</referer>
+ </regex>
+<regex>	 
+<name>link</name>	 
+<expres>url=(.*?)\"</expres>	 
+<page>$doregex[numero]</page>	 
+<referer>http://adryanlist.info</referer>	 
+</regex>	 <regex>	 
+<name>numero</name>	 
+<expres>streamin.to[\w\W\s]{0,370}window.open\(\'(.*?)\'</expres>	 
+<page>[makelist.param1]</page> 
+<referer>http://adryanlist.info</referer>
+</regex>
+<thumbnail>[makelist.param2]</thumbnail>
+<fanart>[makelist.param2]</fanart>
+]]></listrepeat>
+<expres>href="(.*?)"[\w\W\s]{0,10}"(.*?)"[\w\W\s]{0,5}"(.*?)"</expres>
+<page>http://peliculasaudiolatino.com/lista-completa/pagina/3.html</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+</item>
+
+
+
+
+
+
+
+<item>
+<title> [COLOR lime]•[/COLOR]    [COLOR deepskyblue]  [/COLOR][COLOR skyblue]Sala 04[/COLOR] </title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param3]</title>
+<link>$doregex[id]</link>
+ <regex>
+ <name>id</name>
+ <expres>file: "(.*?)",</expres>
+ <page>http://streamin.to/embed-$doregex[link]-740x360.html</page>	
+ <referer>http://streamin.to</referer>
+ </regex>
+<regex>	 
+<name>link</name>	 
+<expres>url=(.*?)\"</expres>	 
+<page>$doregex[numero]</page>	 
+<referer>http://adryanlist.info</referer>	 
+</regex>	 <regex>	 
+<name>numero</name>	 
+<expres>streamin.to[\w\W\s]{0,370}window.open\(\'(.*?)\'</expres>	 
+<page>[makelist.param1]</page> 
+<referer>http://adryanlist.info</referer>
+</regex>
+<thumbnail>[makelist.param2]</thumbnail>
+<fanart>[makelist.param2]</fanart>
+]]></listrepeat>
+<expres>href="(.*?)"[\w\W\s]{0,10}"(.*?)"[\w\W\s]{0,5}"(.*?)"</expres>
+<page>http://peliculasaudiolatino.com/lista-completa/pagina/4.html</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+</item>
+
+
+
+
+
+
+<item>
+<title> [COLOR lime]•[/COLOR]    [COLOR deepskyblue]  [/COLOR][COLOR skyblue]Sala 05[/COLOR] </title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param3]</title>
+<link>$doregex[id]</link>
+ <regex>
+ <name>id</name>
+ <expres>file: "(.*?)",</expres>
+ <page>http://streamin.to/embed-$doregex[link]-740x360.html</page>	
+ <referer>http://streamin.to</referer>
+ </regex>
+<regex>	 
+<name>link</name>	 
+<expres>url=(.*?)\"</expres>	 
+<page>$doregex[numero]</page>	 
+<referer>http://adryanlist.info</referer>	 
+</regex>	 <regex>	 
+<name>numero</name>	 
+<expres>streamin.to[\w\W\s]{0,370}window.open\(\'(.*?)\'</expres>	 
+<page>[makelist.param1]</page> 
+<referer>http://adryanlist.info</referer>
+</regex>
+<thumbnail>[makelist.param2]</thumbnail>
+<fanart>[makelist.param2]</fanart>
+]]></listrepeat>
+<expres>href="(.*?)"[\w\W\s]{0,10}"(.*?)"[\w\W\s]{0,5}"(.*?)"</expres>
+<page>http://peliculasaudiolatino.com/lista-completa/pagina/5.html</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+</item>
+
+
+
+
+
+
+<item>
+<title> [COLOR lime]•[/COLOR]    [COLOR deepskyblue]  [/COLOR][COLOR skyblue]Sala 06[/COLOR] </title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param3]</title>
+<link>$doregex[id]</link>
+ <regex>
+ <name>id</name>
+ <expres>file: "(.*?)",</expres>
+ <page>http://streamin.to/embed-$doregex[link]-740x360.html</page>	
+ <referer>http://streamin.to</referer>
+ </regex> 
+<regex>	 
+<name>link</name>	 
+<expres>url=(.*?)\"</expres>	 
+<page>$doregex[numero]</page>	 
+<referer>http://adryanlist.info</referer>	 
+</regex>	 <regex>	 
+<name>numero</name>	 
+<expres>streamin.to[\w\W\s]{0,370}window.open\(\'(.*?)\'</expres>	 
+<page>[makelist.param1]</page> 
+<referer>http://adryanlist.info</referer>
+</regex>
+<thumbnail>[makelist.param2]</thumbnail>
+<fanart>[makelist.param2]</fanart>
+]]></listrepeat>
+<expres>href="(.*?)"[\w\W\s]{0,10}"(.*?)"[\w\W\s]{0,5}"(.*?)"</expres>
+<page>http://peliculasaudiolatino.com/lista-completa/pagina/6.html</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+</item>
+
+
+
+
+
+
+<item>
+<title> [COLOR lime]•[/COLOR]    [COLOR deepskyblue]  [/COLOR][COLOR skyblue]Sala 07[/COLOR] </title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param3]</title>
+<link>$doregex[id]</link>
+ <regex>
+ <name>id</name>
+ <expres>file: "(.*?)",</expres>
+ <page>http://streamin.to/embed-$doregex[link]-740x360.html</page>	
+ <referer>http://streamin.to</referer>
+ </regex>
+<regex>	 
+<name>link</name>	 
+<expres>url=(.*?)\"</expres>	 
+<page>$doregex[numero]</page>	 
+<referer>http://adryanlist.info</referer>	 
+</regex>	 <regex>	 
+<name>numero</name>	 
+<expres>streamin.to[\w\W\s]{0,370}window.open\(\'(.*?)\'</expres>	 
+<page>[makelist.param1]</page> 
+<referer>http://adryanlist.info</referer>
+</regex>
+<thumbnail>[makelist.param2]</thumbnail>
+<fanart>[makelist.param2]</fanart>
+]]></listrepeat>
+<expres>href="(.*?)"[\w\W\s]{0,10}"(.*?)"[\w\W\s]{0,5}"(.*?)"</expres>
+<page>http://peliculasaudiolatino.com/lista-completa/pagina/7.html</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+</item>
+
+
+
+
+
+
+<item>
+<title> [COLOR lime]•[/COLOR]    [COLOR deepskyblue]  [/COLOR][COLOR skyblue]Sala 08[/COLOR] </title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param3]</title>
+<link>$doregex[id]</link>
+ <regex>
+ <name>id</name>
+ <expres>file: "(.*?)",</expres>
+ <page>http://streamin.to/embed-$doregex[link]-740x360.html</page>	
+ <referer>http://streamin.to</referer>
+ </regex>	 
+<regex>	 
+<name>link</name>	 
+<expres>url=(.*?)\"</expres>	 
+<page>$doregex[numero]</page>	 
+<referer>http://adryanlist.info</referer>	 
+</regex>	 <regex>	 
+<name>numero</name>	 
+<expres>streamin.to[\w\W\s]{0,370}window.open\(\'(.*?)\'</expres>	 
+<page>[makelist.param1]</page> 
+<referer>http://adryanlist.info</referer>
+</regex>
+<thumbnail>[makelist.param2]</thumbnail>
+<fanart>[makelist.param2]</fanart>
+]]></listrepeat>
+<expres>href="(.*?)"[\w\W\s]{0,10}"(.*?)"[\w\W\s]{0,5}"(.*?)"</expres>
+<page>http://peliculasaudiolatino.com/lista-completa/pagina/8.html</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+</item>
+
+
+
+
+
+
+<item>
+<title> [COLOR lime]•[/COLOR]    [COLOR deepskyblue]  [/COLOR][COLOR skyblue]Sala 09[/COLOR] </title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param3]</title>
+<link>$doregex[id]</link>
+ <regex>
+ <name>id</name>
+ <expres>file: "(.*?)",</expres>
+ <page>http://streamin.to/embed-$doregex[link]-740x360.html</page>	
+ <referer>http://streamin.to</referer>
+ </regex>
+<regex>	 
+<name>link</name>	 
+<expres>url=(.*?)\"</expres>	 
+<page>$doregex[numero]</page>	 
+<referer>http://adryanlist.info</referer>	 
+</regex>	 <regex>	 
+<name>numero</name>	 
+<expres>streamin.to[\w\W\s]{0,370}window.open\(\'(.*?)\'</expres>	 
+<page>[makelist.param1]</page> 
+<referer>http://adryanlist.info</referer>
+</regex>
+<thumbnail>[makelist.param2]</thumbnail>
+<fanart>[makelist.param2]</fanart>
+]]></listrepeat>
+<expres>href="(.*?)"[\w\W\s]{0,10}"(.*?)"[\w\W\s]{0,5}"(.*?)"</expres>
+<page>http://peliculasaudiolatino.com/lista-completa/pagina/9.html</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+</item>
+
+
+
+
+
+<item>
+<title> [COLOR lime]•[/COLOR]    [COLOR deepskyblue]  [/COLOR][COLOR skyblue]Sala 10[/COLOR] </title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param3]</title>
+<link>$doregex[id]</link>
+ <regex>
+ <name>id</name>
+ <expres>file: "(.*?)",</expres>
+ <page>http://streamin.to/embed-$doregex[link]-740x360.html</page>	
+ <referer>http://streamin.to</referer>
+ </regex>
+<regex>	 
+<name>link</name>	 
+<expres>url=(.*?)\"</expres>	 
+<page>$doregex[numero]</page>	 
+<referer>http://adryanlist.info</referer>	 
+</regex>	 <regex>	 
+<name>numero</name>	 
+<expres>streamin.to[\w\W\s]{0,370}window.open\(\'(.*?)\'</expres>	 
+<page>[makelist.param1]</page> 
+<referer>http://adryanlist.info</referer>
+</regex>
+<thumbnail>[makelist.param2]</thumbnail>
+<fanart>[makelist.param2]</fanart>
+]]></listrepeat>
+<expres>href="(.*?)"[\w\W\s]{0,10}"(.*?)"[\w\W\s]{0,5}"(.*?)"</expres>
+<page>http://peliculasaudiolatino.com/lista-completa/pagina/10.html</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+</item>
+
+
+
+
+
+<item>
+<title> [COLOR lime]•[/COLOR]    [COLOR deepskyblue]  [/COLOR][COLOR skyblue]Sala 11[/COLOR] </title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param3]</title>
+<link>$doregex[id]</link>
+ <regex>
+ <name>id</name>
+ <expres>file: "(.*?)",</expres>
+ <page>http://streamin.to/embed-$doregex[link]-740x360.html</page>	
+ <referer>http://streamin.to</referer>
+ </regex>
+<regex>	 
+<name>link</name>	 
+<expres>url=(.*?)\"</expres>	 
+<page>$doregex[numero]</page>	 
+<referer>http://adryanlist.info</referer>	 
+</regex>	 <regex>	 
+<name>numero</name>	 
+<expres>streamin.to[\w\W\s]{0,370}window.open\(\'(.*?)\'</expres>	 
+<page>[makelist.param1]</page> 
+<referer>http://adryanlist.info</referer>
+</regex>
+<thumbnail>[makelist.param2]</thumbnail>
+<fanart>[makelist.param2]</fanart>
+]]></listrepeat>
+<expres>href="(.*?)"[\w\W\s]{0,10}"(.*?)"[\w\W\s]{0,5}"(.*?)"</expres>
+<page>http://peliculasaudiolatino.com/lista-completa/pagina/11.html</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+</item>
+
+
+
+
+
+
+<item>
+<title> [COLOR lime]•[/COLOR]    [COLOR deepskyblue]  [/COLOR][COLOR skyblue]Sala 12[/COLOR] </title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param3]</title>
+<link>$doregex[id]</link>
+ <regex>
+ <name>id</name>
+ <expres>file: "(.*?)",</expres>
+ <page>http://streamin.to/embed-$doregex[link]-740x360.html</page>	
+ <referer>http://streamin.to</referer>
+ </regex>
+<regex>	 
+<name>link</name>	 
+<expres>url=(.*?)\"</expres>	 
+<page>$doregex[numero]</page>	 
+<referer>http://adryanlist.info</referer>	 
+</regex>	 <regex>	 
+<name>numero</name>	 
+<expres>streamin.to[\w\W\s]{0,370}window.open\(\'(.*?)\'</expres>	 
+<page>[makelist.param1]</page> 
+<referer>http://adryanlist.info</referer>
+</regex>
+<thumbnail>[makelist.param2]</thumbnail>
+<fanart>[makelist.param2]</fanart>
+]]></listrepeat>
+<expres>href="(.*?)"[\w\W\s]{0,10}"(.*?)"[\w\W\s]{0,5}"(.*?)"</expres>
+<page>http://peliculasaudiolatino.com/lista-completa/pagina/12.html</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+</item>
+
+
+
+
+
+
+<item>
+<title> [COLOR lime]•[/COLOR]    [COLOR deepskyblue]  [/COLOR][COLOR skyblue]Sala 13[/COLOR] </title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param3]</title>
+<link>$doregex[id]</link>
+ <regex>
+ <name>id</name>
+ <expres>file: "(.*?)",</expres>
+ <page>http://streamin.to/embed-$doregex[link]-740x360.html</page>	
+ <referer>http://streamin.to</referer>
+ </regex>
+<regex>	 
+<name>link</name>	 
+<expres>url=(.*?)\"</expres>	 
+<page>$doregex[numero]</page>	 
+<referer>http://adryanlist.info</referer>	 
+</regex>	 <regex>	 
+<name>numero</name>	 
+<expres>streamin.to[\w\W\s]{0,370}window.open\(\'(.*?)\'</expres>	 
+<page>[makelist.param1]</page> 
+<referer>http://adryanlist.info</referer>
+</regex>
+<thumbnail>[makelist.param2]</thumbnail>
+<fanart>[makelist.param2]</fanart>
+]]></listrepeat>
+<expres>href="(.*?)"[\w\W\s]{0,10}"(.*?)"[\w\W\s]{0,5}"(.*?)"</expres>
+<page>http://peliculasaudiolatino.com/lista-completa/pagina/13.html</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+</item>
+
+
+
+
+
+
+<item>
+<title> [COLOR lime]•[/COLOR]    [COLOR deepskyblue]  [/COLOR][COLOR skyblue]Sala 14[/COLOR] </title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param3]</title>
+<link>$doregex[id]</link>
+ <regex>
+ <name>id</name>
+ <expres>file: "(.*?)",</expres>
+ <page>http://streamin.to/embed-$doregex[link]-740x360.html</page>	
+ <referer>http://streamin.to</referer>
+ </regex>
+<regex>	 
+<name>link</name>	 
+<expres>url=(.*?)\"</expres>	 
+<page>$doregex[numero]</page>	 
+<referer>http://adryanlist.info</referer>	 
+</regex>	 <regex>	 
+<name>numero</name>	 
+<expres>streamin.to[\w\W\s]{0,370}window.open\(\'(.*?)\'</expres>	 
+<page>[makelist.param1]</page> 
+<referer>http://adryanlist.info</referer>
+</regex>
+<thumbnail>[makelist.param2]</thumbnail>
+<fanart>[makelist.param2]</fanart>
+]]></listrepeat>
+<expres>href="(.*?)"[\w\W\s]{0,10}"(.*?)"[\w\W\s]{0,5}"(.*?)"</expres>
+<page>http://peliculasaudiolatino.com/lista-completa/pagina/14.html</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+</item>
+
+
+
+
+
+
+<item>
+<title> [COLOR lime]•[/COLOR]    [COLOR deepskyblue]  [/COLOR][COLOR skyblue]Sala 15[/COLOR] </title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param3]</title>
+<link>$doregex[id]</link>
+ <regex>
+ <name>id</name>
+ <expres>file: "(.*?)",</expres>
+ <page>http://streamin.to/embed-$doregex[link]-740x360.html</page>	
+ <referer>http://streamin.to</referer>
+ </regex>
+<regex>	 
+<name>link</name>	 
+<expres>url=(.*?)\"</expres>	 
+<page>$doregex[numero]</page>	 
+<referer>http://adryanlist.info</referer>	 
+</regex>	 <regex>	 
+<name>numero</name>	 
+<expres>streamin.to[\w\W\s]{0,370}window.open\(\'(.*?)\'</expres>	 
+<page>[makelist.param1]</page> 
+<referer>http://adryanlist.info</referer>
+</regex>
+<thumbnail>[makelist.param2]</thumbnail>
+<fanart>[makelist.param2]</fanart>
+]]></listrepeat>
+<expres>href="(.*?)"[\w\W\s]{0,10}"(.*?)"[\w\W\s]{0,5}"(.*?)"</expres>
+<page>http://peliculasaudiolatino.com/lista-completa/pagina/15.html</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+</item>
+
+
+
+
+<item>
+<title> teststs </title>
+<link>http://streamin.to/embed-$doregex[link]-740x360.html</link>
+<regex>	 
+<name>link</name>	 
+<expres>http://streamin.to/embed-(.*?)</expres>	 
+<page>http://peliculasaudiolatino.com/show/streamin.php?url=VmtkMGFtUXdNSGxXYkdoUFZrWndjVlpyVlRGa01XeHpZVWQwYVZaV1NsTlZSbEYzVUZFOVBRPT0rUA==</page>
+<referer>http://peliculasaudiolatino.com/</referer>	 
+<agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36</agent>
+<cookieJar>$doregex[createCFCookie]</cookieJar>
+</regex>
+
+<regex>
+        <name>createCFCookie</name>
+        <expres></expres>
+        <page>$pyFunction:cloudflare.createCookie('http://peliculasaudiolatino.com/',Cookie_Jar,'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36')</page>
+        <cookieJar></cookieJar>
+</regex>
+
+</item>

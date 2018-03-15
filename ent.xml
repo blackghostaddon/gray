@@ -1,0 +1,3893 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<channel>
+
+    <thumbnail>  </thumbnail>
+    <fanart>  </fanart>
+        <items>
+ 
+
+
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <item>
+			<title> •    [B]USA  TV Channels [/B]   </title>
+<link>$doregex[makelist]</link>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title> [makelist.param2]        </title>
+<link>$doregex[ip]|User-Agent=iPad</link>
+<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[href="(.*?)".*?Watch(.*?)Full]]></expres>
+<page>http://www.ibrod.tv/tvchans.php</page>
+</regex>
+
+
+		<regex>
+			<name>ip</name>
+			<expres>file:\s\"(.*?)\"</expres>
+			<page>http://www.hdca.st/embedmob.php?id=$doregex[id]</page>
+			<agent>Mozilla/5.0 (iPad; CPU OS 5_1 like Mac OS X; en-us) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.1 Mobile/9B176 Safari/7534.48.3</agent>
+			<referer>http://m.ibrod.tv/ae-live-stream.html</referer>
+<cookieJar>$doregex[createCFCookie]</cookieJar>
+</regex>
+
+<regex>
+        <name>createCFCookie</name>
+        <expres></expres>
+        <page>$pyFunction:cloudflare.createCookie('http://m.ibrod.tv',Cookie_Jar,'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36')</page>
+        <cookieJar></cookieJar>
+</regex>
+
+<regex>
+        <name>id</name>
+        <expres>\?id=(.*?)\&</expres>
+        <page>http://www.ibrod.tv/embed.php?id=$doregex[canal]&amp;width=640&amp;height=480</page>
+        <cookieJar></cookieJar>
+</regex>
+
+<regex>
+        <name>canal</name>
+        <expres>\?id=(.*?)\&</expres>
+        <page>http://www.ibrod.tv/[makelist.param1]</page>
+        <cookieJar></cookieJar>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail><thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+
+
+
+
+
+
+
+
+	<itm>
+			<title> •    [B]UK TV [/B]   </title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param1]</title>
+<link>$doregex[makelist2]</link>
+<thumbnail></thumbnail>
+<fanart></fanart>
+]]></listrepeat>
+<expres>id="channel_name".+?href="http://uktv.robssatellitetv.com/watch-uk-tv-online/(.+?).php"</expres>
+<page>http://uktv.robssatellitetv.com/</page>
+</regex>
+
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>Click to play</title>
+<link>[makelist2.param1]</link>
+<thumbnail></thumbnail>
+<fanart></fanart>
+]]></listrepeat>
+<expres>src: "(.+?)"</expres>
+<page>http://uktv.robssatellitetv.com/watch-uk-tv-online/[makelist.param1].php</page>
+</regex>
+
+<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+
+
+<iem>
+			<title> •    [B]Arconia TV [Organized] [/B]  [English Channels | TV and TvShows] </title>
+<link>$doregex[makelist]</link>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param1]</title>
+<link>$doregex[makelist2]</link>
+<referer></referer>
+<thumbnail>NA</thumbnail>
+]]></listrepeat>
+<expres> (.*?),</expres>
+<page>$doregex[select]</page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>[makelist2.param2]</title>
+<link>$doregex[get-m3u8]|User-Agent=Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0</link>
+<referer></referer>
+<thumbnail></thumbnail>
+]]></listrepeat>
+<expres><![CDATA[<li id="menu-item.*?menu-item menu-item-type-post_type menu-item-object-page menu-item-[0-9].*?columns1">\n<a href="(.*?)".*?\n.*?\n.*?\n.*?\n(.*)]]></expres>
+<page>$doregex[select-source]</page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+
+return '[0, Channels, Cable Tv, Movies, 4]'
+]]></expres>
+<page></page>
+<referer></referer>
+</regex>
+
+<regex>
+<name>select-source</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+import requests
+import re
+
+url = 'https://www.arconaitv.me/'
+headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer' : ''}
+select='[makelist.param1]'
+select = select.replace('[', '').replace(']', '')
+if select == 'Movies':
+end = ''
+elif select == 'Channels':
+end = 'Cable'
+elif select == 'Cable Tv':
+end = '<li id="menu-item-209"'
+
+r1 = requests.get(url, headers=headers)
+
+part = re.findall('%s(?s)(.*)%s' % (select,end), r1.text)[-1]
+part = part.replace('&','&')
+return part
+]]></expres>
+<page></page>
+</regex>
+
+<regex>
+<name>get-m3u8</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url= '[makelist2.param1]'):
+
+import requests
+import re
+headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer' : ''}
+r1 = requests.get(url, headers=headers)
+
+m3u8 = re.findall('source src="(.*?)"', r1.text)[0]
+return m3u8
+
+]]></expres>
+<page></page>
+<referer></referer>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+
+
+
+
+
+
+	        <iem>
+			<title> •    [B]Arconia TV [/B]  [English Channels | TV and TvShows] </title>
+
+    <link>$doregex[makelist3]</link>
+
+	<regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+  <title>[makelist3.param2]</title>
+<link>$doregex[getm3u8]|User-Agent=iPad</link>
+
+<regex>
+<name>getm3u8</name>
+<expres>$pyFunction:('$doregex[id]').replace('\/','/')</expres>
+<page></page>
+</regex>
+
+<regex>
+<name>id</name>
+<expres>src":"(.*?)"</expres>
+<page>https://www.arconaitv.co/[makelist3.param1]</page>
+</regex>
+
+]]></listrepeat>
+<expres>box-content.*?href=\'(.*?)\'\stitle=\'(.*?)\'n</expres>
+<page>https://www.arconaitv.co</page>
+</regex>
+
+
+
+  <thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+
+
+
+<tem>
+<title> •    [B]WorldTV [/B] [streamgaroo] </title>
+<link>$doregex[makelist]</link>
+<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+
+
+
+
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[makelist.param1]</title>
+        <link>$doregex[makelist2]</link>
+        <thumbnail></thumbnail>
+]]></listrepeat>
+<expres><![CDATA[data-streams-count=".*?a title="(.*?)" href="(.*?)" class="navigation-li-a]]></expres>
+<page>http://www.streamgaroo.com/live-television</page>
+<cookieJar></cookieJar>
+</regex>
+
+
+<regex>
+  <name>makelist2</name>
+  <listrepeat><![CDATA[
+        <title>[makelist2.param2]</title>
+        <link>$doregex[get-url]</link>
+        <thumbnail>[makelist2.param3]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[data-clk="(.*?)".*?title="(.*?)".*?(?s).*?img class="stream-thumb" src="(.*?)"]]></expres>
+<page>$doregex[get-source-page]</page>
+<cookieJar></cookieJar>
+</regex>
+
+
+<regex>
+<name>get-source-page</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url='[makelist.param2]'):
+
+ import requests
+ import re
+ import urllib
+
+ import json
+
+
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': ''}
+
+ r1 = requests.get(url, headers=headers)
+
+ data_a = re.findall('data-a="(.*?)"', r1.text)[0]
+
+ #print data_a
+
+
+ data_a = urllib.unquote_plus(data_a)
+
+
+ data_a ={'p': data_a}
+
+ r2 = requests.post('http://www.streamgaroo.com/calls/get/more_streams', headers=headers, data=data_a)
+
+ jdata = json.loads(r2.text)
+ data = jdata["data"]
+
+ #print data
+
+
+
+ newa = re.findall('newa": "(.*?)"', r2.text)[0]
+ newa = urllib.unquote_plus(newa)
+ newa ={'p': newa}
+#print newa
+ if data == None:
+
+    return r1.text
+ else:
+
+    r3 = requests.post('http://www.streamgaroo.com/calls/get/more_streams', headers=headers, data=newa)
+    jdata = json.loads(r3.text)
+    data1 = jdata["data"]
+    #print data1
+    newa = re.findall('newa": "(.*?)"', r3.text)[0]
+    newa = urllib.unquote_plus(newa)
+    newa ={'p': newa}
+    if data1 == None:
+
+      return r1.text + data
+    else:
+
+      r4 = requests.post('http://www.streamgaroo.com/calls/get/more_streams', headers=headers, data=newa)
+
+      jdata = json.loads(r4.text)
+      data2 = jdata["data"]
+
+      newa = re.findall('newa": "(.*?)"', r4.text)[0]
+      newa = urllib.unquote_plus(newa)
+      newa ={'p': newa}
+
+      if data2 == None:
+
+
+         return r1.text + data + data1
+      else:
+
+         r5 = requests.post('http://www.streamgaroo.com/calls/get/more_streams', headers=headers, data=newa)
+         jdata = json.loads(r5.text)
+         data3 = jdata["data"]
+         newa = re.findall('newa": "(.*?)"', r5.text)[0]
+         newa = urllib.unquote_plus(newa)
+         newa ={'p': newa}
+
+
+         if data3 == None:
+
+            return r1.text + data + data1 + data2
+         else:
+
+            r6 = requests.post('http://www.streamgaroo.com/calls/get/more_streams', headers=headers, data=newa)
+            jdata = json.loads(r6.text)
+            data4 = jdata["data"]
+
+            newa = re.findall('newa": "(.*?)"', r6.text)[0]
+            newa = urllib.unquote_plus(newa)
+            newa ={'p': newa}
+
+            if data4 == None:
+
+               return r1.text + data + data1 + data2 + data3
+            else:
+
+               r7 = requests.post('http://www.streamgaroo.com/calls/get/more_streams', headers=headers, data=newa)
+               jdata = json.loads(r7.text)
+               data5 = jdata["data"]
+
+               newa = re.findall('newa": "(.*?)"', r7.text)[0]
+               newa = urllib.unquote_plus(newa)
+               newa ={'p': newa}
+
+               if data5 == None:
+
+                  return r1.text + data + data1 + data2 + data3 + data4
+               else:
+
+                  r8 = requests.post('http://www.streamgaroo.com/calls/get/more_streams', headers=headers, data=newa)
+                  jdata = json.loads(r8.text)
+                  data6 = jdata["data"]
+
+                  newa = re.findall('newa": "(.*?)"', r8.text)[0]
+                  newa = urllib.unquote_plus(newa)
+                  newa ={'p': newa}
+
+                  if data6 == None:
+
+                     return r1.text + data + data1 + data2 + data3 + data4 + data5
+                  else:
+
+                     r9 = requests.post('http://www.streamgaroo.com/calls/get/more_streams', headers=headers, data=newa)
+                     jdata = json.loads(r9.text)
+                     data7 = jdata["data"]
+
+                     newa = re.findall('newa": "(.*?)"', r9.text)[0]
+                     newa = urllib.unquote_plus(newa)
+                     newa ={'p': newa}
+
+                     if data7 == None:
+
+                        return r1.text + data + data1 + data2 + data3 + data4 + data5 + data6
+                     else:
+
+                        r10 = requests.post('http://www.streamgaroo.com/calls/get/more_streams', headers=headers, data=newa)
+                        jdata = json.loads(r10.text)
+                        data8 = jdata["data"]
+
+                        newa = re.findall('newa": "(.*?)"', r10.text)[0]
+                        newa = urllib.unquote_plus(newa)
+                        newa ={'p': newa}
+
+                        if data8 == None:
+
+                           return r1.text + data + data1 + data2 + data3 + data4 + data5 + data6 +data7
+                        else:
+
+                           r11 = requests.post('http://www.streamgaroo.com/calls/get/more_streams', headers=headers, data=newa)
+                           jdata = json.loads(r11.text)
+                           data9 = jdata["data"]
+
+                           newa = re.findall('newa": "(.*?)"', r11.text)[0]
+                           newa = urllib.unquote_plus(newa)
+                           newa ={'p': newa}
+
+                           if data9 == None:
+
+                              return r1.text + data + data1 + data2 + data3 + data4 + data5 + data6 +data7 +data8
+                           else:
+
+                              r12 = requests.post('http://www.streamgaroo.com/calls/get/more_streams', headers=headers, data=newa)
+                              jdata = json.loads(r11.text)
+                              data10 = jdata["data"]
+
+                              newa = re.findall('newa": "(.*?)"', r12.text)[0]
+                              newa = urllib.unquote_plus(newa)
+                              newa ={'p': newa}
+
+                              if data10 == None:
+
+                                 return r1.text + data + data1 + data2 + data3 + data4 + data5 + data6 +data7 +data8+data9
+                              else:
+
+                                 r13 = requests.post('http://www.streamgaroo.com/calls/get/more_streams', headers=headers, data=newa)
+                                 jdata = json.loads(r13.text)
+                                 data11 = jdata["data"]
+
+                                 newa = re.findall('newa": "(.*?)"', r13.text)[0]
+                                 newa = urllib.unquote_plus(newa)
+                                 newa ={'p': newa}
+
+                                 if data11 == None:
+
+                                    return r1.text + data + data1 + data2 + data3 + data4 + data5 + data6 +data7 +data8+data9 + data10
+                                 else:
+
+                                    r14 = requests.post('http://www.streamgaroo.com/calls/get/more_streams', headers=headers, data=newa)
+                                    jdata = json.loads(r14.text)
+                                    data12 = jdata["data"]
+
+                                    newa = re.findall('newa": "(.*?)"', r14.text)[0]
+                                    newa = urllib.unquote_plus(newa)
+                                    newa ={'p': newa}
+
+                                    if data12 == None:
+
+                                       return r1.text + data + data1 + data2 + data3 + data4 + data5 + data6 +data7 +data8+data9 + data10 + data11
+                                    else:
+
+                                       r15 = requests.post('http://www.streamgaroo.com/calls/get/more_streams', headers=headers, data=newa)
+                                       jdata = json.loads(r15.text)
+                                       data13 = jdata["data"]
+
+                                       newa = re.findall('newa": "(.*?)"', r15.text)[0]
+                                       newa = urllib.unquote_plus(newa)
+                                       newa ={'p': newa}
+
+
+
+                                       if data13 == None:
+
+                                          return r1.text + data + data1 + data2 + data3 + data4 + data5 + data6 +data7 +data8+data9 + data10 + data11 + data12
+                                       else:
+
+                                          r16 = requests.post('http://www.streamgaroo.com/calls/get/more_streams', headers=headers, data=newa)
+                                          jdata = json.loads(r16.text)
+                                          data14 = jdata["data"]
+
+                                          newa = re.findall('newa": "(.*?)"', r16.text)[0]
+                                          newa = urllib.unquote_plus(newa)
+                                          newa ={'p': newa}
+
+
+
+                                          if data14 == None:
+
+                                             return r1.text + data + data1 + data2 + data3 + data4 + data5 + data6 +data7 +data8+data9 + data10 + data11 + data12 + data13
+                                          else:
+
+                                             r17 = requests.post('http://www.streamgaroo.com/calls/get/more_streams', headers=headers, data=newa)
+                                             jdata = json.loads(r17.text)
+                                             data15 = jdata["data"]
+
+                                             newa = re.findall('newa": "(.*?)"', r17.text)[0]
+                                             newa = urllib.unquote_plus(newa)
+                                             newa ={'p': newa}
+
+
+
+                                             if data15 == None:
+
+                                                return r1.text + data + data1 + data2 + data3 + data4 + data5 + data6 +data7 +data8+data9 + data10 + data11 + data12 + data13 + data14
+                                             else:
+
+                                                r18 = requests.post('http://www.streamgaroo.com/calls/get/more_streams', headers=headers, data=newa)
+                                                jdata = json.loads(r18.text)
+                                                data16 = jdata["data"]
+
+                                                newa = re.findall('newa": "(.*?)"', r18.text)[0]
+                                                newa = urllib.unquote_plus(newa)
+                                                newa ={'p': newa}
+
+                                                if data16 == None:
+
+                                                   return r1.text + data + data1 + data2 + data3 + data4 + data5 + data6 +data7 +data8+data9 + data10 + data11 + data12 + data13 + data14 + data15
+                                                else:
+
+                                                   r19 = requests.post('http://www.streamgaroo.com/calls/get/more_streams', headers=headers, data=newa)
+                                                   jdata = json.loads(r19.text)
+                                                   data17 = jdata["data"]
+
+                                                   newa = re.findall('newa": "(.*?)"', r19.text)[0]
+                                                   newa = urllib.unquote_plus(newa)
+                                                   newa ={'p': newa}
+
+                                                   if data17 == None:
+
+                                                      return r1.text + data + data1 + data2 + data3 + data4 + data5 + data6 +data7 +data8+data9 + data10 + data11 + data12 + data13 + data14 + data15 + data16
+                                                   else:
+
+                                                      r20 = requests.post('http://www.streamgaroo.com/calls/get/more_streams', headers=headers, data=newa)
+                                                      jdata = json.loads(r20.text)
+                                                      data18 = jdata["data"]
+
+                                                      newa = re.findall('newa": "(.*?)"', r20.text)[0]
+                                                      newa = urllib.unquote_plus(newa)
+                                                      newa ={'p': newa}
+
+                                                      if data18 == None:
+
+                                                         return r1.text + data + data1 + data2 + data3 + data4 + data5 + data6 +data7 +data8+data9 + data10 + data11 + data12 + data13 + data14 + data15 + data16 + data17
+                                                      else:
+
+                                                         r21 = requests.post('http://www.streamgaroo.com/calls/get/more_streams', headers=headers, data=newa)
+                                                         jdata = json.loads(r21.text)
+                                                         data19 = jdata["data"]
+
+                                                         newa = re.findall('newa": "(.*?)"', r21.text)[0]
+                                                         newa = urllib.unquote_plus(newa)
+                                                         newa ={'p': newa}
+
+                                                         if data19 == None:
+
+                                                            return r1.text + data + data1 + data2 + data3 + data4 + data5 + data6 +data7 +data8+data9 + data10 + data11 + data12 + data13 + data14 + data15 + data16 + data17 + data18
+                                                         else:
+
+                                                            r22 = requests.post('http://www.streamgaroo.com/calls/get/more_streams', headers=headers, data=newa)
+                                                            jdata = json.loads(r22.text)
+                                                            data20 = jdata["data"]
+
+                                                            newa = re.findall('newa": "(.*?)"', r22.text)[0]
+                                                            newa = urllib.unquote_plus(newa)
+                                                            newa ={'p': newa}
+
+
+
+
+]]></expres>
+<page></page>
+</regex>
+
+
+<regex>
+<name>get-url</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url='[makelist2.param1]'):
+
+ import requests
+ import re
+ import urllib
+ url = urllib.unquote_plus(url)
+
+
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': ''}
+ r1 = requests.get(url, headers=headers)
+ cookie = re.findall('Cookie (.*?) for', str(r1.cookies))[-1]
+ data_sh = re.findall('data-sh="(.*?)"', r1.text)[0]
+
+ print data_sh
+
+ data ={'h': data_sh}
+
+ url = 'http://www.streamgaroo.com/calls/get/source'
+
+ r2 = requests.post(url, headers=headers, data=data)
+
+ embed = re.findall('link": "(.*?)"', r2.text)[0]
+ embed = embed.replace('\/','/')
+ r3 = requests.get(embed, headers=headers)
+ if 'hls' in r3.text:
+  m3u8 = re.findall("hls','(.*?)'", r3.text)[0]
+
+  return m3u8 + '|User-Agent=Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0&Referer=http://www.streamgaroo.com/player/GrindPlayer.swf&Cookie=' + cookie
+
+ else:
+  if 'streaming-hub' in r3.text:
+    embed = re.findall('get\("(.*?)"', r3.text)[0]
+    r4 = requests.get(embed, headers=headers)
+    link = re.findall('iframe frameborder=.*?src="(.*?)"', r4.text)[0]
+    f4m = link.replace('embed.html?dvr=false&','manifest.f4m?')
+
+    f4m = urllib.quote_plus(f4m)
+    f4m = 'plugin://plugin.video.f4mTester/?url=' + f4m
+    return f4m
+
+
+  else:
+    rtmp = re.findall("rtmp','(.*?)'", r3.text)[0]
+
+    return rtmp
+
+]]></expres>
+<page></page>
+</regex>
+<item/>
+
+
+
+
+
+
+
+
+
+
+<tem>
+<title> •    [B]WORLD Television [/B]  </title>
+<link>$doregex[makelist]</link>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+    <title> [makelist.param1]   [makelist.param2] </title>
+    <link>$doregex[get_m3u8]</link>
+    ]]></listrepeat>
+<expres>quot;alive&amp;quot;:(.*?),&amp;quot;display_name&amp;quot;:&amp;quot;(.*?)&amp;quot;,&amp;quot;picture&amp;quot;:&amp;quot;(.*?)&amp;quot;,&amp;quot;slug&amp;quot;:&amp;quot;\\(.*?)&amp;quot;}</expres>
+<page>$doregex[get-source]</page>
+<referer></referer>
+<agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>get_m3u8</name>
+<expres>file: '(.*?)',</expres>
+<page>http://urhd.tv/[makelist.param4]</page>
+<agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
+<referer>http://urhd.tv/</referer>
+</regex>
+
+
+<regex>
+<name>get-source</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data, Cookie_Jar, m, offon= '[makelist.param1]', title= '[makelist.param2]'):
+
+ import requests
+ import re
+ url = 'http://urhd.tv/'
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer' : ''}
+ r1 = requests.get(url, headers=headers)
+ source= r1.text.replace('false', 'Offline').replace('true', 'En Linea')
+ return source
+]]></expres>
+<page></page>
+</regex>
+
+<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+
+
+<iem>
+<title> •    [B]Canales TVI [/B] [Baja Resolucion] </title><!-- si la pones  en tu addon favor de mencionar BlackGhost -->
+<link>$doregex[makelist]</link><!-- si la pones  en tu addon favor de mencionar BlackGhost -->
+<regex>
+<name>makelist</name><!-- si la pones  en tu addon favor de mencionar BlackGhost -->
+<listrepeat><![CDATA[
+<title>[makelist.param2] </title>
+<link>http://$doregex[ip]$doregex[m3u8]</link>
+<regex>
+<name>ip</name>
+<expres>redirect=(.*)</expres>
+<page>http://www.janjuapublisher.com:1935/loadbalancer</page>
+</regex>
+<regex>
+<name>m3u8</name>
+<expres>ea \+ "(.*?)"</expres>
+<page>http://www.janjuaplayer.com/membedplayer/$doregex[canal]/1/680/380</page>
+<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+<referer>http://www.janjuaplayer.com</referer>
+</regex>
+<regex>
+<name>canal</name>
+<expres>channel='(.*?)'</expres>
+<page>http://tvpor-internet.com/[makelist.param1]</page>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.jpg</thumbnail>
+]]></listrepeat> <!-- si la pones  en tu addon favor de mencionar BlackGhost -->
+<expres>href="(.*?)">(.*?)en-vivo</expres>
+<page>http://tvpor-internet.com/envivo/</page><!-- si la pones  en tu addon favor de mencionar BlackGhost -->
+<referer></referer>
+<cookieJar></cookieJar>
+</regex><thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.jpg</thumbnail>
+<!-- si la pones  en tu addon favor de mencionar BlackGhost -->
+<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+
+
+
+  <item>
+<title> •    [B]ARGENTINA TV [/B] Deportes | Premium  | Local </title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param3] </title>
+<link>rtmp://slc2.cxn.tv:1935/live/ playpath=$doregex[play] swfUrl=https://ssl.p.jwpcdn.com/6/2/jwplayer.flash.swf live=1 pageUrl=https://www.cxntv.com/canales/tv-foxuy/</link>
+ <regex>
+<name>play</name>
+<expres>file":"rtmp:.*?live\\\/(.*?)"</expres>
+ <page>[makelist.param1]</page>
+</regex>
+  <thumbnail>[makelist.param2]</thumbnail>
+]]></listrepeat>
+<expres>items-canales[\W\w\S]{0,18}href="(.*?)"[\W\w\S]{0,35}src="(.*?)"[\W\w\S]{0,40}alt="(.*?)"</expres>
+<page>https://www.cxntv.com/canales/</page>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/ent.png</thumbnail>
+<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+
+
+
+
+
+<item>
+<title> •    [B]RussiaTV [/B]  </title>
+<link>$doregex[makelist]</link>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title> [makelist.param2]     </title>
+<link>$doregex[get-m3u8]|User-Agent=iPad</link>
+<thumbnail>[makelist.param3]</thumbnail>
+]]></listrepeat>
+<expres>href='(.*?)'[\w\W\s]*?alt='(.*?)'[\w\W\s]*?src='(.*?)'</expres>
+<page>http://kineskop.tv/</page>
+<agent>Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36</agent>
+<referer>http://kineskop.tv/</referer>
+<connection>keep-alive</connection>
+<accept>text/html, */*; q=0.01</accept>
+<Accept-Encoding>gzip, deflate, sdch</Accept-Encoding>
+<Accept-Language>en-US,en;q=0.8,th;q=0.6</Accept-Language>
+<X-Requested>XMLHttpRequest</X-Requested>
+<cookieJar></cookieJar>
+</regex>
+
+
+
+<regex>
+<name>get-m3u8</name>
+<expres>'(http.*m3u8[^']+)</expres>
+<page>http://kineskop.tv[makelist.param1]</page>
+<agent>Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36</agent>
+<referer>http://kineskop.tv/</referer>
+<connection>keep-alive</connection>
+<accept>text/html, */*; q=0.01</accept>
+<Accept-Encoding>gzip, deflate, sdch</Accept-Encoding>
+<Accept-Language>en-US,en;q=0.8,th;q=0.6</Accept-Language>
+<X-Requested>XMLHttpRequest</X-Requested>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>get_key</name>
+<expres>console.log\('([^']+)</expres>
+<page>http://kineskop.tv[makelist.param1]$doregex[get_channel]</page>
+<referer>http://kineskop.tv/</referer>
+<connection>keep-alive</connection>
+<agent>Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36</agent>
+<accept>text/html, */*; q=0.01</accept>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>get_channel</name>
+<expres>console.log\('([^']+)</expres>
+<page>http://kineskop.tv[makelist.param1]</page>
+<referer>http://kineskop.tv/</referer>
+<connection>keep-alive</connection>
+<accept>text/html, */*; q=0.01</accept>
+<Accept-Encoding>gzip, deflate, sdch</Accept-Encoding>
+<Accept-Language>en-US,en;q=0.8,th;q=0.6</Accept-Language>
+<X-Requested>XMLHttpRequest</X-Requested>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+
+	 <tem>
+<title> •    [B]Canales Latinos [/B] LatinoWeb </title><!-- si la pones  en tu addon favor de mencionar BlackGhost -->
+<link>$doregex[makelist]</link><!-- si la pones  en tu addon favor de mencionar BlackGhost -->
+<regex>
+<name>makelist</name><!-- si la pones  en tu addon favor de mencionar BlackGhost -->
+<listrepeat><![CDATA[
+<title>[makelist.param1]</title>
+<link>$doregex[url]|User-Agent=iPad&amp;Referer=http://latino-webtv.com/player/jwplayer.flash.swf</link>
+<regex>
+<name>url</name>
+<expres>file: "(.*?)"</expres>
+<page>http://latino-webtv.com/embed/$doregex[url2]</page>
+<referer>http://embed.latino-webtv.com/natgeo.html</referer>
+<agent>Mozilla/5.0 (Windows NT 10.0; WOW64; rv:48.0) Gecko/20100101 Firefox/48.0</agent>
+</regex>
+<regex>
+<name>url2</name>
+<expres>SRC="http://latino-webtv.com/embed/(.*?)"</expres>
+<page>http://embed.latino-webtv.com/$doregex[url3]</page>
+<agent>iPad</agent>
+</regex>
+<regex>
+<name>url3</name>
+<expres>src="http://embed.latino-webtv.com/(.*?)"</expres>
+<page>http://latino-webtv.com/[makelist.param1]</page>
+<agent>iPad</agent>
+</regex>
+<thumbnail>[makelist.param3]</thumbnail>
+]]></listrepeat> <!-- si la pones  en tu addon favor de mencionar BlackGhost -->
+<expres>href="(.*?)"[\w\W\s]{0,7}alt="(.*?)"[\w\W\s]{0,7}src="(.*?)"</expres>
+<page>http://latino-webtv.com/</page><!-- si la pones  en tu addon favor de mencionar BlackGhost -->
+<referer></referer>
+<cookieJar></cookieJar>
+</regex><thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.jpg</thumbnail><!-- si la pones  en tu addon favor de mencionar BlackGhost -->
+<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+<link>$$LSPlayOnlyOne$$</link>
+<link>http://live-den.vaughnsoft.net:1935/live/_definst_/live_[makelist.param1]/playlist.m3u8$$lsname=[makelist.param2]</link>
+<link>http://live-ams.vaughnsoft.net:1935/live/_definst_/live_[makelist.param1]/playlist.m3u8$$lsname=[makelist.param2]</link>
+<link>http://live-nyc.vaughnsoft.net:1935/live/_definst_/live_[makelist.param1]/playlist.m3u8$$lsname=[makelist.param2]</link>
+<link>http://live-lax.vaughnsoft.net:1935/live/_definst_/live_[makelist.param1]/playlist.m3u8$$lsname=[makelist.param2]</link>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title> •    [B]24/7 Television[/B] Español OPCION 2</title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param2]</title>
+
+<link>http://vennegas.jl.serv.net.mx/24-7.php/[makelist.param1].m3u8</link>
+
+<thumbnail>http://cdn.vaughnsoft.com/vaughnsoft/vaughn/img_profiles/[makelist.param2]_320.jpg</thumbnail>
+]]></listrepeat>
+<expres>a href="/(.*?)"[\w\W\s]{0,22}browseTxt">(.*?)<</expres>
+<page>https://vaughnlive.tv/browse/espanol&amp;a=mvn</page>
+<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/247.jpg</thumbnail>
+<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+
+
+<iem>
+<title> •    [B]24/7 Television Español[/B]   </title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+
+<title>[makelist.param2]</title>
+<link>rtmp://$doregex[get_ip]/live?$doregex[get_key] app=live?$doregex[get_key] playpath=live_[makelist.param1]  swfUrl=https://vaughnlive.tv/4499820375/swf/abvs_video.swf?t=1499985353  pageUrl=https://vaughnlive.tv/[makelist.param1]  live=true</link>
+<regex>
+<name>get_ip</name>
+<expres>([^;]*?);:</expres>
+<page>https://mvn.vaughnsoft.net/abvs.php?a=desktop_preroll&amp;w=vaughnlive.tv&amp;c=live_[makelist.param1]&amp;height=640&amp;width=360&amp;984-984-0.9836713331751525</page>
+<referer>https://vaughnlive.tv/</referer>
+<connection>keep-alive</connection>
+<agent>Mozilla/5.0</agent>
+<accept>Accept-Encoding=gzip,deflate,text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8</accept>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>get_key</name>
+<expres>mvnkey-(.*?);NA</expres>
+<page>https://mvn.vaughnsoft.net/abvs.php?a=desktop_preroll&amp;w=vaughnlive.tv&amp;c=live_[makelist.param1]&amp;height=640&amp;width=360&amp;984-984-0.9836713331751525</page>
+<referer>https://vaughnlive.tv/</referer>
+<connection>keep-alive</connection>
+<agent>Mozilla/5.0</agent>
+<accept>Accept-Encoding=gzip,deflate,text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8</accept>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>get_key2</name>
+<expres>;.*;(.*?)</expres>
+<page>https://mvn.vaughnsoft.net/abvs.php?a=desktop_preroll&amp;w=vaughnlive.tv&amp;c=live_[makelist.param1]&amp;height=640&amp;width=360&amp;984-984-0.9836713331751525</page>
+<referer>https://vaughnlive.tv/</referer>
+<connection>keep-alive</connection>
+<agent>Mozilla/5.0</agent>
+<accept>Accept-Encoding=gzip,deflate,text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8</accept>
+<cookieJar></cookieJar>
+</regex>
+
+
+<regex>
+<name>get_channel</name>
+<expres>embedSWF\(\"(.*?)\/</expres>
+<page>https://vaughnlive.tv/[makelist.param1]</page>
+<referer>https://vaughnlive.tv/</referer>
+<connection>keep-alive</connection>
+<agent>Mozilla/5.0</agent>
+<accept>Accept-Encoding=gzip,deflate,text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8</accept>
+<cookieJar></cookieJar>
+</regex>
+			<thumbnail>https://cdn.vaughnsoft.com/vaughnsoft/vaughn/img_profiles/[makelist.param2]_320.jpg</thumbnail>
+]]></listrepeat>
+<expres>a href="/(.*?)"[\w\W\s]{0,22}browseTxt">(.*?)<</expres>
+<page>https://vaughnlive.tv/browse/espanol</page>
+<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/247.jpg</thumbnail>
+	<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+
+
+
+
+
+
+
+
+<iem>
+<title> •    [B]24/7 Television  English[/B] </title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+
+<title>[makelist.param2]</title>
+<link>rtmp://$doregex[get_ip]/live?$doregex[get_key] app=live?$doregex[get_key] playpath=live_[makelist.param1]  swfUrl=https://vaughnlive.tv$doregex[get_channel]/swf/VaughnSoftPlayer.swf  pageUrl=https://vaughnlive.tv/[makelist.param1]  live=true</link>
+<regex>
+<name>get_ip</name>
+<expres>([^;]*?);:</expres>
+<page>https://mvn.vaughnsoft.net/video/edge/soon__depricated_Q2_2017-live_[makelist.param1]-0?0.1.1.792_795-795-0.18587422650307417</page>
+<referer>https://vaughnlive.tv/</referer>
+<connection>keep-alive</connection>
+<agent>Mozilla/5.0</agent>
+<accept>Accept-Encoding=gzip,deflate,text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8</accept>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>get_key</name>
+<expres>mvnkey-(.*?);</expres>
+<page>https://mvn.vaughnsoft.net/video/edge/soon__depricated_Q2_2017-live_[makelist.param1]-0?0.1.1.792_795-795-0.18587422650307417</page>
+<referer>https://vaughnlive.tv/</referer>
+<connection>keep-alive</connection>
+<agent>Mozilla/5.0</agent>
+<accept>Accept-Encoding=gzip,deflate,text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8</accept>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>get_key2</name>
+<expres>;.*;(.*?)</expres>
+<page>https://mvn.vaughnsoft.net/video/edge/soon__depricated_Q2_2017-live_[makelist.param1]-0?0.1.1.792_795-795-0.18587422650307417</page>
+<referer>https://vaughnlive.tv/</referer>
+<connection>keep-alive</connection>
+<agent>Mozilla/5.0</agent>
+<accept>Accept-Encoding=gzip,deflate,text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8</accept>
+<cookieJar></cookieJar>
+</regex>
+
+_psn12v?
+
+
+<regex>
+<name>get_channel</name>
+<expres>embedSWF\(\"(.*?)\/</expres>
+<page>https://vaughnlive.tv/[makelist.param1]</page>
+<referer>https://vaughnlive.tv/</referer>
+<connection>keep-alive</connection>
+<agent>Mozilla/5.0</agent>
+<accept>Accept-Encoding=gzip,deflate,text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8</accept>
+<cookieJar></cookieJar>
+</regex>
+			<thumbnail>http://cdn.vaughnsoft.com/vaughnsoft/vaughn/img_profiles/[makelist.param2]_320.jpg</thumbnail>
+]]></listrepeat>
+<expres>a href="/(.*?)"[\w\W\s]{0,22}browseTxt">(.*?)<</expres>
+<page>https://vaughnlive.tv/browse/misc</page>
+<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/247.jpg</thumbnail>
+	<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+
+
+<iem>
+<title> •    [B]24/7 Television[/B] English OPCION2</title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param2]</title>
+<link>$$LSPlayOnlyOne$$</link>
+<link>https://hls-ord-3a.vaughnsoft.net/ams/live/live_[makelist.param1]/chunklist.m3u8</link>
+<link>https://hls-ord-3a.vaughnsoft.net/nyc/live/live_[makelist.param1]/chunklist.m3u8</link>
+<link>https://hls-ord-3a.vaughnsoft.net/den/live/live_[makelist.param1]/chunklist.m3u8</link>
+<link>https://hls-ord-3a.vaughnsoft.net/ord/live/live_[makelist.param1]/chunklist.m3u8</link>
+<link>https://hls-ord-3a.vaughnsoft.net/lax/live/live_[makelist.param1]/chunklist.m3u8</link>
+<thumbnail>http://cdn.vaughnsoft.com/vaughnsoft/vaughn/img_profiles/[makelist.param2]_320.jpg</thumbnail>
+]]></listrepeat>
+<expres>a href="/(.*?)"[\w\W\s]{0,22}browseTxt">(.*?)<</expres>
+<page>https://vaughnlive.tv/browse/misc&amp;a=mvn</page>
+<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/247.jpg</thumbnail>
+<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+
+
+
+
+
+
+
+
+<item>
+<title> •    [B]Canales Latinos[/B] Sudamerica  BC</title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param1]  [makelist.param4]</title>
+<link>http://$doregex[ip]$doregex[m3u8]</link>
+<regex>
+<name>ip</name>
+<expres>redirect=(.*)</expres>
+<page>http://[makelist.param3]:1935/loadbalancer</page>
+<referer>www.http://[makelist.param4]</referer>
+</regex>
+<regex>
+<name>m3u8</name>
+<expres>ea \+ "(.*?)"</expres>
+<page>http://[makelist.param4]/membedplayer/[makelist.param2]/1/500/400</page>
+<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+<referer>http://www.[makelist.param4]</referer>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.jpg</thumbnail>
+]]></listrepeat>
+<expres>type:"Ent" canal="(.*?)" channel="(.*?)" pub="(.*?)" server="(.*?)"</expres>
+<page>http://blackaddon.rf.gd/gray/servers.txt</page>
+</regex>
+
+<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+
+
+<tem>
+<title> •    [B]Canales Latinos[/B] MarioCS</title>
+<link>$doregex[makelist2]</link>
+<regex>
+   <name>makelist2</name>
+   <listrepeat><![CDATA[
+          <title>[UPPERCASE][makelist2.param2][/UPPERCASE]</title>
+          <link>http://latino-webtv.ml:8880/[makelist2.param1]/playlist.m3u8</link>
+		  <thumbnail></thumbnail>
+   ]]></listrepeat>
+   <expres><![CDATA[href="(.*?)/">(.*?)/<]]></expres>
+   <page>http://latino-webtv.ml:8880</page>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+
+
+
+
+<item>
+<title> •    [B]MUSICA[/B] Canales Musicales</title>
+<externallink>http://blackaddon.rf.gd/gray/music.xml</externallink>
+<link>NA</link>
+<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+	<tem>
+<title> •    [B]Canales TotalPlay • Stalker • Latinos[/B]</title>
+<externallink>http://blackaddon.rf.gd/gray/darkuz.xml</externallink>
+<link>NA</link>
+<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <item>
+<title>BANDA ANCHA </title>
+
+<link>https://banetworks.interactivemedia.com.mx/live/_definst_/ngrp:bandaancha_all/playlist.m3u8</link>
+<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+
+
+
+
+
+    <item>
+<title>Vive Canal  </title>
+<link>rtmp://38.96.148.213:1935/vivecanaltest/ playpath=myStream.sdp swfUrl=http://vjs.zencdn.net/swf/5.1.0/video-js.swf live=1 pageUrl=http://www.globalmedia.mx/#!/ViveCanal</link>
+<thumbnail>https://pbs.twimg.com/profile_images/841371397804851200/B-IX0wwx.jpg</thumbnail>
+<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+
+
+ <item><title>Hits Musica</title>
+<link>https://wowzaprod4-i.akamaihd.net/hls/live/253920/fc13c4a3/playlist.m3u8</link>
+<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+  </item>
+
+
+<item><title>Retro Musica</title>
+<link>https://wowzaprod4-i.akamaihd.net/hls/live/253920/148a6ff0_1_270/chunklist.m3u8</link>
+<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+  </item>
+
+<item><title>indie Musica</title>
+<link>https://wowzaprod4-i.akamaihd.net/hls/live/253920/d3daa538_1_540/chunklist.m3u8</link>
+<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+  </item>
+
+<item><title>Rock Latino Musica</title>
+<link>https://wowzaprod4-i.akamaihd.net/hls/live/253920/ce9bebcc_1_540/chunklist.m3u8</link>
+<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+  </item>
+
+<item><title>Rock Nacional: Musica</title>
+<link>http://stmv4.questreaming.com/questreaming/questreaming/playlist.m3u8</link>
+<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+  </item>
+
+
+
+
+
+
+
+<item>
+<title>Locomotion </title>
+<thumbnail>http://uploads.tapatalk-cdn.com/20170308/e95d78b5cf4dd88a5265762d4fda2b87.jpg</thumbnail>
+<link>http://locomotiontv.com/envivo/loco_channel/stream.m3u8</link>
+<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+
+
+
+<item><title>Dibujos Animados </title>
+<link>http://video7.stream.mx:1935/raxatv/raxatv/77146.m3u8</link>
+<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+  </item>
+
+
+
+
+
+
+
+
+
+<item><title>g Chile </title>
+<link>https://wowzaprod4-i.akamaihd.net/hls/live/253920/8be6db2d/playlist.m3u8</link>
+<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart></item>
+
+
+
+
+  <item>
+<title>Caricaturas Retro </title>
+<link>http://cm.hostlagarto.com:8081/ACS-NETWORK/acs.myStream/chunks.m3u8</link>
+<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+  <item>
+<title>Music Choice </title>
+<link>http://edge.music-choice-vc-chaina2.top.comcast.net/VideoChannels/MC133/chunklist.m3u8</link>
+<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+  <item>
+<title>Music Choice 02 </title>
+<link>http://edge.music-choice-vc-chaina1.top.comcast.net/VideoChannels/MC121/chunklist.m3u8</link>
+<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<thumbnail>http://i.cdn.turner.com/adultswim/big/video/mainstream/liveStream.jpg</thumbnail>
+<title>Adult Swim Live 24/7 English</title>
+<link>http://adultswimhls-i.akamaihd.net/hls/live/238460/adultswim/main/1/master_Layer5.m3u8</link></item>
+
+<item>
+<title>Canal 4 jujuy - Argentina </title>
+<link>http://streaming.wirenetserver.com.ar:1935/canal4/live_1/livestream.m3u8</link>
+	<thumbnail>http://y.cdn.entutele.com/media/channels/big/.gif</thumbnail><thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+
+<item><title> C5N Argentina</title> <link>http://us.watcha.live/ch1/hi.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:51.0) Gecko/20100101 Firefox/51.0</link> <thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+<item><title> A24 Argentina</title> <link>http://us.watcha.live/ch2/hi.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:51.0) Gecko/20100101 Firefox/51.0</link> <thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+<item><title> AMERICA Argentina</title> <link>http://us.watcha.live/ch3/hi.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:51.0) Gecko/20100101 Firefox/51.0</link> <thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+<item><title> TVP Argentina</title> <link>http://us.watcha.live/ch4/hi.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:51.0) Gecko/20100101 Firefox/51.0</link> <thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+<item><title> CANAL 9 Argentina</title> <link>http://us.watcha.live/ch5/hi.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:51.0) Gecko/20100101 Firefox/51.0</link> <thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+<item><title> TELEFE  Argentina</title> <link>http://us.watcha.live/ch6/hi.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:51.0) Gecko/20100101 Firefox/51.0</link> <thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+<item><title> TELEFE  Argentina</title> <link>https://vivoplay-i.akamaihd.net/hls/live/261555/canal1/master.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:51.0) Gecko/20100101 Firefox/51.0</link> <thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+<item><title> Canal 26  Argentina</title> <link>http://200.115.193.177/live/26hd-720/chunklist_w1668179291.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:51.0) Gecko/20100101 Firefox/51.0</link> <thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+<item><title> EL TRECE  Argentina</title> <link>http://us.watcha.live/ch7/hi.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:51.0) Gecko/20100101 Firefox/51.0</link> <thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+<item><title> DEPORTV  Argentina</title> <link>http://us.watcha.live/ch8/hi.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:51.0) Gecko/20100101 Firefox/51.0</link> <thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+ <item><title> CN23   Argentina</title> <link>http://us.watcha.live/ch11/hi.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:51.0) Gecko/20100101 Firefox/51.0</link> <thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+<item><title> 360TV   Argentina</title> <link>http://us.watcha.live/ch12/hi.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:51.0) Gecko/20100101 Firefox/51.0</link> <thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+<item><title> RT NOTICIAS  Argentina</title> <link>http://us.watcha.live/ch13/hi.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:51.0) Gecko/20100101 Firefox/51.0</link> <thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+<item><title> ENCUENTRO   Argentina</title> <link>http://us.watcha.live/ch14/hi.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:51.0) Gecko/20100101 Firefox/51.0</link> <thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+<item><title> PAKA PAKA  Argentina</title> <link>http://us.watcha.live/ch15/hi.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:51.0) Gecko/20100101 Firefox/51.0</link> <thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+ <item><title> TATETI  Argentina</title> <link>http://us.watcha.live/ch16/hi.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:51.0) Gecko/20100101 Firefox/51.0</link> <thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+ <item><title> CINEAR  Argentina</title> <link>http://us.watcha.live/ch17/hi.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:51.0) Gecko/20100101 Firefox/51.0</link> <thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>America TV</title>
+<link>$doregex[url]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36&amp;Referer=http://livestream.com/accounts/5730046/events/2966225/player?width=960&amp;height=540&amp;autoPlay=true&amp;mute=false&amp;X-Requested-With=ShockwaveFlash/22.0.0.192</link>
+<regex>
+<name>url</name>
+<expres>smil","m3u8_url":"(.*)","secure_m3u8_url</expres>
+<page>http://new.livestream.com/accounts/5730046/events/2966225/player?width=960&amp;height=540&amp;autoPlay=true&amp;mute=false</page>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+<item>
+<title>TeleFormula Mexico</title>
+<link>http://gformula.mmdlive.lldns.net/gformula/596433f167b64696bb03398fecdefbad/manifest.m3u8</link>
+
+<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>GarageTV </title>
+<link>http://186.0.233.76:1935/Garage/smil:garage.smil/chunklist_w1978592479_b446000_sleng.m3u8</link>
+<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+</item>
+
+
+
+
+<item>
+<title>RedBull </title>
+<link>http://rbtvdiglinear-i.akamaihd.net/hls/live/241719/ATfallback/master.m3u8</link>
+<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+</item>
+
+
+ <item>
+<title>Multimedios </title>
+<link>http://mdstrm.com/live-stream-playlist/57b4dbf5dbbfc8f16bb63ce1.m3u8</link>
+<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+
+ <item>
+<title>Multimedios Rx</title>
+<link>$doregex[url]</link>
+  <regex>
+<name>url</name>
+<expres>"hls":"(.*?m3u8)"</expres>
+<page>http://mdstrm.com/live-stream/57b4dbf5dbbfc8f16bb63ce1</page>
+</regex>
+
+
+<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+
+
+
+ <item>
+<title>GalaTV Merida</title>
+<link>http://74.222.3.185:1935/live/ngrp:galatvmerida_all/playlist.m3u8?</link>
+<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+ <item>
+ <title>GalaTV Cancun</title>
+<link>http://74.222.3.185:1935/live/ngrp:galatvcancun_all/playlist.m3u8</link>
+			<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+
+
+
+
+ <item>
+<title>CGTN en español - China </title>
+<link>http://live.cgtn.com/1000e/prog_index.m3u8</link>
+<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+
+<item>
+<title>Oromar TV </title>
+<link>http://proxy.cablefamilia.com/hls/oromartv_hi/index.m3u8</link>
+<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+
+
+
+<item>
+<title>Llano TV  Televisión Regional. Un Canal con Identidad. </title>
+
+<link>http://dcunilive30-lh.akamaihd.net/i/dclive_1@579530/master.m3u8</link>
+<thumbnail>http://llanotv.com/sitio/wp-content/uploads/2017/06/Mosca_LlanoTV.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <item>
+<title>Unimas / Telemundo 51  </title>
+
+<link>http://wscvlive-lh.akamaihd.net/i/WSCV_LIVE2@183618/index_1500_av-b.m3u8?sd=10&amp;rebase;=on</link>
+<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+</item>
+
+
+
+
+
+
+ <item>
+<title>Unimas  opcion 2</title>
+<link>http://$doregex[adryan_IP]/loadbalance/74927338728146398167/playlist.m3u8$doregex[adryan_AuthSign]|User-Agent=iPhone</link>
+<regex>
+<name>adryan_IP</name>
+<expres>location:http://(.*)/loadbalance</expres>
+<page>$doregex[adryan_page]</page>
+<noredirect>true</noredirect>
+<includeheaders></includeheaders>
+</regex>
+<regex>
+<name>adryan_AuthSign</name>
+<expres>m3u8(.*)</expres>
+<page>$doregex[adryan_page]</page>
+</regex>
+
+<regex>
+<name>adryan_page</name>
+<expres>"(.*m3u8.*?)"</expres>
+<page>http://pxstream.tv/embed/0begjylvzevb/</page>
+<referer>http://chiivass.es.tl/UNIVI.htm</referer>
+</regex>
+
+ <thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+ 
+ 
+ 
+
+
+
+
+
+
+ 
+ 
+  <item>
+<title>Telemundo    </title>
+<link>https://clutch.vaughnsoft.net/ord/vl/anahix11.m3u8</link>
+
+<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+</item>
+
+ <item>
+<title>Telemundo   </title>
+<link>https://clutch.vaughnsoft.net/ord/vl/tele1.m3u8</link>
+
+<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+</item>
+
+
+ <item>
+<title>Telemundo   </title>
+<link>https://clutch.vaughnsoft.net/ord/vl/telemundo50.m3u8</link>
+
+<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+</item>
+
+ <item>
+<title>Telemundo   </title>
+<link>https://clutch.vaughnsoft.net/ord/vl/tvhdenvivo14.m3u8</link>
+
+<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+</item>
+
+
+
+ <item>
+<title>Univision   </title>
+<link>https://clutch.vaughnsoft.net/ord/vl/tvhdenvivo23.m3u8</link>
+
+<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+</item>
+
+
+
+ <iem>
+<title>Univision   abcast </title>
+
+<link>$doregex[adryan_IP]|Referer=http://abcast.net/embed.php?file=Chivasss69</link>
+<regex>
+<name>adryan_IP</name>
+<expres>source:\s"(.*?)"</expres>
+<page>http://abcast.net/embed.php?file=Chivasss69</page>
+</regex>
+
+<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+</item>
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ <item>
+<title>Univision   opcion 1 </title>
+
+<link>https://ssh101.com/m3u8/dyn/unonuevo/index.m3u8</link>
+<regex>
+<name>adryan_IP</name>
+<expres>source:\s"(.*?)"</expres>
+<page>http://abcast.net/embed.php?file=Chivasss69</page>
+</regex>
+
+<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+</item>
+
+
+
+
+
+ <item>
+<title>Univision  opcion 2</title>
+<link>http://$doregex[adryan_IP]/loadbalance/35129581852727873642/playlist.m3u8$doregex[adryan_AuthSign]|User-Agent=iPhone</link>
+<regex>
+<name>adryan_IP</name>
+<expres>location:http://(.*)/loadbalance</expres>
+<page>$doregex[adryan_page]</page>
+<noredirect>true</noredirect>
+<includeheaders></includeheaders>
+</regex>
+<regex>
+<name>adryan_AuthSign</name>
+<expres>m3u8(.*)</expres>
+<page>$doregex[adryan_page]</page>
+</regex>
+
+<regex>
+<name>adryan_page</name>
+<expres>"(.*m3u8.*?)"</expres>
+<page>http://pxstream.tv/embed/kjj6ao5mpqri/</page>
+<referer>http://chiivass.es.tl/UNIVI.htm</referer>
+</regex>
+
+ <thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+
+ 
+ 
+ <item>
+<title>TELEMUNDO   opcion 3 </title>
+
+<link>http://wscvlive-lh.akamaihd.net/i/WSCV_LIVE2@183618/index_1500_av-b.m3u8?sd=10&amp;rebase=on&amp;token=uivhScZErtmmqBTp5h9HDw&amp;expires=1510369937</link>
+<regex>
+<name>adryan_IP</name>
+<expres>source:\s"(.*?)"</expres>
+<page>http://abcast.net/embed.php?file=Chivasss69</page>
+</regex>
+
+<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+</item>
+
+
+http://138.197.109.108/loadbalance//l_23884_5515120_1838.ts
+
+
+
+
+ <item>
+<title>Telemundo  opcion 1</title>
+
+<link>http://$doregex[adryan_IP]/loadbalance/88143748474794857718/playlist.m3u8$doregex[adryan_AuthSign]|User-Agent=iPhone</link>
+<regex>
+<name>adryan_IP</name>
+<expres>location:http://(.*)/loadbalance</expres>
+<page>$doregex[adryan_page]</page>
+<noredirect>true</noredirect>
+<includeheaders></includeheaders>
+</regex>
+<regex>
+<name>adryan_AuthSign</name>
+<expres>m3u8(.*)</expres>
+<page>$doregex[adryan_page]</page>
+</regex>
+
+<regex>
+<name>adryan_page</name>
+<expres>"(.*m3u8.*?)"</expres>
+<page>http://pxstream.tv/embed/b78ebhzd2fyj/</page>
+<referer>http://chiivass.es.tl/TELE-1.htm</referer>
+</regex>
+
+ <thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+
+
+
+
+
+
+
+ <item>
+<title>Telemundo  opcion 2</title>
+
+<link>http://wscvlive-lh.akamaihd.net/i/WSCV_LIVE2@183618/index_1500_av-b.m3u8?sd=10&amp;rebase=on&amp;token=uivhScZErtmmqBTp5h9HDw&amp;expires=1510369937|User-Agent=iPhone</link>
+
+
+ <thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<itm>
+<title>Univision HD   </title>
+<link>$doregex[get-url]|User-Agent=iPad</link>
+<thumbnail></thumbnail>
+<regex>
+<name>get-url</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url='http://v2.ustreamix.com/stream.php?id=univision'):
+  import re, requests
+  hdr = {'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_2 like Mac OS X)'}
+  html = requests.get(url,headers=hdr,verify=False).text
+  uip = re.findall("x_first_ip = '(.*?)'",html,re.DOTALL)[0]
+  ohtm = eval(re.findall('Obfuscator.*?var.*?(\[.*?\])',html,re.DOTALL)[0])
+  oval = int(re.findall('replace.*?- (\d*)',html)[0])
+  phtml = ''
+  for oht in ohtm:
+    phtml += chr(int(re.findall('\D*(\d*)',oht.decode('base64'))[0]) - oval)
+  strurl = re.findall("var stream = '(.*?)'",phtml)[0]
+  hdr['Referer'] = url
+  tokpg = requests.get('https://wakwaw2.ga/stats.php?p=%s'%uip,headers=hdr,verify=False).text
+  token = re.findall('jdtk="(.*?)"',tokpg)[0]
+  return strurl+token
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.jpg</thumbnail><thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--
+
+   <item>
+<title>Telemundo 14 [ams]  </title>
+<link>https://hls-ord-3a.vaughnsoft.net/ams/live/live_tvhdenvivo14/chunklist.m3u8</link>
+<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+    <item>
+<title>Telemundo 11 [ams]  .</title>
+<link>https://hls-ord-3a.vaughnsoft.net/ams/live/live_anahix11/chunklist.m3u8</link>
+<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+    <item>
+<title>Telemundo 11 .</title>
+<link>https://hls-ord-3a.vaughnsoft.net/nyc/live/live_anahix11/chunklist.m3u8</link>
+<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+     <item>
+<title>Telemundo 49 .</title>
+<link>https://hls-ord-3a.vaughnsoft.net/ord/live/live_telemundo50/chunklist.m3u8</link>
+<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+     <item>
+<title>Telemundo 49 .</title>
+<link>https://hls-ord-3a.vaughnsoft.net/ams/live/live_telemundo50/chunklist.m3u8</link>
+<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+	     <item>
+<title>Telemundo LC .</title>
+<link>https://hls-ord-3a.vaughnsoft.net/ams/live/live_luzclarita/chunklist.m3u8</link>
+<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+	     <item>
+<title>Telemundo LC .</title>
+<link>https://hls-ord-3a.vaughnsoft.net/ord/live/live_luzclarita/chunklist.m3u8</link>
+<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+
+-->
+
+
+
+
+
+
+
+
+ <item>
+<title>Telemundo Internacional</title>
+<link>$doregex[GetPageUrl]|Referer=http://vercanalestv.com/tv/nacionales/canal-plus-estrenos.html&amp;User-Agent=Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</link>
+<regex>
+<name>GetPageUrl</name>
+<expres>source: '(.*?)'</expres>
+<page>http://livesports.pw/embed.php?file=telemundoes&amp;width=650&amp;height=397</page>
+<agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
+</regex>
+  <thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tem>
+<title>Tu TV PR</title>
+<link>$doregex[get=URL]|User-Agent=iPhone</link>
+<regex>
+<name>get=URL</name>
+<expres><![CDATA[#$pyFunction
+import requests, re
+def GetLSProData(page_data,Cookie_Jar,m,url = 'http://livestream.com/accounts/16550960/events/4589741'):
+ headers = {'User-Agent': 'iPhone','Referer': 'http://livestream.com/'}
+ source = requests.get(url, headers=headers)
+ m3u8 = re.findall('smil[",\']\W[",\']m3u8_url.+?([^"]+)[",\']\W', source.text)[0]
+ return m3u8 + '|headers'
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>Sintesis TV</title>
+<link>http:$doregex[get-Clean-M3U8]$doregex[get-Clean-token]|User-Agent=iPad</link>
+<regex>
+<name>get-Clean-token</name>
+<expres>$pyFunction:'$doregex[get-token]'.replace('\/','/')</expres>
+<page></page>
+</regex>
+<regex>
+<name>get-token</name>
+<expres>"token":"(.*?)"</expres>
+<page>https://services.dacast.com/token/i/b/63852/c/88933</page>
+<referer>https://iframe.dacast.com/b/63852/c/88933</referer>
+</regex>
+<regex>
+<name>get-Clean-M3U8</name>
+<expres>$pyFunction:'$doregex[get-M3U8]'.replace('\/','/')</expres>
+<page></page>
+</regex>
+<regex>
+<name>get-M3U8</name>
+<expres>"hls":"(.*?)"</expres>
+<page>http://json.dacast.com/b/63852/c/88933</page>
+</regex>
+ <thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+
+
+
+ <item>
+<title>WAPA PR Puerto Rico </title>
+<link>https://dcunilive30-lh.akamaihd.net/i/dclive_1@535532/master.m3u8</link>
+ <thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+
+
+<iem>
+<title>WAPA PR Puerto Rico ***</title>
+<link>http:$doregex[get-Clean-M3U8]$doregex[get-Clean-token]|User-Agent=iPad</link>
+<regex>
+<name>get-Clean-token</name>
+<expres>$pyFunction:'$doregex[get-token]'.replace('\/','/')</expres>
+<page></page>
+</regex>
+<regex>
+<name>get-token</name>
+<expres>"token":"(.*?)"</expres>
+<page>https://services.dacast.com/token/i/b/34772/c/40898</page>
+<referer>https://iframe.dacast.com/b/34772/c/40898</referer>
+</regex>
+<regex>
+<name>get-Clean-M3U8</name>
+<expres>$pyFunction:'$doregex[get-M3U8]'.replace('\/','/')</expres>
+<page></page>
+</regex>
+<regex>
+<name>get-M3U8</name>
+<expres>"hls":"(.*?)"</expres>
+<page>http://json.dacast.com/b/34772/c/40898</page>
+</regex>
+<thumbnail>https://media.licdn.com/media/p/7/000/1f7/30e/2b7da59.png</thumbnail>
+<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <item>
+<title> DTV</title>
+<link>http://lsdhcdnhls-lh.akamaihd.net/i/hcdnarsatHLS_2@301805/master.m3u8</link>
+<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+    <item>
+<title> TDC</title>
+<link>http://painel.serveron.com.br:1935/8166/8166/chunklist_w266638799.m3u8</link>
+<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!--tvpor-internet.com/hbo-en-vivo.html-->
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>HBO [TVI]</title>
+<link>http://$doregex[ip]$doregex[m3u8]</link>
+<regex>
+<name>ip</name>
+<expres>redirect=(.*)</expres>
+<page>http://cdn.pubzony.com:1935/loadbalancer?17089</page>
+</regex>
+<regex>
+<name>m3u8</name>
+<expres>ea \+ "(.*?)"</expres>
+<page>http://www.zony.tv/membedplayer/$doregex[canal]/2/680/380</page>
+<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+<referer>http://www.zony.tv</referer>
+</regex>
+<regex>
+<name>canal</name>
+<expres>channel='(.*?)'</expres>
+<page>http://tvpor-internet.com/hbo-en-vivo.html</page>
+</regex>
+<thumbnail>http://y.cdn.entutele.com/media/channels/big/.gif</thumbnail><thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <item>
+<title>Fox Accion[TVI]</title>
+<link>http://$doregex[ip]$doregex[m3u8]</link>
+<regex>
+<name>ip</name>
+<expres>redirect=(.*)</expres>
+<page>http://www.janjuapublisher.com:1935/loadbalancer</page>
+</regex>
+<regex>
+<name>m3u8</name>
+<expres>ea \+ "(.*?)"</expres>
+<page>http://www.janjuaplayer.com/membedplayer/$doregex[canal]/2/680/380</page>
+<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+<referer>http://www.janjuaplayer.com</referer>
+</regex>
+<regex>
+<name>canal</name>
+<expres>channel='(.*?)'</expres>
+<page>http://tvpor-internet.com/fox-action-en-vivo.html</page>
+</regex>
+<thumbnail>http://y.cdn.entutele.com/media/channels/big/fox-action.gif</thumbnail><thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+
+
+
+
+   <item>
+<title>Fox 1  [TVI]</title>
+<link>http://$doregex[ip]$doregex[m3u8]</link>
+<regex>
+<name>ip</name>
+<expres>redirect=(.*)</expres>
+<page>http://www.publish247.xyz:1935/loadbalancer</page>
+</regex>
+<regex>
+<name>m3u8</name>
+<expres>ea \+ "(.*?)"</expres>
+<page>http://www.247bay.tv/membedplayer/$doregex[canal]/2/680/380</page>
+<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+<referer>http://www.247bay.tv</referer>
+</regex>
+<regex>
+<name>canal</name>
+<expres>channel='(.*?)'</expres>
+<page>http://tvpor-internet.com/fox-1-en-vivo.html</page>
+</regex>
+<thumbnail>http://y.cdn.entutele.com/media/channels/big/fox-1.gif</thumbnail><thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+
+
+ 
+ 
+ 
+ 
+
+    <item>
+<title>SPACE [TVI]</title>
+<link>http://$doregex[ip]$doregex[m3u8]</link>
+<regex>
+<name>ip</name>
+<expres>redirect=(.*)</expres>
+<page>http://www.janjuapublisher.com:1935/loadbalancer</page>
+</regex>
+<regex>
+<name>m3u8</name>
+<expres>ea \+ "(.*?)"</expres>
+<page>http://www.janjuaplayer.com/membedplayer/$doregex[canal]/1/680/380</page>
+<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+<referer>http://www.janjuaplayer.com</referer>
+</regex>
+<regex>
+<name>canal</name>
+<expres>channel='(.*?)'</expres>
+<page>http://tvpor-internet.com/space-en-vivo.html</page>
+</regex>
+<thumbnail>http://y.cdn.entutele.com/media/channels/big/space-hd.gif</thumbnail><thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+
+
+     <item>
+<title>Warner [TVI]</title>
+<link>http://$doregex[ip]$doregex[m3u8]</link>
+<regex>
+<name>ip</name>
+<expres>redirect=(.*)</expres>
+<page>http://www.janjuapublisher.com:1935/loadbalancer</page>
+</regex>
+<regex>
+<name>m3u8</name>
+<expres>ea \+ "(.*?)"</expres>
+<page>http://www.janjuaplayer.com/membedplayer/$doregex[canal]/1/680/380</page>
+<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+<referer>http://www.janjuaplayer.com</referer>
+</regex>w.zony.tv</referer>
+</regex>
+<regex>
+<name>canal</name>
+<expres>channel='(.*?)'</expres>
+<page>http://tvpor-internet.com/warner-en-vivo.html</page>
+</regex>
+<thumbnail>http://y.cdn.entutele.com/media/channels/big/warner-hd.gif</thumbnail><thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+
+
+
+
+    <item>
+<title>TLNovelas [TVI]</title>
+<link>http://$doregex[ip]$doregex[m3u8]</link>
+<regex>
+<name>ip</name>
+<expres>redirect=(.*)</expres>
+<page>http://www.janjuapublisher.com:1935/loadbalancer</page>
+</regex>
+<regex>
+<name>m3u8</name>
+<expres>ea \+ "(.*?)"</expres>
+<page>http://www.janjuaplayer.com/membedplayer/$doregex[canal]/1/680/380</page>
+<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+<referer>http://www.janjuaplayer.com</referer>
+</regex>
+<regex>
+<name>canal</name>
+<expres>channel='(.*?)'</expres>
+<page>http://tvpor-internet.com/tlnovelas-en-vivo.html</page>
+</regex>
+<thumbnail>http://y.cdn.entutele.com/media/channels/big/tlnovelas.gif</thumbnail><thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+
+
+
+
+   <item>
+<title>TNT [TVI]</title>
+<link>http://$doregex[ip]$doregex[m3u8]</link>
+<regex>
+<name>ip</name>
+<expres>redirect=(.*)</expres>
+<page>http://www.janjuapublisher.com:1935/loadbalancer</page>
+</regex>
+<regex>
+<name>m3u8</name>
+<expres>ea \+ "(.*?)"</expres>
+<page>http://www.janjuaplayer.com/membedplayer/$doregex[canal]/1/680/380</page>
+<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+<referer>http://www.janjuaplayer.com</referer>
+</regex>
+<regex>
+<name>canal</name>
+<expres>channel='(.*?)'</expres>
+<page>http://tvpor-internet.com/tnt-latino-en-vivo.html</page>
+</regex>
+<thumbnail>http://y.cdn.entutele.com/media/channels/big/tnt-hd.gif</thumbnail><thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+
+
+
+<item>
+<title>Disney Channel [TVI]</title>
+<link>http://$doregex[ip]$doregex[m3u8]</link>
+<regex>
+<name>ip</name>
+<expres>redirect=(.*)</expres>
+<page>http://www.janjuapublisher.com:1935/loadbalancer</page>
+</regex>
+<regex>
+<name>m3u8</name>
+<expres>ea \+ "(.*?)"</expres>
+<page>http://www.janjuaplayer.com/membedplayer/$doregex[canal]/1/680/380</page>
+<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+<referer>http://www.janjuaplayer.com</referer>
+</regex>
+<regex>
+<name>canal</name>
+<expres>channel='(.*?)'</expres>
+<page>http://tvpor-internet.com/disney-channel-en-vivo.html</page>
+<referer>http://www.mips.tv</referer>
+</regex>
+<thumbnail>http://y.cdn.entutele.com/media/channels/big/disney-channel.gif</thumbnail><thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+
+
+
+
+
+
+
+
+<item>
+<title>Cartoon Network  Ahora:($doregex[prog]) </title>
+<link>http://$doregex[ip]$doregex[m3u8]</link>
+<regex>
+<name>prog</name>
+<expres><![CDATA[Cartoon\sNetwork[\w\W\s]{0,1300}class="name">(.+)<]]></expres>
+<page>https://www.entutele.com/programacion/todos</page>
+<agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:49.0) Gecko/20100101 Firefox/49.0</agent>
+<referer></referer>
+</regex>
+
+<regex>
+<name>ip</name>
+<expres>redirect=(.*)</expres>
+<page>http://www.publish247.xyz:1935/loadbalancer</page>
+</regex>
+<regex>
+<name>m3u8</name>
+<expres>ea \+ "(.*?)"</expres>
+<page>http://www.247bay.tv/membedplayer/$doregex[canal]/1/680/380</page>
+<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+<referer>http://247bay.tv</referer>
+</regex>
+<regex>
+<name>canal</name>
+<expres>channel='(.*?)'</expres>
+<page>http://tvpor-internet.com/cartoon-network-en-vivo.html</page>
+<referer>http://www.mips.tv</referer>
+</regex>
+
+
+<thumbnail>http://y.cdn.entutele.com/media/channels/big/cartoon-network.gif</thumbnail><thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>nick [TVI]</title>
+<link>http://$doregex[ip]$doregex[m3u8]</link>
+<regex>
+<name>ip</name>
+<expres>redirect=(.*)</expres>
+<page>http://www.janjuapublisher.com:1935/loadbalancer</page>
+</regex>
+<regex>
+<name>m3u8</name>
+<expres>ea \+ "(.*?)"</expres>
+<page>http://www.janjuaplayer.com/membedplayer/$doregex[canal]/1/680/380</page>
+<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+<referer>http://www.janjuaplayer.com</referer>
+</regex>
+<regex>
+<name>canal</name>
+<expres>channel='(.*?)'</expres>
+<page>http://tvpor-internet.com/nickelodeon-en-vivo.html</page>
+</regex>
+<thumbnail>http://y.cdn.entutele.com/media/channels/big/nick-hd.gif</thumbnail><thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+
+
+<item>
+<title>Disney XD [TVI]</title>
+<link>http://wowza2.mysoltv.com:1992/Latino_Disney_XD/index.m3u8</link>
+<regex>
+<name>ip</name>
+<expres>redirect=(.*)</expres>
+<page>http://www.janjuapublisher.com:1935/loadbalancer</page>
+</regex>
+<regex>
+<name>m3u8</name>
+<expres>ea \+ "(.*?)"</expres>
+<page>http://www.janjuaplayer.com/membedplayer/$doregex[canal]/1/680/380</page>
+<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+<referer>http://www.janjuaplayer.com</referer>
+</regex>
+<regex>
+<name>canal</name>
+<expres>channel='(.*?)'</expres>
+<page>http://tvpor-internet.com/disney-xd-en-vivo.html</page>
+<referer>http://www.mips.tv</referer>
+</regex>
+<thumbnail>http://y.cdn.entutele.com/media/channels/big/disney-xd.gif</thumbnail><thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+
+
+
+
+<item>
+<title>Disney Jr [TVI]</title>
+<link>http://wowza2.mysoltv.com:1992/Latino_Disney_JR/index.m3u8</link>
+
+<thumbnail>http://y.cdn.entutele.com/media/channels/big/disney-jr.gif</thumbnail><thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+
+
+
+
+<item>
+<title>MTV [TVI]</title>
+<link>http://$doregex[ip]$doregex[m3u8]</link>
+<regex>
+<name>ip</name>
+<expres>redirect=(.*)</expres>
+<page>http://www.janjuapublisher.com:1935/loadbalancer</page>
+</regex>
+<regex>
+<name>m3u8</name>
+<expres>ea \+ "(.*?)"</expres>
+<page>http://www.janjuaplayer.com/membedplayer/$doregex[canal]/1/680/380</page>
+<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+<referer>http://www.janjuaplayer.com</referer>
+</regex>
+<regex>
+<name>canal</name>
+<expres>channel='(.*?)'</expres>
+<page>http://tvpor-internet.com/mtv-latino-en-vivo.html</page>
+<referer>http://www.mips.tv</referer>
+</regex>
+<thumbnail>http://y.cdn.entutele.com/media/channels/big/mtv.gif</thumbnail><thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+
+
+<item>
+<title>Nick [TVI]</title>
+<link>http://$doregex[ip]$doregex[m3u8]</link>
+<regex>
+<name>ip</name>
+<expres>redirect=(.*)</expres>
+<page>http://www.janjuapublisher.com:1935/loadbalancer</page>
+</regex>
+<regex>
+<name>m3u8</name>
+<expres>ea \+ "(.*?)"</expres>
+<page>http://www.janjuaplayer.com/membedplayer/$doregex[canal]/1/680/380</page>
+<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+<referer>http://www.janjuaplayer.com</referer>
+</regex>
+<regex>
+<name>canal</name>
+<expres>channel='(.*?)'</expres>
+<page>http://tvpor-internet.com/Telehit-en-vivo.html</page>
+<referer>http://www.mips.tv</referer>
+</regex>
+<thumbnail>http://y.cdn.entutele.com/media/channels/big/telehit.gif</thumbnail><thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+
+
+
+<item>
+<title>Venevision [TVI]</title>
+<link>http://$doregex[ip]$doregex[m3u8]</link>
+<regex>
+<name>ip</name>
+<expres>redirect=(.*)</expres>
+<page>http://www.publish247.xyz:1935/loadbalancer</page>
+</regex>
+<regex>
+<name>m3u8</name>
+<expres>ea \+ "(.*?)"</expres>
+<page>http://www.247bay.tv/membedplayer/$doregex[canal]/1/680/380</page>
+<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+<referer>http://247bay.tv</referer>
+</regex>
+<regex>
+<name>canal</name>
+<expres>channel='(.*?)'</expres>
+<page>http://tvpor-internet.com/venevision-en-vivo.html</page>
+<referer>http://247bay.tv</referer>
+</regex>
+<thumbnail>http://y.cdn.entutele.com/media/channels/big/.gif</thumbnail><thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+
+
+<item>
+<title>Discovery [TVI]</title>
+<link>http://$doregex[ip]$doregex[m3u8]</link>
+<regex>
+<name>ip</name>
+<expres>redirect=(.*)</expres>
+<page>http://www.janjuapublisher.com:1935/loadbalancer</page>
+</regex>
+<regex>
+<name>m3u8</name>
+<expres>ea \+ "(.*?)"</expres>
+<page>http://www.janjuaplayer.com/membedplayer/$doregex[canal]/1/680/380</page>
+<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+<referer>http://www.janjuaplayer.com</referer>
+</regex>
+<regex>
+<name>canal</name>
+<expres>channel='(.*?)'</expres>
+<page>http://tvpor-internet.com/discovery-latino-en-vivo.html</page>
+<referer>http://www.mips.tv</referer>
+</regex>
+<thumbnail>http://y.cdn.entutele.com/media/channels/big/discovery-channel.gif</thumbnail><thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>Arte</title>
+<link>$doregex[get-m3u8]</link>
+<thumbnail></thumbnail>
+<regex>
+<name>get-m3u8</name>
+<expres>source: "(.*http.*m3u8.*?)"</expres>
+<page>http://www.streaming-hub.com/arte/</page>
+<referer>http://www.streaming-hub.com/</referer>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+
+
+
+
+
+
+
+ <item><title>Telesur </title><link>$doregex[get-url]</link><regex><name>get-url</name><expres>file: "(.*?)"</expres><page>$doregex[get-ifr]</page><referer>http://tv.vera.com.uy</referer></regex><regex><name>get-ifr</name><expres>'src', '(.*extras.*?)'</expres><page>http://tv.vera.com.uy/canal/6028</page><referer>http://tv.vera.com.uy</referer><cookieJar></cookieJar></regex><thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item><title>NASA NTV 1</title><link>http://nasa-i.akamaihd.net/hls/live/253565/NASA-NTV1-Public/master_500.m3u8</link><thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+
+
+
+ <item><title>NASA NTV 2</title><link>https://nasa-i.akamaihd.net/hls/live/253566/NASA-NTV2-Media/master.m3u8</link><thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+<item><title>NASA TV HD</title><utube>RtU_mdL2vBM</utube><thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+
+
+
+
+
+
+
+
+<item><thumbnail>http://mw1.iptv66.tv/stalker_portal/misc/logos/320/60.png</thumbnail><title>Al Jazeera UK</title>
+<link>http://aljazeera-eng-apple-live.adaptive.level3.net/apple/aljazeera/english/appleman.m3u8</link><thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+
+
+
+
+
+
+
+
+<item><thumbnail></thumbnail><title>EfektoTV</title>
+<link>http://grupomac-lh.akamaihd.net:80/i/004rss0k8_1@301782/master.m3u8</link><thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+
+
+
+
+
+
+
+
+<item><thumbnail>http://i2.esmas.com/2015/06/22/778598/foro-tv--280x370.jpg</thumbnail><title>Foro TV </title>
+<link>http://185417-f.akamaihd.net/i/n0tf0r0_1@81283/master.m3u8</link><thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+
+
+
+
+
+ <item><thumbnail>http://mw1.iptv66.tv/stalker_portal/misc/logos/320/419.png</thumbnail><title>France 24</title>
+<link>http://static.france24.com/live/F24_EN_LO_HLS/live_web.m3u8</link><thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+
+
+
+
+ <item><title>RT en Español</title><link>$doregex[get-url]</link><regex><name>get-url</name><expres>file: "(.*?)"</expres><page>$doregex[get-ifr]</page><referer>http://tv.vera.com.uy</referer></regex><regex><name>get-ifr</name><expres>'src', '(.*extras.*?)'</expres><page>http://tv.vera.com.uy/canal/6027</page><referer>http://tv.vera.com.uy</referer><cookieJar></cookieJar></regex><thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+
+
+
+
+
+
+
+ <item><title>France 24</title><link>$doregex[get-url]</link><regex><name>get-url</name><expres>file: "(.*?)"</expres><page>$doregex[get-ifr]</page><referer>http://tv.vera.com.uy</referer></regex><regex><name>get-ifr</name><expres>'src', '(.*extras.*?)'</expres><page>http://tv.vera.com.uy/canal/9845</page><referer>http://tv.vera.com.uy</referer><cookieJar></cookieJar></regex><thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+
+
+
+
+<item><thumbnail></thumbnail><title>RT Russia Today</title>
+<link>http://rt.ashttp14.visionip.tv/live/rt-global-live-HD/playlist.m3u8</link><thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+
+
+
+
+
+<item><thumbnail></thumbnail><title>Russia Today</title>
+<link>http://rt.ashttp14.visionip.tv/live/rt-global-live-HD/playlist.m3u8</link><thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+
+<item><thumbnail>http://mw1.iptv66.tv/stalker_portal/misc/logos/320/3610.png</thumbnail><title>TRT World</title>
+<link>http://trtcanlitv-lh.akamaihd.net/i/TRTWORLD_1@321783/master.m3u8</link><thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+
+
+<item>
+<title>Documentales DW</title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param3]</title>
+<link>$doregex[get-rtmp]</link>
+<thumbnail>http://www.dw.com[makelist.param2]</thumbnail>
+
+]]></listrepeat>
+<expres><![CDATA[<div class="news searchres hov".*?\n.*?a href="(.*?)".*?\n.*?\n.*?src="(.*?)".*?\n.*?h2>(.*)]]></expres>
+<page>http://www.dw.com/es/multimedia/todos-los-contenidos/s-100838?filter=&amp;type=18&amp;programs=294151&amp;sort=date&amp;results=250</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>get-rtmp</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+ import requests,urllib
+ import re
+ part_url= '[makelist.param1]'
+ url = 'http://www.dw.com/es' + urllib.quote(part_url)
+
+ source = requests.get(url).text
+ id= re.findall('media_id" value="(.*?)"', source)[0]
+ url2 = 'http://www.dw.com/smil/v-' + id
+ source2 = requests.get(url2).text
+ rtmp = re.findall('base="(.*?)"', source2)[0]
+ playpath = re.findall('video src="(.*?)"', source2)[0]
+ return rtmp + playpath
+
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <item><title>Miami TV</title><link>http://usaserver.miamitvchannel.com/miamitv/smil:miamitv/playlist.m3u8</link><thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+<item><title>Miami TV</title><link>http://mexicoserver.miamitvchannel.com/miamitv/smil:miamitvmexico/playlist.m3u8?tecnotv.info?iptv.m3u8</link><thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>sonbolumizlesene.org</title>
+<link>$doregex[category]</link>
+<thumbnail>http://www.sonbolumizlesene.org/images/logo/logo.png</thumbnail>
+<regex>
+<name>category</name>
+<listrepeat><![CDATA[
+<title>[category.param3]</title>
+<link>$doregex[makelist]</link>
+<thumbnail>http://www.sonbolumizlesene.org[category.param2]</thumbnail>
+<fanart>http://www.sonbolumizlesene.org[category.param2]</fanart>
+]]></listrepeat>
+<expres><![CDATA[(?s)class="col-sm-6.*?href="(.*?)".*?src="(.*?)".*?"(.*?)"]]></expres>
+<page>http://www.sonbolumizlesene.org/categories</page>
+</regex>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>Page: [makelist.param1]</title>
+<link>$doregex[makelist2]</link>
+<thumbnail>http://www.sonbolumizlesene.org[category.param2]</thumbnail>
+<fanart>http://www.sonbolumizlesene.org[category.param2]</fanart>
+]]></listrepeat>
+<expres>(\d+),?</expres>
+<page>$doregex[number-pages]</page>
+</regex>
+<regex>
+<name>number-pages</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import re
+  lastpage = 1
+  if 'pagination' in page_data:
+    lastpage = re.findall('"pagination.+>(\d*)</a>',page_data)[0]
+  return range(1, int(lastpage)+1)
+]]></expres>
+<page>http://www.sonbolumizlesene.org[category.param1]</page>
+</regex>
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>[makelist2.param3]</title>
+<link>$doregex[makelist3]</link>
+<thumbnail>[makelist2.param2]<thumbnail>
+<fanart>http://www.sonbolumizlesene.org[category.param2]</fanart>
+]]></listrepeat>
+<expres><![CDATA[(?s)class="col-sm-6.*?href="(.*?)".*?src="(.*?)" title="(.*?)"]]></expres>
+<page>http://www.sonbolumizlesene.org[category.param1]?page=[makelist.param1]</page>
+</regex>
+<regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+<title>[makelist3.param1]</title>
+<link>$doregex[link]</link>
+<thumbnail>[makelist2.param2]<thumbnail>
+<fanart>[makelist2.param2]</fanart>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import re
+  frames = re.findall('(<iframe.*?>)',page_data)
+  part = 1
+  parts = []
+  for frame in frames:
+    parts.append(('Part: %s'%part,frame))
+    part += 1
+  return parts
+]]></expres>
+<page>http://www.sonbolumizlesene.org[makelist2.param1]</page>
+</regex>
+<regex>
+<name>link</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import urlresolver, re, requests
+  headers = {"User-Agent" : "Mozilla/5.0 (Windows NT 6.1; rv:14.0) Gecko/20100101 Firefox/14.0.1"}
+  eurl = 'http:' + re.findall('iframe.*?src="(.*?)"','[makelist3.param2]')[0]
+  if '/matplayer/' in eurl:
+    html = requests.get(eurl, headers=headers).text
+    if 'sources' in html:
+	  u = 'http://sonbolumizlesene.org' + re.findall('(?s)sources:.*?"SD".*?file: "(.*?)"',html)[0]
+    else:
+      vid = re.findall(r'/video/([^?]*)',html)[0]
+      u = 'plugin://plugin.video.dailymotion_com/?mode=playVideo&url=' + vid
+  elif 'dailymotion' in eurl:
+    parms = re.findall('data-x="(.*?)" data-my="(.*?)"','[makelist3.param2]')[0]
+    data = {'x' : parms[1],
+            'y' : parms[0]}
+    headers['X-Requested-With']='XMLHttpRequest'
+    headers['MYSONB']='1'
+    headers['Referer']='http://www.sonbolumizlesene.org/'
+    jdata = requests.post('http://www.sonbolumizlesene.org/son.php', headers=headers, data=data).json()
+    vid = re.findall(r'/video/([^?]*)',jdata['x'])[0]
+    u = 'plugin://plugin.video.dailymotion_com/?mode=playVideo&url=' + vid
+  else:
+    u = 'notresolvable'
+    if urlresolver.HostedMediaFile(eurl):
+      u = urlresolver.resolve(eurl)
+  return u
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>[B]• World Television (sportsdevil requerido)[/B]</title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+   <title>[makelist.param2] [([makelist.param3])</title>
+	<sportsdevil>http://ustreamix.com[makelist.param1]</sportsdevil>
+	<referer>https://beta.ustreamix.com/</referer>
+]]></listrepeat>
+<expres><![CDATA[(?s)<p><a href="(.*?)".*?blank">(.*?)\s*<.*?live">(.*?)<]]></expres>
+<page>https://beta.ustreamix.com/</page>
+<agent>Mozilla/5.0 (X11; Linux i686; rv:44.0) Gecko/20100101 Firefox/44.0 Iceweasel/44.0</agent>
+<cookieJar></cookieJar>
+</regex>
+
+<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+
+
+
+
+
+<itm>
+<title> •    [B]24/7 Television[/B] Español OPCION2</title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param2]</title>
+<link>$$LSPlayOnlyOne$$</link>
+<link>http://live-ord.vaughnsoft.net:1935/live/_definst_/live_[makelist.param1]/playlist.m3u8</link>
+<link>http://live-den.vaughnsoft.net:1935/live/_definst_/live_[makelist.param1]/playlist.m3u8</link>
+<link>http://live-ams.vaughnsoft.net:1935/live/_definst_/live_[makelist.param1]/playlist.m3u8</link>
+<link>http://live-nyc.vaughnsoft.net:1935/live/_definst_/live_[makelist.param1]/playlist.m3u8</link>
+<link>http://live-lax.vaughnsoft.net:1935/live/_definst_/live_[makelist.param1]/playlist.m3u8</link>
+<thumbnail>http://cdn.vaughnsoft.com/vaughnsoft/vaughn/img_profiles/[makelist.param2]_320.jpg</thumbnail>
+]]></listrepeat>
+<expres>a href="/(.*?)"[\w\W\s]{0,22}browseTxt">(.*?)<</expres>
+<page>https://vaughnlive.tv/browse/espanol</page>
+<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/247.jpg</thumbnail>
+<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+
+
+
+
+ <item>
+<title>KkKike Channel</title>
+<link>$doregex[makelist3]</link>
+
+<regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+<title>Pagina [makelist3.param1]  --    SOLO +18</title>
+<link>$doregex[makelist2]</link>
+]]></listrepeat>
+<expres>'(.*?)'</expres>
+<page>'1''2''3''4''5''6''7''8''9''10''11''12''13''14''15''16''17''18''19''20''21''22''23''24''25'</page>
+</regex>
+
+
+
+<regex>
+   <name>makelist2</name>
+   <listrepeat><![CDATA[
+          <title>[makelist2.param2]   </title>
+<link>$doregex[makelist]</link>
+		  <thumbnail>[makelist2.param3]</thumbnail>
+		<fanart>[makelist2.param3]</fanart>
+   ]]></listrepeat>
+   <expres><![CDATA[href="(.*?)".*?title="(.*?)".*?src="(.*?)" ]]></expres>
+   <page>http://www.coomelonitas.com/page/[makelist3.param1]</page>
+   <cookieJar></cookieJar>
+</regex>
+
+
+
+<regex>
+   <name>makelist</name>
+   <listrepeat><![CDATA[
+          <title>[makelist2.param2]           [I] [makelist.param1][/I]</title>
+          <urlsolve>[makelist.param1]</urlsolve>
+		  <thumbnail>[makelist2.param3]</thumbnail>
+		<fanart>[makelist2.param3]</fanart>
+   ]]></listrepeat>
+   <expres><![CDATA[iframe\ssrc="(.*?)"]]></expres>
+   <page>[makelist2.param1]</page>
+   <cookieJar></cookieJar>
+</regex>
+
+
+
+<thumbnail>http://blackaddon.rf.gd/gray/img/adryflix.jpg</thumbnail><fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>Futurama Random </title> <link>http://4.sendvid.com/cx1ihlnd.mp4/</link><thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
+
+
+
+
+<item>
+<title>OK  BOX</title>
+<thumbnail></thumbnail>
+<link>no</link>
+<externallink>$doregex[openDialog]</externallink>
+<regex>
+<name>openDialog</name>
+<expres><![CDATA[#$pyFunction
+import xbmcaddon
+import xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+    title = "Hello !"
+    line1 = "I"
+    line2 = "LOVE"
+    line3 = "LSP"
+    xbmcgui.Dialog().ok(title, line1, line2, line3)
+    return "http://pastebin.com/raw/XXXXXXXX"
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+
+
+
+<iem>
+<title>XBMC Dialog selection - Open Movies</title>
+<link>$doregex[select]</link>
+
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    ret = dialog.select('Choose a movie', ['Big Buck Bunny', 'Sintel', 'Tears of Steel'])
+    regex = ['$doregex[bunny]', '$doregex[sintel]', '$doregex[tears]']
+    return regex[ret]
+]]></expres>
+<page></page>
+</regex>
+
+<regex>
+<name>bunny</name>
+<expres>http://www.quirksmode.org/html5/videos/big_buck_bunny.mp4</expres>
+<page></page>
+</regex>
+
+<regex>
+<name>sintel</name>
+<expres>http://download.blender.org/durian/movies/Sintel.2010.720p.mkv</expres>
+<page></page>
+</regex>
+
+<regex>
+<name>tears</name>
+<expres>plugin://plugin.video.youtube/play/?video_id=R6MlUcmOul8</expres>
+<page></page>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+
+
+<iem>
+<title> »»» AVISO IMPORTANTE «««    </title>
+<link>$doregex[text]</link>
+<regex>
+<name>text</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    dialog.textviewer('BlackGhost - AVISO IMPORTANTE', 'Para el correcto funcionamiento de BlackGhost debes seguir la siguientes indicaciones:\nPrimero es [B]Tener la version mas reciente del addon la cual es la version 2.8.1[/B] ya que varias secciones o canales te marcaran error si no lo tienes actualizado.\nSegundo; Tener [B]Activado el Turbo[/B] en la configuracion del Addon BlackGhost\nTercero: Tener instalados los Addons Complementarios como lo son el [B]URLRESOLVER, PLEXUS, QUASAR, SPORTSDEVIL y F4MTESTER[/B] que son los mas importantes;\nSi necesitas ayuda con alguno de estos puntos puedes ingresar al grupo de Telegram [ aquamarine][I][B]telegram.me/BlackGhost[/B][/I] y con gusto te ayudaremos, para que puedas disfrutar de todo el contenido que encontraras en BlackAddon (Peliculas, Series de TV, Television en vivo, eventos PPV...)\n\nEspero disfrutes todo esto que he realizado, y si quieres apoyarme puedes hacerlo a traves de una donacion por paypal al correo [I]adrian.bu@gmail.com[/I] [I]Para la tazita de cafe[/I] y si no te funciona nada. puedes cerrar este addon y desinstalarlo de tu kodi  y probar con alguna otra opcion mas..  \n atte: @ADRYAN  ')
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+
+
+
+<iem>
+<title>xbmc input windows. Youtube Search 10 pages</title>
+<link>$doregex[makelist]</link>
+<thumbnail>http://vignette3.wikia.nocookie.net/logopedia/images/7/76/Youtube-logo_2005-2009.jpg</thumbnail>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param2]</title>
+<link>$doregex[resolve]</link>
+<thumbnail>https://i.ytimg.com/vi/[makelist.param1]/hqdefault.jpg</thumbnail>
+]]></listrepeat>
+<expres>u'(.+?)', u'(.+?)'</expres>
+<page>$doregex[search]</page>
+</regex>
+
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+import urlresolver
+def GetLSProData(page_data,Cookie_Jar,m):
+ url = 'https://www.youtube.com/watch?v=[makelist.param1]'
+ streamLink = urlresolver.resolve(url)
+ return streamLink
+]]></expres>
+<page></page>
+</regex>
+
+<regex>
+<name>search</name>
+<expres><![CDATA[#$pyFunction
+import requests,xbmcgui,xbmc, re,time, xbmcaddon
+def GetLSProData(page_data,Cookie_Jar,m):
+
+ text=takeInputFortext('Enter search string')
+ url = 'https://www.youtube.com/results?q=' + text.replace(' ', '+')
+ req = requests.get(url)
+ list1 = re.findall('yt-lockup-c.+?a\shref=".watch.v=([^"]+)".+?\s\stitle="([^"]+)"\s', req.text)
+
+ count = 10
+ while count > 1:
+   try:
+     url = 'https://www.youtube.com' + re.findall('a href="([^"]+)".+Next', req.text)[0]
+   except:
+     return list1
+   req = requests.get(url)
+   list2 = re.findall('yt-lockup-c.+?a\shref=".watch.v=([^"]+)".+?\s\stitle="([^"]+)"\s', req.text)
+   list1 = list1 + list2
+   count = count - 1
+ return list1
+
+def takeInputFortext(txt):
+ addon = xbmcaddon.Addon('plugin.video.live.streamspro')
+ addon_version = addon.getAddonInfo('version')
+ profile = xbmc.translatePath(addon.getAddonInfo('profile').decode('utf-8'))
+
+ solver = InputWindow( txt=txt)
+ solution = solver.get()
+ return solution
+
+class InputWindow(xbmcgui.WindowDialog):
+    def __init__(self, *args, **kwargs):
+
+        self.txt = kwargs.get('txt','')
+
+        xbmcgui.WindowXMLDialog.__init__(self)
+        #self.addControl(self.txt)
+        path = xbmcaddon.Addon().getAddonInfo('path')
+        self.kbd = xbmc.Keyboard()
+        self.kbd.setHeading( self.txt)
+
+    def get(self):
+        self.show()
+        time.sleep(2)
+        self.kbd.doModal()
+        if (self.kbd.isConfirmed()):
+            text = self.kbd.getText()
+            self.close()
+            return text
+        self.close()
+        return False
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+
+
+<itm>
+<title>xbmc input windows. Youtube Search 10 pages  (by twogun)</title>
+<link>$doregex[makelist]</link>
+<thumbnail>http://vignette3.wikia.nocookie.net/logopedia/images/7/76/Youtube-logo_2005-2009.jpg</thumbnail>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param2]</title>
+<link>$doregex[resolve]</link>
+<thumbnail>https://i.ytimg.com/vi/[makelist.param1]/hqdefault.jpg</thumbnail>
+]]></listrepeat>
+<expres>u'(.+?)', u'(.+?)'</expres>
+<page>$doregex[search]</page>
+</regex>
+
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+import urlresolver
+def GetLSProData(page_data,Cookie_Jar,m):
+ url = 'https://www.youtube.com/watch?v=[makelist.param1]'
+ streamLink = urlresolver.resolve(url)
+ return streamLink
+]]></expres>
+<page></page>
+</regex>
+
+<regex>
+<name>search</name>
+<expres><![CDATA[#$pyFunction
+import requests,xbmcgui,xbmc, re,time, xbmcaddon
+def GetLSProData(page_data,Cookie_Jar,m):
+
+ text=takeInputFortext('Enter search string')
+ url = 'https://www.youtube.com/results?q=' + text.replace(' ', '+')
+ req = requests.get(url)
+ list1 = re.findall('yt-lockup-c.+?a\shref=".watch.v=([^"]+)".+?\s\stitle="([^"]+)"\s', req.text)
+
+ count = 10
+ while count > 1:
+   try:
+     url = 'https://www.youtube.com' + re.findall('a href="([^"]+)".+<\/a>\n <\/div>', req.text)[0]
+   except:
+     return list1
+   req = requests.get(url)
+   list2 = re.findall('yt-lockup-c.+?a\shref=".watch.v=([^"]+)".+?\s\stitle="([^"]+)"\s', req.text)
+   list1 = list1 + list2
+   count = count - 1
+ return list1
+
+def takeInputFortext(txt):
+ addon = xbmcaddon.Addon('plugin.video.live.streamspro')
+ addon_version = addon.getAddonInfo('version')
+ profile = xbmc.translatePath(addon.getAddonInfo('profile').decode('utf-8'))
+
+ solver = InputWindow( txt=txt)
+ solution = solver.get()
+ return solution
+
+class InputWindow(xbmcgui.WindowDialog):
+    def __init__(self, *args, **kwargs):
+
+        self.txt = kwargs.get('txt','')
+
+        xbmcgui.WindowXMLDialog.__init__(self)
+        #self.addControl(self.txt)
+        path = xbmcaddon.Addon().getAddonInfo('path')
+        self.kbd = xbmc.Keyboard()
+        self.kbd.setHeading( self.txt)
+
+    def get(self):
+        self.show()
+        time.sleep(2)
+        self.kbd.doModal()
+        if (self.kbd.isConfirmed()):
+            text = self.kbd.getText()
+            self.close()
+            return text
+        self.close()
+        return False
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+
+
+
+
+
+
+
+
+
+
+<iem>
+<title>NEW! 4.32. m500    http://papystreaming.org/   [Max= 500 derniers films] </title>
+<thumbnail>https://img2.picup.co/rs8/http://img2.picup.co/upload/images/CFNX.png</thumbnail>
+<link>$doregex[makelist0]</link>
+
+<regex>
+<name>makelist0</name> categories list
+<listrepeat><![CDATA[
+   <title> [makelist0.param2]</title>
+   <link>$doregex[makelist]</link>
+]]></listrepeat>
+<expres><![CDATA[org\/category\/(.*?)\/".*?i>(.*?)<]]></expres>
+<page>https://papy-streaming.org/papystreaming-2017/</page>
+<agent>Mozilla/5.0 (Windows NT 6.1; rv:14.0) Gecko/20100101 Firefox/14.0.1</agent>
+<cookieJar></cookieJar>
+</regex>
+
+
+
+
+
+<regex>
+    <name>makelist</name> movies  (all pages)
+ <listrepeat><![CDATA[
+   <title>[ [makelist.param2]</title>
+   <urlsolve>$doregex[play]</urlsolve>
+   <thumbnail>[makelist.param3]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re, requests
+def GetLSProData(page_data,Cookie_Jar,m):
+
+################################################################## FORMULARY #################################################################
+ starturl = 'https://papy-streaming.org/category/'     ### usually, ~ 'http://website.com/category/' ###
+ categorylink = '[makelist0.param1]' ### check the number of the param ###
+ centerurl = '/page/'      ### something like  '/page/' ###
+ firstpage = 1 ### probably  = 1 ###
+ endurl = '' ### can be empty ###    ### endurl without final / (SLASH) ###
+#
+ dataregex = 'poster"\shref="(.*?)"\stitle="(.*?)".*?src="(.*?)"'      ### To adapt ###
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:50.0) Gecko/20100101 Firefox/50.0', 'Referer': ''}      ### To adapt ###
+##############################################################################################################################################
+
+############################## GENERIC PART #####################################
+ fullurl = starturl + categorylink + centerurl + str(firstpage) + endurl #
+ source = requests.get(fullurl, headers= headers).text #
+ data = [] #
+#
+ last = 25 #
+ while firstpage <= last: #
+    try: #
+        fullurl = starturl + categorylink + centerurl + str(firstpage) + endurl #
+        source = requests.get(fullurl, headers=headers).text #
+        data += re.findall(dataregex, source) #
+        firstpage += 1 #
+    except: #
+        pass #
+ return data #
+##########################################################by#twogun#and#jujuuj###
+]]></expres><page></page>
+</regex>
+
+<regex>
+<name>play</name>
+<expres><![CDATA[#$pyFunction
+import re,requests
+def GetLSProData(page_data,Cookie_Jar,m):
+  link = 'https:' + re.findall('link":"(.*?)"',page_data)[0].replace('\\','')
+  source=requests.get(link,headers={'User-Agent':'Mozilla/5.0 (Windows NT 6.1; rv:14.0) Gecko/20100101 Firefox/14.0.1','Referer':'[makelist.param1]','Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8','Connection':'keep-alive'}).text
+  return re.findall('src":"([^"]+)',source)[0].replace('\\','')
+]]></expres>
+<page>[makelist.param1]</page>
+<referer>https://papy-streaming.org/category/[makelist0.param1]</referer>
+<agent>Mozilla/5.0 (Windows NT 6.1; rv:14.0) Gecko/20100101 Firefox/14.0.1</agent>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+
+
+
+
+		<item>
+<title>test</title>
+<link>$doregex[GetPageUrl]</link>
+<regex>
+<name>GetPageUrl</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url='http://www.247bay.tv/embedplayer/f1caballona/2/600/420'):
+   import liveresolver
+   u = liveresolver.resolve(url)
+   return u
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+</item>
+
+
+
+
+ -->
+
+
+
+
+
+
+
+
+<item>
+<title>youtube buscador</title>
+<link>$doregex[makelist]</link>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param2]</title>
+<link>$doregex[resolve]</link>
+<thumbnail>https://i.ytimg.com/vi/[makelist.param1]/hqdefault.jpg</thumbnail>
+]]></listrepeat>
+<expres>u'(.+?)', u'(.+?)'</expres>
+<page>$doregex[search]</page>
+</regex>
+
+<regex>
+<name>resolve</name>
+<expres><![CDATA[#$pyFunction
+import urlresolver
+def GetLSProData(page_data,Cookie_Jar,m):
+ url = 'https://www.youtube.com/watch?v=[makelist.param1]'
+ streamLink = urlresolver.resolve(url)
+ return streamLink
+]]></expres>
+<page></page>
+</regex>
+
+<regex>
+<name>search</name>
+<expres><![CDATA[#$pyFunction
+import requests,xbmcgui,xbmc, re,time, xbmcaddon
+def GetLSProData(page_data,Cookie_Jar,m):
+
+ text=takeInputFortext('Enter search string')
+ url = 'https://www.youtube.com/results?q=' + text.replace(' ', '+')
+ req = requests.get(url)
+ list1 = re.findall('yt-lockup-c.+?a\shref=".watch.v=([^"]+)".+?\s\stitle="([^"]+)"\s', req.text)
+
+ count = 10
+ while count > 1:
+   try:
+     url = 'https://www.youtube.com' + re.findall('a href="([^"]+)".+<\/a>\n <\/div>', req.text)[0]
+   except:
+     return list1
+   req = requests.get(url)
+   list2 = re.findall('yt-lockup-c.+?a\shref=".watch.v=([^"]+)".+?\s\stitle="([^"]+)"\s', req.text)
+   list1 = list1 + list2
+   count = count - 1
+ return list1
+
+def takeInputFortext(txt):
+ addon = xbmcaddon.Addon('plugin.video.live.streamspro')
+ addon_version = addon.getAddonInfo('version')
+ profile = xbmc.translatePath(addon.getAddonInfo('profile').decode('utf-8'))
+
+ solver = InputWindow( txt=txt)
+ solution = solver.get()
+ return solution
+
+class InputWindow(xbmcgui.WindowDialog):
+    def __init__(self, *args, **kwargs):
+
+        self.txt = kwargs.get('txt','')
+
+        xbmcgui.WindowXMLDialog.__init__(self)
+        #self.addControl(self.txt)
+        path = xbmcaddon.Addon().getAddonInfo('path')
+        self.kbd = xbmc.Keyboard()
+        self.kbd.setHeading( self.txt)
+
+    def get(self):
+        self.show()
+        time.sleep(2)
+        self.kbd.doModal()
+        if (self.kbd.isConfirmed()):
+            text = self.kbd.getText()
+            self.close()
+            return text
+        self.close()
+        return False
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+
+
+
+
+<item>
+<title>Extratime</title>
+<link>$NA</link>
+<externallink>$doregex[notice]</externallink>
+<regex>
+<name>notice</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import xbmc
+  xbmc.executebuiltin("XBMC.Notification(BlackGhost,[B]Donaciones: al Paypal adrian.bu@gmail.com[/B] ,10000)")
+  return 'http://blackaddon.rf.gd/gray/multicanales.xml'
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+  </item>
+
+ http://blackaddon.rf.gd/gray/cita.php
+
+
+ <item>
+<title>[$doregex[prog]</title>
+<link>http://$doregex[ip]$doregex[m3u8]</link>
+<regex>
+<name>prog</name>
+<expres><![CDATA[cita:"(.+)"]]></expres>
+<page>http://blackaddon.rf.gd/gray/cita.php</page>
+<agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:49.0) Gecko/20100101 Firefox/49.0</agent>
+<referer></referer>
+</regex>
+
+
+<thumbnail>http://blackaddon.rf.gd/gray/img/donacion.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+</item>
+
+
+
+ <item>
+<title>[lkjkj</title>
+<link>rtmp://198.255.0.10/live?$doregex[get_key] app=live?$doregex[get_key] playpath=live_anahix11  swfUrl=https://vaughnlive.tv/4520191431/swf_v7/VaughnSoftPlayer.swf pageUrl=https://vaughnlive.tv/anahix11  live=true</link>
+
+
+<regex>
+<name>get_key</name>
+<expres>Agent:"(.*?)"</expres>
+<page>http://blackaddon.rf.gd/gray/tokenv.php</page>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/donacion.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+</item>
+
+
+
+ <item>
+<title>[lkjkj</title>
+<link>rtmp://66.90.93.42/live?$doregex[get_key] app=live?$doregex[get_key] playpath=live_anahix11  swfUrl=https://vaughnlive.tv/4520191431/swf_v7/VaughnSoftPlayer.swf pageUrl=https://vaughnlive.tv/anahix11  live=true</link>
+
+
+<regex>
+<name>get_key</name>
+<expres>Agent:"(.*?)"</expres>
+<page>http://blackaddon.rf.gd/gray/tokenv.php</page>
+</regex>
+
+<thumbnail>http://blackaddon.rf.gd/gray/img/donacion.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+</item>
+
+
+
+ <item>
+<title>[lkjkj</title>
+<link>http://vnode0079.pulsedmedia.com/public-llave1/foxsports3.php</link>
+
+<thumbnail>http://blackaddon.rf.gd/gray/img/donacion.png</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+</item>
+
+
+Fox sports 3
+http://vnode0079.pulsedmedia.com/public-llave1/foxsports3.php
+Golf channel
+http://vnode0079.pulsedmedia.com/public-llave1/golfchannel.php
+Uno
+http://vnode0079.pulsedmedia.com/public-llave1/uno.php
+caracol
+http://vnode0079.pulsedmedia.com/public-llave1/caracol.php
+nick2
+http://vnode0079.pulsedmedia.com/public-llave1/nick2.php
+
+
+
+
+
+
+
+ </channel>

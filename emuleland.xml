@@ -1,0 +1,375 @@
+
+
+<item>
+<title>Buscar</title>
+<link>$doregex[makelist]</link>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param3] </title>
+<link>$doregex[makelist2]</link>
+<fanart>[makelist.param2]</fanart>
+<thumbnail>[makelist.param2]</thumbnail>
+]]></listrepeat>
+<expres>class="item[\w\W\s]{0,7}href="(.*?)"[\w\W\s]{0,30}src="(.*?)"\salt="(.*?)"</expres>
+<page>http://emuleland.net/?s=$doregex[search]</page>
+</regex>
+
+
+<regex>
+<name>search</name>
+<expres><![CDATA[#$pyFunction
+import xbmc
+import xbmcaddon
+import xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+    dialog = xbmcgui.Dialog()
+    d = dialog.input('Buscar  Pelicula: ejemplo: Superman', type=xbmcgui.INPUT_ALPHANUM).replace(" ", "+")
+    return d
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+
+
+
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<SetViewMode>55</SetViewMode>
+<title>[makelist.param3] server:[makelist2.param2] - idioma: [makelist2.param3]</title>
+ <link>$doregex[id3]</link>
+<fanart>[makelist.param2]</fanart>
+<thumbnail>[makelist.param2]</thumbnail>
+]]></listrepeat>
+<expres>elemento[\w\W\s]{0,8}href="(.*?)"[\w\W\s]{0,185}alt="(.*?)"[\w\W\s]{0,108}idiomas/(.*?).png</expres>
+<page>[makelist.param1]</page>
+</regex>
+
+
+
+
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = '[makelist2.param1]'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+
+<thumbnail>http://adryanlist.org/adryan/img/adryflix.png</thumbnail><fanart>http://adryanlist.org/adryan/img/fanart.jpg</fanart></item>
+
+
+
+
+
+
+
+
+<item>
+<title>Estrenos</title>
+<link>$doregex[makelist]</link>
+
+
+<regex>
+    <name>makelist</name> movies  (all pages)
+ <listrepeat><![CDATA[
+   <SetViewMode>55</SetViewMode>
+   <title>[COLOR skyblue][makelist.param3] [/COLOR]</title>
+   <link>$doregex[makelist2]</link>
+   <thumbnail>[makelist.param2]</thumbnail>
+   <fanart>[makelist.param2]</fanart>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re, requests
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+################################################################## FORMULARY #################################################################
+ starturl = 'http://emuleland.net/'     ### usually, ~ 'http://website.com/category/' ###
+ categorylink = 'peliculas' ### check the number of the param ###
+ centerurl = '/page/'      ### something like  '/page/' ###
+ firstpage = 1 ### probably  = 1 ###
+ endurl = '' ### can be empty ###    ### endurl without final / (SLASH) ###
+#
+ dataregex = 'class="item[\w\W\s]{0,7}href="(.*?)"[\w\W\s]{0,30}src="(.*?)"\salt="(.*?)"'      ### To adapt ###
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:50.0) Gecko/20100101 Firefox/50.0', 'Referer': ''}      ### To adapt ###
+##############################################################################################################################################
+
+############################## GENERIC PART #####################################
+ fullurl = starturl + categorylink + centerurl + str(firstpage) + endurl #
+ source = requests.get(fullurl, headers= headers).text #
+ data = [] #
+#
+ last = 9 #
+ while firstpage <= last: #
+    try: #
+        fullurl = starturl + categorylink + centerurl + str(firstpage) + endurl #
+        source = requests.get(fullurl, headers=headers).text #
+        data += re.findall(dataregex, source) #
+        firstpage += 1 #
+    except: #
+        pass #
+ return data #
+##########################################################by#twogun#and#jujuuj###
+]]></expres><page></page>
+</regex>
+
+
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<SetViewMode>55</SetViewMode>
+<title>[makelist.param3] server:[makelist2.param2] - idioma: [makelist2.param3]</title>
+ <link>$doregex[id3]</link>
+<fanart>[makelist.param2]</fanart>
+<thumbnail>[makelist.param2]</thumbnail>
+]]></listrepeat>
+<expres>elemento[\w\W\s]{0,8}href="(.*?)"[\w\W\s]{0,185}alt="(.*?)"[\w\W\s]{0,108}idiomas/(.*?).png</expres>
+<page>[makelist.param1]</page>
+</regex>
+
+
+
+
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = '[makelist2.param1]'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+
+<thumbnail>http://adryanlist.org/adryan/img/adryflix.png</thumbnail><fanart>http://adryanlist.org/adryan/img/fanart.jpg</fanart></item>
+
+
+
+<item>
+<title>Generos</title>
+<link>$doregex[makelist3]</link>
+
+
+
+<regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+<title>[makelist3.param2] </title>
+<link>$doregex[makelist]</link>
+<thumbnail>http://adryanlist.org/adryan/img/adryflix.png</thumbnail><fanart>http://adryanlist.org/adryan/img/fanart.jpg</fanart>
+]]></listrepeat>
+<expres>emuleland.net\/category\/(.*?)\/"\s>(.*?)<</expres>
+<page>http://emuleland.net/</page>
+</regex>
+
+
+
+
+<regex>
+    <name>makelist</name> movies  (all pages)
+ <listrepeat><![CDATA[
+   <SetViewMode>55</SetViewMode>
+   <title>[makelist.param3]</title>
+   <link>$doregex[makelist2]</link>
+   <thumbnail>[makelist.param2]</thumbnail>
+   <fanart>[makelist.param2]</fanart>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re, requests
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+################################################################## FORMULARY #################################################################
+ starturl = 'http://emuleland.net/category/'     ### usually, ~ 'http://website.com/category/' ###
+ categorylink = '[makelist3.param1]' ### check the number of the param ###
+ centerurl = '/page/'      ### something like  '/page/' ###
+ firstpage = 1 ### probably  = 1 ###
+ endurl = '/' ### can be empty ###    ### endurl without final / (SLASH) ###
+#
+ dataregex = 'class="item[\w\W\s]{0,7}href="(.*?)"[\w\W\s]{0,30}src="(.*?)"\salt="(.*?)"'      ### To adapt ###
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:50.0) Gecko/20100101 Firefox/50.0', 'Referer': ''}      ### To adapt ###
+##############################################################################################################################################
+
+############################## GENERIC PART #####################################
+ fullurl = starturl + categorylink + centerurl + str(firstpage) + endurl #
+ source = requests.get(fullurl, headers= headers).text #
+ data = [] #
+#
+ last = 9 #
+ while firstpage <= last: #
+    try: #
+        fullurl = starturl + categorylink + centerurl + str(firstpage) + endurl #
+        source = requests.get(fullurl, headers=headers).text #
+        data += re.findall(dataregex, source) #
+        firstpage += 1 #
+    except: #
+        pass #
+ return data #
+##########################################################by#twogun#and#jujuuj###
+]]></expres><page></page>
+</regex>
+
+
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<SetViewMode>55</SetViewMode>
+<title>[makelist.param3] server:[makelist2.param2] - idioma: [makelist2.param3]</title>
+ <link>$doregex[id3]</link>
+<fanart>[makelist.param2]</fanart>
+<thumbnail>[makelist.param2]</thumbnail>
+]]></listrepeat>
+<expres>elemento[\w\W\s]{0,8}href="(.*?)"[\w\W\s]{0,185}alt="(.*?)"[\w\W\s]{0,108}idiomas/(.*?).png</expres>
+<page>[makelist.param1]</page>
+</regex>
+
+
+
+
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = '[makelist2.param1]'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+
+<thumbnail>http://adryanlist.org/adryan/img/adryflix.png</thumbnail><fanart>http://adryanlist.org/adryan/img/fanart.jpg</fanart></item>
+
+
+
+<item>
+<title>Calidad</title>
+<link>$doregex[makelist3]</link>
+
+
+
+<regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+<title>[makelist3.param2] </title>
+<link>$doregex[makelist]</link>
+<thumbnail>http://adryanlist.org/adryan/img/adryflix.png</thumbnail><fanart>http://adryanlist.org/adryan/img/fanart.jpg</fanart>
+]]></listrepeat>
+<expres>emuleland.net\/calidad\/(.*?)\/">(.*?)<</expres>
+<page>http://emuleland.net/</page>
+</regex>
+
+
+
+
+<regex>
+    <name>makelist</name> movies  (all pages)
+ <listrepeat><![CDATA[
+   <SetViewMode>55</SetViewMode>
+   <title>[makelist.param3]</title>
+   <link>$doregex[makelist2]</link>
+   <thumbnail>[makelist.param2]</thumbnail>
+   <fanart>[makelist.param2]</fanart>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re, requests
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+################################################################## FORMULARY #################################################################
+ starturl = 'http://emuleland.net/calidad/'     ### usually, ~ 'http://website.com/category/' ###
+ categorylink = '[makelist3.param1]' ### check the number of the param ###
+ centerurl = '/page/'      ### something like  '/page/' ###
+ firstpage = 1 ### probably  = 1 ###
+ endurl = '/' ### can be empty ###    ### endurl without final / (SLASH) ###
+#
+ dataregex = 'class="item[\w\W\s]{0,7}href="(.*?)"[\w\W\s]{0,30}src="(.*?)"\salt="(.*?)"'      ### To adapt ###
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:50.0) Gecko/20100101 Firefox/50.0', 'Referer': ''}      ### To adapt ###
+##############################################################################################################################################
+
+############################## GENERIC PART #####################################
+ fullurl = starturl + categorylink + centerurl + str(firstpage) + endurl #
+ source = requests.get(fullurl, headers= headers).text #
+ data = [] #
+#
+ last = 9 #
+ while firstpage <= last: #
+    try: #
+        fullurl = starturl + categorylink + centerurl + str(firstpage) + endurl #
+        source = requests.get(fullurl, headers=headers).text #
+        data += re.findall(dataregex, source) #
+        firstpage += 1 #
+    except: #
+        pass #
+ return data #
+##########################################################by#twogun#and#jujuuj###
+]]></expres><page></page>
+</regex>
+
+
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<SetViewMode>55</SetViewMode>
+<title>[makelist.param3] server:[makelist2.param2] - idioma: [makelist2.param3]</title>
+ <link>$doregex[id3]</link>
+<fanart>[makelist.param2]</fanart>
+<thumbnail>[makelist.param2]</thumbnail>
+]]></listrepeat>
+<expres>elemento[\w\W\s]{0,8}href="(.*?)"[\w\W\s]{0,185}alt="(.*?)"[\w\W\s]{0,108}idiomas/(.*?).png</expres>
+<page>[makelist.param1]</page>
+</regex>
+
+
+
+
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = '[makelist2.param1]'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+
+</item>

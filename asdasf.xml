@@ -1,0 +1,902 @@
+<item>
+    <title>[COLOR sky blue][B][I]CANAL+</title>
+    <link>http://Ignoreme</link>
+<externallink>http://listapld.proyectoluzdigital.com/canal+.xml</externallink>
+<thumbnail>http://bucket.cdndtl.co.uk/Europe/Spain/yomvi_600.gif</thumbnail>
+<fanart>http://bucket.cdndtl.co.uk/Europe/Spain/yomvi_600.gif</fanart>
+</item>
+
+
+<item>
+<title>CANAL+ESTRENOS</title>
+<link>rtmp://185.39.11.76/live?token=$doregex[rtmp] playpath=$doregex[path] swfUrl=http://gblackstreaming.com/player.swf live=1 timeout=15 pageUrl=http://gblackstreaming.com token=$doregex[tok]</link>
+<regex>
+<name>rtmp</name>
+<expres>token=(.*?)'</expres>
+<page>http://gblackstreaming.com/embed.php?a=21&amp;id=&amp;width=650&amp;height=400&amp;autostart=true&amp;strech=</page>
+<referer>http://gblackstreaming.com</referer>
+</regex>
+<regex>
+<name>path</name>
+<expres>file', '(.*?)'</expres>
+<page>http://gblackstreaming.com/embed.php?a=21&amp;id=&amp;width=650&amp;height=400&amp;autostart=true&amp;strech=</page>
+<referer>http://gblackstreaming.com</referer>
+</regex>
+<regex>
+<name>tok</name>
+<expres>token', '(.*?)'</expres>
+<page>http://gblackstreaming.com/embed.php?a=21&amp;id=&amp;width=650&amp;height=400&amp;autostart=true&amp;strech=</page>
+<referer>http://gblackstreaming.com</referer>
+</regex>
+
+<item>
+<title>CANAL+ DCINE </title>
+
+<link>rtmp://185.39.11.76/live?token=$doregex[rtmp] playpath=$doregex[path] swfUrl=http://gblackstreaming.com/player.swf live=1 timeout=15 pageUrl=http://gblackstreaming.com token=$doregex[tok]</link>
+<regex>
+<name>rtmp</name>
+<expres>token=(.*?)'</expres>
+<page>http://gblackstreaming.com/embed.php?a=22&amp;id=&amp;width=650&amp;height=400&amp;autostart=true&amp;strech=</page>
+<referer>http://gblackstreaming.com</referer>
+</regex>
+<regex>
+<name>path</name>
+<expres>file', '(.*?)'</expres>
+<page>http://gblackstreaming.com/embed.php?a=22&amp;id=&amp;width=650&amp;height=400&amp;autostart=true&amp;strech=</page>
+<referer>http://gblackstreaming.com</referer>
+</regex>
+<regex>
+<name>tok</name>
+<expres>token', '(.*?)'</expres>
+<page>http://gblackstreaming.com/embed.php?a=22&amp;id=&amp;width=650&amp;height=400&amp;autostart=true&amp;strech=</page>
+<referer>http://gblackstreaming.com</referer>
+</regex>
+</item>
+
+
+<item>
+<title>CANAL+ COMEDIA </title>
+<link>rtmp://185.39.11.76/live?token=$doregex[rtmp] playpath=$doregex[path] swfUrl=http://gblackstreaming.com/player.swf live=1 timeout=15 pageUrl=http://gblackstreaming.com token=$doregex[tok]</link>
+<regex>
+<name>rtmp</name>
+<expres>token=(.*?)'</expres>
+<page>http://gblackstreaming.com/embed.php?a=24&amp;id=&amp;width=650&amp;height=400&amp;autostart=true&amp;strech=</page>
+<referer>http://gblackstreaming.com</referer>
+</regex>
+<regex>
+<name>path</name>
+<expres>file', '(.*?)'</expres>
+<page>http://gblackstreaming.com/embed.php?a=24&amp;id=&amp;width=650&amp;height=400&amp;autostart=true&amp;strech=</page>
+<referer>http://gblackstreaming.com</referer>
+</regex>
+<regex>
+<name>tok</name>
+<expres>token', '(.*?)'</expres>
+<page>http://gblackstreaming.com/embed.php?a=24&amp;id=&amp;width=650&amp;height=400&amp;autostart=true&amp;strech=</page>
+<referer>http://gblackstreaming.com</referer>
+</regex>
+</item>
+
+
+
+
+<item>
+<title>CANAL+ XTRA </title>
+<link>rtmp://185.39.11.76/live?token=$doregex[rtmp] playpath=$doregex[path] swfUrl=http://gblackstreaming.com/player.swf live=1 timeout=15 pageUrl=http://gblackstreaming.com token=$doregex[tok]</link>
+<regex>
+<name>rtmp</name>
+<expres>token=(.*?)'</expres>
+<page>http://gblackstreaming.com/embed.php?a=26&amp;id=&amp;width=650&amp;height=400&amp;autostart=true&amp;strech=</page>
+<referer>http://gblackstreaming.com</referer>
+</regex>
+<regex>
+<name>path</name>
+<expres>file', '(.*?)'</expres>
+<page>http://gblackstreaming.com/embed.php?a=26&amp;id=&amp;width=650&amp;height=400&amp;autostart=true&amp;strech=</page>
+<referer>http://gblackstreaming.com</referer>
+</regex>
+<regex>
+<name>tok</name>
+<expres>token', '(.*?)'</expres>
+<page>http://gblackstreaming.com/embed.php?a=26&amp;id=&amp;width=650&amp;height=400&amp;autostart=true&amp;strech=</page>
+<referer>http://gblackstreaming.com</referer>
+</regex>
+</item>
+
+
+
+<item>
+<title>DECINE ESPAÑOL </title>
+<link>rtmp://185.39.11.76/live?token=$doregex[rtmp] playpath=$doregex[path] swfUrl=http://gblackstreaming.com/player.swf live=1 timeout=15 pageUrl=http://gblackstreaming.com token=$doregex[tok]</link>
+<regex>
+<name>rtmp</name>
+<expres>token=(.*?)'</expres>
+<page>http://gblackstreaming.com/embed.php?a=27&amp;id=&amp;width=650&amp;height=400&amp;autostart=true&amp;strech=</page>
+<referer>http://gblackstreaming.com</referer>
+</regex>
+<regex>
+<name>path</name>
+<expres>file', '(.*?)'</expres>
+<page>http://gblackstreaming.com/embed.php?a=27&amp;id=&amp;width=650&amp;height=400&amp;autostart=true&amp;strech=</page>
+<referer>http://gblackstreaming.com</referer>
+</regex>
+<regex>
+<name>tok</name>
+<expres>token', '(.*?)'</expres>
+<page>http://gblackstreaming.com/embed.php?a=27&amp;id=&amp;width=650&amp;height=400&amp;autostart=true&amp;strech=</page>
+<referer>http://gblackstreaming.com</referer>
+</regex>
+</item>
+
+
+
+<item>
+<title>CANAL+ ACCION </title>
+<link>rtmp://185.39.11.76/live?token=$doregex[rtmp] playpath=$doregex[path] swfUrl=http://gblackstreaming.com/player.swf live=1 timeout=15 pageUrl=http://gblackstreaming.com token=$doregex[tok]</link>
+<regex>
+<name>rtmp</name>
+<expres>token=(.*?)'</expres>
+<page>http://gblackstreaming.com/embed.php?a=23&amp;id=&amp;width=650&amp;height=400&amp;autostart=true&amp;strech=</page>
+<referer>http://gblackstreaming.com</referer>
+</regex>
+<regex>
+<name>path</name>
+<expres>file', '(.*?)'</expres>
+<page>http://gblackstreaming.com/embed.php?a=23&amp;id=&amp;width=650&amp;height=400&amp;autostart=true&amp;strech=</page>
+<referer>http://gblackstreaming.com</referer>
+</regex>
+<regex>
+<name>tok</name>
+<expres>token', '(.*?)'</expres>
+<page>http://gblackstreaming.com/embed.php?a=23&amp;id=&amp;width=650&amp;height=400&amp;autostart=true&amp;strech=</page>
+<referer>http://gblackstreaming.com</referer>
+</regex>
+</item>
+
+
+
+
+
+<item>
+ <title>AMC</title>  
+<link>rtmp://185.39.11.76/live?token=$doregex[rtmp] playpath=$doregex[path] swfUrl=http://gblackstreaming.com/player.swf live=1 timeout=15 pageUrl=http://gblackstreaming.com token=$doregex[tok]</link>
+<regex>
+<name>rtmp</name>
+<expres>token=(.*?)'</expres>
+<page>http://gblackstreaming.com/embed.php?a=18&amp;id=&amp;width=650&amp;height=400&amp;autostart=true&amp;strech=</page>
+<referer>http://gblackstreaming.com</referer>
+</regex>
+<regex>
+<name>path</name>
+<expres>file', '(.*?)'</expres>
+<page>http://gblackstreaming.com/embed.php?a=18&amp;id=&amp;width=650&amp;height=400&amp;autostart=true&amp;strech=</page>
+<referer>http://gblackstreaming.com</referer>
+</regex>
+<regex>
+<name>tok</name>
+<expres>token', '(.*?)'</expres>
+<page>http://gblackstreaming.com/embed.php?a=18&amp;id=&amp;width=650&amp;height=400&amp;autostart=true&amp;strech=</page>
+<referer>http://gblackstreaming.com</referer>
+</regex>
+</item>
+
+
+
+
+
+<item>
+ <item>
+    <title> hollywood</title>
+   <link>rtmp://185.39.11.76/live?token=$doregex[rtmp] playpath=$doregex[path] swfUrl=http://gblackstreaming.com/player.swf live=1 timeout=15 pageUrl=http://gblackstreaming.com token=$doregex[tok]</link>
+<regex>
+<name>rtmp</name>
+<expres>token=(.*?)'</expres>
+<page>http://gblackstreaming.com/embed.php?a=28&amp;id=&amp;width=650&amp;height=400&amp;autostart=true&amp;strech=</page>
+<referer>http://gblackstreaming.com</referer>
+</regex>
+<regex>
+<name>path</name>
+<expres>file', '(.*?)'</expres>
+<page>http://gblackstreaming.com/embed.php?a=28&amp;id=&amp;width=650&amp;height=400&amp;autostart=true&amp;strech=</page>
+<referer>http://gblackstreaming.com</referer>
+</regex>
+<regex>
+<name>tok</name>
+<expres>token', '(.*?)'</expres>
+<page>http://gblackstreaming.com/embed.php?a=28&amp;id=&amp;width=650&amp;height=400&amp;autostart=true&amp;strech=</page>
+<referer>http://gblackstreaming.com</referer>
+</regex>
+
+
+<thumbnail>http://layaproducciones.es/wp-content/uploads/2014/10/canal-hollywood.jpg</thumbnail>
+<fanart>http://layaproducciones.es/wp-content/uploads/2014/10/canal-hollywood.jpg</fanart>
+    </item>
+	<item>
+ <title>hollywood op2</title>  
+<link>$doregex[get-rtmp] swfUrl=http://files.leton.tv/jwplayer.flash.swf live=1 timeout=15 swfVfy=1 pageUrl=http://leton.tv/</link>
+<regex>
+<name>get-rtmp</name>
+<expres>$pyFunction:get_leton_rtmp('http://leton.tv/player.php?streampage=235hollywood&width=650&height=400','http://leton.tv/')</expres>
+<page></page>
+</regex>
+<thumbnail>http://layaproducciones.es/wp-content/uploads/2014/10/canal-hollywood.jpg</thumbnail>
+<fanart>http://layaproducciones.es/wp-content/uploads/2014/10/canal-hollywood.jpg</fanart>
+</item>
+<item>
+ <title>hollywood op3</title>   
+<link>$doregex[url]</link>
+<regex>
+<name>url</name>
+<expres>value='(.*?)'\>\>\>HOLLYWOOD</expres>
+<page>http://camchance.com/tv</page>
+<thumbnail>http://layaproducciones.es/wp-content/uploads/2014/10/canal-hollywood.jpg</thumbnail>
+<fanart>http://layaproducciones.es/wp-content/uploads/2014/10/canal-hollywood.jpg</fanart>
+</regex>
+</item>
+<item>
+     <title>hollywood op4</title>  
+<link>$doregex[rtmp] playpath=$doregex[path] swfUrl=http://vercosasgratis.com/player.swf live=1 timeout=15 pageUrl=http://vercosasgratis.com</link>
+<regex>
+<name>rtmp</name>
+<expres>streamer','(.*?)'</expres>
+<page>http://vercosasgratis.com/embed.php?a=28&amp;id=&amp;width=650&amp;height=400&amp;autostart=true&strech=</page>
+<referer>http://verlatelegratis.net</referer>
+</regex>
+<regex>
+<name>path</name>
+<expres>file', '(.*?)'</expres>
+<page>http://vercosasgratis.com/embed.php?a=28&amp;id=&amp;width=650&amp;height=400&amp;autostart=true&strech=</page>
+<referer>http://verlatelegratis.net</referer>
+</regex>
+<thumbnail>http://layaproducciones.es/wp-content/uploads/2014/10/canal-hollywood.jpg</thumbnail>
+<fanart>http://layaproducciones.es/wp-content/uploads/2014/10/canal-hollywood.jpg</fanart>
+    </item>
+<item>
+ <title>BUZZ</title>
+   <link>rtmp://185.39.11.76/live?token=$doregex[rtmp] playpath=$doregex[path] swfUrl=http://gblackstreaming.com/player.swf live=1 timeout=15 pageUrl=http://gblackstreaming.com token=$doregex[tok]</link>
+<regex>
+<name>rtmp</name>
+<expres>token=(.*?)'</expres>
+<page>http://gblackstreaming.com/embed.php?a=14756&amp;id=&amp;width=650&amp;height=400&amp;autostart=true&amp;strech=</page>
+<referer>http://gblackstreaming.com</referer>
+</regex>
+<regex>
+<name>path</name>
+<expres>file', '(.*?)'</expres>
+<page>http://gblackstreaming.com/embed.php?a=14756&amp;id=&amp;width=650&amp;height=400&amp;autostart=true&amp;strech=</page>
+<referer>http://gblackstreaming.com</referer>
+</regex>
+<regex>
+<name>tok</name>
+<expres>token', '(.*?)'</expres>
+<page>http://gblackstreaming.com/embed.php?a=14756&amp;id=&amp;width=650&amp;height=400&amp;autostart=true&amp;strech=</page>
+<referer>http://gblackstreaming.com</referer>
+</regex>
+<thumbnail>http://www.ono.es/resources/images/ocioytv/Home/buzz_rojo-sabias-que-diciembre-2012.JPG</thumbnail>
+<fanart>http://www.ono.es/resources/images/ocioytv/Home/buzz_rojo-sabias-que-diciembre-2012.JPG</fanart>
+    </item>
+<item>
+<item>
+     <title>BUZZ</title>  
+<link>$doregex[rtmp] playpath=$doregex[path] swfUrl=http://vercosasgratis.com/player.swf live=1 timeout=15 pageUrl=http://vercosasgratis.com</link>
+<regex>
+<name>rtmp</name>
+<expres>streamer','(.*?)'</expres>
+<page>http://vercosasgratis.com/embed.php?a=14756&amp;id=&amp;width=650&amp;height=400&amp;autostart=true&strech=</page>
+<referer>http://verlatelegratis.net</referer>
+</regex>
+<regex>
+<name>path</name>
+<expres>file', '(.*?)'</expres>
+<page>http://vercosasgratis.com/embed.php?a=14756&amp;id=&amp;width=650&amp;height=400&amp;autostart=true&strech=</page>
+<referer>http://verlatelegratis.net</referer>
+</regex>
+<thumbnail>http://layaproducciones.es/wp-content/uploads/2014/10/canal-hollywood.jpg</thumbnail>
+<fanart>http://layaproducciones.es/wp-content/uploads/2014/10/canal-hollywood.jpg</fanart>
+    </item>
+<item>
+    <title>XTRM</title>
+     <link>rtmp://185.39.11.76/live?token=$doregex[rtmp] playpath=$doregex[path] swfUrl=http://gblackstreaming.com/player.swf live=1 timeout=15 pageUrl=http://gblackstreaming.com token=$doregex[tok]</link>
+<regex>
+<name>rtmp</name>
+<expres>token=(.*?)'</expres>
+<page>http://gblackstreaming.com/embed.php?a=14757&amp;id=&amp;width=650&amp;height=400&amp;autostart=true&amp;strech=</page>
+<referer>http://gblackstreaming.com</referer>
+</regex>
+<regex>
+<name>path</name>
+<expres>file', '(.*?)'</expres>
+<page>http://gblackstreaming.com/embed.php?a=14757&amp;id=&amp;width=650&amp;height=400&amp;autostart=true&amp;strech=</page>
+<referer>http://gblackstreaming.com</referer>
+</regex>
+<regex>
+<name>tok</name>
+<expres>token', '(.*?)'</expres>
+<page>http://gblackstreaming.com/embed.php?a=14757&amp;id=&amp;width=650&amp;height=400&amp;autostart=true&amp;strech=</page>
+<referer>http://gblackstreaming.com</referer>
+</regex>
+<thumbnail>http://vertvonline.xtrweb.com/logostv/XRTM.jpg</thumbnail>
+<fanart>http://vertvonline.xtrweb.com/logostv/XRTM.jpg</fanart>
+    </item>
+<item>
+
+
+<item>
+      <title>[COLOR red][B][I]XTRM</title>
+<link>$doregex[rtmp] playpath=$doregex[path] swfUrl=http://vercosasgratis.com/player.swf live=1 timeout=15 pageUrl=http://vercosasgratis.com</link>
+<regex>
+<name>rtmp</name>
+<expres>streamer','(.*?)'</expres>
+<page>http://vercosasgratis.com/embed.php?a=14757&amp;id=&amp;width=650&amp;height=400&amp;autostart=true&strech=</page>
+<referer>http://verlatelegratis.net</referer>
+</regex>
+<regex>
+<name>path</name>
+<expres>file', '(.*?)'</expres>
+<page>http://vercosasgratis.com/embed.php?a=14757&amp;id=&amp;width=650&amp;height=400&amp;autostart=true&strech=</page>
+<referer>http://verlatelegratis.net</referer>
+</regex>
+<thumbnail>http://vertvonline.xtrweb.com/logostv/XRTM.jpg</thumbnail>
+<fanart>http://vertvonline.xtrweb.com/logostv/XRTM.jpg</fanart>
+    </item>
+ 
+	<item>
+ <title>AXN  </title>  
+<link>$doregex[get-rtmp] swfUrl=http://files.leton.tv/jwplayer.flash.swf live=1 timeout=15 swfVfy=1 pageUrl=http://leton.tv/</link>
+<regex>
+<name>get-rtmp</name>
+<expres>$pyFunction:get_leton_rtmp('http://leton.tv/player.php?streampage=axn9&width=650&height=400','http://leton.tv/')</expres>
+<page></page>
+</regex>
+<thumbnail>http://allserieslinamarcela.files.wordpress.com/2008/12/axn_154.jpg</thumbnail>
+<fanart>http://allserieslinamarcela.files.wordpress.com/2008/12/axn_154.jpg</fanart>
+</item>
+	 <item>
+     <title>AXN (OPCION2)</title>
+<link>$doregex[url]</link>
+<regex>
+<name>url</name>
+<expres>value='(.*?)'\>\>\>AXN</expres>
+<page>http://camchance.com/tv</page>
+<thumbnail>http://allserieslinamarcela.files.wordpress.com/2008/12/axn_154.jpg</thumbnail>
+<fanart>http://allserieslinamarcela.files.wordpress.com/2008/12/axn_154.jpg</fanart>
+    </item>
+		<item>
+     <title>AXN (OPCION3)</title>
+<link>rtmp://185.39.11.76/live?token=$doregex[rtmp] playpath=$doregex[path] swfUrl=http://gblackstreaming.com/player.swf live=1 timeout=15 pageUrl=http://gblackstreaming.com token=$doregex[tok]</link>
+<regex>
+<name>rtmp</name>
+<expres>token=(.*?)'</expres>
+<page>http://gblackstreaming.com/embed.php?a=49&amp;id=&amp;width=650&amp;height=400&amp;autostart=true&amp;strech=</page>
+<referer>http://gblackstreaming.com</referer>
+</regex>
+<regex>
+<name>path</name>
+<expres>file', '(.*?)'</expres>
+<page>http://gblackstreaming.com/embed.php?a=49&amp;id=&amp;width=650&amp;height=400&amp;autostart=true&amp;strech=</page>
+<referer>http://gblackstreaming.com</referer>
+</regex>
+<regex>
+<name>tok</name>
+<expres>token', '(.*?)'</expres>
+<page>http://gblackstreaming.com/embed.php?a=49&amp;id=&amp;width=650&amp;height=400&amp;autostart=true&amp;strech=</page>
+<referer>http://gblackstreaming.com</referer>
+</regex>
+<thumbnail>http://allserieslinamarcela.files.wordpress.com/2008/12/axn_154.jpg</thumbnail>
+<fanart>http://allserieslinamarcela.files.wordpress.com/2008/12/axn_154.jpg</fanart>
+    </item>
+	<item>
+     <title>AXN (OPCION 4)</title>
+<link>$doregex[rtmp] app=greyirect/?token=play@$doregex[token] playpath=$doregex[path] flashver=WIN\2016,0,0,305 swfUrl=http://www.businessapp1.pw/jwplayer5/addplayer/jwplayer.flash.swf pageUrl=$doregex[pagepath] live=1 timeout=15</link>
+<regex>
+<name>token</name>
+<expres>@(.*)</expres>
+<page>$doregex[rtmp]</page>
+</regex>
+<regex>
+<name>rtmp</name>
+<expres>$pyFunction:'$doregex[jsonrtmp]'.replace('\/','/')</expres>
+<page></page>
+</regex>
+<regex>
+<name>jsonrtmp</name>
+<expres>streamer: '(.*?)'</expres>
+<page>$doregex[url]?callback=jQuery1709605987264489012_$epoctime$&amp;v_cod1=$doregex[vcod_1]&amp;v_cod2=$doregex[vcod_2]&amp;_=$epoctime$</page>
+<referer>http://tv.verdirectotv.org</referer>
+</regex>
+<regex>
+<name>path</name>
+<expres>file: '(.*?)'</expres>
+<page>$doregex[url]?callback=jQuery1709605987264489012_$epoctime$&amp;v_cod1=$doregex[vcod_1]&amp;v_cod2=$doregex[vcod_2]&amp;_=$epoctime$</page>
+<referer>http://tv.verdirectotv.org</referer>
+</regex>
+<regex>
+<name>url</name>
+<expres>$pyFunction:base64.b64decode("$doregex[encurl]")</expres>
+<page></page>
+</regex>
+<regex>
+<name>vcod_1</name>
+<expres>$pyFunction:urllib.quote_plus("$doregex[pvcod_1]")</expres>
+<page></page>
+</regex>
+<regex>
+<name>vcod_2</name>
+<expres>$pyFunction:urllib.quote_plus("$doregex[pvcod_2]")</expres>
+<page></page>
+</regex>
+<regex>
+<name>pvcod_1</name>
+<expres>hda..{\n.*\n.*\n.*\n.*\n.*"(.*)"</expres>
+<page>$doregex[pagepath]</page>
+<referer>http://cinestrenostv.tv</referer>
+</regex>
+<regex>
+<name>pvcod_2</name>
+<expres>hda..{\n.*\n.*\n.*\n.*\n.*\n.*"(.*)"</expres>
+<page>$doregex[pagepath]</page>
+<referer>http://cinestrenostv.tv</referer>
+</regex>
+<regex>
+<name>encurl</name>
+<expres>hda..{\n.*\n.*\n.*\n.*\n.*\n.*\n.*"(.*)"</expres>
+<page>$doregex[pagepath]</page>
+<referer>http://cinestrenostv.tv</referer>
+</regex>
+<regex>
+<name>pagepath</name>
+<expres>src="(.*?)"</expres>
+<page>http://tv.verdirectotv.org/channel.php?file=103876</page>
+<referer>http://cinestrenostv.tv</referer>
+<agent>Opera/9.50</agent>
+</regex>
+<thumbnail>http://allserieslinamarcela.files.wordpress.com/2008/12/axn_154.jpg</thumbnail>
+<fanart>http://allserieslinamarcela.files.wordpress.com/2008/12/axn_154.jpg</fanart>
+    </item>
+	<item>
+ <title>AXN white op2</title>  
+<link>$doregex[get-rtmp] swfUrl=http://files.leton.tv/jwplayer.flash.swf live=1 timeout=15 swfVfy=1 pageUrl=http://leton.tv/</link>
+<regex>
+<name>get-rtmp</name>
+<expres>$pyFunction:get_leton_rtmp('http://leton.tv/player.php?streampage=axnw6&width=650&height=400','http://leton.tv/')</expres>
+<page></page>
+</regex>
+<thumbnail>http://www.elrincondelheavy.freeiz.com/fotos%20noticias/AXN_White_final_logo_GENERAL_3D_GLASSY_X_1_v3.jpg</thumbnail>
+<fanart>http://www.elrincondelheavy.freeiz.com/fotos%20noticias/AXN_White_final_logo_GENERAL_3D_GLASSY_X_1_v3.jpg</fanart>
+</item>
+	<item>
+     <title>AXN white</title>
+   <link>rtmp://185.39.11.76/live?token=$doregex[rtmp] playpath=$doregex[path] swfUrl=http://gblackstreaming.com/player.swf live=1 timeout=15 pageUrl=http://gblackstreaming.com token=$doregex[tok]</link>
+<regex>
+<name>rtmp</name>
+<expres>token=(.*?)'</expres>
+<page>http://gblackstreaming.com/embed.php?a=5&amp;id=&amp;width=650&amp;height=400&amp;autostart=true&amp;strech=</page>
+<referer>http://gblackstreaming.com</referer>
+</regex>
+<regex>
+<name>path</name>
+<expres>file', '(.*?)'</expres>
+<page>http://gblackstreaming.com/embed.php?a=5&amp;id=&amp;width=650&amp;height=400&amp;autostart=true&amp;strech=</page>
+<referer>http://gblackstreaming.com</referer>
+</regex>
+<regex>
+<name>tok</name>
+<expres>token', '(.*?)'</expres>
+<page>http://gblackstreaming.com/embed.php?a=5&amp;id=&amp;width=650&amp;height=400&amp;autostart=true&amp;strech=</page>
+<referer>http://gblackstreaming.com</referer>
+</regex>
+<thumbnail>http://allserieslinamarcela.files.wordpress.com/2008/12/axn_154.jpg</thumbnail>
+<fanart>http://allserieslinamarcela.files.wordpress.com/2008/12/axn_154.jpg</fanart>
+    </item>
+	<item>
+      <title>AXN white</title>
+<link>$doregex[rtmp] playpath=$doregex[path] swfUrl=http://vercosasgratis.com/player.swf live=1 timeout=15 pageUrl=http://vercosasgratis.com</link>
+<regex>
+<name>rtmp</name>
+<expres>streamer','(.*?)'</expres>
+<page>http://vercosasgratis.com/embed.php?a=5&amp;id=&amp;width=650&amp;height=400&amp;autostart=true&strech=</page>
+<referer>http://verlatelegratis.net</referer>
+</regex>
+<regex>
+<name>path</name>
+<expres>file', '(.*?)'</expres>
+<page>http://vercosasgratis.com/embed.php?a=5&amp;id=&amp;width=650&amp;height=400&amp;autostart=true&strech=</page>
+<referer>http://verlatelegratis.net</referer>
+</regex>
+<thumbnail>http://allserieslinamarcela.files.wordpress.com/2008/12/axn_154.jpg</thumbnail>
+<fanart>http://allserieslinamarcela.files.wordpress.com/2008/12/axn_154.jpg</fanart>
+    </item>
+<item>
+     <title>AXN  SPORTDEVIL</title>
+ <sportsdevil>http://cinestrenostv.tv/canales/axn.html</sportsdevil>
+ <referer>http://cinestrenostv.tv</referer>
+   <thumbnail>http://allserieslinamarcela.files.wordpress.com/2008/12/axn_154.jpg</thumbnail>
+<fanart>http://allserieslinamarcela.files.wordpress.com/2008/12/axn_154.jpg</fanart>
+    </item>
+
+
+<item>
+<item>
+ <title>CALLE 13  </title>  
+<link>$doregex[get-rtmp] swfUrl=http://files.leton.tv/jwplayer.flash.swf live=1 timeout=15 swfVfy=1 pageUrl=http://leton.tv/</link>
+<regex>
+<name>get-rtmp</name>
+<expres>$pyFunction:get_leton_rtmp('http://leton.tv/player.php?streampage=calle1396&width=650&height=400','http://leton.tv/')</expres>
+<page></page>
+</regex>
+<thumbnail>http://www.piensologoexisto.com/wp-content/uploads/2011/03/calle131.jpg</thumbnail>
+<fanart>http://www.piensologoexisto.com/wp-content/uploads/2011/03/calle131.jpg</fanart>
+</item>
+<item>
+      <title>CALLE 13 (OPCION2)</title>
+<link>http://83.43.57.179:9981/stream/channelid/2098433577?ticket=BB3AC44B45BAC15E6B66F992B45175CFA48AF8E2&profile=pass</link>
+<thumbnail>http://www.piensologoexisto.com/wp-content/uploads/2011/03/calle131.jpg</thumbnail>
+<fanart>http://www.piensologoexisto.com/wp-content/uploads/2011/03/calle131.jpg</fanart>
+    </item>
+	<item>
+    <title>CALLE 13</title>
+    <link>rtmp://185.39.11.76/live?token=$doregex[rtmp] playpath=$doregex[path] swfUrl=http://gblackstreaming.com/player.swf live=1 timeout=15 pageUrl=http://gblackstreaming.com token=$doregex[tok]</link>
+<regex>
+<name>rtmp</name>
+<expres>token=(.*?)'</expres>
+<page>http://gblackstreaming.com/embed.php?a=30&amp;id=&amp;width=650&amp;height=400&amp;autostart=true&amp;strech=</page>
+<referer>http://gblackstreaming.com</referer>
+</regex>
+<regex>
+<name>path</name>
+<expres>file', '(.*?)'</expres>
+<page>http://gblackstreaming.com/embed.php?a=30&amp;id=&amp;width=650&amp;height=400&amp;autostart=true&amp;strech=</page>
+<referer>http://gblackstreaming.com</referer>
+</regex>
+<regex>
+<name>tok</name>
+<expres>token', '(.*?)'</expres>
+<page>http://gblackstreaming.com/embed.php?a=30&amp;id=&amp;width=650&amp;height=400&amp;autostart=true&amp;strech=</page>
+<referer>http://gblackstreaming.com</referer>
+</regex>
+<thumbnail>http://www.piensologoexisto.com/wp-content/uploads/2011/03/calle131.jpg</thumbnail>
+<fanart>http://www.piensologoexisto.com/wp-content/uploads/2011/03/calle131.jpg</fanart>
+    </item>
+<item>
+    <title>SYFY</title>
+     <link>rtmp://185.39.11.76/live?token=$doregex[rtmp] playpath=$doregex[path] swfUrl=http://gblackstreaming.com/player.swf live=1 timeout=15 pageUrl=http://gblackstreaming.com token=$doregex[tok]</link>
+<regex>
+<name>rtmp</name>
+<expres>token=(.*?)'</expres>
+<page>http://gblackstreaming.com/embed.php?a=29&amp;id=&amp;width=650&amp;height=400&amp;autostart=true&amp;strech=</page>
+<referer>http://gblackstreaming.com</referer>
+</regex>
+<regex>
+<name>path</name>
+<expres>file', '(.*?)'</expres>
+<page>http://gblackstreaming.com/embed.php?a=29&amp;id=&amp;width=650&amp;height=400&amp;autostart=true&amp;strech=</page>
+<referer>http://gblackstreaming.com</referer>
+</regex>
+<regex>
+<name>tok</name>
+<expres>token', '(.*?)'</expres>
+<page>http://gblackstreaming.com/embed.php?a=29&amp;id=&amp;width=650&amp;height=400&amp;autostart=true&amp;strech=</page>
+<referer>http://gblackstreaming.com</referer>
+</regex>
+
+<thumbnail>http://www.panoramaaudiovisual.com/wp-content/uploads/2010/09/syfy.jpg</thumbnail>
+<fanart>http://www.panoramaaudiovisual.com/wp-content/uploads/2010/09/syfy.jpg</fanart>
+    </item>
+	<item>
+ <title>SYFY op2</title>  
+<link>$doregex[get-rtmp] swfUrl=http://files.leton.tv/jwplayer.flash.swf live=1 timeout=15 swfVfy=1 pageUrl=http://leton.tv/</link>
+<regex>
+<name>get-rtmp</name>
+<expres>$pyFunction:get_leton_rtmp('http://leton.tv/player.php?streampage=syfy258&width=650&height=400','http://leton.tv/')</expres>
+<page></page>
+</regex>
+<thumbnail>http://www.panoramaaudiovisual.com/wp-content/uploads/2010/09/syfy.jpg</thumbnail>
+<fanart>http://www.panoramaaudiovisual.com/wp-content/uploads/2010/09/syfy.jpg</fanart>
+</item>
+<item>
+<item>
+      <title>SYFY op3</title>
+<link>$doregex[url]</link>
+<regex>
+<name>url</name>
+<expres>value='(.*?)'\>\>\>SYFY</expres>
+<page>http://camchance.com/tv</page>
+<thumbnail>http://www.panoramaaudiovisual.com/wp-content/uploads/2010/09/syfy.jpg</thumbnail>
+<fanart>http://www.panoramaaudiovisual.com/wp-content/uploads/2010/09/syfy.jpg</fanart>
+    </item>
+<item>
+<title>FOX LIFE</title>
+ <link>rtmp://185.39.11.76/live?token=$doregex[rtmp] playpath=$doregex[path] swfUrl=http://gblackstreaming.com/player.swf live=1 timeout=15 pageUrl=http://gblackstreaming.com token=$doregex[tok]</link>
+<regex>
+<name>rtmp</name>
+<expres>token=(.*?)'</expres>
+<page>http://gblackstreaming.com/embed.php?a=14868&amp;id=&amp;width=650&amp;height=400&amp;autostart=true&amp;strech=</page>
+<referer>http://gblackstreaming.com</referer>
+</regex>
+<regex>
+<name>path</name>
+<expres>file', '(.*?)'</expres>
+<page>http://gblackstreaming.com/embed.php?a=14868&amp;id=&amp;width=650&amp;height=400&amp;autostart=true&amp;strech=</page>
+<referer>http://gblackstreaming.com</referer>
+</regex>
+<regex>
+<name>tok</name>
+<expres>token', '(.*?)'</expres>
+<page>http://gblackstreaming.com/embed.php?a=14868&amp;id=&amp;width=650&amp;height=400&amp;autostart=true&amp;strech=</page>
+<referer>http://gblackstreaming.com</referer>
+</regex>
+<thumbnail>http://2.bp.blogspot.com/-Jrfe5dQ6DMg/U_4UEoMYj9I/AAAAAAAAAKk/0JuZzEAHJ1w/s1600/fox.png</thumbnail>
+<fanart>http://2.bp.blogspot.com/-Jrfe5dQ6DMg/U_4UEoMYj9I/AAAAAAAAAKk/0JuZzEAHJ1w/s1600/fox.png</fanart>
+</item>
+<item>
+ <title>FOX LIFE op2</title>  
+<link>$doregex[get-rtmp] swfUrl=http://files.leton.tv/jwplayer.flash.swf live=1 timeout=15 swfVfy=1 pageUrl=http://leton.tv/</link>
+<regex>
+<name>get-rtmp</name>
+<expres>$pyFunction:get_leton_rtmp('http://leton.tv/player.php?streampage=foxlife20&width=650&height=400','http://leton.tv/')</expres>
+<page></page>
+</regex>
+
+<thumbnail>http://www.panoramaaudiovisual.com/wp-content/uploads/2010/09/syfy.jpg</thumbnail>
+<fanart>http://www.panoramaaudiovisual.com/wp-content/uploads/2010/09/syfy.jpg</fanart>
+</item>
+<item>
+      <title>FOX LIFE op4</title> 
+<link>$doregex[rtmp] playpath=$doregex[path] swfUrl=http://vercosasgratis.com/player.swf live=1 timeout=15 pageUrl=http://vercosasgratis.com</link>
+<regex>
+<name>rtmp</name>
+<expres>streamer','(.*?)'</expres>
+<page>http://vercosasgratis.com/embed.php?a=14868&amp;id=&amp;width=650&amp;height=400&amp;autostart=true&strech=</page>
+<referer>http://verlatelegratis.net</referer>
+</regex>
+<regex>
+<name>path</name>
+<expres>file', '(.*?)'</expres>
+<page>http://vercosasgratis.com/embed.php?a=14868&amp;id=&amp;width=650&amp;height=400&amp;autostart=true&strech=</page>
+<referer>http://verlatelegratis.net</referer>
+</regex>
+<thumbnail>http://2.bp.blogspot.com/-Jrfe5dQ6DMg/U_4UEoMYj9I/AAAAAAAAAKk/0JuZzEAHJ1w/s1600/fox.png</thumbnail>
+<fanart>http://2.bp.blogspot.com/-Jrfe5dQ6DMg/U_4UEoMYj9I/AAAAAAAAAKk/0JuZzEAHJ1w/s1600/fox.png</fanart>
+    </item>
+<item>
+ <title>FOX  LIFE SPORTDEVIL</title>
+ <sportsdevil>http://cinestrenostv.tv/canales/foxlife.html</sportsdevil>
+ <referer>http://cinestrenostv.tv</referer>
+<thumbnail>http://2.bp.blogspot.com/-Jrfe5dQ6DMg/U_4UEoMYj9I/AAAAAAAAAKk/0JuZzEAHJ1w/s1600/fox.png</thumbnail>
+<fanart>http://2.bp.blogspot.com/-Jrfe5dQ6DMg/U_4UEoMYj9I/AAAAAAAAAKk/0JuZzEAHJ1w/s1600/fox.png</fanart>
+</item>
+<item>
+ <title>TNT SPORTDEVIL</title>
+ <sportsdevil>http://cinestrenostv.tv/canales/tnt.html</sportsdevil>
+ <referer>http://cinestrenostv.tv</referer>
+  <thumbnail>https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRauhuZRPGer_HHsc22O2pUThEJ4QcllVSpI-iul3ALHR2o3H34OQ</thumbnail>
+<fanart>https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRauhuZRPGer_HHsc22O2pUThEJ4QcllVSpI-iul3ALHR2o3H34OQ</fanart>
+</item>
+
+
+
+<item>
+ <title>TNT </title>  
+<link>$doregex[get-rtmp] swfUrl=http://files.leton.tv/jwplayer.flash.swf live=1 timeout=15 swfVfy=1 pageUrl=http://leton.tv/</link>
+<regex>
+<name>get-rtmp</name>
+<expres>$pyFunction:get_leton_rtmp('http://leton.tv/player.php?streampage=tnt369&width=650&height=400','http://leton.tv/')</expres>
+<page></page>
+</regex>
+<thumbnail>https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRauhuZRPGer_HHsc22O2pUThEJ4QcllVSpI-iul3ALHR2o3H34OQ</thumbnail>
+<fanart>https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRauhuZRPGer_HHsc22O2pUThEJ4QcllVSpI-iul3ALHR2o3H34OQ</fanart>
+</item>
+<item>
+    <title>TNT (OPCION2)</title>
+ <link>http://83.56.173.166:9981/stream/channelid/835294993?ticket=5F9B42B7DFE898616C9FE1FA0BD85DA167339258&profile=pass</link>
+<thumbnail>http://b.vimeocdn.com/ts/119/663/119663383_640.jpg</thumbnail>
+<fanart>http://b.vimeocdn.com/ts/119/663/119663383_640.jpg</fanart>
+    </item>
+	<item>
+    <title>TNT (OPCION3)</title>
+<link>$doregex[rtmp] app=greyirect/?token=play@$doregex[token] playpath=$doregex[path] flashver=WIN\2016,0,0,305 swfUrl=http://www.businessapp1.pw/jwplayer5/addplayer/jwplayer.flash.swf pageUrl=$doregex[pagepath] live=1 timeout=15</link>
+<regex>
+<name>token</name>
+<expres>@(.*)</expres>
+<page>$doregex[rtmp]</page>
+</regex>
+<regex>
+<name>rtmp</name>
+<expres>$pyFunction:base64.b64decode("$doregex[enc-rtmp]")</expres>
+<page></page>
+</regex>
+<regex>
+<name>enc-rtmp</name>
+<expres>function getURL.*\n.*\n.*"(.*?)"</expres>
+<page>$doregex[pagepath]</page>
+<referer>http://cinestrenostv.tv</referer>
+</regex>
+<regex>
+<name>pagepath</name>
+<expres>src="(.*?)\"</expres>
+<page>http://tv.verdirectotv.org/channel.php?file=103945</page>
+<referer>http://cinestrenostv.tv</referer>
+<agent>Opera/9.50</agent>
+</regex>
+<regex>
+<name>path</name>
+<expres>$pyFunction:base64.b64decode("$doregex[enc-path]")</expres>
+<page></page>
+</regex>
+<regex>
+<name>enc-path</name>
+<expres>function getURL.*\n.*"(.*?)"</expres>
+<page>$doregex[pagepath]</page>
+<referer>http://cinestrenostv.tv</referer>
+</regex>
+<thumbnail>http://b.vimeocdn.com/ts/119/663/119663383_640.jpg</thumbnail>
+<fanart>http://b.vimeocdn.com/ts/119/663/119663383_640.jpg</fanart>
+    </item>
+	<item>
+    <title>TNT (OPCION4)</title>
+<link>$doregex[rtmp] app=greyirect/?token=play@$doregex[token] playpath=$doregex[path] flashver=WIN\2016,0,0,305 swfUrl=http://www.businessapp1.pw/jwplayer5/addplayer/jwplayer.flash.swf pageUrl=$doregex[pagepath] live=1 timeout=15</link>
+<regex>
+<name>token</name>
+<expres>@(.*)</expres>
+<page>$doregex[rtmp]</page>
+</regex>
+<regex>
+<name>rtmp</name>
+<expres>$pyFunction:'$doregex[jsonrtmp]'.replace('\/','/')</expres>
+<page></page>
+</regex>
+<regex>
+<name>jsonrtmp</name>
+<expres>streamer: '(.*?)'</expres>
+<page>$doregex[url]?callback=jQuery1709605987264489012_$epoctime$&amp;v_cod1=$doregex[vcod_1]&amp;v_cod2=$doregex[vcod_2]&amp;_=$epoctime$</page>
+<referer>http://tv.verdirectotv.org</referer>
+</regex>
+<regex>
+<name>path</name>
+<expres>file: '(.*?)'</expres>
+<page>$doregex[url]?callback=jQuery1709605987264489012_$epoctime$&amp;v_cod1=$doregex[vcod_1]&amp;v_cod2=$doregex[vcod_2]&amp;_=$epoctime$</page>
+<referer>http://tv.verdirectotv.org</referer>
+</regex>
+<regex>
+<name>url</name>
+<expres>$pyFunction:base64.b64decode("$doregex[encurl]")</expres>
+<page></page>
+</regex>
+<regex>
+<name>vcod_1</name>
+<expres>$pyFunction:urllib.quote_plus("$doregex[pvcod_1]")</expres>
+<page></page>
+</regex>
+<regex>
+<name>vcod_2</name>
+<expres>$pyFunction:urllib.quote_plus("$doregex[pvcod_2]")</expres>
+<page></page>
+</regex>
+<regex>
+<name>pvcod_1</name>
+<expres>hda..{\n.*\n.*\n.*\n.*\n.*"(.*)"</expres>
+<page>$doregex[pagepath]</page>
+<referer>http://cinestrenostv.tv</referer>
+</regex>
+<regex>
+<name>pvcod_2</name>
+<expres>hda..{\n.*\n.*\n.*\n.*\n.*\n.*"(.*)"</expres>
+<page>$doregex[pagepath]</page>
+<referer>http://cinestrenostv.tv</referer>
+</regex>
+<regex>
+<name>encurl</name>
+<expres>hda..{\n.*\n.*\n.*\n.*\n.*\n.*\n.*"(.*)"</expres>
+<page>$doregex[pagepath]</page>
+<referer>http://cinestrenostv.tv</referer>
+</regex>
+<regex>
+<name>pagepath</name>
+<expres>src="(.*?)"</expres>
+<page>http://tv.verdirectotv.org/channel.php?file=103945</page>
+<referer>http://cinestrenostv.tv</referer>
+<agent>Opera/9.50</agent>
+</regex>
+<thumbnail>http://b.vimeocdn.com/ts/119/663/119663383_640.jpg</thumbnail>
+<fanart>http://b.vimeocdn.com/ts/119/663/119663383_640.jpg</fanart>
+    </item>
+<item>
+ <title>SOMOS</title>
+<link>rtmp://185.39.11.76/live?token=$doregex[rtmp] playpath=$doregex[path] swfUrl=http://gblackstreaming.com/player.swf live=1 timeout=15 pageUrl=http://gblackstreaming.com token=$doregex[tok]</link>
+<regex>
+<name>rtmp</name>
+<expres>token=(.*?)'</expres>
+<page>http://gblackstreaming.com/embed.php?a=14747&amp;id=&amp;width=650&amp;height=400&amp;autostart=true&amp;strech=</page>
+<referer>http://gblackstreaming.com</referer>
+</regex>
+<regex>
+<name>path</name>
+<expres>file', '(.*?)'</expres>
+<page>http://gblackstreaming.com/embed.php?a=14747&amp;id=&amp;width=650&amp;height=400&amp;autostart=true&amp;strech=</page>
+<referer>http://gblackstreaming.com</referer>
+</regex>
+<regex>
+<name>tok</name>
+<expres>token', '(.*?)'</expres>
+<page>http://gblackstreaming.com/embed.php?a=14747&amp;id=&amp;width=650&amp;height=400&amp;autostart=true&amp;strech=</page>
+<referer>http://gblackstreaming.com</referer>
+</regex>
+<thumbnail>https://lh3.googleusercontent.com/-vqLCstEh0iI/UjY_VDUnTlI/AAAAAAAAA8w/RmVuHz1CwwE/w496-h395-no/BOTO+WEB+somos.jpg</thumbnail>
+<fanart>https://lh3.googleusercontent.com/-vqLCstEh0iI/UjY_VDUnTlI/AAAAAAAAA8w/RmVuHz1CwwE/w496-h395-no/BOTO+WEB+somos.jpg</fanart>
+ <thumbnail></thumbnail> 
+</item>
+<item>
+<title>DE PELICULA HD</title>
+<link>http://201.161.59.7/depelicula.isml/QualityLevels(1928000)/manifest(format=m3u8-aapl).m3u8</link>
+<thumbnail>http://z.cdn.entutele.com/media/channels/big/de-pelicula-hd.gif</thumbnail>
+</item>
+<item>
+<item>
+<title>TCM </title>
+<link>$doregex[get-rtmp] swfUrl=http://files.leton.tv/jwplayer.flash.swf live=1 timeout=15 swfVfy=1 pageUrl=http://leton.tv/</link>
+<regex>
+<name>get-rtmp</name>
+<expres>$pyFunction:get_leton_rtmp('http://leton.tv/player.php?streampage=tmc78&width=650&height=400','http://leton.tv/')</expres>
+<page></page>
+</regex>
+<thumbnail>http://www.eastwebside.com/wp-content/uploads/2011/11/TCM.11.jpg</thumbnail>
+<fanart>http://www.eastwebside.com/wp-content/uploads/2011/11/TCM.11.jpg</fanart>
+</item>
+<item>
+<title>TCM </title>
+<link>rtmp://185.39.11.76/live?token=$doregex[rtmp] playpath=$doregex[path] swfUrl=http://gblackstreaming.com/player.swf live=1 timeout=15 pageUrl=http://gblackstreaming.com token=$doregex[tok]</link>
+<regex>
+<name>rtmp</name>
+<expres>token=(.*?)'</expres>
+<page>http://gblackstreaming.com/embed.php?a=31&amp;id=&amp;width=650&amp;height=400&amp;autostart=true&amp;strech=</page>
+<referer>http://gblackstreaming.com</referer>
+</regex>
+<regex>
+<name>path</name>
+<expres>file', '(.*?)'</expres>
+<page>http://gblackstreaming.com/embed.php?a=31&amp;id=&amp;width=650&amp;height=400&amp;autostart=true&amp;strech=</page>
+<referer>http://gblackstreaming.com</referer>
+</regex>
+<regex>
+<name>tok</name>
+<expres>token', '(.*?)'</expres>
+<page>http://gblackstreaming.com/embed.php?a=31&amp;id=&amp;width=650&amp;height=400&amp;autostart=true&amp;strech=</page>
+<referer>http://gblackstreaming.com</referer>
+</regex>
+
+<thumbnail>http://www.eastwebside.com/wp-content/uploads/2011/11/TCM.11.jpg</thumbnail>
+<fanart>http://www.eastwebside.com/wp-content/uploads/2011/11/TCM.11.jpg</fanart>
+</item>
+<item>
+    <title>TCM </title>
+<link>$doregex[url]</link>
+<regex>
+<name>url</name>
+<expres>value='(.*?)'\>\>\>TCM</expres>
+<page>http://camchance.com/tv</page>
+<thumbnail>http://www.eastwebside.com/wp-content/uploads/2011/11/TCM.11.jpg</thumbnail>
+<fanart>http://www.eastwebside.com/wp-content/uploads/2011/11/TCM.11.jpg</fanart>
+    </item>
+<item>
+<title>ALX </title>
+<link>rtmp://$doregex[getIP]/live?$doregex[getCODE] playpath=live_alx_nxtv live=1 timeout=20</link>
+<regex>
+<name>getIP</name>
+<expres>function getEdgeServers.*"(.*?),</expres>
+<page>http://vaughnlive.tv/alx_nxtv</page>
+</regex>
+<regex>
+<name>getCODE</name>
+<expres>vsVars.*= "0n0(.*?)"<expres>
+<page>http://vaughnlive.tv/alx_nxtv</page>
+</regex>
+<thumbnail>http://4.bp.blogspot.com/-dMzdBCKz11I/Uyp09umY5LI/AAAAAAAAAGw/LY5cf4KNHyc/s1600/alx_nxtv.png</thumbnail>
+<fanart>http://www.squairstudio.com/wp-content/uploads/2013/11/logo-alx.jpg</fanart>
+ </item>
+ <item>
+    <title>[COLOR sky blue][B][I]CANAL+ TOROS</title>
+    <link>http://Ignoreme</link>
+<externallink>http://listapld.proyectoluzdigital.com/toros.xml</externallink>
+<thumbnail>http://www.adslzone.tv/app/uploads/2012/05/Dibujo3-e1337193816190.jpg</thumbnail>
+<fanart>http://bucket.cdndtl.co.uk/Europe/Spain/yomvi_600.gif</fanart>
+</item>

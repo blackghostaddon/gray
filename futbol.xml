@@ -1,0 +1,1031 @@
+  <item>
+<title>[COLOR deepskyblue]              [B] Liga de Campeones[/COLOR] [COLOR skyblue]Adryanlist[/COLOR][/B]   </title>
+<link>http://ignora.me</link>
+</item>
+
+
+  <item>
+<title>[COLOR coral] • [/COLOR] [COLOR deepskyblue] Real Madrid vs Manchester City[/COLOR]  [01] - [COLOR lightslategray][I]FS1 HD[/I][/COLOR]</title>
+<link>http://ooyalahd2-f.akamaihd.net/i/eslax17_delivery@349499/master.m3u8"</link>
+<regex>
+<thumbnail>http://estaticos.sport.es/resources/jpg/1/0/rivales-city-madrid-1460713639801.jpg</thumbnail>
+<fanart>http://bestfootballers.com/wp-content/uploads/2015/07/Real-Madrid-vs-Manchester-City-MCG.jpg</fanart>
+</item>
+ 
+  <item>
+<title>[COLOR coral] • [/COLOR] [COLOR deepskyblue] Real Madrid vs Manchester City[/COLOR]  [01-a] - [COLOR lightslategray][I]english-1[/I][/COLOR]</title>
+	<link>http://$doregex[ip]$doregex[m3u8]</link>
+			<regex>
+			<name>ip</name>
+			<expres>redirect=(.*)</expres>
+			<page>http://cdn.pubzony.com:1935/loadbalancer</page>
+			</regex>
+			<regex>
+			<name>m3u8</name>
+			<expres>ea \+ "(.*?)"</expres>
+			<page>http://www.zony.tv/membedplayer/ibrodtv10/1/500/400</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.zony.tv</referer>
+			</regex><regex>
+			<name>canal</name>
+			<expres>channel='(.*?)'</expres>
+			<page>http://andrexfut.blogspot.cl/p/cha9.html</page>
+			<referer>http://www.zony.tv</referer>
+			</regex>
+<thumbnail>http://estaticos.sport.es/resources/jpg/1/0/rivales-city-madrid-1460713639801.jpg</thumbnail>
+<fanart>http://bestfootballers.com/wp-content/uploads/2015/07/Real-Madrid-vs-Manchester-City-MCG.jpg</fanart>
+</item>
+  
+<item>
+<title>[COLOR coral] • [/COLOR] [COLOR deepskyblue] Real Madrid vs Manchester City[/COLOR]  [02] - [COLOR lightslategray][I]english-2[/I][/COLOR]</title>
+<link>$doregex[get-decode] swfUrl=http://cdn.ibrod.tv/player/jwplayer.flash.swf swfVfy=1 live=1 timeout=13 pageUrl=http://miplayer.net/</link>
+<regex>
+<name>get-decode</name>
+<expres>$pyFunction:base64.b64decode("$doregex[get-enctext]")</expres>
+<page></page>
+</regex>
+<regex>
+<name>get-enctext</name>
+<expres>curl = "(.*?)"</expres>
+<page>http://miplayer.net/embedplayer.php?id=ibrodtv1qer</page></regex> 
+<thumbnail>http://estaticos.sport.es/resources/jpg/1/0/rivales-city-madrid-1460713639801.jpg</thumbnail>
+<fanart>http://bestfootballers.com/wp-content/uploads/2015/07/Real-Madrid-vs-Manchester-City-MCG.jpg</fanart>
+</item>
+  
+   <item>
+<title>[COLOR coral] • [/COLOR] [COLOR deepskyblue] Real Madrid vs Manchester City[/COLOR]  [03] - [COLOR lightslategray][I]tugoleada[/I][/COLOR]</title>
+<link>https://video01-lon.streamup.com/app/tugoleada06s-stream_aac/playlist.m3u8</link><regex><name>get-response</name><expres>(.*)</expres><page>https://lancer.streamup.com/api/redirect/$doregex[get-id]</page></regex><regex><name>get-id</name><expres>"roomSlug": "(.*?)"</expres>
+<page>https://streamup.com/tugoleada06</page></regex>	
+<thumbnail>http://estaticos.sport.es/resources/jpg/1/0/rivales-city-madrid-1460713639801.jpg</thumbnail>
+<fanart>http://bestfootballers.com/wp-content/uploads/2015/07/Real-Madrid-vs-Manchester-City-MCG.jpg</fanart>
+</item>
+ 
+  
+
+  
+  
+  
+  <item>
+<title>[COLOR coral] • [/COLOR] [COLOR deepskyblue] Real Madrid vs Manchester City[/COLOR]  [03] - [COLOR lightslategray][I]tugoleada[/I][/COLOR]</title>
+<link>https://$doregex[get-response]/app/$doregex[get-id]_aac/playlist.m3u8</link><regex><name>get-response</name><expres>(.*)</expres><page>https://lancer.streamup.com/api/redirect/$doregex[get-id]</page></regex><regex><name>get-id</name><expres>"roomSlug": "(.*?)"</expres>
+<page>https://streamup.com/tugoleada06</page></regex>	
+<thumbnail>http://estaticos.sport.es/resources/jpg/1/0/rivales-city-madrid-1460713639801.jpg</thumbnail>
+<fanart>http://bestfootballers.com/wp-content/uploads/2015/07/Real-Madrid-vs-Manchester-City-MCG.jpg</fanart>
+</item>
+
+
+  <item>
+<title>[COLOR coral] • [/COLOR] [COLOR deepskyblue] Real Madrid vs Manchester City[/COLOR]  [03-a] - [COLOR lightslategray][I]Antena3[/I][/COLOR]</title>
+<link>http://77.95.226.11:1935/live/dCBeLpY5KtYd/chunklist.m3u8</link>
+
+<thumbnail>http://estaticos.sport.es/resources/jpg/1/0/rivales-city-madrid-1460713639801.jpg</thumbnail>
+<fanart>http://bestfootballers.com/wp-content/uploads/2015/07/Real-Madrid-vs-Manchester-City-MCG.jpg</fanart>
+</item>
+
+
+
+<item>
+<title>[COLOR coral] • [/COLOR] [COLOR deepskyblue] Real Madrid vs Manchester City[/COLOR]  [03-b] - [COLOR lightslategray][I]Antena3[/I][/COLOR]</title>
+<link>http://a3live-lh.akamaihd.net/i/antena3_1@35248/master.m3u8</link>
+<thumbnail>http://estaticos.sport.es/resources/jpg/1/0/rivales-city-madrid-1460713639801.jpg</thumbnail>
+<fanart>http://bestfootballers.com/wp-content/uploads/2015/07/Real-Madrid-vs-Manchester-City-MCG.jpg</fanart>
+</item>
+
+  <item>
+<title>[COLOR coral] • [/COLOR] [COLOR deepskyblue] Real Madrid vs Manchester City[/COLOR]  [03-c] - [COLOR lightslategray][I]Antena3[/I][/COLOR]</title>
+  <link>https://$doregex[get-response]/app/$doregex[get-id]_aac/playlist.m3u8</link><regex><name>get-response</name><expres>(.*)</expres><page>https://lancer.streamup.com/api/redirect/$doregex[get-id]</page></regex><regex><name>get-id</name><expres>"roomSlug": "(.*?)"</expres>
+<page>https://streamup.com/teledeporteonlinetvorg25</page></regex>
+<thumbnail>http://estaticos.sport.es/resources/jpg/1/0/rivales-city-madrid-1460713639801.jpg</thumbnail>
+<fanart>http://bestfootballers.com/wp-content/uploads/2015/07/Real-Madrid-vs-Manchester-City-MCG.jpg</fanart>
+</item>
+
+<item>
+<title>[COLOR coral] • [/COLOR] [COLOR deepskyblue] Real Madrid vs Manchester City[/COLOR]  [03-d] - [COLOR lightslategray][I]Antena3[/I][/COLOR]</title>
+<link>http://77.95.226.11:1935/live/dCBeLpY5KtYd/chunklist.m3u8</link>
+<thumbnail>http://estaticos.sport.es/resources/jpg/1/0/rivales-city-madrid-1460713639801.jpg</thumbnail>
+<fanart>http://bestfootballers.com/wp-content/uploads/2015/07/Real-Madrid-vs-Manchester-City-MCG.jpg</fanart>
+</item>
+
+
+
+<item>
+<title>[COLOR coral] • [/COLOR] [COLOR deepskyblue] Real Madrid vs Manchester City[/COLOR]  [03-e] - [COLOR lightslategray][I]Teledeporte[/I][/COLOR]</title>
+  	<link>http://$doregex[ip]$doregex[m3u8]</link>
+			<regex>
+			<name>ip</name>
+			<expres>redirect=(.*)</expres>
+			<page>http://cdn.pubzony.com:1935/loadbalancer</page>
+			</regex>
+			<regex>
+			<name>m3u8</name>
+			<expres>ea \+ "(.*?)"</expres>
+			<page>http://www.zony.tv/membedplayer/teledeporteonlinetvorg15/1/500/400</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.zony.tv</referer>
+			</regex><regex>
+			<name>canal</name>
+			<expres>channel='(.*?)'</expres>
+			<page>http://andrexfut.blogspot.cl/p/cha9.html</page>
+			<referer>http://www.zony.tv</referer>
+			</regex>
+  
+<thumbnail>http://estaticos.sport.es/resources/jpg/1/0/rivales-city-madrid-1460713639801.jpg</thumbnail>
+<fanart>http://bestfootballers.com/wp-content/uploads/2015/07/Real-Madrid-vs-Manchester-City-MCG.jpg</fanart>
+</item>
+
+
+<item>
+<title>[COLOR coral] • [/COLOR] [COLOR deepskyblue] Real Madrid vs Manchester City[/COLOR]  [03-f] - [COLOR lightslategray][I]Teledeporte[/I][/COLOR]</title>
+<link>$doregex[url]</link>
+<regex>	<name>url</name><expres>$pyFunction:vipracing.decrypt_vipracing('http://www.iguide.to/embedplayer_new.php?width=650&amp;height=400&amp;channel=$doregex[ch]&amp;autoplay=true',False,False,'http://teledeporteonlinetv.org')</expres><page></page></regex><regex><name>ch</name> <expres>http://www.iguide.to/embed/(.*?)&</expres>
+<page>http://teledeporteonlinetv.org/canales/3.php</page>	</regex>
+<thumbnail>http://estaticos.sport.es/resources/jpg/1/0/rivales-city-madrid-1460713639801.jpg</thumbnail>
+<fanart>http://bestfootballers.com/wp-content/uploads/2015/07/Real-Madrid-vs-Manchester-City-MCG.jpg</fanart>
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <item>
+<title>[COLOR coral] • [/COLOR] [COLOR deepskyblue] Real Madrid vs Manchester City[/COLOR]  [04] - [COLOR lightslategray][I]foxsports[/I][/COLOR]</title>
+<link>http://latino-webtv.ml/live/522_03.m3u8|User-Agent=iPad&amp;Referer=http://latino-webtv.com/player/jwplayer.flash.swf</link>
+<thumbnail>http://estaticos.sport.es/resources/jpg/1/0/rivales-city-madrid-1460713639801.jpg</thumbnail>
+<fanart>http://bestfootballers.com/wp-content/uploads/2015/07/Real-Madrid-vs-Manchester-City-MCG.jpg</fanart>
+</item>
+
+  <item>
+<title>[COLOR coral] • [/COLOR] [COLOR deepskyblue] Real Madrid vs Manchester City[/COLOR]  [05] - [COLOR lightslategray][I]espn[/I][/COLOR]</title>
+<link>http://latino-webtv.ml/live/561_03.m3u8|User-Agent=iPad&amp;Referer=http://latino-webtv.com/player/jwplayer.flash.swf</link>
+<thumbnail>http://estaticos.sport.es/resources/jpg/1/0/rivales-city-madrid-1460713639801.jpg</thumbnail>
+<fanart>http://bestfootballers.com/wp-content/uploads/2015/07/Real-Madrid-vs-Manchester-City-MCG.jpg</fanart>
+</item>
+
+  <item>
+<title>[COLOR coral] • [/COLOR] [COLOR deepskyblue] Real Madrid vs Manchester City[/COLOR]  [05-2] - [COLOR lightslategray][I]espn2[/I][/COLOR]</title>
+<link>http://latino-webtv.ml/live/516_03.m3u8|User-Agent=iPad&amp;Referer=http://latino-webtv.com/player/jwplayer.flash.swf</link>
+<thumbnail>http://estaticos.sport.es/resources/jpg/1/0/rivales-city-madrid-1460713639801.jpg</thumbnail>
+<fanart>http://bestfootballers.com/wp-content/uploads/2015/07/Real-Madrid-vs-Manchester-City-MCG.jpg</fanart>
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    <item>
+<title>[COLOR coral] • [/COLOR] [COLOR deepskyblue] Real Madrid vs Manchester City[/COLOR]  [06] - [COLOR lightslategray][I]pirlo-FoxDerportes[/I][/COLOR]</title>
+<link>http://$doregex[ip]$doregex[m3u8]</link>
+			<regex>
+			<name>ip</name>
+			<expres>redirect=(.*)</expres>
+			<page>http://www.streamifypublisher.com:1935/loadbalancer</page>
+			</regex>
+			<regex>
+			<name>m3u8</name>
+			<expres>ea \+ "(.*?)"</expres>
+			<page>http://www.streamifyplayer.com/membedplayer/asdf3asfsf/1/500/400</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.streamifyplayer.com</referer>
+			</regex>
+<thumbnail>http://estaticos.sport.es/resources/jpg/1/0/rivales-city-madrid-1460713639801.jpg</thumbnail>
+<fanart>http://bestfootballers.com/wp-content/uploads/2015/07/Real-Madrid-vs-Manchester-City-MCG.jpg</fanart>
+</item>
+  
+  
+  
+    <item>
+<title>[COLOR coral] • [/COLOR] [COLOR deepskyblue] Real Madrid vs Manchester City[/COLOR]  [07] - [COLOR lightslategray][I]pirlo-bein[/I][/COLOR]</title>
+<link>http://$doregex[ip]$doregex[m3u8]</link>
+			<regex>
+			<name>ip</name>
+			<expres>redirect=(.*)</expres>
+			<page>http://www.streamifypublisher.com:1935/loadbalancer</page>
+			</regex>
+			<regex>
+			<name>m3u8</name>
+			<expres>ea \+ "(.*?)"</expres>
+			<page>http://www.streamifyplayer.com/membedplayer/sea33z/1/500/400</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.streamifyplayer.com</referer>
+			</regex>
+<thumbnail>http://estaticos.sport.es/resources/jpg/1/0/rivales-city-madrid-1460713639801.jpg</thumbnail>
+<fanart>http://bestfootballers.com/wp-content/uploads/2015/07/Real-Madrid-vs-Manchester-City-MCG.jpg</fanart>
+</item>
+  
+  
+  
+  
+    <item>
+<title>[COLOR coral] • [/COLOR] [COLOR deepskyblue] Real Madrid vs Manchester City[/COLOR]  [08] - [COLOR lightslategray][I]espn/bein[/I][/COLOR]</title>
+     <link>http://$doregex[ip]$doregex[m3u8]</link>
+			<regex>
+			<name>ip</name>
+			<expres>redirect=(.*)</expres>
+			<page>http://cdn.mipspublisher.com:1935/loadbalancer</page>
+			</regex>
+			<regex>
+			<name>m3u8</name>
+			<expres>ea \+ "(.*?)"</expres>
+			<page>http://www.mips.tv/membedplayer/chibol/1/500/400</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.mips.tv</referer>
+			</regex>
+<thumbnail>http://estaticos.sport.es/resources/jpg/1/0/rivales-city-madrid-1460713639801.jpg</thumbnail>
+<fanart>http://bestfootballers.com/wp-content/uploads/2015/07/Real-Madrid-vs-Manchester-City-MCG.jpg</fanart>
+</item> 
+  
+  
+
+  
+  
+    
+    <item>
+<title>[COLOR coral] • [/COLOR] [COLOR deepskyblue] Real Madrid vs Manchester City[/COLOR]  [09] - [COLOR lightslategray][I]pirlo/mips[/I][/COLOR]</title>
+   <link>http://$doregex[ip]$doregex[m3u8]</link>
+			<regex>
+			<name>ip</name>
+			<expres>redirect=(.*)</expres>
+			<page>http://cdn.mipspublisher.com:1935/loadbalancer</page>
+			</regex>
+			<regex>
+			<name>m3u8</name>
+			<expres>ea \+ "(.*?)"</expres>
+			<page>http://www.mips.tv/membedplayer/asd3sdf33ssad3/1/500/400</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.mips.tv</referer>
+			</regex>
+<thumbnail>http://estaticos.sport.es/resources/jpg/1/0/rivales-city-madrid-1460713639801.jpg</thumbnail>
+<fanart>http://bestfootballers.com/wp-content/uploads/2015/07/Real-Madrid-vs-Manchester-City-MCG.jpg</fanart>
+</item> 
+  
+  
+  
+  
+  
+  
+    
+    <item>
+<title>[COLOR coral] • [/COLOR] [COLOR deepskyblue] Real Madrid vs Manchester City[/COLOR]  [10] - [COLOR lightslategray][I]mex1[/I][/COLOR]</title>
+    <link>rtmp$doregex[rtmp] playpath=$doregex[id] swfUrl=http://cdn.boxlivetv.net/player-hd7.swf live=1 pageUrl=http://www.boxlivetv.net/player.php?chname=$doregex[id]&width=650&height=450</link>	
+<regex>
+<name>rtmp</name>
+<expres>'rtmp(.*?)'</expres>
+<page>http://www.boxlivetv.net/player.php?chname=$doregex[id]</page>
+</regex>
+<regex>
+<name>id</name>
+<expres>chname="(.*?)"</expres>
+<page>http://yayin.ucoz.com/mex1.html</page>
+</regex>
+<thumbnail>http://estaticos.sport.es/resources/jpg/1/0/rivales-city-madrid-1460713639801.jpg</thumbnail>
+<fanart>http://bestfootballers.com/wp-content/uploads/2015/07/Real-Madrid-vs-Manchester-City-MCG.jpg</fanart>
+</item> 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+<item>
+<title>[COLOR coral] • [/COLOR] [COLOR deepskyblue] Real Madrid vs Manchester City[/COLOR]  [11] - [COLOR lightslategray][I]FutbolManiakos[/I][/COLOR]</title>
+<link>http://$doregex[ip]$doregex[m3u8]</link>
+			<regex>
+			<name>ip</name>
+			<expres>redirect=(.*)</expres>
+			<page>http://www.liveflashpublisher.com:1935/loadbalancer</page>
+			</regex>
+			<regex>
+			<name>m3u8</name>
+			<expres>ea \+ "(.*?)"</expres>
+			<page>http://www.liveflash.tv/membedplayer/futbolmaniakos7/1/500/400</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.liveflash.tv</referer>
+			</regex>
+<thumbnail>http://estaticos.sport.es/resources/jpg/1/0/rivales-city-madrid-1460713639801.jpg</thumbnail>
+<fanart>http://bestfootballers.com/wp-content/uploads/2015/07/Real-Madrid-vs-Manchester-City-MCG.jpg</fanart>
+</item> 
+  
+
+<item>
+<title>[COLOR coral] • [/COLOR] [COLOR deepskyblue] Real Madrid vs Manchester City[/COLOR]  [11-a] - [COLOR lightslategray][I]FutbolManiakos[/I][/COLOR]</title>
+<link>$doregex[url]</link>
+<regex>	<name>url</name><expres>$pyFunction:vipracing.decrypt_vipracing('http://www.iguide.to/embedplayer_new.php?width=650&amp;height=400&amp;channel=$doregex[ch]&amp;autoplay=true',False,False,'http://maniakostv.blogspot.com')</expres><page></page></regex><regex><name>ch</name> <expres>http://www.iguide.to/embed/(.*?)&</expres>
+<page>http://maniakostv.blogspot.mx/p/ch-2.html</page>	</regex>
+<thumbnail>http://estaticos.sport.es/resources/jpg/1/0/rivales-city-madrid-1460713639801.jpg</thumbnail>
+<fanart>http://bestfootballers.com/wp-content/uploads/2015/07/Real-Madrid-vs-Manchester-City-MCG.jpg</fanart>
+</item> 
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <item>
+<title>[COLOR coral] • [/COLOR] [COLOR deepskyblue] Boca Juniors vs. Cerro Porteno[/COLOR]  [12] - [COLOR lightslategray][I]vip01[/I][/COLOR]</title>
+  <link>$doregex[url]</link>
+<regex>
+	<name>url</name>
+	<expres>$pyFunction:vipracing.decrypt_vipracing('http://www.streamlive.to/embedplayer_new2.php?channel=53682',False,False,'http://vipracing.info/')</expres>
+	<page></page>
+</regex>
+<thumbnail>http://estaticos.sport.es/resources/jpg/1/0/rivales-city-madrid-1460713639801.jpg</thumbnail>
+<fanart>http://bestfootballers.com/wp-content/uploads/2015/07/Real-Madrid-vs-Manchester-City-MCG.jpg</fanart>
+</item> 
+
+
+  <item>
+<title>[COLOR coral] • [/COLOR] [COLOR deepskyblue] Real Madrid vs Manchester City[/COLOR]  [12] - [COLOR lightslategray][I]vip01[/I][/COLOR]</title>
+  <link>$doregex[url]</link>
+<regex>
+	<name>url</name>
+	<expres>$pyFunction:vipracing.decrypt_vipracing('http://www.streamlive.to/embedplayer_new2.php?channel=53681',False,False,'http://vipracing.info/')</expres>
+	<page></page>
+</regex>
+<thumbnail>http://estaticos.sport.es/resources/jpg/1/0/rivales-city-madrid-1460713639801.jpg</thumbnail>
+<fanart>http://bestfootballers.com/wp-content/uploads/2015/07/Real-Madrid-vs-Manchester-City-MCG.jpg</fanart>
+</item> 
+  
+       <item>
+<title>[COLOR coral] • [/COLOR] [COLOR deepskyblue] Real Madrid vs Manchester City[/COLOR]  [13] - [COLOR lightslategray][I]vipbein[/I][/COLOR]</title>
+  <link>$doregex[url]</link>
+<regex>
+	<name>url</name>
+	<expres>$pyFunction:vipracing.decrypt_vipracing('http://www.streamlive.to/embedplayer_new2.php?channel=72400',False,False,'http://vipracing.info/')</expres>
+	<page></page>
+</regex>
+<thumbnail>http://estaticos.sport.es/resources/jpg/1/0/rivales-city-madrid-1460713639801.jpg</thumbnail>
+<fanart>http://bestfootballers.com/wp-content/uploads/2015/07/Real-Madrid-vs-Manchester-City-MCG.jpg</fanart>
+</item> 
+  
+     <item>
+<title>[COLOR coral] • [/COLOR] [COLOR deepskyblue] Real Madrid vs Manchester City[/COLOR]  [14] - [COLOR lightslategray][I]vip02[/I][/COLOR]</title>
+  <link>$doregex[url]</link>
+<regex>
+	<name>url</name>
+	<expres>$pyFunction:vipracing.decrypt_vipracing('http://www.streamlive.to/embedplayer_new2.php?channel=70422',False,False,'http://vipracing.info/')</expres>
+	<page></page>
+</regex>
+<thumbnail>http://estaticos.sport.es/resources/jpg/1/0/rivales-city-madrid-1460713639801.jpg</thumbnail>
+<fanart>http://bestfootballers.com/wp-content/uploads/2015/07/Real-Madrid-vs-Manchester-City-MCG.jpg</fanart>
+</item>
+  
+  
+       <item>
+<title>[COLOR coral] • [/COLOR] [COLOR deepskyblue] Real Madrid vs Manchester City[/COLOR]  [15] - [COLOR lightslategray][I]vip05[/I][/COLOR]</title>
+  <link>$doregex[url]</link>
+<regex>
+	<name>url</name>
+	<expres>$pyFunction:vipracing.decrypt_vipracing('http://www.streamlive.to/embedplayer_new2.php?channel=71395',False,False,'http://vipracing.info/')</expres>
+	<page></page>
+</regex>
+<thumbnail>http://estaticos.sport.es/resources/jpg/1/0/rivales-city-madrid-1460713639801.jpg</thumbnail>
+<fanart>http://bestfootballers.com/wp-content/uploads/2015/07/Real-Madrid-vs-Manchester-City-MCG.jpg</fanart>
+</item>
+  
+         <item>
+<title>[COLOR coral] • [/COLOR] [COLOR deepskyblue] Real Madrid vs Manchester City[/COLOR]  [16] - [COLOR lightslategray][I]vip06[/I][/COLOR]</title>
+  <link>$doregex[url]</link>
+<regex>
+	<name>url</name>
+	<expres>$pyFunction:vipracing.decrypt_vipracing('http://www.streamlive.to/embedplayer_new2.php?channel=71396',False,False,'http://vipracing.info/')</expres>
+	<page></page>
+</regex>
+<thumbnail>http://estaticos.sport.es/resources/jpg/1/0/rivales-city-madrid-1460713639801.jpg</thumbnail>
+<fanart>http://bestfootballers.com/wp-content/uploads/2015/07/Real-Madrid-vs-Manchester-City-MCG.jpg</fanart>
+</item>
+  
+  
+  
+  
+  
+  
+ 
+  
+  <item>
+<title>[COLOR coral] • [/COLOR] [COLOR deepskyblue] Real Madrid vs Manchester City[/COLOR]  [16-a] - [COLOR lightslategray][I]FS1 USA[/I][/COLOR]</title>
+  <link>$doregex[url]</link>
+<regex>
+	<name>url</name>
+	<expres>$pyFunction:vipracing.decrypt_vipracing('http://www.streamlive.to/embedplayer_new2.php?channel=73260',False,False,'http://vipracing.info/')</expres>
+	<page></page>
+</regex>
+<thumbnail>http://estaticos.sport.es/resources/jpg/1/0/rivales-city-madrid-1460713639801.jpg</thumbnail>
+<fanart>http://bestfootballers.com/wp-content/uploads/2015/07/Real-Madrid-vs-Manchester-City-MCG.jpg</fanart>
+</item>
+  
+  
+  
+    
+  <item>
+<title>[COLOR coral] • [/COLOR] [COLOR deepskyblue] Real Madrid vs Manchester City[/COLOR]  [16-b] - [COLOR lightslategray][I]Bein France[/I][/COLOR]</title>
+  <link>$doregex[url]</link>
+<regex>
+	<name>url</name>
+	<expres>$pyFunction:vipracing.decrypt_vipracing('http://www.streamlive.to/embedplayer_new2.php?channel=69690',False,False,'http://vipracing.info/')</expres>
+	<page></page>
+</regex>
+<thumbnail>http://estaticos.sport.es/resources/jpg/1/0/rivales-city-madrid-1460713639801.jpg</thumbnail>
+<fanart>http://bestfootballers.com/wp-content/uploads/2015/07/Real-Madrid-vs-Manchester-City-MCG.jpg</fanart>
+</item>
+  
+  
+
+	
+
+<item>
+<title>[COLOR coral] • [/COLOR] [COLOR deepskyblue] Real Madrid vs Manchester City[/COLOR]  [17] - [COLOR lightslategray][I]Zonasport01[/I][/COLOR]</title>
+<link>https://$doregex[get-response]/app/$doregex[get-id]_aac/playlist.m3u8</link><regex><name>get-response</name><expres>(.*)</expres><page>https://lancer.streamup.com/api/redirect/$doregex[get-id]</page></regex><regex><name>get-id</name><expres>"roomSlug": "(.*?)"</expres>
+<page>https://streamup.com/zonasportsxx1sf</page></regex>
+<thumbnail>http://estaticos.sport.es/resources/jpg/1/0/rivales-city-madrid-1460713639801.jpg</thumbnail>
+<fanart>http://bestfootballers.com/wp-content/uploads/2015/07/Real-Madrid-vs-Manchester-City-MCG.jpg</fanart></item>	
+
+
+<item>
+<title>[COLOR coral] • [/COLOR] [COLOR deepskyblue] Real Madrid vs Manchester City[/COLOR]  [18] - [COLOR lightslategray][I]Zonasport02[/I][/COLOR]</title>
+<link>https://$doregex[get-response]/app/$doregex[get-id]_aac/playlist.m3u8</link><regex><name>get-response</name><expres>(.*)</expres><page>https://lancer.streamup.com/api/redirect/$doregex[get-id]</page></regex><regex><name>get-id</name><expres>"roomSlug": "(.*?)"</expres>
+<page>https://streamup.com/zonaxpsot2</page></regex>
+<thumbnail>http://estaticos.sport.es/resources/jpg/1/0/rivales-city-madrid-1460713639801.jpg</thumbnail>
+<fanart>http://bestfootballers.com/wp-content/uploads/2015/07/Real-Madrid-vs-Manchester-City-MCG.jpg</fanart></item>	
+
+<item>
+<title>[COLOR coral] • [/COLOR] [COLOR deepskyblue] Real Madrid vs Manchester City[/COLOR]  [19] - [COLOR lightslategray][I]Zonasport03[/I][/COLOR]</title>
+<link>https://$doregex[get-response]/app/$doregex[get-id]_aac/playlist.m3u8</link><regex><name>get-response</name><expres>(.*)</expres><page>https://lancer.streamup.com/api/redirect/$doregex[get-id]</page></regex><regex><name>get-id</name><expres>"roomSlug": "(.*?)"</expres>
+<page>https://streamup.com/somosb3</page></regex>
+<thumbnail>http://estaticos.sport.es/resources/jpg/1/0/rivales-city-madrid-1460713639801.jpg</thumbnail>
+<fanart>http://bestfootballers.com/wp-content/uploads/2015/07/Real-Madrid-vs-Manchester-City-MCG.jpg</fanart></item>	
+ 
+<item>
+<title>[COLOR coral] • [/COLOR] [COLOR deepskyblue] Real Madrid vs Manchester City[/COLOR]  [20] - [COLOR lightslategray][I]Zonasport04[/I][/COLOR]</title>
+<link>https://$doregex[get-response]/app/$doregex[get-id]_aac/playlist.m3u8</link><regex><name>get-response</name><expres>(.*)</expres><page>https://lancer.streamup.com/api/redirect/$doregex[get-id]</page></regex><regex><name>get-id</name><expres>"roomSlug": "(.*?)"</expres>
+<page>https://streamup.com/zonax4as</page></regex>
+<thumbnail>http://estaticos.sport.es/resources/jpg/1/0/rivales-city-madrid-1460713639801.jpg</thumbnail>
+<fanart>http://bestfootballers.com/wp-content/uploads/2015/07/Real-Madrid-vs-Manchester-City-MCG.jpg</fanart></item>	
+
+
+
+<item> 
+
+			<item>
+			<title>[COLOR coral] • [/COLOR] [COLOR deepskyblue] Real Madrid vs Manchester City[/COLOR]  [21] - [COLOR lightslategray][I]Zonasport09[/I][/COLOR]</title>
+			<link>http://$doregex[ip]$doregex[m3u8]</link>
+			<regex>
+			<name>ip</name>
+			<expres>redirect=(.*)</expres>
+			<page>http://cdn.pubzony.com:1935/loadbalancer</page>
+			</regex>
+			<regex>
+			<name>m3u8</name>
+			<expres>ea \+ "(.*?)"</expres>
+			<page>http://www.zony.tv/membedplayer/ZonaSportsx9x/1/500/400</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.zony.tv</referer>
+			</regex><regex>
+			<name>canal</name>
+			<expres>channel='(.*?)'</expres>
+			<page>http://andrexfut.blogspot.cl/p/cha9.html</page>
+			<referer>http://www.zony.tv</referer>
+			</regex>
+			<thumbnail>http://estaticos.sport.es/resources/jpg/1/0/rivales-city-madrid-1460713639801.jpg</thumbnail>
+<fanart>http://bestfootballers.com/wp-content/uploads/2015/07/Real-Madrid-vs-Manchester-City-MCG.jpg</fanart></item>
+
+
+
+
+
+<item> 
+
+			<item>
+			<title>[COLOR coral] • [/COLOR] [COLOR deepskyblue] Real Madrid vs Manchester City[/COLOR]  [22] - [COLOR lightslategray][I]Zonasport10[/I][/COLOR]</title>
+			<link>http://$doregex[ip]$doregex[m3u8]</link>
+			<regex>
+			<name>ip</name>
+			<expres>redirect=(.*)</expres>
+			<page>http://cdn.pubzony.com:1935/loadbalancer</page>
+			</regex>
+			<regex>
+			<name>m3u8</name>
+			<expres>ea \+ "(.*?)"</expres>
+			<page>http://www.zony.tv/membedplayer/ZonaSportsx10/1/500/400</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.zony.tv</referer>
+			</regex>
+			<thumbnail>http://estaticos.sport.es/resources/jpg/1/0/rivales-city-madrid-1460713639801.jpg</thumbnail>
+<fanart>http://bestfootballers.com/wp-content/uploads/2015/07/Real-Madrid-vs-Manchester-City-MCG.jpg</fanart></item>
+
+
+
+
+<item> 
+
+			<item>
+			<title>[COLOR coral] • [/COLOR] [COLOR deepskyblue] Real Madrid vs Manchester City[/COLOR]  [23] - [COLOR lightslategray][I]Zonasport11[/I][/COLOR]</title>
+			<link>http://ooyalahd2-f.akamaihd.net/i/eslax17_delivery@349499/master.m3u8</link>
+			<thumbnail>http://estaticos.sport.es/resources/jpg/1/0/rivales-city-madrid-1460713639801.jpg</thumbnail>
+<fanart>http://bestfootballers.com/wp-content/uploads/2015/07/Real-Madrid-vs-Manchester-City-MCG.jpg</fanart></item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <item>
+<title>[COLOR coral] • [/COLOR] [COLOR deepskyblue] Real Madrid vs Manchester City[/COLOR]  [24] - [COLOR lightslategray][I]max01[/I][/COLOR]</title><link>$doregex[url]</link>
+<regex>	<name>url</name><expres>$pyFunction:vipracing.decrypt_vipracing('http://www.iguide.to/embedplayer_new.php?width=650&amp;height=400&amp;channel=$doregex[ch]&amp;autoplay=true',False,False,'http://maxdeportv.net')</expres><page></page></regex><regex><name>ch</name> <expres>http://www.iguide.to/embed/(.*?)&</expres>
+<page>http://maxdeportv.net/?canal=1</page>	</regex><thumbnail>http://estaticos.sport.es/resources/jpg/1/0/rivales-city-madrid-1460713639801.jpg</thumbnail>
+<fanart>http://bestfootballers.com/wp-content/uploads/2015/07/Real-Madrid-vs-Manchester-City-MCG.jpg</fanart>
+</item>		
+  
+  
+    <item>
+<title>[COLOR coral] • [/COLOR] [COLOR deepskyblue] Real Madrid vs Manchester City[/COLOR]  [25] - [COLOR lightslategray][I]max04[/I][/COLOR]</title><link>$doregex[url]</link>
+<regex>	<name>url</name><expres>$pyFunction:vipracing.decrypt_vipracing('http://www.iguide.to/embedplayer_new.php?width=650&amp;height=400&amp;channel=$doregex[ch]&amp;autoplay=true',False,False,'http://maxdeportv.net')</expres><page></page></regex><regex><name>ch</name> <expres>http://www.iguide.to/embed/(.*?)&</expres>
+<page>http://maxdeportv.net/?canal=4</page>	</regex><thumbnail>http://estaticos.sport.es/resources/jpg/1/0/rivales-city-madrid-1460713639801.jpg</thumbnail>
+<fanart>http://bestfootballers.com/wp-content/uploads/2015/07/Real-Madrid-vs-Manchester-City-MCG.jpg</fanart>
+</item>	
+
+  
+  
+    <item>
+<title>[COLOR coral] • [/COLOR] [COLOR deepskyblue] Real Madrid vs Manchester City[/COLOR]  [26] - [COLOR lightslategray][I]max08[/I][/COLOR]</title><link>$doregex[url]</link>
+<regex>	<name>url</name><expres>$pyFunction:vipracing.decrypt_vipracing('http://www.iguide.to/embedplayer_new.php?width=650&amp;height=400&amp;channel=$doregex[ch]&amp;autoplay=true',False,False,'http://maxdeportv.net')</expres><page></page></regex><regex><name>ch</name> <expres>http://www.iguide.to/embed/(.*?)&</expres>
+<page>http://maxdeportv.net/?canal=8</page>	</regex><thumbnail>http://estaticos.sport.es/resources/jpg/1/0/rivales-city-madrid-1460713639801.jpg</thumbnail>
+<fanart>http://bestfootballers.com/wp-content/uploads/2015/07/Real-Madrid-vs-Manchester-City-MCG.jpg</fanart>
+</item>	
+  
+  
+    <item>
+<title>[COLOR coral] • [/COLOR] [COLOR deepskyblue] Real Madrid vs Manchester City[/COLOR]  [27] - [COLOR lightslategray][I]max11[/I][/COLOR]</title><link>$doregex[url]</link>
+<regex>	<name>url</name><expres>$pyFunction:vipracing.decrypt_vipracing('http://www.iguide.to/embedplayer_new.php?width=650&amp;height=400&amp;channel=$doregex[ch]&amp;autoplay=true',False,False,'http://maxdeportv.net')</expres><page></page></regex><regex><name>ch</name> <expres>http://www.iguide.to/embed/(.*?)&</expres>
+<page>http://maxdeportv.net/?canal=11</page>	</regex><thumbnail>http://estaticos.sport.es/resources/jpg/1/0/rivales-city-madrid-1460713639801.jpg</thumbnail>
+<fanart>http://bestfootballers.com/wp-content/uploads/2015/07/Real-Madrid-vs-Manchester-City-MCG.jpg</fanart>
+</item>	
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      <item>
+<title>[COLOR coral] • [/COLOR] [COLOR deepskyblue] Real Madrid vs Manchester City[/COLOR]  [28] - [COLOR lightslategray][I]fandres3[/I][/COLOR]</title>
+  <link>http://$doregex[ip]$doregex[m3u8]</link>
+			<regex>
+			<name>ip</name>
+			<expres>redirect=(.*)</expres>
+			<page>http://cdn.pubzony.com:1935/loadbalancer</page>
+			</regex>
+			<regex>
+			<name>m3u8</name>
+			<expres>ea \+ "(.*?)"</expres>
+			<page>http://www.zony.tv/membedplayer/$doregex[canal]/1/500/400</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.zony.tv</referer>
+			</regex><regex>
+			<name>canal</name>
+			<expres>channel='(.*?)'</expres>
+			<page>http://andrexfut.blogspot.mx/p/cha9.html</page>
+			<referer>http://www.zony.tv</referer>
+			</regex>
+<thumbnail>http://estaticos.sport.es/resources/jpg/1/0/rivales-city-madrid-1460713639801.jpg</thumbnail>
+<fanart>http://bestfootballers.com/wp-content/uploads/2015/07/Real-Madrid-vs-Manchester-City-MCG.jpg</fanart>
+</item> 
+        
+  
+  
+  
+  
+  
+  
+
+
+
+      <item>
+<title>[COLOR coral] • [/COLOR] [COLOR deepskyblue] Real Madrid vs Manchester City[/COLOR]  [29] - [COLOR lightslategray][I]fandres3[/I][/COLOR]</title>
+  <link>http://$doregex[ip]$doregex[m3u8]</link>
+			<regex>
+			<name>ip</name>
+			<expres>redirect=(.*)</expres>
+			<page>http://cdn.pubzony.com:1935/loadbalancer</page>
+			</regex>
+			<regex>
+			<name>m3u8</name>
+			<expres>ea \+ "(.*?)"</expres>
+			<page>http://www.zony.tv/membedplayer/$doregex[canal]/1/500/400</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.zony.tv</referer>
+			</regex><regex>
+			<name>canal</name>
+			<expres>channel='(.*?)'</expres>
+			<page>http://andrexfut.blogspot.mx/p/cc8.html</page>
+			<referer>http://www.zony.tv</referer>
+			</regex>
+<thumbnail>http://estaticos.sport.es/resources/jpg/1/0/rivales-city-madrid-1460713639801.jpg</thumbnail>
+<fanart>http://bestfootballers.com/wp-content/uploads/2015/07/Real-Madrid-vs-Manchester-City-MCG.jpg</fanart>
+</item> 
+        
+		
+		
+		
+		
+		
+		
+		    <item>
+<title>[COLOR coral] • [/COLOR] [COLOR deepskyblue] Real Madrid vs Manchester City[/COLOR]  [30] - [COLOR lightslategray][I]rivo[/I][/COLOR]</title><link>$doregex[url]</link>
+<regex>	<name>url</name><expres>$pyFunction:vipracing.decrypt_vipracing('http://www.iguide.to/embedplayer_new.php?width=650&amp;height=400&amp;channel=$doregex[ch]&amp;autoplay=true',False,False,'http://wrivz1.blogspot.com')</expres><page></page></regex><regex><name>ch</name> <expres>http://www.iguide.to/embed/(.*?)&</expres>
+<page>http://rivx8.me.la/ch7.html</page>	</regex><thumbnail>http://estaticos.sport.es/resources/jpg/1/0/rivales-city-madrid-1460713639801.jpg</thumbnail>
+<fanart>http://bestfootballers.com/wp-content/uploads/2015/07/Real-Madrid-vs-Manchester-City-MCG.jpg</fanart>
+</item>	
+
+
+
+
+
+
+<item>
+<title>[COLOR coral] • [/COLOR] [COLOR deepskyblue] Real Madrid vs Manchester City[/COLOR]  [31] - [COLOR lightslategray][I]k2[/I][/COLOR]</title><link>$doregex[url]</link>
+<regex>	<name>url</name><expres>$pyFunction:vipracing.decrypt_vipracing('http://www.iguide.to/embedplayer_new.php?width=650&amp;height=400&amp;channel=$doregex[ch]&amp;autoplay=true',False,False,'http://www.k2deporte.xyz')</expres><page></page></regex><regex><name>ch</name> <expres>http://www.iguide.to/embed/(.*?)&</expres>
+<page>http://www.k2deporte.xyz/p/tv1.html</page>	</regex><thumbnail>http://estaticos.sport.es/resources/jpg/1/0/rivales-city-madrid-1460713639801.jpg</thumbnail>
+<fanart>http://bestfootballers.com/wp-content/uploads/2015/07/Real-Madrid-vs-Manchester-City-MCG.jpg</fanart>
+</item>	
+
+<item>
+<title>[COLOR coral] • [/COLOR] [COLOR deepskyblue] Real Madrid vs Manchester City[/COLOR]  [32] - [COLOR lightslategray][I]bull[/I][/COLOR]</title><link>$doregex[url]</link>
+<regex>	<name>url</name><expres>$pyFunction:vipracing.decrypt_vipracing('http://www.iguide.to/embedplayer_new.php?width=650&amp;height=400&amp;channel=$doregex[ch]&amp;autoplay=true',False,False,''http://fffpmx.blogspot.com/')</expres><page></page></regex><regex><name>ch</name> <expres>http://www.iguide.to/embed/(.*?)&</expres>
+<page>'http://fffpmx.blogspot.com/</page>	</regex><thumbnail>http://estaticos.sport.es/resources/jpg/1/0/rivales-city-madrid-1460713639801.jpg</thumbnail>
+<fanart>http://bestfootballers.com/wp-content/uploads/2015/07/Real-Madrid-vs-Manchester-City-MCG.jpg</fanart>
+</item>	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>[COLOR coral] • [/COLOR] [COLOR deepskyblue] Real Madrid vs Manchester City[/COLOR]  [33] - [COLOR lightslategray][I]primerasport[/I][/COLOR]</title>
+<link>$doregex[get-decode] swfUrl=http://cdn.ibrod.tv/player/jwplayer.flash.swf swfVfy=1 live=1 timeout=13 pageUrl=http://miplayer.net/</link>
+<regex>
+<name>get-decode</name>
+<expres>$pyFunction:base64.b64decode("$doregex[get-enctext]")</expres>
+<page></page>
+</regex>
+<regex>
+<name>get-enctext</name>
+<expres>curl = "(.*?)"</expres>
+<page>http://miplayer.net/embedplayer.php?id=primersports5</page>
+</regex>
+<thumbnail>http://estaticos.sport.es/resources/jpg/1/0/rivales-city-madrid-1460713639801.jpg</thumbnail>
+<fanart>http://bestfootballers.com/wp-content/uploads/2015/07/Real-Madrid-vs-Manchester-City-MCG.jpg</fanart>
+</item>	
+
+
+
+<item>
+<title>[COLOR coral] • [/COLOR] [COLOR deepskyblue] Real Madrid vs Manchester City[/COLOR]  [34] - [COLOR lightslategray][I]planeta[/I][/COLOR]</title>
+<link>$doregex[get-decode] swfUrl=http://cdn.ibrod.tv/player/jwplayer.flash.swf swfVfy=1 live=1 timeout=13 pageUrl=http://miplayer.net/</link>
+<regex>
+<name>get-decode</name>
+<expres>$pyFunction:base64.b64decode("$doregex[get-enctext]")</expres>
+<page></page>
+</regex>
+<regex>
+<name>get-enctext</name>
+<expres>curl = "(.*?)"</expres>
+<page>http://miplayer.net/embedplayer.php?id=planetadeportes02</page>
+</regex>
+<thumbnail>http://estaticos.sport.es/resources/jpg/1/0/rivales-city-madrid-1460713639801.jpg</thumbnail>
+<fanart>http://bestfootballers.com/wp-content/uploads/2015/07/Real-Madrid-vs-Manchester-City-MCG.jpg</fanart>
+</item>	
+
+
+
+
+<item>
+<title>[COLOR coral] • [/COLOR] [COLOR deepskyblue] Real Madrid vs Manchester City[/COLOR]  [34] - [COLOR lightslategray][I]planeta[/I][/COLOR]</title>
+<link>http://www.elboxtv.com:1985/live/benoit/benoit/935.ts</link>
+<thumbnail>http://estaticos.sport.es/resources/jpg/1/0/rivales-city-madrid-1460713639801.jpg</thumbnail>
+<fanart>http://bestfootballers.com/wp-content/uploads/2015/07/Real-Madrid-vs-Manchester-City-MCG.jpg</fanart>
+</item>	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>[COLOR coral] • [/COLOR] [COLOR deepskyblue] Real Madrid vs Manchester City /es[/COLOR]  [1] - [COLOR lightslategray][I]ACESTREAM[/I][/COLOR]</title>
+<link>plugin://program.plexus/?url=e61dbd6e6f6affcbcca16de67e263a20a9547447&amp;mode=1&amp;name=Adryanlist+Acestreams</link>
+			<thumbnail>http://estaticos.sport.es/resources/jpg/1/0/rivales-city-madrid-1460713639801.jpg</thumbnail>
+<fanart>http://bestfootballers.com/wp-content/uploads/2015/07/Real-Madrid-vs-Manchester-City-MCG.jpg</fanart>
+</item>	
+
+
+<item>
+<title>[COLOR coral] • [/COLOR] [COLOR deepskyblue] Real Madrid vs Manchester City /es[/COLOR]  [2] - [COLOR lightslategray][I]ACESTREAM[/I][/COLOR]</title>
+<link>plugin://program.plexus/?url=13456380a2cee4252703afb2f7c94d7c678da881&amp;mode=1&amp;name=Adryanlist+Acestreams</link>
+			<thumbnail>http://estaticos.sport.es/resources/jpg/1/0/rivales-city-madrid-1460713639801.jpg</thumbnail>
+<fanart>http://bestfootballers.com/wp-content/uploads/2015/07/Real-Madrid-vs-Manchester-City-MCG.jpg</fanart>
+</item>	
+
+
+<item>
+<title>[COLOR coral] • [/COLOR] [COLOR deepskyblue] Real Madrid vs Manchester City /es[/COLOR]  [3] - [COLOR lightslategray][I]ACESTREAM[/I][/COLOR]</title>
+<link>plugin://program.plexus/?url=fb5b8e9d690878d04c217212ab609aa3ab05c5f8&amp;mode=1&amp;name=Adryanlist+Acestreams</link>
+			<thumbnail>http://estaticos.sport.es/resources/jpg/1/0/rivales-city-madrid-1460713639801.jpg</thumbnail>
+<fanart>http://bestfootballers.com/wp-content/uploads/2015/07/Real-Madrid-vs-Manchester-City-MCG.jpg</fanart>
+</item>	
+
+
+<item>
+<title>[COLOR coral] • [/COLOR] [COLOR deepskyblue] Real Madrid vs Manchester City /es[/COLOR]  [4] - [COLOR lightslategray][I]ACESTREAM[/I][/COLOR]</title>
+<link>plugin://program.plexus/?url=fb5b8e9d690878d04c217212ab609aa3ab05c5f8&amp;mode=1&amp;name=Adryanlist+Acestreams</link>
+			<thumbnail>http://estaticos.sport.es/resources/jpg/1/0/rivales-city-madrid-1460713639801.jpg</thumbnail>
+<fanart>http://bestfootballers.com/wp-content/uploads/2015/07/Real-Madrid-vs-Manchester-City-MCG.jpg</fanart>
+</item>	
+
+
+<item>
+<title>[COLOR coral] • [/COLOR] [COLOR deepskyblue] Real Madrid vs Manchester City /fr[/COLOR]  [5] - [COLOR lightslategray][I]ACESTREAM[/I][/COLOR]</title>
+<link>plugin://program.plexus/?url=$doregex[hash]&amp;mode=1&amp;name=Adryanlist+Acestreams</link>
+			<regex>
+			<name>hash</name> 
+			<expres>this.loadPlayer\("(.*?)"</expres>
+			<page>http://www.arenavision.in/av1</page>
+			<referer>http://www.arenavision.in</referer>
+			<setcookie>beget=begetok</setcookie>
+			</regex>
+ 	</regex><thumbnail>http://estaticos.sport.es/resources/jpg/1/0/rivales-city-madrid-1460713639801.jpg</thumbnail>
+<fanart>http://bestfootballers.com/wp-content/uploads/2015/07/Real-Madrid-vs-Manchester-City-MCG.jpg</fanart>
+</item>	
+
+
+
+<item>
+<title>[COLOR coral] • [/COLOR] [COLOR deepskyblue] Real Madrid vs Manchester City /fr[/COLOR]  [6] - [COLOR lightslategray][I]ACESTREAM[/I][/COLOR]</title>
+<link>plugin://program.plexus/?url=$doregex[hash]&amp;mode=1&amp;name=Adryanlist+Acestreams</link>
+			<regex>
+			<name>hash</name> 
+			<expres>this.loadPlayer\("(.*?)"</expres>
+			<page>http://www.arenavision.in/av2</page>
+			<referer>http://www.arenavision.in</referer>
+			<setcookie>beget=begetok</setcookie>
+			</regex>
+ 	</regex><thumbnail>http://estaticos.sport.es/resources/jpg/1/0/rivales-city-madrid-1460713639801.jpg</thumbnail>
+<fanart>http://bestfootballers.com/wp-content/uploads/2015/07/Real-Madrid-vs-Manchester-City-MCG.jpg</fanart>
+</item>	
+
+
+<item>
+<title>[COLOR coral] • [/COLOR] [COLOR deepskyblue] Real Madrid vs Manchester City /es[/COLOR]  [7] - [COLOR lightslategray][I]ACESTREAM[/I][/COLOR]</title>
+<link>plugin://program.plexus/?url=$doregex[hash]&amp;mode=1&amp;name=Adryanlist+Acestreams</link>
+			<regex>
+			<name>hash</name> 
+			<expres>this.loadPlayer\("(.*?)"</expres>
+			<page>http://www.arenavision.in/av8</page>
+			<referer>http://www.arenavision.in</referer>
+			<setcookie>beget=begetok</setcookie>
+			</regex>
+ 	</regex><thumbnail>http://estaticos.sport.es/resources/jpg/1/0/rivales-city-madrid-1460713639801.jpg</thumbnail>
+<fanart>http://bestfootballers.com/wp-content/uploads/2015/07/Real-Madrid-vs-Manchester-City-MCG.jpg</fanart>
+</item>	
+
+
+<item>
+<title>[COLOR coral] • [/COLOR] [COLOR deepskyblue] Real Madrid vs Manchester City /es[/COLOR]  [8] - [COLOR lightslategray][I]ACESTREAM[/I][/COLOR]</title>
+<link>plugin://program.plexus/?url=$doregex[hash]&amp;mode=1&amp;name=Adryanlist+Acestreams</link>
+			<regex>
+			<name>hash</name> 
+			<expres>this.loadPlayer\("(.*?)"</expres>
+			<page>http://www.arenavision.in/av7</page>
+			<referer>http://www.arenavision.in</referer>
+			<setcookie>beget=begetok</setcookie>
+			</regex>
+ 	</regex><thumbnail>http://estaticos.sport.es/resources/jpg/1/0/rivales-city-madrid-1460713639801.jpg</thumbnail>
+<fanart>http://bestfootballers.com/wp-content/uploads/2015/07/Real-Madrid-vs-Manchester-City-MCG.jpg</fanart>
+</item>	
+
+
+<item>
+<title>[COLOR coral] • [/COLOR] [COLOR deepskyblue] Real Madrid vs Manchester City /de[/COLOR]  [9] - [COLOR lightslategray][I]ACESTREAM[/I][/COLOR]</title>
+<link>plugin://program.plexus/?url=$doregex[hash]&amp;mode=1&amp;name=Adryanlist+Acestreams</link>
+			<regex>
+			<name>hash</name> 
+			<expres>this.loadPlayer\("(.*?)"</expres>
+			<page>http://www.arenavision.in/av11</page>
+			<referer>http://www.arenavision.in</referer>
+			<setcookie>beget=begetok</setcookie>
+			</regex>
+ 	</regex><thumbnail>http://estaticos.sport.es/resources/jpg/1/0/rivales-city-madrid-1460713639801.jpg</thumbnail>
+<fanart>http://bestfootballers.com/wp-content/uploads/2015/07/Real-Madrid-vs-Manchester-City-MCG.jpg</fanart>
+</item>	
+
+
+<item>
+<title>[COLOR coral] • [/COLOR] [COLOR deepskyblue] Real Madrid vs Manchester City /de[/COLOR]  [10] - [COLOR lightslategray][I]ACESTREAM[/I][/COLOR]</title>
+<link>plugin://program.plexus/?url=$doregex[hash]&amp;mode=1&amp;name=Adryanlist+Acestreams</link>
+			<regex>
+			<name>hash</name> 
+			<expres>this.loadPlayer\("(.*?)"</expres>
+			<page>http://www.arenavision.in/av12</page>
+			<referer>http://www.arenavision.in</referer>
+			<setcookie>beget=begetok</setcookie>
+			</regex>
+ 	</regex><thumbnail>http://estaticos.sport.es/resources/jpg/1/0/rivales-city-madrid-1460713639801.jpg</thumbnail>
+<fanart>http://bestfootballers.com/wp-content/uploads/2015/07/Real-Madrid-vs-Manchester-City-MCG.jpg</fanart>
+</item>	
+
+
+<item>
+<title>[COLOR coral] • [/COLOR] [COLOR deepskyblue] Real Madrid vs Manchester City /en[/COLOR]  [11] - [COLOR lightslategray][I]ACESTREAM[/I][/COLOR]</title>
+<link>plugin://program.plexus/?url=$doregex[hash]&amp;mode=1&amp;name=Adryanlist+Acestreams</link>
+			<regex>
+			<name>hash</name> 
+			<expres>this.loadPlayer\("(.*?)"</expres>
+			<page>http://www.arenavision.in/av14</page>
+			<referer>http://www.arenavision.in</referer>
+			<setcookie>beget=begetok</setcookie>
+			</regex>
+ 	</regex><thumbnail>http://estaticos.sport.es/resources/jpg/1/0/rivales-city-madrid-1460713639801.jpg</thumbnail>
+<fanart>http://bestfootballers.com/wp-content/uploads/2015/07/Real-Madrid-vs-Manchester-City-MCG.jpg</fanart>
+</item>	
+
+
+
+<item>
+<title>[COLOR coral] • [/COLOR] [COLOR deepskyblue] Real Madrid vs Manchester City /en[/COLOR]  [12] - [COLOR lightslategray][I]ACESTREAM[/I][/COLOR]</title>
+<link>plugin://program.plexus/?url=$doregex[hash]&amp;mode=1&amp;name=Adryanlist+Acestreams</link>
+			<regex>
+			<name>hash</name> 
+			<expres>this.loadPlayer\("(.*?)"</expres>
+			<page>http://www.arenavision.in/av15</page>
+			<referer>http://www.arenavision.in</referer>
+			<setcookie>beget=begetok</setcookie>
+			</regex>
+ 	</regex><thumbnail>http://estaticos.sport.es/resources/jpg/1/0/rivales-city-madrid-1460713639801.jpg</thumbnail>
+<fanart>http://bestfootballers.com/wp-content/uploads/2015/07/Real-Madrid-vs-Manchester-City-MCG.jpg</fanart>
+</item>	
+
+
+
+
+
