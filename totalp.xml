@@ -1,0 +1,528 @@
+<iem>
+<title>[B]Selecciona una lista[/B]</title>
+
+<link>NA</link>
+<externallink>$doregex[select]</externallink>
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+   import xbmcgui
+   dialog = xbmcgui.Dialog()
+   ret = dialog.select('Seleciona una Lista ', ['BlackGhost', 'BlackGhost IZZI', 'ExabyteTV', 'TecnoTV', 'G67', 'Sr.RegioTV', 'PremierTV', 'GSat Latino', 'ChileIPTV'])
+   lists = ['http://blackaddon.rf.gd/gray/tecno.m3u', 'https://pastebin.com/raw/cyH7vTu8', 'http://exabytetv.info/lista.m3u', 'http://tecnotv.xyz/lista.m3u', 'https://raw.githubusercontent.com/G67/G/master/G67C.m3u', 'http://srregio.net/regiotv.m3u', 'http://www.premieriptv.cl/freeiptv.m3u', 'http://www.geantsat.com/freeiptv/s9.m3u', 'http://chileiptv.cl/cl.m3u']
+   return lists[ret]
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/tp.jpg</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>•  [B]TotalPlay[/B]  [ Opcion [B]IPTVCanales[/B] ][B]   [/B]  </title>
+<link>NA</link>2
+<externallink>http://blackaddon.rf.gd/gray/claro.m3u</externallink>
+<thumbnail>http://blackaddon.rf.gd/gray/img/tp.jpg</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart></item>
+
+
+
+
+
+<item>
+<title>•  [B]TotalPlay[/B]  [ Opcion [B]Latinos fta[/B] ][B]   [/B]  </title>
+<link>NA</link>2
+<externallink>http://blackaddon.rf.gd/gray/fta2.m3u</externallink>
+<thumbnail>http://blackaddon.rf.gd/gray/img/tp.jpg</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart></item>
+
+
+
+
+
+			<item>
+		<title>•  [B]TotalPlay[/B]  [ Opcion [B]TecnoTV[/B] ][B]  [/B]  </title>
+<link>NA</link>
+<externallink>http://tecnotv.xyz/lista.m3u</externallink>
+ 			<thumbnail>http://blackaddon.rf.gd/gray/img/tp.jpg</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart></item>
+
+
+
+			<item>
+		<title>•  [B]TotalPlay[/B]  [ Opcion [B]Regio[/B] ][B]  [/B]  </title>
+<link>NA</link>
+<externallink>http://srregio.xyz/regiotv.m3u</externallink>
+ 			<thumbnail>http://blackaddon.rf.gd/gray/img/tp.jpg</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart></item>
+
+
+<item>
+<title>•  [B]TotalPlay[/B]  [ Opcion [B]Fanstv[/B] ][B]   [/B]  </title>
+<link>NA</link>2
+<externallink>http://blackaddon.rf.gd/gray/fanstv.m3u</externallink>
+<thumbnail>http://blackaddon.rf.gd/gray/img/tp.jpg</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart></item>
+
+
+
+<item>
+<title>•  [B]TotalPlay[/B]  [ Opcion [B]CECETV[/B] ][B]   [/B]  </title>
+<link>NA</link>2
+<externallink>https://cecegeek.com/cecetv.m3u</externallink>
+<thumbnail>http://blackaddon.rf.gd/gray/img/tp.jpg</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart></item>
+
+
+
+
+
+
+
+
+ 
+
+<item>
+<title>•  [B]TotalPlay[/B]  [ Opcion [B]temp2[/B] ][B]   [/B]  </title>
+<link>NA</link>2
+<externallink>http://blackaddon.rf.gd/gray/temp2.m3u</externallink>
+<thumbnail>http://blackaddon.rf.gd/gray/img/tp.jpg</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart></item>
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>•  [B]TotalPlay[/B]  [ Opcion [B]ChileIPTV[/B] ][B]   [/B]  </title>
+<link>NA</link>2
+<externallink>http://chileiptv.cl/cl.m3u</externallink>
+<thumbnail>http://blackaddon.rf.gd/gray/img/tp.jpg</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart></item>
+
+
+
+
+ <itm>
+	<title>•  [B]TotalPlay[/B]  [ Opcion [B]RochaIPTV[/B]  ][B]     [/B]   </title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+	<title>[makelist.param1]</title>
+	<link>[makelist.param2]</link>
+<thumbnail>http://blackaddon.rf.gd/gray/img/tp.jpg</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+]]></listrepeat>
+<expres>#EXTINF:-.*?,(.*)\n.*?(?=http|rtmp|rtsp|mms)(.*[\d|\w])</expres>
+<page>http://www.rochaiptv.ml/lista.m3u</page>
+<agent>$doregex[it]</agent>
+<cookieJar></cookieJar>
+</regex>
+<name>it</name>
+<expres>Agent:"(.*?)";</expres>
+<page>http://blackaddon.rf.gd/gray/fuckit.php</page>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/tp.jpg</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<iem>
+		<title>•  [B]TotalPlay[/B]  [ Opcion [B]1[/B]  ][B][/B]  </title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param3]      ahora:[makelist.param4]</title>
+<link>$doregex[getUrl]|User-Agent=Mozilla/5.0 (iPad; CPU OS 5_1 like Mac OS X; en-us) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.1 Mobile/9B176 Safari/7534.48.3&amp;Referer=http://tvplayerlatino.com/envivo/</link>
+<info>[makelist.param5]</info>
+<regex>
+<name>getUrl</name>
+<expres>source src="(.*?)"</expres>
+<page>[makelist.param1]</page>
+<referer>http://tvplayerlatino.com/envivo/</referer>
+<agent>Mozilla/5.0 (iPad; CPU OS 5_1 like Mac OS X; en-us) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.1 Mobile/9B176 Safari/7534.48.3</agent>
+<origin>http://tvplayerlatino.com/envivo/</origin>
+</regex>
+<thumbnail>[makelist.param2]</thumbnail>
+<thumbnail>http://blackaddon.rf.gd/gray/img/tp.jpg</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+]]></listrepeat>
+<expres>href="(.*?)"[\w\W\s]{0,40}background-image:url\((.*?)\)"[\w\W\s]{0,60}titulo">(.*?)<[\w\W\s]{0,30}programa">(.*?)<[\w\W\s]{0,30}sinopsis">(.*?)<</expres>
+<page>http://tvplayerlatino.com/envivo/</page>
+</regex>
+</item>
+
+
+
+<iem>
+<title>•  [B]TotalPlay[/B]  [ Opcion [B]2[/B]  ][B]  [/B]  </title>
+<link>$doregex[makelist]</link>
+<regex>
+   <name>makelist</name>
+   <listrepeat><![CDATA[
+          <title> [makelist.param1]        </title>
+          <link>http://149.56.21.74:1935/hls_app/[makelist.param2]/$doregex[token]/[makelist.param3]|User-Agent=Lavf/58.20.100&amp;Referer=http://tvplayerlatino.com</link>
+
+		  <regex>
+<name>token</name>
+<expres>(.*)</expres>
+<page>http://service.app.mxl-iptv.tv:8080/api/mxl-iptv/listas/token/get?dato1=IF0gnhFd91LyX0fRTMfzZQ/1KyYXfwNmBVCCA4ndqVe4w/KvJq2/VQsNT%2B6sQGY6IhGW2IdseKt7i1COCbtJ/g%3D%3D&amp;dato2=DnVyFHRhPNWhlva%2BfHqWhe8JwXTvJxTa4I57Xq06AvHoLMx7Iw70MiFTGw/AVL6Ld5R5qu6X%2Bb5YeJqtFgdwWA%3D%3D&amp;type=SG2Fen1Je8n5zeW4ZXlkkWXpbGR5qIQ0/GJYO1yVnnDsOL4hTanwxeZ3LdwsVoVYf8apFbFPvnEYwww8nvRKpw%3D%3D&amp;canal=Xcx%2BJAn52w5cuiqqOIfsLYoUo%2B8CDW2Hg%2BuWtYEWwCrnCJ%2B4RSJb7kOrdyQhJRdi5FE9qEa6Qu7LPWMpeJKuZA%3D%3D</page>
+</regex>
+
+<thumbnail>http://blackaddon.rf.gd/gray/img/tp.jpg</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+
+
+   ]]></listrepeat>
+   <expres>nombre":"(.*?)".*?script\/tv\/(.*?)\/(.*?)"</expres>
+   <page>http://blackaddon.rf.gd/gray/mxl.txt</page>
+   <cookieJar></cookieJar>
+</regex>
+
+<thumbnail>http://blackaddon.rf.gd/gray/img/tp.jpg</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			 <tem>
+
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param2]</title>
+<link>http://hls-content.oneplay.tv/LIVE/H02/[makelist.param1]master.m3u8?authorization=megatv-player</link>
+<thumbnail>NA</thumbnail>
+]]></listrepeat>
+<expres>href="(.*?)" title="(.*?)"</expres>
+<page>http://hls-content.oneplay.tv/LIVE/H02/</page>
+</regex>
+</item>
+
+
+
+ <regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title> [makelist.param2] </title>
+<link> [makelist.param1] </link>
+<thumbnail>NA</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re, requests, HTMLParser
+def GetLSProData(page_data,Cookie_Jar,m):
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:50.0) Gecko/20100101 Firefox/50.0'}
+ sn = 1
+ data = []
+
+ while sn <= 4:
+    site1 = 'http://S1'
+    site2 = 'http://S2blabla'
+    site3 = 'http://Sthree'
+    site4 = 'http://SCUATRO'
+    site= HTMLParser.HTMLParser().site1 + HTMLParser.HTMLParser().site2+ HTMLParser.HTMLParser().site3+ HTMLParser.HTMLParser().site4
+    source = requests.get(site+ str(sn), headers=headers).text
+    data += re.findall('a href="(http:\/\/.*?.mp4)" title="(.*?)"', source)
+    sn += 1
+ return data
+]]></expres>
+<page></page>
+
+
+<regex>
+<name>data</name>
+<expres><![CDATA[#$pyFunction
+import re, requests
+def GetLSProData(page_data,Cookie_Jar,m):
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:50.0) Gecko/20100101 Firefox/50.0'}
+ sn = 1
+ data = []
+ site = 'http://S1', 'http://S2blabla', 'http://Sthree', 'http://SCUATRO'
+ while sn <= 4:
+    source = requests.get(site[sn-1], headers=headers).text
+    data += re.findall('a href="(http:\/\/.*?.mp4)" title="(.*?)"', source)
+    sn += 1
+ return data
+]]></expres>
+</regex>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <iem>
+		<title>•  [B]TotalPlay[/B]  [ Opciones [B][/B]][B]  TecnoTV[/B]  </title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>  [makelist.param1]   </title>
+<link>NA</link><externallink>http://exabytetv.info/[makelist.param1].m3u</externallink>
+<thumbnail>http://blackaddon.rf.gd/gray/img/tp.jpg</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+]]></listrepeat>
+<expres>http:\/\/tecnotv.info\/(.*?).m3u</expres>
+<page>http://tecnotv.info/lremotas.htm</page>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/tp.jpg</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+</item>
+
+
+
+ <itm>
+		<title>•  [B]TotalPlay[/B]  [ Opciones [B][/B]][B]  ExabyteTV[/B]  </title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>  [makelist.param1]   </title>
+<link>NA</link><externallink>http://exabytetv.info/[makelist.param1].m3u</externallink>
+<thumbnail>http://blackaddon.rf.gd/gray/img/tp.jpg</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+]]></listrepeat>
+<expres>http:\/\/exabytetv.info\/(.*?).m3u</expres>
+<page>http://blog.exabytetv.info/listas/</page>
+<agent>Mozilla/5.0 (iPad; CPU OS 5_1 like Mac OS X; en-us) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.1 Mobile/9B176 Safari/7534.48.3</agent>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/tp.jpg</thumbnail>
+<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<iem>
+<title>•  [B]TotalPlay[/B]  [ Opcion 01 [B][/B]  ][B]  Con Agenda EPG [test][/B]  </title>
+<link>$doregex[makelist]</link>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[B][makelist.param3]:[/B] $doregex[test]</title>
+<link>[makelist.param4]</link>
+<thumbnail>[makelist.param2]</thumbnail>
+]]></listrepeat>
+<expres>#EXT[\w\W\s]{0,10}tvg-id="(.*?)"[\w\W\s]{0,10}logo="(.*?)",(.*?)\n(.*)</expres>
+<page>http://blackaddon.rf.gd/gray/tp.m3u</page>
+</regex>
+
+<regex>
+<name>test</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,):
+  import time, requests, re, HTMLParser
+  from bisect import bisect_left
+  time = time.strftime("%Y%m%d%H%M%S", time.gmtime())
+  try:
+   epg = 'http://media.entutele.com/epg/feed.xml'
+   source = requests.get(epg).text
+#   ch = 'TF1'
+   ch = '[makelist.param1]'
+#   ch = 'CANAL\+'
+#   ch = 'France 3 Corse Via Stella'
+#   ch = 'Franceinfo'
+   regex = 'start="(\d+?) .+?channel="' + ch
+   start = re.findall(regex, source)
+   pos = (bisect_left(start, time))
+   t1 = start[pos]
+   t2 = start[pos + 1]
+   regex = 'start="' + t1 + '.+?channel="' + ch + '">[\\n\\r]*.+?title lang="es">(.+?)<'
+   now = re.findall(regex, source)[0]
+   regex = 'start="' + t2 + '.+?channel="' + ch + '">[\\n\\r]*.+?title lang="es">(.+?)<'
+   next = re.findall(regex, source)[0]
+  except:
+   return ' No program data'
+  return ' [B]Ahora: ' + HTMLParser.HTMLParser().unescape(now) + '\n[/B] Despues: ' + HTMLParser.HTMLParser().unescape(next)
+]]></expres>
+<page></page>
+</regex>
+
+</item>
+
+
+
+
+
+
+
+
+ <iem>
+<title>test</title>
+<link>$doregex[makelist]</link>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param1] [makelist.param3] </title>
+<link>$doregex[play]</link>
+<thumbnail>[makelist.param3]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[h2><strong>(.*?)<|td.*?href="(.*?)canal=(.*?)\&.*?src="(.*?)"]]></expres>
+<page>http://iptvcanales.com/</page>
+</regex>
+
+<regex>
+<name>play</name>
+<expres><![CDATA[mpegurl"\ssrc="(.*?)"]]></expres>
+<page>[makelist.param2]canal=[makelist.param3]</page>
+</regex>
+
+
+
+
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>[B]Programacion EPG [entutele] [/B]</title>
+ <link>$doregex[makelist]</link>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[B][makelist.param1][/B][makelist.param2] [makelist.param3]        </title>
+<link>$doregex[ip]|User-Agent=iPad</link>
+<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[h3>(.*?)<|time">(.*?)<.*\n.*name">(.*?)<]]></expres>
+<page>https://www.entutele.com/programacion/todos</page>
+</regex>
+ </item>

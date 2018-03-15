@@ -1,0 +1,425 @@
+
+
+
+ <item>
+<title>[B][COLOR deepskyblue]Multicanal[/COLOR][COLOR lightblue] Zonasport01[/B][/COLOR]  [COLOR lightslategray]LigaMx • La Liga • EPL [/COLOR] </title>
+<link>$doregex[get-id]</link>
+<regex>
+<name>get-id</name>
+<expres>file:"(.*?)"</expres>
+<page>http://widestream.io/embed-7230</page>
+</regex>
+<thumbnail>http://adryanlist.org/adryan/img/deportes.jpg</thumbnail></item>
+
+<item>
+<title>[B][COLOR deepskyblue]Multicanal[/COLOR][COLOR lightblue] Zonasport02[/B][/COLOR]  [COLOR lightslategray]LigaMx • La Liga • EPL [/COLOR] </title>
+<link>$doregex[get-id]</link>
+<regex>
+<name>get-id</name>
+<expres>file:"(.*?)"</expres>
+<page>http://widestream.io/embed-7231</page>
+</regex>
+<thumbnail>http://adryanlist.org/adryan/img/deportes.jpg</thumbnail></item>
+
+<item>       
+<title>[B][COLOR deepskyblue]Multicanal[/COLOR][COLOR lightblue] Zonasport03[/B][/COLOR]  [COLOR lightslategray]LigaMx • La Liga • EPL [/COLOR] </title>
+<link>$doregex[rtmp] playpath=$doregex[canal]_$doregex[playpath]$doregex[playpath2] swfUrl=http://p.castamp.com/cplayer.swf live=true timeout=15 swfVfy=1 pageUrl=http://www.castamp.com/embed.php?c=$doregex[canal]&amp;tk=$doregex[it]&amp;vwidth=680&amp;vheight=440</link>
+
+<regex>
+<name>canal</name>	 
+<expres>channel="(.*?)";</expres>	 
+<page>http://zonasports.be/channel.php?id=3</page> 
+</regex>
+	
+<regex>
+<name>it</name>	 
+<expres>Agent:"(.*?)";</expres>	 
+<page>http://adryanlist.org/adryan/fuckit.php</page> 
+</regex>
+
+<regex>
+<name>rtmp</name>
+<expres>.*(?![^"']+50.7.118.3)(?![^"']+50.7.128.2)(rtmp:[^"']+)</expres>
+<page>http://www.castamp.com/embed.php?c=$doregex[canal]&amp;tk=$doregex[it]&amp;vwidth=680&amp;vheight=440</page>
+ <referer>http://zonasports.be/</referer>
+</regex>
+
+<regex>
+<name>playpath</name>
+<expres>fuifa.*?_(.*?)'</expres>
+<page>http://www.castamp.com/embed.php?c=$doregex[canal]&amp;tk=$doregex[it]&amp;vwidth=680&amp;vheight=440</page>
+ <referer>http://zonasports.be/</referer>
+</regex>
+<regex>
+<name>playpath2</name>
+<expres>fuifa.*?unescape.*?'(.*?)'\W</expres>
+<page>http://www.castamp.com/embed.php?c=$doregex[canal]&amp;tk=$doregex[it]&amp;vwidth=680&amp;vheight=440</page>
+ <referer>http://zonasports.be/</referer>
+</regex>
+<thumbnail>http://adryanlist.org/adryan/img/deportes.jpg</thumbnail></item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<item>       
+<title>[B][COLOR deepskyblue]Multicanal[/COLOR][COLOR lightblue] Zonasport04[/B][/COLOR]  [COLOR lightslategray]LigaMx • La Liga • EPL [/COLOR] </title>
+<link>$doregex[rtmp] playpath=$doregex[canal]_$doregex[playpath]$doregex[playpath2] swfUrl=http://p.castamp.com/cplayer.swf live=true timeout=15 swfVfy=1 pageUrl=http://www.castamp.com/embed.php?c=$doregex[canal]&amp;tk=$doregex[it]&amp;vwidth=680&amp;vheight=440</link>
+
+<regex>
+<name>canal</name>	 
+<expres>channel="(.*?)";</expres>	 
+<page>http://zonasports.be/channel.php?id=4</page> 
+</regex>
+	
+<regex>
+<name>it</name>	 
+<expres>Agent:"(.*?)";</expres>	 
+<page>http://adryanlist.org/adryan/fuckit.php</page> 
+</regex>
+
+<regex>
+<name>rtmp</name>
+<expres>.*(?![^"']+50.7.118.3)(?![^"']+50.7.128.2)(rtmp:[^"']+)</expres>
+<page>http://www.castamp.com/embed.php?c=$doregex[canal]&amp;tk=$doregex[it]&amp;vwidth=680&amp;vheight=440</page>
+ <referer>http://zonasports.be/</referer>
+</regex>
+
+<regex>
+<name>playpath</name>
+<expres>fuifa.*?_(.*?)'</expres>
+<page>http://www.castamp.com/embed.php?c=$doregex[canal]&amp;tk=$doregex[it]&amp;vwidth=680&amp;vheight=440</page>
+ <referer>http://zonasports.be/</referer>
+</regex>
+<regex>
+<name>playpath2</name>
+<expres>fuifa.*?unescape.*?'(.*?)'\W</expres>
+<page>http://www.castamp.com/embed.php?c=$doregex[canal]&amp;tk=$doregex[it]&amp;vwidth=680&amp;vheight=440</page>
+ <referer>http://zonasports.be/</referer>
+</regex>
+<thumbnail>http://adryanlist.org/adryan/img/deportes.jpg</thumbnail></item>
+
+ 
+
+
+
+
+
+
+
+<item>
+<title>[B][COLOR deepskyblue]Multicanal[/COLOR][COLOR lightblue] Zonasport05[/B][/COLOR]  [COLOR lightslategray]LigaMx[/COLOR] </title>
+ <link>$doregex[getUrl]</link>
+ <regex>
+<name>getUrl</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m, param=''):
+   
+    import requests
+    import re
+    import base64
+   
+    try:
+       
+        id = re.findall("id=(.*?)\&", page_data)[0]
+        url = 'http://bro.adca.st/stream.php?id=' + id + ''
+        headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.100 Safari/537.36', 'Referer': 'http://cdn.zonasports.me/c-5x.php'}
+        source = requests.get(url, headers = headers)
+        curl = re.findall('trap = "(.*?)"', source.text)[0]
+        m3u8 = base64.b64decode(curl)
+ 
+        url2 = 'http://bro.adca.st/ckcskr.php'
+        headers2 = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.100 Safari/537.36', 'Referer': url, 'X-Requested-With': 'XMLHttpRequest'}
+        source2 = requests.get(url2, headers = headers2)
+        token = re.findall('"rumba":"(.*?)"', source2.text)[0]
+ 
+        return m3u8 + token + '|Referer=http%3A%2F%2Fbro.adca.st%2Fstream.php%3Fid%3D365%26cache%3D4%26width%3D700%26height%3D480%26stretching%3Duniform%26p%3D1&User-Agent=Mozilla%2F5.0%20%28Windows%20NT%206.1%3B%20WOW64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F54.0.2840.100%20Safari%2F537.36&X-Requested-With=ShockwaveFlash/24.0.0.186'
+ 
+    except Exception as e:
+        print 'wizhdsports: Error: '
+        if hasattr(e, 'code'):
+            print str(e.code)              
+        if hasattr(e, 'reason'):
+            print " " + str(e.reason)
+]]></expres>
+<page>http://cdn.zonasports.me/c-5x.php</page>
+<referer>http://cdn.zonasports.me/</referer>
+<agent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.100 Safari/537.36</agent>
+</regex>
+<thumbnail>http://adryanlist.org/adryan/img/deportes.jpg</thumbnail></item> 
+
+
+
+ 
+
+
+
+
+
+
+<item>
+<title>[B][COLOR deepskyblue]Multicanal[/COLOR][COLOR lightblue] Zonasport06[/B][/COLOR]  [COLOR lightslategray]LigaMx • La Liga • EPL[/COLOR] </title>
+ <link>$doregex[getUrl]</link>
+ <regex>
+<name>getUrl</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m, param=''):
+   
+    import requests
+    import re
+    import base64
+   
+    try:
+       
+        id = re.findall("id=(.*?)\&", page_data)[0]
+        url = 'http://bro.adca.st/stream.php?id=414&cache=4&width=600&height=450&stretching=uniform&p=1&c=0'
+        headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.100 Safari/537.36', 'Referer': 'http://cdn.zonasports.me/'}
+        source = requests.get(url, headers = headers)
+        curl = re.findall('trap = "(.*?)"', source.text)[0]
+        m3u8 = base64.b64decode(curl)
+ 
+        url2 = 'http://bro.adca.st/ckcskr.php'  
+        headers2 = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.100 Safari/537.36', 'Referer': url, 'X-Requested-With': 'XMLHttpRequest'}
+        source2 = requests.get(url2, headers = headers2)
+        token = re.findall('rumba":"(.*?)"', source2.text)[0]
+ 
+        return m3u8 + token + '|Referer=http%3A%2F%2Fbro.adca.st%2Fstream.php%3Fid%3D2598%26cache%3D4%26width%3D700%26height%3D480%26stretching%3Duniform%26p%3D1&User-Agent=Mozilla%2F5.0%20%28Windows%20NT%206.1%3B%20WOW64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F54.0.2840.100%20Safari%2F537.36&X-Requested-With=ShockwaveFlash/23.0.0.162'
+ 
+    except Exception as e:
+        print 'wizhdsports: Error: '
+        if hasattr(e, 'code'):
+            print str(e.code)              
+        if hasattr(e, 'reason'):
+            print " " + str(e.reason)
+]]></expres>
+<page>http://cdn.zonasports.me/c-6x.php</page>
+<referer>http://cdn.zonasports.me/</referer>
+</regex>
+<thumbnail>http://adryanlist.org/adryan/img/deportes.jpg</thumbnail></item> 
+
+
+<item>
+<title>[B][COLOR deepskyblue]Multicanal[/COLOR][COLOR lightblue] Zonasport07[/B][/COLOR]  [COLOR lightslategray]LigaMx • La Liga • EPL[/COLOR] </title>
+ <link>$doregex[getUrl]</link>
+ <regex>
+<name>getUrl</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m, param=''):
+   
+    import requests
+    import re
+    import base64
+   
+    try:
+       
+        id = re.findall("id=(.*?)\&", page_data)[0]
+        url = 'http://bro.adca.st/stream.php?id=' + id + '&cache=4&width=600&height=450&stretching=uniform&p=1&c=0'
+        headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.100 Safari/537.36', 'Referer': 'http://cdn.zonasports.me/c-7x.php'}
+        source = requests.get(url, headers = headers)
+        curl = re.findall('trap = "(.*?)"', source.text)[0]
+        m3u8 = base64.b64decode(curl)
+ 
+        url2 = 'http://bro.adca.st/ckcskr.php'  
+        headers2 = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.100 Safari/537.36', 'Referer': url, 'X-Requested-With': 'XMLHttpRequest'}
+        source2 = requests.get(url2, headers = headers2)
+        token = re.findall('"rumba":"(.*?)"', source2.text)[0]
+ 
+        return m3u8 + token + '|Referer=http%3A%2F%2Fbro.adca.st%2Fstream.php%3Fid%3D2598%26cache%3D4%26width%3D700%26height%3D480%26stretching%3Duniform%26p%3D1&User-Agent=Mozilla%2F5.0%20%28Windows%20NT%206.1%3B%20WOW64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F54.0.2840.100%20Safari%2F537.36&X-Requested-With=ShockwaveFlash/23.0.0.162'
+ 
+    except Exception as e:
+        print 'wizhdsports: Error: '
+        if hasattr(e, 'code'):
+            print str(e.code)              
+        if hasattr(e, 'reason'):
+            print " " + str(e.reason)
+]]></expres>
+<page>http://cdn.zonasports.me/c-7x.php</page>
+<referer>http://cdn.zonasports.me/</referer>
+<agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:19.0) Gecko/20100101 Firefox/19.0</agent>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://adryanlist.org/adryan/img/deportes.jpg</thumbnail></item> 
+
+
+
+
+
+<item>
+<title>[B][COLOR deepskyblue]Multicanal[/COLOR][COLOR lightblue] Zonasport08[/B][/COLOR]  [COLOR lightslategray]LigaMx • La Liga • EPL[/COLOR] </title>
+ <link>$doregex[getUrl]</link>
+ <regex>
+<name>getUrl</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m, param=''):
+   
+    import requests
+    import re
+    import base64
+   
+    try:
+       
+        id = re.findall("id=(.*?)\&", page_data)[0]
+        url = 'http://bro.adca.st/stream.php?id=' + id + '&cache=4&width=600&height=450&stretching=uniform&p=1&c=0'
+        headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.100 Safari/537.36', 'Referer': 'http://cdn.zonasports.me/c-8x.php'}
+        source = requests.get(url, headers = headers)
+        curl = re.findall('trap = "(.*?)"', source.text)[0]
+        m3u8 = base64.b64decode(curl)
+ 
+        url2 = 'http://bro.adca.st/ckcskr.php'  
+        headers2 = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.100 Safari/537.36', 'Referer': url, 'X-Requested-With': 'XMLHttpRequest'}
+        source2 = requests.get(url2, headers = headers2)
+        token = re.findall('"rumba":"(.*?)"', source2.text)[0]
+ 
+        return m3u8 + token + '|Referer=http%3A%2F%2Fbro.adca.st%2Fstream.php%3Fid%3D2598%26cache%3D4%26width%3D700%26height%3D480%26stretching%3Duniform%26p%3D1&User-Agent=Mozilla%2F5.0%20%28Windows%20NT%206.1%3B%20WOW64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F54.0.2840.100%20Safari%2F537.36&X-Requested-With=ShockwaveFlash/23.0.0.162'
+ 
+    except Exception as e:
+        print 'wizhdsports: Error: '
+        if hasattr(e, 'code'):
+            print str(e.code)              
+        if hasattr(e, 'reason'):
+            print " " + str(e.reason)
+]]></expres>
+<page>http://cdn.zonasports.me/c-8x.php</page>
+<referer>http://cdn.zonasports.me/</referer>
+<agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:19.0) Gecko/20100101 Firefox/19.0</agent>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://adryanlist.org/adryan/img/deportes.jpg</thumbnail></item> 
+
+
+
+
+
+
+
+<item>       
+<title>[B][COLOR deepskyblue]Multicanal[/COLOR][COLOR lightblue] Zonasport09[/B][/COLOR]  [COLOR lightslategray]LigaMx • La Liga • EPL [/COLOR] </title>
+<link>$doregex[rtmp] playpath=$doregex[canal]_$doregex[playpath]$doregex[playpath2] swfUrl=http://p.castamp.com/cplayer.swf live=true timeout=15 swfVfy=1 pageUrl=http://www.castamp.com/embed.php?c=$doregex[canal]&amp;tk=$doregex[it]&amp;vwidth=680&amp;vheight=440</link>
+
+<regex>
+<name>canal</name>	 
+<expres>channel="(.*?)";</expres>	 
+<page>http://zonasports.be/channel.php?id=1</page> 
+</regex>
+	
+<regex>
+<name>it</name>	 
+<expres>Agent:"(.*?)";</expres>	 
+<page>http://adryanlist.org/adryan/fuckit.php</page> 
+</regex>
+
+<regex>
+<name>rtmp</name>
+<expres>.*(?![^"']+50.7.118.3)(?![^"']+50.7.128.2)(rtmp:[^"']+)</expres>
+<page>http://www.castamp.com/embed.php?c=$doregex[canal]&amp;tk=$doregex[it]&amp;vwidth=680&amp;vheight=440</page>
+ <referer>http://zonasports.be/</referer>
+</regex>
+
+<regex>
+<name>playpath</name>
+<expres>fuifa.*?_(.*?)'</expres>
+<page>http://www.castamp.com/embed.php?c=$doregex[canal]&amp;tk=$doregex[it]&amp;vwidth=680&amp;vheight=440</page>
+ <referer>http://zonasports.be/</referer>
+</regex>
+<regex>
+<name>playpath2</name>
+<expres>fuifa.*?unescape.*?'(.*?)'\W</expres>
+<page>http://www.castamp.com/embed.php?c=$doregex[canal]&amp;tk=$doregex[it]&amp;vwidth=680&amp;vheight=440</page>
+ <referer>http://zonasports.be/</referer>
+</regex>
+<thumbnail>http://adryanlist.org/adryan/img/deportes.jpg</thumbnail></item>
+
+ 
+<item>       
+<title>[B][COLOR deepskyblue]Multicanal[/COLOR][COLOR lightblue] Zonasport10[/B][/COLOR]  [COLOR lightslategray]LigaMx • La Liga • EPL [/COLOR] </title>
+<link>$doregex[rtmp] playpath=$doregex[canal]_$doregex[playpath]$doregex[playpath2] swfUrl=http://p.castamp.com/cplayer.swf live=true timeout=15 swfVfy=1 pageUrl=http://www.castamp.com/embed.php?c=$doregex[canal]&amp;tk=$doregex[it]&amp;vwidth=680&amp;vheight=440</link>
+
+<regex>
+<name>canal</name>	 
+<expres>channel="(.*?)";</expres>	 
+<page>http://zonasports.be/channel.php?id=2</page> 
+</regex>
+	
+<regex>
+<name>it</name>	 
+<expres>Agent:"(.*?)";</expres>	 
+<page>http://adryanlist.org/adryan/fuckit.php</page> 
+</regex>
+
+<regex>
+<name>rtmp</name>
+<expres>.*(?![^"']+50.7.118.3)(?![^"']+50.7.128.2)(rtmp:[^"']+)</expres>
+<page>http://www.castamp.com/embed.php?c=$doregex[canal]&amp;tk=$doregex[it]&amp;vwidth=680&amp;vheight=440</page>
+ <referer>http://zonasports.be/</referer>
+</regex>
+
+<regex>
+<name>playpath</name>
+<expres>fuifa.*?_(.*?)'</expres>
+<page>http://www.castamp.com/embed.php?c=$doregex[canal]&amp;tk=$doregex[it]&amp;vwidth=680&amp;vheight=440</page>
+ <referer>http://zonasports.be/</referer>
+</regex>
+<regex>
+<name>playpath2</name>
+<expres>fuifa.*?unescape.*?'(.*?)'\W</expres>
+<page>http://www.castamp.com/embed.php?c=$doregex[canal]&amp;tk=$doregex[it]&amp;vwidth=680&amp;vheight=440</page>
+ <referer>http://zonasports.be/</referer>
+</regex>
+<thumbnail>http://adryanlist.org/adryan/img/deportes.jpg</thumbnail></item>
+
+
+
+
+
+<item>
+<title>[B][COLOR deepskyblue]Multicanal[/COLOR][COLOR lightblue] Zonasport11[/B][/COLOR]  [COLOR lightslategray]LigaMx • La Liga • EPL [/COLOR] </title>
+<link>http://$doregex[ip]$doregex[m3u8]</link>
+			<regex>
+			<name>ip</name>
+			<expres>redirect=(.*)</expres>
+			<page>http://www.publish247.xyz:1935/loadbalancer</page>
+			</regex>
+			<regex>
+			<name>m3u8</name>
+			<expres>ea \+ "(.*?)"</expres>
+			<page>http://www.247bay.tv/membedplayer/zonas1/2/750/420</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.247bay.tv</referer>
+			</regex>
+<thumbnail>http://adryanlist.org/adryan/img/deportes.jpg</thumbnail></item>
+
+
+ 
+
+
+
+<item>
+<title>[B][COLOR deepskyblue]Multicanal[/COLOR][COLOR lightblue] Zonasport12[/B][/COLOR]  [COLOR lightslategray]LigaMx • La Liga • EPL [/COLOR] </title>
+<link>http://$doregex[ip]$doregex[m3u8]</link>
+			<regex>
+			<name>ip</name>
+			<expres>redirect=(.*)</expres>
+			<page>http://www.publish247.xyz:1935/loadbalancer</page>
+			</regex>
+			<regex>
+			<name>m3u8</name>
+			<expres>ea \+ "(.*?)"</expres>
+			<page>http://www.247bay.tv/membedplayer/zona11ad/2/750/420</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.247bay.tv</referer>
+			</regex>
+<thumbnail>http://adryanlist.org/adryan/img/deportes.jpg</thumbnail></item>
+

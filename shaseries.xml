@@ -1,0 +1,488 @@
+
+<item>
+<title>[COLOR lightblue]Pagina 1 [/COLOR] [COLOR gray][I]quasar requerido[/I][/COLOR]</title>
+<link>$doregex[makelist2]</link> 
+<thumbnail> </thumbnail>  
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+   <title>[makelist2.param2]</title>
+    <link>$doregex[makelist]</link>
+       
+]]></listrepeat>
+<expres>class="title" href="http://www.shaanig.org/f67/(.*?)"[\w\W\s]{0,30}">(.*?)HDTV</expres>
+<page>http://www.shaanig.org/f67/</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+   <title>[COLOR lightblue][makelist.param2][/COLOR]</title>
+    
+    <link>plugin://plugin.video.quasar/play?uri=[makelist.param1]</link>
+ <thumbnail>[makelist.param2]</thumbnail>         
+]]></listrepeat>
+<expres>href="(.*?.torrent)">(.*?)torrent</expres>
+<page>http://www.shaanig.org/f67/[makelist2.param1]</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>[COLOR lightblue]Pagina 2 [/COLOR] [COLOR gray][I]quasar requerido[/I][/COLOR]</title>
+<link>$doregex[makelist2]</link> 
+<thumbnail> </thumbnail>  
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+   <title>[makelist2.param2]</title>
+    <link>$doregex[makelist]</link>
+       
+]]></listrepeat>
+<expres>class="title" href="http://www.shaanig.org/f67/(.*?)"[\w\W\s]{0,30}">(.*?)HDTV</expres>
+<page>http://www.shaanig.org/f67/index2.html</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+   <title>[COLOR lightblue][makelist.param2][/COLOR]</title>
+    
+    <link>plugin://plugin.video.quasar/play?uri=[makelist.param1]</link>
+ <thumbnail>[makelist.param2]</thumbnail>         
+]]></listrepeat>
+<expres>href="(.*?.torrent)">(.*?)torrent</expres>
+<page>http://www.shaanig.org/f67/[makelist2.param1]</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>[COLOR lightblue]Pagina 3 [/COLOR] [COLOR gray][I]quasar requerido[/I][/COLOR]</title>
+<link>$doregex[makelist2]</link> 
+<thumbnail> </thumbnail>  
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+   <title>[makelist2.param2]</title>
+    <link>$doregex[makelist]</link>
+       
+]]></listrepeat>
+<expres>class="title" href="http://www.shaanig.org/f67/(.*?)"[\w\W\s]{0,30}">(.*?)HDTV</expres>
+<page>http://www.shaanig.org/f67/index3.html</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+   <title>[COLOR lightblue][makelist.param2][/COLOR]</title>
+    
+    <link>plugin://plugin.video.quasar/play?uri=[makelist.param1]</link>
+ <thumbnail>[makelist.param2]</thumbnail>         
+]]></listrepeat>
+<expres>href="(.*?.torrent)">(.*?)torrent</expres>
+<page>http://www.shaanig.org/f67/[makelist2.param1]</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>[COLOR lightblue]Pagina 4 [/COLOR] [COLOR gray][I]quasar requerido[/I][/COLOR]</title>
+<link>$doregex[makelist2]</link> 
+<thumbnail> </thumbnail>  
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+   <title>[makelist2.param2]</title>
+    <link>$doregex[makelist]</link>
+       
+]]></listrepeat>
+<expres>class="title" href="http://www.shaanig.org/f67/(.*?)"[\w\W\s]{0,30}">(.*?)HDTV</expres>
+<page>http://www.shaanig.org/f67/index4.html</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+   <title>[COLOR lightblue][makelist.param2][/COLOR]</title>
+    
+    <link>plugin://plugin.video.quasar/play?uri=[makelist.param1]</link>
+ <thumbnail>[makelist.param2]</thumbnail>         
+]]></listrepeat>
+<expres>href="(.*?.torrent)">(.*?)torrent</expres>
+<page>http://www.shaanig.org/f67/[makelist2.param1]</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>[COLOR lightblue]Pagina 5 [/COLOR] [COLOR gray][I]quasar requerido[/I][/COLOR]</title>
+<link>$doregex[makelist2]</link> 
+<thumbnail> </thumbnail>  
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+   <title>[makelist2.param2]</title>
+    <link>$doregex[makelist]</link>
+       
+]]></listrepeat>
+<expres>class="title" href="http://www.shaanig.org/f67/(.*?)"[\w\W\s]{0,30}">(.*?)HDTV</expres>
+<page>http://www.shaanig.org/f67/index5.html</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+   <title>[COLOR lightblue][makelist.param2][/COLOR]</title>
+    
+    <link>plugin://plugin.video.quasar/play?uri=[makelist.param1]</link>
+ <thumbnail>[makelist.param2]</thumbnail>         
+]]></listrepeat>
+<expres>href="(.*?.torrent)">(.*?)torrent</expres>
+<page>http://www.shaanig.org/f67/[makelist2.param1]</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>[COLOR lightblue]Pagina 6 [/COLOR] [COLOR gray][I]quasar requerido[/I][/COLOR]</title>
+<link>$doregex[makelist2]</link> 
+<thumbnail> </thumbnail>  
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+   <title>[makelist2.param2]</title>
+    <link>$doregex[makelist]</link>
+       
+]]></listrepeat>
+<expres>class="title" href="http://www.shaanig.org/f67/(.*?)"[\w\W\s]{0,30}">(.*?)HDTV</expres>
+<page>http://www.shaanig.org/f67/index6.html</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+   <title>[COLOR lightblue][makelist.param2][/COLOR]</title>
+    
+    <link>plugin://plugin.video.quasar/play?uri=[makelist.param1]</link>
+ <thumbnail>[makelist.param2]</thumbnail>         
+]]></listrepeat>
+<expres>href="(.*?.torrent)">(.*?)torrent</expres>
+<page>http://www.shaanig.org/f67/[makelist2.param1]</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>[COLOR lightblue]Pagina 7 [/COLOR] [COLOR gray][I]quasar requerido[/I][/COLOR]</title>
+<link>$doregex[makelist2]</link> 
+<thumbnail> </thumbnail>  
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+   <title>[makelist2.param2]</title>
+    <link>$doregex[makelist]</link>
+       
+]]></listrepeat>
+<expres>class="title" href="http://www.shaanig.org/f67/(.*?)"[\w\W\s]{0,30}">(.*?)HDTV</expres>
+<page>http://www.shaanig.org/f67/index7.html</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+   <title>[COLOR lightblue][makelist.param2][/COLOR]</title>
+    
+    <link>plugin://plugin.video.quasar/play?uri=[makelist.param1]</link>
+ <thumbnail>[makelist.param2]</thumbnail>         
+]]></listrepeat>
+<expres>href="(.*?.torrent)">(.*?)torrent</expres>
+<page>http://www.shaanig.org/f67/[makelist2.param1]</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+</item>
+
+
+
+
+
+<item>
+<title>[COLOR lightblue]Pagina 8 [/COLOR] [COLOR gray][I]quasar requerido[/I][/COLOR]</title>
+<link>$doregex[makelist2]</link> 
+<thumbnail> </thumbnail>  
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+   <title>[makelist2.param2]</title>
+    <link>$doregex[makelist]</link>
+       
+]]></listrepeat>
+<expres>class="title" href="http://www.shaanig.org/f67/(.*?)"[\w\W\s]{0,30}">(.*?)HDTV</expres>
+<page>http://www.shaanig.org/f67/index8.html</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+   <title>[COLOR lightblue][makelist.param2][/COLOR]</title>
+    
+    <link>plugin://plugin.video.quasar/play?uri=[makelist.param1]</link>
+ <thumbnail>[makelist.param2]</thumbnail>         
+]]></listrepeat>
+<expres>href="(.*?.torrent)">(.*?)torrent</expres>
+<page>http://www.shaanig.org/f67/[makelist2.param1]</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+</item>
+
+
+
+
+
+
+
+<item>
+<title>[COLOR lightblue]Pagina 9 [/COLOR] [COLOR gray][I]quasar requerido[/I][/COLOR]</title>
+<link>$doregex[makelist2]</link> 
+<thumbnail> </thumbnail>  
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+   <title>[makelist2.param2]</title>
+    <link>$doregex[makelist]</link>
+       
+]]></listrepeat>
+<expres>class="title" href="http://www.shaanig.org/f67/(.*?)"[\w\W\s]{0,30}">(.*?)HDTV</expres>
+<page>http://www.shaanig.org/f67/index9.html</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+   <title>[COLOR lightblue][makelist.param2][/COLOR]</title>
+    
+    <link>plugin://plugin.video.quasar/play?uri=[makelist.param1]</link>
+ <thumbnail>[makelist.param2]</thumbnail>         
+]]></listrepeat>
+<expres>href="(.*?.torrent)">(.*?)torrent</expres>
+<page>http://www.shaanig.org/f67/[makelist2.param1]</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>[COLOR lightblue]Pagina 10 [/COLOR] [COLOR gray][I]quasar requerido[/I][/COLOR]</title>
+<link>$doregex[makelist2]</link> 
+<thumbnail> </thumbnail>  
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+   <title>[makelist2.param2]</title>
+    <link>$doregex[makelist]</link>
+       
+]]></listrepeat>
+<expres>class="title" href="http://www.shaanig.org/f67/(.*?)"[\w\W\s]{0,30}">(.*?)HDTV</expres>
+<page>http://www.shaanig.org/f67/index10.html</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+   <title>[COLOR lightblue][makelist.param2][/COLOR]</title>
+    
+    <link>plugin://plugin.video.quasar/play?uri=[makelist.param1]</link>
+ <thumbnail>[makelist.param2]</thumbnail>         
+]]></listrepeat>
+<expres>href="(.*?.torrent)">(.*?)torrent</expres>
+<page>http://www.shaanig.org/f67/[makelist2.param1]</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

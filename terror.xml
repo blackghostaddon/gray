@@ -1,0 +1,305 @@
+
+
+<item>
+<title>[B]Peliculas HD Terror + [/B]</title>
+<link>$doregex[makelist]</link>
+
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>$pyFunction:'[makelist.param3]'.replace(".mp4", " [I]by BlackGhost[/I]").replace(".avi", " [I]by BlackGhost[/I]")</title>
+        <link>$doregex[getUrl]</link>
+		<thumbnail>http://blackaddon.rf.gd/gray/img/halloween.png</thumbnail>
+		]]></listrepeat>
+<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
+<page>http://diskokosmiko.mx/Jeviathan/cine-terror-23445/list,1,15</page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=[makelist.param1]</page>
+<rawpost>fileId=[makelist.param1]&__RequestVerificationToken=$doregex[tok]</rawpost>
+<referer>http://diskokosmiko.mx/[makelist.param2]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/[makelist.param2]</page>
+<referer>http://diskokosmiko.mx/mexflix17/03peliculas-de-drama30-77318/list,1,15</referer>
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/halloween.png</thumbnail>
+</item>
+
+
+
+<item>
+<title>[B]CINE Terror + [/B]</title>
+<link>$doregex[makelist]</link>
+
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>$pyFunction:'[makelist.param3]'.replace(".mp4", " [I]by BlackGhost[/I]").replace(".avi", " [I]by BlackGhost[/I]")</title>
+        <link>$doregex[getUrl]</link>
+		<thumbnail>http://blackaddon.rf.gd/gray/img/halloween.png</thumbnail>
+		]]></listrepeat>
+<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
+<page>http://diskokosmiko.mx/RickardoBuitron/peliculas-terror-77822/list,1,15</page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=[makelist.param1]</page>
+<rawpost>fileId=[makelist.param1]&__RequestVerificationToken=$doregex[tok]</rawpost>
+<referer>http://diskokosmiko.mx/[makelist.param2]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/[makelist.param2]</page>
+<referer>http://diskokosmiko.mx/mexflix17/03peliculas-de-drama30-77318/list,1,15</referer>
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/halloween.png</thumbnail>
+</item>
+
+
+
+
+<item>
+<title>[B]Suspenso y Terror Latino [/B]</title>
+<link>$doregex[makelist]</link>
+
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>$pyFunction:'[makelist.param3]'.replace(".mp4", " [I]by BlackGhost[/I]").replace(".avi", " [I]by BlackGhost[/I]")</title>
+        <link>$doregex[getUrl]</link>
+		<thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+		]]></listrepeat>
+<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
+<page>http://diskokosmiko.mx/denon/peliculas-de-terror-y-suspenso-en-audio-latino-31804/list,1,15</page>
+<cookieJar></cookieJar>
+</regex>
+
+
+<regex>
+<name>imagen</name>
+<expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres>
+<page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page>
+</regex>
+<regex>
+<name>nombre2</name>
+<expres>$pyFunction:'[makelist.param3]'.replace(" ", "+").replace(".mp4", "").replace(".mkv", "").replace(".avi", "").replace("-", "+")</expres>
+<page></page>
+</regex>
+
+
+
+
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=[makelist.param1]</page>
+<rawpost>fileId=[makelist.param1]&__RequestVerificationToken=$doregex[tok]</rawpost>
+<referer>http://diskokosmiko.mx/[makelist.param2]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/[makelist.param2]</page>
+<referer>http://diskokosmiko.mx/mexflix17/03peliculas-de-drama30-77318/list,1,15</referer>
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+
+<thumbnail>http://blackaddon.rf.gd/gray/img/halloween.png</thumbnail>
+</item>
+
+
+
+
+
+
+
+<item>
+<title>[B]Peliculas Thriller Horror + [/B]</title>
+<link>$doregex[makelist]</link>
+
+
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>$pyFunction:'[makelist.param2]'.replace(".mp4", " [I]by BlackGhost[/I]").replace(".avi", " [I]by BlackGhost[/I]").replace(".mkv", " [I]by BlackGhost[/I]")</title>
+        <link>$doregex[getUrl]</link>
+<thumbnail>https://image.tmdb.org/t/p/original/$doregex[imagen]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[class="name[\w\W\s]{0,35}href="(.*?)"[\w\W\s]{0,50}preview">(.*?)<]]></expres>
+<page>http://kbagi.com/lahanekun/film-horror-thriller-23511/list,1,15</page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>imagen</name>
+<expres><![CDATA[poster_path\":\"\\/(.*?)\"]]></expres>
+<page>https://api.themoviedb.org/3/search/movie?api_key=3d8a2c67653e2f8fd7dd09959e835f02&amp;language=es&amp;query=$doregex[nombre2]</page>
+</regex>
+<regex>
+<name>nombre2</name>
+<expres>$pyFunction:'[makelist.param2]'.replace(" ", "+").replace(".mp4", "").replace(".mkv", "").replace(".avi", "")</expres>
+<page></page>
+</regex>
+
+
+
+ 
+<regex><name>getUrl</name>
+<expres><![CDATA[#$pyFunction
+import re , requests ,json
+def GetLSProData(page_data,Cookie_Jar,m):
+
+ ref = 'http://kbagi.com/' 
+ url='http://kbagi.com[makelist.param1]'
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': ref ,
+            'X-Requested-With' : 'XMLHttpRequest' , 'Accept' : '*/*'}
+ session = requests.Session()
+ r = session.get(url, headers=headers)
+ rv1 = r.cookies
+
+ vfile , vtoken = re.findall('action/DownloadFile.*?fileId.*?value="(.*?)".*?Token".*?value="(.*?)"', r.text)[0]
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr = requests.post('http://kbagi.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers,cookies=rv1 , data=data_a).text
+ nrj=json.loads(nr)
+ nr = nrj['Content']
+ r2 = re.findall(r'(?s)value=\"(.*?)\"', nr)[0]
+ data_a ={'__RequestVerificationToken': r2 , 'Username': 'demodemo' , 'Password' : 'adryanlist'}
+ nr1 = requests.post('http://kbagi.com/action/Account/Login', headers=headers,cookies = rv1 , data=data_a)
+ print nr1.headers['Set-Cookie']
+ rasp = re.findall('ASPXAUTH_v2=(.*?);', nr1.headers['Set-Cookie'])[0]
+ rv1['.ASPXAUTH_v2'] = rasp
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr3 = requests.post('http://kbagi.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers, cookies = rv1 , data=data_a).text
+ r3 = re.findall('DownloadUrl":"(.*?)"', nr3)[0]
+ print r3
+ return r3
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/halloween.png</thumbnail>
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+<item><link>ignorme</link><jsonrpc>plugin://plugin.video.youtube/playlist/PLLxxgrF1QnBgTY1SlXDZMKjaD9BZhxx-2/</jsonrpc><thumbnail>https://i.imgur.com/ZFweFnY.png</thumbnail><title>PACK 1 — 700 PELICULAS DE TERROR</title></item>
+ 
+ 
+ 
+<item><link>ignorme</link><jsonrpc>plugin://plugin.video.youtube/playlist/PLLxxgrF1QnBj-OJo_5IcD4jQzz89ecHhw/</jsonrpc><thumbnail>https://i.imgur.com/ZFweFnY.png</thumbnail><title>PACK 2 - 380 PELICULAS DE TERROR</title></item>
+ 
+ 
+ 
+<item><link>ignorme</link><jsonrpc>plugin://plugin.video.youtube/playlist/PLQo6Q5cN_Mz1kweAJlxuxFMvedRswWHK3/</jsonrpc><thumbnail>https://i.imgur.com/ZFweFnY.png</thumbnail><title>PACK 3 - 1K PELICULAS DE TERROR</title></item>
+ 
+ 
+ 
+<item><link>ignorme</link><jsonrpc>plugin://plugin.video.youtube/playlist/PLLxxgrF1QnBivCVKsFZN_zwQu6ZDh9Ipw/</jsonrpc><thumbnail>https://i.imgur.com/ZFweFnY.png</thumbnail><title>PELÍCULAS - STEPHEN KING FILMOGRAFIA</title></item>
+ 
+ 
+ 
+<item><link>ignorme</link><jsonrpc>plugin://plugin.video.youtube/playlist/PLKG7EX6NsijFD872T4mQif-ia1tiUuT0l/</jsonrpc><thumbnail>https://i.imgur.com/ZFweFnY.png</thumbnail><title>Serie completa Alfred hitchcock presenta 1985-1988</title></item>
+ 
+ 
+ 
+<item><link>ignorme</link><jsonrpc>plugin://plugin.video.youtube/playlist/PLtSe2bb4MBZ9DzeVolo0M2742Top-1K87/</jsonrpc><thumbnail>https://i.imgur.com/ZFweFnY.png</thumbnail><title>SERIE HISTORIAS PARA NO DORMIR</title></item>
+ 
+ 
+ 
+<item><link>ignorme</link><jsonrpc>plugin://plugin.video.youtube/playlist/PLvUynHoF6Z-octXaavM5Xkw7bt7sXfmBo/</jsonrpc><thumbnail>https://i.imgur.com/ZFweFnY.png</thumbnail><title>SERIE EN LOS LIMITES DE LA REALIDAD</title></item>
+ 
+ 
+ 
+<item><link>ignorme</link><jsonrpc>plugin://plugin.video.youtube/playlist/PLhvu3K0rAjwoTp5rOLA71hIp38IPs1sI7/</jsonrpc><thumbnail>https://i.imgur.com/ZFweFnY.png</thumbnail><title>SERIE HISTORIAS DE LA CRIPTA</title></item>
+ 
+ 
+ 
+<item><link>ignorme</link><jsonrpc>plugin://plugin.video.youtube/playlist/PLjwGxAF80__odKyMKoDFDDn-86WLO5Yk6/</jsonrpc><thumbnail>https://i.imgur.com/ZFweFnY.png</thumbnail><title>SERIE LA DIMENSION DESCONOCIDA</title></item>
+ 
+ 
+ 
+<item><link>ignorme</link><jsonrpc>plugin://plugin.video.youtube/playlist/PLMp93nQTlQMBe1_NcswFO2u-sxpf5nh-N/</jsonrpc><thumbnail>https://i.imgur.com/ZFweFnY.png</thumbnail><title>HISTORIAS REALES DE  TERROR</title></item>
+ 
+ 
+ 
+<item><link>ignorme</link><jsonrpc>plugin://plugin.video.youtube/playlist/PL2uyZ-Y8sN0F-Us-zCJpUdbbTFfbJuwA4/</jsonrpc><thumbnail>https://i.imgur.com/ZFweFnY.png</thumbnail><title>DOCUMENTALES DE TERROR</title></item>
+ 
+ 
+ 
+<item><link>ignorme</link><jsonrpc>plugin://plugin.video.youtube/playlist/PLYn6mzqkgzkkNEOFcFiX6YCkCShs76cE4/</jsonrpc><thumbnail>https://i.imgur.com/ZFweFnY.png</thumbnail><title>DOCUMENTALES TERROR 2</title></item>
+ 
+ 
+ 
+<item><link>ignorme</link><jsonrpc>plugin://plugin.video.youtube/playlist/PLLxxgrF1QnBinkXrSdqaC5FwAsjXQt7Xm/</jsonrpc><thumbnail>https://i.imgur.com/ZFweFnY.png</thumbnail><title>PACK 4 — 600  PELICULAS DE TERROR</title></item>
+ 
+ 
+ 
+<item><link>ignorme</link><jsonrpc>plugin://plugin.video.youtube/playlist/PLqivnvaruBVGILSU7zT1chU7PJ4Actf8S/</jsonrpc><thumbnail>https://i.imgur.com/ZFweFnY.png</thumbnail><title>HECHOS PERTURBADORES</title></item>
+ 
+ 
+ 
+<item><link>ignorme</link><jsonrpc>plugin://plugin.video.youtube/playlist/PLShKu0sRclF_TCLGKxzFFpX3EVKCA-4nd/</jsonrpc><thumbnail>https://i.imgur.com/ZFweFnY.png</thumbnail><title>PETICIONES DE PELICULAS DE TERROR</title></item>
+ 
+ 
+ 
+<item><link>ignorme</link><jsonrpc>plugin://plugin.video.youtube/playlist/PLd1t82HTOKhmIbMf18laB8hJ8n5VdQYSn/</jsonrpc><thumbnail>https://i.imgur.com/ZFweFnY.png</thumbnail><title>MUSICA PARA HALLOWEEN</title></item>
+ 
+ 
+ 
+<item><link>ignorme</link><jsonrpc>plugin://plugin.video.youtube/playlist/PLdjV7zWer4CBmFbYLVytP8d7PpmHfBJ62/</jsonrpc><thumbnail>https://i.imgur.com/ZFweFnY.png</thumbnail><title>HISTORIAS DE ESPIRITIMOS </title></item>
+ 
+ 
+ 
+<item><link>ignorme</link><jsonrpc>plugin://plugin.video.youtube/playlist/PLDoKNfjmoxIfAOi5yDpW46w95jvw509e9/</jsonrpc><thumbnail>https://i.imgur.com/ZFweFnY.png</thumbnail><title>AL CAER LA NOCHE RADIO LATINO</title></item>
+ 
+ 
+ 
+<item><link>ignorme</link><jsonrpc>plugin://plugin.video.youtube/playlist/PLvUynHoF6Z-octXaavM5Xkw7bt7sXfmBo/</jsonrpc><thumbnail>https://i.imgur.com/ZFweFnY.png</thumbnail><title>CUENTOS DE HALLOWEEN PARA NIÑOS</title></item>
+ 
+ 
+ 
+<item><link>ignorme</link><jsonrpc>plugin://plugin.video.youtube/playlist/PLP_gz3lCvyIZu-fogu8esAMyRuC_ocxh4/</jsonrpc><thumbnail>https://i.imgur.com/ZFweFnY.png</thumbnail><title>MANUALIDADES Y MAQUILLAJES PARA HALLOWEEN</title></item>
+ 
+ 
+ 
+<item><link>ignorme</link><jsonrpc>plugin://plugin.video.youtube/playlist/PLd1t82HTOKhkVGwxwdcKx2w_hLOmrlFgP/</jsonrpc><thumbnail>https://i.imgur.com/ZFweFnY.png</thumbnail><title>PETICIONES DE HISTORIAS TERROR</title></item>
+ 
+ 
+ 

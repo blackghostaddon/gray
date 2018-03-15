@@ -1,0 +1,421 @@
+
+
+
+       			<item>
+			<title>MAX PRIME</title>
+			<link>$doregex[rtmp] playpath=$doregex[path] swfUrl=http://cdn.shidurlive.com/player.swf swfVfy=1 pageUrl=http://www.shidurlive.com$doregex[do-ping] live=1 timeout=10</link>
+			<regex>
+				<name>rtmp</name>
+				<expres>ova.php.*\n.*\n.*'streamer', '(.*?)'</expres>
+				<page>$doregex[get-page]</page>
+				<cookieJar></cookieJar>
+				<referer>http://tutvgratis.tv/embed/max-prime</referer>
+			</regex>
+			<regex>
+				<name>path</name>
+				<expres>ova.php.*\n.*unescape..(.*?)'</expres>
+				<page>$doregex[get-page]</page>
+				<referer>http://tutvgratis.tv/embed/max-prime</referer>
+			</regex>
+			<regex>
+				<name>do-ping</name>
+				<expres></expres>
+				<page>$doregex[pagewait]$doregex[get-ping]</page>
+				<referer>http://shidurlive.com</referer>
+				<ignorecache/>
+			</regex>
+			<regex>
+				<name>pagewait</name>
+				<expres>$pyFunction: '' if xbmc.sleep(15000) else ''</expres>
+				<page></page>
+				<referer>http://shidurlive.com</referer>
+				<cookieJar></cookieJar>
+			</regex>
+			<regex>
+				<name>get-ping</name>
+				<expres>"pingsts" src="(.*?)"</expres>
+				<page>$doregex[get-page]</page>
+				<cookieJar></cookieJar>
+				<referer>http://tutvgratis.tv/embed/max-prime</referer>
+			</regex>
+			<regex>
+				<name>get-page</name>
+				<expres>src="(.*?)"</expres>
+				<page>http://shidurlive.com/embed/tutvmaxpraime</page>
+				<referer>http://tutvgratis.tv/embed/max-prime</referer>
+				<cookieJar></cookieJar>
+			</regex>
+			<thumbnail>http://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Max_Prime_2012_logo.svg/413px-Max_Prime_2012_logo.svg.png</thumbnail>
+			<fanart>http://www.uvadeplaya.net/Work/Proyectos/MaxPrime_pic2.jpg</fanart>
+            <info>[B]Canal pensado por y para los hombres. La mejor acción, humor, contenido adulto y las actrices más guapas ¡Diversión Garantizada![/B]</info>
+			</item>
+
+       
+	<item>
+			<title>PARAMOUNT CHANNEL LATINOAMERICA</title>
+			<link>$doregex[rtmp] playpath=$doregex[path] swfUrl=http://cdn.shidurlive.com/player.swf swfVfy=1 pageUrl=http://www.shidurlive.com$doregex[do-ping] live=1 timeout=10</link>
+			<regex>
+				<name>rtmp</name>
+				<expres>ova.php.*\n.*\n.*'streamer', '(.*?)'</expres>
+				<page>$doregex[get-page]</page>
+				<cookieJar></cookieJar>
+				<referer>http://tutvgratis.tv/embed/paramount-channel</referer>
+			</regex>
+			<regex>
+				<name>path</name>
+				<expres>ova.php.*\n.*unescape..(.*?)'</expres>
+				<page>$doregex[get-page]</page>
+				<referer>http://tutvgratis.tv/embed/paramount-channel</referer>
+			</regex>
+			<regex>
+				<name>do-ping</name>
+				<expres></expres>
+				<page>$doregex[pagewait]$doregex[get-ping]</page>
+				<referer>http://shidurlive.com</referer>
+				<ignorecache/>
+			</regex>
+			<regex>
+				<name>pagewait</name>
+				<expres>$pyFunction: '' if xbmc.sleep(15000) else ''</expres>
+				<page></page>
+				<referer>http://shidurlive.com</referer>
+				<cookieJar></cookieJar>
+			</regex>
+			<regex>
+				<name>get-ping</name>
+				<expres>"pingsts" src="(.*?)"</expres>
+				<page>$doregex[get-page]</page>
+				<cookieJar></cookieJar>
+				<referer>http://tutvgratis.tv/embed/paramount-channel</referer>
+			</regex>
+			<regex>
+				<name>get-page</name>
+				<expres>src="(.*?)"</expres>
+				<page>http://shidurlive.com/embed/tutvparamme</page>
+				<referer>http://tutvgratis.tv/embed/paramount-channel</referer>
+				<cookieJar></cookieJar>
+			</regex>
+			<thumbnail>http://foromedios.com/uploads/gallery/category_2/sml_gallery_5617_2_255.png</thumbnail>
+			<fanart>http://www.lavozlibre.com/userfiles/2a_decada/image/FOTOS%202012/03%20MARZO%202012/02%20MARZO%202012/paramount.jpg</fanart>
+            <info>[B]Paramount Channel Latinoamérica es un canal de televisión de pago básico,Sus principales rivales son las cadenas Fox, Cinecanal, TNT, Studio Universal, HBO, Cinemax, Golden y AMC.[/B]</info>
+			</item>
+
+	<item>
+			<title>MOVIECITY</title>
+                        <link>$doregex[rtmp] playpath=$doregex[path] swfUrl=http://cdn.shidurlive.com/player.swf swfVfy=1 pageUrl=http://www.shidurlive.com$doregex[do-ping] live=1 timeout=15</link>
+			<regex>
+				<name>rtmp</name>
+				<expres>ova.php.*\n.*\n.*'streamer', '(.*?)'</expres>
+				<page>$doregex[get-page]</page>
+				<cookieJar></cookieJar>
+				<referer>http://www.moviespremiumhd.com</referer>
+			</regex>
+			<regex>
+				<name>path</name>
+				<expres>ova.php.*\n.*unescape..(.*?)'</expres>
+				<page>$doregex[get-page]</page>
+				<referer>http://www.moviespremiumhd.com</referer>
+			</regex>
+			<regex>
+				<name>do-ping</name>
+				<expres></expres>
+				<page>$doregex[pagewait]$doregex[get-ping]</page>
+				<referer>http://shidurlive.com</referer>
+				<ignorecache/>
+			</regex>
+			<regex>
+				<name>pagewait</name>
+				<expres>$pyFunction: '' if xbmc.sleep(15000) else ''</expres>
+				<page></page>
+				<referer>http://shidurlive.com</referer>
+				<cookieJar></cookieJar>
+			</regex>
+			<regex>
+				<name>get-ping</name>
+				<expres>"pingsts" src="(.*?)"</expres>
+				<page>$doregex[get-page]</page>
+				<cookieJar></cookieJar>
+				<referer>http://www.moviespremiumhd.com</referer>
+			</regex>
+			<regex>
+				<name>get-page</name>
+				<expres>src="(.*?)"</expres>
+				<page>http://shidurlive.com/embed/moviecity1</page>
+				<referer>http://www.moviespremiumhd.com</referer>
+				<cookieJar></cookieJar>
+			</regex>
+			<thumbnail>http://www.claro.com.co/portal/co/pc/empresas/claro-tv/canales-premium/images/b6e30bfd-9c01-4ea4-91da-14aa5bd72adamoviecity_hollywood.png</thumbnail>
+			<fanart>http://www.lavozlibre.com/userfiles/2a_decada/image/FOTOS%202012/03%20MARZO%202012/02%20MARZO%202012/paramount.jpg</fanart>
+            <info>[B]FOX+ es un grupo de canales de televisión pagada, fundado en 1997 por LAPTV bajo el nombre de Moviecity, dedicado a la exhibición de películas de estreno por suscripción de América Latina[/B]</info>
+			</item>
+
+<item>
+<title>FOX 1 HD</title>
+<link>http://stream.tutvgratis.tv:8081/TPMHLSWeb/M3U8LiveFile?a=Zm9ybWF0PTImcHJvZmlsZT0yOTcmbGFuPTImcm93cz0yMCZzZXNzaW9uPXdxbTE3a2hoMWFicTY3ZyZsYW49Mg==&f=.m3u8</link>
+<thumbnail>http://www.lyngsat-logo.com/hires/ff/fox_1_oeste.png</thumbnail>
+
+
+</item>
+<item>
+<title>FOX ACTION HD</title>
+<link>http://stream.tutvgratis.tv:8081/TPMHLSWeb/M3U8LiveFile?a=Zm9ybWF0PTImcHJvZmlsZT0zMDEmbGFuPTImcm93cz0yMCZzZXNzaW9uPXdxbTE3a2hoMWFicTY3ZyZsYW49Mg==&f=.m3u8</link>
+<thumbnail>http://cdn.foxplay.com/sites/foxplay-la/files/img/logo-channels/fox-action-hd.png?ver=ec8e0436-7db1-4ca1-860e-e4947739a7fd</thumbnail>
+
+
+</item>
+<item>
+<title>FOX MOVIES HD</title>
+<link>http://stream.tutvgratis.tv:8081/TPMHLSWeb/M3U8LiveFile?a=Zm9ybWF0PTImcHJvZmlsZT0zMDUmbGFuPTImcm93cz0yMCZzZXNzaW9uPXdxbTE3a2hoMWFicTY3ZyZsYW49Mg==&f=.m3u8</link>
+<thumbnail>http://ftpmirror.your.org/pub/wikimedia/images/wikipedia/th/e/ee/127-Fox_Movies_Premium_HD.png</thumbnail>
+
+
+</item>
+<item>
+<title>FOX CINEMA</title>
+<link>http://stream.tutvgratis.tv:8081/TPMHLSWeb/M3U8LiveFile?a=Zm9ybWF0PTImcHJvZmlsZT0zMzgmbGFuPTImcm93cz0yMCZzZXNzaW9uPXdxbTE3a2hoMWFicTY3ZyZsYW49Mg==&f=.m3u8</link>
+<thumbnail>http://cdn.foxplay.com/sites/foxplay-la/files/img/logo-channels/fox-cinema.png</thumbnail>
+
+
+</item>
+<item>
+<title>FOX CINEMA[[COLOR=orange]OPCION 2[/COLOR]</title>
+<link></link>
+<thumbnail>http://cdn.foxplay.com/sites/foxplay-la/files/img/logo-channels/fox-cinema.png</thumbnail>
+
+
+</item>
+<item>
+<title>FOX CLASSICS</title>
+<link>http://stream.tutvgratis.tv:8081/TPMHLSWeb/M3U8LiveFile?a=Zm9ybWF0PTImcHJvZmlsZT0zNDYmbGFuPTImcm93cz0yMCZzZXNzaW9uPXdxbTE3a2hoMWFicTY3ZyZsYW49Mg==&f=.m3u8</link>
+<thumbnail>http://www.lyngsat-logo.com/hires/ff/fox_classics_au.png</thumbnail>
+
+
+</item>
+<item>
+<title>FOX CLASSICS[[COLOR=orange]OPCION 2[/COLOR]</title>
+link></link>
+<thumbnail>http://www.lyngsat-logo.com/hires/ff/fox_classics_au.png</thumbnail>
+
+
+</item>
+<item>
+<title>FOX FAMILY</title>
+<link>http://stream.tutvgratis.tv:8081/TPMHLSWeb/M3U8LiveFile?a=Zm9ybWF0PTImcHJvZmlsZT0zNDImbGFuPTImcm93cz0yMCZzZXNzaW9uPXdxbTE3a2hoMWFicTY3ZyZsYW49Mg==&f=.m3u8</link>
+<thumbnail>http://cdn.foxplay.com/sites/foxplay-la/files/img/logo-channels/fox-family.png?ver=3210b7ff-18ab-46cb-8ae4-4c366e11e778</thumbnail>
+
+
+</item>
+
+<item>
+<title>CINEMAX</title>
+<link>http://stream.tutvgratis.tv:8081/TPMHLSWeb/M3U8LiveFile?a=Zm9ybWF0PTImcHJvZmlsZT0zNTQmbGFuPTImcm93cz0yMCZzZXNzaW9uPXdxbTE3a2hoMWFicTY3ZyZsYW49Mg==&f=.m3u8</link>
+<thumbnail>http://www.imctv.com/wp-content/uploads/2014/03/cinemax21.png</thumbnail>
+
+
+</item>
+<item>
+<title>CINECANAL</title>
+<linkhttp://stream.tutvgratis.tv:8081/TPMHLSWeb/M3U8LiveFile?a=Zm9ybWF0PTImcHJvZmlsZT0zMDkmbGFuPTImcm93cz0yMCZzZXNzaW9uPXdxbTE3a2hoMWFicTY3ZyZsYW49Mg==&f=.m3u8</link>
+<thumbnail>http://foxinternationalchannels.com/wp-content/uploads/2013/10/398-x-226-cinecanal-200x113.png</thumbnail>
+
+
+</item>
+
+                <item>
+			<title>HBO</title>
+			<link>$doregex[rtmp] playpath=$doregex[path] swfUrl=http://cdn.shidurlive.com/player.swf swfVfy=1 pageUrl=http://www.shidurlive.com$doregex[do-ping] live=1 timeout=10</link>
+			<regex>
+				<name>rtmp</name>
+				<expres>ova.php.*\n.*\n.*'streamer', '(.*?)'</expres>
+				<page>$doregex[get-page]</page>
+				<cookieJar></cookieJar>
+				<referer>http://tutvgratis.tv/embed/hbo</referer>
+			</regex>
+			<regex>
+				<name>path</name>
+				<expres>ova.php.*\n.*unescape..(.*?)'</expres>
+				<page>$doregex[get-page]</page>
+				<referer>http://tutvgratis.tv/embed/hbo</referer>
+			</regex>
+			<regex>
+				<name>do-ping</name>
+				<expres></expres>
+				<page>$doregex[pagewait]$doregex[get-ping]</page>
+				<referer>http://shidurlive.com</referer>
+				<ignorecache/>
+			</regex>
+			<regex>
+				<name>pagewait</name>
+				<expres>$pyFunction: '' if xbmc.sleep(15000) else ''</expres>
+				<page></page>
+				<referer>http://shidurlive.com</referer>
+				<cookieJar></cookieJar>
+			</regex>
+			<regex>
+				<name>get-ping</name>
+				<expres>"pingsts" src="(.*?)"</expres>
+				<page>$doregex[get-page]</page>
+				<cookieJar></cookieJar>
+				<referer>http://tutvgratis.tv/embed/hbo</referer>
+			</regex>
+			<regex>
+				<name>get-page</name>
+				<expres>src="(.*?)"</expres>
+				<page>http://shidurlive.com/embed/tutvahbdos</page>
+				<referer>http://tutvgratis.tv/embed/hbo</referer>
+				<cookieJar></cookieJar>
+			</regex>
+			<thumbnail>http://i1.cdnds.net/10/04/ustv_hbo_logo_0.jpg</thumbnail>
+			<fanart>http://www.ksat.com/content/dam/pns/ksat/uploads/2014/7/31/hbo-logo.jpg</fanart>
+             <info>[B]HBO es uno de los canales de televisión por cable y satélite más populares de Estados Unidos y Latinoamérica[/B]</info>
+			</item>
+
+
+          <item>
+<title>HBO</title>
+<link>http://$doregex[ip]$doregex[m3u8]</link>
+<regex>
+<name>ip</name>
+<expres>redirect=(.*)</expres>
+<page>http://www.mipsplayer.com:1935/loadbalancer</page>
+</regex>
+<regex>
+<name>m3u8</name>
+<expres>ea \+ "(.*?)"</expres>
+<page>http://www.mipsplayer.com/membedplayer/hbomalosocity/1/600/385
+</page>
+<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+<referer>http://www.mipsplayer.com</referer>
+</regex>
+<thumbnail>http://i1.cdnds.net/10/04/ustv_hbo_logo_0.jpg</thumbnail>
+			<fanart>http://www.ksat.com/content/dam/pns/ksat/uploads/2014/7/31/hbo-logo.jpg</fanart>
+             <info>[B]HBO es uno de los canales de televisión por cable y satélite más populares de Estados Unidos y Latinoamérica[/B]</info>
+			</item>
+
+			
+			
+<item>
+			<title>HBO 2[</title>
+			<link>$doregex[rtmp] playpath=$doregex[path] swfUrl=http://cdn.shidurlive.com/player.swf swfVfy=1 pageUrl=http://www.shidurlive.com$doregex[do-ping] live=1 timeout=10</link>
+			<regex>
+				<name>rtmp</name>
+				<expres>ova.php.*\n.*\n.*'streamer', '(.*?)'</expres>
+				<page>$doregex[get-page]</page>
+				<cookieJar></cookieJar>
+				<referer>http://tutvgratis.tv/embed/hbo-2</referer>
+			</regex>
+			<regex>
+				<name>path</name>
+				<expres>ova.php.*\n.*unescape..(.*?)'</expres>
+				<page>$doregex[get-page]</page>
+				<referer>http://tutvgratis.tv/embed/hbo-2</referer>
+			</regex>
+			<regex>
+				<name>do-ping</name>
+				<expres></expres>
+				<page>$doregex[pagewait]$doregex[get-ping]</page>
+				<referer>http://shidurlive.com</referer>
+				<ignorecache/>
+			</regex>
+			<regex>
+				<name>pagewait</name>
+				<expres>$pyFunction: '' if xbmc.sleep(15000) else ''</expres>
+				<page></page>
+				<referer>http://shidurlive.com</referer>
+				<cookieJar></cookieJar>
+			</regex>
+			<regex>
+				<name>get-ping</name>
+				<expres>"pingsts" src="(.*?)"</expres>
+				<page>$doregex[get-page]</page>
+				<cookieJar></cookieJar>
+				<referer>http://tutvgratis.tv/embed/hbo-2</referer>
+			</regex>
+			<regex>
+				<name>get-page</name>
+				<expres>src="(.*?)"</expres>
+				<page>http://shidurlive.com/embed/tutvhbodos</page>
+				<referer>http://tutvgratis.tv/embed/hbo-2</referer>
+				<cookieJar></cookieJar>
+			</regex>
+			<thumbnail>http://2.bp.blogspot.com/-rGVUPVTF65I/ThH_459PMgI/AAAAAAAAAHQ/LAG8kKU4lko/s320/lrg_HBO_2.gif</thumbnail>
+			<fanart>http://hbo-la.tv/operadores/axtel_mex/videos_hbo2/previewImage/1.jpg</fanart>
+            <info>[B]HBO 2 es un canal de televisión por cable o satélite de HBO que se transmite las 24 horas del día.[/B]</info>
+			</item>
+
+        
+		
+			
+                    <item>
+			<title>HBO PLUS</title>
+			<link>$doregex[rtmp] playpath=$doregex[path] swfUrl=http://cdn.shidurlive.com/player.swf swfVfy=1 pageUrl=http://www.shidurlive.com$doregex[do-ping] live=1 timeout=10</link>
+			<regex>
+				<name>rtmp</name>
+				<expres>ova.php.*\n.*\n.*'streamer', '(.*?)'</expres>
+				<page>$doregex[get-page]</page>
+				<cookieJar></cookieJar>
+				<referer>http://tutvgratis.tv/embed/hbo-plus</referer>
+			</regex>
+			<regex>
+				<name>path</name>
+				<expres>ova.php.*\n.*unescape..(.*?)'</expres>
+				<page>$doregex[get-page]</page>
+				<referer>http://tutvgratis.tv/embed/hbo-plus</referer>
+			</regex>
+			<regex>
+				<name>do-ping</name>
+				<expres></expres>
+				<page>$doregex[pagewait]$doregex[get-ping]</page>
+				<referer>http://shidurlive.com</referer>
+				<ignorecache/>
+			</regex>
+			<regex>
+				<name>pagewait</name>
+				<expres>$pyFunction: '' if xbmc.sleep(15000) else ''</expres>
+				<page></page>
+				<referer>http://shidurlive.com</referer>
+				<cookieJar></cookieJar>
+			</regex>
+			<regex>
+				<name>get-ping</name>
+				<expres>"pingsts" src="(.*?)"</expres>
+				<page>$doregex[get-page]</page>
+				<cookieJar></cookieJar>
+				<referer>http://tutvgratis.tv/embed/hbo-plus</referer>
+			</regex>
+			<regex>
+				<name>get-page</name>
+				<expres>src="(.*?)"</expres>
+				<page>http://shidurlive.com/embed/tutvhboplus</page>
+				<referer>http://tutvgratis.tv/embed/hbo-plus</referer>
+				<cookieJar></cookieJar>
+			</regex>
+			<thumbnail>http://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/HBO_Plus.png/250px-HBO_Plus.png</thumbnail>
+			<fanart>http://4.bp.blogspot.com/-9tx_CfCuUdA/UxPYMSU6_HI/AAAAAAAAAGk/RyynUHCKRKg/s1600/Banner+Entrada+SultanCable+HBO.png</fanart>
+          <info>[B]No te pierdas los mejores conciertos, shows de comedia, deportes y películas de terror, HBO Plus tiene el mejor entretenimiento ¡te encantará![/B]</info>
+		 </item>
+
+<item>
+			<title>HBO PLUS </title>
+			<link>http://192.99.4.70/channeltv/MX_HBO_PLUS.m3u8</link>
+               <thumbnail>http://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/HBO_Plus.png/250px-HBO_Plus.png</thumbnail>
+			<fanart>http://4.bp.blogspot.com/-9tx_CfCuUdA/UxPYMSU6_HI/AAAAAAAAAGk/RyynUHCKRKg/s1600/Banner+Entrada+SultanCable+HBO.png</fanart>
+          <info>[B]No te pierdas los mejores conciertos, shows de comedia, deportes y películas de terror, HBO Plus tiene el mejor entretenimiento ¡te encantará![/B]</info>
+		 </item>
+
+<item>
+			<title>HBO FAMILY </title>
+			<link>http://192.99.4.70/channeltv/MX_HBO_FAMILY.m3u8</link>
+                        <thumbnail>http://direct-vs-dish.com/media/channel_logos/hbo_family_west.png.300x300_q85.png</thumbnail>
+			<fanart>https://brandgraffismo.files.wordpress.com/2013/02/hbo-family-branding-2012.png</fanart>
+            <info>[B]HBO FAMILY: el mejor canal de televisión para la familia. Las mejores películas, series animadas, cómicas infantiles y juveniles.[/B]</info>
+			</item>
+
+<item>
+			<title>HBO SIGNATURE </title>
+			<link>http://192.99.4.70/channeltv/MX_HBO_SIGNATURE.m3u8</link>
+                        <thumbnail>http://hboasiapromos.s3.amazonaws.com/0_core/fb-signature-480x320.jpg</thumbnail>
+			<fanart>https://brandgraffismo.files.wordpress.com/2013/01/hbo-signature-featured.png?w=400&h=273&crop=1</fanart>
+                        <info>[B]HBO Signature es el primetime más premiado de la TV. Te fascinará su contenido único con las mejores películas, series y producciones originales de HBO.[/B]</info>
+			</item>
+

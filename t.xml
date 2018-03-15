@@ -1,0 +1,364 @@
+
+ 
+<item>
+<title>[COLOR lime]•[/COLOR][COLOR deepskyblue]TotalPlay[/COLOR] [COLOR lightslategray][B][/B] [/COLOR]  </title>
+<link>http://ignorame</link><thumbnail>http://adryanlist.org/adryan/img/tp.jpg</thumbnail><fanart>http://adryanlist.org/fanart.jpg</fanart>
+<externallink>http://adryanlist.org/adryan/totalp.xml</externallink>
+</item>
+
+
+
+
+
+
+
+
+
+<tem>
+<title>[COLOR lime]•[/COLOR][COLOR deepskyblue]TotalPlay [/COLOR] [COLOR lightslategray] Opcion [B]D[/B] • [I]iptv Latino[/I] [/COLOR]  </title>
+<thumbnail>http://adryanlist.org/adryan/img/tp.jpg</thumbnail><fanart>http://adryanlist.org/fanart.jpg</fanart>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+	<title>[makelist.param1]</title>
+	<link>plugin://plugin.video.f4mTester/?url=[makelist.param2]&amp;streamtype=TSDOWNLOADER&amp;name=AdryanList [makelist.param1]</link>
+	<thumbnail>http://adryanlist.org/adryan/img/tp.jpg</thumbnail><fanart>http://adryanlist.org/fanart.jpg</fanart>
+]]></listrepeat>
+<expres>#EXTINF:-1.*,(.*?)\n(.*)</expres>
+<page>http://158.69.127.19:8000/get.php?username=dydlobitos&amp;password=dydlobitos&amp;type=m3u</page>
+<agent>Kodi/15.2 (Windows NT 6.1) App_Bitness/32 Version/15.2-Git:20151019-02e7013</agent>
+</regex>
+</item>http://158.69.127.19:8000/live/dydlobitos/dydlobitos/63.ts
+
+
+
+
+<tem>
+<title>[COLOR lime]•[/COLOR][COLOR deepskyblue]TotalPlay [/COLOR] [COLOR lightslategray] Opcion [B]E[/B] [/COLOR]  </title>
+<thumbnail>http://adryanlist.org/adryan/img/tp.jpg</thumbnail><fanart>http://adryanlist.org/fanart.jpg</fanart>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+	<title>[makelist.param1]</title>
+	<link>[makelist.param2]|User-Agent=iPad</link>
+	<thumbnail>http://adryanlist.org/adryan/img/tp.jpg</thumbnail><fanart>http://adryanlist.org/fanart.jpg</fanart>
+]]></listrepeat>
+<expres>EXTINF:0.*,(.*?)\n(.*)</expres>
+<page>http://exabytetv.info/lista1.m3u</page>
+<agent>VLC</agent>
+</regex>
+</item>
+
+<item>
+<title>[COLOR lime]•[/COLOR][COLOR deepskyblue]TotalPlay [/COLOR] [COLOR lightslategray] Opcion [B]E[/B] [/COLOR]  </title>
+<thumbnail>http://adryanlist.org/adryan/img/tp.jpg</thumbnail><fanart>http://adryanlist.org/fanart.jpg</fanart>
+<link>$doregex[makelist]</link>
+<externallink>http://exabytetv.info/lista1.m3u</externallink>
+</item>
+
+<item>
+<title>[COLOR lime]•[/COLOR][COLOR deepskyblue]TotalPlay [/COLOR] [COLOR lightslategray] Opcion [B]E HD[/B] [/COLOR]  </title>
+<thumbnail>http://adryanlist.org/adryan/img/tp.jpg</thumbnail><fanart>http://adryanlist.org/fanart.jpg</fanart>
+<link>$doregex[makelist]</link>
+<externallink>http://exabytetv.info/lista3.m3u</externallink>
+</item>
+<item>
+<title>[COLOR lime]•[/COLOR][COLOR deepskyblue]TotalPlay [/COLOR] [COLOR lightslategray] Opcion [B]T[/B] [/COLOR]  </title>
+<thumbnail>http://adryanlist.org/adryan/img/tp.jpg</thumbnail><fanart>http://adryanlist.org/fanart.jpg</fanart>
+<link>$doregex[makelist]</link>
+<externallink>http://tv.tecnotv.net/sd.m3u</externallink>
+</item>
+<item>
+<title>[COLOR lime]•[/COLOR][COLOR deepskyblue]TotalPlay [/COLOR] [COLOR lightslategray] Opcion [B]T HD[/B] [/COLOR]  </title>
+<thumbnail>http://adryanlist.org/adryan/img/tp.jpg</thumbnail><fanart>http://adryanlist.org/fanart.jpg</fanart>
+<link>$doregex[makelist]</link>
+<externallink>http://tv.tecnotv.net/hd.m3u</externallink>
+</item>
+<tem>
+<title>[COLOR lime]•[/COLOR][COLOR deepskyblue]TotalPlay [/COLOR] [COLOR lightslategray] Opcion [B]P[/B] [/COLOR]  </title>
+<thumbnail>http://adryanlist.org/adryan/img/tp.jpg</thumbnail><fanart>http://adryanlist.org/fanart.jpg</fanart>
+<link>$doregex[makelist]</link>
+<externallink>http://playhdlatino.com/abdavega/lista.xml</externallink>
+</item>
+
+ 
+
+<item>
+<title>[COLOR lime]•[/COLOR][COLOR deepskyblue]TotalPlay [/COLOR] [COLOR lightslategray] Opcion [B]P+[/B] [/COLOR]  </title>
+<thumbnail>http://adryanlist.org/adryan/img/tp.jpg</thumbnail><fanart>http://adryanlist.org/fanart.jpg</fanart>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+	<title>[makelist.param1]</title>
+	<link>[makelist.param2]</link>
+	<thumbnail>http://adryanlist.org/adryan/img/tp.jpg</thumbnail><fanart>http://adryanlist.org/fanart.jpg</fanart>
+]]></listrepeat>
+<expres>#EXTINF:.*,.*,(.*?)\n(.*)</expres>
+<page>http://playhdlatino.com/abdavega/lista.xml</page>
+<agent>Kodi/15.2 (Windows NT 6.1) App_Bitness/32 Version/15.2-Git:20151019-02e7013</agent>
+</regex>
+</item>
+ 
+
+
+
+ 
+<item>
+<title>[COLOR lime]•[/COLOR][COLOR deepskyblue]TotalPlay [/COLOR] [COLOR lightslategray] Opcion [B]L[/B] [/COLOR]  </title>
+<thumbnail>http://adryanlist.org/adryan/img/tp.jpg</thumbnail><fanart>http://adryanlist.org/fanart.jpg</fanart>
+<link>$doregex[makelist]</link><!-- si la pones  en tu addon favor de mencionar Adryanlist -->
+<regex>
+<name>makelist</name><!-- si la pones  en tu addon favor de mencionar Adryanlist -->
+<listrepeat><![CDATA[
+<title>[makelist.param1]</title>
+<link>$doregex[url]|User-Agent=iPad&amp;Referer=http://latino-webtv.com/player/jwplayer.flash.swf</link>
+<regex>
+<name>url</name>
+<expres>file: "(.*?)"</expres>
+<page>http://latino-webtv.com/embed/$doregex[url2]</page>
+<referer>http://embed.latino-webtv.com/natgeo.html</referer>
+<agent>iPad</agent>
+</regex>
+<regex>
+<name>url2</name>
+<expres>SRC="http://latino-webtv.com/embed/(.*?)"</expres>
+<page>http://embed.latino-webtv.com/$doregex[url3]</page>
+<agent>iPad</agent>
+</regex>
+<regex>
+<name>url3</name>
+<expres>src="http://embed.latino-webtv.com/(.*?)"</expres>
+<page>http://latino-webtv.com/[makelist.param1]</page>
+<agent>iPad</agent>
+</regex>
+<thumbnail>[makelist.param3]</thumbnail> 
+]]></listrepeat> <!-- si la pones  en tu addon favor de mencionar Adryanlist -->
+<expres>href="(.*?)"[\w\W\s]{0,7}alt="(.*?)"[\w\W\s]{0,2}src="(.*?)"</expres>
+<page>http://latino-webtv.com/</page><!-- si la pones  en tu addon favor de mencionar Adryanlist -->
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+</item>
+ 
+ 
+ 
+ 
+
+<item>
+<title>[COLOR lime]•[/COLOR][COLOR deepskyblue]TotalPlay [/COLOR] [COLOR lightslategray] Opcion [B]I[/B] [/COLOR]  </title>
+<thumbnail>http://adryanlist.org/adryan/img/tp.jpg</thumbnail><fanart>http://adryanlist.org/fanart.jpg</fanart>
+<link>$doregex[makelist]</link><!-- si la pones  en tu addon favor de mencionar Adryanlist -->
+<regex>
+<name>makelist</name><!-- si la pones  en tu addon favor de mencionar Adryanlist -->
+<listrepeat><![CDATA[
+<title>[COLOR deepskyblue][makelist.param2] [/COLOR]</title>
+<link>http://$doregex[ip]$doregex[m3u8]</link>
+<regex>
+<name>ip</name>
+<expres>redirect=(.*)</expres>
+<page>http://www.janjuapublisher.com:1935/loadbalancer</page>
+</regex>
+<regex>
+<name>m3u8</name>
+<expres>ea \+ "(.*?)"</expres>
+<page>http://www.janjua.tv/membedplayer/$doregex[canal]/1/680/380</page>
+<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+<referer>http://www.janjua.tv</referer>
+</regex>
+<regex>
+<name>canal</name>
+<expres>channel='(.*?)'</expres>
+<page>http://tvpor-internet.com/[makelist.param1]</page>
+</regex>
+<thumbnail>http://adryanlist.org/adryan/img/tp.jpg</thumbnail><fanart>http://adryanlist.org/fanart.jpg</fanart>
+]]></listrepeat> <!-- si la pones  en tu addon favor de mencionar Adryanlist -->
+<expres>href="(.*?)">(.*?)en-vivo</expres>
+<page>http://tvpor-internet.com/envivo/</page><!-- si la pones  en tu addon favor de mencionar Adryanlist -->
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+</item>
+ 
+
+<tem>
+<title>test</title>
+<link>https://tvplay.cf/$doregex[canal]</link>
+<regex>
+<name>canal</name>
+<expres>src: "(.*?)"</expres>
+<page>https://tvplay.cf/</page>
+<referer>https://tvplay.cf/</referer>
+<agent>Mozilla</agent>
+</regex>
+<thumbnail>http://adryanlist.org/adryan/img/tp.jpg</thumbnail>
+<fanart>http://adryanlist.org/fanart.jpg</fanart>
+ </item>
+ 
+ https://tvplay.cf/canales.php?token=PYzYxdI10gw0SSPpvnUxLo4Y&canal=217&format=.m3u8?
+
+<tem>
+<title>[COLOR lime]•[/COLOR][COLOR deepskyblue]TotalPlay [/COLOR] [COLOR lightslategray] Opcion [B]HD[/B] [/COLOR]  </title>
+<thumbnail>http://adryanlist.org/adryan/img/tp.jpg</thumbnail><fanart>http://adryanlist.org/fanart.jpg</fanart>
+
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+
+<title>[makelist.param2]</title>
+<link>http://live.tutvgratis.tv/view/[makelist.param2].m3u8</link>
+<thumbnail>[makelist.param4]</thumbnail>
+<fanart>http://adryanlist.org/fanart.jpg</fanart>
+
+]]></listrepeat>
+<expres>transition[\w\W\s]{0,6}href="http://tutvgratis.tv/(.*?)/(.*?)"[\w\W\s]{0,20}title="(.*?)">[\w\W\s]{0,6}src="(.*?)"[\w\W\s]{0,28}>(.*?)<</expres>
+<page>http://tutvgratis.tv/</page>
+<agent>Mozilla</agent>
+<referer>http://tutvgratis.tv/</refer>
+</regex>
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>[COLOR lime]•[/COLOR][COLOR deepskyblue]IPTV Latino [/COLOR] [COLOR lightslategray]  [B][/B]  [I]opcion 1[/I] [/COLOR]  </title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+	<title>[makelist.param1]</title>
+	<link>plugin://plugin.video.f4mTester/?url=[makelist.param2]&amp;streamtype=TSDOWNLOADER&amp;name=AdryanList [makelist.param1]</link>
+]]></listrepeat>
+<expres>#EXTINF:-1.*,(.*?)\n(.*)</expres>
+<page>http://51.255.165.99:8000/get.php?username=iptvmexico008&amp;password=monks&amp;type=m3u</page>
+<agent>Kodi/15.2 (Windows NT 6.1) App_Bitness/32 Version/15.2-Git:20151019-02e7013</agent>
+</regex>
+</item>
+
+
+
+
+
+
+
+
+<tem>
+<title>[COLOR lime]•[/COLOR][COLOR deepskyblue]IPTV Latino [/COLOR] [COLOR lightslategray]  [B][/B]  [I]opcion 1[/I] [/COLOR]  </title>
+<thumbnail>http://adryanlist.org/adryan/img/tp.jpg</thumbnail><fanart>http://adryanlist.org/fanart.jpg</fanart>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+	<title>[makelist.param1]</title>
+	<link>plugin://plugin.video.f4mTester/?url=[makelist.param2]&amp;streamtype=TSDOWNLOADER&amp;name=AdryanList [makelist.param1]</link>
+	<thumbnail>http://adryanlist.org/adryan/img/tp.jpg</thumbnail><fanart>http://adryanlist.org/fanart.jpg</fanart>
+]]></listrepeat>
+<expres>#EXTINF:-1.*Latino(.*?)\n(.*)</expres>
+<page>http://hyper.de1-eu.com:8000/get.php?username=samsam&amp;password=samsam&amp;type=m3u</page>
+<agent>Kodi/15.2 (Windows NT 6.1) App_Bitness/32 Version/15.2-Git:20151019-02e7013</agent>
+</regex>
+</item>
+
+
+
+
+<tem>
+<title>[COLOR lime]•[/COLOR][COLOR deepskyblue]IPTV Latino [/COLOR] [COLOR lightslategray]  [B][/B]  [I]opcion 2[/I] [/COLOR]  </title>
+<thumbnail>http://adryanlist.org/adryan/img/tp.jpg</thumbnail><fanart>http://adryanlist.org/fanart.jpg</fanart>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+	<title>[makelist.param1]</title>
+	<link>plugin://plugin.video.f4mTester/?url=[makelist.param2]&amp;streamtype=TSDOWNLOADER&amp;name=AdryanList [makelist.param1]</link>
+	<thumbnail>http://adryanlist.org/adryan/img/tp.jpg</thumbnail><fanart>http://adryanlist.org/fanart.jpg</fanart>
+]]></listrepeat>
+<expres>#EXTINF:-1.*,(.*?)\n(.*)</expres>
+<page>http://198.27.74.188:8000/get.php?username=3456&amp;password=2342&amp;type=m3u</page>
+<agent>Kodi/15.2 (Windows NT 6.1) App_Bitness/32 Version/15.2-Git:20151019-02e7013</agent>
+</regex>
+</item>
+
+
+
+<tem>
+<title>[COLOR lime]•[/COLOR][COLOR deepskyblue]IPTV Latino [/COLOR] [COLOR lightslategray]  [B][/B]  [I]opcion 3[/I] [/COLOR]  </title>
+<thumbnail>http://adryanlist.org/adryan/img/esp.jpg</thumbnail><fanart>http://adryanlist.org/fanart.jpg</fanart>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+	<title>[makelist.param1]</title>
+	<link>plugin://plugin.video.f4mTester/?url=[makelist.param2]&amp;streamtype=TSDOWNLOADER&amp;maxbitrate=0&amp;proxy=None&amp;name=AdryanList: [makelist.param1]</link>
+	<thumbnail>http://adryanlist.org/adryan/img/es.jpg</thumbnail><fanart>http://adryanlist.org/fanart.jpg</fanart>
+]]></listrepeat>
+<expres>#EXTINF:-1,Latino(.*?)\n(.*)</expres>
+<page>http://hyper.de1-eu.com:8000/get.php?username=partovi&amp;password=partovi&amp;type=m3u</page>
+<agent>Kodi/15.2 (Windows NT 6.1) App_Bitness/32 Version/15.2-Git:20151019-02e7013</agent>
+</regex>
+</item>
+
+
+<tem>
+<title>[COLOR lime]•[/COLOR][COLOR deepskyblue]IPTV+ [/COLOR] [COLOR lightslategray]  [B][/B]  [I]opcion 4[/I] [/COLOR]  </title>
+<thumbnail>http://adryanlist.org/adryan/img/esp.jpg</thumbnail><fanart>http://adryanlist.org/fanart.jpg</fanart>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+	<title>[makelist.param1]</title>
+	<link>plugin://plugin.video.f4mTester/?url=[makelist.param2]&amp;streamtype=TSDOWNLOADER&amp;maxbitrate=0&amp;proxy=None&amp;name=AdryanList: [makelist.param1]</link>
+	<thumbnail>http://adryanlist.org/adryan/img/es.jpg</thumbnail><fanart>http://adryanlist.org/fanart.jpg</fanart>
+]]></listrepeat>
+<expres>#EXTINF:-1,(.*?)\n(.*)</expres>
+<page>http://163.172.14.11:12000/get.php?username=sMPb2hEDEKD5to7F&amp;password=qqcw2druLRmgPpV4&amp;type=m3u</page>
+<agent>Kodi/15.2 (Windows NT 6.1) App_Bitness/32 Version/15.2-Git:20151019-02e7013</agent>
+</regex>
+</item>
+<tem>
+<title>[COLOR lime]•[/COLOR][COLOR deepskyblue]IPTV UK [/COLOR] [COLOR lightslategray]  [B][/B]  [I][/I] [/COLOR]  </title>
+<thumbnail>http://adryanlist.org/adryan/img/esp.jpg</thumbnail><fanart>http://adryanlist.org/fanart.jpg</fanart>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+	<title>[makelist.param1]</title>
+	<link>plugin://plugin.video.f4mTester/?url=[makelist.param2]&amp;streamtype=TSDOWNLOADER&amp;maxbitrate=0&amp;proxy=None&amp;name=AdryanList: [makelist.param1]</link>
+	<thumbnail>http://adryanlist.org/adryan/img/es.jpg</thumbnail><fanart>http://adryanlist.org/fanart.jpg</fanart>
+]]></listrepeat>
+<expres>#EXTINF:-1.*,(.*?)\n(.*)</expres>
+<page>http://iptv-volkan.ddns.net:8000/get.php?username=phill&amp;password=phill&amp;type=m3u</page>
+<agent>Kodi/15.2 (Windows NT 6.1) App_Bitness/32 Version/15.2-Git:20151019-02e7013</agent>
+</regex>
+</item>
+

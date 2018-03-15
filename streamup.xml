@@ -1,0 +1,297 @@
+<item>
+<title>[COLOR lightblue]Pagina 01[/COLOR]</title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<item> <title>[COLOR hotpink][makelist.param1][/COLOR][COLOR pink]   ([I][makelist.param2])[/I][/COLOR]</title> 
+<link>https://$doregex[get-response]/app/$doregex[get-id]_aac/playlist.m3u8</link><regex><name>get-response</name><expres>(.*)</expres><page>https://lancer.streamup.com/api/redirect/$doregex[get-id]</page></regex><regex><name>get-id</name><expres>"roomSlug": "(.*?)"</expres><page>http://streamup.com/[makelist.param1]</page></regex>
+<info>[makelist.param2]</info>
+<fanart>[makelist.param3]</fanart>
+<thumbnail>[makelist.param3]</thumbnail>
+</item>
+]]></listrepeat>
+<expres>play-btn" href="/(.*?)"[\w\W\s]{0,50}alt="(.*?)"[\w\W\s]{0,160}src="(.*?)"</expres>
+<page>https://streamup.com/rooms/all?page=1</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+</item>
+
+
+
+<item>
+<title>[COLOR lightblue]Pagina 02[/COLOR]</title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<item> <title>[COLOR hotpink][makelist.param1][/COLOR][COLOR pink]   ([I][makelist.param2])[/I][/COLOR]</title> 
+<link>https://$doregex[get-response]/app/$doregex[get-id]_aac/playlist.m3u8</link><regex><name>get-response</name><expres>(.*)</expres><page>https://lancer.streamup.com/api/redirect/$doregex[get-id]</page></regex><regex><name>get-id</name><expres>"roomSlug": "(.*?)"</expres><page>http://streamup.com/[makelist.param1]</page></regex>
+<info>[makelist.param2]</info>
+<fanart>[makelist.param3]</fanart>
+<thumbnail>[makelist.param3]</thumbnail>
+</item>
+]]></listrepeat>
+<expres>play-btn" href="/(.*?)"[\w\W\s]{0,50}alt="(.*?)"[\w\W\s]{0,160}src="(.*?)"</expres>
+<page>https://streamup.com/rooms/all?page=2</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+</item>
+
+
+
+
+
+
+
+<item>
+<title>[COLOR lightblue]Pagina 03[/COLOR]</title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<item> <title>[COLOR hotpink][makelist.param1][/COLOR][COLOR pink]   ([I][makelist.param2])[/I][/COLOR]</title> 
+<link>https://$doregex[get-response]/app/$doregex[get-id]_aac/playlist.m3u8</link><regex><name>get-response</name><expres>(.*)</expres><page>https://lancer.streamup.com/api/redirect/$doregex[get-id]</page></regex><regex><name>get-id</name><expres>"roomSlug": "(.*?)"</expres><page>http://streamup.com/[makelist.param1]</page></regex>
+<info>[makelist.param2]</info>
+<fanart>[makelist.param3]</fanart>
+<thumbnail>[makelist.param3]</thumbnail>
+</item>
+]]></listrepeat>
+<expres>play-btn" href="/(.*?)"[\w\W\s]{0,50}alt="(.*?)"[\w\W\s]{0,160}src="(.*?)"</expres>
+<page>https://streamup.com/rooms/all?page=3</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+</item>
+
+
+
+
+<item>
+<title>[COLOR lightblue]Pagina 04[/COLOR]</title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<item> <title>[COLOR hotpink][makelist.param1][/COLOR][COLOR pink]   ([I][makelist.param2])[/I][/COLOR]</title> 
+<link>https://$doregex[get-response]/app/$doregex[get-id]_aac/playlist.m3u8</link><regex><name>get-response</name><expres>(.*)</expres><page>https://lancer.streamup.com/api/redirect/$doregex[get-id]</page></regex><regex><name>get-id</name><expres>"roomSlug": "(.*?)"</expres><page>http://streamup.com/[makelist.param1]</page></regex>
+<info>[makelist.param2]</info>
+<fanart>[makelist.param3]</fanart>
+<thumbnail>[makelist.param3]</thumbnail>
+</item>
+]]></listrepeat>
+<expres>play-btn" href="/(.*?)"[\w\W\s]{0,50}alt="(.*?)"[\w\W\s]{0,160}src="(.*?)"</expres>
+<page>https://streamup.com/rooms/all?page=4</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+</item>
+
+
+
+
+<item>
+<title>[COLOR lightblue]Pagina 05[/COLOR]</title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<item> <title>[COLOR hotpink][makelist.param1][/COLOR][COLOR pink]   ([I][makelist.param2])[/I][/COLOR]</title> 
+<link>http://video06-atl.streamup.com/app/[makelist.param1]s-stream_aac/playlist.m3u8</link> 
+<thumbnail>[makelist.param3]</thumbnail></item>
+<info>[makelist.param2]</info>
+<fanart>[makelist.param3]</fanart>
+</item>
+]]></listrepeat>
+<expres>play-btn" href="/(.*?)"[\w\W\s]{0,50}alt="(.*?)"[\w\W\s]{0,160}src="(.*?)"</expres>
+<page>https://streamup.com/rooms/all?page=5</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+</item>
+
+
+
+
+<item>
+<title>[COLOR lightblue]Pagina 06[/COLOR]</title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<item> <title>[COLOR hotpink][makelist.param1][/COLOR][COLOR pink]   ([I][makelist.param2])[/I][/COLOR]</title> 
+<link>http://video06-atl.streamup.com/app/[makelist.param1]s-stream_aac/playlist.m3u8</link> 
+<thumbnail>[makelist.param3]</thumbnail></item>
+<info>[makelist.param2]</info>
+<fanart>[makelist.param3]</fanart>
+</item>
+]]></listrepeat>
+<expres>play-btn" href="/(.*?)"[\w\W\s]{0,50}alt="(.*?)"[\w\W\s]{0,160}src="(.*?)"</expres>
+<page>http://streamup.com/rooms/all?page=6</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+</item>
+
+
+
+
+<item>
+<title>[COLOR lightblue]Pagina 07[/COLOR]</title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<item> <title>[COLOR hotpink][makelist.param1][/COLOR][COLOR pink]   ([I][makelist.param2])[/I][/COLOR]</title> 
+<link>http://video06-atl.streamup.com/app/[makelist.param1]s-stream_aac/playlist.m3u8</link> 
+<thumbnail>[makelist.param3]</thumbnail></item>
+<info>[makelist.param2]</info>
+<fanart>[makelist.param3]</fanart>
+</item>
+]]></listrepeat>
+<expres>play-btn" href="/(.*?)"[\w\W\s]{0,50}alt="(.*?)"[\w\W\s]{0,160}src="(.*?)"</expres>
+<page>http://streamup.com/rooms/all?page=7</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+</item>
+
+
+
+
+<item>
+<title>[COLOR lightblue]Pagina 08[/COLOR]</title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<item> <title>[COLOR hotpink][makelist.param1][/COLOR][COLOR pink]   ([I][makelist.param2])[/I][/COLOR]</title> 
+<link>http://video06-atl.streamup.com/app/[makelist.param1]s-stream_aac/playlist.m3u8</link> 
+<thumbnail>[makelist.param3]</thumbnail></item>
+<info>[makelist.param2]</info>
+<fanart>[makelist.param3]</fanart>
+</item>
+]]></listrepeat>
+<expres>play-btn" href="/(.*?)"[\w\W\s]{0,50}alt="(.*?)"[\w\W\s]{0,160}src="(.*?)"</expres>
+<page>http://streamup.com/rooms/all?page=8</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+</item>
+
+
+
+
+<item>
+<title>[COLOR lightblue]Pagina 09[/COLOR]</title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<item> <title>[COLOR hotpink][makelist.param1][/COLOR][COLOR pink]   ([I][makelist.param2])[/I][/COLOR]</title> 
+<link>http://video06-atl.streamup.com/app/[makelist.param1]s-stream_aac/playlist.m3u8</link> 
+<thumbnail>[makelist.param3]</thumbnail></item>
+<info>[makelist.param2]</info>
+<fanart>[makelist.param3]</fanart>
+</item>
+]]></listrepeat>
+<expres>play-btn" href="/(.*?)"[\w\W\s]{0,50}alt="(.*?)"[\w\W\s]{0,160}src="(.*?)"</expres>
+<page>http://streamup.com/rooms/all?page=9</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+</item>
+
+
+
+
+<item>
+<title>[COLOR lightblue]Pagina 10[/COLOR]</title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<item> <title>[COLOR hotpink][makelist.param1][/COLOR][COLOR pink]   ([I][makelist.param2])[/I][/COLOR]</title> 
+<link>http://video06-atl.streamup.com/app/[makelist.param1]s-stream_aac/playlist.m3u8</link> 
+<thumbnail>[makelist.param3]</thumbnail></item>
+<info>[makelist.param2]</info>
+<fanart>[makelist.param3]</fanart>
+</item>
+]]></listrepeat>
+<expres>play-btn" href="/(.*?)"[\w\W\s]{0,50}alt="(.*?)"[\w\W\s]{0,160}src="(.*?)"</expres>
+<page>http://streamup.com/rooms/all?page=10</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+</item>
+
+
+
+
+<item>
+<title>[COLOR lightblue]Pagina 11[/COLOR]</title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<item> <title>[COLOR hotpink][makelist.param1][/COLOR][COLOR pink]   ([I][makelist.param2])[/I][/COLOR]</title> 
+<link>http://video06-atl.streamup.com/app/[makelist.param1]s-stream_aac/playlist.m3u8</link> 
+<thumbnail>[makelist.param3]</thumbnail></item>
+<info>[makelist.param2]</info>
+<fanart>[makelist.param3]</fanart>
+</item>
+]]></listrepeat>
+<expres>play-btn" href="/(.*?)"[\w\W\s]{0,50}alt="(.*?)"[\w\W\s]{0,160}src="(.*?)"</expres>
+<page>http://streamup.com/rooms/all?page=11</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+</item>
+
+
+
+
+<item>
+<title>[COLOR lightblue]Pagina 12[/COLOR]</title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<item> <title>[COLOR hotpink][makelist.param1][/COLOR][COLOR pink]   ([I][makelist.param2])[/I][/COLOR]</title> 
+<link>http://video06-atl.streamup.com/app/[makelist.param1]s-stream_aac/playlist.m3u8</link> 
+<thumbnail>[makelist.param3]</thumbnail></item>
+<info>[makelist.param2]</info>
+<fanart>[makelist.param3]</fanart>
+</item>
+]]></listrepeat>
+<expres>play-btn" href="/(.*?)"[\w\W\s]{0,50}alt="(.*?)"[\w\W\s]{0,160}src="(.*?)"</expres>
+<page>http://streamup.com/rooms/all?page=12</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+</item>
+
+
+
+
+<item>
+<title>[COLOR lightblue]Pagina 13[/COLOR]</title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<item> <title>[COLOR hotpink][makelist.param1][/COLOR][COLOR pink]   ([I][makelist.param2])[/I][/COLOR]</title> 
+<link>http://video06-atl.streamup.com/app/[makelist.param1]s-stream_aac/playlist.m3u8</link> 
+<thumbnail>[makelist.param3]</thumbnail></item>
+<info>[makelist.param2]</info>
+<fanart>[makelist.param3]</fanart>
+</item>
+]]></listrepeat>
+<expres>play-btn" href="/(.*?)"[\w\W\s]{0,50}alt="(.*?)"[\w\W\s]{0,160}src="(.*?)"</expres>
+<page>http://streamup.com/rooms/all?page=13</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+</item>

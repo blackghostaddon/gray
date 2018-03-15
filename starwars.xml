@@ -1,0 +1,109 @@
+
+
+<item><link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-78x8ywbni7lq-740x360.html</page>	 <referer>http://streamin.to</referer></regex>     <title>Episodio I: La amenaza fantasma</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/wnLXOLmngo0IBLTbGF7DmBTzUrM.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/wdp4unWJWY9hGKN1tM56HeSt6PZ.jpg</fanart>
+     <genre>Acción, Aventura, Ciencia ficción</genre>
+ 
+     <info>La Federación de Comercio ha bloqueado el pequeño planeta de Naboo, gobernado por la joven Reina Amidala, como parte de un plan ideado por Sith Darth Sidious, que manteniéndose en el anonimato dirige a los neimoidianos, que están al mando de la Federación. Amidala es convencida por los Jedis Qui-Gon Jinn y su aprendiz, o padawan, Obi-Wan Kenobi a viajar hasta Coruscant, capital de la República y sede del Consejo Jedi para intentar mediar esta amenaza. Pero esquivando el bloqueo, la nave real resulta dañada, obligando a la tripulación a aterrizar en el desértico y remoto planeta de Tatooine...
+ Dirección : George Lucas
+ Guión : George Lucas
+ Año : 1999
+</info>
+ </item>
+
+
+<item><link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-zhlglt2un70a-740x360.html</page>	 <referer>http://streamin.to</referer></regex>    <title>Episodio II: El ataque de los clones</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/vET2Kmh6WDCuvhZRetHKDH5GDJS.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/560F7BPaxRy8BsOfVU6cW4ivM46.jpg</fanart>
+     <genre>Aventura, Acción, Ciencia ficción</genre>
+ 
+     <info>Corren tenebrosos tiempos para la República. Ésta continúa envuelta en luchas y sumida en el caos. Un movimiento separatista, formado por centenares de planetas y poderosas alianzas y y lideradas por el misterioso conde Dooku, abre nuevas amenazas para la galaxia, a la que ni siquiera los Jedi parecen poder poner freno. Estas maniobras, planeadas hace mucho por una poderosa fuerza, conducen al estallido de las guerras clones y al principio del fin de la República. Para allanar el camino, los separatistas intentan asesinar a la senadora Padme Amidala. Para evitar futuros atentados, su seguridad es encomendada a dos caballeros Jedi...
+ Dirección : George Lucas
+ Guión : Jonathan Hales, George Lucas
+ Año : 2002
+</info>
+ </item>
+
+
+<item><link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-87ve0lvs3x1m-740x360.html</page>	 <referer>http://streamin.to</referer></regex>     <title>Episodio III: La venganza de los Sith</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/gEZyq29omWjph17BDLNdOCdU6DY.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/wUYTfFbfPiZC6Lcyt1nonr69ZmK.jpg</fanart>
+     <genre>Ciencia ficción, Aventura, Acción</genre>
+ 
+     <info>Último capítulo de la saga de Star Wars, en el que Anakin Skywalker definitivamente se pasa al lado oscuro. En el Episodio III aparecerá el General Grievous, un ser implacable mitad-alien mitad-robot, el líder del ejército separatista Droid. Los Sith son los amos del lado oscuro de la Fuerza y los enemigos de los Jedi. Ellos fueron prácticamente exterminados por los Jedi hace mil años, pero la orden del mal sobrevivió en la clandestinidad.
+ Dirección : George Lucas
+ Guión : George Lucas
+ Año : 2005
+</info>
+ </item>
+ 
+ 
+ <item><link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-xay38peuupdt-740x360.html</page>	 <referer>http://streamin.to</referer></regex>     <title>Episodio IV: Una nueva esperanza</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/xCsGhdYGG2zd3PshhLqEtVeyeB9.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/4iJfYYoQzZcONB9hNzg0J0wWyPH.jpg</fanart>
+     <genre>Acción, Aventura, Ciencia ficción</genre>
+ 
+     <info>La princesa Leia, líder del movimiento rebelde que desea reinstaurar la República en la galaxia en los tiempos ominosos del Imperio, es capturada por las malévolas Fuerzas Imperiales, capitaneadas por el implacable Darth Vader, el sirviente más fiel del emperador. El intrépido Luke Skywalker, ayudado por Han Solo, capitán de la nave espacial El Halcón Milenario, y los androides, R2D2 y C3PO, serán los encargados de luchar contra el enemigo y rescatar a la princesa para volver a instaurar la justicia en el seno de la Galaxia.
+ Dirección : George Lucas
+ Guión : George Lucas
+ Año : 1977
+</info>
+ </item>
+
+ 
+  <item><link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-bh26lwoxt9xe-740x360.html</page>	 <referer>http://streamin.to</referer></regex> <title>Episodio V: El imperio contraataca </title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/sRDFFD4cbGypTOM5Yt5SDj6IaKM.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/AkE7LQs2hPMG5tpWYcum847Knre.jpg</fanart>
+     <genre>Acción, Aventura, Ciencia ficción</genre>
+ 
+     <info>Tras un ataque sorpresa de las tropas imperiales a las bases camufladas de la alianza rebelde, Luke Skywalker, en compañía de R2D2, parte hacia el planeta Dagobah en busca de Yoda, el último maestro Jedi, para que le enseñe los secretos de la Fuerza. Mientras, Han Solo, la princesa Leia, Chewbacca, y C3PO esquivan a las fuerzas imperiales y piden refugio al antiguo propietario del Halcón Milenario, Lando Calrissian, en la ciudad minera de Bespin, donde les prepara una trampa urdida por Darth Vader.
+ Dirección : Irvin Kershner
+ Guión : Leigh Brackett, Lawrence Kasdan, George Lucas
+ Año : 1980
+</info>
+ </item>
+ 
+  
+  
+  
+   <item><link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-ta7cy7mdrhq0-740x360.html</page>	 <referer>http://streamin.to</referer></regex>  <title>Episodio VI: El retorno del Jedi </title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/5Y1v4IvOooaAsdEoYqhz3emn1pm.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/bvJOpyHYWACDusvQvXxKEHFNjce.jpg</fanart>
+     <genre>Aventura, Acción, Ciencia ficción</genre>
+ 
+     <info>Luke Skywalker y la princesa Leia deben viajar a Tatooine para liberar a Han Solo. Para conseguirlo, deben infiltrarse en la peligrosa guarida de Jabba the Hutt, el gángster más temido de la galaxia. Una vez reunidos, el equipo recluta a tribus de Ewoks para combatir a las fuerzas imperiales en los bosques de la luna de Endor. Mientras tanto, el Emperador y Darth Vader conspiran para convertir a Luke al lado oscuro, pero el joven Skywalker, por su parte, está decidido a reavivar el espíritu del Jedi en su padre. La guerra civil galáctica culmina en un último enfrentamiento entre las fuerzas rebeldes unificadas y una segunda Estrella de la Muerte, indefensa e incompleta, en una batalla que decidirá el destino de la galaxia.
+ Dirección : Richard Marquand
+ Guión : Lawrence Kasdan, George Lucas
+ Año : 1983
+</info>
+ </item>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+<item><link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-mvfzb8ghqnkx-740x360.html</page>	 <referer>http://streamin.to</referer></regex>   <title>Star Wars: Episodio VII - El Despertar de la Fuerza (VERSION CAM)</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/fqos3bbu4io2sQvERcW8rzGJwq2.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/c2Ax8Rox5g6CneChwy1gmu4UbSb.jpg</fanart>
+     <genre>Acción, Aventura, Ciencia ficción, Fantasía</genre>
+
+     <info>Séptima entrega de la saga Star Wars. Fue confirmada en octubre de 2012, cuando The Walt Disney Company compró LucasFilms por 4.000 millones de dólares. El guionista de &#x27;El imperio contraataca&#x27;, Lawrence Kasdan, repite en esta octava entrega de la franquicia intergaláctica más conocida en la historia del cine con Han Solo, Leia y Luke Skywalker a la cabeza.  &#x27;La guerra de las galaxias: Episodio VIII&#x27; se sitúa en la Era de la Nueva República. Veinte años después de haber terminado la historia de la trilogía original, los grupos políticos siguen intentando reconstruir un gobierno con el resurgir de la Nueva República. La fuerza también siente el cambio y los Maestros Jedi saben que es el momento de regresar.
+ Dirección : J.J. Abrams
+ Guión : J.J. Abrams, Lawrence Kasdan
+ Año : 2015
+</info>
+ </item>
+
+
+ 
+ 
+ 
+   
+   

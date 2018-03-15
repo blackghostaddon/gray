@@ -1,0 +1,268 @@
+
+ <item>
+<title> [COLOR lime]•[/COLOR]    [COLOR deepskyblue][B]BDRip[/B] [/COLOR][COLOR skyblue] [/COLOR] </title>
+<link>$doregex[makelist2]</link>
+
+
+<regex>
+   <name>makelist2</name>
+   <listrepeat><![CDATA[
+       <title>Page [makelist2.param1]</title>
+    
+    <link>$doregex[makelist]</link>
+
+<thumbnail></thumbnail>
+   ]]></listrepeat>
+   <expres><![CDATA[paginado:"(.*?)";]]></expres>
+   <page>http://adryanlist.org/adryan/kozm.txt</page>
+   <cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param1] [COLOR skyblue][[makelist.param5]][/COLOR]</title>
+<link>$doregex[link2]</link>
+<regex>
+<name>link2</name>
+<expres>file:'(.*)'</expres>
+<page>http://streamin.to/embed-$doregex[link]-740x360.html</page>
+<referer>http://streamin.to</referer>
+</regex>	 
+<regex>	 
+<name>link</name>	 
+<expres>http://streamin.to/(.*?)"</expres>	 
+<page>[makelist.param2]</page>	 
+<referer>http://adryanlist.info</referer>	 
+</regex>	
+<thumbnail>[makelist.param3]</thumbnail>
+<fanart>[makelist.param3]</fanart><info>[makelist.param4]</info>
+]]></listrepeat>
+<expres>movieposter.*?title="(.*?)"[\w\W\s]{0,7}href="(.*?)".*?src="(.*?)".*?alt="(.*?)"[\w\W\s]{0,850}title="Idioma">(.*?)<</expres>
+<page>http://www.zpeliculas.com/xfsearch/BDRip/page/[makelist2.param1]/</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <item>
+<title> [COLOR lime]•[/COLOR]    [COLOR deepskyblue][B]DVDRip[/B] [/COLOR][COLOR skyblue] [/COLOR] </title>
+<link>$doregex[makelist2]</link>
+
+
+<regex>
+   <name>makelist2</name>
+   <listrepeat><![CDATA[
+       <title>Page [makelist2.param1]</title>
+    
+    <link>$doregex[makelist]</link>
+
+<thumbnail></thumbnail>
+   ]]></listrepeat>
+   <expres><![CDATA[paginado:"(.*?)";]]></expres>
+   <page>http://adryanlist.org/adryan/kozm.txt</page>
+   <cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param1] [COLOR skyblue][[makelist.param5]][/COLOR]</title>
+<link>$doregex[link2]</link>
+<regex>
+<name>link2</name>
+<expres>file:'(.*)'</expres>
+<page>http://streamin.to/embed-$doregex[link]-740x360.html</page>
+<referer>http://streamin.to</referer>
+</regex>	 
+<regex>	 
+<name>link</name>	 
+<expres>http://streamin.to/(.*?)"</expres>	 
+<page>[makelist.param2]</page>	 
+<referer>http://adryanlist.info</referer>	 
+</regex>	
+<thumbnail>[makelist.param3]</thumbnail>
+<fanart>[makelist.param3]</fanart><info>[makelist.param4]</info>
+]]></listrepeat>
+<expres>title="Descargar(.*?)"[\w\W\s]{0,5}href="(.*?)"[\w\W\s]{0,10}src="(.*?)"[\w\W\s]{0,30}alt="(.*?)"[\w\W\s]{0,850}title="Idioma">(.*?)<</expres>
+<page>http://www.zpeliculas.com/xfsearch/DVDRip/page/[makelist2.param1]/</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <item>
+<title> [COLOR lime]•[/COLOR]    [COLOR deepskyblue][B]HQ[/B] [/COLOR][COLOR skyblue] [/COLOR] </title>
+<link>$doregex[makelist2]</link>
+
+
+<regex>
+   <name>makelist2</name>
+   <listrepeat><![CDATA[
+       <title>Page [makelist2.param1]</title>
+    
+    <link>$doregex[makelist]</link>
+
+<thumbnail></thumbnail>
+   ]]></listrepeat>
+   <expres><![CDATA[paginado:"(.*?)";]]></expres>
+   <page>http://adryanlist.org/adryan/kozm.txt</page>
+   <cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param1] [COLOR skyblue][[makelist.param5]][/COLOR]</title>
+<link>$doregex[link2]</link>
+<regex>
+<name>link2</name>
+<expres>file:'(.*)'</expres>
+<page>http://streamin.to/embed-$doregex[link]-740x360.html</page>
+<referer>http://streamin.to</referer>
+</regex>	 
+<regex>	 
+<name>link</name>	 
+<expres>http://streamin.to/(.*?)"</expres>	 
+<page>[makelist.param2]</page>	 
+<referer>http://adryanlist.info</referer>	 
+</regex>	
+<thumbnail>[makelist.param3]</thumbnail>
+<fanart>[makelist.param3]</fanart><info>[makelist.param4]</info>
+]]></listrepeat>
+<expres>title="Descargar(.*?)"[\w\W\s]{0,5}href="(.*?)"[\w\W\s]{0,10}src="(.*?)"[\w\W\s]{0,30}alt="(.*?)"[\w\W\s]{0,850}title="Idioma">(.*?)<</expres>
+<page>http://www.zpeliculas.com/xfsearch/HQ/page/[makelist2.param1]/</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <item>
+<title> [COLOR lime]•[/COLOR]    [COLOR deepskyblue][B]TS[/B] [/COLOR][COLOR skyblue] [/COLOR] </title>
+<link>$doregex[makelist2]</link>
+
+
+<regex>
+   <name>makelist2</name>
+   <listrepeat><![CDATA[
+       <title>Page [makelist2.param1]</title>
+    
+    <link>$doregex[makelist]</link>
+
+<thumbnail></thumbnail>
+   ]]></listrepeat>
+   <expres><![CDATA[paginado:"(.*?)";]]></expres>
+   <page>http://adryanlist.org/adryan/kozm.txt</page>
+   <cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param1] [COLOR skyblue][[makelist.param5]][/COLOR]</title>
+<link>$doregex[link2]</link>
+<regex>
+<name>link2</name>
+<expres>file:'(.*)'</expres>
+<page>http://streamin.to/embed-$doregex[link]-740x360.html</page>
+<referer>http://streamin.to</referer>
+</regex>	 
+<regex>	 
+<name>link</name>	 
+<expres>http://streamin.to/(.*?)"</expres>	 
+<page>[makelist.param2]</page>	 
+<referer>http://adryanlist.info</referer>	 
+</regex>	
+<thumbnail>[makelist.param3]</thumbnail>
+<fanart>[makelist.param3]</fanart><info>[makelist.param4]</info>
+]]></listrepeat>
+<expres>title="Descargar(.*?)"[\w\W\s]{0,5}href="(.*?)"[\w\W\s]{0,10}src="(.*?)"[\w\W\s]{0,30}alt="(.*?)"[\w\W\s]{0,850}title="Idioma">(.*?)<</expres>
+<page>http://www.zpeliculas.com/xfsearch/TS/page/[makelist2.param1]/</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+</item>
+
+
+
+
+
+
+
+

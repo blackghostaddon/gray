@@ -1,0 +1,264 @@
+
+
+
+
+
+
+<item>
+	<title>Lista Estrenos 2017 </title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+	<title>[makelist.param1]</title>
+	<link>$doregex[id3]</link>
+<thumbnail>[makelist.param2]</thumbnail>
+]]></listrepeat>
+<expres>name": "(.*?)".*?\n.*?image": "(.*?)".*?\n.*?url": "(.*?)"</expres>
+<page>http://w3ubin.com/B1U8o0lOb.w3u</page>
+</regex>
+
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = '[makelist.param3]
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>	
+
+<thumbnail>http://adryanlist.org/adryan/img/icon.png</thumbnail>
+<fanart>http://adryanlist.org/adryan/img/fanart.jpg</fanart>
+</item>	
+
+
+
+
+
+
+
+
+
+<item>
+	<title>Maravillosos 80s y 90s </title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+	<title>[makelist.param1]</title>
+<link>$doregex[id3]</link>
+<thumbnail>[makelist.param2]</thumbnail>
+]]></listrepeat>
+<expres>name": "(.*?)".*?\n\n.*?image": "(.*?)".*?\n\n.*?url": "(.*?)"</expres>
+<page>http://w3ubin.com/H1u44DhoZ.w3u</page>
+</regex>
+
+
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = '[makelist.param3]'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>	
+
+
+<thumbnail>http://adryanlist.org/adryan/img/icon.png</thumbnail>
+<fanart>http://adryanlist.org/adryan/img/fanart.jpg</fanart>
+</item>	
+
+
+
+
+
+<item>
+	<title>Series </title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+	<title>[makelist.param1]</title>
+<link>$doregex[id3]</link>
+<thumbnail>[makelist.param2]</thumbnail>
+]]></listrepeat>
+<expres>name": "(.*?)"[\w\W\s]{0,40}image": "(.*?)"[\w\W\s]{0,40}url": "(.*?)"</expres>
+<page>http://w3ubin.com/SJu-H2XT-.w3u</page>
+</regex>
+
+
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = '[makelist.param3]'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>	
+
+
+<thumbnail>http://adryanlist.org/adryan/img/icon.png</thumbnail>
+<fanart>http://adryanlist.org/adryan/img/fanart.jpg</fanart>
+</item>	
+
+
+
+
+
+<item>
+	<title>Top Peliculas </title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+	<title>[makelist.param1]</title>
+<link>$doregex[id3]</link>
+<thumbnail>[makelist.param2]</thumbnail>
+]]></listrepeat>
+<expres>name":"(.*?)"[\w\W\s]{0,40}image":"(.*?)"[\w\W\s]{0,40}url":"(.*?)"</expres>
+<page>http://w3ubin.com/Sy788v3wZ.w3u</page>
+</regex>
+
+
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = '[makelist.param3]'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>	
+
+
+<thumbnail>http://adryanlist.org/adryan/img/icon.png</thumbnail>
+<fanart>http://adryanlist.org/adryan/img/fanart.jpg</fanart>
+</item>	
+
+
+
+
+
+
+
+<item>
+	<title>Top Series </title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+	<title>[makelist.param1][makelist.param3][makelist.param4]</title>
+<link>$doregex[id3]</link>
+<thumbnail>[makelist.param2]</thumbnail>
+]]></listrepeat>
+<expres>"name": "(.*?)".*?\n.*?image": "(.*?)"|name": "(.*?)",|name":"(.*?)".*?\n.*?url":"(.*?)"</expres>
+<page>http://w3ubin.com/Sy788v3wZ.w3u</page>
+</regex>
+
+
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = '[makelist.param5]'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>	
+
+
+<thumbnail>http://adryanlist.org/adryan/img/icon.png</thumbnail>
+<fanart>http://adryanlist.org/adryan/img/fanart.jpg</fanart>
+</item>	
+
+
+<item>
+	<title>Hispa Pelis </title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+	<title>[makelist.param1] </title>
+<link>$doregex[id3]</link>
+<thumbnail>[makelist.param2]</thumbnail>
+]]></listrepeat>
+<expres>name": "(.*?)".*?\n.*?image": "(.*?)".*?\n.*?url": "(.*?)"</expres>
+<page>https://www.dropbox.com/s/kabr0nnablhz6bc/Hispapelis.w3u?dl=1</page>
+</regex>
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+   import urlresolver
+   url = '[makelist.param3]'
+   try:
+     u = urlresolver.resolve(url)
+   except:
+     u = 'http://adryanlist.org/error.mp4'
+   return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+<thumbnail>http://adryanlist.org/adryan/img/icon.png</thumbnail>
+<fanart>http://adryanlist.org/adryan/img/fanart.jpg</fanart>
+</item>	
+
+
+
+
+
+<iem>
+	<title>Alegre </title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+	<title>[makelist.param1] </title>
+<link>[makelist.param4]|User-Agent=[makelist.param3]</link>
+<thumbnail>[makelist.param2]</thumbnail>
+]]></listrepeat>
+<expres>name": "(.*?)".*?\n.*?image": "(.*?)".*?\n.*?userAgent": "(.*?)".*?\n.*?url": "(.*?)"</expres>
+<page>https://dl.dropboxusercontent.com/s/nht1gbhwgtdzamh/miwis.w3u?dl=0</page>
+</regex>
+
+<thumbnail>http://adryanlist.org/adryan/img/icon.png</thumbnail>
+<fanart>http://adryanlist.org/adryan/img/fanart.jpg</fanart>
+</item>	
+

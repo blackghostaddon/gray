@@ -1,0 +1,319 @@
+
+
+
+
+<item>
+<title>[COLOR skyblue]Walking Dead Temporada 8 capitulo 1  [/COLOR][COLOR aquamarine][/COLOR][COLOR lightslategray][/COLOR]</title>
+
+<link>$doregex[makelist3]</link>
+
+<regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+<SetViewMode>55</SetViewMode>
+<title>[COLOR lightblue]TWD s08 capitulo 1 | [COLOR lightgreen]Idioma:[B][makelist3.param1][/B][/COLOR]  [COLOR lightblue]Calidad:[B][makelist3.param5][/B][/COLOR]  [COLOR aquamarine]Server:[B][makelist3.param3][/B][/COLOR]        [/COLOR]</title>
+<link>$doregex[id3]</link>
+<thumbnail>http://www.seriespapaya.com/[makelist1.param1]</thumbnail>
+<fanart>http://www.seriespapaya.com/[makelist1.param1]</fanart>
+]]></listrepeat>
+<expres><![CDATA[idioma[\w\W\s]{0,17}images\/(.*?)\.p[\w\W\s]{0,30}fecha\"\>\n(.*?)<[\w\W\s]{0,117}(Streama.*?|Gamo.*?|Vidoz.*?|Openlo.*?|Kingv.*?)<[\w\W\s]{0,37}href="(.*?)"[\w\W\s]{0,87}calidad">\n(.*?)<]]></expres>
+<page>http://www.seriespapaya.com/ver/the-walking-dead/temporada-8/capitulo-1.html</page>
+</regex>
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = '$doregex[link]'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+<regex>
+<name>link</name>
+<expres>location\.href=\'(.*?)\'</expres>
+<page>[makelist3.param4]</page>
+</regex>
+
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan//img/adryflix.png</thumbnail><fanart>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan//img/fanart.jpg</fanart></item>
+
+
+
+
+
+<item>
+<title>[COLOR skyblue]Walking Dead Temporada 8 capitulo 2  [/COLOR][COLOR aquamarine][/COLOR][COLOR lightslategray][/COLOR]</title>
+
+<link>$doregex[makelist3]</link>
+
+<regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+<SetViewMode>55</SetViewMode>
+<title>[COLOR lightblue]TWD s08 capitulo 2 | [COLOR lightgreen]Idioma:[B][makelist3.param1][/B][/COLOR]  [COLOR lightblue]Calidad:[B][makelist3.param5][/B][/COLOR]  [COLOR aquamarine]Server:[B][makelist3.param3][/B][/COLOR]        [/COLOR]</title>
+<link>$doregex[id3]</link>
+<thumbnail>http://www.seriespapaya.com/[makelist1.param1]</thumbnail>
+<fanart>http://www.seriespapaya.com/[makelist1.param1]</fanart>
+]]></listrepeat>
+<expres><![CDATA[idioma[\w\W\s]{0,17}images\/(.*?)\.p[\w\W\s]{0,30}fecha\"\>\n(.*?)<[\w\W\s]{0,117}(Streama.*?|Gamo.*?|Vidoz.*?|Openlo.*?|Kingv.*?)<[\w\W\s]{0,37}href="(.*?)"[\w\W\s]{0,87}calidad">\n(.*?)<]]></expres>
+<page>http://www.seriespapaya.com/ver/the-walking-dead/temporada-8/capitulo-2.html</page>
+</regex>
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = '$doregex[link]'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+<regex>
+<name>link</name>
+<expres>location\.href=\'(.*?)\'</expres>
+<page>[makelist3.param4]</page>
+</regex>
+
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan//img/adryflix.png</thumbnail><fanart>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan//img/fanart.jpg</fanart></item>
+
+
+
+
+
+
+
+<item>
+<title>[COLOR skyblue]Walking Dead Temporada 8 capitulo 3  [/COLOR][COLOR aquamarine][/COLOR][COLOR lightslategray][/COLOR]</title>
+
+<link>$doregex[makelist3]</link>
+
+<regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+<SetViewMode>55</SetViewMode>
+<title>[COLOR lightblue]TWD s08 capitulo 3 | [COLOR lightgreen]Idioma:[B][makelist3.param1][/B][/COLOR]  [COLOR lightblue]Calidad:[B][makelist3.param5][/B][/COLOR]  [COLOR aquamarine]Server:[B][makelist3.param3][/B][/COLOR]        [/COLOR]</title>
+<link>$doregex[id3]</link>
+<thumbnail>http://www.seriespapaya.com/[makelist1.param1]</thumbnail>
+<fanart>http://www.seriespapaya.com/[makelist1.param1]</fanart>
+]]></listrepeat>
+<expres><![CDATA[idioma[\w\W\s]{0,17}images\/(.*?)\.p[\w\W\s]{0,30}fecha\"\>\n(.*?)<[\w\W\s]{0,117}(Streama.*?|Gamo.*?|Vidoz.*?|Openlo.*?|Kingv.*?)<[\w\W\s]{0,37}href="(.*?)"[\w\W\s]{0,87}calidad">\n(.*?)<]]></expres>
+<page>http://www.seriespapaya.com/ver/the-walking-dead/temporada-8/capitulo-3.html</page>
+</regex>
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = '$doregex[link]'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+<regex>
+<name>link</name>
+<expres>location\.href=\'(.*?)\'</expres>
+<page>[makelist3.param4]</page>
+</regex>
+
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan//img/adryflix.png</thumbnail><fanart>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan//img/fanart.jpg</fanart></item>
+
+
+
+
+
+
+
+
+<item>
+<title>[COLOR skyblue]Walking Dead Temporada 8 capitulo 4  [/COLOR][COLOR aquamarine][/COLOR][COLOR lightslategray][/COLOR]</title>
+
+<link>$doregex[makelist3]</link>
+
+<regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+<SetViewMode>55</SetViewMode>
+<title>[COLOR lightblue]TWD s08 capitulo 4 | [COLOR lightgreen]Idioma:[B][makelist3.param1][/B][/COLOR]  [COLOR lightblue]Calidad:[B][makelist3.param5][/B][/COLOR]  [COLOR aquamarine]Server:[B][makelist3.param3][/B][/COLOR]        [/COLOR]</title>
+<link>$doregex[id3]</link>
+<thumbnail>http://www.seriespapaya.com/[makelist1.param1]</thumbnail>
+<fanart>http://www.seriespapaya.com/[makelist1.param1]</fanart>
+]]></listrepeat>
+<expres><![CDATA[idioma[\w\W\s]{0,17}images\/(.*?)\.p[\w\W\s]{0,30}fecha\"\>\n(.*?)<[\w\W\s]{0,117}(Streama.*?|Gamo.*?|Vidoz.*?|Openlo.*?|Kingv.*?)<[\w\W\s]{0,37}href="(.*?)"[\w\W\s]{0,87}calidad">\n(.*?)<]]></expres>
+<page>http://www.seriespapaya.com/ver/the-walking-dead/temporada-8/capitulo-4.html</page>
+</regex>
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = '$doregex[link]'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+<regex>
+<name>link</name>
+<expres>location\.href=\'(.*?)\'</expres>
+<page>[makelist3.param4]</page>
+</regex>
+
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan//img/adryflix.png</thumbnail><fanart>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan//img/fanart.jpg</fanart></item>
+
+
+
+
+
+
+
+<item>
+<title>[COLOR skyblue]Walking Dead Temporada 8 capitulo 5  [/COLOR][COLOR aquamarine][/COLOR][COLOR lightslategray][/COLOR]</title>
+
+<link>$doregex[makelist3]</link>
+
+<regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+<SetViewMode>55</SetViewMode>
+<title>[COLOR lightblue]TWD s08 capitulo 5 | [COLOR lightgreen]Idioma:[B][makelist3.param1][/B][/COLOR]  [COLOR lightblue]Calidad:[B][makelist3.param5][/B][/COLOR]  [COLOR aquamarine]Server:[B][makelist3.param3][/B][/COLOR]        [/COLOR]</title>
+<link>$doregex[id3]</link>
+<thumbnail>http://www.seriespapaya.com/[makelist1.param1]</thumbnail>
+<fanart>http://www.seriespapaya.com/[makelist1.param1]</fanart>
+]]></listrepeat>
+<expres><![CDATA[idioma[\w\W\s]{0,17}images\/(.*?)\.p[\w\W\s]{0,30}fecha\"\>\n(.*?)<[\w\W\s]{0,117}(Streama.*?|Gamo.*?|Vidoz.*?|Openlo.*?|Kingv.*?)<[\w\W\s]{0,37}href="(.*?)"[\w\W\s]{0,87}calidad">\n(.*?)<]]></expres>
+<page>http://www.seriespapaya.com/ver/the-walking-dead/temporada-8/capitulo-5.html</page>
+</regex>
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = '$doregex[link]'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+<regex>
+<name>link</name>
+<expres>location\.href=\'(.*?)\'</expres>
+<page>[makelist3.param4]</page>
+</regex>
+
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan//img/adryflix.png</thumbnail><fanart>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan//img/fanart.jpg</fanart></item>
+
+
+
+
+<item>
+<title>[COLOR skyblue]Walking Dead Temporada 8 capitulo 6  [/COLOR][COLOR aquamarine][/COLOR][COLOR lightslategray][/COLOR]</title>
+
+<link>$doregex[makelist3]</link>
+
+<regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+<SetViewMode>55</SetViewMode>
+<title>[COLOR lightblue]TWD s08 capitulo 6 | [COLOR lightgreen]Idioma:[B][makelist3.param1][/B][/COLOR]  [COLOR lightblue]Calidad:[B][makelist3.param5][/B][/COLOR]  [COLOR aquamarine]Server:[B][makelist3.param3][/B][/COLOR]        [/COLOR]</title>
+<link>$doregex[id3]</link>
+<thumbnail>http://www.seriespapaya.com/[makelist1.param1]</thumbnail>
+<fanart>http://www.seriespapaya.com/[makelist1.param1]</fanart>
+]]></listrepeat>
+<expres><![CDATA[idioma[\w\W\s]{0,17}images\/(.*?)\.p[\w\W\s]{0,30}fecha\"\>\n(.*?)<[\w\W\s]{0,117}(Streama.*?|Gamo.*?|Vidoz.*?|Openlo.*?|Kingv.*?)<[\w\W\s]{0,37}href="(.*?)"[\w\W\s]{0,87}calidad">\n(.*?)<]]></expres>
+<page>http://www.seriespapaya.com/ver/the-walking-dead/temporada-8/capitulo-6.html</page>
+</regex>
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = '$doregex[link]'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+<regex>
+<name>link</name>
+<expres>location\.href=\'(.*?)\'</expres>
+<page>[makelist3.param4]</page>
+</regex>
+
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan//img/adryflix.png</thumbnail><fanart>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan//img/fanart.jpg</fanart></item>
+
+
+
+
+<item>
+<title>[COLOR skyblue]Walking Dead Temporada 8 capitulo 7  [/COLOR][COLOR aquamarine][/COLOR][COLOR lightslategray][/COLOR]</title>
+
+<link>$doregex[makelist3]</link>
+
+<regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+<SetViewMode>55</SetViewMode>
+<title>[COLOR lightblue]TWD s08 capitulo 7 | [COLOR lightgreen]Idioma:[B][makelist3.param1][/B][/COLOR]  [COLOR lightblue]Calidad:[B][makelist3.param5][/B][/COLOR]  [COLOR aquamarine]Server:[B][makelist3.param3][/B][/COLOR]        [/COLOR]</title>
+<link>$doregex[id3]</link>
+<thumbnail>http://www.seriespapaya.com/[makelist1.param1]</thumbnail>
+<fanart>http://www.seriespapaya.com/[makelist1.param1]</fanart>
+]]></listrepeat>
+<expres><![CDATA[idioma[\w\W\s]{0,17}images\/(.*?)\.p[\w\W\s]{0,30}fecha\"\>\n(.*?)<[\w\W\s]{0,117}(Streama.*?|Gamo.*?|Vidoz.*?|Openlo.*?|Kingv.*?)<[\w\W\s]{0,37}href="(.*?)"[\w\W\s]{0,87}calidad">\n(.*?)<]]></expres>
+<page>http://www.seriespapaya.com/ver/the-walking-dead/temporada-8/capitulo-7.html</page>
+</regex>
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = '$doregex[link]'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryanlist.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+<regex>
+<name>link</name>
+<expres>location\.href=\'(.*?)\'</expres>
+<page>[makelist3.param4]</page>
+</regex>
+
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan//img/adryflix.png</thumbnail><fanart>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan//img/fanart.jpg</fanart></item>

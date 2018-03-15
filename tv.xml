@@ -1,0 +1,726 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<layoutype>thumbnail</layoutype>
+
+<channel>
+<name>Series</name>
+<info>Series de Television En Audio Latino  y Subtituladas</info>
+<thumbnail>http://i.imgur.com/oxTNPnp.png</thumbnail>
+    <fanart>http://i.imgur.com/UAQY3DI.jpg</fanart>
+
+<items>
+<!--
+<item>
+<title>[COLOR yellow] [B] VIDEOTUTORIAL:  COMO PONER CONFIGURAR Y AGREGAR LOS SUBTITULOS EN KODI [/B][/COLOR] dALE cLICK !</title>
+<utube>t8stGgDgB4s</utube>
+<info></info>
+</item>
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>[COLOR lightblue]Game of Thrones[/COLOR]  </title>
+<link>http://ignoram.e</link>
+<externallink>http://adryanlist.org/adryan/series/got.xml</externallink>
+ <info> </info><thumbnail>https://image.tmdb.org/t/p/w185/rn34iJhmKbqx9G5ntULWvA5tKxN.jpg</thumbnail><fanart>https://image.tmdb.org/t/p/w780/mUkuc2wyV9dHLG0D0Loaw5pO2s8.jpg</fanart>
+</item>
+
+<item>
+<title>[COLOR lightblue]Firefly[/COLOR]  </title>
+<link>http://ignoram.e</link>
+<externallink>http://adryanlist.org/adryan/series/firefly.xml</externallink>
+<thumbnail>https://image.tmdb.org/t/p/w500/mWNadwBZIx8NyEw4smGftYtHHrE.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/qlJB8bkK1JXAQ0m02OYS1ArS6DZ.jpg</fanart>
+</item>
+
+<item>
+<title>[COLOR lightblue]Fear the Walking Dead[/COLOR]</title>
+<link>http://ignoram.e</link>
+<externallink>http://adryanlist.org/adryan/series/ftwd.xml</externallink>
+ <thumbnail>http://static.srcdn.com/slir/w680-h1000-q90-c680:1000/wp-content/uploads/Fear-the-Walking-Dead-poster.jpg</thumbnail>
+    <fanart>http://ddotomen.com/wp-content/uploads/maxresdefault.jpg</fanart>
+</item>
+
+<item>
+<title>[COLOR lightblue]Jessica Jones[/COLOR]  </title>
+<link>http://ignoram.e</link>
+<externallink>http://adryanlist.org/adryan/series/jj.xml</externallink>
+      <thumbnail>https://image.tmdb.org/t/p/w500/8a7e2GNpMnjI2hgRZH3jq2c7ffv.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/ibU4iTytIlcxYJqRJsNUEBp6te5.jpg</fanart>
+    
+</item>
+
+<item>
+<title>[COLOR lightblue]New Girl[/COLOR]  </title>
+<link>http://ignoram.e</link>
+<externallink>http://adryanlist.org/adryan/series/newgirl.xml</externallink>
+    <thumbnail>https://image.tmdb.org/t/p/w500/tvqi2y2FjiWTL5TRL1Pa6UX8Jef.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/oYVNxGWEObLr2DH847ekw6L0vRL.jpg</fanart>
+   
+</item>
+
+
+<item>
+<title>[COLOR lightblue]Silicon Valley[/COLOR]  </title>
+<link>http://ignoram.e</link>
+<externallink>http://adryanlist.org/adryan/series/siliconvalley.xml</externallink>
+<thumbnail>https://image.tmdb.org/t/p/w500/jS8PUjb5jQ58KRQ7EO6EwLoLR3I.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/y6vaD2MPLEqzvoqWpqlj95Q50DB.jpg</fanart>
+   
+</item>
+
+<item>
+<title>[COLOR lightblue]The Walking Dead [Sexta Temporada][/COLOR]  </title>
+<link>http://ignoram.e</link>
+<externallink>http://adryanlist.org/adryan/series/twd.xml</externallink>
+ <thumbnail>https://image.tmdb.org/t/p/w185/mENXztbZkw7ccarl3i4ZaeB5hDt.jpg</thumbnail><fanart>https://image.tmdb.org/t/p/w780/zYFQM9G5j9cRsMNMuZAX64nmUMf.jpg</fanart>
+</item>
+<item>
+<title>[COLOR lightblue]True Detectives[/COLOR] </title>
+<link>http://ignoram.e</link>
+<externallink>http://adryanlist.org/adryan/series/td.xml</externallink>
+<thumbnail>http://wac.450f.edgecastcdn.net/80450F/screencrush.com/442/files/2015/05/430894_MKT_PA_TrueDetective_S2_Colin_PO2.jpg</thumbnail>
+    <fanart>http://wac.450f.edgecastcdn.net/80450F/screencrush.com/442/files/2015/05/430894_MKT_PA_TrueDetective_S2_Colin_PO2.jpg</fanart>
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>Acapulco Shore</title>
+<link>http://ignoram.e</link>
+<externallink>http://adryanlist.org/adryan/series/acapulco.xml</externallink>
+<thumbnail>http://www.publinews.gt/espectaculos/el-nuevo-show-que-prende-la-pantalla/bQDniy---46FaF4BDE3g/pv_panel-1.jpeg</thumbnail><fanart>http://i1288.photobucket.com/albums/b487/elkinderguapo1982/acapulco-shore_zpsywfv6dvk.jpg</fanart>
+</item>
+
+
+
+<item>
+<title>American Horror Story </title>
+<link>http://ignoram.e</link>
+<externallink>http://adryanlist.org/adryan/series/ahs.xml</externallink>
+<thumbnail>https://image.tmdb.org/t/p/w500/gH3JZCBvAmTyKSE5sJ8zzdHcn8S.jpg</thumbnail><fanart>https://image.tmdb.org/t/p/original/2QnpsdXpn8zNp9fhFpNqx3nmYbf.jpg</fanart>
+</item>
+
+<item>
+<title>Animaniacs </title>
+<link>http://ignoram.e</link>
+<externallink>http://adryanlist.org/adryan/series/animaniacs.xml</externallink>
+<thumbnail>https://image.tmdb.org/t/p/w185/rS39FbmIlv8tpMYyW7zuEp9g398.jpg</thumbnail><fanart>https://image.tmdb.org/t/p/w780/9bHSq7FsorHN18ED0Evo1Mew5gV</fanart>
+</item>
+<item>
+<title>Arrow</title>
+<link>http://ignoram.e</link>
+<externallink>http://adryanlist.org/adryan/series/arrow.xml</externallink>
+    <thumbnail>https://image.tmdb.org/t/p/w500/mo0FP1GxOFZT4UDde7RFDz5APXF.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/dXTyVDTIgeByvUOUEiHjbi8xX9A.jpg</fanart>
+</item>
+
+<item>
+<title>Ash vs Evil Dead </title>
+<link>http://ignoram.e</link>
+<externallink>http://adryanlist.org/adryan/series/ash.xml</externallink>
+  <thumbnail>https://image.tmdb.org/t/p/w500/wkHStHo0l34FzuSoaBvLx7nItWC.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/kbFpzmHiRu9zC8lec9VNuZVDGLO.jpg</fanart>
+     <genre>Acción, Comedia, Fantasía, Terror</genre>
+</item>
+
+
+
+<item>
+<title>Ballers </title>
+<link>http://ignoram.e</link>
+<externallink>http://adryanlist.org/adryan/series/ballers.xml</externallink>
+<thumbnail>https://image.tmdb.org/t/p/w500/7ZPZA4x7vcvdAFpuXrPYZP5iTyT.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/zaZLBPFZnEfUTjBey1tIAP3wALJ.jpg</fanart>
+     <genre>Drama, Comedia</genre>
+</item>
+
+
+<item>
+<title>Better Call Saul </title>
+<link>http://ignoram.e</link>
+<externallink>http://adryanlist.org/adryan/series/bcs.xml</externallink>
+ <thumbnail>https://image.tmdb.org/t/p/w500/hxTOuZxPxl9mv9nfoCvesnJZg40.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/ljik3PqnobCL9fNYJRrDD8eTuFe.jpg</fanart>
+</item>
+
+
+
+<item>
+<title>Blindspot   </title>
+<link>http://ignoram.e</link>
+<externallink>http://adryanlist.org/adryan/series/blindspot.xml</externallink>
+<thumbnail>https://image.tmdb.org/t/p/w500/8w4m4TvtxfQOEQ2UcUEgidgBasg.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/3yEWtovnHq2uJ2tikLM6DTUv0kZ.jpg</fanart>
+     <genre>Acción, Crimen, Drama</genre>
+</item>
+
+
+
+<item>
+<title>Breaking Bad</title>
+<link>http://ignoram.e</link>
+<externallink>http://adryanlist.org/adryan/series/bb.xml</externallink>
+    <thumbnail>https://image.tmdb.org/t/p/w500/1yeVJox3rjo2jBKrrihIMj7uoS9.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/6u4YG0oNzhFaFJs080ljlpSgpfD.jpg</fanart>
+
+</item>
+<item>
+<title>Cartel de los Sapos</title>
+<link>http://ignoram.e</link>
+<externallink>http://adryanlist.org/adryan/series/cartelsapos.xml</externallink>
+<thumbnail>https://image.tmdb.org/t/p/w500/cFjaesBjRIUUN1tSRb5YyESyT4V.jpg</thumbnail><fanart>https://image.tmdb.org/t/p/original/qfQsEs79ebOdBYxGAzBZntcsLKo.jpg</fanart>
+</item>
+<item>
+<title>Club de Cuervos</title>
+<link>http://ignoram.e</link>
+<externallink>http://adryanlist.org/adryan/series/clubcuervos.xml</externallink>
+ <thumbnail>http://gritaradio.com/files/2015/07/Club-de-Cuervos-poster.jpg</thumbnail><fanart>http://i.blogs.es/ea3739/club-de-cuervos/650_1200.png</fanart>
+</item>
+
+<item>
+<title>Capitan Planeta</title>
+<link>http://ignoram.e</link>
+<externallink>http://adryanlist.org/adryan/series/cplaneta.xml</externallink>
+<thumbnail>http://www.karzov-online.com.mx/gobaby%20%28254%29.jpg</thumbnail><fanart>https://atlanta.daybooknetwork.com/media/campaigns/10769/cpflogo</fanart>
+</item>
+
+
+<item>
+<title>Crazy Ex-Girlfriend  </title>
+<link>http://ignoram.e</link>
+<externallink>http://adryanlist.org/adryan/series/crazy.xml</externallink>
+<thumbnail>https://image.tmdb.org/t/p/w500/cAS6R0vWyrKTy8UTOoEKwZis5mX.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/tyHjUP6k9TWap5iSUD9wVlnup9U.jpg</fanart>
+     <genre>Comedia, Música</genre>
+</item>
+
+
+
+<item>
+<title>Criminal Minds</title>
+<link>http://ignoram.e</link>
+<externallink>http://adryanlist.org/adryan/series/criminalminds.xml</externallink>
+<thumbnail>https://image.tmdb.org/t/p/w500/yULqQQFqrbWlTBUydqj93rQkcVe.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/mzyLxbwy5jOveyfsbC1OWGp78NV.jpg</fanart>
+</item>
+
+
+
+
+<item>
+<title>Dark Matter</title>
+<link>http://ignoram.e</link>
+<externallink>http://adryanlist.org/adryan/series/dm.xml</externallink>
+ <thumbnail>https://image.tmdb.org/t/p/w500/iDSXueb3hjerXMq5w92rBP16LWY.jpg</thumbnail>    <fanart>https://image.tmdb.org/t/p/original/kohPYEYHuQLWX3gjchmrWWOEycD.jpg</fanart>
+     <genre>Ciencia ficción, Drama, Suspense</genre>
+</item>
+
+
+
+<item>
+<title>Daredevil</title>
+<link>http://ignoram.e</link>
+<externallink>http://adryanlist.org/adryan/series/daredevil.xml</externallink>
+    <thumbnail>https://image.tmdb.org/t/p/w500/itrCovJkuH7I8SJ98jxrInnwm2y.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/dpNeXLEnuKzAvbNwveJhNEiQvXZ.jpg</fanart>
+</item>
+<item>
+<title>DaVinci Daemons  [COLOR lime][Actualizada Temp.3][/COLOR]</title>
+<link>http://ignoram.e</link>
+<externallink>http://adryanlist.org/adryan/series/davinci.xml</externallink>
+<thumbnail>https://image.tmdb.org/t/p/w185/dNnobI9TeLsDkBTMytiBbnEv1Oo.jpg</thumbnail><fanart>https://image.tmdb.org/t/p/w780/4nU0w4p5EMfTfzy665mBZVhH4p3</fanart>
+</item>
+<item>
+<title>Dexter</title>
+<link>http://ignoram.e</link>
+<externallink>http://adryanlist.org/adryan/series/dexter.xml</externallink>
+ <thumbnail>https://image.tmdb.org/t/p/w500/ydmfheI5cJ4NrgcupDEwk8I8y5q.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/kgadTwNJYYGZ7LTrw9X7KDiRCfV.jpg</fanart>
+</item>
+<item>
+<title>Dragon Ball Super</title>
+<link>http://ignoram.e</link>
+<externallink>http://adryanlist.org/adryan/series/dragonballs.xml</externallink>
+ <thumbnail>http://i2.esmas.com/2015/06/19/777944/dragon-ball-super-poster-640x904.jpg</thumbnail>
+    <fanart>http://images.saiyanisland.com/data/526/Dragon-Ball-Super.jpg</fanart>
+</item>
+
+<item>
+<title>El Mentalista</title>
+<link>http://ignoram.e</link>
+<externallink>http://adryanlist.org/adryan/series/metalista.xml</externallink>
+<thumbnail>https://image.tmdb.org/t/p/w500/gdkkBruycNl9NlHFnxRuqVHfsvt.jpg</thumbnail><fanart>https://image.tmdb.org/t/p/original/rLpLagiCqa6wDYKnFbwY2RhxO8o.jpg</fanart>
+</item>
+
+
+<item>
+<title>Flash</title>
+<link>http://ignoram.e</link>
+<externallink>http://adryanlist.org/adryan/series/flash.xml</externallink>
+<info> </info><thumbnail>https://image.tmdb.org/t/p/w185/9ZuWc3wWPDvWWterM0DlQxjhCBR.jpg</thumbnail><fanart>https://image.tmdb.org/t/p/w780/9i5UBLvqVGgyw2gTMWTovxzy825.jpg</fanart>
+</item>
+
+
+
+
+
+<item>
+<title>Grandfathered  </title>
+<link>http://ignoram.e</link>
+<externallink>http://adryanlist.org/adryan/series/gf.xml</externallink>
+<thumbnail>https://image.tmdb.org/t/p/w500/7yEMMv4WyqUi1i50k35MwaA3vSV.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/gMOKc1VMFfiGnDywDxhjsOvaw4P.jpg</fanart>
+</item>
+
+
+
+
+<item>
+<title>Gotham</title>
+<link>http://ignoram.e</link>
+<externallink>http://adryanlist.org/adryan/series/gotham.xml</externallink>
+    <thumbnail>https://image.tmdb.org/t/p/w500/z2iR0vmuoEU5eL2ONwygDuzzlOy.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/bRFmBU0VPr9s1oeJHuS5Zb5nZQS.jpg</fanart>
+     <genre>Drama, Fantasía, Suspense, Crimen</genre>
+</item>
+
+
+
+<item>
+<title>Halcones Galacticos</title>
+<link>http://ignoram.e</link>
+<externallink>http://adryanlist.org/adryan/series/halcones.xml</externallink>
+<thumbnail>http://dvdblumarket.com/images/halcones%201.jpg</thumbnail><fanart>https://image.tmdb.org/t/p/w780/z8Bpte5nKqVIZF7fih6pjWksTUe</fanart>
+</item>
+<item>
+<title>Hannibal</title>
+<link>http://ignoram.e</link>
+<externallink>http://adryanlist.org/adryan/series/hannibal.xml</externallink>
+<thumbnail>http://www.screenrelish.com/wp-content/uploads/2015/05/hannibal_ver11_xlg.jpg</thumbnail>
+    <fanart>http://im.ziffdavidavisinternational.com/t/ign_in/articlepage/h/hannibal-l/hannibal-looks-menacing-in-new-season-3-poster_hyyf.1920.jpg</fanart>
+</item>
+
+<item>
+<title>How to get away with murder [Temporada 2]</title>
+<link>http://ignoram.e</link>
+<externallink>http://adryanlist.org/adryan/htgawm.xml</externallink>
+<thumbnail>https://image.tmdb.org/t/p/w500/jGX0Kvnxhq8z6Q32ZaEQSwaeo9Z.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/mmrIpQn3o0ATBe92gSMelopdh2L.jpg</fanart>
+     <genre>Drama, Crimen</genre>
+	      <info>Un thriller de suspense legal sobre un grupo de ambiciosos estudiantes de derecho y su brillante y misteriosa profesora de defensa criminal. Ellos se ven envueltos en un complot de asesinato que cambiará el curso de sus vidas.
+ Dirección : Peter Nowalk
+ Guión : 
+ Año : 2014
+</info>
+</item>
+
+
+
+
+<item>
+<title>He-Man</title>
+<link>http://ignoram.e</link>
+<externallink>http://adryanlist.org/adryan/series/heman.xml</externallink>
+<thumbnail>http://westfieldcomics.com/blog/wp-content/uploads/2011/04/hemandvd.jpg</thumbnail><fanart>http://westfieldcomics.com/blog/wp-content/uploads/2011/04/hemandvd.jpg</fanart>
+</item>
+<item>
+<title>Heroes Reborn</title>
+<link>http://ignoram.e</link>
+<externallink>http://adryanlist.org/adryan/series/heroes.xml</externallink>
+<thumbnail>http://oyster.ignimgs.com/wordpress/stg.ign.com/2015/07/heroesrb_firstlook_wcast.jpg</thumbnail><fanart>http://www.fotogramas.es/var/ezflow_site/storage/images/noticias-cine/heroes-reborn-poster-oficial-con-los-protagonistas/64877916-1-esl-ES/Heroes-Reborn-Poster-oficial-con-los-protagonistas_landscape.jpg</fanart>
+</item>
+<item>
+<title>House of Cards </title>
+<link>http://ignoram.e</link>
+<externallink>http://adryanlist.org/adryan/series/hoc.xml</externallink>
+<thumbnail>https://image.tmdb.org/t/p/w185/oUfT2AbMVCYbVA3GIBbPqA6ZpUC.jpg</thumbnail><fanart>https://image.tmdb.org/t/p/w780/bA8yNx7tQsfIzvJ3tlTJjdwcDIJ</fanart>
+</item>
+
+
+
+<item>
+<title>Into the Badlands  </title>
+<link>http://ignoram.e</link>
+<externallink>http://adryanlist.org/adryan/series/badlands.xml</externallink>
+    <thumbnail>https://image.tmdb.org/t/p/w500/ozYuTCBXxND1zqZivNChxCvnqsh.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/7vxvyMNO1SMxd4o5dDQ90xgC24O.jpg</fanart>
+     <genre>Acción, Aventura</genre>
+</item>
+
+<item>
+<title>Inspector Ardilla</title>
+<link>http://ignoram.e</link>
+<externallink>http://adryanlist.org/adryan/series/ins_ar.xml</externallink>
+<thumbnail>http://1.bp.blogspot.com/-u63JXTKn-QU/Ti2txIv85eI/AAAAAAAAAMg/Uos13S541b4/s200/Inspector+Ardilla.jpg</thumbnail><fanart>http://spd.fotolog.com/photo/29/44/103/cruzmtz/1162219675_f</fanart>
+</item>
+
+
+<item>
+<title>iZombie    </title>
+<link>http://ignoram.e</link>
+<externallink>http://adryanlist.org/adryan/series/izombie.xml</externallink>
+<thumbnail>https://image.tmdb.org/t/p/w500/xn3QM6aInhQp631K2lXpGFox2Kc.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/d2YDPTQPe3mI2LqBWwb0CchN54f.jpg</fanart>
+     <genre>Terror, Drama, Crimen, Sci-Fi & Fantasy</genre></item>
+
+
+<item>
+<title>Killjoys</title>
+<link>http://ignoram.e</link>
+<externallink>http://adryanlist.org/adryan/series/killjoys.xml</externallink>
+<thumbnail>https://image.tmdb.org/t/p/w500/ziPB638w1DGOJ0wbFhmHaew4Rz.jpg</thumbnail><fanart>https://image.tmdb.org/t/p/original/heXGzDx18UCQALqUKSLwasp5j18.jpg</fanart>
+</item>
+
+
+
+
+<item>
+<title>Limitless</title>
+<link>http://ignoram.e</link>
+<externallink>http://adryanlist.org/adryan/series/limitless.xml</externallink>
+<thumbnail>http://datas.series-tv-shows.com/pic/tvdb/61525/poster.jpg</thumbnail><fanart>http://cdn.idigitaltimes.com/sites/idigitaltimes.com/files/2015/09/22/limitless-tv.png</fanart>
+</item>
+
+
+<item>
+<title>Malcolm</title>
+<link>http://ignoram.e</link>
+<externallink>http://adryanlist.org/adryan/series/malcolm.xml</externallink>
+ <info> </info><thumbnail>http://3.bp.blogspot.com/-QFux_GGmVB0/UGtmLtg79dI/AAAAAAAAAJU/rudqOWENO1k/s1600/jmAwBx9UXuK9y.png</thumbnail><fanart>https://chibacity.files.wordpress.com/2012/10/malcolm-in-the-middle.jpg</fanart>
+</item>
+
+
+<item>
+<title>Mazinger Z</title>
+<link>http://ignoram.e</link>
+<externallink>http://adryanlist.org/adryan/series/mazinger.xml</externallink>
+ <thumbnail>https://image.tmdb.org/t/p/w500/iuSLyp6mDvZArenePs7tUSSDnyi.jpg</thumbnail><fanart>https://image.tmdb.org/t/p/original/6YZhFgctouof3vtUy5mKOqJrjvF.jpg</fanart>
+</item>
+
+
+<item>
+<title>Marvel's Agentes de S.H.I.E.L.D. (Temporada 3)</title>
+<link>http://ignoram.e</link>
+<externallink>http://adryanlist.org/adryan/series/mas.xml</externallink>
+
+    <thumbnail>https://image.tmdb.org/t/p/w500/n82soKV5XS5iYXF60eDO84kLPF3.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/jOrfoGipT8QoDi54Qd9f5yhJCgw.jpg</fanart>
+     <genre>Fantasía, Drama, Acción, Aventura, Ciencia ficción</genre>
+</item>
+
+
+
+<item>
+<title>Mr. Robot</title>
+<link>http://ignoram.e</link>
+<externallink>http://adryanlist.org/adryan/series/mrr.xml</externallink>
+  <thumbnail>http://www.impawards.com/tv/posters/mr_robot_ver7.jpg</thumbnail>
+    <fanart>http://breakbang.com/wp-content/uploads/2015/06/Mr-Robot-Pilot.png</fanart>
+</item>
+
+
+<item>
+<title>Narcos</title>
+<link>http://ignoram.e</link>
+<externallink>http://adryanlist.org/adryan/series/narcos.xml</externallink>
+<thumbnail>http://d1oi7t5trwfj5d.cloudfront.net/fc/67/5187bdda4994869b8a858c90b207/wagner-moura-in-narcos.jpg</thumbnail>
+			<fanart>http://screenrant.com/wp-content/uploads/Pedro-Pascal-Narcos-Banner.jpg</fanart>
+</item>
+
+
+<item>
+<title>Naruto: shippûden </title>
+<link>http://ignoram.e</link>
+<externallink>http://adryanlist.org/adryan/series/naruto.xml</externallink>
+<thumbnail>https://image.tmdb.org/t/p/w500/cD4FiJNvwr83ldF6HvdAXD1pTJ2.jpg</thumbnail><fanart>https://image.tmdb.org/t/p/original/l6dniTn36DSI1YpP8D1jg2n0HCc.jpg</fanart></fanart>
+</item>
+
+
+
+
+
+<item>
+<title>Penny Dreadful</title>
+<link>http://ignoram.e</link>
+<externallink>http://adryanlist.org/adryan/series/penny.xml</externallink>
+<thumbnail>http://www.dvdsreleasedates.com/covers/penny-dreadful-season-1-dvd-cover-11.jpg</thumbnail>
+<fanart>http://horrorcultfilms.co.uk/wp-content/uploads/2015/03/penny9.jpg<fanart>
+</item>
+
+
+<item>
+<title>Principe del Rap</title>
+<link>http://ignoram.e</link>
+<externallink>http://adryanlist.org/adryan/series/principe.xml</externallink>
+	 <thumbnail>https://image.tmdb.org/t/p/w500/qQCbe0QwS0FKBOwMdf6MblJbqst.jpg</thumbnail><fanart>https://image.tmdb.org/t/p/original/fNtLvs8bVKT4S4MzljK6iFYvimK.jpg</fanart>
+	
+</item>
+
+
+
+
+
+<item>
+<title>Quantico</title>
+<link>http://ignoram.e</link>
+<externallink>http://adryanlist.org/adryan/series/quantico.xml</externallink>
+<thumbnail>https://image.tmdb.org/t/p/w500/4qq03GhGl1A7JAPEFAuh0b2foxn.jpg</thumbnail><fanart>https://image.tmdb.org/t/p/original/9JSfiatK0jXn1pGzgXdFdsFezgx.jpg</fanart>
+</item>
+
+<item>
+<title>Sons of Anarchy</title>
+<link>http://ignoram.e</link>
+<externallink>http://adryanlist.org/adryan/series/sons.xml</externallink>
+<thumbnail>https://image.tmdb.org/t/p/w500/2qg0MOwPD1G0FcYpDPeu6AOjh8i.jpg</thumbnail><fanart>https://image.tmdb.org/t/p/original/fZ8j6F8dxZPA8wE5sGS9oiKzXzM.jpg</fanart>
+     <genre>Drama, Action & Adventure</genre>
+</item>
+
+<item>
+<title>Supergirl</title>
+<link>http://ignoram.e</link>
+<externallink>http://adryanlist.org/adryan/series/supergirl.xml</externallink>
+<thumbnail>https://image.tmdb.org/t/p/w500/o7tHx7YO8sCDBSXyJ1VnRxQgKxF.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/tevGaNTGWFkJNfLw89k4T55zgIJ.jpg</fanart>
+     <genre>Drama, Action & Adventure, Sci-Fi & Fantasy</genre>
+</item>
+
+
+<item>
+<title>Scream Queens</title>
+<link>http://ignoram.e</link>
+<externallink>http://adryanlist.org/adryan/series/sq.xml</externallink>
+<thumbnail>http://www.gstatic.com/tv/thumb/tvbanners/11190575/p11190575_b_v7_ab.jpg</thumbnail><fanart>http://www.hercampus.com/sites/default/files/2015/09/23/scream%20queens%20opening.jpg</fanart>
+</item>
+
+
+<item>
+<title>Strain</title>
+<link>http://ignoram.e</link>
+<externallink>http://adryanlist.org/adryan/series/strain.xml</externallink>
+  <thumbnail>http://ia.media-imdb.com/images/M/MV5BMjE1MjY3OTg5OV5BMl5BanBnXkFtZTgwOTI1NDcwNjE@._V1_SX214_AL_.jpg</thumbnail>
+    <fanart>http://www.tierragamer.com/wp-content/uploads/2015/05/21d3lgi.jpg</fanart>
+</item>
+
+
+<item>
+<title>Supersonicos</title>
+<link>http://ignoram.e</link>
+<externallink>http://adryanlist.org/adryan/series/supers.xml</externallink>
+<thumbnail>https://image.tmdb.org/t/p/w396/kFaIdTbaP8DsFfKfxGIkb8aSFOo.jpg</thumbnail><fanart>https://image.tmdb.org/t/p/w780/jhMNFSZay8TeDEILgDW3juq9qQ2</fanart>
+</item>
+
+
+<item>
+<title>The Big Bang Theory</title>
+<link>http://ignoram.e</link>
+<externallink>http://adryanlist.org/adryan/series/tbbt.xml</externallink>
+<thumbnail>https://image.tmdb.org/t/p/w500/wQoosZYg9FqPrmI4zeCLRdEbqAB.jpg</thumbnail><fanart>https://image.tmdb.org/t/p/original/nGsNruW3W27V6r4gkyc3iiEGsKR.jpg</fanart>
+</item>
+
+<item>
+<title>The Knick  </title>
+<link>http://ignoram.e</link>
+<externallink>http://adryanlist.org/adryan/series/theknick.xml</externallink>
+ <thumbnail>https://image.tmdb.org/t/p/w500/zVZCr1hkbUNiL29DqZcfOxOAbwR.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/kXfOA48SsvAMSMxcKPpYNoDT4eU.jpg</fanart>
+     <genre>Drama, Historia</genre>
+</item>
+
+
+<item>
+<title>The Fall  </title>
+<link>http://ignoram.e</link>
+<externallink>http://adryanlist.org/adryan/series/thefall.xml</externallink>
+<thumbnail>https://image.tmdb.org/t/p/w500/fQpOvnppNdwbzs5Qxus8xsIOVwD.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/twbSnkm2nKumcykCydlsMpbVMBk.jpg</fanart>
+     <genre>Drama, Suspense</genre>
+
+     <info>Serie de TV (2013-Actualidad). En Irlanda del Norte, un escurridizo asesino en serie (Jamie Dornan) que acecha a sus víctimas al azar en los alrededores de Belfast. Para intentar atraparlo envían de la policía de Londres a la talentosa detective Stella Gibson (Gillian Anderson), pues las autoridades creen que es la persona idónea para darle caza. 
+ Dirección : Allan Cubitt
+ Guión : 
+ Año : 2013
+</info>
+</item>
+
+
+
+
+
+<item>
+<title>Thundercats</title>
+<link>http://ignoram.e</link>
+<externallink>http://adryanlist.org/adryan/series/thundercats.xml</externallink>
+<thumbnail>http://vignette4.wikia.nocookie.net/thundercats/images/4/4f/ThunderCats_poster.jpg/revision/latest?cb=20130901054456</thumbnail><fanart>http://www.top10de.com/wp-content/uploads/2012/12/Thundercats</fanart>
+</item>
+
+
+<item>
+<title>The Vampire Diaries</title>
+<link>http://ignoram.e</link>
+<externallink>http://adryanlist.org/adryan/series/tvampire.xml</externallink>
+<thumbnail>https://image.tmdb.org/t/p/w500/jZn7dEHRRjXcT43D9GMHxzASDef.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/3O4r2guye3WwLBNPTfpfecU1FBn.jpg</fanart>
+</item>
+
+
+
+
+<item>
+<title>The Walking Dead [Audio Latino season 1-5]</title>
+<link>http://ignoram.e</link>
+<externallink>http://adryanlist.org/adryan/series/twd_latino.xml</externallink>
+ <thumbnail>https://image.tmdb.org/t/p/w185/mENXztbZkw7ccarl3i4ZaeB5hDt.jpg</thumbnail><fanart>https://image.tmdb.org/t/p/w780/zYFQM9G5j9cRsMNMuZAX64nmUMf.jpg</fanart>
+</item>
+
+<item>
+<title>Two and a Half Men</title>
+<link>http://ignoram.e</link>
+<externallink>http://adryanlist.org/adryan/series/two.xml</externallink>
+<thumbnail>https://image.tmdb.org/t/p/w500/nli4nyzOIN9s5eOaGmPzHyVNnk0.jpg</thumbnail>     <fanart>https://image.tmdb.org/t/p/original/27cshLy9anL9G0g6tBQjWkPACx5.jpg</fanart>
+</item>
+<item>
+<title>Tom y Jerry</title>
+<link>http://ignoram.e</link>
+<externallink>http://adryanlist.org/adryan/series/tyj.xml</externallink>
+    <thumbnail>https://image.tmdb.org/t/p/w500/2Hfse2hCuQiRGannilc4Peh6PwZ.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/y6LnE2qJIZ52V5wkS0VY3NFTM92.jpg</fanart>
+     <genre>Animación, Comedia</genre>
+</item>
+
+
+
+<item>
+<title>White Collar </title>
+<link>http://ignoram.e</link>
+<externallink>http://adryanlist.org/adryan/series/wc.xml</externallink>
+    <thumbnail>https://image.tmdb.org/t/p/w500/wsD09ud4IhG3G4ZMIfyu05HHEJh.jpg</thumbnail>     <fanart>https://image.tmdb.org/t/p/original/vQ1x7MVyMbNn4AC3iO66wVqebV9.jpg</fanart>
+     <genre>Drama, Misterio, Action & Adventure</genre>
+
+</item>
+
+
+<item>
+<title>Young And Hungry</title>
+<link>http://ignoram.e</link>
+<externallink>http://adryanlist.org/adryan/series/yah.xml</externallink>
+<thumbnail>http://image.tmdb.org/t/p/w500/goYrgkEvQch4NWwTj5d4ie3uhrC.jpg</thumbnail>     <fanart>http://image.tmdb.org/t/p/original/1Yt5qUFOwMLilWmCGiUpIPbsRvY.jpg</fanart>
+
+</item>
+
+
+<item>
+<title>Z Nation</title>
+<link>http://ignoram.e</link>
+<externallink>http://adryanlist.org/adryan/series/znation.xml</externallink>
+<info> </info><thumbnail>http://gnula.se/img/portada/z_nation_qeppradwvaq2015-10-08.jpg</thumbnail><fanart>http://gnula.se/img/portada/z_nation_qeppradwvaq2015-10-08.jpg</fanart>
+</item>
+
+
+<item>
+<title>Zoo (Castellano)</title>
+<link>http://ignoram.e</link>
+<externallink>http://adryanlist.org/adryan/series/zoo.xml</externallink>
+ <thumbnail>https://image.tmdb.org/t/p/w500/8blVYBMPzLDEIeWNGFbhofL9muj.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/iiCCD2IEDDNSRSmWYHxw6epMNw5.jpg</fanart>
+</item>
+
+
+
+
+
+
+<item>
+<title>Happy Endings [COLOR lightlslategray](VO)[/COLOR]</title>
+<link>$doregex[makelist]</link>
+
+
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+
+<title>[makelist.param2]</title>
+<link>$doregex[id]</link>
+
+<regex>
+<name>id</name>
+<expres>file:'(.*)'</expres>
+<page>http://streamin.to/embed-$doregex[link]-740x360.html</page>
+<referer>http://streamin.to</referer>
+</regex>
+
+<regex>
+<name>link</name>
+<expres>http://streamin.to/(.*?)"</expres>
+<page>http://putlocker.is/[makelist.param1]</page>
+<referer>http://streamin.to</referer>
+</regex>
+
+
+]]></listrepeat>
+
+<expres>href="http://putlocker.is/(.*?)"\stitle="Happy Endings(.*?)"</expres>
+<page>http://putlocker.is/watch-happy-endings-tvshow-online-free-putlocker.html</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+</item>
+
+
+
+</items>
+<channel>

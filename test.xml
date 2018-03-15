@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<items>
+<item><title>RCN Televisión de Colombia</title> <link>http://canalrcn-mobile-live.4cloud.co/livercn/AppSenalRcn/chunklist.m3u8</link></item>
+
+
+<item><title>RCN Novelas</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F1493 </link></item>
+<item><title>Caracol</title> <link>http://caracoltvlivehds-lh.akamaihd.net/i/caracol02_1@126280/index_1028_av-p.m3u8?sd=10&rebase=on</link></item>
+
+
+<item><title>Caracol</title> <link>http://localhost:8899/live.m3u?tmp=0&portal=1&channel=http%3A%2F%2Fcaracoltvlivehds-lh.akamaihd.net%2Fi%2Fwowzalive_1%40126280%2Fmaster.m3u8</link></item>
+<item><title>Caracol Internacional</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F2051</link></item>
+ 
+<item><title>Señal Colombia</title> <link>http://cdns840stu1010.multistream.net/rtvc2live/amlst:scolombia/chunklist_b500000.m3u8</link></item>
+<item><title>Señal Institucional</title> <link>http://localhost:8899/live.m3u?tmp=0&portal=1&channel=http%3A%2F%2Fcdns840stu1010.multistream.net%2Frtvc2live%2Famlst%3Ascolombia%2Fplaylist_b500000.m3u8%3F</link></item>
+<item><title> CANAL CAPITAL</title> <link>http://localhost:8899/live.m3u?tmp=0&portal=1&channel=ffrt2+http%3A%2F%2Fcdns840stu1010.multistream.net%2Fcanalcapitallive%2Famlst%3Alive%2Fmaster.m3u8</link></item>
+<item><title>TELE PACIFICO</title> <link>http://localhost:8899/live.m3u?tmp=0&portal=1&channel=http%3A%2F%2Fcdns840stu1010.multistream.net%2Frtvc2live%2Famlst%3Ascolombia%2Fplaylist_b500000.m3u8%3F</link></item>
+<item><title>AMERICA ARGENTINA</title> <link>http://localhost:8899/live.m3u?tmp=0&portal=1&channel=ffrt2+rtsp%3A%2F%2Fstream.eltrecetv.com.ar%2Flive13%2F13tv%2F13tv1</link></item>
+<item><title>MAGAZINE</title> <link>http://localhost:8899/live.m3u?tmp=0&portal=1&channel=ffrt2+rtsp%3A%2F%2Fstream.mgzn.tv%2Flive%2Fmgzntv%2Fmgzntv</link></item>
+<item><title>TV PUBLICA </title> <link>http://localhost:8899/live.m3u?tmp=0&portal=1&channel=http%3A%2F%2Flive-edge01.telecentro.net.ar%3A1935%2Flive%2Ftvphd-360%2Fplaylist.m3u8</link></item>
+<item><title>EL TRECE HD
+</title> <link>rtmp://stream.eltrecetv.com.ar/live13/13tv/13tv1 playpath=13tv1 swfUrl=http://cdn.eltrecetv.com.ar/sites/all/libraries/jwplayer/player.swf pageUrl=http://www.eltrecetv.com.ar/vivo live=1</link></item>
+<item><title>CANAL 13
+</title> <link>rtmp://stream.eltrecetv.com.ar/live13/13tv/13tv1 playpath=13tv1 swfUrl=http://cdn.eltrecetv.com.ar/sites/all/libraries/jwplayer/player.swf pageUrl=http://www.eltrecetv.com.ar/vivo live=1</link></item>
+<item><title>OCHO TV </title> <link>http://201.130.193.150:1935/codecsys/smil:ocho.smil/master.m3u8</link></item>
+<item><title>Tve 24h HD </title> <link>http://iphonelive.rtve.es/24H_LV3_IPH/bitrate_2.m3u8</link></item>
+<item><title>TeleSuR</title> <link>http://cdn2.telesur.ultrabase.net/livecf/telesurLive/chunklist.m3u8</link></item>
+<item><title>CNN HD 
+</title> <link>rtsp://200.104.250.183/vtr_cnn_online/cnn-web/
+<item><title>CDN</title> <link>http://108.168.206.90:1935/cdn/cdn/playlist.m3u8</link></item>
+<item><title>EL TRECE HD
+</title> <link>rtmp://stream.eltrecetv.com.ar/live13/13tv/13tv1 playpath=13tv1 swfUrl=http://cdn.eltrecetv.com.ar/sites/all/libraries/jwplayer/player.swf pageUrl=http://www.eltrecetv.com.ar/vivo live=1</link></item>
+<item><title>CANAL 13
+</title> <link>rtmp://stream.eltrecetv.com.ar/live13/13tv/13tv1 playpath=13tv1 swfUrl=http://cdn.eltrecetv.com.ar/sites/all/libraries/jwplayer/player.swf pageUrl=http://www.eltrecetv.com.ar/vivo live=1</link></item>
+<item><title>OCHO TV </title> <link>http://201.130.193.150:1935/codecsys/smil:ocho.smil/master.m3u8</link></item>
+<item><title>Tve 24h HD </title> <link>http://iphonelive.rtve.es/24H_LV3_IPH/bitrate_2.m3u8</link></item>
+<item><title>HOGAR TV</title> <link>http://localhost:8899/live.m3u?tmp=0&portal=1&channel=http%3A%2F%2Fxhogartvx.api.channel.livestream.com%2F3.0%2Fplaylist.m3u8</link></item>
+<item><title>Ecuavisa
+</title> <link>rtmp://62.210.88.233:1935/liverepeat playpath=ecuatv1 swfUrl=http://direct-stream.biz/jwplayer/jwplayer.flash.swf live=1 pageUrl=http://direct-stream.biz/embednews.php?c=ecuatv1&vw=600&vh=400</link></item>
+<item><title>Canal 12 Cordoba</title> <link>http://iphone-streaming.ustream.tv/ustreamVideo/10923213/streams/live/playlist.m3u8</link></item>
+<item><title>CANAL TRECE</title> <link>http://localhost:8899/live.m3u?tmp=0&portal=1&channel=http%3A%2F%2Fcdns840stu1010.multistream.net%2Fcanaltr3celive%2Flive-500%2FPAZ.m3u8</link></item>
+<item><title>Cine Dinamita</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F3465</link></item>
+<item><title>Cinecanal</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F2495</link></item>
+<item><title>CineLatino </title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F477</link></item>
+
+<item><title>Fox</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F3947</link></item>
+<item><title>Paramount Channel Latinoamerica</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F260</link></item>
+<item><title>Mundo Fox</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F429</link></item>
+<item><title>SyFy</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F447</link></item>
+<item><title>Fox 1 HD</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F433</link></item>
+<item><title>Fox 1 HD </title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F439 </link></item>
+<item><title>Fox Action HD</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F435</link></item>
+<item><title>Fox Action HD</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F437 </link></item>
+<item><title>Fox Movies HD</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F463 </link></item>
+<item><title>Fox Cinéma</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F457 </link></item>
+<item><title>Fox Family</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F467</link></item>
+<item><title>Fox Comedy</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F461</link></item>
+<item><title>HBO</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F385</link></item>
+<item><title>HBO2</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F365</link></item>
+<item><title>HBO plus ESTE</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F453</link></item>
+<item><title>HBO plus OESTE</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F369</link></item>
+<item><title>HBO Family </title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F449</link></item>
+<item><title>Max UP</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F469</link></item>
+<item><title>MAX</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F381</link></item>
+<item><title>Max Prime Este</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F377</link></item>
+<item><title>MaxPrime Oeste</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F379</link></item>
+<item><title>AMC</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F485</link></item>
+<item><title>Universal</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F387</link></item>
+<item><title>Studio Universal</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F345</link></item>
+
+<item><title>I.Sat</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F1703</link></item>
+<item><title>Sony HD</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F2501 </link></item>
+<item><title>Warner HD</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F2499</link></item>
+
+<item><title>FX HD</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F431</link></item>
+<item><title>Tru TVHD</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F337</link></item>
+<item><title>A E </title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F258</link></item>
+<item><title>E!</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F427</link></item>
+<item><title>AXN HD </title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F2493</link></item>
+<item><title>Cinemax</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F343</link></item>
+<item><title>Europa Europa</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F1597</link></item>
+<item><title>Film & Arts</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F1599</link></item>
+<item><title>The Film Zone HD</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F1055</link></item>
+<item><title>TNT HD</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F262</link></item>
+<item><title>TNT Series</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F331</link></item>
+<item><title>MultiPremier</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F3293</link></item>
+<item><title>Golden Premier 1</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F1487</link></item>
+<item><title>Golden Multiplex</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F1035</link></item>
+<item><title>Golden Edge </title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F1465</link></item>
+<item><title>Space</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F2489</link></item>
+<item><title>TCM</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F481</link></item>
+
+<item><title>EL TRECE HD</title> <link>http://localhost:8899/live.m3u?tmp=0&portal=1&channel=ffrt2+http%3A%2F%2Faztecalive-lh.akamaihd.net%2Fi%2F0oxnvzh8a_1%40175671%2Fmaster.m3u8</link></item>
+<item><title>TV MAS</title> <link>http://localhost:8899/live.m3u?tmp=0&portal=1&channel=ffrt2+rtmp%3A%2F%2F50.7.98.234%2Frtv%2Fvideortv</link></item>
+<item><title>Telemar Mexico</title> <link>http://wms.tecnoxia.com:1935/8004/8004/telemarmexico.m3u8?</link></item>
+<item><title>CB Televisión Michoacán</title> <link>http://hd.worldkast.com/8512/smil:8512.smil/playlist.m3u8</link></item>
+<item><title>Telemax Mexico</title> <link>http://enhd.co:1935/ilive/ilive/playlist.m3u8?</link></item>
+<item><title>Trecevisión Yucatan</title> <link>http://74.222.3.185:1935/live/ngrp:trecevision_all/chunklist_w1676078199_b950272.m3u8</link></item>
+<item><title>TDT Tlaxcala</title> <link>http://coracyt.mega00.com:1935/live/coracyt/coracyt/playlist.m3u8?</link></item>
+<item><title>Quince TV Zacatecas México</title> <link>http://live.zuperdns.net:1935/zuperhosting.live.grupob.canal15zacatecas/livestream/playlist.m3u8</link></item>
+<item><title>KW TV México</title> <link>http://wpc.845d.edgecastcdn.net/hls-live/20845D/Live/kwlive/livetv,364,664,964,1264,.m3u8?hc_location=ufi</link></item>
+<item><title>TV 4 Guanajuato</title> <link>http://iphone-streaming.ustream.tv/uhls/4157836/streams/live/iphone/playlist.m3u8</link></item>
+<item><title>CORtv Oaxaca México</title> <link>http://iphone-streaming.ustream.tv/ustreamVideo/20366971/streams/live/playlist.m3u8</link></item>
+<item><title>TV Independencia Hidalgo México</title> <link>http://iphone-streaming.ustream.tv/ustreamVideo/12143149/streams/live/playlist.m3u8</link></item>
+<item><title>Ecovisión Zacatecas México</title> <link>http://iphone-streaming.ustream.tv/ustreamVideo/17171318/streams/live/playlist.m3u8</link></item>
+<item><title>Trecevisión Yucatan</title> <link>http://74.222.3.185:1935/live/ngrp:trecevision_all/chunklist_w1676078199_b950272.m3u8</link></item>
+<item><title>Canal Once HD</title> <link>http://localhost:8899/live.m3u?tmp=0&portal=1&channel=ffrt2+http%3A%2F%2Fwww.oncetvmexicolive.tv%3A1935%2Flivepkgr2%2Fsmil%3Aint.smil%2Fplaylist.m3u8 </link></item>
+<item><title>Foro TV</title> <link>http://185417-f.akamaihd.net/i/n0tf0r0_1@81283/index_1200_av-b.m3u8</link></item>
+<item><title>AzMundo </title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F1999</link></item>
+<item><title>Azteca 7</title> <link>http://aztecalive-lh.akamaihd.net/i/0t3vkxp3t_1@175670/master.m3u8</link></item>
+<item><title>Gala TV </title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F4555</link></item>
+<item><title>Telemundo</title> <link>http://iphone-streaming.ustream.tv/uhls/20720323/streams/live/iphone/playlist.m3u8?</link></item>
+<item><title>Telemundo </title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F4417</link></item>
+<item><title>Univisión</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F3800</link></item>
+<item><title>Canal De Las Estrellas </title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F4552</link></item>
+<item><title>Canal 5</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F4547</link></item>
+<item><title>Proyecto 40</title> <link>http://localhost:8899/live.m3u?tmp=0&portal=1&channel=ffrt2+http%3A%2F%2Furtmpkal-f.akamaihd.net%2Fi%2F05i15qzql_1%40149710%2Fmaster.m3u8</link></item>
+<item><title>AZTECA 13</title> <link>http://localhost:8899/live.m3u?tmp=0&portal=1&channel=http%3A%2F%2Faztecalive-lh.akamaihd.net%2Fi%2F1ym9yab3c_1%4066742%2Fmaster.m3u8 </link></item>
+<item><title>MEXICO 7</title> <link>http://localhost:8899/live.m3u?tmp=0&portal=1&channel=http%3A%2F%2F201.130.193.150%3A1935%2Fcodecsys%2Fsmil%3Aocho.smil%2Fmaster.m3u8 </link></item>
+<item><title>Unicable</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F3804</link></item>
+<item><title>Unimas</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F3602</link></item>
+<item><title>Tlnovelas</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F1461</link></item>
+<item><title>PASIONES</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F295</link></item>
+<item><title>Telecinco</title> <link>http://localhost:8899/live.m3u?tmp=0&portal=1&channel=http%3A%2F%2Fmdsios2-lh.akamaihd.net%2Fi%2Fmitele%2Fesmediaset_21%40168473%2Findex_0_av-p.m3u8%3Fsd%3D10%26rebase%3Don</link></item>
+<item><title>Antena3</title> <link>http://localhost:8899/live.m3u?tmp=0&portal=1&channel=ffrt2+http%3A%2F%2Fantena3-aos1-apple-live.adaptive.level3.net%2Fapple%2Fantena3%2Fchannel01%2Fantena_3_hd_1548K_1280x720_main.m3u8</link></item> 
+<item><title>La Sexta</title> <link>http://localhost:8899/live.m3u?tmp=0&portal=1&channel=ffrt2+http%3A%2F%2Fantena3-aos1-apple-live.adaptive.level3.net%2Fapple%2Fantena3%2Fchannel02%2Fla_sexta_hd_1548K_1280x720_main.m3u8</link></item>
+
+<item><title>LA 1</title> <link>http://localhost:8899/live.m3u?tmp=0&portal=1&channel=ffrt2+http%3A%2F%2Fiphone-streaming.ustream.tv%2Fuhls%2F14420271%2Fstreams%2Flive%2Fiphone%2Fplaylist.m3u8</link></item>
+<item><title>America TV Peru</title> <link>http://localhost:8899/live.m3u?tmp=0&portal=1&channel=ffrt2+http%3A%2F%2Fooyalahd2-f.akamaihd.net%2Fi%2Fatv02_delivery%4025405%2Findex_564_av-p.m3u8</link></item>
+<item><title>PANAMERICANA</title> <link>http://localhost:8899/live.m3u?tmp=0&portal=1&channel=ffrt2+http%3A%2F%2Fm.iblups.com%3A1935%2Flives%2Fptv1%2Fplaylist.m3u8</link></item>
+<item><title>ATV</title> <link>http://localhost:8899/live.m3u?tmp=0&portal=1&channel=http%3A%2F%2Fedge-31-us.edge.mdstrm.com%2Flive%2Fsmil%3Ac23b8a0a21d215482b4c2703e47f675a%2Fplaylist.m3u8</link></item>
+<item><title>ATV +
+</title> <link>rtmp://d91.iblups.com/atvmas playpath=hseZYl4d9H swfUrl=http://atv.iblups.com/playertvlive123456789.swf?config=configplayer%2Ephp%3Fid%3Datvmas&autostart=true live=1 pageUrl=http://atv.iblups.com/atvmas.php?w=630&h=360</link></item>
+<item><title>MEGA</title> <link>http://edge-11-mvstr.edge.mdstrm.com/live/smil:db6a38a0a2bffd96d01965c4d975b9fb/playlist_b1500.m3u8</link></item>
+<item><title>BBC Entertainment</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F1407</link></item>
+<item><title>El Gourmet</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F1033 </link></item>
+<item><title>Glitz</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F1473</link></item>
+<item><title>Comedy Central </title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F1037 </link></item>
+<item><title>Distrito Comedia</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F1491 </link></item>
+<item><title>TBS</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F333 </link></item>
+<item><title>Disney Channel</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F256</link></item>
+<item><title>Disney XD</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F499</link></item>
+<item><title>Disney Jr</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F1455</link></item>
+<item><title>Nick</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F1423 </link></item>
+<item><title>Nick Jr </title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F417</link></item>
+<item><title>Cartoon Network</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F421</link></item> 
+<item><title>Boomerang</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F2507</link></item>
+<item><title>Tooncast</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F443</link></item>
+<item><title>CBeebies</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F1029</link></item>
+<item><title>BabyFirst TV</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F1031</link></item>
+<item><title>Baby TV</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F317</link></item>
+<item><title>Discovery Kids</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F309</link></item>
+
+<item><title>DRAGON BALL Z
+</title> <link>rtmp://demo.iblups.com/demo playpath=buvRTQMUNQ swfUrl=http://iblups.com/playertvlive123456789.swf?autostart=true&config=configplayer%2Ephp%3Fid%3D8341 live=1 pageUrl=http://iblups.com/e_richenginner-570-330</link></item>
+<item><title>History</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F3704</link></item>
+<item><title>H2</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F297</link></item>
+<item><title>Discovery Channel Español</title> <link>http://iphone-streaming.ustream.tv/uhls/17248101/streams/live/iphone/playlist.m3u8</link></item>
+<item><title>Discovery Channel</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F3531</link></item>
+<item><title>Discovery World </title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F3529</link></item>
+<item><title>Discovery Theater </title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F3798</link></item>
+<item><title>Discovery Turbo</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F511</link></item>
+<item><title>Discovery Home & Health</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F252</link></item>
+
+<item><title>Investigación Discovery</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F455 </link></item>
+<item><title>TLC</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F327</link></item>
+<item><title>NatGeo</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F395</link></item>
+<item><title>NatGeo Wild</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F254</link></item>
+<item><title>Animal Planet</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F441</link></item>
+<item><title>Fox Life</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F425</link></item>
+<item><title>LIFETIME</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F423</link></item>
+<item><title>beInSports</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F2527</link></item>
+<item><title>GOLTV</title> <link>http://goltv-stream.fubotv.com.global.prod.fastly.net/UT-Origin/ngrp:golTV_all/chunklist_b1096000.m3u8</link></item>
+<item><title>Fox Sports</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F2505</link></item>
+<item><title>Fox Sports 2</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F475</link></item>
+<item><title>Fox Sports 3 </title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F445</link></item>
+<item><title>ESPN</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F2487</link></item>
+<item><title>ESPN 2</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F301 </link></item>
+<item><title>ESPN 3</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F3806</link></item>
+<item><title>Golf Channel Latinoamerica </title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F1489</link></item>
+
+<item><title>UFC Network USA</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F2923</link></item>
+<item><title>UFC Network</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F1047</link></item>
+<item><title>F1 Latinoamerica </title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F1695</link></item>
+<item><title>PLANETA FUTBOL</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F1477</link></item>
+<item><title>Planeta Futbol English Soccer</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F3469</link></item>
+<item><title>AZTECA DEPORTES</title> <link>http://aztecalive-lh.akamaihd.net/i/0sa0dg2r9_1@167681/index_2_av-p.m3u8</link></item>
+<item><title>TDN</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F1059</link></item>
+<item><title>Univision TDN </title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F1483</link></item>
+<item><title>Motors TV</title> <link>http://46.61.226.21/hls/CH_MOTORSTV/variant.m3u8?version=2</link></item>
+<item><title>CDN-SportsMax</title> <link>http://108.168.206.90:1935/cdnsm/cdnsm/playlist.m3u8</link></item>
+<item><title>Real Madrid TV</title> <link>http://rmtvlive-lh.akamaihd.net/i/rmtv_1@154306/index_1250_av-p.m3u8?sd=10&rebase=on</link></item>
+<item><title>SEVILLAFC</title> <link>http://flash0.80137-live0.dna.qbrick.com/80137-live0/sevillafc/stml.m3u8</link></item>
+<item><title>VH1</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F483 </link></item>
+<item><title>MTV</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F2491</link></item>
+<item><title>MTV ROCKS</title> <link>http://hlsstr02.svc.iptv.rt.ru/hls/CH_MTVROCKS/variant.m3u8 </link></item>
+<item><title>Concert Channel</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F479</link></item>
+
+<item><title>Bandamax</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F1467 </link></item>
+<item><title>Kiss tv
+</title> <link>rtmp://tst.es.flash.glb.ipercast.net/tst.es-live/live</link></item>
+<item><title>K Music</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F3467 </link></item>
+<item><title>A-ONE</title> <link>http://hls.novotelecom.ru/streaming/aone/tvrec/playlist.m3u8?=-1</link></item>
+<item><title>VEVO MUSIC </title> <link>http://vevoplaylist-live.hls.adaptive.level3.net/vevo/ch1/05/prog_index.m3u8?=-1</link></item>
+<item><title>VEVO MUSIC </title> <link>http://vevoplaylist-live.hls.adaptive.level3.net/vevo/ch2/05/prog_index.m3u8?=-1</link></item>
+<item><title>VEVO MUSIC </title> <link>http://vevoplaylist-live.hls.adaptive.level3.net/vevo/ch3/05/prog_index.m3u8?=-1</link></item>
+<item><title>Q Musica 
+</title> <link>mms://200.42.92.6:1755/qmusica </link></item>
+<item><title>NTN 24</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F1601</link></item>
+<item><title>CNN Español</title> <link>http://localhost:8899/live.m3u?tmp=1&portal=1&channel=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F1855</link></item>
+
+<item><title>RT en Español</title> <link>http://localhost:8899/live.m3u?tmp=0&portal=1&channel=ffrt2+http%3A%2F%2Fodna.octoshape.net%2Ff3f5m2v4%2Fcds%2Fch2_720p%2Fmedia.m3u8</link></item>
+<item><title>Azteca Noticias</title> <link>http://localhost:8899/live.m3u?tmp=0&portal=1&channel=http%3A%2F%2Furtmpkal-f.akamaihd.net%2Fi%2F077zoqxzy_1%40130091%2Findex_3_av-p.m3u8</link></item>
+<item><title>C5N
+</title> <link>rtmp://c5n.stweb.tv:1935/c5n/live</link></item>
+<item><title>CDN</title> <link>http://108.168.206.90:1935/cdn/cdn/playlist.m3u8</link></item>
+
+</items>

@@ -1,0 +1,1509 @@
+
+<channels>
+
+
+
+<channel>
+<name>Estrenos</name>
+<fanart>https://pbs.twimg.com/media/CTQTVZEVEAAcZxV.jpg:large</fanart>
+<thumbnail>https://pbs.twimg.com/media/CTQTVZEVEAAcZxV.jpg:large</thumbnail>
+<items>
+
+<item>
+    <title>Los 4 Fantásticos</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/qwQFbgUjjpiKOt4f7WM0Qe2oln5.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/2yBWCL0RPJ6Av8LWxcrhuMRlZyG.jpg</fanart>
+     <genre>Acción, Aventura, Fantasía, Ciencia ficción</genre>
+<link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-g8a03ex6v8sx-740x360.html</page><referer>http://streamin.to</referer></regex>
+	 
+     <info>Cuatro astronautas se convierten en superhéroes tras ser contaminados en el espacio exterior. En compañía del benefactor del proyecto, el ambicioso Von Doom (Julian McMahon), los cuatro parten para la exploración de sus vidas. La misión discurre sin incidentes hasta que Reed descubre que hay un error de cálculo en la velocidad con la que se acerca la tormenta. En unos minutos, el umbral de este fenómeno atmosférico está sobre ellos. La estación espacial se ve engullida por turbulentas nubes de radiación cósmica que cambian el genoma de la tripulación. Su ADN se ve irrevocablemente alterado.... y ése va a ser su futuro. De regreso a la Tierra, los efectos de la exposición muestran rápidamente sus primeros síntomas brindando a cada uno de ellos poderes sobrenaturales, convirtiéndose en Los Cuatro Fantásticos: Míster Fantástico, La Chica Invisible, La Antorcha Humana y La Cosa.
+ Dirección : Tim Story
+ Guión : Mark Frost, Michael France, Stan Lee, Jack Kirby, Tim Story
+ Año : 2005
+</info>
+ </item>
+
+<item>
+    <title>Ciudades de Papel</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/mIYVDgnzx6Y0f1bSx50cPiBTc2t.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/wHluZnnKhErthlKQ92wM2r1T3oL.jpg</fanart>
+     <genre>Romance, Misterio, Aventura</genre>
+<link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-ksl64oqubmbv-740x360.html</page><referer>http://streamin.to</referer></regex>
+     <info>Quentin Jacobsen ha pasado toda su vida amando en secreto a la aventurera Margo Roth Spiegelman. Así que cuando ella rompe una ventana y entra en su vida disfrazada de ninja y reclutándole para una misión de venganza, él le sigue sin dudar. Después de que la noche que han pasado juntos termine y el día comience, Q llega al colegio para descubrir que Margo, que siempre ha sido un enigma, ahora es un completo misterio. Pero Q descubre que hay pistas y que son para él. Andando por un camino sin conexión, cuanto más cerca está, menos ve de la chica que él creía que conocía.
+ Dirección : Jake Schreier
+ Guión : Scott Neustadter, Michael H. Weber, John Green
+ Año : 2015
+</info>
+ </item>
+
+<item>
+    <title>Y de repente tú</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/2USk7mhiCXRkU9NzttXCzOjg2iV.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/aeUT193K0ZxrVwK3zfL2EjoyQWG.jpg</fanart>
+     <genre>Romance, Comedia</genre>
+<link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-wkyejsxpitke-740x360.html</page><referer>http://streamin.to</referer></regex>
+     <info>Desde pequeña, Amy ha oído a su padre decir que la monogamia no es un estado realista. La periodista vive de acuerdo con las creencias de su padre, disfrutando de una vida sin ataduras, libre de aburridas promesas románticas. Sin embargo, ha llegado a un punto muerto. Cuando descubre que se está enamorando del hombre al que dedica un artículo, un encantador y exitoso médico deportivo llamado Aaron Conners, Amy se replantea sus creencias y su estilo de vida.
+ Dirección : Judd Apatow
+ Guión : Amy Schumer
+ Año : 2015
+</info>
+ </item>
+
+
+  <item>
+    <title>Misión Imposible: Nación secreta</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/z2sJd1OvAGZLxgjBdSnQoLCfn3M.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/vZMSji6u1Kfg5TcWWi4IAzfqXfC.jpg</fanart>
+     <genre>Acción, Aventura, Suspense</genre>
+	 
+ <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-vosvxrap5kzy-740x360.html</page><referer>http://streamin.to</referer></regex>
+ 
+     <info>Con la FMI disuelta y Ethan Hunt (Tom Cruise) abandonado a su suerte, el equipo tiene que enfrentarse contra el Sindicato, una red de agentes especiales altamente preparados y entrenados. Estos grupos están empeñados en crear un nuevo orden mundial mediante una serie de ataques terroristas cada vez más graves. Ethan reúne a su equipo y une sus fuerzas con la agente británica renegada Ilsa Faust (Rebecca Ferguson), quien puede que sea o no miembro de esta nación secreta, mientras el grupo se va enfrentando a su misión más imposible hasta la fecha... Quinta entrega de la saga Misión Imposible.
+ Dirección : Christopher McQuarrie
+ Guión : Drew Pearce, Will Staples
+ Año : 2015
+</info>
+ </item>
+
+ 
+ 
+
+</items>
+</channel>
+
+
+
+
+
+
+
+
+<channel>
+<name>Accion</name>
+<fanart>https://pbs.twimg.com/media/CTQTVZEVEAAcZxV.jpg:large</fanart>
+<thumbnail>https://pbs.twimg.com/media/CTQTVZEVEAAcZxV.jpg:large</thumbnail>
+<items>
+<item>
+    <title>Fast & Furious 7</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/mm3Ahwv5z32MRs8FTGXC4QrGyN1.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/ypyeMfKydpyuuTMdp36rMlkGDUL.jpg</fanart>
+     <genre>Acción, Aventura, Crimen, Romance, Suspense</genre>
+  
+	 
+ <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-vosvxrap5kzy-740x360.html</page><referer>http://streamin.to</referer></regex>
+ 
+     
+     <info>De nuevo los problemas les persiguen. Sin conseguir librarse de la mancha de criminales de su ficha. Su pasado de larga trayectoria en las carreras ilegales les perseguirá y deberán hacer frente a las circunstancias de la única forma que saben. Cuando les pongan entre la espada y la pared idearán un plan para escapar del peligro en una trepidante carrera por salvar la vida y limpiar su reputación. Acción, persecuciones y un ritmo frenético en esta nueva entrega.
+ Dirección : James Wan
+ Guión : Chris Morgan
+ Año : 2015
+</info>
+ </item>
+
+<item>
+    <title>Mad Max - Salvajes de autopista</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/pl3N6X1WPsVDU0qipr0Fh2P3GQY.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/yaps1kzbHVxTpCmuMgWm8zaTdnN.jpg</fanart>
+     <genre>Aventura, Acción, Suspense, Ciencia ficción</genre>
+    
+	 
+ <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-p0ukklhggixx-740x360.html</page><referer>http://streamin.to</referer></regex>
+ 
+     
+     <info>En un futuro posnuclear, Max Rockatansky, un policía encargado de la vigilancia de una autopista, tendrá que vérselas con unos criminales que actúan como vándalos, sembrando el pánico por las carreteras. Cuando, durante una persecución, Max acaba con Nightrider, el líder del violento grupo, el resto de la banda jura vengar su muerte.
+ Dirección : George Miller
+ Guión : James McCausland, George Miller, Byron Kennedy
+ Año : 1979
+</info>
+ </item>
+
+ 
+ 
+ 
+ <item>
+    <title>Mad Max II, el guerrero de la carretera</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/siMGWFajjGu9d06vDyeaN4mKznv.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/ns75FqFLk1v6jEmecgu25IOk8yB.jpg</fanart>
+     <genre>Aventura, Acción, Suspense, Ciencia ficción</genre>
+     
+	 
+ <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-cnzleyb5qk30-740x360.html</page><referer>http://streamin.to</referer></regex>
+ 
+     
+     <info>Tras el holocausto nuclear, la gasolina se ha convertido en un bien escaso y muy codiciado. Mad Max, héroe solitario, inicia una lucha sin cuartel para ayudar a una colonia de supervivientes constantemente atacada por un grupo de violentos guerreros que intenta arrebatarle un tanque de gasolina. Max decide ayudar a los defensores del tanque utilizando un enorme camión como trampa. La banda de guerreros persigue al camión, pensando que transporta miles de litros de gasolina.
+ Dirección : George Miller
+ Guión : Terry Hayes, George Miller, Brian Hannant
+ Año : 1981
+</info>
+ </item>
+
+ 
+ <item>
+    <title>Mad Max III, más allá de la cúpula del trueno</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/6KJ2jKf4J3QsNfKsFcJfhhceOeJ.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/r3MhvwPC8zFBAv8HL5WBtl3F8cn.jpg</fanart>
+     <genre>Acción, Aventura, Drama, Ciencia ficción</genre>
+     
+	 
+ <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-9lvfkm1ie9il-740x360.html</page><referer>http://streamin.to</referer></regex>
+ 
+     
+     <info>Tras la catástrofe nuclear, Mad Max cruza un desierto donde pierde su caravana de camellos. Llega a una ciudad donde le proponen cambiárselos a cambio de que ataque al tirano de la ciudad subterránea, un enano que fabrica gas metano con excrementos de cerdo.
+ Dirección : George Miller
+ Guión : Terry Hayes, George Miller
+ Año : 1985
+</info>
+ </item>
+
+ 
+ 
+ <item>
+    <title>Focus</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/yuJFsgq9kWPAFwRbfHIE2Ty1YXN.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/bd8RdP2OduLBGkUMdc8PZPjdtbI.jpg</fanart>
+     <genre>Romance, Comedia, Crimen, Drama</genre>
+     
+	 
+ <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-uv9uvfrgww7p-740x360.html</page><referer>http://streamin.to</referer></regex>
+ 
+     
+     <info>Will Smith interpreta a Nicky, un estafador profesional que decide ayudar a una joven novata del mundo de la criminalidad llamada Jess. Ella busca acercarse más en la relación con Nicky y tras pasar un tiempo juntos comienzan a enamorarse y empiezan una relación amorosa. Él se dedica a enseñarle tretas para que aprenda mejor a estafar y robar. Pero cuando menos se lo espera, Nicky rompe la relación de repente. El motivo es que una mujer perteneciente a su pasado ha vuelto a su vida, reaparece en Buenos Aires en un circuito de carreras en el que hay apuestas muy elevadas pero ella intentará echar los planes de Nicky por tierra y aprovechar su lado de estafador.
+ Dirección : Glenn Ficarra
+ Guión : John Requa, Glenn Ficarra
+ Año : 2015
+</info>
+ </item>
+
+ 
+ 
+  <item>
+    <title>Escobar: Paraíso perdido</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/uEuG0cxHeEPY6SirTu3SzRjkp9v.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/gbwOFHXSLi1DD3D7eI2vlZWIAyq.jpg</fanart>http://streamin.to/
+     <genre>Suspense, Romance</genre>
+    
+	 
+ <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-js0ffnrlexgl-740x360.html</page><referer>http://streamin.to</referer></regex>
+ 
+     
+     <info>Nick, un joven surfista, cree que todos sus sueños se han hecho realidad cuando va a visitar a su hermano en Colombia. Con el trasfondo idílico de lagunas azules y blancas playas, Nick se enamora perdidamente de una bella joven llamada María. Todo parece perfecto hasta que Nick conoce al tío de la joven, un tal Pablo Escobar.
+ Dirección : Andrea Di Stefano
+ Guión : Andrea Di Stefano
+ Año : 2014
+</info>
+ </item>
+
+ 
+ 
+ <item>
+    <title>Una noche para sobrevivir</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/rt3pAcyuDCKmFpZSkNFrlAn1vGd.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/rSf0RYkPiMo9TyjHs2vI8rHlmfF.jpg</fanart>
+     <genre>Acción, Crimen, Drama, Misterio, Suspense</genre>
+    
+	 
+ <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-tsxvt80y0y9q-740x360.html</page><referer>http://streamin.to</referer></regex>
+ 
+     
+     <info>Al veterano mercenario Jimmy Conlon, conocido como El Cavatumbas, lo persiguen los crímenes del pasado, pero tambien el policía que le ha seguido la pista durante 30 años. Cuando se entera de que su hijo Mike corre peligro, Jimmy tiene que elegir entre el clan criminal al que ha pertenecido siempre y su familia, a la que había abandonado hace mucho tiempo. Sólo dispone de una noche para averiguar a quién debe su lealtad.
+ Dirección : Jaume Collet-Serra
+ Guión : Brad Ingelsby
+ Año : 2015
+</info>
+ </item>
+
+ 
+  <item>
+    <title>Mortdecai</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/j2DbnrZ3GFUtxM2FD2F0DROft6W.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/wNnuYx5tMiVEnru3zJS85kSzzRs.jpg</fanart>
+     <genre>Comedia, Aventura</genre>
+    
+	 
+ <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-u7ifyawqkiio-740x360.html</page><referer>http://streamin.to</referer></regex>
+ 
+     
+     <info>La trama gira en torno a Charlie Mortdecai, un excéntrico marchante de arte que recorre el planeta en busca de una codiciada pintura que podría contener el código de una olvidada cuenta bancaria de los nazis.
+ Dirección : David Koepp
+ Guión : Eric Aronson, Kyril Bonfiglioli
+ Año : 2015
+</info>
+ </item>
+
+ 
+  <item>
+    <title>Vengadores: La era de Ultrón</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/hggjNxXc6XfxdHMjkvHYKfvJCMM.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/570qhjGZmGPrBGnfx70jcwIuBr4.jpg</fanart>
+     <genre>Ciencia ficción, Acción, Aventura</genre>
+     
+	 
+ <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-h46gw4negj4w-740x360.html</page><referer>http://streamin.to</referer></regex>
+ 
+     
+     <info>Cuando Tony Stark intenta reactivar un programa caído en desuso cuyo objetivo es mantener la paz, las cosas empiezan a torcerse y los héroes más poderosos de la Tierra, incluyendo a Iron Man, Capitán América, Thor, El Increíble Hulk, Viuda Negra y Ojo de Halcón, tendrán que afrontar la prueba definitiva cuando el destino del planeta se ponga en juego. Cuando el villano Ultron emerge, le corresponderá a Los Vengadores detener sus terribles planes, que junto a incómodas alianzas llevarán a una inesperada acción que allanará el camino para una épica y única aventura.
+ Dirección : Joss Whedon
+ Guión : Joss Whedon
+ Año : 2015
+</info>
+ </item>
+
+ 
+ 
+ 
+ <item>
+    <title>Rapido y Furioso 1</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/6B7EUs2SEtYfBGfUP6wELmYVUJQ.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/lmIqH8Qsv3IvDg0PTFUuVr89eBT.jpg</fanart>
+     <genre>Acción, Crimen, Suspense</genre>
+     
+	 
+ <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-76jgmk47kj37-740x360.html</page><referer>http://streamin.to</referer></regex>
+ 
+     
+     <info>Una misteriosa banda de delincuentes se dedica a robar camiones en plena marcha desde vehículos deportivos. La policía decide infiltrar a un hombre en el mundo de las carreras ilegales para descubrir posibles sospechosos. El joven y apuesto Brian entra en el mundo del tuning donde conoce a Dominic, rey indiscutible de este mundo y sospechoso número uno, pero todo se complica cuando se enamora de la hermana de éste.
+ Dirección : Rob Cohen
+ Guión : Ken Li, Gary Scott Thompson, Erik Bergquist, David Ayer
+ Año : 2001
+</info>
+ </item>
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+</items>
+</channel>
+
+
+
+
+
+
+
+
+
+
+<channel>
+<name>Comedia</name>
+<fanart>https://pbs.twimg.com/media/CTQTVZEVEAAcZxV.jpg:large</fanart>
+<thumbnail>https://pbs.twimg.com/media/CTQTVZEVEAAcZxV.jpg:large</thumbnail>
+<items>
+
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-0uk9x8emv7i9-740x360.html</page><referer>http://streamin.to</referer></regex><title>Noche en el museo: El secreto del faraón</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/74LwQbraXCKUxYZITx5CqoFmaqd.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/73hI1zgRALUDrB46JDPBLFqHcqv.jpg</fanart>
+     <genre>Aventura, Comedia, Fantasía, Familia</genre>
+      <info>La tabla de Ahkmenrah, la que hace que las estatuas de los museos cobren vida, está perdiendo su magia. En un intento desesperado para proteger el valioso tesoro, Larry Daley viajará junto a sus amigos Theodore Roosevelt -Robin Williams en su última película-, el faraón Ahkmenrah, Atila, Jebediah Smith, Augustus Octavius y Sacagawea desde Nueva York hasta Londres. Allí intentarán contactar con alguien del Museo de Londres que les ayude a restaurar la magia y conocerán a Sir Lancelot y otros personajes del antiguo Egipto.
+ Dirección : Shawn Levy
+ Guión : Thomas Lennon, David Guion, Michael Handelman, Ben Garant
+ Año : 2014
+</info></item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-q2wu0yvxzik2-740x360.html</page><referer>http://streamin.to</referer></regex><title>Se nos fue de las manos</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/3Xh98Zj3sEd2MIyC5NPMd53NJJb.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/fwNCHtxafF3iaVuo94bcYdv9f8p.jpg</fanart>
+     <genre>Comedia</genre>
+ 
+     <info>Marc Schaudel se queda sin niñera durante el fin de semana para que cuide de su hijo Rémy. Entonces, decide dejar al cargo de su hijo a uno de sus empleados, el joven y serio Franck. Sin embargo, la seriedad de Franck no es del todo segura. Durante el fin de semana es el treinta cumpleaños de Franck, y para colmo, Rémy es un niño más caprichoso de lo que sus padres creen. Mientras Marc y su mujer Claire están fuera, reciben una llamada en mitad de la noche de la policía, alertando al matrimonio de algo inesperado: tanto Rémy como Franck han desaparecido. Cuando estos llegan a casa, se encuentran con que está destrozada, y en el sofá descubren una videocámara. Esta contiene la grabación de lo que ocurrió la noche anterior a la desaparición de Franck y Rémy.
+ Dirección : Philippe Lacheau
+ Guión : Philippe Lacheau, Pierre Lacheau, Julien Arruti, Tarek Boudali
+ Año : 2014
+</info></item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-kkdwa7ggy7qo-740x360.html</page><referer>http://streamin.to</referer></regex><thumbnail>http://95.211.174.148:8777/i/04/00927/kkdwa7ggy7qo_t.jpg</thumbnail><title>bvciuad</title>
+<info2>1280x556, 01:44:42</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-bwrcijpaib8q-740x360.html</page><referer>http://streamin.to</referer></regex><title>Híncame el diente</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/8kEkMokHbpKiGmSCYm53HFFRWXl.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/1A5oDak9MwbHN2TU4gy3e8kfzU7.jpg</fanart>
+     <genre>Comedia, Terror</genre>
+  
+     <info>&#x27;Vampires Suck&#x27; es una comedia sobre la ansiedad adolescente. Becca es una adolescente no vampiro que se debate entre dos chicos. Antes de que pueda elegir, Becca debe sortear a su padre, quien avergüenza a su hija por tratarla como si fuera una niña. Mientras tanto, los amigos de Becca deberán lidiar con sus propios problemas amorosos, chocando todos ellos en el baile de graduación. Parodia de la creciente moda de las películas vampíricas, tomando Crepúsculo como eje.
+ Dirección : Jason Friedberg
+ Guión : Jason Friedberg, Aaron Seltzer
+ Año : Vamp
+</info></item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-2pfdlevhjw02-740x360.html</page><referer>http://streamin.to</referer></regex><title>The Interview</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/11HU0H6nP0sq9tqjaJp3fqEc8ht.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/p5n7VTC6qmFIuBFjACWURYCAlKP.jpg</fanart>
+     <genre>Acción, Comedia</genre>
+
+     <info>Dave Skylark, presentador de un conocido programa de entrevistas, y su productor, Aaron Rapoport, consiguen una entrevista exclusiva con Kim Jong-Un, dictador de Corea del Norte. Ante tal oportunidad, la CIA les pide un favorcillo: asesinar a Kim. Pero lo cierto es que Dave y Aaron no son las personas más cualificadas para realizar un magnicidio.
+ Dirección : Evan Goldberg
+ Guión : Dan Sterling, Seth Rogen, Evan Goldberg
+ Año : 2014
+</info></item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-lznkijnwejc4-740x360.html</page><referer>http://streamin.to</referer></regex><title>Hogar no tan dulce hogar</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/poFK3K8BoaE1ZHKtEoDTkS7uE5M.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/xpW3IqNqsZcRMthXq8Pv39OfHDD.jpg</fanart>
+     <genre>Drama, Comedia</genre>
+    
+     <info>Esta comedia cuenta la historia de Don (Patrick Wilson), quien parece tener el matrimonio, la vida y la casa perfecta, hasta que aparece una joven y sexy mujer (Jordana Brewster) que duerme con él y luego lo chantajea con dinero, a menos que quiera que su esposa (Heigl), una mujer bipolar y obsesiva-compulsiva sepa todo lo que ha hecho su marido.
+ Dirección : Anthony Burns
+ Guión : Carlo Allen, Ted Elrick, Tom Lavagnino
+ Año : 2015
+</info></item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-pz1nk8g5nylk-740x360.html</page><referer>http://streamin.to</referer></regex><title>Nosotros los Nobles</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/9JbDWnANerHfvnmDwwGoguB3Pib.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/6BVrdBe6uzO2HUUg0HMjTTBEUfG.jpg</fanart>
+     <genre>Comedia</genre>
+     <info>Germán Noble es un manipulador y poderoso empresario quien decide fingir la bancarrota para darles una lección a sus tres frívolos e inútiles hijos.
+ Dirección : Gary Alazraki
+ Guión : Gary Alazraki, Adrian Zurita, Patricio Saiz
+ Año : 2013
+</info></item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-bbfo8uizov0h-740x360.html</page><referer>http://streamin.to</referer></regex><title>Stefan v/s Kramer</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/uR8KN63Woxn7DXlFZ7xI9iZMtXK.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/kcuQw3ojX3U0d5zOkWZJmOVoDH9.jpg</fanart>
+     <genre>Comedia</genre>
+         <info>Tras su rotundo exito y su obsesion por el trabajo, Stefan Kramer se encuentra frente a un profundo conflicto familiar y el enojo de conocidos miembros de la politica y la farandula nacional. Su mujer que se ha visto postergada por el exito de su conocido esposo y la crianza de sus hijos, ve la posibilidad de retomar su carrera en un concurso de talentos para famosos, Stefan no cree en ella e intentara boicotear su oportunidad. Kramer se enfrentara entonces a sus propios fantasmas y tendra que recurrir a la amistad y el humor, para recuperar el amor y la familia.
+ Dirección : Sebastian Freund
+ Guión : Sebastian Freund, Stefan Kramer, Leonardo Prieto
+ Año : 2012
+</info></item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-etp2eepycrfe-740x360.html</page><referer>http://streamin.to</referer></regex><title>The DUFF</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/dBBgPTCN5Zze4POXWVVpwf3wkra.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/awGZf5T1hflis9Z2KvRMhp798xU.jpg</fanart>
+     <genre>Comedia</genre>
+     <info>Bianca (Mae Whitman) es una estudiante que descubre que entre la gente popular del instituto, tiene puesta la etiqueta de la D.U.F.F., siglas de la Amiga Gorda Fea Diseñada, es decir, la más fea de un grupo de amigas. En un intento para que no cunda el caos en su último año como escolar, decide pedir la ayuda de su encantador vecino el deportista, Wesley (Robbie Amell), para poder reinventarse y desprenderse del despreciable calificativo, y poder conseguir una cita con Toby (Nick Eversman), su amor platónico.
+ Dirección : Ari Sandel
+ Guión : Josh A. Cagan, Kody Keplinger
+ Año : 2015
+</info></item>
+
+
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-p8wvewbsnklo-740x360.html</page><referer>http://streamin.to</referer></regex> <title>Superpoli en Las Vegas</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/kV14x4DnVWvNCg5NO2MO0iU3NlK.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/5W6XO9KjLRY6W9wGojpzK8EqEgQ.jpg</fanart>
+     <genre>Familia, Comedia, Acción, Aventura</genre>
+     <info>Esta vez seguimos a Paul Blart hasta Las Vegas, donde va a acudir a una Expo de Guardias de Seguridad junto con su hija adolescente, antes de que esta se marche a la universidad. Con lo que Blart no cuenta es que van a atracar el casino donde se encuentra tanto su hija como él, desencadenando situaciones hilarante y teniendo que demostrar todo lo que ha aprendido en su formacón.
+ Dirección : Andy Fickman
+ Guión : Kevin James, Nick Bakay
+ Año : 2015
+</info></item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-xa3w9twd19i7-740x360.html</page><referer>http://streamin.to</referer></regex><title>Los pingüinos del Sr. Poper</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/nh6fg5nWOQqFM6z5p42yjfd1hxl.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/kJTtIU4sBfgGa6GqPkpFh3K07qM.jpg</fanart>
+     <genre>Comedia, Familia</genre>
+   
+     <info>Mr. Popper vive en una tranquila y pequeña ciudad americana llamada Stillwater. Allí nunca pasa nada. Quizá por eso se ha convertido en un soñador y en un especialista en temas del Ártico y de la Antártida, incluso podría decir el nombre de todos sus exploradores y qué fueron a hacer a los polos. Un día conversa, gracias a un programa de radio, con el almirante Drake sobre su expedición a la Antártida, y éste le dice que pronto recibirá una sorpresa… Lo que nadie podía suponer es que el almirante iba a enviar una caja con ¡un pingüino de la mismísima Antártida! La vida de nuestro protagonista cambiará radicalmente, y la aburrida vida en Stillwater se transformará en una fantástica y permanente aventura llena de pingüinos
+ Dirección : Mark Waters
+ Guión : Sean Anders, John Morris
+ Año : 2011
+</info></item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-vdsqn6zjbni5-740x360.html</page><referer>http://streamin.to</referer></regex><title>Ocho apellidos vascos</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/xoZikQavGhmBegJTD2AY4u3htUU.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/ohm7LXOufzAktoainDJwKtA4oDX.jpg</fanart>
+     <genre>Comedia, Romance</genre>
+
+     <info>Rafa (Dani Rovira) es un joven señorito andaluz que no ha tenido que salir jamás de su Sevilla natal para conseguir lo único que le importa en la vida: el fino, la gomina y las mujeres. Hasta que un día todo cambia cuando aparece la primera mujer que se resiste a sus encantos: Amaia (Clara Lago), una vasca. Decidido a conquistarla, Rafa viaja hasta un pueblo de la Euskadi profunda, donde para que Amaia le haga algo de caso deberá hacerse pasar por vasco. Rafa pasará entonces a llamarse Antxon, nombre euskera al que decide además acompañar de unos cuantos apellidos vascos: Arguiñano, Igartiburu, Erentxun, Gabilondo, Urdangarin, Otegi, Zubizarreta y… Clemente.
+ Dirección : Emilio Martínez Lázaro
+ Guión : Borja Cobeaga, Diego San José
+ Año : 2014
+</info></item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-91lcuh1yzrt5-740x360.html</page><referer>http://streamin.to</referer></regex> <title>Papeles en el viento</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/cfCB68VQiAp3WBD7tBMzzI55pFZ.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/zEk9wjp0UDORWvr79N8LpiEUfD7.jpg</fanart>
+     <genre>Comedia, Drama</genre>
+ 
+     <info>Adaptación al cine del libro Papeles en el viento de Eduardo Sacheri (el mismo autor de El secreto de sus ojos). Cuenta la historia de 3 amigos del Club Atlético Independiente que quieren recuperar la inversión que realizó un amigo de ellos sobre un jugador de fútbol, antes de que muriera por un cáncer fulminante.
+ Dirección : Juan Taratuto
+ Guión : Eduardo Sacheri, Juan Taratuto
+ Año : 2015
+</info></item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-bukoci400fvh-740x360.html</page><referer>http://streamin.to</referer></regex> <title>Perdiendo el norte</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/hLtmzVUqyF7er8JdGL0VlORVdRW.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/xLBWYTOlmRusnXYQeUFsBCwq1jA.jpg</fanart>
+     <genre>Comedia</genre>
+ 
+     <info>Hugo y Braulio, dos jóvenes con formación universitaria pero sin futuro en España, deciden en embarcarse en un viaje a Alemania para comenzar allí una nueva vida, tal como se muestra en el programa de televisión Españoles por el mundo. Pero cuando llegan al país germano se dan cuenta de que nada es fácil en la vida y descubrirán que sobrar en un sitio no significa encajar en otro.
+ Dirección : Nacho G. Velilla
+ Guión : Nacho G. Velilla, Oriol Capel, David S. Olivas, Antonio Sánchez
+ Año : 2015
+</info></item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-1c1vgal5eqy1-740x360.html</page><referer>http://streamin.to</referer></regex><thumbnail>https://image.tmdb.org/t/p/w500/lKlKi0HJTTpycoxy4BEjOABDt18.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/bOJw2d58ikMftI0JBwMIna58YEu.jpg</fanart>
+     <genre>Comedia, Romance</genre>
+ 
+     <info>The Movie Database (TMDb) is a popular, user editable database for movies and TV shows.
+ Dirección : 
+ Guión : 
+ Año : Tran
+</info><title>Revenge of the Bridesmaid</title>
+<info2>640x360, 02:06:40</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-1jz4mn3ea67b-740x360.html</page><referer>http://streamin.to</referer></regex><title>Espías</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/iWpk0PyHmfiqqVBy4j4Un9tubyI.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/AoYGqtWxcNmQjQIpRCMtzpFfL1T.jpg</fanart>
+     <genre>Crimen, Acción, Comedia</genre>
+ 
+     <info>Susan Cooper (Melissa McCarthy) es una modesta y sedentaria analista de la CIA y la heroína olvidada de las misiones más peligrosas de la agencia. Pero cuando su compañero (Jude Law) desaparece de la faz de la Tierra y otro agente (Jason Statham) se ve envuelto en problemas, Susan se presenta voluntaria como agente secreto para emprender una misión encubierta en la que se tendrá que infiltrar en el mundo de un sanguinario traficante de armas para evitar un desastre mundial.
+ Dirección : Paul Feig
+ Guión : Paul Feig
+ Año : 2015
+</info></item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-qasj5d8mcaaj-740x360.html</page><referer>http://streamin.to</referer></regex> <title>Ted</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/8wUtZJGiehwEJ6oDdc6yctANiCg.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/sPiFgbWMSQxVMO6TuRFrkeWwarI.jpg</fanart>
+     <genre>Comedia, Fantasía</genre>
+ 
+     <info>La historia se centra en las aventuras de un hombre que ve cómo su osito de peluche de la infancia adquiere vida debido a un deseo que formuló cuando era pequeño, convirtiéndose el peluche en un gandul deslenguado que alterará por completo su vida y pondrá en peligro su relación amorosa con su pareja, debido a su comportamiento totalmente salvaje y su conducta fuera de toda norma social.
+ Dirección : Seth MacFarlane
+ Guión : Seth MacFarlane, Alec Sulkin, Wellesley Wild
+ Año : 2012
+</info></item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-7ezlpbl86cty-740x360.html</page><referer>http://streamin.to</referer></regex> <title>Va a ser que nadie es perfecto</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/bDMDKmmYHkSEcvrmiYLq94jIX91.jpg</thumbnail>
+     <fanart> </fanart>
+     <genre>Comedia</genre>
+ 
+     <info>Rubén es sordo, y lo que más le gusta en el mundo son las mujeres y sus amigos. Carlos es ciego, y lo que más le gusta en el mundo es el cine, su perro lazarillo Woody y sus amigos. Dani es cojo, y lo que más le gusta en el mundo es meterse con la peña, su coche Blanquito y sus amigos.Carlos, el ciego, se va a casar el 27 de Agosto con una chica que es su novia de toda la vida. Sus amigos Rubén y Dani quieren celebrar la noche del 26 con una despedida de soltero por todo lo alto. Se reúnen en su bar habitual, se guapean, se montan en el buga de Dani, y al ritmo del último hit del verano, emprenden la aventura.
+ Dirección : Joaquín Oristrell
+ Guión : Albert Espinosa
+ Año : 2006
+</info></item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-ud6zl7q49pck-740x360.html</page><referer>http://streamin.to</referer></regex> <title>Con la magia en los zapatos</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/aSI9kOafWaMhEbH9jf6zww5uqCV.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/fdP1YTHyskg4zH8Ap41Wczf5yWG.jpg</fanart>
+     <genre>Comedia, Drama, Fantasía</genre>
+ 
+     <info>El filme, protagonizado por Adam Sandler (Niños grandes 2), cuenta la historia de un hombre que se gana la vida reparando zapatos que tiene una habilidad excepcional: es capaz de meterse metafísicamente en las vidas de aquellas personas a las que ha arreglado el calzado.
+ Dirección : Thomas McCarthy
+ Guión : Thomas McCarthy, Paul Sado
+ Año : 2014
+</info></item>
+
+
+
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-21j3iossvcjz-740x360.html</page><referer>http://streamin.to</referer></regex><thumbnail>http://95.211.210.96:8777/i/01/00926/21j3iossvcjz_t.jpg</thumbnail><title>1</title>
+<info2>1024x436, 01:29:35</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-59pyseb71vu4-740x360.html</page><referer>http://streamin.to</referer></regex><thumbnail>http://95.211.203.197:8777/i/02/00926/59pyseb71vu4_t.jpg</thumbnail><title>2</title>
+<info2>1024x436, 01:35:02</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-bte6h6va9ybk-740x360.html</page><referer>http://streamin.to</referer></regex><thumbnail>http://95.211.203.197:8777/i/02/00926/bte6h6va9ybk_t.jpg</thumbnail><title>3</title>
+<info2>1024x436, 01:34:31</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-hef3fpdly3av-740x360.html</page><referer>http://streamin.to</referer></regex><thumbnail>http://95.211.186.232:8777/i/03/00926/hef3fpdly3av_t.jpg</thumbnail><title>El Vecindario</title>
+<info2>480x360, 01:25:42</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-ezq3rqpwd24p-740x360.html</page><referer>http://streamin.to</referer></regex><thumbnail>http://62.212.82.65:8777/i/04/00926/ezq3rqpwd24p_t.jpg</thumbnail><title>Los Verduleros</title>
+<info2>720x480, 01:37:50</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-39b7moqgot9f-740x360.html</page><referer>http://streamin.to</referer></regex> <title>Tammy: Fuera de control</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/cq6wvDqETqJXgpQplkL0FBw2leM.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/vmrDTWGTupJQ8KRUNrx4RLGtTVp.jpg</fanart>
+     <genre>Comedia</genre>
+ 
+     <info>Después de perder su trabajo y descubrir que su marido le ha sido infiel, una mujer trata de salir adelante con su profana y bebedora abuela.
+ Dirección : Ben Falcone
+ Guión : Ben Falcone, Melissa McCarthy
+ Año : 2014
+</info></item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-htltfac3z92l-740x360.html</page><referer>http://streamin.to</referer></regex> <title>Un Desmadre de Viaje</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/sLtMsm0JfGIPmrS8V5ibFsoJ6Ut.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/tLTWqdazwadvgtBDkcYzUXvj15p.jpg</fanart>
+     <genre>Comedia</genre>
+ 
+     <info>Andy Brewster (Seth Rogen) está a punto de emprender el viaje de su vida, y quién mejor para acompañarle que su autoritaria madre, Joyce. Tras decidir comenzar su aventura con una rápida visita a la casa de su madre, Andy se siente culpable, y se la lleva en su viaje. A lo largo de casi 5.000 kilómetros con paisajes diferentes, a él le exasperan las constantes bufonadas de su madre, pero con el tiempo se va dando cuenta de que sus vidas tienen más cosas en común de lo que había creído en un principio.
+ Dirección : Un Desmadre de Viaje
+ Guión : Anne Fletcher, Dan Fogelman
+ Año : 2012
+</info></item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-v7rvrfbimuig-740x360.html</page><referer>http://streamin.to</referer></regex> <title>R3sacón</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/bqcdUnKEz64wTipCoGWzvwXGxjD.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/xIrtFqXc62VGcWKHOsQfCq4j3x0.jpg</fanart>
+     <genre>Comedia</genre>
+ 
+     <info>Tras la inesperada muerte de su padre, Alan (Zach Galifianakas) es llevado por sus amigos Phil (Bradley Cooper), Stu (Ed Helms) y Doug (Justin Bartha) a un centro especializado para que mejore. Esta vez no hay boda ni fiesta de despedida ¿Qué puede ir mal? Pues que cuando estos chicos salen a la carretera, y sobre todo cuando aparece Chow (Ken Jeong)... la suerte está echada. Tercera entrega de la franquicia iniciada en 2009 con &#x27;Resacón en Las Vegas&#x27;.
+ Dirección : Todd Phillips
+ Guión : Craig Mazin, Todd Phillips
+ Año : 2013
+</info></item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-zctxxri8lg4r-740x360.html</page><referer>http://streamin.to</referer></regex><title>¡Este cuerpo no es el mío!</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/dHdbXvW7ojtMepD3JMAxXMvWraz.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/lRCpAiSMLSpPtc3hiPUBbdbcgXn.jpg</fanart>
+     <genre>Comedia, Fantasía</genre>
+ 
+     <info>Una joven adolescente, muy popular y atractiva pero mala, se despierta un día dentro del cuerpo de un hombre. Mientras intenta descubrir qué ha pasado y cómo volver a su estado anterior, se da cuenta entonces de lo cruel y maligna que ha sido con los demás hasta ese momento.
+ Dirección : Tom Brady
+ Guión : Tom Brady, Rob Schneider
+ Año : 2002
+</info></item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-h6gj7z7bn4sr-740x360.html</page><referer>http://streamin.to</referer></regex><title>Esto es la guerra</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/1qm2SNqNsbQjEchDAL51fbv86qD.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/aJh5rFH6jQRqvZyd0HR8BMiHhRn.jpg</fanart>
+     <genre>Acción, Comedia, Romance</genre>
+ 
+     <info>Dos agentes de la CIA, grandes amigos desde la infancia, se enamoran de la misma mujer. Su amistad desaparece y se enzarzan en una batalla de proporciones épicas que pondrá en jaque a la ciudad de Nueva York.
+ Dirección : McG
+ Guión : Marcus Gautesen, Timothy Dowling
+ Año : 2012
+</info></item>
+
+
+
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-6g5ee6ut34a4-740x360.html</page><referer>http://streamin.to</referer></regex> <title>Mil palabras</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/11ipUFZEuMCRk7fmc7Xk0bPkk3f.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/iskupQlVbYmWrxNH6ifatWf2X5n.jpg</fanart>
+     <genre>Comedia, Drama</genre>
+ 
+     <info>“Mil palabras (A thousand words)”, que protagonizará Eddie Murphy, contará la historia de un hombre bastante hablador que descubre que, a partir de un momento determinado, sólo podrá pronunciar mil palabras, ya que, si rebasa esa cifra, fallecerá.
+ Dirección : Brian Robbins
+ Guión : Steve Koren
+ Año : 2012
+</info></item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-f5tdaxmb4cfv-740x360.html</page><referer>http://streamin.to</referer></regex><title>Tipo Duro</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/acXahXPfgIw1jRYc5eNcJsnwrPd.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/r1IN5dsXYvb2Pt644SulIf8NfbY.jpg</fanart>
+     <genre>Acción, Drama</genre>
+ 
+     <info>Danny Trejo es el condecorado en Vietnam Frank Vega, quien tras regresar a casa comprueba que es rechazado por una sociedad que le deja sin trabajo. Pero años más tarde, Fank se convierte en un héroe local al proteger a un anciano negro de dos cabezas rapadas que intentan agredirle en el autobús. Su suerte vuelve a cambiar cuando su mejor amigo es asesinado y ve como la policía no está haciendo nada al respecto.
+ Dirección : Craig Moss
+ Guión : Craig Moss, Elliot Tishman
+ Año : 2012
+</info></item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-17wazcovq8zv-740x360.html</page><referer>http://streamin.to</referer></regex> <title>El diario de Greg 3: Días de perros</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/fCgKeKyuVLn0Jej5lMaqwzE9pOx.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/4mdRyMSLHxeTIwqNLUgQtNxla20.jpg</fanart>
+     <genre>Comedia, Familia</genre>
+ 
+     <info>Tercera entrega de la serie El diario de Greg. La escuela ha terminado y Greg está listo para disfrutar del verano, pero todos sus planes salen mal. ¿Qué va a hacer ahora?
+ Dirección : David Bowers
+ Guión : Jeff Judah, Gabe Sachs, Maya Forbes, Wallace Wolodarsky
+ Año : 2012
+</info></item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-tys0eycn8d74-740x360.html</page><referer>http://streamin.to</referer></regex><thumbnail>http://95.211.196.18:8777/i/02/00926/tys0eycn8d74_t.jpg</thumbnail><title>El Vecindario 2 mex</title>
+<info2>640x480, 01:27:37</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-rl65b8r26qen-740x360.html</page><referer>http://streamin.to</referer></regex>  <title>Jacuzzi al pasado 2</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/3mtr6GBml13b5k02YjnbZvrZfpB.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/e2au5ZOOxThV3mB6Wu0fK8OFqpq.jpg</fanart>
+     <genre>Comedia</genre>
+ 
+     <info>&#x27;Jacuzzi al pasado 2&#x27; sigue contando con las presencias de los alocados Jacob (Clark Duke), Nick (Craig Robinson) y Lou (Rob Corddry). Los tres amigos deciden volver a poner en marcha el mágico jacuzzi que tiene la habilidad de permitir viajar en el tiempo, cuando Lou, que se ha convertido en el padre de Internet, es atacado por un desconocido asaltante. El problema es que, en vez de viajar al pasado para cambiar las tornas, acaban en el futuro, donde conocen al hijo de Adam (Adam Scott), papel que interpretó John Cusack en la primera entrega.
+ Dirección : Steve Pink
+ Guión : Josh Heald
+ Año : 2015
+</info></item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-fp8znr80rrjb-740x360.html</page><referer>http://streamin.to</referer></regex><title>Jack y su gemela</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/qwdRUnEY6B5mj1D0kydeWJ6GFs3.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/2u68eDsoKOXBtfZWKCdqmt28ZxJ.jpg</fanart>
+     <genre>Comedia</genre>
+ 
+     <info>Jack (Adam Sandler) es un padre de familia que tiene que afrontar un arduo problema: la llegada por Navidad de su odiada hermana Jill. Por si fuera poco, lo que, en principio, iba a ser una visita de pocos días, se alarga más de lo previsto, lo que obliga a Jack y Jill a intentar limar asperezas.
+ Dirección : Dennis Dugan
+ Guión : Steve Koren, Adam Sandler
+ Año : 2011
+</info></item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-auxauw4frcib-740x360.html</page><referer>http://streamin.to</referer></regex><title>La dictadura perfecta</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/wBcuejVGjd5Mf4XyPoqu9qcIuW2.jpg</thumbnail>
+     <fanart> </fanart>
+     <genre>Comedia</genre>
+ 
+     <info>Tras un error cometido por el presidente de la república, una televisora intenta desviar la atención de su error revelando un video que involucra crímenes del Gobernador Carmelo Vargas. Posteriormente el gobernador decide negociar con la televisora para cambiar su imagen y convertirlo en una estrella política.
+ Dirección : Luis Estrada
+ Guión : Luis Estrada, Jaime Sampietro
+ Año : 2015
+</info></item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-ory0royu8p5a-740x360.html</page><referer>http://streamin.to</referer></regex><thumbnail>http://95.211.210.90:8777/i/04/00926/ory0royu8p5a_t.jpg</thumbnail><title>LA RATERA - PELICULA COMPLETA (CASTELLANO) (360p)</title>
+<info2>640x334, 01:34:09</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-k8lf0774slq0-740x360.html</page><referer>http://streamin.to</referer></regex><title>El retorno de los magos: Alex vs. Alex</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/A81QHxZNcRtKcJHKJFxAKS9MZCI.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/l356ujtJQy4suiYF6ykJ7S9nvEC.jpg</fanart>
+     <genre>Aventura, Comedia, Drama</genre>
+ 
+     <info>La familia Russo y sus amigos se dirigen a la Toscana, Italia, para cumplir con sus parientes perdidos hace mucho tiempo ... pero  Alex intenta demostrar que es más que una mago joven, aparentemente despreocupada. Inadvertidamente conjura un hechizo que crea una buena y una mala Alex Alex. Evil Alex se une al plan de un joven mago encantador para conquistar el mundo. Alex la buena, debe encontrar una manera de salvar a su familia y de la humanidad, lo que conduce a una monumental batalla entre las dos versiones de ella misma en  todo lo alto de la Torre de Pisa.
+ Dirección : Victor Gonzalez
+ Guión : Daniel Berendsen, Vince Cheung
+ Año : 2013
+</info></item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-x4u968tp3f5p-740x360.html</page><referer>http://streamin.to</referer></regex> <title>Los insólitos peces gato</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/rKnFar9GmyAGNJx6mQvVview9mg.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/2FIaRmaPUvdKLeV4Xnz7nJKcS92.jpg</fanart>
+     <genre>Comedia, Drama</genre>
+ 
+     <info>Claudia, una joven callada y meditabunda, trabaja en un supermercado como promotora de salchichas. Por no saber lidiar con esta insostenible soledad, termina en la sala de urgencias de un hospital público, con un severo caso de apendicitis. Es ahí donde conoce a Martha, una mujer que se encuentra hospitalizada en la cama de al lado. Martha, quien vive acompañada por sus hijos, poco a poco se gana la confianza de Claudia. El curioso equilibrio de esta familia logra que Claudia establezca una relación de amistad con Martha, lazo que poco a poco se va estrechando. (FILMAFFINITY)
+ Dirección : Los insólitos peces gato
+ Guión : Claudia Sainte-Luce, Claudia Sainte-Luce
+ Año : 2013
+</info></item>
+
+
+
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-bdtcrxm19mhz-740x360.html</page><referer>http://streamin.to</referer></regex><title>Malditos vecinos</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/1kAOnCxm8In3EEs0AEqhZusENDD.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/aRzZhu6hNg3FgSH8ZsOPJG4ie0Y.jpg</fanart>
+     <genre>Comedia</genre>
+ 
+     <info>La historia se centra en un hombre que vive apaciblemente con su mujer y sus hijos y que verá alteraba la armonía de su hogar cuando entre en contacto con el líder de una hermandad juvenil que se encuentra cerca de su casa. A partir de ese momento, los problemas se sucederán, y se establecerá una lucha entre ambos personajes masculinos, que intentarán no dar su brazo a torcer en lo que se refiere a sus intenciones. El personaje que interpreta Zack Efron se dedicará de manera indiscriminada a molestar al que encarna Rogen. La rebeldía y el descaro juvenil contra la vida acomodaticia de la media edad. Una lucha sin cuartel que solo puede tener un vencedor... ¿Lograrán finalemente acercar posturas?
+ Dirección : Nicholas Stoller
+ Guión : Andrew J. Cohen, Brendan O'Brien
+ Año : 2014
+</info></item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-u1lvzyrwpsf0-740x360.html</page><referer>http://streamin.to</referer></regex><thumbnail>http://95.211.213.204:8777/i/04/00926/u1lvzyrwpsf0_t.jpg</thumbnail><title>La Hija de Monteczuma</title>
+<info2>640x300, 01:56:04</info2>                 </item>
+
+
+
+</items>
+</channel>
+
+
+
+
+
+<!--
+
+
+<channel>
+<name>Biograficas</name>
+<fanart>https://pbs.twimg.com/media/CTQTVZEVEAAcZxV.jpg:large</fanart>
+<thumbnail>https://pbs.twimg.com/media/CTQTVZEVEAAcZxV.jpg:large</thumbnail>
+</channel>
+
+<channel>
+<name>Comedia</name>
+<fanart>https://pbs.twimg.com/media/CTQTVZEVEAAcZxV.jpg:large</fanart>
+<thumbnail>https://pbs.twimg.com/media/CTQTVZEVEAAcZxV.jpg:large</thumbnail>
+</channel>
+-->
+
+
+
+<channel>
+<name>Ficcion</name>
+<fanart>https://pbs.twimg.com/media/CTQTVZEVEAAcZxV.jpg:large</fanart>
+<thumbnail>https://pbs.twimg.com/media/CTQTVZEVEAAcZxV.jpg:large</thumbnail>
+<items>
+
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-lhmdbl45eoc5-740x360.html</page><referer>http://streamin.to</referer></regex> <title>Abducción Alienígena</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/gtpqE9tg9WzT7mkMMBA0qls0MDl.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/hqbDsduHAsCz34AUlwJoLkEm1Wb.jpg</fanart>
+     <genre>Terror, Ciencia ficción, Suspense</genre>
+ 
+     <info>Una familia de vacaciones se encuentra con una amenaza alienígena en este thriller basado en el fenómeno real ocurrido en Brown Mountain Lights, en Carolina del Norte.
+ Dirección : Matty Beckerman
+ Guión : Robert Lewis
+ Año : 2014
+</info> </item>		
+
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-ecvoazil771r-740x360.html</page><referer>http://streamin.to</referer></regex> <title>51</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/3KNPUjuBcVAMbSL3eCL60bko9Xa.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/w6EDSylQHjRP9eIfIlx4b28PZvg.jpg</fanart>
+     <genre>Ciencia ficción, Terror</genre>
+ 
+     <info>Cinta de terror y ciencia ficción dirigida por Jason Connery entorno a la misteriosa &#x27;Area 51&#x27; estadounidense. Debido a la presión política de la opinión pública estadounidense, la Fuerza Aérea ha decidido permitir que dos periodistas conocidos tengan acceso limitado a la base más secreta del planeta. Pero un terrible accidente hace que la visita cambie su sentido. El problema, uno de los internos alienígenas ha decidido aprovechar la oportunidad para liberarse a sí mismo y a sus compañeros y desatar el caos en la base. El Área 51 pasa de ser una base de seguridad del gobierno a un horrible destino de terror.
+ Dirección : Jason Connery
+ Guión : Kenny Yakkel, Lucy Mukerjee-Brown
+ Año : 2011
+</info> </item>
+
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-9ivd3pp88njf-740x360.html</page><referer>http://streamin.to</referer></regex>                 <title>Under the skin</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/vYbCF0Hn6f4kVtOtVF3FiktiiXd.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/cGOnS9rVOPXsyUwVUfTQP5yi3Ti.jpg</fanart>
+     <genre>Suspense, Ciencia ficción, Drama</genre>
+ 
+     <info>Unos alienígenas aterrizan en la Tierra para llevar a cabo una misión específica: abducir a los autoestopistas y transportarlos a su mundo, donde la carne humana es considerada una delicatesen. Para ello cuentan con la colaboración de una infiltrada en la Tierra, una atractiva mujer (Scarlett Johanson) que sirve de cebo a los incautos.
+ Dirección : Jonathan Glazer
+ Guión : Walter Campbell, Jonathan Glazer, Michel Faber
+ Año : 2014
+</info> </item>
+
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-ohpwq3lxdpcc-740x360.html</page><referer>http://streamin.to</referer></regex>                 <title>Project Almanac</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/xfGAJ8BTHf9Xws5ksOPAo9k2S2h.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/5S1Peo0X5iRbzTzsdrgEENNKU98.jpg</fanart>
+     <genre>Ciencia ficción, Suspense</genre>
+ 
+     <info>Un grupo de jóvenes se embarca en una aventura cuando descubren planes secretos para construir una máquina del tiempo, que utilizarán para arreglar sus problemas y obtener beneficios personales.
+ Dirección : Dean Israelite
+ Guión : Jason Pagan, Andrew Stark
+ Año : 2015
+</info></item>
+
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-xte9oz6ka2p8-740x360.html</page><referer>http://streamin.to</referer></regex>              <title>Chappie</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/5MrjYLlptSbNaacRNZtRee9Zqte.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/y5lG7TBpeOMG0jxAaTK0ghZSzBJ.jpg</fanart>
+     <genre>Acción, Ciencia ficción, Suspense</genre>
+ 
+     <info>Ambientada en Johanesburgo, y con un personaje robótico ridículo como protagonista, este delirante relato nos traslada a un viaje por las emociones y sentimientos en un mundo distinto a la par que sorprendente. Con un argumento elaborado y un trasfondo reflexivo, esta cómica historia encaja en un marco inusual visualmente cuidado e impactante. Una comedia que cala por la simplicidad de su trama principal, y engancha por los minuciosos detalles que te adentran en una realidad ficticia y muy visual. Enigmática y divertida a partes iguales, se trata de una historia de corazón en un entorno robotizado y futurista donde la ciencia ficción es el paisaje.
+ Dirección : Neill Blomkamp
+ Guión : Neill Blomkamp, Terri Tatchell
+ Año : 2015
+</info>  </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-2ucrvcem6tfh-740x360.html</page><referer>http://streamin.to</referer></regex>               <title>Crepúsculo</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/9RDU2zi40Km7crbo6Z974EpUoIL.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/nEdBHjvRkKwEPD1Ps5A3rRiiLVN.jpg</fanart>
+     <genre>Aventura, Fantasía, Drama, Romance</genre>
+ 
+     <info>Historia de amor entre un vampiro y una humana. Bella Swan (Kristen Stewart) siempre fue una chica algo diferente, sin seguir las tendencias del resto de las chicas de su instituto de Phoenix. Cuando su madre se vuelve a casar, manda a Bella a vivir con su padre, a la pequeña y lluviosa ciudad de Forks, Washington, donde ella no espera nada. Pero entonces conoce al misterioso y atractivo Edward Cullen (Robert Pattinson), un joven que pronto demuestra no ser como los demás...
+ Dirección : Catherine Hardwicke
+ Guión : Melissa Rosenberg, Stephenie Meyer
+ Año : 2008
+</info> </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-3beyumhgdqyl-740x360.html</page><referer>http://streamin.to</referer></regex>                 <title>La saga Crepúsculo: Luna nueva</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/7s9XAyZCQw6ypVWP05aPEIo9AeZ.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/fOI3kFfMGBnNJJlnwYAXunpqzze.jpg</fanart>
+     <genre>Aventura, Fantasía, Drama, Romance</genre>
+ 
+     <info>Edward Cullen decide abandonar a Bella Swan para mantenerla alejada de los peligros del mundo vampírico. Con la ayuda de Jacob Black, su amigo de la infancia y miembro de la misteriosa tribu quileute, Bella intentará superar el abandono de Edward, que la ha dejado sumida en el mayor de los desconsuelos. Pero los peligros siguen acechando a la joven; nuevas y asombrosas criaturas sobrenaturales se cruzarán en su camino, y Bella sólo contará con el apoyo del cada vez más cercano e irresistible Jacob. Repentinamente, Bella se encuentra inmersa en el mundo de los hombres lobo, ancestrales enemigos de los vampiros, y su lealtad es puesta a prueba...
+ Dirección : Chris Weitz
+ Guión : Melissa Rosenberg, Stephenie Meyer
+ Año : 2009
+</info></item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-pno6syivefsb-740x360.html</page><referer>http://streamin.to</referer></regex>        <title>La saga Crepúsculo: Eclipse</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/8ukN23EZtmVdnETqDdcnkk9N4d5.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/lKCZYVQQb7Agw6WR25WvQBFKJmK.jpg</fanart>
+     <genre>Aventura, Fantasía, Drama, Romance</genre>
+ 
+     <info>En esta tercera entrega de la exitosa saga de vampiros de las novelas de Stephenie Meyer, Bella tendrá que elegir entre Edward y Jacob. La ciudad de Seattle es devastada por una serie de misteriosos asesinatos que va en aumento, mientras una vampiresa busca venganza. Bella debe escoger entre su amor por Edward y su amistad con Jacob, consciente de que su decisión puede iniciar una batalla entre vampiros y licántropos. Rodeada de peligro y con su graduación acercándose, ahora se enfrenta a la decisión más importante de su vida.
+ Dirección : David Slade
+ Guión : Melissa Rosenberg, Stephenie Meyer
+ Año : 2010
+</info>   </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-tpjp6eiwmr65-740x360.html</page><referer>http://streamin.to</referer></regex>             <title>La saga Crepúsculo: Amanecer - Parte 1</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/tBFlimgFOmGN2nQz7yIB6Tr9bwi.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/brbsq016UiQgwWb4qKPdCysnXjg.jpg</fanart>
+     <genre>Aventura, Fantasía, Romance</genre>
+ 
+     <info>El amor que Edward y Bella sienten el uno por el otro se sella con la celebración de una gran ceremonia organizada por Alice. Durante la luna de miel, los recién casados tienen relaciones sexuales y Bella queda embarazada. El rápido crecimiento del feto, mitad humano mitad vampiro, afecta gravemente a su salud, llevándola al borde de la muerte...
+ Dirección : Bill Condon
+ Guión : Melissa Rosenberg, Stephenie Meyer
+ Año : 2011
+</info>  </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-wlfc9b4k68sr-740x360.html</page><referer>http://streamin.to</referer></regex>                <title>La saga Crepúsculo: Amanecer - Parte 2</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/d0QCDLPTDp0HsBHRDwfKbs0uC1w.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/hK8gap1Y2zAvFHcKuqe6og15c4b.jpg</fanart>
+     <genre>Aventura, Fantasía, Drama, Romance</genre>
+ 
+     <info>Bella concluye su transformación en vampiro y ahora debe familiarizarse con su nueva condición. Con el nacimiento de Renesmee, la familia Cullen deberá protegerse ante la amenaza de los Volturi ya que existe una ley para los vampiros que prohíbe a todos los clanes convertir a niños, pues son difíciles de controlar y pueden generar auténticas masacres que pongan en peligro la secreta existencia de los vampiros... Segunda parte de la adaptación de Amanecer que supone la quinta entrega de la franquicia cinematográfica Crepúsculo, basada en las novelas de Stephenie Meyer.
+ Dirección : Bill Condon
+ Guión : Stephenie Meyer, Melissa Rosenberg
+ Año : 2012
+</info> </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-8e2ibbsoipus-740x360.html</page><referer>http://streamin.to</referer></regex>                   <thumbnail>http://95.211.191.94:8777/i/04/00925/8e2ibbsoipus_t.jpg</thumbnail>       <title>Crepusculo Parodia </title>
+<info2>640x352, 01:22:10</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-f4ew64t2j4ft-740x360.html</page><referer>http://streamin.to</referer></regex>                 <title>Los elegidos</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/83i6SxsuhiIF3uEuQDVdeN1p7C5.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/cuTt0S1Pl04HYrIYFIfF8JK8Ce1.jpg</fanart>
+     <genre>Terror, Ciencia ficción, Suspense</genre>
+ 
+     <info>Los Barret son una familia que vive en los suburbios. Lacey y Daniel (Keri Russell &amp;amp; Josh Hamilton) presencian una serie de extraños acontecimientos perturbadores que afectan a su familia, a su seguridad y a su tranquilidad. Cuando descubren que su familia es el objetivo de una inimaginable y terrorífica fuerza mortal, ambos tendrán que hacer todo lo que esté en sus manos para resolver este oscuro misterio.
+ Dirección : Scott Stewart
+ Guión : Scott Stewart
+ Año : 2013
+</info></item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-uq10ybdjmjja-740x360.html</page><referer>http://streamin.to</referer></regex>                   <thumbnail>http://95.211.210.134:8777/i/01/00922/uq10ybdjmjja_t.jpg</thumbnail>       <title>Encuentro Cercano (1977)</title>
+<info2>1024x436, 02:17:14</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-hsgbkok861vc-740x360.html</page><referer>http://streamin.to</referer></regex>                  <title>Ex Machina</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/94gszl6b8BKC3RvoHDsgL4MDO6J.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/iIz6vb4WLFEiUxkKpUfmyb3fyp.jpg</fanart>
+     <genre>Drama, Ciencia ficción</genre>
+ 
+     <info>La historia, creada por el propio Garland, trata sobre un programador multimillonario que contrata a un joven empleado para que pase una semana en un lugar remoto para participar en un test en la que estará involucrada su última creación… un robot mujer donde la inteligencia artificial lo es todo.
+ Dirección : Alex Garland
+ Guión : Alex Garland
+ Año : 2015
+</info>   </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-tgy18lkdtoqz-740x360.html</page><referer>http://streamin.to</referer></regex>                   <title>Extraterrestrial</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/9RHJFmZK2xhfd82SYajsKIpeYGL.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/xUobVagqCT1bJdRZSnzhWkONYR9.jpg</fanart>
+     <genre>Terror, Ciencia ficción</genre>
+ 
+     <info>Thriller de ciencia ficción sobre un grupo de amigos que se van de fin de semana a una cabaña en el bosque. Allí se verán atemorizados por unos visitantes alienígenas que definitivamente no vienen en son de paz.
+ Dirección : Colin Minihan
+ Guión : Colin Minihan, Stuart Ortiz
+ Año : 2014
+</info> </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-61muxfrgvu76-740x360.html</page><referer>http://streamin.to</referer></regex>          <title>Fuego en el cielo</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/2Oc0mntNtvr0Dgb9cpE8764QbOp.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/sAvq9OhnKbSqSN4MgHlRTvq0qjs.jpg</fanart>
+     <genre>Drama, Terror, Suspense, Misterio</genre>
+ 
+     <info>En 1975, el leñador Travies Walton (D.B. Sweeney) y sus compañeros vieron un OVNI suspendido en el aire inmóvil. Los amigos de Walton lograron huir, pero él no tuvo esa suerte. Lo introdujeron en la extraña nave y allí lo sometieron al más intensivo y doloroso examen médico. Walton fue encontrado cinco días después, manchado de sangre y lleno de moratones. Todos ellos tuvieron que soportar las burlas de los incrédulos. Mientras tanto, un investigador (Garner) sospecha que la increíble historia puede ser la tapadera de un asesinato.
+ Dirección : Robert Lieberman
+ Guión : Travis Walton, Tracy Tormé
+ Año : 1993
+</info>  </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-t2n826cuaatr-740x360.html</page><referer>http://streamin.to</referer></regex>                 <title>Hansel y Gretel: Cazadores de brujas</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/xydZZyjSl2Tu9B38Z2x1F02ZcM2.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/or2Jfa6wPJdJxdvoDqw3CgRWMMN.jpg</fanart>
+     <genre>Fantasía, Terror, Acción</genre>
+ 
+     <info>“Hansel y Gretel: Cazadores de brujas” tiene lugar 15 años después de que los hermanos Hansel y Gretel consiguieran escapar de una bruja que secuestraba niños y que cambió sus vidas para siempre… e hizo que se aficionaran al sabor de la sangre. Ahora ya son adultos, y se han convertido en unos cazarrecompensas feroces y formidablemente preparados, dedicados exclusivamente a perseguir y exterminar brujas por bosques sombríos, dispuestos a todo con tal de vengarse. Pero a medida que se aproxima la infausta Luna de Sangre y un conocido pueblecito de casas de madera se enfrenta a una pesadilla, Hansel y Gretel se encuentran con un poder diabólico superior a cualquier bruja que hayan cazado, un demonio que podría conocer el secreto del terrorífico pasado de los hermanos.
+ Dirección : Tommy Wirkola
+ Guión : Tommy Wirkola, Dante Harper
+ Año : 2013
+</info>  </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-pxzwkwo5rdso-740x360.html</page><referer>http://streamin.to</referer></regex>            <title>Interstellar</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/7C0oiPn46OvaMxET9iq1f5BsyMS.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/xu9zaAevzQ5nnrsXN6JcahLnG4i.jpg</fanart>
+     <genre>Drama, Ciencia ficción</genre>
+ 
+     <info>Narra las aventuras de un grupo de exploradores que hacen uso de un agujero de gusano recientemente descubierto para superar las limitaciones de los viajes espaciales tripulados y vencer las inmensas distancias que tiene un viaje interestelar.
+ Dirección : Interstellar
+ Guión : Christopher Nolan, Jonathan Nolan
+ Año : 2014
+</info>    </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-xak1n5v4gq76-740x360.html</page><referer>http://streamin.to</referer></regex>               <title>Parque Jurásico</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/tX5nE2Ch6eSNxuUnN3XfDBLncZu.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/pquyhnE9XxHOZqpFS2V6vzt0Dry.jpg</fanart>
+     <genre>Aventura, Ciencia ficción</genre>
+ 
+     <info>El multimillonario John Hammond tiene una idea para un espectacular parque temático: una isla retirada donde los visitantes puedan observar dinosaurios reales. Con la última tecnología en el desarrollo de DNA, los científicos pueden clonar braquiosaurios, triceratops, velociraptors y un tiranosaurio rex, utilizando para ello la sangre fosilizada en ámbar contenida en insectos que los mordieron hace millones de años. Los paleontólogos Alan Grant, Ellie Sattler y Ian Malcolm visitan el parque y quedan muy sorprendidos con los resultados obtenidos. Pero cuando un problemático empleado manipula el sofisticado sistema de seguridad los dinosaurios escapan, obligando a los visitantes a luchar por su supervivencia.
+ Dirección : Steven Spielberg
+ Guión : Michael Crichton, David Koepp
+ Año : 1993
+</info></item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-6di1xffyzmiv-740x360.html</page><referer>http://streamin.to</referer></regex>           <title>El mundo perdido</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/7mKLzGL3GRYwMlaolWGJVnYAE3b.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/6KOPTlgmEb6MkKYTcDA1QAN6vGJ.jpg</fanart>
+     <genre>Acción, Aventura, Ciencia ficción</genre>
+ 
+     <info>Han pasado cuatro años desde la devastación del Parque Jurásico, y el Dr Malcom está a punto de descubrir que algo ha sobrevivido. En una isla de Costa Rica perteneciente a la Costa de las Cinco Muertes, los dinosaurios viven y se reproducen en libertad. Se trata de la llamada zona B: el lugar que servía como laboratorio genético. Después de que John Hammond llevara a la empresa a la bancarrota, su sobrino Peter ha tomado las riendas y está dispuesto a levantar la compañía explotando la peligrosa zona.
+ Dirección : Steven Spielberg
+ Guión : Michael Crichton, David Koepp
+ Año : Jura
+</info> </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-b9wp9g2for33-740x360.html</page><referer>http://streamin.to</referer></regex>      <title>Parque Jurásico III</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/rRV2MR6o9aRxJg8gIDA7AbZEjZN.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/iqE0xCFCV8MX2xeYh1Tu7QTRE74.jpg</fanart>
+     <genre>Aventura, Acción, Suspense, Ciencia ficción</genre>
+ 
+     <info>El doctor Alan Grant, ansioso por conseguir fondos que financien su estudio sobre la inteligencia del velociraptor, acepta la oferta de pareja de millonarios, Paul y Amanda Kirby, para sobrevolar la Isla Sorna, en Puerto Rico, poblada por dinosaurios creados genéticamente para un parque recreativo. Tras producirse un aterrizaje forzoso en la isla, Alan descubre que los Kirby estaban buscando a su hijo adolescente, perdido en la isla tras un accidente de parapente.
+ Dirección : Joe Johnston
+ Guión : Peter Buchman, Alexander Payne, Jim Taylor
+ Año : 2001
+</info>   </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-ybm8asko9ky1-740x360.html</page><referer>http://streamin.to</referer></regex>                   <thumbnail>http://5.79.76.144:8777/i/01/00922/ybm8asko9ky1_t.jpg</thumbnail>       <title>La Se C3 B1al (2014) </title>
+<info2>1024x428, 01:37:11</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-afrups1a99iq-740x360.html</page><referer>http://streamin.to</referer></regex>                   <thumbnail>http://95.211.213.200:8777/i/03/00922/afrups1a99iq_t.jpg</thumbnail>       <title>La cenicienta</title>
+<info2>640x272, 01:45:20</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-owff97zbf8h6-740x360.html</page><referer>http://streamin.to</referer></regex>             <title>Las crónicas de Narnia: El león, la bruja y el armario</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/tFOQ4q6JnHcdw58ThL4SzFv37NT.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/4ZwXJcUT3KdE8Kan9TJ7l0Rg5LG.jpg</fanart>
+     <genre>Aventura, Familia, Fantasía</genre>
+ 
+     <info>La historia narra las aventuras de cuatro hermanos: Lucy, Edmund, Susan y Peter, que durante la Segunda Guerra Mundial descubren el mundo de Narnia, al que acceden a través de un armario mágico mientras juegan al escondite en la casa de campo de un viejo profesor. En Narnia descubrirán un mundo increíble habitado por animales que hablan, duendes, faunos, centauros y gigantes al que la Bruja Blanca- Jadis- ha condenado al invierno eterno. Con la ayuda del león Aslan, el noble soberano, los niños lucharán para vencer el poder que la Bruja Blanca ejerce sobre Narnia en una espectacular batalla y conseguir así liberarle de la maldición del frío.
+ Dirección : Andrew Adamson
+ Guión : C. S. Lewis, Ann Peacock, Andrew Adamson, Christopher Markus, Stephen McFeely
+ Año : 2005
+</info>    </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-vdvfzfads849-740x360.html</page><referer>http://streamin.to</referer></regex>             <title>Las crónicas de Narnia: El príncipe Caspian</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/p9ou6vW5iIaEZAydcXI7vVLwTXU.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/eiET76GO3xECOic1rL8VcTLuy3L.jpg</fanart>
+     <genre>Familia, Aventura, Fantasía</genre>
+ 
+     <info>Un año después de los increíbles acontecimientos de El León, la Bruja y el Armario, los reyes y las reinas de Narnia -los 4 hermanos Pevensie- vuelven a reunirse en ese remoto y fantástico mundo, donde descubrirán que han pasado más de 1.300 años, calculados en tiempo narniano. Durante su ausencia, la Edad de Oro de Narnia ha terminado, y los Telmarinos han conquistado el reino de Narnia, que ahora está dominado por el malvado Rey Miraz. Los cuatro niños no tardarán en conocer un nuevo y extraño personaje: el joven Príncipe Caspian, heredero legítimo al trono que se ha visto obligado a esconderse ya que su tío Miraz trama su asesinato para colocar a su hijo recién nacido en el trono. Los Narnianos, liderados por los poderosos caballeros Peter y Caspian, se embarcan en un extraordinario viaje para encontrar a Aslan, liberar Narnia del yugo tiránico de Miraz y restaurar la magia y la paz en el territorio.
+ Dirección : Andrew Adamson
+ Guión : Andrew Adamson, Christopher Markus, Stephen McFeely, C. S. Lewis
+ Año : 2008
+</info>  </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-wahdtl6wa2wk-740x360.html</page><referer>http://streamin.to</referer></regex>          <title>Las crónicas de Narnia: La travesía del viajero del alba</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/rpaAOQw900SFZtPjmcGE7JIQ1za.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/dAc3Ob868XGnAX8uOptb7HWx0In.jpg</fanart>
+     <genre>Aventura, Fantasía, Familia</genre>
+ 
+     <info>Tercera entrega de la saga literaria creada por C.S. Lewis. En esta ocasión, los hermanos Edmund y Lucy Pevensie y su primo Eustace embarcan en la nave El Viajero del Alba para buscar a los siete caballeros que han sido expulsados del reino por Miraz, el usurpador del trono de Narnia.
+ Dirección : Michael Apted
+ Guión : C. S. Lewis, Christopher Markus, Stephen McFeely, Michael Petroni
+ Año : 2010
+</info>   </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-jeqlo7xe2c7c-740x360.html</page><referer>http://streamin.to</referer></regex>                   <thumbnail>http://95.211.209.210:8777/i/01/00922/jeqlo7xe2c7c_t.jpg</thumbnail>       <title>Malefica</title>
+<info2>1024x428, 01:37:28</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-j6kr1b9x5wke-740x360.html</page><referer>http://streamin.to</referer></regex>    <title>Mad Max: Furia en la carretera</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/xHfhQIK4BNlsGv5Ylx8mVq0hJT1.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/tbhdm8UJAb4ViCTsulYFL3lxMCd.jpg</fanart>
+     <genre>Suspense, Acción, Aventura</genre>
+ 
+     <info>Perseguido por su turbulento pasado, Mad Max cree que la mejor forma de sobrevivir es ir solo por el mundo. Sin embargo, se ve arrastrado a formar parte de un grupo que huye a través del desierto en un War Rig conducido por una Emperatriz de élite: Furiosa. Escapan de una Ciudadela tiranizada por Immortan Joe, a quien han arrebatado algo irreemplazable. Enfurecido, el Señor de la Guerra moviliza a todas sus bandas y persigue implacablemente a los rebeldes en una guerra de la carretera de altas revoluciones... Cuarta entrega de la saga post-apocalíptica que resucita la trilogía que a principios de los ochenta protagonizó Mel Gibson.
+ Dirección : George Miller
+ Guión : Nick Lathouris, George Miller, Brendan McCarthy
+ Año : 2015
+</info> </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-r5fvmyir08w9-740x360.html</page><referer>http://streamin.to</referer></regex>        <title>Oblivion</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/hEHMeJClLC1Mv9uEhMyd2xXorqf.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/8TE77jL2e4zdERpv8hnBAHUmFRx.jpg</fanart>
+     <genre>Acción, Ciencia ficción, Aventura, Misterio</genre>
+ 
+     <info>Jack Harper es uno de los últimos técnicos de reparación de drones que permanece en la Tierra. Parte de una operación masiva para extraer recursos vitales después de décadas de guerra contra una amenaza terrorífica conocida como los Scavs, la misión de Jack está casi completada. Su existencia empieza a desmoronarse cuando rescata a una hermosa desconocida de una nave espacial caída. Su llegada desencadena una serie de acontecimientos que le llevan a cuestionarse todo lo conoce y pone el destino de la humanidad en sus manos.
+ Dirección : Joseph Kosinski
+ Guión : Karl Gajdusek, Michael Arndt
+ Año : 2013
+</info> </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-7kqkp0kipiiu-740x360.html</page><referer>http://streamin.to</referer></regex>                   <thumbnail>http://95.211.191.154:8777/i/03/00925/7kqkp0kipiiu_t.jpg</thumbnail>       <title>Proyecto Alf ( audio latino )</title>
+<info2>496x360, 01:31:40</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-hsel17zim4a4-740x360.html</page><referer>http://streamin.to</referer></regex>         <title>Resident Evil</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/xBD4qtkzhRoYJp6YhwW3ciGzzws.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/s41Er80jGJf3tNkgYHxUCttjmwv.jpg</fanart>
+     <genre>Terror, Acción, Ciencia ficción</genre>
+ 
+     <info>En un centro clandestino de investigación genética -con fines militares- de una poderosa multinacional se produce un brote vírico que contamina todo el edificio. Para contener la fuga el ordenador que controla el centro sella toda la instalación y, en un principio se cree que mueren todos los empleados, pero en realidad se han convertido en feroces zombis...
+ Dirección : Paul W.S. Anderson
+ Guión : Paul W.S. Anderson
+ Año : 2002
+</info>     </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-71ufclt62x4b-740x360.html</page><referer>http://streamin.to</referer></regex>  <title>Resident Evil 2: Apocalipsis</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/cPT75HUyf7ZHcKp6mBYqr3kaArL.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/HiQeRDggI5EYLawYNHRJvB026S.jpg</fanart>
+     <genre>Acción, Terror, Ciencia ficción</genre>
+ 
+     <info>Un virus mortal ha sido liberado sobre la población de Raccoon City. Alice (Milla Jovovich), una de las supervivientes del desastre bioquímico, se encuentra en el corazón de esta devastada ciudad. Sometida a experimentos que han alterado su genética, ahora posee fuerza, sentidos y destreza sobrehumana. Estas habilidades, y más, serán las que deba utilizar quien quiera sobrevivir en esta nueva aventura. Junto con otros supervivientes deberá escapar de la cada vez más peligrosa Raccoon City. Para alcanzar su meta necesitarán luchar contra las fuerzas de la Umbrella Corporation, las violentas criaturas de bioingeniería creadas en sus laboratorios, los zombies que plagan la ciudad y, finalmente, enfrentarse a la más colosal y mortal de estas creaciones: Nemesis.
+ Dirección : Alexander Witt
+ Guión : Paul W.S. Anderson
+ Año : 2004
+</info>  </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-li51uoxqvzad-740x360.html</page><referer>http://streamin.to</referer></regex>      <title>Resident Evil 3: Extinción</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/yqXOC1ymGJSXwAXKrngbL9DXqzP.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/mjQoekfYIT1t18j9hf2JSZEi60Y.jpg</fanart>
+     <genre>Terror, Acción, Ciencia ficción</genre>
+ 
+     <info>Tercera entrega de la saga basada en los famosos videojuegos. En esta ocasión, nuestra heroína, Milla Jovovich, junto con los supervivientes de la catástrofe acontecida en la ciudad de Raccoon deben atravesar el desierto de Nevada con la esperanza de llegar a Alaska, antes de que los de la Corporación Umbrella les alcancen.
+ Dirección : Russell Mulcahy
+ Guión : Paul W.S. Anderson
+ Año : 2007
+</info>    </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-typ8izcf49zy-740x360.html</page><referer>http://streamin.to</referer></regex>  <title>Resident Evil: Degeneración</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/vcduy3H9RelaER3F7jn7OGby1ws.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/imz5ZodpQFYR9kbEmuNiJ5xvt2Q.jpg</fanart>
+     <genre>Animación, Terror, Acción, Ciencia ficción</genre>
+ 
+     <info>El incidente Umbrella que surgió en Raccoon City ha terminado con la erradicación de un virus letal mediante un misil nuclear lanzado por el gobierno, Umbrella se ha disuelto y ha dejado de existir. Han pasado 7 años, nos encontramos en un aeropuerto cualquiera de USA, estamos en otoño… un zombi descontrolado acaba con el pacifico día atacando a todo lo que se mueve. El infierno que se había extinguido resurge nuevamente de manera inesperada. Película de animación digital basada en el popular saga de videojuegos de Capcom, Resident Evil. Está protagonizada por Claire Redfield y León S. Kennedy y se desarrolla siete años después del incidente de Racoon City narrado en Resident Evil 2.
+ Dirección : Makoto Kamiya
+ Guión : Shotaro Suga
+ Año : 2008
+</info>  </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-xn5lai8uzw0y-740x360.html</page><referer>http://streamin.to</referer></regex>      <title>Resident Evil 5: Venganza</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/cX3TotRDiizHK8gSsKZkAC2lvng.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/6h6wPa5ru7GFFZDMzRVg9ddTxkg.jpg</fanart>
+     <genre>Acción, Terror, Ciencia ficción</genre>
+ 
+     <info>El virus de la corporación Umbrella sigue haciendo estragos en La Tierra convirtiendo a la población en legiones de muertos sedientos de sangre. La última esperanza de la humanidad, Alice, despierta en el centro de operaciones de la compañía donde comienza a conocer más detalles de su pasado. Alice seguirá persiguiendo a los responsables del virus llevándola por Tokio, Nueva York, Washington y Moscú donde le será revelado algo que la hará plantearse todo lo que la ha sucedido hasta ahora. Con la ayuda de sus nuevos aliados, Alice deberá sobrevivir el tiempo suficiente para escapar de un mundo hostil... La cuenta atrás ha comenzado.
+ Dirección : Paul W.S. Anderson
+ Guión : Paul W.S. Anderson
+ Año : 2012
+</info>  </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-1eyujjir6j67-740x360.html</page><referer>http://streamin.to</referer></regex>       <title>El séptimo hijo</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/3JNq99t8wwt6owKp66z3YekCVV6.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/nTjGB5omiZIiZRS8zazwlPVs24m.jpg</fanart>
+     <genre>Aventura</genre>
+ 
+     <info>Siglo XVIII. El joven Thomas (Ben Barnes, &#x27;El retrato de Dorian Gray&#x27;) tendrá que aprender a ser mago y luchar y combatir con los malos espíritus de la mano de un poderoso espectro (interpretado por Jeff Bridges, &#x27;El gran Lebowski&#x27;) que lo instruirá en el manejo de las artes del más allá. Thomas, que es el séptimo hijo de un séptimo hijo (por eso debe irse con el Maestro Gregory), tiene que abandonar su hogar e internarse en una peligrosa aventura que lo llevará a los abismos del mundo físico, en un sinfín de aventuras extraordinarias tan maravillosas como espeluznantes. Su primer reto será atrapar a una poderosa bruja (Julianne Moore, &#x27;Magnolia&#x27;) que se ha escapado y que quiere sembrar el mal por donde pase después de haber sido engañado por una joven, Alice (Alicia Vikander, &#x27;A Royal Affair&#x27;) que le seduce para conseguir sus propósitos.
+ Dirección : Sergey Bodrov
+ Guión : Joseph Delaney, Max Borenstein, Matt Greenberg, Charles Leavitt
+ Año : 2015
+</info></item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-xf27goc9pj88-740x360.html</page><referer>http://streamin.to</referer></regex>   <title>Skinwalker Ranch</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/79Wl9SHO2ePyPhhDS3tWeCtYPrG.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/iSz1Qn0bUOk6Vq1LMOxLUVbN7SD.jpg</fanart>
+     <genre>Terror, Ciencia ficción, Suspense</genre>
+ 
+     <info>El film empieza con la desaparición del hijo de un granjero de 8 años, con lo que vendrá un equipo de investigación a la zona. Skinwalker Ranch está ubicado en los alrededores de Utah, y al parecer se han avistado numerosas esferas, ovnis, y criaturas lobo gigantes, además de mutilaciones en el ganado durante años. (FILMAFFINITY)
+ Dirección : Devin McGinn
+ Guión : Adam Ohler
+ Año : 2013
+</info> </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-81cctvh52j7d-740x360.html</page><referer>http://streamin.to</referer></regex>              <title>Super 8</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/r0bZ2bcBNUBm7f6FT8NBVSCgjXz.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/exMT7YP7nY2XUHvUOPQxXocpFDg.jpg</fanart>
+     <genre>Suspense, Ciencia ficción, Misterio</genre>
+ 
+     <info>Año 1979, en un pequeño pueblo de Ohio. Joe Lamb (Joel Courtney) es un muchacho que ha perdido a su madre en un accidente y que vive con su padre policía (Kyle Chandler). Comenzado el verano, y mientras rueda una película de zombis en Super 8 con sus amigos -y sobre todo con la bella Alice Dainard (Elle Fanning)-, Joe observa cómo una camioneta se estrella contra un tren de mercancías, provocando su descarrilamiento y un terrible accidente. A partir de ese momento cosas extrañas e inexplicables comienzan a suceder en el pueblo.
+ Dirección : J.J. Abrams
+ Guión : J.J. Abrams
+ Año : 2011
+</info>  </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-wpk2ks7i5e56-740x360.html</page><referer>http://streamin.to</referer></regex>       <title>The Device</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/6qMlYxfEve2xixmeTEC44hjkdWo.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/pJPnh9i37ruKjxVvC9DLkScUDm5.jpg</fanart>
+     <genre>Suspense, Terror, Ciencia ficción</genre>
+ 
+     <info>The Movie Database (TMDb) is a popular, user editable database for movies and TV shows.
+ Dirección : Jeremy Berg
+ Guión : Jeremy Berg, John Portanova
+ Año : 2014
+</info> </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-lx84kpsepliw-740x360.html</page><referer>http://streamin.to</referer></regex>   <title>La cuarta fase</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/rqR9NXnOlhfPm6JMdnl7ihjr90f.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/nAG7laQCW2WEniIYL1XPgUm1f4A.jpg</fanart>
+     <genre>Suspense</genre>
+ 
+     <info>Thriller sobrenatural ambientado en Alaska en el que una mujer investiga una serie de misteriosas desapariciones ocurridas en el lugar durante los últimos 40 años. A finales del año 2000, los pacientes de la terapeuta Abbey Tyler, bajo hipnosis, reflejaron comportamientos que sugerían encuentros con seres no humanos. Antes de dormir, todos ellos aseguraban haber visto un búho que les observaba desde fuera de la ventana. Y despertaban completamente paralizados, escuchando ruidos terroríficos que provenían de fuera de la habitación. Los recuerdos posteriores se sumían en la oscuridad. La doctora prosiguió con sus investigaciones, descubriendo que la desaparición de personas y sucesos extraños en la región se remontaba a los años 60.
+ Dirección : Olatunde Osunsanmi
+ Guión : Olatunde Osunsanmi
+ Año : 2009
+</info>   </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-elt3kig0w8v6-740x360.html</page><referer>http://streamin.to</referer></regex>  <title>Expediente X: Enfréntate al futuro</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/pX6A5Uq1s3qUYqsv6X5PUwqSiG9.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/xLcH3m07JDmanPo0PpKGgvWD78A.jpg</fanart>
+     <genre>Misterio, Ciencia ficción, Suspense</genre>
+ 
+     <info>En el norte de Texas, un joven cae en una grieta del suelo mientras juega con sus amigos y éstos contemplan cómo es atacado por un cáncer negro que también infecta a dos bomberos que intentaban rescatarle. Mientras tanto los agentes del FBI Fox Mulder (David Duchovny) y Dana Scully (Gillian Anderson), apartados de los expedientes-x, inspeccionan un edificio federal de Dallas cuando algo inesperado sucede.
+ Dirección : Rob Bowman
+ Guión : Chris Carter, Frank Spotnitz
+ Año : 1998
+</info> </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-g5i228qgurf0-740x360.html</page><referer>http://streamin.to</referer></regex>    <title>Noche en el museo: El secreto del faraón</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/74LwQbraXCKUxYZITx5CqoFmaqd.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/73hI1zgRALUDrB46JDPBLFqHcqv.jpg</fanart>
+     <genre>Aventura, Comedia, Fantasía, Familia</genre>
+ 
+     <info>La tabla de Ahkmenrah, la que hace que las estatuas de los museos cobren vida, está perdiendo su magia. En un intento desesperado para proteger el valioso tesoro, Larry Daley viajará junto a sus amigos Theodore Roosevelt -Robin Williams en su última película-, el faraón Ahkmenrah, Atila, Jebediah Smith, Augustus Octavius y Sacagawea desde Nueva York hasta Londres. Allí intentarán contactar con alguien del Museo de Londres que les ayude a restaurar la magia y conocerán a Sir Lancelot y otros personajes del antiguo Egipto.
+ Dirección : Shawn Levy
+ Guión : Thomas Lennon, David Guion, Michael Handelman, Ben Garant
+ Año : 2014
+</info>  </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-xw0rgvx3hsew-740x360.html</page><referer>http://streamin.to</referer></regex>                   <thumbnail>http://85.17.172.104:8777/i/02/00925/xw0rgvx3hsew_t.jpg</thumbnail>       <title>X-Men 1</title>
+<info2>704x368, 01:44:18</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-81kmu9tss9jv-740x360.html</page><referer>http://streamin.to</referer></regex>   <title>X-Men 2</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/fOlFmApwWIIjAA8SnQhoR4g5XhH.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/u2FxA8fDt0uQAnHKTwWGgkPShoL.jpg</fanart>
+     <genre>Aventura, Acción, Ciencia ficción, Suspense</genre>
+ 
+     <info>Los mutantes son seres humanos con alguna variación genética que les dota de características especiales. También son la más moderna minoría perseguida del mundo. En medio de un clima de rabia y persecución, el profesor Xavier ha creado un instituto, un refugio, para estos seres poderosos. En este lugar los iniciados son preparados para aceptar y dominar sus habilidades, y ponerlas al servicio de la tolerancia y el combate contra la creciente histeria colectiva que está amenazando con su existencia. Pero la reputación de los mutantes será todavía peor cuando uno de ellos lanza un devastador ataque, lo que conlleva causas una pública recriminación hacia todos ellos y nuevos poderes para la Mutant Registration Act y William Stryker, un líder militar que pretende acabar con todos ellos centrándose en la escuela de X-Men.
+ Dirección : Bryan Singer
+ Guión : Zak Penn, David Hayter, Bryan Singer, Michael Dougherty, Dan Harris
+ Año : 2003
+</info>  </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-tjh7qmv8tu3b-740x360.html</page><referer>http://streamin.to</referer></regex>      <title>X-Men: La decisión final</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/8qsdorKIPzJ4Kpjl1VnDRVyhjLK.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/w3Yc8wi2jYLaOyCW6b6svf1B0MG.jpg</fanart>
+     <genre>Acción, Aventura, Ciencia ficción, Suspense</genre>
+ 
+     <info>En X-Men: La decisión final, el último capítulo de la trilogía cinematográfica de los X-Men, hay una cura para los mutantes que amenaza con alterar el curso de la historia. Por primera vez, los mutantes pueden elegir: seguir con su singularidad, aunque eso les aísle y les separe, o renunciar a sus poderes y convertirse en seres humanos normales. Los opuestos puntos de vista de los líderes mutantes, Charles Xavier, que aboga por la tolerancia, y Magneto, que cree en la supervivencia de los más aptos, se ven sometidos a la prueba definitiva: desencadenar la guerra que pondrá fin a todas las guerras...
+ Dirección : Brett Ratner
+ Guión : Simon Kinberg, Zak Penn
+ Año : 2006
+</info> </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-1a7n4lmrf9je-740x360.html</page><referer>http://streamin.to</referer></regex>    <title>X-Men Orígenes: Lobezno</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/kN3rdXTBv9OTdafVK2BOFuycbVQ.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/mEuDxpLNBCarVgXRqDznHT7bdS8.jpg</fanart>
+     <genre>Aventura, Acción, Suspense, Ciencia ficción</genre>
+ 
+     <info>Precuela de la película X-Men. Situada 17 años antes, narra los inicios del arma X y la forma en la que Lobezno se convirtió en mutante. Logan (Hugh Jackman), convertido en un mutante que se hace llamar Lobezno, y que es capaz de sacar unas afiladas garras y de una fuerza y agilidad sobrehumana, ultima su venganza contra Victor Creed (Liev Schreiber), culpable de la muerte de su novia. Mientras tanto, otros mutantes se acogen al programa X para unir sus fuerzas.
+ Dirección : Gavin Hood
+ Guión : David Benioff
+ Año : 2009
+</info> </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-urwbwjf1ygvl-740x360.html</page><referer>http://streamin.to</referer></regex> <title>X-Men: Primera generación</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/62aHo8QMAu2Q92slv7cP4dUw21G.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/39nstYsfjR6ggyKTtB4Joga2fs8.jpg</fanart>
+     <genre>Acción, Aventura, Ciencia ficción</genre>
+ 
+     <info>Comienzo de la saga de los X-Men, esta es una historia secreta que alude a conocidos acontecimientos mundiales. Antes de que los mutantes se mostraran al mundo, y antes de que cambiaran sus nombres por los de Profesor X y Magneto, Charles Xavier (James McAvoy) y Erik Lehnsherr (Michael Fassbender) eran dos jóvenes que descubrían sus poderes. No había animadversión alguna entre ellos, sino que les unía una sincera amistad y la decisión de acabar con el trabajar juntos y entrenar a un grupo de jóvenes mutantes para evitar el Armagedón nuclear. Su enemigo común: el malvado Sebastian Shaw (Kevin Bacon), un humano con poderes con el que Erik tiene una cuenta pendiente.
+ Dirección : Matthew Vaughn
+ Guión : Ashley Edward Miller, Zack Stentz, Jane Goldman, Matthew Vaughn
+ Año : 2011
+</info> </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-jdkiruhagsqx-740x360.html</page><referer>http://streamin.to</referer></regex>    <title>Lobezno inmortal</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/sFuWQgtuso8aEjP5Cv5FsBZcLT4.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/oFyaTmJ5ZPPl16uB4Ry9pWKvtDc.jpg</fanart>
+     <genre>Acción, Ciencia ficción, Aventura, Fantasía</genre>
+ 
+     <info>Secuela de X-Men: la decisión final. El film se centra en la soledad del protagonista tras la desaparición definitiva de Jean Grey y otros compañeros. Logan amnésico busca respuestas sobre su pasado en el mundo del crimen organizado de Japón, donde un hombre al que salvó la vida en el pasado le ofrece algo que lleva tiempo deseando: hacer a Wolverine mortal.
+ Dirección : James Mangold
+ Guión : Mark Bomback, Scott Frank, Chris Claremont
+ Año : 2013
+</info>    </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-m0a8r329u0n3-740x360.html</page><referer>http://streamin.to</referer></regex> <title>X-Men: Días del futuro pasado</title>
+    <thumbnail>https://image.tmdb.org/t/p/w500/pNrIFKNFij76RmDglSeBQIACZvd.jpg</thumbnail>
+     <fanart>https://image.tmdb.org/t/p/original/ai9UKd8KownQKGIh1m5p3DuEeMm.jpg</fanart>
+     <genre>Acción, Aventura, Fantasía, Ciencia ficción</genre>
+ 
+     <info>Ambientada en la década de los 70, los miembros de la famosa Patrulla X tendrán que evitar un futuro apocalíptico en el que los mutantes luchan por sobrevivir en campos de concentración controlados por los temibles Centinelas. Para ello, los héroes del universo Marvel deberán unificar sus fuerzas dejando a un lado la creciente enemistad de los bandos liderados por Charles Xavier y Magneto. Trask Industries, la empresa encargada de crear a estos gigantescos cazamutantes, será el origen de todos sus problemas. Tan sólo viajando en el tiempo podrán impedir la masacre que se avecina. ¿Serán capaces nuestros héroes de derrocar a la multinacional y evitar así el exterminio de su especie?
+ Dirección : Bryan Singer
+ Guión : Jane Goldman, Simon Kinberg, Matthew Vaughn
+ Año : 2014
+</info>  </item>
+
+
+
+
+</items>
+</channel>
+
+<channel>
+<name>Infantiles</name>
+<fanart>https://pbs.twimg.com/media/CTQTVZEVEAAcZxV.jpg:large</fanart>
+<thumbnail>https://pbs.twimg.com/media/CTQTVZEVEAAcZxV.jpg:large</thumbnail>
+<items>
+
+
+
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-jh0906i99bao-740x360.html</page><referer>http://streamin.to</referer></regex>                   <thumbnail>http://95.211.213.200:8777/i/01/00922/jh0906i99bao_t.jpg</thumbnail>       <title>Animales Al Ataque (2010) 720p</title>
+<info2>1280x720, 01:33:13</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-e9opzovdsz3w-740x360.html</page><referer>http://streamin.to</referer></regex>                   <thumbnail>http://95.211.210.96:8777/i/02/00922/e9opzovdsz3w_t.jpg</thumbnail>       <title>Aviones (2013) 720p</title>
+<info2>1280x720, 01:31:35</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-ltapld90o3lv-740x360.html</page><referer>http://streamin.to</referer></regex>                   <thumbnail>http://95.211.191.129:8777/i/02/00922/ltapld90o3lv_t.jpg</thumbnail>       <title>Bichos (1998) 720p</title>
+<info2>1280x544, 01:34:53</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-asljpal3vr40-740x360.html</page><referer>http://streamin.to</referer></regex>                   <thumbnail>http://95.211.213.8:8777/i/01/00922/asljpal3vr40_t.jpg</thumbnail>       <title>Big Hero 6 (2014) 720p</title>
+<info2>1280x536, 01:41:52</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-7tz1pnyydq8p-740x360.html</page><referer>http://streamin.to</referer></regex>                   <thumbnail>http://62.212.82.66:8777/i/01/00922/7tz1pnyydq8p_t.jpg</thumbnail>       <title>Brave (2012) 720p</title>
+<info2>1280x536, 01:33:38</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-5vsvxhtot2mq-740x360.html</page><referer>http://streamin.to</referer></regex>                   <thumbnail>http://95.211.214.87:8777/i/04/00922/5vsvxhtot2mq_t.jpg</thumbnail>       <title>Buscando A Nemo (2003) 720p</title>
+<info2>1280x720, 01:40:54</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-s733mjdgr3e0-740x360.html</page><referer>http://streamin.to</referer></regex>                   <thumbnail>http://85.17.172.99:8777/i/03/00922/s733mjdgr3e0_t.jpg</thumbnail>       <title>Como Entrenar A Tu Dragon (2010) 720p</title>
+<info2>1024x436, 01:37:50</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-ifomzj7v1clq-740x360.html</page><referer>http://streamin.to</referer></regex>                   <thumbnail>http://95.211.191.154:8777/i/03/00922/ifomzj7v1clq_t.jpg</thumbnail>       <title>Como Entrenar A Tu Dragon El Obsequio De La Furia Nocturna (2011) 720p Dual</title>
+<info2>1024x572, 22:12</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-nvgeue08vo9z-740x360.html</page><referer>http://streamin.to</referer></regex>                   <thumbnail>http://95.211.214.90:8777/i/04/00922/nvgeue08vo9z_t.jpg</thumbnail>       <title>Dino Time (2012) 720p</title>
+<info2>1024x552, 01:25:26</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-w42h3s3vbpf3-740x360.html</page><referer>http://streamin.to</referer></regex>                   <thumbnail>http://85.17.31.184:8777/i/01/00922/w42h3s3vbpf3_t.jpg</thumbnail>       <title>El Rey Leon 1 (1994) 720p</title>
+<info2>1280x720, 01:28:23</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-njy0coa76j1m-740x360.html</page><referer>http://streamin.to</referer></regex>                   <thumbnail>http://85.17.31.184:8777/i/01/00922/njy0coa76j1m_t.jpg</thumbnail>       <title>Free Birds (2013) 720p</title>
+<info2>1024x556, 01:31:03</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-0ljuxyljl8u1-740x360.html</page><referer>http://streamin.to</referer></regex>                   <thumbnail>http://95.211.209.135:8777/i/04/00922/0ljuxyljl8u1_t.jpg</thumbnail>       <title>Frozen (2013)720p</title>
+<info2>1024x456, 01:42:12</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-mbanj91p4yql-740x360.html</page><referer>http://streamin.to</referer></regex>                   <thumbnail>http://95.211.209.133:8777/i/02/00922/mbanj91p4yql_t.jpg</thumbnail>       <title>Gru 2 Mi Villano Favorito (2013) 720p</title>
+<info2>1280x688, 01:37:58</info2>                 </item>
+
+
+
+
+</items>
+
+</channel>
+
+<channel>
+<name>Mexicanas</name>
+<fanart>https://pbs.twimg.com/media/CTQTVZEVEAAcZxV.jpg:large</fanart>
+<thumbnail>https://pbs.twimg.com/media/CTQTVZEVEAAcZxV.jpg:large</thumbnail>
+<items>
+
+
+
+
+
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-mhgabcf9nbvd-740x360.html</page><referer>http://streamin.to</referer></regex>                   <thumbnail>http://95.211.156.138:8777/i/04/00928/mhgabcf9nbvd_t.jpg</thumbnail>       <title>El Vecindario 2 mex</title>
+<info2>640x480, 01:27:37</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-mu4mpp8zkei9-740x360.html</page><referer>http://streamin.to</referer></regex>                   <thumbnail>http://37.48.86.132:8777/i/02/00928/mu4mpp8zkei9_t.jpg</thumbnail>       <title>ELVECINDARIOGALLETAS</title>
+<info2>480x360, 01:25:42</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-o5nt4y7k0xbk-740x360.html</page><referer>http://streamin.to</referer></regex>                   <thumbnail>http://95.211.191.154:8777/i/01/00928/o5nt4y7k0xbk_t.jpg</thumbnail>       <title>La India Maria - El miedo no anda en burro</title>
+<info2>720x544, 01:26:02</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-c2oaowaih44f-740x360.html</page><referer>http://streamin.to</referer></regex>                   <thumbnail>http://5.79.76.154:8777/i/04/00928/c2oaowaih44f_t.jpg</thumbnail>       <title>La India Maria - Ni De Aqui Ni De Alla</title>
+<info2>512x384, 01:32:23</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-qo8540eydisn-740x360.html</page><referer>http://streamin.to</referer></regex>                   <thumbnail>http://67.212.229.116:8777/i/01/00928/qo8540eydisn_t.jpg</thumbnail>       <title>La India Maria - OK Mrs  Pancho</title>
+<info2>624x480, 01:28:06</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-kkfpkfbgua86-740x360.html</page><referer>http://streamin.to</referer></regex>                   <thumbnail>http://199.189.107.68:8777/i/02/00928/kkfpkfbgua86_t.jpg</thumbnail>       <title>Los Verduleros</title>
+<info2>720x480, 01:37:50</info2>                 </item>
+
+
+
+
+
+
+</items>
+</channel>
+
+<channel>
+<name>Romanticas</name>
+<fanart>https://pbs.twimg.com/media/CTQTVZEVEAAcZxV.jpg:large</fanart>
+<thumbnail>https://pbs.twimg.com/media/CTQTVZEVEAAcZxV.jpg:large</thumbnail>
+<items>
+
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-umlfhdaftp0p-740x360.html</page><referer>http://streamin.to</referer></regex>                   <thumbnail>http://95.211.210.134:8777/i/04/00927/umlfhdaftp0p_t.jpg</thumbnail>       <title>Amor en Boston (Navidad en Boston)</title>
+<info2>476x360, 02:04:07</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-bixxrigb7acq-740x360.html</page><referer>http://streamin.to</referer></regex>                   <thumbnail>http://95.211.210.97:8777/i/02/00927/bixxrigb7acq_t.jpg</thumbnail>       <title>Amor en Boston (Navidad en Boston)</title>
+<info2>476x360, 02:04:07</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-hw9jv9pc07p2-740x360.html</page><referer>http://streamin.to</referer></regex>                   <thumbnail>http://5.79.76.156:8777/i/04/00927/hw9jv9pc07p2_t.jpg</thumbnail>       <title>Amor Verdadero peliculas romanticas</title>
+<info2>624x360, 02:00:54</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-ub6bg9cu2neg-740x360.html</page><referer>http://streamin.to</referer></regex>                   <thumbnail>http://95.211.209.133:8777/i/02/00927/ub6bg9cu2neg_t.jpg</thumbnail>       <title>Ana de las Tejas Verdes (el cl C3 A1sico del cine) - pel C3 ADculas completas en espa C3 B1ol castellano (360p)</title>
+<info2>480x360, 03:04:21</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-ihcsu7q3rutd-740x360.html</page><referer>http://streamin.to</referer></regex>                   <thumbnail>http://95.211.196.4:8777/i/01/00927/ihcsu7q3rutd_t.jpg</thumbnail>       <title>Ana de las tejas verdes La historia</title>
+<info2>480x360, 03:42:52</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-lprzulou9nno-740x360.html</page><referer>http://streamin.to</referer></regex>                   <thumbnail>http://95.211.186.232:8777/i/01/00927/lprzulou9nno_t.jpg</thumbnail>       <title>Ana de las Tejas Verdes La secuela (1987) </title>
+<info2>480x360, 05:07:11</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-tu4uef4cr7px-740x360.html</page><referer>http://streamin.to</referer></regex>                   <thumbnail>http://95.211.174.131:8777/i/02/00927/tu4uef4cr7px_t.jpg</thumbnail>       <title>Ana de las Tejas Verdes La secuela (1987)</title>
+<info2>480x360, 05:07:11</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-ml29on7ghqvi-740x360.html</page><referer>http://streamin.to</referer></regex>                   <thumbnail>http://95.211.213.205:8777/i/01/00927/ml29on7ghqvi_t.jpg</thumbnail>       <title>Aventura de dos Noches</title>
+<info2>640x272, 01:25:56</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-7htr36h9amx0-740x360.html</page><referer>http://streamin.to</referer></regex>                   <thumbnail>http://85.17.172.103:8777/i/02/00927/7htr36h9amx0_t.jpg</thumbnail>       <title>Beautiful Cretures</title>
+<info2>640x268, 02:03:44</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-8ymnu79pg0hg-740x360.html</page><referer>http://streamin.to</referer></regex>                   <thumbnail>http://85.17.172.99:8777/i/02/00927/8ymnu79pg0hg_t.jpg</thumbnail>       <title>Crepusculo 3 </title>
+<info2>688x288, 02:01:10</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-049kpqfs5zs2-740x360.html</page><referer>http://streamin.to</referer></regex>                   <thumbnail>http://95.211.214.97:8777/i/02/00927/049kpqfs5zs2_t.jpg</thumbnail>       <title>Fifty shades of grey</title>
+<info2>720x304, 02:05:19</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-rungwu1ta2px-740x360.html</page><referer>http://streamin.to</referer></regex>                   <thumbnail>http://62.212.82.66:8777/i/01/00927/rungwu1ta2px_t.jpg</thumbnail>       <title>Ghost</title>
+<info2>480x352, 01:58:42</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-jzqkbaw0szpv-740x360.html</page><referer>http://streamin.to</referer></regex>                   <thumbnail>http://95.211.196.18:8777/i/02/00927/jzqkbaw0szpv_t.jpg</thumbnail>       <title>Horns</title>
+<info2>640x272, 01:59:55</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-sxdmcf01x8xv-740x360.html</page><referer>http://streamin.to</referer></regex>                   <thumbnail>http://95.211.156.131:8777/i/03/00927/sxdmcf01x8xv_t.jpg</thumbnail>       <title>Horns</title>
+<info2>640x272, 01:59:55</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-8l6j0soxph4y-740x360.html</page><referer>http://streamin.to</referer></regex>                   <thumbnail>http://5.79.73.210:8777/i/03/00927/8l6j0soxph4y_t.jpg</thumbnail>       <title>Kiss at Pine Lake</title>
+<info2>720x404, 01:23:17</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-tktfkvx7xug6-740x360.html</page><referer>http://streamin.to</referer></regex>                   <thumbnail>http://95.211.209.145:8777/i/02/00927/tktfkvx7xug6_t.jpg</thumbnail>       <title>Nights in Roodmate</title>
+<info2>640x272, 01:36:47</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-tj9qwkzwaskh-740x360.html</page><referer>http://streamin.to</referer></regex>                   <thumbnail>http://199.189.107.68:8777/i/04/00927/tj9qwkzwaskh_t.jpg</thumbnail>       <title>P  D  I love you</title>
+<info2>900x480, 02:05:45</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-4cznlyj8lys9-740x360.html</page><referer>http://streamin.to</referer></regex>                   <thumbnail>http://85.17.28.142:8777/i/01/00927/4cznlyj8lys9_t.jpg</thumbnail>       <title>Papita Mani Toston</title>
+<info2>720x404, 01:54:18</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-lw0k39qv4an4-740x360.html</page><referer>http://streamin.to</referer></regex>                   <thumbnail>http://95.211.191.141:8777/i/04/00927/lw0k39qv4an4_t.jpg</thumbnail>       <title>Para escribir amor en sus brazos</title>
+<info2>1280x528, 01:42:25</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-r7f3js5g4f23-740x360.html</page><referer>http://streamin.to</referer></regex>                   <thumbnail>http://85.17.73.13:8777/i/01/00927/r7f3js5g4f23_t.jpg</thumbnail>       <title>That Awkeard Moment</title>
+<info2>720x304, 01:34:31</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-ecxjizkx1lna-740x360.html</page><referer>http://streamin.to</referer></regex>                   <thumbnail>http://5.79.69.176:8777/i/01/00927/ecxjizkx1lna_t.jpg</thumbnail>       <title>The Best of Me</title>
+<info2>720x416, 01:57:45</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-faafrqtl5qst-740x360.html</page><referer>http://streamin.to</referer></regex>                   <thumbnail>http://95.211.214.88:8777/i/04/00927/faafrqtl5qst_t.jpg</thumbnail>       <title>The Longest Ride (2015) 720p Latino </title>
+<info2>1024x424, 02:08:48</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-d1ckiedao8um-740x360.html</page><referer>http://streamin.to</referer></regex>                   <thumbnail>http://67.212.229.116:8777/i/01/00927/d1ckiedao8um_t.jpg</thumbnail>       <title>Twilght 4 Breaking Dawn P1</title>
+<info2>688x288, 01:57:08</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-38p853y09xf6-740x360.html</page><referer>http://streamin.to</referer></regex>                   <thumbnail>http://95.211.210.134:8777/i/01/00927/38p853y09xf6_t.jpg</thumbnail>       <title>Twilight 1</title>
+<info2>592x256, 02:01:51</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-js2e0l0vcuch-740x360.html</page><referer>http://streamin.to</referer></regex>                   <thumbnail>http://95.211.196.3:8777/i/04/00927/js2e0l0vcuch_t.jpg</thumbnail>       <title>Twilight 2 -New Moon</title>
+<info2>672x284, 02:09:55</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-knxsy7o5d4yo-740x360.html</page><referer>http://streamin.to</referer></regex>                   <thumbnail>http://95.211.191.154:8777/i/04/00927/knxsy7o5d4yo_t.jpg</thumbnail>       <title>Twilight 4 - Breaking Dawn P2</title>
+<info2>640x272, 01:55:15</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-xdploohzvqx5-740x360.html</page><referer>http://streamin.to</referer></regex>                   <thumbnail>http://95.211.191.94:8777/i/02/00927/xdploohzvqx5_t.jpg</thumbnail>       <title>Un novio por Navidad 2014</title>
+<info2>490x360, 04:57:22</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-uamhfj8h19gl-740x360.html</page><referer>http://streamin.to</referer></regex>                   <thumbnail>http://95.211.213.227:8777/i/02/00927/uamhfj8h19gl_t.jpg</thumbnail>       <title>Una Chica Fuera De Serie</title>
+<info2>532x316, 01:31:27</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-a1o1ezaox6ya-740x360.html</page><referer>http://streamin.to</referer></regex>                   <thumbnail>http://62.212.82.92:8777/i/02/00927/a1o1ezaox6ya_t.jpg</thumbnail>       <title>With This Ring</title>
+<info2>1280x720, 01:27:40</info2>                 </item>
+
+
+
+
+
+</items>
+</channel>
+
+<channel>
+<name>Terror</name>
+<fanart>https://pbs.twimg.com/media/CTQTVZEVEAAcZxV.jpg:large</fanart>
+<thumbnail>https://pbs.twimg.com/media/CTQTVZEVEAAcZxV.jpg:large</thumbnail>
+<items>
+
+
+
+
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-1p10zy3jqik8-740x360.html</page><referer>http://streamin.to</referer></regex>                   <thumbnail>http://95.211.203.197:8777/i/03/00922/1p10zy3jqik8_t.jpg</thumbnail>       <title>Actividad Paranormal Los Marcados 720 LATiNO</title>
+<info2>1024x576, 01:41:29</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-mxoj0uc0jvj4-740x360.html</page><referer>http://streamin.to</referer></regex>                   <thumbnail>http://95.211.191.133:8777/i/04/00922/mxoj0uc0jvj4_t.jpg</thumbnail>       <title>Annabelle 2014 720 LATiNO</title>
+<info2>1024x428, 01:38:48</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-pfou3pvfpgiu-740x360.html</page><referer>http://streamin.to</referer></regex>                   <thumbnail>http://95.211.209.167:8777/i/03/00922/pfou3pvfpgiu_t.jpg</thumbnail>       <title>Camino Hacia El Terror 6 720 LATiNO</title>
+<info2>1024x576, 01:30:30</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-g5056qy74tt8-740x360.html</page><referer>http://streamin.to</referer></regex>                   <thumbnail>http://62.212.82.65:8777/i/03/00922/g5056qy74tt8_t.jpg</thumbnail>       <title>Conjuro 720 Latino</title>
+<info2>1024x428, 01:51:56</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-6ajm7mcjqj1u-740x360.html</page><referer>http://streamin.to</referer></regex>                   <thumbnail>http://95.211.174.135:8777/i/03/00922/6ajm7mcjqj1u_t.jpg</thumbnail>       <title>El Cuarto Contacto</title>
+<info2>640x272, 01:37:59</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-5y66v6ksql6o-740x360.html</page><referer>http://streamin.to</referer></regex>                   <thumbnail>http://85.17.172.104:8777/i/01/00922/5y66v6ksql6o_t.jpg</thumbnail>       <title>ELIMINAR </title>
+<info2>1024x576, 01:22:38</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-ezems6o1rg2b-740x360.html</page><referer>http://streamin.to</referer></regex>                   <thumbnail>http://5.79.74.83:8777/i/01/00922/ezems6o1rg2b_t.jpg</thumbnail>       <title>extintio-dvdr-lat-rafaelituz</title>
+<info2>720x304, 01:52:43</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-81ws1yx0bhty-740x360.html</page><referer>http://streamin.to</referer></regex>                   <thumbnail>http://95.211.140.208:8777/i/01/00922/81ws1yx0bhty_t.jpg</thumbnail>       <title>Insidious 2010 720p </title>
+<info2>1024x424, 01:42:23</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-0avvjc0u68ed-740x360.html</page><referer>http://streamin.to</referer></regex>                   <thumbnail>http://95.211.156.131:8777/i/03/00926/0avvjc0u68ed_t.jpg</thumbnail>       <title>Insidious 2010 720p </title>
+<info2>1024x424, 01:42:23</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-vi311peikwsl-740x360.html</page><referer>http://streamin.to</referer></regex>                   <thumbnail>http://62.212.82.66:8777/i/01/00922/vi311peikwsl_t.jpg</thumbnail>       <title>Invocando al Demonio</title>
+<info2>640x352, 01:23:23</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-pneg0qgfsioc-740x360.html</page><referer>http://streamin.to</referer></regex>                   <thumbnail>http://95.211.191.141:8777/i/02/00922/pneg0qgfsioc_t.jpg</thumbnail>       <title>Jeepers Creepers 2 2003 BRRip 720p </title>
+<info2>1024x436, 01:44:04</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-b545hygufdzx-740x360.html</page><referer>http://streamin.to</referer></regex>                   <thumbnail>http://95.211.191.141:8777/i/01/00922/b545hygufdzx_t.jpg</thumbnail>       <title>Jeepers Creepers 2001 BRRip 720p </title>
+<info2>1024x556, 01:30:59</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-d1ux3za83h9u-740x360.html</page><referer>http://streamin.to</referer></regex>                   <thumbnail>http://5.79.69.176:8777/i/01/00922/d1ux3za83h9u_t.jpg</thumbnail>       <title>La Dama de Negro El Angel de la Muerte 720p</title>
+<info2>1024x424, 01:38:32</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-uj831drsobdq-740x360.html</page><referer>http://streamin.to</referer></regex>                   <thumbnail>http://5.79.76.146:8777/i/02/00922/uj831drsobdq_t.jpg</thumbnail>       <title>La Piramide 720p Latino</title>
+<info2>1024x436, 01:28:52</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-laak3ujmbe8k-740x360.html</page><referer>http://streamin.to</referer></regex>                   <thumbnail>http://85.17.73.2:8777/i/01/00922/laak3ujmbe8k_t.jpg</thumbnail>       <title>La Casa Del Lago 720 </title>
+<info2>1024x556, 01:53:37</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-8xk0364s7mqv-740x360.html</page><referer>http://streamin.to</referer></regex>                   <thumbnail>http://95.211.191.69:8777/i/04/00922/8xk0364s7mqv_t.jpg</thumbnail>       <title>Ndemonio2 720 </title>
+<info2>1024x428, 01:45:52</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-f7uokzb02kij-740x360.html</page><referer>http://streamin.to</referer></regex>                   <thumbnail>http://95.211.191.94:8777/i/02/00922/f7uokzb02kij_t.jpg</thumbnail>       <title>Posesion Infernal 720 LATiNO</title>
+<info2>1024x428, 01:31:18</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-eweaj4k5n78c-740x360.html</page><referer>http://streamin.to</referer></regex>                   <thumbnail>http://199.189.107.68:8777/i/03/00926/eweaj4k5n78c_t.jpg</thumbnail>       <title>R3sv(1t@2</title>
+<info2>1024x428, 00:13</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-2o1i5ve3a0jq-740x360.html</page><referer>http://streamin.to</referer></regex>                   <thumbnail>http://5.79.81.107:8777/i/01/00926/2o1i5ve3a0jq_t.jpg</thumbnail>       <title>s4w 1 </title>
+<info2>536x400, 01:43:24</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-grxr6f6kphts-740x360.html</page><referer>http://streamin.to</referer></regex>                   <thumbnail>http://95.211.186.219:8777/i/04/00926/grxr6f6kphts_t.jpg</thumbnail>       <title>s4w 2 </title>
+<info2>632x352, 01:32:41</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-c6p7tw0fg99j-740x360.html</page><referer>http://streamin.to</referer></regex>                   <thumbnail>http://85.17.28.142:8777/i/01/00926/c6p7tw0fg99j_t.jpg</thumbnail>       <title>s4w 3 </title>
+<info2>632x352, 01:48:18</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-6jjv63f77cpe-740x360.html</page><referer>http://streamin.to</referer></regex>                   <thumbnail>http://37.48.86.132:8777/i/01/00926/6jjv63f77cpe_t.jpg</thumbnail>       <title>s4w 4 </title>
+<info2>672x352, 01:32:35</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-p51tusrnocet-740x360.html</page><referer>http://streamin.to</referer></regex>                   <thumbnail>http://5.79.69.179:8777/i/01/00926/p51tusrnocet_t.jpg</thumbnail>       <title>s4w 5 </title>
+<info2>672x352, 01:28:23</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-amzcabcluv3a-740x360.html</page><referer>http://streamin.to</referer></regex>                   <thumbnail>http://85.17.172.94:8777/i/04/00926/amzcabcluv3a_t.jpg</thumbnail>       <title>s4w 6 </title>
+<info2>632x352, 01:31:39</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-9576mjzwny9g-740x360.html</page><referer>http://streamin.to</referer></regex>                   <thumbnail>http://95.211.203.197:8777/i/02/00926/9576mjzwny9g_t.jpg</thumbnail>       <title>s4w 7 </title>
+<info2>632x352, 01:29:59</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-6m9p8wkixxrm-740x360.html</page><referer>http://streamin.to</referer></regex>                   <thumbnail>http://199.189.107.68:8777/i/03/00922/6m9p8wkixxrm_t.jpg</thumbnail>       <title>the boy next door </title>
+<info2>640x272, 01:30:41</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-nwysst03z93p-740x360.html</page><referer>http://streamin.to</referer></regex>                   <thumbnail>http://95.211.156.138:8777/i/01/00922/nwysst03z93p_t.jpg</thumbnail>       <title>the intruders</title>
+<info2>640x272, 01:32:16</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-6wwdh30484bd-740x360.html</page><referer>http://streamin.to</referer></regex>                   <thumbnail>http://95.211.210.130:8777/i/02/00922/6wwdh30484bd_t.jpg</thumbnail>       <title>The Atticus Institute 2015 BRRip 720p</title>
+<info2>1024x556, 01:22:48</info2>                 </item>
+
+<item> <link>$doregex[id]</link><regex><name>id</name><expres>file:'(.*)'</expres><page>http://streamin.to/embed-gn6w0f85gv6t-740x360.html</page><referer>http://streamin.to</referer></regex>                   <thumbnail>http://95.211.186.205:8777/i/03/00922/gn6w0f85gv6t_t.jpg</thumbnail>       <title>Thir13en Ghosts 2001 720</title>
+<info2>1024x552, 01:30:47</info2>                 </item>
+
+
+</items>
+
+
+</channel>
+
+</channels>
