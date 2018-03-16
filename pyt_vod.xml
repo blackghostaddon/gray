@@ -1554,13 +1554,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
- <item>
-<title>[B]EMULELAND[/B]  | ESTRENOS | BUSCADOR | GENEROS | CALIDAD |   </title>
-<link>http://ignora.me</link>
-<externallink>http://blackaddon.rf.gd/gray/emuleland.xml</externallink>
-<thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.png</thumbnail><fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
-</item>
-
 
 
 
@@ -1588,7 +1581,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  </item>
 ]]></listrepeat>
 <expres>href="(.*?).html.*?text:\s\'(.*?)\&.*?src="(.*?)"</expres>
-<page>http://www.cinevall.club</page>
+<page>http://www.cinevall.club/estrenos.html</page>
 </regex>
 <thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.png</thumbnail><fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
  </item>
