@@ -25,7 +25,7 @@
 			<page></page>
 			</regex>
 
-			<thumbnail>http://adryanlist.org/adryan/img/acestreams.png</thumbnail>
+			<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/acestreams.png</thumbnail>
 
 ]]></listrepeat>
 <expres><![CDATA[style13">(.*?)<[\w\W\s]{0,32}">(.*?)CET[\w\W\s]{0,35}">(.*?)<[\w\W\s]{0,32}">(.*?)<[\w\W\s]{0,32}">(.*?)<[\w\W\s]{0,32}"(>[0-9]+)]]></expres>
@@ -34,7 +34,7 @@
 <referer>http://arenavision2018.ga</referer>
 <setcookie>beget=begetok</setcookie>
  </regex>
-<thumbnail>http://adryanlist.org/adryan/img/acestreams.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/acestreams.png</thumbnail>
 </item>
 
 
@@ -64,7 +64,7 @@
 			<page></page>
 			</regex>
 
-			<thumbnail>http://adryanlist.org/adryan/img/acestreams.png</thumbnail>
+			<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/acestreams.png</thumbnail>
 
 ]]></listrepeat>
 <expres><![CDATA[style13">(.*?)<[\w\W\s]{0,32}">(.*?)CET[\w\W\s]{0,35}">(.*?)<[\w\W\s]{0,32}">(.*?)<[\w\W\s]{0,32}">(.*?)<[\w\W\s]{0,32}"(>[0-9]+)]]></expres>
@@ -73,7 +73,7 @@
 <referer>http://arenavision2018.ga</referer>
 <setcookie>beget=begetok</setcookie>
  </regex>
-<thumbnail>http://adryanlist.org/adryan/img/acestreams.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/acestreams.png</thumbnail>
 </item>
 
 
@@ -115,7 +115,7 @@
 			<page></page>
 			</regex>
 
-			<thumbnail>http://adryanlist.org/adryan/img/acestreams.png</thumbnail>
+			<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/acestreams.png</thumbnail>
 
 ]]></listrepeat>
 <expres><![CDATA[style13">(.*?)<[\w\W\s]{0,32}">(.*?)CET[\w\W\s]{0,35}">(.*?)<[\w\W\s]{0,32}">(.*?)<[\w\W\s]{0,32}">(.*?)<[\w\W\s]{0,32}"(>[0-9]+)]]></expres>
@@ -124,7 +124,7 @@
 <referer>http://arenavision2018.ga</referer>
 <setcookie>beget=begetok</setcookie>
  </regex>
-<thumbnail>http://adryanlist.org/adryan/img/acestreams.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/acestreams.png</thumbnail>
 </item>
 
 
@@ -162,7 +162,7 @@
 			<page></page>
 			</regex>
 
-			<thumbnail>http://adryanlist.org/adryan/img/acestreams.png</thumbnail>
+			<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/acestreams.png</thumbnail>
 
 ]]></listrepeat>
 <expres><![CDATA[style13">(.*?)<[\w\W\s]{0,32}">(.*?)CET[\w\W\s]{0,35}">(.*?)<[\w\W\s]{0,32}">(.*?)<[\w\W\s]{0,32}">(.*?)<[\w\W\s]{0,32}"(>[0-9]+)]]></expres>
@@ -171,7 +171,7 @@
 <referer>http://arenavision2018.ga</referer>
 <setcookie>beget=begetok</setcookie>
  </regex>
-<thumbnail>http://adryanlist.org/adryan/img/acestreams.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/acestreams.png</thumbnail>
 </item>
 
 
