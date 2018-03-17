@@ -2370,12 +2370,14 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/21616.h
 
 
 
+
+
 <item>
-<title>test3</title>
+<title>test2</title>
 <link>http://$doregex[ip]/live/$doregex[get].m3u8?token=$doregex[token]</link>
 <regex>
 <name>get</name>
-<expres>var\sname\s=\s\'(.*?)\'</expres>
+<expres>var name     = '(.*?)\'</expres>
 <page>http://privatehd.pw/PLAYER.php?a=1199&amp;id=1199</page>
 </regex>
 
