@@ -5,8 +5,8 @@
 
 <channel>
     <name>EXTRATIME</name>
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail>
-    <fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail>
+    <fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
         <items>
 
 
@@ -62,7 +62,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page></page>
 </regex>
 
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail>
 
 </item>
 
@@ -100,7 +100,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page></page>
 </regex>
 
- <thumbnail>http://blackaddon.rf.gd/gray/img/acestream.png</thumbnail>
+ <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/acestream.png</thumbnail>
 </item>
 
 
@@ -159,12 +159,12 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
 <referer>http://www.[makelist.param4]</referer>
 </regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail>
 ]]></listrepeat>
 <expres>type:"Deportes" canal="(.*?)" channel="(.*?)" pub="(.*?)" server="(.*?)"</expres>
-<page>http://blackaddon.rf.gd/gray/servers.txt</page>
+<page>https://raw.githubusercontent.com/blackghostaddon/gray/master/servers.txt</page>
 </regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
@@ -231,7 +231,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 ]]></expres>
 <page></page>
 </regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail>
 
 </item>
 
@@ -264,7 +264,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/17220.h
 ]]></expres>
 <page></page>
 </regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
@@ -287,7 +287,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/17220.h
         <cookieJar></cookieJar>
 </regex>
 
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
@@ -296,7 +296,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/17220.h
  <item>
  <title>[B]Multicanal PSN [/B]      </title>
 <link>https://clutch.vaughnsoft.net/ord/vl/psn88v.m3u8</link>
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
@@ -356,7 +356,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/13137.h
 ]]></expres>
 <page></page>
 </regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
@@ -381,7 +381,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/13137.h
 <expres>token=(.*?)";</expres>
 <page>http://privatehd.pw/PLAYER.php?a=844&amp;id=844</page>
 </regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
@@ -404,7 +404,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/13137.h
 <expres>token=(.*?)";</expres>
 <page>http://privatehd.pw/PLAYER.php?a=1203&amp;id=1203</page>
 </regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
@@ -427,7 +427,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/13137.h
 <expres>token=(.*?)";</expres>
 <page>http://privatehd.pw/PLAYER.php?a=843&amp;id=843</page>
 </regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 <item>
 <title>Multicanal VIP09</title>
@@ -447,7 +447,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/13137.h
 <expres>token=(.*?)";</expres>
 <page>http://privatehd.pw/PLAYER.php?a=842&amp;id=842</page>
 </regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
@@ -476,7 +476,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/23506.h
 ]]></expres>
 <page></page>
 </regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
@@ -524,7 +524,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/739.htm
 ]]></expres>
 <page></page>
 </regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
@@ -552,7 +552,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/15558.h
 ]]></expres>
 <page></page>
 </regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
@@ -586,7 +586,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/248.htm
 ]]></expres>
 <page></page>
 </regex>
- <thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail>
+ <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail>
 <fanart></fanart>
 </item>
 
@@ -620,13 +620,13 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/248.htm
 <title> [makelist.param1] [B] [makelist.param2][/B]  [makelist.param3]  [makelist.param4]  </title>
 <sportsdevil>http://zonasports.me/channel.php[makelist.param1]</sportsdevil>
 <referer>http://zonasports.be/</referer>
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 ]]></listrepeat>
 <expres><![CDATA[t\'>(.*?)<[\w\W\s]{0,110}left\'>(.*?)\:.*b>(.*?)\n.*?\((.*?)\)]]></expres>
 <page>http://zonasports.be/</page>
 <agent>Mozilla/5.0 (Windows NT 6.3; rv:36.0) Gecko/20100101 Firefox/36.04</agent>
 </regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 </item>
 
 
@@ -682,7 +682,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/248.htm
 			<expres>channel='(.*?)'</expres>
 			<page>http://gozonasports.me/channel.php?id=1</page>
 			</regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
@@ -723,7 +723,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/248.htm
 			<expres>channel='(.*?)'</expres>
 			<page>http://gozonasports.me/channel.php?id=2</page>
 			</regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
@@ -764,7 +764,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/248.htm
 			<expres>channel='(.*?)'</expres>
 			<page>http://gozonasports.me/channel.php?id=3</page>
 			</regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 <item>
 <title>[B]Multicanal Zonasport04[/B]     fstream    </title>
@@ -802,7 +802,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/248.htm
 			<expres>channel='(.*?)'</expres>
 			<page>http://gozonasports.me/channel.php?id=3</page>
 			</regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
@@ -833,7 +833,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/365.htm
 ]]></expres>
 <page></page>
 </regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
@@ -860,7 +860,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/414.htm
 ]]></expres>
 <page></page>
 </regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
@@ -890,7 +890,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/1827.ht
 ]]></expres>
 <page></page>
 </regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
@@ -921,7 +921,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/411.htm
 ]]></expres>
 <page></page>
 </regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
@@ -936,7 +936,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/411.htm
 <expres>file:"(.*?)"</expres>
 <page>http://widestream.io/embed-7230</page>
 </regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 <item>
 <title>[B]Multicanal Zonasport10[/B]     wide   </title>
@@ -946,7 +946,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/411.htm
 <expres>file:"(.*?)"</expres>
 <page>http://widestream.io/embed-7231</page>
 </regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
@@ -968,7 +968,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/411.htm
 			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
 			<referer>http://www.247bay.tv</referer>
 			</regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 <item>
 <title>[B]Multicanal Zonasport12[/B]    247bay    </title>
@@ -985,7 +985,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/411.htm
 			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
 			<referer>http://www.247bay.tv</referer>
 			</regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
@@ -1019,7 +1019,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/411.htm
 <agent>iPad</agent>
 </regex>
 
- <thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+ <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
@@ -1056,7 +1056,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page>http://schedule.racing/sevenembed.php?id=wiz10&amp;p=0&amp;c=0&amp;stretching=uniform</page>
 <referer>http://wizhdsports.is/live/stream10.html</referer>
 </regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
@@ -1081,7 +1081,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page>http://depo.superligatv.com/espn.php</page>
 </regex>
  
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
@@ -1095,7 +1095,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page>http://depo.superligatv.com/espn2.php</page>
 </regex>
  
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
   <item>
  <title>[B]Multicanal ESPN 3[/B]     </title>
@@ -1107,7 +1107,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page>http://depo.superligatv.com/espn3.php</page>
 </regex>
  
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
@@ -1121,7 +1121,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page>http://depo.superligatv.com/espndep.php</page>
 </regex>
  
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
@@ -1137,7 +1137,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page>http://depo.superligatv.com/foxsport.php</page>
 </regex>
  
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
   <item>
  <title>[B]Multicanal Fox Sports 2[/B]     </title>
@@ -1149,7 +1149,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page>http://depo.superligatv.com/foxsport2.php</page>
 </regex>
  
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
@@ -1163,7 +1163,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page>http://depo.superligatv.com/foxsport3.php</page>
 </regex>
  
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
@@ -1185,7 +1185,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page>http://depo.superligatv.com/f1.php</page>
 </regex>
  
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
@@ -1199,7 +1199,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page>http://depo.superligatv.com/mlbhd.php</page>
 </regex>
  
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
@@ -1213,7 +1213,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page>http://depo.superligatv.com/tdn.php</page>
 </regex>
  
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
@@ -1227,7 +1227,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page>http://depo.superligatv.com/unitdn.php</page>
 </regex>
  
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
@@ -1249,7 +1249,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page>http://depo.superligatv.com/tvcdep.php</page>
 </regex>
  
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
@@ -1264,7 +1264,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page>http://depo.superligatv.com/tvcdep2.php</page>
 </regex>
  
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
@@ -1285,7 +1285,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page>http://depo.superligatv.com/planeta.php</page>
 </regex>
  
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
@@ -1299,7 +1299,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page>http://depo.superligatv.com/sky1.php</page>
 </regex>
  
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
@@ -1316,7 +1316,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page>http://depo.superligatv.com/sky2.php</page>
 </regex>
  
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
@@ -1332,7 +1332,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page>http://depo.superligatv.com/sky3.php</page>
 </regex>
  
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
@@ -1411,8 +1411,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-	<item><title>                           </title><link>http://ignora.me</link><thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
-	<item><title> [B]C A N A L E S  D E  E S P A Ñ A  [/B] </title><link>http://ignora.me</link><thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+	<item><title>                           </title><link>http://ignora.me</link><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+	<item><title> [B]C A N A L E S  D E  E S P A Ñ A  [/B] </title><link>http://ignora.me</link><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
@@ -1420,13 +1420,13 @@ def GetLSProData(page_data,Cookie_Jar,m):
  <title>[B]Multicanal MotoGP[/B]   (sportsdevil requerido)  </title>
 <sportsdevil>http://www.vipgoal.net/MovistarMotoGP/35597/Movistar-MotoGP-en-directo.html</sportsdevil>
 <referer>http://www.vipgoal.net</referer>
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
    <item>
  <title>[B]Multicanal Formula 1[/B]   (sportsdevil requerido)  </title>
 <sportsdevil>http://www.vipgoal.net/MovistarF1/35596/Movistar-F1-en-directo.html</sportsdevil>
 <referer>http://www.vipgoal.net</referer>
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
@@ -1436,7 +1436,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  <title>[B]Multicanal LaLiga 123[/B]    multicanal 1     (sportsdevil requerido)  </title>
 <sportsdevil>http://cinestrenostv.tv/canales/envivo/laliga123multi1.html</sportsdevil>
 <referer>http://cinestrenostv.tv</referer>
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
@@ -1445,7 +1445,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  <title>[B]Multicanal LaLiga 123[/B]    multicanal 2     (sportsdevil requerido)  </title>
 <sportsdevil>http://cinestrenostv.tv/canales/envivo/laliga123multi2.html</sportsdevil>
 <referer>http://cinestrenostv.tv</referer>
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
@@ -1453,14 +1453,14 @@ def GetLSProData(page_data,Cookie_Jar,m):
  <title>[B]Multicanal LaLiga 123[/B]    multicanal 3     (sportsdevil requerido)  </title>
 <sportsdevil>http://cinestrenostv.tv/canales/envivo/laliga123multi3.html</sportsdevil>
 <referer>http://cinestrenostv.tv</referer>
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
    <item>
  <title>[B]Multicanal LaLiga 123[/B]    multicanal 4     (sportsdevil requerido)  </title>
 <sportsdevil>http://cinestrenostv.tv/canales/envivo/laliga123multi4.html</sportsdevil>
 <referer>http://cinestrenostv.tv</referer>
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
@@ -1515,7 +1515,7 @@ server="www.zony.tv" pub="cdn.pubzony.com"
 			<page>http://elgoles.ru/</page>
 			</regex>
 
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 <item>
@@ -1551,7 +1551,7 @@ server="www.zony.tv" pub="cdn.pubzony.com"
 			<page>http://elgoles.ru/</page>
 			</regex>
 
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
@@ -1588,7 +1588,7 @@ server="www.zony.tv" pub="cdn.pubzony.com"
 			<page>http://elgoles.ru/</page>
 			</regex>
 
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
@@ -1625,7 +1625,7 @@ server="www.zony.tv" pub="cdn.pubzony.com"
 			<page>http://elgoles.ru/</page>
 			</regex>
 
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
@@ -1663,7 +1663,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/23283.h
 ]]></expres>
 <page></page>
 </regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
@@ -1695,7 +1695,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/23166.h
 ]]></expres>
 <page></page>
 </regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
@@ -1746,7 +1746,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/23166.h
 			<expres>channel='(.*?)'</expres>
 			<page>http://revolucionariostv.eu/elitegol/Repros/c1.php</page>
 			</regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
@@ -1774,7 +1774,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/21616.h
 ]]></expres>
 <page></page>
 </regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
@@ -1806,7 +1806,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/21616.h
 			<expres>channel='(.*?)'</expres>
 			<page>http://revolucionariostv.eu/elitegol/Repros/c2.php</page>
 			</regex>
- <thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+ <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
@@ -1818,7 +1818,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/21616.h
 			<expres>source: "(.*?)"</expres>
 			<page>http://static.castto.me/embedlivesrclappr.php?channel=851328525</page>
 			</regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail>
 </item>
 <item>
 <title>[B]Multicanal[/B] TikiTaka 02 [I] estable  [/I]</title>
@@ -1828,7 +1828,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/21616.h
 			<expres>source: "(.*?)"</expres>
 			<page>http://static.castto.me/embedlivesrclappr.php?channel=851328525</page>
 			</regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail>
 </item>
 
 <item>
@@ -1853,7 +1853,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/21616.h
 			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
 			<referer>http://www.liveflashplayer.org</referer>
 			</regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail>
 </item>
 
 
@@ -1880,7 +1880,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/21616.h
 			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
 			<referer>http://www.liveflashplayer.org</referer>
 			</regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail>
 </item>
 
 
@@ -1915,13 +1915,13 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/21616.h
 <item>
 <title>[B]Multicanal[/B] Tiki01  [I] sportsdevil [/I]</title>
 <link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://lacasadeltikitaka.club/directo/canal1.php</link>
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 <item>
 <title>[B]Multicanal[/B] Tiki02  [I] sportsdevil [/I]</title>
 <link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://lacasadeltikitaka.club/directo/canal2.php</link>
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
@@ -1961,7 +1961,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/21616.h
 <page>http://pxstream.tv/embed/vtb3rb1wbx70/</page>
 <referer>http://lacasadeltikitaka.club</referer>
 </regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
@@ -2000,7 +2000,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/21616.h
 <referer>http://www.verliga.net/live/verliga1.php</referer>
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
 </regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/esp.jpg</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/esp.jpg</thumbnail></item>
 
 
 
@@ -2024,7 +2024,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/21616.h
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
 </regex>
 
-<thumbnail>http://blackaddon.rf.gd/gray/img/esp.jpg</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/esp.jpg</thumbnail></item>
 
 
 
@@ -2051,7 +2051,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/21616.h
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
 </regex>
 
-<thumbnail>http://blackaddon.rf.gd/gray/img/esp.jpg</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/esp.jpg</thumbnail></item>
 
 
   <item>
@@ -2072,7 +2072,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/21616.h
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
 </regex>
 
-<thumbnail>http://blackaddon.rf.gd/gray/img/esp.jpg</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/esp.jpg</thumbnail></item>
 
 
 
@@ -2095,7 +2095,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/21616.h
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
 </regex>
 
-<thumbnail>http://blackaddon.rf.gd/gray/img/esp.jpg</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/esp.jpg</thumbnail></item>
 
 
 
@@ -2112,7 +2112,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/21616.h
 
 <link>$$LSPlayOnlyOne$$</link>
 
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
@@ -2132,24 +2132,24 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/21616.h
 
 
 
-<item><title> TLT Venezuela: Venezuela Deportes</title><link>http://enc-fwt.lorini.net/telet/telet/index.m3u8|User-Agent=iPad</link><thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+<item><title> TLT Venezuela: Venezuela Deportes</title><link>http://enc-fwt.lorini.net/telet/telet/index.m3u8|User-Agent=iPad</link><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
    <item>
 <title> BetisTV  [I]    [/I]</title>
 <link>http://rbetis-hls.flumotion.com/rbetis/live/chunklist.m3u8</link>
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 <item>
 <title> Real Madrid TV</title>
 <link>http://rmtv24hweblive-lh.akamaihd.net/i/rmtv24hwebes_1@300661/master.m3u8</link>
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 <item>
 <title> Real Madrid TV</title>
 <link>http://rmtvlive-lh.akamaihd.net/i/rmtv_1@154306/index_1000_av-p.m3u8?</link>
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
@@ -2159,7 +2159,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/21616.h
 <item>
 <title> TD TV  [I]    [/I]</title>
 <link>http://190.92.0.43:1935/securelive/tdtv85jd5EKL3xWq3/chunklist_w1241310319.m3u8</link>
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
@@ -2171,7 +2171,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/21616.h
  <link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://soloveo.com/afox2.html</link>
  <link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://soloveo.com/afox3.html</link>
  <link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://soloveo.com/afox4.html</link>
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
@@ -2188,7 +2188,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/21616.h
 <expres>src=\"\/\/whostreams.net\/embed\/(.*?)"</expres>
 <page>http://sportsonline.pw/channels/hd/hd1.html</page>
 </regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 <item>
 <title>MAMA HD2</title>
@@ -2203,7 +2203,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/21616.h
 <expres>src=\"\/\/whostreams.net\/embed\/(.*?)"</expres>
 <page>http://sportsonline.pw/channels/hd/hd2.html</page>
 </regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 <item>
 <title>MAMA HD3</title>
@@ -2218,7 +2218,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/21616.h
 <expres>src=\"\/\/whostreams.net\/embed\/(.*?)"</expres>
 <page>http://sportsonline.pw/channels/hd/hd3.html</page>
 </regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 <item>
 <title>MAMA HD4</title>
@@ -2233,7 +2233,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/21616.h
 <expres>src=\"\/\/whostreams.net\/embed\/(.*?)"</expres>
 <page>http://sportsonline.pw/channels/hd/hd4.html</page>
 </regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
@@ -2269,7 +2269,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/21616.h
 <expres>src=\"\/\/whostreams.net\/embed\/(.*?)"</expres>
 <page>http://sportsonline.pw/channels/hd/nfl.html</page>
 </regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
@@ -2286,7 +2286,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/21616.h
 <expres>src=\"\/\/whostreams.net\/embed\/(.*?)"</expres>
 <page>http://sportsonline.pw/channels/pt/sporttv1.html</page>
 </regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 <item>
 <title>PT SportsTV 2</title>
@@ -2301,7 +2301,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/21616.h
 <expres>src=\"\/\/whostreams.net\/embed\/(.*?)"</expres>
 <page>http://sportsonline.pw/channels/pt/sporttv2.html</page>
 </regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 <item>
@@ -2317,7 +2317,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/21616.h
 <expres>src=\"\/\/whostreams.net\/embed\/(.*?)"</expres>
 <page>http://sportsonline.pw/channels/pt/sporttv3.html</page>
 </regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
@@ -2334,7 +2334,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/21616.h
 <expres>src=\"\/\/whostreams.net\/embed\/(.*?)"</expres>
 <page>http://sportsonline.pw/channels/pt/sporttv4.html</page>
 </regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
@@ -2351,7 +2351,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/21616.h
 <expres>src=\"\/\/whostreams.net\/embed\/(.*?)"</expres>
 <page>http://sportsonline.pw/channels/pt/sporttv5.html</page>
 </regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
