@@ -112,7 +112,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <cookieJar></cookieJar>
 </regex>
 
-<thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail>
 </item>
 
 
@@ -138,7 +138,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
          <SetViewMode>55</SetViewMode>
 		 <title>$pyFunction:'[lista.param3]'.replace(".mp4", "  [I] [/I]").replace(".avi", "  [I] [/I]").replace(".mkv", "  [I] [/I]")</title>
         <link>$doregex[getUrl]</link>
-		<thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.png</thumbnail>
+		<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail>
 		]]></listrepeat>
 <expres><![CDATA[href=\"(.*?,(.*?)\..*?)\".*?preview">(.*?mkv|.*?mp4|.*?avi)<]]><expres>
 <page>http://diskokosmiko.mx/action/SearchFiles?Phrase=adryanlist&amp;Mode=List&amp;Type=Video&amp;SizeFromMB=0&amp;SizeToMB=0&amp;pageNumber=10</page>
@@ -199,7 +199,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <cookieJar></cookieJar>
 </regex>
 
-<thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail>
 </item>
 
 
@@ -225,7 +225,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
 ]]></listrepeat>
 <expres><![CDATA[Estrenos:"(.*?)" url:"(.*?)" server:"(.*?)"]]></expres>
-<page>http://blackaddon.rf.gd/gray/estrenoslatinos.txt</page>
+<page>https://raw.githubusercontent.com/blackghostaddon/gray/master/estrenoslatinos.txt</page>
 </regex>
 
 <regex>
@@ -253,7 +253,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <expres>$pyFunction:'[makelist.param1]'.replace("_", "+")</expres>
 <page></page>
 </regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail>
 </item>
 
 
@@ -261,8 +261,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <iem>
 <title>[B]ESTRENOS LATINOS   [/B]</title>
 <link>http://ignora.me</link>
-<externallink>http://blackaddon.rf.gd/gray/peliculas_favoritas.xml</externallink>
-<thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.png</thumbnail>
+<externallink>https://raw.githubusercontent.com/blackghostaddon/gray/master/peliculas_favoritas.xml</externallink>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail>
 </item>
 
 
@@ -285,7 +285,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <fanart>https://image.tmdb.org/t/p/original/$doregex[imagen]</fanart>
 ]]></listrepeat>
 <expres><![CDATA[EstrenosESP:"(.*?)" url:"(.*?)" server:"(.*?)"]]></expres>
-<page>http://blackaddon.rf.gd/gray/estrenoslatinos.txt</page>
+<page>https://raw.githubusercontent.com/blackghostaddon/gray/master/estrenoslatinos.txt</page>
 </regex>
 
 <regex>
@@ -314,7 +314,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page></page>
 </regex>
 
-<thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail>
 </item>
 
 
@@ -347,8 +347,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
  <item>
 <title>[B]MOVIES PACK [/B]</title>
 <link>http://ignora.me</link>
-<externallink>http://blackaddon.rf.gd/gray/moviepack.xml</externallink>
-<thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.png</thumbnail><fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<externallink>https://raw.githubusercontent.com/blackghostaddon/gray/master/moviepack.xml</externallink>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 </item>
 
 
@@ -365,7 +365,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
         <link>$doregex[makelist]</link>
         ]]></listrepeat>
 <expres>peliculas:"(.*?)" name:"(.*?)";</expres>
-<page>http://blackaddon.rf.gd/gray/kozm.txt</page>
+<page>https://raw.githubusercontent.com/blackghostaddon/gray/master/kozm.txt</page>
 <cookieJar></cookieJar>
 </regex>
 
@@ -403,7 +403,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <connection>keep-alive</connection>
 <cookieJar></cookieJar>
 </regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail>
 </item>
 
 
@@ -413,17 +413,17 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <item>
 <title>[B]TERROR  [/B]</title>
 <link>ignorme</link>
-<externallink>http://blackaddon.rf.gd/gray/terror.xml</externallink>
+<externallink>https://raw.githubusercontent.com/blackghostaddon/gray/master/terror.xml</externallink>
 
-<thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.png</thumbnail><fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
 </item>
 
 <item>
 <title>[B]ESPECIAL NAVIDAD  Peliculas Navideñas  [/B]</title>
 <link>http://ignorame</link>
-<thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.png</thumbnail><fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
-<externallink>http://blackaddon.rf.gd/gray/navidad.xml</externallink>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
+<externallink>https://raw.githubusercontent.com/blackghostaddon/gray/master/navidad.xml</externallink>
 </item>
 
 
@@ -432,8 +432,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
  <item>
 <title>[B]EL RINCON DE LAS LISTAS - Castellano [/B]</title>
 <link>http://ignora.me</link>
-<externallink>http://blackaddon.rf.gd/gray/rincon.xml</externallink>
-<thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.png</thumbnail><fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<externallink>https://raw.githubusercontent.com/blackghostaddon/gray/master/rincon.xml</externallink>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 </item>
 
 
@@ -553,7 +553,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 ]]></expres>
   <page>http://www.cinecalidad.com/pelicula/[makelist.param1]</page>
   <agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:19.0) Gecko/20100101 Firefox/19.0</agent>
-<cookieJar></cookieJar></regex></regex><thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.png</thumbnail><fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<cookieJar></cookieJar></regex></regex><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 </item>
 
 
@@ -634,7 +634,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 ]]></expres>
   <page>http://www.cinecalidad.com/espana/pelicula/[makelist.param1]</page>
   <agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:19.0) Gecko/20100101 Firefox/19.0</agent>
-<cookieJar></cookieJar></regex></regex><thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.png</thumbnail><fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<cookieJar></cookieJar></regex></regex><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 </item>
 
 
@@ -726,7 +726,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
   <page>http://www.cinecalidad.com/pelicula/[makelist.param1]</page>
   <agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:19.0) Gecko/20100101 Firefox/19.0</agent>
 <cookieJar></cookieJar></regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.png</thumbnail><fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 </item>
 
 
@@ -820,7 +820,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
   <page>http://www.cinecalidad.to/espana/pelicula/[makelist.param1]</page>
   <agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:19.0) Gecko/20100101 Firefox/19.0</agent>
 <cookieJar></cookieJar></regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.png</thumbnail><fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 </item>
 
 
@@ -852,7 +852,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
     <link>$doregex[makelist2]</link>
 
-<thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail>
    ]]></listrepeat>
    <expres>genero-peliculas\/(.*?)\/</expres>
    <page>http://www.cinecalidad.to/</page>
@@ -871,10 +871,10 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
     <link>$doregex[makelist]</link>
 
-<thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail>
    ]]></listrepeat>
    <expres><![CDATA[paginado:"(.*?)";]]></expres>
-   <page>http://blackaddon.rf.gd/gray/kozm.txt</page>
+   <page>https://raw.githubusercontent.com/blackghostaddon/gray/master/kozm.txt</page>
    <cookieJar></cookieJar>
 </regex>
 
@@ -954,7 +954,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
   <agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:19.0) Gecko/20100101 Firefox/19.0</agent>
 <cookieJar></cookieJar></regex>
 
-<thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.png</thumbnail><fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 </item>
 
 
@@ -983,7 +983,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
     <link>$doregex[makelist2]</link>
 
-<thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail>
    ]]></listrepeat>
    <expres>genero-peliculas\/(.*?)\/</expres>
    <page>http://www.cinecalidad.to/espana/</page>
@@ -1002,10 +1002,10 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
     <link>$doregex[makelist]</link>
 
-<thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail>
    ]]></listrepeat>
    <expres><![CDATA[paginado:"(.*?)";]]></expres>
-   <page>http://blackaddon.rf.gd/gray/kozm.txt</page>
+   <page>https://raw.githubusercontent.com/blackghostaddon/gray/master/kozm.txt</page>
    <cookieJar></cookieJar>
 </regex>
 
@@ -1084,7 +1084,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
   <page>http://www.cinecalidad.com/espana/pelicula/[makelist.param1]</page>
   <agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:19.0) Gecko/20100101 Firefox/19.0</agent>
 <cookieJar></cookieJar></regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.png</thumbnail><fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 </item>
 
 
@@ -1157,10 +1157,10 @@ def GetLSProData(page_data,Cookie_Jar,m):
    <listrepeat><![CDATA[
        <title>Pagina [makelist5.param1]</title>
        <link>$doregex[makelist4]</link>
-<thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.png</thumbnail><fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
    ]]></listrepeat>
    <expres><![CDATA[paginado:"(.*?)";]]></expres>
-   <page>http://blackaddon.rf.gd/gray/kozm.txt</page>
+   <page>https://raw.githubusercontent.com/blackghostaddon/gray/master/kozm.txt</page>
    <cookieJar></cookieJar>
 </regex>
 
@@ -1207,7 +1207,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page></page>
 </regex>
 
-<thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.png</thumbnail><fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 </item>
 
 
@@ -1296,7 +1296,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 ]]></expres>
 <page></page>
 </regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.png</thumbnail><fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 </item>
 
 
@@ -1419,7 +1419,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 
 
-<thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.png</thumbnail><fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart></item>
 
 
 
@@ -1437,7 +1437,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <SetViewMode>55</SetViewMode>
 <title>[lista.param2]</title>
 <link>$doregex[makelist0]</link>
-<thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail>
 ]]></listrepeat>
 <expres><![CDATA[category\/(.*?)\/"\s>(.*?)<]]></expres>
 <page>http://miradetodo.io/</page>
@@ -1543,7 +1543,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 
 
-<thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.png</thumbnail><fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart></item>
 
 
 
@@ -1583,7 +1583,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <expres>href="(.*?).html.*?text:\s\'(.*?)\&.*?src="(.*?)"</expres>
 <page>http://www.cinevall.club/estrenos.html</page>
 </regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.png</thumbnail><fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
  </item>
 
 
@@ -1609,7 +1609,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <listrepeat><![CDATA[
 <title>$pyFunction:'[B][makelist2.param1][/B]'.replace("%20", " ").replace("-", " ").replace(".", "").replace("avi", " ").replace("mp4", " ").replace("_", " ")</title>
  <link>http://www.karaokesolution.com/SongLists/Spanish/CDG/1/[makelist2.param1]</link>
- <thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.png</thumbnail><fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+ <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 ]]></listrepeat>
 <expres><![CDATA[td><a href="(.*?)"]]></expres>
 <page>$doregex[select]</page>
@@ -1630,7 +1630,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.png</thumbnail><fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
  </item>
 
 
@@ -1698,7 +1698,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 
 
-<thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.png</thumbnail><fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
  </item>
 
 
@@ -1717,8 +1717,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <listrepeat><![CDATA[
 <title> [makelist1.param2]   [[makelist1.param3]]</title>
  <link>$doregex[makelist2]</link>
-<thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 ]]></listrepeat>
 <expres><![CDATA[org\/genre\/(.*?)\"\s>(.*?)<.*?i>(.*?)<]]></expres>
  <page>http://bassfox.org/movies</page>
@@ -1774,7 +1774,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 
 
-<thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.png</thumbnail><fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
  </item>
 
 
@@ -1833,7 +1833,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 
 
-<thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.png</thumbnail><fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
  </item>
 
 
@@ -1897,7 +1897,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 
 
-<thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.png</thumbnail><fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
  </item>
 
 
@@ -1973,7 +1973,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  <page></page>
  </regex>
 
- <thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.png</thumbnail><fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart></item>
+ <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart></item>
 
 
 
@@ -2003,7 +2003,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <SetViewMode>55</SetViewMode>
 <title> [makelist2.param2]  </title>
 <link>$doregex[makelist3]</link>
-<thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail>
 <fanart>[makelist2.param3]|User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</fanart>
 ]]></listrepeat>
 <expres><![CDATA[Ntooltip\"\shref="(.*?)">(.*?)<[\w\W\s]{0,20}src="(.*?)"]]></expres>
@@ -2024,7 +2024,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <listrepeat><![CDATA[
 <title>[B][makelist2.param2] [makelist3.param1] [/B][makelist3.param3]</title>
 <link>$doregex[id3]</link>
-<thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail>
 <fanart>[makelist2.param3]|User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0&amp;Referer=http://gnula.nu</fanart>
 ]]></listrepeat>
 <expres><![CDATA[em>(opc.*?)<\/em|href="(http://gamovideo.*?|https://vidoza.*?|https://kingvid.*?|https://openload.*?|https://streamango.*?|http://streamin.*?|http://streamcloud.*?|http://uptobox.*?|https://rapidvideo.*?)".*?class="(.*?)"]]></expres>
@@ -2057,7 +2057,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page></page>
 </regex>
 
-<thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.png</thumbnail><fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart></item>
 
 
 
@@ -2174,7 +2174,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
         <cookieJar></cookieJar>
 </regex>
 
-<thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.png</thumbnail><fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 </item>
 
 
@@ -2199,7 +2199,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
    <SetViewMode>55</SetViewMode>
    <title> [makelist0.param2]</title>
    <link>$doregex[makelist]</link>
-   <thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.png</thumbnail><fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+   <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 ]]></listrepeat>
 <expres><![CDATA[repelis.tv/genero/(.*?)"\stitle="(.*?)"]]></expres>
 <page>https://repelis.tv/</page>
@@ -2313,7 +2313,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 
 
-<thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.png</thumbnail><fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 </item>
 
 
@@ -2386,7 +2386,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page></page>
 </regex>
 
-<thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.png</thumbnail><fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart></item>
 
 
 
@@ -2433,9 +2433,9 @@ def GetLSProData(page_data,Cookie_Jar,m):
   <item>
 <title>[B]BassFox Movies[/B] [I] Estrenos[/I] </title>
 <link>http://ignora.me</link>
-<externallink>http://blackaddon.rf.gd/gray/estrenosbassfox.xml</externallink>
+<externallink>https://raw.githubusercontent.com/blackghostaddon/gray/master/estrenosbassfox.xml</externallink>
 <fanart>http://fotonin.com/data_images/out/5/776482-cool-movie-wallpaper.jpg</fanart>
-<thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail>
 <info></info>
 </item>
 
@@ -2448,7 +2448,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>http://ignora.me</link>
 <externallink>https://pastebin.com/raw/qkdjae9e</externallink>
 <fanart>http://fotonin.com/data_images/out/5/776482-cool-movie-wallpaper.jpg</fanart>
-<thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail>
 <info></info>
 </item>
 
@@ -2458,7 +2458,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>http://ignora.me</link>
 <externallink>https://pastebin.com/raw/TA8pPbGY</externallink>
 <fanart>http://fotonin.com/data_images/out/5/776482-cool-movie-wallpaper.jpg</fanart>
-<thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail>
 <info></info>
 </item>
 
@@ -2468,7 +2468,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>http://ignora.me</link>
 <externallink>http://srregio.xyz/regioflix.m3u</externallink>
 <fanart>http://fotonin.com/data_images/out/5/776482-cool-movie-wallpaper.jpg</fanart>
-<thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail>
 <info></info>
 </item>
 
@@ -2477,7 +2477,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>http://ignora.me</link>
 <externallink>http://tecnotv.xyz/peliculas.m3u</externallink>
 <fanart>http://fotonin.com/data_images/out/5/776482-cool-movie-wallpaper.jpg</fanart>
-<thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail>
 <info></info>
 </item>
 
@@ -2487,7 +2487,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>http://ignora.me</link>
 <externallink>http://cecegeek.com/movies.m3u</externallink>
 <fanart>http://fotonin.com/data_images/out/5/776482-cool-movie-wallpaper.jpg</fanart>
-<thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail>
 <info></info>
 </item>
 
@@ -2555,7 +2555,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <expres>$pyFunction:base64.b64decode('[makelist.param1]')</expres>
 <page></page>
 </regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.png</thumbnail><fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 </item>
 
 
@@ -2635,7 +2635,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.png</thumbnail><fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
 
 </item>
@@ -2726,7 +2726,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 
 
-<thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.png</thumbnail><fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
 </item>
 
@@ -2830,7 +2830,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 
 
-<thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.png</thumbnail><fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
 </item>
 
@@ -2913,7 +2913,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = '[makelist3.param1]'):
 <page></page>
 <cookieJar></cookieJar>
 </regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.png</thumbnail><fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 </item>
 
 
@@ -3017,7 +3017,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = '[makelist3.param1]'):
         <page>$pyFunction:cloudflare.createCookie('http://gnula.nu',Cookie_Jar,'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36')</page>
         <cookieJar></cookieJar>
 </regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.png</thumbnail><fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 </item>
 
 
@@ -3054,7 +3054,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = '[makelist3.param1]'):
 <page>[makelist2.param1]</page>
 </regex>
 
-<thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.png</thumbnail><fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart></item>
 
 
 
@@ -3100,7 +3100,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = '[makelist3.param1]'):
 </regex>
 
 
-<thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.png</thumbnail><fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart></item>
 
 
 
@@ -3118,10 +3118,10 @@ def GetLSProData(page_data,Cookie_Jar,m,url = '[makelist3.param1]'):
    <listrepeat><![CDATA[
        <title>Pagina [makelist3.param1]</title>
         <link>$doregex[makelist0]</link>
-<thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail>
    ]]></listrepeat>
    <expres><![CDATA[paginado:"(.*?)";]]></expres>
-   <page>http://blackaddon.rf.gd/gray/kozm.txt</page>
+   <page>https://raw.githubusercontent.com/blackghostaddon/gray/master/kozm.txt</page>
    <cookieJar></cookieJar>
 </regex>
 
@@ -3158,8 +3158,8 @@ def GetLSProData(page_data,Cookie_Jar,m,url = '[makelist3.param1]'):
 
 
 
-<thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 </item>
 
 
@@ -3175,9 +3175,9 @@ def GetLSProData(page_data,Cookie_Jar,m,url = '[makelist3.param1]'):
  <iem>
 <title>[B]Yaske[/B] [I] Recientes[/I] </title>
 <link>http://ignora.me</link>
-<externallink>http://blackaddon.rf.gd/gray/yaske.xml</externallink>
+<externallink>https://raw.githubusercontent.com/blackghostaddon/gray/master/yaske.xml</externallink>
 <fanart>http://fotonin.com/data_images/out/5/776482-cool-movie-wallpaper.jpg</fanart>
-<thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail>
 <info></info>
 </item>
 
@@ -3190,9 +3190,9 @@ def GetLSProData(page_data,Cookie_Jar,m,url = '[makelist3.param1]'):
  <itm>
 <title>[B]inkaPelis[/B]  Estrenos | Generos </title>
 <link>http://ignora.me</link>
-<externallink>http://blackaddon.rf.gd/gray/inka.xml</externallink>
+<externallink>https://raw.githubusercontent.com/blackghostaddon/gray/master/inka.xml</externallink>
 <fanart>http://fotonin.com/data_images/out/5/776482-cool-movie-wallpaper.jpg</fanart>
-<thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail>
 </item>
 
 
@@ -3262,7 +3262,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = '[makelist3.param1]'):
 <referer></referer>
 <cookieJar></cookieJar>
 </regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.png</thumbnail><fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart></item>
 
 
 
@@ -3340,7 +3340,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page></page>
 </regex>
 
-<thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.png</thumbnail><fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart></item>
 
 
 
@@ -3359,10 +3359,10 @@ def GetLSProData(page_data,Cookie_Jar,m):
        <title>Pagina [makelist3.param1]</title>
 
 <link>$doregex[makelist2]</link>
-<thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail>
    ]]></listrepeat>
    <expres><![CDATA[paginado:"(.*?)";]]></expres>
-   <page>http://blackaddon.rf.gd/gray/kozm.txt</page>
+   <page>https://raw.githubusercontent.com/blackghostaddon/gray/master/kozm.txt</page>
    <cookieJar></cookieJar>
 </regex>
 
@@ -3411,7 +3411,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 ]]></expres>
 <page></page>
 </regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.png</thumbnail><fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart></item>
 
 
 
@@ -3493,7 +3493,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <expres>(https:\/\/.*?)&amp;quot</expres>
 <page>[makelist2.param1]</page>
 </regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.png</thumbnail><fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
  </item>
 
 
@@ -3590,7 +3590,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  </regex>
 
 
- <thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.png</thumbnail><fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+ <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
   </item>
 
 
@@ -3638,7 +3638,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <referer></referer>
 <cookieJar></cookieJar>
 </regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.png</thumbnail><fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
  </item>
 
 
@@ -3682,7 +3682,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page>[makelist2.param1]</page>
 </regex>
 
-<thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.png</thumbnail><fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart></item>
 
 
 
@@ -3706,10 +3706,10 @@ def GetLSProData(page_data,Cookie_Jar,m):
        <title>Pagina [makelist3.param1]</title>
 
 <link>$doregex[makelist2]</link>
-<thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail>
    ]]></listrepeat>
    <expres><![CDATA[paginado:"(.*?)";]]></expres>
-   <page>http://blackaddon.rf.gd/gray/kozm.txt</page>
+   <page>https://raw.githubusercontent.com/blackghostaddon/gray/master/kozm.txt</page>
    <cookieJar></cookieJar>
 </regex>
 
@@ -3761,7 +3761,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page></page>
 </regex>
 
-<thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.png</thumbnail><fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart></item>
 
 
 
@@ -3831,7 +3831,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.png</thumbnail><fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart></item>
 
 
 
@@ -3978,7 +3978,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <title>page [makelist2.param1]</title>
 <link>$doregex[makelist3]</link>
 <referer></referer>
-<thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail>
 ]]></listrepeat>
 <expres> (.*?),</expres>
 <page>$doregex[get-number]</page>
@@ -4051,7 +4051,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url='https://www.youtube.com/user/Disney
 <page></page>
 </regex>
 
-<thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.png</thumbnail><fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart></item>
 
 
 
@@ -4221,7 +4221,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page></page>
 </regex>
 
-<thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.png</thumbnail><fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart></item>
 
 
 
@@ -4295,7 +4295,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.png</thumbnail><fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart></item>
 
 
 
@@ -4322,7 +4322,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
   <listrepeat><![CDATA[
         <title>$pyFunction:'[makelist4.param2]'.replace("1", "Enero").replace("2", "Febrero").replace("3", "Marzo").replace("4", "Abril").replace("5", "Mayo").replace("6", "Junio").replace("7", "Julio").replace("8", "Agosto").replace("9", "Septiembre").replace("10", "Octubre").replace("11", "Noviembre").replace("12", "Diciembre")</title>
         <link>$doregex[makelist3]</link>
-		<thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.png</thumbnail><fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+		<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
         ]]></listrepeat>
 <expres>href="(.*?)">(?!\.\.)(.*?)\/</expres>
 <page>http://media.bia4music.com/movie/2017/Film/</page>
@@ -4353,7 +4353,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page></page>
 </regex>
 
-<thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.png</thumbnail><fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 </item>
 
 
@@ -4430,7 +4430,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.png</thumbnail><fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 </item>
 
 
@@ -4525,7 +4525,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page>[makelist.param1]</page>
 </regex>
 
-<thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.png</thumbnail><fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 </item>
 
 
@@ -4615,7 +4615,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 
 
-<thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.png</thumbnail><fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
 </item>
 
@@ -4738,7 +4738,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page>[makelist.param1]</page>
 </regex>
 
-<thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.png</thumbnail><fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 </item>
 
 
@@ -4801,7 +4801,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
    <listrepeat><![CDATA[
           <title>[UPPERCASE][makelist.param2][/UPPERCASE]</title>
           <link>$doregex[makelist3]</link>
-		  <thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.jpg</thumbnail>
+		  <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.jpg</thumbnail>
    ]]></listrepeat>
    <expres>a\shref="(.*?)".*?\">Ver(.*?)online</expres>
    <page>https://www.google.com.mx/search?q=$doregex[titulo]+site:gnula.nu</page>
@@ -4857,7 +4857,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page></page>
 </regex>
 
-<thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.png</thumbnail><fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart></item>
 
 
 
@@ -4945,7 +4945,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 
 
-<thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.png</thumbnail><fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 </item>
 
 
@@ -5301,8 +5301,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
  <item>
 <title>Wiseplay listas </title>
 <link>http://ignora.me</link>
-<externallink>http://blackaddon.rf.gd/gray/wise.xml</externallink>
-<thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.png</thumbnail><fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<externallink>https://raw.githubusercontent.com/blackghostaddon/gray/master/wise.xml</externallink>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 </item>
 
 
@@ -5505,7 +5505,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page></page>
 </regex>
 
-<thumbnail>http://blackaddon.rf.gd/gray/img/peliculas.png</thumbnail><fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 </item>
 
 
