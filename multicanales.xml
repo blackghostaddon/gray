@@ -55,7 +55,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/$dorege
 def GetLSProData(page_data,Cookie_Jar,m):
    import xbmcgui
    dialog = xbmcgui.Dialog()
-   ret = dialog.select('Elige un Canal ', ['Opcion 1', 'Opcion 2', 'Opcion 3', 'Opcion 4', 'Opcion 5', 'Opcion 6', 'Opcion 7', 'Opcion 8'])
+   ret = dialog.select('Elige un Canal ', ['Opcion 248', 'Opcion 15129', 'Opcion 13137', 'Opcion 715', 'Opcion 13525', 'Opcion 10762', 'Opcion 7386', 'Opcion 7387'])
    lists = ['248', '15129', '13137', '715', '13525', '10762', '7386', '7387']
    return lists[ret]
 ]]></expres>
@@ -994,18 +994,6 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/411.htm
 
 
 
-<item>
-<title>[B]Multicanal Zonasport13[/B]         </title>
-<link>http://stream.zonasports.me/envivo/hls13/playlist.m3u8|Referer=http://gozonasports.me/channel.php?id=14&amp;User-Agent=iPad</link>
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
-
-
-
-
-<item>
-<title>[B]Multicanal Zonasport14[/B]       </title>
-<link>http://live.zonasports.me/envivo/ch14/playlist.m3u8|Referer=http://gozonasports.me/channel.php?id=14&amp;User-Agent=iPad</link>
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
 
 
 
@@ -1017,33 +1005,6 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/411.htm
 
 
 
-
-
-
-
-<item>
-<title>[B]Multicanal Futbol Andres[/B]     wide   </title>
-<link>$doregex[get-id]</link>
-<regex>
-<name>get-id</name>
-<expres>file:"(.*?)"</expres>
-<page>http://widestream.io/embed-7231</page>
-</regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
-
-
-
-
-
-<item>
-<title>[B]Multicanal [/B]    MLB   </title>
-<link>$doregex[get-id]</link>
-<regex>
-<name>get-id</name>
-<expres>file:"(.*?)"</expres>
-<page>http://widestream.io/embed-14405</page>
-</regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
 
 
 
@@ -1060,30 +1021,6 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/411.htm
 
  <thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
 
-
-
-
-
-
-
- <item>
-<title>[B]Multicanal TyC Sport HD[/B]    Argentina      </title>
-<link>https://cf98fa7b2ee4450e.mediapackage.us-east-1.amazonaws.com/out/v1/2bf9213f418f4445ad9bc3fd0454ddf2/index_1.m3u8</link>
-
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
-
-
-
- <item>
-<title>[B]Multicanal TyC Sport[/B]    Argentina      </title>
-<link>$doregex[GetPageUrl]|User-Agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+rv%3A11.0%29+like+Gecko</link>
-<regex>
-<name>GetPageUrl</name>
-<expres>videoUrl = '(.*?)'</expres>
-<page>http://livesports.pw/embed.php?file=tycsport&amp;width=650&amp;height=397</page>
-<agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
-</regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
 
 
 
@@ -1140,7 +1077,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
  <regex>
 <name>url</name>
-<expres><![CDATA[file: '(.*?)']]></expres>
+<expres><![CDATA[source: "(.*?)"]]></expres>
 <page>http://depo.superligatv.com/espn.php</page>
 </regex>
  
@@ -1154,7 +1091,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
  <regex>
 <name>url</name>
-<expres><![CDATA[file: '(.*?)']]></expres>
+<expres><![CDATA[source: "(.*?)"]]></expres>
 <page>http://depo.superligatv.com/espn2.php</page>
 </regex>
  
@@ -1166,7 +1103,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
  <regex>
 <name>url</name>
-<expres><![CDATA[file: '(.*?)']]></expres>
+<expres><![CDATA[source: "(.*?)"]]></expres>
 <page>http://depo.superligatv.com/espn3.php</page>
 </regex>
  
@@ -1180,7 +1117,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
  <regex>
 <name>url</name>
-<expres><![CDATA[source: '(.*?)']]></expres>
+<expres><![CDATA[source: "(.*?)"]]></expres>
 <page>http://depo.superligatv.com/espndep.php</page>
 </regex>
  
@@ -1196,7 +1133,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
  <regex>
 <name>url</name>
-<expres><![CDATA[source: '(.*?)']]></expres>
+<expres><![CDATA[source: "(.*?)"]]></expres>
 <page>http://depo.superligatv.com/foxsport.php</page>
 </regex>
  
@@ -1208,7 +1145,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
  <regex>
 <name>url</name>
-<expres><![CDATA[source: '(.*?)']]></expres>
+<expres><![CDATA[source: "(.*?)"]]></expres>
 <page>http://depo.superligatv.com/foxsport2.php</page>
 </regex>
  
@@ -1222,7 +1159,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
  <regex>
 <name>url</name>
-<expres><![CDATA[source: '(.*?)']]></expres>
+<expres><![CDATA[source: "(.*?)"]]></expres>
 <page>http://depo.superligatv.com/foxsport3.php</page>
 </regex>
  
@@ -1238,13 +1175,13 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-  <!--item>
+  <item>
  <title>[B]Multicanal Formula 1[/B]     </title>
 <link>$doregex[url]</link>
  
  <regex>
 <name>url</name>
-<expres><![CDATA[file: '(.*?)']]></expres>
+<expres><![CDATA[source: "(.*?)"]]></expres>
 <page>http://depo.superligatv.com/f1.php</page>
 </regex>
  
@@ -1258,7 +1195,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
  <regex>
 <name>url</name>
-<expres><![CDATA[source: '(.*?)']]></expres>
+<expres><![CDATA[source: "(.*?)"]]></expres>
 <page>http://depo.superligatv.com/mlbhd.php</page>
 </regex>
  
@@ -1272,7 +1209,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
  <regex>
 <name>url</name>
-<expres><![CDATA[source: '(.*?)']]></expres>
+<expres><![CDATA[source: "(.*?)"]]></expres>
 <page>http://depo.superligatv.com/tdn.php</page>
 </regex>
  
@@ -1286,7 +1223,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
  <regex>
 <name>url</name>
-<expres><![CDATA[source: '(.*?)']]></expres>
+<expres><![CDATA[source: "(.*?)"]]></expres>
 <page>http://depo.superligatv.com/unitdn.php</page>
 </regex>
  
@@ -1308,7 +1245,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
  <regex>
 <name>url</name>
-<expres><![CDATA[source: '(.*?)']]></expres>
+<expres><![CDATA[source: "(.*?)"]]></expres>
 <page>http://depo.superligatv.com/tvcdep.php</page>
 </regex>
  
@@ -1323,7 +1260,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
  <regex>
 <name>url</name>
-<expres><![CDATA[source: '(.*?)']]></expres>
+<expres><![CDATA[source: "(.*?)"]]></expres>
 <page>http://depo.superligatv.com/tvcdep2.php</page>
 </regex>
  
@@ -1344,7 +1281,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
  <regex>
 <name>url</name>
-<expres><![CDATA[source: '(.*?)']]></expres>
+<expres><![CDATA[source: "(.*?)"]]></expres>
 <page>http://depo.superligatv.com/planeta.php</page>
 </regex>
  
@@ -1358,7 +1295,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
  <regex>
 <name>url</name>
-<expres><![CDATA[source: '(.*?)']]></expres>
+<expres><![CDATA[source: "(.*?)"]]></expres>
 <page>http://depo.superligatv.com/sky1.php</page>
 </regex>
  
@@ -1375,7 +1312,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
  <regex>
 <name>url</name>
-<expres><![CDATA[source: '(.*?)']]></expres>
+<expres><![CDATA[source: "(.*?)"]]></expres>
 <page>http://depo.superligatv.com/sky2.php</page>
 </regex>
  
@@ -1391,38 +1328,12 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
  <regex>
 <name>url</name>
-<expres><![CDATA[source: '(.*?)']]></expres>
+<expres><![CDATA[source: "(.*?)"]]></expres>
 <page>http://depo.superligatv.com/sky3.php</page>
 </regex>
  
 <thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
 
-
-
--->
-
-
-  <item>
- <title>[B]Multicanal TVC Deportes[/B]   (sportsdevil requerido)  </title>
-<sportsdevil>http://shidurlive.com/embed/tvdepno</sportsdevil>
-<referer>http://depo.superligatv.com</referer>
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
-
-
-
-  <item>
- <title>[B]Multicanal unitdn[/B]   (sportsdevil requerido)  </title>
-<sportsdevil>http://shidurlive.com/embed/unitdnno</sportsdevil>
-<referer>http://depo.superligatv.com</referer>
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
-
-
-
-<item>
-<title>[B]Multicanal Sky[/B]   (sportsdevil requerido)  </title>
-<sportsdevil>http://shidurlive.com/embed/sky</sportsdevil>
-<referer>http://depo.superligatv.com</referer>
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
 
 
 
