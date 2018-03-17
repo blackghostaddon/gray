@@ -2370,7 +2370,35 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/21616.h
 
 
 
+<item>
+<title>test</title>
+<link>http://$doregex[ip]/$doregex[live]/$doregex[name].m3u8?token=$doregex[token]</link>
 
+<regex>
+<name>ip</name>
+<expres>edgeserverip = '(.*?)'</expres>
+<page>http://privatehd.pw/PLAYER.php?a=1199&amp;id=1199</page>
+</regex>
+
+<regex>
+<name>live</name>
+<expres>appName = '(.*?)'</expres>
+<page>http://privatehd.pw/PLAYER.php?a=1199&amp;id=1199</page>
+</regex>
+
+<regex>
+<name>name</name>
+<expres>var name = '(.*?)'</expres>
+<page>http://privatehd.pw/PLAYER.php?a=1199&amp;id=1199</page>
+</regex>
+
+<regex>
+<name>token</name>
+<expres>token=(.*?)";</expres>
+<page>http://privatehd.pw/PLAYER.php?a=1199&amp;id=1199</page>
+</regex>
+
+</item>
 
 
 
