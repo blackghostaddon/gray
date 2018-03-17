@@ -17,12 +17,12 @@
 <listrepeat><![CDATA[
 <title>[B][makelist.param1][/B][B][makelist.param2] [makelist.param3][/B][makelist.param4] [makelist.param5]</title>
 <link>$doregex[ip]|User-Agent=iPad</link>
-<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
 ]]></listrepeat>
 <expres><![CDATA[title=.*?n\s(.*?)"|"(ahor.*?)">\n\s\s\s(.*?)\n|date">(.*?)</span>\n\s\s\s(.*)\n]]></expres>
 <page>http://www.formulatv.com/programacion/</page>
 </regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
 <info>Cortesia de Adryanlist </info>
  </item>
 
@@ -32,38 +32,38 @@
 <item>
 <title>    [B]TDT[/B] [I]  [/I]</title>
 <link>NA</link>
-<externallink>http://blackaddon.rf.gd/gray/tdt.xml</externallink>
-<thumbnail>http://blackaddon.rf.gd/gray/img/esp.png</thumbnail>
+<externallink>https://raw.githubusercontent.com/blackghostaddon/gray/master/tdt.xml</externallink>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/esp.png</thumbnail>
 </item>
 
 <item>
 <title>    [B]DIGITAL ESP[/B] [I]  [/I]</title>
 <link>NA</link>
-<externallink>http://blackaddon.rf.gd/gray/digital.xml</externallink>
-<thumbnail>http://blackaddon.rf.gd/gray/img/esp.png</thumbnail>
+<externallink>https://raw.githubusercontent.com/blackghostaddon/gray/master/digital.xml</externallink>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/esp.png</thumbnail>
 </item>
 
 	<item>
 <title>    [B]MOVISTAR +[/B] [I]  [/I]</title>
 <link>NA</link>
-<externallink>http://blackaddon.rf.gd/gray/movistarplus.xml</externallink>
-<thumbnail>http://blackaddon.rf.gd/gray/img/esp.png</thumbnail>
+<externallink>https://raw.githubusercontent.com/blackghostaddon/gray/master/movistarplus.xml</externallink>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/esp.png</thumbnail>
 </item>
 
 
 		<item>
 <title>    [B]DEPORTES  [/B] [I]  [/I]</title>
 <link>NA</link>
-<externallink>http://blackaddon.rf.gd/gray/espdep.xml</externallink>
-<thumbnail>http://blackaddon.rf.gd/gray/img/esp.png</thumbnail>
+<externallink>https://raw.githubusercontent.com/blackghostaddon/gray/master/espdep.xml</externallink>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/esp.png</thumbnail>
 </item>
 
 
 			<item>
 <title>    [B]LOCALES [/B] [I]  [/I]</title>
 <link>NA</link>
-<externallink>http://blackaddon.rf.gd/gray/localesesp.xml</externallink>
-<thumbnail>http://blackaddon.rf.gd/gray/img/esp.png</thumbnail>
+<externallink>https://raw.githubusercontent.com/blackghostaddon/gray/master/localesesp.xml</externallink>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/esp.png</thumbnail>
 </item>
 
 
@@ -121,7 +121,7 @@
 <expres><![CDATA[href="(.*?)" title="(.*?)" target="tv"><img src="(.*?)"]]></expres>
 <page>http://cinestrenostv.tv/</page>
 </regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/esp.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/esp.png</thumbnail>
 </item>
 
 
@@ -785,14 +785,14 @@
 			<title>decasa</title>
 			<link>http://decasa.level3.nmp.hls.emision.dof6.com/sogecable/channel44/index.m3u8</link>
 
-			<thumbnail>http://adrian.kodistream.info/adryan/Logos/.jpg</thumbnail></item>
+			<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/Logos/.jpg</thumbnail></item>
 
 
 
 	<item>
         <title>Hogar Util</title>
         <link>http://brightcove03-f.akamaihd.net/HOGARUTIL_1_1100@117573?videoId=2518851062001&lineUpId=&pubId=2385340627001&playerId=2418571368001&affiliateId=&v=3.1.0&fp=WIN 11,9,900,117&r=JRBLZ&g=LBXIUFRGSVGB</link>
-        <thumbnail>http://adrian.kodistream.info/adryan/Logos/.jpg</thumbnail></item>
+        <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/Logos/.jpg</thumbnail></item>
 
 
 
@@ -801,4 +801,4 @@
 
 			<item>
 			<title>Tribu TV</title>
-			<link>http://tribotv-ch01-live-cdn1-hls.streaming.overon.es/tribotv/channel01/tribotv/bitrate_3.m3u8</link><thumbnail>http://adrian.kodistream.info/adryan/Logos/.jpg</thumbnail></item>
+			<link>http://tribotv-ch01-live-cdn1-hls.streaming.overon.es/tribotv/channel01/tribotv/bitrate_3.m3u8</link><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/Logos/.jpg</thumbnail></item>
