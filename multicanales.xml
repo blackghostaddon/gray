@@ -1829,21 +1829,21 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/21616.h
 			<regex>
 			<name>ip</name>
 			<expres>redirect=(.*)</expres>
-			<page>http://www.pubucaster.com:1935/loadbalancer</page>
+			<page>http://www.liveflashpublisher.com:1935/loadbalancer</page>
 			</regex>
 			<regex>
 			<name>m3u8</name>
 			<expres>ea \+ "(.*?)"</expres>
-			<page>http://www.ucasterplayer.com/membedplayer/locosporelfutbol099/1/720/430</page>
+			<page>http://www.liveflashplayer.org/membedplayer/locosporelfutbol099/1/720/430</page>
 			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
 			<referer>http://www.ucasterplayer.com</referer>
 			</regex>
 			<regex>
 			<name>hls</name>
 			<expres>hlsUrl \+ \(\"(.*?)"</expres>
-			<page>http://www.ucasterplayer.com/membedplayer/locosporelfutbol099/1/720/430</page>
+			<page>http://www.liveflashplayer.org/membedplayer/futbolmaniacos/1/720/430</page>
 			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
-			<referer>http://www.ucasterplayer.com</referer>
+			<referer>http://www.liveflashplayer.org</referer>
 			</regex>
 <thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail>
 </item>
@@ -1851,26 +1851,26 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/21616.h
 
 
 <item>
-<title>[B]Multicanal[/B] TikiTaka 02 [I]   [/I]</title>
+<title>[B]Multicanal[/B] TikiTaka 02 [I] live  [/I]</title>
  <link>http://$doregex[ip]$doregex[m3u8]$doregex[hls]</link>
 			<regex>
 			<name>ip</name>
 			<expres>redirect=(.*)</expres>
-			<page>http://www.pubucaster.com:1935/loadbalancer</page>
+			<page>http://www.liveflashpublisher.com:1935/loadbalancer</page>
 			</regex>
 			<regex>
 			<name>m3u8</name>
 			<expres>ea \+ "(.*?)"</expres>
-			<page>http://www.ucasterplayer.com/membedplayer/freddy49canal2/1/720/430</page>
+			<page>http://www.liveflashplayer.org/membedplayer/marta2/1/720/430</page>
 			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
 			<referer>http://www.ucasterplayer.com</referer>
 			</regex>
 			<regex>
 			<name>hls</name>
 			<expres>hlsUrl \+ \(\"(.*?)"</expres>
-			<page>http://www.ucasterplayer.com/membedplayer/freddy49canal2/1/720/430</page>
+			<page>http://www.liveflashplayer.org/membedplayer/futbolmaniacos/1/720/430</page>
 			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
-			<referer>http://www.ucasterplayer.com</referer>
+			<referer>http://www.liveflashplayer.org</referer>
 			</regex>
 <thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail>
 </item>
@@ -1879,21 +1879,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/21616.h
 
 
 
-
-
-
-<iem>
-<title>[B]Multicanal[/B] TikiTaka 01 [I]   [/I]</title>
-<link>$doregex[ip]</link>
-<regex>
-    <name>ip</name>
-    <expres>source: '(.*?)'</expres>
-    <page>http://www.srkcast.com/embed.php?player=4&amp;live=CANALVIP1&amp;vw=720&amp;vh=420</page>
-	<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
-    <referer>http://lacasadeltikitaka.club/directo/canal1.php</referer>
-    </regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail>
-</item>
+ 
 
 
 
@@ -1912,24 +1898,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/21616.h
 
 
 
-
-
-
-<im>
-<title>[B]Multicanal[/B] TikiTaka 01 [I]  updated 20/12[/I]</title>
-<link>$doregex[ip]</link>
-<regex>
-    <name>ip</name>
-    <expres>source: "(.*?)"</expres>
-    <page>http://abcast.net/embed3.php?file=lacasadeltikitaka</page>
-	<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
-    <referer>http://lacasadeltikitaka.club/directo/canal1.php</referer>
-    </regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail>
-</item>
-
-
-
+ 
 
 
 
@@ -1949,24 +1918,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/21616.h
 
 
 
-
-<iem>
-<title>[B]Multicanal[/B] TikiTaka 02 [I] * [/I]</title>
-<link>http://$doregex[uno]$doregex[dos]|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:56.0) Gecko/20100101 Firefox/56.0&amp;Referer=http://privatestream.tv/player?streamname=maniacoshd</link>
-<regex>
-<name>uno</name>
-<expres>addr_part = '(.*?)'</expres>
-<page>http://privatestream.tv/player?streamname=maniacoshd</page>
-</regex>
-<regex>
-<name>dos</name>
-<expres>v_part_m = '(.*?)'</expres>
-<page>http://privatestream.tv/player?streamname=maniacoshd</page>
-</regex>
-
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
-
-
+ 
 
 
 
