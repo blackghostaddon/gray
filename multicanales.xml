@@ -2371,8 +2371,8 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/21616.h
 
 
 <item>
-<title>test</title>
-<link>http://$doregex[ip]/$doregex[live]/$doregex[name].m3u8?token=$doregex[token]</link>
+<title>test2</title>
+<link>http://$doregex[ip]/live/$doregex[name].m3u8?token=$doregex[token]</link>
 
 <regex>
 <name>ip</name>
@@ -2381,14 +2381,8 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/21616.h
 </regex>
 
 <regex>
-<name>live</name>
-<expres>appName = '(.*?)'</expres>
-<page>http://privatehd.pw/PLAYER.php?a=1199&amp;id=1199</page>
-</regex>
-
-<regex>
 <name>name</name>
-<expres>var name = '(.*?)'</expres>
+<expres>var\sname\s=\s\'(.*?)\'</expres>
 <page>http://privatehd.pw/PLAYER.php?a=1199&amp;id=1199</page>
 </regex>
 
@@ -2399,8 +2393,6 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/21616.h
 </regex>
 
 </item>
-
-
 
 
 
