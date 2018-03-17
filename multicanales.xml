@@ -241,7 +241,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<item>
+<itm>
 <title>[B]Multicanal Motorsport: Rolex 24 at Daytona[/B]         </title>
  <link>$doregex[bro.adca.st]</link>
 <regex>
@@ -296,18 +296,11 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/17220.h
  <item>
  <title>[B]Multicanal PSN [/B]      </title>
 <link>https://clutch.vaughnsoft.net/ord/vl/psn88v.m3u8</link>
-
 <thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
 
 
 
 
-
- <item>
- <title>[B]Multicanal  [/B]   Canal 5   </title>
-<link>http://189.216.247.113/Content/HLS/Live/Channel(XHGC)/index.m3u8?sd=10&amp;rebase=on</link>
-
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
 
 
 
@@ -346,7 +339,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/17220.h
 <regex>
 <name>bro.adca.st</name>
 <expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/739.html'):
+def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/13137.html'):
  import requests, re, urllib
  headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:52.0) Gecko/20100101 Firefox/52.0'}
  headers['Referer'] = 'http://vipracing.info/channel/canal-2'
@@ -369,6 +362,92 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/739.htm
 
 
 
+
+<item>
+<title>Multicanal VIP05</title>
+<link>http://$doregex[ip]/live/$doregex[get].m3u8?token=$doregex[token]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64; rv:56.0) Gecko/20100101 Firefox/56.0&amp;Referer=http://privatehd.pw/PLAYER.php?a=844</link>
+<regex>
+<name>get</name>
+<expres>var name     = '(.*?)\'</expres>
+<page>http://privatehd.pw/PLAYER.php?a=844&amp;id=844</page>
+</regex>
+<regex>
+<name>ip</name>
+<expres>edgeserverip = '(.*?)'</expres>
+<page>http://privatehd.pw/PLAYER.php?a=844&amp;id=844</page>
+</regex>
+<regex>
+<name>token</name>
+<expres>token=(.*?)";</expres>
+<page>http://privatehd.pw/PLAYER.php?a=844&amp;id=844</page>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+
+
+
+<item>
+<title>Multicanal VIP07</title>
+<link>http://$doregex[ip]/live/$doregex[get].m3u8?token=$doregex[token]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64; rv:56.0) Gecko/20100101 Firefox/56.0&amp;Referer=http://privatehd.pw/PLAYER.php?a=1203</link>
+<regex>
+<name>get</name>
+<expres>var name     = '(.*?)\'</expres>
+<page>http://privatehd.pw/PLAYER.php?a=1203&amp;id=1203</page>
+</regex>
+<regex>
+<name>ip</name>
+<expres>edgeserverip = '(.*?)'</expres>
+<page>http://privatehd.pw/PLAYER.php?a=1203&amp;id=1203</page>
+</regex>
+<regex>
+<name>token</name>
+<expres>token=(.*?)";</expres>
+<page>http://privatehd.pw/PLAYER.php?a=1203&amp;id=1203</page>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+
+
+
+<item>
+<title>Multicanal VIP08</title>
+<link>http://$doregex[ip]/live/$doregex[get].m3u8?token=$doregex[token]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64; rv:56.0) Gecko/20100101 Firefox/56.0&amp;Referer=http://privatehd.pw/PLAYER.php?a=843</link>
+<regex>
+<name>get</name>
+<expres>var name     = '(.*?)\'</expres>
+<page>http://privatehd.pw/PLAYER.php?a=843&amp;id=843</page>
+</regex>
+<regex>
+<name>ip</name>
+<expres>edgeserverip = '(.*?)'</expres>
+<page>http://privatehd.pw/PLAYER.php?a=843&amp;id=843</page>
+</regex>
+<regex>
+<name>token</name>
+<expres>token=(.*?)";</expres>
+<page>http://privatehd.pw/PLAYER.php?a=843&amp;id=843</page>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
+
+<item>
+<title>Multicanal VIP09</title>
+<link>http://$doregex[ip]/live/$doregex[get].m3u8?token=$doregex[token]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64; rv:56.0) Gecko/20100101 Firefox/56.0&amp;Referer=http://privatehd.pw/PLAYER.php?a=842</link>
+<regex>
+<name>get</name>
+<expres>var name     = '(.*?)\'</expres>
+<page>http://privatehd.pw/PLAYER.php?a=842&amp;id=842</page>
+</regex>
+<regex>
+<name>ip</name>
+<expres>edgeserverip = '(.*?)'</expres>
+<page>http://privatehd.pw/PLAYER.php?a=842&amp;id=842</page>
+</regex>
+<regex>
+<name>token</name>
+<expres>token=(.*?)";</expres>
+<page>http://privatehd.pw/PLAYER.php?a=842&amp;id=842</page>
+</regex>
+<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.png</thumbnail></item>
 
 
 
@@ -2372,26 +2451,4 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/21616.h
 
 
 
-<item>
-<title>test4</title>
-<link>http://$doregex[ip]/live/$doregex[get].m3u8?token=$doregex[token]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64; rv:56.0) Gecko/20100101 Firefox/56.0&amp;Referer=http://privatehd.pw/PLAYER.php?a=1199</link>
-<regex>
-<name>get</name>
-<expres>var name     = '(.*?)\'</expres>
-<page>http://privatehd.pw/PLAYER.php?a=1199&amp;id=1199</page>
-</regex>
 
-<regex>
-<name>ip</name>
-<expres>edgeserverip = '(.*?)'</expres>
-<page>http://privatehd.pw/PLAYER.php?a=1199&amp;id=1199</page>
-</regex>
-
-
-<regex>
-<name>token</name>
-<expres>token=(.*?)";</expres>
-<page>http://privatehd.pw/PLAYER.php?a=1199&amp;id=1199</page>
-</regex>
-
-</item>
