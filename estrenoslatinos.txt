@@ -8,6 +8,19 @@
 
 
 
+Estrenos:"Jumanji_welcome_to_the_jungle" url:"https://streamango.com/f/kdbscoonctmalctq/Jumanji_welcome_to_the_jungle_2017_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
+Estrenos:"Beyond_skyline" url:"https://streamango.com/f/eqeefeckenrnmeco/Beyond_skyline_2017_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
+Estrenos:"Downsizing" url:"https://streamango.com/f/oamfdtnnslssopdd/Downsizing_2017_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
+Estrenos:"The_foreigner" url:"https://streamango.com/f/ackectcsrobnlloq/The_foreigner_2017_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
+Estrenos:"Steel_rain" url:"https://streamango.com/f/ldrlcqtmeqapaffb/Steel_rain_2017_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
+Estrenos:"Deep" url:"https://streamango.com/f/lmensktranmnspfe/Deep_2017_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
+Estrenos:"Bullet_head" url:"https://streamango.com/f/oedtcbfkbsoercek/Bullet_head_2017_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
+Estrenos:"The_foreigner" url:"https://streamango.com/f/edtcplacotkoedlt/The_foreigner_2017_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
+Estrenos:"Annihilation" url:"https://streamango.com/f/kqndqrscpqrrkfba/Annihilation_2018_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
+Estrenos:"Downsizing_" url:"https://streamango.com/f/fecndfntdmmponbm/Downsizing_2017_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
+Estrenos:"Pitch_perfect_3_" url:"https://streamango.com/f/qttknbftdtkdbmnp/Pitch_perfect_3_2017_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
+
+
 
 Estrenos:"Forgotten" url:"https://streamango.com/f/ssdknrsdfmpcnfdf/Forgotten_2017_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
 Estrenos:"Newness" url:"https://streamango.com/f/bnefnpdomeradfqp/Newness_2017_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
@@ -113,6 +126,18 @@ EstrenosESP:"" url:"
 
 
 
+
+EstrenosESP:"Ferdinand" url:"https://streamango.com/f/erfmdtcqaffosnpq/Ferdinand_2017_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
+EstrenosESP:"Annihilation" url:"https://streamango.com/f/nlrpanqaneeescms/Annihilation_2018_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
+EstrenosESP:"Shot_caller" url:"https://streamango.com/f/bceaoqkmadklprcc/Shot_caller_2017_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
+EstrenosESP:"The_layover" url:"https://streamango.com/f/dselpqfroomcokpf/The_layover_2017_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
+EstrenosESP:"Battle_of_the_sexes" url:"https://streamango.com/f/lomlekttapobkttt/Battle_of_the_sexes_2017_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
+EstrenosESP:"Killing_gunther" url:"https://streamango.com/f/lbqsdmfdbdpkbeat/Killing_gunther_2017_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
+EstrenosESP:"The_big_sick" url:"https://streamango.com/f/rprolfnepknpnkpm/The_big_sick_2017_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
+EstrenosESP:"The_shape_of_water" url:"https://streamango.com/f/blqrtrmtmkmlpbfq/The_shape_of_water_2017_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
+EstrenosESP:"Same_kind_of_different_as_me" url:"https://streamango.com/f/asnqaeafocqroftp/Same_kind_of_different_as_me_2017_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
+EstrenosESP:"American_assassin" url:"https://streamango.com/f/loodnoeeqtkccfkp/American_assassin_2017_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
+EstrenosESP:"Justice_league" url:"https://streamango.com/f/cdmkpofqpolopkcr/Justice_league_2017_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
 EstrenosESP:"Estiu_1993" url:"https://streamango.com/f/fbmasbodpstldekd/Estiu_1993_2017_1080p-dual-cast_mp4" server:"Streamango"
 EstrenosESP:"Acts_of_vengeance" url:"https://streamango.com/f/moknpkrrlsefslof/Acts_of_vengeance_2017_1080p-dual-cast_mp4" server:"Streamango"
 EstrenosESP:"Batman_vs_two-face" url:"https://streamango.com/f/etlcsdbcbdcooeok/Batman_vs_two-face_2017_1080p-dual-cast_mp4" server:"Streamango"
