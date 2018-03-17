@@ -33,7 +33,7 @@
 <listrepeat><![CDATA[
 <title> [makelist.param2]        </title>
 <link>$doregex[ip]|User-Agent=iPad</link>
-<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
 ]]></listrepeat>
 <expres><![CDATA[href="(.*?)".*?Watch(.*?)Full]]></expres>
 <page>http://www.ibrod.tv/tvchans.php</page>
@@ -69,8 +69,8 @@
         <page>http://www.ibrod.tv/[makelist.param1]</page>
         <cookieJar></cookieJar>
 </regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail><thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
@@ -110,8 +110,8 @@
 <page>http://uktv.robssatellitetv.com/watch-uk-tv-online/[makelist.param1].php</page>
 </regex>
 
-<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
@@ -202,8 +202,8 @@ return m3u8
 <page></page>
 <referer></referer>
 </regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
@@ -243,8 +243,8 @@ return m3u8
 
 
 
-  <thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+  <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
@@ -254,7 +254,7 @@ return m3u8
 <tem>
 <title> •    [B]WorldTV [/B] [streamgaroo] </title>
 <link>$doregex[makelist]</link>
-<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
 
 
 
@@ -704,8 +704,8 @@ def GetLSProData(page_data, Cookie_Jar, m, offon= '[makelist.param1]', title= '[
 <page></page>
 </regex>
 
-<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
@@ -736,16 +736,16 @@ def GetLSProData(page_data, Cookie_Jar, m, offon= '[makelist.param1]', title= '[
 <expres>channel='(.*?)'</expres>
 <page>http://tvpor-internet.com/[makelist.param1]</page>
 </regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.jpg</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.jpg</thumbnail>
 ]]></listrepeat> <!-- si la pones  en tu addon favor de mencionar BlackGhost -->
 <expres>href="(.*?)">(.*?)en-vivo</expres>
 <page>http://tvpor-internet.com/envivo/</page><!-- si la pones  en tu addon favor de mencionar BlackGhost -->
 <referer></referer>
 <cookieJar></cookieJar>
-</regex><thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.jpg</thumbnail>
+</regex><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.jpg</thumbnail>
 <!-- si la pones  en tu addon favor de mencionar BlackGhost -->
-<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
@@ -770,9 +770,9 @@ def GetLSProData(page_data, Cookie_Jar, m, offon= '[makelist.param1]', title= '[
 <expres>items-canales[\W\w\S]{0,18}href="(.*?)"[\W\w\S]{0,35}src="(.*?)"[\W\w\S]{0,40}alt="(.*?)"</expres>
 <page>https://www.cxntv.com/canales/</page>
 </regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/ent.png</thumbnail>
-<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/ent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
@@ -841,8 +841,8 @@ def GetLSProData(page_data, Cookie_Jar, m, offon= '[makelist.param1]', title= '[
 <X-Requested>XMLHttpRequest</X-Requested>
 <cookieJar></cookieJar>
 </regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
@@ -880,9 +880,9 @@ def GetLSProData(page_data, Cookie_Jar, m, offon= '[makelist.param1]', title= '[
 <page>http://latino-webtv.com/</page><!-- si la pones  en tu addon favor de mencionar BlackGhost -->
 <referer></referer>
 <cookieJar></cookieJar>
-</regex><thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.jpg</thumbnail><!-- si la pones  en tu addon favor de mencionar BlackGhost -->
-<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+</regex><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.jpg</thumbnail><!-- si la pones  en tu addon favor de mencionar BlackGhost -->
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
@@ -924,9 +924,9 @@ def GetLSProData(page_data, Cookie_Jar, m, offon= '[makelist.param1]', title= '[
 <referer></referer>
 <cookieJar></cookieJar>
 </regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/247.jpg</thumbnail>
-<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/247.jpg</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
@@ -991,10 +991,10 @@ def GetLSProData(page_data, Cookie_Jar, m, offon= '[makelist.param1]', title= '[
 <referer></referer>
 <cookieJar></cookieJar>
 </regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/247.jpg</thumbnail>
-	<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
-<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/247.jpg</thumbnail>
+	<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
@@ -1067,10 +1067,10 @@ _psn12v?
 <referer></referer>
 <cookieJar></cookieJar>
 </regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/247.jpg</thumbnail>
-	<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
-<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/247.jpg</thumbnail>
+	<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
@@ -1097,9 +1097,9 @@ _psn12v?
 <referer></referer>
 <cookieJar></cookieJar>
 </regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/247.jpg</thumbnail>
-<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/247.jpg</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
@@ -1132,14 +1132,14 @@ _psn12v?
 <agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
 <referer>http://www.[makelist.param4]</referer>
 </regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.jpg</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.jpg</thumbnail>
 ]]></listrepeat>
 <expres>type:"Ent" canal="(.*?)" channel="(.*?)" pub="(.*?)" server="(.*?)"</expres>
-<page>http://blackaddon.rf.gd/gray/servers.txt</page>
+<page>https://raw.githubusercontent.com/blackghostaddon/gray/master/servers.txt</page>
 </regex>
 
-<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
@@ -1158,8 +1158,8 @@ _psn12v?
    <expres><![CDATA[href="(.*?)/">(.*?)/<]]></expres>
    <page>http://latino-webtv.ml:8880</page>
 </regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
@@ -1169,19 +1169,19 @@ _psn12v?
 
 <item>
 <title> •    [B]MUSICA[/B] Canales Musicales</title>
-<externallink>http://blackaddon.rf.gd/gray/music.xml</externallink>
+<externallink>https://raw.githubusercontent.com/blackghostaddon/gray/master/music.xml</externallink>
 <link>NA</link>
-<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
 	<tem>
 <title> •    [B]Canales TotalPlay • Stalker • Latinos[/B]</title>
-<externallink>http://blackaddon.rf.gd/gray/darkuz.xml</externallink>
+<externallink>https://raw.githubusercontent.com/blackghostaddon/gray/master/darkuz.xml</externallink>
 <link>NA</link>
-<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
@@ -1205,8 +1205,8 @@ _psn12v?
 <title>BANDA ANCHA </title>
 
 <link>https://banetworks.interactivemedia.com.mx/live/_definst_/ngrp:bandaancha_all/playlist.m3u8</link>
-<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
@@ -1219,8 +1219,8 @@ _psn12v?
 <title>Vive Canal  </title>
 <link>rtmp://38.96.148.213:1935/vivecanaltest/ playpath=myStream.sdp swfUrl=http://vjs.zencdn.net/swf/5.1.0/video-js.swf live=1 pageUrl=http://www.globalmedia.mx/#!/ViveCanal</link>
 <thumbnail>https://pbs.twimg.com/profile_images/841371397804851200/B-IX0wwx.jpg</thumbnail>
-<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
@@ -1228,33 +1228,33 @@ _psn12v?
 
  <item><title>Hits Musica</title>
 <link>https://wowzaprod4-i.akamaihd.net/hls/live/253920/fc13c4a3/playlist.m3u8</link>
-<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
   </item>
 
 
 <item><title>Retro Musica</title>
 <link>https://wowzaprod4-i.akamaihd.net/hls/live/253920/148a6ff0_1_270/chunklist.m3u8</link>
-<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
   </item>
 
 <item><title>indie Musica</title>
 <link>https://wowzaprod4-i.akamaihd.net/hls/live/253920/d3daa538_1_540/chunklist.m3u8</link>
-<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
   </item>
 
 <item><title>Rock Latino Musica</title>
 <link>https://wowzaprod4-i.akamaihd.net/hls/live/253920/ce9bebcc_1_540/chunklist.m3u8</link>
-<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
   </item>
 
 <item><title>Rock Nacional: Musica</title>
 <link>http://stmv4.questreaming.com/questreaming/questreaming/playlist.m3u8</link>
-<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
   </item>
 
 
@@ -1267,8 +1267,8 @@ _psn12v?
 <title>Locomotion </title>
 <thumbnail>http://uploads.tapatalk-cdn.com/20170308/e95d78b5cf4dd88a5265762d4fda2b87.jpg</thumbnail>
 <link>http://locomotiontv.com/envivo/loco_channel/stream.m3u8</link>
-<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
@@ -1277,8 +1277,8 @@ _psn12v?
 
 <item><title>Dibujos Animados </title>
 <link>http://video7.stream.mx:1935/raxatv/raxatv/77146.m3u8</link>
-<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
   </item>
 
 
@@ -1291,8 +1291,8 @@ _psn12v?
 
 <item><title>g Chile </title>
 <link>https://wowzaprod4-i.akamaihd.net/hls/live/253920/8be6db2d/playlist.m3u8</link>
-<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart></item>
 
 
 
@@ -1300,22 +1300,22 @@ _psn12v?
   <item>
 <title>Caricaturas Retro </title>
 <link>http://cm.hostlagarto.com:8081/ACS-NETWORK/acs.myStream/chunks.m3u8</link>
-<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
   <item>
 <title>Music Choice </title>
 <link>http://edge.music-choice-vc-chaina2.top.comcast.net/VideoChannels/MC133/chunklist.m3u8</link>
-<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
   <item>
 <title>Music Choice 02 </title>
 <link>http://edge.music-choice-vc-chaina1.top.comcast.net/VideoChannels/MC121/chunklist.m3u8</link>
-<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
@@ -1345,78 +1345,78 @@ _psn12v?
 <item>
 <title>Canal 4 jujuy - Argentina </title>
 <link>http://streaming.wirenetserver.com.ar:1935/canal4/live_1/livestream.m3u8</link>
-	<thumbnail>http://y.cdn.entutele.com/media/channels/big/.gif</thumbnail><thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+	<thumbnail>http://y.cdn.entutele.com/media/channels/big/.gif</thumbnail><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
 
-<item><title> C5N Argentina</title> <link>http://us.watcha.live/ch1/hi.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:51.0) Gecko/20100101 Firefox/51.0</link> <thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<item><title> C5N Argentina</title> <link>http://us.watcha.live/ch1/hi.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:51.0) Gecko/20100101 Firefox/51.0</link> <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
-<item><title> A24 Argentina</title> <link>http://us.watcha.live/ch2/hi.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:51.0) Gecko/20100101 Firefox/51.0</link> <thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<item><title> A24 Argentina</title> <link>http://us.watcha.live/ch2/hi.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:51.0) Gecko/20100101 Firefox/51.0</link> <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
-<item><title> AMERICA Argentina</title> <link>http://us.watcha.live/ch3/hi.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:51.0) Gecko/20100101 Firefox/51.0</link> <thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<item><title> AMERICA Argentina</title> <link>http://us.watcha.live/ch3/hi.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:51.0) Gecko/20100101 Firefox/51.0</link> <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
-<item><title> TVP Argentina</title> <link>http://us.watcha.live/ch4/hi.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:51.0) Gecko/20100101 Firefox/51.0</link> <thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<item><title> TVP Argentina</title> <link>http://us.watcha.live/ch4/hi.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:51.0) Gecko/20100101 Firefox/51.0</link> <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
-<item><title> CANAL 9 Argentina</title> <link>http://us.watcha.live/ch5/hi.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:51.0) Gecko/20100101 Firefox/51.0</link> <thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<item><title> CANAL 9 Argentina</title> <link>http://us.watcha.live/ch5/hi.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:51.0) Gecko/20100101 Firefox/51.0</link> <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
-<item><title> TELEFE  Argentina</title> <link>http://us.watcha.live/ch6/hi.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:51.0) Gecko/20100101 Firefox/51.0</link> <thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<item><title> TELEFE  Argentina</title> <link>http://us.watcha.live/ch6/hi.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:51.0) Gecko/20100101 Firefox/51.0</link> <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
-<item><title> TELEFE  Argentina</title> <link>https://vivoplay-i.akamaihd.net/hls/live/261555/canal1/master.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:51.0) Gecko/20100101 Firefox/51.0</link> <thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<item><title> TELEFE  Argentina</title> <link>https://vivoplay-i.akamaihd.net/hls/live/261555/canal1/master.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:51.0) Gecko/20100101 Firefox/51.0</link> <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
-<item><title> Canal 26  Argentina</title> <link>http://200.115.193.177/live/26hd-720/chunklist_w1668179291.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:51.0) Gecko/20100101 Firefox/51.0</link> <thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<item><title> Canal 26  Argentina</title> <link>http://200.115.193.177/live/26hd-720/chunklist_w1668179291.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:51.0) Gecko/20100101 Firefox/51.0</link> <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
-<item><title> EL TRECE  Argentina</title> <link>http://us.watcha.live/ch7/hi.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:51.0) Gecko/20100101 Firefox/51.0</link> <thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<item><title> EL TRECE  Argentina</title> <link>http://us.watcha.live/ch7/hi.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:51.0) Gecko/20100101 Firefox/51.0</link> <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
-<item><title> DEPORTV  Argentina</title> <link>http://us.watcha.live/ch8/hi.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:51.0) Gecko/20100101 Firefox/51.0</link> <thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<item><title> DEPORTV  Argentina</title> <link>http://us.watcha.live/ch8/hi.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:51.0) Gecko/20100101 Firefox/51.0</link> <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
- <item><title> CN23   Argentina</title> <link>http://us.watcha.live/ch11/hi.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:51.0) Gecko/20100101 Firefox/51.0</link> <thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+ <item><title> CN23   Argentina</title> <link>http://us.watcha.live/ch11/hi.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:51.0) Gecko/20100101 Firefox/51.0</link> <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
-<item><title> 360TV   Argentina</title> <link>http://us.watcha.live/ch12/hi.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:51.0) Gecko/20100101 Firefox/51.0</link> <thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<item><title> 360TV   Argentina</title> <link>http://us.watcha.live/ch12/hi.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:51.0) Gecko/20100101 Firefox/51.0</link> <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
-<item><title> RT NOTICIAS  Argentina</title> <link>http://us.watcha.live/ch13/hi.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:51.0) Gecko/20100101 Firefox/51.0</link> <thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<item><title> RT NOTICIAS  Argentina</title> <link>http://us.watcha.live/ch13/hi.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:51.0) Gecko/20100101 Firefox/51.0</link> <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
-<item><title> ENCUENTRO   Argentina</title> <link>http://us.watcha.live/ch14/hi.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:51.0) Gecko/20100101 Firefox/51.0</link> <thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<item><title> ENCUENTRO   Argentina</title> <link>http://us.watcha.live/ch14/hi.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:51.0) Gecko/20100101 Firefox/51.0</link> <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
-<item><title> PAKA PAKA  Argentina</title> <link>http://us.watcha.live/ch15/hi.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:51.0) Gecko/20100101 Firefox/51.0</link> <thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<item><title> PAKA PAKA  Argentina</title> <link>http://us.watcha.live/ch15/hi.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:51.0) Gecko/20100101 Firefox/51.0</link> <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
- <item><title> TATETI  Argentina</title> <link>http://us.watcha.live/ch16/hi.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:51.0) Gecko/20100101 Firefox/51.0</link> <thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+ <item><title> TATETI  Argentina</title> <link>http://us.watcha.live/ch16/hi.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:51.0) Gecko/20100101 Firefox/51.0</link> <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
- <item><title> CINEAR  Argentina</title> <link>http://us.watcha.live/ch17/hi.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:51.0) Gecko/20100101 Firefox/51.0</link> <thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+ <item><title> CINEAR  Argentina</title> <link>http://us.watcha.live/ch17/hi.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:51.0) Gecko/20100101 Firefox/51.0</link> <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
@@ -1439,8 +1439,8 @@ _psn12v?
 <expres>smil","m3u8_url":"(.*)","secure_m3u8_url</expres>
 <page>http://new.livestream.com/accounts/5730046/events/2966225/player?width=960&amp;height=540&amp;autoPlay=true&amp;mute=false</page>
 </regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
@@ -1448,8 +1448,8 @@ _psn12v?
 <title>TeleFormula Mexico</title>
 <link>http://gformula.mmdlive.lldns.net/gformula/596433f167b64696bb03398fecdefbad/manifest.m3u8</link>
 
-<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
@@ -1493,8 +1493,8 @@ _psn12v?
 <item>
 <title>GarageTV </title>
 <link>http://186.0.233.76:1935/Garage/smil:garage.smil/chunklist_w1978592479_b446000_sleng.m3u8</link>
-<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
 </item>
 
@@ -1504,8 +1504,8 @@ _psn12v?
 <item>
 <title>RedBull </title>
 <link>http://rbtvdiglinear-i.akamaihd.net/hls/live/241719/ATfallback/master.m3u8</link>
-<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
 </item>
 
@@ -1513,8 +1513,8 @@ _psn12v?
  <item>
 <title>Multimedios </title>
 <link>http://mdstrm.com/live-stream-playlist/57b4dbf5dbbfc8f16bb63ce1.m3u8</link>
-<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
@@ -1529,8 +1529,8 @@ _psn12v?
 </regex>
 
 
-<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
@@ -1540,15 +1540,15 @@ _psn12v?
  <item>
 <title>GalaTV Merida</title>
 <link>http://74.222.3.185:1935/live/ngrp:galatvmerida_all/playlist.m3u8?</link>
-<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
  <item>
  <title>GalaTV Cancun</title>
 <link>http://74.222.3.185:1935/live/ngrp:galatvcancun_all/playlist.m3u8</link>
-			<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+			<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
@@ -1559,8 +1559,8 @@ _psn12v?
  <item>
 <title>CGTN en español - China </title>
 <link>http://live.cgtn.com/1000e/prog_index.m3u8</link>
-<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
@@ -1568,8 +1568,8 @@ _psn12v?
 <item>
 <title>Oromar TV </title>
 <link>http://proxy.cablefamilia.com/hls/oromartv_hi/index.m3u8</link>
-<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
@@ -1581,7 +1581,7 @@ _psn12v?
 
 <link>http://dcunilive30-lh.akamaihd.net/i/dclive_1@579530/master.m3u8</link>
 <thumbnail>http://llanotv.com/sitio/wp-content/uploads/2017/06/Mosca_LlanoTV.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
 </item>
 
@@ -1610,8 +1610,8 @@ _psn12v?
 <title>Unimas / Telemundo 51  </title>
 
 <link>http://wscvlive-lh.akamaihd.net/i/WSCV_LIVE2@183618/index_1500_av-b.m3u8?sd=10&amp;rebase;=on</link>
-<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
 </item>
 
@@ -1643,8 +1643,8 @@ _psn12v?
 <referer>http://chiivass.es.tl/UNIVI.htm</referer>
 </regex>
 
- <thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+ <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
  
@@ -1662,8 +1662,8 @@ _psn12v?
 <title>Telemundo    </title>
 <link>https://clutch.vaughnsoft.net/ord/vl/anahix11.m3u8</link>
 
-<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
 </item>
 
@@ -1671,8 +1671,8 @@ _psn12v?
 <title>Telemundo   </title>
 <link>https://clutch.vaughnsoft.net/ord/vl/tele1.m3u8</link>
 
-<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
 </item>
 
@@ -1681,8 +1681,8 @@ _psn12v?
 <title>Telemundo   </title>
 <link>https://clutch.vaughnsoft.net/ord/vl/telemundo50.m3u8</link>
 
-<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
 </item>
 
@@ -1690,8 +1690,8 @@ _psn12v?
 <title>Telemundo   </title>
 <link>https://clutch.vaughnsoft.net/ord/vl/tvhdenvivo14.m3u8</link>
 
-<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
 </item>
 
@@ -1701,8 +1701,8 @@ _psn12v?
 <title>Univision   </title>
 <link>https://clutch.vaughnsoft.net/ord/vl/tvhdenvivo23.m3u8</link>
 
-<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
 </item>
 
@@ -1718,8 +1718,8 @@ _psn12v?
 <page>http://abcast.net/embed.php?file=Chivasss69</page>
 </regex>
 
-<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
 </item>
 
@@ -1744,8 +1744,8 @@ _psn12v?
 <page>http://abcast.net/embed.php?file=Chivasss69</page>
 </regex>
 
-<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
 </item>
 
@@ -1776,8 +1776,8 @@ _psn12v?
 <referer>http://chiivass.es.tl/UNIVI.htm</referer>
 </regex>
 
- <thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+ <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
@@ -1794,8 +1794,8 @@ _psn12v?
 <page>http://abcast.net/embed.php?file=Chivasss69</page>
 </regex>
 
-<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
 </item>
 
@@ -1829,8 +1829,8 @@ http://138.197.109.108/loadbalance//l_23884_5515120_1838.ts
 <referer>http://chiivass.es.tl/TELE-1.htm</referer>
 </regex>
 
- <thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+ <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
@@ -1847,8 +1847,8 @@ http://138.197.109.108/loadbalance//l_23884_5515120_1838.ts
 <link>http://wscvlive-lh.akamaihd.net/i/WSCV_LIVE2@183618/index_1500_av-b.m3u8?sd=10&amp;rebase=on&amp;token=uivhScZErtmmqBTp5h9HDw&amp;expires=1510369937|User-Agent=iPhone</link>
 
 
- <thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+ <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
@@ -1892,8 +1892,8 @@ def GetLSProData(page_data,Cookie_Jar,m,url='http://v2.ustreamix.com/stream.php?
 ]]></expres>
 <page></page>
 </regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/deportes.jpg</thumbnail><thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.jpg</thumbnail><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
@@ -1955,55 +1955,55 @@ def GetLSProData(page_data,Cookie_Jar,m,url='http://v2.ustreamix.com/stream.php?
    <item>
 <title>Telemundo 14 [ams]  </title>
 <link>https://hls-ord-3a.vaughnsoft.net/ams/live/live_tvhdenvivo14/chunklist.m3u8</link>
-<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
     <item>
 <title>Telemundo 11 [ams]  .</title>
 <link>https://hls-ord-3a.vaughnsoft.net/ams/live/live_anahix11/chunklist.m3u8</link>
-<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
     <item>
 <title>Telemundo 11 .</title>
 <link>https://hls-ord-3a.vaughnsoft.net/nyc/live/live_anahix11/chunklist.m3u8</link>
-<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
      <item>
 <title>Telemundo 49 .</title>
 <link>https://hls-ord-3a.vaughnsoft.net/ord/live/live_telemundo50/chunklist.m3u8</link>
-<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
      <item>
 <title>Telemundo 49 .</title>
 <link>https://hls-ord-3a.vaughnsoft.net/ams/live/live_telemundo50/chunklist.m3u8</link>
-<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
 	     <item>
 <title>Telemundo LC .</title>
 <link>https://hls-ord-3a.vaughnsoft.net/ams/live/live_luzclarita/chunklist.m3u8</link>
-<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
 	     <item>
 <title>Telemundo LC .</title>
 <link>https://hls-ord-3a.vaughnsoft.net/ord/live/live_luzclarita/chunklist.m3u8</link>
-<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
@@ -2026,8 +2026,8 @@ def GetLSProData(page_data,Cookie_Jar,m,url='http://v2.ustreamix.com/stream.php?
 <page>http://livesports.pw/embed.php?file=telemundoes&amp;width=650&amp;height=397</page>
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
 </regex>
-  <thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+  <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
@@ -2098,8 +2098,8 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://livestream.com/accounts/16
 <page></page>
 <cookieJar></cookieJar>
 </regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
@@ -2143,8 +2143,8 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://livestream.com/accounts/16
 <expres>"hls":"(.*?)"</expres>
 <page>http://json.dacast.com/b/63852/c/88933</page>
 </regex>
- <thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+ <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
@@ -2154,8 +2154,8 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://livestream.com/accounts/16
  <item>
 <title>WAPA PR Puerto Rico </title>
 <link>https://dcunilive30-lh.akamaihd.net/i/dclive_1@535532/master.m3u8</link>
- <thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+ <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
@@ -2186,8 +2186,8 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://livestream.com/accounts/16
 <page>http://json.dacast.com/b/34772/c/40898</page>
 </regex>
 <thumbnail>https://media.licdn.com/media/p/7/000/1f7/30e/2b7da59.png</thumbnail>
-<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
@@ -2214,16 +2214,16 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://livestream.com/accounts/16
     <item>
 <title> DTV</title>
 <link>http://lsdhcdnhls-lh.akamaihd.net/i/hcdnarsatHLS_2@301805/master.m3u8</link>
-<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
     <item>
 <title> TDC</title>
 <link>http://painel.serveron.com.br:1935/8166/8166/chunklist_w266638799.m3u8</link>
-<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
@@ -2291,8 +2291,8 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://livestream.com/accounts/16
 <expres>channel='(.*?)'</expres>
 <page>http://tvpor-internet.com/hbo-en-vivo.html</page>
 </regex>
-<thumbnail>http://y.cdn.entutele.com/media/channels/big/.gif</thumbnail><thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>http://y.cdn.entutele.com/media/channels/big/.gif</thumbnail><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
@@ -2331,8 +2331,8 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://livestream.com/accounts/16
 <expres>channel='(.*?)'</expres>
 <page>http://tvpor-internet.com/fox-action-en-vivo.html</page>
 </regex>
-<thumbnail>http://y.cdn.entutele.com/media/channels/big/fox-action.gif</thumbnail><thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>http://y.cdn.entutele.com/media/channels/big/fox-action.gif</thumbnail><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
@@ -2360,8 +2360,8 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://livestream.com/accounts/16
 <expres>channel='(.*?)'</expres>
 <page>http://tvpor-internet.com/fox-1-en-vivo.html</page>
 </regex>
-<thumbnail>http://y.cdn.entutele.com/media/channels/big/fox-1.gif</thumbnail><thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>http://y.cdn.entutele.com/media/channels/big/fox-1.gif</thumbnail><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
@@ -2392,8 +2392,8 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://livestream.com/accounts/16
 <expres>channel='(.*?)'</expres>
 <page>http://tvpor-internet.com/space-en-vivo.html</page>
 </regex>
-<thumbnail>http://y.cdn.entutele.com/media/channels/big/space-hd.gif</thumbnail><thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>http://y.cdn.entutele.com/media/channels/big/space-hd.gif</thumbnail><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
@@ -2420,8 +2420,8 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://livestream.com/accounts/16
 <expres>channel='(.*?)'</expres>
 <page>http://tvpor-internet.com/warner-en-vivo.html</page>
 </regex>
-<thumbnail>http://y.cdn.entutele.com/media/channels/big/warner-hd.gif</thumbnail><thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>http://y.cdn.entutele.com/media/channels/big/warner-hd.gif</thumbnail><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
@@ -2449,8 +2449,8 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://livestream.com/accounts/16
 <expres>channel='(.*?)'</expres>
 <page>http://tvpor-internet.com/tlnovelas-en-vivo.html</page>
 </regex>
-<thumbnail>http://y.cdn.entutele.com/media/channels/big/tlnovelas.gif</thumbnail><thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>http://y.cdn.entutele.com/media/channels/big/tlnovelas.gif</thumbnail><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
@@ -2478,8 +2478,8 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://livestream.com/accounts/16
 <expres>channel='(.*?)'</expres>
 <page>http://tvpor-internet.com/tnt-latino-en-vivo.html</page>
 </regex>
-<thumbnail>http://y.cdn.entutele.com/media/channels/big/tnt-hd.gif</thumbnail><thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>http://y.cdn.entutele.com/media/channels/big/tnt-hd.gif</thumbnail><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
@@ -2518,8 +2518,8 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://livestream.com/accounts/16
 <page>http://tvpor-internet.com/disney-channel-en-vivo.html</page>
 <referer>http://www.mips.tv</referer>
 </regex>
-<thumbnail>http://y.cdn.entutele.com/media/channels/big/disney-channel.gif</thumbnail><thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>http://y.cdn.entutele.com/media/channels/big/disney-channel.gif</thumbnail><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
@@ -2562,8 +2562,8 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://livestream.com/accounts/16
 </regex>
 
 
-<thumbnail>http://y.cdn.entutele.com/media/channels/big/cartoon-network.gif</thumbnail><thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>http://y.cdn.entutele.com/media/channels/big/cartoon-network.gif</thumbnail><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
@@ -2602,8 +2602,8 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://livestream.com/accounts/16
 <expres>channel='(.*?)'</expres>
 <page>http://tvpor-internet.com/nickelodeon-en-vivo.html</page>
 </regex>
-<thumbnail>http://y.cdn.entutele.com/media/channels/big/nick-hd.gif</thumbnail><thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>http://y.cdn.entutele.com/media/channels/big/nick-hd.gif</thumbnail><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
@@ -2630,8 +2630,8 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://livestream.com/accounts/16
 <page>http://tvpor-internet.com/disney-xd-en-vivo.html</page>
 <referer>http://www.mips.tv</referer>
 </regex>
-<thumbnail>http://y.cdn.entutele.com/media/channels/big/disney-xd.gif</thumbnail><thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>http://y.cdn.entutele.com/media/channels/big/disney-xd.gif</thumbnail><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
@@ -2643,8 +2643,8 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://livestream.com/accounts/16
 <title>Disney Jr [TVI]</title>
 <link>http://wowza2.mysoltv.com:1992/Latino_Disney_JR/index.m3u8</link>
 
-<thumbnail>http://y.cdn.entutele.com/media/channels/big/disney-jr.gif</thumbnail><thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>http://y.cdn.entutele.com/media/channels/big/disney-jr.gif</thumbnail><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
@@ -2673,8 +2673,8 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://livestream.com/accounts/16
 <page>http://tvpor-internet.com/mtv-latino-en-vivo.html</page>
 <referer>http://www.mips.tv</referer>
 </regex>
-<thumbnail>http://y.cdn.entutele.com/media/channels/big/mtv.gif</thumbnail><thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>http://y.cdn.entutele.com/media/channels/big/mtv.gif</thumbnail><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
@@ -2701,8 +2701,8 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://livestream.com/accounts/16
 <page>http://tvpor-internet.com/Telehit-en-vivo.html</page>
 <referer>http://www.mips.tv</referer>
 </regex>
-<thumbnail>http://y.cdn.entutele.com/media/channels/big/telehit.gif</thumbnail><thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>http://y.cdn.entutele.com/media/channels/big/telehit.gif</thumbnail><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
@@ -2730,8 +2730,8 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://livestream.com/accounts/16
 <page>http://tvpor-internet.com/venevision-en-vivo.html</page>
 <referer>http://247bay.tv</referer>
 </regex>
-<thumbnail>http://y.cdn.entutele.com/media/channels/big/.gif</thumbnail><thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>http://y.cdn.entutele.com/media/channels/big/.gif</thumbnail><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
@@ -2758,8 +2758,8 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://livestream.com/accounts/16
 <page>http://tvpor-internet.com/discovery-latino-en-vivo.html</page>
 <referer>http://www.mips.tv</referer>
 </regex>
-<thumbnail>http://y.cdn.entutele.com/media/channels/big/discovery-channel.gif</thumbnail><thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>http://y.cdn.entutele.com/media/channels/big/discovery-channel.gif</thumbnail><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
@@ -2782,8 +2782,8 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://livestream.com/accounts/16
 <page>http://www.streaming-hub.com/arte/</page>
 <referer>http://www.streaming-hub.com/</referer>
 </regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
@@ -2794,8 +2794,8 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://livestream.com/accounts/16
 
 
 
- <item><title>Telesur </title><link>$doregex[get-url]</link><regex><name>get-url</name><expres>file: "(.*?)"</expres><page>$doregex[get-ifr]</page><referer>http://tv.vera.com.uy</referer></regex><regex><name>get-ifr</name><expres>'src', '(.*extras.*?)'</expres><page>http://tv.vera.com.uy/canal/6028</page><referer>http://tv.vera.com.uy</referer><cookieJar></cookieJar></regex><thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+ <item><title>Telesur </title><link>$doregex[get-url]</link><regex><name>get-url</name><expres>file: "(.*?)"</expres><page>$doregex[get-ifr]</page><referer>http://tv.vera.com.uy</referer></regex><regex><name>get-ifr</name><expres>'src', '(.*extras.*?)'</expres><page>http://tv.vera.com.uy/canal/6028</page><referer>http://tv.vera.com.uy</referer><cookieJar></cookieJar></regex><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
@@ -2813,21 +2813,21 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://livestream.com/accounts/16
 
 
 
-<item><title>NASA NTV 1</title><link>http://nasa-i.akamaihd.net/hls/live/253565/NASA-NTV1-Public/master_500.m3u8</link><thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<item><title>NASA NTV 1</title><link>http://nasa-i.akamaihd.net/hls/live/253565/NASA-NTV1-Public/master_500.m3u8</link><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
 
 
 
- <item><title>NASA NTV 2</title><link>https://nasa-i.akamaihd.net/hls/live/253566/NASA-NTV2-Media/master.m3u8</link><thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+ <item><title>NASA NTV 2</title><link>https://nasa-i.akamaihd.net/hls/live/253566/NASA-NTV2-Media/master.m3u8</link><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
-<item><title>NASA TV HD</title><utube>RtU_mdL2vBM</utube><thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<item><title>NASA TV HD</title><utube>RtU_mdL2vBM</utube><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
@@ -2840,8 +2840,8 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://livestream.com/accounts/16
 
 
 <item><thumbnail>http://mw1.iptv66.tv/stalker_portal/misc/logos/320/60.png</thumbnail><title>Al Jazeera UK</title>
-<link>http://aljazeera-eng-apple-live.adaptive.level3.net/apple/aljazeera/english/appleman.m3u8</link><thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<link>http://aljazeera-eng-apple-live.adaptive.level3.net/apple/aljazeera/english/appleman.m3u8</link><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
@@ -2854,8 +2854,8 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://livestream.com/accounts/16
 
 
 <item><thumbnail></thumbnail><title>EfektoTV</title>
-<link>http://grupomac-lh.akamaihd.net:80/i/004rss0k8_1@301782/master.m3u8</link><thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<link>http://grupomac-lh.akamaihd.net:80/i/004rss0k8_1@301782/master.m3u8</link><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
@@ -2868,8 +2868,8 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://livestream.com/accounts/16
 
 
 <item><thumbnail>http://i2.esmas.com/2015/06/22/778598/foro-tv--280x370.jpg</thumbnail><title>Foro TV </title>
-<link>http://185417-f.akamaihd.net/i/n0tf0r0_1@81283/master.m3u8</link><thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<link>http://185417-f.akamaihd.net/i/n0tf0r0_1@81283/master.m3u8</link><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
@@ -2879,8 +2879,8 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://livestream.com/accounts/16
 
 
  <item><thumbnail>http://mw1.iptv66.tv/stalker_portal/misc/logos/320/419.png</thumbnail><title>France 24</title>
-<link>http://static.france24.com/live/F24_EN_LO_HLS/live_web.m3u8</link><thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<link>http://static.france24.com/live/F24_EN_LO_HLS/live_web.m3u8</link><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
@@ -2888,8 +2888,8 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://livestream.com/accounts/16
 
 
 
- <item><title>RT en Español</title><link>$doregex[get-url]</link><regex><name>get-url</name><expres>file: "(.*?)"</expres><page>$doregex[get-ifr]</page><referer>http://tv.vera.com.uy</referer></regex><regex><name>get-ifr</name><expres>'src', '(.*extras.*?)'</expres><page>http://tv.vera.com.uy/canal/6027</page><referer>http://tv.vera.com.uy</referer><cookieJar></cookieJar></regex><thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+ <item><title>RT en Español</title><link>$doregex[get-url]</link><regex><name>get-url</name><expres>file: "(.*?)"</expres><page>$doregex[get-ifr]</page><referer>http://tv.vera.com.uy</referer></regex><regex><name>get-ifr</name><expres>'src', '(.*extras.*?)'</expres><page>http://tv.vera.com.uy/canal/6027</page><referer>http://tv.vera.com.uy</referer><cookieJar></cookieJar></regex><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
@@ -2900,8 +2900,8 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://livestream.com/accounts/16
 
 
 
- <item><title>France 24</title><link>$doregex[get-url]</link><regex><name>get-url</name><expres>file: "(.*?)"</expres><page>$doregex[get-ifr]</page><referer>http://tv.vera.com.uy</referer></regex><regex><name>get-ifr</name><expres>'src', '(.*extras.*?)'</expres><page>http://tv.vera.com.uy/canal/9845</page><referer>http://tv.vera.com.uy</referer><cookieJar></cookieJar></regex><thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+ <item><title>France 24</title><link>$doregex[get-url]</link><regex><name>get-url</name><expres>file: "(.*?)"</expres><page>$doregex[get-ifr]</page><referer>http://tv.vera.com.uy</referer></regex><regex><name>get-ifr</name><expres>'src', '(.*extras.*?)'</expres><page>http://tv.vera.com.uy/canal/9845</page><referer>http://tv.vera.com.uy</referer><cookieJar></cookieJar></regex><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
@@ -2910,8 +2910,8 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://livestream.com/accounts/16
 
 
 <item><thumbnail></thumbnail><title>RT Russia Today</title>
-<link>http://rt.ashttp14.visionip.tv/live/rt-global-live-HD/playlist.m3u8</link><thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<link>http://rt.ashttp14.visionip.tv/live/rt-global-live-HD/playlist.m3u8</link><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
@@ -2921,15 +2921,15 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://livestream.com/accounts/16
 
 
 <item><thumbnail></thumbnail><title>Russia Today</title>
-<link>http://rt.ashttp14.visionip.tv/live/rt-global-live-HD/playlist.m3u8</link><thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<link>http://rt.ashttp14.visionip.tv/live/rt-global-live-HD/playlist.m3u8</link><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
 
 <item><thumbnail>http://mw1.iptv66.tv/stalker_portal/misc/logos/320/3610.png</thumbnail><title>TRT World</title>
-<link>http://trtcanlitv-lh.akamaihd.net/i/TRTWORLD_1@321783/master.m3u8</link><thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<link>http://trtcanlitv-lh.akamaihd.net/i/TRTWORLD_1@321783/master.m3u8</link><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
@@ -2973,8 +2973,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page></page>
 <cookieJar></cookieJar>
 </regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
@@ -2990,13 +2990,13 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-  <item><title>Miami TV</title><link>http://usaserver.miamitvchannel.com/miamitv/smil:miamitv/playlist.m3u8</link><thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+  <item><title>Miami TV</title><link>http://usaserver.miamitvchannel.com/miamitv/smil:miamitv/playlist.m3u8</link><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
-<item><title>Miami TV</title><link>http://mexicoserver.miamitvchannel.com/miamitv/smil:miamitvmexico/playlist.m3u8?tecnotv.info?iptv.m3u8</link><thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<item><title>Miami TV</title><link>http://mexicoserver.miamitvchannel.com/miamitv/smil:miamitvmexico/playlist.m3u8?tecnotv.info?iptv.m3u8</link><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
@@ -3134,8 +3134,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 ]]></expres>
 <page></page>
 </regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
@@ -3168,8 +3168,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <cookieJar></cookieJar>
 </regex>
 
-<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
@@ -3199,9 +3199,9 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <referer></referer>
 <cookieJar></cookieJar>
 </regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/247.jpg</thumbnail>
-<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/247.jpg</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
@@ -3255,9 +3255,9 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<thumbnail>http://blackaddon.rf.gd/gray/img/adryflix.jpg</thumbnail><fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
-<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/adryflix.jpg</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
@@ -3278,8 +3278,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
-<title>Futurama Random </title> <link>http://4.sendvid.com/cx1ihlnd.mp4/</link><thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<title>Futurama Random </title> <link>http://4.sendvid.com/cx1ihlnd.mp4/</link><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
@@ -3324,8 +3324,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 ]]></expres>
 <page></page>
 </regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
@@ -3366,8 +3366,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <expres>plugin://plugin.video.youtube/play/?video_id=R6MlUcmOul8</expres>
 <page></page>
 </regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
@@ -3386,8 +3386,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 ]]></expres>
 <page></page>
 </regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
@@ -3477,8 +3477,8 @@ class InputWindow(xbmcgui.WindowDialog):
 ]]></expres>
 <page></page>
 </regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
@@ -3567,8 +3567,8 @@ class InputWindow(xbmcgui.WindowDialog):
 ]]></expres>
 <page></page>
 </regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
@@ -3658,8 +3658,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <agent>Mozilla/5.0 (Windows NT 6.1; rv:14.0) Gecko/20100101 Firefox/14.0.1</agent>
 <cookieJar></cookieJar>
 </regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
@@ -3778,8 +3778,8 @@ class InputWindow(xbmcgui.WindowDialog):
 ]]></expres>
 <page></page>
 </regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
@@ -3797,16 +3797,16 @@ class InputWindow(xbmcgui.WindowDialog):
 def GetLSProData(page_data,Cookie_Jar,m):
   import xbmc
   xbmc.executebuiltin("XBMC.Notification(BlackGhost,[B]Donaciones: al Paypal adrian.bu@gmail.com[/B] ,10000)")
-  return 'http://blackaddon.rf.gd/gray/multicanales.xml'
+  return 'https://raw.githubusercontent.com/blackghostaddon/gray/master/multicanales.xml'
 ]]></expres>
 <page></page>
 </regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
 
- http://blackaddon.rf.gd/gray/cita.php
+ https://raw.githubusercontent.com/blackghostaddon/gray/master/cita.php
 
 
  <item>
@@ -3815,14 +3815,14 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>prog</name>
 <expres><![CDATA[cita:"(.+)"]]></expres>
-<page>http://blackaddon.rf.gd/gray/cita.php</page>
+<page>https://raw.githubusercontent.com/blackghostaddon/gray/master/cita.php</page>
 <agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:49.0) Gecko/20100101 Firefox/49.0</agent>
 <referer></referer>
 </regex>
 
 
-<thumbnail>http://blackaddon.rf.gd/gray/img/donacion.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/donacion.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
 </item>
 
@@ -3836,10 +3836,10 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>get_key</name>
 <expres>Agent:"(.*?)"</expres>
-<page>http://blackaddon.rf.gd/gray/tokenv.php</page>
+<page>https://raw.githubusercontent.com/blackghostaddon/gray/master/tokenv.php</page>
 </regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/donacion.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/donacion.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
 </item>
 
@@ -3853,11 +3853,11 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>get_key</name>
 <expres>Agent:"(.*?)"</expres>
-<page>http://blackaddon.rf.gd/gray/tokenv.php</page>
+<page>https://raw.githubusercontent.com/blackghostaddon/gray/master/tokenv.php</page>
 </regex>
 
-<thumbnail>http://blackaddon.rf.gd/gray/img/donacion.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/donacion.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
 </item>
 
@@ -3867,8 +3867,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <title>[lkjkj</title>
 <link>http://vnode0079.pulsedmedia.com/public-llave1/foxsports3.php</link>
 
-<thumbnail>http://blackaddon.rf.gd/gray/img/donacion.png</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/donacion.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
 </item>
 
