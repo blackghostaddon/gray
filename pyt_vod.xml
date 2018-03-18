@@ -2443,30 +2443,10 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-  <iem>
-<title>[B]TotalShow Movies[/B] [I]  [/I] </title>
-<link>http://ignora.me</link>
-<externallink>https://pastebin.com/raw/qkdjae9e</externallink>
-<fanart>http://fotonin.com/data_images/out/5/776482-cool-movie-wallpaper.jpg</fanart>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail>
-<info></info>
-</item>
-
-
-<item>
-<title>[B]Peliculas Gratis[/B] [I]  [/I] </title>
-<link>http://ignora.me</link>
-<externallink>https://pastebin.com/raw/TA8pPbGY</externallink>
-<fanart>http://fotonin.com/data_images/out/5/776482-cool-movie-wallpaper.jpg</fanart>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail>
-<info></info>
-</item>
-
-
   <item>
 <title>[B]Peliculas Sr.Regio[/B] [I]  [/I] </title>
 <link>http://ignora.me</link>
-<externallink>http://srregio.xyz/regioflix.m3u</externallink>
+<externallink>http://srregio.xyz/IPTV/regioflix.m3u</externallink>
 <fanart>http://fotonin.com/data_images/out/5/776482-cool-movie-wallpaper.jpg</fanart>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail>
 <info></info>
@@ -2482,14 +2462,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 
 
-   <item>
-<title>[B]Peliculas CeceGeek[/B] [I]  [/I] </title>
-<link>http://ignora.me</link>
-<externallink>http://cecegeek.com/movies.m3u</externallink>
-<fanart>http://fotonin.com/data_images/out/5/776482-cool-movie-wallpaper.jpg</fanart>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail>
-<info></info>
-</item>
+
 
 
 
@@ -2644,7 +2617,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
- <item>
+ <iem>
  <title>[B]SEEHD CLUB[/B]    VO    </title>
 
 
@@ -2749,7 +2722,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<item>
+<iem>
  <title>[B]HEVC MOVIES[/B]    VO    </title>
 <link>$doregex[makelist2]</link>
 
