@@ -25,7 +25,7 @@
 <regex>
 <name>GetPageUrl</name>
 <expres>source: '(.*?)'</expres>
-<page>http://livesports.pw/embedna.php?file=partidazo&amp;width=650&amp;height=397</page>
+<page>http://livesports.pw/embeddeporte.php?file=partidazo&amp;width=650&amp;height=397</page>
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
 <referer>http://cinestrenostv.tv/canales/envivo/plusseriesxtra.html</referer>
 </regex>
@@ -42,7 +42,7 @@
 <regex>
 <name>GetPageUrl</name>
 <expres>source: '(.*?)'</expres>
-<page>http://livesports.pw/embed.php?file=barliga&amp;width=650&amp;height=397</page>
+<page>http://livesports.pw/embeddeporte.php?file=barliga&amp;width=650&amp;height=397</page>
 <cookieJar></cookieJar>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/esp.png</thumbnail>   </item>
@@ -61,7 +61,7 @@
 <regex>
 <name>GetPageUrl</name>
 <expres>source: '(.*?)'</expres>
-<page>http://livesports.pw/embed.php?file=beinlaliga&amp;width=650&amp;height=397</page>
+<page>http://livesports.pw/embeddeporte.php?file=beinlaliga&amp;width=650&amp;height=397</page>
 <cookieJar></cookieJar>
 </regex>
 
@@ -85,7 +85,7 @@
 <regex>
 <name>GetPageUrl</name>
 <expres>source: '(.*?)'</expres>
-<page>http://livesports.pw/embed.php?file=beinsport&amp;width=650&amp;height=397</page>
+<page>http://livesports.pw/embeddeporte.php?file=beinsport&amp;width=650&amp;height=397</page>
 <cookieJar></cookieJar>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/esp.png</thumbnail>   </item>
@@ -104,7 +104,7 @@
 <regex>
 <name>GetPageUrl</name>
 <expres>source: '(.*?)'</expres>
-<page>http://livesports.pw/embed.php?file=teledeporteesp&amp;width=650&amp;height=397</page>
+<page>http://livesports.pw/embeddeporte.php?file=teledeporteesp&amp;width=650&amp;height=397</page>
 <cookieJar></cookieJar>
 </regex>
 
@@ -155,7 +155,7 @@
 <regex>
 <name>GetPageUrl</name>
 <expres>source: '(.*?)'</expres>
-<page>http://livesports.pw/embed.php?file=eurosportsdosesp&amp;width=650&amp;height=397</page>
+<page>http://livesports.pw/embeddeporte.php?file=eurosportsdosesp&amp;width=650&amp;height=397</page>
 <cookieJar></cookieJar>
 </regex>
 
@@ -175,7 +175,7 @@
 <regex>
 <name>GetPageUrl</name>
 <expres>source: '(.*?)'</expres>
-<page>http://livesports.pw/embed.php?file=eurosportsesp&amp;width=650&amp;height=397</page>
+<page>http://livesports.pw/embeddeporte.php?file=eurosportsesp&amp;width=650&amp;height=397</page>
 <cookieJar></cookieJar>
 </regex>
 
@@ -195,7 +195,7 @@
 <regex>
 <name>GetPageUrl</name>
 <expres>source: '(.*?)'</expres>
-<page>http://livesports.pw/embed.php?file=golfesp&amp;width=650&amp;height=397</page>
+<page>http://livesports.pw/embeddeporte.php?file=golfesp&amp;width=650&amp;height=397</page>
 <cookieJar></cookieJar>
 </regex>
 
@@ -215,7 +215,7 @@
 <regex>
 <name>GetPageUrl</name>
 <expres>source: '(.*?)'</expres>
-<page>http://livesports.pw/embed.php?file=motogpm&amp;width=650&amp;height=397</page>
+<page>http://livesports.pw/embeddeporte.php?file=motogpm&amp;width=650&amp;height=397</page>
 <cookieJar></cookieJar>
 </regex>
 
@@ -274,7 +274,7 @@
 <regex>
 <name>GetPageUrl</name>
 <expres>source: '(.*?)'</expres>
-<page>http://livesports.pw/embed.php?file=deporteone&amp;width=650&amp;height=397</page>
+<page>http://livesports.pw/embeddeporte.php?file=deporteone&amp;width=650&amp;height=397</page>
 <cookieJar></cookieJar>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/esp.png</thumbnail>   </item>
@@ -318,7 +318,7 @@
 <regex>
 <name>GetPageUrl</name>
 <expres>source: '(.*?)'</expres>
-<page>http://livesports.pw/embed.php?file=deportedosm&amp;width=650&amp;height=397</page>
+<page>http://livesports.pw/embeddeporte.php?file=deportedosm&amp;width=650&amp;height=397</page>
 <cookieJar></cookieJar>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/esp.png</thumbnail>   </item>
@@ -353,7 +353,7 @@
 <regex>
 <name>GetPageUrl</name>
 <expres>source: '(.*?)'</expres>
-<page>http://livesports.pw/embed.php?file=barca&amp;width=650&amp;height=397</page>
+<page>http://livesports.pw/embeddeporte.php?file=barca&amp;width=650&amp;height=397</page>
 <cookieJar></cookieJar>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/esp.png</thumbnail>   </item>
