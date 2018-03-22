@@ -10,13 +10,13 @@ def GetLSProData(page_data,Cookie_Jar,m):
    import xbmcgui
    dialog = xbmcgui.Dialog()
    ret = dialog.select('Seleciona una Lista ', ['BlackGhost', 'BlackGhost IZZI', 'ExabyteTV', 'TecnoTV', 'G67', 'Sr.RegioTV', 'PremierTV', 'GSat Latino', 'ChileIPTV'])
-   lists = ['http://blackaddon.rf.gd/gray/tecno.m3u', 'https://pastebin.com/raw/cyH7vTu8', 'http://exabytetv.info/lista.m3u', 'http://tecnotv.xyz/lista.m3u', 'https://raw.githubusercontent.com/G67/G/master/G67C.m3u', 'http://srregio.net/regiotv.m3u', 'http://www.premieriptv.cl/freeiptv.m3u', 'http://www.geantsat.com/freeiptv/s9.m3u', 'http://chileiptv.cl/cl.m3u']
+   lists = ['https://raw.githubusercontent.com/blackghostaddon/gray/tecno.m3u', 'https://pastebin.com/raw/cyH7vTu8', 'http://exabytetv.info/lista.m3u', 'http://tecnotv.xyz/lista.m3u', 'https://raw.githubusercontent.com/G67/G/master/G67C.m3u', 'http://srregio.net/regiotv.m3u', 'http://www.premieriptv.cl/freeiptv.m3u', 'http://www.geantsat.com/freeiptv/s9.m3u', 'http://chileiptv.cl/cl.m3u']
    return lists[ret]
 ]]></expres>
 <page></page>
 </regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/tp.jpg</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/img/tp.jpg</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/img/fanart.jpg</fanart>
 </item>
 
 
@@ -53,9 +53,9 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <item>
 <title>•  [B]TotalPlay[/B]  [ Opcion [B]IPTVCanales[/B] ][B]   [/B]  </title>
 <link>NA</link>2
-<externallink>http://blackaddon.rf.gd/gray/claro.m3u</externallink>
-<thumbnail>http://blackaddon.rf.gd/gray/img/tp.jpg</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart></item>
+<externallink>https://raw.githubusercontent.com/blackghostaddon/gray/claro.m3u</externallink>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/img/tp.jpg</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/img/fanart.jpg</fanart></item>
 
 
 
@@ -64,9 +64,9 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <item>
 <title>•  [B]TotalPlay[/B]  [ Opcion [B]Latinos fta[/B] ][B]   [/B]  </title>
 <link>NA</link>2
-<externallink>http://blackaddon.rf.gd/gray/fta2.m3u</externallink>
-<thumbnail>http://blackaddon.rf.gd/gray/img/tp.jpg</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart></item>
+<externallink>https://raw.githubusercontent.com/blackghostaddon/gray/fta2.m3u</externallink>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/img/tp.jpg</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/img/fanart.jpg</fanart></item>
 
 
 
@@ -76,8 +76,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 		<title>•  [B]TotalPlay[/B]  [ Opcion [B]TecnoTV[/B] ][B]  [/B]  </title>
 <link>NA</link>
 <externallink>http://tecnotv.xyz/lista.m3u</externallink>
- 			<thumbnail>http://blackaddon.rf.gd/gray/img/tp.jpg</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart></item>
+ 			<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/img/tp.jpg</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/img/fanart.jpg</fanart></item>
 
 
 
@@ -85,16 +85,16 @@ def GetLSProData(page_data,Cookie_Jar,m):
 		<title>•  [B]TotalPlay[/B]  [ Opcion [B]Regio[/B] ][B]  [/B]  </title>
 <link>NA</link>
 <externallink>http://srregio.xyz/regiotv.m3u</externallink>
- 			<thumbnail>http://blackaddon.rf.gd/gray/img/tp.jpg</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart></item>
+ 			<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/img/tp.jpg</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/img/fanart.jpg</fanart></item>
 
 
 <item>
 <title>•  [B]TotalPlay[/B]  [ Opcion [B]Fanstv[/B] ][B]   [/B]  </title>
 <link>NA</link>2
-<externallink>http://blackaddon.rf.gd/gray/fanstv.m3u</externallink>
-<thumbnail>http://blackaddon.rf.gd/gray/img/tp.jpg</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart></item>
+<externallink>https://raw.githubusercontent.com/blackghostaddon/gray/fanstv.m3u</externallink>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/img/tp.jpg</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/img/fanart.jpg</fanart></item>
 
 
 
@@ -102,8 +102,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <title>•  [B]TotalPlay[/B]  [ Opcion [B]CECETV[/B] ][B]   [/B]  </title>
 <link>NA</link>2
 <externallink>https://cecegeek.com/cecetv.m3u</externallink>
-<thumbnail>http://blackaddon.rf.gd/gray/img/tp.jpg</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/img/tp.jpg</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/img/fanart.jpg</fanart></item>
 
 
 
@@ -117,9 +117,9 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <item>
 <title>•  [B]TotalPlay[/B]  [ Opcion [B]temp2[/B] ][B]   [/B]  </title>
 <link>NA</link>2
-<externallink>http://blackaddon.rf.gd/gray/temp2.m3u</externallink>
-<thumbnail>http://blackaddon.rf.gd/gray/img/tp.jpg</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart></item>
+<externallink>https://raw.githubusercontent.com/blackghostaddon/gray/temp2.m3u</externallink>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/img/tp.jpg</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/img/fanart.jpg</fanart></item>
 
 
 
@@ -136,8 +136,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <title>•  [B]TotalPlay[/B]  [ Opcion [B]ChileIPTV[/B] ][B]   [/B]  </title>
 <link>NA</link>2
 <externallink>http://chileiptv.cl/cl.m3u</externallink>
-<thumbnail>http://blackaddon.rf.gd/gray/img/tp.jpg</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/img/tp.jpg</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/img/fanart.jpg</fanart></item>
 
 
 
@@ -150,8 +150,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <listrepeat><![CDATA[
 	<title>[makelist.param1]</title>
 	<link>[makelist.param2]</link>
-<thumbnail>http://blackaddon.rf.gd/gray/img/tp.jpg</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/img/tp.jpg</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/img/fanart.jpg</fanart>
 ]]></listrepeat>
 <expres>#EXTINF:-.*?,(.*)\n.*?(?=http|rtmp|rtsp|mms)(.*[\d|\w])</expres>
 <page>http://www.rochaiptv.ml/lista.m3u</page>
@@ -160,10 +160,10 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 <name>it</name>
 <expres>Agent:"(.*?)";</expres>
-<page>http://blackaddon.rf.gd/gray/fuckit.php</page>
+<page>https://raw.githubusercontent.com/blackghostaddon/gray/fuckit.php</page>
 </regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/tp.jpg</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/img/tp.jpg</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/img/fanart.jpg</fanart>
 </item>
 
 
@@ -201,8 +201,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <origin>http://tvplayerlatino.com/envivo/</origin>
 </regex>
 <thumbnail>[makelist.param2]</thumbnail>
-<thumbnail>http://blackaddon.rf.gd/gray/img/tp.jpg</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/img/tp.jpg</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/img/fanart.jpg</fanart>
 ]]></listrepeat>
 <expres>href="(.*?)"[\w\W\s]{0,40}background-image:url\((.*?)\)"[\w\W\s]{0,60}titulo">(.*?)<[\w\W\s]{0,30}programa">(.*?)<[\w\W\s]{0,30}sinopsis">(.*?)<</expres>
 <page>http://tvplayerlatino.com/envivo/</page>
@@ -226,18 +226,18 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page>http://service.app.mxl-iptv.tv:8080/api/mxl-iptv/listas/token/get?dato1=IF0gnhFd91LyX0fRTMfzZQ/1KyYXfwNmBVCCA4ndqVe4w/KvJq2/VQsNT%2B6sQGY6IhGW2IdseKt7i1COCbtJ/g%3D%3D&amp;dato2=DnVyFHRhPNWhlva%2BfHqWhe8JwXTvJxTa4I57Xq06AvHoLMx7Iw70MiFTGw/AVL6Ld5R5qu6X%2Bb5YeJqtFgdwWA%3D%3D&amp;type=SG2Fen1Je8n5zeW4ZXlkkWXpbGR5qIQ0/GJYO1yVnnDsOL4hTanwxeZ3LdwsVoVYf8apFbFPvnEYwww8nvRKpw%3D%3D&amp;canal=Xcx%2BJAn52w5cuiqqOIfsLYoUo%2B8CDW2Hg%2BuWtYEWwCrnCJ%2B4RSJb7kOrdyQhJRdi5FE9qEa6Qu7LPWMpeJKuZA%3D%3D</page>
 </regex>
 
-<thumbnail>http://blackaddon.rf.gd/gray/img/tp.jpg</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/img/tp.jpg</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/img/fanart.jpg</fanart>
 
 
    ]]></listrepeat>
    <expres>nombre":"(.*?)".*?script\/tv\/(.*?)\/(.*?)"</expres>
-   <page>http://blackaddon.rf.gd/gray/mxl.txt</page>
+   <page>https://raw.githubusercontent.com/blackghostaddon/gray/mxl.txt</page>
    <cookieJar></cookieJar>
 </regex>
 
-<thumbnail>http://blackaddon.rf.gd/gray/img/tp.jpg</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/img/tp.jpg</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/img/fanart.jpg</fanart>
 </item>
 
 
@@ -372,14 +372,14 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <listrepeat><![CDATA[
 <title>  [makelist.param1]   </title>
 <link>NA</link><externallink>http://exabytetv.info/[makelist.param1].m3u</externallink>
-<thumbnail>http://blackaddon.rf.gd/gray/img/tp.jpg</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/img/tp.jpg</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/img/fanart.jpg</fanart>
 ]]></listrepeat>
 <expres>http:\/\/tecnotv.info\/(.*?).m3u</expres>
 <page>http://tecnotv.info/lremotas.htm</page>
 </regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/tp.jpg</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/img/tp.jpg</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/img/fanart.jpg</fanart>
 </item>
 
 
@@ -392,15 +392,15 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <listrepeat><![CDATA[
 <title>  [makelist.param1]   </title>
 <link>NA</link><externallink>http://exabytetv.info/[makelist.param1].m3u</externallink>
-<thumbnail>http://blackaddon.rf.gd/gray/img/tp.jpg</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/img/tp.jpg</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/img/fanart.jpg</fanart>
 ]]></listrepeat>
 <expres>http:\/\/exabytetv.info\/(.*?).m3u</expres>
 <page>http://blog.exabytetv.info/listas/</page>
 <agent>Mozilla/5.0 (iPad; CPU OS 5_1 like Mac OS X; en-us) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.1 Mobile/9B176 Safari/7534.48.3</agent>
 </regex>
-<thumbnail>http://blackaddon.rf.gd/gray/img/tp.jpg</thumbnail>
-<fanart>http://blackaddon.rf.gd/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/img/tp.jpg</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/img/fanart.jpg</fanart>
 </item>
 
 
@@ -427,7 +427,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>[makelist.param2]</thumbnail>
 ]]></listrepeat>
 <expres>#EXT[\w\W\s]{0,10}tvg-id="(.*?)"[\w\W\s]{0,10}logo="(.*?)",(.*?)\n(.*)</expres>
-<page>http://blackaddon.rf.gd/gray/tp.m3u</page>
+<page>https://raw.githubusercontent.com/blackghostaddon/gray/tp.m3u</page>
 </regex>
 
 <regex>
@@ -520,7 +520,7 @@ def GetLSProData(page_data,Cookie_Jar,m,):
 <listrepeat><![CDATA[
 <title>[B][makelist.param1][/B][makelist.param2] [makelist.param3]        </title>
 <link>$doregex[ip]|User-Agent=iPad</link>
-<thumbnail>http://blackaddon.rf.gd/gray/img/entretenimiento.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/img/entretenimiento.png</thumbnail>
 ]]></listrepeat>
 <expres><![CDATA[h3>(.*?)<|time">(.*?)<.*\n.*name">(.*?)<]]></expres>
 <page>https://www.entutele.com/programacion/todos</page>
