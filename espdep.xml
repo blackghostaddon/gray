@@ -229,13 +229,13 @@
 
 
 <item>
-<title>[UPPERCASE][COLOR skyblue] Formula 1  [/UPPERCASE][/COLOR] </title>
+<title>[UPPERCASE][COLOR skyblue] Formula 1 updated  [/UPPERCASE][/COLOR] </title>
 
 <link>$doregex[GetPageUrl]|User-Agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+rv%3A11.0%29+like+Gecko</link>
 <regex>
 <name>GetPageUrl</name>
 <expres>source: '(.*?)'</expres>
-<page>http://livesports.pw/embed.php?file=funoesp&amp;width=650&amp;height=397</page>
+<page>http://livesports.pw/embeddeporte.php?file=funoesp&amp;width=650&amp;height=397</page>
 <cookieJar></cookieJar>
 </regex>
 
