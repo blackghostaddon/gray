@@ -69,7 +69,6 @@
 
 
 
-
 <item>
 <title>[UPPERCASE][COLOR skyblue] Antena 3[/UPPERCASE][/COLOR] </title>
 <link>http://a3live-lh.akamaihd.net/i/antena3_1@35248/index_1_av-p.m3u8?sd=10&rebase=on</link>
@@ -117,7 +116,17 @@
 <thumbnail>http://adryanlist.org/adryan/img/esp.jpg</thumbnail>   </item>
 
 
+ <item>
+<title>[UPPERCASE][COLOR skyblue] cuatro[/UPPERCASE][/COLOR] </title>
+<link>https://livehlsdai-i.akamaihd.net/hls/live/571643/cuatro/bitrate_1.m3u8</link>
+<thumbnail>http://adryanlist.org/adryan/img/esp.jpg</thumbnail>   </item>
 
+
+
+ <item>
+<title>[UPPERCASE][COLOR skyblue] cuatro[/UPPERCASE][/COLOR] </title>
+<link>http://cuatro-mediaset-esp-live.secure.footprint.net/mediaset/cuatro/stream2/streamPlaylist.m3u8</link>
+<thumbnail>http://adryanlist.org/adryan/img/esp.jpg</thumbnail>   </item>
 
 
 
@@ -169,20 +178,22 @@
 
 
 
+<item>
+<title>[UPPERCASE][COLOR skyblue] telecinco[/UPPERCASE][/COLOR] </title>
+<link>https://livehlsdai-i.akamaihd.net/hls/live/571640/telecinco/bitrate_1.m3u8</link>
+<thumbnail>http://adryanlist.org/adryan/img/esp.jpg</thumbnail>   </item>
 
-
-
+<item>
+<title>[UPPERCASE][COLOR skyblue] telecinco[/UPPERCASE][/COLOR] </title>
+<link>http://telecinco-mediaset-esp-live.secure.footprint.net/mediaset/telecinco/stream2/streamPlaylist.m3u8</link>
+<thumbnail>http://adryanlist.org/adryan/img/esp.jpg</thumbnail>   </item>
 
 
 
 
 <item>
 <title>[UPPERCASE][COLOR skyblue] Mega[/UPPERCASE][/COLOR] </title>
-
 <link>http://a3live-lh.akamaihd.net/i/mghds/geomega_1@328914/index_1_av-b.m3u8?</link>
-
-
-
 <thumbnail>http://adryanlist.org/adryan/img/esp.jpg</thumbnail>   </item>
 
 
