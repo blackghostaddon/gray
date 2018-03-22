@@ -476,14 +476,13 @@
 <item>
 <title>Caracol HD</title>
 <link>https://vivoplay-i.akamaihd.net/hls/live/253482/canal1/master2500k.m3u8</link>
-
+	
 <thumbnail>http://noticias.caracoltv.com/sites/default/files/logo_caracol.png</thumbnail></item>
 
 
   <item>
 <title>Caracol HD</title>
 <link>http://mdstrm.com/live-stream-playlist/58dc3d471cbe05ff3c8e463e.m3u8?</link>
-
 <thumbnail>http://noticias.caracoltv.com/sites/default/files/logo_caracol.png</thumbnail></item>
 
 
@@ -536,7 +535,7 @@
 </regex>
 <thumbnail>http://noticias.caracoltv.com/sites/default/files/logo_caracol.png</thumbnail></item>
 
-   <iem>
+   <item>
 <title>Caracol  (zenex)</title>
 <link>http://$doregex[ip]$doregex[m3u8]$doregex[hls]</link>
 			<regex>
@@ -589,12 +588,12 @@
 
 
 
-
-
   <item>
 <title>RCN  hd</title>
-<link>http://canalrcnhd.cdn.net.co/hlsme/envivo01_sdhigh/index.m3u8</link>
+<link>http://mdstrm.com/live-stream-playlist/58dc3d471cbe05ff3c8e463e.m3u8</link>
  </item>
+
+
 
   <item>
 <title>RCN  hd</title>
@@ -638,7 +637,7 @@
 
 
 
-  <iem>
+  <item>
 <title>RCN  (zenex)</title>
 <link>http://$doregex[ip]$doregex[m3u8]</link>
 			<regex>
