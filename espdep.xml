@@ -133,6 +133,17 @@
 
 
 
+<item>
+<title>[UPPERCASE][COLOR skyblue] Liga 123 [/UPPERCASE][/COLOR] </title>
+<link>$doregex[get-id]|User-Agent=iPad&amp;Referer=http://vergol.com/live3/liga123.php</link>
+<regex>
+<name>get-id</name>
+<expres>source: '(.*?)'</expres>
+<page>http://vergol.com/live3/liga123.php</page>
+<referer>http://vertelevisor.com/tv/deportes/liga123.php</referer>
+<agent>iPad</agent>
+</regex>
+<thumbnail>http://adryanlist.org/adryan/img/esp.jpg</thumbnail> </item>
 
 
 
