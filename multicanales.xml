@@ -25,7 +25,7 @@
 
 
  <item>
-<title>[B]EVENTO LIGA MX 2018 opciones 1 [/B]      </title>
+<title>[B]PARTIDOS AMISTOSOS MULTICANAL opciones 1 [/B]      </title>
 <link>$doregex[bro.adca.st]</link>
 
 
@@ -67,7 +67,47 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 
 
-http://bro.adca.st/chinchan.php
+ <item>
+<title>[B]PARTIDOS AMISTOSOS MULTICANAL opciones 2 [/B]      </title>
+<link>$doregex[bro.adca.st]</link>
+
+
+<regex>
+<name>bro.adca.st</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/$doregex[select].html'):
+ import requests, re, urllib
+ headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:52.0) Gecko/20100101 Firefox/52.0'}
+ headers['Referer'] = 'http://vipracing.info/channel/canal-2'
+ source = requests.get(url, headers=headers)
+ m3u8 = re.findall('tambor = "(.+?)"', source.text)[0]
+ tokenpage = re.findall('firme = "\/(.+?)"', source.text)[0]
+ headers['Referer'] = url
+ headers['X-Requested-With'] = 'XMLHttpRequest'
+ headers['Accept'] = 'application/json, text/javascript, */*; q=0.01'
+ headers['Accept-Language'] = 'en-US,en;q=0.5'
+ source = requests.get('http://bro.adca.st/%s'%tokenpage, headers=headers)
+ m3u8 = m3u8 + re.findall(':"(.+?)"', source.text)[0] + '|User-Agent=%s&Referer=http://bro.adca.st/&Origin=http://bro.adca.st'%headers['User-Agent']
+ return m3u8
+]]></expres>
+<page></page>
+</regex>
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+   import xbmcgui
+   dialog = xbmcgui.Dialog()
+   ret = dialog.select('Elige un Canal ', ['OPCION 5523', 'OPCION 7386', 'OPCION 7387', 'OPCION 21611', 'OPCION 21675', 'OPCION 22612', 'OPCION 23911'])
+   lists = ['5523', '7386', '7387', '21611', '21675', '22612', '23911']
+   return lists[ret]
+]]></expres>
+<page></page>
+</regex>
+
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail>
+
+</item>
 
 
 
@@ -360,6 +400,27 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/13137.h
 
 
 
+
+		
+		<item>
+<title>Multicanal VIP03</title>
+<link>http://$doregex[ip]/live/$doregex[get].m3u8?token=$doregex[token]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64; rv:56.0) Gecko/20100101 Firefox/56.0&amp;Referer=http://privatehd.pw/PLAYER.php?a=844</link>
+<regex>
+<name>get</name>
+<expres>var name     = '(.*?)\'</expres>
+<page>http://privatehd.pw/PLAYER.php?a=1199&amp;id=1199</page>
+</regex>
+<regex>
+<name>ip</name>
+<expres>edgeserverip = '(.*?)'</expres>
+<page>http://privatehd.pw/PLAYER.php?a=1199&amp;id=1199</page>
+</regex>
+<regex>
+<name>token</name>
+<expres>token=(.*?)";</expres>
+<page>http://privatehd.pw/PLAYER.php?a=1199&amp;id=1199</page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
