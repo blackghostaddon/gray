@@ -15,8 +15,8 @@
 			<regex>
 			<name>hash</name>
 			<expres>this.loadPlayer\("(.*?)"</expres>
-			<page>http://arenavision2018.ga/$doregex[canal]</page>
-			<referer>http://arenavision2018.ga</referer>
+			<page>http://arenavision2018.tk/$doregex[canal]</page>
+			<referer>http://arenavision2018.tk</referer>
 			<setcookie>beget=begetok</setcookie>
 			</regex>
 				<regex>
@@ -31,7 +31,7 @@
 <expres><![CDATA[style13">(.*?)<[\w\W\s]{0,32}">(.*?)CET[\w\W\s]{0,35}">(.*?)<[\w\W\s]{0,32}">(.*?)<[\w\W\s]{0,32}">(.*?)<[\w\W\s]{0,32}"(>[0-9]+)]]></expres>
 <page>http://arenavision.in/guide</page>
 <Agent>Mozilla</Agent>
-<referer>http://arenavision2018.ga</referer>
+<referer>http://arenavision2018.tk</referer>
 <setcookie>beget=begetok</setcookie>
  </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/acestreams.png</thumbnail>
@@ -54,8 +54,8 @@
 			<regex>
 			<name>hash</name>
 			<expres>this.loadPlayer\("(.*?)"</expres>
-			<page>http://arenavision2018.ga/$doregex[canal]</page>
-			<referer>http://arenavision2018.ga</referer>
+			<page>http://arenavision2018.tk/$doregex[canal]</page>
+			<referer>http://arenavision2018.tk</referer>
 			<setcookie>beget=begetok</setcookie>
 			</regex>
 				<regex>
@@ -70,7 +70,7 @@
 <expres><![CDATA[style13">(.*?)<[\w\W\s]{0,32}">(.*?)CET[\w\W\s]{0,35}">(.*?)<[\w\W\s]{0,32}">(.*?)<[\w\W\s]{0,32}">(.*?)<[\w\W\s]{0,32}"(>[0-9]+)]]></expres>
 <page>http://arenavision.ru/guide</page>
 <Agent>Mozilla</Agent>
-<referer>http://arenavision2018.ga</referer>
+<referer>http://arenavision2018.tk</referer>
 <setcookie>beget=begetok</setcookie>
  </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/acestreams.png</thumbnail>
@@ -105,8 +105,8 @@
 			<regex>
 			<name>hash</name>
 			<expres>this.loadPlayer\("(.*?)"</expres>
-			<page>http://arenavision2018.ga/$doregex[canal]</page>
-			<referer>http://arenavision2018.ga</referer>
+			<page>http://arenavision2018.tk/$doregex[canal]</page>
+			<referer>http://arenavision2018.tk</referer>
 			<setcookie>beget=begetok</setcookie>
 			</regex>
 				<regex>
@@ -121,7 +121,7 @@
 <expres><![CDATA[style13">(.*?)<[\w\W\s]{0,32}">(.*?)CET[\w\W\s]{0,35}">(.*?)<[\w\W\s]{0,32}">(.*?)<[\w\W\s]{0,32}">(.*?)<[\w\W\s]{0,32}"(>[0-9]+)]]></expres>
 <page>http://www.arenavision.top/guide</page>
 <Agent>Mozilla</Agent>
-<referer>http://arenavision2018.ga</referer>
+<referer>http://arenavision2018.tk</referer>
 <setcookie>beget=begetok</setcookie>
  </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/acestreams.png</thumbnail>
@@ -152,8 +152,8 @@
 			<regex>
 			<name>hash</name>
 			<expres>this.loadPlayer\("(.*?)"</expres>
-			<page>http://arenavision2018.ga/$doregex[canal]</page>
-			<referer>http://arenavision2018.ga</referer>
+			<page>http://arenavision2018.tk/$doregex[canal]</page>
+			<referer>http://arenavision2018.tk</referer>
 			<setcookie>beget=begetok</setcookie>
 			</regex>
 				<regex>
@@ -168,7 +168,7 @@
 <expres><![CDATA[style13">(.*?)<[\w\W\s]{0,32}">(.*?)CET[\w\W\s]{0,35}">(.*?)<[\w\W\s]{0,32}">(.*?)<[\w\W\s]{0,32}">(.*?)<[\w\W\s]{0,32}"(>[0-9]+)]]></expres>
 <page>http://www.arenavision.us/guide</page>
 <Agent>Mozilla</Agent>
-<referer>http://arenavision2018.ga</referer>
+<referer>http://arenavision2018.tk</referer>
 <setcookie>beget=begetok</setcookie>
  </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/acestreams.png</thumbnail>
