@@ -1316,7 +1316,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
-<title>[B]MIRATODO[/B]  Estrenos   </title>
+<title>[B]MIRATODO[/B]  Estrenos updated   </title>
 <link>$doregex[makelist0]</link>
 
 
@@ -1384,12 +1384,12 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>makelist3</name>
 <listrepeat><![CDATA[
 <SetViewMode>55</SetViewMode>
-<title>[makelist0.param3]   Server:[B][makelist3.param1] [/B]</title>
+<title>[makelist0.param3]   Server:[B][makelist3.param2] [/B]</title>
 <link>$doregex[id3]</link>
    <thumbnail>[makelist0.param2]</thumbnail>
 <fanart>[makelist0.param2]</fanart>
 ]]></listrepeat>
-<expres><![CDATA[io\/api\/(.*?)\.php.*?id=(.*?)\&sub]]></expres>
+<expres><![CDATA[a\sref="(.*?)"[\w\W\s]{0,120}<span>(.*?)<]]></expres>
 <page>[makelist2.param2]</page>
 </regex>
 
@@ -1414,8 +1414,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <regex>
 <name>uno</name>
-<expres>$pyFunction:base64.b64decode('[makelist3.param2]')</expres>
-<page></page>
+<expres>iframe\ssrc="(.*?)"</expres>
+<page>[makelist3.param1]</page>
 </regex>
 
 
