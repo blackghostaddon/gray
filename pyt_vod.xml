@@ -1571,10 +1571,10 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>makelist3</name>
 <listrepeat><![CDATA[
 <title>[makelist3.param2]</title>
- <link>$doregex[finalURL]|User-Agent=iPad</link>
+ <link>$doregex[finalURL]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64; rv:56.0) Gecko/20100101 Firefox/56.0&amp;Referer=http://cine.cinevall.club</link>
  <regex>
 <name>finalURL</name>
-<expres>file: '(.*?)'</expres>
+<expres>file: \'(.*?)\'</expres>
 <page>http://cine.cinevall.club/[makelist3.param1].html</page>
 <referer>http://www.cinevall.club/estrenos.html</referer>
 </regex>
