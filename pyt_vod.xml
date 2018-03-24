@@ -1562,7 +1562,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
    <item>
-<title>[B]CINEVALL[/B]  ESTRENOS [Audio Latino]  </title>
+<title>[B]CINEVALL[/B]  ESTRENOS [Audio Latino] * </title>
 
   <link>$doregex[makelist3]</link>
 
@@ -1576,6 +1576,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>finalURL</name>
 <expres>file: '(.*?)'</expres>
 <page>http://cine.cinevall.club/[makelist3.param1].html</page>
+<referer>http://www.cinevall.club/estrenos.html</referer>
 </regex>
 <thumbnail>http://www.cinevall.club/[makelist3.param3]</thumbnail>
  </item>
