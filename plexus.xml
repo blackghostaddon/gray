@@ -59,7 +59,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 			<regex>
 			<name>hash</name>
 			<expres>this.loadPlayer\("(.*?)"</expres>
-			<page>http://arenavision2018.ga/$doregex[canal]</page>
+			<page>http://arenavision2018.tk/$doregex[canal]</page>
 			<referer>https://arenavision.us/</referer>
 			<setcookie>beget=begetok</setcookie>
 			</regex>
@@ -122,7 +122,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 			<regex>
 			<name>hash</name>
 			<expres>this.loadPlayer\("(.*?)"</expres>
-			<page>http://arenavision2018.ga/$doregex[canal]</page>
+			<page>http://arenavision2018.tk/$doregex[canal]</page>
 			<referer>http://arenavision2017.tk/</referer>
 			<setcookie>beget=begetok</setcookie>
 			</regex>
@@ -350,8 +350,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 			<regex>
 			<name>hash</name>
 			<expres>this.loadPlayer\("(.*?)"</expres>
-			<page>http://arenavision2018.ga/$doregex[select]</page>
-			<referer>http://arenavision2018.ga</referer>
+			<page>http://arenavision2018.tk/$doregex[select]</page>
+			<referer>http://arenavision2018.tk</referer>
 			<setcookie>beget=begetok</setcookie>
 			</regex>
 
@@ -385,8 +385,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 			<regex>
 			<name>hash</name>
 			<expres>this.loadPlayer\("(.*?)"</expres>
-			<page>http://arenavision2018.ga/[makelist.param1]</page>
-			<referer>http://arenavision2018.ga</referer>
+			<page>http://arenavision2018.tk/[makelist.param1]</page>
+			<referer>http://arenavision2018.tk</referer>
 			<setcookie>beget=begetok</setcookie>
 			</regex>
  <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/acestreams.png</thumbnail>
