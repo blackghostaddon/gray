@@ -9,7 +9,7 @@
 <fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart></item>
 
 <item>
-<title>[B]NECESITO DE SU APOYO PARA HACER QUE FUNCIONE Y REGRESE A LA NORMALIDAD[/B]</title>
+<title>[B]APOYA ESTE PROYECTO MEDIANTE UNA DONACION[/B]</title>
 <link>NA</link>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/paypal.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart></item>
 
@@ -25,6 +25,12 @@
 <title>Deportes</title>
 <link>http://ignorame</link><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 <externallink>https://raw.githubusercontent.com/blackghostaddon/gray/master/deportes.xml</externallink>
+</item>
+
+<item>
+<title>Extratime</title>
+<link>http://ignorame</link><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/extratime.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
+<externallink>https://raw.githubusercontent.com/blackghostaddon/gray/master/multicanales.xml</externallink>
 </item>
 
 
