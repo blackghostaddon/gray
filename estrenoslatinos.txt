@@ -4,15 +4,13 @@
 
 
 
-
-
-
-
-
+Estrenos:"Proud_mary" url:"https://streamango.com/f/slrrlcmekrbbatcn/Proud_mary_2018_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
+Estrenos:"Phantom_thread" url:"https://streamango.com/f/qqckqrtdspodtmff/Phantom_thread_2017_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
+Estrenos:"Mollys_game" url:"https://streamango.com/f/tebptdmlbksdndke/Mollys_game_2017_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
+Estrenos:"Tadeo_jones_2_el_secreto_del_rey_midas" url:"https://streamango.com/f/afnbrbdqtndaqkea/Tadeo_jones_2_el_secreto_del_rey_midas_2018_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
 Estrenos:"Roxanne_roxanne" url:"https://streamango.com/f/kqeabaocntatppna/Roxanne_roxanne_2017_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
 Estrenos:"Megan_leavey" url:"https://streamango.com/f/obakrknpflloscnr/Megan_leavey_2017_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
 Estrenos:"All_the_money_in_the_world" url:"https://streamango.com/f/rfkmklbqopebdbkf/All_the_money_in_the_world_2017_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
-
 Estrenos:"The_greatest_showman" url:"https://streamango.com/f/dlpeketnlflbotce/The_greatest_showman_2017_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
 Estrenos:"Benji" url:"https://streamango.com/f/bpoelbpfcepdppnr/Benji_2018_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
 Estrenos:"About_ray" url:"https://streamango.com/f/enrplscctesnmokd/About_ray_2015_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
@@ -131,7 +129,7 @@ Estrenos:"" url:"
 
 
 
-EstrenosESP:"" url:"
+EstrenosESP:"" url:"   
 
 
 
@@ -139,9 +137,11 @@ EstrenosESP:"" url:"
 
 
 
-
-
-
+EstrenosESP:"Suburbicon" url:" https://streamango.com/f/ebndsepbntmssdok/Suburbicon_2017_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
+EstrenosESP:"Tadeo_jones_2_el_secreto_del_rey_midas" url:" https://streamango.com/f/bosmdblkotdnndlt/Tadeo_jones_2_el_secreto_del_rey_midas_2018_1080p-cast-cinecalidad_to_mp4" server:"Streamango"
+EstrenosESP:"First_match" url:" https://streamango.com/f/lstqaroeockbropm/First_match_2018_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
+EstrenosESP:"Benji" url:" https://streamango.com/f/ktbacoslnforopbl/Benji_2018_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
+EstrenosESP:"Star_wars_episode_VIII_the_last_jedi" url:" https://streamango.com/f/onamqdsnmkrodoot/Star_wars_episode_VIII_the_last_jedi_2017_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
 EstrenosESP:"A_ghost_story" url:"https://streamango.com/f/pebofccrbqfeatqm/A_ghost_story_2017_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
 EstrenosESP:"The_lovers" url:"https://streamango.com/f/lptfpesotqnfpflb/The_lovers_2017_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
 EstrenosESP:"The_nut_job_2_nutty_by_nature" url:"https://streamango.com/f/mmcscqafsfdsrnkd/The_nut_job_2_nutty_by_nature_2017_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
