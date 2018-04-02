@@ -1531,18 +1531,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-
-server="www.zony.tv" pub="cdn.pubzony.com"
-
-12 channel='uttrfgr4' src='http://www.zony.tv
-16 channel='uredfcv' http://www.zony.tv/static/scripts/hzony.js'>
-14 channel='hgyytgfr4  src='http://www.ucasterplayer.com
-13 channel='iuhhy6' src='http://www.ezcast.tv
-
-
-
-
-
 <item>
 <title>[B]Multicanal ELGoles[/B]     12    </title>
   <link>http://$doregex[ip]$doregex[m3u8]$doregex[hls]</link>
@@ -1575,7 +1563,6 @@ server="www.zony.tv" pub="cdn.pubzony.com"
 			<expres>href="(.*?)">canal-12<</expres>
 			<page>http://elgoles.ru/</page>
 			</regex>
-
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
@@ -1611,10 +1598,81 @@ server="www.zony.tv" pub="cdn.pubzony.com"
 			<expres>href="(.*?)">canal-16<</expres>
 			<page>http://elgoles.ru/</page>
 			</regex>
-
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
+<item>
+<title>[B]Multicanal ELGoles[/B]     18    </title>
+  <link>http://$doregex[ip]$doregex[m3u8]$doregex[hls]</link>
+			<regex>
+			<name>ip</name>
+			<expres>redirect=(.*)</expres>
+			<page>http://cdn.pubzony.com:1935/loadbalancer</page>
+			</regex>
+			<regex>
+			<name>m3u8</name>
+			<expres>ea \+ "(.*?)"</expres>
+			<page>http://www.zony.tv/membedplayer/$doregex[canal]/1/750/420</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.zony.tv</referer>
+			</regex>
+			<regex>
+			<name>hls</name>
+			<expres>hlsUrl \+ \(\"(.*?)"</expres>
+			<page>http://www.zony.tv/membedplayer/$doregex[canal]/1/500/400</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.zony.tv</referer>
+			</regex>
+			<regex>
+			<name>canal</name>
+			<expres>channel='(.*?)'</expres>
+			<page>$doregex[canal2]</page>
+			</regex>
+			<regex>
+			<name>canal2</name>
+			<expres>href="(.*?)">canal-18<</expres>
+			<page>http://elgoles.ru/</page>
+			</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+	
+
+<item>
+<title>[B]Multicanal ELGoles[/B]     20    </title>
+  <link>http://$doregex[ip]$doregex[m3u8]$doregex[hls]</link>
+			<regex>
+			<name>ip</name>
+			<expres>redirect=(.*)</expres>
+			<page>http://cdn.pubzony.com:1935/loadbalancer</page>
+			</regex>
+			<regex>
+			<name>m3u8</name>
+			<expres>ea \+ "(.*?)"</expres>
+			<page>http://www.zony.tv/membedplayer/$doregex[canal]/1/750/420</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.zony.tv</referer>
+			</regex>
+			<regex>
+			<name>hls</name>
+			<expres>hlsUrl \+ \(\"(.*?)"</expres>
+			<page>http://www.zony.tv/membedplayer/$doregex[canal]/1/500/400</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.zony.tv</referer>
+			</regex>
+			<regex>
+			<name>canal</name>
+			<expres>channel='(.*?)'</expres>
+			<page>$doregex[canal2]</page>
+			</regex>
+			<regex>
+			<name>canal2</name>
+			<expres>href="(.*?)">canal-20<</expres>
+			<page>http://elgoles.ru/</page>
+			</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+	
+	
 
 <item>
 <title>[B]Multicanal ELGoles[/B]     13    </title>
