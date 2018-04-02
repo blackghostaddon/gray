@@ -3,11 +3,7 @@
    <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
 
-<channel>
-    <name>EXTRATIME</name>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail>
-    <fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
-        <items>
+
 
 
 
@@ -1759,31 +1755,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<item>
-<title>[B]Multicanal ELGoles[/B]     11    </title>
-<link>$doregex[bro.adca.st]</link>
-<regex>
-<name>bro.adca.st</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/23283.html'):
- import requests, re, urllib
- headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:52.0) Gecko/20100101 Firefox/52.0'}
- headers['Referer'] = 'http://elgoles.ru/11-15/'
- source = requests.get(url, headers=headers)
- m3u8 = re.findall('tambor = "(.+?)"', source.text)[0]
- tokenpage = re.findall('firme = "\/(.+?)"', source.text)[0]
- headers['Referer'] = url
- headers['X-Requested-With'] = 'XMLHttpRequest'
- headers['Accept'] = 'application/json, text/javascript, */*; q=0.01'
- headers['Accept-Language'] = 'en-US,en;q=0.5'
- source = requests.get('http://bro.adca.st/%s'%tokenpage, headers=headers)
- m3u8 = m3u8 + re.findall(':"(.+?)"', source.text)[0] + '|User-Agent=%s&Referer=http://bro.adca.st/&Origin=http://bro.adca.st'%headers['User-Agent']
- return m3u8
-]]></expres>
-<page></page>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
+ 
 
 
 
@@ -1797,7 +1769,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/23283.h
 <regex>
 <name>bro.adca.st</name>
 <expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/23166.html'):
+def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/24210.html'):
  import requests, re, urllib
  headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:52.0) Gecko/20100101 Firefox/52.0'}
  headers['Referer'] = 'http://elgoles.ru/canal-tx15/'
@@ -1818,6 +1790,56 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/23166.h
 
 
 
+<item>
+<title>[B]Multicanal ELGoles[/B]     17    </title>
+<link>$doregex[bro.adca.st]</link>
+<regex>
+<name>bro.adca.st</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/21634.html'):
+ import requests, re, urllib
+ headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:52.0) Gecko/20100101 Firefox/52.0'}
+ headers['Referer'] = 'http://elgoles.ru/canal-tx15/'
+ source = requests.get(url, headers=headers)
+ m3u8 = re.findall('tambor = "(.+?)"', source.text)[0]
+ tokenpage = re.findall('firme = "\/(.+?)"', source.text)[0]
+ headers['Referer'] = url
+ headers['X-Requested-With'] = 'XMLHttpRequest'
+ headers['Accept'] = 'application/json, text/javascript, */*; q=0.01'
+ headers['Accept-Language'] = 'en-US,en;q=0.5'
+ source = requests.get('http://bro.adca.st/%s'%tokenpage, headers=headers)
+ m3u8 = m3u8 + re.findall(':"(.+?)"', source.text)[0] + '|User-Agent=%s&Referer=http://bro.adca.st/&Origin=http://bro.adca.st'%headers['User-Agent']
+ return m3u8
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+<item>
+<title>[B]Multicanal ELGoles[/B]     19    </title>
+<link>$doregex[bro.adca.st]</link>
+<regex>
+<name>bro.adca.st</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/24190.html'):
+ import requests, re, urllib
+ headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:52.0) Gecko/20100101 Firefox/52.0'}
+ headers['Referer'] = 'http://elgoles.ru/canal-tx15/'
+ source = requests.get(url, headers=headers)
+ m3u8 = re.findall('tambor = "(.+?)"', source.text)[0]
+ tokenpage = re.findall('firme = "\/(.+?)"', source.text)[0]
+ headers['Referer'] = url
+ headers['X-Requested-With'] = 'XMLHttpRequest'
+ headers['Accept'] = 'application/json, text/javascript, */*; q=0.01'
+ headers['Accept-Language'] = 'en-US,en;q=0.5'
+ source = requests.get('http://bro.adca.st/%s'%tokenpage, headers=headers)
+ m3u8 = m3u8 + re.findall(':"(.+?)"', source.text)[0] + '|User-Agent=%s&Referer=http://bro.adca.st/&Origin=http://bro.adca.st'%headers['User-Agent']
+ return m3u8
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
