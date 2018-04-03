@@ -1130,7 +1130,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
   <item>
  <title>[B]Multicanal ESPN[/B]     </title>
-<link>$doregex[url]</link>
+<link>$doregex[url]|Referer=http://depo.superligatv.com</link>
  
  <regex>
 <name>url</name>
@@ -1144,7 +1144,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
   <item>
  <title>[B]Multicanal ESPN 2[/B]     </title>
-<link>$doregex[url]</link>
+<link>$doregex[url]|Referer=http://www.televalltv.net/</link>
  
  <regex>
 <name>url</name>
