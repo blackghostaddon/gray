@@ -1952,83 +1952,24 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/21616.h
 
 
 <item>
-<title>[B]Multicanal[/B] TikiTaka 01 [I] estable  [/I]</title>
- <link>$doregex[ip]</link>
-			<regex>
-			<name>ip</name>
-			<expres>source: "(.*?)"</expres>
-			<page>http://static.castto.me/embedlivesrclappr.php?channel=851328525</page>
-			</regex>
+<title>[B]Multicanal[/B] TikiTaka 01 [I] ** [/I]</title>
+<link>$doregex[ip2]</link>
+
+<regex>
+<name>ip2</name>
+<expres>$pyFunction:'$doregex[ip]'.replace(""", "").replace(",", "")</expres>
+<page></page>
+</regex>
+
+<regex>
+<name>ip</name>
+<expres>return\(\[(.*?)\]</expres>
+<page>http://www.vlive.pw/embed.php?live=lacasadeltikitaka&amp;vw=720&amp;vh=420</page>
+</regex>
+	
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail>
 </item>
-<item>
-<title>[B]Multicanal[/B] TikiTaka 02 [I] estable  [/I]</title>
- <link>$doregex[ip]|User-Agent=iPad</link>
-			<regex>
-			<name>ip</name>
-			<expres>source: "(.*?)"</expres>
-			<page>http://static.castto.me/embedlivesrclappr.php?channel=851328525</page>
-			</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail>
-</item>
-
-<item>
-<title>[B]Multicanal[/B] TikiTaka 01 [I]   [/I]</title>
- <link>http://$doregex[ip]$doregex[m3u8]$doregex[hls]</link>
-			<regex>
-			<name>ip</name>
-			<expres>redirect=(.*)</expres>
-			<page>http://www.liveflashpublisher.com:1935/loadbalancer</page>
-			</regex>
-			<regex>
-			<name>m3u8</name>
-			<expres>ea \+ "(.*?)"</expres>
-			<page>http://www.liveflashplayer.org/membedplayer/locosporelfutbol099/1/720/430</page>
-			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
-			<referer>http://www.ucasterplayer.com</referer>
-			</regex>
-			<regex>
-			<name>hls</name>
-			<expres>hlsUrl \+ \(\"(.*?)"</expres>
-			<page>http://www.liveflashplayer.org/membedplayer/futbolmaniacos/1/720/430</page>
-			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
-			<referer>http://www.liveflashplayer.org</referer>
-			</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail>
-</item>
-
-
-
-<item>
-<title>[B]Multicanal[/B] TikiTaka 02 [I] live  [/I]</title>
- <link>http://$doregex[ip]$doregex[m3u8]$doregex[hls]</link>
-			<regex>
-			<name>ip</name>
-			<expres>redirect=(.*)</expres>
-			<page>http://www.liveflashpublisher.com:1935/loadbalancer</page>
-			</regex>
-			<regex>
-			<name>m3u8</name>
-			<expres>ea \+ "(.*?)"</expres>
-			<page>http://www.liveflashplayer.org/membedplayer/marta2/1/720/430</page>
-			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
-			<referer>http://www.ucasterplayer.com</referer>
-			</regex>
-			<regex>
-			<name>hls</name>
-			<expres>hlsUrl \+ \(\"(.*?)"</expres>
-			<page>http://www.liveflashplayer.org/membedplayer/futbolmaniacos/1/720/430</page>
-			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
-			<referer>http://www.liveflashplayer.org</referer>
-			</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail>
-</item>
-
-
-
-
-
- 
+	
 
 
 
@@ -2042,32 +1983,6 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/21616.h
 
 
 
-
-
-
-
-
- 
-
-
-
-
-
-<item>
-<title>[B]Multicanal[/B] Tiki01  [I] sportsdevil [/I]</title>
-<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://lacasadeltikitaka.club/directo/canal1.php</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-
-<item>
-<title>[B]Multicanal[/B] Tiki02  [I] sportsdevil [/I]</title>
-<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://lacasadeltikitaka.club/directo/canal2.php</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-
-
-
- 
 
 
 
