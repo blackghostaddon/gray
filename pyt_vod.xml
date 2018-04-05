@@ -23,7 +23,7 @@
 
 
 
-<item>
+<iem>
 <title>[B][  ][/B]  [B]LAS PELICULAS[/B]  Recientes - Taquilleras - Populares  </title>
 
 <link>$doregex[makelist4]</link>
@@ -152,18 +152,19 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <item>
 <title>[B][  ][/B]  [B]BUSCAR PELICULA[/B]   </title>
-<link>$doregex[lista]</link>
 
+<link>$doregex[lista]</link>
+ 
 <regex>
 <name>lista</name>
   <listrepeat><![CDATA[
          <SetViewMode>55</SetViewMode>
-		 <title>$pyFunction:'[lista.param3]'.replace(".mp4", "  [I] [/I]").replace(".avi", "  [I] [/I]").replace(".mkv", "  [I] [/I]")</title>
+         <title>$pyFunction:'[lista.param3]'.replace(".mp4", " ").replace(".avi", " ").replace(".mkv", " ")</title>
         <link>$doregex[getUrl]</link>
-		<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail>
-		]]></listrepeat>
+        <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail>
+        ]]></listrepeat>
 <expres><![CDATA[href=\"(.*?,(.*?)\..*?)\".*?preview">(.*?mkv|.*?mp4|.*?avi)<]]><expres>
-<page>http://diskokosmiko.mx/action/SearchFiles?Phrase=adryanlist&amp;Mode=List&amp;Type=Video&amp;SizeFromMB=0&amp;SizeToMB=0&amp;pageNumber=10</page>
+<page>http://diskokosmiko.mx/action/SearchFiles?Phrase=Blackghost&amp;Mode=List&amp;Type=Video&amp;SizeFromMB=0&amp;SizeToMB=0&amp;pageNumber=10</page>
 <rawpost>Phrase=$doregex[search]&__RequestVerificationToken=$doregex[tok]</rawpost>
 <referer>http://diskokosmiko.mx/action/SearchFiles</referer>
 <connection>keep-alive</connection>
@@ -171,9 +172,9 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <X-Req>XMLHttpRequest</X-Req>
 <cookieJar>d248aa4e1e697a53b195098a52759e8d21507325199</cookieJar>
 </regex>
-
-
-
+ 
+ 
+ 
 <regex>
 <name>search</name>
 <expres><![CDATA[#$pyFunction
@@ -182,12 +183,13 @@ import xbmcaddon
 import xbmcgui
 def GetLSProData(page_data,Cookie_Jar,m):
     dialog = xbmcgui.Dialog()
-    d = dialog.input('Buscar  Pelicula: ejemplo: Minions', type=xbmcgui.INPUT_ALPHANUM).replace(" ", "+")
+    d = dialog.input('Busca tu pelicula o serie favorita:', type=xbmcgui.INPUT_ALPHANUM).replace(" ", "+")
     return d
 ]]></expres>
 <page></page>
 <cookieJar></cookieJar>
 </regex>
+
 
 <regex>
 <name>tok</name>
@@ -219,7 +221,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  nrj=json.loads(nr)
  nr = nrj['Content']
  r2 = re.findall(r'(?s)value=\"(.*?)\"', nr)[0]
- data_a ={'__RequestVerificationToken': r2 , 'Username': 'josele89' , 'Password' : 'josele89}
+ data_a ={'__RequestVerificationToken': r2 , 'Username': 'josele89' , 'Password' : 'josele89'}
  nr1 = requests.post('http://diskokosmiko.mx/action/Account/Login', headers=headers,cookies = rv1 , data=data_a)
  print nr1.headers['Set-Cookie']
  rasp = re.findall('ASPXAUTH_v2=(.*?);', nr1.headers['Set-Cookie'])[0]
@@ -242,7 +244,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <connection>keep-alive</connection>
 <cookieJar></cookieJar>
 </regex>
-
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail>
 </item>
 
