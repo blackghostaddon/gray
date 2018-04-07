@@ -4,6 +4,8 @@
 
 
 
+Estrenos:"The_post" url:"https://streamango.com/f/pmfnrpncsaladrep/The_post_2017_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
+Estrenos:"Just_getting_started" url:"https://streamango.com/f/spqstdofaqotolma/Just_getting_started_2017_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
 Estrenos:"The_titan" url:"https://streamango.com/f/bqntlbbbddbqtrrk/The_titan_2018_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
 Estrenos:"Proud_mary" url:"https://streamango.com/f/slrrlcmekrbbatcn/Proud_mary_2018_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
 Estrenos:"Phantom_thread" url:"https://streamango.com/f/qqckqrtdspodtmff/Phantom_thread_2017_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
@@ -135,9 +137,9 @@ EstrenosESP:"" url:"
 
 
 
-
-
-
+EstrenosESP:"On_body_and_soul" url:" https://streamango.com/f/mbkpfrkpoklootlk/On_body_and_soul_2017_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
+EstrenosESP:"Brawl_in_cell_block_99" url:" https://streamango.com/f/eqootlakepkafbcp/Brawl_in_cell_block_99_2017_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
+EstrenosESP:"Happy_anniversary" url:" https://streamango.com/f/anfqelrfefcsqnmn/Happy_anniversary_2018_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
 EstrenosESP:"Suburbicon" url:" https://streamango.com/f/ebndsepbntmssdok/Suburbicon_2017_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
 EstrenosESP:"Tadeo_jones_2_el_secreto_del_rey_midas" url:" https://streamango.com/f/bosmdblkotdnndlt/Tadeo_jones_2_el_secreto_del_rey_midas_2018_1080p-cast-cinecalidad_to_mp4" server:"Streamango"
 EstrenosESP:"First_match" url:" https://streamango.com/f/lstqaroeockbropm/First_match_2018_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
