@@ -64,7 +64,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
  <item>
-<title>[B]PARTIDOS AMISTOSOS MULTICANAL opciones 2 [/B]      </title>
+<title>[B]Multicanales opciones RIVO [/B]      </title>
 <link>$doregex[bro.adca.st]</link>
 
 
@@ -94,8 +94,8 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/$dorege
 def GetLSProData(page_data,Cookie_Jar,m):
    import xbmcgui
    dialog = xbmcgui.Dialog()
-   ret = dialog.select('Elige un Canal ', ['OPCION 5523', 'OPCION 7386', 'OPCION 7387', 'OPCION 21611', 'OPCION 21675', 'OPCION 22612', 'OPCION 23911'])
-   lists = ['5523', '7386', '7387', '21611', '21675', '22612', '23911']
+   ret = dialog.select('Elige un Canal ', ['24187', '7387', '24187', '21611', '21675', '22612'])
+   lists = ['24187', '7387', '24187', '21611', '21675', '22612']
    return lists[ret]
 ]]></expres>
 <page></page>
@@ -1527,133 +1527,77 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
+	
 <item>
-<title>[B]Multicanal ELGoles[/B]     12    </title>
-  <link>http://$doregex[ip]$doregex[m3u8]$doregex[hls]</link>
-			<regex>
-			<name>ip</name>
-			<expres>redirect=(.*)</expres>
-			<page>http://cdn.pubzony.com:1935/loadbalancer</page>
-			</regex>
-			<regex>
-			<name>m3u8</name>
-			<expres>ea \+ "(.*?)"</expres>
-			<page>http://www.zony.tv/membedplayer/$doregex[canal]/1/750/420</page>
-			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
-			<referer>http://www.zony.tv</referer>
-			</regex>
-			<regex>
-			<name>hls</name>
-			<expres>hlsUrl \+ \(\"(.*?)"</expres>
-			<page>http://www.zony.tv/membedplayer/$doregex[canal]/1/500/400</page>
-			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
-			<referer>http://www.zony.tv</referer>
-			</regex>
-			<regex>
-			<name>canal</name>
-			<expres>channel='(.*?)'</expres>
-			<page>$doregex[canal2]</page>
-			</regex>
-			<regex>
-			<name>canal2</name>
-			<expres>href="(.*?)">canal-12<</expres>
-			<page>http://elgoles.ru/</page>
-			</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+<title>[B]Multicanal ELGoles[/B]     Opciones Zony   </title>
+<link>http://$doregex[ip]$doregex[m3u8]$doregex[hls]</link>
+<regex>
+<name>ip</name>
+<expres>redirect=(.*)</expres>
+<page>http://cdn.pubzony.com:1935/loadbalancer</page>
+</regex>
+<regex>
+<name>m3u8</name>
+<expres>ea \+ "(.*?)"</expres>
+<page>http://www.zony.tv/membedplayer/$doregex[canal]/1/750/420</page>
+<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+<referer>http://www.zony.tv</referer>
+</regex>
+<regex>
+<name>hls</name>
+<expres>hlsUrl \+ \(\"(.*?)"</expres>
+<page>http://www.zony.tv/membedplayer/$doregex[canal]/1/500/400</page>
+<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+<referer>http://www.zony.tv</referer>
+</regex>
+<regex>
+<name>canal</name>
+<expres>channel='(.*?)'</expres>
+<page>$doregex[canal2]</page>
+</regex>
+<regex>
+<name>canal2</name>
+<expres>href="(.*?)">canal-$doregex[select]<</expres>
+<page>http://elgoles.ru/</page>
+</regex>
 
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+   import xbmcgui
+   dialog = xbmcgui.Dialog()
+   ret = dialog.select('Elige un Canal ', ['Canal 7', 'Canal 12', 'Canal 16', 'Canal 18', 'Canal 20'])
+   lists = ['7', '12', '16', '18', '20']
+   return lists[ret]
+]]></expres>
+<page></page>
+</regex>
 
-<item>
-<title>[B]Multicanal ELGoles[/B]     16    </title>
-  <link>http://$doregex[ip]$doregex[m3u8]$doregex[hls]</link>
-			<regex>
-			<name>ip</name>
-			<expres>redirect=(.*)</expres>
-			<page>http://cdn.pubzony.com:1935/loadbalancer</page>
-			</regex>
-			<regex>
-			<name>m3u8</name>
-			<expres>ea \+ "(.*?)"</expres>
-			<page>http://www.zony.tv/membedplayer/$doregex[canal]/1/750/420</page>
-			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
-			<referer>http://www.zony.tv</referer>
-			</regex>
-			<regex>
-			<name>hls</name>
-			<expres>hlsUrl \+ \(\"(.*?)"</expres>
-			<page>http://www.zony.tv/membedplayer/$doregex[canal]/1/500/400</page>
-			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
-			<referer>http://www.zony.tv</referer>
-			</regex>
-			<regex>
-			<name>canal</name>
-			<expres>channel='(.*?)'</expres>
-			<page>$doregex[canal2]</page>
-			</regex>
-			<regex>
-			<name>canal2</name>
-			<expres>href="(.*?)">canal-16<</expres>
-			<page>http://elgoles.ru/</page>
-			</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-
-<item>
-<title>[B]Multicanal ELGoles[/B]     18    </title>
-  <link>http://$doregex[ip]$doregex[m3u8]$doregex[hls]</link>
-			<regex>
-			<name>ip</name>
-			<expres>redirect=(.*)</expres>
-			<page>http://cdn.pubzony.com:1935/loadbalancer</page>
-			</regex>
-			<regex>
-			<name>m3u8</name>
-			<expres>ea \+ "(.*?)"</expres>
-			<page>http://www.zony.tv/membedplayer/$doregex[canal]/1/750/420</page>
-			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
-			<referer>http://www.zony.tv</referer>
-			</regex>
-			<regex>
-			<name>hls</name>
-			<expres>hlsUrl \+ \(\"(.*?)"</expres>
-			<page>http://www.zony.tv/membedplayer/$doregex[canal]/1/500/400</page>
-			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
-			<referer>http://www.zony.tv</referer>
-			</regex>
-			<regex>
-			<name>canal</name>
-			<expres>channel='(.*?)'</expres>
-			<page>$doregex[canal2]</page>
-			</regex>
-			<regex>
-			<name>canal2</name>
-			<expres>href="(.*?)">canal-18<</expres>
-			<page>http://elgoles.ru/</page>
-			</regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 	
-
 <item>
-<title>[B]Multicanal ELGoles[/B]     20    </title>
+<title>[B]Multicanal ELGoles[/B]     8    </title>
   <link>http://$doregex[ip]$doregex[m3u8]$doregex[hls]</link>
 			<regex>
 			<name>ip</name>
 			<expres>redirect=(.*)</expres>
-			<page>http://cdn.pubzony.com:1935/loadbalancer</page>
+			<page>http://cdn.pubezcast.com:1935/loadbalancer</page>
 			</regex>
 			<regex>
 			<name>m3u8</name>
 			<expres>ea \+ "(.*?)"</expres>
-			<page>http://www.zony.tv/membedplayer/$doregex[canal]/1/750/420</page>
+			<page>http://www.ezcast.tv/membedplayer/$doregex[canal]/1/750/420</page>
 			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
 			<referer>http://www.zony.tv</referer>
 			</regex>
 			<regex>
 			<name>hls</name>
 			<expres>hlsUrl \+ \(\"(.*?)"</expres>
-			<page>http://www.zony.tv/membedplayer/$doregex[canal]/1/500/400</page>
+			<page>http://www.ezcast.tv/membedplayer/$doregex[canal]/1/500/400</page>
 			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
-			<referer>http://www.zony.tv</referer>
+			<referer>http://www.ezcast.tv</referer>
 			</regex>
 			<regex>
 			<name>canal</name>
@@ -1662,13 +1606,11 @@ def GetLSProData(page_data,Cookie_Jar,m):
 			</regex>
 			<regex>
 			<name>canal2</name>
-			<expres>href="(.*?)">canal-20<</expres>
+			<expres>href="(.*?)">canal-8<</expres>
 			<page>http://elgoles.ru/</page>
 			</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
-	
-	
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 <item>
 <title>[B]Multicanal ELGoles[/B]     13    </title>
@@ -1700,6 +1642,45 @@ def GetLSProData(page_data,Cookie_Jar,m):
 			<regex>
 			<name>canal2</name>
 			<expres>href="(.*?)">canal-13<</expres>
+			<page>http://elgoles.ru/</page>
+			</regex>
+
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+
+
+
+
+<item>
+<title>[B]Multicanal ELGoles[/B]     9    </title>
+ <link>http://$doregex[ip]$doregex[m3u8]$doregex[hls]</link>
+			<regex>
+			<name>ip</name>
+			<expres>redirect=(.*)</expres>
+			<page>http://www.pubucaster.com:1935/loadbalancer</page>
+			</regex>
+			<regex>
+			<name>m3u8</name>
+			<expres>ea \+ "(.*?)"</expres>
+			<page>http://www.ucasterplayer.com/membedplayer/$doregex[canal]/1/720/430</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.ucasterplayer.com</referer>
+			</regex>
+			<regex>
+			<name>hls</name>
+			<expres>hlsUrl \+ \(\"(.*?)"</expres>
+			<page>http://www.ucasterplayer.com/membedplayer/$doregex[canal]/1/720/430</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.ucasterplayer.com</referer>
+			</regex>
+			<name>canal</name>
+			<expres>channel='(.*?)'</expres>
+			<page>$doregex[canal2]</page>
+			</regex>
+			<regex>
+			<name>canal2</name>
+			<expres>href="(.*?)">canal-9<</expres>
 			<page>http://elgoles.ru/</page>
 			</regex>
 
@@ -1755,24 +1736,21 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
+
+
  
-
-
-
-
-
-
-
-<item>
-<title>[B]Multicanal ELGoles[/B]     15    </title>
+ <item>
+<title>[B]Multicanales opciones ElGoles [/B] BroadCast     </title>
 <link>$doregex[bro.adca.st]</link>
+
+
 <regex>
 <name>bro.adca.st</name>
 <expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/24210.html'):
+def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/$doregex[select].html'):
  import requests, re, urllib
  headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:52.0) Gecko/20100101 Firefox/52.0'}
- headers['Referer'] = 'http://elgoles.ru/canal-tx15/'
+ headers['Referer'] = 'http://vipracing.info/channel/canal-2'
  source = requests.get(url, headers=headers)
  m3u8 = re.findall('tambor = "(.+?)"', source.text)[0]
  tokenpage = re.findall('firme = "\/(.+?)"', source.text)[0]
@@ -1786,60 +1764,26 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/24210.h
 ]]></expres>
 <page></page>
 </regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-
-
-<item>
-<title>[B]Multicanal ELGoles[/B]     17    </title>
-<link>$doregex[bro.adca.st]</link>
 <regex>
-<name>bro.adca.st</name>
+<name>select</name>
 <expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/21634.html'):
- import requests, re, urllib
- headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:52.0) Gecko/20100101 Firefox/52.0'}
- headers['Referer'] = 'http://elgoles.ru/canal-tx15/'
- source = requests.get(url, headers=headers)
- m3u8 = re.findall('tambor = "(.+?)"', source.text)[0]
- tokenpage = re.findall('firme = "\/(.+?)"', source.text)[0]
- headers['Referer'] = url
- headers['X-Requested-With'] = 'XMLHttpRequest'
- headers['Accept'] = 'application/json, text/javascript, */*; q=0.01'
- headers['Accept-Language'] = 'en-US,en;q=0.5'
- source = requests.get('http://bro.adca.st/%s'%tokenpage, headers=headers)
- m3u8 = m3u8 + re.findall(':"(.+?)"', source.text)[0] + '|User-Agent=%s&Referer=http://bro.adca.st/&Origin=http://bro.adca.st'%headers['User-Agent']
- return m3u8
+def GetLSProData(page_data,Cookie_Jar,m):
+   import xbmcgui
+   dialog = xbmcgui.Dialog()
+   ret = dialog.select('Elige un Canal ', ['24211', '24210', '21634', '24190'])
+   lists = ['24211', '24210', '21634', '24190']
+   return lists[ret]
 ]]></expres>
 <page></page>
 </regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail>
+
+</item>
 
 
-<item>
-<title>[B]Multicanal ELGoles[/B]     19    </title>
-<link>$doregex[bro.adca.st]</link>
-<regex>
-<name>bro.adca.st</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/24190.html'):
- import requests, re, urllib
- headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:52.0) Gecko/20100101 Firefox/52.0'}
- headers['Referer'] = 'http://elgoles.ru/canal-tx15/'
- source = requests.get(url, headers=headers)
- m3u8 = re.findall('tambor = "(.+?)"', source.text)[0]
- tokenpage = re.findall('firme = "\/(.+?)"', source.text)[0]
- headers['Referer'] = url
- headers['X-Requested-With'] = 'XMLHttpRequest'
- headers['Accept'] = 'application/json, text/javascript, */*; q=0.01'
- headers['Accept-Language'] = 'en-US,en;q=0.5'
- source = requests.get('http://bro.adca.st/%s'%tokenpage, headers=headers)
- m3u8 = m3u8 + re.findall(':"(.+?)"', source.text)[0] + '|User-Agent=%s&Referer=http://bro.adca.st/&Origin=http://bro.adca.st'%headers['User-Agent']
- return m3u8
-]]></expres>
-<page></page>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
 
 
 
