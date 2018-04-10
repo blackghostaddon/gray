@@ -3,7 +3,8 @@
 
 
 
-
+Estrenos:"The_commuter" url:"https://streamango.com/f/tpfooplnkeaafdka/The_commuter_2018_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
+Estrenos:"Happy_anniversary" url:"https://streamango.com/f/ofrodboqcnsfrkpk/Happy_anniversary_2018_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
 Estrenos:"The_post" url:"https://streamango.com/f/pmfnrpncsaladrep/The_post_2017_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
 Estrenos:"Just_getting_started" url:"https://streamango.com/f/spqstdofaqotolma/Just_getting_started_2017_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
 Estrenos:"The_titan" url:"https://streamango.com/f/bqntlbbbddbqtrrk/The_titan_2018_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
@@ -32,9 +33,6 @@ Estrenos:"The_foreigner" url:"https://streamango.com/f/edtcplacotkoedlt/The_fore
 Estrenos:"Annihilation" url:"https://streamango.com/f/kqndqrscpqrrkfba/Annihilation_2018_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
 Estrenos:"Downsizing_" url:"https://streamango.com/f/fecndfntdmmponbm/Downsizing_2017_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
 Estrenos:"Pitch_perfect_3_" url:"https://streamango.com/f/qttknbftdtkdbmnp/Pitch_perfect_3_2017_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
-
-
-
 Estrenos:"Forgotten" url:"https://streamango.com/f/ssdknrsdfmpcnfdf/Forgotten_2017_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
 Estrenos:"Newness" url:"https://streamango.com/f/bnefnpdomeradfqp/Newness_2017_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
 Estrenos:"The_star" url:"https://streamango.com/f/rckaccqmbdetsmck/The_star_2017_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
@@ -43,9 +41,6 @@ Estrenos:"The_shape_of_water" url:"https://streamango.com/f/nkdfsqflbdlffnnc/The
 Estrenos:"Call_me_by_your_name" url:"https://streamango.com/f/mnsdrkdeqnqflrfd/Call_me_by_your_name_2017_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
 Estrenos:"A_bad_moms_christmas" url:"https://streamango.com/f/kqkmpametccaobbk/A_bad_moms_christmas_2017_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
 Estrenos:"Novitiate" url:"https://streamango.com/f/ekcqsdkslloamamc/Novitiate_2017_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
-
-
-
 Estrenos:"When_we_first_met" url:"https://streamango.com/f/ckabtntmfbrerfme/When_we_first_met_2018_1080p-dual-lat_mp4" server:"Streamango"
 Estrenos:"Murder_on_the_orient_express" url:"https://streamango.com/f/saeesploqtnoarlf/Murder_on_the_orient_express_2017_1080p-dual-lat_mp4" server:"Streamango"
 Estrenos:"Roman_j_israel_esq" url:"https://streamango.com/f/psaddfqbepdspqsa/Roman_j_israel_esq_2017_1080p-dual-lat_mp4" server:"Streamango"
@@ -136,7 +131,8 @@ EstrenosESP:"" url:"
 
 
 
-
+EstrenosESP:"The_greatest_showman" url:"https://streamango.com/f/cecsobnflkabfbqd/The_greatest_showman_2017_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
+EstrenosESP:"Bullet_head" url:"https://streamango.com/f/kmasmkrtdacabnmr/Bullet_head_2017_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
 EstrenosESP:"On_body_and_soul" url:" https://streamango.com/f/mbkpfrkpoklootlk/On_body_and_soul_2017_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
 EstrenosESP:"Brawl_in_cell_block_99" url:" https://streamango.com/f/eqootlakepkafbcp/Brawl_in_cell_block_99_2017_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
 EstrenosESP:"Happy_anniversary" url:" https://streamango.com/f/anfqelrfefcsqnmn/Happy_anniversary_2018_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
@@ -156,8 +152,6 @@ EstrenosESP:"Game_over_man" url:"https://streamango.com/f/mnkkokmrkadqddka/Game_
 EstrenosESP:"Roxanne_roxanne" url:"https://streamango.com/f/napmkbrldsbdsebl/Roxanne_roxanne_2017_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
 EstrenosESP:"Wonder" url:"https://streamango.com/f/ckocdsspnpatccbq/Wonder_2017_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
 EstrenosESP:"Keep_watching" url:"https://streamango.com/f/plaoqnenfqcqerbs/Keep_watching_2017_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
-
-
 EstrenosESP:"Ferdinand" url:"https://streamango.com/f/erfmdtcqaffosnpq/Ferdinand_2017_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
 EstrenosESP:"Annihilation" url:"https://streamango.com/f/nlrpanqaneeescms/Annihilation_2018_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
 EstrenosESP:"Shot_caller" url:"https://streamango.com/f/bceaoqkmadklprcc/Shot_caller_2017_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
@@ -192,9 +186,6 @@ EstrenosESP:"Three_billboards_outside_ebbing_missouri" url:"https://streamango.c
 EstrenosESP:"Scooby-doo_and_batman_the_brave_and_the_bold" url:"https://streamango.com/f/bpmflkdmmfpsflkt/Scooby-doo_and_batman_the_brave_and_the_bold_2018_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
 EstrenosESP:"Goodbye_christopher_robin" url:"https://streamango.com/f/katnrdtfqnnleqas/Goodbye_christopher_robin_2017_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
 EstrenosESP:"Marshall" url:"https://streamango.com/f/aaqmlbbqeprqnkos/Marshall_2017_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
-
-
-
 EstrenosESP:"Rip_tide" url:"https://streamango.com/f/sdfalenmrskcnlqr/Rip_tide_2017_1080p-dual-cast_mp4" server:"Streamango"
 EstrenosESP:"The_shack" url:"https://streamango.com/f/mseqatrlokmoascf/The_shack_2017_1080p-dual-cast_mp4" server:"Streamango"
 EstrenosESP:"When_we_first_met" url:"https://streamango.com/f/mclkfqpoealsmeet/When_we_first_met_2018_1080p-dual-cast_mp4" server:"Streamango"
