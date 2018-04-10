@@ -20,7 +20,7 @@
 <name>makelist3</name>
 <listrepeat><![CDATA[
  <SetViewMode>55</SetViewMode>
- <title>[B][makelist3.param1][/B][makelist3.param2][makelist3.param3][makelist3.param4]</title>
+ <title>[B][makelist3.param1][/B][makelist3.param2]</title>
 <link>$doregex[makelist2]</link>
  <thumbnail>http://blackaddon.rf.gd/gray/img/iptv.jpg</thumbnail>
  ]]></listrepeat>
@@ -37,11 +37,11 @@
  <SetViewMode>55</SetViewMode>
  <title>User: [makelist3.param3]  |  Status: [makelist2.param1] |  Maximas Conexiones:[makelist2.param2]  </title>
  <link>NA</link>
- <externallink>http[makelist3.param2]/get.php?username=[makelist3.param3]&amp;password=[makelist3.param4]&amp;type=m3u$$TSDOWNLOADER$$</externallink>
+ <externallink>[makelist3.param2]/get.php?username=[makelist3.param3]&amp;password=[makelist3.param4]&amp;type=m3u$$TSDOWNLOADER$$</externallink>
  <thumbnail>http://blackaddon.rf.gd/gray/img/iptv.jpg</thumbnail>
  ]]></listrepeat>
 <expres>status":"(.*?)".*max_connections":"(.*?)",</expres>
-<page>http[makelist3.param2]/panel_api.php?username=[makelist3.param3]&amp;password=[makelist3.param4]</page>
+<page>[makelist3.param2]/panel_api.php?username=[makelist3.param3]&amp;password=[makelist3.param4]</page>
 </regex>
 <thumbnail>http://blackaddon.rf.gd/gray/img/iptv.jpg</thumbnail>
 </item>
