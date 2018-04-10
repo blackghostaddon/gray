@@ -14,7 +14,7 @@
 
 
 <item>
-<title>     [B] SERVERS   [/B] [I][Automatically Updated Daily ][/I]</title>
+<title>     [B] SERVERS   [/B] [I][Automatically Updated Daily][/I]</title>
 <link>$doregex[makelist3]</link>
 <regex>
 <name>makelist3</name>
@@ -27,7 +27,6 @@
 <expres><![CDATA[fnChangeTab\(event\)">(.*?2018)<|>(http.*?)\/g.*?name=(.*?)\&.*?ssword=(.*?)\&]]></expres>
 <page>http://www.m3uliste.pw/</page>
 </regex>
-
 
 
 
