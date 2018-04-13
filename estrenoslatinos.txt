@@ -1,7 +1,9 @@
 
 
 
-
+Estrenos:"Day_of_the_dead_bloodline" url:"https://streamango.com/f/ncbfkftptcsrfabp/Day_of_the_dead_bloodline_2018_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
+Estrenos:"Leatherface" url:"https://streamango.com/f/qafckmfqesqsdrfo/Leatherface_2017_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
+Estrenos:"Unlocked" url:"https://streamango.com/f/lpttqtnoaoslmtcc/Unlocked_2017_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
 
 Estrenos:"The_commuter" url:"https://streamango.com/f/tpfooplnkeaafdka/The_commuter_2018_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
 Estrenos:"Happy_anniversary" url:"https://streamango.com/f/ofrodboqcnsfrkpk/Happy_anniversary_2018_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
@@ -129,8 +131,9 @@ Estrenos:"" url:"
 
 EstrenosESP:"" url:"   
 
-
-
+EstrenosESP:"My_little_pony_the_movie" url:"  https://streamango.com/f/allqmobfqqkrscla/My_little_pony_the_movie_2017_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
+EstrenosESP:"Jawbone" url:"  https://streamango.com/f/keoopsedqrmaeman/Jawbone_2017_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
+EstrenosESP:"Spinning_man" url:"  https://streamango.com/f/eelspsasfbfaoord/Spinning_man_2018_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
 EstrenosESP:"The_greatest_showman" url:"https://streamango.com/f/cecsobnflkabfbqd/The_greatest_showman_2017_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
 EstrenosESP:"Bullet_head" url:"https://streamango.com/f/kmasmkrtdacabnmr/Bullet_head_2017_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
 EstrenosESP:"On_body_and_soul" url:" https://streamango.com/f/mbkpfrkpoklootlk/On_body_and_soul_2017_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
