@@ -1190,13 +1190,13 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
   <item>
- <title>[B]Multicanal TDN[/B]     </title>
-<link>$doregex[url]|Referer=http://depo.superligatv.com/tdn.php</link>
+ <title>[B]Multicanal TDN[/B] **    </title>
+<link>$doregex[url]</link>
  
  <regex>
 <name>url</name>
 <expres><![CDATA[source: "(.*?)"]]></expres>
-<page>http://depo.superligatv.com/tdn.php</page>
+<page>http://fut.superligatv.com/tdn.html</page>
 </regex>
  
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
