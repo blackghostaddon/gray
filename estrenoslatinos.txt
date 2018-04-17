@@ -1,10 +1,17 @@
 
 
 
+
+
+
+
+Estrenos:"Honey_rise_up_and_dance" url:"https://streamango.com/f/clacddmetdlpdrmq/Honey_rise_up_and_dance_2018_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
+Estrenos:"Paddington_2" url:"https://streamango.com/f/cnnqkbalqmqbqdte/Paddington_2_2017_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
+Estrenos:"Come_sunday" url:"https://streamango.com/f/mkebdeabmeebncen/Come_sunday_2018_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
+Estrenos:"Maze_runner_the_death_cure" url:"https://streamango.com/f/kpnqrqknpesaaqke/Maze_runner_the_death_cure_2018_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
 Estrenos:"Day_of_the_dead_bloodline" url:"https://streamango.com/f/ncbfkftptcsrfabp/Day_of_the_dead_bloodline_2018_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
 Estrenos:"Leatherface" url:"https://streamango.com/f/qafckmfqesqsdrfo/Leatherface_2017_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
 Estrenos:"Unlocked" url:"https://streamango.com/f/lpttqtnoaoslmtcc/Unlocked_2017_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
-
 Estrenos:"The_commuter" url:"https://streamango.com/f/tpfooplnkeaafdka/The_commuter_2018_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
 Estrenos:"Happy_anniversary" url:"https://streamango.com/f/ofrodboqcnsfrkpk/Happy_anniversary_2018_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
 Estrenos:"The_post" url:"https://streamango.com/f/pmfnrpncsaladrep/The_post_2017_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
@@ -131,6 +138,10 @@ Estrenos:"" url:"
 
 EstrenosESP:"" url:"   
 
+EstrenosESP:"Come_sunday" url:"https://streamango.com/f/dlllmsflakakmkdq/Come_sunday_2018_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
+EstrenosESP:"A_bad_moms_christmas" url:"https://streamango.com/f/ncafdrdktadbffeb/A_bad_moms_christmas_2017_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
+EstrenosESP:"Jumanji_welcome_to_the_jungle" url:"https://streamango.com/f/otoaaaerqbnfprca/Jumanji_welcome_to_the_jungle_2017_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
+EstrenosESP:"The_shadow_effect" url:"https://streamango.com/f/pmdtfamknfoskrla/The_shadow_effect_2017_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
 EstrenosESP:"My_little_pony_the_movie" url:"  https://streamango.com/f/allqmobfqqkrscla/My_little_pony_the_movie_2017_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
 EstrenosESP:"Jawbone" url:"  https://streamango.com/f/keoopsedqrmaeman/Jawbone_2017_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
 EstrenosESP:"Spinning_man" url:"  https://streamango.com/f/eelspsasfbfaoord/Spinning_man_2018_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
