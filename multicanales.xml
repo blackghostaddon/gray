@@ -1699,8 +1699,8 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/$dorege
 def GetLSProData(page_data,Cookie_Jar,m):
    import xbmcgui
    dialog = xbmcgui.Dialog()
-   ret = dialog.select('Elige un Canal ', ['24211', '24210', '21634', '24190'])
-   lists = ['24211', '24210', '21634', '24190']
+   ret = dialog.select('Elige un Canal ', ['24596', '24549', '24550', '24551'])
+   lists = ['24596', '24549', '24550', '24551']
    return lists[ret]
 ]]></expres>
 <page></page>
