@@ -383,6 +383,142 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
+	
+	
+	
+	
+	
+
+
+ 
+ 
+<item>
+<title>Estrenos [BassFox] Audio Latino</title>
+ <link>$doregex[makelist2]</link>
+ 
+   <regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title> [makelist2.param2]   </title>
+ <link>$doregex[makelist3]</link>
+ <fanart>[makelist2.param1]</fanart>
+  <info>[makelist2.param4]</info>
+  <thumbnail>[makelist2.param1]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[poster[\w\W\s]{0,15}src="(.*?)" alt="(.*?)"[\w\W\s]{0,150}href="(.*?)"[\w\W\s]{0,550}texto">(.*?)<]]></expres>
+<page>http://bassfox.org/movies/</page>
+</regex>	
+		
+  <regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+<title>[makelist2.param2]      Server:[makelist3.param1]</title>
+ <link>$doregex[id3]</link>
+ <fanart>[makelist2.param1]</fanart>
+  <info>[makelist2.param4]</info>
+  <thumbnail>[makelist2.param1]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[src=\"(https://streamango.*?|http://xvidstage.*?|http://uptobox.*?|https://openload.*?|https://userscloud.*?|https://ok.*?|https://uptostream.*?)"]]></expres>
+ <page>[makelist2.param3]</page>
+<agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36</agent>
+</regex>
+
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = '[makelist3.param1]'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryantv.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
+ </item>
+ 
+ 
+   <item>
+<title>Estrenos [CineVall] Audio Latino </title>
+
+  <link>$doregex[makelist3]</link>
+
+
+   <regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+<title>[makelist3.param2]</title>
+ <link>$doregex[finalURL]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64; rv:56.0) Gecko/20100101 Firefox/56.0&amp;Referer=http://cine.cinevall.club</link>
+ <regex>
+<name>finalURL</name>
+<expres>file: \'(.*?)\'</expres>
+<page>http://cine.cinevall.club/[makelist3.param1].html</page>
+<referer>http://www.cinevall.club/estrenos.html</referer>
+</regex>
+<thumbnail>http://www.cinevall.club/[makelist3.param3]</thumbnail>
+ </item>
+]]></listrepeat>
+<expres>href="(.*?).html.*?text:\s\'(.*?)\&.*?src="(.*?)"</expres>
+<page>http://www.cinevall.club/estrenos.html</page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
+ </item>
+
+<item>
+<title>Estrenos [AquiPelis] Audio Latino</title>
+<link>$doregex[makelist2]</link>
+
+  <regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<SetwatchMode>55</SetwatchMode><title>[makelist2.param2]</title>
+<link>$doregex[makelist]</link>
+<thumbnail>[makelist2.param1]</thumbnail>
+]]></listrepeat>
+<expres>mostrar_video.*?src='(.*?)'.*?alt="(.*?)online[\w\W\s]{0,240}href="(.*?)"</expres>
+<page>http://aquipelis.net/peliculas-estrenos/</page>
+</regex>
+
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<SetwatchMode>55</SetwatchMode><title>[makelist2.param2]     server/[makelist.param1]</title>
+ <link>$doregex[id3]</link>
+<thumbnail>[makelist2.param1]</thumbnail>
+<fanart>[makelist2.param1]</fanart>
+]]></listrepeat>
+<expres>"(https://openload.*?|https://powvideo.*?|https://userscloud.*?|http://uptobox.*?)"</expres>
+<page>[makelist2.param3]</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = '[makelist.param1]'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryantv.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
+ </item>
+
 
 
 
@@ -1641,33 +1777,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-   <item>
-<title>[B]CINEVALL[/B]  ESTRENOS [Audio Latino] * </title>
-
-  <link>$doregex[makelist3]</link>
-
-
-   <regex>
-<name>makelist3</name>
-<listrepeat><![CDATA[
-<title>[makelist3.param2]</title>
- <link>$doregex[finalURL]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64; rv:56.0) Gecko/20100101 Firefox/56.0&amp;Referer=http://cine.cinevall.club</link>
- <regex>
-<name>finalURL</name>
-<expres>file: \'(.*?)\'</expres>
-<page>http://cine.cinevall.club/[makelist3.param1].html</page>
-<referer>http://www.cinevall.club/estrenos.html</referer>
-</regex>
-<thumbnail>http://www.cinevall.club/[makelist3.param3]</thumbnail>
- </item>
-]]></listrepeat>
-<expres>href="(.*?).html.*?text:\s\'(.*?)\&.*?src="(.*?)"</expres>
-<page>http://www.cinevall.club/estrenos.html</page>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
- </item>
-
-
 
 
 
@@ -1722,65 +1831,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	
 	
 
-
-<item>
-<title>[B]BASSFOX WEB[/B] [I] Estrenos [/I] </title>
- <link>$doregex[makelist2]</link>
- 
-   <regex>
-<name>makelist2</name>
-<listrepeat><![CDATA[
-<title> [makelist2.param2]   </title>
- <link>$doregex[makelist3]</link>
- <fanart>[makelist2.param1]</fanart>
-  <info>[makelist2.param4]</info>
-  <thumbnail>[makelist2.param1]</thumbnail>
-]]></listrepeat>
-<expres><![CDATA[poster[\w\W\s]{0,15}src="(.*?)" alt="(.*?)"[\w\W\s]{0,150}href="(.*?)"[\w\W\s]{0,550}texto">(.*?)<]]></expres>
-<page>http://bassfox.org/movies/</page>
-</regex>
-	
-	
- 
-
-
-		
-		
-		
-		
-  <regex>
-<name>makelist3</name>
-<listrepeat><![CDATA[
-<title>[makelist2.param2]      Server:[makelist3.param1]</title>
- <link>$doregex[id3]</link>
- <fanart>[makelist2.param1]</fanart>
-  <info>[makelist2.param4]</info>
-  <thumbnail>[makelist2.param1]</thumbnail>
-]]></listrepeat>
-<expres><![CDATA[src=\"(https://streamango.*?|http://xvidstage.*?|http://uptobox.*?|https://openload.*?|https://userscloud.*?|https://ok.*?|https://uptostream.*?)"]]></expres>
- <page>[makelist2.param3]</page>
-<agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36</agent>
-</regex>
-
-
-<regex>
-<name>id3</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m):
-    import urlresolver
-    url = '[makelist3.param1]'
-    try:
-        u = urlresolver.resolve(url)
-    except:
-        u = 'http://adryantv.org/error.mp4'
-    return u
-]]></expres>
-<page></page>
-</regex>
-
-
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
- </item>
 
 
 
@@ -1868,7 +1918,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-	 <item>
+<item>
 <title>[B]AQUIPELIS[/B]  RECIENTES [Audio Latino]    </title>
 <link>$doregex[makelist2]</link>
 
@@ -1932,54 +1982,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
- 	 <item>
-<title>[B]AQUIPELIS[/B]  ESTRENOS [Audio Latino]    </title>
-<link>$doregex[makelist2]</link>
-
-  <regex>
-<name>makelist2</name>
-<listrepeat><![CDATA[
-<SetwatchMode>55</SetwatchMode><title>[makelist2.param2]</title>
-<link>$doregex[makelist]</link>
-<thumbnail>[makelist2.param1]</thumbnail>
-]]></listrepeat>
-<expres>mostrar_video.*?src='(.*?)'.*?alt="(.*?)online[\w\W\s]{0,240}href="(.*?)"</expres>
-<page>http://aquipelis.net/peliculas-estrenos/</page>
-</regex>
-
-
-<regex>
-<name>makelist</name>
-<listrepeat><![CDATA[
-<SetwatchMode>55</SetwatchMode><title>[makelist2.param2]     server/[makelist.param1]</title>
- <link>$doregex[id3]</link>
-<thumbnail>[makelist2.param1]</thumbnail>
-<fanart>[makelist2.param1]</fanart>
-]]></listrepeat>
-<expres>"(https://openload.*?|https://powvideo.*?|https://userscloud.*?|http://uptobox.*?)"</expres>
-<page>[makelist2.param3]</page>
-<referer></referer>
-<cookieJar></cookieJar>
-</regex>
-
-<regex>
-<name>id3</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m):
-    import urlresolver
-    url = '[makelist.param1]'
-    try:
-        u = urlresolver.resolve(url)
-    except:
-        u = 'http://adryantv.org/error.mp4'
-    return u
-]]></expres>
-<page></page>
-</regex>
-
-
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
- </item>
 
 
 
