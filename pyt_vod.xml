@@ -393,7 +393,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
  
 <item>
-<title>[B]ESTRENOS[B]  [BassFox] Audio Latino</title>
+<title>[B]ESTRENOS[/B]  [BassFox] Audio Latino</title>
  <link>$doregex[makelist2]</link>
  
    <regex>
@@ -445,7 +445,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
  
    <item>
-<title>[B]ESTRENOS[B] [CineVall] Audio Latino </title>
+<title>[B]ESTRENOS[/B] [CineVall] Audio Latino </title>
 
   <link>$doregex[makelist3]</link>
 
@@ -473,7 +473,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	
 	
 <item>
-<title>[B]ESTRENOS[B]  [AquiPelis] Audio Latino</title>
+<title>[B]ESTRENOS[/B]  [AquiPelis] Audio Latino</title>
 <link>$doregex[makelist2]</link>
 
   <regex>
