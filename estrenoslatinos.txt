@@ -4,7 +4,9 @@
 
 
 
-
+Estrenos:"Peter_rabbit" url:"https://streamango.com/f/defsqamdemsanaoa/Peter_rabbit_2018_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
+Estrenos:"The_clapper" url:"https://streamango.com/f/kqceakcnmlmnsped/The_clapper_2017_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
+Estrenos:"Suicide_squad_hell_to_pay" url:"https://streamango.com/f/bemftktfolftskat/Suicide_squad_hell_to_pay_2018_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
 Estrenos:"Honey_rise_up_and_dance" url:"https://streamango.com/f/clacddmetdlpdrmq/Honey_rise_up_and_dance_2018_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
 Estrenos:"Paddington_2" url:"https://streamango.com/f/cnnqkbalqmqbqdte/Paddington_2_2017_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
 Estrenos:"Come_sunday" url:"https://streamango.com/f/mkebdeabmeebncen/Come_sunday_2018_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
@@ -136,8 +138,14 @@ Estrenos:"" url:"
 
 
 
-EstrenosESP:"" url:"   
+EstrenosESP:"" url:"
 
+
+
+EstrenosESP:"Gods_own_country" url:"https://streamango.com/f/lsosnkmsompppqno/Gods_own_country_2017_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
+EstrenosESP:"Paddington_2" url:"https://streamango.com/f/qoctrnkntdecteaa/Paddington_2_2017_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
+EstrenosESP:"Megan_leavey" url:"https://streamango.com/f/tdtlntnqerrflllt/Megan_leavey_2017_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
+EstrenosESP:"Suicide_squad_hell_to_pay" url:"https://streamango.com/f/bnqkdqlfskpmcrtl/Suicide_squad_hell_to_pay_2018_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
 EstrenosESP:"Come_sunday" url:"https://streamango.com/f/dlllmsflakakmkdq/Come_sunday_2018_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
 EstrenosESP:"A_bad_moms_christmas" url:"https://streamango.com/f/ncafdrdktadbffeb/A_bad_moms_christmas_2017_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
 EstrenosESP:"Jumanji_welcome_to_the_jungle" url:"https://streamango.com/f/otoaaaerqbnfprca/Jumanji_welcome_to_the_jungle_2017_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
