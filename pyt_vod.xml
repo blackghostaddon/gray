@@ -1532,7 +1532,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<item>
+<itm>
 <title>[B]MIRATODO[/B]  Estrenos updated   </title>
 <link>$doregex[makelist0]</link>
 
@@ -1993,7 +1993,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
- <item>
+ <iem>
  <title>[B]NEWPCT[/B] [Latino + Castellano] </title>
 
  <link>$doregex[makelist2]</link>
@@ -2092,15 +2092,15 @@ def GetLSProData(page_data,Cookie_Jar,m):
 ]]></listrepeat>
 <expres><![CDATA[Ntooltip\"\shref="(.*?)">(.*?)<[\w\W\s]{0,20}src="(.*?)"]]></expres>
 <page>http://gnula.nu/peliculas-de-estreno/lista-de-peliculas-online-parte-1/</page>
+<cookieJar>$doregex[createCFCookie]</cookieJar>
 <referer>http://gnula.nu</referer>
 <agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36</agent>
-<cookieJar>$doregex[createCFCookie]</cookieJar>
 </regex>
 <regex>
-        <name>createCFCookie</name>
-        <expres></expres>
-        <page>$pyFunction:cloudflare.createCookie('http://gnula.nu',Cookie_Jar,'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36')</page>
-        <cookieJar></cookieJar>
+<name>createCFCookie</name>
+<expres></expres>
+<page>$pyFunction:cloudflare.createCookie('http://gnula.nu',Cookie_Jar,'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36')</page>
+<cookieJar></cookieJar>
 </regex>
 
 <regex>
