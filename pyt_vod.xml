@@ -517,7 +517,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page></page>
 </regex>
 
-
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
  </item>
 
