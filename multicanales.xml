@@ -126,7 +126,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/$dorege
  headers['Accept'] = 'application/json, text/javascript, */*; q=0.01'
  headers['Accept-Language'] = 'en-US,en;q=0.5'
  source = requests.get('http://bro.adca.st/%s'%tokenpage, headers=headers)
- m3u8 = m3u8 + re.findall(':"(.+?)"', source.text)[0] + '|User-Agent=%s&Referer=http://bro.adca.st/&Origin=http://bro.adca.st'%headers['User-Agent']
+ m3u8 = m3u8 + re.findall(':"(.+?)"', source.text)[0] + '|User-Agent=%s&Referer=http://bro.adca.st/stream/739.html&Origin=http://bro.adca.st'%headers['User-Agent']
  return m3u8
 ]]></expres>
 <page></page>
