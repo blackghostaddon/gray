@@ -3,7 +3,9 @@
 
 
 
-
+Estrenos:"Deep_blue_sea_2" url:"https://streamango.com/f/odkqobrskrolakot/Deep_blue_sea_2_2018_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
+Estrenos:"Hangman" url:"https://streamango.com/f/dpmdbpmqkpnbbffa/Hangman_2017_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
+Estrenos:"Gun_shy" url:"https://streamango.com/f/dclrlamtolbelodb/Gun_shy_2017_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
 Estrenos:"Peter_rabbit" url:"https://streamango.com/f/defsqamdemsanaoa/Peter_rabbit_2018_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
 Estrenos:"The_clapper" url:"https://streamango.com/f/kqceakcnmlmnsped/The_clapper_2017_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
 Estrenos:"Suicide_squad_hell_to_pay" url:"https://streamango.com/f/bemftktfolftskat/Suicide_squad_hell_to_pay_2018_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
@@ -139,6 +141,15 @@ Estrenos:"" url:"
 
 
 EstrenosESP:"" url:"
+
+
+
+
+EstrenosESP:"Pitch_perfect_3" url:"https://streamango.com/f/qblqbbotrrlleqkq/Pitch_perfect_3_2017_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
+EstrenosESP:"Sweet_virginia" url:"https://streamango.com/f/dttssnmlrnplkssp/Sweet_virginia_2017_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
+EstrenosESP:"Deep_blue_sea_2" url:"https://streamango.com/f/flfcacpsbctcabef/Deep_blue_sea_2_2018_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
+
+
 
 
 
