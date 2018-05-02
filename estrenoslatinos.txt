@@ -3,6 +3,14 @@
 
 
 
+Estrenos:"Candy_jar" url:"https://streamango.com/f/falfccoqtlldktsn/Candy_jar_2018_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
+Estrenos:"The_week_of_2018" url:"https://streamango.com/f/edrsrcsmcdbrssqk/The_week_of_2018_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
+Estrenos:"Tremors_a_cold_day_in_hell_" url:"https://streamango.com/f/skqspkmoptmfolem/Tremors_a_cold_day_in_hell_2018_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
+Estrenos:"Batman_ninja" url:"https://streamango.com/f/rtacrftfmbatlqrm/Batman_ninja_2018_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
+Estrenos:"Fifty_shades_freed" url:"https://streamango.com/f/mfmslndskalotftm/Fifty_shades_freed_2018_1080p_unrated-dual-lat-cinecalidad_to_mp4" server:"Streamango"
+Estrenos:"Bushwick" url:"https://streamango.com/f/rocdoatbtcsssqdm/Bushwick_2017_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
+Estrenos:"Dude" url:"https://streamango.com/f/olabfocadasodfca/Dude_2018_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
+
 Estrenos:"Deep_blue_sea_2" url:"https://streamango.com/f/odkqobrskrolakot/Deep_blue_sea_2_2018_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
 Estrenos:"Hangman" url:"https://streamango.com/f/dpmdbpmqkpnbbffa/Hangman_2017_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
 Estrenos:"Gun_shy" url:"https://streamango.com/f/dclrlamtolbelodb/Gun_shy_2017_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
@@ -143,16 +151,20 @@ Estrenos:"" url:"
 EstrenosESP:"" url:"
 
 
+EstrenosESP:"Mollys_game" url:"https://streamango.com/f/ossqmafskqrnbbkb/Mollys_game_2017_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
+EstrenosESP:"The_week_of" url:"https://streamango.com/f/bdolcbmsepbpaokt/The_week_of_2018_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
+EstrenosESP:"The_disaster_artist" url:"https://streamango.com/f/caoaetnbfbaclbtc/The_disaster_artist_2017_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
+EstrenosESP:"Insidious_the_last_key" url:"https://streamango.com/f/qqcdrsbdqtqfmcbo/Insidious_the_last_key_2018_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
+EstrenosESP:"Maze_runner_the_death_cure" url:"https://streamango.com/f/dkpdassocremkpsc/Maze_runner_the_death_cure_2018_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
+EstrenosESP:"Deep" url:"https://streamango.com/f/dkcadamqsadkmdap/Deep_2017_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
+EstrenosESP:"Dude" url:"https://streamango.com/f/rmrntdnsesakdrcb/Dude_2018_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
+
+
 
 
 EstrenosESP:"Pitch_perfect_3" url:"https://streamango.com/f/qblqbbotrrlleqkq/Pitch_perfect_3_2017_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
 EstrenosESP:"Sweet_virginia" url:"https://streamango.com/f/dttssnmlrnplkssp/Sweet_virginia_2017_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
 EstrenosESP:"Deep_blue_sea_2" url:"https://streamango.com/f/flfcacpsbctcabef/Deep_blue_sea_2_2018_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
-
-
-
-
-
 EstrenosESP:"Gods_own_country" url:"https://streamango.com/f/lsosnkmsompppqno/Gods_own_country_2017_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
 EstrenosESP:"Paddington_2" url:"https://streamango.com/f/qoctrnkntdecteaa/Paddington_2_2017_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
 EstrenosESP:"Megan_leavey" url:"https://streamango.com/f/tdtlntnqerrflllt/Megan_leavey_2017_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
