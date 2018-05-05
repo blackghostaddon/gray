@@ -791,6 +791,23 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 
 
+<item>
+<title>[COLOR black][B][  ][/B][/COLOR]  [COLOR lightblue][B]tests[/B] [/COLOR][COLOR white] [/COLOR] </title>
+<link>$doregex[lista]</link>
+
+<regex>
+<name>lista</name>
+  <listrepeat><![CDATA[
+         
+		 <title>[lista.param1][lista.param2][lista.param3]</title>
+        <link>plugin://program.plexus/?url=[lista.param1]&amp;mode=1&amp;name=BlackAddon+[lista.param2]</link>
+		<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/acestream.png</thumbnail>
+		]]></listrepeat>
+<expres><![CDATA[Post__titleLink\s\">(.*?)<|class=\"md\"><p>(.*?)acestream\:\/\/(.*?)<]]><expres>
+<page>https://www.reddit.com/user/acestreamsbot</page>
+</regex>
+
+</item>
 
 
  
