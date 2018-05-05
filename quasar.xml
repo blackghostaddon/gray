@@ -70,7 +70,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>[makelist2.param2]</thumbnail>
 </regex>
 ]]></listrepeat>
-<expres><![CDATA[imagen-post[\w\W\s]{0,8}href="(.*?)"[\w\W\s]{0,7}src="(.*?)"[\w\W\s]{0,400}bloque-inferior">\n(.*?)<]]></expres>
+<expres><![CDATA[imagen-post[\w\W\s]{0,8}href="(.*?)"[\w\W\s]{0,7}src="(.*?)"[\w\W\s]{0,400}bloque-inferior\">\n(.*?)<]]></expres>
 <page>https://grantorrent.com/?s=$doregex[search]</page>
 </regex>
 
@@ -100,7 +100,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>[makelist2.param2]</thumbnail>
 </regex>
 ]]></listrepeat>
-<expres><![CDATA[alt="(.*?)".*?td>\n<td>(.*?)<.*?\n<td>(.*?)<.*?\n.*?href="(.*?torrent)"]]></expres>
+<expres><![CDATA[alt="(.*?)"><\/td><td>(.*?)<\/td><td>(.*?)</td><td>.*?href="(.*?torrent)">]]></expres>
 <page>[makelist2.param1]</page>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
@@ -184,7 +184,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>makelist2</name>
 <listrepeat><![CDATA[
    <SetViewMode>55</SetViewMode>
-   <title>[B][makelist2.param2][/B]  [makelist2.param3]</title>
+   <title>[B][makelist2.param2][/B]  [makelist2.param3] - [[makelist2.param1]]</title>
 <link>$doregex[makelist]</link>
  <thumbnail>[makelist2.param4]</thumbnail>
 
