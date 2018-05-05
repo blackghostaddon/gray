@@ -75,16 +75,29 @@ def GetLSProData(page_data,Cookie_Jar,m):
 			<item>
 		<title>•  [B]TotalPlay[/B]  [ Opcion [B]TecnoTV[/B] ][B]  [/B]  </title>
 <link>NA</link>
-<externallink>http://tecnotv.xyz/lista.m3u</externallink>
- 			<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/img/tp.jpg</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/img/fanart.jpg</fanart></item>
+<externallink>$doregex[select]</externallink>
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+   import xbmcgui
+   dialog = xbmcgui.Dialog()
+   ret = dialog.select('Seleciona una Lista ', ['opcion Lista ', 'opcion Lista 2', 'opcion Lista 3', 'opcion Lista 4', 'opcion peliculas', 'opcion esp', 'opcion fta'])
+   lists = ['http://tecnotv.xyz/lista.m3u', 'http://tecnotv.xyz/lista2.m3u', 'http://tecnotv.xyz/lista3.m3u', 'http://tecnotv.xyz/lista4.m3u', 'http://tecnotv.xyz/peliculas.m3u', 'http://tecnotv.xyz/esp.m3u', 'http://tecnotv.xyz/fta.m3u']
+   return lists[ret]
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/mas.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
+</item>
 
 
 
 			<item>
 		<title>•  [B]TotalPlay[/B]  [ Opcion [B]Regio[/B] ][B]  [/B]  </title>
 <link>NA</link>
-<externallink>http://srregio.xyz/regiotv.m3u</externallink>
+<externallink>http://srregio.xyz/IPTV/regiotv.m3u</externallink>
  			<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/img/tp.jpg</thumbnail>
 <fanart>https://raw.githubusercontent.com/blackghostaddon/gray/img/fanart.jpg</fanart></item>
 
@@ -114,15 +127,22 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
  
 
+
+
+
 <item>
-<title>•  [B]TotalPlay[/B]  [ Opcion [B]temp2[/B] ][B]   [/B]  </title>
+<title>•  [B]TotalPlay[/B]  [ Opcion [B]TVPremium HD[/B] ][B]   [/B]  </title>
 <link>NA</link>2
-<externallink>https://raw.githubusercontent.com/blackghostaddon/gray/temp2.m3u</externallink>
+<externallink>http://tvpremiumhd.club/lista.m3u</externallink>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/img/tp.jpg</thumbnail>
 <fanart>https://raw.githubusercontent.com/blackghostaddon/gray/img/fanart.jpg</fanart></item>
 
-
-
+<item>
+<title>•  [B]TotalPlay[/B]  [ Opcion [B]TVPremium TV[/B] ][B]   [/B]  </title>
+<link>NA</link>2
+<externallink>http://tvpremiumhd.club/tv.m3u</externallink>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/img/tp.jpg</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/img/fanart.jpg</fanart></item>
 
 
 
