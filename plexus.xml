@@ -353,7 +353,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
         <link>plugin://program.plexus/?url=[lista.param3]&amp;mode=1&amp;name=BlackAddon+[lista.param2]</link>
 		<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/acestream.png</thumbnail>
 		]]></listrepeat>
-<expres><![CDATA[Post__titleLink\s\">(.*?)<|class=\"md\"><p>(.*?)acestream\:\/\/(.*?)<]]><expres>
+<expres><![CDATA[Post__titleLink\s\">(.*?)<|<p>(.*?)acestream\:\/\/(.*?)<]]><expres>
 <page>https://www.reddit.com/user/acestreamsbot</page>
 </regex>
 
