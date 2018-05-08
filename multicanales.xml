@@ -107,7 +107,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
  <item>
-<title>[B]PARTIDOS AMISTOSOS MULTICANAL opciones 1 [/B]      </title>
+<title>[B]MULTICANAL opciones MaxDeportes [/B]    *  </title>
 <link>$doregex[bro.adca.st]</link>
 
 
@@ -275,7 +275,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<item>
+<iem>
 <title>[B]Multicanales MaxDeportes LigaSantander | LigaMX | LigaColombia | Ligas Sudamerica [/B]  [mips]    </title>
 
  <link>http://$doregex[ip]$doregex[m3u8]$doregex[hls]</link>
@@ -354,7 +354,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/17220.h
 
 
 
-<item>
+<iem>
  <title>[B]Multicanal NFL Network[/B]   op2  </title>
 <link>$doregex[ip]</link>
 			<regex>
@@ -378,7 +378,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/17220.h
 
  
 
- <item>
+ <iem>
  <title>[B]Multicanal PSN [/B]      </title>
 <link>https://clutch.vaughnsoft.net/ord/vl/psn88v.m3u8</link>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
