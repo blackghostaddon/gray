@@ -4,7 +4,7 @@
 
 
 
-<item>
+<iem>
 <title>     [B] BUSCADOR [/B]  SkyTorrents   VO </title>
 <link>$doregex[makelist2]</link>
 
@@ -158,11 +158,9 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-   <title>Reproducir [B][makelist2.param2][/B] </title>
-
-    <link>plugin://plugin.video.quasar/play?uri=http://www.mejortorrent.com[makelist.param2]</link>
+<title>Reproducir [B][makelist2.param2][/B]  [[makelist2.param1]] </title>
+<link>plugin://plugin.video.quasar/play?uri=http://www.mejortorrent.com[makelist.param2]</link>
 <thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
-
 ]]></listrepeat>
 <expres>href=\'(.*?torrent)\'</expres>
 <page>http://www.mejortorrent.com/secciones.php?sec=descargas&amp;ap=contar&amp;tabla=peliculas&amp;id=[makelist2.param1]&amp;link_bajar=1</page>
