@@ -107,14 +107,14 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
  <item>
-<title>[B]Multicanales opciones MaxDeportes [/B]      </title>
+<title>[B]PARTIDOS AMISTOSOS MULTICANAL opciones 1 [/B]      </title>
 <link>$doregex[bro.adca.st]</link>
 
 
 <regex>
 <name>bro.adca.st</name>
 <expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/$doregex[select].html'):
+def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/$doregex[canal].html'):
  import requests, re, urllib
  headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:52.0) Gecko/20100101 Firefox/52.0'}
  headers['Referer'] = 'http://vipracing.info/channel/canal-2'
@@ -126,19 +126,28 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/$dorege
  headers['Accept'] = 'application/json, text/javascript, */*; q=0.01'
  headers['Accept-Language'] = 'en-US,en;q=0.5'
  source = requests.get('http://bro.adca.st/%s'%tokenpage, headers=headers)
- m3u8 = m3u8 + re.findall(':"(.+?)"', source.text)[0] + '|User-Agent=%s&Referer=http://bro.adca.st/stream/739.html&Origin=http://bro.adca.st'%headers['User-Agent']
+ m3u8 = m3u8 + re.findall(':"(.+?)"', source.text)[0] + '|User-Agent=%s&Referer=http://bro.adca.st/&Origin=http://bro.adca.st'%headers['User-Agent']
  return m3u8
 ]]></expres>
 <page></page>
 </regex>
+
+
+<regex>
+<name>canal</name>
+<expres>javascript\">id=\"(.*?)\"</expres>
+<page>http://maxdeportv.net/indexa.php?canal=$doregex[select]</page>
+</regex>
+
+
 <regex>
 <name>select</name>
 <expres><![CDATA[#$pyFunction
 def GetLSProData(page_data,Cookie_Jar,m):
    import xbmcgui
    dialog = xbmcgui.Dialog()
-   ret = dialog.select('Elige un Canal ', ['739', '700', '2592', '15183', '16036', '738', '24233', '15558', '17220', '582'])
-   lists = ['739', '700', '2592', '15183', '16036', '738', '24233', '15558', '17220', '582']
+   ret = dialog.select('Elige un Canal ', ['Opcion 1', 'Opcion 2', 'Opcion 3', 'Opcion 4', 'Opcion 5', 'Opcion 6', 'Opcion 7', 'Opcion 8'])
+   lists = ['1', '2', '3', '4', '5', '6', '7', '8']
    return lists[ret]
 ]]></expres>
 <page></page>
