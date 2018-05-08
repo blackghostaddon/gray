@@ -445,7 +445,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
  
    <item>
-<title>[B]ESTRENOS[/B] [CineVall] Audio Latino </title>
+<title>[B]ESTRENOS[/B] [CineVall] Audio Latino * </title>
 
   <link>$doregex[makelist3]</link>
 
@@ -458,14 +458,14 @@ def GetLSProData(page_data,Cookie_Jar,m):
  <regex>
 <name>finalURL</name>
 <expres>file: \'(.*?)\'</expres>
-<page>http://cine.cinevall.club/[makelist3.param1].html</page>
+<page>http://www.cinevall-online.com/[makelist3.param1].html</page>
 <referer>http://www.cinevall.club/estrenos.html</referer>
 </regex>
-<thumbnail>http://www.cinevall.club/[makelist3.param3]</thumbnail>
+<thumbnail>http://www.cinevall-online.com/[makelist3.param3]</thumbnail>
  </item>
 ]]></listrepeat>
 <expres>href="(.*?).html.*?text:\s\'(.*?)\&.*?src="(.*?)"</expres>
-<page>http://www.cinevall.club/estrenos.html</page>
+<page>http://www.cinevall-online.com/estrenos.html</page>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
  </item>
@@ -484,7 +484,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>[makelist2.param1]</thumbnail>
 ]]></listrepeat>
 <expres>mostrar_video.*?src='(.*?)'.*?alt="(.*?)online[\w\W\s]{0,240}href="(.*?)"</expres>
-<page>http://aquipelis.net/peliculas-estrenos/</page>
+<page>https://aquipelis.net/category/peliculas-estrenos/</page>
 </regex>
 
 
@@ -1185,129 +1185,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<itm>
-<title>[B]FULLHD[/B] (GENEROS)  [Castellano] </title>
-
-
-
-<link>$doregex[makelist3]</link>
-
-
-<regex>
-   <name>makelist3</name>
-   <listrepeat><![CDATA[
-       <title>[makelist3.param1]</title>
-
-    <link>$doregex[makelist2]</link>
-
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail>
-   ]]></listrepeat>
-   <expres>genero-peliculas\/(.*?)\/</expres>
-   <page>http://www.cinecalidad.to/espana/</page>
- <agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:19.0) Gecko/20100101 Firefox/19.0</agent>
-   <cookieJar></cookieJar>
-</regex>
-
-
-
-
-
-<regex>
-   <name>makelist2</name>
-   <listrepeat><![CDATA[
-       <title>Page [makelist2.param1]</title>
-
-    <link>$doregex[makelist]</link>
-
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail>
-   ]]></listrepeat>
-   <expres><![CDATA[paginado:"(.*?)";]]></expres>
-   <page>https://raw.githubusercontent.com/blackghostaddon/gray/master/kozm.txt</page>
-   <cookieJar></cookieJar>
-</regex>
-
-
-
-<regex><name>makelist</name>
-<listrepeat><![CDATA[
-          <title>[makelist.param3]</title>
-		  <link>$$LSPlayOnlyOne$$</link>
-		  <link>$doregex[resolver2]|User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:19.0) Gecko/20100101 Firefox/19.0&Referer=http://www.cinecalidad.com/espana/pelicula/[makelist.param1]</link>
-          <link>$doregex[resolver]|User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:19.0) Gecko/20100101 Firefox/19.0&Referer=http://www.cinecalidad.com/espana/pelicula/[makelist.param1]</link>
-		  <thumbnail>[makelist.param2]</thumbnail>
-   ]]></listrepeat>
-<expres><![CDATA[>.*?<a href=".*?\/pelicula\/(.*?)".*?src="(.*?)".*?title="(.*?)"]]></expres>
-<page>http://www.cinecalidad.to/espana/genero-peliculas/[makelist3.param1]/page/[makelist2.param1]/</page>
-<agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:19.0) Gecko/20100101 Firefox/19.0</agent>
-<cookieJar></cookieJar></regex>
-
-
-
-
-<regex><name>resolver</name>
-<expres><![CDATA[#$pyFunction
-import re ,requests
-import urlresolver
-def parseint(string):
-    return int(''.join([x for x in string if x.isdigit()]))
-
-def GetLSProData(page_data,Cookie_Jar,m):
-
-  values = re.search(r'service=="TheVideoMe"\)\{h=dec\("(.*?)"\)\+dec\("(.*?)"', page_data, re.DOTALL)
-  var1=values.group(1)
-  var2=values.group(2)
-  var1+=''.join(' ')
-  var1+=''.join(var2)
-  str=var1
-  d = "" ; str = str.split(" ")
-  i=0
-  for i in range(0,len(str)):
-   pp=(parseint(str[i])-7)
-   d+=''.join(unichr(pp))
-
-  streamLink = urlresolver.resolve(d)
-  return streamLink
-]]></expres>
-  <page>http://www.cinecalidad.com/espana/pelicula/[makelist.param1]</page>
-  <agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:19.0) Gecko/20100101 Firefox/19.0</agent>
-<cookieJar></cookieJar></regex>
-
-
-
-<regex><name>resolver2</name>
-<expres><![CDATA[#$pyFunction
-import re ,requests
-import urlresolver
-def parseint(string):
-    return int(''.join([x for x in string if x.isdigit()]))
-
-def GetLSProData(page_data,Cookie_Jar,m):
-
-  values = re.search(r'service=="OnlineYourUpload"\)\{h=dec\("(.*?)"\)\+dec\("(.*?)"', page_data, re.DOTALL)
-  var1=values.group(1)
-  var2=values.group(2)
-  var1+=''.join(' ')
-  var1+=''.join(var2)
-  str=var1
-  d = "" ; str = str.split(" ")
-  i=0
-  for i in range(0,len(str)):
-   pp=(parseint(str[i])-7)
-   d+=''.join(unichr(pp))
-
-  streamLink = urlresolver.resolve(d)
-  return streamLink
-]]></expres>
-  <page>http://www.cinecalidad.com/espana/pelicula/[makelist.param1]</page>
-  <agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:19.0) Gecko/20100101 Firefox/19.0</agent>
-<cookieJar></cookieJar></regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
-</item>
-
-
-
-
-
 
 
 
@@ -1788,49 +1665,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	
 	
 	
-<iem>
-<title>[B]Especial Fin de Año[/B] [I] Karaoke [/I] </title>
-
- <link>$doregex[makelist2]</link>
-
- 
- 
-<regex>
-<name>makelist2</name>
-<listrepeat><![CDATA[
-<title>$pyFunction:'[B][makelist2.param1][/B]'.replace("%20", " ").replace("-", " ").replace(".", "").replace("avi", " ").replace("mp4", " ").replace("_", " ")</title>
- <link>http://www.karaokesolution.com/SongLists/Spanish/CDG/1/[makelist2.param1]</link>
- <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
-]]></listrepeat>
-<expres><![CDATA[td><a href="(.*?)"]]></expres>
-<page>$doregex[select]</page>
-</regex>
-
- <regex>
-<name>select</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m):
-   import xbmcgui
-   dialog = xbmcgui.Dialog()
-   ret = dialog.select('Elige tu Cancion y Canta ', ['A-C', 'C-D', 'D-E', 'E-L', 'L-M', 'M-N', 'N-Z', 'Ingles'])
-   lists = ['http://www.karaokesolution.com/SongLists/Spanish/CDG/1/', 'http://www.karaokesolution.com/SongLists/Spanish/CDG/2/', 'http://www.karaokesolution.com/SongLists/Spanish/CDG/3/', 'http://www.karaokesolution.com/SongLists/Spanish/CDG/4/', 'http://www.karaokesolution.com/SongLists/Spanish/CDG/5/', 'http://www.karaokesolution.com/SongLists/Spanish/CDG/6/', 'http://www.karaokesolution.com/SongLists/Spanish/CDG/7/', 'http://www.karaokesolution.com/SongLists/English/']
-   return lists[ret]
-]]></expres>
-<page></page>
-</regex>
-
-
-
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
- </item>
-
-
-	
-	
-	
-	
-	
-	
 
 
 
@@ -1993,8 +1827,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
- <iem>
- <title>[B]NEWPCT[/B] [Latino + Castellano] </title>
+ <item>
+ <title>[B]NEWPCT[/B] [Latino + Castellano] **</title>
 
  <link>$doregex[makelist2]</link>
 
@@ -2018,7 +1852,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
   import xbmcgui
   dialog = xbmcgui.Dialog()
   ret = dialog.select('Elige una Seccion ', ['Peliculas Castellano', 'Peliculas Latino', 'Estrenos de Cine Castellano', 'Peliculas Alta Definicion HD', 'Peliculas en 3D HD', 'Otras Peliculas', 'Peliculas x264 MKV', 'Peliculas V.O.Subtituladas'])
-  lists = ['http://www.newpct.com/peliculas/', 'http://www.newpct.com/peliculas-latino/', 'http://www.newpct.com/estrenos-de-cine/', 'http://www.newpct.com/peliculas-hd/', 'http://www.newpct.com/peliculas-3d/', 'http://www.newpct.com/otras-peliculas/', 'http://www.newpct.com/peliculas-x264-mkv/']
+  lists = ['http://descargas2020.com/peliculas/', 'http://descargas2020.com/peliculas-latino/', 'http://descargas2020.com/estrenos-de-cine/', 'http://descargas2020.com/peliculas-hd/', 'http://descargas2020.com/peliculas-3d/', 'http://descargas2020.com/otras-peliculas/', 'http://descargas2020.com/peliculas-x264-mkv/']
   return lists[ret]
 ]]></expres>
  <page></page>
