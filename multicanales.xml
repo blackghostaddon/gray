@@ -376,17 +376,34 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/17220.h
 
 
 
- 
+ <link>https://clutch.vaughnsoft.net/ord/vl/psn88v.m3u8</link>
 
- <iem>
+
+
+
+ <item>
  <title>[B]Multicanal PSN [/B]      </title>
-<link>https://clutch.vaughnsoft.net/ord/vl/psn88v.m3u8</link>
+ <link>https://nludnoo.akamaized.net/nlds/univision/as/live/udnoo_hd_4500_ipad.m3u8?hdnea=expires=1496782118~access=/nlds/univisionnow/univision_east/as/live/*~md5=a4f512d96d77b9a4f5e4d8f31bbf5361</link>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+ <item>
+ <title>[B]Multicanal PSN [/B]      </title>
+ <link>https://clutch.vaughnsoft.net/hls.php?n=vl&i=ord&s=katyhd</link>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+ <item>
+ <title>[B]Multicanal PSN [/B]      </title>
+ <link>https://clutch.vaughnsoft.net/hls.php?n=vl&i=ord&s=psn90v</link>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
 
-
+ <item>
+ <title>[B]Multicanal PSN [/B]      </title>
+ <link>https://clutch.vaughnsoft.net/hls.php?n=vl&amp;i=ord&amp;s=psn90v</link>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
