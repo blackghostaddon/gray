@@ -382,7 +382,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/17220.h
 
 
  <item>
- <title>[B]Multicanal PSN [/B]      </title>
+ <title>[B]Multicanal Univision Deportes [/B]      </title>
  <link>https://nludnoo.akamaized.net/nlds/univision/as/live/udnoo_hd_4500_ipad.m3u8?hdnea=expires=1496782118~access=/nlds/univisionnow/univision_east/as/live/*~md5=a4f512d96d77b9a4f5e4d8f31bbf5361</link>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
@@ -394,7 +394,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/17220.h
 
  <item>
  <title>[B]Multicanal PSN [/B]      </title>
- <link>https://clutch.vaughnsoft.net/hls.php?n=vl&i=ord&s=psn90v</link>
+ <link>https://clutch.vaughnsoft.net/hls.php?n=vl&i=ord&s=psn90v|User-Agent=ipad</link>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
@@ -402,7 +402,21 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/17220.h
 
  <item>
  <title>[B]Multicanal PSN [/B]      </title>
- <link>https://clutch.vaughnsoft.net/hls.php?n=vl&amp;i=ord&amp;s=psn90v</link>
+ <link>https://clutch.vaughnsoft.net/hls.php?n=vl&amp;i=ord&amp;s=psn90v|User-Agent=ipad</link>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+<item>
+ <title>[B]Multicanal PSN [/B]      </title>
+ <link>https://clutch.vaughnsoft.net/hls.php?n=vl&i=ord&s=psn90v|User-Agent=ipad&Referer=https://vaughnlive.tv/browse/espanol</link>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+
+
+ <item>
+ <title>[B]Multicanal PSN [/B]      </title>
+ <link>https://clutch.vaughnsoft.net/hls.php?n=vl&amp;i=ord&amp;s=psn90v|User-Agent=ipad&amp;Referer=https://vaughnlive.tv/browse/espanol</link>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
