@@ -20,7 +20,12 @@
     </items_info>
 			
 			
+			<item>
+			<title>Canal de las Estrellas (HD) </title>
+			<link>http://0nlym3x-lh.akamaihd.net/i/c4nst02_1@175273/master.m3u8</link>
 			
+			<thumbnail></thumbnail>
+			</item>
 			
 
 			
@@ -36,7 +41,11 @@
 			<link>http://aztecalive-lh.akamaihd.net/i/0kus659k5_1@501884/master.m3u8</link>
 			<thumbnail>https://www.foromedios.com/uploads/monthly_2017_03/large.58c547d552942_XHTVM-ADN40.png.bc83280d75016331f3449af51be5ecba.png</thumbnail>
 			</item>
-			
+			<item>
+			<title>Azteca 7</title>
+			<link>http://aztecalive-lh.akamaihd.net/i/0pq46e6vw_1@502477/master.m3u8</link>
+			<thumbnail>https://www.foromedios.com/uploads/monthly_2017_03/large.58c547d552942_XHTVM-ADN40.png.bc83280d75016331f3449af51be5ecba.png</thumbnail>
+			</item>
  
 			
  
@@ -196,7 +205,10 @@
 			<title>Azteca 13 HD opcion 2</title>
 			<link>http://aztecalive-lh.akamaihd.net/i/0qm7cjvop_1@502476/master.m3u8|User-Agent=iPad</link>
 			</item>
-			
+			<item>
+			<title>milenio</title>
+			<link>http://bcoveliveios-i.akamaihd.net/hls/live/201661/57828478001/milenio_center_512k@51752.m3u8</link>
+			</item>
 			
 
 			
