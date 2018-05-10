@@ -387,39 +387,6 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/17220.h
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
- <item>
- <title>[B]Multicanal PSN [/B]      </title>
- <link>https://clutch.vaughnsoft.net/hls.php?n=vl&i=ord&s=katyhd</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
- <item>
- <title>[B]Multicanal PSN [/B]      </title>
- <link>https://clutch.vaughnsoft.net/hls.php?n=vl&i=ord&s=psn90v|User-Agent=ipad</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-
-
-
- <item>
- <title>[B]Multicanal PSN [/B]      </title>
- <link>https://clutch.vaughnsoft.net/hls.php?n=vl&amp;i=ord&amp;s=psn90v|User-Agent=ipad</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-
-<item>
- <title>[B]Multicanal PSN [/B]      </title>
- <link>https://clutch.vaughnsoft.net/hls.php?n=vl&i=ord&s=psn90v|User-Agent=ipad&Referer=https://vaughnlive.tv/browse/espanol</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-
-
-
- <item>
- <title>[B]Multicanal PSN [/B]      </title>
- <link>https://clutch.vaughnsoft.net/hls.php?n=vl&amp;i=ord&amp;s=psn90v|User-Agent=ipad&amp;Referer=https://vaughnlive.tv/browse/espanol</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-
 
 
 
