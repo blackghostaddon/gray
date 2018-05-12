@@ -302,18 +302,17 @@ type:"Ent" canal="History  " channel="historysusy" pub="www.janjuapublisher.com"
 
 
 view-source:http://tvpor-internet.com/envivo/
-type:"Deportes" canal="Formula 1 " channel="f1caballona" pub="www.publish247.xyz" server="247bay.tv" 
-type:"Deportes" canal="DirecTV Sports" channel="directvcaballona" pub="www.publish247.xyz" server="247bay.tv" 
-
-type:"Deportes" canal="Espn 2" channel="espn2gladys" pub="cdn.pubzony.com" server="www.zony.tv" 
-type:"Deportes" canal="Espn   " channel="espn1gladys" pub="cdn.pubzony.com" server="www.zony.tv" 
-type:"Deportes" canal="FoxSports" channel="sports1gladys" pub="cdn.pubzony.com" server="www.zony.tv" 
-type:"Deportes" canal="Fox Sports 2   " channel="sports2gladys" pub="cdn.pubzony.com" server="www.zony.tv"  
-
-type:"Deportes" canal="FoxSports 3" channel="sports3666" pub="www.publish247.xyz" server="247bay.tv"  
-type:"Deportes" canal="WWE Latino  " channel="actioncaballona" pub="www.publish247.xyz" server="247bay.tv"  
-
-
+ type:"Deportes" canal="Formula 1 / Fox Accion" channel="actioncristina" pub="www.janjuapublisher.com" server="www.janjua.tv" 
+ type:"Deportes" canal="Directv" channel="directv1aliciap" pub="www.pubucaster.com" server="embeducaster.com"
+ type:"Deportes" canal="ESPN2" channel="espn2gladys" pub="cdn.pubzony.com" server="www.zony.tv" 
+ type:"Deportes" canal="ESPN " channel="espn1yulianape" pub="www.janjuapublisher.com" server="www.janjua.tv" 
+ type:"Deportes" canal="xxx playboy" channel="playboycharapas" pub="cdn.pubzony.com" server="www.zony.tv"
+ type:"Deportes" canal="Fox Sports 2" channel="sports2gladys" pub="cdn.pubzony.com" server="www.zony.tv"
+ type:"Deportes" canal="Fox Sports 3" channel="sports3ali" pub="www.pubucaster.com" server="embeducaster.com"
+ type:"Deportes" canal="Fox Sports 1" channel="sportsperu1pe" pub="www.janjuapublisher.com" server="www.janjua.tv" 
+ type:"Deportes" canal="Golden" channel="spacemalosotv666" pub="www.janjuapublisher.com" server="www.janjua.tv" 
+ type:"Deportes" canal="HBO" channel="hbokenji" pub="cdn.pubzony.com" server="www.zony.tv"
+ type:"Deportes" canal="Space" channel="spacechamo1" pub="www.janjuapublisher.com" server="www.janjua.tv" 
 
 
 http://www.pelotafuera.com/agendadeportiva.php
@@ -324,7 +323,6 @@ tpe:"Deportes" canal="DirecTV Sports " channel="directv6522q" pub="www.pubfstrea
 tpe:"Deportes" canal="Gol Peru " channel="gol678ism" pub="wwww.zenexpublisher.com" server="zenexplayer.com"
 
 
- 
 
  
 
