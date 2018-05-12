@@ -106,7 +106,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 
 
- <item>
+ <itm>
 <title>[B]MULTICANAL opciones MaxDeportes [/B]    *  </title>
 <link>$doregex[bro.adca.st]</link>
 
@@ -161,13 +161,17 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
+
+
+
+
  <item>
 <title>[B]Canales Arenavision Selecciona un Canal [/B]  por Acestreams   </title>
 <link>plugin://program.plexus/?url=$doregex[hash]&amp;mode=1&amp;name=BlackAddon+Acestreams</link>
 			<regex>
 			<name>hash</name>
 			<expres>this.loadPlayer\("(.*?)"</expres>
-			<page>http://arenavision2018.tk/$doregex[select]</page>
+			<page>http://arenavision2018.ml/$doregex[select]</page>
 			<referer>http://arenavision2018.tk</referer>
 			<setcookie>beget=begetok</setcookie>
 			</regex>
