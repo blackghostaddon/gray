@@ -2,8 +2,12 @@
 
 
 
+Estrenos:"Game_night" url:"https://streamango.com/f/lllpnqbcstaamkcl/Game_night_2018_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
+Estrenos:"Red_sparrow" url:"https://streamango.com/f/qpflpddnbpqnonlr/Red_sparrow_2018_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
+Estrenos:"Darc" url:"https://streamango.com/f/efecdqldmksbappf/Darc_2018_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
+Estrenos:"Samson" url:"https://streamango.com/f/rapcfqocnbackpne/Samson_2018_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
+Estrenos:"Anon_" url:"https://streamango.com/f/eqqkcapcratkeoed/Anon_2018_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
 Estrenos:"Black_panther" url:"https://streamango.com/f/bpdfdmkflabktmkm/Black_panther_2018_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
-
 Estrenos:"Candy_jar" url:"https://streamango.com/f/falfccoqtlldktsn/Candy_jar_2018_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
 Estrenos:"The_week_of_2018" url:"https://streamango.com/f/edrsrcsmcdbrssqk/The_week_of_2018_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
 Estrenos:"Tremors_a_cold_day_in_hell_" url:"https://streamango.com/f/skqspkmoptmfolem/Tremors_a_cold_day_in_hell_2018_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
@@ -11,7 +15,6 @@ Estrenos:"Batman_ninja" url:"https://streamango.com/f/rtacrftfmbatlqrm/Batman_ni
 Estrenos:"Fifty_shades_freed" url:"https://streamango.com/f/mfmslndskalotftm/Fifty_shades_freed_2018_1080p_unrated-dual-lat-cinecalidad_to_mp4" server:"Streamango"
 Estrenos:"Bushwick" url:"https://streamango.com/f/rocdoatbtcsssqdm/Bushwick_2017_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
 Estrenos:"Dude" url:"https://streamango.com/f/olabfocadasodfca/Dude_2018_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
-
 Estrenos:"Deep_blue_sea_2" url:"https://streamango.com/f/odkqobrskrolakot/Deep_blue_sea_2_2018_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
 Estrenos:"Hangman" url:"https://streamango.com/f/dpmdbpmqkpnbbffa/Hangman_2017_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
 Estrenos:"Gun_shy" url:"https://streamango.com/f/dclrlamtolbelodb/Gun_shy_2017_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
@@ -150,6 +153,17 @@ Estrenos:"" url:"
 
 
 EstrenosESP:"" url:"
+
+
+EstrenosESP:"Darkest_hour" url:"https://streamango.com/f/kprtbtaealbfbccn/Darkest_hour_2017_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
+EstrenosESP:"The_post" url:"https://streamango.com/f/eltqtsdsdmplefmd/The_post_2017_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
+EstrenosESP:"Tremors_a_cold_day_in_hell" url:"https://streamango.com/f/rfdaaklqbooblond/Tremors_a_cold_day_in_hell_2018_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
+EstrenosESP:"The_foreigner" url:"https://streamango.com/f/spbsoqmconntaomm/The_foreigner_2017_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
+EstrenosESP:"The_clapper_" url:"https://streamango.com/f/ntnssrscqbfbqdpo/The_clapper_2017_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
+EstrenosESP:"Candy_jar" url:"https://streamango.com/f/rfcmffmbnrobrotq/Candy_jar_2018_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
+EstrenosESP:"The_dinner" url:"https://streamango.com/f/plnqbrdaoqdbretq/The_dinner_2017_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
+
+
 
 EstrenosESP:"Proud_mary" url:"https://streamango.com/f/kcemskpqdfapkstk/Proud_mary_2018_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
 EstrenosESP:"Batman_ninja" url:"https://streamango.com/f/qambcftrtffrctrs/Batman_ninja_2018_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
