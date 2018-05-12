@@ -450,87 +450,6 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/13137.h
 
 
 
-<item>
-<title>[B]Multicanal VIP 02[/B]         </title>
- <link>$doregex[bro.adca.st]</link>
-<regex>
-<name>bro.adca.st</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/24900.html'):
- import requests, re, urllib
- headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:52.0) Gecko/20100101 Firefox/52.0'}
- headers['Referer'] = 'http://vipracing.info/channel/canal-2'
- source = requests.get(url, headers=headers)
- m3u8 = re.findall('tambor = "(.+?)"', source.text)[0]
- tokenpage = re.findall('firme = "\/(.+?)"', source.text)[0]
- headers['Referer'] = url
- headers['X-Requested-With'] = 'XMLHttpRequest'
- headers['Accept'] = 'application/json, text/javascript, */*; q=0.01'
- headers['Accept-Language'] = 'en-US,en;q=0.5'
- source = requests.get('http://bro.adca.st/%s'%tokenpage, headers=headers)
- m3u8 = m3u8 + re.findall(':"(.+?)"', source.text)[0] + '|User-Agent=%s&Referer=http://bro.adca.st/&Origin=http://bro.adca.st'%headers['User-Agent']
- return m3u8
-]]></expres>
-<page></page>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-
-<item>
-<title>[B]Multicanal VIP 03[/B]         </title>
- <link>$doregex[bro.adca.st]</link>
-<regex>
-<name>bro.adca.st</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/24826.html'):
- import requests, re, urllib
- headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:52.0) Gecko/20100101 Firefox/52.0'}
- headers['Referer'] = 'http://vipracing.info/channel/canal-2'
- source = requests.get(url, headers=headers)
- m3u8 = re.findall('tambor = "(.+?)"', source.text)[0]
- tokenpage = re.findall('firme = "\/(.+?)"', source.text)[0]
- headers['Referer'] = url
- headers['X-Requested-With'] = 'XMLHttpRequest'
- headers['Accept'] = 'application/json, text/javascript, */*; q=0.01'
- headers['Accept-Language'] = 'en-US,en;q=0.5'
- source = requests.get('http://bro.adca.st/%s'%tokenpage, headers=headers)
- m3u8 = m3u8 + re.findall(':"(.+?)"', source.text)[0] + '|User-Agent=%s&Referer=http://bro.adca.st/&Origin=http://bro.adca.st'%headers['User-Agent']
- return m3u8
-]]></expres>
-<page></page>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-
-<item>
-<title>[B]Multicanal VIP 19[/B]         </title>
- <link>$doregex[bro.adca.st]</link>
-<regex>
-<name>bro.adca.st</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/23911.html'):
- import requests, re, urllib
- headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:52.0) Gecko/20100101 Firefox/52.0'}
- headers['Referer'] = 'http://vipracing.info/channel/canal-2'
- source = requests.get(url, headers=headers)
- m3u8 = re.findall('tambor = "(.+?)"', source.text)[0]
- tokenpage = re.findall('firme = "\/(.+?)"', source.text)[0]
- headers['Referer'] = url
- headers['X-Requested-With'] = 'XMLHttpRequest'
- headers['Accept'] = 'application/json, text/javascript, */*; q=0.01'
- headers['Accept-Language'] = 'en-US,en;q=0.5'
- source = requests.get('http://bro.adca.st/%s'%tokenpage, headers=headers)
- m3u8 = m3u8 + re.findall(':"(.+?)"', source.text)[0] + '|User-Agent=%s&Referer=http://bro.adca.st/&Origin=http://bro.adca.st'%headers['User-Agent']
- return m3u8
-]]></expres>
-<page></page>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-
-
-
-
 
 
 
@@ -550,12 +469,12 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/23911.h
 
 
 <item>
-<title>[B]Multicanal MaxDeportes 01[/B]     </title>
+<title>[B]Multicanal MaxDeportes 36[/B]     </title>
  <link>$doregex[bro.adca.st]</link>
 <regex>
 <name>bro.adca.st</name>
 <expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/739.html'):
+def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/743.html'):
  import requests, re, urllib
  headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:52.0) Gecko/20100101 Firefox/52.0'}
  headers['Referer'] = 'http://vipracing.info/channel/canal-2'
@@ -578,12 +497,12 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/739.htm
 
 
 <item>
-<title>[B]Multicanal MaxDeportes 08[/B]     </title>
+<title>[B]Multicanal MaxDeportes 42[/B]     </title>
  <link>$doregex[bro.adca.st]</link>
 <regex>
 <name>bro.adca.st</name>
 <expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/15558.html'):
+def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/13137.html'):
  import requests, re, urllib
  headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:52.0) Gecko/20100101 Firefox/52.0'}
  headers['Referer'] = 'http://vipracing.info/channel/canal-2'
