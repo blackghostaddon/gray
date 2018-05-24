@@ -888,7 +888,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<item>
+<!--item>
 <title>     [B]NEWPCT[/B]  Estrenos     [Audio Latino]  </title>
 
  <link>$doregex[makelist3]</link>
@@ -994,7 +994,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-
+-->
 
  <item>
 <title>     [B]O Torrents [/B]  VO </title>
@@ -1004,7 +1004,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
 
-<info></info>
+
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
 
 </item>
@@ -1022,7 +1022,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<item>
+<!--item>
 <title>     [B]YIFY MOVIES [/B]  VO  </title>
 <link>http://ignora.me</link>
 <externallink>https://raw.githubusercontent.com/blackghostaddon/gray/master/yify.xml</externallink>
@@ -1084,7 +1084,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <info></info>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
 
-</item>
+-->
 
 
 
@@ -1297,7 +1297,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  <thumbnail>[makelist.param4]</thumbnail>
 
 ]]></listrepeat>
-<expres><![CDATA[href="(magnet.*?)"\s[\w\W\s]{0,222}Stream[\w\W\s]{0,13}<td>(.*?)<[\w\W\s]{0,23}white-transparent">(.*?)<[\w\W\s]{0,23}white-transparent">(.*?)<[\w\W\s]{0,20}white-transparent">(.*?)<]]></expres>
+<expres><![CDATA[data-magnet="(.*?)"[\w\W\s]{0,300}<td>(.*?)<[\w\W\s]{0,41}">(.*?)<[\w\W\s]{0,36}">(.*?)<[\w\W\s]{0,36}">(.*?)</td>]]></expres>
 <page>[makelist.param1]</page>
 </regex>
 
@@ -1379,7 +1379,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  <thumbnail>[makelist.param4]</thumbnail>
 
 ]]></listrepeat>
-<expres><![CDATA[href="(magnet.*?)"\s[\w\W\s]{0,222}Stream[\w\W\s]{0,13}<td>(.*?)<[\w\W\s]{0,23}white-transparent">(.*?)<[\w\W\s]{0,23}white-transparent">(.*?)<[\w\W\s]{0,20}white-transparent">(.*?)<]]></expres>
+<expres><![CDATA[data-magnet="(.*?)"[\w\W\s]{0,300}<td>(.*?)<[\w\W\s]{0,41}">(.*?)<[\w\W\s]{0,36}">(.*?)<[\w\W\s]{0,36}">(.*?)</td>]]></expres>
 <page>[makelist.param1]</page>
 </regex>
 
@@ -1458,7 +1458,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  <thumbnail>[makelist.param4]</thumbnail>
 
 ]]></listrepeat>
-<expres><![CDATA[href="(magnet.*?)"\s[\w\W\s]{0,222}Stream[\w\W\s]{0,13}<td>(.*?)<[\w\W\s]{0,23}white-transparent">(.*?)<[\w\W\s]{0,23}white-transparent">(.*?)<[\w\W\s]{0,20}white-transparent">(.*?)<]]></expres>
+<expres><![CDATA[data-magnet="(.*?)"[\w\W\s]{0,300}<td>(.*?)<[\w\W\s]{0,41}">(.*?)<[\w\W\s]{0,36}">(.*?)<[\w\W\s]{0,36}">(.*?)</td>]]></expres>
 <page>[makelist.param1]</page>
 </regex>
 
