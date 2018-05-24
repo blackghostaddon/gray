@@ -361,7 +361,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 
 
-<item>
+<itm>
 <title>[COLOR white][B] Canales Arenavision  [COLOR white][I]Opcion 1[/I]  [/COLOR][/B][/COLOR]</title>
 <link>plugin://program.plexus/?url=$doregex[hash]&amp;mode=1&amp;name=BlackAddon+Acestreams</link>
 			<regex>
@@ -393,7 +393,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
-<title>[COLOR white][B] Canales Arenavision  [COLOR white][I]Opcion 2*[/I] [/COLOR][/B][/COLOR]</title>
+<title>[COLOR white][B] Canales Arenavision  [COLOR white][I] [/I] [/COLOR][/B][/COLOR]</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
