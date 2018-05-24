@@ -92,7 +92,7 @@
 
 http://live-nyc.vaughnsoft.net:1935/live/_definst_/live_zonafilmsterror/chunklist.m3u8
 
-<item>
+<iem>
 <title>Television 24/7</title>
 <link>$doregex[makelist]</link>
 <regex>
