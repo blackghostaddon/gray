@@ -2396,11 +2396,11 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>makelist3</name>
 <listrepeat><![CDATA[
-<title> [makelist3.param2]</title>
+<title>[makelist3.param4]</title>
 <link>$doregex[makelist2]</link>
 <thumbnail>[makelist3.param3]</thumbnail>
 ]]></listrepeat>
-<expres><![CDATA[false.*?href="(.*?)" alt="(.*?)"[\w\W\s]{0,130}background-image:\surl\(\'(.*?)\']]></expres>
+<expres><![CDATA[false.*?href="(.*?)"\salt="(.*?)"[\w\W\s]{0,130}background-image:\surl\(\'(.*?)\'[\w\W\s]{0,172}p>(.*?)<]]></expres>
 <page>http://allpeliculas.com/</page>
 </regex>
 
@@ -2412,12 +2412,12 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>makelist2</name>
 <listrepeat><![CDATA[
-<title>[makelist2.param2]</title>
+<title>[B][makelist3.param4][/B] - [makelist2.param2]</title>
 <link>$doregex[id3]</link>
 <thumbnail>[makelist3.param3]</thumbnail>
 ]]></listrepeat>
 <expres><![CDATA[data-link="(.*?)">(.*?)<]]></expres>
-<page>http://allpeliculas.com/pelicula/[makelist3.param1]</page>
+<page>http://allpeliculas.com/[makelist3.param1]</page>
 </regex>
 
 
