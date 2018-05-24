@@ -1,4 +1,4 @@
-<SetViewMode>55</SetViewMode>
+
 
 
 
@@ -182,7 +182,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>makelist2</name>
 <listrepeat><![CDATA[
    <SetViewMode>55</SetViewMode>
-   <title>[B][makelist2.param2][/B]  [makelist2.param3] - [[makelist2.param1]]</title>
+   <title>[B][makelist2.param2][/B]  [makelist2.param3]</title>
 <link>$doregex[makelist]</link>
  <thumbnail>[makelist2.param4]</thumbnail>
 
@@ -190,9 +190,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <expres><![CDATA[href="(.*?)"\stitle="(.*?)"[\w\W\s]{0,199}title="(.*?)".*?data-src="(.*?)"]]></expres>
 <page>https://torrentking.eu/search?mk=$doregex[search]</page>
 </regex>
-
-
-href="(.*?)"\stitle="(.*?)"[\w\W\s]{0,180}movie-image.*?data-src="(.*?)"
 
 
 
@@ -215,18 +212,14 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-   <SetViewMode>55</SetViewMode>
-   <title>[B][makelist.param2][/B] Tamaño: [makelist.param3] Seed:[makelist.param4] - Peers:[makelist.param5] </title>
-   <link>plugin://plugin.video.quasar/play?uri=[makelist.param1]</link>
- <thumbnail>[makelist2.param4]</thumbnail>
-
+<title>[B][makelist.param2][/B] Tamaño: [makelist.param3] Seed:[makelist.param4] - Peers:[makelist.param5] </title>
+<link>plugin://plugin.video.quasar/play?uri=[makelist.param1]</link>
+<thumbnail>[makelist2.param4]</thumbnail>
 ]]></listrepeat>
-<expres><![CDATA[href="(magnet.*?)"\s[\w\W\s]{0,222}Stream[\w\W\s]{0,13}<td>(.*?)<[\w\W\s]{0,23}white-transparent">(.*?)<[\w\W\s]{0,23}white-transparent">(.*?)<[\w\W\s]{0,20}white-transparent">(.*?)<]]></expres>
+<expres><![CDATA[data-magnet="(.*?)"[\w\W\s]{0,300}<td>(.*?)<[\w\W\s]{0,41}">(.*?)<[\w\W\s]{0,36}">(.*?)<[\w\W\s]{0,36}">(.*?)</td>]]></expres>
 <page>[makelist2.param1]</page>
 </regex>
-
 <thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
-
 </item>
 
 
