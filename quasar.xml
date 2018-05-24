@@ -4,49 +4,9 @@
 
 
 
-<iem>
-<title>     [B] BUSCADOR [/B]  SkyTorrents   VO </title>
-<link>$doregex[makelist2]</link>
 
 
-<regex>
-<name>makelist2</name>
-<listrepeat><![CDATA[
- <SetViewMode>55</SetViewMode>
- <title>[UPPERCASE][B] [makelist2.param2][/B][/UPPERCASE]  </title>
-<link>plugin://plugin.video.quasar/play?uri=[makelist2.param1]</link>
-<thumbnail>[makelist2.param2]</thumbnail>
-</regex>
-]]></listrepeat>
-<expres><![CDATA[href="(magnet.*?)"[\w\W\s]{0,34}Download\s(.*?)using]]></expres>
-<page>https://www.skytorrents.in/search/all/ed/1/?q=$doregex[search]</page>
-</regex>
-
-
-
-
-<regex>
-<name>search</name>
-<expres><![CDATA[#$pyFunction
-import xbmc
-import xbmcaddon
-import xbmcgui
-def GetLSProData(page_data,Cookie_Jar,m):
-    dialog = xbmcgui.Dialog()
-    d = dialog.input('Buscar Pelicula: ejemplo: Batman', type=xbmcgui.INPUT_ALPHANUM).replace(" ", "+")
-    return d
-]]></expres>
-<page></page>
-<cookieJar></cookieJar>
-</regex>
-
-
-
-
-<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
-
-</item>
-
+ 
 
 
 
@@ -103,7 +63,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <expres><![CDATA[alt="(.*?)"><\/td><td>(.*?)<\/td><td>(.*?)</td><td>.*?href="(.*?torrent)">]]></expres>
 <page>[makelist2.param1]</page>
 </regex>
-<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
 
 </item>
 
@@ -127,7 +87,7 @@ alt="(.*?)".*?td>\n<td>(.*?)<.*?\n<td>(.*?)<.*?\n.*?href="(.*?torrent)"
  <SetViewMode>55</SetViewMode>
  <title>[UPPERCASE][B] [makelist2.param2][/B][/UPPERCASE] [I][makelist2.param3][/I]  </title>
 <link>$doregex[makelist]</link>
-<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
 
 </regex>
 ]]></listrepeat>
@@ -160,14 +120,14 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <listrepeat><![CDATA[
 <title>Reproducir [B][makelist2.param2][/B]  [[makelist2.param1]] </title>
 <link>plugin://plugin.video.quasar/play?uri=http://www.mejortorrent.com[makelist.param2]</link>
-<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
 ]]></listrepeat>
 <expres>href=\'(.*?torrent)\'</expres>
 <page>http://www.mejortorrent.com/secciones.php?sec=descargas&amp;ap=contar&amp;tabla=peliculas&amp;id=[makelist2.param1]&amp;link_bajar=1</page>
 </regex>
 
 
-<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
 
 </item>
 
@@ -219,7 +179,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <expres><![CDATA[data-magnet="(.*?)"[\w\W\s]{0,300}<td>(.*?)<[\w\W\s]{0,41}">(.*?)<[\w\W\s]{0,36}">(.*?)<[\w\W\s]{0,36}">(.*?)</td>]]></expres>
 <page>[makelist2.param1]</page>
 </regex>
-<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
 </item>
 
 
@@ -245,7 +205,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <listrepeat><![CDATA[
 <title>Pagina [makelist3.param1]</title>
 <link>$doregex[makelist2]</link>
-<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
 
 ]]></listrepeat>
 <expres>'(.*?)'</expres>
@@ -282,7 +242,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <expres><![CDATA[alt="(.*?)".*?td>\n<td>(.*?)<.*?\n<td>(.*?)<.*?\n.*?href="(.*?torrent)"]]></expres>
 <page>[makelist2.param1]</page>
 </regex>
-<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
 
 </item>
 
@@ -351,7 +311,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
 
 </item>
 
@@ -391,90 +351,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <expres>d>(.*?)<[\w\W\s]{0,7}td>(.*?)\.[\w\W\s]{0,16}href="(.*?)"</expres>
 <page>[makelist2.param1]</page>
 </regex>
-<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
-
-</item>
-
-
-
-
-<item>
-<title>     [B]Estrenos[/B]  Latino    </title>
-<link>$doregex[makelist]</link>
-
-<regex>
-<name>makelist</name>
-<listrepeat><![CDATA[
- <title>[makelist.param2]</title>
-<link>plugin://plugin.video.quasar/play?uri=[makelist.param1]</link>
-<thumbnail>[makelist2.param2]</thumbnail>
-</regex>
-]]></listrepeat>
-<expres><![CDATA[href="(magnet.*?)[\w\W\s]{0,30}Download\s(.*?)using]]></expres>
-<page>https://www.skytorrents.in/search/all/ad/1/?l=en-us&amp;q=latino</page>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
-
-</item>
-
-<itm>
-<title>     [B]Estrenos[/B]  Castelano    </title>
-<link>$doregex[makelist]</link>
-
-<regex>
-<name>makelist</name>
-<listrepeat><![CDATA[
- <title>[makelist.param2]</title>
-<link>plugin://plugin.video.quasar/play?uri=[makelist.param1]</link>
-<thumbnail>[makelist2.param2]</thumbnail>
-</regex>
-]]></listrepeat>
-<expres><![CDATA[href="(magnet.*?)[\w\W\s]{0,30}Download\s(.*?)using]]></expres>
-<page>https://www.skytorrents.in/search/all/ad/1/?l=en-us&amp;q=castellano</page>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
-
-</item>
-
-
-
-
-<item>
-<title>     [B]TOP 40[/B]  Latino   </title>
-<link>$doregex[makelist]</link>
-
-<regex>
-<name>makelist</name>
-<listrepeat><![CDATA[
- <title>[makelist.param2]</title>
-<link>plugin://plugin.video.quasar/play?uri=[makelist.param1]</link>
-<thumbnail>[makelist2.param2]</thumbnail>
-</regex>
-]]></listrepeat>
-<expres><![CDATA[href="(magnet.*?)[\w\W\s]{0,30}Download\s(.*?)using]]></expres>
-<page>https://www.skytorrents.in/search/all/ed/1/?l=en-us&amp;q=latino</page>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
-
-</item>
-
-
-<item>
-<title>     [B]TOP 40[/B]  Castellano    </title>
-<link>$doregex[makelist]</link>
-
-<regex>
-<name>makelist</name>
-<listrepeat><![CDATA[
- <title>[makelist.param2]</title>
-<link>plugin://plugin.video.quasar/play?uri=[makelist.param1]</link>
-<thumbnail>[makelist2.param2]</thumbnail>
-</regex>
-]]></listrepeat>
-<expres><![CDATA[href="(magnet.*?)[\w\W\s]{0,30}Download\s(.*?)using]]></expres>
-<page>https://www.skytorrents.in/search/all/ed/1/?l=en-us&amp;q=castellano</page>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
 
 </item>
 
@@ -489,61 +366,9 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<item>
-<title>     [B]MOVIES  MIX[/B]  Estrenos / Audio Latino / Subtituladas  </title>
-<link>$doregex[makelist4]</link>
-
-<regex>
-<name>makelist4</name>
-<listrepeat><![CDATA[
-<title>[B][makelist4.param2][/B] </title>
-<link>$doregex[makelist3]</link>
-<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
-
-]]></listrepeat>
-<expres>ddmix.net\/peliculas\/(.*?)\/" title="(.*?)"</expres>
-<page>https://ddmix.net/</page>
-<cookieJar></cookieJar>
-</regex>
-
-<regex>
-<name>makelist3</name>
-<listrepeat><![CDATA[
-<title>Page [makelist3.param1] </title>
-<link>$doregex[makelist2]</link>
-<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
-
-]]></listrepeat>
-<expres><![CDATA[paginado:"(.*?)";]]></expres>
-<page>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/kozm.txt</page>
-<cookieJar></cookieJar>
-</regex>
 
 
- <regex>
-<name>makelist2</name>
-<listrepeat><![CDATA[
-<title>[makelist2.param2]</title>
-<link>$doregex[makelist]</link>
-<thumbnail>http:[makelist2.param3]</thumbnail>
-]]></listrepeat>
-<expres>href="(.*?\/)"[\w\W\s]{0,30}alt="(.*?)"[\w\W\s]{0,2}src="(.*?)"</expres>
-<page>https://ddmix.net/peliculas/[makelist4.param1]/page/[makelist3.param1]/</page>
-</regex>
 
- <regex>
-<name>makelist</name>
-<listrepeat><![CDATA[
-<title>[makelist.param2] </title>
-<link>plugin://plugin.video.quasar/play?uri=[makelist.param1]</link>
-<thumbnail>http:[makelist2.param3]</thumbnail>
-]]></listrepeat>
-<expres>href="(magnet.*?)"[\w\W\s]{0,150}tooltiptext">(.*?)<</expres>
-<page>[makelist2.param1]</page>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
-
-</item>
 
 
 
@@ -585,7 +410,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <referer></referer>
 <cookieJar></cookieJar>
 </regex>
-<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
 
 </item>
 
@@ -600,10 +425,9 @@ def GetLSProData(page_data,Cookie_Jar,m):
  <item>
 <title>     [B]PelisMag.Net[/B]  Castellano + Buscador de Peliculas y Series </title>
 <link>http://ignora.me</link>
-<externallink>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/pelismag.xml</externallink>
+<externallink>https://raw.githubusercontent.com/blackghostaddon/gray/master/pelismag.xml</externallink>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
 
-
-<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
 
 </item>
 
@@ -611,10 +435,10 @@ def GetLSProData(page_data,Cookie_Jar,m):
   <iem>
 <title>     [B]ZPeliculas[/B]  Castellano </title>
 <link>http://ignora.me</link>
-<externallink>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/zpeliculas.xml</externallink>
+<externallink>https://raw.githubusercontent.com/blackghostaddon/gray/master/zpeliculas.xml</externallink>
 
 
-<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
 
 </item>
 
@@ -637,10 +461,10 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <item>
 <title>     [B]CineTux.COM[/B]  </title>
 <link>http://ignora.me</link>
-<externallink>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/cinetux.xml</externallink>
+<externallink>https://raw.githubusercontent.com/blackghostaddon/gray/master/cinetux.xml</externallink>
 
 
-<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
 
 </item>
 
@@ -661,7 +485,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page>http://app1.vuelo-digital.org/multipremier.php</page>
 <cookieJar></cookieJar>
 </regex>
-<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
 
 </item>
 -->
@@ -682,13 +506,13 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <item>
 <title>[B]YOUTUBE[/B] []</title>
 <link>http://ignora.me</link>
-<externallink>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/youtubemovies.xml</externallink>
+<externallink>https://raw.githubusercontent.com/blackghostaddon/gray/master/youtubemovies.xml</externallink>
 
 
-<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
 
 <info></info>
-<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
 
 </item>
 
@@ -697,26 +521,26 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <item>
 <title>[B]Estrenos[/B] [AlienMovies][V.O. Subtituladas]</title>
 <link>http://ignora.me</link>
-<externallink>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/pelialien.xml</externallink>
+<externallink>https://raw.githubusercontent.com/blackghostaddon/gray/master/pelialien.xml</externallink>
 
 
-<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
 
 <info></info>
-<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
 
 </item>
 
 <item>
 <title>[B]Solo Estrenos [/B]HD [JessMax]</title>
 <link>http://ignora.me</link>
-<externallink>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/jessmax.xml</externallink>
+<externallink>https://raw.githubusercontent.com/blackghostaddon/gray/master/jessmax.xml</externallink>
 
 
-<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
 
 <info></info>
-<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
 
 </item>
 
@@ -724,13 +548,13 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <item>
 <title>[B]Estrenos[/B] [Latino]</title>
 <link>http://ignora.me</link>
-<externallink>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/peliculas.xml</externallink>
+<externallink>https://raw.githubusercontent.com/blackghostaddon/gray/master/peliculas.xml</externallink>
 
 
-<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
 
 <info></info>
-<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
 
 </item>
 -->
@@ -738,62 +562,62 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <item>
 <title>[B]Estrenos[/B] [Castellano]</title>
 <link>http://ignora.me</link>
-<externallink>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/peliculaspa.xml</externallink>
+<externallink>https://raw.githubusercontent.com/blackghostaddon/gray/master/peliculaspa.xml</externallink>
 
 
-<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
 
 <info></info>
-<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
 
 </item>
 
 <item>
 <title>[B]Recien Actualizadas[/B]</title>
 <link>http://ignora.me</link>
-<externallink>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/series/p_actuales.xml</externallink>
+<externallink>https://raw.githubusercontent.com/blackghostaddon/gray/master/series/p_actuales.xml</externallink>
 
 
-<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
 
 <info></info>
-<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
 
 </item>
 <item>
 <title>[B]Mas Vistas[/B]</title>
 <link>http://ignora.me</link>
-<externallink>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/series/movies_populares.xml</externallink>
+<externallink>https://raw.githubusercontent.com/blackghostaddon/gray/master/series/movies_populares.xml</externallink>
 
 
-<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
 
 <info></info>
-<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
 
 </item>
 <item>
 <title>[B]INFANTILES[/B]</title>
 <link>http://ignora.me</link>
-<externallink>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/series/p_infantiles.xml</externallink>
+<externallink>https://raw.githubusercontent.com/blackghostaddon/gray/master/series/p_infantiles.xml</externallink>
 
 
-<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
 
 <info></info>
-<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
 
 </item>
 <item>
 <title>Mexicanas [Audio Latino]</title>
 <link>http://ignora.me</link>
-<externallink>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/series/p_mex.xml</externallink>
+<externallink>https://raw.githubusercontent.com/blackghostaddon/gray/master/series/p_mex.xml</externallink>
 
 
-<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
 
 <info></info>
-<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
 
 </item>
 
@@ -801,12 +625,12 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <item>
 <title>Ultimas Agregadas [Audio Español & Latino]</title>
 <link>http://ignora.me</link>
-<externallink>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/ultimas.xml</externallink>
+<externallink>https://raw.githubusercontent.com/blackghostaddon/gray/master/ultimas.xml</externallink>
 
 
 <thumbnail>https://cdn1.iconfinder.com/data/icons/devices-media-circle-style/48/film_strip-512.png</thumbnail>
 <info></info>
-<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
 
 </item>
 
@@ -814,13 +638,13 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <item>
 <title>Audio Castellano</title>
 <link>http://ignora.me</link>
-<externallink>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/p_esp.xml</externallink>
+<externallink>https://raw.githubusercontent.com/blackghostaddon/gray/master/p_esp.xml</externallink>
 
 
-<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
 
 <info></info>
-<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
 
 </item>
 
@@ -854,8 +678,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  <item>
 <title>     [B]YourbitTorrents[/B]  Top100   Recientes </title>
 <link>$doregex[makelist]</link>
-<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
-
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
 
 <regex>
 <name>makelist</name>
@@ -868,7 +691,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page>https://yourbittorrent.com/movies.html</page>
 <agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36</agent>
 </regex>
-<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
 
 </item>
 
@@ -885,8 +708,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
  <link>$doregex[makelist0]</link>
 
 
-<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
 
 <regex>
@@ -894,8 +717,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <listrepeat><![CDATA[
 <title>[makelist0.param2]</title>
 <link>$doregex[showPages]</link>
-   <thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/fanart.jpg</fanart>
+   <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 ]]></listrepeat>
 <expres>class="forumtitle[\w\W\s]{0,6}href="https://www.shaanig.org/(.*?)/">(.*?)<</expres>
 <page>https://www.shaanig.org/f4/</page>
@@ -912,8 +735,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <listrepeat><![CDATA[
    <title>Page# [showPages.param1]</title>
     <link>$doregex[makelist2]</link>
-     <thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/fanart.jpg</fanart>
+     <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 ]]></listrepeat>
 <expres>([0-9]+),?</expres>
 <page>$doregex[getPageNumbers]</page>
@@ -956,15 +779,15 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <listrepeat><![CDATA[
 <title>[makelist.param2]</title>
 <link>plugin://plugin.video.quasar/play?uri=[makelist.param1]</link>
-<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 ]]></listrepeat>
 <expres>href="(.*?.torrent)">(.*?)torrent</expres>
 <page>https://www.shaanig.org/[makelist0.param1]/[makelist2.param1]</page>
 <referer></referer>
 <cookieJar></cookieJar>
 </regex>
-<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
 
 </item>
 
@@ -1031,7 +854,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <referer>http://extratorrent.one/</referer>
 <agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
 </regex>
-<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
 
 </item>
 
@@ -1051,7 +874,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <referer>http://extratorrent.ch/</referer>
 <agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
 </regex>
-<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
 
 </item>
 
@@ -1092,7 +915,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <cookieJar></cookieJar>
 </regex>
 
-<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
 
 </item>
 
@@ -1122,7 +945,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <cookieJar></cookieJar>
 </regex>
 
-<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
 
 </item>
 
@@ -1155,7 +978,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <cookieJar></cookieJar>
 </regex>
 
-<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
 
 </item>
 
@@ -1176,13 +999,13 @@ def GetLSProData(page_data,Cookie_Jar,m):
  <item>
 <title>     [B]O Torrents [/B]  VO </title>
 <link>http://ignora.me</link>
-<externallink>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/otorrents.xml</externallink>
+<externallink>https://raw.githubusercontent.com/blackghostaddon/gray/master/otorrents.xml</externallink>
 
 
-<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
 
 <info></info>
-<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
 
 </item>
 
@@ -1202,13 +1025,13 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <item>
 <title>     [B]YIFY MOVIES [/B]  VO  </title>
 <link>http://ignora.me</link>
-<externallink>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/yify.xml</externallink>
+<externallink>https://raw.githubusercontent.com/blackghostaddon/gray/master/yify.xml</externallink>
 
 
-<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
 
 <info></info>
-<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
 
 </item>
 
@@ -1241,7 +1064,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <expres><![CDATA[ href="(magnet.*)"]]></expres>
 <page>[makelist2.param1]</page>
 </regex>
-<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
 
 </item>
 
@@ -1253,13 +1076,13 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <tem>
 <title>     [B]YIFY [/B]  VO  </title>
 <link>http://ignora.me</link>
-<externallink>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/yify2.xml</externallink>
+<externallink>https://raw.githubusercontent.com/blackghostaddon/gray/master/yify2.xml</externallink>
 
 
-<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
 
 <info></info>
-<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
 
 </item>
 
@@ -1319,7 +1142,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <expres>CDATA\[(.*?)\][\w\W\s]{0,20}link>(.*?)<</expres>
 <page>https://thepiratebay.org/rss/top100/201</page>
 </regex>
-<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
 
 </item>
 
@@ -1339,7 +1162,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <expres>CDATA\[(.*?)\][\w\W\s]{0,20}link>(.*?)<</expres>
 <page>https://thepiratebay.org/rss/top100/207</page>
 </regex>
-<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
 
 </item>
 
@@ -1359,7 +1182,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <expres>CDATA\[(.*?)\][\w\W\s]{0,20}link>(.*?)<</expres>
 <page>https://thepiratebay.org/rss/top100/207</page>
 </regex>
-<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
 
 </item>
 
@@ -1380,7 +1203,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <expres>CDATA\[(.*?)\][\w\W\s]{0,20}link>(.*?)<</expres>
 <page>https://thepiratebay.org/rss/top100/208</page>
 </regex>
-<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
 
 </item>
 
@@ -1406,7 +1229,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <expres>CDATA\[(.*?)\][\w\W\s]{0,20}link>(.*?)<</expres>
 <page>https://thepiratebay.org/rss/top100/205</page>
 </regex>
-<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
 
 </item>
 
@@ -1484,7 +1307,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
 
 </item>
 
@@ -1566,7 +1389,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
 
 </item>
 
@@ -1645,7 +1468,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
 
 </item>
 
@@ -1714,7 +1537,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <cookieJar></cookieJar>
 </regex>
 
-<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
 
 </item>
 
@@ -1747,7 +1570,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page>[makelist.param2]</page>
 </regex>
 
-<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
 
 </item>
 
@@ -1779,7 +1602,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page>https://www.ettv.tv[makelist.param2]</page>
 </regex>
 
-<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
 
 </item>
 
@@ -1809,7 +1632,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page>https://www.ettv.tv[makelist.param2]</page>
 </regex>
 
-<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
 
 </item>
 
@@ -1838,7 +1661,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page>https://www.ettv.tv[makelist.param2]</page>
 </regex>
 
-<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
 
 </item>
 
@@ -1877,7 +1700,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page>https://www.ettv.tv[makelist.param2]</page>
 </regex>
 
-<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
 
 </item>
 
@@ -1927,6 +1750,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page>https://www.ettv.tv[makelist.param1]</page>
 </regex>
 
-<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
 
 </item>
