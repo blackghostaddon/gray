@@ -391,8 +391,9 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
+
 <item>
-<title>[COLOR white][B] Canales Arenavision  [COLOR white][I]Opcion 2[/I] [/COLOR][/B][/COLOR]</title>
+<title>[COLOR white][B] Canales Arenavision  [COLOR white][I]Opcion 2*[/I] [/COLOR][/B][/COLOR]</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
@@ -402,21 +403,25 @@ def GetLSProData(page_data,Cookie_Jar,m):
 			<regex>
 			<name>hash</name>
 			<expres>this.loadPlayer\("(.*?)"</expres>
-			<page>http://arenavision2018.tk/[makelist.param1]</page>
+			<page>[makelist.param1]</page>
 			<referer>http://arenavision2018.tk</referer>
 			<setcookie>beget=begetok</setcookie>
 			</regex>
  <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/acestreams.png</thumbnail>
 </item>
 ]]></listrepeat>
-<expres><![CDATA[arenavision2018\.tk\/(.*?)\?.*?title="">(.*?)<]]></expres>
+<expres><![CDATA[leaf\"><a\shref=\"(http.*?)\"\stitle=\"\">(.*?)<]]></expres>
 <page>http://arenavision.us</page>
 <Agent>Mozilla</Agent>
 <referer>http://arenavision.tk</referer>
 <setcookie>beget=begetok</setcookie>
 </regex>
- <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/acestreams.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/acestreams.png</thumbnail>
 </item>
+
+
+
+
 
 
 
