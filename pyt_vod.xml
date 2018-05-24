@@ -2387,7 +2387,40 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
+ <item>
+<title>All Peliculas</title>
+<link>$doregex[makelist2]</link>
 
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>[makelist2.param2]</title>
+<link>$doregex[id3]</link>
+]]></listrepeat>
+<expres><![CDATA[data-link="(.*?)">(.*?)<]]></expres>
+<page>http://allpeliculas.com/pelicula/Deadpool</page>
+</regex>
+
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = '[makelist2.param1]'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryantv.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
+</regex>
+ 
+ 
+ <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail>
+  </item>
 
 
 
@@ -2396,8 +2429,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <title>[B]WATCHFREE[/B]  New Releases VO </title>
 <link>$doregex[makelist2]</link>
 
-
-<regex>
+	 <regex>
 <name>makelist2</name>
 <listrepeat><![CDATA[
 <SetViewMode>55</SetViewMode>
