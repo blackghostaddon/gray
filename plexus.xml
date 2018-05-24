@@ -238,7 +238,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 			<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/acestreams.png</thumbnail>
 
 ]]></listrepeat>
-<expres><![CDATA[87px\">(.*?)<[\w\W\s]{0,30}">(.*?)<[\w\W\s]{0,32}">(.*?)<[\w\W\s]{0,32}">(.*?)<[\w\W\s]{0,32}">(.*?)<[\w\W\s]{0,32}"(>[0-9]+)]]></expres>
+<expres><![CDATA[87px\">(.*?)<[\w\W\s]{0,30}">(.*?)<[\w\W\s]{0,32}">(.*?)<[\w\W\s]{0,32}">(.*?)<[\w\W\s]{0,32}">(.*?)<[\w\W\s]{0,52}"(>[0-9]+)]]></expres>
 <page>http://arenavision.us/guide</page>
 <Agent>Mozilla</Agent>
 <referer>http://arenavision2018.tk</referer>
@@ -267,7 +267,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<item>
+<iem>
 <title>[COLOR white][B] Agenda Aceoplisting  [COLOR white]   [COLOR white][/COLOR] [/COLOR][/B] OFFLINE[/COLOR]</title>
 
 <link>$doregex[makelist]</link>
@@ -374,7 +374,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<item>
+<iem>
 <title>  [COLOR lightblue][B]Reddit Acestreams [/B] [/COLOR][COLOR white] [/COLOR] </title>
 <link>$doregex[lista]</link>
 
@@ -510,25 +510,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-
-
-	<iem>
-<title>[COLOR white][B] Agenda Arenavision  [COLOR white] Server [COLOR white][avezy][/COLOR]  [/COLOR][/B][/COLOR]</title>
-<link>$doregex[makelist]</link>
-<regex>
-<name>makelist</name>
-<listrepeat><![CDATA[
-<item><title>[COLOR lightgreen][makelist.param1][/COLOR] [COLOR white][makelist.param2] [/COLOR] [COLOR lightslategray][makelist.param3][/COLOR] [COLOR white][makelist.param4] [/COLOR]    [COLOR lightslategray][makelist.param6] [makelist.param7] [/COLOR] [COLOR lightslategray][makelist.param8] [/COLOR] [COLOR lightslategray][makelist.param10] [/COLOR][COLOR lightslategray][makelist.param12] [/COLOR]  </title>
-<link>plugin://program.plexus/?url=[makelist.param5][makelist.param7][makelist.param9][makelist.param11]&amp;mode=1&amp;name=BlackAddon+Arenavision</link>
-</item>
-]]></listrepeat>
-<expres><![CDATA[center'>(.*?)<[\w\W\s]{0,2}>(.*?)<[\w\W\s]{0,60}alt='(.*?)'[\w\W\s]{0,55}br>(.*?)<|[\w\W\s]{0,40}acestream://(.*?)"[\w\W\s]{0,120}flags/(.*?)png|[\w\W\s]{0,30}acestream://(.*?)"[\w\W\s]{0,120}flags/(.*?)png|[\w\W\s]{0,30}acestream://(.*?)[\w\W\s]{0,120}flags/(.*?)png|[\w\W\s]{0,30}acestream://(.*?)"[\w\W\s]{0,120}flags/(.*?)png]]></expres>
-<page>https://avezy.tk/</page>
-<Agent>Mozilla</Agent>
-</regex><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/acestreams.png</thumbnail>
-</item>
-
-
+ 
 
 <itm>
 <title>[COLOR white][B] Agenda Arenavision  [COLOR white] Server [COLOR white][avezy][/COLOR]  [/COLOR][/B][/COLOR]</title>
