@@ -2907,7 +2907,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = '[makelist3.param1]'):
 
 
 
-<item>
+<itm>
 <title>[B]Pelis24[/B] Estrenos</title>
 
  <link>$doregex[makelist3]</link>
@@ -3075,7 +3075,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = '[makelist3.param1]'):
 
 
 
-<item>
+<itm>
 <title>[B]PeliculasDK / Categorias[/B]        </title>
 <link>$doregex[makelist3]</link>
 
@@ -3252,7 +3252,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<item>
+<itm>
 <title>[B]CINETUX COM[/B]  Estrenos [Audio Latino]    </title>
 <link>$doregex[makelist3]</link>
 
@@ -3327,7 +3327,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
- <item>
+ <ite>
  <title>[B]CINETUX NET [/B]  Estrenos [Audio Latino]    </title>
  <link>$doregex[makelist3]</link>
 
@@ -3399,7 +3399,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-	 <item>
+	 <iem>
 <title>[B]CINETUX NET [/B]  Estrenos [Audio Castellano]    </title>
 <link>$doregex[makelist3]</link>
 
