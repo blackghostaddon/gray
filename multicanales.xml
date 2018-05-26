@@ -106,91 +106,10 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 
 
- <itm>
-<title>[B]MULTICANAL opciones MaxDeportes [/B]    *  </title>
-<link>$doregex[bro.adca.st]</link>
-
-
-<regex>
-<name>bro.adca.st</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/$doregex[canal].html'):
- import requests, re, urllib
- headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:52.0) Gecko/20100101 Firefox/52.0'}
- headers['Referer'] = 'http://vipracing.info/channel/canal-2'
- source = requests.get(url, headers=headers)
- m3u8 = re.findall('tambor = "(.+?)"', source.text)[0]
- tokenpage = re.findall('firme = "\/(.+?)"', source.text)[0]
- headers['Referer'] = url
- headers['X-Requested-With'] = 'XMLHttpRequest'
- headers['Accept'] = 'application/json, text/javascript, */*; q=0.01'
- headers['Accept-Language'] = 'en-US,en;q=0.5'
- source = requests.get('http://bro.adca.st/%s'%tokenpage, headers=headers)
- m3u8 = m3u8 + re.findall(':"(.+?)"', source.text)[0] + '|User-Agent=%s&Referer=http://bro.adca.st/&Origin=http://bro.adca.st'%headers['User-Agent']
- return m3u8
-]]></expres>
-<page></page>
-</regex>
-
-
-<regex>
-<name>canal</name>
-<expres>javascript\">id=\"(.*?)\"</expres>
-<page>http://maxdeportv.net/indexa.php?canal=$doregex[select]</page>
-</regex>
-
-
-<regex>
-<name>select</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m):
-   import xbmcgui
-   dialog = xbmcgui.Dialog()
-   ret = dialog.select('Elige un Canal ', ['Opcion 1', 'Opcion 2', 'Opcion 3', 'Opcion 4', 'Opcion 5', 'Opcion 6', 'Opcion 7', 'Opcion 8'])
-   lists = ['1', '2', '3', '4', '5', '6', '7', '8']
-   return lists[ret]
-]]></expres>
-<page></page>
-</regex>
-
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail>
-
-</item>
 
 
 
 
-
-
-
-
-
- <item>
-<title>[B]Canales Arenavision Selecciona un Canal [/B]  por Acestreams   </title>
-<link>plugin://program.plexus/?url=$doregex[hash]&amp;mode=1&amp;name=BlackAddon+Acestreams</link>
-			<regex>
-			<name>hash</name>
-			<expres>this.loadPlayer\("(.*?)"</expres>
-			<page>http://arenavision2018.ml/$doregex[select]</page>
-			<referer>http://arenavision2018.tk</referer>
-			<setcookie>beget=begetok</setcookie>
-			</regex>
-
-			 <regex>
-<name>select</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m):
-   import xbmcgui
-   dialog = xbmcgui.Dialog()
-   ret = dialog.select('Elige un Canal ', ['AV 1 LaLiga','AV 2','AV 3','AV 4','AV 5','AV 6','AV 7','AV 8','AV 9','AV 10','AV 11','AV 12','AV 13','AV 14','AV 15','AV 16','AV 17 Liga MX','AV 18','AV 19','AV 20','AV 21','AV 22','AV 23','AV 24','AV 25','AV 26','AV 27','AV 28','AV 29','AV 30','AV 31','AV 32','AV 33','AV 34','AV 35','AV 36','AV 37','AV 38','AV 39','AV 40'])
-   lists = ['01','02','03','04','05','06','07','08','09','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40']
-   return lists[ret]
-]]></expres>
-<page></page>
-</regex>
-
- <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/acestream.png</thumbnail>
-</item>
 
 
 
@@ -330,55 +249,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<itm>
-<title>[B]Multicanal Motorsport: Rolex 24 at Daytona[/B]         </title>
- <link>$doregex[bro.adca.st]</link>
-<regex>
-<name>bro.adca.st</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/17220.html'):
- import requests, re, urllib
- headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:52.0) Gecko/20100101 Firefox/52.0'}
- headers['Referer'] = 'http://vipracing.info/channel/canal-2'
- source = requests.get(url, headers=headers)
- m3u8 = re.findall('tambor = "(.+?)"', source.text)[0]
- tokenpage = re.findall('firme = "\/(.+?)"', source.text)[0]
- headers['Referer'] = url
- headers['X-Requested-With'] = 'XMLHttpRequest'
- headers['Accept'] = 'application/json, text/javascript, */*; q=0.01'
- headers['Accept-Language'] = 'en-US,en;q=0.5'
- source = requests.get('http://bro.adca.st/%s'%tokenpage, headers=headers)
- m3u8 = m3u8 + re.findall(':"(.+?)"', source.text)[0] + '|User-Agent=%s&Referer=http://bro.adca.st/&Origin=http://bro.adca.st'%headers['User-Agent']
- return m3u8
-]]></expres>
-<page></page>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-
-
-
-<iem>
- <title>[B]Multicanal NFL Network[/B]   op2  </title>
-<link>$doregex[ip]</link>
-			<regex>
-			<name>ip</name>
-			<expres>file:\s\"(.*?)\"</expres>
-			<page>http://www.hdca.st/embedmob.php?id=nfltv</page>
-			<agent>Mozilla/5.0 (iPad; CPU OS 5_1 like Mac OS X; en-us) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.1 Mobile/9B176 Safari/7534.48.3</agent>
-			<referer>http://m.ibrod.tv/ae-live-stream.html</referer>
-<cookieJar>$doregex[createCFCookie]</cookieJar>
-</regex>
-<regex>
-        <name>createCFCookie</name>
-        <expres></expres>
-        <page>$pyFunction:cloudflare.createCookie('http://m.ibrod.tv',Cookie_Jar,'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36')</page>
-        <cookieJar></cookieJar>
-</regex>
-
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-
 
  <link>https://clutch.vaughnsoft.net/ord/vl/psn88v.m3u8</link>
 
@@ -458,25 +328,85 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/13137.h
 
 
 
-<item>
-<title>[B]Multicanal MaxDeportes 01[/B]     </title>
-<link>http://cdn.whostreams.net:8081/wsedge/$doregex[canal]/playlist.m3u8?wmsAuthSign=$doregex[code]</link>
 
+
+<item>
+<title>[B]Multicanal MaxDeportes 01 [COLOR yellow] Final Real Madrid - Liverpool FC  [/COLOR] [/B]</title>
+<link>http://cdn.whostreams.net:8081/wsedge/$doregex[canal]/playlist.m3u8?wmsAuthSign=$doregex[code]</link>
 <regex>
 <name>canal</name>
 <expres>net\/embed\/(.*?)"</expres>
 <page>http://maxdeportv.net/indexa.php?canal=1</page>
 </regex>
-
 <regex>
 <name>code</name>
 <expres>parent\|(.*?)\|</expres>
 <page>http://whostreams.net/embed/$doregex[canal]</page>
 </regex>
+</item>
 
+<item>
+<title>[B]Multicanal MaxDeportes 03 [COLOR yellow] Final Real Madrid - Liverpool FC  [/COLOR] [/B]</title>
+<link>http://cdn.whostreams.net:8081/wsedge/$doregex[canal]/playlist.m3u8?wmsAuthSign=$doregex[code]</link>
+<regex>
+<name>canal</name>
+<expres>net\/embed\/(.*?)"</expres>
+<page>http://maxdeportv.net/indexa.php?canal=3</page>
+</regex>
+<regex>
+<name>code</name>
+<expres>parent\|(.*?)\|</expres>
+<page>http://whostreams.net/embed/$doregex[canal]</page>
+</regex>
+</item>
+
+<item>
+<title>[B]Multicanal MaxDeportes 05 [COLOR yellow] Final Real Madrid - Liverpool FC  [/COLOR] [/B]</title>
+<link>http://cdn.whostreams.net:8081/wsedge/$doregex[canal]/playlist.m3u8?wmsAuthSign=$doregex[code]</link>
+<regex>
+<name>canal</name>
+<expres>net\/embed\/(.*?)"</expres>
+<page>http://maxdeportv.net/indexa.php?canal=5</page>
+</regex>
+<regex>
+<name>code</name>
+<expres>parent\|(.*?)\|</expres>
+<page>http://whostreams.net/embed/$doregex[canal]</page>
+</regex>
 </item>
 
 
+
+<item>
+<title>[B]Multicanal MaxDeportes 07 [COLOR yellow] Final Real Madrid - Liverpool FC  [/COLOR] [/B]</title>
+<link>http://cdn.whostreams.net:8081/wsedge/$doregex[canal]/playlist.m3u8?wmsAuthSign=$doregex[code]</link>
+<regex>
+<name>canal</name>
+<expres>net\/embed\/(.*?)"</expres>
+<page>http://maxdeportv.net/indexa.php?canal=7</page>
+</regex>
+<regex>
+<name>code</name>
+<expres>parent\|(.*?)\|</expres>
+<page>http://whostreams.net/embed/$doregex[canal]</page>
+</regex>
+</item>
+
+
+<item>
+<title>[B]Multicanal MaxDeportes 10 [COLOR yellow] Final Real Madrid - Liverpool FC  [/COLOR] [/B]</title>
+<link>http://cdn.whostreams.net:8081/wsedge/$doregex[canal]/playlist.m3u8?wmsAuthSign=$doregex[code]</link>
+<regex>
+<name>canal</name>
+<expres>net\/embed\/(.*?)"</expres>
+<page>http://maxdeportv.net/indexa.php?canal=10</page>
+</regex>
+<regex>
+<name>code</name>
+<expres>parent\|(.*?)\|</expres>
+<page>http://whostreams.net/embed/$doregex[canal]</page>
+</regex>
+</item>
 
 
 
@@ -2113,7 +2043,18 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/21616.h
 </item>
 
 
-
+<item>
+<title>ZS 14</title>
+<link>http://sp.zonasports.me/ch/x14/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64; rv:56.0) Gecko/20100101 Firefox/56.0</link>
+</item>
+<item>
+<title>ZS 14</title>
+<link>http://sp.zonasports.me/ch/15x/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64; rv:56.0) Gecko/20100101 Firefox/56.0</link>
+</item>
+<item>
+<title>ZS 14</title>
+<link>http://rs.zonasports.me/ch/16x/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64; rv:56.0) Gecko/20100101 Firefox/56.0</link>
+</item>
 
 
 
