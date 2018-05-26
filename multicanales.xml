@@ -1018,7 +1018,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-
   <item>
  <title>[B]Multicanal ESPN[/B]     </title>
 <link>$doregex[url]|Referer=http://depo.superligatv.com</link>
@@ -1026,10 +1025,11 @@ def GetLSProData(page_data,Cookie_Jar,m):
  <regex>
 <name>url</name>
 <expres><![CDATA[source: "(.*?)"]]></expres>
-<page>http://fut.superligatv.com/espn.html</page>
+<page>http://depo.superligatv.com/espn.php?width=720&height=406</page>
 </regex>
  
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
 
 
 
@@ -1040,7 +1040,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  <regex>
 <name>url</name>
 <expres><![CDATA[source: "(.*?)"]]></expres>
-<page>http://fut.superligatv.com/espn2.html</page>
+<page>http://depo.superligatv.com/espn2.php?width=720&height=406</page>
 </regex>
  
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
@@ -1052,7 +1052,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  <regex>
 <name>url</name>
 <expres><![CDATA[source: "(.*?)"]]></expres>
-<page>http://fut.superligatv.com/espn3.html</page>
+<page>http://depo.superligatv.com/espn3.php?width=720&height=406</page>
 </regex>
  
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
@@ -1066,7 +1066,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  <regex>
 <name>url</name>
 <expres><![CDATA[source: "(.*?)"]]></expres>
-<page>http://fut.superligatv.com/espndep.html</page>
+<page>http://depo.superligatv.com/espndep.php?width=720&height=406</page>
 </regex>
  
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
@@ -1082,7 +1082,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  <regex>
 <name>url</name>
 <expres><![CDATA[source: "(.*?)"]]></expres>
-<page>http://fut.superligatv.com/foxsport.html</page>
+<page>http://depo.superligatv.com/foxsport.php?width=720&height=406</page>
 </regex>
  
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
@@ -1094,7 +1094,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  <regex>
 <name>url</name>
 <expres><![CDATA[source: "(.*?)"]]></expres>
-<page>http://fut.superligatv.com/foxsport2.html</page>
+<page>http://depo.superligatv.com/foxsport2.php?width=720&height=406</page>
 </regex>
  
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
@@ -1108,7 +1108,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  <regex>
 <name>url</name>
 <expres><![CDATA[source: "(.*?)"]]></expres>
-<page>http://fut.superligatv.com/foxsport3.html</page>
+<page>http://depo.superligatv.com/foxsport3.php?width=720&height=406</page>
 </regex>
  
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
@@ -1130,7 +1130,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  <regex>
 <name>url</name>
 <expres><![CDATA[source: "(.*?)"]]></expres>
-<page>http://fut.superligatv.com/f1.html</page>
+<page>http://depo.superligatv.com/f1.php?width=720&height=406</page>
 </regex>
  
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
@@ -1144,7 +1144,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  <regex>
 <name>url</name>
 <expres><![CDATA[source: "(.*?)"]]></expres>
-<page>http://fut.superligatv.com/mlbhd.html</page>
+<page>http://depo.superligatv.com/mlbhd.php?width=720&height=406</page>
 </regex>
  
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
@@ -1158,7 +1158,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  <regex>
 <name>url</name>
 <expres><![CDATA[source: "(.*?)"]]></expres>
-<page>http://fut.superligatv.com/tdn.html</page>
+<page>http://depo.superligatv.com/tdn.php?width=720&height=406</page>
 </regex>
  
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
@@ -1172,7 +1172,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  <regex>
 <name>url</name>
 <expres><![CDATA[source: "(.*?)"]]></expres>
-<page>http://fut.superligatv.com/unitdn.html</page>
+<page>http://depo.superligatv.com/unitdn.php?width=720&height=406</page>
 </regex>
  
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
@@ -1194,7 +1194,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  <regex>
 <name>url</name>
 <expres><![CDATA[source: "(.*?)"]]></expres>
-<page>http://fut.superligatv.com/tvcdep.html</page>
+<page>http://depo.superligatv.com/tvcdep.php?width=720&height=406</page>
 </regex>
  
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
@@ -1209,7 +1209,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  <regex>
 <name>url</name>
 <expres><![CDATA[source: "(.*?)"]]></expres>
-<page>http://fut.superligatv.com/tvcdep2.html</page>
+<page>http://depo.superligatv.com/tvcdep2.php?width=720&height=406</page>
 </regex>
  
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
@@ -1230,7 +1230,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  <regex>
 <name>url</name>
 <expres><![CDATA[source: "(.*?)"]]></expres>
-<page>http://fut.superligatv.com/planeta.html</page>
+<page>http://depo.superligatv.com/planeta.php?width=720&height=406</page>
 </regex>
  
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
@@ -1244,7 +1244,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  <regex>
 <name>url</name>
 <expres><![CDATA[source: "(.*?)"]]></expres>
-<page>http://fut.superligatv.com/sky1.html</page>
+<page>http://depo.superligatv.com/sky1.php?width=720&height=406</page>
 </regex>
  
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
@@ -1261,7 +1261,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  <regex>
 <name>url</name>
 <expres><![CDATA[source: "(.*?)"]]></expres>
-<page>http://fut.superligatv.com/sky2.html</page>
+<page>http://depo.superligatv.com/sky2.php?width=720&height=406</page>
 </regex>
  
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
@@ -1277,12 +1277,10 @@ def GetLSProData(page_data,Cookie_Jar,m):
  <regex>
 <name>url</name>
 <expres><![CDATA[source: "(.*?)"]]></expres>
-<page>http://fut.superligatv.com/sky3.html</page>
+<page>http://depo.superligatv.com/sky3.php?width=720&height=406</page>
 </regex>
  
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-
 
 
 
