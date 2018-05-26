@@ -2044,16 +2044,21 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/21616.h
 
 
 <item>
-<title>ZS 14</title>
-<link>http://sp.zonasports.me/ch/x14/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64; rv:56.0) Gecko/20100101 Firefox/56.0</link>
+<title>ZS 05</title>
+<link>http://$doregex[canal]</link>
+
+<regex>
+<name>canal</name>
+<expres>source\s\s\s\s\s:\s\"(.*?)"</expres>
+<page>http://kastream.biz/embed.php?file=ZonaSports05</page>
+<agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0</agent>
+</regex>
 </item>
+	
+	
 <item>
 <title>ZS 14</title>
-<link>http://sp.zonasports.me/ch/15x/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64; rv:56.0) Gecko/20100101 Firefox/56.0</link>
-</item>
-<item>
-<title>ZS 14</title>
-<link>http://rs.zonasports.me/ch/16x/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64; rv:56.0) Gecko/20100101 Firefox/56.0</link>
+<link>http://rs.zonasports.me/ch/16x/playlist.m3u8|User-Agent=ipad</link>
 </item>
 
 
