@@ -2,6 +2,16 @@
 
 
 
+Estrenos:"Una_mujer_fantastica" url:"https://streamango.com/f/messornptkdmdald/Una_mujer_fantastica_2017_1080p-lat-cinecalidad_to_mp4" server:"Streamango"
+Estrenos:"Fahrenheit_451" url:"https://streamango.com/f/mmtrnkkdqclttqod/Fahrenheit_451_2018_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
+Estrenos:"Daphne_and_velma" url:"https://streamango.com/f/nopkflfkrnsobfsl/Daphne_and_velma_2018_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
+Estrenos:"Cargo" url:"https://streamango.com/f/arbpsbpplkcoaekb/Cargo_2017_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
+Estrenos:"Early_man" url:"https://streamango.com/f/fsfknnpeesrdreop/Early_man_2018_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
+Estrenos:"Ingrid_goes_west" url:"https://streamango.com/f/kcekteqtobdfcrbn/Ingrid_goes_west_2017_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
+Estrenos:"The_kissing_booth" url:"https://streamango.com/f/mftdorsoalnfnpnn/The_kissing_booth_2018_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
+Estrenos:"The_15_17_to_paris" url:"https://streamango.com/f/emtnsbpkcrdaaeam/The_15_17_to_paris_2018_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
+Estrenos:"Braven" url:"https://streamango.com/f/roespfncrbpmlmll/Braven_2018_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
+
 Estrenos:"Game_night" url:"https://streamango.com/f/lllpnqbcstaamkcl/Game_night_2018_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
 Estrenos:"Red_sparrow" url:"https://streamango.com/f/qpflpddnbpqnonlr/Red_sparrow_2018_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
 Estrenos:"Darc" url:"https://streamango.com/f/efecdqldmksbappf/Darc_2018_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
@@ -153,6 +163,25 @@ Estrenos:"" url:"
 
 
 EstrenosESP:"" url:"
+
+
+
+
+
+
+
+
+EstrenosESP:"Backstabbing_for_beginners" url:"https://streamango.com/f/nntekrqfraamkkbq/Backstabbing_for_beginners_2018_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
+EstrenosESP:"Fahrenheit_451" url:"https://streamango.com/f/lsaqdafpkfdcstnb/Fahrenheit_451_2018_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
+EstrenosESP:"Roman_j_israel_esq" url:"https://streamango.com/f/pmprfqfabcorqrqd/Roman_j_israel_esq_2017_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
+EstrenosESP:"Darc" url:"https://streamango.com/f/odmtfbaofqsnekte/Darc_2018_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
+EstrenosESP:"Cargo" url:"https://streamango.com/f/osedcnlofmbrfdbp/Cargo_2017_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
+EstrenosESP:"The_kissing_booth" url:"https://streamango.com/f/prmsdcobtndbkdns/The_kissing_booth_2018_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
+EstrenosESP:"Fifty_shades_freed" url:"https://streamango.com/f/lcnlosptcnfceanr/Fifty_shades_freed_2018_1080p_unrated-dual-cast-cinecalidad_to_mp4" server:"Streamango"
+EstrenosESP:"The_commuter" url:"https://streamango.com/f/smtqkqaaadfmlosl/The_commuter_2018_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
+EstrenosESP:"Brads_status" url:"https://streamango.com/f/poffnlldefcodnsm/Brads_status_2017_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
+EstrenosESP:"Red_sparrow" url:"https://streamango.com/f/peseboobsmbprlkd/Red_sparrow_2018_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
+
 
 
 EstrenosESP:"Darkest_hour" url:"https://streamango.com/f/kprtbtaealbfbccn/Darkest_hour_2017_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
