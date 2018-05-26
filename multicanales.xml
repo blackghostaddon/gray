@@ -2044,14 +2044,15 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/21616.h
 
 
 <item>
-<title>ZS 05</title>
-<link>http://$doregex[canal]</link>
+<title>ZonaS 05</title>
+<link>http:$doregex[canal]</link>
 
 <regex>
 <name>canal</name>
-<expres>source\s\s\s\s\s:\s\"(.*?)"</expres>
+<expres>source     : "(.*?)"</expres>
 <page>http://kastream.biz/embed.php?file=ZonaSports05</page>
 <agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0</agent>
+<referer>http://gozonasports.me/channel.php?id=05</referer>
 </regex>
 </item>
 	
