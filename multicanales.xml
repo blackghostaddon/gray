@@ -20,7 +20,7 @@
 
 
 
- <item>
+ <itm>
 <title>[B]PARTIDOS AMISTOSOS MULTICANAL opciones 1 [/B]      </title>
 <link>$doregex[bro.adca.st]</link>
 
@@ -63,7 +63,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 
 
- <item>
+ <itm>
 <title>[B]Multicanales opciones RIVO [/B]      </title>
 <link>$doregex[bro.adca.st]</link>
 
@@ -285,12 +285,21 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
- 
+ <item>
+<title>[B]Multicanal VIP 00[/B]         </title>
+<link>$doregex[get-id]</link>
+<regex>
+<name>get-id</name>
+<expres>file:"(.*?)"</expres>
+<page>http://widestream.io/embed-32462</page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
 
-<item>
+
+<itm>
 <title>[B]Multicanal VIP 01[/B]         </title>
  <link>$doregex[bro.adca.st]</link>
 <regex>
@@ -478,7 +487,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/13137.h
 
 
 
-<item>
+<itm>
 <title>[B]Multicanal RivoSports [/B]     </title>
 <link>$doregex[bro.adca.st]</link>
 <regex>
@@ -787,6 +796,7 @@ playerfs.com
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
+
 <item>
 <title>[B]Multicanal Zonasport10[/B]     wide   </title>
 <link>$doregex[get-id]</link>
@@ -796,7 +806,6 @@ playerfs.com
 <page>http://widestream.io/embed-7231</page>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
 
 
 
@@ -838,11 +847,38 @@ playerfs.com
 
 
 
+ <item>
+<title>[B]Multicanal Zonasport13[/B]     </title>
+<link>http://cdn.whostreams.net:8081/wsedge/$doregex[canal]/playlist.m3u8?wmsAuthSign=$doregex[code]</link>
+<regex>
+<name>canal</name>
+<expres>net\/embed\/(.*?)"</expres>
+<page>http://gozonasports.me/channel.php?id=13</page>
+</regex>
+<regex>
+<name>code</name>
+<expres>parent\|(.*?)\|</expres>
+<page>http://whostreams.net/embed/$doregex[canal]</page>
+</regex>
+</item>
 
 
 
 
 
+
+
+
+
+ <item>
+<title>[B]Multicanal RIVO 01[/B]     </title>
+<link>$doregex[get-id]</link>
+<regex>
+<name>get-id</name>
+<expres>file:"(.*?)"</expres>
+<page>http://widestream.io/embed-23442</page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
@@ -859,6 +895,34 @@ playerfs.com
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
+
+
+
+ <item>
+<title>[B]Multicanal RIVO 03[/B]     </title>
+<link>$doregex[get-id]</link>
+<regex>
+<name>get-id</name>
+<expres>file:"(.*?)"</expres>
+<page>http://widestream.io/embed-24910</page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+ <item>
+<title>[B]Multicanal RIVO 04[/B]     </title>
+<link>http://cdn.whostreams.net:8081/wsedge/$doregex[canal]/playlist.m3u8?wmsAuthSign=$doregex[code]</link>
+<regex>
+<name>canal</name>
+<expres>net\/embed\/(.*?)"</expres>
+<page>http://in.xrivonet.info/34c.html</page>
+</regex>
+<regex>
+<name>code</name>
+<expres>parent\|(.*?)\|</expres>
+<page>http://whostreams.net/embed/$doregex[canal]</page>
+</regex>
+</item>
 
 
 
@@ -1338,9 +1402,36 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
+<item>
+<title>[B]Multicanal ELGoles[/B]    06  </title>
+<link>http://cdn.whostreams.net:8081/wsedge/$doregex[canal]/playlist.m3u8?wmsAuthSign=$doregex[code]</link>
+<regex>
+<name>canal</name>
+<expres>net\/embed\/(.*?)"</expres>
+<page>http://elgoles.ru/6-2/</page>
+</regex>
+<regex>
+<name>code</name>
+<expres>parent\|(.*?)\|</expres>
+<page>http://whostreams.net/embed/$doregex[canal]</page>
+</regex>
+</item>
 
 
-
+<item>
+<title>[B]Multicanal ELGoles[/B]    11   </title>
+<link>http://cdn.whostreams.net:8081/wsedge/$doregex[canal]/playlist.m3u8?wmsAuthSign=$doregex[code]</link>
+<regex>
+<name>canal</name>
+<expres>net\/embed\/(.*?)"</expres>
+<page>http://elgoles.ru/11-2/</page>
+</regex>
+<regex>
+<name>code</name>
+<expres>parent\|(.*?)\|</expres>
+<page>http://whostreams.net/embed/$doregex[canal]</page>
+</regex>
+</item>
 
 	
 <item>
@@ -1426,43 +1517,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 			</regex>
 
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-<item>
-<title>[B]Multicanal ELGoles[/B]     13    </title>
-  <link>http://$doregex[ip]$doregex[m3u8]$doregex[hls]</link>
-			<regex>
-			<name>ip</name>
-			<expres>redirect=(.*)</expres>
-			<page>http://cdn.pubezcast.com:1935/loadbalancer</page>
-			</regex>
-			<regex>
-			<name>m3u8</name>
-			<expres>ea \+ "(.*?)"</expres>
-			<page>http://www.ezcast.tv/membedplayer/$doregex[canal]/1/750/420</page>
-			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
-			<referer>http://www.zony.tv</referer>
-			</regex>
-			<regex>
-			<name>hls</name>
-			<expres>hlsUrl \+ \(\"(.*?)"</expres>
-			<page>http://www.ezcast.tv/membedplayer/$doregex[canal]/1/500/400</page>
-			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
-			<referer>http://www.ezcast.tv</referer>
-			</regex>
-			<regex>
-			<name>canal</name>
-			<expres>channel='(.*?)'</expres>
-			<page>$doregex[canal2]</page>
-			</regex>
-			<regex>
-			<name>canal2</name>
-			<expres>href="(.*?)">canal-13<</expres>
-			<page>http://elgoles.ru/</page>
-			</regex>
-
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-
 
 
 
