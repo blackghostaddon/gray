@@ -459,7 +459,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/13137.h
 
 
 <item>
-<title>[B]Max 01[/B]</title>
+<title>[B]Multicanal MaxDeportes 01[/B]     </title>
 <link>http://cdn.whostreams.net:8081/wsedge/$doregex[canal]/playlist.m3u8?wmsAuthSign=$doregex[code]</link>
 
 <regex>
@@ -470,7 +470,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/13137.h
 
 <regex>
 <name>code</name>
-<expres>Clappr\|height\|(.*?)\|p</expres>
+<expres>parent\|(.*?)\|</expres>
 <page>http://whostreams.net/embed/$doregex[canal]</page>
 </regex>
 
