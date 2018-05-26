@@ -794,47 +794,56 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/1827.ht
  headers['Referer'] = 'http://zonasports.be/channel.php?id=7'
  source = requests.get(url, headers=headers)
  m3u8 = re.findall('tambor = "(.+?)"', source.text)[0]
- tokenpage = re.findall('firme = "\/(.+?)"', source.text)[0]
- headers['Referer'] = url
- headers['X-Requested-With'] = 'XMLHttpRequest'
- headers['Accept'] = 'application/json, text/javascript, */*; q=0.01'
- headers['Accept-Language'] = 'en-US,en;q=0.5'
- source = requests.get('http://bro.adca.st/%s'%tokenpage, headers=headers)
- m3u8 = m3u8 + re.findall(':"(.+?)"', source.text)[0] + '|User-Agent=%s&Referer=http://bro.adca.st/&Origin=http://bro.adca.st'%headers['User-Agent']
- return m3u8
-]]></expres>
-<page></page>
+
+
+<item>
+<title>[B]Multicanal Zonasport05[/B]     </title>
+<link>http:$doregex[canal]</link>
+<regex>
+<name>canal</name>
+<expres>source     : "(.*?)"</expres>
+<page>http://kastream.biz/embed.php?file=ZonaSports05</page>
+<agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0</agent>
+<referer>http://gozonasports.me/channel.php?id=05</referer>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
-
-
-
+<item>
+<title>[B]Multicanal Zonasport06[/B]     </title>
+<link>http:$doregex[canal]</link>
+<regex>
+<name>canal</name>
+<expres>source     : "(.*?)"</expres>
+<page>http://kastream.biz/embed.php?file=ZonaSports06</page>
+<agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0</agent>
+<referer>http://gozonasports.me/channel.php?id=05</referer>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 <item>
-<title>[B]Multicanal Zonasport08[/B]  bro.adca.st </title>
-<link>$doregex[bro.adca.st]</link>
+<title>[B]Multicanal Zonasport07[/B]     </title>
+<link>http:$doregex[canal]</link>
 <regex>
-<name>bro.adca.st</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/411.html'):
- import requests, re, urllib
- headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:52.0) Gecko/20100101 Firefox/52.0'}
- headers['Referer'] = 'http://zonasports.be/channel.php?id=8'
- source = requests.get(url, headers=headers)
- m3u8 = re.findall('tambor = "(.+?)"', source.text)[0]
- tokenpage = re.findall('firme = "\/(.+?)"', source.text)[0]
- headers['Referer'] = url
- headers['X-Requested-With'] = 'XMLHttpRequest'
- headers['Accept'] = 'application/json, text/javascript, */*; q=0.01'
- headers['Accept-Language'] = 'en-US,en;q=0.5'
- source = requests.get('http://bro.adca.st/%s'%tokenpage, headers=headers)
- m3u8 = m3u8 + re.findall(':"(.+?)"', source.text)[0] + '|User-Agent=%s&Referer=http://bro.adca.st/&Origin=http://bro.adca.st'%headers['User-Agent']
- return m3u8
-]]></expres>
-<page></page>
+<name>canal</name>
+<expres>source     : "(.*?)"</expres>
+<page>http://kastream.biz/embed.php?file=ZonaSports07</page>
+<agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0</agent>
+<referer>http://gozonasports.me/channel.php?id=05</referer>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+<item>
+<title>[B]Multicanal Zonasport08[/B]     </title>
+<link>http:$doregex[canal]</link>
+<regex>
+<name>canal</name>
+<expres>source     : "(.*?)"</expres>
+<page>http://kastream.biz/embed.php?file=ZonaSports08</page>
+<agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0</agent>
+<referer>http://gozonasports.me/channel.php?id=05</referer>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
@@ -919,7 +928,27 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/411.htm
 
 
 
+ <item>
+<title>[B]Multicanal BullAguiuero[/B]</title>
+<link>$doregex[getm3u8]|User-Agent=iPad</link>
 
+<regex>
+<name>getm3u8</name>
+<expres>$pyFunction:base64.b64decode('$doregex[m3u8]')</expres>
+<page></page>
+</regex>
+
+
+<regex>
+<name>m3u8</name>
+<expres>curl = "(.*?)"</expres>
+<page>https://www.playcast.se/stream.php?id=183</page>
+<referer>http://www.playcast.se</referer>
+<agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0</agent>
+</regex>
+
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail>
+</item>
 
 
 
@@ -2020,41 +2049,10 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/21616.h
 
 
 
- <item>
-<title> BullAguiuero</title>
-<link>$doregex[getm3u8]|User-Agent=iPad</link>
-
-<regex>
-<name>getm3u8</name>
-<expres>$pyFunction:base64.b64decode('$doregex[m3u8]')</expres>
-<page></page>
-</regex>
 
 
-<regex>
-<name>m3u8</name>
-<expres>curl = "(.*?)"</expres>
-<page>https://www.playcast.se/stream.php?id=183</page>
-<referer>http://www.playcast.se</referer>
-<agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0</agent>
-</regex>
-
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail>
-</item>
 
 
-<item>
-<title>ZonaS 05</title>
-<link>http:$doregex[canal]</link>
-
-<regex>
-<name>canal</name>
-<expres>source     : "(.*?)"</expres>
-<page>http://kastream.biz/embed.php?file=ZonaSports05</page>
-<agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0</agent>
-<referer>http://gozonasports.me/channel.php?id=05</referer>
-</regex>
-</item>
 	
 	
 <item>
