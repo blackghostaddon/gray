@@ -458,6 +458,23 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/13137.h
 
 
 
+<item>
+<title>[B]Max 01[/B]</title>
+<link>http://cdn.whostreams.net:8081/wsedge/$doregex[canal]/playlist.m3u8?wmsAuthSign=$doregex[code]</link>
+
+<regex>
+<name>canal</name>
+<expres>net\/embed\/(.*?)"</expres>
+<page>http://maxdeportv.net/indexa.php?canal=1</page>
+</regex>
+
+<regex>
+<name>code</name>
+<expres>Clappr\|height\|(.*?)\|p</expres>
+<page>http://whostreams.net/embed/$doregex[canal]</page>
+</regex>
+
+</item>
 
 
 
