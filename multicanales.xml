@@ -2051,14 +2051,15 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/21616.h
 
 
  <item>
- <title>test</title>
-<link>$doregex[url]|User-Agent=ipad</link>
+ <title>test 3</title>
+<link>$doregex[url]|User-Agent=ipad&amp;Referer=http://estadionline.ml/canal1.php</link>
  
  <regex>
 <name>url</name>
 <expres><![CDATA[source src="(.*?)"]]></expres>
 <page>http://static.castto.me/embedlivesrvjs.php?channel=494155766&amp;vw=720&amp;vh=420</page>
-</regex>
+<referer>http://estadionline.ml/canal1.php</referer>
+	 </regex>
  
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
