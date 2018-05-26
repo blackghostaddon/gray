@@ -2050,13 +2050,18 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/21616.h
 
 
 
+ <item>
+ <title>test</title>
+<link>$doregex[url]|User-Agent=ipad</link>
+ 
+ <regex>
+<name>url</name>
+<expres><![CDATA[source src="(.*?)"]]></expres>
+<page>http://static.castto.me/embedlivesrvjs.php?channel=494155766&amp;vw=720&amp;vh=420</page>
+</regex>
+ 
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
-	
-	
-<item>
-<title>ZS 14</title>
-<link>http://rs.zonasports.me/ch/16x/playlist.m3u8|User-Agent=ipad</link>
-</item>
 
 
 
