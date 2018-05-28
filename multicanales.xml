@@ -576,95 +576,6 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://telerium.tv/embed/$doregex
 
 
 
-<item>
-<title>[B]Multicanal MaxDeportes 36[/B]     </title>
- <link>$doregex[bro.adca.st]</link>
-<regex>
-<name>bro.adca.st</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/743.html'):
- import requests, re, urllib
- headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:52.0) Gecko/20100101 Firefox/52.0'}
- headers['Referer'] = 'http://vipracing.info/channel/canal-2'
- source = requests.get(url, headers=headers)
- m3u8 = re.findall('tambor = "(.+?)"', source.text)[0]
- tokenpage = re.findall('firme = "\/(.+?)"', source.text)[0]
- headers['Referer'] = url
- headers['X-Requested-With'] = 'XMLHttpRequest'
- headers['Accept'] = 'application/json, text/javascript, */*; q=0.01'
- headers['Accept-Language'] = 'en-US,en;q=0.5'
- source = requests.get('http://bro.adca.st/%s'%tokenpage, headers=headers)
- m3u8 = m3u8 + re.findall(':"(.+?)"', source.text)[0] + '|User-Agent=%s&Referer=http://bro.adca.st/&Origin=http://bro.adca.st'%headers['User-Agent']
- return m3u8
-]]></expres>
-<page></page>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-
-
-
-<item>
-<title>[B]Multicanal MaxDeportes 42[/B]     </title>
- <link>$doregex[bro.adca.st]</link>
-<regex>
-<name>bro.adca.st</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/13137.html'):
- import requests, re, urllib
- headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:52.0) Gecko/20100101 Firefox/52.0'}
- headers['Referer'] = 'http://vipracing.info/channel/canal-2'
- source = requests.get(url, headers=headers)
- m3u8 = re.findall('tambor = "(.+?)"', source.text)[0]
- tokenpage = re.findall('firme = "\/(.+?)"', source.text)[0]
- headers['Referer'] = url
- headers['X-Requested-With'] = 'XMLHttpRequest'
- headers['Accept'] = 'application/json, text/javascript, */*; q=0.01'
- headers['Accept-Language'] = 'en-US,en;q=0.5'
- source = requests.get('http://bro.adca.st/%s'%tokenpage, headers=headers)
- m3u8 = m3u8 + re.findall(':"(.+?)"', source.text)[0] + '|User-Agent=%s&Referer=http://bro.adca.st/&Origin=http://bro.adca.st'%headers['User-Agent']
- return m3u8
-]]></expres>
-<page></page>
-</regex>
-	
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-
-
-
-
-
-
-
-
-
-<itm>
-<title>[B]Multicanal RivoSports [/B]     </title>
-<link>$doregex[bro.adca.st]</link>
-<regex>
-<name>bro.adca.st</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/248.html'):
- import requests, re, urllib
- headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:52.0) Gecko/20100101 Firefox/52.0'}
- headers['Referer'] = 'http://www.virocu.com/p/futbol-online-en-directo.html'
- source = requests.get(url, headers=headers)
- m3u8 = re.findall('tambor = "(.+?)"', source.text)[0]
- tokenpage = re.findall('firme = "\/(.+?)"', source.text)[0]
- headers['Referer'] = url
- headers['X-Requested-With'] = 'XMLHttpRequest'
- headers['Accept'] = 'application/json, text/javascript, */*; q=0.01'
- headers['Accept-Language'] = 'en-US,en;q=0.5'
- source = requests.get('http://bro.adca.st/%s'%tokenpage, headers=headers)
- m3u8 = m3u8 + re.findall(':"(.+?)"', source.text)[0] + '|User-Agent=%s&Referer=http://bro.adca.st/&Origin=http://bro.adca.st'%headers['User-Agent']
- return m3u8
-]]></expres>
-<page></page>
-</regex>
- <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail>
-<fanart></fanart>
-</item>
 
 
 
@@ -687,36 +598,9 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/248.htm
 
 
 
-<iem>
-<title>[B]AGENDA ZONASPORTS[/B]  [I] [Solo Agenda][/I] ---- </title>
-<link>$doregex[makelist]</link>
-<regex>
-<name>makelist</name>
-<listrepeat><![CDATA[
-<title> [makelist.param1] [B] [makelist.param2][/B]  [makelist.param3]  [makelist.param4]  </title>
-<sportsdevil>http://zonasports.me/channel.php[makelist.param1]</sportsdevil>
-<referer>http://zonasports.be/</referer>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-]]></listrepeat>
-<expres><![CDATA[t\'>(.*?)<[\w\W\s]{0,110}left\'>(.*?)\:.*b>(.*?)\n.*?\((.*?)\)]]></expres>
-<page>http://zonasports.be/</page>
-<agent>Mozilla/5.0 (Windows NT 6.3; rv:36.0) Gecko/20100101 Firefox/36.04</agent>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-</item>
 
 
 
-
-
-
-
-
-
-
-
-
-playerfs.com
 
 
 <item>
