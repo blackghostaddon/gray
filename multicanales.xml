@@ -305,14 +305,13 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://telerium.tv/embed/25018.ht
 
 
 
-
 <item>
-<title>[B]Multicanal MaxDeportes 01[/B]     </title>
+<title>[B]Multicanal MaxDeportes 02*[/B]     </title>
  <link>$doregex[bro.adca.st]</link>
 <regex>
 <name>bro.adca.st</name>
 <expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m,url = 'http://telerium.tv/embed/25018.html'):
+def GetLSProData(page_data,Cookie_Jar,m,url = 'http://telerium.tv/embed/$doregex[canal].html'):
  import requests, re, urllib
  headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:52.0) Gecko/20100101 Firefox/52.0'}
  headers['Referer'] = 'http://vipracing.info/channel/canal-2'
@@ -329,16 +328,26 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://telerium.tv/embed/25018.ht
 ]]></expres>
 <page></page>
 </regex>
+
+<regex>
+<name>canal</name>
+<expres>\"\>id=\"(.*?)\"</expres>
+<page>http://maxdeportv.net/indexa.php?canal=2</page>
+</regex>
+
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
+
+
+
 <item>
-<title>[B]Multicanal MaxDeportes 19[/B]     </title>
+<title>[B]Multicanal MaxDeportes 02*[/B]     </title>
  <link>$doregex[bro.adca.st]</link>
 <regex>
 <name>bro.adca.st</name>
 <expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m,url = 'http://telerium.tv/embed/25068.html'):
+def GetLSProData(page_data,Cookie_Jar,m,url = 'http://telerium.tv/embed/$doregex[canal].html'):
  import requests, re, urllib
  headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:52.0) Gecko/20100101 Firefox/52.0'}
  headers['Referer'] = 'http://vipracing.info/channel/canal-2'
@@ -355,21 +364,15 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://telerium.tv/embed/25068.ht
 ]]></expres>
 <page></page>
 </regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
-
-
-
-
- <item>
-<title>[B]Multicanal VIP 00[/B]         </title>
-<link>$doregex[get-id]</link>
 <regex>
-<name>get-id</name>
-<expres>file:"(.*?)"</expres>
-<page>http://widestream.io/embed-32462</page>
+<name>canal</name>
+<expres>\"\>id=\"(.*?)\"</expres>
+<page>http://vipracing.info/channel/canal-2</page>
 </regex>
+
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
 
 
 
