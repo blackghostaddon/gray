@@ -2068,6 +2068,29 @@ def GetLSProData(page_data,Cookie_Jar,m,url='http://v2.ustreamix.com/stream.php?
 
 
 
+ <item>
+<title>Estrella TV</title>
+<link>http://$doregex[Igor_Rangel_IP]/loadbalance/31825567517762757571/playlist.m3u8$doregex[Igor_Rangel_AuthSign]|User-Agent=iPhone</link>
+<regex>
+<name>Igor_Rangel_IP</name>
+<expres>location:http://(.*)/loadbalance</expres>
+<page>$doregex[Igor_Rangel_Page]</page>
+<noredirect>true</noredirect>
+<includeheaders></includeheaders>
+</regex>
+<regex>
+<name>Igor_Rangel_AuthSign</name>
+<expres>m3u8(.*)</expres>
+<page>$doregex[Igor_Rangel_Page]</page>
+</regex>
+
+<regex>
+<name>Igor_Rangel_Page</name>
+<expres>"(.*m3u8.*?)"</expres>
+<page>http://pxstream.tv/embed/cjbjjnz3o3uc/</page>
+<referer>http://www.chivass69.com</referer>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
