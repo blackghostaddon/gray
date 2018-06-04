@@ -1772,15 +1772,23 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/21616.h
 
 
  <item>
-<title>[B]Multicanal[/B] TikiTaka 01 [I] [/I]</title>
+<title>[B]Multicanal[/B] TikiTaka 01 [I]* [/I]</title>
 <link>$doregex[url]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64; rv:56.0) Gecko/20100101 Firefox/56.0&amp;Referer=http://static.castto.me</link>
 <regex>
 <name>url</name>
 <expres><![CDATA[source src="(.*?)"]]></expres>
-<page>http://static.castto.me/embedlivesrvjs.php?channel=494155766&amp;vw=720&amp;vh=420</page>
+<page>http://static.castto.me/embedlivesrvjs.php?channel=$doregex[getid]&amp;vw=720&amp;vh=420</page>
 <referer>http://estadionline.ml/canal1.php</referer>
 </regex>
+<regex>
+<name>getid</name>
+<expres><![CDATA[fid="(.*?)"]]></expres>
+<page>http://estadionline.ml/canal1.php</page>
+<referer>http://estadionline.ml/canal1.php</referer>
+</regex>	 
+	 
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+	
 
  <item>
 <title>[B]Multicanal[/B] TikiTaka 02 [I] [/I]</title>
@@ -1788,8 +1796,14 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/21616.h
 <regex>
 <name>url</name>
 <expres><![CDATA[source src="(.*?)"]]></expres>
-<page>http://static.castto.me/embedlivesrvjs.php?channel=1820780381&amp;vw=720&amp;vh=420</page>
+<page>http://static.castto.me/embedlivesrvjs.php?channel=$doregex[getid]&amp;vw=720&amp;vh=420</page>
 <referer>http://estadionline.ml/canal1.php</referer>
+</regex>
+<regex>
+<name>getid</name>
+<expres><![CDATA[fid="(.*?)"]]></expres>
+<page>http://estadionline.ml/canal2.php</page>
+<referer>http://estadionline.ml/canal2.php</referer>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
