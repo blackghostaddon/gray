@@ -435,6 +435,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://telerium.tv/embed/25018.ht
 
 
 
+
 <item>
 <title>[B]Multicanal Zonasport01[/B]     fstream    </title>
 
@@ -471,7 +472,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://telerium.tv/embed/25018.ht
 
 			<regex>
 			<name>canal</name>
-			<expres>channel='(.*?)'</expres>
+			<expres>player\/(.*?)\/</expres>
 			<page>http://gozonasports.me/channel.php?id=1</page>
 			</regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
@@ -512,7 +513,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://telerium.tv/embed/25018.ht
 			</regex>
 			<regex>
 			<name>canal</name>
-			<expres>channel='(.*?)'</expres>
+			<expres>player\/(.*?)\/</expres>
 			<page>http://gozonasports.me/channel.php?id=2</page>
 			</regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
