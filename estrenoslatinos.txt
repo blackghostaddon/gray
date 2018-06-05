@@ -2,6 +2,17 @@
 
 
 
+Estrenos:"The_lodgers" url:"https://streamango.com/f/oabnmrbndqndaepd/The_lodgers_2017_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
+Estrenos:"The_humanity_bureau" url:"https://streamango.com/f/qdnkttqktmlcscao/The_humanity_bureau_2017_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
+Estrenos:"Sherlock_gnomes" url:"https://streamango.com/f/tpfasqrqbbbsccap/Sherlock_gnomes_2018_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
+Estrenos:"Acts_of_violence" url:"https://streamango.com/f/fsnbqsokfdmdtmmn/Acts_of_violence_2018_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
+Estrenos:"Love_simon" url:"https://streamango.com/f/qbdtrqoktfnkqbnb/Love_simon_2018_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
+Estrenos:"Den_of_thieves" url:"https://streamango.com/f/bpadsncdkqascfqk/Den_of_thieves_2018_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
+Estrenos:"Tomb_raider" url:"https://streamango.com/f/mrtspobmflbllmod/Tomb_raider_2018_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
+Estrenos:"Thoroughbreds" url:"https://streamango.com/f/palkdtsmdmlfnlta/Thoroughbreds_2017_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
+Estrenos:"A_wrinkle_in_time" url:"https://streamango.com/f/lprdedlbtdpplcma/A_wrinkle_in_time_2018_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
+Estrenos:"Death_wish" url:"https://streamango.com/f/epdmmaqmkbcnmnbt/Death_wish_2018_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
+
 Estrenos:"Una_mujer_fantastica" url:"https://streamango.com/f/messornptkdmdald/Una_mujer_fantastica_2017_1080p-lat-cinecalidad_to_mp4" server:"Streamango"
 Estrenos:"Fahrenheit_451" url:"https://streamango.com/f/mmtrnkkdqclttqod/Fahrenheit_451_2018_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
 Estrenos:"Daphne_and_velma" url:"https://streamango.com/f/nopkflfkrnsobfsl/Daphne_and_velma_2018_1080p-dual-lat-cinecalidad_to_mp4" server:"Streamango"
@@ -170,6 +181,16 @@ EstrenosESP:"" url:"
 
 
 
+EstrenosESP:"The_florida_project" url:"https://streamango.com/f/tcaoaofnnqqqctlf/The_florida_project_2017_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
+EstrenosESP:"Sherlock_gnomes" url:"https://streamango.com/f/dmsamlebknerssem/Sherlock_gnomes_2018_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
+EstrenosESP:"One_percent_more_humid" url:"https://streamango.com/f/mmebrptlckpplsar/One_percent_more_humid_2017_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
+EstrenosESP:"Paterno" url:"https://streamango.com/f/sdootleafomsddkc/Paterno_2018_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
+EstrenosESP:"You_get_me" url:"https://streamango.com/f/sspleppptmdaaenm/You_get_me_2017_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
+EstrenosESP:"Ibiza" url:"https://streamango.com/f/lfbenblmtsbcoffc/Ibiza_2018_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
+EstrenosESP:"El_cuaderno_de_sara" url:"https://streamango.com/f/kfccmknsrrtnpbsd/El_cuaderno_de_sara_2018_1080p-cast-cinecalidad_to_mp4" server:"Streamango"
+EstrenosESP:"Phantom_thread" url:"https://streamango.com/f/eesdfaerrctqcknn/Phantom_thread_2017_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
+EstrenosESP:"Call_me_by_your_name" url:"https://streamango.com/f/maoomfmcssrslbqo/Call_me_by_your_name_2017_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
+EstrenosESP:"Black_panther" url:"https://streamango.com/f/rrpppemdqbqkltlf/Black_panther_2018_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
 
 EstrenosESP:"Backstabbing_for_beginners" url:"https://streamango.com/f/nntekrqfraamkkbq/Backstabbing_for_beginners_2018_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
 EstrenosESP:"Fahrenheit_451" url:"https://streamango.com/f/lsaqdafpkfdcstnb/Fahrenheit_451_2018_1080p-dual-cast-cinecalidad_to_mp4" server:"Streamango"
