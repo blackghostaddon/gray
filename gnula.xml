@@ -206,18 +206,13 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
- <item>
-<title>[B]The Walking Dead[/B]  Seccion Especial </title>
-<link>http://ignorame</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/series.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
-<externallink>https://raw.githubusercontent.com/blackghostaddon/gray/master/twd8.xml</externallink>
-</item>
 
 
 
 
 
- <item>
+
+ <itm>
 <title>[B]Juego de Tronos[/B]  Seccion Especial </title>
 <link>http://ignorame</link>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/got.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
@@ -226,12 +221,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
- <iem>
-<title>[B][  ][/B]    [B]BUSCAR SERIE[/B]   </title>
-<link>http://ignora.me</link>
-<externallink>https://raw.githubusercontent.com/blackghostaddon/gray/master/buscarserie.xml</externallink>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/series.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
-</item>
+
 
 
  <item>
@@ -241,6 +231,11 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/series.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 </item>
 
+	
+	
+	
+	
+	
 
 
 
@@ -277,25 +272,45 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page>[makelist2.param2]/list,1,15</page>
 <cookieJar></cookieJar>
 </regex>
+
+
+
 <regex>
 <name>getUrl</name>
-<expres>DownloadUrl":"([^"]+)<expres>
-<page>[makelist2.param4]/action/DownloadFile?location=fi&amp;f=[makelist.param1]</page>
-<rawpost>fileId=[makelist.param1]&__RequestVerificationToken=$doregex[tok]</rawpost>
-<referer>[makelist2.param4]/[makelist.param2]</referer>
-<connection>keep-alive</connection>
-<accept>*/*</accept>
-<X-Req>XMLHttpRequest</X-Req>
+<expres><![CDATA[#$pyFunction
+import re , requests ,json
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+ ref = 'http://diskokosmiko.mx/'
+ url='[makelist2.param4]/[makelist.param2]'
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': ref ,
+            'X-Requested-With' : 'XMLHttpRequest' , 'Accept' : '*/*'}
+ session = requests.Session()
+ r = session.get(url, headers=headers)
+ rv1 = r.cookies
+ 
+ vfile , vtoken = re.findall('action/DownloadFile.*?fileId.*?value="(.*?)".*?Token".*?value="(.*?)"', r.text)[0]
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr = requests.post('http://diskokosmiko.mx/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers,cookies=rv1 , data=data_a).text
+ nrj=json.loads(nr)
+ nr = nrj['Content']
+ r2 = re.findall(r'(?s)value=\"(.*?)\"', nr)[0]
+ data_a ={'__RequestVerificationToken': r2 , 'Username': 'josele89' , 'Password' : 'josele89'}
+ nr1 = requests.post('http://diskokosmiko.mx/action/Account/Login', headers=headers,cookies = rv1 , data=data_a)
+ print nr1.headers['Set-Cookie']
+ rasp = re.findall('ASPXAUTH_v2=(.*?);', nr1.headers['Set-Cookie'])[0]
+ rv1['.ASPXAUTH_v2'] = rasp
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr3 = requests.post('http://diskokosmiko.mx/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers, cookies = rv1 , data=data_a).text
+ r3 = re.findall('DownloadUrl":"(.*?)"', nr3)[0]
+ print r3
+ return r3
+]]></expres>
+<page></page>
 <cookieJar></cookieJar>
 </regex>
-<regex>
-<name>tok</name>
-<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
-<page>[makelist2.param4]/[makelist.param2]</page>
-<referer>[makelist2.param4]/adryanlist/fileuploader-67183/list,4,15</referer>
-<connection>keep-alive</connection>
-<cookieJar></cookieJar>
-</regex>
+
+
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/series.png</thumbnail>
 </item>
 
@@ -303,50 +318,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-
-<iem>
-<title>[B]TV-SHOWS[/B]  English Audio [VO]  </title>
-<link>$doregex[makelist3]</link>
-
-<regex>
-<name>makelist3</name>
-<listrepeat><![CDATA[
-<title> [makelist3.param2]  </title>
-<link>$doregex[makelist2]</link>
-]]></listrepeat>
-<expres>href="(.*?)">(.*?)<</expres>
-<page>http://dl.tehmovies.com/94/series/</page>
-<referer></referer>
-<cookieJar></cookieJar>
-</regex>
-
-<regex>
-<name>makelist2</name>
-<listrepeat><![CDATA[
-<title>[makelist2.param2] </title>
-<link>$doregex[makelist]</link>
-]]></listrepeat>
-<expres>href="(.*?)">(.*?)<</expres>
-<page>http://dl.tehmovies.com/94/series/[makelist3.param1]</page>
-<referer></referer>
-<cookieJar></cookieJar>
-</regex>
-
-
-
-<regex>
-<name>makelist</name>
-<listrepeat><![CDATA[
-<title> [makelist.param2]</title>
-<link>http://dl.tehmovies.com/94/series/[makelist3.param1][makelist2.param2][makelist.param1]</link>
-]]></listrepeat>
-<expres>href="(.*?)">(.*?)<</expres>
-<page>http://dl.tehmovies.com/94/series/[makelist3.param1][makelist2.param2]</page>
-<referer></referer>
-<cookieJar></cookieJar>
-</regex>
- <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/series.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
-</item>
 
 
 
@@ -357,7 +328,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
-<title>[B]Series[/B] PLAYLIST I </title>
+<title>[B]Series[/B] PLAYLIST I  [REPARADAS]</title>
 <link>$doregex[makelist3]</link>
 
 <regex>
@@ -371,10 +342,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page>https://raw.githubusercontent.com/blackghostaddon/gray/master/kozm.txt</page>
 <cookieJar></cookieJar>
 </regex>
-
-
-
-
 
 <regex>
   <name>makelist2</name>
@@ -398,39 +365,55 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page>http://diskokosmiko.mx[makelist2.param1]/list,1,20</page>
 <cookieJar></cookieJar>
 </regex>
-<regex>
-<name>getUrl</name>
-<expres>DownloadUrl":"([^"]+)<expres>
-<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=[makelist.param1]</page>
-<rawpost>fileId=[makelist.param1]&__RequestVerificationToken=$doregex[tok]</rawpost>
-<referer>http://diskokosmiko.mx/[makelist.param2]</referer>
-<connection>keep-alive</connection>
-<accept>*/*</accept>
-<X-Req>XMLHttpRequest</X-Req>
+
+
+
+
+<regex><name>getUrl</name>
+<expres><![CDATA[#$pyFunction
+import re , requests ,json
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+ ref = 'http://diskokosmiko.mx/'
+ url='http://diskokosmiko.mx/[makelist.param2]'
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': ref ,
+            'X-Requested-With' : 'XMLHttpRequest' , 'Accept' : '*/*'}
+ session = requests.Session()
+ r = session.get(url, headers=headers)
+ rv1 = r.cookies
+ 
+ vfile , vtoken = re.findall('action/DownloadFile.*?fileId.*?value="(.*?)".*?Token".*?value="(.*?)"', r.text)[0]
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr = requests.post('http://diskokosmiko.mx/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers,cookies=rv1 , data=data_a).text
+ nrj=json.loads(nr)
+ nr = nrj['Content']
+ r2 = re.findall(r'(?s)value=\"(.*?)\"', nr)[0]
+ data_a ={'__RequestVerificationToken': r2 , 'Username': 'josele89' , 'Password' : 'josele89'}
+ nr1 = requests.post('http://diskokosmiko.mx/action/Account/Login', headers=headers,cookies = rv1 , data=data_a)
+ print nr1.headers['Set-Cookie']
+ rasp = re.findall('ASPXAUTH_v2=(.*?);', nr1.headers['Set-Cookie'])[0]
+ rv1['.ASPXAUTH_v2'] = rasp
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr3 = requests.post('http://diskokosmiko.mx/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers, cookies = rv1 , data=data_a).text
+ r3 = re.findall('DownloadUrl":"(.*?)"', nr3)[0]
+ print r3
+ return r3
+]]></expres>
+<page></page>
 <cookieJar></cookieJar>
 </regex>
-<regex>
-<name>tok</name>
-<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
-<page>http://diskokosmiko.mx/[makelist.param2]</page>
-<referer>http://diskokosmiko.mx[makelist2.param1]/list,1,15</referer>
-<connection>keep-alive</connection>
-<cookieJar></cookieJar>
-</regex>
+
+
+
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/series.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 </item>
 
-
-
-
-
-
-
-
-
-
-
-
+	
+	
+	
+	
+	
+	
 
 
 <iem>
