@@ -2762,3 +2762,38 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <cookieJar></cookieJar>
 </regex>
  </item>
+	
+	
+
+<item>
+<title>[B]ESTRENOS LATINOS     [/B]</title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>$pyFunction:'[makelist.param1]'.replace("_", " ").replace("+", " ")</title>
+<link>$doregex[id3]</link>
+]]></listrepeat>
+<expres><![CDATA[Estrenos:"(.*?)" url:"(.*?)" server:"(.*?)"]]></expres>
+<page>https://raw.githubusercontent.com/blackghostaddon/gray/master/estrenoslatinos.txt</page>
+</regex>
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+   import resolveurl
+   url = '[makelist.param2]'
+   try:
+     u = resolveurl.resolve(url)
+   except:
+     u = 'http://adryanlist.org/error.mp4'
+   return u
+]]></expres>
+<page></page>
+</regex>
+
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail>
+</item>
+
+
