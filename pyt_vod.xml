@@ -2676,12 +2676,11 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>lista</name>
   <listrepeat><![CDATA[
-         <SetViewMode>55</SetViewMode>
-         <title>$pyFunction:'[lista.param3]'.replace(".mp4", "  [COLOR white]Black[/COLOR][COLOR gray]Ghost[/COLOR]").replace(".avi", "  [COLOR white]Black[/COLOR][COLOR gray]Ghost[/COLOR]").replace(".mkv", "[COLOR white]Black[/COLOR][COLOR gray]Ghost[/COLOR]")</title>
+        <title>[lista.param2]</title>
         <link>$doregex[getUrl]</link>
-        <thumbnail>https://i.imgur.com/aJ4O796.png</thumbnail>
+        <thumbnail></thumbnail>
         ]]></listrepeat>
-<expres><![CDATA[href=\"(.*?,(.*?)\..*?)\".*?preview">(.*?mkv|.*?mp4|.*?avi)<]]><expres>
+<expres><![CDATA[name"[\w\W\s]{0,15}href="(.*?)".*?preview">(.*?mkv|.*?mp4|.*?avi)<]]><expres>
 <page>http://diskokosmiko.mx/action/SearchFiles?Phrase=Blackghost&amp;Mode=List&amp;Type=Video&amp;SizeFromMB=0&amp;SizeToMB=0&amp;pageNumber=10</page>
 <rawpost>Phrase=$doregex[search]&__RequestVerificationToken=$doregex[tok]</rawpost>
 <referer>http://diskokosmiko.mx/action/SearchFiles</referer>
