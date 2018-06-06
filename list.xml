@@ -90,16 +90,15 @@
 <externallink>https://raw.githubusercontent.com/blackghostaddon/gray/master/totalp.xml</externallink>
 </item>
 
-http://live-nyc.vaughnsoft.net:1935/live/_definst_/live_zonafilmsterror/chunklist.m3u8
 
-<iem>
-<title>Television 24/7</title>
+<item>
+<title>[B]Television 24/7[/B]</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
 <title>[makelist.param2]</title>
-<link>https://clutch.vaughnsoft.net/ncy/vl/[makelist.param1].m3u8</link>
+<link>https://mp4.vaughnsoft.net/live?app=live&amp;port=2935&amp;stream=live_[makelist.param1]|Referer=https://vaughnlive.tv/</link>
 <thumbnail>http://cdn.vaughnsoft.com/vaughnsoft/vaughn/img_profiles/[makelist.param2]_320.jpg</thumbnail>
 ]]></listrepeat>
 <expres>a href="/(.*?)"[\w\W\s]{0,22}browseTxt">(.*?)<</expres>
@@ -112,6 +111,8 @@ http://live-nyc.vaughnsoft.net:1935/live/_definst_/live_zonafilmsterror/chunklis
 </item>
 
 
+	
+	
 <item>
 <title>[COLOR white][B]IPTV[/B] [/COLOR][COLOR lightslategray][World Servers Updated Daily][/COLOR] </title>
 <link>http://ignorame</link><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/iptv.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
