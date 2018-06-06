@@ -416,7 +416,24 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
+<item>
+<title>     [B]PirateBay[/B]  Estrenos Audio Latino </title>
+<link>$doregex[makelist]</link>
 
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+   <title>[makelist.param3]</title>
+
+    <link>plugin://plugin.video.quasar/play?uri=[makelist.param4]</link>
+ <thumbnail>[makelist.param2]</thumbnail>
+]]></listrepeat>
+<expres>class="detName.*?href="(.*?)".*?title="(.*?)">(.*?)<[\w\W\s]{0,20}href=\"(.*?)\"</expres>
+<page>https://thepiratebay.org/search/latino/0/3/201</page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
+
+</item>
 
 
 
@@ -1753,3 +1770,12 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
 
 </item>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
