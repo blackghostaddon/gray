@@ -250,8 +250,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
- <link>https://clutch.vaughnsoft.net/ord/vl/psn88v.m3u8</link>
-
 
 
 
@@ -260,8 +258,10 @@ def GetLSProData(page_data,Cookie_Jar,m):
  <link>https://nludnoo.akamaized.net/nlds/univision/as/live/udnoo_hd_4500_ipad.m3u8?hdnea=expires=1496782118~access=/nlds/univisionnow/univision_east/as/live/*~md5=a4f512d96d77b9a4f5e4d8f31bbf5361</link>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
-
-
+<item>
+<title>[B]Multicanal PSN Deportes [/B]      </title>
+<link>https://mp4.vaughnsoft.net/live?app=live&amp;port=2935&amp;stream=live_psn91v|Referer=https://vaughnlive.tv/</link>
+</item>
 
 
 
