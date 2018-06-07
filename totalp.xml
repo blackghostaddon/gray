@@ -535,7 +535,7 @@ def GetLSProData(page_data,Cookie_Jar,m,):
 
 
 
-<item>
+<itm>
 <title>[B]Programacion EPG [entutele] [/B]</title>
  <link>$doregex[makelist]</link>
 
