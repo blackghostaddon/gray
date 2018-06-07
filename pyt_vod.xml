@@ -255,7 +255,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
-<title>[B]ESTRENOS LATINOS     [/B]</title>
+<title>[B]ESTRENOS LATINOS  OFF temporalmente   [/B]</title>
 
 
 <link>$doregex[makelist]</link>
@@ -311,7 +311,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
-<title>[B]ESTRENOS ESPAÑA[/B]</title>
+<title>[B]ESTRENOS ESPAÑA OFF temporalmente [/B]</title>
 
 <link>$doregex[makelist]</link>
 
