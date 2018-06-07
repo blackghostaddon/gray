@@ -87,15 +87,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-
-<item>
-<title>•  [B]TotalPlay[/B]  [ Opcion [B]CECETV[/B] ][B]   [/B]  </title>
-<link>NA</link>2
-<externallink>http://tvpremiumhd.club/peliculas.m3u</externallink>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/img/tp.jpg</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/img/fanart.jpg</fanart></item>
-
-
+ 
 
 
 
@@ -143,6 +135,33 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <externallink>https://pastebin.com/raw/P7BEGxd0</externallink>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/img/tp.jpg</thumbnail>
 <fanart>https://raw.githubusercontent.com/blackghostaddon/gray/img/fanart.jpg</fanart></item>
+
+
+
+
+
+<item>
+<title>[B]Selecciona una lista CECEGEEK[/B]</title>
+
+<link>NA</link>
+<externallink>$doregex[select]</externallink>
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+   import xbmcgui
+   dialog = xbmcgui.Dialog()
+   ret = dialog.select('Seleciona una Lista ', ['http://bit.ly/chilenostv', 'http://bit.ly/tvariados', 'http://bit.ly/varIPTV', 'http://bit.ly/Cineip', 'http://bit.ly/tvclubiptv', 'http://bit.ly/Iptvtuxtla', 'http://bit.ly/regioflixtv', 'http://bit.ly/iptvespña', 'http://bit.ly/pelisclub', 'http://bit.ly/4000pelis', 'http://bit.ly/deportvs', 'http://bit.ly/tvtecno', 'http://bit.ly/nibblettv', 'http://bit.ly/nibblepelis', 'http://bit.ly/musicatv', 'http://bit.ly/latinostv'
+])
+   lists = ['http://bit.ly/chilenostv', 'http://bit.ly/tvariados', 'http://bit.ly/varIPTV', 'http://bit.ly/Cineip', 'http://bit.ly/tvclubiptv', 'http://bit.ly/Iptvtuxtla', 'http://bit.ly/regioflixtv', 'http://bit.ly/iptvespña', 'http://bit.ly/pelisclub', 'http://bit.ly/4000pelis', 'http://bit.ly/deportvs', 'http://bit.ly/tvtecno', 'http://bit.ly/nibblettv', 'http://bit.ly/nibblepelis', 'http://bit.ly/musicatv', 'http://bit.ly/latinostv'
+]
+   return lists[ret]
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/img/tp.jpg</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/img/fanart.jpg</fanart>
+</item>
 
 
 
