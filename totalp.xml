@@ -50,23 +50,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<item>
-<title>•  [B]TotalPlay[/B]  [ Opcion [B]IPTVCanales[/B] ][B]   [/B]  </title>
-<link>NA</link>2
-<externallink>https://raw.githubusercontent.com/blackghostaddon/gray/claro.m3u</externallink>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/img/tp.jpg</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/img/fanart.jpg</fanart></item>
 
-
-
-
-
-<item>
-<title>•  [B]TotalPlay[/B]  [ Opcion [B]Latinos fta[/B] ][B]   [/B]  </title>
-<link>NA</link>2
-<externallink>https://raw.githubusercontent.com/blackghostaddon/gray/fta2.m3u</externallink>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/img/tp.jpg</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/img/fanart.jpg</fanart></item>
 
 
 
@@ -102,19 +86,12 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <fanart>https://raw.githubusercontent.com/blackghostaddon/gray/img/fanart.jpg</fanart></item>
 
 
-<item>
-<title>•  [B]TotalPlay[/B]  [ Opcion [B]Fanstv[/B] ][B]   [/B]  </title>
-<link>NA</link>2
-<externallink>https://raw.githubusercontent.com/blackghostaddon/gray/fanstv.m3u</externallink>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/img/tp.jpg</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/img/fanart.jpg</fanart></item>
-
 
 
 <item>
 <title>•  [B]TotalPlay[/B]  [ Opcion [B]CECETV[/B] ][B]   [/B]  </title>
 <link>NA</link>2
-<externallink>https://cecegeek.com/cecetv.m3u</externallink>
+<externallink>http://tvpremiumhd.club/peliculas.m3u</externallink>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/img/tp.jpg</thumbnail>
 <fanart>https://raw.githubusercontent.com/blackghostaddon/gray/img/fanart.jpg</fanart></item>
 
@@ -148,14 +125,22 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
+<item>
+<title>•  [B]TotalPlay[/B]  [ Opcion [B]ChileIPTV[/B] ][B]   [/B]  </title>
+<link>NA</link>2
+<externallink>http://chileiptv.cl/cl.m3u</externallink>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/img/tp.jpg</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/img/fanart.jpg</fanart></item>
+
+
 
 
 
 
 <item>
-<title>•  [B]TotalPlay[/B]  [ Opcion [B]ChileIPTV[/B] ][B]   [/B]  </title>
+<title>•  [B]TotalPlay[/B]  [ Opcion [B]pastebin[/B] ][B]   [/B]  </title>
 <link>NA</link>2
-<externallink>http://chileiptv.cl/cl.m3u</externallink>
+<externallink>https://pastebin.com/raw/P7BEGxd0</externallink>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/img/tp.jpg</thumbnail>
 <fanart>https://raw.githubusercontent.com/blackghostaddon/gray/img/fanart.jpg</fanart></item>
 
