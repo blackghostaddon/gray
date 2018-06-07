@@ -601,56 +601,93 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://telerium.tv/embed/25018.ht
 
 <item>
 <title>[B]Multicanal Zonasport05[/B]     </title>
-<link>http:$doregex[canal]</link>
+<link>http://style.kastream.biz:8081/edge/$doregex[ver]/playlist.m3u8?wmsAuthSign=$doregex[code]|Referer=http://gozonasports.me/channel.php?id=05</link>
+
 <regex>
-<name>canal</name>
-<expres>source     : "(.*?)"</expres>
+<name>ver</name>
+<expres>playlist\|(.*?)\|</expres>
 <page>http://kastream.biz/embed.php?file=ZonaSports05</page>
 <agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0</agent>
 <referer>http://gozonasports.me/channel.php?id=05</referer>
 </regex>
+<regex>
+<name>code</name>
+<expres>wmsAuthSign\|(.*?)\|</expres>
+<page>http://kastream.biz/embed.php?file=ZonaSports05</page>
+<agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0</agent>
+<referer>http://gozonasports.me/channel.php?id=05</referer>
+</regex>
+
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 <item>
 <title>[B]Multicanal Zonasport06[/B]     </title>
-<link>http:$doregex[canal]</link>
+<link>http://style.kastream.biz:8081/edge/$doregex[ver]/playlist.m3u8?wmsAuthSign=$doregex[code]|Referer=http://gozonasports.me/channel.php?id=05</link>
+
 <regex>
-<name>canal</name>
-<expres>source     : "(.*?)"</expres>
+<name>ver</name>
+<expres>playlist\|(.*?)\|</expres>
 <page>http://kastream.biz/embed.php?file=ZonaSports06</page>
 <agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0</agent>
 <referer>http://gozonasports.me/channel.php?id=05</referer>
 </regex>
+<regex>
+<name>code</name>
+<expres>wmsAuthSign\|(.*?)\|</expres>
+<page>http://kastream.biz/embed.php?file=ZonaSports06</page>
+<agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0</agent>
+<referer>http://gozonasports.me/channel.php?id=05</referer>
+</regex>
+
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+
+<item>
+<title>[B]Multicanal Zonasport07[/B]     247bay    </title>
+<link>http://$doregex[ip]$doregex[m3u8]</link>
+			<regex>
+			<name>ip</name>
+			<expres>redirect=(.*)</expres>
+			<page>http://www.publish247.xyz:1935/loadbalancer</page>
+			</regex>
+			<regex>
+			<name>m3u8</name>
+			<expres>ea \+ "(.*?)"</expres>
+			<page>http://www.247bay.tv/membedplayer/$doregex[canal]/2/750/420</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.247bay.tv</referer>
+			</regex>
+			<regex>
+			<name>canal</name>
+			<expres>channel='(.*?)'</expres>
+			<page>http://cdn.zonasports.me/c-7x.php</page>
+			</regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 <item>
-<title>[B]Multicanal Zonasport07[/B]     </title>
-<link>http:$doregex[canal]</link>
-<regex>
-<name>canal</name>
-<expres>source     : "(.*?)"</expres>
-<page>http://kastream.biz/embed.php?file=ZonaSports07</page>
-<agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0</agent>
-<referer>http://gozonasports.me/channel.php?id=05</referer>
-</regex>
+<title>[B]Multicanal Zonasport08[/B]     247bay    </title>
+<link>http://$doregex[ip]$doregex[m3u8]</link>
+			<regex>
+			<name>ip</name>
+			<expres>redirect=(.*)</expres>
+			<page>http://www.publish247.xyz:1935/loadbalancer</page>
+			</regex>
+			<regex>
+			<name>m3u8</name>
+			<expres>ea \+ "(.*?)"</expres>
+			<page>http://www.247bay.tv/membedplayer/$doregex[canal]/2/750/420</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.247bay.tv</referer>
+			</regex>
+			<regex>
+			<name>canal</name>
+			<expres>channel='(.*?)'</expres>
+			<page>http://cdn.zonasports.me/c-8x.php</page>
+			</regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-
-<item>
-<title>[B]Multicanal Zonasport08[/B]     </title>
-<link>http:$doregex[canal]</link>
-<regex>
-<name>canal</name>
-<expres>source     : "(.*?)"</expres>
-<page>http://kastream.biz/embed.php?file=ZonaSports08</page>
-<agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0</agent>
-<referer>http://gozonasports.me/channel.php?id=05</referer>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-
 
 
 
