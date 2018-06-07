@@ -267,23 +267,21 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-
-<iem>
-<title>[COLOR white][B] Agenda Aceoplisting  [COLOR white]   [COLOR white][/COLOR] [/COLOR][/B] OFFLINE[/COLOR]</title>
-
+ 
+<item>
+<title>Ultimos canales Agregados</title>
 <link>$doregex[makelist]</link>
 
 
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-
-<title>[B][I][COLOR white] [makelist.param3][/I] [COLOR lightblue] [makelist.param2][/COLOR]  [COLOR white] [makelist.param4][/B] [/COLOR] [COLOR white][makelist.param5][/COLOR] [/COLOR] </title>
-<link>plugin://program.plexus/?url=[makelist.param1]&amp;mode=1</link>
+<title>[B][makelist.param1][/B]   -agregado: [makelist.param3] </title> 
+<link>plugin://program.plexus/?url=[makelist.param2]&amp;mode=1</link>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/acestreams.png</thumbnail>
 ]]></listrepeat>
-<expres><![CDATA[acestream:\/\/(.*?)"[\w\W\s]{0,32}alt="(.*?)<.*?>(.*?)<.*?>(.*?)<.*?>(.*?)[<|"]]]></expres>
-<page>http://www.acesoplisting.in/</page>
+<expres>title="(.*?)"[\w\W\s]{0,190}content wrap">(.*?)<[\w\W\s]{0,510}Added">(.*?)\&</expres>
+<page>https://acestreamid.com</page>
 <agent>Mozilla</agent>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/acestreams.png</thumbnail>
