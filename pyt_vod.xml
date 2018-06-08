@@ -2797,7 +2797,45 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 
 
-<item>
-<title>[ 1]</title>
-<urlsolve>https://streamango.com/f/ltofpnrapfqldlcd</urlsolve>
+ <item>
+<title>Test</title>
+<thumbnail></thumbnail>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+ <title>[makelist.param1]</title>
+ <urlsolve>[makelist.param2]</urlsolve>
+ <thumbnail></thumbnail>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import re
+  def dec(strdata):
+    d=''
+    strdata=strdata.split(' ')
+    for strchar in strdata:
+        d += chr(int(strchar)-5)
+    return d
+
+  embeds = {'OnlineUpToBox' : 'https://uptobox.com/%s',
+            'OnlineYourUpload' : 'https://www.yourupload.com/watch/%s',
+            'TheVideoMe' : 'https://thevideo.me/embed-%s.html',
+            'OnlineFilesCDN' : 'https://filescdn.com/%s',
+            'OnlineGD' : '/protect/gdredirect.php?l=%s',
+            'OnlineUsersCloud' : 'https://userscloud.com/%s',
+            'OnlineUsersFiles' : 'https://usersfiles.com/%s',
+            'OnlineOkRu' : 'https://ok.ru/video/%s',
+            'OnlineOpenload' : 'https://openload.co/f/%s',
+            'OnlineStreamango' : 'https://streamango.com/f/%s',
+            'OnlineRapidVideo' : 'https://www.rapidvideo.com/v/%s',
+            'Trailer' : 'https://www.youtube.com/watch?v=%s'}
+  srcs = []
+  items = re.findall('class="link.+?onlinelink"\s*service="([^"]+)"\s*data="([^"]+)',page_data)
+  for embed,sdata in items:
+    srcs.append((embed.replace('Online',''), embeds[embed]%dec(sdata)))
+  return srcs
+]]></expres>
+<page>http://www.cinecalidad.to/pelicula/los-inquilinos-2017-online-descarga/</page>
+</regex>
 </item>
