@@ -2798,7 +2798,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
  <item>
-<title>Testss</title>
+<title>Testdddddss</title>
 <thumbnail></thumbnail>
 <link>$doregex[makelist]</link>
 <regex>
@@ -2844,7 +2844,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <expres><![CDATA[#$pyFunction
 def GetLSProData(page_data,Cookie_Jar,m):
    import resolveurl
-   url = '[makelist.param1]'
+   url = '[makelist.param2]'
    try:
      u = resolveurl.resolve(url)
    except:
