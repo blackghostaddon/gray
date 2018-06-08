@@ -2797,15 +2797,21 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 
 
- <item>
-<title>Testdddddss</title>
+	
+	
+	
+	
+	
+	
+	<item>
+<title>sssss</title>
 <thumbnail></thumbnail>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
  <title>[makelist.param1]</title>
-<link>$doregex[id3]</link>
+ <urlsolve>[makelist.param2]</urlsolve>
  <thumbnail></thumbnail>
 ]]></listrepeat>
 <expres><![CDATA[#$pyFunction
@@ -2838,20 +2844,4 @@ def GetLSProData(page_data,Cookie_Jar,m):
 ]]></expres>
 <page>http://www.cinecalidad.to/pelicula/los-inquilinos-2017-online-descarga/</page>
 </regex>
-	 
-<regex>
-<name>id3</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m):
-   import resolveurl
-   url = '[makelist.param2]'
-   try:
-     u = resolveurl.resolve(url)
-   except:
-     u = 'http://adryanlist.org/error.mp4'
-   return u
-]]></expres>
-<page></page>
-</regex>
-	 
 </item>
