@@ -4,7 +4,7 @@
 
 
 <item>
-<title>[COLOR black][B][  ][/B][/COLOR]  [COLOR lightblue][B]BUSCAR CANAL ACESTREAM[/B] [/COLOR][COLOR white] [/COLOR] </title>
+<title>[COLOR white][B][  ][/B][/COLOR]  [COLOR lightblue][B]BUSCAR CANAL ACESTREAM[/B] [/COLOR][COLOR white] [/COLOR] </title>
 <link>$doregex[lista]</link>
 
 <regex>
@@ -45,7 +45,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
-<title>[COLOR skyblue][B] AGENDA ARENAVISION [COLOR aquamarine]  [COLOR white][us][/COLOR] [/COLOR][/B][/COLOR]</title>
+<title>[COLOR black]•[/COLOR][COLOR white]  [B]AGENDA ARENAVISION[/B][/COLOR] [COLOR lightslategray](US) [/COLOR]</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
