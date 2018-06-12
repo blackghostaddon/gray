@@ -797,8 +797,22 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://telerium.tv/embed/25018.ht
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
+<item>
+<title>[B]Multicanal RIVO 02-a[/B]     </title>
+<link>http:$doregex[canal]</link>
+<regex>
+<name>canal</name>
+<expres>source     : "(.*?)"</expres>
+<page>http://kastream.biz/embed.php?file=rivo4</page>
+<agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0</agent>
+<referer>http://gozonasports.me/channel.php?id=05</referer>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
-http://kastream.biz/embed.php?file=rivo4
+
+
+
+
 
  <item>
 <title>[B]Multicanal RIVO 03[/B]     </title>
@@ -810,10 +824,31 @@ http://kastream.biz/embed.php?file=rivo4
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
-http://widestream.io/embed-23442
+ <item>
+<title>[B]Multicanal RIVO 04[/B]     </title>
+<link>$doregex[get-id]</link>
+<regex>
+<name>get-id</name>
+<expres>file:"(.*?)"</expres>
+<page>http://widestream.io/embed-23442</page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
-http://whostreams.net/embed/xsr05td
+<item>
+<title>[B]Multicanal RIVO 05[/B]     </title>
+<link>http://cdn.whostreams.net:8081/wsedge/xsr05td/playlist.m3u8?wmsAuthSign=$doregex[code]</link>
+<regex>
+<name>code</name>
+<expres>parent\|(.*?)\|</expres>
+<page>http://whostreams.net/embed/xsr05td</page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+
+
+
 
 
 
