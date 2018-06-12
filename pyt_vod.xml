@@ -339,7 +339,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[makelist]</link>
 <thumbnail>[makelist0.param2]</thumbnail>
 ]]></listrepeat>
-<expres>post_box.*?href="(.*?)".*?src="(.*?)".*?alt="(.*?)"</expres>
+<expres>href="(.*?)".*?src="(.*?)".*?alt="(.*?)".*?title="(.*?)"</expres>
 <page>http://www.cinecalidad.to/espana/</page>
 </regex>
 
