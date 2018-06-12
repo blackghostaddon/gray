@@ -12,17 +12,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 <iem>
 <title>[B][  ][/B]  [B]LAS PELICULAS[/B]  Recientes - Taquilleras - Populares  </title>
 
@@ -251,22 +240,48 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <item>
-<title>[B]ESTRENOS LATINOS  [/B]</title>
+<title>[B]ESTRENOS LATINOS * [/B]</title>
 <link>$doregex[makelist0]</link>
-
-
 <regex>
 <name>makelist0</name>
 <listrepeat><![CDATA[
 <title>[makelist0.param3]</title>
-<link>$doregex[makelist0]</link>
+<link>$doregex[makelist]</link>
 <thumbnail>[makelist0.param2]</thumbnail>
 ]]></listrepeat>
-<expres>home_post_cont post_box.*?href="(.*?)".*?src="(.*?)".*?alt="(.*?)"</expres>
+<expres>href="(.*?)"[\w\W\s]{0,35}src="(.*?)"[\w\W\s]{0,30}alt="(.*?)"[\w\W\s]{0,3}title="(.*?)"</expres>
 <page>http://www.cinecalidad.to/</page>
 </regex>
 
+
+  
 
 <regex>
 <name>makelist</name>
