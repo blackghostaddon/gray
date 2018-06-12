@@ -267,7 +267,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
-<title>[B]ESTRENOS LATINOS [/B]</title>
+<title>[B]ESTRENOS LATINOS *[/B]</title>
 <link>$doregex[makelist0]</link>
 <regex>
 <name>makelist0</name>
@@ -276,7 +276,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[makelist]</link>
 <thumbnail>[makelist0.param2]</thumbnail>
 ]]></listrepeat>
-<expres><![CDATA[post_box\">\s<a\href=\"(.*?)"[\w\W\s]{0,35}src="(.*?)"[\w\W\s]{0,30}alt="(.*?)"[\w\W\s]{0,3}title="(.*?)"]]></expres>
+<expres>post_box\">\s<a\shref=\"(.*?)"[\w\W\s]{0,35}src="(.*?)"[\w\W\s]{0,30}alt="(.*?)"[\w\W\s]{0,3}title="(.*?)"</expres>
 <page>http://www.cinecalidad.to/</page>
 </regex>
 
