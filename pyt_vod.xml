@@ -2961,7 +2961,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	
 	
 <item>
-<title>[B]ESTRENOS LATINOS [/B]</title>
+<title>[B]ESTRENOS LATINOStttt [/B]</title>
 <link>$doregex[makelist0]</link>
 
 <regex>
