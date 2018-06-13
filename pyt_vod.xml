@@ -2954,7 +2954,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	
 	
 	
-	
+	(http.+)(?<!m3u8)
 	
 	
 	
@@ -2967,7 +2967,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
     <name>makelist0</name> movies  (all pages)
  <listrepeat><![CDATA[
-   <title> [makelist0.param3]</title>
+   <title> [makelist0.param1] - [B][makelist0.param2][/B] - [makelist0.param3]</title>
    <link>$doregex[makelist]</link>
    <thumbnail>[makelist0.param2]</thumbnail>
 <fanart>[makelist0.param2]</fanart>
