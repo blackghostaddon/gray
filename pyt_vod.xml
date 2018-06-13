@@ -2950,18 +2950,12 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	
 	
 	
-	
-	
-	
-	
 
 	
 	
 	
-	
-	
 <item>
-<title>[B]ESTRENOS dkhs [/B]</title>
+<title>[B]ESTRENOS  [/B]</title>
 <link>$doregex[makelist0]</link>
 
 <regex>
@@ -2983,7 +2977,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  firstpage = 1 ### probably  = 1 ###
  endurl = '/' ### can be empty ###    ### endurl without final / (SLASH) ###
 #
- dataregex = 'href="(.*?)"[\w\W\s]{0,35}src="(.*?)"[\w\W\s]{0,30}alt="(.*?)"[\w\W\s]{0,3}title="(.*?)"'      ### To adapt ###
+ dataregex = 'href="(.*?)"[\w\W\s]{0,33}src="(.*?)"[\w\W\s]{0,25}alt="(.*?)"[\w\W\s]{0,3}title="(.*?)"'      ### To adapt ###
  headers = {'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:50.0) Gecko/20100101 Firefox/50.0', 'Referer': ''}      ### To adapt ###
 ##############################################################################################################################################
 
