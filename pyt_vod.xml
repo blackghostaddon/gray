@@ -2954,7 +2954,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	
 	
 	
-	(http.+)(?<!m3u8)
+
 	
 	
 	
