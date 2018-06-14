@@ -853,8 +853,8 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://telerium.tv/embed/25018.ht
 
 
  <item>
-<title>[B]Multicanal BullAguero[/B]</title>
-<link>http://194.67.208.149:80/hls/107.m3u8|User-Agent=iPad</link>
+<title>[B]Multicanal BullAguero* Copa del mundo[/B]</title>
+<link>$doregex[getm3u8]|User-Agent=iPad</link>
 
 <regex>
 <name>getm3u8</name>
@@ -862,11 +862,10 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://telerium.tv/embed/25018.ht
 <page></page>
 </regex>
 
-
 <regex>
 <name>m3u8</name>
 <expres>curl = "(.*?)"</expres>
-<page>https://www.playcast.se/stream.php?id=183</page>
+<page>https://www.playcast.se/stream.php?id=155</page>
 <referer>http://www.playcast.se</referer>
 <agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0</agent>
 </regex>
