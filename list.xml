@@ -8,16 +8,19 @@
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/icon.png</thumbnail>
 <fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart></item>
 
-<item>
-<title>[B]APOYA ESTE PROYECTO MEDIANTE UNA DONACION[/B]</title>
-<link>NA</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/paypal.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart></item>
 
 <item>
 <title>Haz tu [B]Donacion[/B] por Paypal en  [B]https://paypal.me/blackghost[/B] o al correo blackaddon@mail.com  </title>
 <link>NA</link>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/paypal.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart></item>
 
+
+
+<item>
+<title>[B]RUSSIA 2018[/B]</title>
+<link>http://ignorame</link><thumbnail>https://vectors.pro/wp-content/uploads/2017/10/fifa-world-cup-2018-logo-vector.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
+<externallink>https://raw.githubusercontent.com/blackghostaddon/gray/master/russia.xml</externallink>
+</item>
 
 
 
