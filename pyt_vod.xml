@@ -267,7 +267,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
-<title>[B]ESTRENOS LATINOS [/B]</title>
+<title>[B]ESTRENOS LATINOS * [/B]</title>
 <link>$doregex[makelist0]</link>
 <regex>
 <name>makelist0</name>
@@ -313,7 +313,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
             'OnlineRapidVideo' : 'https://www.rapidvideo.com/v/%s',
             'Trailer' : 'https://www.youtube.com/watch?v=%s'}
   srcs = []
-  items = re.findall('class="link.+?onlinelink"\s*service="([^"]+)"\s*data="([^"]+)',page_data)
+  items = re.findall('class="link.+?onlinelink"\s*service="([^"]+)"\s*data="([^"]+)"',page_data)
   for embed,sdata in items:
     srcs.append((embed.replace('Online',''), embeds[embed]%dec(sdata)))
   return srcs
@@ -321,6 +321,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page>[makelist0.param1]</page>
 </regex>
 </item>
+
 
 
 	
