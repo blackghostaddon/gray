@@ -183,7 +183,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 </item>
 ]]></listrepeat>
-<expres><![CDATA[87px\">(.*?)<[\w\W\s]{0,30}">(.*?)<[\w\W\s]{0,32}">(.*?)<[\w\W\s]{0,35}FIFA WORLD CUP[\w\W\s]{0,32}">(.*?)<[\w\W\s]{0,52}"(>[0-9]+)]]></expres>
+<expres><![CDATA[87px\">(.*?)<[\w\W\s]{0,30}">(.*?)<[\w\W\s]{0,32}">(.*?)<[\w\W\s]{0,35}FIFA WORLD CUP[\w\W\s]{0,32}">(.*?)<[\w\W\s]{0,52}"(>W[0-9]+)]]></expres>
 <page>http://arenavision.us/guide</page>
 <Agent>Mozilla</Agent>
 <referer>http://arenavision.us/guide</referer>
@@ -282,7 +282,7 @@ http:///01
 
  
 <item>
-<title>Ultimos canales Agregados</title>
+<title>  [B]Ultimos canales Agregados[/B]</title>
 <link>$doregex[makelist]</link>
 
 
@@ -423,7 +423,7 @@ http:///01
 def GetLSProData(page_data,Cookie_Jar,m):
    import xbmcgui
    dialog = xbmcgui.Dialog()
-   ret = dialog.select('Elige un Canal ', ['AV 1','AV 2','AV 3','AV 4','AV 5','AV 6','AV 7','AV 8','AV 9','AV 10','AV 11','AV 12','AV 13','AV 14','AV 15','AV 16'])
+   ret = dialog.select('Elige un Canal ', ['WC AV 1','WC AV 2','WC AV 3','WC AV 4','WC AV 5','WC AV 6','WC AV 7','WC AV 8','WC AV 9','WC AV 10','WC AV 11','WC AV 12','WC AV 13','WC AV 14','WC AV 15','WC AV 16'])
    lists = ['01','02','03','04','05','06','07','08','09','10','11','12','13','14','15','16']
    return lists[ret]
 ]]></expres>
