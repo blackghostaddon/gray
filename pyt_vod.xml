@@ -267,7 +267,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
-<title>[B]ESTRENOS LATINOS * [/B]</title>
+<title>[B]ESTRENOS LATINOS  [/B]</title>
 <link>$doregex[makelist0]</link>
 <regex>
 <name>makelist0</name>
@@ -297,7 +297,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
     d=''
     strdata=strdata.split(' ')
     for strchar in strdata:
-        d += chr(int(strchar)-5)
+        d += chr(int(strchar)-4)
     return d
 
   embeds = {'OnlineUpToBox' : 'https://uptobox.com/%s',
