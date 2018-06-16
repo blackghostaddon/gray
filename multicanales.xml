@@ -599,11 +599,9 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://telerium.tv/embed/25018.ht
 
 
 
-
-
 <item>
 <title>[B]Multicanal Zonasport05[/B]     </title>
-<link>http://style.kastream.biz:8081/edge/$doregex[ver]/playlist.m3u8?wmsAuthSign=$doregex[code]|Referer=http://gozonasports.me/channel.php?id=05</link>
+<link>http://chrome.kastream.biz:8081/edge/$doregex[ver]/playlist.m3u8?wmsAuthSign=$doregex[code]|Referer=http://gozonasports.me/channel.php?id=05</link>
 
 <regex>
 <name>ver</name>
@@ -625,7 +623,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://telerium.tv/embed/25018.ht
 
 <item>
 <title>[B]Multicanal Zonasport06[/B]     </title>
-<link>http://style.kastream.biz:8081/edge/$doregex[ver]/playlist.m3u8?wmsAuthSign=$doregex[code]|Referer=http://gozonasports.me/channel.php?id=05</link>
+<link>http://chrome.kastream.biz:8081/edge/$doregex[ver]/playlist.m3u8?wmsAuthSign=$doregex[code]|Referer=http://gozonasports.me/channel.php?id=05</link>
 
 <regex>
 <name>ver</name>
