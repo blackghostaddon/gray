@@ -770,7 +770,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://telerium.tv/embed/25018.ht
 <link>http://cdn.whostreams.net:8081/wsedge/$doregex[canal]/playlist.m3u8?wmsAuthSign=$doregex[code]</link>
 <regex>
 <name>canal</name>
-<expres>net\/embed\/(.*?)"</expres>
+<expres>mute\/(.*?)"</expres>
 <page>http://gozonasports.me/channel.php?id=13</page>
 </regex>
 <regex>
@@ -785,7 +785,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://telerium.tv/embed/25018.ht
 <link>http://cdn.whostreams.net:8081/wsedge/$doregex[canal]/playlist.m3u8?wmsAuthSign=$doregex[code]</link>
 <regex>
 <name>canal</name>
-<expres>net\/embed\/(.*?)"</expres>
+<expres>mute\/(.*?)"</expres>
 <page>http://gozonasports.me/channel.php?id=14</page>
 </regex>
 <regex>
