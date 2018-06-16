@@ -775,6 +775,8 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://telerium.tv/embed/25018.ht
 <name>code</name>
 <expres>mute\|(.*?)\|</expres>
 <page>http://whostreams.net/embed/$doregex[canal]</page>
+<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+<referer>http://gozonasports.me/channel.php?id=13</referer>
 </regex>
 </item>
 
@@ -790,6 +792,8 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://telerium.tv/embed/25018.ht
 <name>code</name>
 <expres>mute\|(.*?)\|</expres>
 <page>http://whostreams.net/embed/$doregex[canal]</page>
+<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+<referer>http://gozonasports.me/channel.php?id=13</referer>
 </regex>
 </item>
 
