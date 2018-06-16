@@ -6,13 +6,17 @@
 <externallink>na</externallink>
 <link>NA</link>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/icon.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart></item>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
+<info>The BlackGhost Addon</info>
+</item>
 
 
 <item>
 <title>Haz tu [B]Donacion[/B] por Paypal en  [B]https://paypal.me/blackghost[/B] o al correo blackaddon@mail.com  </title>
 <link>NA</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/paypal.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/paypal.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
+<info>Agradece este proyecto mediante una donacion</info>
+</item>
 
 
 
@@ -20,6 +24,7 @@
 <title>[B]RUSSIA 2018[/B]</title>
 <link>http://ignorame</link><thumbnail>https://vectors.pro/wp-content/uploads/2017/10/fifa-world-cup-2018-logo-vector.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 <externallink>https://raw.githubusercontent.com/blackghostaddon/gray/master/russia.xml</externallink>
+<info>Opciones para disfrutar de la Copa del mundo de Futbol Russia 2018</info>
 </item>
 
 
