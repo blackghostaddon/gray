@@ -56,6 +56,29 @@
 <page>http://depo.superligatv.com/azteca7.php?width=720&height=406</page>
 </regex>
  <thumbnail>https://vectors.pro/wp-content/uploads/2017/10/fifa-world-cup-2018-logo-vector.png</thumbnail></item>
+ 
+ 
+  <item>
+<title>Azteca 7 MX*</title>
+<link>plugin://plugin.video.f4mTester/?url=$doregex[url]&amp;streamtype=TSDOWNLOADER&amp;maxbitrate=0&amp;proxy=None&amp;name=Azteca7</link>
+ 
+ <regex>
+<name>url</name>
+<expres><![CDATA[source: "(.*?)"]]></expres>
+<page>http://depo.superligatv.com/azteca7.php?width=720&height=406</page>
+</regex>
+ <thumbnail>https://vectors.pro/wp-content/uploads/2017/10/fifa-world-cup-2018-logo-vector.png</thumbnail></item>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 
   <item>
 <title>Telemundo</title>
