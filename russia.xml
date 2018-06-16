@@ -18,6 +18,88 @@
 
 
 
+
+  <item>
+<title>TDN Mexico</title>
+<link>$doregex[url]</link>
+ 
+ <regex>
+<name>url</name>
+<expres><![CDATA[source: "(.*?)"]]></expres>
+<page>http://depo.superligatv.com/tdn.php?width=720&height=406</page>
+</regex>
+ 
+<thumbnail>https://vectors.pro/wp-content/uploads/2017/10/fifa-world-cup-2018-logo-vector.png</thumbnail></item>
+
+
+
+  <item>
+<title>Univision TDN</title>
+<link>$doregex[url]</link>
+ 
+ <regex>
+<name>url</name>
+<expres><![CDATA[source: "(.*?)"]]></expres>
+<page>http://depo.superligatv.com/unitdn.php?width=720&height=406</page>
+</regex>
+ <thumbnail>https://vectors.pro/wp-content/uploads/2017/10/fifa-world-cup-2018-logo-vector.png</thumbnail></item>
+
+
+
+  <item>
+<title>Azteca 7 MX</title>
+<link>$doregex[url]</link>
+ 
+ <regex>
+<name>url</name>
+<expres><![CDATA[source: "(.*?)"]]></expres>
+<page>http://depo.superligatv.com/azteca7.php?width=720&height=406</page>
+</regex>
+ <thumbnail>https://vectors.pro/wp-content/uploads/2017/10/fifa-world-cup-2018-logo-vector.png</thumbnail></item>
+
+  <item>
+<title>Telemundo</title>
+<link>$doregex[url]</link>
+ 
+ <regex>
+<name>url</name>
+<expres><![CDATA[source: "(.*?)"]]></expres>
+<page>http://depo.superligatv.com/telemundo.php?width=720&height=406</page>
+</regex>
+ <thumbnail>https://vectors.pro/wp-content/uploads/2017/10/fifa-world-cup-2018-logo-vector.png</thumbnail></item>
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<thumbnail>https://vectors.pro/wp-content/uploads/2017/10/fifa-world-cup-2018-logo-vector.png</thumbnail>
+<title>Telemundo</title>
+<link>http://ktmdlive-lh.akamaihd.net/i/KTMD_LIVE1@183610/index_1200_av-p.m3u8</link>
+</item> 
+
+
+<item>
+<thumbnail>https://vectors.pro/wp-content/uploads/2017/10/fifa-world-cup-2018-logo-vector.png</thumbnail>
+<title>Telemundo</title>
+<link>http://ktmdlive-lh.akamaihd.net/i/KTMD_LIVE1@183610/index_1200_av-p.m3u8?sd=10&rebase=on</link>
+</item> 
+
+
+
+
+
+
+
+
+
 <item>
 <thumbnail>https://vectors.pro/wp-content/uploads/2017/10/fifa-world-cup-2018-logo-vector.png</thumbnail>
 <title>Univision</title>
@@ -27,30 +109,7 @@
 
 
 
-<item>
-<thumbnail>https://vectors.pro/wp-content/uploads/2017/10/fifa-world-cup-2018-logo-vector.png</thumbnail>
-<title>Azteca 7</title>
-<link>http://aztecalive-lh.akamaihd.net/i/0pq46e6vw_1@502477/master.m3u8</link>
-</item> 
-
-
-
-<item>
-<thumbnail>https://vectors.pro/wp-content/uploads/2017/10/fifa-world-cup-2018-logo-vector.png</thumbnail>
-<title>Azteca 7</title>
-<link>http://tvazvod-i.akamaihd.net/i/p/931901/sp/93190100/serveFlavor/entryId/0_cyw7miy9/v/2/ev/6/flavorId/0_84hroljf/index_0_av.m3u8</link>
-</item> 
-
-
-
-
-<item>
-<thumbnail>https://vectors.pro/wp-content/uploads/2017/10/fifa-world-cup-2018-logo-vector.png</thumbnail>
-<title>Tv Azteca</title>
-<link>http://aztecalive-lh.akamaihd.net/i/0j674ifgl_1@500584/master.m3u8</link>
-</item> 
-
-
+ 
 
 
 <item>
@@ -102,6 +161,29 @@
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
+
+ <item>
+<title>Azteca MX</title>
+<link>http://aztecalive-lh.akamaihd.net/i/0qm7cjvop_1@502476/index_1_av-p.m3u8?sd=10&rebase=on</link>
+<regex>
+<name>get-id</name>
+<expres>file:"(.*?)"</expres>
+<page>http://widestream.io/embed-22052</page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+
+
+ <item>
+<title>Azteca MX</title>
+<link>http://aztecalive-lh.akamaihd.net/i/0pq46e6vw_1@502477/master.m3u8</link>
+<regex>
+<name>get-id</name>
+<expres>file:"(.*?)"</expres>
+<page>http://widestream.io/embed-22052</page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
@@ -349,7 +431,9 @@
 
 
 
-<item>
+
+
+<!--item>
 <title>Stream 01</title>
 <link>https://mp4.vaughnsoft.net/live?app=live&amp;port=2935&amp;stream=live_psn91v|Referer=https://vaughnlive.tv/</link>
 </item>
