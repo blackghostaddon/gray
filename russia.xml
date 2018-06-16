@@ -17,6 +17,18 @@
 
 
 
+<item>
+<thumbnail>https://vectors.pro/wp-content/uploads/2017/10/fifa-world-cup-2018-logo-vector.png</thumbnail>
+<title>AZTECA 7</title>
+<link>http://189.216.247.113/Content/HLS/Live/Channel(AZTECA7)/index.m3u8</link>
+</item> 
+<item>
+<thumbnail>https://vectors.pro/wp-content/uploads/2017/10/fifa-world-cup-2018-logo-vector.png</thumbnail>
+<title>AZTECA 7**</title>
+<link>http://live.izzitv.mx/Content/HLS/Live/Channel(AZTECA7)/index.m3u8</link>
+</item> 
+
+
 
 
   <item>
@@ -57,44 +69,16 @@
 </regex>
  <thumbnail>https://vectors.pro/wp-content/uploads/2017/10/fifa-world-cup-2018-logo-vector.png</thumbnail></item>
  
- 
-  <item>
-<title>Azteca 7 MX*</title>
-<link>plugin://plugin.video.f4mTester/?url=$doregex[url]&amp;streamtype=TSDOWNLOADER&amp;maxbitrate=0&amp;proxy=None&amp;name=Azteca7</link>
- 
- <regex>
-<name>url</name>
-<expres><![CDATA[source: "(.*?)"]]></expres>
-<page>http://depo.superligatv.com/azteca7.php?width=720&height=406</page>
-</regex>
- <thumbnail>https://vectors.pro/wp-content/uploads/2017/10/fifa-world-cup-2018-logo-vector.png</thumbnail></item>
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
 
-  <item>
-<title>Telemundo</title>
-<link>$doregex[url]</link>
  
- <regex>
-<name>url</name>
-<expres><![CDATA[source: "(.*?)"]]></expres>
-<page>http://depo.superligatv.com/telemundo.php?width=720&height=406</page>
-</regex>
- <thumbnail>https://vectors.pro/wp-content/uploads/2017/10/fifa-world-cup-2018-logo-vector.png</thumbnail></item>
-
-
-
-
-
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
 
 
 
@@ -186,7 +170,7 @@
 
 
  <item>
-<title>Azteca MX</title>
+<title>Azteca 1 MX</title>
 <link>http://aztecalive-lh.akamaihd.net/i/0qm7cjvop_1@502476/index_1_av-p.m3u8?sd=10&rebase=on</link>
 <regex>
 <name>get-id</name>
@@ -198,18 +182,7 @@
 
 
 
- <item>
-<title>Azteca MX</title>
-<link>http://aztecalive-lh.akamaihd.net/i/0pq46e6vw_1@502477/master.m3u8</link>
-<regex>
-<name>get-id</name>
-<expres>file:"(.*?)"</expres>
-<page>http://widestream.io/embed-22052</page>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-
-
+ 
 
 <item>
 <thumbnail>https://vectors.pro/wp-content/uploads/2017/10/fifa-world-cup-2018-logo-vector.png</thumbnail>
