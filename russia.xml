@@ -48,7 +48,7 @@
 
   <item>
 <title>Azteca 7 MX</title>
-<link>$doregex[url]</link>
+<link>$doregex[url]|User-Agent=ipad</link>
  
  <regex>
 <name>url</name>
