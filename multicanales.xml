@@ -303,7 +303,19 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://telerium.tv/embed/25018.ht
 
 
 
-
+<title>[B]Multicanal MaxDeportes 09 [COLOR yellow] Final Real Madrid - Liverpool FC  [/COLOR] [/B]</title>
+<link>http://cdn.whostreams.net:8081/wsedge/$doregex[canal]/playlist.m3u8?wmsAuthSign=$doregex[code]</link>
+<regex>
+<name>canal</name>
+<expres>net\/embed\/(.*?)"</expres>
+<page>http://maxdeportv.net/indexa.php?canal=9</page>
+</regex>
+<regex>
+<name>code</name>
+<expres>\|(c2V.*?)\|</expres>
+<page>http://whostreams.net/embed/$doregex[canal]</page>
+</regex>
+</item>
 
 <!-- item>
 <title>[B]Multicanal MaxDeportes 01 [COLOR yellow] Final Real Madrid - Liverpool FC  [/COLOR] [/B]</title>
