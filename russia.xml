@@ -485,7 +485,7 @@
   
   <item> 
 <title> test</title>
-<thumbnail>https://vectors.pro/wp-content/uploads/2017/10/fifa-world-cup-2018-logo-vector.png</thumbnail>
+
 <link>$doregex[makelist0]</link>
 
 <regex>
@@ -495,7 +495,7 @@
 <link>$doregex[makelist]</link>      
 <thumbnail>NA</thumbnail>
 ]]></listrepeat>  
-<expres>_self" href="(.*?)">.*?">([^<]+).*?\n.*?">([^<]+).br>\n\s*([^<]+).br>\n\s*([^<]+).br>\n\s*([^<]+)</expres>
+<expres><![CDATA[_self" href="(.*?)">.*?">([^<]+).*?\n.*?">([^<]+).br>\n\s*([^<]+).br>\n\s*([^<]+).br>\n\s*([^<]+)]]></expres>
 <page>http://liveonsat.com/los_foot_int_M_wc2018.html</page>
   </regex>
   
@@ -506,9 +506,11 @@
 <link>NA</link>
 <thumbnail>http://liveonsat.com/[makelist.param2]</thumbnail>
 ]]></listrepeat>
-<expres>time_head>(.*?)<|(?s)img src="(\/fix\/fix_.*?)".*?ST: (\d\d:\d\d)|onmouseout="return nd..;">(.*?)<</expres>
+<expres><![CDATA[time_head>(.*?)<|(?s)img src="(\/fix\/fix_.*?)".*?ST: (\d\d:\d\d)|onmouseout="return nd..;">(.*?)<]]></expres>
 <page>http://liveonsat.com/[makelist0.param1]?selTZ=2</page>    0 HIVER  - 1 ETE
 </regex>
+
+<thumbnail>https://vectors.pro/wp-content/uploads/2017/10/fifa-world-cup-2018-logo-vector.png</thumbnail>
 </item>
   
   
@@ -523,15 +525,14 @@
   
   
 <item>
-<title>Highlights\n test</title>
+<title>Highlightstest</title>
 <link>$doregex[makelist]</link>
-<thumbnail>http://www.mcclatchy-wires.com/incoming/i57svj/picture184108606/alternates/FREE_320/Soccer_WCup_2018_Sweden_Italy_79966.jpg</thumbnail>
 
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
    <title>[makelist.param1]
-[COLOR blue] [makelist.param2][/COLOR] </title>
+[COLOR blue][makelist.param2][/COLOR] </title>
    <link>plugin://plugin.video.f4mTester/?$doregex[getUrl]</link>
    <link>plugin://plugin.video.f4mTester/?$doregex[getUrl2]</link>
    <thumbnail>https://vectors.pro/wp-content/uploads/2017/10/fifa-world-cup-2018-logo-vector.png</thumbnail>
