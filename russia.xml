@@ -474,3 +474,114 @@
 
 
 
+
+
+
+
+
+
+  
+  
+  
+  <item> 
+<title> test</title>
+<thumbnail>https://vectors.pro/wp-content/uploads/2017/10/fifa-world-cup-2018-logo-vector.png</thumbnail>
+<link>$doregex[makelist0]</link>
+
+<regex>
+<name>makelist0</name>
+<listrepeat><![CDATA[
+<title>[makelist0.param2] = [makelist0.param3] + [makelist0.param4] + [makelist0.param5] + [makelist0.param6] </title>
+<link>$doregex[makelist]</link>      
+<thumbnail>NA</thumbnail>
+]]></listrepeat>  
+<expres>_self" href="(.*?)">.*?">([^<]+).*?\n.*?">([^<]+).br>\n\s*([^<]+).br>\n\s*([^<]+).br>\n\s*([^<]+)</expres>
+<page>http://liveonsat.com/los_foot_int_M_wc2018.html</page>
+  </regex>
+  
+ <regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[COLOR cyan]  [makelist.param1] [/COLOR][COLOR yellow] [makelist.param3][/COLOR]  [makelist.param4]</title>
+<link>NA</link>
+<thumbnail>http://liveonsat.com/[makelist.param2]</thumbnail>
+]]></listrepeat>
+<expres>time_head>(.*?)<|(?s)img src="(\/fix\/fix_.*?)".*?ST: (\d\d:\d\d)|onmouseout="return nd..;">(.*?)<</expres>
+<page>http://liveonsat.com/[makelist0.param1]?selTZ=2</page>    0 HIVER  - 1 ETE
+</regex>
+</item>
+  
+  
+  
+  
+  
+
+ 
+  
+ 
+
+  
+  
+<item>
+<title>Highlights\n test</title>
+<link>$doregex[makelist]</link>
+<thumbnail>http://www.mcclatchy-wires.com/incoming/i57svj/picture184108606/alternates/FREE_320/Soccer_WCup_2018_Sweden_Italy_79966.jpg</thumbnail>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+   <title>[makelist.param1]
+[COLOR blue] [makelist.param2][/COLOR] </title>
+   <link>plugin://plugin.video.f4mTester/?$doregex[getUrl]</link>
+   <link>plugin://plugin.video.f4mTester/?$doregex[getUrl2]</link>
+   <thumbnail>https://vectors.pro/wp-content/uploads/2017/10/fifa-world-cup-2018-logo-vector.png</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[flags sprite-3116" style="float:left; "[^"]+"(\d+.*?)" href="(.*?)"]]></expres>
+<page>http://www.goalsarena.org/en</page>
+<referer>http://www.goalsarena.org/</referer>
+<agent>Mozilla/5.0 (Windows NT 6.3; rv:36.0) Gecko/20100101 Firefox/36.04</agent>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>getUrl</name>
+<expres><![CDATA[#$pyFunction
+import requests,re,urllib
+def GetLSProData(page_data,Cookie_Jar,m):
+  ua='Mozilla/5.0 (Windows NT 6.3; rv:36.0) Gecko/20100101 Firefox/36.04'
+  link=re.findall('iframe src="(.*?)"',page_data)[0]
+  fulllink= "http:" + link
+  sourcecode=requests.get(fulllink,headers={'User-Agent':ua,'Referer':'[makelist.param2]','Accept':'/*','Connection':'keep-alive'}).text
+  finallink=re.findall('hls:"(\/\/[^"]+)"',sourcecode)[0]
+  url='http:' + finallink
+  name= "[makelist.param1]"
+  u = 'streamtype=HLSRETRY&name=' + urllib.quote_plus(name) + '&url=' + urllib.quote_plus(url)
+  return u
+]]></expres>
+<page>[makelist.param2]</page>
+<referer>http://www.goalsarena.org/en</referer>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>getUrl2</name>
+<expres><![CDATA[#$pyFunction
+import requests,re,urllib
+def GetLSProData(page_data,Cookie_Jar,m):
+  ua='Mozilla/5.0 (Windows NT 6.3; rv:36.0) Gecko/20100101 Firefox/36.04'
+  link2=re.findall('Extended Highlights\n.*?iframe src="(.*?)"',page_data)[0]
+  fulllink2= "http:" + link2
+  sourcecode=requests.get(fulllink2,headers={'User-Agent':ua,'Referer':'[makelist.param2]','Accept':'/*','Connection':'keep-alive'}).text
+  finallink2=re.findall('hls:"(\/\/[^"]+)"',sourcecode)[0]
+  url2='http:' + finallink2
+  name= "[makelist.param1]"
+  u2 = 'streamtype=HLSRETRY&name=' + urllib.quote_plus(name) + '&url=' + urllib.quote_plus(url2)
+  return u2
+]]></expres>
+<page>[makelist.param2]</page>
+<referer>http://www.goalsarena.org/en</referer>
+<cookieJar></cookieJar>
+</regex>
+</item>
+  
+  
