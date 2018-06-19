@@ -246,7 +246,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <item>
 <title>[B]Multicanal PSN Deportes [/B] *     </title>
-<link>https://mp4.vaughnsoft.net/live?app=live&amp;port=2935&amp;stream=live_psn92v|Referer=https://vaughnlive.tv/</link>
+<link>https://mp4.vaughnsoft.net/live?app=live&amp;port=2935&amp;stream=live_psn93v|Referer=https://vaughnlive.tv/</link>
 </item>
 
 
@@ -260,7 +260,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<itm>
+<item>
 <title>[B]Multicanal MaxDeportes 01[/B]     </title>
  <link>$doregex[bro.adca.st]</link>
 <regex>
@@ -303,7 +303,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://telerium.tv/embed/25018.ht
 
 
 <item>
-<title>[B]Multicanal MaxDeportes 09 [COLOR yellow] Final Real Madrid - Liverpool FC  [/COLOR] [/B]</title>
+<title>[B]Multicanal MaxDeportes 09 [COLOR yellow]  [/COLOR] [/B]</title>
 <link>http://cdn.whostreams.net:8081/wsedge/$doregex[canal]/playlist.m3u8?wmsAuthSign=$doregex[code]</link>
 <regex>
 <name>canal</name>
@@ -316,6 +316,8 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://telerium.tv/embed/25018.ht
 <page>http://whostreams.net/embed/$doregex[canal]</page>
 </regex>
 </item>
+
+
 
 <!-- item>
 <title>[B]Multicanal MaxDeportes 01 [COLOR yellow] Final Real Madrid - Liverpool FC  [/COLOR] [/B]</title>
