@@ -1,11 +1,5 @@
 
 
-<item>
-<thumbnail>https://vectors.pro/wp-content/uploads/2017/10/fifa-world-cup-2018-logo-vector.png</thumbnail>
-<title>TDN HD</title>
-<link>http://189.216.247.113/Content/HLS/Live/Channel(TDN)/Stream(05)/index.m3u8</link>
-</item> 
-
 
 
 
@@ -17,17 +11,6 @@
 
 
 
-<item>
-<thumbnail>https://vectors.pro/wp-content/uploads/2017/10/fifa-world-cup-2018-logo-vector.png</thumbnail>
-<title>AZTECA 7</title>
-<link>http://189.216.247.113/Content/HLS/Live/Channel(AZTECA7)/index.m3u8</link>
-</item> 
-<item>
-<thumbnail>https://vectors.pro/wp-content/uploads/2017/10/fifa-world-cup-2018-logo-vector.png</thumbnail>
-<title>AZTECA 7**</title>
-<link>http://live.izzitv.mx/Content/HLS/Live/Channel(AZTECA7)/index.m3u8</link>
-</item> 
-
 
 
 
@@ -38,7 +21,7 @@
  <regex>
 <name>url</name>
 <expres><![CDATA[source: "(.*?)"]]></expres>
-<page>http://depo.superligatv.com/tdn.php?width=720&height=406</page>
+<page>http://depo.superligatv.com/tdn.php</page>
 </regex>
  
 <thumbnail>https://vectors.pro/wp-content/uploads/2017/10/fifa-world-cup-2018-logo-vector.png</thumbnail></item>
@@ -52,12 +35,28 @@
  <regex>
 <name>url</name>
 <expres><![CDATA[source: "(.*?)"]]></expres>
-<page>http://depo.superligatv.com/unitdn.php?width=720&height=406</page>
+<page>http://depo.superligatv.com/unitdn.php</page>
 </regex>
  <thumbnail>https://vectors.pro/wp-content/uploads/2017/10/fifa-world-cup-2018-logo-vector.png</thumbnail></item>
 
 
+  <item>
+<title>Telemundo</title>
+<link>$doregex[url]</link>
+ 
+ <regex>
+<name>url</name>
+<expres><![CDATA[source: "(.*?)"]]></expres>
+<page>http://depo.superligatv.com/telemundo.php</page>
+</regex>
+ <thumbnail>https://vectors.pro/wp-content/uploads/2017/10/fifa-world-cup-2018-logo-vector.png</thumbnail></item>
 
+
+ 
+ 
+ 
+ 
+ 
   <item>
 <title>Azteca 7 MX</title>
 <link>$doregex[url]|User-Agent=ipad</link>
@@ -65,7 +64,7 @@
  <regex>
 <name>url</name>
 <expres><![CDATA[source: "(.*?)"]]></expres>
-<page>http://depo.superligatv.com/azteca7.php?width=720&height=406</page>
+<page>http://depo.superligatv.com/azteca7.php</page>
 </regex>
  <thumbnail>https://vectors.pro/wp-content/uploads/2017/10/fifa-world-cup-2018-logo-vector.png</thumbnail></item>
  
@@ -74,36 +73,6 @@
  
  
  
- 
- 
- 
- 
-  
-
-
-
-
-
-
-
-<item>
-<thumbnail>https://vectors.pro/wp-content/uploads/2017/10/fifa-world-cup-2018-logo-vector.png</thumbnail>
-<title>Telemundo</title>
-<link>http://ktmdlive-lh.akamaihd.net/i/KTMD_LIVE1@183610/index_1200_av-p.m3u8</link>
-</item> 
-
-
-<item>
-<thumbnail>https://vectors.pro/wp-content/uploads/2017/10/fifa-world-cup-2018-logo-vector.png</thumbnail>
-<title>Telemundo</title>
-<link>http://ktmdlive-lh.akamaihd.net/i/KTMD_LIVE1@183610/index_1200_av-p.m3u8?sd=10&rebase=on</link>
-</item> 
-
-
-
-
-
-
 
 
 
@@ -114,16 +83,6 @@
 </item> 
 
 
-
-
- 
-
-
-<item>
-<thumbnail>https://vectors.pro/wp-content/uploads/2017/10/fifa-world-cup-2018-logo-vector.png</thumbnail>
-<title>Canal 5</title>
-<link>http://189.216.247.113/Content/HLS/Live/Channel(XHGC)/Stream(04)/index.m3u8</link>
-</item> 
 
 
 
@@ -483,7 +442,7 @@
   
   
   
-  <item> 
+  <iem> 
 <title> test</title>
 
 <link>$doregex[makelist0]</link>
