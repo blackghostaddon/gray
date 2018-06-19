@@ -2962,7 +2962,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
     <name>makelist0</name> movies  (all pages)
  <listrepeat><![CDATA[
-   <title> [makelist0.param1] - [B][makelist0.param2][/B] - [makelist0.param3]</title>
+   <title>[makelist0.param3]</title>
    <link>$doregex[makelist]</link>
    <thumbnail>[makelist0.param2]</thumbnail>
 <fanart>[makelist0.param2]</fanart>
@@ -2987,7 +2987,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  source = requests.get(fullurl, headers= headers).text #
  data = [] #
 #
- last = 15 #
+ last = 2 #
  while firstpage <= last: #
     try: #
         fullurl = starturl + centerurl + str(firstpage) + endurl + categorylink #
@@ -3034,7 +3034,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
             'OnlineRapidVideo' : 'https://www.rapidvideo.com/v/%s',
             'Trailer' : 'https://www.youtube.com/watch?v=%s'}
   srcs = []
-  items = re.findall('class="link.+?onlinelink"\s*service="([^"]+)"\s*data="([^"]+)',page_data)
+  items = re.findall('class="link\sonlinelink"\sservice="([^"]+)"\s*data="([^"]+)',page_data)
   for embed,sdata in items:
     srcs.append((embed.replace('Online',''), embeds[embed]%dec(sdata)))
   return srcs
