@@ -57,6 +57,8 @@
  
  
  
+ 
+ 
   <item>
 <title>Azteca 7 MX</title>
 <link>$doregex[url]|User-Agent=ipad</link>
@@ -69,6 +71,32 @@
  <thumbnail>https://vectors.pro/wp-content/uploads/2017/10/fifa-world-cup-2018-logo-vector.png</thumbnail></item>
  
 
+  
+  <item>
+<title>Azteca 7 HD MX</title>
+<link>$doregex[url]|User-Agent=ipad</link>
+ 
+ <regex>
+<name>url</name>
+<expres><![CDATA[source: "(.*?)"]]></expres>
+<page>http://depo.superligatv.com/azteca7hd.php</page>
+</regex>
+ <thumbnail>https://vectors.pro/wp-content/uploads/2017/10/fifa-world-cup-2018-logo-vector.png</thumbnail></item>
+ 
+
+   <item>
+<title>Canal 2 MX</title>
+<link>$doregex[url]|User-Agent=ipad</link>
+ 
+ <regex>
+<name>url</name>
+<expres><![CDATA[source: "(.*?)"]]></expres>
+<page>http://depo.superligatv.com/canal2.php</page>
+</regex>
+ <thumbnail>https://vectors.pro/wp-content/uploads/2017/10/fifa-world-cup-2018-logo-vector.png</thumbnail></item>
+ 
+
+ 
  
  
  
