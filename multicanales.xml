@@ -773,6 +773,12 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://telerium.tv/embed/25018.ht
 
 
 
+
+
+
+
+
+
  <item>
 <title>[B]Multicanal Zonasport13[/B]     </title>
 <link>http://cdn.whostreams.net:8081/wsedge/$doregex[canal]/playlist.m3u8?wmsAuthSign=$doregex[code]</link>
@@ -814,6 +820,22 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://telerium.tv/embed/25018.ht
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  <item>
 <title>[B]Multicanal RIVO 01[/B]     </title>
 <link>$doregex[get-id]</link>
@@ -823,11 +845,6 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://telerium.tv/embed/25018.ht
 <page>http://widestream.io/embed-23442</page>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-
-
-
-
 
 
 
@@ -852,16 +869,63 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://telerium.tv/embed/25018.ht
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
+
+
+
 <item>
 <title>[B]Multicanal RIVO 05[/B]     </title>
-<link>http://cdn.whostreams.net:8081/wsedge/xsr05td/playlist.m3u8?wmsAuthSign=$doregex[code]</link>
+<link>http://cdn.whostreams.net:8081/wsedge/$doregex[canal]/playlist.m3u8?wmsAuthSign=$doregex[code]</link>
+<regex>
+<name>canal</name>
+<expres>net\/embed\/(.*?)"</expres>
+<page>http://in.xrivonet.info/33d.html</page>
+</regex>
 <regex>
 <name>code</name>
-<expres>parent\|(.*?)\|</expres>
-<page>http://whostreams.net/embed/xsr05td</page>
+<expres>\|(c2V.*?)\|</expres>
+<page>http://whostreams.net/embed/$doregex[canal]</page>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
+
+<item>
+<title>[B]Multicanal RIVO 05-a[/B]     </title>
+<link>http://cdn.whostreams.net:8081/wsedge/$doregex[canal]/playlist.m3u8?wmsAuthSign=$doregex[code]</link>
+<regex>
+<name>canal</name>
+<expres>net\/embed\/(.*?)"</expres>
+<page>http://in.xrivonet.info/40d.html</page>
+</regex>
+<regex>
+<name>code</name>
+<expres>\|(c2V.*?)\|</expres>
+<page>http://whostreams.net/embed/$doregex[canal]</page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+
+
+<item>
+<title>[B]Multicanal RIVO 06[/B]     </title>
+<link>http://chrome.kastream.biz:8081/edge/$doregex[ver]/playlist.m3u8?wmsAuthSign=$doregex[code]|Referer=http://kastream.biz/embed.php?file=rivo18&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0</link>
+
+<regex>
+<name>ver</name>
+<expres>playlist\|(.*?)\|</expres>
+<page>http://kastream.biz/embed.php?file=rivo18</page>
+<agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0</agent>
+<referer>http://gozonasports.me/channel.php?id=05</referer>
+</regex>
+<regex>
+<name>code</name>
+<expres>wmsAuthSign\|(.*?)\|</expres>
+<page>http://kastream.biz/embed.php?file=rivo18</page>
+<agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0</agent>
+<referer>http://gozonasports.me/channel.php?id=05</referer>
+</regex>
+
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
@@ -889,6 +953,162 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://telerium.tv/embed/25018.ht
 
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail>
 </item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>[B]Multicanal AndresFutbol 01[/B]     </title>
+<link>http://cdn.whostreams.net:8081/wsedge/$doregex[canal]/playlist.m3u8?wmsAuthSign=$doregex[code]</link>
+<regex>
+<name>canal</name>
+<expres>net\/embed\/(.*?)"</expres>
+<page>http://cndf78.blogspot.com/p/1.html</page>
+</regex>
+<regex>
+<name>code</name>
+<expres>\|(c2V.*?)\|</expres>
+<page>http://whostreams.net/embed/$doregex[canal]</page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+
+
+
+
+
+<item>
+<title>[B]Multicanal AndresFutbol 02[/B]     </title>
+<link>http://cdn.whostreams.net:8081/wsedge/$doregex[canal]/playlist.m3u8?wmsAuthSign=$doregex[code]</link>
+<regex>
+<name>canal</name>
+<expres>net\/embed\/(.*?)"</expres>
+<page>http://cndf78.blogspot.com/p/2.html</page>
+</regex>
+<regex>
+<name>code</name>
+<expres>\|(c2V.*?)\|</expres>
+<page>http://whostreams.net/embed/$doregex[canal]</page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+<item>
+<title>[B]Multicanal AndresFutbol 03[/B]     </title>
+<link>http://cdn.whostreams.net:8081/wsedge/$doregex[canal]/playlist.m3u8?wmsAuthSign=$doregex[code]</link>
+<regex>
+<name>canal</name>
+<expres>net\/embed\/(.*?)"</expres>
+<page>http://cndf78.blogspot.com/p/3.html</page>
+</regex>
+<regex>
+<name>code</name>
+<expres>\|(c2V.*?)\|</expres>
+<page>http://whostreams.net/embed/$doregex[canal]</page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+<item>
+<title>[B]Multicanal AndresFutbol 04[/B]     </title>
+<link>http://cdn.whostreams.net:8081/wsedge/$doregex[canal]/playlist.m3u8?wmsAuthSign=$doregex[code]</link>
+<regex>
+<name>canal</name>
+<expres>net\/embed\/(.*?)"</expres>
+<page>http://cndf78.blogspot.com/p/4.html</page>
+</regex>
+<regex>
+<name>code</name>
+<expres>\|(c2V.*?)\|</expres>
+<page>http://whostreams.net/embed/$doregex[canal]</page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+
+
+ <item>
+<title>[B]Multicanal AndresFutbol 05[/B]     </title>
+<link>$doregex[get-id]</link>
+<regex>
+<name>get-id</name>
+<expres>file:"(.*?)"</expres>
+<page>http://widestream.io/embed-35642</page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+<item>
+<title>[B]Multicanal AndresFutbol 06[/B]     </title>
+<link>http://cdn.whostreams.net:8081/wsedge/$doregex[canal]/playlist.m3u8?wmsAuthSign=$doregex[code]</link>
+<regex>
+<name>canal</name>
+<expres>net\/embed\/(.*?)"</expres>
+<page>http://cndf78.blogspot.com/p/6.html</page>
+</regex>
+<regex>
+<name>code</name>
+<expres>\|(c2V.*?)\|</expres>
+<page>http://whostreams.net/embed/$doregex[canal]</page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+<item>
+<title>[B]Multicanal AndresFutbol 07[/B]     </title>
+<link>http://cdn.whostreams.net:8081/wsedge/$doregex[canal]/playlist.m3u8?wmsAuthSign=$doregex[code]</link>
+<regex>
+<name>canal</name>
+<expres>net\/embed\/(.*?)"</expres>
+<page>http://cndf78.blogspot.com/p/7.html</page>
+</regex>
+<regex>
+<name>code</name>
+<expres>\|(c2V.*?)\|</expres>
+<page>http://whostreams.net/embed/$doregex[canal]</page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
