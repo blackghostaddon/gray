@@ -2225,54 +2225,72 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/21616.h
 
 
 
+<item>
+<title>FOX</title>
+<link>$doregex[getUrl]</link>
+<regex>
+<name>getUrl</name>
+<expres><![CDATA[#$pyFunction
+import re,requests,urllib
+def GetLSProData(page_data,Cookie_Jar,m):
+  list=re.findall("'(\d[^']+)",page_data,re.DOTALL);lists=''.join(list).strip().replace('.','%');lists=urllib.unquote('%'+re.findall('(.*)%',lists)[0])
+  source=requests.get(re.findall('src="(.*embed[^"]+)',lists)[0],headers={'User-Agent':'Mozilla/5.0','Referer':'http://ekostreams.co/ch/fox.php','Cache-Control':'no-cache'}).content.decode('ascii','ignore')
+  return re.findall('src.*?[\'"](.*stream/[^\'"]+)',source)[0]+'|User-Agent=Mozilla/5.0&Referer='+re.findall('src="(.*embed[^"]+)',lists)[0]
+]]></expres>
+<page>http://ekostreams.co/ch/fox.php</page>
+</regex>
 
+</item>
 
-	<item>
-<title> test 1</title>
-<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://capodeportes.net/reproductor2/canal1.php</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-	<item>
-<title> test 2</title>
-<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://capodeportes.net/reproductor2/canal2.php</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-	<item>
-<title> test 3</title>
-<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://capodeportes.net/reproductor2/canal3.php</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-	<item>
-<title> test 4</title>
-<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://capodeportes.net/reproductor2/canal4.php</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-	<item>
-<title> test 5</title>
-<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://capodeportes.net/reproductor2/canal5.php</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-	<item>
-<title> test vip0</title>
-<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://vipracing.info/channel/canal-0</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-	<item>
-<title> test vip1</title>
-<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://vipracing.info/channel/canal-1</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-
-	<item>
-<title> test vip2</title>
-<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://vipracing.info/channel/canal-2</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-	<item>
-<title> test mix1</title>
-<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=https://ssl.ustreamix.com/stream.php?id=fox-deportes</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+<item>
+<title>foxsports</title>
+<link>$doregex[getUrl]</link>
+<regex>
+<name>getUrl</name>
+<expres><![CDATA[#$pyFunction
+import re,requests,urllib
+def GetLSProData(page_data,Cookie_Jar,m):
+  list=re.findall("'(\d[^']+)",page_data,re.DOTALL);lists=''.join(list).strip().replace('.','%');lists=urllib.unquote('%'+re.findall('(.*)%',lists)[0])
+  source=requests.get(re.findall('src="(.*embed[^"]+)',lists)[0],headers={'User-Agent':'Mozilla/5.0','Referer':'http://ekostreams.co/ch/fox.php','Cache-Control':'no-cache'}).content.decode('ascii','ignore')
+  return re.findall('src.*?[\'"](.*stream/[^\'"]+)',source)[0]+'|User-Agent=Mozilla/5.0&Referer='+re.findall('src="(.*embed[^"]+)',lists)[0]
+]]></expres>
+<page>http://ekostreams.co/ch/foxsports.php</page>
+</regex>
+</item>
 
 
 
-https://ssl.ustreamix.com/stream.php?id=fox-deportes
+
+<item>
+<title>sportvhd</title>
+<link>$doregex[getUrl]</link>
+<regex>
+<name>getUrl</name>
+<expres><![CDATA[#$pyFunction
+import re,requests,urllib
+def GetLSProData(page_data,Cookie_Jar,m):
+  list=re.findall("'(\d[^']+)",page_data,re.DOTALL);lists=''.join(list).strip().replace('.','%');lists=urllib.unquote('%'+re.findall('(.*)%',lists)[0])
+  source=requests.get(re.findall('src="(.*embed[^"]+)',lists)[0],headers={'User-Agent':'Mozilla/5.0','Referer':'http://ekostreams.co/ch/fox.php','Cache-Control':'no-cache'}).content.decode('ascii','ignore')
+  return re.findall('src.*?[\'"](.*stream/[^\'"]+)',source)[0]+'|User-Agent=Mozilla/5.0&Referer='+re.findall('src="(.*embed[^"]+)',lists)[0]
+]]></expres>
+<page>http://ekostreams.co/ch/sportvhd.php</page>
+</regex>
+</item>
+
+
+
+<item>
+<title>sportv2</title>
+<link>$doregex[getUrl]</link>
+<regex>
+<name>getUrl</name>
+<expres><![CDATA[#$pyFunction
+import re,requests,urllib
+def GetLSProData(page_data,Cookie_Jar,m):
+  list=re.findall("'(\d[^']+)",page_data,re.DOTALL);lists=''.join(list).strip().replace('.','%');lists=urllib.unquote('%'+re.findall('(.*)%',lists)[0])
+  source=requests.get(re.findall('src="(.*embed[^"]+)',lists)[0],headers={'User-Agent':'Mozilla/5.0','Referer':'http://ekostreams.co/ch/fox.php','Cache-Control':'no-cache'}).content.decode('ascii','ignore')
+  return re.findall('src.*?[\'"](.*stream/[^\'"]+)',source)[0]+'|User-Agent=Mozilla/5.0&Referer='+re.findall('src="(.*embed[^"]+)',lists)[0]
+]]></expres>
+<page>http://ekostreams.co/ch/sportv2.php</page>
+</regex>
+</item>
