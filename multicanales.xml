@@ -469,7 +469,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://telerium.tv/embed/25018.ht
 			<regex>
 			<name>canal</name>
 			<expres>player\/(.*?)\/</expres>
-			<page>http://gozonasports.me/channel.php?id=1</page>
+			<page>http://gozonasports.me/cha.php?id=1</page>
 			</regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
@@ -510,7 +510,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://telerium.tv/embed/25018.ht
 			<regex>
 			<name>canal</name>
 			<expres>player\/(.*?)\/</expres>
-			<page>http://gozonasports.me/channel.php?id=2</page>
+			<page>http://gozonasports.me/cha.php?id=2</page>
 			</regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
@@ -557,7 +557,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://telerium.tv/embed/25018.ht
 			<regex>
 			<name>canal</name>
 			<expres>player\/(.*?)\/</expres>
-			<page>http://gozonasports.me/channel.php?id=3</page>
+			<page>http://gozonasports.me/cha.php?id=3</page>
 			</regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
@@ -602,7 +602,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://telerium.tv/embed/25018.ht
 			<regex>
 			<name>canal</name>
 			<expres>player\/(.*?)\/</expres>
-			<page>http://gozonasports.me/channel.php?id=4</page>
+			<page>http://gozonasports.me/cha.php?id=4</page>
 			</regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
@@ -654,7 +654,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://telerium.tv/embed/25018.ht
 
 
 
-<item>
+<!--item>
 <title>[B]Multicanal Zonasport07[/B]     247bay    </title>
 <link>http://$doregex[ip]$doregex[m3u8]</link>
 			<regex>
@@ -697,7 +697,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://telerium.tv/embed/25018.ht
 			<expres>channel='(.*?)'</expres>
 			<page>http://cdn.zonasports.me/c-8x.php</page>
 			</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item-->
 
 
 
