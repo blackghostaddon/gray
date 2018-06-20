@@ -777,11 +777,11 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://telerium.tv/embed/25018.ht
 
 
 
-
+<link>http://cdn.whostreams.net:8081/wsedge/$doregex[canal]/playlist.m3u8?wmsAuthSign=$doregex[code]</link>
 
  <item>
-<title>[B]Multicanal Zonasport13[/B]     </title>
-<link>http://cdn.whostreams.net:8081/wsedge/$doregex[canal]/playlist.m3u8?wmsAuthSign=$doregex[code]</link>
+<title>[B]Multicanal Zonasport13[/B] *     </title>
+<link>http://nl.zonasports.in/ch/13wc/playlist.m3u8</link>
 <regex>
 <name>canal</name>
 <expres>net\/embed\/(.*?)"</expres>
