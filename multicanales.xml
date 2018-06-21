@@ -261,8 +261,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
-<title>[B]Multicanal MaxDeportes 01[/B] **    </title>
- <link>http:$doregex[bro.adca.st]</link>
+<title>[B]Multicanal MaxDeportes 01[/B] **  **  </title>
+ <link>$doregex[bro.adca.st]</link>
 <regex>
 <name>bro.adca.st</name>
 <expres><![CDATA[#$pyFunction
