@@ -171,7 +171,7 @@
 
  
 
-<item>
+<!--item>
 <thumbnail>https://vectors.pro/wp-content/uploads/2017/10/fifa-world-cup-2018-logo-vector.png</thumbnail>
 <title>Telecinco FHD</title>
 <link>https://livehlsdai-i.akamaihd.net/hls/live/571640/telecinco/bitrate_4.m3u8</link>
@@ -202,7 +202,7 @@
 <thumbnail>https://vectors.pro/wp-content/uploads/2017/10/fifa-world-cup-2018-logo-vector.png</thumbnail>
 <title>Telecinco HSD</title>
 <link>https://livehlsdai-i.akamaihd.net/hls/live/571640/telecinco/bitrate_1.m3u8</link>
-</item> 
+</item--> 
 
 
 
@@ -273,11 +273,6 @@
 <link>http://xtelefuturohdx.api.channel.livestream.com/3.0/playlist.m3u8</link>
 </item> 
 
-<item>
-<thumbnail>https://vectors.pro/wp-content/uploads/2017/10/fifa-world-cup-2018-logo-vector.png</thumbnail>
-<title>TyC Sports</title>
-<link>https://d3055hobuue3je.cloudfront.net/out/v1/b841c366cbe540e6a106c3ba83e5c8d6/index_3.m3u8</link>
-</item> 
 
 
 
@@ -392,6 +387,18 @@
 
 
 
+<item>
+<title>Telecinco ESP</title>
+<link>$doregex[get-id]|User-Agent=iPad&amp;Referer=http://vergol.com/live1/cuatro.php</link>
+<regex>
+<name>get-id</name>
+<expres>source: '(.*?)'</expres>
+<page>http://vergol.com/live1/telecinco.php</page>
+<referer>http://verdirectotv.com/tv/nacionales2/telecinco.html</referer>
+<agent>iPad</agent>
+</regex>
+
+<thumbnail>http://adryanlist.org/adryan/img/esp.jpg</thumbnail>   </item>
 
 
 <item>
@@ -423,7 +430,7 @@
 
 
 <item>
-<title>[UPPERCASE][COLOR skyblue] cuatro [/UPPERCASE][/COLOR] </title>
+<title>CUATRO </title>
 <link>$doregex[get-id]|User-Agent=iPad&amp;Referer=http://vergol.com/live1/cuatro.php</link>
 <regex>
 <name>get-id</name>
