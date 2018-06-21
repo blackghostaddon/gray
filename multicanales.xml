@@ -1209,6 +1209,20 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
+<item>
+ <title>[B]Multicanal ESPN 2[/B] **    </title>
+<link>$doregex[GetPageUrl]|Referer=http://livesports.pw/embedna.php?file=movestr&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64; rv:56.0) Gecko/20100101 Firefox/56.0</link>
+<regex>
+<name>GetPageUrl</name>
+<expres>source: '(.*?)'</expres>
+<page>http://livesports.pw/embeddeporte1.php?file=espndosmx&amp;width=650&amp;height=397</page>
+<agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
+<referer>http://cinestrenostv.tv/canales/envivo/plusestrenos.html</referer>
+</regex>
+<thumbnail>http://adryanlist.org/adryan/img/esp.png</thumbnail>   </item>
+
+
+
 
 
 
@@ -1255,7 +1269,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
   <item>
- <title>[B]Multicanal ESPN Deportes[/B]     </title>
+ <title>[B]Multicanal ESPN Deportes[/B]     *</title>
 <link>$doregex[url]</link>
  
  <regex>
