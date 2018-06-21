@@ -21,7 +21,7 @@
  <regex>
 <name>url</name>
 <expres><![CDATA[source: "(.*?)"]]></expres>
-<page>http://depo.superligatv.com/tdn.php</page>
+<page>http://depo.superligatv.com/tdnhd.php</page>
 </regex>
  
 <thumbnail>https://vectors.pro/wp-content/uploads/2017/10/fifa-world-cup-2018-logo-vector.png</thumbnail></item>
@@ -203,6 +203,21 @@
 <title>Telecinco HSD</title>
 <link>https://livehlsdai-i.akamaihd.net/hls/live/571640/telecinco/bitrate_1.m3u8</link>
 </item> 
+
+
+
+
+  <item>
+<title>Telecinco</title>
+<link>$doregex[url]</link>
+ 
+ <regex>
+<name>url</name>
+<expres><![CDATA[source: "(.*?)"]]></expres>
+<page>http://depo.superligatv.com/telecinco.php</page>
+</regex>
+ 
+<thumbnail>https://vectors.pro/wp-content/uploads/2017/10/fifa-world-cup-2018-logo-vector.png</thumbnail></item>
 
 
 
