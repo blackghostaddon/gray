@@ -2225,6 +2225,19 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/21616.h
 
 
 
+
+	<item>
+<title> fasldgusd  [I]  1  [/I]</title>
+<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://maxdeportv.net/indexa.php?canal=1</link>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+	<item>
+<title> fasldgusd  [I] 7   [/I]</title>
+<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://maxdeportv.net/indexa.php?canal=7</link>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+
 <item>
 <title>FOX</title>
 <link>$doregex[getUrl]</link>
