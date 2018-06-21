@@ -288,6 +288,41 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://telerium.tv/embed/25018.ht
 
 
 
+<item>
+<title>[B]Multicanal MaxDeportes 01[/B] **  **  </title>
+ <link>http:$doregex[uno]$doregex[tok]|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:52.0) Gecko/20100101 Firefox/52.0&amp;Referer=http://telerium.tv/embed/25018.html&amp;Origin=http://telerium.tv</link>
+ 
+<regex>
+<name>uno</name>
+<expres><![CDATA["(Ly9z.+?)"]]></expres>
+<page>http://telerium.tv/embed/25018.html</page>
+<referer>http://maxdeportv.net/indexa.php?canal=1</referer>
+<origin>http://telerium.tv</origin>
+<agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:52.0) Gecko/20100101 Firefox/52.0</agent>
+</regex>
+<regex>
+<name>tok</name>
+<expres><![CDATA["(.+?)"]]></expres>
+<page>http:$doregex[token]</page>
+<referer>http://maxdeportv.net/indexa.php?canal=1</referer>
+<origin>http://telerium.tv</origin>
+<agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:52.0) Gecko/20100101 Firefox/52.0</agent>
+</regex>
+<regex>
+<name>token</name>
+<expres><![CDATA["(Ly90ZWxlcml1bS.+?)"]]></expres>
+<page>http://telerium.tv/embed/25018.html</page>
+<referer>http://maxdeportv.net/indexa.php?canal=1</referer>
+<origin>http://telerium.tv</origin>
+<agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:52.0) Gecko/20100101 Firefox/52.0</agent>
+</regex>
+
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+
+
+
 
 
 
