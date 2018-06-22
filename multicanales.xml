@@ -2151,15 +2151,15 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/21616.h
 
 
 	<item>
-<title> fasldgusd  [I]    [/I]</title>
-<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://latino-webtv.com/Azteca-7-en-vivo/</link>
+<title> fasldgusd 7 [I]    [/I]</title>
+<sportsdevil>http://tvcanales.cf/channels/azteca7.html</sportsdevil>
+<referer>http://tvcanales.cf/channels/azteca7.html</referer>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-
 
 	<item>
 <title> fasldgusd 7 [I]    [/I]</title>
-<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://tvcanales.cf/channels/azteca7.html</link>
+<sportsdevil>http://tvcanales.cf/channels/azteca7.html</sportsdevil>
+<referer>http://latino-webtv.com/Azteca-7-en-vivo/</referer>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
