@@ -3,12 +3,42 @@
 
 
 
-<iem>
-<thumbnail>https://vectors.pro/wp-content/uploads/2017/10/fifa-world-cup-2018-logo-vector.png</thumbnail>
-<title>Univision</title>
-<link>https://nlunioo.akamaized.net/nlds/univision/as/live/unioo_hd_4500_ipad.m3u8</link>
-</item> 
+<item>
+<title>[COLOR lime]•[/COLOR][COLOR white]  [B]World Cup Russia 2018 [/B][/COLOR] [COLOR lightslategray](Agenda AV Acestreams) [/COLOR]</title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
 
+<title>[COLOR lightgreen][makelist.param1] [COLOR silver] [makelist.param2]  [COLOR white] [makelist.param4][/COLOR][/COLOR][/COLOR]  [COLOR white] [makelist.param5][/COLOR] </title>
+<link>plugin://program.plexus/?url=$doregex[hash]&amp;mode=1&amp;name=BlackAddon+[makelist.param4]</link>
+			<regex>
+			<name>hash</name>
+			<expres>this.loadPlayer\("(.*?)"</expres>
+			<page>http://liverussia2018.ga/$doregex[canal]</page>
+			<referer>http://liverussia2018.ga/</referer>
+			<setcookie>beget=begetok</setcookie>
+			</regex>
+			<regex>
+			<name>canal</name>
+			<expres>$pyFunction:'[makelist.param5]'.replace('>W4','04').replace('>W5','05').replace('>W6','06').replace('>W7','07').replace('>W8','08').replace('>W9','09').replace('>W10','10').replace('>W11','11').replace('>W12','12').replace('>W13','13').replace('>W14','14').replace('>W15','15').replace('>W16','16').replace('>W17','17').replace('>W18','18').replace('>W19','19').replace('>W20','20').replace('>W21','21').replace('>W22','22').replace('>W23','23').replace('>W24','24').replace('>W25','25').replace('>W26','26').replace('>W27','27').replace('>W28','28').replace('>W29','29').replace('>W30','30').replace('>W31','31').replace('>W32','32').replace('>W33','33').replace('>W34','34').replace('>W35','35').replace('>W1','01').replace('>W2','02').replace('>W3','03')</expres>
+			<page></page>
+			</regex>
+
+			<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/acestreams.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
+
+</item>
+]]></listrepeat>
+<expres><![CDATA[87px\">(.*?)<[\w\W\s]{0,30}">(.*?)<[\w\W\s]{0,32}">(.*?)<[\w\W\s]{0,35}FIFA WORLD CUP[\w\W\s]{0,32}">(.*?)<[\w\W\s]{0,52}"(>W[0-9]+)]]></expres>
+<page>http://arenavision.us/guide</page>
+<Agent>Mozilla</Agent>
+<referer>http://arenavision.us/guide</referer>
+<setcookie>beget=begetok</setcookie>
+</regex>
+
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/acestreams.png</thumbnail>
+</item>
 
 
 
