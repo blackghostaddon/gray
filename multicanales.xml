@@ -778,59 +778,6 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://telerium.tv/embed/25018.ht
 
 
 
-<link>http://cdn.whostreams.net:8081/wsedge/$doregex[canal]/playlist.m3u8?wmsAuthSign=$doregex[code]</link>
-
- <item>
-<title>[B]Multicanal Zonasport13[/B] *     </title>
-<link>http://nl.zonasports.in/ch/13wc/playlist.m3u8</link>
-<regex>
-<name>canal</name>
-<expres>net\/embed\/(.*?)"</expres>
-<page>http://gozonasports.me/channel.php?id=13</page>
-</regex>
-<regex>
-<name>code</name>
-<expres>mute\|(.*?)\|</expres>
-<page>http://whostreams.net/embed/$doregex[canal]</page>
-<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
-<referer>http://gozonasports.me/channel.php?id=13</referer>
-</regex>
-</item>
-
- <item>
-<title>[B]Multicanal Zonasport14[/B]     </title>
-<link>http://nl.zonasports.in/ch/14mi/playlist.m3u8</link>
-<regex>
-<name>canal</name>
-<expres>net\/embed\/(.*?)"</expres>
-<page>http://gozonasports.me/channel.php?id=14</page>
-</regex>
-<regex>
-<name>code</name>
-<expres>mute\|(.*?)\|</expres>
-<page>http://whostreams.net/embed/$doregex[canal]</page>
-<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
-<referer>http://gozonasports.me/channel.php?id=13</referer>
-</regex>
-</item>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -858,17 +805,6 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://telerium.tv/embed/25018.ht
 <page>http://widestream.io/embed-24910</page>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
- <item>
-<title>[B]Multicanal RIVO 04[/B]     </title>
-<link>$doregex[get-id]</link>
-<regex>
-<name>get-id</name>
-<expres>file:"(.*?)"</expres>
-<page>http://widestream.io/embed-23442</page>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
 
 
 
@@ -906,27 +842,6 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://telerium.tv/embed/25018.ht
 
 
 
-
-<item>
-<title>[B]Multicanal RIVO 06[/B]     </title>
-<link>http://chrome.kastream.biz:8081/edge/$doregex[ver]/playlist.m3u8?wmsAuthSign=$doregex[code]|Referer=http://kastream.biz/embed.php?file=rivo18&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0</link>
-
-<regex>
-<name>ver</name>
-<expres>playlist\|(.*?)\|</expres>
-<page>http://kastream.biz/embed.php?file=rivo18</page>
-<agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0</agent>
-<referer>http://gozonasports.me/channel.php?id=05</referer>
-</regex>
-<regex>
-<name>code</name>
-<expres>wmsAuthSign\|(.*?)\|</expres>
-<page>http://kastream.biz/embed.php?file=rivo18</page>
-<agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0</agent>
-<referer>http://gozonasports.me/channel.php?id=05</referer>
-</regex>
-
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
@@ -2238,18 +2153,33 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/21616.h
  <link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://soloveo.com/afox4.html</link>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
+	
 
 
 
-	<item>
-<title> fasldgusd  [I]  1  [/I]</title>
-<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://maxdeportv.net/indexa.php?canal=1</link>
+
+
+<item>
+<title> MaxDeportes  [I]  SportsDevil [Descarga last version desde BlackGhost Repo]  [/I]</title>
+<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://maxdeportv.net/indexa.php?canal=$doregex[select]</link>
+
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+   import xbmcgui
+   dialog = xbmcgui.Dialog()
+   ret = dialog.select('Elige un Canal ', ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', '41', '42'])
+   lists = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', '41', '42']
+   return lists[ret]
+]]></expres>
+<page></page>
+</regex>
+
+
+
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
-	<item>
-<title> fasldgusd  [I] 7   [/I]</title>
-<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://maxdeportv.net/indexa.php?canal=7</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
