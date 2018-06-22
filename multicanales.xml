@@ -2158,12 +2158,14 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/21616.h
 
 	<item>
 <title> test  [I]    [/I]</title>
+<link>ignorme</link>
 <jsonrpc>plugin://plugin.video.SportsDevil/?item=url=livesports/rojadirecta.me.cfg&amp;mode=1</jsonrpc>
 
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 	<item>
 <title> calle [I]    [/I]</title>
+<link>ignorme</link>
 <jsonrpc>plugin://plugin.video.SportsDevil/?item=url=customs/calleocho.cfg&amp;mode=1</jsonrpc>
 
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
