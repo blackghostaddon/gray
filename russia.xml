@@ -4,7 +4,7 @@
 
 
 <item>
-<title>[COLOR lime]•[/COLOR][COLOR white]  [B]World Cup Russia 2018 [/B][/COLOR] [COLOR lightslategray](Agenda AV Acestreams) [/COLOR]</title>
+<title>[COLOR white]  [B]World Cup Russia 2018 [/B][/COLOR] [COLOR lightslategray](Agenda AV Acestreams) [/COLOR]</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
@@ -165,28 +165,7 @@ http://aztecalive-lh.akamaihd.net/i/0pq46e6vw_1@502477/index_3_av-p.m3u8?sd=10&r
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
- <item>
-<title>Canal cinco (wide)</title>
-<link>$doregex[get-id]</link>
-<regex>
-<name>get-id</name>
-<expres>file:"(.*?)"</expres>
-<page>http://widestream.io/embed-22053</page>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-
- <item>
-<title>Azteca 7 (wide)</title>
-<link>$doregex[get-id]</link>
-<regex>
-<name>get-id</name>
-<expres>file:"(.*?)"</expres>
-<page>http://widestream.io/embed-22050</page>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-
+ 
  <item>
 <title>Azteca 1 MX</title>
 <link>http://aztecalive-lh.akamaihd.net/i/0qm7cjvop_1@502476/index_1_av-p.m3u8?sd=10&rebase=on</link>
@@ -478,11 +457,11 @@ http://aztecalive-lh.akamaihd.net/i/0pq46e6vw_1@502477/index_3_av-p.m3u8?sd=10&r
 
 
 <item>
-<title>	Telemundo </title>
+<title>Telemundo </title>
 <link>http://wscvlive-lh.akamaihd.net/i/WSCV_LIVE2@183618/index_1500_av-p.m3u8?sd=10&rebase=on</link>
 </item>
 <item>
-<title>	Telemundo </title>
+<title>Telemundo </title>
 <link>http://ktmdlive-lh.akamaihd.net/i/KTMD_LIVE1@183610/index_1200_av-p.m3u8?sd=10&rebase=on</link>
 </item>
 
