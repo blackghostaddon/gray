@@ -780,10 +780,6 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://telerium.tv/embed/25018.ht
 
 
 
-
-
-
-
  <item>
 <title>[B]Multicanal RIVO 01[/B]     </title>
 <link>$doregex[get-id]</link>
@@ -791,6 +787,21 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://telerium.tv/embed/25018.ht
 <name>get-id</name>
 <expres>file:"(.*?)"</expres>
 <page>http://widestream.io/embed-23442</page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+
+
+
+
+ <item>
+<title>[B]Multicanal RIVO 02[/B]     </title>
+<link>$doregex[get-id]</link>
+<regex>
+<name>get-id</name>
+<expres>file:"(.*?)"</expres>
+<page>http://widestream.io/embed-16968</page>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
@@ -862,7 +873,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://telerium.tv/embed/25018.ht
 <regex>
 <name>m3u8</name>
 <expres>curl = "(.*?)"</expres>
-<page>https://www.playcast.se/stream.php?id=155</page>
+<page>https://www.playcast.se/stream.php?id=152</page>
 <referer>http://www.playcast.se</referer>
 <agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0</agent>
 </regex>
@@ -871,6 +882,20 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://telerium.tv/embed/25018.ht
 </item>
 
 
+<item>
+<title>[B]Multicanal LedSports[/B]     </title>
+<link>http://cdn.whostreams.net:8081/wsedge/$doregex[canal]/playlist.m3u8?wmsAuthSign=$doregex[code]</link>
+<regex>
+<name>canal</name>
+<expres>net\/embed\/(.*?)"</expres>
+<page>http://1me.club/vf/1/13.html?id=ROja</page>
+</regex>
+<regex>
+<name>code</name>
+<expres>\|(c2V.*?)\|</expres>
+<page>http://whostreams.net/embed/$doregex[canal]</page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
