@@ -172,7 +172,7 @@ http://aztecalive-lh.akamaihd.net/i/0pq46e6vw_1@502477/index_3_av-p.m3u8?sd=10&r
 
  
 
-<item>
+<!--item>
 <thumbnail>https://vectors.pro/wp-content/uploads/2017/10/fifa-world-cup-2018-logo-vector.png</thumbnail>
 <title>Telecinco FHD</title>
 <link>https://livehlsdai-i.akamaihd.net/hls/live/571640/telecinco/bitrate_4.m3u8</link>
@@ -203,28 +203,10 @@ http://aztecalive-lh.akamaihd.net/i/0pq46e6vw_1@502477/index_3_av-p.m3u8?sd=10&r
 <thumbnail>https://vectors.pro/wp-content/uploads/2017/10/fifa-world-cup-2018-logo-vector.png</thumbnail>
 <title>Telecinco HSD</title>
 <link>https://livehlsdai-i.akamaihd.net/hls/live/571640/telecinco/bitrate_1.m3u8</link>
-</item> 
+</item--> 
 
 
-<item>
-<thumbnail>https://vectors.pro/wp-content/uploads/2017/10/fifa-world-cup-2018-logo-vector.png</thumbnail>
-<title>Telecinco HD**</title>
-<link>https://mdslivehlsb-i.akamaihd.net/hls/live/571640/telecinco/bitrate_3.m3u8</link>
-</item> 
-
-
-
-  <item>
-<title>Telecinco</title>
-<link>$doregex[url]</link>
  
- <regex>
-<name>url</name>
-<expres><![CDATA[source: "(.*?)"]]></expres>
-<page>http://depo.superligatv.com/telecinco.php</page>
-</regex>
- 
-<thumbnail>https://vectors.pro/wp-content/uploads/2017/10/fifa-world-cup-2018-logo-vector.png</thumbnail></item>
 
 
 
@@ -274,12 +256,6 @@ http://aztecalive-lh.akamaihd.net/i/0pq46e6vw_1@502477/index_3_av-p.m3u8?sd=10&r
 
 
 
-<item>
-<thumbnail>https://vectors.pro/wp-content/uploads/2017/10/fifa-world-cup-2018-logo-vector.png</thumbnail>
-<title>Telefuturo</title>
-<link>http://xtelefuturohdx.api.channel.livestream.com/3.0/playlist.m3u8</link>
-</item> 
-
 
 
 
@@ -300,13 +276,7 @@ http://aztecalive-lh.akamaihd.net/i/0pq46e6vw_1@502477/index_3_av-p.m3u8?sd=10&r
 
 
 
-
-<item>
-<thumbnail>https://vectors.pro/wp-content/uploads/2017/10/fifa-world-cup-2018-logo-vector.png</thumbnail>
-<title>TvES</title>
-<link>http://controlstreams.com:1935/tves2/tves2/playlist.m3u8</link>
-</item> 
-
+ 
 
 
 
@@ -422,6 +392,21 @@ http://aztecalive-lh.akamaihd.net/i/0pq46e6vw_1@502477/index_3_av-p.m3u8?sd=10&r
 
 
 
+  <item>
+<title>Telecinco</title>
+<link>$doregex[url]</link>
+ 
+ <regex>
+<name>url</name>
+<expres><![CDATA[source: "(.*?)"]]></expres>
+<page>http://depo.superligatv.com/telecinco.php</page>
+</regex>
+ 
+<thumbnail>https://vectors.pro/wp-content/uploads/2017/10/fifa-world-cup-2018-logo-vector.png</thumbnail></item>
+
+
+
+
 <item>
 <title>CUATRO ESP</title>
 <link>$doregex[GetPageUrl]|Referer=http://livesports.pw/embedna.php?file=movestr&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64; rv:56.0) Gecko/20100101 Firefox/56.0</link>
@@ -462,50 +447,51 @@ http://aztecalive-lh.akamaihd.net/i/0pq46e6vw_1@502477/index_3_av-p.m3u8?sd=10&r
 
 
 
+<item>
+<title>	Telemundo </title>
+<link>http://wscvlive-lh.akamaihd.net/i/WSCV_LIVE2@183618/index_1500_av-p.m3u8?sd=10&rebase=on</link>
+</item>
+<item>
+<title>	Telemundo </title>
+<link>http://ktmdlive-lh.akamaihd.net/i/KTMD_LIVE1@183610/index_1200_av-p.m3u8?sd=10&rebase=on</link>
+</item>
 
 
 
 
 <item>
-<title>Stream 01 Telemundo </title>
+<title>Stream 01 PSN </title>
 <link>https://mp4.vaughnsoft.net/live?app=live&amp;port=2935&amp;stream=live_psn93v|Referer=https://vaughnlive.tv/</link>
 </item>
 
 <item>
-<title>Stream 02 Telemundo </title>
+<title>Stream 02 Telemundo (tele2)</title>
 <link>https://mp4.vaughnsoft.net/live?app=live&amp;port=2935&amp;stream=live_tele2|Referer=https://vaughnlive.tv/</link>
 <thumbnail>https://vectors.pro/wp-content/uploads/2017/10/fifa-world-cup-2018-logo-vector.png</thumbnail></item> 
 
 <item>
-<title>Stream 03 Telemundo </title>
+<title>Stream 03 Telemundo (luzclarita)</title>
 <link>https://mp4.vaughnsoft.net/live?app=live&amp;port=2935&amp;stream=live_luzclarita|Referer=https://vaughnlive.tv/</link>
 <thumbnail>https://vectors.pro/wp-content/uploads/2017/10/fifa-world-cup-2018-logo-vector.png</thumbnail></item> 
 
 
 <item>
-<title>Stream 04 Telemundo </title>
+<title>Stream 04 Telemundo (anahi) </title>
 <link>https://mp4.vaughnsoft.net/live?app=live&amp;port=2935&amp;stream=live_anahix_11|Referer=https://vaughnlive.tv/</link>
 <thumbnail>https://vectors.pro/wp-content/uploads/2017/10/fifa-world-cup-2018-logo-vector.png</thumbnail></item> 
 
 
 <item>
-<title>Stream 05</title>
-<link>https://mp4.vaughnsoft.net/live?app=live&amp;port=2935&amp;stream=live_32mundialito_tv|Referer=https://vaughnlive.tv/</link>
+<title>Stream 05 (argentimania50)</title>
+<link>https://mp4.vaughnsoft.net/live?app=live&amp;port=2935&amp;stream=live_argentimania50|Referer=https://vaughnlive.tv/</link>
 <thumbnail>https://vectors.pro/wp-content/uploads/2017/10/fifa-world-cup-2018-logo-vector.png</thumbnail></item> 
 
 
 <item>
-<title>Stream 06</title>
+<title>Stream 06 (85jose_deportes)</title>
 <link>https://mp4.vaughnsoft.net/live?app=live&amp;port=2935&amp;stream=live_85jose_deportes|Referer=https://vaughnlive.tv/</link>
 <thumbnail>https://vectors.pro/wp-content/uploads/2017/10/fifa-world-cup-2018-logo-vector.png</thumbnail></item> 
 
-
-
-
-<item>
-<title>Stream 07 TDN</title>
-<link>https://mp4.vaughnsoft.net/live?app=live&amp;port=2935&amp;stream=live_tdntvhd|Referer=https://vaughnlive.tv/</link>
-<thumbnail>https://vectors.pro/wp-content/uploads/2017/10/fifa-world-cup-2018-logo-vector.png</thumbnail></item> 
 
 
 
