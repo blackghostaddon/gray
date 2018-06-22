@@ -122,7 +122,8 @@
 </item> 
 
 
-
+http://aztecalive-lh.akamaihd.net/i/0pq46e6vw_1@502477/master.m3u8 
+http://aztecalive-lh.akamaihd.net/i/0pq46e6vw_1@502477/index_3_av-p.m3u8?sd=10&rebase=on
 
  <item>
 <title>Canal de las Estrellas (wide)</title>
@@ -171,7 +172,7 @@
 
  
 
-<!--item>
+<item>
 <thumbnail>https://vectors.pro/wp-content/uploads/2017/10/fifa-world-cup-2018-logo-vector.png</thumbnail>
 <title>Telecinco FHD</title>
 <link>https://livehlsdai-i.akamaihd.net/hls/live/571640/telecinco/bitrate_4.m3u8</link>
@@ -202,8 +203,14 @@
 <thumbnail>https://vectors.pro/wp-content/uploads/2017/10/fifa-world-cup-2018-logo-vector.png</thumbnail>
 <title>Telecinco HSD</title>
 <link>https://livehlsdai-i.akamaihd.net/hls/live/571640/telecinco/bitrate_1.m3u8</link>
-</item--> 
+</item> 
 
+
+<item>
+<thumbnail>https://vectors.pro/wp-content/uploads/2017/10/fifa-world-cup-2018-logo-vector.png</thumbnail>
+<title>Telecinco HD**</title>
+<link>https://mdslivehlsb-i.akamaihd.net/hls/live/571640/telecinco/bitrate_3.m3u8</link>
+</item> 
 
 
 
