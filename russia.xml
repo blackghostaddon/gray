@@ -3,7 +3,7 @@
 
 
 
-<item>
+<iem>
 <thumbnail>https://vectors.pro/wp-content/uploads/2017/10/fifa-world-cup-2018-logo-vector.png</thumbnail>
 <title>Univision</title>
 <link>https://nlunioo.akamaized.net/nlds/univision/as/live/unioo_hd_4500_ipad.m3u8</link>
@@ -16,7 +16,7 @@
 
   <item>
 <title>TDN Mexico</title>
-<link>$doregex[url]</link>
+<link>$doregex[url]|User-Agent=iPad</link>
  
  <regex>
 <name>url</name>
@@ -140,7 +140,7 @@
 <regex>
 <name>get-id</name>
 <expres>file:"(.*?)"</expres>
-<page>http://widestream.io/embed-22048</page>
+<page>http://widestream.io/embed-22053</page>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
@@ -151,7 +151,7 @@
 <regex>
 <name>get-id</name>
 <expres>file:"(.*?)"</expres>
-<page>http://widestream.io/embed-22052</page>
+<page>http://widestream.io/embed-22050</page>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
