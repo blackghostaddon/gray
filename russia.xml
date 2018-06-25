@@ -46,7 +46,7 @@
 
   <item>
 <title>TDN Mexico</title>
-<link>$doregex[url]|User-Agent=iPad</link>
+<link>$doregex[url]</link>
  
  <regex>
 <name>url</name>
@@ -70,17 +70,6 @@
  <thumbnail>https://vectors.pro/wp-content/uploads/2017/10/fifa-world-cup-2018-logo-vector.png</thumbnail></item>
 
 
-  <item>
-<title>Telemundo</title>
-<link>$doregex[url]</link>
- 
- <regex>
-<name>url</name>
-<expres><![CDATA[source: "(.*?)"]]></expres>
-<page>http://depo.superligatv.com/telemundo.php</page>
-</regex>
- <thumbnail>https://vectors.pro/wp-content/uploads/2017/10/fifa-world-cup-2018-logo-vector.png</thumbnail></item>
-
 
  
  
@@ -101,20 +90,7 @@
  <thumbnail>https://vectors.pro/wp-content/uploads/2017/10/fifa-world-cup-2018-logo-vector.png</thumbnail></item>
  
 
-  
-  <item>
-<title>Azteca 7 HD MX</title>
-<link>$doregex[url]|User-Agent=ipad</link>
- 
- <regex>
-<name>url</name>
-<expres><![CDATA[source: "(.*?)"]]></expres>
-<page>http://depo.superligatv.com/azteca7hd.php</page>
-</regex>
- <thumbnail>https://vectors.pro/wp-content/uploads/2017/10/fifa-world-cup-2018-logo-vector.png</thumbnail></item>
- 
-
-   <item>
+<item>
 <title>Canal 2 MX</title>
 <link>$doregex[url]|User-Agent=ipad</link>
  
@@ -145,15 +121,7 @@
 
 
 
-<item>
-<thumbnail>https://vectors.pro/wp-content/uploads/2017/10/fifa-world-cup-2018-logo-vector.png</thumbnail>
-<title>Canal De Las Estrellas</title>
-<link>http://0nlym3x-lh.akamaihd.net/i/c4nst02_1@175273/master.m3u8</link>
-</item> 
 
-
-http://aztecalive-lh.akamaihd.net/i/0pq46e6vw_1@502477/master.m3u8 
-http://aztecalive-lh.akamaihd.net/i/0pq46e6vw_1@502477/index_3_av-p.m3u8?sd=10&rebase=on
 
  <item>
 <title>Canal de las Estrellas (wide)</title>
@@ -178,6 +146,27 @@ http://aztecalive-lh.akamaihd.net/i/0pq46e6vw_1@502477/index_3_av-p.m3u8?sd=10&r
 
 
 
+<item>
+<title>Canal   (wide)</title>
+<link>$doregex[get-id]</link>
+<regex>
+<name>get-id</name>
+<expres>file:"(.*?)"</expres>
+<page>http://widestream.io/embed-22051</page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+ 
+ 
+<item>
+<title>Canal  (wide)</title>
+<link>$doregex[get-id]</link>
+<regex>
+<name>get-id</name>
+<expres>file:"(.*?)"</expres>
+<page>http://widestream.io/embed-22052</page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
  
 
