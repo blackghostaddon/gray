@@ -304,7 +304,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://telerium.tv/embed/25018.ht
 
 
 <item>
-<title>[B]Multicanal MaxDeportes 09 [COLOR yellow] DirectvSports [/COLOR] [/B]</title>
+<title>[B]Multicanal MaxDeportes 09 [COLOR lightyellow] DirectvSports [/COLOR] [/B]</title>
 <link>http://cdn.whostreams.net:8081/wsedge/$doregex[canal]/playlist.m3u8?wmsAuthSign=$doregex[code]</link>
 <regex>
 <name>canal</name>
@@ -611,8 +611,8 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://telerium.tv/embed/25018.ht
 
 
 <item>
-<title>[B]Multicanal Zonasport05[/B]     </title>
-<link>http://chrome.kastream.biz:8081/edge/$doregex[ver]/playlist.m3u8?wmsAuthSign=$doregex[code]|Referer=http://kastream.biz/embed.php?file=ZonaSports05&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0</link>
+<title>[B]Multicanal Zonasport05[/B]  *   </title>
+<link>http://width.kastream.biz:8081/edge/$doregex[ver]/playlist.m3u8?wmsAuthSign=$doregex[code]|Referer=http://kastream.biz/embed.php?file=ZonaSports05&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0</link>
 
 <regex>
 <name>ver</name>
@@ -634,7 +634,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://telerium.tv/embed/25018.ht
 
 <item>
 <title>[B]Multicanal Zonasport06[/B]     </title>
-<link>http://chrome.kastream.biz:8081/edge/$doregex[ver]/playlist.m3u8?wmsAuthSign=$doregex[code]|Referer=http://kastream.biz/embed.php?file=ZonaSports06</link>
+<link>http://width.kastream.biz:8081/edge/$doregex[ver]/playlist.m3u8?wmsAuthSign=$doregex[code]|Referer=http://kastream.biz/embed.php?file=ZonaSports06</link>
 
 <regex>
 <name>ver</name>
