@@ -418,7 +418,7 @@ Name:"Shameless T1 " url:"http://diskokosmiko.mx/chicho306/shameless-t1-38507" i
   Name:"Supercampeones - Capitan tsubasa" url:"http://diskokosmiko.mx/anime/capitan-tsubasa-super-campeones-1983-latino-1213" img:"https://image.tmdb.org/t/p/original/gwsFLSlrO5OSCWdN0ZIHveGKhjG.jpg"; server:"http://diskokosmiko.mx"
  Name:"Sin Senos no hay Paraiso " url:"http://diskokosmiko.mx/mexflix17/662sinchichis-si-ayparaisoghuhs6-77619" img:""; server:"http://diskokosmiko.mx"
  Name:"Paquita la del Barrio " url:"http://diskokosmiko.mx/mexflix17/21paquit4-1a-d3l-b4rri04-76490" img:""; server:"http://diskokosmiko.mx"
- Name:"El Señor de los Cielos - Temporada 5 " url:"http://diskokosmiko.mx/mexflix17/esdlc5mexflix-73211" img:""; server:"http://diskokosmiko.mx"
+
  Name:"La Piloto " url:"http://diskokosmiko.mx/esaespe/la-piloto-84371" img:""; server:"http://diskokosmiko.mx"
  Name:"Person of Interest" url:"http://diskokosmiko.mx/trivianita/person-of-interest-completa-79669" img:""; server:"http://diskokosmiko.mx"
  Name:"Cuando conoci al Chapo" url:"http://diskokosmiko.mx/chiscri/cuando-conoci-al-chapo-documental-89889" img:"https://www.thetvdb.com/banners/posters/336683-1.jpg"; server:"http://diskokosmiko.mx"
@@ -426,7 +426,8 @@ Name:"Shameless T1 " url:"http://diskokosmiko.mx/chicho306/shameless-t1-38507" i
  Name:"Club de Cuervos Temporada 3" url:"http://diskokosmiko.mx/rafamj/club-de-cuervos-temporada-3-86035" img:"https://www.thetvdb.com/banners/posters/299045-1.jpg"; server:"http://diskokosmiko.mx"
  Name:"The Following Castellano" url:"http://diskokosmiko.mx/chinchetas/the-following-castellano-todas-temporadas-44920" img:""; server:"http://diskokosmiko.mx"
  Name:"WestWorld Castellano y Latino" url:"http://diskokosmiko.mx/trivianita/westworld-latino-y-castellano-completa-40676" img:"https://www.thetvdb.com/banners/posters/296762-3.jpg"; server:"http://diskokosmiko.mx"
-
+ Name:"El Señor de los Cielos - Temporada 5 " url:"http://diskokosmiko.mx/mexflix17/esdlc5mexflix-73211" img:"https://www.thetvdb.com/banners/posters/279123-6.jpg"; server:"http://diskokosmiko.mx"
+ Name:"El Señor de los Cielos - Temporada 6" url:"http://diskokosmiko.mx/monnet/el-senor-de-los-cielos-capitulos-34-115102" img:"https://www.thetvdb.com/banners/posters/279123-6.jpg"; server:"http://diskokosmiko.mx"
 
 
 

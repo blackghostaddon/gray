@@ -19,7 +19,7 @@ http://copiapop.com/JOE221277/peliculas-s-50026/gallery,1,13
 
 
 
-
+playlist:"http://diskokosmiko.mx/monnet" name:"SERIES del Momento" info:"Playlist mas reciente";
 playlist:"http://diskokosmiko.mx/naredo" name:"SERIES" info:"RETRO / CLASICAS";
 playlist:"http://diskokosmiko.mx/titotv" name:"Tito TV" info:"Las mejores series ";
 playlist:"http://diskokosmiko.mx/trivianita" name:"Trivianita" info:"las series mas popules";
