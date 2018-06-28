@@ -92,7 +92,7 @@
 
 <item>
 <title>Canal 2 MX</title>
-<link>$doregex[url]|User-Agent=ipad</link>
+<link>$doregex[url]</link>
  
  <regex>
 <name>url</name>
