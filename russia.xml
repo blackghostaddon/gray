@@ -3,7 +3,7 @@
 
 
 
-<item>
+<itm>
 <title>[COLOR white]  [B]World Cup Russia 2018 [/B][/COLOR] [COLOR lightslategray](Agenda AV Acestreams) [/COLOR]</title>
 <link>$doregex[makelist]</link>
 <regex>
@@ -79,8 +79,8 @@
  
  
   <item>
-<title>Azteca 7 MX</title>
-<link>$doregex[url]|User-Agent=ipad</link>
+<title>Azteca 7 MX*</title>
+<link>$doregex[url]</link>
  
  <regex>
 <name>url</name>
