@@ -69,8 +69,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 			<regex>
 			<name>hash</name>
 			<expres>this.loadPlayer\("(.*?)"</expres>
-			<page>http://arenavision2018.$doregex[canal]</page>
-			<referer>http://arenavision2018.tk</referer>
+			<page>http://cdn.arenavision.co.in/$doregex[canal]</page>
+			<referer>http://cdn.arenavision.co.in</referer>
 			<setcookie>beget=begetok</setcookie>
 			</regex>
 				<regex>
@@ -85,7 +85,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <expres><![CDATA[87px\">(.*?)<[\w\W\s]{0,30}">(.*?)<[\w\W\s]{0,32}">(.*?)<[\w\W\s]{0,32}">(.*?)<[\w\W\s]{0,32}">(.*?)<[\w\W\s]{0,52}"(>[0-9]+)]]></expres>
 <page>http://arenavision.us/guide</page>
 <Agent>Mozilla</Agent>
-<referer>http://arenavision2018.tk</referer>
+<referer>http://cdn.arenavision.co.in</referer>
 <setcookie>beget=begetok</setcookie>
  </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/acestreams.png</thumbnail>
@@ -105,7 +105,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 			<regex>
 			<name>hash</name>
 			<expres>this.loadPlayer\("(.*?)"</expres>
-			<page>http://arenavision2018.tk/$doregex[canal]</page>
+			<page>http://cdn.arenavision.co.in/$doregex[canal]</page>
 			<referer>https://arenavision.us/</referer>
 			<setcookie>beget=begetok</setcookie>
 			</regex>
@@ -155,7 +155,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-
 <item>
 <title>[COLOR black]•[/COLOR][COLOR white]  [B]World Cup Russia 2018 [/B][/COLOR] [COLOR lightslategray](Futbol) [/COLOR]</title>
 <link>$doregex[makelist]</link>
@@ -168,8 +167,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 			<regex>
 			<name>hash</name>
 			<expres>this.loadPlayer\("(.*?)"</expres>
-			<page>http://liverussia2018.ga/$doregex[canal]</page>
-			<referer>http://liverussia2018.ga/</referer>
+			<page>http://npx.arenavision.link/$doregex[canal]</page>
+			<referer>http://npx.arenavision.link/</referer>
 			<setcookie>beget=begetok</setcookie>
 			</regex>
 			<regex>
@@ -195,9 +194,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-
-
-http:///01
 
 
 
@@ -262,18 +258,7 @@ http:///01
 
 
 
-
-
-
-
-<itm>
-<title>[COLOR white][B] Agenda Arenavision  [COLOR white] Multi-Servers [COLOR white][/COLOR] [/COLOR][/B][/COLOR]</title>
-<link>NA</link>
-<externallink>https://raw.githubusercontent.com/blackghostaddon/gray/master/acemulti.xml</externallink>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/acestreams.png</thumbnail>
-</item>
-
-
+ 
 
 
 
@@ -412,8 +397,8 @@ http:///01
 			<regex>
 			<name>hash</name>
 			<expres>this.loadPlayer\("(.*?)"</expres>
-			<page>http://liverussia2018.ml/$doregex[select]</page>
-			<referer>http://liverussia2018.ml/</referer>
+			<page>http://npx.arenavision.link/$doregex[select]</page>
+			<referer>http://npx.arenavision.link/</referer>
 			<setcookie>beget=begetok</setcookie>
 			</regex>
 
@@ -455,7 +440,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 			<name>hash</name>
 			<expres>this.loadPlayer\("(.*?)"</expres>
 			<page>[makelist.param1]</page>
-			<referer>http://arenavision2018.tk</referer>
+			<referer>http://cdn.arenavision.co.in</referer>
 			<setcookie>beget=begetok</setcookie>
 			</regex>
  <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/acestreams.png</thumbnail>
@@ -479,7 +464,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 			<name>hash</name>
 			<expres>this.loadPlayer\("(.*?)"</expres>
 			<page>http://elgoles.ru/$doregex[select]-2/</page>
-			<referer>http://arenavision2018.tk</referer>
+			<referer>http://cdn.arenavision.co.in</referer>
 			<setcookie>beget=begetok</setcookie>
 			</regex>
 			
