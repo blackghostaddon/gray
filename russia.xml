@@ -15,8 +15,8 @@
 			<regex>
 			<name>hash</name>
 			<expres>this.loadPlayer\("(.*?)"</expres>
-			<page>http://liverussia2018.ga/$doregex[canal]</page>
-			<referer>http://liverussia2018.ga/</referer>
+			<page>http://npx.arenavision.link/$doregex[canal]</page>
+			<referer>http://npx.arenavision.link/</referer>
 			<setcookie>beget=begetok</setcookie>
 			</regex>
 			<regex>
@@ -25,8 +25,8 @@
 			<page></page>
 			</regex>
 
-			<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/acestreams.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
+ <thumbnail>https://vectors.pro/wp-content/uploads/2017/10/fifa-world-cup-2018-logo-vector.png</thumbnail>
+<fanart>https://vectors.pro/wp-content/uploads/2017/10/fifa-world-cup-2018-logo-vector.png</fanart>
 
 </item>
 ]]></listrepeat>
@@ -37,24 +37,12 @@
 <setcookie>beget=begetok</setcookie>
 </regex>
 
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/acestreams.png</thumbnail>
+<thumbnail>https://vectors.pro/wp-content/uploads/2017/10/fifa-world-cup-2018-logo-vector.png</thumbnail>
 </item>
 
 
 
 
-
-  <item>
-<title>TDN Mexico</title>
-<link>$doregex[url]</link>
- 
- <regex>
-<name>url</name>
-<expres><![CDATA[source: "(.*?)"]]></expres>
-<page>http://depo.superligatv.com/tdnhd.php</page>
-</regex>
- 
-<thumbnail>https://vectors.pro/wp-content/uploads/2017/10/fifa-world-cup-2018-logo-vector.png</thumbnail></item>
 
 
 
@@ -102,12 +90,6 @@
  <thumbnail>https://vectors.pro/wp-content/uploads/2017/10/fifa-world-cup-2018-logo-vector.png</thumbnail></item>
  
 
- 
- 
- 
- 
- 
-
 
 
 <item>
@@ -130,17 +112,6 @@
 <name>get-id</name>
 <expres>file:"(.*?)"</expres>
 <page>http://widestream.io/embed-22049</page>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
- 
- <item>
-<title>Azteca 1 MX</title>
-<link>http://189.216.247.113/Content/HLS/Live/Channel(FOROTV_HD)/Stream(06)/index.m3u8 </link>
-<regex>
-<name>get-id</name>
-<expres>file:"(.*?)"</expres>
-<page>http://widestream.io/embed-22052</page>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
@@ -198,7 +169,7 @@
 
 <item>
 <thumbnail>https://vectors.pro/wp-content/uploads/2017/10/fifa-world-cup-2018-logo-vector.png</thumbnail>
-<title>Canal 13</title>
+<title>Canal 13 Chile</title>
 <link>http://13.live.cdnz.cl/13hddesktop/13hd-desktop.m3u8</link>
 </item> 
 
@@ -207,7 +178,7 @@
 
 <item>
 <thumbnail>https://vectors.pro/wp-content/uploads/2017/10/fifa-world-cup-2018-logo-vector.png</thumbnail>
-<title>Canal 13</title>
+<title>Canal 13 Chile</title>
 <link>http://csm-e.yospace.13.cl/csm/extlive/canal13cl01,CH13M.m3u8</link>
 </item> 
 
@@ -216,7 +187,7 @@
 
 <item>
 <thumbnail>https://vectors.pro/wp-content/uploads/2017/10/fifa-world-cup-2018-logo-vector.png</thumbnail>
-<title>Canal 13</title>
+<title>Canal 13 Chile</title>
 <link>http://csm-e-ces1saexaws101j8-661hgz2zvhzy.yospace.13.cl/csm/live/108031140/2.m3u8Id=CH13M</link>
 </item> 
 
@@ -225,7 +196,7 @@
 
 <item>
 <thumbnail>https://vectors.pro/wp-content/uploads/2017/10/fifa-world-cup-2018-logo-vector.png</thumbnail>
-<title>RCN HD</title>
+<title>RCN HD Colombia</title>
 <link>http://mdstrm.com:80/live-stream-playlist/58a36704896500b908cf1abe.m3u8</link>
 </item> 
 
@@ -341,7 +312,7 @@
 
 
 <item>
-<title>Telecinco ESP</title>
+<title>Telecinco opc 1 (vergol)</title>
 <link>$doregex[get-id]|User-Agent=iPad&amp;Referer=http://vergol.com/live1/cuatro.php</link>
 <regex>
 <name>get-id</name>
@@ -355,7 +326,7 @@
 
 
 <item>
-<title>TELECINCO</title>
+<title>Telecinco opc 2 (livesports)</title>
 <link>$doregex[GetPageUrl]|Referer=http://livesports.pw/embedna.php?file=movestr&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64; rv:56.0) Gecko/20100101 Firefox/56.0</link>
 <regex>
 <name>GetPageUrl</name>
@@ -369,7 +340,7 @@
 
 
   <item>
-<title>Telecinco</title>
+<title>Telecinco opc 3 (superliga)</title>
 <link>$doregex[url]</link>
  
  <regex>
@@ -384,7 +355,7 @@
 
 
 <item>
-<title>CUATRO ESP</title>
+<title>Cuatro opc 1 (livesports)</title>
 <link>$doregex[GetPageUrl]|Referer=http://livesports.pw/embedna.php?file=movestr&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64; rv:56.0) Gecko/20100101 Firefox/56.0</link>
 <regex>
 <name>GetPageUrl</name>
@@ -398,7 +369,7 @@
 
 
 <item>
-<title>CUATRO </title>
+<title>Cuatro opc 2 (vergol)</title>
 <link>$doregex[get-id]|User-Agent=iPad&amp;Referer=http://vergol.com/live1/cuatro.php</link>
 <regex>
 <name>get-id</name>
@@ -412,7 +383,7 @@
 
 
  <item>
-<title>[UPPERCASE][COLOR skyblue] cuatro[/UPPERCASE][/COLOR] </title>
+<title>Cuatro opc 3 (hls)</title>
 <link>https://livehlsdai-i.akamaihd.net/hls/live/571643/cuatro/bitrate_1.m3u8</link>
 <thumbnail>http://adryanlist.org/adryan/img/esp.jpg</thumbnail>   </item>
 
@@ -423,14 +394,216 @@
 
 
 
+
+
+
 <item>
-<title>Telemundo </title>
-<link>http://wscvlive-lh.akamaihd.net/i/WSCV_LIVE2@183618/index_1500_av-p.m3u8?sd=10&rebase=on</link>
-</item>
+<title>Telemundo  (Zonasports01)</title>
+
+<link>http://$doregex[ip]$doregex[m3u8]$doregex[hls]|User-Agent=iPad</link>
+			<regex>
+			<name>ip</name>
+			<expres>redirect=(.*)</expres>
+			<page>http://www.pubfstream.com:1935/loadbalancer</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.playerfs.com</referer>
+			</regex>
+			<regex>
+			<name>m3u8</name>
+			<expres>ea \+ "(.*?)"</expres>
+			<page>http://www.playerfs.com/sharedcdn/membedplayer/$doregex[canal]/1/700/400/$doregex[stream]</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.playerfs.com</referer>
+			</regex>
+			<regex>
+			<name>hls</name>
+			<expres>hlsUrl \+ \(\"(.*?)"</expres>
+			<page>http://www.playerfs.com/sharedcdn/membedplayer/$doregex[canal]/1/700/400/$doregex[stream]</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.playerfs.com</referer>
+			</regex>
+		<regex>
+			<name>stream</name>
+			<expres>fid="(.*?)"</expres>
+			<page>http://www.playerfs.com/sharedcdn/sharedcdnEmbed.js?channel=$doregex[canal]</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.playerfs.com</referer>
+			</regex>
+
+
+			<regex>
+			<name>canal</name>
+			<expres>channel='(.*?)'</expres>
+			<page>http://gozonasports.me/cha.php?id=1</page>
+			</regex>
+<thumbnail>https://vectors.pro/wp-content/uploads/2017/10/fifa-world-cup-2018-logo-vector.png</thumbnail></item> 
+
+
+
 <item>
-<title>Telemundo </title>
-<link>http://ktmdlive-lh.akamaihd.net/i/KTMD_LIVE1@183610/index_1200_av-p.m3u8?sd=10&rebase=on</link>
-</item>
+<title>Telemundo  (Zonasports02)</title>
+<link>http://$doregex[ip]$doregex[m3u8]$doregex[hls]|User-Agent=iPad</link>
+			<regex>
+			<name>ip</name>
+			<expres>redirect=(.*)</expres>
+			<page>http://www.pubfstream.com:1935/loadbalancer</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.playerfs.com</referer>
+			</regex>
+			<regex>
+			<name>m3u8</name>
+			<expres>ea \+ "(.*?)"</expres>
+			<page>http://www.playerfs.com/sharedcdn/membedplayer/$doregex[canal]/1/700/400/$doregex[stream]</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.playerfs.com</referer>
+			</regex>
+			<regex>
+			<name>hls</name>
+			<expres>hlsUrl \+ \(\"(.*?)"</expres>
+			<page>http://www.playerfs.com/sharedcdn/membedplayer/$doregex[canal]/1/700/400/$doregex[stream]</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.playerfs.com</referer>
+			</regex>
+		<regex>
+			<name>stream</name>
+			<expres>fid="(.*?)"</expres>
+			<page>http://www.playerfs.com/sharedcdn/sharedcdnEmbed.js?channel=$doregex[canal]</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.playerfs.com</referer>
+			</regex>
+
+
+			<regex>
+			<name>canal</name>
+			<expres>channel='(.*?)'</expres>
+			<page>http://gozonasports.me/cha.php?id=2</page>
+			</regex>
+<thumbnail>https://vectors.pro/wp-content/uploads/2017/10/fifa-world-cup-2018-logo-vector.png</thumbnail>
+</item> 
+
+
+
+
+
+<item>
+<title>Telemundo  (Zonasports03)</title>
+
+<link>http://$doregex[ip]$doregex[m3u8]$doregex[hls]|User-Agent=iPad</link>
+			<regex>
+			<name>ip</name>
+			<expres>redirect=(.*)</expres>
+			<page>http://www.pubfstream.com:1935/loadbalancer</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.playerfs.com</referer>
+			</regex>
+			<regex>
+			<name>m3u8</name>
+			<expres>ea \+ "(.*?)"</expres>
+			<page>http://www.playerfs.com/sharedcdn/membedplayer/$doregex[canal]/1/700/400/$doregex[stream]</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.playerfs.com</referer>
+			</regex>
+			<regex>
+			<name>hls</name>
+			<expres>hlsUrl \+ \(\"(.*?)"</expres>
+			<page>http://www.playerfs.com/sharedcdn/membedplayer/$doregex[canal]/1/700/400/$doregex[stream]</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.playerfs.com</referer>
+			</regex>
+			<regex>
+			<name>stream</name>
+			<expres>fid="(.*?)"</expres>
+			<page>http://www.playerfs.com/sharedcdn/sharedcdnEmbed.js?channel=$doregex[canal]</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.playerfs.com</referer>
+			</regex>
+			<regex>
+			<name>canal</name>
+			<expres>channel='(.*?)'</expres>
+			<page>http://gozonasports.me/cha.php?id=3</page>
+			</regex>
+
+<thumbnail>https://vectors.pro/wp-content/uploads/2017/10/fifa-world-cup-2018-logo-vector.png</thumbnail>
+</item> 
+
+
+
+
+
+
+
+<item>
+<title>Telemundo  (Zonasports04)</title>
+
+<link>http://$doregex[ip]$doregex[m3u8]$doregex[hls]|User-Agent=iPad</link>
+			<regex>
+			<name>ip</name>
+			<expres>redirect=(.*)</expres>
+			<page>http://www.pubfstream.com:1935/loadbalancer</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.playerfs.com</referer>
+			</regex>
+			<regex>
+			<name>m3u8</name>
+			<expres>ea \+ "(.*?)"</expres>
+			<page>http://www.playerfs.com/sharedcdn/membedplayer/$doregex[canal]/1/700/400/$doregex[stream]</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.playerfs.com</referer>
+			</regex>
+			<regex>
+			<name>hls</name>
+			<expres>hlsUrl \+ \(\"(.*?)"</expres>
+			<page>http://www.playerfs.com/sharedcdn/membedplayer/$doregex[canal]/1/700/400/$doregex[stream]</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.playerfs.com</referer>
+			</regex>
+			<regex>
+			<name>stream</name>
+			<expres>fid="(.*?)"</expres>
+			<page>http://www.playerfs.com/sharedcdn/sharedcdnEmbed.js?channel=$doregex[canal]</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.playerfs.com</referer>
+			</regex>
+			<regex>
+			<name>canal</name>
+			<expres>channel='(.*?)'</expres>
+			<page>http://gozonasports.me/cha.php?id=4</page>
+			</regex>
+
+<thumbnail>https://vectors.pro/wp-content/uploads/2017/10/fifa-world-cup-2018-logo-vector.png</thumbnail>
+</item> 
+
+
+
+
+
+
+<item>
+<title>Canal 01 Directv Sports</title>
+<link>http://cdn.whostreams.net:8081/wsedge/$doregex[canal]/playlist.m3u8?wmsAuthSign=$doregex[code]</link>
+<regex>
+<name>canal</name>
+<expres>net\/embed\/(.*?)"</expres>
+<page>http://maxdeportv.net/indexa.php?canal=9</page>
+</regex>
+<regex>
+<name>code</name>
+<expres>\|(c2V.*?)\|</expres>
+<page>http://whostreams.net/embed/$doregex[canal]</page>
+</regex>
+<thumbnail>https://vectors.pro/wp-content/uploads/2017/10/fifa-world-cup-2018-logo-vector.png</thumbnail></item> 
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
