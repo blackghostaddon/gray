@@ -309,6 +309,24 @@
 <thumbnail>https://vectors.pro/wp-content/uploads/2017/10/fifa-world-cup-2018-logo-vector.png</thumbnail>  </item>
 
 
+ <item>
+<title>Telecinco / Cuatro (tiki)</title>
+<link>$doregex[url]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64; rv:56.0) Gecko/20100101 Firefox/56.0&amp;Referer=http://static.castto.me</link>
+<regex>
+<name>url</name>
+<expres><![CDATA[source src="(.*?)"]]></expres>
+<page>http://static.castto.me/embedlivesrvjs.php?channel=$doregex[getid]&amp;vw=720&amp;vh=420</page>
+<referer>http://estadionline.ml/canal1.php</referer>
+</regex>
+<regex>
+<name>getid</name>
+<expres><![CDATA[fid="(.*?)"]]></expres>
+<page>http://estadionline.ml/canal1.php</page>
+<referer>http://estadionline.ml/canal1.php</referer>
+</regex>	 
+	 
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+	
 
 
 <item>
