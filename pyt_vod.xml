@@ -264,11 +264,10 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
+<iem>
+<title>[B]ESTRENOS LATINOS  OFF [/B]</title>
+<link>$doregex[makelist]</link>
 
-
-<item>
-<title>[B]ESTRENOS LATINOS  [/B]</title>
-<link>$doregex[makelist0]</link>
 <regex>
 <name>makelist0</name>
 <listrepeat><![CDATA[
@@ -281,8 +280,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 
 
-  
 
+  
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
@@ -318,7 +317,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
     srcs.append((embed.replace('Online',''), embeds[embed]%dec(sdata)))
   return srcs
 ]]></expres>
-<page>[makelist0.param1]</page>
+<page>http://www.cinecalidad.to/pelicula/wonderstruck-el-museo-de-las-maravillas-2017-online-descarga/</page>
 </regex>
 </item>
 
@@ -328,8 +327,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	
 	
 
-<item>
-<title>[B]ESTRENOS ESPAÑA [/B]</title>
+<iem>
+<title>[B]ESTRENOS ESPAÑA OFF[/B]</title>
 <link>$doregex[makelist0]</link>
 
 
@@ -386,8 +385,19 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 	
 	
-<itm>
-<title>[B]ESTRENOS LATINOS  OFF temporalmente   [/B]</title>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+<item>
+<title>[B]ESTRENOS LATINOS     [/B]</title>
 
 
 <link>$doregex[makelist]</link>
@@ -442,8 +452,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<iem>
-<title>[B]ESTRENOS ESPAÑA OFF temporalmente [/B]</title>
+<item>
+<title>[B]ESTRENOS ESPAÑA  [/B]</title>
 
 <link>$doregex[makelist]</link>
 
