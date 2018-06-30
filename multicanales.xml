@@ -929,7 +929,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://telerium.tv/embed/25018.ht
 <regex>
 <name>canal</name>
 <expres>net\/embed\/(.*?)"</expres>
-<page>http://cndf78.blogspot.com/p/1.html</page>
+<page>http://cndf79.blogspot.com/p/vtv-1.html</page>
 </regex>
 <regex>
 <name>code</name>
@@ -950,7 +950,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://telerium.tv/embed/25018.ht
 <regex>
 <name>canal</name>
 <expres>net\/embed\/(.*?)"</expres>
-<page>http://cndf78.blogspot.com/p/2.html</page>
+<page>http://cndf79.blogspot.com/p/vtv-2.html</page>
 </regex>
 <regex>
 <name>code</name>
@@ -966,7 +966,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://telerium.tv/embed/25018.ht
 <regex>
 <name>canal</name>
 <expres>net\/embed\/(.*?)"</expres>
-<page>http://cndf78.blogspot.com/p/3.html</page>
+<page>http://cndf79.blogspot.com/p/vtv-3.html</page>
 </regex>
 <regex>
 <name>code</name>
@@ -982,7 +982,40 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://telerium.tv/embed/25018.ht
 <regex>
 <name>canal</name>
 <expres>net\/embed\/(.*?)"</expres>
-<page>http://cndf78.blogspot.com/p/4.html</page>
+<page>http://cndf79.blogspot.com/p/who-1.html</page>
+</regex>
+<regex>
+<name>code</name>
+<expres>\|(c2V.*?)\|</expres>
+<page>http://whostreams.net/embed/$doregex[canal]</page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+<item>
+<title>[B]Multicanal AndresFutbol 05[/B]     </title>
+<link>http://cdn.whostreams.net:8081/wsedge/$doregex[canal]/playlist.m3u8?wmsAuthSign=$doregex[code]</link>
+<regex>
+<name>canal</name>
+<expres>net\/embed\/(.*?)"</expres>
+<page>http://cndf79.blogspot.com/p/who-2.html</page>
+</regex>
+<regex>
+<name>code</name>
+<expres>\|(c2V.*?)\|</expres>
+<page>http://whostreams.net/embed/$doregex[canal]</page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+
+<item>
+<title>[B]Multicanal AndresFutbol 06[/B]     </title>
+<link>http://cdn.whostreams.net:8081/wsedge/$doregex[canal]/playlist.m3u8?wmsAuthSign=$doregex[code]</link>
+<regex>
+<name>canal</name>
+<expres>net\/embed\/(.*?)"</expres>
+<page>http://cndf79.blogspot.com/p/who-6.html</page>
 </regex>
 <regex>
 <name>code</name>
@@ -995,7 +1028,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://telerium.tv/embed/25018.ht
 
 
  <item>
-<title>[B]Multicanal AndresFutbol 05[/B]     </title>
+<title>[B]Multicanal AndresFutbol 08[/B]     </title>
 <link>$doregex[get-id]</link>
 <regex>
 <name>get-id</name>
@@ -1005,36 +1038,6 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://telerium.tv/embed/25018.ht
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
-<item>
-<title>[B]Multicanal AndresFutbol 06[/B]     </title>
-<link>http://cdn.whostreams.net:8081/wsedge/$doregex[canal]/playlist.m3u8?wmsAuthSign=$doregex[code]</link>
-<regex>
-<name>canal</name>
-<expres>net\/embed\/(.*?)"</expres>
-<page>http://cndf78.blogspot.com/p/6.html</page>
-</regex>
-<regex>
-<name>code</name>
-<expres>\|(c2V.*?)\|</expres>
-<page>http://whostreams.net/embed/$doregex[canal]</page>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-
-<item>
-<title>[B]Multicanal AndresFutbol 07[/B]     </title>
-<link>http://cdn.whostreams.net:8081/wsedge/$doregex[canal]/playlist.m3u8?wmsAuthSign=$doregex[code]</link>
-<regex>
-<name>canal</name>
-<expres>net\/embed\/(.*?)"</expres>
-<page>http://cndf78.blogspot.com/p/7.html</page>
-</regex>
-<regex>
-<name>code</name>
-<expres>\|(c2V.*?)\|</expres>
-<page>http://whostreams.net/embed/$doregex[canal]</page>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
@@ -1053,18 +1056,9 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://telerium.tv/embed/25018.ht
 
 
 
- <item>
-<title>[B]Multicanal Win Sports[/B]    Colombia      </title>
-<link>$doregex[get-id]|Referer=http://vercanalestv.com/tv/colombia/win-sports.html&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
-<regex>
-<name>get-id</name>
-<expres>source: '(.*?)'</expres>
-<page>http://vergol.com/live1/winsport.php</page>
-<referer>http://vercanalestv.com/tv/colombia/win-sports.html</referer>
-<agent>iPad</agent>
-</regex>
 
- <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
 
 
 
@@ -1499,10 +1493,9 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-
 <item>
 <title>[B] VipRacing [/B] [COLOR lime][I]  SportsDevil [Descarga last version desde BlackGhost Repo]  [/I][/COLOR]</title>
-<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://vipracing.info/channel/canal-$doregex[select]</link>
+<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://vipracing.info/channel/canal-$doregex[select]a83</link>
 <regex>
 <name>select</name>
 <expres><![CDATA[#$pyFunction
