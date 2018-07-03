@@ -4,7 +4,7 @@
 
 
 <item>
-<title>[COLOR white]  [B]World Cup Russia 2018 [/B][/COLOR] [COLOR lightslategray](Agenda AV Acestreams) [/COLOR]</title>
+<title>[COLOR white]  [B]World Cup Russia 2018 [/B][/COLOR] [COLOR lightslategray](Agenda Arenavision Acestreams) [/COLOR]</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
@@ -14,7 +14,7 @@
 <link>plugin://program.plexus/?url=$doregex[hash]&amp;mode=1&amp;name=BlackAddon+[makelist.param4]</link>
 			<regex>
 			<name>hash</name>
-			<expres>this.loadPlayer\("(.*?)"</expres>
+			<expres>this.loadPlayer\("([^"]+)</expres>
 			<page>http://npx.arenavision.link/$doregex[canal]</page>
 			<referer>http://npx.arenavision.link/</referer>
 			<setcookie>beget=begetok</setcookie>
@@ -52,7 +52,7 @@
  
  <regex>
 <name>url</name>
-<expres><![CDATA[source: "(.*?)"]]></expres>
+<expres><![CDATA[source: "([^"]+)]]></expres>
 <page>http://depo.superligatv.com/unitdn.php</page>
 </regex>
  <thumbnail>https://vectors.pro/wp-content/uploads/2017/10/fifa-world-cup-2018-logo-vector.png</thumbnail></item>
@@ -72,7 +72,7 @@
  
  <regex>
 <name>url</name>
-<expres><![CDATA[source: "(.*?)"]]></expres>
+<expres><![CDATA[source: "([^"]+)]]></expres>
 <page>http://depo.superligatv.com/azteca7.php</page>
 </regex>
  <thumbnail>https://vectors.pro/wp-content/uploads/2017/10/fifa-world-cup-2018-logo-vector.png</thumbnail></item>
@@ -84,7 +84,7 @@
  
  <regex>
 <name>url</name>
-<expres><![CDATA[source: "(.*?)"]]></expres>
+<expres><![CDATA[source: "([^"]+)]]></expres>
 <page>http://depo.superligatv.com/canal2.php</page>
 </regex>
  <thumbnail>https://vectors.pro/wp-content/uploads/2017/10/fifa-world-cup-2018-logo-vector.png</thumbnail></item>
@@ -110,7 +110,7 @@
 <link>$doregex[get-id]</link>
 <regex>
 <name>get-id</name>
-<expres>file:"(.*?)"</expres>
+<expres>file:"([^"]+)</expres>
 <page>http://widestream.io/embed-22049</page>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
@@ -314,13 +314,13 @@
 <link>$doregex[url]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64; rv:56.0) Gecko/20100101 Firefox/56.0&amp;Referer=http://static.castto.me</link>
 <regex>
 <name>url</name>
-<expres><![CDATA[source src="(.*?)"]]></expres>
+<expres><![CDATA[source src="([^"]+)]]></expres>
 <page>http://static.castto.me/embedlivesrvjs.php?channel=$doregex[getid]&amp;vw=720&amp;vh=420</page>
 <referer>http://estadionline.ml/canal1.php</referer>
 </regex>
 <regex>
 <name>getid</name>
-<expres><![CDATA[fid="(.*?)"]]></expres>
+<expres><![CDATA[fid="([^"]+)]]></expres>
 <page>http://estadionline.ml/canal1.php</page>
 <referer>http://estadionline.ml/canal1.php</referer>
 </regex>	 
@@ -363,7 +363,7 @@
  
  <regex>
 <name>url</name>
-<expres><![CDATA[source: "(.*?)"]]></expres>
+<expres><![CDATA[source: "([^"]+)]]></expres>
 <page>http://depo.superligatv.com/telecinco.php</page>
 </regex>
  
@@ -428,21 +428,21 @@
 			</regex>
 			<regex>
 			<name>m3u8</name>
-			<expres>ea \+ "(.*?)"</expres>
+			<expres>ea \+ "([^"]+)</expres>
 			<page>http://www.playerfs.com/sharedcdn/membedplayer/$doregex[canal]/1/700/400/$doregex[stream]</page>
 			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
 			<referer>http://www.playerfs.com</referer>
 			</regex>
 			<regex>
 			<name>hls</name>
-			<expres>hlsUrl \+ \(\"(.*?)"</expres>
+			<expres>hlsUrl \+ \(\"([^"]+)</expres>
 			<page>http://www.playerfs.com/sharedcdn/membedplayer/$doregex[canal]/1/700/400/$doregex[stream]</page>
 			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
 			<referer>http://www.playerfs.com</referer>
 			</regex>
 		<regex>
 			<name>stream</name>
-			<expres>fid="(.*?)"</expres>
+			<expres>fid="([^"]+)</expres>
 			<page>http://www.playerfs.com/sharedcdn/sharedcdnEmbed.js?channel=$doregex[canal]</page>
 			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
 			<referer>http://www.playerfs.com</referer>
@@ -470,21 +470,21 @@
 			</regex>
 			<regex>
 			<name>m3u8</name>
-			<expres>ea \+ "(.*?)"</expres>
+			<expres>ea \+ "([^"]+)</expres>
 			<page>http://www.playerfs.com/sharedcdn/membedplayer/$doregex[canal]/1/700/400/$doregex[stream]</page>
 			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
 			<referer>http://www.playerfs.com</referer>
 			</regex>
 			<regex>
 			<name>hls</name>
-			<expres>hlsUrl \+ \(\"(.*?)"</expres>
+			<expres>hlsUrl \+ \(\"([^"]+)</expres>
 			<page>http://www.playerfs.com/sharedcdn/membedplayer/$doregex[canal]/1/700/400/$doregex[stream]</page>
 			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
 			<referer>http://www.playerfs.com</referer>
 			</regex>
 		<regex>
 			<name>stream</name>
-			<expres>fid="(.*?)"</expres>
+			<expres>fid="([^"]+)</expres>
 			<page>http://www.playerfs.com/sharedcdn/sharedcdnEmbed.js?channel=$doregex[canal]</page>
 			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
 			<referer>http://www.playerfs.com</referer>
@@ -516,21 +516,21 @@
 			</regex>
 			<regex>
 			<name>m3u8</name>
-			<expres>ea \+ "(.*?)"</expres>
+			<expres>ea \+ "([^"]+)</expres>
 			<page>http://www.playerfs.com/sharedcdn/membedplayer/$doregex[canal]/1/700/400/$doregex[stream]</page>
 			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
 			<referer>http://www.playerfs.com</referer>
 			</regex>
 			<regex>
 			<name>hls</name>
-			<expres>hlsUrl \+ \(\"(.*?)"</expres>
+			<expres>hlsUrl \+ \(\"([^"]+)</expres>
 			<page>http://www.playerfs.com/sharedcdn/membedplayer/$doregex[canal]/1/700/400/$doregex[stream]</page>
 			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
 			<referer>http://www.playerfs.com</referer>
 			</regex>
 			<regex>
 			<name>stream</name>
-			<expres>fid="(.*?)"</expres>
+			<expres>fid="([^"]+)</expres>
 			<page>http://www.playerfs.com/sharedcdn/sharedcdnEmbed.js?channel=$doregex[canal]</page>
 			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
 			<referer>http://www.playerfs.com</referer>
@@ -563,21 +563,21 @@
 			</regex>
 			<regex>
 			<name>m3u8</name>
-			<expres>ea \+ "(.*?)"</expres>
+			<expres>ea \+ "([^"]+)</expres>
 			<page>http://www.playerfs.com/sharedcdn/membedplayer/$doregex[canal]/1/700/400/$doregex[stream]</page>
 			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
 			<referer>http://www.playerfs.com</referer>
 			</regex>
 			<regex>
 			<name>hls</name>
-			<expres>hlsUrl \+ \(\"(.*?)"</expres>
+			<expres>hlsUrl \+ \(\"([^"]+)</expres>
 			<page>http://www.playerfs.com/sharedcdn/membedplayer/$doregex[canal]/1/700/400/$doregex[stream]</page>
 			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
 			<referer>http://www.playerfs.com</referer>
 			</regex>
 			<regex>
 			<name>stream</name>
-			<expres>fid="(.*?)"</expres>
+			<expres>fid="([^"]+)</expres>
 			<page>http://www.playerfs.com/sharedcdn/sharedcdnEmbed.js?channel=$doregex[canal]</page>
 			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
 			<referer>http://www.playerfs.com</referer>
@@ -601,7 +601,7 @@
 <link>http://cdn.whostreams.net:8081/wsedge/$doregex[canal]/playlist.m3u8?wmsAuthSign=$doregex[code]</link>
 <regex>
 <name>canal</name>
-<expres>net\/embed\/(.*?)"</expres>
+<expres>net\/embed\/([^"]+)</expres>
 <page>http://maxdeportv.net/indexa.php?canal=9</page>
 </regex>
 <regex>
@@ -724,7 +724,7 @@
    <link>plugin://plugin.video.f4mTester/?$doregex[getUrl2]</link>
    <thumbnail>https://vectors.pro/wp-content/uploads/2017/10/fifa-world-cup-2018-logo-vector.png</thumbnail>
 ]]></listrepeat>
-<expres><![CDATA[flags sprite-3116" style="float:left; "[^"]+"(\d+.*?)" href="(.*?)"]]></expres>
+<expres><![CDATA[flags sprite-3116" style="float:left; "[^"]+"(\d+.*?)" href="([^"]+)]]></expres>
 <page>http://www.goalsarena.org/en</page>
 <referer>http://www.goalsarena.org/</referer>
 <agent>Mozilla/5.0 (Windows NT 6.3; rv:36.0) Gecko/20100101 Firefox/36.04</agent>
