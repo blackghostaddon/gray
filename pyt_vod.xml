@@ -1169,59 +1169,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-
-
-
-<item>
-
-<title>[B]GNULA[/B]    </title>
-
-<urlsolve>$doregex[enlace]</urlsolve>
-
-
-<regex>
-<name>enlace</name>
-<expres>href="(https:\/\/streamango.*?)"</expres>
-<page>http://gnula.nu/crimen/ver-8-days-2014-online/</page>
-<agent>Mozilla/5.0 (Windows NT 6.1; rv:32.0) Gecko/20100101 Firefox/32.0</agent>
-<cookieJar>$doregex[createCFCookie]</cookieJar>
-</regex>
-
-<regex>
-<name>createCFCookie</name>
-<expres></expres>
-<page>$pyFunction:cloudflare.createCookie('http://gnula.nu',Cookie_Jar,'Mozilla/5.0 (Windows NT 6.1; rv:14.0) Gecko/20100101 Firefox/14.0.1')</page>
-<cookieJar></cookieJar>
-</regex>
-
-	
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
-</item>
-
-
-
-<item>
-    <title>cloudflare test</title>
-    <link>$doregex[getmainPage]|User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36</link>
-    <regex>
-        <name>createCFCookie</name>
-        <expres></expres>
-        <page>$pyFunction:cloudflare.createCookie('http://www.stream4free.pro/south-park-hd',Cookie_Jar,'Mozilla/5.0 (Windows NT 6.1; rv:14.0) Gecko/20100101 Firefox/14.0.1')</page>
-        <cookieJar></cookieJar>
-    </regex>
-    <regex>
-        <name>getmainPage</name>
-        <expres>source src="(.*?)"</expres>
-        <page>http://www.stream4free.pro/south-park-hd</page>
-        <cookieJar>$doregex[createCFCookie]</cookieJar>
-        <ignorecache />
-    </regex>
-</item>
-
-
-
-
+ 
 
 
 
@@ -3017,44 +2965,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 	
-	
-<item>
-  <title>News</title>
-  <link>$doregex[rtmp]</link>
-  <regex>
-    <name>rtmp</name>
-      <expres>$pyFunction:vipracing.decrypt_vipracing('http://www.streamlive.to/view/68967/CNN',False,False,
-              'http://vipracing.info/',swftoken="qdcc97a865cc90d7df722cfa8c295589")
-      </expres>
-    <page></page>
-  </regex>
-</item>
 
-<item>
-  <title>News</title>
-  <link>$doregex[rtmp]</link>
-  <regex>
-    <name>rtmp</name>
-      <expres>$pyFunction:vipracing.decrypt_vipracing('http://www.streamlive.to/view/75275/RSI-LA-2---FIFA-World-Cup',False,False,
-              'http://vipracing.info/',swftoken="qdcc97a865cc90d7df722cfa8c295589")
-      </expres>
-    <page></page>
-  </regex>
-</item>
-
-
-
-<item>
-  <title>News</title>
-  <link>$doregex[rtmp]</link>
-  <regex>
-    <name>rtmp</name>
-      <expres>$pyFunction:vipracing.decrypt_vipracing('http://www.streamlive.to/view/75275/RSI-LA-2---FIFA-World-Cup',False,False,
-              'http://vipracing.info/',swftoken="")
-      </expres>
-    <page></page>
-  </regex>
-</item>
 
 
 
