@@ -440,7 +440,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <item>
 <title>     [B]LimeTorrents[/B]  Estrenos Audio Latino </title>
 <link>$doregex[makelist]</link>
-
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
@@ -451,18 +450,46 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <expres>href=\"(http://itorrents.org/torrent/.*?torrent)\?title=(.*?)\"</expres>
 <page>https://www.limetorrents.cc/search/movies/latino/</page>
 </regex>
-
-
-
-
-
-
-
-
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
-
 </item>
 
+
+
+<item>
+<title>     [B]LimeTorrents[/B]  Estrenos Audio Castellano </title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param2]</title>
+<link>plugin://plugin.video.quasar/play?uri=[makelist.param1]</link>
+<thumbnail>[makelist.param2]</thumbnail>
+]]></listrepeat>
+<expres>href=\"(http://itorrents.org/torrent/.*?torrent)\?title=(.*?)\"</expres>
+<page>https://www.limetorrents.cc/search/movies/castellano/</page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
+</item>
+
+
+
+
+
+<item>
+<title>     [B]LimeTorrents[/B]  TOP100 </title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param2]</title>
+<link>plugin://plugin.video.quasar/play?uri=[makelist.param1]</link>
+<thumbnail>[makelist.param2]</thumbnail>
+]]></listrepeat>
+<expres>href=\"(http://itorrents.org/torrent/.*?torrent)\?title=(.*?)\"</expres>
+<page>https://www.limetorrents.cc/cat_top/16/Movies/</page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
+</item>
 
 
 
@@ -1874,20 +1901,16 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <item>
 <title>     [B]LimeTorrents[/B]  Buscar </title>
 <link>$doregex[makelist]</link>
-
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-   <title>[makelist.param3]</title>
-
-    <link>plugin://plugin.video.quasar/play?uri=[makelist.param4]</link>
- <thumbnail>[makelist.param2]</thumbnail>
+<title>[makelist.param2]</title>
+<link>plugin://plugin.video.quasar/play?uri=[makelist.param1]</link>
+<thumbnail>[makelist.param2]</thumbnail>
 ]]></listrepeat>
-<expres>class="detName.*?href="(.*?)".*?title="(.*?)">(.*?)<[\w\W\s]{0,20}href=\"(.*?)\"</expres>
-<page>https://thepiratebay.org/search/$doregex[buscaralgo]/0/99/0</page>
+<expres>href=\"(http://itorrents.org/torrent/.*?torrent)\?title=(.*?)\"</expres>
+<page>https://www.limetorrents.cc/search/movies/$doregex[buscaralgo]/</page>
 </regex>
-
-
 
 
 <regex>
@@ -1898,7 +1921,7 @@ import xbmcaddon
 import xbmcgui
 def GetLSProData(page_data,Cookie_Jar,m):
     dialog = xbmcgui.Dialog()
-    d = dialog.input('Buscar Pelicula: ejemplo: Batman', type=xbmcgui.INPUT_ALPHANUM).replace(" ", "%20")
+    d = dialog.input('Buscar Pelicula: ejemplo: Batman', type=xbmcgui.INPUT_ALPHANUM).replace(" ", "-")
     return d
 ]]></expres>
 <page></page>
