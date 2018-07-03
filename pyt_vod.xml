@@ -1590,24 +1590,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-
-
-
-
-<regex>
-<name>select</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m):
-  import xbmcgui
-  dialog = xbmcgui.Dialog()
-  ret = dialog.select('Elige una Seccion ', ['Estrenos', 'Mas Votadas', 'Mas Vistas', 'Todas'])
-  lists = ['estrenos', 'peliculas-mas-valoradas', 'peliculas-mas-vistas', 'listado-completo']
-  return lists[ret]
-]]></expres>
- <page></page>
- </regex>
- 
- 
  
  
 
@@ -1625,9 +1607,23 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>[makelist2.param1]</thumbnail>
 ]]></listrepeat>
 <expres><![CDATA[poster.*?src="(.*?)".*?alt="(.*?)".*?href="(.*?)"]]></expres>
-<page>http://www.cinetux.io/idioma/latino/</page>
+<page>http://www.cinetux.io/$doregex[select]</page>
 </regex>
 
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import xbmcgui
+  dialog = xbmcgui.Dialog()
+  ret = dialog.select('Elige una Seccion ', ['Estrenos', 'Audio Latino', 'Audio Castellano', 'Subtitulado'])
+  lists = ['', 'idioma/latino/', 'idioma/espanol/', 'idioma/subtitulado/']
+  return lists[ret]
+]]></expres>
+ <page></page>
+ </regex>
+ 
+ 
   
 <regex>
 <name>makelist</name>
