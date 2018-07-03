@@ -1994,7 +1994,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>plugin://plugin.video.quasar/play?uri=https://www.toros2.com/tor/[makelist.param1].torrent</link>
 <thumbnail>[makelist.param2]</thumbnail>
 ]]></listrepeat>
-<expres>href="\/torrent\/(.*?)/.*?\"\>(.*?)<</expres>
+<expres>href="\/torrent\/(.*?)/.*?">(.*?)<</expres>
 <page>https://www.toros2.com/movie/torrents/$doregex[buscaralgo].html?v=&amp;smi=&amp;sma=&amp;i=50&amp;sort=seeds&amp;o=desc</page>
 </regex>                                               
 
