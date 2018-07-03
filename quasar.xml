@@ -538,7 +538,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
-<title>     [B]TORLOCK[/B]  Movies </title>
+<title>     [B]Torlock[/B]  Movies </title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
@@ -547,7 +547,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>plugin://plugin.video.quasar/play?uri=https://www.torlock.com/tor/[makelist.param1].torrent</link>
 <thumbnail>[makelist.param2]</thumbnail>
 ]]></listrepeat>
-<expres>href=\/torrent\/(.*?)\/.*?><b>(.*?)<</expres>
+<expres>href=\/torrent\/(.*?)\/.*?b>(.*?)<</expres>
 <page>https://www.torlock.com/movies.html</page>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
