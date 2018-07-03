@@ -1294,7 +1294,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <SetwatchMode>55</SetwatchMode><title>[makelist3.param2]</title>
 <link>$doregex[makelist2]</link>
 ]]></listrepeat>
-<expres><![CDATA[href="https://www.locopelis.com/pelicula/(.*?)">([^<]+)]]></expres>
+<expres><![CDATA[href="https://www.locopelis.com/pelicula/(.*?)">(.*?)<]]></expres>
 <page>http://www.locopelis.com/</page>
 </regex>
 
