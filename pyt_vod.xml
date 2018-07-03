@@ -1119,9 +1119,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
  <expres>href="(.*?)".*?Descargar(.*?)gratis[\w\W\s]{0,13}src="(.*?)"</expres>
  <page>$doregex[select]</page>
  </regex>
-
-
-
  
 <regex>
 <name>select</name>
@@ -1137,11 +1134,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
  </regex>
 
 
-
-
-
-
-
   <regex>
  <name>makelist3</name>
  <listrepeat><![CDATA[
@@ -1151,7 +1143,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  <fanart>[makelist2.param3]</fanart>
  ]]></listrepeat>
  <expres><![CDATA[href='(https://openload.*?|https://powvideo.*?|http://uptobox.*?|https://vidabc.*?)']]></expres>
- <page>[makelist3.param1]</page>
+ <page>[makelist2.param1]</page>
  </regex>
 
  <regex>
@@ -1292,17 +1284,17 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
  <item>
-<title>[B]SHURWEB [/B]     [Audio Castellano]   </title>
+<title>[B]SHURWEB [/B]     [Audio Castellano] *  </title>
 <link>$doregex[makelist3]</link>
 
 
-   <regex>
+<regex>
 <name>makelist3</name>
 <listrepeat><![CDATA[
 <SetwatchMode>55</SetwatchMode><title>[makelist3.param2]</title>
 <link>$doregex[makelist2]</link>
 ]]></listrepeat>
-<expres><![CDATA[href="https://www.locopelis.com/pelicula/(.*?)">(.*?)<]]></expres>
+<expres><![CDATA[href="https://www.locopelis.com/pelicula/([^"]+)>([^<]+)]]></expres>
 <page>http://www.locopelis.com/</page>
 </regex>
 
@@ -1328,9 +1320,10 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id3]</link>
 <thumbnail>[makelist2.param3]</thumbnail>
 ]]></listrepeat>
-<expres><![CDATA[iframe\ssrc="(.*?)"]]></expres>
+<expres><![CDATA[iframe src="([^"]+)]]></expres>
 <page>[makelist2.param1]</page>
 </regex>
+
 
 
 <regex>
@@ -1338,7 +1331,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <expres><![CDATA[#$pyFunction
 def GetLSProData(page_data,Cookie_Jar,m):
     import urlresolver
-    url = '[makelist.param1]'
+    url = '$doregex[id2]'
     try:
         u = urlresolver.resolve(url)
     except:
@@ -1347,6 +1340,13 @@ def GetLSProData(page_data,Cookie_Jar,m):
 ]]></expres>
 <page></page>
 </regex>
+
+ <regex>
+<name>id2</name>
+<expres><![CDATA[IFRAME src=\"([^"]+)]]></expres>
+<page>[makelist.param1]</page>
+</regex>
+
 
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart></item>
 
