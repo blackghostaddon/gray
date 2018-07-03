@@ -148,7 +148,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 <regex>
 <name>m3u8</name>
-<expres>ea \+ "(.*?)"</expres>
+<expres>ea \+ "([^"]+)</expres>
 <page>http://[makelist.param4]/membedplayer/[makelist.param2]/1/500/400</page>
 <agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
 <referer>http://www.[makelist.param4]</referer>
@@ -195,14 +195,14 @@ def GetLSProData(page_data,Cookie_Jar,m):
 			</regex>
 			<regex>
 			<name>m3u8</name>
-			<expres>ea \+ "(.*?)"</expres>
+			<expres>ea \+ "([^"]+)</expres>
 			<page>http://www.mipsplayer.net/membedplayer/$doregex[ch]/1/650/400</page>
 			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
 			<referer>http://www.mipsplayer.net</referer>
 			</regex>
 			<regex>
 			<name>hls</name>
-			<expres>hlsUrl \+ \(\"(.*?)"</expres>
+			<expres>hlsUrl \+ \(\"([^"]+)</expres>
 			<page>http://www.mipsplayer.net/membedplayer/$doregex[ch]/1/650/400</page>
 			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
 			<referer>http://www.mipsplayer.net</referer>
@@ -308,7 +308,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://telerium.tv/embed/25018.ht
 <link>http://cdn.whostreams.net:8081/wsedge/$doregex[canal]/playlist.m3u8?wmsAuthSign=$doregex[code]</link>
 <regex>
 <name>canal</name>
-<expres>net\/embed\/(.*?)"</expres>
+<expres>net\/embed\/([^"]+)</expres>
 <page>http://maxdeportv.net/indexa.php?canal=9</page>
 </regex>
 <regex>
@@ -325,7 +325,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://telerium.tv/embed/25018.ht
 <link>http://cdn.whostreams.net:8081/wsedge/$doregex[canal]/playlist.m3u8?wmsAuthSign=$doregex[code]</link>
 <regex>
 <name>canal</name>
-<expres>net\/embed\/(.*?)"</expres>
+<expres>net\/embed\/([^"]+)</expres>
 <page>http://maxdeportv.net/indexa.php?canal=1</page>
 </regex>
 <regex>
@@ -340,7 +340,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://telerium.tv/embed/25018.ht
 <link>http://cdn.whostreams.net:8081/wsedge/$doregex[canal]/playlist.m3u8?wmsAuthSign=$doregex[code]</link>
 <regex>
 <name>canal</name>
-<expres>net\/embed\/(.*?)"</expres>
+<expres>net\/embed\/([^"]+)</expres>
 <page>http://maxdeportv.net/indexa.php?canal=3</page>
 </regex>
 <regex>
@@ -355,7 +355,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://telerium.tv/embed/25018.ht
 <link>http://cdn.whostreams.net:8081/wsedge/$doregex[canal]/playlist.m3u8?wmsAuthSign=$doregex[code]</link>
 <regex>
 <name>canal</name>
-<expres>net\/embed\/(.*?)"</expres>
+<expres>net\/embed\/([^"]+)</expres>
 <page>http://maxdeportv.net/indexa.php?canal=5</page>
 </regex>
 <regex>
@@ -372,7 +372,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://telerium.tv/embed/25018.ht
 <link>http://cdn.whostreams.net:8081/wsedge/$doregex[canal]/playlist.m3u8?wmsAuthSign=$doregex[code]</link>
 <regex>
 <name>canal</name>
-<expres>net\/embed\/(.*?)"</expres>
+<expres>net\/embed\/([^"]+)</expres>
 <page>http://maxdeportv.net/indexa.php?canal=7</page>
 </regex>
 <regex>
@@ -388,7 +388,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://telerium.tv/embed/25018.ht
 <link>http://cdn.whostreams.net:8081/wsedge/$doregex[canal]/playlist.m3u8?wmsAuthSign=$doregex[code]</link>
 <regex>
 <name>canal</name>
-<expres>net\/embed\/(.*?)"</expres>
+<expres>net\/embed\/([^"]+)</expres>
 <page>http://maxdeportv.net/indexa.php?canal=10</page>
 </regex>
 <regex>
@@ -446,21 +446,21 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://telerium.tv/embed/25018.ht
 			</regex>
 			<regex>
 			<name>m3u8</name>
-			<expres>ea \+ "(.*?)"</expres>
+			<expres>ea \+ "([^"]+)</expres>
 			<page>http://www.playerfs.com/sharedcdn/membedplayer/$doregex[canal]/1/700/400/$doregex[stream]</page>
 			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
 			<referer>http://www.playerfs.com</referer>
 			</regex>
 			<regex>
 			<name>hls</name>
-			<expres>hlsUrl \+ \(\"(.*?)"</expres>
+			<expres>hlsUrl \+ \(\"([^"]+)</expres>
 			<page>http://www.playerfs.com/sharedcdn/membedplayer/$doregex[canal]/1/700/400/$doregex[stream]</page>
 			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
 			<referer>http://www.playerfs.com</referer>
 			</regex>
 		<regex>
 			<name>stream</name>
-			<expres>fid="(.*?)"</expres>
+			<expres>fid="([^"]+)</expres>
 			<page>http://www.playerfs.com/sharedcdn/sharedcdnEmbed.js?channel=$doregex[canal]</page>
 			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
 			<referer>http://www.playerfs.com</referer>
@@ -489,21 +489,21 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://telerium.tv/embed/25018.ht
 			</regex>
 			<regex>
 			<name>m3u8</name>
-			<expres>ea \+ "(.*?)"</expres>
+			<expres>ea \+ "([^"]+)</expres>
 			<page>http://www.playerfs.com/sharedcdn/membedplayer/$doregex[canal]/1/700/400/$doregex[stream]</page>
 			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
 			<referer>http://www.playerfs.com</referer>
 			</regex>
 			<regex>
 			<name>hls</name>
-			<expres>hlsUrl \+ \(\"(.*?)"</expres>
+			<expres>hlsUrl \+ \(\"([^"]+)</expres>
 			<page>http://www.playerfs.com/sharedcdn/membedplayer/$doregex[canal]/1/700/400/$doregex[stream]</page>
 			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
 			<referer>http://www.playerfs.com</referer>
 			</regex>
 		<regex>
 			<name>stream</name>
-			<expres>fid="(.*?)"</expres>
+			<expres>fid="([^"]+)</expres>
 			<page>http://www.playerfs.com/sharedcdn/sharedcdnEmbed.js?channel=$doregex[canal]</page>
 			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
 			<referer>http://www.playerfs.com</referer>
@@ -534,21 +534,21 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://telerium.tv/embed/25018.ht
 			</regex>
 			<regex>
 			<name>m3u8</name>
-			<expres>ea \+ "(.*?)"</expres>
+			<expres>ea \+ "([^"]+)</expres>
 			<page>http://www.playerfs.com/sharedcdn/membedplayer/$doregex[canal]/1/700/400/$doregex[stream]</page>
 			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
 			<referer>http://www.playerfs.com</referer>
 			</regex>
 			<regex>
 			<name>hls</name>
-			<expres>hlsUrl \+ \(\"(.*?)"</expres>
+			<expres>hlsUrl \+ \(\"([^"]+)</expres>
 			<page>http://www.playerfs.com/sharedcdn/membedplayer/$doregex[canal]/1/700/400/$doregex[stream]</page>
 			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
 			<referer>http://www.playerfs.com</referer>
 			</regex>
 		<regex>
 			<name>stream</name>
-			<expres>fid="(.*?)"</expres>
+			<expres>fid="([^"]+)</expres>
 			<page>http://www.playerfs.com/sharedcdn/sharedcdnEmbed.js?channel=$doregex[canal]</page>
 			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
 			<referer>http://www.playerfs.com</referer>
@@ -579,21 +579,21 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://telerium.tv/embed/25018.ht
 			</regex>
 			<regex>
 			<name>m3u8</name>
-			<expres>ea \+ "(.*?)"</expres>
+			<expres>ea \+ "([^"]+)</expres>
 			<page>http://www.playerfs.com/sharedcdn/membedplayer/$doregex[canal]/1/700/400/$doregex[stream]</page>
 			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
 			<referer>http://www.playerfs.com</referer>
 			</regex>
 			<regex>
 			<name>hls</name>
-			<expres>hlsUrl \+ \(\"(.*?)"</expres>
+			<expres>hlsUrl \+ \(\"([^"]+)</expres>
 			<page>http://www.playerfs.com/sharedcdn/membedplayer/$doregex[canal]/1/700/400/$doregex[stream]</page>
 			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
 			<referer>http://www.playerfs.com</referer>
 			</regex>
 		<regex>
 			<name>stream</name>
-			<expres>fid="(.*?)"</expres>
+			<expres>fid="([^"]+)</expres>
 			<page>http://www.playerfs.com/sharedcdn/sharedcdnEmbed.js?channel=$doregex[canal]</page>
 			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
 			<referer>http://www.playerfs.com</referer>
@@ -665,7 +665,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://telerium.tv/embed/25018.ht
 			</regex>
 			<regex>
 			<name>m3u8</name>
-			<expres>ea \+ "(.*?)"</expres>
+			<expres>ea \+ "([^"]+)</expres>
 			<page>http://www.247bay.tv/membedplayer/$doregex[canal]/2/750/420</page>
 			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
 			<referer>http://www.247bay.tv</referer>
@@ -688,7 +688,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://telerium.tv/embed/25018.ht
 			</regex>
 			<regex>
 			<name>m3u8</name>
-			<expres>ea \+ "(.*?)"</expres>
+			<expres>ea \+ "([^"]+)</expres>
 			<page>http://www.247bay.tv/membedplayer/$doregex[canal]/2/750/420</page>
 			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
 			<referer>http://www.247bay.tv</referer>
@@ -738,7 +738,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://telerium.tv/embed/25018.ht
 			</regex>
 			<regex>
 			<name>m3u8</name>
-			<expres>ea \+ "(.*?)"</expres>
+			<expres>ea \+ "([^"]+)</expres>
 			<page>http://www.247bay.tv/membedplayer/$doregex[canal]/2/750/420</page>
 			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
 			<referer>http://www.247bay.tv</referer>
@@ -760,7 +760,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://telerium.tv/embed/25018.ht
 			</regex>
 			<regex>
 			<name>m3u8</name>
-			<expres>ea \+ "(.*?)"</expres>
+			<expres>ea \+ "([^"]+)</expres>
 			<page>http://www.247bay.tv/membedplayer/$doregex[canal]/2/750/420</page>
 			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
 			<referer>http://www.247bay.tv</referer>
@@ -825,7 +825,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://telerium.tv/embed/25018.ht
 <link>http://cdn.whostreams.net:8081/wsedge/$doregex[canal]/playlist.m3u8?wmsAuthSign=$doregex[code]</link>
 <regex>
 <name>canal</name>
-<expres>net\/embed\/(.*?)"</expres>
+<expres>net\/embed\/([^"]+)</expres>
 <page>http://in.xrivonet.info/33d.html</page>
 </regex>
 <regex>
@@ -841,7 +841,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://telerium.tv/embed/25018.ht
 <link>http://cdn.whostreams.net:8081/wsedge/$doregex[canal]/playlist.m3u8?wmsAuthSign=$doregex[code]</link>
 <regex>
 <name>canal</name>
-<expres>net\/embed\/(.*?)"</expres>
+<expres>net\/embed\/([^"]+)</expres>
 <page>http://in.xrivonet.info/40d.html</page>
 </regex>
 <regex>
@@ -872,7 +872,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://telerium.tv/embed/25018.ht
 
 <regex>
 <name>m3u8</name>
-<expres>curl = "(.*?)"</expres>
+<expres>curl = "([^"]+)</expres>
 <page>https://www.playcast.se/stream.php?id=152</page>
 <referer>http://www.playcast.se</referer>
 <agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0</agent>
@@ -887,7 +887,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://telerium.tv/embed/25018.ht
 <link>http://cdn.whostreams.net:8081/wsedge/$doregex[canal]/playlist.m3u8?wmsAuthSign=$doregex[code]</link>
 <regex>
 <name>canal</name>
-<expres>net\/embed\/(.*?)"</expres>
+<expres>net\/embed\/([^"]+)</expres>
 <page>http://1me.club/vf/1/13.html?id=ROja</page>
 </regex>
 <regex>
@@ -928,7 +928,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://telerium.tv/embed/25018.ht
 <link>http://cdn.whostreams.net:8081/wsedge/$doregex[canal]/playlist.m3u8?wmsAuthSign=$doregex[code]</link>
 <regex>
 <name>canal</name>
-<expres>net\/embed\/(.*?)"</expres>
+<expres>net\/embed\/([^"]+)</expres>
 <page>http://cndf79.blogspot.com/p/vtv-1.html</page>
 </regex>
 <regex>
@@ -949,7 +949,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://telerium.tv/embed/25018.ht
 <link>http://cdn.whostreams.net:8081/wsedge/$doregex[canal]/playlist.m3u8?wmsAuthSign=$doregex[code]</link>
 <regex>
 <name>canal</name>
-<expres>net\/embed\/(.*?)"</expres>
+<expres>net\/embed\/([^"]+)</expres>
 <page>http://cndf79.blogspot.com/p/vtv-2.html</page>
 </regex>
 <regex>
@@ -965,7 +965,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://telerium.tv/embed/25018.ht
 <link>http://cdn.whostreams.net:8081/wsedge/$doregex[canal]/playlist.m3u8?wmsAuthSign=$doregex[code]</link>
 <regex>
 <name>canal</name>
-<expres>net\/embed\/(.*?)"</expres>
+<expres>net\/embed\/([^"]+)</expres>
 <page>http://cndf79.blogspot.com/p/vtv-3.html</page>
 </regex>
 <regex>
@@ -981,7 +981,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://telerium.tv/embed/25018.ht
 <link>http://cdn.whostreams.net:8081/wsedge/$doregex[canal]/playlist.m3u8?wmsAuthSign=$doregex[code]</link>
 <regex>
 <name>canal</name>
-<expres>net\/embed\/(.*?)"</expres>
+<expres>net\/embed\/([^"]+)</expres>
 <page>http://cndf79.blogspot.com/p/who-1.html</page>
 </regex>
 <regex>
@@ -997,7 +997,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://telerium.tv/embed/25018.ht
 <link>http://cdn.whostreams.net:8081/wsedge/$doregex[canal]/playlist.m3u8?wmsAuthSign=$doregex[code]</link>
 <regex>
 <name>canal</name>
-<expres>net\/embed\/(.*?)"</expres>
+<expres>net\/embed\/([^"]+)</expres>
 <page>http://cndf79.blogspot.com/p/who-2.html</page>
 </regex>
 <regex>
@@ -1014,7 +1014,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://telerium.tv/embed/25018.ht
 <link>http://cdn.whostreams.net:8081/wsedge/$doregex[canal]/playlist.m3u8?wmsAuthSign=$doregex[code]</link>
 <regex>
 <name>canal</name>
-<expres>net\/embed\/(.*?)"</expres>
+<expres>net\/embed\/([^"]+)</expres>
 <page>http://cndf79.blogspot.com/p/who-6.html</page>
 </regex>
 <regex>
@@ -1091,7 +1091,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <regex>
 <name>url2</name>
-<expres><![CDATA[src="(.*?)"]]></expres>
+<expres><![CDATA[src="([^"]+)]]></expres>
 <page>http://schedule.racing/sevenembed.php?id=wiz10&amp;p=0&amp;c=0&amp;stretching=uniform</page>
 <referer>http://wizhdsports.is/live/stream10.html</referer>
 </regex>
@@ -1133,7 +1133,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
  <regex>
 <name>url</name>
-<expres><![CDATA[source: "(.*?)"]]></expres>
+<expres><![CDATA[source: "([^"]+)]]></expres>
 <page>http://depo.superligatv.com/espn.php?width=720&height=406</page>
 </regex>
  
@@ -1148,7 +1148,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
  <regex>
 <name>url</name>
-<expres><![CDATA[source: "(.*?)"]]></expres>
+<expres><![CDATA[source: "([^"]+)]]></expres>
 <page>http://depo.superligatv.com/espn2.php?width=720&height=406</page>
 </regex>
  
@@ -1160,7 +1160,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
  <regex>
 <name>url</name>
-<expres><![CDATA[source: "(.*?)"]]></expres>
+<expres><![CDATA[source: "([^"]+)]]></expres>
 <page>http://depo.superligatv.com/espn3.php?width=720&height=406</page>
 </regex>
  
@@ -1174,7 +1174,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
  <regex>
 <name>url</name>
-<expres><![CDATA[source: "(.*?)"]]></expres>
+<expres><![CDATA[source: "([^"]+)]]></expres>
 <page>http://depo.superligatv.com/espndep.php?width=720&height=406</page>
 </regex>
  
@@ -1190,7 +1190,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
  <regex>
 <name>url</name>
-<expres><![CDATA[source: "(.*?)"]]></expres>
+<expres><![CDATA[source: "([^"]+)]]></expres>
 <page>http://depo.superligatv.com/foxsport.php?width=720&height=406</page>
 </regex>
  
@@ -1202,7 +1202,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
  <regex>
 <name>url</name>
-<expres><![CDATA[source: "(.*?)"]]></expres>
+<expres><![CDATA[source: "([^"]+)]]></expres>
 <page>http://depo.superligatv.com/foxsport2.php?width=720&height=406</page>
 </regex>
  
@@ -1216,7 +1216,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
  <regex>
 <name>url</name>
-<expres><![CDATA[source: "(.*?)"]]></expres>
+<expres><![CDATA[source: "([^"]+)]]></expres>
 <page>http://depo.superligatv.com/foxsport3.php?width=720&height=406</page>
 </regex>
  
@@ -1238,7 +1238,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
  <regex>
 <name>url</name>
-<expres><![CDATA[source: "(.*?)"]]></expres>
+<expres><![CDATA[source: "([^"]+)]]></expres>
 <page>http://depo.superligatv.com/f1.php?width=720&height=406</page>
 </regex>
  
@@ -1252,7 +1252,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
  <regex>
 <name>url</name>
-<expres><![CDATA[source: "(.*?)"]]></expres>
+<expres><![CDATA[source: "([^"]+)]]></expres>
 <page>http://depo.superligatv.com/mlbhd.php?width=720&height=406</page>
 </regex>
  
@@ -1266,7 +1266,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
  <regex>
 <name>url</name>
-<expres><![CDATA[source: "(.*?)"]]></expres>
+<expres><![CDATA[source: "([^"]+)]]></expres>
 <page>http://depo.superligatv.com/tdn.php?width=720&height=406</page>
 </regex>
  
@@ -1280,7 +1280,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
  <regex>
 <name>url</name>
-<expres><![CDATA[source: "(.*?)"]]></expres>
+<expres><![CDATA[source: "([^"]+)]]></expres>
 <page>http://depo.superligatv.com/unitdn.php?width=720&height=406</page>
 </regex>
  
@@ -1302,7 +1302,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
  <regex>
 <name>url</name>
-<expres><![CDATA[source: "(.*?)"]]></expres>
+<expres><![CDATA[source: "([^"]+)]]></expres>
 <page>http://depo.superligatv.com/tvcdep.php?width=720&height=406</page>
 </regex>
  
@@ -1317,7 +1317,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
  <regex>
 <name>url</name>
-<expres><![CDATA[source: "(.*?)"]]></expres>
+<expres><![CDATA[source: "([^"]+)]]></expres>
 <page>http://depo.superligatv.com/tvcdep2.php?width=720&height=406</page>
 </regex>
  
@@ -1338,7 +1338,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
  <regex>
 <name>url</name>
-<expres><![CDATA[source: "(.*?)"]]></expres>
+<expres><![CDATA[source: "([^"]+)]]></expres>
 <page>http://depo.superligatv.com/planeta.php?width=720&height=406</page>
 </regex>
  
@@ -1352,7 +1352,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
  <regex>
 <name>url</name>
-<expres><![CDATA[source: "(.*?)"]]></expres>
+<expres><![CDATA[source: "([^"]+)]]></expres>
 <page>http://depo.superligatv.com/sky1.php?width=720&height=406</page>
 </regex>
  
@@ -1369,7 +1369,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
  <regex>
 <name>url</name>
-<expres><![CDATA[source: "(.*?)"]]></expres>
+<expres><![CDATA[source: "([^"]+)]]></expres>
 <page>http://depo.superligatv.com/sky2.php?width=720&height=406</page>
 </regex>
  
@@ -1385,7 +1385,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
  <regex>
 <name>url</name>
-<expres><![CDATA[source: "(.*?)"]]></expres>
+<expres><![CDATA[source: "([^"]+)]]></expres>
 <page>http://depo.superligatv.com/sky3.php?width=720&height=406</page>
 </regex>
  
@@ -1539,7 +1539,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>http://cdn.whostreams.net:8081/wsedge/$doregex[canal]/playlist.m3u8?wmsAuthSign=$doregex[code]</link>
 <regex>
 <name>canal</name>
-<expres>net\/embed\/(.*?)"</expres>
+<expres>net\/embed\/([^"]+)</expres>
 <page>http://elgoles.ru/6-2/</page>
 </regex>
 <regex>
@@ -1555,7 +1555,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>http://cdn.whostreams.net:8081/wsedge/$doregex[canal]/playlist.m3u8?wmsAuthSign=$doregex[code]</link>
 <regex>
 <name>canal</name>
-<expres>net\/embed\/(.*?)"</expres>
+<expres>net\/embed\/([^"]+)</expres>
 <page>http://elgoles.ru/11-2/</page>
 </regex>
 <regex>
@@ -1576,14 +1576,14 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 <regex>
 <name>m3u8</name>
-<expres>ea \+ "(.*?)"</expres>
+<expres>ea \+ "([^"]+)</expres>
 <page>http://www.zony.tv/membedplayer/$doregex[canal]/1/750/420</page>
 <agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
 <referer>http://www.zony.tv</referer>
 </regex>
 <regex>
 <name>hls</name>
-<expres>hlsUrl \+ \(\"(.*?)"</expres>
+<expres>hlsUrl \+ \(\"([^"]+)</expres>
 <page>http://www.zony.tv/membedplayer/$doregex[canal]/1/500/400</page>
 <agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
 <referer>http://www.zony.tv</referer>
@@ -1625,14 +1625,14 @@ def GetLSProData(page_data,Cookie_Jar,m):
 			</regex>
 			<regex>
 			<name>m3u8</name>
-			<expres>ea \+ "(.*?)"</expres>
+			<expres>ea \+ "([^"]+)</expres>
 			<page>http://www.ezcast.tv/membedplayer/$doregex[canal]/1/750/420</page>
 			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
 			<referer>http://www.zony.tv</referer>
 			</regex>
 			<regex>
 			<name>hls</name>
-			<expres>hlsUrl \+ \(\"(.*?)"</expres>
+			<expres>hlsUrl \+ \(\"([^"]+)</expres>
 			<page>http://www.ezcast.tv/membedplayer/$doregex[canal]/1/500/400</page>
 			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
 			<referer>http://www.ezcast.tv</referer>
@@ -1663,14 +1663,14 @@ def GetLSProData(page_data,Cookie_Jar,m):
 			</regex>
 			<regex>
 			<name>m3u8</name>
-			<expres>ea \+ "(.*?)"</expres>
+			<expres>ea \+ "([^"]+)</expres>
 			<page>http://www.ucasterplayer.com/membedplayer/$doregex[canal]/1/720/430</page>
 			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
 			<referer>http://www.ucasterplayer.com</referer>
 			</regex>
 			<regex>
 			<name>hls</name>
-			<expres>hlsUrl \+ \(\"(.*?)"</expres>
+			<expres>hlsUrl \+ \(\"([^"]+)</expres>
 			<page>http://www.ucasterplayer.com/membedplayer/$doregex[canal]/1/720/430</page>
 			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
 			<referer>http://www.ucasterplayer.com</referer>
@@ -1700,14 +1700,14 @@ def GetLSProData(page_data,Cookie_Jar,m):
 			</regex>
 			<regex>
 			<name>m3u8</name>
-			<expres>ea \+ "(.*?)"</expres>
+			<expres>ea \+ "([^"]+)</expres>
 			<page>http://www.ucasterplayer.com/membedplayer/$doregex[canal]/1/720/430</page>
 			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
 			<referer>http://www.ucasterplayer.com</referer>
 			</regex>
 			<regex>
 			<name>hls</name>
-			<expres>hlsUrl \+ \(\"(.*?)"</expres>
+			<expres>hlsUrl \+ \(\"([^"]+)</expres>
 			<page>http://www.ucasterplayer.com/membedplayer/$doregex[canal]/1/720/430</page>
 			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
 			<referer>http://www.ucasterplayer.com</referer>
@@ -1808,21 +1808,21 @@ def GetLSProData(page_data,Cookie_Jar,m):
 			</regex>
 			<regex>
 			<name>m3u8</name>
-			<expres>ea \+ "(.*?)"</expres>
+			<expres>ea \+ "([^"]+)</expres>
 			<page>http://www.fstream.me/sharedcdn/membedplayer/$doregex[canal]/1/700/400/$doregex[stream]</page>
 			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
 			<referer>http://www.fstream.me</referer>
 			</regex>
 			<regex>
 			<name>hls</name>
-			<expres>hlsUrl \+ \(\"(.*?)"</expres>
+			<expres>hlsUrl \+ \(\"([^"]+)</expres>
 			<page>http://www.fstream.me/sharedcdn/membedplayer/$doregex[canal]/1/700/400/$doregex[stream]</page>
 			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
 			<referer>http://www.fstream.me</referer>
 			</regex>
 		<regex>
 			<name>stream</name>
-			<expres>fid="(.*?)"</expres>
+			<expres>fid="([^"]+)</expres>
 			<page>http://www.fstream.me/sharedcdn/sharedcdnEmbed.js?channel=$doregex[canal]</page>
 			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
 			<referer>http://www.fstream.me</referer>
@@ -1867,18 +1867,34 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/21616.h
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  <item>
 <title>[B]Multicanal[/B] TikiTaka 01 [I]* [/I]</title>
 <link>$doregex[url]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64; rv:56.0) Gecko/20100101 Firefox/56.0&amp;Referer=http://static.castto.me</link>
 <regex>
 <name>url</name>
-<expres><![CDATA[source src="(.*?)"]]></expres>
+<expres><![CDATA[source src="([^"]+)]]></expres>
 <page>http://static.castto.me/embedlivesrvjs.php?channel=$doregex[getid]&amp;vw=720&amp;vh=420</page>
 <referer>http://estadionline.ml/canal1.php</referer>
 </regex>
 <regex>
 <name>getid</name>
-<expres><![CDATA[fid="(.*?)"]]></expres>
+<expres><![CDATA[fid="([^"]+)]]></expres>
 <page>http://estadionline.ml/canal1.php</page>
 <referer>http://estadionline.ml/canal1.php</referer>
 </regex>	 
@@ -1891,13 +1907,13 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/21616.h
 <link>$doregex[url]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64; rv:56.0) Gecko/20100101 Firefox/56.0&amp;Referer=http://static.castto.me</link>
 <regex>
 <name>url</name>
-<expres><![CDATA[source src="(.*?)"]]></expres>
+<expres><![CDATA[source src="([^"]+)]]></expres>
 <page>http://static.castto.me/embedlivesrvjs.php?channel=$doregex[getid]&amp;vw=720&amp;vh=420</page>
 <referer>http://estadionline.ml/canal1.php</referer>
 </regex>
 <regex>
 <name>getid</name>
-<expres><![CDATA[fid="(.*?)"]]></expres>
+<expres><![CDATA[fid="([^"]+)]]></expres>
 <page>http://estadionline.ml/canal2.php</page>
 <referer>http://estadionline.ml/canal2.php</referer>
 </regex>
@@ -1908,7 +1924,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/21616.h
 <link>$doregex[url]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64; rv:56.0) Gecko/20100101 Firefox/56.0&amp;Referer=http://static.castto.me</link>
 <regex>
 <name>url</name>
-<expres><![CDATA[source src="(.*?)"]]></expres>
+<expres><![CDATA[source src="([^"]+)]]></expres>
 <page>http://static.castto.me/embedlivesrvjs.php?channel=953690581&amp;vw=720&amp;vh=420</page>
 <referer>http://estadionline.ml/canal1.php</referer>
 </regex>
@@ -2041,7 +2057,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/21616.h
 </regex>
 <regex>
 <name>get-url</name>
-<expres>allowfullscreen\ssrc="(.*?)"</expres>
+<expres>allowfullscreen\ssrc="([^"]+)</expres>
 <page>http://www.verliga.net/live/verliga1.php</page>
 <referer>http://www.verliga.net/verliga.html</referer>
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
@@ -2068,7 +2084,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/21616.h
 </regex>
 <regex>
 <name>get-url</name>
-<expres>allowfullscreen\ssrc="(.*?)"</expres>
+<expres>allowfullscreen\ssrc="([^"]+)</expres>
 <page>http://www.verliga.net/live/verliga2.php</page>
 <referer>http://www.verliga.net/verliga.html</referer>
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
@@ -2089,7 +2105,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/21616.h
 </regex>
 <regex>
 <name>get-url</name>
-<expres>allowfullscreen\ssrc="(.*?)"</expres>
+<expres>allowfullscreen\ssrc="([^"]+)</expres>
 <page>http://www.verliga.net/live/verliga3.php</page>
 <referer>http://www.verliga.net/verliga.html</referer>
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
@@ -2112,7 +2128,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/21616.h
 </regex>
 <regex>
 <name>get-url</name>
-<expres>allowfullscreen\ssrc="(.*?)"</expres>
+<expres>allowfullscreen\ssrc="([^"]+)</expres>
 <page>http://www.verliga.net/live/verliga4.php</page>
 <referer>http://www.verliga.net/verliga.html</referer>
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
