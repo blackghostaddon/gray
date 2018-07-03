@@ -1628,9 +1628,9 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[makelist2.param2]  Server:[makelist.param1]</title>
+<title>[B][makelist2.param2][/B]  Server:[makelist.param1]</title>
 <link>$doregex[id3]</link>
-<thumbnail>[makelist2.param3]</thumbnail>
+<thumbnail>[makelist2.param1]</thumbnail>
 ]]></listrepeat>
 <expres><![CDATA[data-lazy-src="(.*?)"]]></expres>
 <page>[makelist2.param3]</page>
