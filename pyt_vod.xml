@@ -1502,14 +1502,16 @@ def GetLSProData(page_data,Cookie_Jar,m):
   <thumbnail>[makelist2.param3]</thumbnail>
 <fanart>[makelist2.param3]</fanart>
 ]]></listrepeat>
-<expres><![CDATA[thumb_title">(.*?)Watch[\w\W\s]{0,35}href="(.*?)".*?src="(.*?)"]]></expres>
+<expres><![CDATA[thumb_title">(.*?)<[\w\W\s]{0,25}href="(.*?)".*?src="(.*?)"]]></expres>
 <page>http://www.seehd.pl/page/[makelist0.param1]/</page>
 <referer>http://www.seehd.pl</referer>
 <agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36</agent>
 <cookieJar>$doregex[createCFCookie]</cookieJar>
 </regex>
-	 
-	 
+
+
+
+
 <regex>
         <name>createCFCookie</name>
         <expres></expres>
