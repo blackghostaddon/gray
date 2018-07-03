@@ -1175,13 +1175,50 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
+<item>
+
+<title>[B]GNULA[/B]   </title>
+
+<urlsolve>$doregex[enlace]</urlsolve>
+
+<regex>
+<name>enlace</name>
+<expres>href="(https:\/\/streamango.*?)"</expres>
+<page>http://gnula.nu/crimen/ver-8-days-2014-online/</page>
+</regex>
+
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
+
+</item>
 
 
 
 
-<itm>
-<title>[B]GNULA[/B] [Latino + Castellano]   </title>
-<link>$doregex[makelist2]</link>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
