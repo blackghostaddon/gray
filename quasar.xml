@@ -1778,4 +1778,66 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
  
  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+<item>
+<title>     [B]PirateBay[/B]  Buscar </title>
+<link>$doregex[makelist]</link>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+   <title>[makelist.param3]</title>
+
+    <link>plugin://plugin.video.quasar/play?uri=[makelist.param4]</link>
+ <thumbnail>[makelist.param2]</thumbnail>
+]]></listrepeat>
+<expres>class="detName.*?href="(.*?)".*?title="(.*?)">(.*?)<[\w\W\s]{0,20}href=\"(.*?)\"</expres>
+<page>https://thepiratebay.org/search/$doregex[buscaralgo]/0/99/0</page>
+</regex>
+
+<regex>
+<name>buscaralgo</name>
+<expres><![CDATA[#$pyFunction
+import xbmc
+import xbmcaddon
+import xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+    dialog = xbmcgui.Dialog()
+    d = dialog.input('Buscar Pelicula: ejemplo: Batman', type=xbmcgui.INPUT_ALPHANUM).replace(" ", "%20")
+    return d
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
+
+</item>
+
+ 
+ 
+ 
+ 
+ 
+ 
 
