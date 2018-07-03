@@ -1628,13 +1628,11 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page>http://www.cinetux.io/idioma/latino/</page>
 </regex>
 
- 
- 
- 
+  
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>OPCION [makelist.param2]</title>
+<title>[makelist2.param2]  Server:[makelist.param1]</title>
 <link>$doregex[id3]</link>
 <thumbnail>[makelist2.param3]</thumbnail>
 ]]></listrepeat>
