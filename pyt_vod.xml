@@ -1474,102 +1474,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
   </item>
 
 
-
-
-
-
- <item>
- <title>[B]SEEHD CLUB[/B]    VO    </title>
-
-
- <link>$doregex[makelist0]</link>
-
-<regex>
-<name>makelist0</name>
-<listrepeat><![CDATA[
-<title>Pagina [makelist0.param1]</title>
-<link>$doregex[makelist2]</link>
-]]></listrepeat>
-<expres>'(.*?)'</expres>
-<page>'1''2''3''4''5''6''7''8''9''10''11''12''13''14''15''16''17''18''19''20''21''22''23''24''25'</page>
-</regex>
-
-<regex>
-<name>makelist2</name>
-<listrepeat><![CDATA[
-   <title>[makelist2.param1] </title>
- <link>$doregex[makelist3]</link>
-  <thumbnail>[makelist2.param3]</thumbnail>
-<fanart>[makelist2.param3]</fanart>
-]]></listrepeat>
-<expres><![CDATA[thumb_title">(.*?)<[\w\W\s]{0,25}href="(.*?)".*?src="(.*?)"]]></expres>
-<page>http://www.seehd.pl/page/[makelist0.param1]/</page>
-<referer>http://www.seehd.pl</referer>
-<agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36</agent>
-<cookieJar>$doregex[createCFCookie]</cookieJar>
-</regex>
-
-
-
-
-<regex>
-        <name>createCFCookie</name>
-        <expres></expres>
-        <page>$pyFunction:cloudflare.createCookie('http://www.seehd.pl',Cookie_Jar,'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36')</page>
-        <cookieJar></cookieJar>
-</regex>
-
-
-
-
-
-
- <regex>
-<name>makelist3</name>
-<listrepeat><![CDATA[
-<SetViewMode>55</SetViewMode>
-<title> [makelist2.param1]  -  server:[makelist3.param1]  </title>
-<link>$doregex[id3]</link>
- <thumbnail>[makelist2.param3]</thumbnail>
-<fanart>[makelist2.param3]</fanart>
-]]></listrepeat>
-<expres><![CDATA[=\"(https://www.rapidvideo.*?|http://gamovideo.*?|https://vidoza.*?|https://kingvid.*?|https://openload.*?|https://streamango.*?|http://streamin.*?|http://streamcloud.*?|http://uptobox.*?|https://rapidvideo.*?)"]]></expres>
-<page>[makelist2.param2]</page>
-<referer>http://www.seehd.pl/</referer>
-<agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36</agent>
-<cookieJar>$doregex[createCFCookie]</cookieJar>
-</regex>
-
-<regex>
-        <name>createCFCookie</name>
-        <expres></expres>
-        <page>$pyFunction:cloudflare.createCookie('http://www.seehd.pl/',Cookie_Jar,'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36')</page>
-        <cookieJar></cookieJar>
-</regex>
-
-
-<regex>
-<name>id3</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m):
-    import urlresolver
-    url = '[makelist3.param1]'
-    try:
-        u = urlresolver.resolve(url)
-    except:
-        u = 'http://adryantv.org/error.mp4'
-    return u
-]]></expres>
-<page></page>
-</regex>
-
-
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
-
-</item>
-
-
-
+  
+  
 
 
 
@@ -2961,7 +2867,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	
 	
 	
-<item>
+<iem>
 <title>[B]ESTRENOS  [/B]</title>
 <link>$doregex[makelist0]</link>
 
