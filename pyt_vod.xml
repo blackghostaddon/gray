@@ -1561,7 +1561,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[makelist2.param3] [makelist.param2]</title>
+<title>[makelist2.param3] [makelist.param2]  [I][makelist.param1] [/I]</title>
 <link>$doregex[id3]</link>
 <thumbnail>[makelist2.param3]</thumbnail>
 ]]></listrepeat>
@@ -1593,18 +1593,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-
-<regex>
-<name>makelist2</name>
-<listrepeat><![CDATA[
-<SetwatchMode>55</SetwatchMode>
-<title>[makelist2.param2] </title>
-<link>$doregex[makelist]</link>
-<thumbnail>[makelist2.param2]</thumbnail>
-]]></listrepeat>
-<expres><![CDATA[href="(.*?)"[\w\W\s]{0,150}src="(.*?)"[\w\W\s]{0,150}Title">(.*?)<]]></expres>
-<page>http://www.cuevana3.com/$doregex[select]</page>
-</regex>
 
 
 <regex>
