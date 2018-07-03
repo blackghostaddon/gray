@@ -5,6 +5,23 @@
 <items>
 
 
+  <item>
+<title>[B]Peliculas Sr.Regio[/B] [I]  [/I] </title>
+<link>http://ignora.me</link>
+<externallink>http://srregio.xyz/IPTV/regioflix.m3u</externallink>
+<fanart>http://fotonin.com/data_images/out/5/776482-cool-movie-wallpaper.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail>
+<info></info>
+</item>
+
+  <item>
+<title>[B]Peliculas TecnoTV[/B] [I]  [/I] </title>
+<link>http://ignora.me</link>
+<externallink>http://tecnotv.xyz/peliculas.m3u</externallink>
+<fanart>http://fotonin.com/data_images/out/5/776482-cool-movie-wallpaper.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail>
+<info></info>
+</item>
 
 
 
@@ -615,6 +632,9 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	
 	
 	
+	
+	
+	
 <item>
 <title>[B]ESTRENOS[/B]  [AquiPelis] Audio Latino *</title>
 <link>$doregex[makelist2]</link>
@@ -941,7 +961,48 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	
 	
 
+   <item>
+<title>[B]CINEVALL[/B]   Categorias  </title>
+  <link>$doregex[makelist3]</link>
 
+
+   <regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+<title>[makelist3.param2]</title>
+ <link>$doregex[finalURL]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64; rv:56.0) Gecko/20100101 Firefox/56.0&amp;Referer=http://cine.cinevall.club</link>
+ <regex>
+<name>finalURL</name>
+<expres>file: \'(.*?)\'</expres>
+<page>http://www.cinevall-online.com/[makelist3.param1].html</page>
+<referer>http://www.cinevall.club/estrenos.html</referer>
+</regex>
+<thumbnail>http://www.cinevall-online.com/[makelist3.param3]</thumbnail>
+ </item>
+]]></listrepeat>
+<expres>href="(.*?).html.*?text:\s\'(.*?)\&.*?src="(.*?)"</expres>
+<page>http://www.cinevall-online.com/$doregex[select].html</page>
+</regex>
+
+
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import xbmcgui
+  dialog = xbmcgui.Dialog()
+  ret = dialog.select('Elige una Seccion ', ['estrenos', 'accion', 'animacion', 'aventuras', 'comedias', 'dramas', 'ficcion', 'romanticas', 'terror', 'triller'])
+  lists = ['estrenos', 'accion', 'animacion', 'aventuras', 'comedias', 'dramas', 'ficcion', 'romanticas', 'terror', 'triller']
+  return lists[ret]
+]]></expres>
+ <page></page>
+ </regex>
+
+
+
+
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
+ </item>
 
 
  
