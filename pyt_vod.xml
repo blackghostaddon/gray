@@ -950,7 +950,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
-<title>[B]BASSFOX WEB[/B] [I] Categorias[/I] </title>
+<title>[B]BASSFOX WEB[/B]   Categorias  </title>
  <link>$doregex[makelist1]</link>
 
  <regex>
@@ -1029,7 +1029,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
-<title>[B]AQUIPELIS[/B]  RECIENTES [Audio Latino]    </title>
+<title>[B]AQUIPELIS[/B]  Recientes audio latino    </title>
 <link>$doregex[makelist2]</link>
 
   <regex>
@@ -1103,7 +1103,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
  <item>
- <title>[B]DESCARGAS 2020[/B] [Latino + Castellano]  </title>
+ <title>[B]DESCARGAS 2020[/B] Audio Latino - Castellano </title>
 
  <link>$doregex[makelist2]</link>
 
@@ -1292,7 +1292,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
  <item>
-<title>[B]SHURWEB [/B]     [Audio Castellano]    </title>
+<title>[B]SHURWEB [/B] Audio Castellano    </title>
 <link>$doregex[makelist3]</link>
 
 
@@ -1402,23 +1402,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-  <item>
-<title>[B]Peliculas Sr.Regio[/B] [I]  [/I] </title>
-<link>http://ignora.me</link>
-<externallink>http://srregio.xyz/IPTV/regioflix.m3u</externallink>
-<fanart>http://fotonin.com/data_images/out/5/776482-cool-movie-wallpaper.jpg</fanart>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail>
-<info></info>
-</item>
-
-  <item>
-<title>[B]Peliculas TecnoTV[/B] [I]  [/I] </title>
-<link>http://ignora.me</link>
-<externallink>http://tecnotv.xyz/peliculas.m3u</externallink>
-<fanart>http://fotonin.com/data_images/out/5/776482-cool-movie-wallpaper.jpg</fanart>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail>
-<info></info>
-</item>
 
 
 
@@ -1430,7 +1413,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
  <item>
-<title>[B]All Peliculas  Estrenos[/B]</title>
+<title>[B]ALL PELICULAS[/B] Estrenos</title>
 <link>$doregex[makelist3]</link>
 
 
@@ -1534,7 +1517,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
  <itEm>
-<title>[B]UltraPeliculas HD[/B] Estrenos </title>
+<title>[B]ULTRAPELICULAS HD[/B] Estrenos </title>
 <link>$doregex[makelist2]</link>
 
 <regex>
@@ -1886,7 +1869,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
-<title>[B]Pelis-Locura[/B] [Castellano] </title>
+<title>[B]PELIS LOCURA[/B] Castellano </title>
 
 <link>$doregex[makelist2]</link>
 
