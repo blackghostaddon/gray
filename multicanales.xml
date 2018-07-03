@@ -708,7 +708,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://telerium.tv/embed/25018.ht
 <link>$doregex[get-id]</link>
 <regex>
 <name>get-id</name>
-<expres>file:"(.*?)"</expres>
+<expres>file:"([^"]+)</expres>
 <page>http://widestream.io/embed-7230</page>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
@@ -719,7 +719,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://telerium.tv/embed/25018.ht
 <link>$doregex[get-id]</link>
 <regex>
 <name>get-id</name>
-<expres>file:"(.*?)"</expres>
+<expres>file:"([^"]+)</expres>
 <page>http://widestream.io/embed-7231</page>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
@@ -785,7 +785,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://telerium.tv/embed/25018.ht
 <link>$doregex[get-id]</link>
 <regex>
 <name>get-id</name>
-<expres>file:"(.*?)"</expres>
+<expres>file:"([^"]+)</expres>
 <page>http://widestream.io/embed-23442</page>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
@@ -800,7 +800,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://telerium.tv/embed/25018.ht
 <link>$doregex[get-id]</link>
 <regex>
 <name>get-id</name>
-<expres>file:"(.*?)"</expres>
+<expres>file:"([^"]+)</expres>
 <page>http://widestream.io/embed-16968</page>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
@@ -812,7 +812,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://telerium.tv/embed/25018.ht
 <link>$doregex[get-id]</link>
 <regex>
 <name>get-id</name>
-<expres>file:"(.*?)"</expres>
+<expres>file:"([^"]+)</expres>
 <page>http://widestream.io/embed-24910</page>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
@@ -1032,7 +1032,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://telerium.tv/embed/25018.ht
 <link>$doregex[get-id]</link>
 <regex>
 <name>get-id</name>
-<expres>file:"(.*?)"</expres>
+<expres>file:"([^"]+)</expres>
 <page>http://widestream.io/embed-35642</page>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
