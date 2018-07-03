@@ -609,8 +609,14 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 	
 	
+	
+	
+	
+	
+	
+	
 <item>
-<title>[B]ESTRENOS[/B]  [AquiPelis] Audio Latino</title>
+<title>[B]ESTRENOS[/B]  [AquiPelis] Audio Latino *</title>
 <link>$doregex[makelist2]</link>
 
   <regex>
@@ -633,7 +639,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>[makelist2.param1]</thumbnail>
 <fanart>[makelist2.param1]</fanart>
 ]]></listrepeat>
-<expres>"(https://openload.*?|https://powvideo.*?|https://userscloud.*?|http://uptobox.*?)"</expres>
+<expres>"(https://openload.*?|https://powvideo.*?|https://userscloud.*?|https://uptobox.*?|https://streamango.*?|http://gamovideo.com.*?|https://www.rapidvideo.*?|https://streamplay.*?)"</expres>
 <page>[makelist2.param3]</page>
 <referer></referer>
 <cookieJar></cookieJar>
@@ -1046,7 +1052,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>[makelist2.param3]</thumbnail>
 <fanart>[makelist2.param3]</fanart>
 ]]></listrepeat>
-<expres>"(https://openload.*?|https://powvideo.*?|https://userscloud.*?|http://uptobox.*?)"</expres>
+<expres>"(https://openload.*?|https://powvideo.*?|https://userscloud.*?|https://uptobox.*?|https://streamango.*?|http://gamovideo.com.*?|https://www.rapidvideo.*?|https://streamplay.*?)"</expres>
 <page>[makelist2.param1]</page>
 <referer></referer>
 <cookieJar></cookieJar>
@@ -1097,7 +1103,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
  <item>
- <title>[B]DESCARGAS 2020[/B] [Latino + Castellano] **</title>
+ <title>[B]DESCARGAS 2020[/B] [Latino + Castellano] </title>
 
  <link>$doregex[makelist2]</link>
 
@@ -1105,15 +1111,18 @@ def GetLSProData(page_data,Cookie_Jar,m):
   <regex>
  <name>makelist2</name>
  <listrepeat><![CDATA[
- <title> [makelist2.param2]   </title>
+ <title> [makelist2.param1] --- [makelist2.param3]   </title>
  <link>$doregex[makelist3]</link>
  <thumbnail>[makelist2.param3]</thumbnail>
  <fanart>[makelist2.param3]</fanart>
 ]]></listrepeat>
- <expres>href="(.*?)".*?Descargar(.*?)gratis.*?src="(.*?)</expres>
+ <expres>href="([^"]+).*?Descargar(.*?)gratis.*?src="([^"]+)</expres>
  <page>$doregex[select]</page>
  </regex>
 
+ 
+ 
+ 
 <regex>
 <name>select</name>
 <expres><![CDATA[#$pyFunction
