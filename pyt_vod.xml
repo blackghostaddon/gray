@@ -1172,34 +1172,20 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-
 <item>
 
-<title>[B]GNULA[/B]  ** </title>
+<title>[B]GNULA[/B]    </title>
 
 <urlsolve>$doregex[enlace]</urlsolve>
-<link>NA</link>
+
 
 <regex>
 <name>enlace</name>
 <expres>href="(https:\/\/streamango.*?)"</expres>
 <page>http://gnula.nu/crimen/ver-8-days-2014-online/</page>
+<agent>Mozilla/5.0 (Windows NT 6.1; rv:32.0) Gecko/20100101 Firefox/32.0</agent>
+<cookieJar>$doregex[createCFCookie]</cookieJar>
 </regex>
-
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
-
-</item>
-
-
-
-
-
-<item>
-
-<title>[B]GNULA[/B] coki  </title>
-
-<urlsolve>$doregex[enlace]</urlsolve>
 
 <regex>
 <name>createCFCookie</name>
@@ -1208,19 +1194,9 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <cookieJar></cookieJar>
 </regex>
 
-<regex>
-<name>enlace</name>
-<expres>href="(https:\/\/streamango.*?)"</expres>
-<page>http://gnula.nu/crimen/ver-8-days-2014-online/</page>
-<agent>Mozilla/5.0 (Windows NT 6.1; rv:32.0) Gecko/20100101 Firefox/32.0</agent>
-<cookieJar>$doregex[createCFCookie]</cookieJar>
-<ignorecache />
-</regex>
-
 	
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail>
 <fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
-
 </item>
 
 
