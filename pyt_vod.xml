@@ -1173,13 +1173,12 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-
-
 <item>
 
-<title>[B]GNULA[/B]   </title>
+<title>[B]GNULA[/B]  ** </title>
 
 <urlsolve>$doregex[enlace]</urlsolve>
+<link>NA</link>
 
 <regex>
 <name>enlace</name>
@@ -1195,6 +1194,54 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
+
+<item>
+
+<title>[B]GNULA[/B] coki  </title>
+
+<urlsolve>$doregex[enlace]</urlsolve>
+
+<regex>
+<name>createCFCookie</name>
+<expres></expres>
+<page>$pyFunction:cloudflare.createCookie('http://gnula.nu',Cookie_Jar,'Mozilla/5.0 (Windows NT 6.1; rv:14.0) Gecko/20100101 Firefox/14.0.1')</page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>enlace</name>
+<expres>href="(https:\/\/streamango.*?)"</expres>
+<page>http://gnula.nu/crimen/ver-8-days-2014-online/</page>
+<agent>Mozilla/5.0 (Windows NT 6.1; rv:32.0) Gecko/20100101 Firefox/32.0</agent>
+<cookieJar>$doregex[createCFCookie]</cookieJar>
+<ignorecache />
+</regex>
+
+	
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
+
+</item>
+
+
+
+<item>
+    <title>cloudflare test</title>
+    <link>$doregex[getmainPage]|User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36</link>
+    <regex>
+        <name>createCFCookie</name>
+        <expres></expres>
+        <page>$pyFunction:cloudflare.createCookie('http://www.stream4free.pro/south-park-hd',Cookie_Jar,'Mozilla/5.0 (Windows NT 6.1; rv:14.0) Gecko/20100101 Firefox/14.0.1')</page>
+        <cookieJar></cookieJar>
+    </regex>
+    <regex>
+        <name>getmainPage</name>
+        <expres>source src="(.*?)"</expres>
+        <page>http://www.stream4free.pro/south-park-hd</page>
+        <cookieJar>$doregex[createCFCookie]</cookieJar>
+        <ignorecache />
+    </regex>
+</item>
 
 
 
