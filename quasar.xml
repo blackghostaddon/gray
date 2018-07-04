@@ -88,7 +88,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 </regex>
 ]]></listrepeat>
-<expres><![CDATA[peli-descargar-torrent-(.*?)-(.*?)html.*?gray\;\'>(.*?)<]]></expres>
+<expres><![CDATA[peli-descargar-torrent-(.*?)-(.*?).htm.*?gray\;\'>(.*?)<]]></expres>
 <page>http://www.mejortorrent.com/secciones.php?sec=buscador&amp;valor=$doregex[search]</page>
 </regex>
 
