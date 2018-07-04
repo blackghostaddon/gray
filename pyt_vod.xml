@@ -1344,9 +1344,9 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <listrepeat><![CDATA[
 <title>[makelist3.param1] ([makelist3.param1]) </title>
 <link>$doregex[makelist2]</link>
-<thumbnail>http://allpeliculas.com/source/movies/poster/tt[makelist3.param4]/thumbs/poster-1.jpg</thumbnail>
+<thumbnail>http://allpeliculas.com/source/movies/poster/[makelist3.param4]/thumbs/poster-1.jpg</thumbnail>
 ]]></listrepeat>
-<expres><![CDATA[\"title\"\:\"(.*?)\".*?origin_name\"\:\"(.*?)\".*?slug\"\:\"(.*?)\".*?imdb_id\"\:\"nm(.*?)\"]]></expres>
+<expres><![CDATA[\"title\"\:\"(.*?)\".*?origin_name\"\:\"(.*?)\".*?slug\"\:\"(.*?)\".*?img_dir\"\:\"(tt.*?)\"]]></expres>
 <page>http://allpeliculas.com/movies/newmovies?page=1</page>
 </regex>
 
