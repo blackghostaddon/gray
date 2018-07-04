@@ -1347,8 +1347,23 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>http://allpeliculas.com/source/movies/poster/[makelist3.param4]/thumbs/poster-1.jpg</thumbnail>
 ]]></listrepeat>
 <expres><![CDATA[\"title\"\:\"(.*?)\".*?origin_name\"\:\"(.*?)\".*?slug\"\:\"(.*?)\".*?img_dir\"\:\"(tt.*?)\"]]></expres>
-<page>http://allpeliculas.com/movies/newmovies?page=1</page>
+<page>http://allpeliculas.com/movies/newmovies?page=$doregex[select]</page>
 </regex>
+
+
+
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import xbmcgui
+  dialog = xbmcgui.Dialog()
+  ret = dialog.select('Elige una pagina ', ['Pagina 1', 'Pagina 2', 'Pagina 3', 'Pagina 4', 'Pagina 5', 'Pagina 6', 'Pagina 7', 'Pagina 8', 'Pagina 9', 'Pagina 10'])
+  lists = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10']
+  return lists[ret]
+]]></expres>
+ <page></page>
+ </regex>
 
 
 
