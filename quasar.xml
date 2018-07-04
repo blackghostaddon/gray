@@ -17,7 +17,7 @@
 
 
 <item>
-<title>     [B] BUSCADOR [/B]  GranTorrent  ** Castellano </title>
+<title>     [B] BUSCADOR [/B]  GranTorrent Castellano </title>
 <link>$doregex[makelist2]</link>
 
 
@@ -68,16 +68,13 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 
 
-alt="(.*?)".*?td>\n<td>(.*?)<.*?\n<td>(.*?)<.*?\n.*?href="(.*?torrent)"
-
-
 
 
 
 
 
 <item>
-<title>     [B] BUSCADOR [/B]  ElMejorTorrent   Castellano </title>
+<title>     [B] BUSCADOR [/B]  ElMejorTorrent Castellano </title>
 <link>$doregex[makelist2]</link>
 
 
@@ -91,9 +88,10 @@ alt="(.*?)".*?td>\n<td>(.*?)<.*?\n<td>(.*?)<.*?\n.*?href="(.*?torrent)"
 
 </regex>
 ]]></listrepeat>
-<expres><![CDATA[peli-descargar-torrent-(.*?)-.*?darkblue\'>(.*?)<.*?gray\;\'>(.*?)<]]></expres>
+<expres><![CDATA[peli-descargar-torrent-(.*?)-(.*?)html.*?gray\;\'>(.*?)<]]></expres>
 <page>http://www.mejortorrent.com/secciones.php?sec=buscador&amp;valor=$doregex[search]</page>
 </regex>
+
 
 
 
