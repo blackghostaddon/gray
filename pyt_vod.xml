@@ -1140,7 +1140,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
  <item>
- <title>[B]DESCARGAS 2020[/B] Audio Latino - Castellano </title>
+ <title>[B]DESCARGAS 2020[/B] Audio Latino - Castellano * </title>
 
  <link>$doregex[makelist2]</link>
 
@@ -1188,11 +1188,12 @@ def GetLSProData(page_data,Cookie_Jar,m):
  <expres><![CDATA[#$pyFunction
  def GetLSProData(page_data,Cookie_Jar,m):
      import urlresolver
+	 import resolveurl
      url = '[makelist3.param1]'
      try:
          u = urlresolver.resolve(url)
      except:
-         u = 'http://adryantv.org/error.mp4'
+         u = resolveurl.resolve(url)
      return u
  ]]></expres>
  <page></page>
