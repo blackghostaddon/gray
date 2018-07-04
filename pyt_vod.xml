@@ -612,7 +612,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	
 	
 <item>
-<title>[B]ESTRENOS[/B]  [AquiPelis] Audio Latino *</title>
+<title>[B]ESTRENOS[/B]  [AquiPelis] Audio Latino **</title>
 <link>$doregex[makelist2]</link>
 
   <regex>
@@ -622,7 +622,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[makelist]</link>
 <thumbnail>[makelist2.param1]</thumbnail>
 ]]></listrepeat>
-<expres>mostrar_video.*?src='(.*?)'.*?alt="(.*?)online[\w\W\s]{0,240}href="(.*?)"</expres>
+<expres>ml-item[\w\W\s]{0,16}href="([^"]+).*?title="([^"]+)[\w\W\s]{0,11}data-original="([^"]+)</expres>
 <page>https://aquipelis.net/category/peliculas-estrenos/</page>
 </regex>
 
@@ -632,11 +632,11 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <listrepeat><![CDATA[
 <SetwatchMode>55</SetwatchMode><title>[makelist2.param2]     server/[makelist.param1]</title>
  <link>$doregex[id3]</link>
-<thumbnail>[makelist2.param1]</thumbnail>
-<fanart>[makelist2.param1]</fanart>
+<thumbnail>[makelist2.param3]</thumbnail>
+<fanart>[makelist2.param3]</fanart>
 ]]></listrepeat>
 <expres>"(https://openload.*?|https://powvideo.*?|https://userscloud.*?|https://uptobox.*?|https://streamango.*?|http://gamovideo.com.*?|https://www.rapidvideo.*?|https://streamplay.*?)"</expres>
-<page>[makelist2.param3]</page>
+<page>[makelist2.param1]</page>
 <referer></referer>
 <cookieJar></cookieJar>
 </regex>
@@ -1140,7 +1140,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
  <item>
- <title>[B]DESCARGAS 2020[/B] Audio Latino - Castellano * </title>
+ <title>[B]DESCARGAS 2020[/B] Audio Latino - Castellano --</title>
 
  <link>$doregex[makelist2]</link>
 
@@ -1175,7 +1175,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  <name>makelist3</name>
  <listrepeat><![CDATA[
  <title> [makelist2.param2] server:[makelist3.param1]</title>
-  <link>$doregex[id3]</link>
+  <urlsolve>[makelist3.param1]</urlsolve>
  <thumbnail>[makelist2.param3]</thumbnail>
  <fanart>[makelist2.param3]</fanart>
  ]]></listrepeat>
