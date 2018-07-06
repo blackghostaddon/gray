@@ -1817,9 +1817,26 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
-<title>CineCalidad</title>
-<thumbnail></thumbnail>
+<title>CineCalidad LAtino</title>
+
+
+<link>$doregex[makelist0]</link>
+
+<regex>
+<name>makelist0</name>
+<listrepeat><![CDATA[
+<title>[makelist0.param3]</title>
 <link>$doregex[makelist]</link>
+<thumbnail>[makelist0.param2]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[href="(.*?)"[\w\W\s]{0,35}src="(.*?)"[\w\W\s]{0,30}alt="(.*?)"[\w\W\s]{0,3}title="(.*?)"]]></expres>
+<page>http://www.cinecalidad.to/</page>
+</regex>
+
+
+
+
+
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
@@ -1856,6 +1873,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
     srcs.append((embed.replace('Online',''), embeds[embed]%dec(sdata)))
   return srcs
 ]]></expres>
-<page>http://www.cinecalidad.to/pelicula/los-inquilinos-2017-online-descarga/</page>
+<page>[makelist0.param1]</page>
 </regex>
 </item>
