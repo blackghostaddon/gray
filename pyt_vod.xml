@@ -257,9 +257,25 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<iem>
-<title>[B]ESTRENOS LATINOS  OFF [/B]</title>
-<link>$doregex[makelist]</link>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>ESTRENOS LATINO</title>
+
+
+<link>$doregex[makelist0]</link>
 
 <regex>
 <name>makelist0</name>
@@ -274,13 +290,14 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-  
+
+
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
- <title>[makelist0.param3] - server:[makelist.param1]</title>
- <urlsolve>[makelist.param2]</urlsolve>
- <thumbnail>[makelist0.param2]</thumbnail>
+   <title>[makelist.param1]</title>
+   <urlsolve>[makelist.param2]</urlsolve>
+   <thumbnail></thumbnail>
 ]]></listrepeat>
 <expres><![CDATA[#$pyFunction
 def GetLSProData(page_data,Cookie_Jar,m):
@@ -303,27 +320,24 @@ def GetLSProData(page_data,Cookie_Jar,m):
             'OnlineOpenload' : 'https://openload.co/f/%s',
             'OnlineStreamango' : 'https://streamango.com/f/%s',
             'OnlineRapidVideo' : 'https://www.rapidvideo.com/v/%s',
+            'OnlineMega': 'https://mega.nz/#!%s',
             'Trailer' : 'https://www.youtube.com/watch?v=%s'}
   srcs = []
-  items = re.findall('class="link.+?onlinelink"\s*service="([^"]+)"\s*data="([^"]+)"',page_data)
+  items = re.findall('class="link.+?onlinelink"\s*service="([^"]+)"\s*data="([^"]+)',page_data)
   for embed,sdata in items:
     srcs.append((embed.replace('Online',''), embeds[embed]%dec(sdata)))
   return srcs
 ]]></expres>
-<page>http://www.cinecalidad.to/pelicula/wonderstruck-el-museo-de-las-maravillas-2017-online-descarga/</page>
+<page>[makelist0.param1]</page>
 </regex>
 </item>
 
 
 
-	
-	
-	
 
-<iem>
-<title>[B]ESTRENOS ESPAÑA OFF[/B]</title>
+<item>
+<title>ESTRENOS ESPANA</title>
 <link>$doregex[makelist0]</link>
-
 
 <regex>
 <name>makelist0</name>
@@ -332,17 +346,20 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[makelist]</link>
 <thumbnail>[makelist0.param2]</thumbnail>
 ]]></listrepeat>
-<expres>href="(.*?)".*?src="(.*?)".*?alt="(.*?)".*?title="(.*?)"</expres>
-<page>http://www.cinecalidad.to/espana/</page>
+<expres><![CDATA[href="(.*?)"[\w\W\s]{0,35}src="(.*?)"[\w\W\s]{0,30}alt="(.*?)"[\w\W\s]{0,3}title="(.*?)"]]></expres>
+<page>http://www.cinecalidad.to/espana</page>
 </regex>
+
+
+
 
 
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
- <title>[makelist0.param3] - server:[makelist.param1]</title>
- <urlsolve>[makelist.param2]</urlsolve>
- <thumbnail>[makelist0.param2]</thumbnail>
+   <title>[makelist.param1]</title>
+   <urlsolve>[makelist.param2]</urlsolve>
+   <thumbnail></thumbnail>
 ]]></listrepeat>
 <expres><![CDATA[#$pyFunction
 def GetLSProData(page_data,Cookie_Jar,m):
@@ -351,7 +368,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
     d=''
     strdata=strdata.split(' ')
     for strchar in strdata:
-        d += chr(int(strchar)-5)
+        d += chr(int(strchar)-4)
     return d
 
   embeds = {'OnlineUpToBox' : 'https://uptobox.com/%s',
@@ -365,6 +382,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
             'OnlineOpenload' : 'https://openload.co/f/%s',
             'OnlineStreamango' : 'https://streamango.com/f/%s',
             'OnlineRapidVideo' : 'https://www.rapidvideo.com/v/%s',
+            'OnlineMega': 'https://mega.nz/#!%s',
             'Trailer' : 'https://www.youtube.com/watch?v=%s'}
   srcs = []
   items = re.findall('class="link.+?onlinelink"\s*service="([^"]+)"\s*data="([^"]+)',page_data)
@@ -376,12 +394,13 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 </item>
 
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
+
 	
 	
 	
@@ -1814,65 +1833,3 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-
-
-<item>
-<title>CineCalidad LAtino</title>
-
-
-<link>$doregex[makelist0]</link>
-
-<regex>
-<name>makelist0</name>
-<listrepeat><![CDATA[
-<title>[makelist0.param3]</title>
-<link>$doregex[makelist]</link>
-<thumbnail>[makelist0.param2]</thumbnail>
-]]></listrepeat>
-<expres><![CDATA[href="(.*?)"[\w\W\s]{0,35}src="(.*?)"[\w\W\s]{0,30}alt="(.*?)"[\w\W\s]{0,3}title="(.*?)"]]></expres>
-<page>http://www.cinecalidad.to/</page>
-</regex>
-
-
-
-
-
-<regex>
-<name>makelist</name>
-<listrepeat><![CDATA[
-   <title>[makelist.param1]</title>
-   <urlsolve>[makelist.param2]</urlsolve>
-   <thumbnail></thumbnail>
-]]></listrepeat>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m):
-  import re
-  def dec(strdata):
-    d=''
-    strdata=strdata.split(' ')
-    for strchar in strdata:
-        d += chr(int(strchar)-4)
-    return d
-
-  embeds = {'OnlineUpToBox' : 'https://uptobox.com/%s',
-            'OnlineYourUpload' : 'https://www.yourupload.com/watch/%s',
-            'TheVideoMe' : 'https://thevideo.me/embed-%s.html',
-            'OnlineFilesCDN' : 'https://filescdn.com/%s',
-            'OnlineGD' : '/protect/gdredirect.php?l=%s',
-            'OnlineUsersCloud' : 'https://userscloud.com/%s',
-            'OnlineUsersFiles' : 'https://usersfiles.com/%s',
-            'OnlineOkRu' : 'https://ok.ru/video/%s',
-            'OnlineOpenload' : 'https://openload.co/f/%s',
-            'OnlineStreamango' : 'https://streamango.com/f/%s',
-            'OnlineRapidVideo' : 'https://www.rapidvideo.com/v/%s',
-            'OnlineMega': 'https://mega.nz/#!%s',
-            'Trailer' : 'https://www.youtube.com/watch?v=%s'}
-  srcs = []
-  items = re.findall('class="link.+?onlinelink"\s*service="([^"]+)"\s*data="([^"]+)',page_data)
-  for embed,sdata in items:
-    srcs.append((embed.replace('Online',''), embeds[embed]%dec(sdata)))
-  return srcs
-]]></expres>
-<page>[makelist0.param1]</page>
-</regex>
-</item>
