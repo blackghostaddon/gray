@@ -3573,3 +3573,14 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <externallink>https://raw.githubusercontent.com/blackghostaddon/gray/master/projectx.xml</externallink>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/series.png</thumbnail>
 </item>
+
+
+
+ <item>
+<title>AC  </title>
+<link>http://ignora.me</link>
+<externallink>https://raw.githubusercontent.com/blackghostaddon/gray/master/favoritas.xml</externallink>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/series.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
+</item>
+
+	
