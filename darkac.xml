@@ -503,7 +503,7 @@
 
 <item>
 <title>[B] Peliculas  bby :*[/B]    </title>
-<link>$doregex[makelist2]</link>
+<link>$doregex[makelist]</link>
 
 
 
