@@ -494,8 +494,8 @@
 
 
    <channel>
-<name>tu nube </name>
-<thumbnail>https://i.imgur.com/vk11sjl.jpg</thumbnail>
+<name>tu nube n_n </name>
+<thumbnail></thumbnail>
 <items> 
 
 
@@ -530,7 +530,7 @@ import re , requests ,json
 def GetLSProData(page_data,Cookie_Jar,m):
  
  ref = 'http://k-bagi.com/'
- url='[makelist2.param4]/[makelist.param2]'
+ url='http://k-bagi.com/bby_darkkitty/peliculas-671686/[makelist.param2]'
  headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': ref ,
             'X-Requested-With' : 'XMLHttpRequest' , 'Accept' : '*/*'}
  session = requests.Session()
