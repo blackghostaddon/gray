@@ -502,7 +502,7 @@
 
 
 <item>
-<title>[B] Peliculas :*[/B]    </title>
+<title>[B] Peliculas  bby :*[/B]    </title>
 <link>$doregex[makelist2]</link>
 
 
@@ -517,7 +517,7 @@
 	<fanart>[makelist2.param3]</fanart>
         ]]></listrepeat>
 <expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
-<page>http://diskokosmiko.mx/bby_darkKitty/peliculas-118260/list,1,15</page>
+<page>http://k-bagi.com/bby_darkkitty/peliculas-671686/list,1,15</page>
 <cookieJar></cookieJar>
 </regex>
 
@@ -529,7 +529,7 @@
 import re , requests ,json
 def GetLSProData(page_data,Cookie_Jar,m):
  
- ref = 'http://diskokosmiko.mx/'
+ ref = 'http://k-bagi.com/'
  url='[makelist2.param4]/[makelist.param2]'
  headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': ref ,
             'X-Requested-With' : 'XMLHttpRequest' , 'Accept' : '*/*'}
@@ -539,17 +539,17 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
  vfile , vtoken = re.findall('action/DownloadFile.*?fileId.*?value="(.*?)".*?Token".*?value="(.*?)"', r.text)[0]
  data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
- nr = requests.post('http://diskokosmiko.mx/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers,cookies=rv1 , data=data_a).text
+ nr = requests.post('http://k-bagi.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers,cookies=rv1 , data=data_a).text
  nrj=json.loads(nr)
  nr = nrj['Content']
  r2 = re.findall(r'(?s)value=\"(.*?)\"', nr)[0]
- data_a ={'__RequestVerificationToken': r2 , 'Username': 'josele89' , 'Password' : 'josele89'}
- nr1 = requests.post('http://diskokosmiko.mx/action/Account/Login', headers=headers,cookies = rv1 , data=data_a)
+ data_a ={'__RequestVerificationToken': r2 , 'Username': 'bby_darkkitty' , 'Password' : 'bblraven0626'}
+ nr1 = requests.post('http://k-bagi.com/action/Account/Login', headers=headers,cookies = rv1 , data=data_a)
  print nr1.headers['Set-Cookie']
  rasp = re.findall('ASPXAUTH_v2=(.*?);', nr1.headers['Set-Cookie'])[0]
  rv1['.ASPXAUTH_v2'] = rasp
  data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
- nr3 = requests.post('http://diskokosmiko.mx/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers, cookies = rv1 , data=data_a).text
+ nr3 = requests.post('http://k-bagi.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers, cookies = rv1 , data=data_a).text
  r3 = re.findall('DownloadUrl":"(.*?)"', nr3)[0]
  print r3
  return r3
