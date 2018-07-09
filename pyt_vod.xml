@@ -1762,7 +1762,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
-<title>buscar </title>
+<title>buscar pelicula </title>
 
 
 <link>$doregex[makelist0]</link>
@@ -1774,9 +1774,15 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[makelist]</link>
 <thumbnail>[makelist0.param2]</thumbnail>
 ]]></listrepeat>
-<expres><![CDATA[href="(.*?)"[\w\W\s]{0,35}src="(.*?)"[\w\W\s]{0,30}alt="(.*?)"[\w\W\s]{0,3}title="(.*?)"]]></expres>
+<expres><![CDATA[home_post_cont\spost_box[\w\W\s]{0,7}href="(.*?)"[\w\W\s]{0,32}src="(http.*?jpg)"[\w\W\s]{0,30}alt="(.*?)"]]></expres>
 <page>http://www.cinecalidad.to/?s=$doregex[buscar]</page>
 </regex>
+
+
+
+
+
+
 
 <regex>
 <name>buscar</name>
