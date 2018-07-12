@@ -2289,27 +2289,43 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/21616.h
 
 
 
+
+
+
+
+
+
+
+
 <item>
-    <title>footbie</title>
-    <link>$doregex[geturl]</link>
-    <regex>
+    <title>footbie regex</title>
+	
+<link>$doregex[makelist2]</link>
+
+
+  <regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title> [makelist2.param2]   </title>
+<link>$doregex[geturl]</link>
+<thumbnail>[makelist2.param3]</thumbnail>
+<fanart>[makelist2.param3]</fanart>
+]]></listrepeat>
+<expres><![CDATA[class="thumb-video[\w\W\s]{0,72}href="(.*?)"[\w\W\s]{0,36}img\salt="(.*?)"[\w\W\s]{0,2}src="(.*?)"]]></expres>
+<page>https://www.footbie.com/</page>
+</regex>
+
+	
+	<regex>
         <name>geturl</name>
         <expres>source src="(.*?)"</expres>
-        <page>https://www.footbie.com/video/croatia-vs-england-full-match-russia-2018-semifinal</page>
+        <page>[makelist2.param1]</page>
     </regex>
 </item>
 
 
 
-<item>
-    <title>footbie2</title>
-    <link>$doregex[geturl]|User-Agent=iPad</link>
-    <regex>
-        <name>geturl</name>
-        <expres>source src="(.*?)"</expres>
-        <page>https://www.footbie.com/video/croatia-vs-england-full-match-russia-2018-semifinal</page>
-    </regex>
-</item>
+
 
 
 
