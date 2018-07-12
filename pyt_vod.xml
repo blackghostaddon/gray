@@ -1761,8 +1761,26 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <item>
-<title>buscar pelicula </title>
+<title>[B]buscar pelicula [/B]</title>
 
 
 <link>$doregex[makelist0]</link>
@@ -1777,9 +1795,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <expres><![CDATA[home_post_cont\spost_box[\w\W\s]{0,7}href="(.*?)"[\w\W\s]{0,32}src="(http.*?jpg)"[\w\W\s]{0,30}alt="(.*?)"]]></expres>
 <page>http://www.cinecalidad.to/?s=$doregex[buscar]</page>
 </regex>
-
-
-
 
 
 
@@ -1840,7 +1855,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page>[makelist0.param1]</page>
 </regex>
 </item>
-
 
 
 
