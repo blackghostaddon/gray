@@ -2289,9 +2289,27 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/21616.h
 
 
 
+<item>
+    <title>footbie</title>
+    <link>$doregex[geturl]</link>
+    <regex>
+        <name>geturl</name>
+        <expres>source src="(.*?)"</expres>
+        <page>https://www.footbie.com/video/croatia-vs-england-full-match-russia-2018-semifinal</page>
+    </regex>
+</item>
 
 
 
+<item>
+    <title>footbie2</title>
+    <link>$doregex[geturl]|User-Agent=iPad</link>
+    <regex>
+        <name>geturl</name>
+        <expres>source src="(.*?)"</expres>
+        <page>https://www.footbie.com/video/croatia-vs-england-full-match-russia-2018-semifinal</page>
+    </regex>
+</item>
 
 
 
