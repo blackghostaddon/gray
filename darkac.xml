@@ -2279,16 +2279,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
  
 
-
-<regex>
-<name>tok</name>
-<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
-<page>http://diskokosmiko.mx/[lista.param1]</page>
-<referer>http://diskokosmiko.mx/</referer>
-<connection>keep-alive</connection>
-<cookieJar></cookieJar>
-</regex>
- 
   
 <regex><name>getUrl</name>
 <expres><![CDATA[#$pyFunction
@@ -2296,7 +2286,7 @@ import re , requests ,json
 def GetLSProData(page_data,Cookie_Jar,m):
  
  ref = 'http://diskokosmiko.mx/'
- url='http://diskokosmiko.mx[lista.param1]'
+ url='http://diskokosmiko.mx/jorge-garcia-luis/yo-soy-betty-la-fea-91266/[makelist.param2]'
  headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': ref ,
             'X-Requested-With' : 'XMLHttpRequest' , 'Accept' : '*/*'}
  session = requests.Session()
@@ -2323,15 +2313,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page></page>
 <cookieJar></cookieJar>
 </regex>
- 
-<regex>
-<name>tok2</name>
-<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
-<page>http://diskokosmiko.mx[lista.param1]</page>
-<referer>http://diskokosmiko.mx/</referer>
-<connection>keep-alive</connection>
-<cookieJar></cookieJar>
-</regex>
+
+
 <thumbnail>https://m.media-amazon.com/images/M/MV5BM2U4YzM5ZTItNGFmZi00MDRhLTgyMjUtZDJjMTI2ZmU5ZjNlXkEyXkFqcGdeQXVyMTcxNTYyMjM@._V1_.jpg</thumbnail>
 </item>
 
