@@ -1714,11 +1714,25 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <item>
 <title>[B]Multicanal[/B] VerLiga [I] PlusDeportes 1 [/I]</title>
-<link>$doregex[get-id]|Referer=http://www.verliga.net/live/verliga1.php&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
+<link>$doregex[get-id]|Referer=http://www.verliga1.net/live/verliga1.php&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
 <regex>
 <name>get-id</name>
 <expres>source: '(.*?)'</expres>
-<page>http://vergol.com/live1/plusdeportes1.php</page>
+<page>http://vergol.com/live1/plusdeportes1.php</page> 
+<referer>http://www.verliga.net/live/verliga1.php</referer>
+<agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/esp.jpg</thumbnail></item>
+
+
+
+<item>
+<title>[B]Multicanal[/B] VerLiga [I] PlusDeportes 2 [/I]</title>
+<link>$doregex[get-id]|Referer=http://www.verliga1.net/live/verliga1.php&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
+<regex>
+<name>get-id</name>
+<expres>source: '(.*?)'</expres>
+<page>http://vergol.com/live1/plusdeportes2.php</page> 
 <referer>http://www.verliga.net/live/verliga1.php</referer>
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
 </regex>
