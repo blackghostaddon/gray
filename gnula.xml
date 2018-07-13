@@ -739,10 +739,12 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <fanart>[makelist1.param3]</fanart>
 <thumbnail>[makelist1.param3]</thumbnail>
 ]]></listrepeat>
-<expres><![CDATA[domain=(http://gamovideo.*?|https://vidoza.*?|https://kingvid.*?|https://openload.*?|https://streamango.*?)"\s.*?title="(.*?)".*?span>(.*?)<.*?<td>(.*?)<.*?<td>(.*?)<]]></expres>
+<expres><![CDATA[domain=(http://gamovideo.*?|https://vidoza.*?|https://kingvid.*?|https://openload.*?|https://streamango.*?|https://streamplay.*?|https://1fichier.*?)"\s.*?title="(.*?)".*?span>(.*?)<.*?<td>(.*?)<.*?<td>(.*?)<]]></expres>
 <page>[makelist2.param1]</page>
 </regex>
 	
+	
+
 	
 	<regex>
 <name>id3</name>
