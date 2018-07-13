@@ -977,7 +977,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>makelist3</name>
 <listrepeat><![CDATA[
 <title>[makelist3.param2]</title>
- <link>$doregex[finalURL]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64; rv:56.0) Gecko/20100101 Firefox/56.0&amp;Referer=http://cine.cinevall.club</link>
+ <link>$doregex[finalURL]|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36&amp;Referer=http://www.cinevall-online.com/tuyamia.html</link>
  <regex>
 <name>finalURL</name>
 <expres>file: \'(.*?)\'</expres>
