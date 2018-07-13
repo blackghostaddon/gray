@@ -684,7 +684,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
-<title>[B]INKA SERIES [/B] u</title>
+<title>[B]INKA SERIES [/B] </title>
 
 <link>$doregex[makelist0]</link>
 
@@ -735,7 +735,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <listrepeat><![CDATA[
 <SetViewMode>55</SetViewMode>
 <title>[makelist1.param2] - [makelist2.param3]  | [B][makelist3.param4][/B]  [B][makelist3.param5][/B]  Server:[B][makelist3.param3][/B]        </title>
-<urlsolve>[makelist3.param1]</solve>
+<urlsolve>[makelist3.param1]</urlsolve>
 <fanart>[makelist1.param3]</fanart>
 <thumbnail>[makelist1.param3]</thumbnail>
 ]]></listrepeat>
