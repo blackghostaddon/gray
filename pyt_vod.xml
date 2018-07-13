@@ -272,7 +272,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
-<title>ESTRENOS LATINO</title>
+<title>[B]ESTRENOS LATINOS     [/B]</title>
 
 
 <link>$doregex[makelist0]</link>
@@ -330,6 +330,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 ]]></expres>
 <page>[makelist0.param1]</page>
 </regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail>
 </item>
 
 
@@ -345,7 +346,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
-<title>ESTRENOS ESPANA</title>
+<title>[B]ESTRENOS ESPAÑA     [/B]</title>
 <link>$doregex[makelist0]</link>
 
 <regex>
@@ -401,6 +402,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 ]]></expres>
 <page>[makelist0.param1]</page>
 </regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail>
 </item>
 
 
@@ -1780,7 +1782,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
-<title>[B]buscar pelicula [/B]</title>
+<title>[B]BUSCAR pelicula [/B]</title>
 
 
 <link>$doregex[makelist0]</link>
@@ -1796,9 +1798,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page>http://www.cinecalidad.to/?s=$doregex[buscar]</page>
 </regex>
 
-
-
-
 <regex>
 <name>buscar</name>
 <expres><![CDATA[#$pyFunction
@@ -1813,7 +1812,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page></page>
 <cookieJar></cookieJar>
 </regex>
-
 
 
 <regex>
