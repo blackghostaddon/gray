@@ -2032,7 +2032,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
-    <title>footbie Buscados</title>
+    <title>footbie Buscador</title>
 	
 <link>$doregex[makelist2]</link>
 
@@ -2056,7 +2056,7 @@ import xbmcaddon
 import xbmcgui
 def GetLSProData(page_data,Cookie_Jar,m):
     dialog = xbmcgui.Dialog()
-    d = dialog.input('Busca tu pelicula o serie favorita:', type=xbmcgui.INPUT_ALPHANUM).replace(" ", "+")
+    d = dialog.input('Busca evento:', type=xbmcgui.INPUT_ALPHANUM).replace(" ", "+")
     return d
 ]]></expres>
 <page></page>
