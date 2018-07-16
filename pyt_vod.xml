@@ -1852,27 +1852,30 @@ def GetLSProData(page_data,Cookie_Jar,m):
    <regex>
 <name>makelist2</name>
 <listrepeat><![CDATA[
-<title> [makelist2.param2]   </title>
+<title> [makelist2.param3]   </title>
  <link>$doregex[makelist3]</link>
- <fanart>[makelist2.param1]</fanart>
+ <fanart>[makelist2.param2]</fanart>
   <info>[makelist2.param4]</info>
   <thumbnail>[makelist2.param1]</thumbnail>
 ]]></listrepeat>
-<expres><![CDATA[poster[\w\W\s]{0,15}src="(.*?)" alt="(.*?)"[\w\W\s]{0,150}href="(.*?)"[\w\W\s]{0,550}texto">(.*?)<]]></expres>
+<expres><![CDATA[href="(.*?)"[\W\w\s]{0,10}class="image[\W\w\s]{0,10}src="(.*?)" alt="(.*?)"]]></expres>
 <page>https://www.peliculastoday.com</page>
-</regex>	
+</regex>
+
+
+
 		
   <regex>
 <name>makelist3</name>
 <listrepeat><![CDATA[
-<title>[makelist2.param2]      Server:[makelist3.param1]</title>
+<title>[makelist2.param3]      Server:[makelist3.param1]</title>
  <link>$doregex[id3]</link>
- <fanart>[makelist2.param1]</fanart>
+ <fanart>[makelist2.param2]</fanart>
   <info>[makelist2.param4]</info>
   <thumbnail>[makelist2.param1]</thumbnail>
 ]]></listrepeat>
 <expres><![CDATA[src=\"(https://streamango.*?|http://xvidstage.*?|http://uptobox.*?|https://openload.*?|https://userscloud.*?|https://ok.*?|https://uptostream.*?)"]]></expres>
- <page>[makelist2.param3]</page>
+ <page>[makelist2.param1]</page>
 <agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36</agent>
 </regex>
 
@@ -1896,23 +1899,38 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
  </item>
  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  <item>
-<title>[B]TUPELIHD[/B]  </title>
+<title>[B]TUPELIHD[/B] *  </title>
  <link>$doregex[makelist2]</link>
  
    <regex>
 <name>makelist2</name>
 <listrepeat><![CDATA[
-<title> [makelist2.param2]   </title>
+<title> [makelist2.param3]   </title>
  <link>$doregex[makelist3]</link>
- <fanart>[makelist2.param1]</fanart>
+ <fanart>[makelist2.param2]</fanart>
   <info>[makelist2.param4]</info>
-  <thumbnail>[makelist2.param1]</thumbnail>
+  <thumbnail>[makelist2.param2]</thumbnail>
 ]]></listrepeat>
-<expres><![CDATA[poster[\w\W\s]{0,15}src="(.*?)" alt="(.*?)"[\w\W\s]{0,150}href="(.*?)"[\w\W\s]{0,550}texto">(.*?)<]]></expres>
+<expres><![CDATA[href="(.*?)"[\w\W\s]{0,150}src="(.*?)"[\w\W\s]{0,150}"Title">(.*?)<]]></expres>
 <page>https://www.tupelihd.com</page>
-</regex>	
-		
+</regex>
+
+
+											
+											
+											
+											
+											
   <regex>
 <name>makelist3</name>
 <listrepeat><![CDATA[
@@ -1923,7 +1941,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
   <thumbnail>[makelist2.param1]</thumbnail>
 ]]></listrepeat>
 <expres><![CDATA[src=\"(https://streamango.*?|http://xvidstage.*?|http://uptobox.*?|https://openload.*?|https://userscloud.*?|https://ok.*?|https://uptostream.*?)"]]></expres>
- <page>[makelist2.param3]</page>
+ <page>[makelist2.param1]</page>
 <agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36</agent>
 </regex>
 
