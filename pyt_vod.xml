@@ -1844,7 +1844,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-
 <item>
 <title>[B]BUSCAR pelicula [/B]</title>
 
@@ -1858,7 +1857,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[makelist]</link>
 <thumbnail>[makelist0.param2]</thumbnail>
 ]]></listrepeat>
-<expres><![CDATA[home_post_cont\spost_box[\w\W\s]{0,7}href="(.*?)"[\w\W\s]{0,32}src="(http.*?jpg)"[\w\W\s]{0,30}alt="(.*?)"]]></expres>
+<expres><![CDATA[href="(.*?)"[\w\W\s]{0,35}src="(.*?)"[\w\W\s]{0,30}alt="(.*?)"[\w\W\s]{0,3}title="(.*?)"]]></expres>
 <page>http://www.cinecalidad.to/?s=$doregex[buscar]</page>
 </regex>
 
@@ -1870,12 +1869,15 @@ import xbmcaddon
 import xbmcgui
 def GetLSProData(page_data,Cookie_Jar,m):
     dialog = xbmcgui.Dialog()
-    d = dialog.input('Busca tu pelicula o serie favorita:', type=xbmcgui.INPUT_ALPHANUM).replace(" ", "+")
+    d = dialog.input('Busca tu pelicula:', type=xbmcgui.INPUT_ALPHANUM).replace(" ", "+")
     return d
 ]]></expres>
 <page></page>
 <cookieJar></cookieJar>
 </regex>
+
+
+
 
 
 <regex>
@@ -1916,6 +1918,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 ]]></expres>
 <page>[makelist0.param1]</page>
 </regex>
+
 </item>
 
 
