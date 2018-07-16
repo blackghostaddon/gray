@@ -20,12 +20,6 @@
 
 
 
-<item>
-<title>[B]RUSSIA 2018[/B]</title>
-<link>http://ignorame</link><thumbnail>https://vectors.pro/wp-content/uploads/2017/10/fifa-world-cup-2018-logo-vector.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
-<externallink>https://raw.githubusercontent.com/blackghostaddon/gray/master/russia.xml</externallink>
-<info>Opciones para disfrutar de la Copa del mundo de Futbol Russia 2018</info>
-</item>
 
 
 
@@ -39,6 +33,7 @@
 <title>Extratime</title>
 <link>http://ignorame</link><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/extratime.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 <externallink>https://raw.githubusercontent.com/blackghostaddon/gray/master/multicanales.xml</externallink>
+<info>Los mejores multicanales para ver eventos Deportivos.</info>
 </item>
 
 
@@ -48,6 +43,7 @@
 <externallink>https://raw.githubusercontent.com/blackghostaddon/gray/master/plexus.xml</externallink>
 <fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/acestream.png</thumbnail>
+<info>Canales  y eventos por Acestreams, necesitas tener instalado el addon Plexus, ademas si tienes Android tener la app acestream engine instalada y corriendo en segundo plano antes de visualizar un canal </info>
 </item>
 
 
@@ -55,6 +51,7 @@
 <title>Peliculas</title>
 <link>http://ignorame</link><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 <externallink>https://raw.githubusercontent.com/blackghostaddon/gray/master/pyt_vod.xml</externallink>
+<info>Peliculas por Streaming</info>
 </item>
 
 
@@ -69,6 +66,7 @@
 <title>Torrents [COLOR lightslategray] [/COLOR]</title>
 <link>http://ignorame</link><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 <externallink>https://raw.githubusercontent.com/blackghostaddon/gray/master/quasar.xml</externallink>
+<info>Mira Peliculas y series por Torrents; Necesitas el addon Quasar instalado.</info>
 </item>
 
 
