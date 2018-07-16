@@ -667,11 +667,12 @@ def GetLSProData(page_data,Cookie_Jar,m):
   <info>[makelist2.param4]</info>
   <thumbnail>[makelist2.param1]</thumbnail>
 ]]></listrepeat>
-<expres><![CDATA[poster[\w\W\s]{0,15}src="(.*?)" alt="(.*?)"[\w\W\s]{0,150}href="(.*?)"[\w\W\s]{0,550}texto">(.*?)<]]></expres>
+<expres><![CDATA[poster[\w\W\s]{0,10}src="(.*?)" alt="(.*?)"[\w\W\s]{0,140}href="(.*?)"[\w\W\s]{0,800}texto">(.*?)<]]></expres>
 <page>https://www.bajuineros.com/genero/estrenos/</page>
 </regex>
 
 
+	
 	
 		
   <regex>
