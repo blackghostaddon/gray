@@ -1855,8 +1855,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <title> [makelist2.param3]   </title>
  <link>$doregex[makelist3]</link>
  <fanart>[makelist2.param2]</fanart>
-  <info>[makelist2.param4]</info>
-  <thumbnail>[makelist2.param1]</thumbnail>
+  <thumbnail>[makelist2.param2]</thumbnail>
 ]]></listrepeat>
 <expres><![CDATA[href="(.*?)"[\W\w\s]{0,10}class="image[\W\w\s]{0,10}src="(.*?)" alt="(.*?)"]]></expres>
 <page>https://www.peliculastoday.com</page>
@@ -1871,8 +1870,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <title>[makelist2.param3]      Server:[makelist3.param1]</title>
  <link>$doregex[id3]</link>
  <fanart>[makelist2.param2]</fanart>
-  <info>[makelist2.param4]</info>
-  <thumbnail>[makelist2.param1]</thumbnail>
+  <thumbnail>[makelist2.param2]</thumbnail>
 ]]></listrepeat>
 <expres><![CDATA[src=\"(https://streamango.*?|http://xvidstage.*?|http://uptobox.*?|https://openload.*?|https://userscloud.*?|https://ok.*?|https://uptostream.*?)"]]></expres>
  <page>[makelist2.param1]</page>
@@ -1909,7 +1907,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
  
  <item>
-<title>[B]TUPELIHD[/B] *  </title>
+<title>[B]TUPELIHD[/B]  </title>
  <link>$doregex[makelist2]</link>
  
    <regex>
@@ -1918,7 +1916,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <title> [makelist2.param3]   </title>
  <link>$doregex[makelist3]</link>
  <fanart>[makelist2.param2]</fanart>
-  <info>[makelist2.param4]</info>
   <thumbnail>[makelist2.param2]</thumbnail>
 ]]></listrepeat>
 <expres><![CDATA[href="(.*?)"[\w\W\s]{0,150}src="(.*?)"[\w\W\s]{0,150}"Title">(.*?)<]]></expres>
@@ -1936,9 +1933,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <listrepeat><![CDATA[
 <title>[makelist2.param2]      Server:[makelist3.param1]</title>
  <link>$doregex[id3]</link>
- <fanart>[makelist2.param1]</fanart>
-  <info>[makelist2.param4]</info>
-  <thumbnail>[makelist2.param1]</thumbnail>
+ <fanart>[makelist2.param2]</fanart>
+  <thumbnail>[makelist2.param2]</thumbnail>
 ]]></listrepeat>
 <expres><![CDATA[src=\"(https://streamango.*?|http://xvidstage.*?|http://uptobox.*?|https://openload.*?|https://userscloud.*?|https://ok.*?|https://uptostream.*?)"]]></expres>
  <page>[makelist2.param1]</page>
