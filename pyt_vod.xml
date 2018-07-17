@@ -2144,13 +2144,13 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	
 	
 <item>
-<title> MULTI-SITE  /  1-EXPRES   (data-in-1st-regex)  </title>
+<title> Hotel transilvania 3</title>
 <link>$doregex[makelist]</link>
 
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
- <title> [makelist.param1] </title>
+ <title>[B]Hotel transilvania 3[/B]   [I]server:[makelist.param1][/I] </title>
  <urlsolve>[makelist.param1]</urlsolve>
  <thumbnail>NA</thumbnail>
 ]]></listrepeat>
@@ -2159,7 +2159,7 @@ import re, requests
 def GetLSProData(page_data,Cookie_Jar,m):
 	headers = {'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:50.0) Gecko/20100101 Firefox/50.0'}
 	data = []
-	sites = ['http://bassfox.org/movies/tomb-raider/', 'http://www.bajuineros.com/pelicula/hotel-transilvania-3-unas-vacaciones-monstruosas/', 'https://www.tupelihd.com/hotel-transilvania-3-unas-vacaciones-monstruosas/', 'https://www.peliculastoday.com/hotel-transilvania-3-unas-vacaciones-monstruosas/', 'http://www.cuevana3.com/5470/ver-hotel-transylvania-3-summer-vacation-online', 'https://www.cinetux.com/7558/hotel-transilvania-2.html']
+	sites = ['http://www.bajuineros.com/pelicula/hotel-transilvania-3-unas-vacaciones-monstruosas/', 'https://www.tupelihd.com/hotel-transilvania-3-unas-vacaciones-monstruosas/', 'https://www.peliculastoday.com/hotel-transilvania-3-unas-vacaciones-monstruosas/', 'http://www.cuevana3.com/5470/ver-hotel-transylvania-3-summer-vacation-online', 'https://www.cinetux.com/7558/hotel-transilvania-2.html']
 	
 	for site in sites:
 		source = requests.get(site, headers=headers).text
