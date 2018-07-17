@@ -2159,7 +2159,7 @@ import re, requests
 def GetLSProData(page_data,Cookie_Jar,m):
 headers = {'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:50.0) Gecko/20100101 Firefox/50.0'}
 data = []
-sites = ['https://www.peliculastoday.com/hotel-transilvania-3-unas-vacaciones-monstruosas/', 'https://www.tupelihd.com/hotel-transilvania-3-unas-vacaciones-monstruosas/', 'http://bassfox.org/movies/tomb-raider/', 'https://www.bajuineros.com/pelicula/hotel-transilvania-3-unas-vacaciones-monstruosas/']
+sites = ['http://www.peliculastoday.com/hotel-transilvania-3-unas-vacaciones-monstruosas/', 'http://www.tupelihd.com/hotel-transilvania-3-unas-vacaciones-monstruosas/', 'http://bassfox.org/movies/tomb-raider/', 'http://www.bajuineros.com/pelicula/hotel-transilvania-3-unas-vacaciones-monstruosas/']
 
 for site in sites:
    source = requests.get(site, headers=headers).text
@@ -2169,4 +2169,5 @@ return data
 <page></page>
 </regex>
 
-
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
+</item>
