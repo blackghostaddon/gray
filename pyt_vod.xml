@@ -2144,7 +2144,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	
 	
 <item>
-<title> MULTI-SITE  /  1-EXPRES   (data-in-1st-regex) new </title>
+<title> MULTI-SITE  /  1-EXPRES   (data-in-1st-regex) data </title>
 <link>$doregex[makelist]</link>
 
 <regex>
@@ -2159,10 +2159,11 @@ import re, requests
 def GetLSProData(page_data,Cookie_Jar,m):
 	headers = {'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:50.0) Gecko/20100101 Firefox/50.0'}
 	data = []
-	sites = ['http://www.peliculastoday.com/hotel-transilvania-3-unas-vacaciones-monstruosas/', 'http://www.tupelihd.com/hotel-transilvania-3-unas-vacaciones-monstruosas/', 'http://bassfox.org/movies/tomb-raider/', 'http://www.bajuineros.com/pelicula/hotel-transilvania-3-unas-vacaciones-monstruosas/']
+	sites = ['http://bassfox.org/movies/tomb-raider/', 'http://www.bajuineros.com/pelicula/hotel-transilvania-3-unas-vacaciones-monstruosas/']
+	
 	for site in sites:
-	source = requests.get(site, headers=headers).text
-	data += re.findall('(https://streamango.*?|http://xvidstage.*?|http://uptobox.*?|https://openload.*?|https://userscloud.*?|https://ok.*?|https://uptostream.*?|https://vidoza.*?)"', source)
+		source = requests.get(site, headers=headers).text
+		data += re.findall('"(https://streamango.*?|http://xvidstage.*?|https://openload.*?|https://userscloud.*?|https://ok.*?|https://uptostream.*?|https://vidoza.*?)"', source)
 	return data
 ]]></expres>
 <page></page>
