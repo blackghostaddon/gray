@@ -53,7 +53,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-
+http://cdn.arenavision.biz/04
 
 
 
@@ -69,7 +69,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 			<regex>
 			<name>hash</name>
 			<expres>this.loadPlayer\("(.*?)"</expres>
-			<page>http://cdn.arenavision.co.in/$doregex[canal]</page>
+			<page>http://cdn.arenavision.biz/$doregex[canal]</page>
 			<referer>http://cdn.arenavision.co.in</referer>
 			<setcookie>beget=begetok</setcookie>
 			</regex>
@@ -91,6 +91,12 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/acestreams.png</thumbnail>
 </item>
 	
+	
+	
+	
+	
+	
+	
 
 
 <item>
@@ -105,7 +111,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 			<regex>
 			<name>hash</name>
 			<expres>this.loadPlayer\("(.*?)"</expres>
-			<page>http://cdn.arenavision.co.in/$doregex[canal]</page>
+			<page>http://cdn.arenavision.biz/$doregex[canal]</page>
 			<referer>https://arenavision.us/</referer>
 			<setcookie>beget=begetok</setcookie>
 			</regex>
@@ -151,46 +157,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-
-
-
-
-<item>
-<title>[COLOR black]•[/COLOR][COLOR white]  [B]World Cup Russia 2018 [/B][/COLOR] [COLOR lightslategray](Futbol) [/COLOR]</title>
-<link>$doregex[makelist]</link>
-<regex>
-<name>makelist</name>
-<listrepeat><![CDATA[
-
-<title>[COLOR lightgreen][makelist.param1] [COLOR silver] [makelist.param2]  [COLOR white] [makelist.param4][/COLOR][/COLOR][/COLOR]  [COLOR white] [makelist.param5][/COLOR] </title>
-<link>plugin://program.plexus/?url=$doregex[hash]&amp;mode=1&amp;name=BlackAddon+[makelist.param4]</link>
-			<regex>
-			<name>hash</name>
-			<expres>this.loadPlayer\("(.*?)"</expres>
-			<page>http://npx.arenavision.link/$doregex[canal]</page>
-			<referer>http://npx.arenavision.link/</referer>
-			<setcookie>beget=begetok</setcookie>
-			</regex>
-			<regex>
-			<name>canal</name>
-			<expres>$pyFunction:'[makelist.param5]'.replace('>W4','04').replace('>W5','05').replace('>W6','06').replace('>W7','07').replace('>W8','08').replace('>W9','09').replace('>W10','10').replace('>W11','11').replace('>W12','12').replace('>W13','13').replace('>W14','14').replace('>W15','15').replace('>W16','16').replace('>W17','17').replace('>W18','18').replace('>W19','19').replace('>W20','20').replace('>W21','21').replace('>W22','22').replace('>W23','23').replace('>W24','24').replace('>W25','25').replace('>W26','26').replace('>W27','27').replace('>W28','28').replace('>W29','29').replace('>W30','30').replace('>W31','31').replace('>W32','32').replace('>W33','33').replace('>W34','34').replace('>W35','35').replace('>W1','01').replace('>W2','02').replace('>W3','03')</expres>
-			<page></page>
-			</regex>
-
-			<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/acestreams.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
-
-</item>
-]]></listrepeat>
-<expres><![CDATA[87px\">(.*?)<[\w\W\s]{0,30}">(.*?)<[\w\W\s]{0,32}">(.*?)<[\w\W\s]{0,35}FIFA WORLD CUP[\w\W\s]{0,32}">(.*?)<[\w\W\s]{0,52}"(>W[0-9]+)]]></expres>
-<page>http://arenavision.us/guide</page>
-<Agent>Mozilla</Agent>
-<referer>http://arenavision.us/guide</referer>
-<setcookie>beget=begetok</setcookie>
-</regex>
-
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/acestreams.png</thumbnail>
-</item>
 
 
 
@@ -364,57 +330,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page>http://freelive365.com/[makelist2.param1]</page>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/acestreams.png</thumbnail>
-</item>
-
-
-
-
-
-
-<iem>
-<title>  [COLOR lightblue][B]Reddit Acestreams [/B] [/COLOR][COLOR white] [/COLOR] </title>
-<link>$doregex[lista]</link>
-
-<regex>
-<name>lista</name>
-  <listrepeat><![CDATA[
-         
-		 <title>[COLOR yellow][B][lista.param1][/B][/COLOR][COLOR lightblue][lista.param3] [/COLOR] [lista.param2]</title>
-        <link>plugin://program.plexus/?url=[lista.param2]&amp;mode=1&amp;name=BlackAddon+[lista.param2]</link>
-		<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/acestream.png</thumbnail>
-		]]></listrepeat>
-<expres><![CDATA[Post__titleLink\s\">(.*?)<|acestream\:\/\/(.*?)\s\s(.*?)<]]><expres>
-<page>https://www.reddit.com/user/bluejetset</page>
-</regex>
-
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/acestreams.png</thumbnail>
-</item>
-
-
-<item>
-<title>[COLOR white][B] Canales Arenavision  [COLOR white][I]World Cup Russia 2018[/I]  [/COLOR][/B][/COLOR]</title>
-<link>plugin://program.plexus/?url=$doregex[hash]&amp;mode=1&amp;name=BlackAddon+Acestreams</link>
-			<regex>
-			<name>hash</name>
-			<expres>this.loadPlayer\("(.*?)"</expres>
-			<page>http://npx.arenavision.link/$doregex[select]</page>
-			<referer>http://npx.arenavision.link/</referer>
-			<setcookie>beget=begetok</setcookie>
-			</regex>
-
-			 <regex>
-<name>select</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m):
-   import xbmcgui
-   dialog = xbmcgui.Dialog()
-   ret = dialog.select('Elige un Canal ', ['WC AV 1','WC AV 2','WC AV 3','WC AV 4','WC AV 5','WC AV 6','WC AV 7','WC AV 8','WC AV 9','WC AV 10','WC AV 11','WC AV 12','WC AV 13','WC AV 14','WC AV 15','WC AV 16'])
-   lists = ['01','02','03','04','05','06','07','08','09','10','11','12','13','14','15','16']
-   return lists[ret]
-]]></expres>
-<page></page>
-</regex>
- <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/acestreams.png</thumbnail>
 </item>
 
 
