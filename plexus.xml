@@ -244,7 +244,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>plugin://program.plexus/?url=[makelist.param2]&amp;mode=1</link>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/acestreams.png</thumbnail>
 ]]></listrepeat>
-<expres>title="(.*?)"[\w\W\s]{0,190}content wrap">(.*?)<[\w\W\s]{0,510}Added">(.*?)\&</expres>
+<expres>title="(.*?)"[\w\W\s]{0,160}content wrap">(.*?)<[\w\W\s]{0,510}datetime="(.*?)"</expres>
 <page>https://acestreamid.com</page>
 <agent>Mozilla</agent>
 </regex>
@@ -252,6 +252,9 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 
 
+
+				
+				
 
 
 			<iem>
