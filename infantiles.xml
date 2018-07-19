@@ -3,25 +3,28 @@
 
 
 <item>
-<title>[COLOR skyblue]Un Jefe en Pañales [/COLOR]</title>
+<title>[COLOR skyblue]Un Jefe en Pañales** [/COLOR]</title>
 
 <link>$doregex[getUrl]|user-agent=Mozilla/5.0 (Windows NT 6.1; rv:14.0) Gecko/20100101 Firefox/14.0.11$$lsname=[COLOR deepskyblue]101 Dalmatas</link>
 <thumbnail>https://image.tmdb.org/t/p/original/frf7zxnpK5KiFrh5feAaA36GvQf.jpg</thumbnail>
 <fanart>https://image.tmdb.org/t/p/original/8keMlLuzB9XIUBnbdEq5DCqZdHQ.jpg</fanart>
-<regex>
-<name>getUrl</name>
+
+<regex><name>getUrl</name>
 <expres><![CDATA[#$pyFunction
 import re , requests ,json
 def GetLSProData(page_data,Cookie_Jar,m):
+ 
  ref = 'http://diskokosmiko.mx/'
  url='http://diskokosmiko.mx/filojass/peliculas-2017-en-espanol-latino-75722/un-jefe-en-panales,1139540.mkv'
  headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': ref ,
             'X-Requested-With' : 'XMLHttpRequest' , 'Accept' : '*/*'}
  session = requests.Session()
  r = session.get(url, headers=headers)
- rv1 = r.cookies 
+ rv1 = r.cookies
+ 
  vfile , vtoken = re.findall('action/DownloadFile.*?fileId.*?value="(.*?)".*?Token".*?value="(.*?)"', r.text)[0]
- data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken} nr = requests.post('http://diskokosmiko.mx/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers,cookies=rv1 , data=data_a).text
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr = requests.post('http://diskokosmiko.mx/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers,cookies=rv1 , data=data_a).text
  nrj=json.loads(nr)
  nr = nrj['Content']
  r2 = re.findall(r'(?s)value=\"(.*?)\"', nr)[0]
@@ -39,7 +42,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page></page>
 <cookieJar></cookieJar>
 </regex>
-
 
 
 <page>http://diskokosmiko.mx/filojass/peliculas-2017-en-espanol-latino-75722/un-jefe-en-panales,1139540.mkv</page>
