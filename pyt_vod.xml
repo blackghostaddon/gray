@@ -1907,7 +1907,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
  
  <item>
-<title>[B]TUPELIHD[/B] ** </title>
+<title>[B]TUPELIHD[/B] </title>
  <link>$doregex[makelist2]</link>
  
    <regex>
@@ -1979,7 +1979,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
   <thumbnail>[makelist2.param3]</thumbnail>
 ]]></listrepeat>
 <expres><![CDATA[href="(.*?)"\sclass="poster"[\w\W\s]{0,64}elicula(.*?)Online[\w\W\s]{0,30}src="(.*?)"]]></expres>
-<page>https://www.tupelihd.com</page>
+<page>http://ciberpeliculashd.net/</page>
 </regex>
 
 <regex>
@@ -2024,7 +2024,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
  
  <item>
-<title>[B]Canal Pelis[/B] </title>
+<title>[B]CANALPELIS[/B] </title>
  <link>$doregex[makelist2]</link>
  
    <regex>
