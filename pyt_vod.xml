@@ -1990,7 +1990,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  <fanart>[makelist2.param3]</fanart>
   <thumbnail>[makelist2.param3]</thumbnail>
 ]]></listrepeat>
-<expres><![CDATA[(https://streamango.*?|https://vidlox.me.*?|http://uptobox.*?|https://openload.*?|https://streamcherry.*?|https://ok.*?|https://uptostream.*?|https://vidoza.*?)"]]></expres>
+<expres><![CDATA[\;(https://streamango.*?|https://vidlox.me.*?|http://uptobox.*?|https://openload.*?|https://streamcherry.*?|https://ok.*?|https://uptostream.*?|https://vidoza.*?)\&q]]></expres>
  <page>[makelist2.param1]</page>
 <agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36</agent>
 </regex>
