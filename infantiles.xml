@@ -407,7 +407,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
-<title>[COLOR skyblue]Angry Birds La Pelicula[/COLOR]</title>
+<title>[COLOR skyblue]Angry Birds La Pelicula *[/COLOR]</title>
 <thumbnail>https://pics.filmaffinity.com/the_angry_birds_movie-593249429-large.jpg</thumbnail>
 <fanart>https://d21tktytfo9riy.cloudfront.net/wp-content/uploads/2016/03/30123842/abcom-default-share.jpg</fanart>
 <genre>[COLOR aquamarine]Animación. Comedia | Pájaros. 3-D. Videojuego[/COLOR]</genre>
@@ -426,6 +426,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <expres><![CDATA[#$pyFunction
 import re , requests ,json
 def GetLSProData(page_data,Cookie_Jar,m):
+
  ref = 'http://diskokosmiko.mx/'
  url='http://diskokosmiko.mx/ben/peliculas-n-39006/angry-birds,444997.avi4'
  headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': ref ,
@@ -433,6 +434,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  session = requests.Session()
  r = session.get(url, headers=headers)
  rv1 = r.cookies
+ 
  vfile , vtoken = re.findall('action/DownloadFile.*?fileId.*?value="(.*?)".*?Token".*?value="(.*?)"', r.text)[0]
  data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
  nr = requests.post('http://diskokosmiko.mx/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers,cookies=rv1 , data=data_a).text
