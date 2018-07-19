@@ -9,7 +9,8 @@
 <thumbnail>https://image.tmdb.org/t/p/original/frf7zxnpK5KiFrh5feAaA36GvQf.jpg</thumbnail>
 <fanart>https://image.tmdb.org/t/p/original/8keMlLuzB9XIUBnbdEq5DCqZdHQ.jpg</fanart>
 
-<regex><name>getUrl</name>
+<regex>
+<name>getUrl</name>
 <expres><![CDATA[#$pyFunction
 import re , requests ,json
 def GetLSProData(page_data,Cookie_Jar,m):
@@ -21,7 +22,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
  session = requests.Session()
  r = session.get(url, headers=headers)
  rv1 = r.cookies
-
  
  vfile , vtoken = re.findall('action/DownloadFile.*?fileId.*?value="(.*?)".*?Token".*?value="(.*?)"', r.text)[0]
  data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
@@ -3099,7 +3099,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 
 <item>
-<title>[COLOR skyblue]El Diario de Barbie[/COLOR]</title>
+<title>[COLOR skyblue]El Diario de Barbie *[/COLOR]</title>
 <thumbnail>http://cs410331.vk.me/v410331994/7c96/1ncvwIfybuk.jpg</thumbnail>
 <fanart>https://wallpaperscraft.com/image/barbie_logo_company_brand_44670_1024x1024.jpg</fanart>
 <genre>[COLOR aquamarine]Animación. Infantil[/COLOR]</genre>
@@ -3121,7 +3121,6 @@ link>plugin://plugin.video.pulsar/play?uri=magnet:?xt=urn:btih:3B5C46140798C9482
 <expres><![CDATA[#$pyFunction
 import re , requests ,json
 def GetLSProData(page_data,Cookie_Jar,m):
-
  ref = 'http://diskokosmiko.mx/'
  url='http://diskokosmiko.mx/marcos20/coleccion-barbie-latino-23355/el-diario-de-barbie,117151.avi'
  headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': ref ,
@@ -3129,7 +3128,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
  session = requests.Session()
  r = session.get(url, headers=headers)
  rv1 = r.cookies
-
  vfile , vtoken = re.findall('action/DownloadFile.*?fileId.*?value="(.*?)".*?Token".*?value="(.*?)"', r.text)[0]
  data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
  nr = requests.post('http://diskokosmiko.mx/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers,cookies=rv1 , data=data_a).text
