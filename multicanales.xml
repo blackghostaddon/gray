@@ -969,12 +969,12 @@ item>
 </regex>
 <regex>
 <name>code</name>
-<expres>net|\|(.*?)\|</expres>
+<expres>net\|(.*?)\|</expres>
 <page>http://whostreams.net/embed/$doregex[canal]</page>
 </regex>
 <regex>
 <name>time</name>
-<expres>\|(15.*?)\|</expres>
+<expres>\|(153.*?)\|</expres>
 <page>http://whostreams.net/embed/$doregex[canal]</page>
 </regex>
 
@@ -992,15 +992,14 @@ item>
 </regex>
 <regex>
 <name>code</name>
-<expres>net|\|(.*?)\|</expres>
+<expres>net\|(.*?)\|</expres>
 <page>http://whostreams.net/embed/$doregex[canal]</page>
 </regex>
 <regex>
 <name>time</name>
-<expres>\|(15.*?)\|</expres>
+<expres>\|(153.*?)\|</expres>
 <page>http://whostreams.net/embed/$doregex[canal]</page>
 </regex>
-
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
