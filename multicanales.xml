@@ -959,15 +959,32 @@ item>
 
 
 
+<item>
+<title>[B]Multicanal Rivo 01[/B]     </title>
+<link>http://cdn.whostreams.net:8080/hls/$doregex[canal].m3u8?s=$doregex[code]&amp;e=$doregex[time]</link>
+<regex>
+<name>canal</name>
+<expres>net\/embed\/([^"]+)</expres>
+<page>http://in.xrivonet.info/33f.html</page>
+</regex>
+<regex>
+<name>code</name>
+<expres>net|\|(.*?)\|</expres>
+<page>http://whostreams.net/embed/$doregex[canal]</page>
+</regex>
+<regex>
+<name>time</name>
+<expres>\|(15.*?)\|</expres>
+<page>http://whostreams.net/embed/$doregex[canal]</page>
+</regex>
 
-
-
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
 <item>
 <title>[B]Multicanal AndresFutbol 01[/B]     </title>
-<link>http://cdn.whostreams.net:8081/wsedge/$doregex[canal]/playlist.m3u8?wmsAuthSign=$doregex[code]</link>
+<link>http://cdn.whostreams.net:8080/hls/$doregex[canal].m3u8?s=$doregex[code]&amp;e=$doregex[time]</link>
 <regex>
 <name>canal</name>
 <expres>net\/embed\/([^"]+)</expres>
@@ -975,10 +992,18 @@ item>
 </regex>
 <regex>
 <name>code</name>
-<expres>\|(c2V.*?)\|</expres>
+<expres>net|\|(.*?)\|</expres>
 <page>http://whostreams.net/embed/$doregex[canal]</page>
 </regex>
+<regex>
+<name>time</name>
+<expres>\|(15.*?)\|</expres>
+<page>http://whostreams.net/embed/$doregex[canal]</page>
+</regex>
+
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
 
 
 
