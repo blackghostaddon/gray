@@ -1515,16 +1515,16 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
-<title>[B] ElGoles [/B] [COLOR lime][I]  SportsDevil [Descarga last version desde BlackGhost Repo]  [/I][/COLOR]</title>
-<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://elgoles.ru/$doregex[select]-2/</link>
+<title>[B] ElGoles [/B] [COLOR lime][I]  SportsDevil [Descarga last version desde BlackGhost Repo] new [/I][/COLOR]</title>
+<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://elgoles.ru/reproductor/$doregex[select].php</link>20
 <regex>
 <name>select</name>
 <expres><![CDATA[#$pyFunction
 def GetLSProData(page_data,Cookie_Jar,m):
    import xbmcgui
    dialog = xbmcgui.Dialog()
-   ret = dialog.select('Elige un Canal ', ['Canal 1', 'Canal 2', 'Canal 3', 'Canal 4', 'Canal 5', 'Canal 6', 'Canal 7', 'Canal 8', 'Canal 9', 'Canal 10', 'Canal 11', 'Canal 12', 'Canal 13', 'Canal 14', 'Canal 15', 'Canal 16', 'Canal 17', 'Canal 18', 'Canal 19', 'Canal 20', 'Canal 21', 'Canal 22', 'Canal 23', 'Canal 24', 'Canal 25', 'Canal 26', 'Canal 27', 'Canal 28', 'Canal 29', 'Canal 30'])
-   lists = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30']
+   ret = dialog.select('Elige un Canal ', ['Canal 6', 'Canal 7', 'Canal 8', 'Canal 9', 'Canal 10', 'Canal 11', 'Canal 12', 'Canal 13', 'Canal 14', 'Canal 15', 'Canal 16', 'Canal 17', 'Canal 18', 'Canal 19', 'Canal 20', 'Canal 21', 'Canal 22', 'Canal 23', 'Canal 24', 'Canal 25', 'Canal 26', 'Canal 27', 'Canal 28', 'Canal 29', 'Canal 30'])
+   lists = ['06', '07', '08', '09', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30']
    return lists[ret]
 ]]></expres>
 <page></page>
@@ -1595,6 +1595,43 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
+
+<item>
+    <title>el goles 11</title>
+    <link>$doregex[geturl]</link>
+    <regex>
+        <name>geturl</name>
+        <expres>source:"(.*?)"</expres>
+        <page>$doregex[getunpacked]</page>
+    </regex>
+    <regex>
+        <name>getunpacked</name>
+        <expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)' )</expres>
+        <page>http://whostreams.net/embed/7blu9131o5ts7b5</page>
+        <referer>http://whostreams.net/</referer>
+        <connection>keep-alive</connection
+    </regex>
+</item>
+
+
+
+
+<item>
+    <title>el goles 06</title>
+    <link>$doregex[geturl]</link>
+    <regex>
+        <name>geturl</name>
+        <expres>source:"(.*?)"</expres>
+        <page>$doregex[getunpacked]</page>
+    </regex>
+    <regex>
+        <name>getunpacked</name>
+        <expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)' )</expres>
+        <page>http://whostreams.net/embed/aswpcq</page>
+        <referer>http://whostreams.net/</referer>
+        <connection>keep-alive</connection
+    </regex>
+</item>
 
 
 
@@ -2026,22 +2063,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<item>
-    <title>whostreams</title>
-    <link>$doregex[geturl]</link>
-    <regex>
-        <name>geturl</name>
-        <expres>source:"(.*?)"</expres>
-        <page>$doregex[getunpacked]</page>
-    </regex>
-    <regex>
-        <name>getunpacked</name>
-        <expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)' )</expres>
-        <page>http://whostreams.net/embed/3f78bgefr</page>
-        <referer>http://whostreams.net/</referer>
-        <connection>keep-alive</connection
-    </regex>
-</item>
 
 
 
@@ -2053,6 +2074,11 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 
 
+
+<item>
+<title>sportsdevil  tel</title>
+<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=https://telerium.tv/embed/25018.html</link>
+</item>
 
 <item>
     <title>footbie regex</title>
