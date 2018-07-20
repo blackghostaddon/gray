@@ -960,7 +960,7 @@ item>
 
 
 <item>
-<title>[B]Multicanal Rivo 01[/B]    </title>
+<title>[B]Multicanal Rivo 01[/B]  **  </title>
 <link>http://cdn.whostreams.net:8080/hls/$doregex[canal].m3u8?s=$doregex[code]&amp;e=$doregex[time]</link>
 <regex>
 <name>canal</name>
@@ -969,7 +969,7 @@ item>
 </regex>
 <regex>
 <name>code</name>
-<expres>whostreams\|net\|(.*?)\|</expres>
+<expres>\|(.*?)\|153</expres>
 <page>http://whostreams.net/embed/$doregex[canal]</page>
 </regex>
 <regex>
@@ -992,7 +992,7 @@ item>
 </regex>
 <regex>
 <name>code</name>
-<expres>whostreams\|net\|(.*?)\|</expres>
+<expres>whostreams\|net\|(.*?)\|153</expres>
 <page>http://whostreams.net/embed/$doregex[canal]</page>
 </regex>
 <regex>
