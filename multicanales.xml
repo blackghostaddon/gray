@@ -1597,41 +1597,38 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
-    <title>el goles 11</title>
-    <link>$doregex[geturl]</link>
-    <regex>
-        <name>geturl</name>
-        <expres>source:"(.*?)"</expres>
-        <page>$doregex[getunpacked]</page>
-    </regex>
-    <regex>
-        <name>getunpacked</name>
-        <expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)' )</expres>
-        <page>http://whostreams.net/embed/7blu9131o5ts7b5</page>
-        <referer>http://whostreams.net/</referer>
-        <connection>keep-alive</connection
-    </regex>
+    <title>el goles 6</title>
+<link>http://cdn.whostreams.net:8081/wsedge/$doregex[canal]/playlist.m3u8?wmsAuthSign=$doregex[code]</link>
+<regex>
+<name>canal</name>
+<expres>net\/embed\/([^"]+)</expres>
+<page>http://elgoles.ru/reproductor/06.php</page>
+</regex>
+<regex>
+<name>code</name>
+<expres>\|(c2V.*?)\|</expres>
+<page>http://whostreams.net/embed/$doregex[canal]</page>
+</regex>
 </item>
-
 
 
 
 <item>
-    <title>el goles 06</title>
-    <link>$doregex[geturl]</link>
-    <regex>
-        <name>geturl</name>
-        <expres>source:"(.*?)"</expres>
-        <page>$doregex[getunpacked]</page>
-    </regex>
-    <regex>
-        <name>getunpacked</name>
-        <expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)' )</expres>
-        <page>http://whostreams.net/embed/aswpcq</page>
-        <referer>http://whostreams.net/</referer>
-        <connection>keep-alive</connection
-    </regex>
+    <title>el goles 11</title>
+<link>http://cdn.whostreams.net:8081/wsedge/$doregex[canal]/playlist.m3u8?wmsAuthSign=$doregex[code]</link>
+<regex>
+<name>canal</name>
+<expres>net\/embed\/([^"]+)</expres>
+<page>http://elgoles.ru/reproductor/11.php</page>
+</regex>
+<regex>
+<name>code</name>
+<expres>\|(c2V.*?)\|</expres>
+<page>http://whostreams.net/embed/$doregex[canal]</page>
+</regex>
 </item>
+
+
 
 
 
