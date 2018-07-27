@@ -992,7 +992,7 @@ item>
 </regex>
 <regex>
 <name>code</name>
-<expres>whostreams\|net\|(.*?)\|153</expres>
+<expres>net\|(.*?)\|</expres>
 <page>http://whostreams.net/embed/$doregex[canal]</page>
 </regex>
 <regex>
@@ -2215,3 +2215,35 @@ def GetLSProData(page_data,Cookie_Jar,m,ua='Mozilla/5.0 (Windows NT 6.1; Win64; 
 </regex>
 <thumbnail>https://www.myfree-tivi.com/imgs/android-icon-192x192.png</thumbnail>
 </item>
+
+
+
+
+
+
+
+
+<item>
+<title>CATEGORY2</title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title> [makelist.param2]</title>
+<link>$doregex[makelist2]</link>
+<thumbnail></thumbnail>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import json, base64,re
+def GetLSProData(page_data,Cookie_Jar,m):
+   jsdata=json.loads(page_data)
+   s=[]
+   for o in jsdata["LIVETV"]:
+       s.append((o["cid"],o["category_name"],o["category_image"]))
+   return s
+]]></expres>
+<page>http://pastebin.com/raw/Vxp6AEex</page>
+<agent>Dalvik/2.1.0 (Linux; U; Android 5.0; App Runtime for Chrome Dev Build/50.5021.602.0)</agent>
+</regex>
+</item>
+
