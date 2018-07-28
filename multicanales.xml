@@ -2263,23 +2263,21 @@ https://live-edge.pxstream.tv/loadbalance/67189193869831872819/playlist.m3u8?md5
 <name>elcanal</name>
 <expres>source src="(.*?)"</expres>
 <page>http://pxstream.tv/embed/dfja150dzg19/</page>
-<noredirect>true</noredirect>
-<includeheaders></includeheaders>
 <referer>http://anahix11.com</referer>
+<agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
   <item>
-<title>[B]Multicanal[/B] chivas Unimas[I]  [/I]</title>
+<title>[B]Multicanal[/B] chivas Unimas[I] new [/I]</title>
 <link>$doregex[elcanal]|User-Agent=iPhone</link>
 <regex>
 <name>elcanal</name>
 <expres>source src="(.*?)"</expres>
 <expres>"(.*m3u8.*?)"</expres>
 <page>http://pxstream.tv/embed/cjbjjnz3o3uc/</page>
-<noredirect>true</noredirect>
-<includeheaders></includeheaders>
+<agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
 <referer>http://www.chivass69.com</referer>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
@@ -2287,15 +2285,14 @@ https://live-edge.pxstream.tv/loadbalance/67189193869831872819/playlist.m3u8?md5
 
 
  <item>
-<title>[B]Multicanal[/B] chivas Universo[I]  [/I]</title>
+<title>[B]Multicanal[/B] chivas Universo[I] new [/I]</title>
 <link>$doregex[elcanal]|User-Agent=iPhone</link>
 <regex>
 <name>elcanal</name>
 <expres>source src="(.*?)"</expres>
 <expres>"(.*m3u8.*?)"</expres>
 <page>http://pxstream.tv/embed/2sg16c9wmmwg/</page>
-<noredirect>true</noredirect>
-<includeheaders></includeheaders>
+<agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
 <referer>http://www.chivass69.com</referer>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
