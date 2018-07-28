@@ -436,7 +436,7 @@ item>
 
 
 <item>
-<title>[B]Multicanal Zonasport01[/B]     fstream    </title>
+<title>[B]Multicanal Zonasport01[/B]     fstream  NEW  </title>
 
 <link>http://$doregex[ip]$doregex[m3u8]$doregex[hls]|User-Agent=iPad</link>
 			<regex>
@@ -472,7 +472,7 @@ item>
 			<regex>
 			<name>canal</name>
 			<expres>channel='(.*?)'</expres>
-			<page>http://gozonasports.me/cha.php?id=1</page>
+			<page>http://zonasports.es/cha-x.php?id=1</page>
 			</regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
@@ -513,7 +513,7 @@ item>
 			<regex>
 			<name>canal</name>
 			<expres>channel='(.*?)'</expres>
-			<page>http://gozonasports.me/cha.php?id=2</page>
+			<page>http://zonasports.es/cha-x.php?id=2</page>
 			</regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
@@ -560,7 +560,7 @@ item>
 			<regex>
 			<name>canal</name>
 			<expres>channel='(.*?)'</expres>
-			<page>http://gozonasports.me/cha.php?id=3</page>
+			<page>http://zonasports.es/cha-x.php?id=3</page>
 			</regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
@@ -605,7 +605,7 @@ item>
 			<regex>
 			<name>canal</name>
 			<expres>channel='(.*?)'</expres>
-			<page>http://gozonasports.me/cha.php?id=4</page>
+			<page>http://zonasports.es/cha-x.php?id=4</page>
 			</regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
@@ -2218,7 +2218,11 @@ def GetLSProData(page_data,Cookie_Jar,m,ua='Mozilla/5.0 (Windows NT 6.1; Win64; 
 
 
 
-
+<item>
+<title>AZTECA 7</title>
+<link>http://aztecalive-lh.akamaihd.net/i/0pq46e6vw_1@502477/index_1_av-p.m3u8?sd=10</link>
+<thumbnail>https://www.myfree-tivi.com/imgs/android-icon-192x192.png</thumbnail>
+</item>
 
 
 
