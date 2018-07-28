@@ -2257,8 +2257,8 @@ https://live-edge.pxstream.tv/loadbalance//playlist.m3u8?md5=IS1pDhEySIgarHh7Nqw
 https://live-edge.pxstream.tv/loadbalance/67189193869831872819/playlist.m3u8?md5=tUQXa1WoTU2PgMQvzLll7Q&expires=1532835090
 
   <item>
-<title>[B]Multicanal[/B] chivas Telemundo [I] new [/I]</title>
-<link>$doregex[elcanal]|User-Agent=iPhone</link>
+<title>[B]Multicanal[/B] chivas Telemundo [I]  [/I]</title>
+<link>$doregex[elcanal]|Referer=http://www.chivass69.com&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36&amp;X-Requested-With=ShockwaveFlash/24.0.0.221</link>
 <regex>
 <name>elcanal</name>
 <expres>source src="(.*?)"</expres>
@@ -2270,8 +2270,8 @@ https://live-edge.pxstream.tv/loadbalance/67189193869831872819/playlist.m3u8?md5
 
 
   <item>
-<title>[B]Multicanal[/B] chivas Unimas[I] new [/I]</title>
-<link>$doregex[elcanal]|User-Agent=iPhone</link>
+<title>[B]Multicanal[/B] chivas Unimas[I] [/I]</title>
+<link>$doregex[elcanal]|Referer=http://www.chivass69.com&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36&amp;X-Requested-With=ShockwaveFlash/24.0.0.221</link>
 <regex>
 <name>elcanal</name>
 <expres>source src="(.*?)"</expres>
@@ -2286,7 +2286,7 @@ https://live-edge.pxstream.tv/loadbalance/67189193869831872819/playlist.m3u8?md5
 
  <item>
 <title>[B]Multicanal[/B] chivas Universo[I] new [/I]</title>
-<link>$doregex[elcanal]|User-Agent=iPhone</link>
+<link>$doregex[elcanal]|Referer=http://www.chivass69.com&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36&amp;X-Requested-With=ShockwaveFlash/24.0.0.221</link>
 <regex>
 <name>elcanal</name>
 <expres>source src="(.*?)"</expres>
