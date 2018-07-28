@@ -2247,3 +2247,33 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 </item>
 
+
+https://live-edge.pxstream.tv/loadbalance//playlist.m3u8?md5=IS1pDhEySIgarHh7NqwVyQ&expires=1532833433
+
+  <item>
+<title>[B]Multicanal[/B] chivas Telemundo [I]  [/I]</title>
+<link>http://$doregex[Igor_Rangel_IP]/loadbalance/67189193869831872819/playlist.m3u8$doregex[Igor_Rangel_AuthSign]|User-Agent=iPhone</link>
+<regex>
+<name>Igor_Rangel_IP</name>
+<expres>location:http://(.*)/loadbalance</expres>
+<page>$doregex[Igor_Rangel_Page]</page>
+<noredirect>true</noredirect>
+<includeheaders></includeheaders>
+</regex>
+<regex>
+<name>Igor_Rangel_AuthSign</name>
+<expres>m3u8(.*)</expres>
+<page>$doregex[Igor_Rangel_Page]</page>
+</regex>
+
+<regex>
+<name>Igor_Rangel_Page</name>
+<expres>"(.*m3u8.*?)"</expres>
+<page>http://pxstream.tv/embed/dfja150dzg19/</page>
+<referer>http://anahix11.com</referer>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+
+
