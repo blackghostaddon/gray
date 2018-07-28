@@ -729,7 +729,6 @@ item>
 
 
 
-
 <item>
 <title>[B]Multicanal Zonasport11[/B]     247bay    </title>
 <link>http://$doregex[ip]$doregex[m3u8]</link>
@@ -2254,6 +2253,9 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 https://live-edge.pxstream.tv/loadbalance//playlist.m3u8?md5=IS1pDhEySIgarHh7NqwVyQ&expires=1532833433
 
+
+
+
   <item>
 <title>[B]Multicanal[/B] chivas Telemundo [I]  [/I]</title>
 <link>http://$doregex[Igor_Rangel_IP]/loadbalance/67189193869831872819/playlist.m3u8$doregex[Igor_Rangel_AuthSign]|User-Agent=iPhone</link>
@@ -2275,6 +2277,173 @@ https://live-edge.pxstream.tv/loadbalance//playlist.m3u8?md5=IS1pDhEySIgarHh7Nqw
 <expres>"(.*m3u8.*?)"</expres>
 <page>http://pxstream.tv/embed/dfja150dzg19/</page>
 <referer>http://anahix11.com</referer>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+  <item>
+<title>[B]Multicanal[/B] chivas Unimas[I]  [/I]</title>
+<link>http://$doregex[Igor_Rangel_IP]/loadbalance/67189193869831872819/playlist.m3u8$doregex[Igor_Rangel_AuthSign]|User-Agent=iPhone</link>
+<regex>
+<name>Igor_Rangel_IP</name>
+<expres>location:http://(.*)/loadbalance</expres>
+<page>$doregex[Igor_Rangel_Page]</page>
+<noredirect>true</noredirect>
+<includeheaders></includeheaders>
+</regex>
+<regex>
+<name>Igor_Rangel_AuthSign</name>
+<expres>m3u8(.*)</expres>
+<page>$doregex[Igor_Rangel_Page]</page>
+</regex>
+
+<regex>
+<name>Igor_Rangel_Page</name>
+<expres>"(.*m3u8.*?)"</expres>
+<page>http://pxstream.tv/embed/cjbjjnz3o3uc/</page>
+<referer>http://anahix11.com</referer>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+ <item>
+<title>[B]Multicanal[/B] chivas Universo[I]  [/I]</title>
+<link>http://$doregex[Igor_Rangel_IP]/loadbalance/67189193869831872819/playlist.m3u8$doregex[Igor_Rangel_AuthSign]|User-Agent=iPhone</link>
+<regex>
+<name>Igor_Rangel_IP</name>
+<expres>location:http://(.*)/loadbalance</expres>
+<page>$doregex[Igor_Rangel_Page]</page>
+<noredirect>true</noredirect>
+<includeheaders></includeheaders>
+</regex>
+<regex>
+<name>Igor_Rangel_AuthSign</name>
+<expres>m3u8(.*)</expres>
+<page>$doregex[Igor_Rangel_Page]</page>
+</regex>
+
+<regex>
+<name>Igor_Rangel_Page</name>
+<expres>"(.*m3u8.*?)"</expres>
+<page>http://pxstream.tv/embed/2sg16c9wmmwg/</page>
+<referer>http://anahix11.com</referer>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+
+
+
+</link>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+<item>
+<title>[B]Multicanal[/B] uno [I]  [/I]</title><link>http://aztecalive-lh.akamaihd.net/i/0qm7cjvop_1@502476/master.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+<item>
+<title>[B]Multicanal[/B] 2[I]  [/I]</title><link>http://aztecalive-lh.akamaihd.net/i/0pq46e6vw_1@502477/index_1_av-p.m3u8?sd=10&amp;rebase=on</link>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+<item>
+<title>[B]Multicanal[/B] 3 [I]  [/I]</title><link>https://ssh101.com/m3u8/dyn/deptdnmxvall/index.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+<item>
+<title>[B]Multicanal[/B] 4 [I]  [/I]</title><link>https://lcmbe.com.global.prod.fastly.net//stream//4001e8caa9e3b77ea2b7fd0dc780622d/9106f821e95c206d7055277a299e1711/sex_.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+
+
+  <item>
+<title>[B]Multicanal[/B] chivas EstrellaTV[I]  [/I]</title>
+<link>http://$doregex[Igor_Rangel_IP]/loadbalance/67189193869831872819/playlist.m3u8$doregex[Igor_Rangel_AuthSign]|User-Agent=iPhone</link>
+<regex>
+<name>Igor_Rangel_IP</name>
+<expres>location:http://(.*)/loadbalance</expres>
+<page>$doregex[Igor_Rangel_Page]</page>
+<noredirect>true</noredirect>
+<includeheaders></includeheaders>
+</regex>
+<regex>
+<name>Igor_Rangel_AuthSign</name>
+<expres>m3u8(.*)</expres>
+<page>$doregex[Igor_Rangel_Page]</page>
+</regex>
+
+<regex>
+<name>Igor_Rangel_Page</name>
+<expres>"(.*m3u8.*?)"</expres>
+<page>http://pxstream.tv/embed/a39ugl09yktl/</page>
+<referer>http://anahix11.com</referer>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+
+
+  <item>
+<title>[B]Multicanal[/B] chivas Telemundo / univision Pacifico[I]  [/I]</title>
+<link>http://$doregex[Igor_Rangel_IP]/loadbalance/67189193869831872819/playlist.m3u8$doregex[Igor_Rangel_AuthSign]|User-Agent=iPhone</link>
+<regex>
+<name>Igor_Rangel_IP</name>
+<expres>location:http://(.*)/loadbalance</expres>
+<page>$doregex[Igor_Rangel_Page]</page>
+<noredirect>true</noredirect>
+<includeheaders></includeheaders>
+</regex>
+<regex>
+<name>Igor_Rangel_AuthSign</name>
+<expres>m3u8(.*)</expres>
+<page>$doregex[Igor_Rangel_Page]</page>
+</regex>
+
+<regex>
+<name>Igor_Rangel_Page</name>
+<expres>"(.*m3u8.*?)"</expres>
+<page>http://pxstream.tv/embed/ca1eoad6eyc2/</page>
+<referer>http://anahix11.com</referer>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+
+
+ <item>
+<title>[B]Multicanal Univision[/B]    wide     </title>
+<link>$doregex[get-id]</link>
+<regex>
+<name>get-id</name>
+<expres>file:"([^"]+)</expres>
+<page>http://widestream.io/embed-488</page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+
+
+ <item>
+<title>[B]Multicanal Deportes[/B]    wide     </title>
+<link>$doregex[get-id]</link>
+<regex>
+<name>get-id</name>
+<expres>file:"([^"]+)</expres>
+<page>http://widestream.io/embed-38623</page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+ <item>
+<title>[B]Multicanal Deportes 2[/B]    wide     </title>
+<link>$doregex[get-id]</link>
+<regex>
+<name>get-id</name>
+<expres>file:"([^"]+)</expres>
+<page>http://widestream.io/embed-38624</page>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
