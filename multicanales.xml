@@ -1194,7 +1194,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
   <item>
  <title>[B]Multicanal ESPN[/B]     </title>
-<link>$doregex[url]|Referer=http://depo.superligatv.com</link>
+<link>$doregex[url]|Referer=http://fut.superligatv.com&amp;User-Agent=iPad</link>
  
  <regex>
 <name>url</name>
@@ -1209,7 +1209,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
   <item>
  <title>[B]Multicanal ESPN 2[/B]     </title>
-<link>$doregex[url]|Referer=http://www.televalltv.net/</link>
+<link>$doregex[url]|Referer=http://fut.superligatv.com&amp;User-Agent=iPad</link>
  
  <regex>
 <name>url</name>
@@ -1221,7 +1221,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
   <item>
  <title>[B]Multicanal ESPN 3[/B]     </title>
-<link>$doregex[url]</link>
+<link>$doregex[url]|Referer=http://fut.superligatv.com&amp;User-Agent=iPad</link>
  
  <regex>
 <name>url</name>
@@ -1235,7 +1235,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
   <item>
  <title>[B]Multicanal ESPN Deportes[/B]     *</title>
-<link>$doregex[url]</link>
+<link>$doregex[url]|Referer=http://fut.superligatv.com&amp;User-Agent=iPad</link>
  
  <regex>
 <name>url</name>
@@ -1251,7 +1251,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
   <item>
  <title>[B]Multicanal Fox Sports[/B]     </title>
-<link>$doregex[url]</link>
+<link>$doregex[url]|Referer=http://fut.superligatv.com&amp;User-Agent=iPad</link>
  
  <regex>
 <name>url</name>
@@ -1263,7 +1263,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
   <item>
  <title>[B]Multicanal Fox Sports 2[/B]     </title>
-<link>$doregex[url]</link>
+<link>$doregex[url]|Referer=http://fut.superligatv.com&amp;User-Agent=iPad</link>
  
  <regex>
 <name>url</name>
@@ -1277,7 +1277,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
   <item>
  <title>[B]Multicanal Fox Sports 3[/B]     </title>
-<link>$doregex[url]</link>
+<link>$doregex[url]|Referer=http://fut.superligatv.com&amp;User-Agent=iPad</link>
  
  <regex>
 <name>url</name>
@@ -1297,42 +1297,15 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-  <item>
- <title>[B]Multicanal Formula 1[/B]     </title>
-<link>$doregex[url]</link>
- 
- <regex>
-<name>url</name>
-<expres><![CDATA[source: "([^"]+)]]></expres>
-<page>http://depo.superligatv.com/f1.php?width=720&height=406</page>
-</regex>
- 
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-
-
-  <item>
- <title>[B]Multicanal MLB HD[/B]     </title>
-<link>$doregex[url]</link>
- 
- <regex>
-<name>url</name>
-<expres><![CDATA[source: "([^"]+)]]></expres>
-<page>http://depo.superligatv.com/mlbhd.php?width=720&height=406</page>
-</regex>
- 
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-
 
   <item>
  <title>[B]Multicanal TDN[/B] **    </title>
-<link>$doregex[url]</link>
+<link>$doregex[url]|Referer=http://fut.superligatv.com&amp;User-Agent=iPad</link>
  
  <regex>
 <name>url</name>
 <expres><![CDATA[source: "([^"]+)]]></expres>
-<page>http://depo.superligatv.com/tdn.php?width=720&height=406</page>
+<page>http://depo.superligatv.com/tdnmx.php?width=720&height=406</page>
 </regex>
  
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
@@ -1341,7 +1314,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
   <item>
  <title>[B]Multicanal Univision TDN[/B]     </title>
-<link>$doregex[url]</link>
+<link>$doregex[url]|Referer=http://fut.superligatv.com&amp;User-Agent=iPad</link>
  
  <regex>
 <name>url</name>
@@ -1363,7 +1336,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
   <item>
  <title>[B]Multicanal TVC Deportes[/B]     </title>
-<link>$doregex[url]</link>
+<link>$doregex[url]|Referer=http://fut.superligatv.com&amp;User-Agent=iPad</link>
  
  <regex>
 <name>url</name>
@@ -1389,72 +1362,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
-
-
-
-
-
-
-
-
-  <item>
- <title>[B]Multicanal Planeta[/B]     </title>
-<link>$doregex[url]</link>
- 
- <regex>
-<name>url</name>
-<expres><![CDATA[source: "([^"]+)]]></expres>
-<page>http://depo.superligatv.com/planeta.php?width=720&height=406</page>
-</regex>
- 
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-
-
-  <item>
- <title>[B]Multicanal sky1[/B]     </title>
-<link>$doregex[url]</link>
- 
- <regex>
-<name>url</name>
-<expres><![CDATA[source: "([^"]+)]]></expres>
-<page>http://depo.superligatv.com/sky1.php?width=720&height=406</page>
-</regex>
- 
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-
-
-
-
-
-  <item>
- <title>[B]Multicanal sky2[/B]     </title>
-<link>$doregex[url]</link>
- 
- <regex>
-<name>url</name>
-<expres><![CDATA[source: "([^"]+)]]></expres>
-<page>http://depo.superligatv.com/sky2.php?width=720&height=406</page>
-</regex>
- 
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-
-
-
-
-  <item>
- <title>[B]Multicanal sky3[/B]     </title>
-<link>$doregex[url]</link>
- 
- <regex>
-<name>url</name>
-<expres><![CDATA[source: "([^"]+)]]></expres>
-<page>http://depo.superligatv.com/sky3.php?width=720&height=406</page>
-</regex>
- 
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
