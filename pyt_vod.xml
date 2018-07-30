@@ -2319,7 +2319,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
-<title>[B]ESTRENOS LATINOS   3-pages  [/B]</title>
+<title>[B]ESTRENOS LATINOS   3 pages  [/B]</title>
 
 <link>$doregex[makelist0]</link>
 
@@ -2343,7 +2343,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  firstpage = 1 ### probably  = 1 ###
  endurl = '/' ### can be empty ###    ### endurl without final / (SLASH) ###
 #
- dataregex = 'post_box.*?href="([^"]+).*?src="([^"]+).*?alt="([^"]+).*?title="([^"]+)'      ### To adapt ###
+ dataregex = 'post_box.*href="([^"]+).*src="([^"]+).*alt="([^"]+).*title="([^"]+)'      ### To adapt ###
  headers = {'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:50.0) Gecko/20100101 Firefox/50.0', 'Referer': ''}      ### To adapt ###
 ##############################################################################################################################################
 
