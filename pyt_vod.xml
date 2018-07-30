@@ -2338,7 +2338,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 ################################################################## FORMULARY #################################################################
  starturl = 'http://www.cinecalidad.to/'     ### usually, ~ 'http://website.com/category/' ###
- categorylink = ' ' ### check the number of the param ###
+ categorylink = '' ### check the number of the param ###
  centerurl = 'page/'      ### something like  '/page/' ###
  firstpage = 1 ### probably  = 1 ###
  endurl = '/' ### can be empty ###    ### endurl without final / (SLASH) ###
