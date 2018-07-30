@@ -2140,25 +2140,55 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
  
  
- <item>
-<title>[B]PELISMEDIA[/B] </title>
- <link>$doregex[makelist2]</link>
  
-   <regex>
-<name>makelist2</name>
-<listrepeat><![CDATA[
+ 
+ <item>
+<title>[B]PELISMEDIA[/B] 3PAGES</title>
+
+<link>$doregex[makelist2]</link>
+
+
+<regex>
+    <name>makelist2</name> movies  (all pages)
+ <listrepeat><![CDATA[
 <title> [makelist2.param3]   </title>
- <link>$doregex[makelist3]</link>
- <fanart>[makelist2.param2]</fanart>
-  <thumbnail>[makelist2.param2]</thumbnail>
+<link>$doregex[makelist3]</link>
+<fanart>[makelist2.param2]</fanart>
+ <thumbnail>[makelist2.param2]</thumbnail>
 ]]></listrepeat>
-<expres><![CDATA[item.*?\n.*?href="(.*?)"[\w\W\s]{0,35}src="(.*?)".*?alt="(.*?)"]]></expres>
-<page>http://www.pelismedia.com/genero/estrenos/</page>
+<expres><![CDATA[#$pyFunction
+import re, requests
+def GetLSProData(page_data,Cookie_Jar,m):
+
+################################################################## FORMULARY #################################################################
+ starturl = 'http://www.pelismedia.com/genero/estrenos/'     ### usually, ~ 'http://website.com/category/' ###
+ categorylink = '' ### check the number of the param ###
+ centerurl = 'page/'      ### something like  '/page/' ###
+ firstpage = 1 ### probably  = 1 ###
+ endurl = '/' ### can be empty ###    ### endurl without final / (SLASH) ###
+#
+ dataregex = 'item.*?\n.*?href="(.*?)"[\w\W\s]{0,35}src="(.*?)".*?alt="(.*?)"'      ### To adapt ###
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:50.0) Gecko/20100101 Firefox/50.0', 'Referer': ''}      ### To adapt ###
+##############################################################################################################################################
+
+############################## GENERIC PART #####################################
+ fullurl = starturl + centerurl + str(firstpage) + endurl + categorylink #
+ source = requests.get(fullurl, headers= headers).text #
+ data = [] #
+#
+ last = 3 #
+ while firstpage <= last: #
+    try: #
+        fullurl = starturl + centerurl + str(firstpage) + endurl + categorylink #
+        source = requests.get(fullurl, headers=headers).text #
+        data += re.findall(dataregex, source) #
+        firstpage += 1 #
+    except: #
+        pass #
+ return data #
+##########################################################by#twogun#and#jujuuj###
+]]></expres><page></page>
 </regex>
-
-
-
-
 
 
   <regex>
