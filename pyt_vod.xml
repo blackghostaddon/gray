@@ -705,21 +705,55 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
  
 <item>
-<title>[B]ESTRENOS[/B]  [Bajui] *</title>
- <link>$doregex[makelist2]</link>
- 
-   <regex>
-<name>makelist2</name>
-<listrepeat><![CDATA[
+<title>[B]ESTRENOS[/B]  [Bajui] </title>
+
+<link>$doregex[makelist2]</link>
+
+
+<regex>
+    <name>makelist2</name> movies  (all pages)
+ <listrepeat><![CDATA[
 <title> [makelist2.param2]  </title>
  <link>$doregex[makelist3]</link>
  <fanart>[makelist2.param1]</fanart>
   <info>[makelist2.param4]</info>
   <thumbnail>[makelist2.param1]</thumbnail>
 ]]></listrepeat>
-<expres><![CDATA[class="poster[\w\W\s]{0,8}src="(.*?)".*?alt="(.*?)"[\w\W\s]{0,600}href="(.*?)"]]></expres>
-<page>https://www.bajuineros.com/genero/estrenos/</page>
+<expres><![CDATA[#$pyFunction
+import re, requests
+def GetLSProData(page_data,Cookie_Jar,m):
+
+################################################################## FORMULARY #################################################################
+ starturl = 'https://www.bajuineros.com/genero/estrenos/'     ### usually, ~ 'http://website.com/category/' ###
+ categorylink = '' ### check the number of the param ###
+ centerurl = 'page/'      ### something like  '/page/' ###
+ firstpage = 1 ### probably  = 1 ###
+ endurl = '/' ### can be empty ###    ### endurl without final / (SLASH) ###
+#
+ dataregex = 'class="poster[\w\W\s]{0,8}src="(.*?)".*?alt="(.*?)"[\w\W\s]{0,600}href="(.*?)"'      ### To adapt ###
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:50.0) Gecko/20100101 Firefox/50.0', 'Referer': ''}      ### To adapt ###
+##############################################################################################################################################
+
+############################## GENERIC PART #####################################
+ fullurl = starturl + centerurl + str(firstpage) + endurl + categorylink #
+ source = requests.get(fullurl, headers= headers).text #
+ data = [] #
+#
+ last = 3 #
+ while firstpage <= last: #
+    try: #
+        fullurl = starturl + centerurl + str(firstpage) + endurl + categorylink #
+        source = requests.get(fullurl, headers=headers).text #
+        data += re.findall(dataregex, source) #
+        firstpage += 1 #
+    except: #
+        pass #
+ return data #
+##########################################################by#twogun#and#jujuuj###
+]]></expres><page></page>
 </regex>
+
+
 
 
 
@@ -2143,7 +2177,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
  
  <item>
-<title>[B]PELISMEDIA[/B] 3PAGES</title>
+<title>[B]PELISMEDIA[/B] </title>
 
 <link>$doregex[makelist2]</link>
 
