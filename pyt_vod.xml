@@ -730,7 +730,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  firstpage = 1 ### probably  = 1 ###
  endurl = '/' ### can be empty ###    ### endurl without final / (SLASH) ###
 #
- dataregex = 'class="poster[\w\W\s]{0,8}src="(.*?)".*?alt="(.*?)"[\w\W\s]{0,600}href="(.*?)"'      ### To adapt ###
+ dataregex = 'class="poster[\w\W\s]{0,8}src="([^"]+).*?alt="([^"]+)[\w\W\s]{0,600}href="([^"]+)'      ### To adapt ###
  headers = {'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:50.0) Gecko/20100101 Firefox/50.0', 'Referer': ''}      ### To adapt ###
 ##############################################################################################################################################
 
