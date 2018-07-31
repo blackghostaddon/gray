@@ -1449,10 +1449,10 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <listrepeat><![CDATA[
 <title>[B][makelist3.param1][/B] - [makelist2.param2]</title>
 <link>$doregex[id3]</link>
-<thumbnail>[makelist3.param3]</thumbnail>
+<thumbnail>http://allpeliculas.com/source/movies/poster/[makelist3.param4]/thumbs/poster-1.jpg</thumbnail>
 ]]></listrepeat>
 <expres><![CDATA[data-link="(.*?)">(.*?)<]]></expres>
-<page>http://allpeliculas.com/[makelist3.param1]</page>
+<page>http://allpeliculas.com/[makelist3.param3]</page>
 </regex>
 
 
@@ -1519,7 +1519,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <listrepeat><![CDATA[
 <title>[B][makelist3.param1][/B] - [makelist2.param2]</title>
 <link>$doregex[id3]</link>
-<thumbnail>[makelist3.param3]</thumbnail>
+<thumbnail>http://allpeliculas.com/source/movies/poster/[makelist3.param4]/thumbs/poster-1.jpg</thumbnail>
 ]]></listrepeat>
 <expres><![CDATA[data-link="(.*?)">(.*?)<]]></expres>
 <page>http://allpeliculas.com/pelicula/[makelist3.param3]</page>
@@ -1555,7 +1555,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
  <itEm>
-<title>[B]ULTRAPELICULAS HD[/B] Estrenos </title>
+<title>[B]ULTRAPELICULAS HD[/B] Estrenos  **</title>
 <link>$doregex[makelist2]</link>
 
 <regex>
@@ -1567,19 +1567,35 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>[makelist2.param1]</thumbnail>
 ]]></listrepeat>
 <expres>poster"[\w\W\s]{0,15}src="(.*?)"[\w\W\s]{0,3}alt="(.*?)"[\w\W\s]{0,175}href="(.*?)"</expres>
-<page>https://www.ultrapeliculashd.com</page>
+<page>https://www.ultrapeliculashd.com/genre/estrenos/</page>
 </regex>
 
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
 <title>[makelist2.param2]   server:openload/[makelist.param1]</title>
-<urlsolve>https://openload.co/embed/[makelist.param1]</urlsolve>
+<link>$doregex[id3]</link>
 <fanart>[makelist2.param1]</fanart>
 <thumbnail>[makelist2.param1]</thumbnail>
 ]]></listrepeat>
-<expres>openload.co\/embed\/(.*?)"</expres>
+<expres><![CDATA[rptss"\ssrc="(.*?)"]]></expres>
 <page>[makelist2.param3]</page>
+</regex>
+
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver
+    url = '[makelist.param1]'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'http://adryantv.org/error.mp4'
+    return u
+]]></expres>
+<page></page>
 </regex>
 
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart></item>
