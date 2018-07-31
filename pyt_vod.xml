@@ -1392,7 +1392,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
  <item>
-<title>[B]ALL PELICULAS[/B] Estrenos 3pages</title>
+<title>[B]ALL PELICULAS[/B] Estrenos </title>
 
 
 <link>$doregex[makelist3]</link>
@@ -1401,10 +1401,9 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
     <name>makelist3</name> movies  (all pages)
  <listrepeat><![CDATA[
-<title>[makelist3.param4]</title>
+<title>[makelist3.param1] ([makelist3.param1]) </title>
 <link>$doregex[makelist2]</link>
-<thumbnail>[makelist3.param3]</thumbnail>
-  <thumbnail>[makelist3.param3]</thumbnail>
+<thumbnail>http://allpeliculas.com/source/movies/poster/[makelist3.param4]/thumbs/poster-1.jpg</thumbnail>
 ]]></listrepeat>
 <expres><![CDATA[#$pyFunction
 import re, requests
@@ -1417,7 +1416,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  firstpage = 1 ### probably  = 1 ###
  endurl = '/' ### can be empty ###    ### endurl without final / (SLASH) ###
 #
- dataregex = 'false.*?href="(.*?)"\salt="(.*?)"[\w\W\s]{0,130}background-image:\surl\(\'(.*?)\'[\w\W\s]{0,172}p>(.*?)<'      ### To adapt ###
+ dataregex = '\"title\"\:\"(.*?)\".*?origin_name\"\:\"(.*?)\".*?slug\"\:\"(.*?)\".*?img_dir\"\:\"(tt.*?)\"'      ### To adapt ###
  headers = {'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:50.0) Gecko/20100101 Firefox/50.0', 'Referer': ''}      ### To adapt ###
 ##############################################################################################################################################
 
@@ -1441,10 +1440,14 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 
 
+ 
+
+
+
 <regex>
 <name>makelist2</name>
 <listrepeat><![CDATA[
-<title>[B][makelist3.param4][/B] - [makelist2.param2]</title>
+<title>[B][makelist3.param1][/B] - [makelist2.param2]</title>
 <link>$doregex[id3]</link>
 <thumbnail>[makelist3.param3]</thumbnail>
 ]]></listrepeat>
@@ -1514,7 +1517,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>makelist2</name>
 <listrepeat><![CDATA[
-<title>[B][makelist3.param4][/B] - [makelist2.param2]</title>
+<title>[B][makelist3.param1][/B] - [makelist2.param2]</title>
 <link>$doregex[id3]</link>
 <thumbnail>[makelist3.param3]</thumbnail>
 ]]></listrepeat>
