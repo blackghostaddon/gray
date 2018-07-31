@@ -1573,7 +1573,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[makelist2.param2]   server:openload/[makelist.param1]</title>
+<title>[makelist2.param2]   server:[makelist.param1]</title>
 <link>$doregex[id3]</link>
 <fanart>[makelist2.param1]</fanart>
 <thumbnail>[makelist2.param1]</thumbnail>
