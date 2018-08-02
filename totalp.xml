@@ -56,6 +56,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
+
+
 			<item>
 		<title>•  [B]TotalPlay[/B]  [ Opcion [B]TecnoTV[/B] ][B]  [/B]  </title>
 <link>NA</link>
@@ -136,18 +138,16 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
-<title>•  [B]TotalPlay[/B]  [ Opcion [B]pastebin 2[/B] ][B]   [/B]  </title>
-<link>NA</link>2
-<externallink>https://pastebin.com/raw/SUayde7F</externallink>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/img/tp.jpg</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/img/fanart.jpg</fanart></item>
-
-
-
-<item>
 <title>•  [B]TotalPlay[/B]  [ Opcion [B]nibbletv[/B] ][B]   [/B]  </title>
 <link>NA</link>2
-<externallink>https://www.nibbletv.info/TV-LWJ.m3u</externallink>
+<externallink>https://www.nibbletv.info/TV-YNL.m3u</externallink>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/img/tp.jpg</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/img/fanart.jpg</fanart></item>
+
+<item>
+<title>•  [B]TotalPlay[/B]  [ Opcion [B]nibblepelis[/B] ][B]   [/B]  </title>
+<link>NA</link>2
+<externallink>https://www.nibbletv.info/PELIS-YNL.m3u</externallink>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/img/tp.jpg</thumbnail>
 <fanart>https://raw.githubusercontent.com/blackghostaddon/gray/img/fanart.jpg</fanart></item>
 
@@ -155,7 +155,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
-<title>[B]Selecciona una lista CECEGEEK[/B]</title>
+<title>[B]Selecciona una lista de CECEGEEK[/B]</title>
 
 <link>NA</link>
 <externallink>$doregex[select]</externallink>
@@ -165,10 +165,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 def GetLSProData(page_data,Cookie_Jar,m):
    import xbmcgui
    dialog = xbmcgui.Dialog()
-   ret = dialog.select('Seleciona una Lista ', ['http://bit.ly/chilenostv', 'http://bit.ly/tvariados', 'http://bit.ly/varIPTV', 'http://bit.ly/Cineip', 'http://bit.ly/tvclubiptv', 'http://bit.ly/Iptvtuxtla', 'http://bit.ly/regioflixtv', 'http://bit.ly/iptvespña', 'http://bit.ly/pelisclub', 'http://bit.ly/4000pelis', 'http://bit.ly/deportvs', 'http://bit.ly/tvtecno', 'http://bit.ly/nibblettv', 'http://bit.ly/nibblepelis', 'http://bit.ly/musicatv', 'http://bit.ly/latinostv'
-])
-   lists = ['http://bit.ly/chilenostv', 'http://bit.ly/tvariados', 'http://bit.ly/varIPTV', 'http://bit.ly/Cineip', 'http://bit.ly/tvclubiptv', 'http://bit.ly/Iptvtuxtla', 'http://bit.ly/regioflixtv', 'http://bit.ly/iptvespña', 'http://bit.ly/pelisclub', 'http://bit.ly/4000pelis', 'http://bit.ly/deportvs', 'http://bit.ly/tvtecno', 'http://bit.ly/nibblettv', 'http://bit.ly/nibblepelis', 'http://bit.ly/musicatv', 'http://bit.ly/latinostv'
-]
+   ret = dialog.select('Seleciona una Lista ', ['http://bit.ly/SeriesIPTV', 'http://bit.ly/Cineflixx', 'http://bit.ly/Pelis-TV-Depor', 'http://bit.ly/340IPTVLatin', 'http://bit.ly/DeportesYmas', 'http://bit.ly/PELISyTV', 'http://bit.ly/seriesytv', 'http://bit.ly/canalesIPTV440', 'http://bit.ly/TVyPeliss', 'http://bit.ly/PelisyTV700', 'http://bit.ly/tvypelism3u', 'http://bit.ly/358IPTV-vip', 'http://bit.ly/ultimaspelis'])
+   lists = ['http://bit.ly/SeriesIPTV', 'http://bit.ly/Cineflixx', 'http://bit.ly/Pelis-TV-Depor', 'http://bit.ly/340IPTVLatin', 'http://bit.ly/DeportesYmas', 'http://bit.ly/PELISyTV', 'http://bit.ly/seriesytv', 'http://bit.ly/canalesIPTV440', 'http://bit.ly/TVyPeliss', 'http://bit.ly/PelisyTV700', 'http://bit.ly/tvypelism3u', 'http://bit.ly/358IPTV-vip', 'http://bit.ly/ultimaspelis']
    return lists[ret]
 ]]></expres>
 <page></page>
