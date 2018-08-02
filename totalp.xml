@@ -144,64 +144,14 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/img/tp.jpg</thumbnail>
 <fanart>https://raw.githubusercontent.com/blackghostaddon/gray/img/fanart.jpg</fanart></item>
 
-<item>
-<title>•  [B]TotalPlay[/B]  [ Opcion [B]nibblepelis[/B] ][B]   [/B]  </title>
-<link>NA</link>2
-<externallink>https://www.nibbletv.info/PELIS-YNL.m3u</externallink>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/img/tp.jpg</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/img/fanart.jpg</fanart></item>
+ 
 
 
 
 
 
 <item>
-<title>•  [B]TotalPlay[/B]  [ Opcion [B]test[/B] ][B]   [/B]  </title>
-<link>NA</link>2
-<externallink>$doregex[getm3u8]</externallink>
-
-<regex>
-<name>getm3u8</name>
-<expres>$pyFunction:hex.decode('$doregex[m3u8]')</expres>
-<page></page>
-</regex>
-
-<regex>
-<name>m3u8</name>
-<expres>NibbleTVdecode\(\"TV(.*?)\"</expres>
-<page>http://www.nibbletv.info/Listas-M3U</page>
-</regex>
-
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/img/tp.jpg</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/img/fanart.jpg</fanart></item>
-
-
-
-
-<item>
-<title>•  [B]TotalPlay[/B]  [ Opcion [B]test[/B] ][B]   [/B]  </title>
-<link>NA</link>2
-<externallink>$doregex[getm3u8]</externallink>
-
-<regex>
-<name>getm3u8</name>
-<expres>$pyFunction:"$doregex[m3u8]".decode("hex")</expres>
-<page></page>
-</regex>
-
-<regex>
-<name>m3u8</name>
-<expres>NibbleTVdecode\(\"TV(.*?)\"</expres>
-<page>http://www.nibbletv.info/Listas-M3U</page>
-</regex>
-
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/img/tp.jpg</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/img/fanart.jpg</fanart></item>
-
-
-
-<item>
-<title>•  [B]TotalPlay[/B]  [ Opcion [B]test3[/B] ][B]   [/B]  </title>
+<title>•  [B]TotalPlay[/B]  [ Opcion [B]nibbletv[/B] ][B]   [/B]  </title>
 <link>NA</link>2
 <externallink>$doregex[getm3u8]</externallink>
 
@@ -219,6 +169,29 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/img/tp.jpg</thumbnail>
 <fanart>https://raw.githubusercontent.com/blackghostaddon/gray/img/fanart.jpg</fanart></item>
+
+
+
+<item>
+<title>•  [B]TotalPlay[/B]  [ Opcion [B]nibblepelis[/B] ][B]   [/B]  </title>
+<link>NA</link>2
+<externallink>$doregex[getm3u8]</externallink>
+<regex>
+<name>getm3u8</name>
+<expres>$pyFunction:'$doregex[m3u8]'.decode("hex")</expres>
+<page></page>
+</regex>
+
+<regex>
+<name>m3u8</name>
+<expres>listapelis.*?NibbleTVdecode\(\"TV(.*?)\"</expres>
+<page>http://www.nibbletv.info/Listas-M3U</page>
+</regex>
+
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/img/tp.jpg</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/img/fanart.jpg</fanart></item>
+
+
 
 
 
