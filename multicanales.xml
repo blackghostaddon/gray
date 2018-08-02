@@ -237,22 +237,14 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-
-
- <item>
- <title>[B]Multicanal Univision Deportes [/B]      </title>
- <link>https://nludnoo.akamaized.net/nlds/univision/as/live/udnoo_hd_4500_ipad.m3u8?hdnea=expires=1496782118~access=/nlds/univisionnow/univision_east/as/live/*~md5=a4f512d96d77b9a4f5e4d8f31bbf5361</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
 <itEm>
-<title>[B]Multicanal PSN Deportes [/B] *     </title>
+<title>[B]Multicanal PSN Deportes [/B]     </title>
 <link>https://mp4.vaughnsoft.net/live?app=live&amp;port=2935&amp;stream=live_psn97v|Referer=https://vaughnlive.tv/</link>
 </item>
- 
-<itEm>
-<title>[B]Multicanal univision Deportes [/B] *     </title>
-<link>https://ssh101.com/m3u8/dyn/annix11/index.m3u8</link>
-</item>
+
+
+
+
 
 
 
@@ -1489,8 +1481,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
-<title>[B] VipRacing [/B] [COLOR lime][I]  SportsDevil [Descarga last version desde BlackGhost Repo]  [/I][/COLOR]</title>
-<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://vipracing.info/channel/canal-$doregex[select]a83</link>
+<title>[B] VipRacing* [/B] [COLOR lime][I]  SportsDevil [Descarga last version desde BlackGhost Repo]  [/I][/COLOR]</title>
+<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://vipracing.info/channel/canal-$doregex[select]</link>
 <regex>
 <name>select</name>
 <expres><![CDATA[#$pyFunction
