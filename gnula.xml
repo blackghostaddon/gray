@@ -1,5 +1,5 @@
 
-<SetViewMode>55</SetViewMode>
+
 
 
 
@@ -15,7 +15,7 @@
 <regex>
 <name>makelist1</name>
 <listrepeat><![CDATA[
-<SetViewMode>55</SetViewMode>
+
 <title>[makelist1.param1]   </title>
 <link>$doregex[makelist2]</link>
 <thumbnail>http://www.seriespapaya.com/uploads/[makelist1.param2]</thumbnail>
@@ -45,7 +45,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>makelist2</name>
 <listrepeat><![CDATA[
-<SetViewMode>55</SetViewMode>
+
 <title>[makelist1.param1] [makelist2.param2]     </title>
 <link>$doregex[makelist3]</link>
 <thumbnail>http://www.seriespapaya.com/[makelist1.param1]</thumbnail>
@@ -60,7 +60,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>makelist3</name>
 <listrepeat><![CDATA[
-<SetViewMode>55</SetViewMode>
+
 <title>[makelist1.param1] [makelist2.param2] | Idioma:[B][makelist3.param1][/B]  Calidad:[B][makelist3.param5][/B]  Server:[B][makelist3.param3][/B]        </title>
 <link>$doregex[id3]</link>
 <thumbnail>http://www.seriespapaya.com/[makelist1.param1]</thumbnail>
@@ -104,109 +104,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-
-<item>
-<title>[B][  ][/B]    [B]BUSCAR SERIE[/B] metaseries</title>
-<link>$doregex[makelist4]</link>
-
-
-<regex>
-<name>makelist4</name>
-<listrepeat><![CDATA[
-<SetViewMode>55</SetViewMode>
-<title>[makelist4.param2]</title>
-<link>$doregex[makelist3]</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/series.png</thumbnail>
-]]></listrepeat>
-<expres>entry-title.*?href="(.*?)".*?bookmark">(.*?)en\ses</expres>
-<page>http://metaserie.com/?s=$doregex[search]</page>
-</regex>
-
-
-
-<regex>
-<name>search</name>
-<expres><![CDATA[#$pyFunction
-import xbmc
-import xbmcaddon
-import xbmcgui
-def GetLSProData(page_data,Cookie_Jar,m):
-    dialog = xbmcgui.Dialog()
-    d = dialog.input('Buscar Serie: ejemplo: Futurama', type=xbmcgui.INPUT_ALPHANUM).replace(" ", "+")
-    return d
-]]></expres>
-<page></page>
-<cookieJar></cookieJar>
-</regex>
-
-
-
-
-
-<regex>
-<name>makelist3</name>
-<listrepeat><![CDATA[
-<SetViewMode>55</SetViewMode>
-<title>[makelist3.param2]</title>
-<link>$doregex[makelist2]</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/series.png</thumbnail>
-]]></listrepeat>
-<expres>href="(.*?)">(Tempo.*?)<</expres>
-<page>[makelist4.param1]</page>
-</regex>
-
-
-
-
-<regex>
-<name>makelist2</name>
-<listrepeat><![CDATA[
-<SetViewMode>55</SetViewMode>
-<title>[makelist2.param2]</title>
-<link>$doregex[makelist]</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/series.png</thumbnail>
-]]></listrepeat>
-<expres>entry-title.*?href="(.*?)".*?bookmark">(.*?)<</expres>
-<page>[makelist3.param1]</page>
-</regex>
-
-
-<regex>
-<name>makelist</name>
-<listrepeat><![CDATA[
-<SetViewMode>55</SetViewMode>
-<title>server:[makelist.param3] - idioma:[makelist.param1]</title>
-<link>$doregex[id3]</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/series.png</thumbnail>
-]]></listrepeat>
-<expres>img\/(.*?)\.png[\w\W\s]{0,80}domain=(.*?)\"[\w\W\s]{0,5}nbsp\;(.*?)<</expres>
-<page>[makelist2.param1]</page>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/series.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
-</item>
-
-<regex>
-<name>id3</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m):
-    import urlresolver
-    url = '[makelist.param2]'
-    try:
-        u = urlresolver.resolve(url)
-    except:
-        u = 'http://blackaddon.rf.gd/error.mp4'
-    return u
-]]></expres>
-<page></page>
-</regex>
-
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/series.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
-</item>
-
-
-
-
-
 	
 
 <item>
@@ -218,7 +115,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>makelist1</name>
 <listrepeat><![CDATA[
-<SetViewMode>55</SetViewMode>
+
 <title>[makelist1.param2]   </title>
 <link>$doregex[makelist2]</link>
 <fanart>[makelist1.param3]</fanart>
@@ -247,7 +144,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>makelist2</name>
 <listrepeat><![CDATA[
-<SetViewMode>55</SetViewMode>
+
 <title>[makelist1.param2] - [makelist2.param3]    </title>
 <link>$doregex[makelist3]</link>
 <fanart>[makelist1.param3]</fanart>
@@ -262,7 +159,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>makelist3</name>
 <listrepeat><![CDATA[
-<SetViewMode>55</SetViewMode>
+
 <title>[makelist1.param2] - [makelist2.param3]  | [B][makelist3.param4][/B]  [B][makelist3.param5][/B]  Server:[B][makelist3.param3][/B]        </title>
 <link>$doregex[id3]</link>
 <fanart>[makelist1.param3]</fanart>
@@ -332,7 +229,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
   <name>makelist2</name>
   <listrepeat><![CDATA[
-  <SetViewMode>55</SetViewMode>
+  
         <title>[makelist2.param1]</title>
 <link>$doregex[makelist]</link>
 		<thumbnail>[makelist2.param3]</thumbnail>
@@ -508,7 +405,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>makelist0</name>
 <listrepeat><![CDATA[
-<SetViewMode>55</SetViewMode>
+
 <title>[makelist0.param2]   </title>
 <link>$doregex[makelist1]</link>
 ]]></listrepeat>
@@ -522,7 +419,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>makelist1</name>
 <listrepeat><![CDATA[
-<SetViewMode>55</SetViewMode>
+
 <title>[makelist1.param2]   </title>
 <link>$doregex[makelist2]</link>
 ]]></listrepeat>
@@ -536,7 +433,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>makelist2</name>
 <listrepeat><![CDATA[
-<SetViewMode>55</SetViewMode>
+
 <title>[makelist2.param3]  [makelist2.param2]   </title>
 <link>$doregex[makelist3]</link>
 ]]></listrepeat>
@@ -549,7 +446,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>makelist3</name>
 <listrepeat><![CDATA[
-<SetViewMode>55</SetViewMode>
+
 <title>[makelist2.param3][makelist2.param2] | Idioma:[B][makelist3.param3][/B]  Server:[B][makelist3.param2][/B]</title>
 <link>$doregex[id3]</link>
 <thumbnail>[makelist2.param2]</thumbnail>
@@ -597,7 +494,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>makelist1</name>
 <listrepeat><![CDATA[
-<SetViewMode>55</SetViewMode>
+
 <title>[makelist1.param3]   </title>
 <link>$doregex[makelist2]</link>
 <thumbnail>http://www.seriespapaya.com/[makelist1.param1]</thumbnail>
@@ -625,7 +522,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>makelist2</name>
 <listrepeat><![CDATA[
-<SetViewMode>55</SetViewMode>
+
 <title>[makelist1.param3] [makelist2.param2]     </title>
 <link>$doregex[makelist3]</link>
 <thumbnail>http://www.seriespapaya.com/[makelist1.param1]</thumbnail>
@@ -640,7 +537,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>makelist3</name>
 <listrepeat><![CDATA[
-<SetViewMode>55</SetViewMode>
+
 <title>[makelist1.param3] [makelist2.param2] | Idioma:[B][makelist3.param1][/B]  Calidad:[B][makelist3.param5][/B]  Server:[B][makelist3.param3][/B]        </title>
 <link>$doregex[id3]</link>
 <thumbnail>http://www.seriespapaya.com/[makelist1.param1]</thumbnail>
@@ -702,7 +599,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>makelist1</name>
 <listrepeat><![CDATA[
-<SetViewMode>55</SetViewMode>
+
 <title>[makelist1.param2]   </title>
 <link>$doregex[makelist2]</link>
 <fanart>[makelist1.param3]</fanart>
@@ -718,7 +615,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>makelist2</name>
 <listrepeat><![CDATA[
-<SetViewMode>55</SetViewMode>
+
 <title>[makelist1.param2] - [makelist2.param3]    </title>
 <link>$doregex[makelist3]</link>
 <fanart>[makelist1.param3]</fanart>
@@ -835,7 +732,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>makelist5</name>
 <listrepeat><![CDATA[
-<SetViewMode>55</SetViewMode>
+
 <title>[makelist5.param1][makelist5.param3]    </title>
 <link>$doregex[makelist2]</link>
 <thumbnail>[makelist4.param2]</thumbnail>
@@ -853,7 +750,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>makelist2</name>
 <listrepeat><![CDATA[
-<SetViewMode>55</SetViewMode>
+
 <title>MOSTRAR OPCIONES:[makelist5.param1][makelist5.param3] </title>
 <link>$doregex[makelist3]</link>
 <thumbnail>[makelist2.param3]</thumbnail>
@@ -867,7 +764,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>makelist3</name>
 <listrepeat><![CDATA[
-<SetViewMode>55</SetViewMode>
+
 <title>[makelist5.param1][makelist5.param3]   Server:[B][makelist3.param3][/B]</title>
 <link>$doregex[id3]</link>
 <thumbnail>[makelist2.param3]</thumbnail>
@@ -2921,7 +2818,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>makelist2</name>
 <listrepeat><![CDATA[
-<SetViewMode>55</SetViewMode>
+
 <title> [makelist2.param2]   </title>
 <link>$doregex[makelist3]</link>
 ]]></listrepeat>
@@ -2934,7 +2831,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>makelist3</name>
 <listrepeat><![CDATA[
-<SetViewMode>55</SetViewMode>
+
 <title>[makelist2.param3] [makelist2.param2] | server:[B][makelist3.param1][/B]   </title>
 <urlsolve>[makelist3.param1]</urlsolve>
 <thumbnail>[makelist2.param2]</thumbnail>
@@ -3021,7 +2918,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>makelist2</name>
 <listrepeat><![CDATA[
-<SetViewMode>55</SetViewMode>
+
 <title>[B][makelist2.param4][/B]</title>
 <link>$doregex[makelist1]</link>
 <thumbnail>[makelist2.param1]</thumbnail>
@@ -3053,7 +2950,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>makelist1</name>
 <listrepeat><![CDATA[
-<SetViewMode>55</SetViewMode>
+
 <title>[B][makelist1.param1][/B] [makelist1.param3]</title>
 <link>$doregex[makelist3]</link>
 <thumbnail>[makelist2.param1]</thumbnail>
@@ -3073,7 +2970,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>makelist3</name>
 <listrepeat><![CDATA[
-<SetViewMode>55</SetViewMode>
+
 <title>[makelist1.param3]   Server:[B][makelist3.param2][/B]</title>
 <link>$doregex[id3]</link>
 <thumbnail>[makelist2.param1]</thumbnail>
@@ -3139,7 +3036,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>makelist2</name>
 <listrepeat><![CDATA[
-<SetViewMode>55</SetViewMode>
+
 <title>[B][makelist2.param2][/B]</title>
 <link>$doregex[makelist1]</link>
 <thumbnail>[makelist2.param3]</thumbnail>
@@ -3156,7 +3053,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>makelist1</name>
 <listrepeat><![CDATA[
-<SetViewMode>55</SetViewMode>
+
 <title>[B][makelist1.param1][/B] [makelist1.param3]</title>
 <link>$doregex[makelist3]</link>
 <thumbnail>[makelist2.param3]</thumbnail>
@@ -3170,7 +3067,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>makelist3</name>
 <listrepeat><![CDATA[
-<SetViewMode>55</SetViewMode>
+
 <title>[makelist1.param3]   Server:[B][makelist3.param2][/B]</title>
 <link>$doregex[id3]</link>
 <thumbnail>[makelist2.param3]</thumbnail>
@@ -3318,7 +3215,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
  <name>makelist2</name>
  <listrepeat><![CDATA[
-  <SetViewMode>55</SetViewMode>
+  
         <title>[B][makelist2.param1] [/B] [makelist2.param6]  </title>
 <link>$doregex[makelist]</link>
 <thumbnail>https://www.thetvdb.com/banners/posters/[makelist2.param7]-1.jpg</thumbnail>
