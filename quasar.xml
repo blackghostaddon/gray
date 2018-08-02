@@ -24,7 +24,7 @@
 <regex>
 <name>makelist2</name>
 <listrepeat><![CDATA[
- <SetViewMode>55</SetViewMode>
+ 
  <title>[UPPERCASE][B] [makelist2.param3][/B][/UPPERCASE]  </title>
 <link>$doregex[makelist]</link>
 <thumbnail>[makelist2.param2]</thumbnail>
@@ -54,7 +54,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
- <SetViewMode>55</SetViewMode>
+ 
  <title>[UPPERCASE][B] [makelist2.param3][/B][/UPPERCASE]  Calidad:[makelist.param2]  Tamaño:[makelist.param3]  </title>
 <link>plugin://plugin.video.quasar/play?uri=[makelist.param4]</link>
 <thumbnail>[makelist2.param2]</thumbnail>
@@ -81,7 +81,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>makelist2</name>
 <listrepeat><![CDATA[
- <SetViewMode>55</SetViewMode>
+ 
  <title>[UPPERCASE][B] [makelist2.param2][/B][/UPPERCASE] [I][makelist2.param3][/I]  </title>
 <link>$doregex[makelist]</link>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
@@ -139,7 +139,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>makelist2</name>
 <listrepeat><![CDATA[
-   <SetViewMode>55</SetViewMode>
+   
    <title>[B][makelist2.param2][/B]  [makelist2.param3]</title>
 <link>$doregex[makelist]</link>
  <thumbnail>[makelist2.param4]</thumbnail>
@@ -233,7 +233,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>makelist2</name>
 <listrepeat><![CDATA[
- <SetViewMode>55</SetViewMode>
+ 
  <title>[UPPERCASE][B][makelist2.param3]   [/B][/UPPERCASE]  </title>
 <link>$doregex[makelist]</link>
 <thumbnail>[makelist2.param2]</thumbnail>
@@ -247,7 +247,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
- <SetViewMode>55</SetViewMode>
+ 
  <title>[UPPERCASE][B] [makelist2.param3][/B][/UPPERCASE]  Calidad:[makelist.param2]  Tamaño:[makelist.param3]  </title>
 <link>plugin://plugin.video.quasar/play?uri=[makelist.param4]</link>
 <thumbnail>[makelist2.param2]</thumbnail>
@@ -343,7 +343,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>makelist2</name>
 <listrepeat><![CDATA[
- <SetViewMode>55</SetViewMode>
+ 
  <title>[UPPERCASE][B] [makelist2.param5][/B][/UPPERCASE]   Calidad:[makelist2.param3]  </title>
 <link>$doregex[makelist]</link>
 <thumbnail>[makelist2.param2]</thumbnail>
@@ -356,7 +356,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
- <SetViewMode>55</SetViewMode>
+ 
  <title>[UPPERCASE][B] [makelist2.param5][/B][/UPPERCASE]  Calidad:[makelist.param1]  Tamaño:[makelist.param2]  </title>
 <link>plugin://plugin.video.quasar/play?uri=[makelist.param3]</link>
 <thumbnail>[makelist2.param2]</thumbnail>
@@ -1429,7 +1429,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>makelist2</name>
 <listrepeat><![CDATA[
-   <SetViewMode>55</SetViewMode>
+   
    <title>[B][makelist2.param2][/B] Tamaño: [makelist2.param3] Seed:[makelist2.param4] - Peers:[makelist2.param5] </title>
    <link>plugin://plugin.video.quasar/play?uri=[makelist.param1]</link>
  <thumbnail>[makelist.param4]</thumbnail>
@@ -1511,7 +1511,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>makelist2</name>
 <listrepeat><![CDATA[
-   <SetViewMode>55</SetViewMode>
+   
    <title>[B][makelist2.param2][/B] Tamaño: [makelist2.param3] Seed:[makelist2.param4] - Peers:[makelist2.param5] </title>
    <link>plugin://plugin.video.quasar/play?uri=[makelist.param1]</link>
  <thumbnail>[makelist.param4]</thumbnail>
@@ -1590,7 +1590,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>makelist2</name>
 <listrepeat><![CDATA[
-   <SetViewMode>55</SetViewMode>
+   
    <title>[B][makelist2.param2][/B] Tamaño: [makelist2.param3] Seed:[makelist2.param4] - Peers:[makelist2.param5] </title>
    <link>plugin://plugin.video.quasar/play?uri=[makelist.param1]</link>
  <thumbnail>[makelist.param4]</thumbnail>
@@ -1650,7 +1650,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-   <SetViewMode>55</SetViewMode>
+   
    <title>[B][makelist.param2][/B] Tamaño: [makelist.param3] Subido:[makelist.param4] Seed:[makelist.param5]    </title>
    <link>plugin://plugin.video.quasar/play?uri=[makelist.param1]</link>
  <thumbnail>[makelist2.param4]</thumbnail>
@@ -1693,7 +1693,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-   <SetViewMode>55</SetViewMode>
+   
    <title>[B][makelist.param3][/B]   </title>
    <link>plugin://plugin.video.quasar/play?uri=$doregex[torrent]</link>
  <thumbnail>[makelist.param1]</thumbnail>
@@ -1725,7 +1725,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-   <SetViewMode>55</SetViewMode>
+   
    <title>[B][makelist.param1][/B]   </title>
    <link>plugin://plugin.video.quasar/play?uri=$doregex[torrent]</link>
  <thumbnail>[makelist.param1]</thumbnail>
@@ -1755,7 +1755,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-   <SetViewMode>55</SetViewMode>
+   
    <title>[B][makelist.param1][/B]   </title>
    <link>plugin://plugin.video.quasar/play?uri=$doregex[torrent]</link>
  <thumbnail>[makelist.param1]</thumbnail>
@@ -1784,7 +1784,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-   <SetViewMode>55</SetViewMode>
+   
    <title>[B][makelist.param1][/B]   </title>
    <link>plugin://plugin.video.quasar/play?uri=$doregex[torrent]</link>
  <thumbnail>[makelist.param1]</thumbnail>
@@ -1810,7 +1810,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>makelist2</name>
 <listrepeat><![CDATA[
-   <SetViewMode>55</SetViewMode>
+   
    <title>[B][makelist2.param2][/B]   </title>
    <link>$doregex[makelist]</link>
 
@@ -1823,7 +1823,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-   <SetViewMode>55</SetViewMode>
+   
    <title>[B][makelist.param1][/B]   </title>
    <link>plugin://plugin.video.quasar/play?uri=$doregex[torrent]</link>
 
@@ -1858,7 +1858,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-   <SetViewMode>55</SetViewMode>
+   
    <title>[B][makelist.param2][/B] [makelist.param3] Uploaded:[makelist.param4] Seeds:[makelist.param5]  </title>
    <link>plugin://plugin.video.quasar/play?uri=$doregex[torrent]</link>
 

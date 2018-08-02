@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<SetViewMode>55</SetViewMode>
+
 
 
 
@@ -45,7 +45,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>lista</name>
   <listrepeat><![CDATA[
-         <SetViewMode>55</SetViewMode>
+         
 		 <title>$pyFunction:'[lista.param3]'.replace(".mp4", "  [I] [/I]").replace(".avi", "  [I] [/I]").replace(".mkv", "  [I] [/I]")</title>
         <link>$doregex[getUrl]</link>
 		 <thumbnail>[makelist4.param2]</thumbnail>
@@ -140,7 +140,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>lista</name>
   <listrepeat><![CDATA[
-         <SetViewMode>55</SetViewMode>
+         
          <title>$pyFunction:'[lista.param3]'.replace(".mp4", " ").replace(".avi", " ").replace(".mkv", " ")</title>
         <link>$doregex[getUrl]</link>
         <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail>
@@ -979,7 +979,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>makelist2</name>
 <listrepeat><![CDATA[
-<SetViewMode>55</SetViewMode>
+
 <title>$pyFunction:'[makelist0.param3]   idioma:[makelist2.param1]'.replace("div2", "Subtitulado").replace("div3", "Latino").replace("div0", "Subtitulado")</title>
 <link>$doregex[makelist3]</link>
    <thumbnail>[makelist0.param2]</thumbnail>
@@ -994,7 +994,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>makelist3</name>
 <listrepeat><![CDATA[
-<SetViewMode>55</SetViewMode>
+
 <title>[makelist0.param3]   Server:[B][makelist3.param2] [/B]</title>
 <link>$doregex[id3]</link>
    <thumbnail>[makelist0.param2]</thumbnail>
