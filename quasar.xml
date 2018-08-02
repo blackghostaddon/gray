@@ -2042,7 +2042,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
  <item>
-<title>     tests</title>
+<title>     testswsss</title>
 <link>$doregex[makelist0]</link>
 <regex>
 <name>makelist0</name>
@@ -2090,7 +2090,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
   srcs = []
   items = re.findall('service="BitTorrent"\sdata="([^"]+)',page_data)
   for embed,sdata in items:
-    srcs.append((embed.replace('Online',''), embeds[embed]%dec(sdata)))
+    srcs.append((embed.replace('BitTorrent',''), embeds[embed]%dec(sdata)))
   return srcs
 ]]></expres>
 <page>[makelist0.param1]</page>
