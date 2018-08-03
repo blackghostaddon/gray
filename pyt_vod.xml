@@ -1319,7 +1319,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
  <item>
- <title>[B]DESCARGAS 2020[/B] Audio Latino - Castellano </title>
+ <title>[B]DESCARGAS 2020[/B]  Audio Latino - Castellano *</title>
 
  <link>$doregex[makelist2]</link>
 
@@ -1358,7 +1358,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  <thumbnail>[makelist2.param3]</thumbnail>
  <fanart>[makelist2.param3]</fanart>
  ]]></listrepeat>
- <expres><![CDATA[href='(https://openload.*?|https://powvideo.*?|http://uptobox.*?|https://vidabc.*?)']]></expres>
+ <expres><![CDATA[href='(https://openload.*?|https://powvideo.*?|http://uptobox.*?|https://vidabc.*?|http://uptobox.*?|https://clip.*?)']]></expres>
  <page>[makelist2.param1]</page>
  </regex>
 
