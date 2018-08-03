@@ -2172,6 +2172,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  <listrepeat><![CDATA[
 <title>[makelist1.param3]</title>
 <link>$doregex[makelist2]</link>
+<fanart>[makelist1.param2]</fanart>
 <thumbnail>[makelist1.param2]</thumbnail>
 ]]></listrepeat>
 <expres><![CDATA[#$pyFunction
@@ -2215,7 +2216,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <listrepeat><![CDATA[
 <title>Mostrar Opciones : [I][makelist2.param1][/I]  </title>
 <link>$doregex[makelist3]</link>
-<thumbnail>[makelist2.param4]</thumbnail>
+<fanart>[makelist1.param2]</fanart>
+<thumbnail>[makelist1.param2]</thumbnail>
 ]]></listrepeat>
 <expres><![CDATA[data-lazy-src="(http.*?)"]]></expres>
 <page>[makelist1.param1]</page>
@@ -2228,8 +2230,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <listrepeat><![CDATA[
 <title>[B][makelist1.param3][/B]  Server:[makelist3.param1]</title>
  <link>$doregex[id3]</link>
-<fanart>[makelist2.param2]</fanart>
-<thumbnail>[makelist2.param2]</thumbnail>
+<fanart>[makelist1.param2]</fanart>
+<thumbnail>[makelist1.param2]</thumbnail>
 ]]></listrepeat>
 <expres>api\/(fast.*?|open.*?|streama.*?|cdn.*?|ok.*?|vido.*?)\..*?id=(aHR.*?)[\!|\&]</expres>
 <page>[makelist2.param1]</page>
