@@ -1660,7 +1660,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
-<title>[B]PELISPLANET[/B]  *      </title>
+<title>[B]PELISPLANET[/B]        </title>
 
 <link>$doregex[makelist2]</link>
 
@@ -1749,7 +1749,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
  <item>
-<title>[B]CUEVANA [/B] *   </title>
+<title>[B]CUEVANA [/B]   </title>
 <link>$doregex[makelist2]</link>
 
 <regex>
@@ -1784,10 +1784,10 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id3]</link>
 <thumbnail>[makelist2.param2]</thumbnail>
 ]]></listrepeat>
-<expres><![CDATA[=(http.*?)".*?\n.*?\n.*?\n.*?span>(.*?)]]></expres>
+<expres><![CDATA[=(http.*?)".*?\n.*?\n.*?\n.*?span>(.*?)<]]></expres>
 <page>[makelist2.param1]</page>
 </regex>
-<
+
 
 <regex>
 <name>id3</name>
@@ -1906,7 +1906,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
  
 <item>
-<title>[B]PELICULAS TODAY[/B]  </title>
+<title>[B]PELICULAS TODAY[/B] * </title>
  <link>$doregex[makelist2]</link>
  
  
@@ -1924,7 +1924,7 @@ import re, requests
 def GetLSProData(page_data,Cookie_Jar,m):
 
 ################################################################## FORMULARY #################################################################
- starturl = 'https://www.peliculastoday.com'     ### usually, ~ 'http://website.com/category/' ###
+ starturl = 'http://www.peliculastoday.com'     ### usually, ~ 'http://website.com/category/' ###
  categorylink = '' ### check the number of the param ###
  centerurl = 'page/'      ### something like  '/page/' ###
  firstpage = 1 ### probably  = 1 ###
