@@ -639,7 +639,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	
 	
 	
-<item>
+<itm>
 <title>[B]ESTRENOS[/B]  [AquiPelis] Audio Latino</title>
 <link>$doregex[makelist2]</link>
 
@@ -659,7 +659,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<SetwatchMode>55</SetwatchMode><title>[makelist2.param2]     server/[makelist.param1]</title>
+<title>[makelist2.param2]     server/[makelist.param1]</title>
  <link>$doregex[id3]</link>
 <thumbnail>[makelist2.param3]</thumbnail>
 <fanart>[makelist2.param3]</fanart>
@@ -1244,14 +1244,14 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<item>
+<iem>
 <title>[B]AQUIPELIS[/B]  Recientes audio latino    </title>
 <link>$doregex[makelist2]</link>
 
   <regex>
 <name>makelist2</name>
 <listrepeat><![CDATA[
-<SetwatchMode>55</SetwatchMode><title>[makelist2.param2]</title>
+<title>[makelist2.param2]</title>
 <link>$doregex[makelist]</link>
 <thumbnail>[makelist2.param3]</thumbnail>
 ]]></listrepeat>
@@ -1263,16 +1263,18 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<SetwatchMode>55</SetwatchMode><title>[makelist2.param2]        [makelist.param1]</title>
+<title>[makelist2.param2]        [makelist.param1]</title>
  <link>$doregex[id3]</link>
 <thumbnail>[makelist2.param3]</thumbnail>
 <fanart>[makelist2.param3]</fanart>
 ]]></listrepeat>
-<expres>"(https://openload.*?|https://powvideo.*?|https://userscloud.*?|https://uptobox.*?|https://streamango.*?|http://gamovideo.com.*?|https://www.rapidvideo.*?|https://streamplay.*?)"</expres>
+<expres>domain=(.*?)".*?goto\/\?to=(.*?)"</expres>
 <page>[makelist2.param1]</page>
 <referer></referer>
 <cookieJar></cookieJar>
 </regex>
+
+
 
 <regex>
 <name>id3</name>
