@@ -1660,33 +1660,54 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
-<title>[B]PELISPLANET[/B]        </title>
+<title>[B]PELISPLANET[/B]  *      </title>
 
-<link>$doregex[makelist3]</link>
-
-<regex>
-   <name>makelist3</name>
-<listrepeat><![CDATA[
-<title>Pagina [makelist3.param1]</title>
 <link>$doregex[makelist2]</link>
-]]></listrepeat>
-<expres>'(.*?)'</expres>
-<page>'1''2''3''4''5''6''7''8''9''10''11''12''13''14''15''16''17''18''19''20''21''22''23''24''25'</page>
-</regex>
 
-
+ 
 <regex>
-<name>makelist2</name>
-<listrepeat><![CDATA[
+    <name>makelist2</name> movies  (all pages)
+ <listrepeat><![CDATA[
 <title>  [makelist2.param2]     [I]Idioma: [makelist2.param4]  [/I]  </title>
 <link>$doregex[makelist]</link>
 <thumbnail>[makelist2.param5]</thumbnail>
 <fanart>[makelist2.param5]</fanart>
 ]]></listrepeat>
-<expres><![CDATA[href="(.*?)"[\w\W\s]{0,510}one-line">(.*?)<[\w\W\s]{0,350}flags/(.*?).png.*?title="(.*?)"[\w\W\s]{0,240}src="(.*?)"]]></expres>
-<page>http://www.pelisplanet.com/genero/estrenos/page/[makelist3.param1]/</page>
+<expres><![CDATA[#$pyFunction
+import re, requests
+def GetLSProData(page_data,Cookie_Jar,m):
 
- </regex>
+################################################################## FORMULARY #################################################################
+ starturl = 'http://www.pelisplanet.com/genero/estrenos/'     ### usually, ~ 'http://website.com/category/' ###
+ categorylink = '' ### check the number of the param ###
+ centerurl = 'page/'      ### something like  '/page/' ###
+ firstpage = 1 ### probably  = 1 ###
+ endurl = '/' ### can be empty ###    ### endurl without final / (SLASH) ###
+#
+ dataregex = 'href="(.*?)"[\w\W\s]{0,510}one-line">(.*?)<[\w\W\s]{0,350}flags/(.*?).png.*?title="(.*?)"[\w\W\s]{0,240}src="(.*?)"'      ### To adapt ###
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:50.0) Gecko/20100101 Firefox/50.0', 'Referer': ''}      ### To adapt ###
+##############################################################################################################################################
+
+############################## GENERIC PART #####################################
+ fullurl = starturl + centerurl + str(firstpage) + endurl + categorylink #
+ source = requests.get(fullurl, headers= headers).text #
+ data = [] #
+#
+ last = 4 #
+ while firstpage <= last: #
+    try: #
+        fullurl = starturl + centerurl + str(firstpage) + endurl + categorylink #
+        source = requests.get(fullurl, headers=headers).text #
+        data += re.findall(dataregex, source) #
+        firstpage += 1 #
+    except: #
+        pass #
+ return data #
+
+]]></expres><page></page>
+</regex>
+
+#href="([^"]+)[\W\w\s]{0,10}class="image[\W\w\s]{0,10}src="([^"]+).*?alt="([^"]+)
 
 <regex>
    <name>makelist</name>
@@ -1725,40 +1746,10 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<regex>
-<name>makelist3</name>
-<listrepeat><![CDATA[
-<SetwatchMode>55</SetwatchMode><title>[makelist3.param2]</title>
-<link>$doregex[makelist2]</link>
-]]></listrepeat>
-<expres><![CDATA[href="https://www.locopelis.com/pelicula/(.*?)">(.*?)<]]></expres>
-<page>http://www.locopelis.com/</page>
-</regex>
-
-
-
-  <regex>
-<name>makelist2</name>
-<listrepeat><![CDATA[
-<SetwatchMode>55</SetwatchMode>
-<title>[makelist2.param2] - [makelist2.param5]</title>
-<link>$doregex[makelist]</link>
-<thumbnail>[makelist2.param3]</thumbnail>
-]]></listrepeat>
-<expres><![CDATA[href="(.*?)"[\w\W\s]{0,2}title="(.*?)"[\w\W\s]{0,7}src="(.*?)"[\w\W\s]{0,2}alt="(.*?)"[\w\W\s]{0,1002}default\/img\/(idioma/.*?).png]]></expres>
-<page>https://www.locopelis.com/pelicula/[makelist3.param1]</page>
-</regex>
-
-
-
-
-
-
-
 
 
  <item>
-<title>[B]CUEVANA [/B]    </title>
+<title>[B]CUEVANA [/B] *   </title>
 <link>$doregex[makelist2]</link>
 
 <regex>
@@ -1793,10 +1784,10 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[id3]</link>
 <thumbnail>[makelist2.param2]</thumbnail>
 ]]></listrepeat>
-<expres><![CDATA[data-url="(.*?)".*?span>(.*?)<]]></expres>
+<expres><![CDATA[=(http.*?)".*?\n.*?\n.*?\n.*?span>(.*?)]]></expres>
 <page>[makelist2.param1]</page>
 </regex>
-
+<
 
 <regex>
 <name>id3</name>
