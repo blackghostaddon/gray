@@ -1392,7 +1392,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
  <item>
-<title>[B]ALL PELICULAS[/B] Estrenos </title>
+<title>[B]ALL PELICULAS[/B] Estrenos *</title>
 
 
 <link>$doregex[makelist3]</link>
@@ -1425,7 +1425,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  source = requests.get(fullurl, headers= headers).text #
  data = [] #
 #
- last = 3 #
+ last = 4 #
  while firstpage <= last: #
     try: #
         fullurl = starturl + centerurl + str(firstpage) + endurl + categorylink #
@@ -1452,7 +1452,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>http://allpeliculas.com/source/movies/poster/[makelist3.param4]/thumbs/poster-1.jpg</thumbnail>
 ]]></listrepeat>
 <expres><![CDATA[data-link="(.*?)">(.*?)<]]></expres>
-<page>http://allpeliculas.com/[makelist3.param3]</page>
+<page>http://allpeliculas.com/pelicula/[makelist3.param3]</page>
 </regex>
 
 
@@ -1555,7 +1555,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
  <itEm>
-<title>[B]ULTRAPELICULAS HD[/B] Estrenos  **</title>
+<title>[B]ULTRAPELICULAS HD[/B] Estrenos  </title>
 <link>$doregex[makelist2]</link>
 
 <regex>
