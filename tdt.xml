@@ -11,7 +11,7 @@
 
 
 <item>
-<title>[UPPERCASE][COLOR skyblue] La 1  [/UPPERCASE][/COLOR] *</title>
+<title>[UPPERCASE][COLOR skyblue] La 1  [/UPPERCASE][/COLOR] </title>
 <link>https:$doregex[get-id]|User-Agent=iPad&amp;Referer=http://vergol.com/live/tve1.php</link>
 <regex>
 <name>get-id</name>
@@ -33,7 +33,7 @@
 <regex>
 <name>GetPageUrl</name>
 <expres>source: '(.*?)'</expres>
-<page>http://livesports.pw/embeddeporte2.php?file=launotelefivegb&amp;width=650&amp;height=397</page>
+<page>http://livesports.pw/embeddeporte2.php?file=la1&amp;width=650&amp;height=397</page>
 <cookieJar></cookieJar>
 </regex>
  <thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/esp.jpg</thumbnail>   </item>
@@ -46,7 +46,7 @@
 <regex>
 <name>GetPageUrl</name>
 <expres>source: '(.*?)'</expres>
-<page>http://livesports.pw/embeddeporte2.php?file=tvdostelefive&amp;width=650&amp;height=397</page>
+<page>http://livesports.pw/embeddeporte2.php?file=la2&amp;width=650&amp;height=397</page>
 <cookieJar></cookieJar>
 </regex>
  <thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/esp.jpg</thumbnail>   </item>
@@ -61,7 +61,7 @@
 <regex>
 <name>GetPageUrl</name>
 <expres>source: '(.*?)'</expres>
-<page>http://livesports.pw/embeddeporte2.php?file=antenatress&amp;width=650&amp;height=397</page>
+<page>http://livesports.pw/embeddeporte2.php?file=antena3&amp;width=650&amp;height=397</page>
 <cookieJar></cookieJar>
 </regex>
  <thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/esp.jpg</thumbnail>   </item>
@@ -115,7 +115,7 @@
 <regex>
 <name>GetPageUrl</name>
 <expres>source: '(.*?)'</expres>
-<page>http://livesports.pw/embedna.php?file=cuatro&amp;width=650&amp;height=397</page>
+<page>http://livesports.pw/embeddeporte2.php?file=cuatro&amp;width=650&amp;height=397</page>
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
 <referer>http://cinestrenostv.tv/canales/envivo/plusestrenos.html</referer>
 </regex>
@@ -217,6 +217,21 @@
 <thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/esp.jpg</thumbnail><thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/esp.jpg</thumbnail>   </item>
 
 
+
+
+
+<item>
+<title>[UPPERCASE][COLOR skyblue] LaSexta[/UPPERCASE][/COLOR] </title>
+ <link>$doregex[GetPageUrl]|Referer=http://livesports.pw/embed2.php?file=launotelefivegb&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0</link>
+<regex>
+<name>GetPageUrl</name>
+<expres>source: '(.*?)'</expres>
+<page>http://livesports.pw/embeddeporte2.php?file=lasexta&amp;width=650&amp;height=397</page>
+<cookieJar></cookieJar>
+</regex>
+
+
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/esp.jpg</thumbnail>   </item>
 
 
 
