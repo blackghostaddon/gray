@@ -20,7 +20,7 @@
 
 
 <item>
-<title>[UPPERCASE][COLOR skyblue]  Partidazo *  [/UPPERCASE][/COLOR] </title>
+<title>[UPPERCASE][COLOR skyblue]  Partidazo   [/UPPERCASE][/COLOR] </title>
 <link>$doregex[GetPageUrl]|Referer=http://livesports.pw/embedna.php?file=movestr&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64; rv:56.0) Gecko/20100101 Firefox/56.0</link>
 <regex>
 <name>GetPageUrl</name>
@@ -75,9 +75,6 @@
 
 
 
-
-
-
 <item>
 <title>[UPPERCASE][COLOR skyblue]  Bein Sport [/UPPERCASE][/COLOR] </title>
 
@@ -86,6 +83,24 @@
 <name>GetPageUrl</name>
 <expres>source: '(.*?)'</expres>
 <page>http://livesports.pw/embeddeporte2.php?file=beinsport&amp;width=650&amp;height=397</page>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/esp.png</thumbnail>   </item>
+
+
+
+
+
+
+
+<item>
+<title>[UPPERCASE][COLOR skyblue]  Bein Sport Ñ [/UPPERCASE][/COLOR] </title>
+
+<link>$doregex[GetPageUrl]|User-Agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+rv%3A11.0%29+like+Gecko</link>
+<regex>
+<name>GetPageUrl</name>
+<expres>source: '(.*?)'</expres>
+<page>http://livesports.pw/embeddeporte2.php?file=beinsportn&amp;width=650&amp;height=397</page>
 <cookieJar></cookieJar>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/esp.png</thumbnail>   </item>
@@ -116,7 +131,7 @@
 
 
 <item>
-<title>[UPPERCASE][COLOR skyblue]  GolTV ** [/UPPERCASE][/COLOR] </title>
+<title>[UPPERCASE][COLOR skyblue]  GolTV   [/UPPERCASE][/COLOR] </title>
 
 <link>$doregex[GetPageUrl]|User-Agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+rv%3A11.0%29+like+Gecko</link>
 <regex>
@@ -165,7 +180,7 @@
 
 
 <item>
-<title>[UPPERCASE][COLOR skyblue] Liga 123 **[/UPPERCASE][/COLOR] </title>
+<title>[UPPERCASE][COLOR skyblue] Liga 123  [/UPPERCASE][/COLOR] </title>
 
 <link>$doregex[GetPageUrl]|User-Agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+rv%3A11.0%29+like+Gecko</link>
 <regex>
@@ -411,7 +426,7 @@
 <regex>
 <name>GetPageUrl</name>
 <expres>source: '(.*?)'</expres>
-<page>http://livesports.pw/embedna.php?file=futbolespm&amp;width=650&amp;height=397</page>
+<page>http://livesports.pw/embedna.php?file=mfutboles&amp;width=650&amp;height=397</page>
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
 <referer>http://cinestrenostv.tv/canales/envivo/plusseriesxtra.html</referer>
 </regex>
