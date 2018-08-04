@@ -4,7 +4,7 @@
 
 
 
-<item>
+<itm>
 <title>[UPPERCASE][COLOR skyblue]  #0[/UPPERCASE][/COLOR] </title>
 <link>$doregex[get-id]|Referer=http://vergol.com/live/plus1.php&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
 <regex>
@@ -54,6 +54,20 @@
 
 
 
+<item>
+<title>[UPPERCASE][COLOR skyblue]  #0[/UPPERCASE][/COLOR] </title>
+<link>$doregex[GetPageUrl]|Referer=http://livesports.pw/embeddeporte2.php?file=movestr&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64; rv:56.0) Gecko/20100101 Firefox/56.0</link>
+<regex>
+<name>GetPageUrl</name>
+<expres>source: '(.*?)'</expres>
+<page>http://livesports.pw/embeddeporte2.php?file=movistarcero&amp;width=650&amp;height=397</page>
+<agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
+<referer>http://cinestrenostv.tv/canales/envivo/plusestrenos.html</referer>
+</regex>
+<thumbnail>http://adryanlist.org/adryan/img/esp.png</thumbnail>   </item>
+
+
+
 
 
 
@@ -77,7 +91,7 @@
 
 <item>
 <title>[UPPERCASE][COLOR skyblue]  ESTRENOS[/UPPERCASE][/COLOR] </title>
-<link>$doregex[GetPageUrl]|Referer=http://vercanalestv.com/tv/nacionales/canal-plus-estrenos.html&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
+<link>https:$doregex[GetPageUrl]|Referer=http://vercanalestv.com/tv/nacionales/canal-plus-estrenos.html&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
 <regex>
 <name>GetPageUrl</name>
 <expres>source: '(.*?)'</expres>
@@ -128,8 +142,8 @@
 
 
 <item>
-<title>[UPPERCASE][COLOR skyblue]  DCINE * [/UPPERCASE][/COLOR] </title>
-<link>$doregex[get-id]|Referer=http://verdirectotv.com/tv/digitales/plus-series.html&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
+<title>[UPPERCASE][COLOR skyblue]  DCINE  [/UPPERCASE][/COLOR] </title>
+<link>http:$doregex[get-id]|Referer=http://verdirectotv.com/tv/digitales/plus-series.html&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
 <regex>
 <name>get-id</name>
 <expres>source: '(.*?)'</expres>
@@ -154,8 +168,8 @@
 
 
 <item>
-<title>[UPPERCASE][COLOR skyblue]  SERIES [/UPPERCASE][/COLOR] </title>
-<link>$doregex[get-id]|Referer=http://verdirectotv.com/tv/digitales/plus-series.html&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
+<title>[UPPERCASE][COLOR skyblue]  SERIES **[/UPPERCASE][/COLOR] </title>
+<link>https:$doregex[get-id]|Referer=http://verdirectotv.com/tv/digitales/plus-series.html&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
 <regex>
 <name>get-id</name>
 <expres>source: '(.*?)'</expres>
@@ -196,7 +210,7 @@
 
 <item>
 <title>[UPPERCASE][COLOR skyblue]  COMEDIA [/UPPERCASE][/COLOR] </title>
-<link>$doregex[get-id]|Referer=http://verdirectotv.com/tv/digitales/plus-series.html&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
+<link>https:$doregex[get-id]|Referer=http://verdirectotv.com/tv/digitales/plus-series.html&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
 <regex>
 <name>get-id</name>
 <expres>source: '(.*?)'</expres>
@@ -235,7 +249,7 @@
 
 <item>
 <title>[UPPERCASE][COLOR skyblue]  cinemax[/UPPERCASE][/COLOR] </title>
-<link>$doregex[GetPageUrl]|Referer=http://vercanalestv.com/tv/argentina/cinemax.html&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
+<link>https:$doregex[GetPageUrl]|Referer=http://vercanalestv.com/tv/argentina/cinemax.html&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
 <regex>
 <name>GetPageUrl</name>
 <expres>source: '(.*?)'</expres>
