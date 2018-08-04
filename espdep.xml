@@ -42,7 +42,7 @@
 <regex>
 <name>GetPageUrl</name>
 <expres>source: '(.*?)'</expres>
-<page>http://livesports.pw/embeddeporte2.php?file=barliga&amp;width=650&amp;height=397</page>
+<page>http://livesports.pw/embeddeporte2.php?file=barligas&amp;width=650&amp;height=397</page>
 <cookieJar></cookieJar>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/esp.png</thumbnail>   </item>
@@ -115,12 +115,28 @@
 
 
 
+<item>
+<title>[UPPERCASE][COLOR skyblue]  GolTV ** [/UPPERCASE][/COLOR] </title>
+
+<link>$doregex[GetPageUrl]|User-Agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+rv%3A11.0%29+like+Gecko</link>
+<regex>
+<name>GetPageUrl</name>
+<expres>source: '(.*?)'</expres>
+<page>http://livesports.pw/embeddeporte2.php?file=golesp&amp;width=650&amp;height=397</page>
+<cookieJar></cookieJar>
+</regex>
+
+
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/esp.png</thumbnail>   </item>
+
+
+
 
 
 <item>
 <title>[UPPERCASE][COLOR skyblue]  GolTV [/UPPERCASE][/COLOR] </title>
 
-  <link>$doregex[get-id]|Referer=http://verdirectotv.com/tv/digitales/plus-series.html&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
+  <link>https:$doregex[get-id]|Referer=http://verdirectotv.com/tv/digitales/plus-series.html&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
 <regex>
 <name>get-id</name>
 <expres>source: '(.*?)'</expres>
@@ -135,7 +151,7 @@
 
 <item>
 <title>[UPPERCASE][COLOR skyblue] Liga 123 [/UPPERCASE][/COLOR] </title>
-<link>$doregex[get-id]|User-Agent=iPad&amp;Referer=http://vergol.com/live3/liga123.php</link>
+<link>https:$doregex[get-id]|User-Agent=iPad&amp;Referer=http://vergol.com/live3/liga123.php</link>
 <regex>
 <name>get-id</name>
 <expres>source: '(.*?)'</expres>
@@ -144,6 +160,28 @@
 <agent>iPad</agent>
 </regex>
 <thumbnail>http://adryanlist.org/adryan/img/esp.jpg</thumbnail> </item>
+
+
+
+
+<item>
+<title>[UPPERCASE][COLOR skyblue] Liga 123 **[/UPPERCASE][/COLOR] </title>
+
+<link>$doregex[GetPageUrl]|User-Agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+rv%3A11.0%29+like+Gecko</link>
+<regex>
+<name>GetPageUrl</name>
+<expres>source: '(.*?)'</expres>
+<page>http://livesports.pw/embeddeporte2.php?file=ligaunodostres&amp;width=650&amp;height=397</page>
+<cookieJar></cookieJar>
+</regex>
+
+
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/esp.png</thumbnail>   </item>
+
+
+
+
+
 
 
 
@@ -229,13 +267,13 @@
 
 
 <item>
-<title>[UPPERCASE][COLOR skyblue] Formula 1 updated  [/UPPERCASE][/COLOR] </title>
+<title>[UPPERCASE][COLOR skyblue] Formula 1 [/UPPERCASE][/COLOR] </title>
 
 <link>$doregex[GetPageUrl]|User-Agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+rv%3A11.0%29+like+Gecko</link>
 <regex>
 <name>GetPageUrl</name>
 <expres>source: '(.*?)'</expres>
-<page>http://livesports.pw/embeddeporte2.php?file=funoesp&amp;width=650&amp;height=397</page>
+<page>http://livesports.pw/embeddeporte2.php?file=m_f1&amp;width=650&amp;height=397</page>
 <cookieJar></cookieJar>
 </regex>
 
@@ -283,7 +321,7 @@
 
 <item>
 <title>[UPPERCASE][COLOR skyblue] M Deportes 1  [/UPPERCASE][/COLOR] </title>
-  <link>$doregex[get-id]|Referer=http://vercanalestv.com/tv/deportes/canal-plus-deportes.html&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
+  <link>https:$doregex[get-id]|Referer=http://vercanalestv.com/tv/deportes/canal-plus-deportes.html&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
 <regex>
 <name>get-id</name>
 <expres>source: '(.*?)'</expres>
@@ -296,7 +334,7 @@
 
 <item>
 <title>[UPPERCASE][COLOR skyblue] M Deportes 2  [/UPPERCASE][/COLOR] </title>
-  <link>$doregex[get-id]|Referer=http://vercanalestv.com/tv/deportes/canal-plus-deportes.html&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
+  <link>https:$doregex[get-id]|Referer=http://vercanalestv.com/tv/deportes/canal-plus-deportes.html&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
 <regex>
 <name>get-id</name>
 <expres>source: '(.*?)'</expres>
@@ -318,7 +356,7 @@
 <regex>
 <name>GetPageUrl</name>
 <expres>source: '(.*?)'</expres>
-<page>http://livesports.pw/embeddeporte2.php?file=deportedosm&amp;width=650&amp;height=397</page>
+<page>http://livesports.pw/embeddeporte2.php?file=deportedos&amp;width=650&amp;height=397</page>
 <cookieJar></cookieJar>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/esp.png</thumbnail>   </item>
