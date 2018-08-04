@@ -14,7 +14,7 @@
 <referer>http://vercanalestv.com/tv/nacionales/mtv.html</referer>
 <agent>iPad</agent>
 </regex>
-<thumbnail>http://adryanlist.org/adryan/img/esp.png</thumbnail>   </item>
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/esp.png</thumbnail>   </item>
 
 
 
@@ -31,7 +31,7 @@
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
 </regex>
 
-<thumbnail>http://adryanlist.org/adryan/img/esp.png</thumbnail>   </item>
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/esp.png</thumbnail>   </item>
 
 
 
@@ -47,7 +47,7 @@
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
 <referer>http://cinestrenostv.tv/canales/envivo/plusestrenos.html</referer>
 </regex>
-<thumbnail>http://adryanlist.org/adryan/img/esp.png</thumbnail>   </item>
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/esp.png</thumbnail>   </item>
 
 
 
@@ -65,7 +65,7 @@
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
 <referer>http://cinestrenostv.tv/canales/envivo/plusestrenos.html</referer>
 </regex>
-<thumbnail>http://adryanlist.org/adryan/img/esp.png</thumbnail>   </item>
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/esp.png</thumbnail>   </item>
 
 
 
@@ -82,7 +82,7 @@
 <agent>iPad</agent>
 </regex>
 
-<thumbnail>http://adryanlist.org/adryan/img/esp.png</thumbnail>   </item>
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/esp.png</thumbnail>   </item>
 
 
 
@@ -100,7 +100,7 @@
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
 <referer>http://cinestrenostv.tv/canales/envivo/plusestrenos.html</referer>
 </regex>
-<thumbnail>http://adryanlist.org/adryan/img/esp.png</thumbnail>   </item>
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/esp.png</thumbnail>   </item>
 
 
 
@@ -114,7 +114,7 @@
 <referer>http://vertelevisor.com/tv/nacionales/axn.html</referer>
 <agent>iPad</agent>
 </regex>
-<thumbnail>http://adryanlist.org/adryan/img/esp.png</thumbnail>   </item>
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/esp.png</thumbnail>   </item>
 
 
 
@@ -127,7 +127,7 @@
 <page>http://vergol.com/live/tnt.php</page>
 <referer>http://vertelevisor.com/tv/nacionales/axn.html</referer>
 </regex>
-<thumbnail>http://adryanlist.org/adryan/img/esp.png</thumbnail>   </item>
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/esp.png</thumbnail>   </item>
 
 
  <item><title>[UPPERCASE][COLOR skyblue] Calle 13 ** [/UPPERCASE][/COLOR] </title>
@@ -139,7 +139,7 @@
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
 <referer>http://cinestrenostv.tv/canales/envivo/plusestrenos.html</referer>
 </regex>
-<thumbnail>http://adryanlist.org/adryan/img/esp.png</thumbnail>   </item>
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/esp.png</thumbnail>   </item>
 
 
 
@@ -156,7 +156,7 @@
 <referer>http://vertelevisor.com/tv/nacionales/axn.html</referer>
 <agent>iPad</agent>
 </regex>
-<thumbnail>http://adryanlist.org/adryan/img/esp.png</thumbnail>   </item>
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/esp.png</thumbnail>   </item>
 
 
   <item><title>[UPPERCASE][COLOR skyblue] Hollywood [/UPPERCASE][/COLOR] </title>
@@ -168,7 +168,7 @@
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
 <referer>http://cinestrenostv.tv/canales/envivo/plusestrenos.html</referer>
 </regex>
-<thumbnail>http://adryanlist.org/adryan/img/esp.png</thumbnail>   </item>
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/esp.png</thumbnail>   </item>
 
 
   <item><title>[UPPERCASE][COLOR skyblue] BIO [/UPPERCASE][/COLOR] </title>
@@ -180,7 +180,7 @@
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
 <referer>http://cinestrenostv.tv/canales/envivo/plusestrenos.html</referer>
 </regex>
-<thumbnail>http://adryanlist.org/adryan/img/esp.png</thumbnail>   </item>
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/esp.png</thumbnail>   </item>
 
 
 
@@ -198,7 +198,7 @@
 <referer>http://vertelevisor.com/tv/nacionales/axn.html</referer>
 <agent>iPad</agent>
 </regex>
-<thumbnail>http://adryanlist.org/adryan/img/esp.png</thumbnail>   </item>
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/esp.png</thumbnail>   </item>
 
 
 
@@ -213,7 +213,7 @@
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
 <referer>http://cinestrenostv.tv/canales/envivo/plusestrenos.html</referer>
 </regex>
-<thumbnail>http://adryanlist.org/adryan/img/esp.png</thumbnail>   </item>
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/esp.png</thumbnail>   </item>
 
 
 
@@ -227,7 +227,7 @@
 <referer>http://vertelevisor.com/tv/nacionales/axn.html</referer>
 <agent>iPad</agent>
 </regex>
-<thumbnail>http://adryanlist.org/adryan/img/esp.png</thumbnail>   </item>
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/esp.png</thumbnail>   </item>
 
 
 
@@ -244,7 +244,7 @@
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
 <referer>http://cinestrenostv.tv/canales/envivo/plusestrenos.html</referer>
 </regex>
-<thumbnail>http://adryanlist.org/adryan/img/esp.png</thumbnail>   </item>
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/esp.png</thumbnail>   </item>
 
 
 
@@ -262,7 +262,7 @@
 <referer>http://vertelevisor.com/tv/nacionales/axn.html</referer>
 <agent>iPad</agent>
 </regex>
-<thumbnail>http://adryanlist.org/adryan/img/esp.png</thumbnail>   </item>
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/esp.png</thumbnail>   </item>
 
       <item><title>[UPPERCASE][COLOR skyblue] NatGeo Wild [/UPPERCASE][/COLOR] </title>
 <link>https:$doregex[get-id]|User-Agent=iPad</link>
@@ -274,7 +274,7 @@
 <agent>iPad</agent>
 
 </regex>
-<thumbnail>http://adryanlist.org/adryan/img/esp.png</thumbnail>   </item>
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/esp.png</thumbnail>   </item>
 
 
 
@@ -287,7 +287,7 @@
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
 <referer>http://cinestrenostv.tv/canales/envivo/plusestrenos.html</referer>
 </regex>
-<thumbnail>http://adryanlist.org/adryan/img/esp.png</thumbnail>   </item>
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/esp.png</thumbnail>   </item>
 
 
 
@@ -303,7 +303,7 @@
 <referer>http://vertelevisor.com/tv/nacionales/axn.html</referer>
 <agent>iPad</agent>
 </regex>
-<thumbnail>http://adryanlist.org/adryan/img/esp.png</thumbnail>   </item>
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/esp.png</thumbnail>   </item>
 
 
 
@@ -316,7 +316,7 @@
 <referer>http://vertelevisor.com/tv/nacionales/axn.html</referer>
 <agent>iPad</agent>
 </regex>
-<thumbnail>http://adryanlist.org/adryan/img/esp.png</thumbnail>   </item>
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/esp.png</thumbnail>   </item>
 
 
       
@@ -335,7 +335,7 @@
 <referer>http://vertelevisor.com/tv/nacionales/axn.html</referer>
 <agent>iPad</agent>
 </regex>
-<thumbnail>http://adryanlist.org/adryan/img/esp.png</thumbnail>   </item>
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/esp.png</thumbnail>   </item>
 
 
 
@@ -351,7 +351,7 @@
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
 <referer>http://cinestrenostv.tv/canales/envivo/plusestrenos.html</referer>
 </regex>
-<thumbnail>http://adryanlist.org/adryan/img/esp.png</thumbnail>   </item>
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/esp.png</thumbnail>   </item>
 
 
 
@@ -368,7 +368,7 @@
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
 <referer>http://cinestrenostv.tv/canales/envivo/plusestrenos.html</referer>
 </regex>
-<thumbnail>http://adryanlist.org/adryan/img/esp.png</thumbnail>   </item>
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/esp.png</thumbnail>   </item>
 
 
 
@@ -392,7 +392,7 @@
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
 <referer>http://cinestrenostv.tv/canales/envivo/plusestrenos.html</referer>
 </regex>
-<thumbnail>http://adryanlist.org/adryan/img/esp.png</thumbnail>   </item>
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/esp.png</thumbnail>   </item>
 
 
 
@@ -408,7 +408,7 @@
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
 <referer>http://cinestrenostv.tv/canales/envivo/plusestrenos.html</referer>
 </regex>
-<thumbnail>http://adryanlist.org/adryan/img/esp.png</thumbnail>   </item>
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/esp.png</thumbnail>   </item>
 
 
 
@@ -457,7 +457,7 @@
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
 <referer>http://cinestrenostv.tv/canales/envivo/plusestrenos.html</referer>
 </regex>
-<thumbnail>http://adryanlist.org/adryan/img/esp.png</thumbnail>   </item>
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/esp.png</thumbnail>   </item>
 
 
 
@@ -471,7 +471,7 @@
 
 
 
-<thumbnail>http://adryanlist.org/adryan/img/esp.png</thumbnail>   </item>
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/esp.png</thumbnail>   </item>
 
 
 
@@ -505,7 +505,7 @@
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
 <referer>http://cinestrenostv.tv/canales/envivo/plusestrenos.html</referer>
 </regex>
-<thumbnail>http://adryanlist.org/adryan/img/esp.png</thumbnail>   </item>
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/esp.png</thumbnail>   </item>
 
 
  <item><title>[UPPERCASE][COLOR skyblue] Toros [/UPPERCASE][/COLOR] </title>
@@ -518,7 +518,7 @@
 </regex>
 
 
-<thumbnail>http://adryanlist.org/adryan/img/esp.png</thumbnail>   </item>
+<thumbnail>https://raw.githubusercontent.com/adrianhn/adryanlist/master/adryan/img/esp.png</thumbnail>   </item>
 
 
 
