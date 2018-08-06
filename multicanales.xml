@@ -278,9 +278,158 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
-goltvlatinosss
 
 
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>[B]Multicanal GolTV Latino[/B]   </title>
+
+<link>$doregex[GetPageUrl]|User-Agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+rv%3A11.0%29+like+Gecko</link>
+<regex>
+<name>GetPageUrl</name>
+<expres>source: '(.*?)'</expres>
+<page>http://livesports.pw/embeddeporte2.php?file=goltvlatinosss&amp;width=650&amp;height=397</page>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+
+
+
+
+
+
+<item>
+<title>[B]Multicanal Formula 1 Latino [/B]   </title>
+
+<link>$doregex[GetPageUrl]|User-Agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+rv%3A11.0%29+like+Gecko</link>
+<regex>
+<name>GetPageUrl</name>
+<expres>source: '(.*?)'</expres>
+<page>http://livesports.pw/embeddeporte2.php?file=formulaunolatinosss&amp;width=650&amp;height=397</page>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+
+
+
+
+
+
+<item>
+<title>[B]Multicanal TDN Univision [/B]   </title>
+
+<link>$doregex[GetPageUrl]|User-Agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+rv%3A11.0%29+like+Gecko</link>
+<regex>
+<name>GetPageUrl</name>
+<expres>source: '(.*?)'</expres>
+<page>http://livesports.pw/embeddeporte2.php?file=tnduni&amp;width=650&amp;height=397</page>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+
+
+
+
+
+
+<item>
+<title>[B]Multicanal TyC Sports[/B]   </title>
+
+<link>$doregex[GetPageUrl]|User-Agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+rv%3A11.0%29+like+Gecko</link>
+<regex>
+<name>GetPageUrl</name>
+<expres>source: '(.*?)'</expres>
+<page>http://livesports.pw/embeddeporte2.php?file=TYCSPORT&amp;width=650&amp;height=397</page>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+
+
+
+
+
+
+<item>
+<title>[B]Multicanal ESPN3 MX [/B]   </title>
+
+<link>$doregex[GetPageUrl]|User-Agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+rv%3A11.0%29+like+Gecko</link>
+<regex>
+<name>GetPageUrl</name>
+<expres>source: '(.*?)'</expres>
+<page>http://livesports.pw/embeddeporte2.php?file=espntressmx&amp;width=650&amp;height=397</page>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+
+
+
+
+
+
+<item>
+<title>[B]Multicanal ESPN2 MX  [/B]   </title>
+
+<link>$doregex[GetPageUrl]|User-Agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+rv%3A11.0%29+like+Gecko</link>
+<regex>
+<name>GetPageUrl</name>
+<expres>source: '(.*?)'</expres>
+<page>http://livesports.pw/embeddeporte2.php?file=espndosmx&amp;width=650&amp;height=397</page>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>[B]Multicanal [/B]   </title>
+
+<link>$doregex[GetPageUrl]|User-Agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+rv%3A11.0%29+like+Gecko</link>
+<regex>
+<name>GetPageUrl</name>
+<expres>source: '(.*?)'</expres>
+<page>http://livesports.pw/embeddeporte2.php?file=nnba
 
 <itm>
 <title>[B]Multicanal MaxDeportes 01[/B] **  **  </title>
@@ -2378,7 +2527,7 @@ https://live-edge.pxstream.tv/loadbalance/67189193869831872819/playlist.m3u8?md5
 <regex>
 <name>GetPageUrl</name>
 <expres>source: '(.*?)'</expres>
-<page>http://livesports.pw/embeddeporte2.php?file=ufv&amp;width=650&amp;height=397</page>
+<page>http://livesports.pw/embeddeporte2.php?file=$doregex[select]&amp;width=650&amp;height=397</page>
 <cookieJar></cookieJar>
 </regex>
 
@@ -2401,11 +2550,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-formulaunolatinosss
-tnduni
-TYCSPORT
-espntressmx
-espndosmx
 
 
 
