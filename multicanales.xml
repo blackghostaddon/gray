@@ -305,8 +305,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-
-
+http://livesports.pw/embedPlayer.js'
 
 
 
@@ -324,7 +323,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-
+formulaunolatinosss
 
 
 
@@ -363,6 +362,19 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
+<item>
+<title>[B]Multicanal VTV Uruguay[/B]   </title>
+
+<link>$doregex[GetPageUrl]|User-Agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+rv%3A11.0%29+like+Gecko</link>
+<regex>
+<name>GetPageUrl</name>
+<expres>source: '(.*?)'</expres>
+<page>http://livesports.pw/embeddeporte2.php?file=vtv&amp;width=650&amp;height=397</page>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
 
 
 
@@ -398,6 +410,21 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
+
+
+
+
+<item>
+<title>[B]Multicanal Fox Accion  [/B]   </title>
+
+<link>$doregex[GetPageUrl]|User-Agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+rv%3A11.0%29+like+Gecko</link>
+<regex>
+<name>GetPageUrl</name>
+<expres>source: '(.*?)'</expres>
+<page>http://livesports.pw/embeddeporte2.php?file=foxaccion&amp;width=650&amp;height=397</page>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
