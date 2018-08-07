@@ -2144,9 +2144,35 @@ http://cdn.whostreams.net:8080/hls/aswpcq.m3u8?s=bMaB1CdLxxRqg_v7MJDxuQ&e=153212
 
 
 <item>
-<title>sportsdevil  tel</title>
-<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=https://telerium.tv/embed/25018.html</link>
+<title>sportsdevil  fox deportes</title>
+<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://daddylive.info/arranged/foxdeportesclap.php</link>
 </item>
+
+
+<item>
+<title>sportsdevil  espn deportes</title>
+<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://daddylive.info/arranged/espndeportesclap.php</link>
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <item>
     <title>footbie regex</title>
@@ -2263,13 +2289,7 @@ def GetLSProData(page_data,Cookie_Jar,m,ua='Mozilla/5.0 (Windows NT 6.1; Win64; 
 </item>
 
 
-
-<item>
-<title>AZTECA 7</title>
-<link>http://aztecalive-lh.akamaihd.net/i/0pq46e6vw_1@502477/index_1_av-p.m3u8?sd=10</link>
-<thumbnail>https://www.myfree-tivi.com/imgs/android-icon-192x192.png</thumbnail>
-</item>
-
+ 
 
 
 
