@@ -530,7 +530,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>id3</name>
 <expres><![CDATA[#$pyFunction
 def GetLSProData(page_data,Cookie_Jar,m):
-   import urlresolver
+   import resolveurl as urlresolver
    url = '[makelist.param2]'
    try:
      u = urlresolver.resolve(url)
@@ -585,7 +585,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>id3</name>
 <expres><![CDATA[#$pyFunction
 def GetLSProData(page_data,Cookie_Jar,m):
-   import urlresolver
+   import resolveurl as urlresolver
    url = '[makelist.param2]'
    try:
      u = urlresolver.resolve(url)
@@ -712,7 +712,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>id3</name>
 <expres><![CDATA[#$pyFunction
 def GetLSProData(page_data,Cookie_Jar,m):
-    import urlresolver
+    import resolveurl as urlresolver
     url = '[makelist.param1]'
     try:
         u = urlresolver.resolve(url)
@@ -816,7 +816,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>id3</name>
 <expres><![CDATA[#$pyFunction
 def GetLSProData(page_data,Cookie_Jar,m):
-    import urlresolver
+    import resolveurl as urlresolver
     url = '[makelist3.param1]'
     try:
         u = urlresolver.resolve(url)
@@ -1050,7 +1050,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>id3</name>
 <expres><![CDATA[#$pyFunction
 def GetLSProData(page_data,Cookie_Jar,m):
-    import urlresolver
+    import resolveurl as urlresolver
     url = '$doregex[uno]'
     try:
         u = urlresolver.resolve(url)
@@ -1187,7 +1187,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>id3</name>
 <expres><![CDATA[#$pyFunction
 def GetLSProData(page_data,Cookie_Jar,m):
-    import urlresolver
+    import resolveurl as urlresolver
     url = '[makelist3.param1]'
     try:
         u = urlresolver.resolve(url)
@@ -1257,7 +1257,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>id3</name>
 <expres><![CDATA[#$pyFunction
 def GetLSProData(page_data,Cookie_Jar,m):
-    import urlresolver
+    import resolveurl as urlresolver
     url = '[makelist3.param1]'
     try:
         u = urlresolver.resolve(url)
@@ -1318,7 +1318,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>id3</name>
 <expres><![CDATA[#$pyFunction
 def GetLSProData(page_data,Cookie_Jar,m):
-    import urlresolver
+    import resolveurl as urlresolver
     url = '[makelist.param1]'
     try:
         u = urlresolver.resolve(url)
@@ -1406,7 +1406,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  <name>id3</name>
  <expres><![CDATA[#$pyFunction
  def GetLSProData(page_data,Cookie_Jar,m):
-     import urlresolver
+     import resolveurl as urlresolver
 	 import resolveurl
      url = '[makelist3.param1]'
      try:
@@ -1500,7 +1500,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>id3</name>
 <expres><![CDATA[#$pyFunction
 def GetLSProData(page_data,Cookie_Jar,m):
-    import urlresolver
+    import resolveurl as urlresolver
     url = '[makelist2.param1]'
     try:
         u = urlresolver.resolve(url)
@@ -1571,7 +1571,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>id3</name>
 <expres><![CDATA[#$pyFunction
 def GetLSProData(page_data,Cookie_Jar,m):
-    import urlresolver
+    import resolveurl as urlresolver
     url = '[makelist2.param1]'
     try:
         u = urlresolver.resolve(url)
@@ -1627,7 +1627,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>id3</name>
 <expres><![CDATA[#$pyFunction
 def GetLSProData(page_data,Cookie_Jar,m):
-    import urlresolver
+    import resolveurl as urlresolver
     url = '[makelist.param1]'
     try:
         u = urlresolver.resolve(url)
@@ -1835,7 +1835,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>id3</name>
 <expres><![CDATA[#$pyFunction
 def GetLSProData(page_data,Cookie_Jar,m):
-    import urlresolver
+    import resolveurl as urlresolver
     url = '[makelist.param1]'
     try:
         u = urlresolver.resolve(url)
@@ -1908,7 +1908,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>id3</name>
 <expres><![CDATA[#$pyFunction
 def GetLSProData(page_data,Cookie_Jar,m):
-    import urlresolver
+    import resolveurl as urlresolver
     url = '[makelist.param1]'
     try:
         u = urlresolver.resolve(url)
@@ -2023,7 +2023,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>id3</name>
 <expres><![CDATA[#$pyFunction
 def GetLSProData(page_data,Cookie_Jar,m):
-    import urlresolver
+    import resolveurl as urlresolver
     url = '[makelist3.param1]'
     try:
         u = urlresolver.resolve(url)
@@ -2081,7 +2081,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>id3</name>
 <expres><![CDATA[#$pyFunction
 def GetLSProData(page_data,Cookie_Jar,m):
-    import urlresolver
+    import resolveurl as urlresolver
     url = '[makelist3.param1]'
     try:
         u = urlresolver.resolve(url)
@@ -2141,7 +2141,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>id3</name>
 <expres><![CDATA[#$pyFunction
 def GetLSProData(page_data,Cookie_Jar,m):
-    import urlresolver
+    import resolveurl as urlresolver
     url = '[makelist3.param1]'
     try:
         u = urlresolver.resolve(url)
@@ -2200,7 +2200,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>id3</name>
 <expres><![CDATA[#$pyFunction
 def GetLSProData(page_data,Cookie_Jar,m):
-    import urlresolver
+    import resolveurl as urlresolver
     url = '$doregex[link]'
     try:
         u = urlresolver.resolve(url)
@@ -2314,7 +2314,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>id3</name>
 <expres><![CDATA[#$pyFunction
 def GetLSProData(page_data,Cookie_Jar,m):
-    import urlresolver
+    import resolveurl as urlresolver
     url = '$doregex[link]'
     try:
         u = urlresolver.resolve(url)
@@ -2409,7 +2409,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>id3</name>
 <expres><![CDATA[#$pyFunction
 def GetLSProData(page_data,Cookie_Jar,m):
-    import urlresolver
+    import resolveurl as urlresolver
     url = '[makelist3.param1]'
     try:
         u = urlresolver.resolve(url)
@@ -2662,7 +2662,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>id3</name>
 <expres><![CDATA[#$pyFunction
 def GetLSProData(page_data,Cookie_Jar,m):
-    import urlresolver
+    import resolveurl as urlresolver
     url = 'https://openload.co/f/[makelist.param1]'
     try:
         u = urlresolver.resolve(url)
