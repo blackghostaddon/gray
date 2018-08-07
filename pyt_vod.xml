@@ -530,12 +530,12 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>id3</name>
 <expres><![CDATA[#$pyFunction
 def GetLSProData(page_data,Cookie_Jar,m):
-   import resolveurl as urlresolver
+   import urlresolver, resolveurl
    url = '[makelist.param2]'
    try:
      u = urlresolver.resolve(url)
    except:
-     u = 'http://adryanlist.org/error.mp4'
+     u = resolveurl.resolve(url)
    return u
 ]]></expres>
 <page></page>
@@ -585,12 +585,12 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>id3</name>
 <expres><![CDATA[#$pyFunction
 def GetLSProData(page_data,Cookie_Jar,m):
-   import resolveurl as urlresolver
+   import urlresolver
    url = '[makelist.param2]'
    try:
      u = urlresolver.resolve(url)
    except:
-     u = 'http://adryanlist.org/error.mp4'
+     u = resolveurl.resolve(url)
    return u
 ]]></expres>
 <page></page>
@@ -712,12 +712,12 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>id3</name>
 <expres><![CDATA[#$pyFunction
 def GetLSProData(page_data,Cookie_Jar,m):
-    import resolveurl as urlresolver
+    import urlresolver
     url = '[makelist.param1]'
     try:
         u = urlresolver.resolve(url)
     except:
-        u = 'http://adryantv.org/error.mp4'
+        u = resolveurl.resolve(url)
     return u
 ]]></expres>
 <page></page>
@@ -816,12 +816,12 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>id3</name>
 <expres><![CDATA[#$pyFunction
 def GetLSProData(page_data,Cookie_Jar,m):
-    import resolveurl as urlresolver
+    import urlresolver
     url = '[makelist3.param1]'
     try:
         u = urlresolver.resolve(url)
     except:
-        u = 'http://adryantv.org/error.mp4'
+        u = resolveurl.resolve(url)
     return u
 ]]></expres>
 <page></page>
@@ -1050,12 +1050,12 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>id3</name>
 <expres><![CDATA[#$pyFunction
 def GetLSProData(page_data,Cookie_Jar,m):
-    import resolveurl as urlresolver
+    import urlresolver
     url = '$doregex[uno]'
     try:
         u = urlresolver.resolve(url)
     except:
-        u = 'http://adryantv.org/error.mp4'
+        u = resolveurl.resolve(url)
     return u
 ]]></expres>
 <page></page>
@@ -1187,12 +1187,12 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>id3</name>
 <expres><![CDATA[#$pyFunction
 def GetLSProData(page_data,Cookie_Jar,m):
-    import resolveurl as urlresolver
+    import urlresolver
     url = '[makelist3.param1]'
     try:
         u = urlresolver.resolve(url)
     except:
-        u = 'http://adryantv.org/error.mp4'
+        u = resolveurl.resolve(url)
     return u
 ]]></expres>
 <page></page>
@@ -1257,12 +1257,12 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>id3</name>
 <expres><![CDATA[#$pyFunction
 def GetLSProData(page_data,Cookie_Jar,m):
-    import resolveurl as urlresolver
+    import urlresolver
     url = '[makelist3.param1]'
     try:
         u = urlresolver.resolve(url)
     except:
-        u = 'http://adryantv.org/error.mp4'
+        u = resolveurl.resolve(url)
     return u
 ]]></expres>
 <page></page>
@@ -1318,12 +1318,12 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>id3</name>
 <expres><![CDATA[#$pyFunction
 def GetLSProData(page_data,Cookie_Jar,m):
-    import resolveurl as urlresolver
+    import urlresolver
     url = '[makelist.param1]'
     try:
         u = urlresolver.resolve(url)
     except:
-        u = 'http://adryantv.org/error.mp4'
+        u = resolveurl.resolve(url)
     return u
 ]]></expres>
 <page></page>
@@ -1406,7 +1406,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  <name>id3</name>
  <expres><![CDATA[#$pyFunction
  def GetLSProData(page_data,Cookie_Jar,m):
-     import resolveurl as urlresolver
+     import urlresolver
 	 import resolveurl
      url = '[makelist3.param1]'
      try:
@@ -1500,12 +1500,12 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>id3</name>
 <expres><![CDATA[#$pyFunction
 def GetLSProData(page_data,Cookie_Jar,m):
-    import resolveurl as urlresolver
+    import urlresolver
     url = '[makelist2.param1]'
     try:
         u = urlresolver.resolve(url)
     except:
-        u = 'http://adryantv.org/error.mp4'
+        u = resolveurl.resolve(url)
     return u
 ]]></expres>
 <page></page>
@@ -1571,12 +1571,12 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>id3</name>
 <expres><![CDATA[#$pyFunction
 def GetLSProData(page_data,Cookie_Jar,m):
-    import resolveurl as urlresolver
+    import urlresolver
     url = '[makelist2.param1]'
     try:
         u = urlresolver.resolve(url)
     except:
-        u = 'http://adryantv.org/error.mp4'
+        u = resolveurl.resolve(url)
     return u
 ]]></expres>
 <page></page>
@@ -1627,12 +1627,12 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>id3</name>
 <expres><![CDATA[#$pyFunction
 def GetLSProData(page_data,Cookie_Jar,m):
-    import resolveurl as urlresolver
+    import urlresolver
     url = '[makelist.param1]'
     try:
         u = urlresolver.resolve(url)
     except:
-        u = 'http://adryantv.org/error.mp4'
+        u = resolveurl.resolve(url)
     return u
 ]]></expres>
 <page></page>
@@ -1835,12 +1835,12 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>id3</name>
 <expres><![CDATA[#$pyFunction
 def GetLSProData(page_data,Cookie_Jar,m):
-    import resolveurl as urlresolver
+    import urlresolver
     url = '[makelist.param1]'
     try:
         u = urlresolver.resolve(url)
     except:
-        u = 'http://adryantv.org/error.mp4'
+        u = resolveurl.resolve(url)
     return u
 ]]></expres>
 <page></page>
@@ -1908,12 +1908,12 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>id3</name>
 <expres><![CDATA[#$pyFunction
 def GetLSProData(page_data,Cookie_Jar,m):
-    import resolveurl as urlresolver
+    import urlresolver
     url = '[makelist.param1]'
     try:
         u = urlresolver.resolve(url)
     except:
-        u = 'http://adryantv.org/error.mp4'
+        u = resolveurl.resolve(url)
     return u
 ]]></expres>
 <page></page>
@@ -2023,12 +2023,12 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>id3</name>
 <expres><![CDATA[#$pyFunction
 def GetLSProData(page_data,Cookie_Jar,m):
-    import resolveurl as urlresolver
+    import urlresolver
     url = '[makelist3.param1]'
     try:
         u = urlresolver.resolve(url)
     except:
-        u = 'http://adryantv.org/error.mp4'
+        u = resolveurl.resolve(url)
     return u
 ]]></expres>
 <page></page>
@@ -2081,12 +2081,12 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>id3</name>
 <expres><![CDATA[#$pyFunction
 def GetLSProData(page_data,Cookie_Jar,m):
-    import resolveurl as urlresolver
+    import urlresolver
     url = '[makelist3.param1]'
     try:
         u = urlresolver.resolve(url)
     except:
-        u = 'http://adryantv.org/error.mp4'
+        u = resolveurl.resolve(url)
     return u
 ]]></expres>
 <page></page>
@@ -2141,12 +2141,12 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>id3</name>
 <expres><![CDATA[#$pyFunction
 def GetLSProData(page_data,Cookie_Jar,m):
-    import resolveurl as urlresolver
+    import urlresolver
     url = '[makelist3.param1]'
     try:
         u = urlresolver.resolve(url)
     except:
-        u = 'http://adryantv.org/error.mp4'
+        u = resolveurl.resolve(url)
     return u
 ]]></expres>
 <page></page>
@@ -2200,12 +2200,12 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>id3</name>
 <expres><![CDATA[#$pyFunction
 def GetLSProData(page_data,Cookie_Jar,m):
-    import resolveurl as urlresolver
+    import urlresolver
     url = '$doregex[link]'
     try:
         u = urlresolver.resolve(url)
     except:
-        u = 'http://adryantv.org/error.mp4'
+        u = resolveurl.resolve(url)
     return u
 ]]></expres>
 <page></page>
@@ -2314,12 +2314,12 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>id3</name>
 <expres><![CDATA[#$pyFunction
 def GetLSProData(page_data,Cookie_Jar,m):
-    import resolveurl as urlresolver
+    import urlresolver
     url = '$doregex[link]'
     try:
         u = urlresolver.resolve(url)
     except:
-        u = 'http://adryantv.org/error.mp4'
+        u = resolveurl.resolve(url)
     return u
 ]]></expres>
 <page></page>
@@ -2409,12 +2409,12 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>id3</name>
 <expres><![CDATA[#$pyFunction
 def GetLSProData(page_data,Cookie_Jar,m):
-    import resolveurl as urlresolver
+    import urlresolver
     url = '[makelist3.param1]'
     try:
         u = urlresolver.resolve(url)
     except:
-        u = 'http://adryantv.org/error.mp4'
+        u = resolveurl.resolve(url)
     return u
 ]]></expres>
 <page></page>
@@ -2662,12 +2662,12 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>id3</name>
 <expres><![CDATA[#$pyFunction
 def GetLSProData(page_data,Cookie_Jar,m):
-    import resolveurl as urlresolver
+    import urlresolver
     url = 'https://openload.co/f/[makelist.param1]'
     try:
         u = urlresolver.resolve(url)
     except:
-        u = 'http://adryantv.org/error.mp4'
+        u = resolveurl.resolve(url)
     return u
 ]]></expres>
 <page></page>
