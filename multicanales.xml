@@ -1847,7 +1847,7 @@ http://cdn.whostreams.net:8080/hls/aswpcq.m3u8?s=bMaB1CdLxxRqg_v7MJDxuQ&e=153212
 
 <item>
 <title>[B]Multicanal[/B] VerLiga [I] Bein Sport [/I]</title>
-<link>$doregex[get-id]|Referer=http://www.verliga1.net/live/verliga1.php&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
+<link>https:$doregex[get-id]|Referer=http://www.verliga1.net/live/verliga1.php&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
 <regex>
 <name>get-id</name>
 <expres>source: '([^']+)</expres>
@@ -1861,7 +1861,7 @@ http://cdn.whostreams.net:8080/hls/aswpcq.m3u8?s=bMaB1CdLxxRqg_v7MJDxuQ&e=153212
 
 <item>
 <title>[B]Multicanal[/B] VerLiga [I] Bein Sport [/I]</title>
-<link>$doregex[get-id]|Referer=http://www.verliga1.net/live/verliga1.php&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
+<link>https:$doregex[get-id]|Referer=http://www.verliga1.net/live/verliga1.php&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
 <regex>
 <name>get-id</name>
 <expres>source: '([^']+)</expres>
@@ -1878,7 +1878,7 @@ http://cdn.whostreams.net:8080/hls/aswpcq.m3u8?s=bMaB1CdLxxRqg_v7MJDxuQ&e=153212
 
 <item>
 <title>[B]Multicanal[/B] VerLiga [I] PlusDeportes 1 [/I]</title>
-<link>$doregex[get-id]|Referer=http://www.verliga1.net/live/verliga1.php&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
+<link>https:$doregex[get-id]|Referer=http://www.verliga1.net/live/verliga1.php&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
 <regex>
 <name>get-id</name>
 <expres>source: '(.*?)'</expres>
@@ -1892,7 +1892,7 @@ http://cdn.whostreams.net:8080/hls/aswpcq.m3u8?s=bMaB1CdLxxRqg_v7MJDxuQ&e=153212
 
 <item>
 <title>[B]Multicanal[/B] VerLiga [I] PlusDeportes 2 [/I]</title>
-<link>$doregex[get-id]|Referer=http://www.verliga1.net/live/verliga1.php&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
+<link>https:$doregex[get-id]|Referer=http://www.verliga1.net/live/verliga1.php&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
 <regex>
 <name>get-id</name>
 <expres>source: '(.*?)'</expres>
@@ -1906,24 +1906,19 @@ http://cdn.whostreams.net:8080/hls/aswpcq.m3u8?s=bMaB1CdLxxRqg_v7MJDxuQ&e=153212
 
 
 
+
+
+
 <item>
 <title>[B]Multicanal[/B] VerLiga 01[I]   [/I]</title>
-<link>$doregex[get-id]|Referer=http://www.verliga.net/live/verliga1.php&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
+<link>https:$doregex[get-id]|Referer=https://verliga1.net/tv/inicio.php&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
 <regex>
 <name>get-id</name>
 <expres>source: '(.*?)'</expres>
 <page>$doregex[get-url]</page>
-<referer>http://www.verliga.net/live/verliga1.php</referer>
+<referer>hhttps://vergol.com/canales/live3/verliga.php</referer>
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
 </regex>
-<regex>
-<name>get-url</name>
-<expres>allowfullscreen\ssrc="([^"]+)</expres>
-<page>http://www.verliga.net/live/verliga1.php</page>
-<referer>http://www.verliga.net/verliga.html</referer>
-<agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
-</regex>
-
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/esp.jpg</thumbnail></item>
 
 
@@ -1935,7 +1930,7 @@ http://cdn.whostreams.net:8080/hls/aswpcq.m3u8?s=bMaB1CdLxxRqg_v7MJDxuQ&e=153212
 
 <item>
 <title>[B]Multicanal[/B] VerLiga 02[I]   [/I]</title>
-<link>$doregex[get-id]|Referer=http://www.verliga.net/live/verliga1.php&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
+<link>https:$doregex[get-id]|Referer=http://www.verliga.net/live/verliga1.php&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
 <regex>
 <name>get-id</name>
 <expres>source: '(.*?)'</expres>
@@ -1956,7 +1951,7 @@ http://cdn.whostreams.net:8080/hls/aswpcq.m3u8?s=bMaB1CdLxxRqg_v7MJDxuQ&e=153212
 
   <item>
 <title>[B]Multicanal[/B] VerLiga 03[I]   [/I]</title>
-<link>$doregex[get-id]|Referer=http://www.verliga.net/live/verliga1.php&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
+<link>https:$doregex[get-id]|Referer=http://www.verliga.net/live/verliga1.php&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
 <regex>
 <name>get-id</name>
 <expres>source: '(.*?)'</expres>
@@ -1964,13 +1959,7 @@ http://cdn.whostreams.net:8080/hls/aswpcq.m3u8?s=bMaB1CdLxxRqg_v7MJDxuQ&e=153212
 <referer>http://www.verliga.net/live/verliga3.php</referer>
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
 </regex>
-<regex>
-<name>get-url</name>
-<expres>allowfullscreen\ssrc="([^"]+)</expres>
-<page>http://www.verliga.net/live/verliga3.php</page>
-<referer>http://www.verliga.net/verliga.html</referer>
-<agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
-</regex>
+
 
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/esp.jpg</thumbnail></item>
 
@@ -1979,19 +1968,12 @@ http://cdn.whostreams.net:8080/hls/aswpcq.m3u8?s=bMaB1CdLxxRqg_v7MJDxuQ&e=153212
 
   <item>
 <title>[B]Multicanal[/B] VerLiga 04[I]   [/I]</title>
-<link>$doregex[get-id]|Referer=http://www.verliga.net/live/verliga1.php&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
+<link>https:$doregex[get-id]|Referer=http://www.verliga.net/live/verliga1.php&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
 <regex>
 <name>get-id</name>
 <expres>source: '(.*?)'</expres>
 <page>$doregex[get-url]</page>
 <referer>http://www.verliga.net/live/verliga4.php</referer>
-<agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
-</regex>
-<regex>
-<name>get-url</name>
-<expres>allowfullscreen\ssrc="([^"]+)</expres>
-<page>http://www.verliga.net/live/verliga4.php</page>
-<referer>http://www.verliga.net/verliga.html</referer>
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
 </regex>
 
@@ -2133,25 +2115,18 @@ http://cdn.whostreams.net:8080/hls/aswpcq.m3u8?s=bMaB1CdLxxRqg_v7MJDxuQ&e=153212
 
 
 
+ 
 
 
 <item>
-<title>sportsdevil  tel</title>
-<sportsdevil>https://telerium.tv/embed/25018.html</sportsdevil>
- <referer>http://maxdeportv.net/indexa.php?canal=1</referer>
-</item>
-
-
-
-<item>
-<title>sportsdevil  fox deportes</title>
-<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://daddylive.info/arranged/foxdeportesclap.php</link>
+<title>sportsdevil asas fox deportes</title>
+<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://cndf80.blogspot.com/p/who-1.html</link>
 </item>
 
 
 <item>
-<title>sportsdevil  espn deportes</title>
-<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://daddylive.info/arranged/espndeportesclap.php</link>
+<title>sportsdevil asas espn deportes</title>
+<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://whostreams.net/embed/8vzxl3yuc</link>
 </item>
 
 
@@ -2160,6 +2135,8 @@ http://cdn.whostreams.net:8080/hls/aswpcq.m3u8?s=bMaB1CdLxxRqg_v7MJDxuQ&e=153212
 
 
 
+
+http://cdn.whostreams.net:8080/hls/8vzxl3yuc.m3u8?s=Rnef6Ck5SBH2GogtLOHNzA&e=1533699201
 
 
 
@@ -2540,8 +2517,22 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
+http://cdn.whostreams.net:8080/hls/c97j3jc0xa7.m3u8?s=BuXjibmrZ62QyMRHG7TQNg&e=1533698895
 
 
-
+<item>
+<title>[B]Multicanal MaxDeportes 09 [COLOR lightyellow] DirectvSports [/COLOR] [/B]</title>
+<link>http://cdn.whostreams.net:8080/wsedge/$doregex[canal]/playlist.m3u8?wmsAuthSign=$doregex[code]</link>
+<regex>
+<name>canal</name>
+<expres>net\/embed\/([^"]+)</expres>
+<page>http://maxdeportv.net/indexa.php?canal=9</page>
+</regex>
+<regex>
+<name>code</name>
+<expres>\|(c2V.*?)\|</expres>
+<page>http://whostreams.net/embed/$doregex[canal]</page>
+</regex>
+</item>
 
 
