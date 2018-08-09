@@ -947,7 +947,7 @@ item>
 <regex>
 <name>get-id</name>
 <expres>file:"([^"]+)</expres>
-<page>http://widestream.io/embed-23442</page>
+<page>http://widestream.io/embed-23442</page>http://widestream.io/embed-23442
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
@@ -982,35 +982,26 @@ item>
 
 
 <item>
+<title>[B]Multicanal RIVO 04[/B]     </title>
+<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://whostreams.net/embed/nrw2ahw46f42td</link>
+</item>
+
+<item>
 <title>[B]Multicanal RIVO 05[/B]     </title>
-<link>http://cdn.whostreams.net:8081/wsedge/$doregex[canal]/playlist.m3u8?wmsAuthSign=$doregex[code]</link>
-<regex>
-<name>canal</name>
-<expres>net\/embed\/([^"]+)</expres>
-<page>http://in.xrivonet.info/33d.html</page>
-</regex>
-<regex>
-<name>code</name>
-<expres>\|(c2V.*?)\|</expres>
-<page>http://whostreams.net/embed/$doregex[canal]</page>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://kastream.biz/embed.php?file=rivo18</link>
+</item>
 
 
 <item>
-<title>[B]Multicanal RIVO 05-a[/B]     </title>
-<link>http://cdn.whostreams.net:8081/wsedge/$doregex[canal]/playlist.m3u8?wmsAuthSign=$doregex[code]</link>
-<regex>
-<name>canal</name>
-<expres>net\/embed\/([^"]+)</expres>
-<page>http://in.xrivonet.info/40d.html</page>
-</regex>
-<regex>
-<name>code</name>
-<expres>\|(c2V.*?)\|</expres>
-<page>http://whostreams.net/embed/$doregex[canal]</page>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+<title>[B]Multicanal RIVO 05sd[/B]     </title>
+<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://in.xrivonet.info/34f.html</link>
+</item>
+
+
+<item>
+<title>[B]Multicanal RIVO 06[/B]     </title>
+<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://in.xrivonet.info/35f.html</link>
+</item>
 
 
 
