@@ -2462,68 +2462,167 @@ https://live-edge.pxstream.tv/loadbalance/67189193869831872819/playlist.m3u8?md5
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<item>
-<title>[B]Multicanal UFC[/B]   </title>
-
-<link>$doregex[GetPageUrl]|User-Agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+rv%3A11.0%29+like+Gecko</link>
+ <item>
+<title>[B]Multicanal Estrella TV[/B]    wide     </title>
+<link>$doregex[get-id]</link>
 <regex>
-<name>GetPageUrl</name>
-<expres>source: '(.*?)'</expres>
-<page>http://livesports.pw/embeddeporte2.php?file=$doregex[select]&amp;width=650&amp;height=397</page>
-<cookieJar></cookieJar>
+<name>get-id</name>
+<expres>file:"([^"]+)</expres>
+<page>http://widestream.io/embed-38685</page>
 </regex>
-
-
-<regex>
-<name>select</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m):
-   import xbmcgui
-   dialog = xbmcgui.Dialog()
-   ret = dialog.select('Elige un Canal ', ['Gol TV Latino'])
-   lists = ['goltvlatinosss']
-   return lists[ret]
-]]></expres>
-<page></page>
-</regex>
-
-
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
-http://cdn.whostreams.net:8080/hls/c97j3jc0xa7.m3u8?s=BuXjibmrZ62QyMRHG7TQNg&e=1533698895
+
+
+telemundo 
+http://whostreams.net/embed/6otcp42qvvs
+http://whostreams.net/embed/6otcp42qvvs
+
+univision
+http://whostreams.net/embed/yjz92igvajl5l9
+
+unimas
+http://whostreams.net/embed/le2di
+
+Deportes
+http://whostreams.net/embed/k35qrdo5h
+
+EspnDeportes
+http://whostreams.net/embed/2gzsuk67y
+
+
+FoxDeportes
+http://whostreams.net/embed/vume8720
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <item>
 <title>[B]Multicanal MaxDeportes 09 [COLOR lightyellow] DirectvSports [/COLOR] [/B]</title>
-<link>http://cdn.whostreams.net:8080/wsedge/$doregex[canal]/playlist.m3u8?wmsAuthSign=$doregex[code]</link>
+<link>http://194.67.208.149:80/hls/104.m3u8</link>
+</item>
+
+
+
+
+
+
+<item>
+<title>[COLOR red]![/COLOR][COLOR white]Please Make Sure You Have The Lastest Version Of Sports Devil[/COLOR][COLOR red]![/COLOR]</title>
+<sportsdevil>http://v2.ustreamix.com/stream.php?id=bt-sport-2-v2</sportsdevil>
+<referer>http://v2.ustreamix.com/</referer>
+<thumbnail>https://seo-michael.co.uk/content/images/2015/12/sdfeat-1.png</thumbnail>
+<fanart>http://i.imgur.com/012N6Gq.jpg</fanart>
+</item>
+
+
+
+
+<title>[COLOR white]DK'S[/COLOR] [COLOR red]Reddit'S[/COLOR]</title>
+<reddit>http://supremacy.org.uk/MMA/suggested.xml</reddit>
+<thumbnail>https://i.imgur.com/QFzbYHM.png</thumbnail>
+<fanart>http://i.imgur.com/012N6Gq.jpg</fanart>
+
+
+
+
+<item>
+<title>[COLOR white]NEWART[/COLOR]</title>
+<link>$doregex[get-url]|User-Agent=iPad</link>
 <regex>
-<name>canal</name>
-<expres>net\/embed\/([^"]+)</expres>
-<page>http://maxdeportv.net/indexa.php?canal=9</page>
+<name>get-url</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+ import requests
+ import re
+ import urllib2
+ ur='http://www.ustream.tv/channel/EpqDGDmX8Cn'
+ source3 = requests.get(ur)
+ cid = re.findall('channelId=(.*?);ustream', source3.text)[0]
+ url ='http://r45917422-1-'+cid+'-channel-live.ums.ustream.tv/1/ustream?type=viewer&appId=11&appVersion=2&media='+cid+'&application=channel'
+ source = requests.get(url)
+ keyid = re.findall('host\":\"(.*?)\",\"connectionId\":\"(.*?)\"', source.text)[0]
+ url1='http://'+keyid[0]+'/1/ustream?connectionId='+keyid[1]
+ source1 = requests.get(url1)
+ id = re.findall('uhls\",\"url\":\"(.*?)\"', source1.text)[0]
+ source2 = requests.get(id)
+ id1 = re.findall('7.*?\n(.*?)\/\n', source2.text)[0]
+ return id1
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+<cookieJar></cookieJar>
+</item>
+
+<item>
+        <title>hXXp://www.total-sport.tv/?page=live&id=22427&name=streaming-canal</title>
+        <link>http://cdn.whostreams.net:8081/wsedge/7ub78r1nd3yy3/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9NS8yNC8yMDE4IDc6NDk6MTYgQU0maGFzaF92YWx1ZT1QT3VGdWlPRGZFMHhGdzczeTF5U1JRPT0mdmFsaWRtaW51dGVzPTIw</link>
+        <thumbnail></thumbnail>
+        </item>
+		
+		
+<item>
+<title>[COLOR green][B]Shaista [COLOR red][B][HD][/B][/COLOR]</title>
+<link>$doregex[getUrl]|User-Agent=iPad&amp;Referer=$doregex[unpacked]</link>
+<regex>
+<name>unpacked</name>
+<expres>src=[\'"](.*?/embed[^"']+)</expres>
+<page>http://www.i-kurdish.net/p/shaista-hd.html</page>
 </regex>
 <regex>
-<name>code</name>
-<expres>\|(c2V.*?)\|</expres>
-<page>http://whostreams.net/embed/$doregex[canal]</page>
+<name>getUrl</name>
+ <expres><![CDATA[(?:file|source).*?[\'"]([^"']+)]]></expres>
+<page>$doregex[packed]</page>
+</regex>
+<regex>
+<name>packed</name>
+<expres>$pyFunction:get_unpacked(page_data,'(eval.*wmsAuthSign.*)')</expres>
+<page>$doregex[unpacked]</page>
+<thumbnail>https://2.bp.blogspot.com/-lJlNFdjSJYM/WuzdnhO8bWI/AAAAAAAAAZY/LFK64-N17gEee2ytg4-SGEpk8AHYjfTwwCLcBGAs/s1600/Sima%2BHD.png</thumbnail>
+<referer>http://www.i-kurdish.net/p/zed-hd.html</referer>
 </regex>
 </item>
 
 
+
+ 
+<item>
+<title>[COLOR green][B]Bein 1[COLOR red][B][HD][/B][/COLOR]</title>
+<link>$doregex[url]</link>
+<regex>
+<name>url</name>
+<expres>hls: '(.*?)'</expres>
+<page>http://whostreams.net/embed/hu0r49z9uw4pm</page>
+<referer>http://whostreams.net</referer>
+<cookieJar></cookieJar>
+<thumbnail>xxxxx</thumbnail>
+</regex>
+</item>
+
+
+ 
+<item>
+<title>[COLOR green][B]Bein uni1[COLOR red][B][HD][/B][/COLOR]</title>
+<link>$doregex[url]</link>
+<regex>
+<name>url</name>
+<expres>hls: '(.*?)'</expres>
+<page>http://whostreams.net/embed/6otcp42qvvs</page>
+<referer>http://whostreams.net</referer>
+<cookieJar></cookieJar>
+<thumbnail>xxxxx</thumbnail>
+</regex>
+</item>
