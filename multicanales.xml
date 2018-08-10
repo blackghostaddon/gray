@@ -2114,32 +2114,9 @@ http://cdn.whostreams.net:8080/hls/aswpcq.m3u8?s=bMaB1CdLxxRqg_v7MJDxuQ&e=153212
 <link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://cndf80.blogspot.com/p/who-1.html</link>
 </item>
 
+ 
 
-<item>
-<title>sportsdevil asas espn deportes</title>
-<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://whostreams.net/embed/8vzxl3yuc</link>
-</item>
-
-
-
-
-
-
-
-
-http://cdn.whostreams.net:8080/hls/8vzxl3yuc.m3u8?s=Rnef6Ck5SBH2GogtLOHNzA&e=1533699201
-
-
-
-
-
-
-
-
-
-
-
-
+ 
 
 
 <item>
@@ -2285,224 +2262,10 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 </item>
 
-
-https://live-edge.pxstream.tv/loadbalance//playlist.m3u8?md5=IS1pDhEySIgarHh7NqwVyQ&expires=1532833433
-
-
-https://live-edge.pxstream.tv/loadbalance/67189193869831872819/playlist.m3u8?md5=tUQXa1WoTU2PgMQvzLll7Q&expires=1532835090
-
-  <item>
-<title>[B]Multicanal[/B] chivas Telemundo [I]  [/I]</title>
-<link>$doregex[elcanal]|Referer=http://www.chivass69.com&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36&amp;X-Requested-With=ShockwaveFlash/24.0.0.221</link>
-<regex>
-<name>elcanal</name>
-<expres>source src="(.*?)"</expres>
-<page>http://pxstream.tv/embed/dfja150dzg19/</page>
-<referer>http://anahix11.com</referer>
-<agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+ 
 
 
-  <item>
-<title>[B]Multicanal[/B] chivas Unimas[I] [/I]</title>
-<link>$doregex[elcanal]|Referer=http://www.chivass69.com&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36&amp;X-Requested-With=ShockwaveFlash/24.0.0.221</link>
-<regex>
-<name>elcanal</name>
-<expres>source src="(.*?)"</expres>
-<expres>"(.*m3u8.*?)"</expres>
-<page>http://pxstream.tv/embed/cjbjjnz3o3uc/</page>
-<agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
-<referer>http://www.chivass69.com</referer>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-
-
- <item>
-<title>[B]Multicanal[/B] chivas Universo[I] new [/I]</title>
-<link>$doregex[elcanal]|Referer=http://www.chivass69.com&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36&amp;X-Requested-With=ShockwaveFlash/24.0.0.221</link>
-<regex>
-<name>elcanal</name>
-<expres>source src="(.*?)"</expres>
-<expres>"(.*m3u8.*?)"</expres>
-<page>http://pxstream.tv/embed/2sg16c9wmmwg/</page>
-<agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
-<referer>http://www.chivass69.com</referer>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-
-
-
-</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-
-<item>
-<title>[B]Multicanal[/B] uno [I]  [/I]</title><link>http://aztecalive-lh.akamaihd.net/i/0qm7cjvop_1@502476/master.m3u8</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-
-<item>
-<title>[B]Multicanal[/B] 2[I]  [/I]</title><link>http://aztecalive-lh.akamaihd.net/i/0pq46e6vw_1@502477/index_1_av-p.m3u8?sd=10&amp;rebase=on</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-
-<item>
-<title>[B]Multicanal[/B] 3 [I]  [/I]</title><link>https://ssh101.com/m3u8/dyn/deptdnmxvall/index.m3u8</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-
-<item>
-<title>[B]Multicanal[/B] 4 [I]  [/I]</title><link>https://lcmbe.com.global.prod.fastly.net//stream//4001e8caa9e3b77ea2b7fd0dc780622d/9106f821e95c206d7055277a299e1711/sex_.m3u8</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-
-
-
-  <item>
-<title>[B]Multicanal[/B] chivas EstrellaTV[I]  [/I]</title>
-<link>http://$doregex[Igor_Rangel_IP]/loadbalance/67189193869831872819/playlist.m3u8$doregex[Igor_Rangel_AuthSign]|User-Agent=iPhone</link>
-<regex>
-<name>Igor_Rangel_IP</name>
-<expres>location:http://(.*)/loadbalance</expres>
-<page>$doregex[Igor_Rangel_Page]</page>
-<noredirect>true</noredirect>
-<includeheaders></includeheaders>
-</regex>
-<regex>
-<name>Igor_Rangel_AuthSign</name>
-<expres>m3u8(.*)</expres>
-<page>$doregex[Igor_Rangel_Page]</page>
-</regex>
-
-<regex>
-<name>Igor_Rangel_Page</name>
-<expres>"(.*m3u8.*?)"</expres>
-<page>http://pxstream.tv/embed/a39ugl09yktl/</page>
-<referer>http://anahix11.com</referer>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-
-
-
-  <item>
-<title>[B]Multicanal[/B] chivas Telemundo / univision Pacifico[I]  [/I]</title>
-<link>http://$doregex[Igor_Rangel_IP]/loadbalance/67189193869831872819/playlist.m3u8$doregex[Igor_Rangel_AuthSign]|User-Agent=iPhone</link>
-<regex>
-<name>Igor_Rangel_IP</name>
-<expres>location:http://(.*)/loadbalance</expres>
-<page>$doregex[Igor_Rangel_Page]</page>
-<noredirect>true</noredirect>
-<includeheaders></includeheaders>
-</regex>
-<regex>
-<name>Igor_Rangel_AuthSign</name>
-<expres>m3u8(.*)</expres>
-<page>$doregex[Igor_Rangel_Page]</page>
-</regex>
-
-<regex>
-<name>Igor_Rangel_Page</name>
-<expres>"(.*m3u8.*?)"</expres>
-<page>http://pxstream.tv/embed/ca1eoad6eyc2/</page>
-<referer>http://anahix11.com</referer>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-
-
-
- <item>
-<title>[B]Multicanal Univision[/B]    wide     </title>
-<link>$doregex[get-id]</link>
-<regex>
-<name>get-id</name>
-<expres>file:"([^"]+)</expres>
-<page>http://widestream.io/embed-488</page>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-
-
-
- <item>
-<title>[B]Multicanal Univision Deportes[/B]    wide     </title>
-<link>$doregex[get-id]</link>
-<regex>
-<name>get-id</name>
-<expres>file:"([^"]+)</expres>
-<page>http://widestream.io/embed-38623</page>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-
- <item>
-<title>[B]Multicanal ESPN 2[/B]    wide     </title>
-<link>$doregex[get-id]</link>
-<regex>
-<name>get-id</name>
-<expres>file:"([^"]+)</expres>
-<page>http://widestream.io/embed-38624</page>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-
- <item>
-<title>[B]Multicanal Deportes 2[/B]    wide     </title>
-<link>$doregex[get-id]</link>
-<regex>
-<name>get-id</name>
-<expres>file:"([^"]+)</expres>
-<page>http://widestream.io/embed-38625</page>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-
-
- <item>
-<title>[B]Multicanal Estrella TV[/B]    wide     </title>
-<link>$doregex[get-id]</link>
-<regex>
-<name>get-id</name>
-<expres>file:"([^"]+)</expres>
-<page>http://widestream.io/embed-38685</page>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-
-
-
-
-
-
-
-
-
-
-
-<item>
-<title>Chivas69</title>
-<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=$doregex[select]</link>
-
-<regex>
-<name>select</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m):
-   import xbmcgui
-   dialog = xbmcgui.Dialog()
-   ret = dialog.select('Elige un Canal ', ['telemundo', 'univision', 'unimas', 'Deportes', 'EspnDeportes', 'FoxDeportes'])
-   lists = ['http://whostreams.net/embed/6otcp42qvvs', 'http://whostreams.net/embed/yjz92igvajl5l9', 'http://whostreams.net/embed/le2di', 'http://whostreams.net/embed/k35qrdo5h', 'http://whostreams.net/embed/2gzsuk67y', 'http://whostreams.net/embed/vume8720'
-]
-   return lists[ret]
-]]></expres>
-<page></page>
-</regex>
-
-</item>
-
+ 
 
 
 
@@ -2520,7 +2283,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
-    <title>whostreams</title>
+    <title>Chivas69  good</title>
     <link>$doregex[geturl]</link>
     <regex>
         <name>geturl</name>
@@ -2530,17 +2293,30 @@ def GetLSProData(page_data,Cookie_Jar,m):
     <regex>
         <name>getunpacked</name>
         <expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)' )</expres>
-        <page>http://whostreams.net/embed/6otcp42qvvs</page>
+        <page>$doregex[select]</page>
         <referer>http://whostreams.net/</referer>
-        <connection>keep-alive</connection
+        <connection>keep-alive</connection>
     </regex>
+	
+	<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+   import xbmcgui
+   dialog = xbmcgui.Dialog()
+   ret = dialog.select('Elige un Canal ', ['telemundo', 'univision', 'unimas', 'Deportes', 'EspnDeportes', 'FoxDeportes', 'Deportes2'])
+   lists = ['http://whostreams.net/embed/6otcp42qvvs', 'http://whostreams.net/embed/yjz92igvajl5l9', 'http://whostreams.net/embed/le2di', 'http://whostreams.net/embed/k35qrdo5h', 'http://whostreams.net/embed/2gzsuk67y', 'http://whostreams.net/embed/vume8720', 'http://whostreams.net/embed/8vzxl3yuc']
+   return lists[ret]
+]]></expres>
+<page></page>
+</regex>
 </item>
 
 
 
 <item>
-<title>[tet</title>
-<link>http://194.67.208.149:80/hls/104.m3u8|User-Agent=iPad&amp;Referer=http://nowlive.pro/1/101.html?id=101</link>
+<title>[tet11</title>
+<link>http://194.67.208.149:80/hls/101.m3u8|User-Agent=iPad&amp;Referer=http://nowlive.pro/1/101.html?id=101</link>
 </item>
 
 
@@ -2561,7 +2337,7 @@ def GetLSProData(page_data,Cookie_Jar,m):#streamwatcher2013
 </item>
 
 <item>
-<title>http://ekostreams.co/ch/fox.php</title>
+<title>http://ekostreams.co/ch/tnt.php</title>
 <link>$doregex[getUrl]</link>
 <regex>
 <name>getUrl</name>
@@ -2569,10 +2345,10 @@ def GetLSProData(page_data,Cookie_Jar,m):#streamwatcher2013
 import re,requests,urllib
 def GetLSProData(page_data,Cookie_Jar,m):
   list=re.findall("'(\d[^']+)",page_data,re.DOTALL);lists=''.join(list).strip().replace('.','%');lists=urllib.unquote('%'+re.findall('(.*)%',lists)[0])
-  source=requests.get(re.findall('src="(.*embed[^"]+)',lists)[0],headers={'User-Agent':'Mozilla/5.0','Referer':'http://ekostreams.co/ch/fox.php','Cache-Control':'no-cache'}).content.decode('ascii','ignore')
+  source=requests.get(re.findall('src="(.*embed[^"]+)',lists)[0],headers={'User-Agent':'Mozilla/5.0','Referer':'http://ekostreams.co/ch/tnt.php','Cache-Control':'no-cache'}).content.decode('ascii','ignore')
   return re.findall('src.*?[\'"](.*stream/[^\'"]+)',source)[0]+'|User-Agent=Mozilla/5.0&Referer='+re.findall('src="(.*embed[^"]+)',lists)[0]
 ]]></expres>
-<page>http://ekostreams.co/ch/fox.php</page>
+<page>http://ekostreams.co/ch/tnt.php</page>
 </regex>
 </item>
 
