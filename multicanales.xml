@@ -2485,7 +2485,7 @@ https://live-edge.pxstream.tv/loadbalance/67189193869831872819/playlist.m3u8?md5
 
 <item>
 <title>Chivas69</title>
-<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=$doregex[select]$$lsname=test</link>
+<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=$doregex[select]</link>
 
 <regex>
 <name>select</name>
@@ -2539,12 +2539,26 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
-<title>[B]Multicanal MaxDeportes 09 [COLOR lightyellow] DirectvSports [/COLOR] [/B]</title>
-<link>http://194.67.208.149:80/hls/104.m3u8</link>
+<title>[tet</title>
+<link>http://194.67.208.149:80/hls/104.m3u8|User-Agent=iPad&amp;Referer=http://nowlive.pro/1/101.html?id=101</link>
 </item>
 
 
-
+<item>
+<title>http://torcidatricolor.tv/bobo.php</title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<expres><![CDATA[#$pyFunction
+import re,requests
+def GetLSProData(page_data,Cookie_Jar,m):#streamwatcher2013
+  from urlresolver.plugins.lib import jsunpack
+  source=requests.get(re.findall('src="(.*?kastream[^&]+)',page_data)[0],headers={'Referer':'http://torcidatricolor.tv/bobo.php'}).text
+  return 'http://'+re.findall('Clappr.Player[\w\W]*?source.+?//([^\'"]+)',jsunpack.unpack(re.findall('id="Player"(?s)(.*?)</script',source)[0]).replace('\\',''))[0]+'|User-Agent=iPad'
+]]></expres>
+<page>http://torcidatricolor.tv/bobo.php</page>
+</regex>
+</item>
 
 <item>
 <title>http://ekostreams.co/ch/fox.php</title>
