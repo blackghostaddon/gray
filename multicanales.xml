@@ -773,47 +773,37 @@ item>
 
 
 <item>
-<title>[B]Multicanal Zonasport05[/B]  *   </title>
-<link>http://width.kastream.biz:8081/edge/$doregex[ver]/playlist.m3u8?wmsAuthSign=$doregex[code]|Referer=http://kastream.biz/embed.php?file=ZonaSports05&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0</link>
-
+<title>[B]Multicanal Zonasport05[/B]          </title>
+<link>$doregex[makelist]</link>
 <regex>
-<name>ver</name>
-<expres>playlist\|(.*?)\|</expres>
-<page>http://kastream.biz/embed.php?file=ZonaSports05</page>
-<agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0</agent>
-<referer>http://gozonasports.me/channel.php?id=05</referer>
+<name>makelist</name>
+<expres><![CDATA[#$pyFunction
+import re,requests
+def GetLSProData(page_data,Cookie_Jar,m):#streamwatcher2013
+  from urlresolver.plugins.lib import jsunpack
+  source=requests.get(re.findall('src="(.*?kastream[^&]+)',page_data)[0],headers={'Referer':'http://cdn.zonasports.es/c-5x.php'}).text
+  return 'http://'+re.findall('Clappr.Player[\w\W]*?source.+?//([^\'"]+)',jsunpack.unpack(re.findall('id="Player"(?s)(.*?)</script',source)[0]).replace('\\',''))[0]+'|User-Agent=iPad'
+]]></expres>
+<page>http://cdn.zonasports.es/c-5x.php</page>
 </regex>
-<regex>
-<name>code</name>
-<expres>wmsAuthSign\|(.*?)\|</expres>
-<page>http://kastream.biz/embed.php?file=ZonaSports05</page>
-<agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0</agent>
-<referer>http://gozonasports.me/channel.php?id=05</referer>
-</regex>
-
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-
+</item>
 <item>
-<title>[B]Multicanal Zonasport06[/B]     </title>
-<link>http://width.kastream.biz:8081/edge/$doregex[ver]/playlist.m3u8?wmsAuthSign=$doregex[code]|Referer=http://kastream.biz/embed.php?file=ZonaSports06</link>
-
+<title>[B]Multicanal Zonasport06[/B]          </title>
+<link>$doregex[makelist]</link>
 <regex>
-<name>ver</name>
-<expres>playlist\|(.*?)\|</expres>
-<page>http://kastream.biz/embed.php?file=ZonaSports06</page>
-<agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0</agent>
-<referer>http://gozonasports.me/channel.php?id=05</referer>
+<name>makelist</name>
+<expres><![CDATA[#$pyFunction
+import re,requests
+def GetLSProData(page_data,Cookie_Jar,m):#streamwatcher2013
+  from urlresolver.plugins.lib import jsunpack
+  source=requests.get(re.findall('src="(.*?kastream[^&]+)',page_data)[0],headers={'Referer':'http://cdn.zonasports.es/c-5x.php'}).text
+  return 'http://'+re.findall('Clappr.Player[\w\W]*?source.+?//([^\'"]+)',jsunpack.unpack(re.findall('id="Player"(?s)(.*?)</script',source)[0]).replace('\\',''))[0]+'|User-Agent=iPad'
+]]></expres>
+<page>http://cdn.zonasports.es/c-6x.php</page>
 </regex>
-<regex>
-<name>code</name>
-<expres>wmsAuthSign\|(.*?)\|</expres>
-<page>http://kastream.biz/embed.php?file=ZonaSports06</page>
-<agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0</agent>
-<referer>http://gozonasports.me/channel.php?id=05</referer>
-</regex>
+</item>
 
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
 
 
 
@@ -889,49 +879,60 @@ item>
 
 
 
-<item>
-<title>[B]Multicanal Zonasport11[/B]     247bay    </title>
-<link>http://$doregex[ip]$doregex[m3u8]</link>
-			<regex>
-			<name>ip</name>
-			<expres>redirect=(.*)</expres>
-			<page>http://www.publish247.xyz:1935/loadbalancer</page>
-			</regex>
-			<regex>
-			<name>m3u8</name>
-			<expres>ea \+ "([^"]+)</expres>
-			<page>http://www.247bay.tv/membedplayer/$doregex[canal]/2/750/420</page>
-			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
-			<referer>http://www.247bay.tv</referer>
-			</regex>
-			<regex>
-			<name>canal</name>
-			<expres>channel='(.*?)'</expres>
-			<page>http://gozonasports.me/channel.php?id=11</page>
-			</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
 
 <item>
-<title>[B]Multicanal Zonasport12[/B]    247bay    </title>
-<link>http://$doregex[ip]$doregex[m3u8]</link>
-			<regex>
-			<name>ip</name>
-			<expres>redirect=(.*)</expres>
-			<page>http://www.publish247.xyz:1935/loadbalancer</page>
-			</regex>
-			<regex>
-			<name>m3u8</name>
-			<expres>ea \+ "([^"]+)</expres>
-			<page>http://www.247bay.tv/membedplayer/$doregex[canal]/2/750/420</page>
-			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
-			<referer>http://www.247bay.tv</referer>
-			</regex>
-			<regex>
-			<name>canal</name>
-			<expres>channel='(.*?)'</expres>
-			<page>http://gozonasports.me/channel.php?id=12</page>
-			</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+<title>[B]Multicanal Zonasport13[/B]         </title>
+    <link>$doregex[geturl]</link>
+    <regex>
+        <name>geturl</name>
+        <expres>source:"(.*?)"</expres>
+        <page>$doregex[getunpacked]</page>
+    </regex>
+    <regex>
+        <name>getunpacked</name>
+        <expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)' )</expres>
+        <page>http://whostreams.net/embed/$doregex[canal]</page>
+        <referer>http://whostreams.net/</referer>
+        <connection>keep-alive</connection>
+    </regex>
+	 <regex>
+        <name>canal</name>
+        <expres>net\/embed\/(.*?)"</expres>
+        <page>http://gozonasports.me/cha-x.php?id=13</page>
+    </regex>
+</item>
+<item>
+<title>[B]Multicanal Zonasport14[/B]         </title>
+    <link>$doregex[geturl]</link>
+    <regex>
+        <name>geturl</name>
+        <expres>source:"(.*?)"</expres>
+        <page>$doregex[getunpacked]</page>
+    </regex>
+    <regex>
+        <name>getunpacked</name>
+        <expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)' )</expres>
+        <page>http://whostreams.net/embed/$doregex[canal]</page>
+        <referer>http://whostreams.net/</referer>
+        <connection>keep-alive</connection>
+    </regex>
+	 <regex>
+        <name>canal</name>
+        <expres>net\/embed\/(.*?)"</expres>
+        <page>http://gozonasports.me/cha-x.php?id=14</page>
+    </regex>
+</item>
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2304,27 +2305,26 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
+
+
+
+
 <item>
 <title>[tet11</title>
 <link>http://194.67.208.149:80/hls/101.m3u8|User-Agent=iPad&amp;Referer=http://nowlive.pro/1/101.html?id=101</link>
 </item>
 
 
-<item>
-<title>http://torcidatricolor.tv/bobo.php</title>
-<link>$doregex[makelist]</link>
-<regex>
-<name>makelist</name>
-<expres><![CDATA[#$pyFunction
-import re,requests
-def GetLSProData(page_data,Cookie_Jar,m):#streamwatcher2013
-  from urlresolver.plugins.lib import jsunpack
-  source=requests.get(re.findall('src="(.*?kastream[^&]+)',page_data)[0],headers={'Referer':'http://torcidatricolor.tv/bobo.php'}).text
-  return 'http://'+re.findall('Clappr.Player[\w\W]*?source.+?//([^\'"]+)',jsunpack.unpack(re.findall('id="Player"(?s)(.*?)</script',source)[0]).replace('\\',''))[0]+'|User-Agent=iPad'
-]]></expres>
-<page>http://torcidatricolor.tv/bobo.php</page>
-</regex>
-</item>
+
+
+
+
+
+
+
+
+
+
 
 <item>
 <title>http://ekostreams.co/ch/tnt.php</title>
