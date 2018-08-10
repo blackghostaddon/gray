@@ -2054,26 +2054,26 @@ http://cdn.whostreams.net:8080/hls/aswpcq.m3u8?s=bMaB1CdLxxRqg_v7MJDxuQ&e=153212
 
 
 <item>
-<title>Agenda RojaDirecta</title>
+<title>Agenda RojaDirecta [Sportsdevil]</title>
 <link>ignorme</link>
 <jsonrpc>plugin://plugin.video.SportsDevil/?item=url=livesports/rojadirecta.me.cfg&amp;mode=1</jsonrpc>
 
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 <item>
-<title>Calle 8</title>
+<title>Calle 8 [Sportsdevil]</title>
 <link>ignorme</link>
 <jsonrpc>plugin://plugin.video.SportsDevil/?item=url=customs/calleocho.cfg&amp;mode=1</jsonrpc>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 <item>
-<title>Telefive GB</title>
+<title>Telefive GB [Sportsdevil]</title>
 <link>ignorme</link>
 <jsonrpc>plugin://plugin.video.SportsDevil/?item=url=customs/telefivegb.cfg&amp;mode=1</jsonrpc>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 <item>
-<title>Cinestrenos TV</title>
+<title>Cinestrenos TV [Sportsdevil]</title>
 <link>ignorme</link>
 <jsonrpc>plugin://plugin.video.SportsDevil/?item=url=customs/cinestrenostv.tv.cfg&amp;mode=1</jsonrpc>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
@@ -2081,7 +2081,7 @@ http://cdn.whostreams.net:8080/hls/aswpcq.m3u8?s=bMaB1CdLxxRqg_v7MJDxuQ&e=153212
 
 
 <item>
-<title>VerenDirecto</title>
+<title>VerenDirecto [Sportsdevil]</title>
 <link>ignorme</link>
 <jsonrpc>plugin://plugin.video.SportsDevil/?item=url=customs/verdirectotv.cfg&amp;mode=1</jsonrpc>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
@@ -2091,7 +2091,7 @@ http://cdn.whostreams.net:8080/hls/aswpcq.m3u8?s=bMaB1CdLxxRqg_v7MJDxuQ&e=153212
 
 
 <item>
-<title>VerCanales</title>
+<title>VerCanales [Sportsdevil]</title>
 <link>ignorme</link>
 <jsonrpc>plugin://plugin.video.SportsDevil/?item=url=customs/vercanalestv.cfg&amp;mode=1</jsonrpc>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
@@ -2105,16 +2105,6 @@ http://cdn.whostreams.net:8080/hls/aswpcq.m3u8?s=bMaB1CdLxxRqg_v7MJDxuQ&e=153212
 
 
 
-
- 
-
-
-<item>
-<title>sportsdevil asas fox deportes</title>
-<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://cndf80.blogspot.com/p/who-1.html</link>
-</item>
-
- 
 
  
 
