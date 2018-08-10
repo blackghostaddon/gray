@@ -9,35 +9,35 @@
 
 
 <item> 
- <id>Morbido tv</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/az-clic.gif</thumbnail>    <title>[COLOR skyblue]Morbido TV[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=140&amp;k=adryan</page></regex></item>
+ <id>Morbido tv</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/az-clic.gif</thumbnail>    <title>[COLOR skyblue]Morbido TV[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=140&amp;k=adryan</page></regex></item>
 <item>
 
 <item> 
- <id>Az Clic</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/az-clic.gif</thumbnail>    <title>[COLOR skyblue]Imagen TV[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=2298&amp;k=adryan</page></regex></item>
+ <id>Az Clic</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/az-clic.gif</thumbnail>    <title>[COLOR skyblue]Imagen TV[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=2298&amp;k=adryan</page></regex></item>
 <item>
 
 <item> 
- <id>Az Clic</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/az-clic.gif</thumbnail>    <title>[COLOR skyblue]Azteca Clic[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=11&amp;k=adryan</page></regex></item>
+ <id>Az Clic</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/az-clic.gif</thumbnail>    <title>[COLOR skyblue]Azteca Clic[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=11&amp;k=adryan</page></regex></item>
 <item> 
- <id>Canal 2 HD</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/canal-2.gif</thumbnail>    <title>[COLOR skyblue]Canal de las Estrellas[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=17&amp;k=adryan</page></regex></item>
+ <id>Canal 2 HD</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/canal-2.gif</thumbnail>    <title>[COLOR skyblue]Canal de las Estrellas[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=17&amp;k=adryan</page></regex></item>
 <item> 
- <id>Foro TV</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/foro-tv.gif</thumbnail>    <title>[COLOR skyblue]Foro TV[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=19&amp;k=adryan</page></regex></item>
+ <id>Foro TV</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/foro-tv.gif</thumbnail>    <title>[COLOR skyblue]Foro TV[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=19&amp;k=adryan</page></regex></item>
 <item> 
- <id>Canal 5 HD</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/canal-5.gif</thumbnail>    <title>[COLOR skyblue]CANAL 5[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=20&amp;k=adryan</page></regex></item>
+ <id>Canal 5 HD</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/canal-5.gif</thumbnail>    <title>[COLOR skyblue]CANAL 5[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=20&amp;k=adryan</page></regex></item>
 <item> 
- <id>Azteca 7 HD"  tvg-logo="http://y.cdn.entutele.com/media/channels/big/azteca-7.gif</thumbnail>    <title>[COLOR skyblue]AZTECA 7[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=21&amp;k=adryan</page></regex></item>
+ <id>Azteca 7 HD"  tvg-logo="http://y.cdn.entutele.com/media/channels/big/azteca-7.gif</thumbnail>    <title>[COLOR skyblue]AZTECA 7[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=21&amp;k=adryan</page></regex></item>
 <item> 
- <id>Gala TV HD</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/gala-tv.gif</thumbnail>    <title>[COLOR skyblue]GalaTV[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=24&amp;k=adryan</page></regex></item>
+ <id>Gala TV HD</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/gala-tv.gif</thumbnail>    <title>[COLOR skyblue]GalaTV[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=24&amp;k=adryan</page></regex></item>
 <item> 
- <id>El trece HD</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/el-trece-hd.gif</thumbnail>    <title>[COLOR skyblue]Azteca 13[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=27&amp;k=adryan</page></regex></item>
+ <id>El trece HD</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/el-trece-hd.gif</thumbnail>    <title>[COLOR skyblue]Azteca 13[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=27&amp;k=adryan</page></regex></item>
 <item> 
- <id>TeleFórmula</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/teleformula.gif</thumbnail>    <title>[COLOR skyblue]TeleFormula[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=32&amp;k=adryan</page></regex></item>
+ <id>TeleFórmula</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/teleformula.gif</thumbnail>    <title>[COLOR skyblue]TeleFormula[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=32&amp;k=adryan</page></regex></item>
 <item> 
- <id>Proyecto 40</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/adn-40.gif</thumbnail>    <title>[COLOR skyblue]ADN 40[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=40&amp;k=adryan</page></regex></item>
+ <id>Proyecto 40</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/adn-40.gif</thumbnail>    <title>[COLOR skyblue]ADN 40[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=40&amp;k=adryan</page></regex></item>
 <item> 
- <id>Multimedios Monterrey</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/multimedios-monterrey.gif</thumbnail>    <title>[COLOR skyblue]MULTIMEDIOS[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=1253&amp;k=adryan</page></regex></item>
+ <id>Multimedios Monterrey</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/multimedios-monterrey.gif</thumbnail>    <title>[COLOR skyblue]MULTIMEDIOS[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=1253&amp;k=adryan</page></regex></item>
 <item> 
- <id>Milenio TV</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/milenio-tv.gif</thumbnail>    <title>[COLOR skyblue]MILENIO[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=1252&amp;k=adryan</page></regex></item>
+ <id>Milenio TV</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/milenio-tv.gif</thumbnail>    <title>[COLOR skyblue]MILENIO[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=1252&amp;k=adryan</page></regex></item>
 
 
 
@@ -49,7 +49,7 @@
 <link>$doregex[perfil3]</link>
 <regex>
 <name>perfil3</name>
-<expres>\n(http.*?PROFILE03.m3u8)</expres>
+<expres>(http.*?PROFILE03.m3u8)</expres>
 <page>http://oportunitysland.com/img/home/tpa.php?c=46&amp;k=adryan</page>
 </regex>
 </item>
@@ -58,29 +58,29 @@
 
 
 <item> 
- <id>Fox</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/fox-hd.gif</thumbnail>    <title>[COLOR skyblue]FOX[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=47&amp;k=adryan</page></regex></item>
+ <id>Fox</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/fox-hd.gif</thumbnail>    <title>[COLOR skyblue]FOX[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=47&amp;k=adryan</page></regex></item>
 <item> 
- <id>Sony</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/sony.gif</thumbnail>    <title>[COLOR skyblue]SONY[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=48&amp;k=adryan</page></regex></item>
+ <id>Sony</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/sony.gif</thumbnail>    <title>[COLOR skyblue]SONY[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=48&amp;k=adryan</page></regex></item>
 <item> 
- <id>BBC HD</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/bbc.gif</thumbnail>    <title>[COLOR skyblue]BBC[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=51&amp;k=adryan</page></regex></item>
+ <id>BBC HD</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/bbc.gif</thumbnail>    <title>[COLOR skyblue]BBC[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=51&amp;k=adryan</page></regex></item>
 <item> 
- <id>Warner Channel</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/warner-channel.gif</thumbnail>    <title>[COLOR skyblue]WARNER CHANNEL[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=52&amp;k=adryan</page></regex></item>
+ <id>Warner Channel</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/warner-channel.gif</thumbnail>    <title>[COLOR skyblue]WARNER CHANNEL[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=52&amp;k=adryan</page></regex></item>
 <item> 
- <id>E! Entertainment Television</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/e-entertainment-television.gif</thumbnail>    <title>[COLOR skyblue]E[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=55&amp;k=adryan</page></regex></item>
+ <id>E! Entertainment Television</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/e-entertainment-television.gif</thumbnail>    <title>[COLOR skyblue]E[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=55&amp;k=adryan</page></regex></item>
 <item> 
- <id>FX</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/fx.gif</thumbnail>    <title>[COLOR skyblue]FX[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=56&amp;k=adryan</page></regex></item>
+ <id>FX</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/fx.gif</thumbnail>    <title>[COLOR skyblue]FX[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=56&amp;k=adryan</page></regex></item>
 <item> 
- <id>Universal Channel</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/universal-channel.gif</thumbnail>    <title>[COLOR skyblue]UNIVERSAL[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=57&amp;k=adryan</page></regex></item>
+ <id>Universal Channel</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/universal-channel.gif</thumbnail>    <title>[COLOR skyblue]UNIVERSAL[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=57&amp;k=adryan</page></regex></item>
 <item> 
- <id>Universal HD</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/universal-hd.gif</thumbnail>    <title>[COLOR skyblue]UNIVERSAL[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=58&amp;k=adryan</page></regex></item>
+ <id>Universal HD</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/universal-hd.gif</thumbnail>    <title>[COLOR skyblue]UNIVERSAL[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=58&amp;k=adryan</page></regex></item>
 <item> 
- <id>SyFy</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/syfy.gif</thumbnail>    <title>[COLOR skyblue]SYFY[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=59&amp;k=adryan</page></regex></item>
+ <id>SyFy</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/syfy.gif</thumbnail>    <title>[COLOR skyblue]SYFY[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=59&amp;k=adryan</page></regex></item>
 <item> 
- <id>FX</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/fx.gif</thumbnail>    <title>[COLOR skyblue]FX[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=60&amp;k=adryan</page></regex></item>
+ <id>FX</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/fx.gif</thumbnail>    <title>[COLOR skyblue]FX[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=60&amp;k=adryan</page></regex></item>
 <item> 
- <id>A&amp;amp;E</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/ae.gif</thumbnail>    <title>[COLOR skyblue]A&amp;E[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=62&amp;k=adryan</page></regex></item>
+ <id>A&amp;amp;E</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/ae.gif</thumbnail>    <title>[COLOR skyblue]A&amp;E[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=62&amp;k=adryan</page></regex></item>
 <item> 
- <id>AXN</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/axn-hd.gif</thumbnail>    <title>[COLOR skyblue]AXN[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=64&amp;k=adryan</page></regex></item>
+ <id>AXN</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/axn-hd.gif</thumbnail>    <title>[COLOR skyblue]AXN[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=64&amp;k=adryan</page></regex></item>
 
 
 
@@ -88,147 +88,120 @@
 
 
 <item> 
- <id>Investigación Discovery</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/investigacion-discovery.gif</thumbnail>    <title>[COLOR skyblue]ID[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=68&amp;k=adryan</page></regex></item>
+ <id>Investigación Discovery</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/investigacion-discovery.gif</thumbnail>    <title>[COLOR skyblue]ID[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=68&amp;k=adryan</page></regex></item>
 <item> 
- <id>Az Corazón</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/az-corazon.gif</thumbnail>    <title>[COLOR skyblue]AZTECA CORAZON[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=70&amp;k=adryan</page></regex></item>
+ <id>Az Corazón</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/az-corazon.gif</thumbnail>    <title>[COLOR skyblue]AZTECA CORAZON[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=70&amp;k=adryan</page></regex></item>
 <item> 
- <id>TNT Series</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/tnt-series.gif</thumbnail>    <title>[COLOR skyblue]TNT SERIES[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=71&amp;k=adryan</page></regex></item>
+ <id>TNT Series</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/tnt-series.gif</thumbnail>    <title>[COLOR skyblue]TNT SERIES[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=71&amp;k=adryan</page></regex></item>
 <item> 
- <id>El Gourmet</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/el-gourmet.gif</thumbnail>    <title>[COLOR skyblue]GOURMET[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=74&amp;k=adryan</page></regex></item>
+ <id>El Gourmet</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/el-gourmet.gif</thumbnail>    <title>[COLOR skyblue]GOURMET[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=74&amp;k=adryan</page></regex></item>
 
 <item> 
- <id>Glitz</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/glitz.gif</thumbnail>    <title>[COLOR skyblue]GLITZ[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=76&amp;k=adryan</page></regex></item>
+ <id>Glitz</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/glitz.gif</thumbnail>    <title>[COLOR skyblue]GLITZ[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=76&amp;k=adryan</page></regex></item>
 <item> 
- <id>Fox Life</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/fox-life.gif</thumbnail>    <title>[COLOR skyblue]FOX LIFE[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=77&amp;k=adryan</page></regex></item>
+ <id>Fox Life</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/fox-life.gif</thumbnail>    <title>[COLOR skyblue]FOX LIFE[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=77&amp;k=adryan</page></regex></item>
 <item> 
- <id>Distrito Comedia</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/distrito-comedia.gif</thumbnail>    <title>[COLOR skyblue]DISTRITO COMEDIA[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=78&amp;k=adryan</page></regex></item>
+ <id>Distrito Comedia</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/distrito-comedia.gif</thumbnail>    <title>[COLOR skyblue]DISTRITO COMEDIA[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=78&amp;k=adryan</page></regex></item>
 <item> 
- <id>TruTV</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/tru-tv.gif</thumbnail>    <title>[COLOR skyblue]TRUTV[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=79&amp;k=adryan</page></regex></item>
+ <id>TruTV</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/tru-tv.gif</thumbnail>    <title>[COLOR skyblue]TRUTV[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=79&amp;k=adryan</page></regex></item>
 <item> 
- <id>TBS</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/tbs.gif</thumbnail>    <title>[COLOR skyblue]TBS[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=81&amp;k=adryan</page></regex></item>
+ <id>TBS</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/tbs.gif</thumbnail>    <title>[COLOR skyblue]TBS[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=81&amp;k=adryan</page></regex></item>
 <item> 
- <id>Tlnovelas</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/tlnovelas.gif</thumbnail>    <title>[COLOR skyblue]TL NOVELAS[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=83&amp;k=adryan</page></regex></item>
+ <id>Tlnovelas</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/tlnovelas.gif</thumbnail>    <title>[COLOR skyblue]TL NOVELAS[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=83&amp;k=adryan</page></regex></item>
 <item> 
- <id>Az Mundo</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/az-mundo.gif</thumbnail>    <title>[COLOR skyblue]AZ MUNDO[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=84&amp;k=adryan</page></regex></item>
+ <id>Az Mundo</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/az-mundo.gif</thumbnail>    <title>[COLOR skyblue]AZ MUNDO[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=84&amp;k=adryan</page></regex></item>
 <item> 
- <id>Comedy Central</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/comedy-central.gif</thumbnail>    <title>[COLOR skyblue]COMEDY CENTRAL[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=340&amp;k=adryan</page></regex></item>
+ <id>Comedy Central</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/comedy-central.gif</thumbnail>    <title>[COLOR skyblue]COMEDY CENTRAL[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=340&amp;k=adryan</page></regex></item>
 <item> 
- <id>Unicable</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/unicable.gif</thumbnail>    <title>[COLOR skyblue]UNICABLE[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=1499&amp;k=adryan</page></regex></item>
-
-
-
-
-
-<item> 
- <id>Discovery Channel</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/discovery-channel.gif</thumbnail>    <title>[COLOR skyblue]DISCOVERY[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=86&amp;k=adryan</page></regex></item>
-<item> 
- <id>ANIMAL PLANET</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/animal-planet.gif</thumbnail>    <title>[COLOR skyblue]Animal Planet[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=88&amp;k=adryan</page></regex></item>
-<item> 
- <id>History Channel</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/history-channel.gif</thumbnail>    <title>[COLOR skyblue]HISTORY[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=89&amp;k=adryan</page></regex></item>
-<item> 
- <id>NatGeo</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/natgeo.gif</thumbnail>    <title>[COLOR skyblue]NAT GEO[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=91&amp;k=adryan</page></regex></item>
-<item> 
- <id>NatGeo Wild</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/natgeo-wild.gif</thumbnail>    <title>[COLOR skyblue]NAT GEO WILD[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=92&amp;k=adryan</page></regex></item>
-<item> 
- <id>Lifetime</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/lifetime.gif</thumbnail>    <title>[COLOR skyblue]LIFE TIME[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=94&amp;k=adryan</page></regex></item>
-<item> 
- <id>Discovery Theater HD</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/discovery-theater-hd.gif</thumbnail>    <title>[COLOR skyblue]THEATER[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=95&amp;k=adryan</page></regex></item>
-<item> 
- <id>Home and Health</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/home-and-health-hd.gif</thumbnail>    <title>[COLOR skyblue]H&amp;H[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=96&amp;k=adryan</page></regex></item>
-<item> 
- <id>TLC</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/tlc.gif</thumbnail>    <title>[COLOR skyblue]TLC[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=97&amp;k=adryan</page></regex></item>
-<item> 
- <id>Discovery Science</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/discovery-science.gif</thumbnail>    <title>[COLOR skyblue]SCI[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=98&amp;k=adryan</page></regex></item>
-<item> 
- <id>Discovery Civilization</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/discovery-civilization.gif</thumbnail>    <title>[COLOR skyblue]CIVILIZATION[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=99&amp;k=adryan</page></regex></item>
-<item> 
- <id>Discovery Turbo</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/discovery-turbo.gif</thumbnail>    <title>[COLOR skyblue]TURBO[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=100&amp;k=adryan</page></regex></item>
-<item> 
- <id>Discovery World HD</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/discovery-world-hd.gif</thumbnail>    <title>[COLOR skyblue]WORLD[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=101&amp;k=adryan</page></regex></item>
-<item> 
- <id>WOBI TV</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/wobi-tv.gif</thumbnail>    <title>[COLOR skyblue]WOBI[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=102&amp;k=adryan</page></regex></item>
+ <id>Unicable</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/unicable.gif</thumbnail>    <title>[COLOR skyblue]UNICABLE[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=1499&amp;k=adryan</page></regex></item>
 
 
 
 
 
 <item> 
- <id>Tooncast</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/tooncast.gif</thumbnail>    <title>[COLOR skyblue]TOONCAST[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=108&amp;k=adryan</page></regex></item>
+ <id>Discovery Channel</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/discovery-channel.gif</thumbnail>    <title>[COLOR skyblue]DISCOVERY[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=86&amp;k=adryan</page></regex></item>
 <item> 
- <id>Discovery Kids</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/discovery-kids.gif</thumbnail>    <title>[COLOR skyblue]DICOVERY KIDS[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=109&amp;k=adryan</page></regex></item>
+ <id>ANIMAL PLANET</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/animal-planet.gif</thumbnail>    <title>[COLOR skyblue]Animal Planet[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=88&amp;k=adryan</page></regex></item>
 <item> 
- <id>Nick HD</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/nickelodeon-nick.gif</thumbnail>    <title>[COLOR skyblue]NICK[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=110&amp;k=adryan</page></regex></item>
+ <id>History Channel</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/history-channel.gif</thumbnail>    <title>[COLOR skyblue]HISTORY[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=89&amp;k=adryan</page></regex></item>
 <item> 
- <id>Disney XD</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/disney-xd.gif</thumbnail>    <title>[COLOR skyblue]XD[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=111&amp;k=adryan</page></regex></item>
+ <id>NatGeo</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/natgeo.gif</thumbnail>    <title>[COLOR skyblue]NAT GEO[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=91&amp;k=adryan</page></regex></item>
 <item> 
- <id>Disney Channel</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/disney-channel.gif</thumbnail>    <title>[COLOR skyblue]DISNEY CHANNEL[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=113&amp;k=adryan</page></regex></item>
+ <id>NatGeo Wild</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/natgeo-wild.gif</thumbnail>    <title>[COLOR skyblue]NAT GEO WILD[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=92&amp;k=adryan</page></regex></item>
 <item> 
- <id>TIIN</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/tiin.gif</thumbnail>    <title>[COLOR skyblue]TIIN[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=114&amp;k=adryan</page></regex></item>
+ <id>Lifetime</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/lifetime.gif</thumbnail>    <title>[COLOR skyblue]LIFE TIME[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=94&amp;k=adryan</page></regex></item>
 <item> 
- <id>Boomerang</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/boomerang.gif</thumbnail>    <title>[COLOR skyblue]BOOMERANG[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=115&amp;k=adryan</page></regex></item>
+ <id>Discovery Theater HD</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/discovery-theater-hd.gif</thumbnail>    <title>[COLOR skyblue]THEATER[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=95&amp;k=adryan</page></regex></item>
 <item> 
- <id>Nick Jr</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/nick-jr.gif</thumbnail>    <title>[COLOR skyblue]NICK JR[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=117&amp;k=adryan</page></regex></item>
+ <id>Home and Health</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/home-and-health-hd.gif</thumbnail>    <title>[COLOR skyblue]H&amp;H[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=96&amp;k=adryan</page></regex></item>
 <item> 
- <id>Disney Jr</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/disney-jr.gif</thumbnail>    <title>[COLOR skyblue]DISNEY JR[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=118&amp;k=adryan</page></regex></item>
+ <id>TLC</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/tlc.gif</thumbnail>    <title>[COLOR skyblue]TLC[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=97&amp;k=adryan</page></regex></item>
 <item> 
- <id>CBeebies</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/cbebbies.gif</thumbnail>    <title>[COLOR skyblue]CBeebies[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=119&amp;k=adryan</page></regex></item>
+ <id>Discovery Science</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/discovery-science.gif</thumbnail>    <title>[COLOR skyblue]SCI[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=98&amp;k=adryan</page></regex></item>
 <item> 
- <id>Nicktoons</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/nicktoons.gif</thumbnail>    <title>[COLOR skyblue]NICK TOONS[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=1708&amp;k=adryan</page></regex></item>
+ <id>Discovery Civilization</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/discovery-civilization.gif</thumbnail>    <title>[COLOR skyblue]CIVILIZATION[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=99&amp;k=adryan</page></regex></item>
 <item> 
- <id>Nickelodeon (Nick)</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/nick-hd.gif</thumbnail>    <title>[COLOR skyblue]NICK[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=331&amp;k=adryan</page></regex></item>
-
-
-
-
+ <id>Discovery Turbo</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/discovery-turbo.gif</thumbnail>    <title>[COLOR skyblue]TURBO[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=100&amp;k=adryan</page></regex></item>
 <item> 
- <id>De Película</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/de-pelicula.gif</thumbnail>    <title>[COLOR skyblue]DEPELICULA[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=121&amp;k=adryan</page></regex></item>
+ <id>Discovery World HD</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/discovery-world-hd.gif</thumbnail>    <title>[COLOR skyblue]WORLD[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=101&amp;k=adryan</page></regex></item>
 <item> 
- <id>Golden</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/golden-hd.gif</thumbnail>    <title>[COLOR skyblue]GOLDEN HD[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=122&amp;k=adryan</page></regex></item>
-<item> 
- <id>Golden Edge</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/golden-edge.gif</thumbnail>    <title>[COLOR skyblue]EDGE[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=124&amp;k=adryan</page></regex></item>
-<item> 
- <id>TNT</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/tnt.gif</thumbnail>    <title>[COLOR skyblue]TNT[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=126&amp;k=adryan</page></regex></item>
-<item> 
- <id>TNT</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/tnt-hd.gif</thumbnail>    <title>[COLOR skyblue]TNT[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=127&amp;k=adryan</page></regex></item>
-<item> 
- <id>TMC</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/tcm.gif</thumbnail>    <title>[COLOR skyblue]TCM[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=128&amp;k=adryan</page></regex></item>
-<item> 
- <id>Space</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/space.gif</thumbnail>    <title>[COLOR skyblue]SPACE[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=129&amp;k=adryan</page></regex></item>
-<item> 
- <id>Space</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/space-hd.gif</thumbnail>    <title>[COLOR skyblue]SPACE[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=130&amp;k=adryan</page></regex></item>
-<item> 
- <id>AMC</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/amc.gif</thumbnail>    <title>[COLOR skyblue]AMC[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=131&amp;k=adryan</page></regex></item>
-<item> 
- <id>Studio Universal</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/studio-universal.gif</thumbnail>    <title>[COLOR skyblue]STUDIO[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=132&amp;k=adryan</page></regex></item>
-<item> 
- <id>I.Sat</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/isat.gif</thumbnail>    <title>[COLOR skyblue]ISAT[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=135&amp;k=adryan</page></regex></item>
-
+ <id>WOBI TV</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/wobi-tv.gif</thumbnail>    <title>[COLOR skyblue]WOBI[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=102&amp;k=adryan</page></regex></item>
 
 
 
 
 
 <item> 
- <id>The Film Zone HD</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/the-film-zone-hd.gif</thumbnail>    <title>[COLOR skyblue]FILMZONE[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=138&amp;k=adryan</page></regex></item>
+ <id>Tooncast</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/tooncast.gif</thumbnail>    <title>[COLOR skyblue]TOONCAST[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=108&amp;k=adryan</page></regex></item>
 <item> 
- <id>Fox Series</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/fox-series.gif</thumbnail>    <title>[COLOR skyblue]FOX SERIES[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=139&amp;k=adryan</page></regex></item>
+ <id>Discovery Kids</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/discovery-kids.gif</thumbnail>    <title>[COLOR skyblue]DICOVERY KIDS[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=109&amp;k=adryan</page></regex></item>
 <item> 
- <id>Fox Movies</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/fox-movies.gif</thumbnail>    <title>[COLOR skyblue]FOX MOVIES[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=146&amp;k=adryan</page></regex></item>
+ <id>Nick HD</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/nickelodeon-nick.gif</thumbnail>    <title>[COLOR skyblue]NICK[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=110&amp;k=adryan</page></regex></item>
 <item> 
- <id>Fox Action HD</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/fox-action-hd.gif</thumbnail>    <title>[COLOR skyblue]FOX ACTION[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=336&amp;k=adryan</page></regex></item>
+ <id>Disney XD</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/disney-xd.gif</thumbnail>    <title>[COLOR skyblue]XD[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=111&amp;k=adryan</page></regex></item>
 <item> 
- <id>Fox Cinéma</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/fox-cinema.gif</thumbnail>    <title>[COLOR skyblue]FOX CINEMA[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=1729&amp;k=adryan</page></regex></item>
+ <id>Disney Channel</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/disney-channel.gif</thumbnail>    <title>[COLOR skyblue]DISNEY CHANNEL[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=113&amp;k=adryan</page></regex></item>
 <item> 
- <id>Fox Classics</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/fox-classics.gif</thumbnail>    <title>[COLOR skyblue]FOX CLASSICS[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=1732&amp;k=adryan</page></regex></item>
+ <id>TIIN</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/tiin.gif</thumbnail>    <title>[COLOR skyblue]TIIN[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=114&amp;k=adryan</page></regex></item>
+<item> 
+ <id>Boomerang</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/boomerang.gif</thumbnail>    <title>[COLOR skyblue]BOOMERANG[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=115&amp;k=adryan</page></regex></item>
+<item> 
+ <id>Nick Jr</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/nick-jr.gif</thumbnail>    <title>[COLOR skyblue]NICK JR[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=117&amp;k=adryan</page></regex></item>
+<item> 
+ <id>Disney Jr</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/disney-jr.gif</thumbnail>    <title>[COLOR skyblue]DISNEY JR[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=118&amp;k=adryan</page></regex></item>
+<item> 
+ <id>CBeebies</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/cbebbies.gif</thumbnail>    <title>[COLOR skyblue]CBeebies[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=119&amp;k=adryan</page></regex></item>
+<item> 
+ <id>Nicktoons</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/nicktoons.gif</thumbnail>    <title>[COLOR skyblue]NICK TOONS**[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)\n</expres><page>http://oportunitysland.com/img/home/tpa.php?c=1708&amp;k=adryan</page></regex></item>
+<item> 
+ <id>Nickelodeon (Nick)</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/nick-hd.gif</thumbnail>    <title>[COLOR skyblue]NICK**[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(https.*?PROFILE03.m3u8)\n</expres><page>http://oportunitysland.com/img/home/tpa.php?c=331&amp;k=adryan</page></regex></item>
+
+
 
 
 <item> 
- <id>Cinecanal HD</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/cinecanal.gif</thumbnail>    <title>[COLOR skyblue]CINECANAL[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=149&amp;k=adryan</page></regex></item>
+ <id>De Película</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/de-pelicula.gif</thumbnail>    <title>[COLOR skyblue]DEPELICULA[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=121&amp;k=adryan</page></regex></item>
 <item> 
- <id>Cinemax (W)</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/cinemax.gif</thumbnail>    <title>[COLOR skyblue]CINEMAX[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=158&amp;k=adryan</page></regex></item>
-
-
-
+ <id>Golden</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/golden-hd.gif</thumbnail>    <title>[COLOR skyblue]GOLDEN HD[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=122&amp;k=adryan</page></regex></item>
+<item> 
+ <id>Golden Edge</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/golden-edge.gif</thumbnail>    <title>[COLOR skyblue]EDGE[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=124&amp;k=adryan</page></regex></item>
+<item> 
+ <id>TNT</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/tnt.gif</thumbnail>    <title>[COLOR skyblue]TNT[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=126&amp;k=adryan</page></regex></item>
+<item> 
+ <id>TNT</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/tnt-hd.gif</thumbnail>    <title>[COLOR skyblue]TNT[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=127&amp;k=adryan</page></regex></item>
+<item> 
+ <id>TMC</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/tcm.gif</thumbnail>    <title>[COLOR skyblue]TCM[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=128&amp;k=adryan</page></regex></item>
+<item> 
+ <id>Space</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/space.gif</thumbnail>    <title>[COLOR skyblue]SPACE[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=129&amp;k=adryan</page></regex></item>
+<item> 
+ <id>Space</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/space-hd.gif</thumbnail>    <title>[COLOR skyblue]SPACE[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=130&amp;k=adryan</page></regex></item>
+<item> 
+ <id>AMC</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/amc.gif</thumbnail>    <title>[COLOR skyblue]AMC[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=131&amp;k=adryan</page></regex></item>
+<item> 
+ <id>Studio Universal</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/studio-universal.gif</thumbnail>    <title>[COLOR skyblue]STUDIO[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=132&amp;k=adryan</page></regex></item>
+<item> 
+ <id>I.Sat</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/isat.gif</thumbnail>    <title>[COLOR skyblue]ISAT[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=135&amp;k=adryan</page></regex></item>
 
 
 
@@ -236,50 +209,77 @@
 
 
 <item> 
- <id>TVE</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/tve.gif</thumbnail>    <title>[COLOR skyblue]TVE[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=198&amp;k=adryan</page></regex></item>
-
+ <id>The Film Zone HD</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/the-film-zone-hd.gif</thumbnail>    <title>[COLOR skyblue]FILMZONE[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=138&amp;k=adryan</page></regex></item>
 <item> 
- <id>VH1</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/vh1.gif</thumbnail>    <title>[COLOR skyblue]VH1[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=334&amp;k=adryan</page></regex></item>
+ <id>Fox Series</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/fox-series.gif</thumbnail>    <title>[COLOR skyblue]FOX SERIES[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=139&amp;k=adryan</page></regex></item>
 <item> 
- <id>MTV Live HD</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/mtv-live.gif</thumbnail>    <title>[COLOR skyblue]MTV LIVE[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=211&amp;k=adryan</page></regex></item>
+ <id>Fox Movies</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/fox-movies.gif</thumbnail>    <title>[COLOR skyblue]FOX MOVIES[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=146&amp;k=adryan</page></regex></item>
 <item> 
- <id>MTV</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/mtv.gif</thumbnail>    <title>[COLOR skyblue]MTV[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=212&amp;k=adryan</page></regex></item>
+ <id>Fox Action HD</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/fox-action-hd.gif</thumbnail>    <title>[COLOR skyblue]FOX ACTION[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=336&amp;k=adryan</page></regex></item>
 <item> 
- <id>MTV HITS</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/mtv-hits.gif</thumbnail>    <title>[COLOR skyblue]MTV HITS[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=213&amp;k=adryan</page></regex></item>
+ <id>Fox Cinéma</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/fox-cinema.gif</thumbnail>    <title>[COLOR skyblue]FOX CINEMA[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=1729&amp;k=adryan</page></regex></item>
 <item> 
- <id>1 CLASSICS</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/1-classics.gif</thumbnail>    <title>[COLOR skyblue]1 CLASSICS[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=214&amp;k=adryan</page></regex></item>
-<item> 
- <id>Ritmoson Latino</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/ritmoson.gif</thumbnail>    <title>[COLOR skyblue]RITMOSON[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=218&amp;k=adryan</page></regex></item>
-<item> 
- <id>Telehit HD</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/telehit-hd.gif</thumbnail>    <title>[COLOR skyblue]TELEHIT[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=220&amp;k=adryan</page></regex></item>
-<item> 
- <id>Bandamax</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/bandamax.gif</thumbnail>    <title>[COLOR skyblue]BANDAMAX[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=221&amp;k=adryan</page></regex></item>
-<item> 
- <id>Az Clic</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/az-clic.gif</thumbnail>    <title>[COLOR skyblue]AZTECA CLIC[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=223&amp;k=adryan</page></regex></item>
-<item> 
- <id>CADENA H</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/cadena-h.gif</thumbnail>    <title>[COLOR skyblue]CADENA H[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=1706&amp;k=adryan</page></regex></item>
-
+ <id>Fox Classics</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/fox-classics.gif</thumbnail>    <title>[COLOR skyblue]FOX CLASSICS[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=1732&amp;k=adryan</page></regex></item>
 
 
 <item> 
- <id>ESPN +</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/espn-mas.gif</thumbnail>    <title>[COLOR skyblue]ESPN MAS[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=167&amp;k=adryan</page></regex></item>
+ <id>Cinecanal HD</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/cinecanal.gif</thumbnail>    <title>[COLOR skyblue]CINECANAL[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=149&amp;k=adryan</page></regex></item>
 <item> 
- <id>ESPN</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/espn-hd.gif</thumbnail>    <title>[COLOR skyblue]ESPN[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=168&amp;k=adryan</page></regex></item>
-<item> 
- <id>ESPN 2</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/espn-2.gif</thumbnail>    <title>[COLOR skyblue]ESPN 2[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=169&amp;k=adryan</page></regex></item>
-<item> 
- <id>Fox Sports</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/fox-sports.gif</thumbnail>    <title>[COLOR skyblue]FOX SPORTS[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=170&amp;k=adryan</page></regex></item>
-<item> 
- <id>Fox Sports 2</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/fox-sports-2-hd.gif</thumbnail>    <title>[COLOR skyblue]FOX SPORTS 2[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=172&amp;k=adryan</page></regex></item>
-<item> 
- <id>AyM Sports</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/aym-sports.gif</thumbnail>    <title>[COLOR skyblue]AYM SPORTS[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=180&amp;k=adryan</page></regex></item>
-<item> 
- <id>PX SPORTS</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/px-sports.gif</thumbnail>    <title>[COLOR skyblue]PX SPORTS[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=950&amp;k=adryan</page></regex></item>
-<item> 
- <id>Formula 1 HDTV Latin America</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/f1-latinoamerica.gif</thumbnail>    <title>[COLOR skyblue]F1 LATINOAMERICA[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=1736&amp;k=adryan</page></regex></item>
+ <id>Cinemax (W)</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/cinemax.gif</thumbnail>    <title>[COLOR skyblue]CINEMAX[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=158&amp;k=adryan</page></regex></item>
+
+
+
+
+
+
+
+
 
 <item> 
- <id>GARAGE TV</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/.gif</thumbnail>    <title>[COLOR skyblue]GARAGE TV[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>\n(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=75&amp;k=adryan</page></regex></item>
+ <id>TVE</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/tve.gif</thumbnail>    <title>[COLOR skyblue]TVE[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=198&amp;k=adryan</page></regex></item>
+
+<item> 
+ <id>VH1</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/vh1.gif</thumbnail>    <title>[COLOR skyblue]VH1[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=334&amp;k=adryan</page></regex></item>
+<item> 
+ <id>MTV Live HD</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/mtv-live.gif</thumbnail>    <title>[COLOR skyblue]MTV LIVE[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=211&amp;k=adryan</page></regex></item>
+<item> 
+ <id>MTV</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/mtv.gif</thumbnail>    <title>[COLOR skyblue]MTV[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=212&amp;k=adryan</page></regex></item>
+<item> 
+ <id>MTV HITS</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/mtv-hits.gif</thumbnail>    <title>[COLOR skyblue]MTV HITS[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=213&amp;k=adryan</page></regex></item>
+<item> 
+ <id>1 CLASSICS</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/1-classics.gif</thumbnail>    <title>[COLOR skyblue]1 CLASSICS[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=214&amp;k=adryan</page></regex></item>
+<item> 
+ <id>Ritmoson Latino</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/ritmoson.gif</thumbnail>    <title>[COLOR skyblue]RITMOSON[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=218&amp;k=adryan</page></regex></item>
+<item> 
+ <id>Telehit HD</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/telehit-hd.gif</thumbnail>    <title>[COLOR skyblue]TELEHIT[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=220&amp;k=adryan</page></regex></item>
+<item> 
+ <id>Bandamax</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/bandamax.gif</thumbnail>    <title>[COLOR skyblue]BANDAMAX[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=221&amp;k=adryan</page></regex></item>
+<item> 
+ <id>Az Clic</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/az-clic.gif</thumbnail>    <title>[COLOR skyblue]AZTECA CLIC[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=223&amp;k=adryan</page></regex></item>
+<item> 
+ <id>CADENA H</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/cadena-h.gif</thumbnail>    <title>[COLOR skyblue]CADENA H[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=1706&amp;k=adryan</page></regex></item>
+
+
+
+<item> 
+ <id>ESPN +</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/espn-mas.gif</thumbnail>    <title>[COLOR skyblue]ESPN MAS[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=167&amp;k=adryan</page></regex></item>
+<item> 
+ <id>ESPN</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/espn-hd.gif</thumbnail>    <title>[COLOR skyblue]ESPN[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=168&amp;k=adryan</page></regex></item>
+<item> 
+ <id>ESPN 2</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/espn-2.gif</thumbnail>    <title>[COLOR skyblue]ESPN 2[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=169&amp;k=adryan</page></regex></item>
+<item> 
+ <id>Fox Sports</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/fox-sports.gif</thumbnail>    <title>[COLOR skyblue]FOX SPORTS[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=170&amp;k=adryan</page></regex></item>
+<item> 
+ <id>Fox Sports 2</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/fox-sports-2-hd.gif</thumbnail>    <title>[COLOR skyblue]FOX SPORTS 2[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=172&amp;k=adryan</page></regex></item>
+<item> 
+ <id>AyM Sports</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/aym-sports.gif</thumbnail>    <title>[COLOR skyblue]AYM SPORTS[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=180&amp;k=adryan</page></regex></item>
+<item> 
+ <id>PX SPORTS</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/px-sports.gif</thumbnail>    <title>[COLOR skyblue]PX SPORTS[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=950&amp;k=adryan</page></regex></item>
+<item> 
+ <id>Formula 1 HDTV Latin America</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/f1-latinoamerica.gif</thumbnail>    <title>[COLOR skyblue]F1 LATINOAMERICA[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=1736&amp;k=adryan</page></regex></item>
+
+<item> 
+ <id>GARAGE TV</id><thumbnail>http://y.cdn.entutele.com/media/channels/big/.gif</thumbnail>    <title>[COLOR skyblue]GARAGE TV[/COLOR]</title><link>$doregex[perfil3]</link><regex><name>perfil3</name><expres>(http.*?PROFILE03.m3u8)</expres><page>http://oportunitysland.com/img/home/tpa.php?c=75&amp;k=adryan</page></regex></item>
 
 
 
