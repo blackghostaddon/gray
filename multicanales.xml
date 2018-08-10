@@ -2322,7 +2322,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
-<title>[B]Multicanal Zonasport06[/B]          </title>
+<title>[B]Multicanal Zonasport06[/B]      up    </title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
@@ -2330,7 +2330,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 import re,requests
 def GetLSProData(page_data,Cookie_Jar,m):#streamwatcher2013
   from urlresolver.plugins.lib import jsunpack
-  source=requests.get(re.findall('src="(.*?kastream[^"]+)',page_data)[0],headers={'Referer':'http://cdn.zonasports.es/c-5x.php'}).text
+  source=requests.get(re.findall('src="(.*?kastream[^"]+)',page_data)[0],headers={'Referer':'http://futbolchile.net/canales/kas720.html'}).text
   return 'http://'+re.findall('Clappr.Player[\w\W]*?source.+?//([^\'"]+)',jsunpack.unpack(re.findall('id="Player"(?s)(.*?)</script',source)[0]).replace('\\',''))[0]+'|User-Agent=iPad'
 ]]></expres>
 <page>http://futbolchile.net/canales/kas720.html</page>
