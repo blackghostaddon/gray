@@ -2273,7 +2273,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
-    <title>Chivas69  good</title>
+    <title>Chivas69 [Telemunodo.univision.espndeportes.foxdeportes.univisiondeportes.mas..]</title>
     <link>$doregex[geturl]</link>
     <regex>
         <name>geturl</name>
@@ -2345,7 +2345,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<item>
+<iem>
 <Title>regex futbolibre</title>
 <link>$doregex[getDecodedCode]|referer=http://futbollibre.online/cdn-cgi/apps/head/_8TcguhGAY1pkXXQrzoa_JPjxIk.js</link>
 <regex>
