@@ -2626,3 +2626,24 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>xxxxx</thumbnail>
 </regex>
 </item>
+
+
+
+<item>
+<Title>regex futbolibre</title>
+<link>$doregex[getDecodedCode]|referer=http://futbollibre.online/cdn-cgi/apps/head/_8TcguhGAY1pkXXQrzoa_JPjxIk.js</link>
+<regex>
+<name>getDecodedCode</name>
+<expres>$pyFunction:base64.b64decode($doregex[getEncodedCode])</expres>
+<page></page>
+</regex>
+<regex>
+<name>getEncodedCode</name>
+<expres>var futbollibre_0x4e65.*'(.*?)'</expres>
+<page>http://futbollibre.online/espn-2/</page>
+<referer>http://futbollibre.online/espn-2/embed.html</referer>
+<agent>Mozilla/5.0 (Windows NT 6.3; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0</agent>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail></thumbnail>
+</item> 
