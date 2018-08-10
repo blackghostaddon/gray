@@ -2506,10 +2506,35 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
+<item>
+<title>http://widestream.io/embed-24489</title>
+<link>$doregex[link]|Referer=http://widestream.io/</link>
+<thumbnail></thumbnail>
+<fanart></fanart>
+<regex>
+<name>link</name>
+<expres>file:"([^"]+)</expres>
+<page>http://widestream.io/embed-24489</page>
+</regex>
+</item>
 
 
-
-
+<item>
+    <title>whostreams</title>
+    <link>$doregex[geturl]</link>
+    <regex>
+        <name>geturl</name>
+        <expres>source:"(.*?)"</expres>
+        <page>$doregex[getunpacked]</page>
+    </regex>
+    <regex>
+        <name>getunpacked</name>
+        <expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)' )</expres>
+        <page>http://whostreams.net/embed/6otcp42qvvs</page>
+        <referer>http://whostreams.net/</referer>
+        <connection>keep-alive</connection
+    </regex>
+</item>
 
 
 
