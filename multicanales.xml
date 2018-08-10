@@ -1014,34 +1014,13 @@ def GetLSProData(page_data,Cookie_Jar,m):#streamwatcher2013
 
 
 
-<item>
-<title>[B]Multicanal RIVO 05[/B]     </title>
-<link>$doregex[geturl]</link>
-    <regex>
-        <name>geturl</name>
-        <expres>source:"(.*?)"</expres>
-        <page>$doregex[getunpacked]</page>
-    </regex>
-    <regex>
-        <name>getunpacked</name>
-        <expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)' )</expres>
-        <page>http://whostreams.net/embed/$doregex[canal]</page>
-        <referer>http://whostreams.net/</referer>
-        <connection>keep-alive</connection>
-    </regex>
-	 <regex>
-        <name>canal</name>
-        <expres>net\/embed\/(.*?)"</expres>
-        <page>http://in.xrivonet.info/40f.html</page>
-    </regex>
-</item>
 
 
 
 
 
 <item>
-<title>[B]Multicanal RIVO 06[/B]    </title>
+<title>[B]Multicanal RIVO 05[/B]    </title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
@@ -1133,20 +1112,7 @@ def GetLSProData(page_data,Cookie_Jar,m):#streamwatcher2013
 </item>
 
 
-<item>
-<title>[B]Multicanal LedSports[/B]     </title>
-<link>http://cdn.whostreams.net:8081/wsedge/$doregex[canal]/playlist.m3u8?wmsAuthSign=$doregex[code]</link>
-<regex>
-<name>canal</name>
-<expres>net\/embed\/([^"]+)</expres>
-<page>http://1me.club/vf/1/13.html?id=ROja</page>
-</regex>
-<regex>
-<name>code</name>
-<expres>\|(c2V.*?)\|</expres>
-<page>http://whostreams.net/embed/$doregex[canal]</page>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+ 
 
 
 
@@ -1159,147 +1125,152 @@ def GetLSProData(page_data,Cookie_Jar,m):#streamwatcher2013
 
 
 
-
-
-
-
-
-
-
+ 
 
 
 <item>
-<title>[B]Multicanal Rivo 01[/B]  **  </title>
-<link>http://cdn.whostreams.net:8080/hls/$doregex[canal].m3u8?s=$doregex[code]&amp;e=$doregex[time]</link>
-<regex>
-<name>canal</name>
-<expres>net\/embed\/([^"]+)</expres>
-<page>http://in.xrivonet.info/33f.html</page>
-</regex>
-<regex>
-<name>code</name>
-<expres>\|(.*?)\|153</expres>
-<page>http://whostreams.net/embed/$doregex[canal]</page>
-</regex>
-<regex>
-<name>time</name>
-<expres>\|(153.*?)\|</expres>
-<page>http://whostreams.net/embed/$doregex[canal]</page>
-</regex>
-
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-
-
-<item>
-<title>[B]Multicanal AndresFutbol 01[/B]   </title>
-<link>http://cdn.whostreams.net:8080/hls/$doregex[canal].m3u8?s=$doregex[code]&amp;e=$doregex[time]</link>
-<regex>
-<name>canal</name>
-<expres>net\/embed\/([^"]+)</expres>
-<page>http://cndf79.blogspot.com/p/vtv-1.html</page>
-</regex>
-<regex>
-<name>code</name>
-<expres>net\|(.*?)\|</expres>
-<page>http://whostreams.net/embed/$doregex[canal]</page>
-</regex>
-<regex>
-<name>time</name>
-<expres>\|(153.*?)\|</expres>
-<page>http://whostreams.net/embed/$doregex[canal]</page>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-
-
-
-
-
-
+<title>[B]Multicanal AndresFutbol 01[/B]   VTV  </title>
+<link>$doregex[geturl]</link>
+    <regex>
+        <name>geturl</name>
+        <expres>source:"(.*?)"</expres>
+        <page>$doregex[getunpacked]</page>
+    </regex>
+    <regex>
+        <name>getunpacked</name>
+        <expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)' )</expres>
+        <page>http://whostreams.net/embed/$doregex[canal]</page>
+        <referer>http://whostreams.net/</referer>
+        <connection>keep-alive</connection>
+    </regex>
+	 <regex>
+        <name>canal</name>
+        <expres>net\/embed\/(.*?)"</expres>
+        <page>http://cndf80.blogspot.com/p/vtv-1.html</page>
+    </regex>
+</item>
 
 
 <item>
-<title>[B]Multicanal AndresFutbol 02[/B]     </title>
-<link>http://cdn.whostreams.net:8081/wsedge/$doregex[canal]/playlist.m3u8?wmsAuthSign=$doregex[code]</link>
-<regex>
-<name>canal</name>
-<expres>net\/embed\/([^"]+)</expres>
-<page>http://cndf79.blogspot.com/p/vtv-2.html</page>
-</regex>
-<regex>
-<name>code</name>
-<expres>\|(c2V.*?)\|</expres>
-<page>http://whostreams.net/embed/$doregex[canal]</page>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+<title>[B]Multicanal AndresFutbol 02[/B]   VTV  </title>
+<link>$doregex[geturl]</link>
+    <regex>
+        <name>geturl</name>
+        <expres>source:"(.*?)"</expres>
+        <page>$doregex[getunpacked]</page>
+    </regex>
+    <regex>
+        <name>getunpacked</name>
+        <expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)' )</expres>
+        <page>http://whostreams.net/embed/$doregex[canal]</page>
+        <referer>http://whostreams.net/</referer>
+        <connection>keep-alive</connection>
+    </regex>
+	 <regex>
+        <name>canal</name>
+        <expres>net\/embed\/(.*?)"</expres>
+        <page>http://cndf80.blogspot.com/p/vtv-2.html</page>
+    </regex>
+</item>
 
 
 <item>
-<title>[B]Multicanal AndresFutbol 03[/B]     </title>
-<link>http://cdn.whostreams.net:8081/wsedge/$doregex[canal]/playlist.m3u8?wmsAuthSign=$doregex[code]</link>
-<regex>
-<name>canal</name>
-<expres>net\/embed\/([^"]+)</expres>
-<page>http://cndf79.blogspot.com/p/vtv-3.html</page>
-</regex>
-<regex>
-<name>code</name>
-<expres>\|(c2V.*?)\|</expres>
-<page>http://whostreams.net/embed/$doregex[canal]</page>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+<title>[B]Multicanal AndresFutbol 03[/B]   VTV  </title>
+<link>$doregex[geturl]</link>
+    <regex>
+        <name>geturl</name>
+        <expres>source:"(.*?)"</expres>
+        <page>$doregex[getunpacked]</page>
+    </regex>
+    <regex>
+        <name>getunpacked</name>
+        <expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)' )</expres>
+        <page>http://whostreams.net/embed/$doregex[canal]</page>
+        <referer>http://whostreams.net/</referer>
+        <connection>keep-alive</connection>
+    </regex>
+	 <regex>
+        <name>canal</name>
+        <expres>net\/embed\/(.*?)"</expres>
+        <page>http://cndf80.blogspot.com/p/vtv-3.html</page>
+    </regex>
+</item>
 
 
 <item>
 <title>[B]Multicanal AndresFutbol 04[/B]     </title>
-<link>http://cdn.whostreams.net:8081/wsedge/$doregex[canal]/playlist.m3u8?wmsAuthSign=$doregex[code]</link>
-<regex>
-<name>canal</name>
-<expres>net\/embed\/([^"]+)</expres>
-<page>http://cndf79.blogspot.com/p/who-1.html</page>
-</regex>
-<regex>
-<name>code</name>
-<expres>\|(c2V.*?)\|</expres>
-<page>http://whostreams.net/embed/$doregex[canal]</page>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+<link>$doregex[geturl]</link>
+    <regex>
+        <name>geturl</name>
+        <expres>source:"(.*?)"</expres>
+        <page>$doregex[getunpacked]</page>
+    </regex>
+    <regex>
+        <name>getunpacked</name>
+        <expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)' )</expres>
+        <page>http://whostreams.net/embed/$doregex[canal]</page>
+        <referer>http://whostreams.net/</referer>
+        <connection>keep-alive</connection>
+    </regex>
+	 <regex>
+        <name>canal</name>
+        <expres>net\/embed\/(.*?)"</expres>
+        <page>http://cndf80.blogspot.com/p/who-1.html</page>
+    </regex>
+</item>
 
 
 <item>
 <title>[B]Multicanal AndresFutbol 05[/B]     </title>
-<link>http://cdn.whostreams.net:8081/wsedge/$doregex[canal]/playlist.m3u8?wmsAuthSign=$doregex[code]</link>
-<regex>
-<name>canal</name>
-<expres>net\/embed\/([^"]+)</expres>
-<page>http://cndf79.blogspot.com/p/who-2.html</page>
-</regex>
-<regex>
-<name>code</name>
-<expres>\|(c2V.*?)\|</expres>
-<page>http://whostreams.net/embed/$doregex[canal]</page>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+<link>$doregex[geturl]</link>
+    <regex>
+        <name>geturl</name>
+        <expres>source:"(.*?)"</expres>
+        <page>$doregex[getunpacked]</page>
+    </regex>
+    <regex>
+        <name>getunpacked</name>
+        <expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)' )</expres>
+        <page>http://whostreams.net/embed/$doregex[canal]</page>
+        <referer>http://whostreams.net/</referer>
+        <connection>keep-alive</connection>
+    </regex>
+	 <regex>
+        <name>canal</name>
+        <expres>net\/embed\/(.*?)"</expres>
+        <page>http://cndf80.blogspot.com/p/who-2.html</page>
+    </regex>
+</item>
 
 
-
+ 
 <item>
 <title>[B]Multicanal AndresFutbol 06[/B]     </title>
-<link>http://cdn.whostreams.net:8081/wsedge/$doregex[canal]/playlist.m3u8?wmsAuthSign=$doregex[code]</link>
-<regex>
-<name>canal</name>
-<expres>net\/embed\/([^"]+)</expres>
-<page>http://cndf79.blogspot.com/p/who-6.html</page>
-</regex>
-<regex>
-<name>code</name>
-<expres>\|(c2V.*?)\|</expres>
-<page>http://whostreams.net/embed/$doregex[canal]</page>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+<link>$doregex[geturl]</link>
+    <regex>
+        <name>geturl</name>
+        <expres>source:"(.*?)"</expres>
+        <page>$doregex[getunpacked]</page>
+    </regex>
+    <regex>
+        <name>getunpacked</name>
+        <expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)' )</expres>
+        <page>http://whostreams.net/embed/$doregex[canal]</page>
+        <referer>http://whostreams.net/</referer>
+        <connection>keep-alive</connection>
+    </regex>
+	 <regex>
+        <name>canal</name>
+        <expres>net\/embed\/(.*?)"</expres>
+        <page>http://cndf80.blogspot.com/p/who-3.html</page>
+    </regex>
+</item>
 
 
+ 
+ 
+ 
+  
 
 
  <item>
