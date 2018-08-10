@@ -1685,40 +1685,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-http://cdn.whostreams.net:8080/hls/aswpcq.m3u8?s=bMaB1CdLxxRqg_v7MJDxuQ&e=1532122295
-
-
-<item>
-    <title>el goles 6</title>
-<link>http://cdn.whostreams.net:8081/wsedge/$doregex[canal]/playlist.m3u8?wmsAuthSign=$doregex[code]</link>
-<regex>
-<name>canal</name>
-<expres>net\/embed\/([^"]+)</expres>
-<page>http://elgoles.ru/reproductor/06.php</page>
-</regex>
-<regex>
-<name>code</name>
-<expres>\|(c2V.*?)\|</expres>
-<page>http://whostreams.net/embed/$doregex[canal]</page>
-</regex>
-</item>
-
-
-
-<item>
-    <title>el goles 11</title>
-<link>http://cdn.whostreams.net:8081/wsedge/$doregex[canal]/playlist.m3u8?wmsAuthSign=$doregex[code]</link>
-<regex>
-<name>canal</name>
-<expres>net\/embed\/([^"]+)</expres>
-<page>http://elgoles.ru/reproductor/11.php</page>
-</regex>
-<regex>
-<name>code</name>
-<expres>\|(c2V.*?)\|</expres>
-<page>http://whostreams.net/embed/$doregex[canal]</page>
-</regex>
-</item>
 
 
 
@@ -1761,16 +1727,30 @@ http://cdn.whostreams.net:8080/hls/aswpcq.m3u8?s=bMaB1CdLxxRqg_v7MJDxuQ&e=153212
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
+
+
  <item>
 <title>[B]Multicanal[/B] TikiTaka 03 [I] [/I]</title>
 <link>$doregex[url]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64; rv:56.0) Gecko/20100101 Firefox/56.0&amp;Referer=http://static.castto.me</link>
 <regex>
 <name>url</name>
 <expres><![CDATA[source src="([^"]+)]]></expres>
-<page>http://static.castto.me/embedlivesrvjs.php?channel=953690581&amp;vw=720&amp;vh=420</page>
+<page>http://static.castto.me/embedlivesrvjs.php?channel=$doregex[getid]&amp;vw=720&amp;vh=420</page>
 <referer>http://estadionline.ml/canal1.php</referer>
 </regex>
+<regex>
+<name>getid</name>
+<expres><![CDATA[fid="([^"]+)]]></expres>
+<page>http://estadionline.ml/canal3.php</page>
+<referer>http://estadionline.ml/canal2.php</referer>
+</regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+
+
+
+
 
 
 
@@ -1861,67 +1841,57 @@ http://cdn.whostreams.net:8080/hls/aswpcq.m3u8?s=bMaB1CdLxxRqg_v7MJDxuQ&e=153212
 
 
 
-
+cmcmulli1@rogers.com:dntkn23﻿﻿
 
 
 
 
 <item>
-<title>[B]Multicanal[/B] VerLiga [I] Bein Sport [/I]</title>
-<link>https:$doregex[get-id]|Referer=http://www.verliga1.net/live/verliga1.php&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
+<title>[B]Multicanal[/B] VerLiga [I] Bein Sport [/I] up</title>
+<link>https:$doregex[get-id]|Referer=https://vergol.com/canales/live3/beinsport.php&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
 <regex>
 <name>get-id</name>
 <expres>source: '([^']+)</expres>
-<page>http://vergol.com/live3/beinsport.php</page>
-<referer>http://verliga1.net/tv/deportes/bein-sport.php</referer>
+<page>https://vergol.com/canales/live3/beinsport.php</page>
+<referer>https://vergol.com/live3/beinsport.php</referer>
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/esp.jpg</thumbnail></item>
 
-
-
-<item>
-<title>[B]Multicanal[/B] VerLiga [I] Bein Sport [/I]</title>
-<link>https:$doregex[get-id]|Referer=http://www.verliga1.net/live/verliga1.php&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
-<regex>
-<name>get-id</name>
-<expres>source: '([^']+)</expres>
-<page>http://vergol.com/live3/beinliga.php</page>
-<referer>http://verliga1.net/tv/deportes/bein-sport.php</referer>
-<agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/esp.jpg</thumbnail></item>
-
-
+ 
 
 
 
 
 <item>
 <title>[B]Multicanal[/B] VerLiga [I] PlusDeportes 1 [/I]</title>
-<link>https:$doregex[get-id]|Referer=http://www.verliga1.net/live/verliga1.php&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
+<link>https:$doregex[get-id]|Referer=https://vergol.com/canales/live3/beinsport.php&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
 <regex>
 <name>get-id</name>
-<expres>source: '(.*?)'</expres>
-<page>http://vergol.com/live1/plusdeportes1.php</page> 
-<referer>http://www.verliga.net/live/verliga1.php</referer>
+<expres>source: '([^']+)</expres>
+<page>https://vergol.com/canales/live3/plusdeportes1.php</page> 
+<referer>https://vergol.com/live3/beinsport.php</referer>
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/esp.jpg</thumbnail></item>
+
+ 
 
 
 
 <item>
 <title>[B]Multicanal[/B] VerLiga [I] PlusDeportes 2 [/I]</title>
-<link>https:$doregex[get-id]|Referer=http://www.verliga1.net/live/verliga1.php&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
+<link>https:$doregex[get-id]|Referer=https://vergol.com/canales/live3/beinsport.php&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
 <regex>
 <name>get-id</name>
-<expres>source: '(.*?)'</expres>
-<page>http://vergol.com/live1/plusdeportes2.php</page> 
-<referer>http://www.verliga.net/live/verliga1.php</referer>
+<expres>source: '([^']+)</expres>
+<page>https://vergol.com/canales/live3/plusdeportes2.php</page> 
+<referer>https://vergol.com/live3/beinsport.php</referer>
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/esp.jpg</thumbnail></item>
+
+ 
 
 
 
@@ -1932,16 +1902,17 @@ http://cdn.whostreams.net:8080/hls/aswpcq.m3u8?s=bMaB1CdLxxRqg_v7MJDxuQ&e=153212
 
 <item>
 <title>[B]Multicanal[/B] VerLiga 01[I]   [/I]</title>
-<link>https:$doregex[get-id]|Referer=https://verliga1.net/tv/inicio.php&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
+<link>https:$doregex[get-id]|Referer=https://vergol.com/canales/live3/beinsport.php&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
 <regex>
 <name>get-id</name>
-<expres>source: '(.*?)'</expres>
-<page>$doregex[get-url]</page>
-<referer>hhttps://vergol.com/canales/live3/verliga.php</referer>
+<expres>source: '([^']+)</expres>
+<page>https://vergol.com/canales/live3/verliga.php</referer>
+<referer>https://vergol.com/live3/beinsport.php</referer>
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/esp.jpg</thumbnail></item>
 
+ 
 
 
 
@@ -1951,12 +1922,11 @@ http://cdn.whostreams.net:8080/hls/aswpcq.m3u8?s=bMaB1CdLxxRqg_v7MJDxuQ&e=153212
 
 <item>
 <title>[B]Multicanal[/B] VerLiga 02[I]   [/I]</title>
-<link>https:$doregex[get-id]|Referer=http://www.verliga.net/live/verliga1.php&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
+<link>https:$doregex[get-id]|Referer=https://vergol.com/canales/live3/beinsport.php&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
 <regex>
 <name>get-id</name>
-<expres>source: '(.*?)'</expres>
-<page>$doregex[get-url]</page>
-<referer>http://www.verliga.net/live/verliga2.php</referer>
+<expres>source: '([^']+)</expres>
+<page>https://vergol.com/canales/live3/verliga2.php</referer>
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
 </regex>
 <regex>
