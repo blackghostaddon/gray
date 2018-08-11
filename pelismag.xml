@@ -338,7 +338,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
-<title>Series M</title>
+<title>Series </title>
 
 
 <link>$doregex[makelist2]</link>
@@ -359,7 +359,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  starturl = 'https://pelismag.net/series'     ### usually, ~ 'http://website.com/category/' ###
  categorylink = '' ### check the number of the param ###
  centerurl = '?p='      ### something like  '/page/' ###
- firstpage = 1 ### probably  = 1 ###
+ firstpage = 0 ### probably  = 1 ###
  endurl = '' ### can be empty ###    ### endurl without final / (SLASH) ###
 #
  dataregex = 'href="(.*?)"[\w\W\s]{0,20}gratis(.*?)Esp[\w\W\s]{0,90}src=(.*?)\s'      ### To adapt ###
@@ -371,7 +371,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  source = requests.get(fullurl, headers= headers).text #
  data = [] #
 #
- last = 5 #
+ last = 7 #
  while firstpage <= last: #
     try: #
         fullurl = starturl + centerurl + str(firstpage) + endurl + categorylink #
