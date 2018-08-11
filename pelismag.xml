@@ -338,21 +338,55 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
-<title>Series </title>
+<title>Series M</title>
+
+
 <link>$doregex[makelist2]</link>
 
 <regex>
-   <name>makelist2</name>
-   <listrepeat><![CDATA[
-       <title>[makelist2.param2]</title>
-    
-    <link>$doregex[makelist]</link>
+    <name>makelist2</name> movies  (all pages)
+ <listrepeat><![CDATA[
+<title>[makelist2.param2]</title>
+<link>$doregex[makelist]</link>
 <fanart>[makelist2.param3]</fanart>
 <thumbnail>[makelist2.param3]</thumbnail>
-   ]]></listrepeat>
-   <expres><![CDATA[href="(.*?)"[\w\W\s]{0,20}gratis(.*?)Esp[\w\W\s]{0,90}src=(.*?)\s]]></expres>
-   <page>https://pelismag.net/series</page>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re, requests
+def GetLSProData(page_data,Cookie_Jar,m):
+
+################################################################## FORMULARY #################################################################
+ starturl = 'https://pelismag.net/series'     ### usually, ~ 'http://website.com/category/' ###
+ categorylink = '' ### check the number of the param ###
+ centerurl = '?p='      ### something like  '/page/' ###
+ firstpage = 1 ### probably  = 1 ###
+ endurl = '' ### can be empty ###    ### endurl without final / (SLASH) ###
+#
+ dataregex = 'href="(.*?)"[\w\W\s]{0,20}gratis(.*?)Esp[\w\W\s]{0,90}src=(.*?)\s'      ### To adapt ###
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:50.0) Gecko/20100101 Firefox/50.0', 'Referer': ''}      ### To adapt ###
+##############################################################################################################################################
+
+############################## GENERIC PART #####################################
+ fullurl = starturl + centerurl + str(firstpage) + endurl + categorylink #
+ source = requests.get(fullurl, headers= headers).text #
+ data = [] #
+#
+ last = 5 #
+ while firstpage <= last: #
+    try: #
+        fullurl = starturl + centerurl + str(firstpage) + endurl + categorylink #
+        source = requests.get(fullurl, headers=headers).text #
+        data += re.findall(dataregex, source) #
+        firstpage += 1 #
+    except: #
+        pass #
+ return data #
+
+]]></expres><page></page>
 </regex>
+
+
+ 
 
 
 
@@ -364,7 +398,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	<thumbnail>[makelist2.param3]</thumbnail>
 	<fanart>[makelist2.param3]</fanart>
 ]]></listrepeat>
-<expres><![CDATA[sub-group-(.*?)">(.*?)<[\w\W\s]{0,20}href=(.*?)>]]></expres>
+<expres><![CDATA[sub-group-(.*?)">(.*?)<[\w\W\s]{0,34}href=(.*?)>]]></expres>
 <page>https://pelismag.net/[makelist2.param1]</page>
 <referer></referer>
 <cookieJar></cookieJar>
@@ -372,27 +406,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 
 
-<regex>
-   <name>makelist2</name>
-   <listrepeat><![CDATA[
-       <title>Page [makelist2.param1]</title>
-    
-    <link>$doregex[makelist]</link>
-
-<thumbnail></thumbnail>
-   ]]></listrepeat>
-   <expres><![CDATA[paginado:"(.*?)";]]></expres>
-   <page>http://adryanlist.org/adryan/kozm.txt</page>
-   <cookieJar></cookieJar>
-</regex>
 
 
 
 
-
-
-
-
-
-<expres>href="(peli.*?)".*?title=\s"(.*?)".*?src=(.*?jpg)\salt="(.*?)"</expres>
-<page>http://pelismag.net/series?p=[makelist2.param1]</page>
