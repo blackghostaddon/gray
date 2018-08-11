@@ -1859,15 +1859,27 @@ cmcmulli1@rogers.com:dntkn23﻿﻿
  
 
 
-
-
+ 
+ 
 <item>
-<title>[B]Multicanal[/B] VerLiga [I] PlusDeportes 1 [/I]</title>
+<title>[B]Multicanal[/B] VerLiga [I] Bein Max 1 [/I] up</title>
 <link>https:$doregex[get-id]|Referer=https://vergol.com/canales/live3/beinsport.php&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
 <regex>
 <name>get-id</name>
 <expres>source: '([^']+)</expres>
-<page>https://vergol.com/canales/live3/plusdeportes1.php</page> 
+<page>https://vergol.com/canales/live3/beinmax1.php</page>
+<referer>https://vergol.com/live3/beinsport.php</referer>
+<agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/esp.jpg</thumbnail></item>
+
+ <item>
+<title>[B]Multicanal[/B] VerLiga [I] Bein Max 2 [/I] up</title>
+<link>https:$doregex[get-id]|Referer=https://vergol.com/canales/live3/beinsport.php&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
+<regex>
+<name>get-id</name>
+<expres>source: '([^']+)</expres>
+<page>https://vergol.com/canales/live3/beinmax2.php</page>
 <referer>https://vergol.com/live3/beinsport.php</referer>
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
 </regex>
@@ -1876,102 +1888,100 @@ cmcmulli1@rogers.com:dntkn23﻿﻿
  
 
 
-
-<item>
-<title>[B]Multicanal[/B] VerLiga [I] PlusDeportes 2 [/I]</title>
+ <item>
+<title>[B]Multicanal[/B] VerLiga [I] Bein Max 3 [/I] up</title>
 <link>https:$doregex[get-id]|Referer=https://vergol.com/canales/live3/beinsport.php&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
 <regex>
 <name>get-id</name>
 <expres>source: '([^']+)</expres>
-<page>https://vergol.com/canales/live3/plusdeportes2.php</page> 
+<page>https://vergol.com/canales/live3/beinmax3.php</page>
 <referer>https://vergol.com/live3/beinsport.php</referer>
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/esp.jpg</thumbnail></item>
 
  
-
-
-
-
-
-
-
-
-<item>
-<title>[B]Multicanal[/B] VerLiga 01[I]   [/I]</title>
+ 
+ 
+ <item>
+<title>[B]Multicanal[/B] VerLiga [I] Campeones [/I] up</title>
 <link>https:$doregex[get-id]|Referer=https://vergol.com/canales/live3/beinsport.php&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
 <regex>
 <name>get-id</name>
 <expres>source: '([^']+)</expres>
-<page>https://vergol.com/canales/live3/verliga.php</referer>
+<page>https://vergol.com/canales/live3/campeones.php</page>
 <referer>https://vergol.com/live3/beinsport.php</referer>
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/esp.jpg</thumbnail></item>
 
  
-
-
-
-
-
-
-
-<item>
-<title>[B]Multicanal[/B] VerLiga 02[I]   [/I]</title>
+ 
+  
+ <item>
+<title>[B]Multicanal[/B] VerLiga [I] Deportes 1 [/I] up</title>
 <link>https:$doregex[get-id]|Referer=https://vergol.com/canales/live3/beinsport.php&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
 <regex>
 <name>get-id</name>
 <expres>source: '([^']+)</expres>
-<page>https://vergol.com/canales/live3/verliga2.php</referer>
+<page>https://vergol.com/canales/live1/plusdeportes1.php</page>
+<referer>https://vergol.com/live3/beinsport.php</referer>
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
 </regex>
-<regex>
-<name>get-url</name>
-<expres>allowfullscreen\ssrc="([^"]+)</expres>
-<page>http://www.verliga.net/live/verliga2.php</page>
-<referer>http://www.verliga.net/verliga.html</referer>
-<agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
-</regex>
-
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/esp.jpg</thumbnail></item>
 
-
-  <item>
-<title>[B]Multicanal[/B] VerLiga 03[I]   [/I]</title>
-<link>https:$doregex[get-id]|Referer=http://www.verliga.net/live/verliga1.php&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
+ 
+ 
+ 
+ 
+  
+ <item>
+<title>[B]Multicanal[/B] VerLiga [I] Deportes 2 [/I] up</title>
+<link>https:$doregex[get-id]|Referer=https://vergol.com/canales/live3/beinsport.php&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
 <regex>
 <name>get-id</name>
-<expres>source: '(.*?)'</expres>
-<page>$doregex[get-url]</page>
-<referer>http://www.verliga.net/live/verliga3.php</referer>
+<expres>source: '([^']+)</expres>
+<page>https://vergol.com/canales/live1/plusdeportes2.php</page>
+<referer>https://vergol.com/live3/beinsport.php</referer>
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
 </regex>
-
-
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/esp.jpg</thumbnail></item>
 
-
-
-
-  <item>
-<title>[B]Multicanal[/B] VerLiga 04[I]   [/I]</title>
-<link>https:$doregex[get-id]|Referer=http://www.verliga.net/live/verliga1.php&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
+ 
+  
+ <item>
+<title>[B]Multicanal[/B] VerLiga [I] Liga 123[/I] up</title>
+<link>https:$doregex[get-id]|Referer=https://vergol.com/canales/live3/beinsport.php&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
 <regex>
 <name>get-id</name>
-<expres>source: '(.*?)'</expres>
-<page>$doregex[get-url]</page>
-<referer>http://www.verliga.net/live/verliga4.php</referer>
+<expres>source: '([^']+)</expres>
+<page>https://vergol.com/canales/live3/liga123.php</page>
+<referer>https://vergol.com/live3/beinsport.php</referer>
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
 </regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/esp.jpg</thumbnail></item>
 
+ 
+ 
+   
+ <item>
+<title>[B]Multicanal[/B] VerLiga [I] MotoGP [/I] up</title>
+ <link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=https://vertelevision.tv/tv/deportes/motogp.php</link>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/esp.jpg</thumbnail></item>
+
+   
+ <item>
+<title>[B]Multicanal[/B] VerLiga [I] M F1 [/I] up</title>
+ <link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=https://vertelevision.tv/tv/deportes/formula1.php</link>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/esp.jpg</thumbnail></item>
 
 
 
-
-
+   
+ <item>
+<title>[B]Multicanal[/B] VerLiga [I] Partidazo [/I] up</title>
+ <link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=https://verliga1.net/tv/verliga.php</link>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/esp.jpg</thumbnail></item>
 
 
 
