@@ -20,41 +20,18 @@
     </items_info>
 			
 			
-			<item>
-			<title>Canal de las Estrellas (HD) </title>
-			<link>http://0nlym3x-lh.akamaihd.net/i/c4nst02_1@175273/master.m3u8</link>
 			
-			<thumbnail></thumbnail>
-			</item>
 			
 
 			
-			<item>
-			<title>Canal de las Estrellas (HD) </title>
-			<link>http://hlslive.lcdn.une.net.co/v1/AUTH_HLSLIVE/CEST/tu1_1.m3u8</link>
 			
-			<thumbnail></thumbnail>
-			</item>
 			
 			<item>
 			<title>ADN40</title>
 			<link>http://aztecalive-lh.akamaihd.net/i/0kus659k5_1@501884/master.m3u8</link>
 			<thumbnail>https://www.foromedios.com/uploads/monthly_2017_03/large.58c547d552942_XHTVM-ADN40.png.bc83280d75016331f3449af51be5ecba.png</thumbnail>
 			</item>
-			<item>
-			<title>Azteca 7</title>
-			<link>http://aztecalive-lh.akamaihd.net/i/0pq46e6vw_1@502477/master.m3u8</link>
-			<thumbnail>https://www.foromedios.com/uploads/monthly_2017_03/large.58c547d552942_XHTVM-ADN40.png.bc83280d75016331f3449af51be5ecba.png</thumbnail>
-			</item>
-		
-		<item>
-			<title>Azteca 7</title>
-			<link>http://aztecahls-lh.akamaihd.net/i/0t0rcy1uw_1@343908/master.m3u8</link>
-			<thumbnail>https://www.foromedios.com/uploads/monthly_2017_03/large.58c547d552942_XHTVM-ADN40.png.bc83280d75016331f3449af51be5ecba.png</thumbnail>
-			</item>
- 
 			
- 
 
 						<item>
 			<title>A+ </title>
@@ -63,9 +40,6 @@
 			</item>
 			
  
-			
-					
-			
 					<item>
 			<title>Azteca 13(HD) </title>
 			<link>http://aztecalive-lh.akamaihd.net/i/0qm7cjvop_1@502476/index_3_av-p.m3u8</link>
@@ -76,67 +50,13 @@
 			
 			
 			
-			<iem>
-			<title>Canal de las Estrellas (HD) 1080p </title>
-			<link>http://tvsawpdvr-lh.akamaihd.net/i/stch02wp_1@119660/master.m3u8</link>
-			
-			<thumbnail></thumbnail>
-			</item>
-			
-					
-			
-
-			
-			<item>
-			<title>Canal de las Estrellas (HD) </title>
-			<link>http://tvsawpdvr-lh.akamaihd.net/i/stch02wp_1@119660/index_1048_av-p.m3u8</link>
-			
-			<thumbnail></thumbnail>
-			</item>
-			
-			
-			<item>
-			<title>Canal de las Estrellas (SD) </title>
-			<link>http://tvsawpdvr-lh.akamaihd.net/i/stch02wp_1@119660/index_648_av-p.m3u8</link>
-			
-			<thumbnail></thumbnail>
-			</item>
-			
-	 
 				 
 			
 			
-				<iem>       
-			<title>Canal de las Estrellas (_Zony_)</title>
-<link>http://$doregex[ip]$doregex[m3u8]$doregex[hls]</link>
-			<regex>
-			<name>ip</name>
-			<expres>redirect=(.*)</expres>
-			<page>http://pubzony.com:1935/loadbalancer</page>
-			</regex>
-			<regex>
-			<name>m3u8</name>
-			<expres>ea \+ "(.*?)"</expres>
-			<page>http://www.zony.tv/membedplayer/$doregex[canal]/1/500/400</page>
-			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
-			<referer>http://telerisatv.com/</referer>
-			</regex>
-			<regex>
-			<name>hls</name>
-			<expres>hlsUrl \+ \(\"(.*?)"</expres>
-			<page>http://www.zony.tv/membedplayer/$doregex[canal]/1/500/400</page>
-			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
-			<referer>http://telerisatv.com/</referer>
-			</regex>
-			<regex>
-			<name>canal</name>
-			<expres>channel='(.*?)'</expres>
-			<page>http://www.telerisatv.com/</page>
-			<referer>http://www.zony.tv</referer>
-			</regex>
-<thumbnail>logo.logo.logo</thumbnail>
-</item>
 
+			<!--page>http://www.telerisatv.com/</page-->
+
+			
 
  <item>
 <title>Canal de las Estrellas (wide)</title>
@@ -172,79 +92,14 @@
 
 
 
-			
-			
-				 <iem>
-			<title>Canal Cinco (_Zony_)</title>
-<link>http://$doregex[ip]$doregex[m3u8]$doregex[hls]</link>
-			<regex>
-			<name>ip</name>
-			<expres>redirect=(.*)</expres>
-			<page>http://pubzony.com:1935/loadbalancer</page>
-			</regex>
-			<regex>
-			<name>m3u8</name>
-			<expres>ea \+ "(.*?)"</expres>
-			<page>http://www.zony.tv/membedplayer/$doregex[canal]/1/500/400</page>
-			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
-			<referer>http://telerisatv.com/</referer>
-			</regex>
-			<regex>
-			<name>hls</name>
-			<expres>hlsUrl \+ \(\"(.*?)"</expres>
-			<page>http://www.zony.tv/membedplayer/$doregex[canal]/1/500/400</page>
-			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
-			<referer>http://telerisatv.com/</referer>
-			</regex>
-			<regex>
-			<name>canal</name>
-			<expres>channel='(.*?)'</expres>
-			<page>http://telerisatv.com/2012/04/cinco.html</page>
-			</regex>
 
-			</item>	
-			
-			
-					<iem>
-			<title>Azteca 7 (_Zony_)</title>
-<link>http://$doregex[ip]$doregex[m3u8]$doregex[hls]</link>
-			<regex>
-			<name>ip</name>
-			<expres>redirect=(.*)</expres>
-			<page>http://pubzony.com:1935/loadbalancer</page>
-			</regex>
-			<regex>
-			<name>m3u8</name>
-			<expres>ea \+ "(.*?)"</expres>
-			<page>http://www.zony.tv/membedplayer/$doregex[canal]/1/500/400</page>
-			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
-			<referer>http://telerisatv.com/</referer>
-			</regex>
-			<regex>
-			<name>hls</name>
-			<expres>hlsUrl \+ \(\"(.*?)"</expres>
-			<page>http://www.zony.tv/membedplayer/$doregex[canal]/1/500/400</page>
-			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
-			<referer>http://telerisatv.com/</referer>
-			</regex>
-			<regex>
-			<name>canal</name>
-			<expres>channel='(.*?)'</expres>
-			<page>http://telerisatv.com/2012/04/siete.html</page>
-			</regex>
-
-			<thumbnail>logo.logo.logo</thumbnail></item>
-			
-			
-			<item>
-			<title>Azteca Noticias</title>
-			<link>http://aztecalive-lh.akamaihd.net/i/0qeij0bji_1@26639/master.m3u8</link>
-			</item>
 			
 <item>
 			<title>Azteca 13 HD opcion 2</title>
 			<link>http://aztecalive-lh.akamaihd.net/i/0qm7cjvop_1@502476/master.m3u8|User-Agent=iPad</link>
 			</item>
+			
+			
 			<item>
 			<title>milenio</title>
 			<link>http://bcoveliveios-i.akamaihd.net/hls/live/201661/57828478001/milenio_center_512k@51752.m3u8</link>
@@ -276,13 +131,21 @@
 			</item>
 
 			<item>
-			<title>Televisa Guadalajara</title>
-			<link>plugin://plugin.video.youtube/play/?video_id=$doregex[youtube]</link>
+			<title>Televisa Guadalajara**</title>
+			<link>plugin://plugin.video.youtube/play/?video_id=$doregex[canal]</link>
+			
 			<regex>
-			<name>youtube</name>
-			<expres>directYoutube\/.*\/(.*?)\/752</expres>
-			<page>http://televisaguadalajara.tv/en-vivo</page>
+			<name>canal</name>
+			<expres>'VIDEO_ID': "(.*?)"</expres>
+			<page>$doregex[pag]</page>
 			</regex>
+			
+			<regex>
+			<name>pag</name>
+			<expres>id="ytplayer" src="(.*?)"</expres>
+			<page>http://televisapuebla.tv/en-vivo</page>
+			</regex>
+			
 			</item>
 			
 				<item>
