@@ -5,14 +5,14 @@
 
 
 <item>
-<title>[COLOR skyblue]Buscar Pelicula[/COLOR]</title>
+<title>[COLOR deepskyblue]Buscar Pelicula[/COLOR]</title>
 <link>$doregex[makelist2]</link>
 
 
 <regex>
 <name>makelist2</name>
   <listrepeat><![CDATA[         
-<title>[makelist2.param2]</title>
+<title>[makelist2.param4]</title>
 <link>$doregex[makelist]</link>
 <fanart>[makelist2.param3]</fanart>
 <thumbnail>[makelist2.param3]</thumbnail>
