@@ -1000,7 +1000,7 @@ def GetLSProData(page_data,Cookie_Jar,m):#streamwatcher2013
 
 
 <item>
-<title>[B]Multicanal AndresFutbol 01[/B]   VTV  </title>
+<title>[B]Multicanal AndresFutbol 01[/B]    </title>
 <link>$doregex[geturl]</link>
     <regex>
         <name>geturl</name>
@@ -1017,7 +1017,7 @@ def GetLSProData(page_data,Cookie_Jar,m):#streamwatcher2013
 	 <regex>
         <name>canal</name>
         <expres>net\/embed\/(.*?)"</expres>
-        <page>http://cndf80.blogspot.com/p/vtv-1.html</page>
+        <page>http://cndf82.blogspot.com/p/vtv-1.html</page>
     </regex>
 </item>
 
@@ -1040,7 +1040,7 @@ def GetLSProData(page_data,Cookie_Jar,m):#streamwatcher2013
 	 <regex>
         <name>canal</name>
         <expres>net\/embed\/(.*?)"</expres>
-        <page>http://cndf80.blogspot.com/p/vtv-2.html</page>
+        <page>http://cndf82.blogspot.com/p/vtv-2.html</page>
     </regex>
 </item>
 
@@ -1063,7 +1063,7 @@ def GetLSProData(page_data,Cookie_Jar,m):#streamwatcher2013
 	 <regex>
         <name>canal</name>
         <expres>net\/embed\/(.*?)"</expres>
-        <page>http://cndf80.blogspot.com/p/vtv-3.html</page>
+        <page>http://cndf82.blogspot.com/p/vtv-3.html</page>
     </regex>
 </item>
 
@@ -1086,7 +1086,7 @@ def GetLSProData(page_data,Cookie_Jar,m):#streamwatcher2013
 	 <regex>
         <name>canal</name>
         <expres>net\/embed\/(.*?)"</expres>
-        <page>http://cndf80.blogspot.com/p/who-1.html</page>
+        <page>http://cndf82.blogspot.com/p/who-1.html</page>
     </regex>
 </item>
 
@@ -1109,7 +1109,7 @@ def GetLSProData(page_data,Cookie_Jar,m):#streamwatcher2013
 	 <regex>
         <name>canal</name>
         <expres>net\/embed\/(.*?)"</expres>
-        <page>http://cndf80.blogspot.com/p/who-2.html</page>
+        <page>http://cndf82.blogspot.com/p/who-2.html</page>
     </regex>
 </item>
 
@@ -1133,7 +1133,7 @@ def GetLSProData(page_data,Cookie_Jar,m):#streamwatcher2013
 	 <regex>
         <name>canal</name>
         <expres>net\/embed\/(.*?)"</expres>
-        <page>http://cndf80.blogspot.com/p/who-3.html</page>
+        <page>http://cndf82.blogspot.com/p/who-3.html</page>
     </regex>
 </item>
 
