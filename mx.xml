@@ -3,22 +3,8 @@
 
 
 
-	<channel>
-    <name>[COLOR=green]-----[/COLOR][COLOR=orange]► C A N A L E S  -  M E X I C O [COLOR gray] Locales : El Canal de las estrellas • Canal 5 • Azteca 7 • Azteca 13 • Foro TV • Gala TV • Teleformula  [/COLOR][/COLOR][COLOR=green]-----[/COLOR]</name>
-    <thumbnail>http://i.imgur.com/oxTNPnp.png</thumbnail>
-    <fanart>http://i.imgur.com/UAQY3DI.jpg</fanart>
-        <items>
-            
-			<items_info> <!-- this is opitonal -->
-      <title>Adryan List </title>
-      <genre>Tv Live</genre>
-      <description>: Lista de Canales para el Livestreamspro :</description>
-      <thumbnail>http://i.imgur.com/oxTNPnp.png</thumbnail>
-      <fanart>http://i.imgur.com/UAQY3DI.jpg</fanart>
-      <date>03.02.2015</date>
-      <credits>adryan</credits>
-    </items_info>
-			
+
+
 			
 			
 			
@@ -202,30 +188,8 @@
 			
 			
 	
-<item>
-			<title>Canal 4 Guadalajara</title>
-			<link>plugin://plugin.video.youtube/play/?video_id=KfkXRDrP0Qw</link>
-			</item>
 
-<item>
-			<title>GalaTV Morelos</title>
-			<link>plugin://plugin.video.youtube/play/?video_id=Cwu8PuJ-uRQ</link>
-			</item>
-
- 
-			
-			 <item>
-			<title>Vallevision Matamoros</title>
-			<link>plugin://plugin.video.youtube/play/?video_id=TN5nOFTf1N0</link>
-			</item>
-			
-	 
-									
-			 <item>
-			<title>Televisa TeleVer</title>
-			<link>plugin://plugin.video.youtube/play/?video_id=nSujmUNw32M</link>
-			</item>
-			
+	
 			
 			
 			
@@ -246,31 +210,8 @@
 			
 
 	
-			<item>
-			<title>MVS Noticias</title>
-			<link>http://wos1.smartcast.com.mx:1935/mvs/mvs_radio/mvs_radio.m3u8?tecnotv.info?iptv.m3u8</link>
-			</item>
-
-			<item>
-			<title>Teleformula</title>
-			<link>http://gformula.mmdlive.lldns.net/gformula/e1dff616119a43c8900b0889379d457e/manifest.m3u8</link>
-			</item>
-			
-			<item>
-			<title>Teleformula op2</title>
-			<link>$doregex[url]|User-Agent=iPad</link>
-<regex>
-<name>url</name>
-<expres>src="(.*?)"</expres>
-<page>http://www.radioformula.com.mx/include/player_estaciones_strelive_nvo201707.asp?idEs=tele&amp;iPos=1912&amp;iIdT=1912</page>
-</regex>
-			</item>
 			
 			
-			<item>
-			<title>Capital 21</title>
-			<link>http://187.237.253.94:8134/hls-live/livepkgr/_definst_/liveevent.m3u8?tecnotv.info?iptv.m3u8</link>
-			</item>
 
 				 
 			<item>
@@ -299,49 +240,14 @@
 			
 			
 			
-				<item>
-			<title>Canal 4 Monclova</title>
-			<link>rtmp://192.163.250.253:1935/live playpath=canal4 swfUrl=http://www.todostreaming.es/player.swf live=1 pageUrl=http://www.nrtmexico.mx/canal4/ </link>
-			</item>
-		
-			
-			<item>
-			<title>Canal 6 Monclova</title>
-			<link>rtmp://198.57.165.85:1935/live playpath=canal6 swfUrl=http://www.todostreaming.es/player.swf live=1 pageUrl=http://www.nrtmexico.mx/canal6/ </link>
-			</item>
 			
 			
 			
 			
-			<item>
-			<title>Azteca Deportes</title>
-			<link>http://aztecalive-lh.akamaihd.net/i/0sa0dg2r9_1@167681/index_2_av-p.m3u8</link>
-			</item>
 			
 		
-				
-
 		
-
-	<item><title>Gala TV Merida</title>
-			<link>http://74.222.3.185:1935/live/ngrp:galatvmerida_all/playlist.m3u8|User-Agent=iPad</link>
-			</item>
-
-
-			<item><title>Gala TV Cancun</title>
-			<link>http://74.222.3.185:1935/live/ngrp:galatvcancun_all/playlist.m3u8</link>
-			</item>
-			
-			
-			
-			
-			
-			
-			<item><title>MULTIMEDIOS TV</title>
-			<link>http://play.gvstream.net:554/e-tv-video/default.stream/chunklist_w316615179.m3u8</link><thumbnail></thumbnail></item>
-
-			<item><title>MULTIMEDIOS TV</title>
-			<link>http://video.gvstream.net:1935/e-tv-video/default.stream/live.m3u8</link><thumbnail></thumbnail></item>
+		
 
 			<item><title>MULTIMEDIOS TV Laguna</title>
 			<link>http://mdstrm.com/live-stream-playlist_700/57bf686a61ff39e1085d43e1.m3u8</link><thumbnail></thumbnail></item>
@@ -363,14 +269,6 @@
 			
 			
 			
-			
-			
-			
-			
-			<item>
-			<title>Foro TV HD</title>
-			<link>http://185417-f.akamaihd.net/i/n0tf0r0_1@81283/master.m3u8</link>
-			</item>
 
 			
 									
@@ -390,78 +288,17 @@
 			</item>
 
 			 
-			 
-			
-			  
-			
-			<item> 
-			<title>Canal 7 Mazatlan</title>
-			<link>http://74.63.97.188:1935/gpacifico4/videogpacifico4/chunklist_w1774114891.m3u8?</link>
-			</item>
-			<item> 
-			<title>Canal Once </title>
-			<link>http://www.oncetvmexicolive.tv:1935/livepkgr2/smil:int.smil/playlist.m3u8</link>
-			</item>
-			
+			 		  
+	
+	
 
-<item>
-			<title>Canal 4 Guadalajara Televisa</title>
-			<link>plugin://plugin.video.youtube/play/?video_id=$doregex[youtube]$$lsname=Canal4</link>
-			<regex>
-			<name>youtube</name>
-			<expres>embed/(.*?)"</expres>
-			<page>http://www.televisaguadalajara.tv/video-en-vivo</page>
-			<referer>http://www.televisaguadalajara.tv/video-en-vivo</referer>
-			</regex>
-			</item>
 			
 			
  
 
 
-			<!--
-			<item>
-			<title>telesur test </title>
-			<link>$doregex[get-page]$doregex[get-initsesion]|Cookie=$get_cookies$&amp;User-Agent=Mozilla/5.0 (iPhone; CPU iPhone OS 7_0_4 like Mac OS X) AppleWebKit/537.51.1 (KHTML, like Gecko) Version/7.0 Mobile/11B554a Safari/9537.53&amp;X-Playback-Session-Id=$GUID$</link>
-			<regex>
-			<name>get-initsesion</name>
-			<expres></expres>
-			<page>$doregex[get-page]</page>
-			<agent>Mozilla/5.0 (iPhone; CPU iPhone OS 7_0_4 like Mac OS X) AppleWebKit/537.51.1 (KHTML, like Gecko) Version/7.0 Mobile/11B554a Safari/9537.53</agent>
-			<cookieJar></cookieJar>
-			</regex>
-			<regex>
-			<name>get-page</name>
-			<expres>"m3u8_url":"(.*?)"</expres>
-			<page>http://livestream.com/accounts/1003100/events/4130805/player</page>
-			<agent>Mozilla/5.0 (iPhone; CPU iPhone OS 7_0_4 like Mac OS X) AppleWebKit/537.51.1 (KHTML, like Gecko) Version/7.0 Mobile/11B554a Safari/9537.53</agent>
-			<cookieJar></cookieJar>
-			</regex>
-			</item>
-			-->
-			
-			
-			
-			 <item> <title>Telesur Yucantan Campeche</title> <sportsdevil>http://livestream.com/telesur/events/4130805</sportsdevil><referer>http://livestream.com</referer> </item>
-			
-		<item><title>Canal 44</title>
-<link>http://canal44-lh.akamaihd.net/i/ch_canal44@325633/master.m3u8</link>
-</item>	
-			<item>
-        <title>Canal 66 - Mexicalli</title>
-        <link>http://canal44-lh.akamaihd.net/i/ch_mexicali@325633/master.m3u8</link>
-        </item>
-			
-			
-			<item>
-        <title>canal 22</title>
-        <link>rtmp://origen.cloudapp.net:1935/live/envivopc</link>
-        </item>
+
  
-       <item>
-        <title>6 guadalajara</title>
-        <link>rtmp://200.52.193.57:1935/live/unique/live_2650</link>
-        </item>
  
          <item>
         <title>PROYECTO 40</title>
@@ -469,82 +306,40 @@
         </item>
 			
 			
-			
-			<item> 
-			<title>Tv Mas</title>
-			<link>rtmp://50.7.98.234/rtv/videortv</link>
-			<thumbnail></thumbnail>
-			</item> 
-			
-			
-			
-			<item>
-			<title>Hogar Util </title>
-			<link>http://brightcove03-f.akamaihd.net/HOGARUTIL_1_1100@117573</link>
-			<thumbnail></thumbnail>
-			</item>
-			
-			
-			<item>
-			<title>TeleMax </title>
-			<link>rtmp://204.45.15.50/telemax/telemax</link>
-			<thumbnail></thumbnail>
-			</item>
-			<item>
-			<title>TeleMaR </title>
-			<link>http://wms.tecnoxia.com:1935/8004/8004/telemarmexico.m3u8?</link>
-			<thumbnail></thumbnail>
-			</item>
-			<item>
-			<title>Sony Six </title>
-			<link>http://103.3.229.147:8084/r_sonysix/01.m3u8</link><thumbnail></thumbnail></item>
-			
-			<item>
-			<title>Ocho TV </title>
-			<link>http://s3.amazonaws.com/com-wooblue-ochotv/prog_index.m3u8</link>
-			<thumbnail></thumbnail>
-			</item>
-			
-			<item><title>OCHO TV (Mex)
-</title><link>http://201.130.193.150:1935/codecsys/smil:ocho.smil/master.m3u8</link></item>
-			
-		 
-			 
-				<item><title>STV Puebla</title>
-			<link>http://iphone-streaming.ustream.tv/uhls/22550762/streams/live/iphone/playlist.m3u8</link><thumbnail></thumbnail></item>
 		
-			<item><title>Once TV Internacional</title>
-			<link>http://www.oncetvmexicolive.tv:1935/livepkgr2/smil:int.smil/playlist.m3u8</link><thumbnail></thumbnail></item>
-			 
-			<item><title>Radio y Televisión Mexiquense</title>
-			<link>rtmp://fss28.streamhoster.com:1935/lv_tvmexiquense/_definst_/broadcast1</link><thumbnail></thumbnail></item>
-			 
-			<item><title>SIPSA TV Cancún </title>
-			<link>http://rightbrainmedia.mpl.miisolutions.net/rightbrainmedia-live-244/_definst_/mp4:GalaTVCancun/playlist.m3u8</link><thumbnail></thumbnail></item>
-			 
-			<item><title>Telemar Campeche</title>
-			<link>http://wms.tecnoxia.com:1935/8004/8004/telemarmexico.m3u8</link><thumbnail></thumbnail></item>
-			 
-			<item><title>THITHD</title>
-			<link>http://187.247.255.139/Apple/THITHD.m3u8</link><thumbnail></thumbnail></item>
-			 
-			<item><title>TV MAS México</title>
-			<link>rtmp://50.7.98.234/rtv/videortv</link><thumbnail></thumbnail></item>
-			 
 		
-			 
-			<item><title>UNO TV HD 720 México</title>
-			<link>http://ooyalahd2-f.akamaihd.net/i/UnoTV02_delivery@122617/master.m3u8</link><thumbnail></thumbnail></item>
 			
-<item><title>[Locales] AGS Aguascalientes TV</title><link>http://xaguascalientesx.api.channel.livestream.com/3.0/playlist.m3u8?</link></item>
+	
+	
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+
+			
  
-<item><title>[Locales] Aprende</title><link>http://dl-dgtve.xsn.com.mx/dgtve/canal24dgtve.mp4/playlist.m3u8?</link></item>
- 
-<item><title>[Locales] Azteca Info7</title><link>http://38.104.228.230:1938/info7/info7_512/playlist.m3u8?</link></item>
- 
-<item><title>[Locales] Canal 2 Los Mochis</title><link>http://74.63.97.188:1935/gpacifico2/videogpacifico2/chunklist_w609004457.m3u8?</link></item>
- 
-<item><title>[Locales] Canal 2 Ciudad Obregon</title><link>http://74.63.97.188:1935/gpacifico3/videogpacifico3/chunklist_w1501260201.m3u8?</link></item>
+
  
 <item><title>[Locales] Canal 7 Mazatlan</title><link>http://74.63.97.188:1935/gpacifico4/videogpacifico4/chunklist_w1774114891.m3u8?</link></item>
  
@@ -591,12 +386,6 @@
 <item><title>[Locales] TV Polanco</title><link>rtmp://186.155.200.118:1935/live/ColombiasuMusica</link></item>
  
 <item><title>[Locales] TVUniversidad</title><link>http://dl-dgtve.xsn.com.mx/dgtve/canal22dgtve.mp4/playlist.m3u8?</link></item>
-
-
-
-
-
-
 
 
 <item><title>[Locales] KW TV Mexico</title><link>http://wpc.845d.edgecastcdn.net/hls-live/20845D/Live/kwlive/livetv,364,664,964,1264,.m3u8?hc_location=ufi</link></item>
@@ -692,15 +481,3 @@
 
 <item><title>[Locales] Canal Mexico</title><link>http://iphone-streaming.ustream.tv/uhls/18636540/streams/live/iphone/playlist.m3u8</link></item>
 
-			
-			
-<item><title>Tercer Milenio</title><link>https://hls-ord-1a.vaughnsoft.net/den/live/live_anahix11/chunklist.m3u8|Referer=https://www.vaughnlive.tv&amp;User-Agent=Mozilla/5.0 (Windows; U; Windows NT 5.1; en-GB; rv:1.9.0.3) Gecko/2008092417 Firefox/3.0.3</link></item>	
-<item><title>Tercer Milenio</title><link>https://hls-ams-1a.vaughnsoft.net/den/live/live_anahix11/chunklist.m3u8|Referer=https://www.vaughnlive.tv&amp;User-Agent=Mozilla/5.0 (Windows; U; Windows NT 5.1; en-GB; rv:1.9.0.3) Gecko/2008092417 Firefox/3.0.3</link></item>	
-<item><title>Tercer Milenio</title><link>https://hls-nyc-1a.vaughnsoft.net/den/live/live_anahix11/chunklist.m3u8|Referer=https://www.vaughnlive.tv&amp;User-Agent=Mozilla/5.0 (Windows; U; Windows NT 5.1; en-GB; rv:1.9.0.3) Gecko/2008092417 Firefox/3.0.3</link></item>	
-<item><title>Tercer Milenio</title><link>https://hls-den-1a.vaughnsoft.net/den/live/live_anahix11/chunklist.m3u8|Referer=https://www.vaughnlive.tv&amp;User-Agent=Mozilla/5.0 (Windows; U; Windows NT 5.1; en-GB; rv:1.9.0.3) Gecko/2008092417 Firefox/3.0.3</link></item>	
-		
-			
-			
-					
-        </items>
-    </channel>
