@@ -151,7 +151,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  starturl = 'https://pelismag.net/estrenos'     ### usually, ~ 'http://website.com/category/' ###
  categorylink = '' ### check the number of the param ###
  centerurl = '?p='      ### something like  '/page/' ###
- firstpage = 1 ### probably  = 1 ###
+ firstpage = 0 ### probably  = 1 ###
  endurl = '' ### can be empty ###    ### endurl without final / (SLASH) ###
 #
  dataregex = 'href="(peli.*?)".*?title=\s"(.*?)".*?src=(.*?jpg)\salt="(.*?)"'      ### To adapt ###
