@@ -1047,73 +1047,46 @@ def GetLSProData(page_data,Cookie_Jar,m):#streamwatcher2013
 
 
 
-
-
- <item>
-<title>[B]Multicanal TotalSports UnivisionDeportes [/B]</title>
-<link>$doregex[getm3u8]|User-Agent=iPad</link>
-
-<regex>
-<name>getm3u8</name>
-<expres>$pyFunction:base64.b64decode('$doregex[m3u8]')</expres>
-<page></page>
-</regex>
-
-<regex>
-<name>m3u8</name>
-<expres>curl = "([^"]+)</expres>
-<page>https://www.playcast.se/stream.php?id=172</page>
-<referer>http://www.playcast.se</referer>
-<agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0</agent>
-</regex>
-
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail>
-</item>
-
-
- <item>
-<title>[B]Multicanal TotalSports eventos UFC  [/B]</title>
-<link>$doregex[getm3u8]|User-Agent=iPad</link>
-
-<regex>
-<name>getm3u8</name>
-<expres>$pyFunction:base64.b64decode('$doregex[m3u8]')</expres>
-<page></page>
-</regex>
-
-<regex>
-<name>m3u8</name>
-<expres>curl = "([^"]+)</expres>
-<page>https://www.playcast.se/stream.php?id=153</page>
-<referer>http://www.playcast.se</referer>
-<agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0</agent>
-</regex>
-
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail>
+<item>
+<title>[B]Multicanal Rivo 06[/B]     </title>
+<link>$doregex[geturl]</link>
+    <regex>
+        <name>geturl</name>
+        <expres>source:"(.*?)"</expres>
+        <page>$doregex[getunpacked]</page>
+    </regex>
+    <regex>
+        <name>getunpacked</name>
+        <expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)' )</expres>
+        <page>http://whostreams.net/embed/usgiekr4ctgh</page>
+        <referer>http://whostreams.net/</referer>
+        <connection>keep-alive</connection>
+    </regex>
+	 <regex>
+        <name>canal</name>
+        <expres>net\/embed\/(.*?)"</expres>
+        <page>http://cndf82.blogspot.com/p/net-3.html</page>
+    </regex>
 </item>
 
 
 
- <item>
-<title>[B]Multicanal BullAguero[/B]</title>
-<link>$doregex[getm3u8]|User-Agent=iPad</link>
-
+<item>
+<title>[B]Multicanal Rivo 07[/B]     </title>
+<link>$doregex[makelist]</link>
 <regex>
-<name>getm3u8</name>
-<expres>$pyFunction:base64.b64decode('$doregex[m3u8]')</expres>
-<page></page>
+<name>makelist</name>
+<expres><![CDATA[#$pyFunction
+import re,requests
+def GetLSProData(page_data,Cookie_Jar,m):#streamwatcher2013
+  from urlresolver.plugins.lib import jsunpack
+  source=requests.get(re.findall('src="(.*?kastream[^"]+)',page_data)[0],headers={'Referer':'http://cdn.zonasports.es/c-5x.php'}).text
+  return 'http://'+re.findall('Clappr.Player[\w\W]*?source.+?//([^\'"]+)',jsunpack.unpack(re.findall('id="Player"(?s)(.*?)</script',source)[0]).replace('\\',''))[0]+'|User-Agent=iPad'
+]]></expres>
+<page>http://in.xrivonet.info/15y.html</page>
 </regex>
-
-<regex>
-<name>m3u8</name>
-<expres>curl = "([^"]+)</expres>
-<page>https://www.playcast.se/stream.php?id=152</page>
-<referer>http://www.playcast.se</referer>
-<agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0</agent>
-</regex>
-
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail>
 </item>
+
 
 
  
@@ -1156,7 +1129,7 @@ def GetLSProData(page_data,Cookie_Jar,m):#streamwatcher2013
 
 
 <item>
-<title>[B]Multicanal AndresFutbol 02[/B]   VTV  </title>
+<title>[B]Multicanal AndresFutbol 02[/B]     </title>
 <link>$doregex[geturl]</link>
     <regex>
         <name>geturl</name>
@@ -1179,7 +1152,7 @@ def GetLSProData(page_data,Cookie_Jar,m):#streamwatcher2013
 
 
 <item>
-<title>[B]Multicanal AndresFutbol 03[/B]   VTV  </title>
+<title>[B]Multicanal AndresFutbol 03[/B]    </title>
 <link>$doregex[geturl]</link>
     <regex>
         <name>geturl</name>
@@ -1275,17 +1248,77 @@ def GetLSProData(page_data,Cookie_Jar,m):#streamwatcher2013
  
  
   
+<item>
+<title>[B]Multicanal AndresFutbol 07[/B]     </title>
+<link>$doregex[geturl]</link>
+    <regex>
+        <name>geturl</name>
+        <expres>source:"(.*?)"</expres>
+        <page>$doregex[getunpacked]</page>
+    </regex>
+    <regex>
+        <name>getunpacked</name>
+        <expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)' )</expres>
+        <page>http://whostreams.net/embed/$doregex[canal]</page>
+        <referer>http://whostreams.net/</referer>
+        <connection>keep-alive</connection>
+    </regex>
+	 <regex>
+        <name>canal</name>
+        <expres>net\/embed\/(.*?)"</expres>
+        <page>http://cndf82.blogspot.com/p/net-1.html</page>
+    </regex>
+</item>
 
 
- <item>
+
+
+  
+<item>
 <title>[B]Multicanal AndresFutbol 08[/B]     </title>
-<link>$doregex[get-id]</link>
-<regex>
-<name>get-id</name>
-<expres>file:"([^"]+)</expres>
-<page>http://widestream.io/embed-35642</page>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+<link>$doregex[geturl]</link>
+    <regex>
+        <name>geturl</name>
+        <expres>source:"(.*?)"</expres>
+        <page>$doregex[getunpacked]</page>
+    </regex>
+    <regex>
+        <name>getunpacked</name>
+        <expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)' )</expres>
+        <page>http://whostreams.net/embed/$doregex[canal]</page>
+        <referer>http://whostreams.net/</referer>
+        <connection>keep-alive</connection>
+    </regex>
+	 <regex>
+        <name>canal</name>
+        <expres>net\/embed\/(.*?)"</expres>
+        <page>http://cndf82.blogspot.com/p/net-2.html</page>
+    </regex>
+</item>
+
+
+  
+<item>
+<title>[B]Multicanal AndresFutbol 09[/B]     </title>
+<link>$doregex[geturl]</link>
+    <regex>
+        <name>geturl</name>
+        <expres>source:"(.*?)"</expres>
+        <page>$doregex[getunpacked]</page>
+    </regex>
+    <regex>
+        <name>getunpacked</name>
+        <expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)' )</expres>
+        <page>http://whostreams.net/embed/$doregex[canal]</page>
+        <referer>http://whostreams.net/</referer>
+        <connection>keep-alive</connection>
+    </regex>
+	 <regex>
+        <name>canal</name>
+        <expres>net\/embed\/(.*?)"</expres>
+        <page>http://cndf82.blogspot.com/p/net-3.html</page>
+    </regex>
+</item>
 
 
 
@@ -1298,9 +1331,7 @@ def GetLSProData(page_data,Cookie_Jar,m):#streamwatcher2013
 
 
 
-
-
-
+kas
 
 
 
