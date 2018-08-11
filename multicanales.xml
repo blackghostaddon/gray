@@ -6,116 +6,10 @@
 
 
 
-
- <itm>
-<title>[B]PARTIDOS AMISTOSOS MULTICANAL opciones 1 [/B]      </title>
-<link>$doregex[bro.adca.st]</link>
+ 
 
 
-<regex>
-<name>bro.adca.st</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/$doregex[select].html'):
- import requests, re, urllib
- headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:52.0) Gecko/20100101 Firefox/52.0'}
- headers['Referer'] = 'http://vipracing.info/channel/canal-2'
- source = requests.get(url, headers=headers)
- m3u8 = re.findall('tambor = "(.+?)"', source.text)[0]
- tokenpage = re.findall('firme = "\/(.+?)"', source.text)[0]
- headers['Referer'] = url
- headers['X-Requested-With'] = 'XMLHttpRequest'
- headers['Accept'] = 'application/json, text/javascript, */*; q=0.01'
- headers['Accept-Language'] = 'en-US,en;q=0.5'
- source = requests.get('http://bro.adca.st/%s'%tokenpage, headers=headers)
- m3u8 = m3u8 + re.findall(':"(.+?)"', source.text)[0] + '|User-Agent=%s&Referer=http://bro.adca.st/&Origin=http://bro.adca.st'%headers['User-Agent']
- return m3u8
-]]></expres>
-<page></page>
-</regex>
-<regex>
-<name>select</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m):
-   import xbmcgui
-   dialog = xbmcgui.Dialog()
-   ret = dialog.select('Elige un Canal ', ['Opcion 248', 'Opcion 15129', 'Opcion 13137', 'Opcion 715', 'Opcion 13525', 'Opcion 10762', 'Opcion 7386', 'Opcion 7387'])
-   lists = ['248', '15129', '13137', '715', '13525', '10762', '7386', '7387']
-   return lists[ret]
-]]></expres>
-<page></page>
-</regex>
-
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail>
-
-</item>
-
-
- <itm>
-<title>[B]Multicanales opciones RIVO [/B]      </title>
-<link>$doregex[bro.adca.st]</link>
-
-
-<regex>
-<name>bro.adca.st</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m,url = 'http://bro.adca.st/stream/$doregex[select].html'):
- import requests, re, urllib
- headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:52.0) Gecko/20100101 Firefox/52.0'}
- headers['Referer'] = 'http://vipracing.info/channel/canal-2'
- source = requests.get(url, headers=headers)
- m3u8 = re.findall('tambor = "(.+?)"', source.text)[0]
- tokenpage = re.findall('firme = "\/(.+?)"', source.text)[0]
- headers['Referer'] = url
- headers['X-Requested-With'] = 'XMLHttpRequest'
- headers['Accept'] = 'application/json, text/javascript, */*; q=0.01'
- headers['Accept-Language'] = 'en-US,en;q=0.5'
- source = requests.get('http://bro.adca.st/%s'%tokenpage, headers=headers)
- m3u8 = m3u8 + re.findall(':"(.+?)"', source.text)[0] + '|User-Agent=%s&Referer=http://bro.adca.st/&Origin=http://bro.adca.st'%headers['User-Agent']
- return m3u8
-]]></expres>
-<page></page>
-</regex>
-<regex>
-<name>select</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m):
-   import xbmcgui
-   dialog = xbmcgui.Dialog()
-   ret = dialog.select('Elige un Canal ', ['24187', '7387', '24187', '21611', '21675', '22612'])
-   lists = ['24187', '7387', '24187', '21611', '21675', '22612']
-   return lists[ret]
-]]></expres>
-<page></page>
-</regex>
-
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail>
-
-</item>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
 
 
 
@@ -292,7 +186,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<item>
+<iem>
 <title>[B]Multicanal TDN Univision [/B]   </title>
 
 <link>$doregex[GetPageUrl]|User-Agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+rv%3A11.0%29+like+Gecko</link>
@@ -343,7 +237,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<item>
+<iem>
 <title>[B]Multicanal ESPN3 MX [/B]   </title>
 
 <link>$doregex[GetPageUrl]|User-Agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+rv%3A11.0%29+like+Gecko</link>
@@ -362,7 +256,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<item>
+<iem>
 <title>[B]Multicanal ESPN2 MX  [/B]   </title>
 
 <link>$doregex[GetPageUrl]|User-Agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+rv%3A11.0%29+like+Gecko</link>
@@ -2095,12 +1989,27 @@ cmcmulli1@rogers.com:dntkn23﻿﻿
  <link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://soloveo.com/afox2.html</link>
  <link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://soloveo.com/afox3.html</link>
  <link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://soloveo.com/afox4.html</link>
+
+	
+<item>
+<title> fasldgusd  [I]   1 [/I]</title>
+ 
+<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://maxdeportv.net/indexa.php?canal=1</link>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 	
-
+<item>
+<title> fasldgusd  [I]  2  [/I]</title>
+ 
+<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=https://telerium.tv/embed/25018.html</link>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 	
+<item>
+<title> fasldgusd  [I]  3  [/I]</title>
+ 
+<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=https://telerium.tv/embed/25660.html</link>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
