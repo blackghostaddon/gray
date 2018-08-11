@@ -221,6 +221,52 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
+<title>[B]Multicanal TyC Sports[/B]   </title>
+
+<link>https://tycsportsalive-a.akamaihd.net/561523037d4644b5a608a7b118aa9cee/sa-east-1/5395474896001/2f0b8b1743d8459a8bc55545b1b8db67/playlist_ssaiM.m3u8</link>
+<regex>
+<name>GetPageUrl</name>
+<expres>source: '(.*?)'</expres>
+<page>http://livesports.pw/embeddeporte2.php?file=TYCSPORT&amp;width=650&amp;height=397</page>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+<item>
+<title>[B]Multicanal  [/B]   </title>
+
+<link>http://live.fcnlb.click/hls/720/index.m3u8</link>
+<regex>
+<name>GetPageUrl</name>
+<expres>source: '(.*?)'</expres>
+<page>http://livesports.pw/embeddeporte2.php?file=TYCSPORT&amp;width=650&amp;height=397</page>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+
+
+<item>
+<title>[B]Multicanal  [/B]   </title>
+
+<link>http://origin5.allcast.is/hls/ch20allcast2019.m3u8</link>
+<regex>
+<name>GetPageUrl</name>
+<expres>source: '(.*?)'</expres>
+<page>http://livesports.pw/embeddeporte2.php?file=TYCSPORT&amp;width=650&amp;height=397</page>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+
+
+
+
+
+
+<item>
 <title>[B]Multicanal VTV Uruguay[/B]   </title>
 
 <link>$doregex[GetPageUrl]|User-Agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+rv%3A11.0%29+like+Gecko</link>
@@ -301,45 +347,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-
-
-
-
-
-
-<item>
-<title>[B]Multicanal [/B]   </title>
-
-<link>$doregex[GetPageUrl]|User-Agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+rv%3A11.0%29+like+Gecko</link>
-<regex>
-<name>GetPageUrl</name>
-<expres>source: '(.*?)'</expres>
-<page>http://livesports.pw/embeddeporte2.php?file=nnba
-
-<itm>
-<title>[B]Multicanal MaxDeportes 01[/B] **  **  </title>
- <link>$doregex[bro.adca.st]</link>
-<regex>
-<name>bro.adca.st</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m,url = 'http://telerium.tv/embed/25018.html'):
- import requests, re, urllib
- headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:52.0) Gecko/20100101 Firefox/52.0'}
- headers['Referer'] = 'http://maxdeportv.net/?canal=1'
- source = requests.get(url, headers=headers)
- m3u8 = re.findall('"(Ly9z.+?)"', source.text)[0]
- tokenpage = re.findall('"(Ly90ZWxlcml1bS.+?)"', source.text)[0]
- headers['Referer'] = url
- headers['X-Requested-With'] = 'XMLHttpRequest'
- headers['Accept'] = 'application/json, text/javascript, */*; q=0.01'
- headers['Accept-Language'] = 'en-US,en;q=0.5'
- source = requests.get('http:%s'%tokenpage, headers=headers)
- m3u8 = m3u8 + re.findall('"(.+?)"', source.text)[0] + '|User-Agent=%s&Referer=http://telerium.tv/embed/25018.html&Origin=http://telerium.tv'%headers['User-Agent']
- return m3u8
-]]></expres>
-<page></page>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
@@ -990,6 +997,40 @@ def GetLSProData(page_data,Cookie_Jar,m):#streamwatcher2013
 
 
 
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+<item>
+<title>[B]Multicanal Futbol Chile[/B]        </title>
+    <link>$doregex[geturl]</link>
+    <regex>
+        <name>geturl</name>
+        <expres>source:"(.*?)"</expres>
+        <page>$doregex[getunpacked]</page>
+    </regex>
+    <regex>
+        <name>getunpacked</name>
+        <expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)' )</expres>
+        <page>http://whostreams.net/embed/$doregex[canal]</page>
+        <referer>http://whostreams.net/</referer>
+        <connection>keep-alive</connection>
+    </regex>
+	 <regex>
+        <name>canal</name>
+        <expres>net\/embed\/(.*?)"</expres>
+        <page>http://futbolchile.net/canales/who720.html</page>
+    </regex>
+</item>
 
 
 
@@ -2306,29 +2347,6 @@ def GetLSProData(page_data,Cookie_Jar,m):#streamwatcher2013
 </regex>
 </item>
 
-
-
-<item>
-<title>[B]Multicanal Futbol Chile[/B]        </title>
-    <link>$doregex[geturl]</link>
-    <regex>
-        <name>geturl</name>
-        <expres>source:"(.*?)"</expres>
-        <page>$doregex[getunpacked]</page>
-    </regex>
-    <regex>
-        <name>getunpacked</name>
-        <expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)' )</expres>
-        <page>http://whostreams.net/embed/$doregex[canal]</page>
-        <referer>http://whostreams.net/</referer>
-        <connection>keep-alive</connection>
-    </regex>
-	 <regex>
-        <name>canal</name>
-        <expres>net\/embed\/(.*?)"</expres>
-        <page>http://futbolchile.net/canales/who720.html</page>
-    </regex>
-</item>
 
 
 
