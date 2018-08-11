@@ -1776,23 +1776,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<iem>
-<title> »»» AVISO IMPORTANTE «««    </title>
-<link>$doregex[text]</link>
-<regex>
-<name>text</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m):
-    import xbmcgui
-    dialog = xbmcgui.Dialog()
-    dialog.textviewer('BlackGhost - AVISO IMPORTANTE', 'Para el correcto funcionamiento de BlackGhost debes seguir la siguientes indicaciones:\nPrimero es [B]Tener la version mas reciente del addon la cual es la version 2.8.1[/B] ya que varias secciones o canales te marcaran error si no lo tienes actualizado.\nSegundo; Tener [B]Activado el Turbo[/B] en la configuracion del Addon BlackGhost\nTercero: Tener instalados los Addons Complementarios como lo son el [B]URLRESOLVER, PLEXUS, QUASAR, SPORTSDEVIL y F4MTESTER[/B] que son los mas importantes;\nSi necesitas ayuda con alguno de estos puntos puedes ingresar al grupo de Telegram [ aquamarine][I][B]telegram.me/BlackGhost[/B][/I] y con gusto te ayudaremos, para que puedas disfrutar de todo el contenido que encontraras en BlackAddon (Peliculas, Series de TV, Television en vivo, eventos PPV...)\n\nEspero disfrutes todo esto que he realizado, y si quieres apoyarme puedes hacerlo a traves de una donacion por paypal al correo [I]adrian.bu@gmail.com[/I] [I]Para la tazita de cafe[/I] y si no te funciona nada. puedes cerrar este addon y desinstalarlo de tu kodi  y probar con alguna otra opcion mas..  \n atte: @ADRYAN  ')
-]]></expres>
-<page></page>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
-  </item>
 
 
 
@@ -2070,21 +2054,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-		<item>
-<title>test</title>
-<link>$doregex[GetPageUrl]</link>
-<regex>
-<name>GetPageUrl</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m,url='http://www.247bay.tv/embedplayer/f1caballona/2/600/420'):
-   import liveresolver
-   u = liveresolver.resolve(url)
-   return u
-]]></expres>
-<page></page>
-<cookieJar></cookieJar>
-</regex>
-</item>
+
+  
 
 
 
@@ -2121,20 +2092,23 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
   
 
- <item>
-<title>$doregex[prog]</title>
-<link>http://$doregex[ip]$doregex[m3u8]</link>
+<item>
+<title> »»» AVISO IMPORTANTE «««    </title>
+<link>$doregex[text]</link>
 <regex>
-<name>prog</name>
-<expres><![CDATA[cita:"(.+)"]]></expres>
-<page>https://raw.githubusercontent.com/blackghostaddon/gray/master/cita.php</page>
-<agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:49.0) Gecko/20100101 Firefox/49.0</agent>
-<referer></referer>
+<name>text</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import xbmcgui
+    dialog = xbmcgui.Dialog()
+    dialog.textviewer('BlackGhost - AVISO IMPORTANTE', 'Para el correcto funcionamiento de BlackGhost debes seguir la siguientes indicaciones:\nPrimero es [B]Tener la version mas reciente del addon la cual es la version 2.8.1[/B] ya que varias secciones o canales te marcaran error si no lo tienes actualizado.\nSegundo; Tener [B]Activado el Turbo[/B] en la configuracion del Addon BlackGhost\nTercero: Tener instalados los Addons Complementarios como lo son el [B]URLRESOLVER, PLEXUS, QUASAR, SPORTSDEVIL y F4MTESTER[/B] que son los mas importantes;\nSi necesitas ayuda con alguno de estos puntos puedes ingresar al grupo de Telegram [ aquamarine][I][B]telegram.me/BlackGhost[/B][/I] y con gusto te ayudaremos, para que puedas disfrutar de todo el contenido que encontraras en BlackAddon (Peliculas, Series de TV, Television en vivo, eventos PPV...)\n\nEspero disfrutes todo esto que he realizado, y si quieres apoyarme puedes hacerlo a traves de una donacion por paypal al correo [I]adrian.bu@gmail.com[/I] [I]Para la tazita de cafe[/I] y si no te funciona nada. puedes cerrar este addon y desinstalarlo de tu kodi  y probar con alguna otra opcion mas..  \n atte: @ADRYAN  ')
+]]></expres>
+<page></page>
 </regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/donacion.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
 <fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
-</item>
+  </item>
 
 
 
