@@ -1198,23 +1198,6 @@ _psn12v?
 
 
 
-
-
-
-    <item>
-<title>BANDA ANCHA </title>
-
-<link>https://banetworks.interactivemedia.com.mx/live/_definst_/ngrp:bandaancha_all/playlist.m3u8</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
-
-  </item>
-
-
-
-
-
-
     <item>
 <title>Vive Canal  </title>
 <link>rtmp://38.96.148.213:1935/vivecanaltest/ playpath=myStream.sdp swfUrl=http://vjs.zencdn.net/swf/5.1.0/video-js.swf live=1 pageUrl=http://www.globalmedia.mx/#!/ViveCanal</link>
@@ -1351,7 +1334,7 @@ _psn12v?
   </item>
 
 
-<item><title> C5N Argentina</title> <link>http://us.watcha.live/ch1/hi.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:51.0) Gecko/20100101 Firefox/51.0</link> <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
+<!--item><title> C5N Argentina</title> <link>http://us.watcha.live/ch1/hi.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:51.0) Gecko/20100101 Firefox/51.0</link> <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
 <fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
   </item>
@@ -1418,7 +1401,7 @@ _psn12v?
  <item><title> CINEAR  Argentina</title> <link>http://us.watcha.live/ch17/hi.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:51.0) Gecko/20100101 Firefox/51.0</link> <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
 <fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
-  </item>
+  </item-->
 
 
 
@@ -1444,15 +1427,8 @@ _psn12v?
 
   </item>
 
-<item>
-<title>TeleFormula Mexico</title>
-<link>http://gformula.mmdlive.lldns.net/gformula/596433f167b64696bb03398fecdefbad/manifest.m3u8</link>
 
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
-
-  </item>
-
+  
 
 
 
@@ -1537,20 +1513,7 @@ _psn12v?
 
 
 
- <item>
-<title>GalaTV Merida</title>
-<link>http://74.222.3.185:1935/live/ngrp:galatvmerida_all/playlist.m3u8?</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
-  </item>
- <item>
- <title>GalaTV Cancun</title>
-<link>http://74.222.3.185:1935/live/ngrp:galatvcancun_all/playlist.m3u8</link>
-			<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
-
-  </item>
 
 
 
@@ -1606,47 +1569,10 @@ _psn12v?
 
 
 
- <item>
-<title>Unimas / Telemundo 51  </title>
-
-<link>http://wscvlive-lh.akamaihd.net/i/WSCV_LIVE2@183618/index_1500_av-b.m3u8?sd=10&amp;rebase;=on</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
-
-</item>
 
 
 
 
-
-
- <item>
-<title>Unimas  opcion 2</title>
-<link>http://$doregex[adryan_IP]/loadbalance/74927338728146398167/playlist.m3u8$doregex[adryan_AuthSign]|User-Agent=iPhone</link>
-<regex>
-<name>adryan_IP</name>
-<expres>location:http://(.*)/loadbalance</expres>
-<page>$doregex[adryan_page]</page>
-<noredirect>true</noredirect>
-<includeheaders></includeheaders>
-</regex>
-<regex>
-<name>adryan_AuthSign</name>
-<expres>m3u8(.*)</expres>
-<page>$doregex[adryan_page]</page>
-</regex>
-
-<regex>
-<name>adryan_page</name>
-<expres>"(.*m3u8.*?)"</expres>
-<page>http://pxstream.tv/embed/0begjylvzevb/</page>
-<referer>http://chiivass.es.tl/UNIVI.htm</referer>
-</regex>
-
- <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
-
-  </item>
  
  
  
@@ -1655,74 +1581,7 @@ _psn12v?
 
 
 
-
  
- 
-  <item>
-<title>Telemundo    </title>
-<link>https://clutch.vaughnsoft.net/ord/vl/anahix11.m3u8</link>
-
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
-
-</item>
-
- <item>
-<title>Telemundo   </title>
-<link>https://clutch.vaughnsoft.net/ord/vl/tele1.m3u8</link>
-
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
-
-</item>
-
-
- <item>
-<title>Telemundo   </title>
-<link>https://clutch.vaughnsoft.net/ord/vl/telemundo50.m3u8</link>
-
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
-
-</item>
-
- <item>
-<title>Telemundo   </title>
-<link>https://clutch.vaughnsoft.net/ord/vl/tvhdenvivo14.m3u8</link>
-
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
-
-</item>
-
-
-
- <item>
-<title>Univision   </title>
-<link>https://clutch.vaughnsoft.net/ord/vl/tvhdenvivo23.m3u8</link>
-
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
-
-</item>
-
-
-
- <iem>
-<title>Univision   abcast </title>
-
-<link>$doregex[adryan_IP]|Referer=http://abcast.net/embed.php?file=Chivasss69</link>
-<regex>
-<name>adryan_IP</name>
-<expres>source:\s"(.*?)"</expres>
-<page>http://abcast.net/embed.php?file=Chivasss69</page>
-</regex>
-
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
-
-</item>
-
 
  
  
@@ -1734,123 +1593,43 @@ _psn12v?
  
 
 
- <item>
-<title>Univision   opcion 1 </title>
-
-<link>https://ssh101.com/m3u8/dyn/unonuevo/index.m3u8</link>
-<regex>
-<name>adryan_IP</name>
-<expres>source:\s"(.*?)"</expres>
-<page>http://abcast.net/embed.php?file=Chivasss69</page>
-</regex>
-
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
-
-</item>
+ 
 
 
 
-
-
- <item>
-<title>Univision  opcion 2</title>
-<link>http://$doregex[adryan_IP]/loadbalance/35129581852727873642/playlist.m3u8$doregex[adryan_AuthSign]|User-Agent=iPhone</link>
-<regex>
-<name>adryan_IP</name>
-<expres>location:http://(.*)/loadbalance</expres>
-<page>$doregex[adryan_page]</page>
-<noredirect>true</noredirect>
-<includeheaders></includeheaders>
-</regex>
-<regex>
-<name>adryan_AuthSign</name>
-<expres>m3u8(.*)</expres>
-<page>$doregex[adryan_page]</page>
-</regex>
-
-<regex>
-<name>adryan_page</name>
-<expres>"(.*m3u8.*?)"</expres>
-<page>http://pxstream.tv/embed/kjj6ao5mpqri/</page>
-<referer>http://chiivass.es.tl/UNIVI.htm</referer>
-</regex>
-
- <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
-
-  </item>
 
 
  
+
+
  
- <item>
-<title>TELEMUNDO   opcion 3 </title>
 
-<link>http://wscvlive-lh.akamaihd.net/i/WSCV_LIVE2@183618/index_1500_av-b.m3u8?sd=10&amp;rebase=on&amp;token=uivhScZErtmmqBTp5h9HDw&amp;expires=1510369937</link>
-<regex>
-<name>adryan_IP</name>
-<expres>source:\s"(.*?)"</expres>
-<page>http://abcast.net/embed.php?file=Chivasss69</page>
-</regex>
 
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
-</item>
 
+ 
 
-http://138.197.109.108/loadbalance//l_23884_5515120_1838.ts
 
 
 
 
- <item>
-<title>Telemundo  opcion 1</title>
 
-<link>http://$doregex[adryan_IP]/loadbalance/88143748474794857718/playlist.m3u8$doregex[adryan_AuthSign]|User-Agent=iPhone</link>
-<regex>
-<name>adryan_IP</name>
-<expres>location:http://(.*)/loadbalance</expres>
-<page>$doregex[adryan_page]</page>
-<noredirect>true</noredirect>
-<includeheaders></includeheaders>
-</regex>
-<regex>
-<name>adryan_AuthSign</name>
-<expres>m3u8(.*)</expres>
-<page>$doregex[adryan_page]</page>
-</regex>
 
-<regex>
-<name>adryan_page</name>
-<expres>"(.*m3u8.*?)"</expres>
-<page>http://pxstream.tv/embed/b78ebhzd2fyj/</page>
-<referer>http://chiivass.es.tl/TELE-1.htm</referer>
-</regex>
 
- <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
-  </item>
 
 
 
 
 
 
+ 
 
 
- <item>
-<title>Telemundo  opcion 2</title>
 
-<link>http://wscvlive-lh.akamaihd.net/i/WSCV_LIVE2@183618/index_1500_av-b.m3u8?sd=10&amp;rebase=on&amp;token=uivhScZErtmmqBTp5h9HDw&amp;expires=1510369937|User-Agent=iPhone</link>
 
 
- <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
-  </item>
 
 
 
@@ -1867,35 +1646,7 @@ http://138.197.109.108/loadbalance//l_23884_5515120_1838.ts
 
 
 
-<itm>
-<title>Univision HD   </title>
-<link>$doregex[get-url]|User-Agent=iPad</link>
-<thumbnail></thumbnail>
-<regex>
-<name>get-url</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m,url='http://v2.ustreamix.com/stream.php?id=univision'):
-  import re, requests
-  hdr = {'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_2 like Mac OS X)'}
-  html = requests.get(url,headers=hdr,verify=False).text
-  uip = re.findall("x_first_ip = '(.*?)'",html,re.DOTALL)[0]
-  ohtm = eval(re.findall('Obfuscator.*?var.*?(\[.*?\])',html,re.DOTALL)[0])
-  oval = int(re.findall('replace.*?- (\d*)',html)[0])
-  phtml = ''
-  for oht in ohtm:
-    phtml += chr(int(re.findall('\D*(\d*)',oht.decode('base64'))[0]) - oval)
-  strurl = re.findall("var stream = '(.*?)'",phtml)[0]
-  hdr['Referer'] = url
-  tokpg = requests.get('https://wakwaw2.ga/stats.php?p=%s'%uip,headers=hdr,verify=False).text
-  token = re.findall('jdtk="(.*?)"',tokpg)[0]
-  return strurl+token
-]]></expres>
-<page></page>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.jpg</thumbnail><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
-  </item>
 
 
 
@@ -1922,6 +1673,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url='http://v2.ustreamix.com/stream.php?
 
 
 
+ 
 
 
 
@@ -1947,163 +1699,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url='http://v2.ustreamix.com/stream.php?
 
 
 
-
-
-
-  <!--
-
-   <item>
-<title>Telemundo 14 [ams]  </title>
-<link>https://hls-ord-3a.vaughnsoft.net/ams/live/live_tvhdenvivo14/chunklist.m3u8</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
-
-  </item>
-
-    <item>
-<title>Telemundo 11 [ams]  .</title>
-<link>https://hls-ord-3a.vaughnsoft.net/ams/live/live_anahix11/chunklist.m3u8</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
-
-  </item>
-    <item>
-<title>Telemundo 11 .</title>
-<link>https://hls-ord-3a.vaughnsoft.net/nyc/live/live_anahix11/chunklist.m3u8</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
-
-  </item>
-
-     <item>
-<title>Telemundo 49 .</title>
-<link>https://hls-ord-3a.vaughnsoft.net/ord/live/live_telemundo50/chunklist.m3u8</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
-
-  </item>
-
-     <item>
-<title>Telemundo 49 .</title>
-<link>https://hls-ord-3a.vaughnsoft.net/ams/live/live_telemundo50/chunklist.m3u8</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
-
-  </item>
-
-	     <item>
-<title>Telemundo LC .</title>
-<link>https://hls-ord-3a.vaughnsoft.net/ams/live/live_luzclarita/chunklist.m3u8</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
-
-  </item>
-
-	     <item>
-<title>Telemundo LC .</title>
-<link>https://hls-ord-3a.vaughnsoft.net/ord/live/live_luzclarita/chunklist.m3u8</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
-
-  </item>
-
-
--->
-
-
-
-
-
-
-
-
- <item>
-<title>Telemundo Internacional</title>
-<link>$doregex[GetPageUrl]|Referer=http://vercanalestv.com/tv/nacionales/canal-plus-estrenos.html&amp;User-Agent=Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</link>
-<regex>
-<name>GetPageUrl</name>
-<expres>source: '(.*?)'</expres>
-<page>http://livesports.pw/embed.php?file=telemundoes&amp;width=650&amp;height=397</page>
-<agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
-</regex>
-  <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
-
-  </item>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- <item>
-<title>Estrella TV</title>
-<link>http://$doregex[Igor_Rangel_IP]/loadbalance/31825567517762757571/playlist.m3u8$doregex[Igor_Rangel_AuthSign]|User-Agent=iPhone</link>
-<regex>
-<name>Igor_Rangel_IP</name>
-<expres>location:http://(.*)/loadbalance</expres>
-<page>$doregex[Igor_Rangel_Page]</page>
-<noredirect>true</noredirect>
-<includeheaders></includeheaders>
-</regex>
-<regex>
-<name>Igor_Rangel_AuthSign</name>
-<expres>m3u8(.*)</expres>
-<page>$doregex[Igor_Rangel_Page]</page>
-</regex>
-
-<regex>
-<name>Igor_Rangel_Page</name>
-<expres>"(.*m3u8.*?)"</expres>
-<page>http://pxstream.tv/embed/cjbjjnz3o3uc/</page>
-<referer>http://www.chivass69.com</referer>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
- <item>
-<title>Estrella TV</title>
-<link>$doregex[m3u8]|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36&amp;Referer=http://www.chivass69.com</link>
-<regex>
-<name>m3u8</name>
-<expres>"(.*m3u8.*?)"</expres>
-<page>http://pxstream.tv/embed/cjbjjnz3o3uc/</page>
-<referer>http://www.chivass69.com</referer>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-
+ 
 
 
 
@@ -2185,13 +1781,8 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://livestream.com/accounts/16
 
 
 
- <item>
-<title>WAPA PR Puerto Rico </title>
-<link>https://dcunilive30-lh.akamaihd.net/i/dclive_1@535532/master.m3u8</link>
- <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
-  </item>
+  
 
 
 
@@ -2227,31 +1818,11 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://livestream.com/accounts/16
 
 
 
+  
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <item>
-<title> DTV</title>
-<link>http://lsdhcdnhls-lh.akamaihd.net/i/hcdnarsatHLS_2@301805/master.m3u8</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
-
-  </item>
 
     <item>
 <title> TDC</title>
@@ -2292,7 +1863,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://livestream.com/accounts/16
 
 
 
-	<!--tvpor-internet.com/hbo-en-vivo.html-->
+	<!--tvpor-internet.com/hbo-en-vivo.html--
 
 
 
@@ -2304,31 +1875,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://livestream.com/accounts/16
 
 
 
-
-<item>
-<title>HBO [TVI]</title>
-<link>http://$doregex[ip]$doregex[m3u8]</link>
-<regex>
-<name>ip</name>
-<expres>redirect=(.*)</expres>
-<page>http://cdn.pubzony.com:1935/loadbalancer?17089</page>
-</regex>
-<regex>
-<name>m3u8</name>
-<expres>ea \+ "(.*?)"</expres>
-<page>http://www.zony.tv/membedplayer/$doregex[canal]/2/680/380</page>
-<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
-<referer>http://www.zony.tv</referer>
-</regex>
-<regex>
-<name>canal</name>
-<expres>channel='(.*?)'</expres>
-<page>http://tvpor-internet.com/hbo-en-vivo.html</page>
-</regex>
-<thumbnail>http://y.cdn.entutele.com/media/channels/big/.gif</thumbnail><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
-
-  </item>
+	
 
 
 
@@ -2795,7 +2342,7 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://livestream.com/accounts/16
 <thumbnail>http://y.cdn.entutele.com/media/channels/big/discovery-channel.gif</thumbnail><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
 <fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
-  </item>
+  </item-->
 
 
 
@@ -2805,33 +2352,13 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://livestream.com/accounts/16
 
 
 
-
-<item>
-<title>Arte</title>
-<link>$doregex[get-m3u8]</link>
-<thumbnail></thumbnail>
-<regex>
-<name>get-m3u8</name>
-<expres>source: "(.*http.*m3u8.*?)"</expres>
-<page>http://www.streaming-hub.com/arte/</page>
-<referer>http://www.streaming-hub.com/</referer>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
-
-  </item>
+  
 
 
 
 
 
-
-
-
- <item><title>Telesur </title><link>$doregex[get-url]</link><regex><name>get-url</name><expres>file: "(.*?)"</expres><page>$doregex[get-ifr]</page><referer>http://tv.vera.com.uy</referer></regex><regex><name>get-ifr</name><expres>'src', '(.*extras.*?)'</expres><page>http://tv.vera.com.uy/canal/6028</page><referer>http://tv.vera.com.uy</referer><cookieJar></cookieJar></regex><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
-
-  </item>
+  
 
 
 
@@ -2843,22 +2370,9 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://livestream.com/accounts/16
 
 
 
+  
 
-
-
-
-<item><title>NASA NTV 1</title><link>http://nasa-i.akamaihd.net/hls/live/253565/NASA-NTV1-Public/master_500.m3u8</link><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
-
-  </item>
-
-
-
-
- <item><title>NASA NTV 2</title><link>https://nasa-i.akamaihd.net/hls/live/253566/NASA-NTV2-Media/master.m3u8</link><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
-
-  </item>
+  
 
 <item><title>NASA TV HD</title><utube>RtU_mdL2vBM</utube><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
 <fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
@@ -2885,28 +2399,13 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://livestream.com/accounts/16
 
 
 
-
-
-<item><thumbnail></thumbnail><title>EfektoTV</title>
-<link>http://grupomac-lh.akamaihd.net:80/i/004rss0k8_1@301782/master.m3u8</link><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
-
-  </item>
+  
 
 
 
 
 
-
-
-
-
-<item><thumbnail>http://i2.esmas.com/2015/06/22/778598/foro-tv--280x370.jpg</thumbnail><title>Foro TV </title>
-<link>http://185417-f.akamaihd.net/i/n0tf0r0_1@81283/master.m3u8</link><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
-
-  </item>
-
+  
 
 
 
@@ -2915,50 +2414,9 @@ def GetLSProData(page_data,Cookie_Jar,m,url = 'http://livestream.com/accounts/16
  <item><thumbnail>http://mw1.iptv66.tv/stalker_portal/misc/logos/320/419.png</thumbnail><title>France 24</title>
 <link>http://static.france24.com/live/F24_EN_LO_HLS/live_web.m3u8</link><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
 <fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
-
-  </item>
-
+</item>
 
 
-
-
- <item><title>RT en Español</title><link>$doregex[get-url]</link><regex><name>get-url</name><expres>file: "(.*?)"</expres><page>$doregex[get-ifr]</page><referer>http://tv.vera.com.uy</referer></regex><regex><name>get-ifr</name><expres>'src', '(.*extras.*?)'</expres><page>http://tv.vera.com.uy/canal/6027</page><referer>http://tv.vera.com.uy</referer><cookieJar></cookieJar></regex><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
-
-  </item>
-
-
-
-
-
-
-
-
- <item><title>France 24</title><link>$doregex[get-url]</link><regex><name>get-url</name><expres>file: "(.*?)"</expres><page>$doregex[get-ifr]</page><referer>http://tv.vera.com.uy</referer></regex><regex><name>get-ifr</name><expres>'src', '(.*extras.*?)'</expres><page>http://tv.vera.com.uy/canal/9845</page><referer>http://tv.vera.com.uy</referer><cookieJar></cookieJar></regex><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
-
-  </item>
-
-
-
-
-
-<item><thumbnail></thumbnail><title>RT Russia Today</title>
-<link>http://rt.ashttp14.visionip.tv/live/rt-global-live-HD/playlist.m3u8</link><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
-
-  </item>
-
-
-
-
-
-
-<item><thumbnail></thumbnail><title>Russia Today</title>
-<link>http://rt.ashttp14.visionip.tv/live/rt-global-live-HD/playlist.m3u8</link><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
-
-  </item>
 
 
 <item><thumbnail>http://mw1.iptv66.tv/stalker_portal/misc/logos/320/3610.png</thumbnail><title>TRT World</title>
@@ -3029,10 +2487,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
   </item>
 
-<item><title>Miami TV</title><link>http://mexicoserver.miamitvchannel.com/miamitv/smil:miamitvmexico/playlist.m3u8?tecnotv.info?iptv.m3u8</link><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
-
-  </item>
+  
 
 
 
@@ -3050,129 +2505,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<item>
-<title>sonbolumizlesene.org</title>
-<link>$doregex[category]</link>
-<thumbnail>http://www.sonbolumizlesene.org/images/logo/logo.png</thumbnail>
-<regex>
-<name>category</name>
-<listrepeat><![CDATA[
-<title>[category.param3]</title>
-<link>$doregex[makelist]</link>
-<thumbnail>http://www.sonbolumizlesene.org[category.param2]</thumbnail>
-<fanart>http://www.sonbolumizlesene.org[category.param2]</fanart>
-]]></listrepeat>
-<expres><![CDATA[(?s)class="col-sm-6.*?href="(.*?)".*?src="(.*?)".*?"(.*?)"]]></expres>
-<page>http://www.sonbolumizlesene.org/categories</page>
-</regex>
-<regex>
-<name>makelist</name>
-<listrepeat><![CDATA[
-<title>Page: [makelist.param1]</title>
-<link>$doregex[makelist2]</link>
-<thumbnail>http://www.sonbolumizlesene.org[category.param2]</thumbnail>
-<fanart>http://www.sonbolumizlesene.org[category.param2]</fanart>
-]]></listrepeat>
-<expres>(\d+),?</expres>
-<page>$doregex[number-pages]</page>
-</regex>
-<regex>
-<name>number-pages</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m):
-  import re
-  lastpage = 1
-  if 'pagination' in page_data:
-    lastpage = re.findall('"pagination.+>(\d*)</a>',page_data)[0]
-  return range(1, int(lastpage)+1)
-]]></expres>
-<page>http://www.sonbolumizlesene.org[category.param1]</page>
-</regex>
-<regex>
-<name>makelist2</name>
-<listrepeat><![CDATA[
-<title>[makelist2.param3]</title>
-<link>$doregex[makelist3]</link>
-<thumbnail>[makelist2.param2]<thumbnail>
-<fanart>http://www.sonbolumizlesene.org[category.param2]</fanart>
-]]></listrepeat>
-<expres><![CDATA[(?s)class="col-sm-6.*?href="(.*?)".*?src="(.*?)" title="(.*?)"]]></expres>
-<page>http://www.sonbolumizlesene.org[category.param1]?page=[makelist.param1]</page>
-</regex>
-<regex>
-<name>makelist3</name>
-<listrepeat><![CDATA[
-<title>[makelist3.param1]</title>
-<link>$doregex[link]</link>
-<thumbnail>[makelist2.param2]<thumbnail>
-<fanart>[makelist2.param2]</fanart>
-]]></listrepeat>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m):
-  import re
-  frames = re.findall('(<iframe.*?>)',page_data)
-  part = 1
-  parts = []
-  for frame in frames:
-    parts.append(('Part: %s'%part,frame))
-    part += 1
-  return parts
-]]></expres>
-<page>http://www.sonbolumizlesene.org[makelist2.param1]</page>
-</regex>
-<regex>
-<name>link</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m):
-  import urlresolver, re, requests
-  headers = {"User-Agent" : "Mozilla/5.0 (Windows NT 6.1; rv:14.0) Gecko/20100101 Firefox/14.0.1"}
-  eurl = 'http:' + re.findall('iframe.*?src="(.*?)"','[makelist3.param2]')[0]
-  if '/matplayer/' in eurl:
-    html = requests.get(eurl, headers=headers).text
-    if 'sources' in html:
-	  u = 'http://sonbolumizlesene.org' + re.findall('(?s)sources:.*?"SD".*?file: "(.*?)"',html)[0]
-    else:
-      vid = re.findall(r'/video/([^?]*)',html)[0]
-      u = 'plugin://plugin.video.dailymotion_com/?mode=playVideo&url=' + vid
-  elif 'dailymotion' in eurl:
-    parms = re.findall('data-x="(.*?)" data-my="(.*?)"','[makelist3.param2]')[0]
-    data = {'x' : parms[1],
-            'y' : parms[0]}
-    headers['X-Requested-With']='XMLHttpRequest'
-    headers['MYSONB']='1'
-    headers['Referer']='http://www.sonbolumizlesene.org/'
-    jdata = requests.post('http://www.sonbolumizlesene.org/son.php', headers=headers, data=data).json()
-    vid = re.findall(r'/video/([^?]*)',jdata['x'])[0]
-    u = 'plugin://plugin.video.dailymotion_com/?mode=playVideo&url=' + vid
-  else:
-    u = 'notresolvable'
-    if urlresolver.HostedMediaFile(eurl):
-      u = urlresolver.resolve(eurl)
-  return u
-]]></expres>
-<page></page>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
-
-  </item>
-
+  
+  
 
 
 
@@ -3193,11 +2527,11 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>makelist</name>
 <listrepeat><![CDATA[
    <title>[makelist.param2] [([makelist.param3])</title>
-	<sportsdevil>http://ustreamix.com[makelist.param1]</sportsdevil>
-	<referer>https://beta.ustreamix.com/</referer>
+	<sportsdevil>https://ssl.ustreamix.com/[makelist.param1]</sportsdevil>
+	<referer>https://ssl.ustreamix.com/</referer>
 ]]></listrepeat>
 <expres><![CDATA[(?s)<p><a href="(.*?)".*?blank">(.*?)\s*<.*?live">(.*?)<]]></expres>
-<page>https://beta.ustreamix.com/</page>
+<page>https://ssl.ustreamix.com/</page>
 <agent>Mozilla/5.0 (X11; Linux i686; rv:44.0) Gecko/20100101 Firefox/44.0 Iceweasel/44.0</agent>
 <cookieJar></cookieJar>
 </regex>
@@ -3212,88 +2546,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<itm>
-<title> •    [B]24/7 Television[/B] Español OPCION2</title>
-<link>$doregex[makelist]</link>
-<regex>
-<name>makelist</name>
-<listrepeat><![CDATA[
-<title>[makelist.param2]</title>
-<link>$$LSPlayOnlyOne$$</link>
-<link>http://live-ord.vaughnsoft.net:1935/live/_definst_/live_[makelist.param1]/playlist.m3u8</link>
-<link>http://live-den.vaughnsoft.net:1935/live/_definst_/live_[makelist.param1]/playlist.m3u8</link>
-<link>http://live-ams.vaughnsoft.net:1935/live/_definst_/live_[makelist.param1]/playlist.m3u8</link>
-<link>http://live-nyc.vaughnsoft.net:1935/live/_definst_/live_[makelist.param1]/playlist.m3u8</link>
-<link>http://live-lax.vaughnsoft.net:1935/live/_definst_/live_[makelist.param1]/playlist.m3u8</link>
-<thumbnail>http://cdn.vaughnsoft.com/vaughnsoft/vaughn/img_profiles/[makelist.param2]_320.jpg</thumbnail>
-]]></listrepeat>
-<expres>a href="/(.*?)"[\w\W\s]{0,22}browseTxt">(.*?)<</expres>
-<page>https://vaughnlive.tv/browse/espanol</page>
-<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
-<referer></referer>
-<cookieJar></cookieJar>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/247.jpg</thumbnail>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
-  </item>
-
-
-
-
-
- <item>
-<title>KkKike Channel</title>
-<link>$doregex[makelist3]</link>
-
-<regex>
-<name>makelist3</name>
-<listrepeat><![CDATA[
-<title>Pagina [makelist3.param1]  --    SOLO +18</title>
-<link>$doregex[makelist2]</link>
-]]></listrepeat>
-<expres>'(.*?)'</expres>
-<page>'1''2''3''4''5''6''7''8''9''10''11''12''13''14''15''16''17''18''19''20''21''22''23''24''25'</page>
-</regex>
-
-
-
-<regex>
-   <name>makelist2</name>
-   <listrepeat><![CDATA[
-          <title>[makelist2.param2]   </title>
-<link>$doregex[makelist]</link>
-		  <thumbnail>[makelist2.param3]</thumbnail>
-		<fanart>[makelist2.param3]</fanart>
-   ]]></listrepeat>
-   <expres><![CDATA[href="(.*?)".*?title="(.*?)".*?src="(.*?)" ]]></expres>
-   <page>http://www.coomelonitas.com/page/[makelist3.param1]</page>
-   <cookieJar></cookieJar>
-</regex>
-
-
-
-<regex>
-   <name>makelist</name>
-   <listrepeat><![CDATA[
-          <title>[makelist2.param2]           [I] [makelist.param1][/I]</title>
-          <urlsolve>[makelist.param1]</urlsolve>
-		  <thumbnail>[makelist2.param3]</thumbnail>
-		<fanart>[makelist2.param3]</fanart>
-   ]]></listrepeat>
-   <expres><![CDATA[iframe\ssrc="(.*?)"]]></expres>
-   <page>[makelist2.param1]</page>
-   <cookieJar></cookieJar>
-</regex>
-
-
-
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/adryflix.jpg</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
-
-  </item>
+  
 
 
 
@@ -3305,27 +2559,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-
-
-
-
-
-
-<item>
-<title>Futurama Random </title> <link>http://4.sendvid.com/cx1ihlnd.mp4/</link><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
-
-  </item>
-
-
-
-<item>
-<title>Futurama Random </title> <link>http://live.lcdn.claro.net.co/Content/hls_fk/Live/Channel(CARTOON_NETWORK_HD)/Stream(03)/index.m3u8</link><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
-
-  </item>
-
-
+  
 
 
 
@@ -3733,96 +2967,6 @@ def GetLSProData(page_data,Cookie_Jar,m,url='http://www.247bay.tv/embedplayer/f1
 
 
 
-<item>
-<title>youtube buscador</title>
-<link>$doregex[makelist]</link>
-
-<regex>
-<name>makelist</name>
-<listrepeat><![CDATA[
-<title>[makelist.param2]</title>
-<link>$doregex[resolve]</link>
-<thumbnail>https://i.ytimg.com/vi/[makelist.param1]/hqdefault.jpg</thumbnail>
-]]></listrepeat>
-<expres>u'(.+?)', u'(.+?)'</expres>
-<page>$doregex[search]</page>
-</regex>
-
-<regex>
-<name>resolve</name>
-<expres><![CDATA[#$pyFunction
-import urlresolver
-def GetLSProData(page_data,Cookie_Jar,m):
- url = 'https://www.youtube.com/watch?v=[makelist.param1]'
- streamLink = urlresolver.resolve(url)
- return streamLink
-]]></expres>
-<page></page>
-</regex>
-
-<regex>
-<name>search</name>
-<expres><![CDATA[#$pyFunction
-import requests,xbmcgui,xbmc, re,time, xbmcaddon
-def GetLSProData(page_data,Cookie_Jar,m):
-
- text=takeInputFortext('Enter search string')
- url = 'https://www.youtube.com/results?q=' + text.replace(' ', '+')
- req = requests.get(url)
- list1 = re.findall('yt-lockup-c.+?a\shref=".watch.v=([^"]+)".+?\s\stitle="([^"]+)"\s', req.text)
-
- count = 10
- while count > 1:
-   try:
-     url = 'https://www.youtube.com' + re.findall('a href="([^"]+)".+<\/a>\n <\/div>', req.text)[0]
-   except:
-     return list1
-   req = requests.get(url)
-   list2 = re.findall('yt-lockup-c.+?a\shref=".watch.v=([^"]+)".+?\s\stitle="([^"]+)"\s', req.text)
-   list1 = list1 + list2
-   count = count - 1
- return list1
-
-def takeInputFortext(txt):
- addon = xbmcaddon.Addon('plugin.video.live.streamspro')
- addon_version = addon.getAddonInfo('version')
- profile = xbmc.translatePath(addon.getAddonInfo('profile').decode('utf-8'))
-
- solver = InputWindow( txt=txt)
- solution = solver.get()
- return solution
-
-class InputWindow(xbmcgui.WindowDialog):
-    def __init__(self, *args, **kwargs):
-
-        self.txt = kwargs.get('txt','')
-
-        xbmcgui.WindowXMLDialog.__init__(self)
-        #self.addControl(self.txt)
-        path = xbmcaddon.Addon().getAddonInfo('path')
-        self.kbd = xbmc.Keyboard()
-        self.kbd.setHeading( self.txt)
-
-    def get(self):
-        self.show()
-        time.sleep(2)
-        self.kbd.doModal()
-        if (self.kbd.isConfirmed()):
-            text = self.kbd.getText()
-            self.close()
-            return text
-        self.close()
-        return False
-]]></expres>
-<page></page>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
-
-  </item>
-
-
-
 
 
 <item>
@@ -3844,11 +2988,10 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
   </item>
 
- https://raw.githubusercontent.com/blackghostaddon/gray/master/cita.php
-
+  
 
  <item>
-<title>[$doregex[prog]</title>
+<title>$doregex[prog]</title>
 <link>http://$doregex[ip]$doregex[m3u8]</link>
 <regex>
 <name>prog</name>
@@ -3857,8 +3000,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:49.0) Gecko/20100101 Firefox/49.0</agent>
 <referer></referer>
 </regex>
-
-
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/donacion.png</thumbnail>
 <fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
@@ -3866,106 +3007,4 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
- <item>
-<title>[lkjkj</title>
-<link>rtmp://198.255.0.10/live?$doregex[get_key] app=live?$doregex[get_key] playpath=live_anahix11  swfUrl=https://vaughnlive.tv/4520191431/swf_v7/VaughnSoftPlayer.swf pageUrl=https://vaughnlive.tv/anahix11  live=true</link>
 
-
-<regex>
-<name>get_key</name>
-<expres>Agent:"(.*?)"</expres>
-<page>https://raw.githubusercontent.com/blackghostaddon/gray/master/tokenv.php</page>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/donacion.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
-
-</item>
-
-
-
- <item>
-<title>[lkjkj</title>
-<link>rtmp://66.90.93.42/live?$doregex[get_key] app=live?$doregex[get_key] playpath=live_anahix11  swfUrl=https://vaughnlive.tv/4520191431/swf_v7/VaughnSoftPlayer.swf pageUrl=https://vaughnlive.tv/anahix11  live=true</link>
-
-
-<regex>
-<name>get_key</name>
-<expres>Agent:"(.*?)"</expres>
-<page>https://raw.githubusercontent.com/blackghostaddon/gray/master/tokenv.php</page>
-</regex>
-
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/donacion.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
-
-</item>
-
-
-
- <item>
-<title>[lkjkj</title>
-<link>http://vnode0079.pulsedmedia.com/public-llave1/foxsports3.php</link>
-
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/donacion.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
-
-</item>
-
-
-Fox sports 3
-http://vnode0079.pulsedmedia.com/public-llave1/foxsports3.php
-Golf channel
-http://vnode0079.pulsedmedia.com/public-llave1/golfchannel.php
-Uno
-http://vnode0079.pulsedmedia.com/public-llave1/uno.php
-caracol
-http://vnode0079.pulsedmedia.com/public-llave1/caracol.php
-nick2
-http://vnode0079.pulsedmedia.com/public-llave1/nick2.php
-
-
-
-
-<item>
-<title>[B][COLOR yellow]  **- MotoGP[/B][/COLOR]</title>
-<link>$doregex[getUrl]$$lsname=[B][COLOR lime] Opcion 2[/COLOR][/B]</link>
- 
-<regex>
-<name>getUrl</name>
-<expres><![CDATA[#$pyFunction
-import re , requests ,json
-def GetLSProData(page_data,Cookie_Jar,m):
- 
- ref = 'http://diskokosmiko.mx/'
- url='http://diskokosmiko.mx/Edu1823/el-sequito-entourage-temp-4-castellano-20681/4x05-el-dream-team,78135,list,1,1.avi'
- headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': ref ,
-            'X-Requested-With' : 'XMLHttpRequest' , 'Accept' : '*/*'}
- session = requests.Session()
- r = session.get(url, headers=headers)
- rv1 = r.cookies
- 
- vfile , vtoken = re.findall('action/DownloadFile.*?fileId.*?value="(.*?)".*?Token".*?value="(.*?)"', r.text)[0]
- data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
- nr = requests.post('http://diskokosmiko.mx/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers,cookies=rv1 , data=data_a).text
- nrj=json.loads(nr)
- nr = nrj['Content']
- r2 = re.findall(r'(?s)value=\"(.*?)\"', nr)[0]
- data_a ={'__RequestVerificationToken': r2 , 'Username': 'blackaddon' , 'Password' : 'blackghost'}
- nr1 = requests.post('http://diskokosmiko.mx/action/Account/Login', headers=headers,cookies = rv1 , data=data_a)
- print nr1.headers['Set-Cookie']
- rasp = re.findall('ASPXAUTH_v2=(.*?);', nr1.headers['Set-Cookie'])[0]
- rv1['.ASPXAUTH_v2'] = rasp
- data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
- nr3 = requests.post('http://diskokosmiko.mx/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers, cookies = rv1 , data=data_a).text
- r3 = re.findall('DownloadUrl":"(.*?)"', nr3)[0]
- print r3
- return r3
-]]></expres>
-<page></page>
-<cookieJar></cookieJar>
-</regex>
-<thumbnail></thumbnail>
-<fanart></fanart>
-</item>
-
-
- </channel>
