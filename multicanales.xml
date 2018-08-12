@@ -19,7 +19,36 @@
 
 
 
+<item>
+<title>[B]Multicanales CHIVAS69[/B] Telemundo - Univision - EspnDeportes - FoxDeportes - Unimas - Deportes </title>
 
+    <link>$doregex[geturl]</link>
+    <regex>
+        <name>geturl</name>
+        <expres>source:"(.*?)"</expres>
+        <page>$doregex[getunpacked]</page>
+    </regex>
+    <regex>
+        <name>getunpacked</name>
+        <expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)' )</expres>
+        <page>$doregex[select]</page>
+        <referer>http://whostreams.net/</referer>
+        <connection>keep-alive</connection>
+    </regex>
+	
+	<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+   import xbmcgui
+   dialog = xbmcgui.Dialog()
+   ret = dialog.select('Elige un Canal ', ['telemundo', 'univision', 'unimas', 'Deportes', 'EspnDeportes', 'FoxDeportes', 'Deportes2'])
+   lists = ['http://whostreams.net/embed/6otcp42qvvs', 'http://whostreams.net/embed/yjz92igvajl5l9', 'http://whostreams.net/embed/le2di', 'http://whostreams.net/embed/k35qrdo5h', 'http://whostreams.net/embed/2gzsuk67y', 'http://whostreams.net/embed/vume8720', 'http://whostreams.net/embed/8vzxl3yuc']
+   return lists[ret]
+]]></expres>
+<page></page>
+</regex>
+</item>
 
 
 
@@ -2262,49 +2291,10 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
 
 
-
-<item>
-<title>http://widestream.io/embed-24489</title>
-<link>$doregex[link]|Referer=http://widestream.io/</link>
-<thumbnail></thumbnail>
-<fanart></fanart>
-<regex>
-<name>link</name>
-<expres>file:"([^"]+)</expres>
-<page>http://widestream.io/embed-24489</page>
-</regex>
-</item>
+ 
 
 
-<item>
-    <title>Chivas69 [Telemunodo.univision.espndeportes.foxdeportes.univisiondeportes.mas..]</title>
-    <link>$doregex[geturl]</link>
-    <regex>
-        <name>geturl</name>
-        <expres>source:"(.*?)"</expres>
-        <page>$doregex[getunpacked]</page>
-    </regex>
-    <regex>
-        <name>getunpacked</name>
-        <expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)' )</expres>
-        <page>$doregex[select]</page>
-        <referer>http://whostreams.net/</referer>
-        <connection>keep-alive</connection>
-    </regex>
-	
-	<regex>
-<name>select</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m):
-   import xbmcgui
-   dialog = xbmcgui.Dialog()
-   ret = dialog.select('Elige un Canal ', ['telemundo', 'univision', 'unimas', 'Deportes', 'EspnDeportes', 'FoxDeportes', 'Deportes2'])
-   lists = ['http://whostreams.net/embed/6otcp42qvvs', 'http://whostreams.net/embed/yjz92igvajl5l9', 'http://whostreams.net/embed/le2di', 'http://whostreams.net/embed/k35qrdo5h', 'http://whostreams.net/embed/2gzsuk67y', 'http://whostreams.net/embed/vume8720', 'http://whostreams.net/embed/8vzxl3yuc']
-   return lists[ret]
-]]></expres>
-<page></page>
-</regex>
-</item>
+
 
 
 
