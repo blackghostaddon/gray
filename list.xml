@@ -52,7 +52,17 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <item>
 <title>Acestreams</title>
 <link>http://ignorame</link>
-<externallink>https://raw.githubusercontent.com/blackghostaddon/gray/master/plexus.xml</externallink>
+<externallink>$doregex[notice]</externallink>
+<regex>
+<name>notice</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import xbmc
+  xbmc.executebuiltin("XBMC.Notification(BlackGhost,[B]Donaciones: \n en [COLOR yellow]paypal.me/blackghost[/COLOR] \n \n o [COLOR skyblue] paypal.me/adryanlist[/COLOR][/B] ,10000)")
+  return 'https://raw.githubusercontent.com/blackghostaddon/gray/master/plexus.xml'
+]]></expres>
+<page></page>
+</regex>
 <fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/acestream.png</thumbnail>
 <info>Canales  y eventos por Acestreams, necesitas tener instalado el addon Plexus, ademas si tienes Android tener la app acestream engine instalada y corriendo en segundo plano antes de visualizar un canal </info>
@@ -77,7 +87,17 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <item>
 <title>Torrents [COLOR lightslategray] [/COLOR]</title>
 <link>http://ignorame</link><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
-<externallink>https://raw.githubusercontent.com/blackghostaddon/gray/master/quasar.xml</externallink>
+<externallink>$doregex[notice]</externallink>
+<regex>
+<name>notice</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import xbmc
+  xbmc.executebuiltin("XBMC.Notification(BlackGhost,[B]Donaciones: \n en [COLOR yellow]paypal.me/blackghost[/COLOR] \n \n o [COLOR skyblue] paypal.me/adryanlist[/COLOR][/B] ,10000)")
+  return 'https://raw.githubusercontent.com/blackghostaddon/gray/master/quasar.xml'
+]]></expres>
+<page></page>
+</regex>
 <info>Mira Peliculas y series por Torrents; Necesitas el addon Quasar instalado.</info>
 </item>
 
@@ -92,7 +112,17 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <item>
 <title>España </title>
 <link>http://ignorame</link><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/esp.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
-<externallink>https://raw.githubusercontent.com/blackghostaddon/gray/master/esp.xml</externallink>
+<externallink>$doregex[notice]</externallink>
+<regex>
+<name>notice</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import xbmc
+  xbmc.executebuiltin("XBMC.Notification(BlackGhost,[B]Donaciones: \n en [COLOR yellow]paypal.me/blackghost[/COLOR] \n \n o [COLOR skyblue] paypal.me/adryanlist[/COLOR][/B] ,10000)")
+  return 'https://raw.githubusercontent.com/blackghostaddon/gray/master/esp.xml'
+]]></expres>
+<page></page>
+</regex>
 </item>
 
 
@@ -105,12 +135,11 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <expres><![CDATA[#$pyFunction
 def GetLSProData(page_data,Cookie_Jar,m):
   import xbmc
-  xbmc.executebuiltin("XBMC.Notification(BlackGhost,[B]Donaciones: en [COLOR yellow]paypal.me/blackghost[/COLOR] \n o [COLOR skyblue] paypal.me/adryanlist[/COLOR][/B] ,10000)")
+  xbmc.executebuiltin("XBMC.Notification(BlackGhost,[B]Donaciones: \n en [COLOR yellow]paypal.me/blackghost[/COLOR] \n \n o [COLOR skyblue] paypal.me/adryanlist[/COLOR][/B] ,10000)")
   return 'https://raw.githubusercontent.com/blackghostaddon/gray/master/mx.xml'
 ]]></expres>
 <page></page>
 </regex>
-
 </item>
 
 <item>
