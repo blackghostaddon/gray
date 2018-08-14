@@ -26,7 +26,19 @@
 <item>
 <title>Deportes</title>
 <link>http://ignorame</link><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
-<externallink>https://raw.githubusercontent.com/blackghostaddon/gray/master/deportes.xml</externallink>
+
+<externallink>$doregex[notice]</externallink>
+<regex>
+<name>notice</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import xbmc
+  xbmc.executebuiltin("XBMC.Notification(BlackGhost,[B]Donaciones: en [COLOR yellow]paypal.me/blackghost[/COLOR] \n o [COLOR skyblue] paypal.me/adryanlist[/COLOR][/B] ,10000)")
+  return 'https://raw.githubusercontent.com/blackghostaddon/gray/master/deportes.xml'
+]]></expres>
+<page></page>
+</regex>
+
 </item>
 
 <item>
@@ -87,7 +99,18 @@
 <item>
 <title>Mexico </title>
 <link>http://ignorame</link><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/mexico.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
-<externallink>https://raw.githubusercontent.com/blackghostaddon/gray/master/mx.xml</externallink>
+<externallink>$doregex[notice]</externallink>
+<regex>
+<name>notice</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import xbmc
+  xbmc.executebuiltin("XBMC.Notification(BlackGhost,[B]Donaciones: en [COLOR yellow]paypal.me/blackghost[/COLOR] \n o [COLOR skyblue] paypal.me/adryanlist[/COLOR][/B] ,10000)")
+  return 'https://raw.githubusercontent.com/blackghostaddon/gray/master/mx.xml'
+]]></expres>
+<page></page>
+</regex>
+
 </item>
 
 <item>
