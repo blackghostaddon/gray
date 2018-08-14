@@ -12,7 +12,7 @@
 
 
 <item>
-<title>Haz tu [B]Donacion[/B] por Paypal en  [B]https://paypal.me/blackghost[/B] o al correo blackaddon@mail.com  </title>
+<title>Apoya este Proyecto, Haz tu [B]Donacion[/B] por Paypal en  [B]https://paypal.me/blackghost[/B] o al correo blackaddon@mail.com  </title>
 <link>NA</link>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/paypal.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 <info>Agradece este proyecto mediante una donacion</info>
@@ -44,7 +44,17 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <item>
 <title>Extratime</title>
 <link>http://ignorame</link><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/extratime.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
-<externallink>https://raw.githubusercontent.com/blackghostaddon/gray/master/multicanales.xml</externallink>
+<externallink>$doregex[notice]</externallink>
+<regex>
+<name>notice</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import xbmc
+  xbmc.executebuiltin("XBMC.Notification(BlackGhost,[B]Haz tu Donacion \nen [COLOR yellow]paypal.me/blackghost[/COLOR] [/B] ,10000)")
+  return 'https://raw.githubusercontent.com/blackghostaddon/gray/master/multicanales.xml'
+]]></expres>
+<page></page>
+</regex>
 <info>Los mejores multicanales para ver eventos Deportivos.</info>
 </item>
 
@@ -58,7 +68,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <expres><![CDATA[#$pyFunction
 def GetLSProData(page_data,Cookie_Jar,m):
   import xbmc
-  xbmc.executebuiltin("XBMC.Notification(BlackGhost,[B]Donaciones: \n en [COLOR yellow]paypal.me/blackghost[/COLOR] [/B] ,10000)")
+  xbmc.executebuiltin("XBMC.Notification(BlackGhost,[B]Haz tu Donacion \nen [COLOR yellow]paypal.me/blackghost[/COLOR] [/B] ,10000)")
   return 'https://raw.githubusercontent.com/blackghostaddon/gray/master/plexus.xml'
 ]]></expres>
 <page></page>
@@ -72,7 +82,18 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <item>
 <title>Peliculas</title>
 <link>http://ignorame</link><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
-<externallink>https://raw.githubusercontent.com/blackghostaddon/gray/master/pyt_vod.xml</externallink>
+<externallink>$doregex[notice]</externallink>
+<regex>
+<name>notice</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import xbmc
+  xbmc.executebuiltin("XBMC.Notification(BlackGhost,[B]Haz tu Donacion \nen [COLOR yellow]paypal.me/blackghost[/COLOR] [/B] ,10000)")
+  return 'https://raw.githubusercontent.com/blackghostaddon/gray/master/pyt_vod.xml'
+]]></expres>
+<page></page>
+</regex>
+
 <info>Peliculas por Streaming</info>
 </item>
 
@@ -81,7 +102,17 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <title>Series de TV </title>
 <link>http://ignorame</link><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/series.png</thumbnail>
 	<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
-<externallink>https://raw.githubusercontent.com/blackghostaddon/gray/master/gnula.xml</externallink>
+<externallink>$doregex[notice]</externallink>
+<regex>
+<name>notice</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import xbmc
+  xbmc.executebuiltin("XBMC.Notification(BlackGhost,[B]Haz tu Donacion \nen [COLOR yellow]paypal.me/blackghost[/COLOR] [/B] ,10000)")
+  return 'https://raw.githubusercontent.com/blackghostaddon/gray/master/gnula.xml'
+]]></expres>
+<page></page>
+</regex>
 </item>
 
 <item>
@@ -93,7 +124,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <expres><![CDATA[#$pyFunction
 def GetLSProData(page_data,Cookie_Jar,m):
   import xbmc
-  xbmc.executebuiltin("XBMC.Notification(BlackGhost,[B]Donaciones: \n en [COLOR yellow]paypal.me/blackghost[/COLOR] [/B] ,10000)")
+  xbmc.executebuiltin("XBMC.Notification(BlackGhost,[B]Haz tu Donacion \nen [COLOR yellow]paypal.me/blackghost[/COLOR] [/B] ,10000)")
   return 'https://raw.githubusercontent.com/blackghostaddon/gray/master/quasar.xml'
 ]]></expres>
 <page></page>
@@ -105,7 +136,17 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <item>
 <title>KIDS [COLOR lightslategray] [/COLOR] -</title>
 <link>http://ignorame</link><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/kids.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
-<externallink>https://raw.githubusercontent.com/blackghostaddon/gray/master/infantiles.xml</externallink>
+<externallink>$doregex[notice]</externallink>
+<regex>
+<name>notice</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import xbmc
+  xbmc.executebuiltin("XBMC.Notification(BlackGhost,[B]Haz tu Donacion \nen [COLOR yellow]paypal.me/blackghost[/COLOR] [/B] ,10000)")
+  return 'https://raw.githubusercontent.com/blackghostaddon/gray/master/infantiles.xml'
+]]></expres>
+<page></page>
+</regex>
 </item>
 
 
@@ -118,7 +159,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <expres><![CDATA[#$pyFunction
 def GetLSProData(page_data,Cookie_Jar,m):
   import xbmc
-  xbmc.executebuiltin("XBMC.Notification(BlackGhost,[B]Donaciones: \n en [COLOR yellow]paypal.me/blackghost[/COLOR] [/B] ,10000)")
+  xbmc.executebuiltin("XBMC.Notification(BlackGhost,[B]Haz tu Donacion \nen [COLOR yellow]paypal.me/blackghost[/COLOR] [/B] ,10000)")
   return 'https://raw.githubusercontent.com/blackghostaddon/gray/master/esp.xml'
 ]]></expres>
 <page></page>
@@ -135,7 +176,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <expres><![CDATA[#$pyFunction
 def GetLSProData(page_data,Cookie_Jar,m):
   import xbmc
-  xbmc.executebuiltin("XBMC.Notification(BlackGhost,[B]Donaciones: \n en [COLOR yellow]paypal.me/blackghost[/COLOR] [/B] ,10000)")
+  xbmc.executebuiltin("XBMC.Notification(BlackGhost,[B]Haz tu Donacion \nen [COLOR yellow]paypal.me/blackghost[/COLOR] [/B] ,10000)")
   return 'https://raw.githubusercontent.com/blackghostaddon/gray/master/mx.xml'
 ]]></expres>
 <page></page>
@@ -174,13 +215,33 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <item>
 <title>[COLOR white][B]IPTV[/B] [/COLOR][COLOR lightslategray][World Servers Updated Daily][/COLOR] </title>
 <link>http://ignorame</link><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/iptv.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
-<externallink>https://raw.githubusercontent.com/blackghostaddon/gray/master/iptv.xml</externallink>
+<externallink>$doregex[notice]</externallink>
+<regex>
+<name>notice</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import xbmc
+  xbmc.executebuiltin("XBMC.Notification(BlackGhost,[B]Haz tu Donacion \nen [COLOR yellow]paypal.me/blackghost[/COLOR] [/B] ,10000)")
+  return 'https://raw.githubusercontent.com/blackghostaddon/gray/master/iptv.xml'
+]]></expres>
+<page></page>
+</regex>
 </item>
 
 <item>
 <title>Entretenimiento</title>
 <link>http://ignorame</link><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
-<externallink>https://raw.githubusercontent.com/blackghostaddon/gray/master/ent.xml</externallink>
+<externallink>$doregex[notice]</externallink>
+<regex>
+<name>notice</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import xbmc
+  xbmc.executebuiltin("XBMC.Notification(BlackGhost,[B]Haz tu Donacion \nen [COLOR yellow]paypal.me/blackghost[/COLOR] [/B] ,10000)")
+  return 'https://raw.githubusercontent.com/blackghostaddon/gray/master/ent.xml'
+]]></expres>
+<page></page>
+</regex>
 </item>
 
 
@@ -189,7 +250,17 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <item>
 <title>Paises </title>
 <link>http://ignorame</link><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/paises.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
-<externallink>https://raw.githubusercontent.com/blackghostaddon/gray/master/paises.xml</externallink>
+<externallink>$doregex[notice]</externallink>
+<regex>
+<name>notice</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import xbmc
+  xbmc.executebuiltin("XBMC.Notification(BlackGhost,[B]Haz tu Donacion \nen [COLOR yellow]paypal.me/blackghost[/COLOR] [/B] ,10000)")
+  return 'https://raw.githubusercontent.com/blackghostaddon/gray/master/paises.xml'
+]]></expres>
+<page></page>
+</regex>
 </item>
 
 
