@@ -1726,7 +1726,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[geturl]</link>
     <regex>
         <name>geturl</name>
-        <expres>source:"(.*?)\?</expres>
+        <expres>source:"(.*?)\?auto</expres>
         <page>$doregex[getunpacked]</page>
     </regex>
     <regex>

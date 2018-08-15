@@ -302,29 +302,17 @@ type:"Ent" canal="History  " channel="historysusy" pub="www.janjuapublisher.com"
 
 
 view-source:http://tvpor-internet.com/envivo/
- type:"Deportes" canal="Formula 1 / Fox Accion" channel="actioncristina" pub="www.janjuapublisher.com" server="www.janjua.tv" 
- type:"Deportes" canal="Directv" channel="directv1aliciap" pub="www.pubucaster.com" server="embeducaster.com"
- type:"Deportes" canal="ESPN2" channel="espn2gladys" pub="cdn.pubzony.com" server="www.zony.tv" 
- type:"Deportes" canal="ESPN " channel="espn1yulianape" pub="www.janjuapublisher.com" server="www.janjua.tv" 
+type:"Deportes" canal="Formula 1 / Fox Accion" channel="actionperucho" pub="www.pubucaster.com" server="embeducaster.com"
+type:"Deportes" canal="Directv" channel="directvchata" pub="www.pubucaster.com" server="embeducaster.com"
+type:"Deportes" canal="ESPN2" channel="espn2peru" pub="www.pubucaster.com" server="embeducaster.com"
+type:"Deportes" canal="Fox Sports 1" channel="fox1winters" server="www.247bay.tv" pub="www.publish247.xyz" 
+type:"Deportes" canal="Fox Sports 2" channel="fox2winters" server="www.247bay.tv" pub="www.publish247.xyz" 
+type:"Deportes" canal="Fox Sports 3" channel="fox3flor" pub="www.pubucaster.com" server="embeducaster.com" 
  type:"Deportes" canal="xxx playboy" channel="playboycharapas" pub="cdn.pubzony.com" server="www.zony.tv"
- type:"Deportes" canal="Fox Sports 2" channel="sports2gladys" pub="cdn.pubzony.com" server="www.zony.tv"
- type:"Deportes" canal="Fox Sports 3" channel="sports3ali" pub="www.pubucaster.com" server="embeducaster.com"
- type:"Deportes" canal="Fox Sports 1" channel="sportsperu1pe" pub="www.janjuapublisher.com" server="www.janjua.tv" 
- type:"Deportes" canal="Golden" channel="spacemalosotv666" pub="www.janjuapublisher.com" server="www.janjua.tv" 
  type:"Deportes" canal="HBO" channel="hbokenji" pub="cdn.pubzony.com" server="www.zony.tv"
- type:"Deportes" canal="Space" channel="spacechamo1" pub="www.janjuapublisher.com" server="www.janjua.tv" 
+ type:"Deportes" canal="Space" channel="spaceperucho" pub="www.pubucaster.com" server="embeducaster.com" 
 
 
-http://www.pelotafuera.com/agendadeportiva.php
-tpe:"Deportes" canal="DirecTV" channel="roj967ikd" pub="www.pubucaster.com" server="embeducaster.com"
-tpe:"Deportes" canal="Gol Peru " channel="rivo9d6" pub="www.pubucaster.com" server="embeducaster.com"
-tpe:"Deportes" canal="ESPN 2" channel="rivo09s" pub="www.pubucaster.com" server="embeducaster.com"
-tpe:"Deportes" canal="DirecTV Sports " channel="directv6522q" pub="www.pubfstream.com" server="fstream.me"
-tpe:"Deportes" canal="Gol Peru " channel="gol678ism" pub="wwww.zenexpublisher.com" server="zenexplayer.com"
-
-
-
- 
 
 
  
