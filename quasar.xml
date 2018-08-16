@@ -205,6 +205,30 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
+ <item>
+<title>     [COLOR yellow][B]PelisMag.Net[/B]  Castellano + Buscador de Peliculas y Series[/COLOR] </title>
+<link>http://ignora.me</link>
+<externallink>https://raw.githubusercontent.com/blackghostaddon/gray/master/pelismag.xml</externallink>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -399,34 +423,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<itm>
-<title>     [B]DivxaTope[/B]  Castellano </title>
-<link>$doregex[makelist]</link>
-<thumbnail>http://www.divxatope.com/newtemp/template/images/logo.png</thumbnail>       <!--thumb del sitio  web-->
-<regex>
-<name>makelist</name>
-<listrepeat><![CDATA[
-    <title>[makelist.param2]  ( [makelist.param3])</title>
 
-    <link>plugin://plugin.video.quasar/play?uri=$doregex[link-torrent]</link>
-  <regex>
-    <name>link-torrent</name>
-    <expres>br\s\/&gt;\n.*?&lt;a\shref="(http.*?)"</expres>
-    <page>http://www.divxatope.com/descarga-torrent/[makelist.param1]</page>
-    <referer>http://www.divxatope.com/categoria/peliculas</referer>
-    </regex>
-
-    <referer>http://www.divxatope.com/categoria/peliculas</referer>
-    <thumbnail>http://www.divxatope.com/uploads/images/fichas/f/[makelist.param4]</thumbnail>
-]]></listrepeat>
-<expres>a\shref="http:\/\/www.divxatope.com\/descargar\/(.*?)"\stitle=.*?escargar(.*?)\sen\s(.*?lu.*?ay.*?)gratis".*?\/thumbs\/(.*?)"</expres>
-<page>http://www.divxatope.com/categoria/peliculas</page>
-<referer></referer>
-<cookieJar></cookieJar>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
-
-</item>
 
 
 
@@ -486,7 +483,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 def GetLSProData(page_data,Cookie_Jar,m):
    import xbmcgui
    dialog = xbmcgui.Dialog()
-   ret = dialog.select('Elige una Calidad ', ['Peliculas  Latino', 'Peliculas en Castellano', 'Top 100 Movies', 'Recent Movies', 'Recent TV Shows'])
+   ret = dialog.select('Elige una Seccion', ['Peliculas  Latino', 'Peliculas en Castellano', 'Top 100 Movies', 'Recent Movies', 'Recent TV Shows'])
    lists = ['https://www.limetorrents.cc/search/movies/latino/', 'https://www.limetorrents.cc/search/movies/castellano/', 'https://www.limetorrents.cc/cat_top/16/Movies/', 'https://www.limetorrents.io/browse-torrents/Movies/', 'https://www.limetorrents.io/browse-torrents/TV-shows/']
    return lists[ret]
 ]]></expres>
@@ -507,25 +504,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
- <item>
-<title>     [COLOR yellow][B]PelisMag.Net[/B]  Castellano + Buscador de Peliculas y Series[/COLOR] </title>
-<link>http://ignora.me</link>
-<externallink>https://raw.githubusercontent.com/blackghostaddon/gray/master/pelismag.xml</externallink>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
-
-
-</item>
-
-
-  <iem>
-<title>     [B]ZPeliculas[/B]  Castellano </title>
-<link>http://ignora.me</link>
-<externallink>https://raw.githubusercontent.com/blackghostaddon/gray/master/zpeliculas.xml</externallink>
-
-
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
-
-</item>
 
 
 
@@ -538,31 +516,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
-<title>     [B]Toros.co[/B]  Latinos </title>
-<link>$doregex[makelist]</link>
-<regex>
-<name>makelist</name>
-<listrepeat><![CDATA[
-<title>[makelist.param2]</title>
-<link>plugin://plugin.video.quasar/play?uri=https://www.toros2.com/tor/[makelist.param1].torrent</link>
-<thumbnail>[makelist.param2]</thumbnail>
-]]></listrepeat>
-<expres>href="\/torrent\/(.*?)/.*?\"\>(.*?)<</expres>
-<page>https://www.toros2.com/movie/torrents/latino.html?v=&amp;smi=&amp;sma=&amp;i=100&amp;sort=subido&amp;o=desc</page>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
-</item>
-
-
-
-
-
-
-
-
-
-<item>
-<title>     [B]Torlock[/B]  Movies </title>
+<title>     [B]Torlock[/B]  Peliculas Latino, Castellano, VO, TvShows</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
@@ -572,10 +526,29 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>[makelist.param2]</thumbnail>
 ]]></listrepeat>
 <expres>href=\/torrent\/(.*?)\/.*?b>(.*?)<</expres>
-<page>https://www.torlock.com/movies.html</page>
+<page>$doregex[select]</page>
 </regex>
+
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+   import xbmcgui
+   dialog = xbmcgui.Dialog()
+   ret = dialog.select('Elige una Seccion ', ['Peliculas Recientes en Latino', 'Peliculas Recientes en Castellano', 'Recent Top movies', 'Recent TV Shows'])
+   lists = ['https://www.toros2.com/movie/torrents/latino.html?v=&amp;smi=&amp;sma=&amp;i=100&amp;sort=subido&amp;o=desc', 'https://www.toros2.com/movie/torrents/castellano.html?v=&amp;smi=&amp;sma=&amp;i=100&amp;sort=subido&amp;o=desc', 'https://www.torlock.com/movies.html', 'https://www.torlock.com/television.html']
+   return lists[ret]
+]]></expres>
+<page></page>
+</regex>
+
+
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
 </item>
+
+
+
+
 
 
 
