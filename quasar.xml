@@ -555,231 +555,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-
-
-
-
-
-
-<!--
-
-<item>
-<title>     [B]CineTux.COM[/B]  </title>
-<link>http://ignora.me</link>
-<externallink>https://raw.githubusercontent.com/blackghostaddon/gray/master/cinetux.xml</externallink>
-
-
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
-
-</item>
-
-
-
-
-
-<item>
-<title>     [B]Youtube[/B] Peliculas </title>
-<link>$doregex[makelist]</link>
-<regex>
-<name>makelist</name>
-<listrepeat><![CDATA[
-    <title>[makelist.param2]</title>
-    <utube>[makelist.param1]</utube>
-]]></listrepeat>
-<expres>\sid="(.*?)"[\w\W]*?\t{4}(.*?)\t{3}</expres>
-<page>http://app1.vuelo-digital.org/multipremier.php</page>
-<cookieJar></cookieJar>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
-
-</item>
--->
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--
-<item>
-<title>[B]YOUTUBE[/B] []</title>
-<link>http://ignora.me</link>
-<externallink>https://raw.githubusercontent.com/blackghostaddon/gray/master/youtubemovies.xml</externallink>
-
-
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
-
-<info></info>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
-
-</item>
-
-
-
-<item>
-<title>[B]Estrenos[/B] [AlienMovies][V.O. Subtituladas]</title>
-<link>http://ignora.me</link>
-<externallink>https://raw.githubusercontent.com/blackghostaddon/gray/master/pelialien.xml</externallink>
-
-
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
-
-<info></info>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
-
-</item>
-
-<item>
-<title>[B]Solo Estrenos [/B]HD [JessMax]</title>
-<link>http://ignora.me</link>
-<externallink>https://raw.githubusercontent.com/blackghostaddon/gray/master/jessmax.xml</externallink>
-
-
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
-
-<info></info>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
-
-</item>
-
-
-<item>
-<title>[B]Estrenos[/B] [Latino]</title>
-<link>http://ignora.me</link>
-<externallink>https://raw.githubusercontent.com/blackghostaddon/gray/master/peliculas.xml</externallink>
-
-
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
-
-<info></info>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
-
-</item>
--->
-<!--
-<item>
-<title>[B]Estrenos[/B] [Castellano]</title>
-<link>http://ignora.me</link>
-<externallink>https://raw.githubusercontent.com/blackghostaddon/gray/master/peliculaspa.xml</externallink>
-
-
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
-
-<info></info>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
-
-</item>
-
-<item>
-<title>[B]Recien Actualizadas[/B]</title>
-<link>http://ignora.me</link>
-<externallink>https://raw.githubusercontent.com/blackghostaddon/gray/master/series/p_actuales.xml</externallink>
-
-
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
-
-<info></info>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
-
-</item>
-<item>
-<title>[B]Mas Vistas[/B]</title>
-<link>http://ignora.me</link>
-<externallink>https://raw.githubusercontent.com/blackghostaddon/gray/master/series/movies_populares.xml</externallink>
-
-
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
-
-<info></info>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
-
-</item>
-<item>
-<title>[B]INFANTILES[/B]</title>
-<link>http://ignora.me</link>
-<externallink>https://raw.githubusercontent.com/blackghostaddon/gray/master/series/p_infantiles.xml</externallink>
-
-
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
-
-<info></info>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
-
-</item>
-<item>
-<title>Mexicanas [Audio Latino]</title>
-<link>http://ignora.me</link>
-<externallink>https://raw.githubusercontent.com/blackghostaddon/gray/master/series/p_mex.xml</externallink>
-
-
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
-
-<info></info>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
-
-</item>
-
-
-<item>
-<title>Ultimas Agregadas [Audio Español & Latino]</title>
-<link>http://ignora.me</link>
-<externallink>https://raw.githubusercontent.com/blackghostaddon/gray/master/ultimas.xml</externallink>
-
-
-<thumbnail>https://cdn1.iconfinder.com/data/icons/devices-media-circle-style/48/film_strip-512.png</thumbnail>
-<info></info>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
-
-</item>
-
-
-<item>
-<title>Audio Castellano</title>
-<link>http://ignora.me</link>
-<externallink>https://raw.githubusercontent.com/blackghostaddon/gray/master/p_esp.xml</externallink>
-
-
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
-
-<info></info>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
-
-</item>
-
-
--->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
  <item>
 <title>     [B]YourbitTorrents[/B]  Top100   Recientes </title>
 <link>$doregex[makelist]</link>
@@ -807,93 +582,106 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<itm>
-<title>     [B]ShaaningTorrents[/B]  hvec  only KODI17  </title>
-
- <link>$doregex[makelist0]</link>
 
 
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>     [B]Piratebay[/B]  Tops100   Movies and TVShows </title>
+<link>$doregex[makelist]</link>
 
 <regex>
-<name>makelist0</name>
+<name>makelist</name>
 <listrepeat><![CDATA[
-<title>[makelist0.param2]</title>
-<link>$doregex[showPages]</link>
-   <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
+   <title>[makelist.param1]</title>
+
+    <link>plugin://plugin.video.quasar/play?uri=[makelist.param2]</link>
+ <thumbnail>[makelist.param2]</thumbnail>
 ]]></listrepeat>
-<expres>class="forumtitle[\w\W\s]{0,6}href="https://www.shaanig.org/(.*?)/">(.*?)<</expres>
-<page>https://www.shaanig.org/f4/</page>
-<referer></referer>
-<cookieJar></cookieJar>
+<expres>CDATA\[(.*?)\][\w\W\s]{0,20}link>(.*?)<</expres>
+<page></page>
 </regex>
 
-
-
-
-
 <regex>
-<name>showPages</name>
-<listrepeat><![CDATA[
-   <title>Page# [showPages.param1]</title>
-    <link>$doregex[makelist2]</link>
-     <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
-]]></listrepeat>
-<expres>([0-9]+),?</expres>
-<page>$doregex[getPageNumbers]</page>
-<referer></referer>
-<cookieJar></cookieJar>
-</regex>
-
-
-<regex>
-<name>getPageNumbers</name>
+<name>select</name>
 <expres><![CDATA[#$pyFunction
-import re
 def GetLSProData(page_data,Cookie_Jar,m):
-  frompage,topage=re.findall( "class=\"popupctrl\">Page ([0-9]+) of ([0-9]+)",page_data)[0]
-  frompage=int(frompage)
-  topage=int(topage)
-  print range(frompage,topage)
-  return range(frompage,topage)
+   import xbmcgui
+   dialog = xbmcgui.Dialog()
+   ret = dialog.select('Elige una Seccion ', ['Top 100 Movies', 'Top 100 Movies HD', 'Top 100 TV-Shows HD', 'Top 100 TV-Shows'])
+   lists = ['https://thepiratebay.org/rss/top100/201', 'https://thepiratebay.org/rss/top100/207', 'https://thepiratebay.org/rss/top100/208', 'https://thepiratebay.org/rss/top100/205']
+   return lists[ret]
 ]]></expres>
-<page>https://www.shaanig.org/[makelist0.param1]/</page>
-<referer>https://www.shaanig.org/[makelist0.param1]/</referer>
-<agent>Mozilla/5.0 (Linux; Android 5.1.1; Nexus 6 Build/LYZ28E) AppleWebKit/537.36</agent>
-<cookieJar></cookieJar>
-</regex>
-
-<regex>
-<name>makelist2</name>
-<listrepeat><![CDATA[
-<title>[makelist2.param2]</title>
-<link>$doregex[makelist]</link>
-]]></listrepeat>
-<expres>class="title" href="https://www.shaanig.org/[makelist0.param1]/(.*?)"[\w\W\s]{0,30}">(.*?)<</expres>
-<page>https://www.shaanig.org/[makelist0.param1]/index[showPages.param1].html</page>
-<referer></referer>
-<cookieJar></cookieJar>
-</regex>
-
-<regex>
-<name>makelist</name>
-<listrepeat><![CDATA[
-<title>[makelist.param2]</title>
-<link>plugin://plugin.video.quasar/play?uri=[makelist.param1]</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
-]]></listrepeat>
-<expres>href="(.*?.torrent)">(.*?)torrent</expres>
-<page>https://www.shaanig.org/[makelist0.param1]/[makelist2.param1]</page>
-<referer></referer>
-<cookieJar></cookieJar>
+<page></page>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
-
 </item>
 
 
@@ -910,433 +698,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- <itm>
-<title>     [B]ExtraTorrents[/B]     </title>
-<link>$doregex[makelist]</link>
-<regex>
-<name>makelist</name>
-<listrepeat><![CDATA[
- <title>[makelist.param2]</title>
-<link>plugin://plugin.video.quasar/play?uri=http://extratorrent.one//download/[makelist.param1]</link>
-
-</regex>
-]]></listrepeat>
-<expres>href="/torrent_download/(.*?)"[\w\W\s]{0,8}Download(.*?)torrent</expres>
-<page>http://extratorrent.one/search/?new=1&amp;search=latino&amp;s_cat=4</page>
-<referer>http://extratorrent.one/</referer>
-<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
-
-</item>
-
-<itm>
-<title>     [B]ExtraTorrents[/B] First CAMS    </title>
-<link>$doregex[makelist]</link>
-<regex>
-<name>makelist</name>
-<listrepeat><![CDATA[
- <title>[makelist.param1]</title>
-<link>plugin://plugin.video.quasar/play?uri=http://extra.to/download/[makelist.param3].torrent</link>
-<thumbnail>http:[makelist.param1]</thumbnail>
-</regex>
-]]></listrepeat>
-<expres>url="https://extra.to/download/(.*?).torrent"</expres>
-<page>http://extratorrent.ch/rss.xml?type=hot&amp;cat=First+Cams</page>
-<referer>http://extratorrent.ch/</referer>
-<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
-
-</item>
-
-
-
-
-
-
-
-
-
-
-
-<!--item>
-<title>     [B]NEWPCT[/B]  Estrenos     [Audio Latino]  </title>
-
- <link>$doregex[makelist3]</link>
-
- <regex>
-<name>makelist3</name>
-<listrepeat><![CDATA[
-<title>[makelist3.param2]</title>
-<link>plugin://plugin.video.quasar/play?uri=$doregex[link].torrent</link>
- <thumbnail>[makelist3.param3]</thumbnail>
-]]></listrepeat>
-<expres>href="(.*?)".*?Descargar(.*?)gratis.*?src="(.*?)</expres>
-<page>http://www.newpct.com/peliculas-latino/</page>
-<referer>http://www.newpct.com/</referer>
-</regex>
-
-
-
-<regex>
-<name>link</name>
-<expres>href='(.*?).torrent'</expres>
-<page>[makelist3.param1]</page>
-<referer></referer>
-<cookieJar></cookieJar>
-</regex>
-
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
-
-</item>
-
-
-<item>
-<title>     [B]NEWPCT[/B]  -Estrenos     [Audio Castellano]  </title>
-
- <link>$doregex[makelist3]</link>
-
- <regex>
-<name>makelist3</name>
-<listrepeat><![CDATA[
-<title>[makelist3.param2]</title>
-<link>plugin://plugin.video.quasar/play?uri=$doregex[link].torrent</link>
- <thumbnail>[makelist3.param2]</thumbnail>
-]]></listrepeat>
-<expres>href="(.*?)".*?Descargar(.*?)gratis.*?src="(.*?)</expres>
-<page>http://www.newpct.com/estrenos-de-cine/</page>
-<referer>http://www.newpct.com/</referer>
-</regex>
-
-<regex>
-<name>link</name>
-<expres>href='(.*?).torrent'</expres>
-<page>[makelist3.param1]</page>
-<referer></referer>
-<cookieJar></cookieJar>
-</regex>
-
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
-
-</item>
-
-
-
-
-
-<item>
-<title>     [B]NEWPCT[/B]  -Peliculas BRRIP     [Audio Castellano]  </title>
-
- <link>$doregex[makelist3]</link>
-
- <regex>
-<name>makelist3</name>
-<listrepeat><![CDATA[
-<title>[makelist3.param2]</title>
-<link>plugin://plugin.video.quasar/play?uri=$doregex[link].torrent</link>
- <thumbnail>[makelist3.param2]</thumbnail>
-]]></listrepeat>
-<expres>href="(.*?)".*?Descargar(.*?)gratis.*?src="(.*?)</expres>
-<page>http://www.newpct.com/peliculas/</page>
-<referer>http://www.newpct.com/</referer>
-</regex>
-
-<regex>
-<name>link</name>
-<expres>href='(.*?).torrent'</expres>
-<page>[makelist3.param1]</page>
-<referer></referer>
-<cookieJar></cookieJar>
-</regex>
-
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
-
-</item>
-
-
-
-
-
-
-
-
-
-
-
-
-
--->
-
- <item>
-<title>     [B]O Torrents [/B]  VO </title>
-<link>http://ignora.me</link>
-<externallink>https://raw.githubusercontent.com/blackghostaddon/gray/master/otorrents.xml</externallink>
-
-
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
-
-
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
-
-</item>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--item>
-<title>     [B]YIFY MOVIES [/B]  VO  </title>
-<link>http://ignora.me</link>
-<externallink>https://raw.githubusercontent.com/blackghostaddon/gray/master/yify.xml</externallink>
-
-
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
-
-<info></info>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
-
-</item>
-
-
-<item>
-<title>     [B]YIFY MOVIES RE[/B]  VO  </title>
-<link>$doregex[makelist2]</link>
-
-
- <regex>
-<name>makelist2</name>
-<listrepeat><![CDATA[
- <title>[makelist2.param3]  - [makelist2.param4] </title>
-<link>$doregex[makelist]</link>
-<thumbnail>[makelist2.param2]</thumbnail>
-</regex>
-]]></listrepeat>
-<expres>a\shref="(.*?)"[\w\W\s]{0,30}src="(.*?)"[\w\W\s]{0,60}alt="(.*)"[\w\W\s]{0,60}images\/q\/(.*)\..</expres>
-<page>https://yifymovie.re/recent</page>
-</regex>
-
-<regex>
-<name>makelist</name>
-<listrepeat><![CDATA[
- <title>[makelist.param1]</title>
-<link>plugin://plugin.video.quasar/play?uri=magnet:?xt=urn:btih:[makelist.param1]</link>
-<thumbnail>[makelist2.param2]</thumbnail>
-</regex>
-]]></listrepeat>
-<expres><![CDATA[ href="(magnet.*)"]]></expres>
-<page>[makelist2.param1]</page>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
-
-</item>
-
-
-
-
-
-
-<tem>
-<title>     [B]YIFY [/B]  VO  </title>
-<link>http://ignora.me</link>
-<externallink>https://raw.githubusercontent.com/blackghostaddon/gray/master/yify2.xml</externallink>
-
-
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
-
-<info></info>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
-
--->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<item>
-<title>     Top 100 Movies </title>
-<link>$doregex[makelist]</link>
-
-<regex>
-<name>makelist</name>
-<listrepeat><![CDATA[
-   <title>[makelist.param1]</title>
-
-    <link>plugin://plugin.video.quasar/play?uri=[makelist.param2]</link>
- <thumbnail>[makelist.param2]</thumbnail>
-]]></listrepeat>
-<expres>CDATA\[(.*?)\][\w\W\s]{0,20}link>(.*?)<</expres>
-<page>https://thepiratebay.org/rss/top100/201</page>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
-
-</item>
-
-
-<item>
-<title>     Top 100 Movies HD </title>
-<link>$doregex[makelist]</link>
-
-<regex>
-<name>makelist</name>
-<listrepeat><![CDATA[
-   <title>[makelist.param1]</title>
-
-    <link>plugin://plugin.video.quasar/play?uri=[makelist.param2]</link>
- <thumbnail>[makelist.param2]</thumbnail>
-]]></listrepeat>
-<expres>CDATA\[(.*?)\][\w\W\s]{0,20}link>(.*?)<</expres>
-<page>https://thepiratebay.org/rss/top100/207</page>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
-
-</item>
-
-
-<item>
-<title>     Top 100 [B]3D [/B] Movies  </title>
-<link>$doregex[makelist]</link>
-
-<regex>
-<name>makelist</name>
-<listrepeat><![CDATA[
-   <title>[makelist.param1]</title>
-
-    <link>plugin://plugin.video.quasar/play?uri=[makelist.param2]</link>
- <thumbnail>[makelist.param2]</thumbnail>
-]]></listrepeat>
-<expres>CDATA\[(.*?)\][\w\W\s]{0,20}link>(.*?)<</expres>
-<page>https://thepiratebay.org/rss/top100/207</page>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
-
-</item>
-
-
-
-<item>
-<title>     Top 100 TV-Shows HD </title>
-<link>$doregex[makelist]</link>
-
-<regex>
-<name>makelist</name>
-<listrepeat><![CDATA[
-   <title>[makelist.param1]</title>
-
-    <link>plugin://plugin.video.quasar/play?uri=[makelist.param2]</link>
- <thumbnail>[makelist.param2]</thumbnail>
-]]></listrepeat>
-<expres>CDATA\[(.*?)\][\w\W\s]{0,20}link>(.*?)<</expres>
-<page>https://thepiratebay.org/rss/top100/208</page>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
-
-</item>
-
-
-
-
-
-
-
-
-<item>
-<title>     Top 100 TV-Shows </title>
-<link>$doregex[makelist]</link>
-
-<regex>
-<name>makelist</name>
-<listrepeat><![CDATA[
-   <title>[makelist.param1]</title>
-
-    <link>plugin://plugin.video.quasar/play?uri=[makelist.param2]</link>
- <thumbnail>[makelist.param2]</thumbnail>
-]]></listrepeat>
-<expres>CDATA\[(.*?)\][\w\W\s]{0,20}link>(.*?)<</expres>
-<page>https://thepiratebay.org/rss/top100/205</page>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
-
-</item>
 
 
 
@@ -1499,7 +860,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 
 
--->
 
 
 
@@ -1652,32 +1012,20 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<itm>
-<title> netai test</title>
-<link>$doregex[makelist]</link>
 
 
-<regex>
-<name>makelist</name>
-<listrepeat><![CDATA[
-   
-   <title>[B][makelist.param3][/B]   </title>
-   <link>plugin://plugin.video.quasar/play?uri=$doregex[torrent]</link>
- <thumbnail>[makelist.param1]</thumbnail>
-]]></listrepeat>
-<expres><![CDATA[171.*?src="(.*?)"[\w\W\s]{0,430}href="(.*?)".*?trong>(.*?)<\/]]></expres>
-<page>http://gruponetai.com/portal/Genero/animacion/</page>
-</regex>
 
-<regex>
-<name>torrent</name>
-<expres><![CDATA[href="(.*?\.torrent)"]]></expres>
-<page>[makelist.param2]</page>
-</regex>
 
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
 
-</item>
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1770,6 +1118,31 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 </item>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <item>
   <title>     [B] CATEGORIES[/B]  ETTV    </title>
 <link>$doregex[makelist2]</link>
@@ -1808,6 +1181,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
 
 </item>
+
+
 
 
 
