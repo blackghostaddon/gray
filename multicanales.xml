@@ -2460,6 +2460,47 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
  
 
+<item>
+<title>smndsmnd  </title>
+
+<link>http://$doregex[ip]$doregex[m3u8]$doregex[hls]|User-Agent=iPad</link>
+			<regex>
+			<name>ip</name>
+			<expres>redirect=(.*)</expres>
+			<page>http://cdn.mipspublisher.com:1935/loadbalancer</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.mipsplayer.net</referer>
+			</regex>
+			<regex>
+			<name>m3u8</name>
+			<expres>ea \+ "([^"]+)</expres>
+			<page>http://www.mipsplayer.net/sharedcdn/membedplayer/$doregex[canal]/1/700/400/$doregex[stream]</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.mipsplayer.net</referer>
+			</regex>
+			<regex>
+			<name>hls</name>
+			<expres>hlsUrl \+ \(\"([^"]+)</expres>
+			<page>http://www.mipsplayer.net/sharedcdn/membedplayer/$doregex[canal]/1/700/400/$doregex[stream]</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.mipsplayer.net</referer>
+			</regex>
+		<regex>
+			<name>stream</name>
+			<expres>fid="([^"]+)</expres>
+			<page>http://www.mipsplayer.net/sharedcdn/sharedcdnEmbed.js?channel=$doregex[canal]</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.mipsplayer.net</referer>
+			</regex>
+
+
+			<regex>
+			<name>canal</name>
+			<expres>channel='(.*?)'</expres>
+			<page>http://www.tv-porinternet.com/directv-sports-en-vivo-por-internet/</page>
+			</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
 
 
 
