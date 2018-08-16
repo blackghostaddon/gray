@@ -666,7 +666,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  <thumbnail>[makelist.param2]</thumbnail>
 ]]></listrepeat>
 <expres>CDATA\[(.*?)\][\w\W\s]{0,20}link>(.*?)<</expres>
-<page></page>
+<page>$doregex[select]</page>
 </regex>
 
 <regex>
