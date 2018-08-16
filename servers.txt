@@ -303,17 +303,17 @@ type:"Ent" canal="History  " channel="historysusy" pub="www.janjuapublisher.com"
 
 view-source:http://tvpor-internet.com/envivo/
 type:"Deportes" canal="Formula 1 / Fox Accion" channel="actionperucho" pub="www.pubucaster.com" server="embeducaster.com"
-type:"Deportes" canal="Directv" channel="directvchata" pub="www.pubucaster.com" server="embeducaster.com"
+type:"Deportes" canal="Directv" channel="directvhdddfff" pub="cdn.mipspublisher.com" server="www.mipsplayer.com" 
 type:"Deportes" canal="ESPN2" channel="espn2peru" pub="www.pubucaster.com" server="embeducaster.com"
-type:"Deportes" canal="Fox Sports 1" channel="fox1winters" server="www.247bay.tv" pub="www.publish247.xyz" 
-type:"Deportes" canal="Fox Sports 2" channel="fox2winters" server="www.247bay.tv" pub="www.publish247.xyz" 
+type:"Deportes" canal="Fox Sports 1" channel="fox1winters" pub="www.publish247.xyz" server="www.247bay.tv" 
+type:"Deportes" canal="Fox Sports 2" channel="fox2winters" pub="www.publish247.xyz" server="www.247bay.tv" 
 type:"Deportes" canal="Fox Sports 3" channel="fox3flor" pub="www.pubucaster.com" server="embeducaster.com" 
  type:"Deportes" canal="xxx playboy" channel="playboycharapas" pub="cdn.pubzony.com" server="www.zony.tv"
  type:"Deportes" canal="HBO" channel="hbokenji" pub="cdn.pubzony.com" server="www.zony.tv"
  type:"Deportes" canal="Space" channel="spaceperucho" pub="www.pubucaster.com" server="embeducaster.com" 
 
 
-
+pub="cdn.mipspublisher.com" server="www.mipsplayer.com" 
 
  
 server="www.ezcast.tv" pub="cdn.pubezcast.com" 
