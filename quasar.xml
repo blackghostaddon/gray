@@ -536,7 +536,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
    import xbmcgui
    dialog = xbmcgui.Dialog()
    ret = dialog.select('Elige una Seccion ', ['Peliculas Recientes en Latino', 'Peliculas Recientes en Castellano', 'Recent Top movies', 'Recent TV Shows'])
-   lists = ['https://www.toros2.com/movie/torrents/latino.html?v=&amp;smi=&amp;sma=&amp;i=100&amp;sort=subido&amp;o=desc', 'https://www.toros2.com/movie/torrents/castellano.html?v=&amp;smi=&amp;sma=&amp;i=100&amp;sort=subido&amp;o=desc', 'https://www.torlock.com/movies.html', 'https://www.torlock.com/television.html']
+   lists = ['https://www.toros2.com/movie/torrents/latino.html?v=&smi=&sma=&i=100&sort=subido&o=desc', 'https://www.toros2.com/movie/torrents/castellano.html?v=&amp;smi=&amp;sma=&amp;i=100&amp;sort=subido&amp;o=desc', 'https://www.torlock.com/movies.html', 'https://www.torlock.com/television.html']
    return lists[ret]
 ]]></expres>
 <page></page>
