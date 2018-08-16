@@ -285,6 +285,242 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>[COLOR lightyellow][B]SERIES PAPAYA[/B] [/COLOR]</title>
+<link>$doregex[makelist1]</link>
+
+
+
+
+
+
+<regex>
+<name>makelist1</name>
+<listrepeat><![CDATA[
+
+<title>[makelist1.param3]   </title>
+<link>$doregex[makelist2]</link>
+<thumbnail>http://www.seriespapaya.com/[makelist1.param1]</thumbnail>
+<fanart>http://www.seriespapaya.com/[makelist1.param1]</fanart>
+]]></listrepeat>
+<expres><![CDATA[src="(.*?)"[\w\W\s]{0,60}href="(.*?)".*?\">(.*?)<]]></expres>
+<page>$doregex[select]</page>
+</regex>
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+   import xbmcgui
+   dialog = xbmcgui.Dialog()
+   ret = dialog.select('Elige tu Audio preferido ', ['Series Populares', 'Series Recomendadas', 'Series de Estreno'])
+   lists = ['http://www.seriespapaya.com/lista-series-populares/', 'http://www.seriespapaya.com/lista-series-recomendadas/','http://www.seriespapaya.com/lista-series-estrenos/']
+   return lists[ret]
+]]></expres>
+<page></page>
+</regex>
+
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+
+<title>[makelist1.param3] [makelist2.param2]     </title>
+<link>$doregex[makelist3]</link>
+<thumbnail>http://www.seriespapaya.com/[makelist1.param1]</thumbnail>
+<fanart>http://www.seriespapaya.com/[makelist1.param1]</fanart>
+]]></listrepeat>
+<expres><![CDATA[href="(.*?)".*?nbsp\;(.*?)<]]></expres>
+<page>http://www.seriespapaya.com/[makelist1.param2]</page>
+</regex>
+
+
+
+<regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+
+<title>[makelist1.param3] [makelist2.param2] | Idioma:[B][makelist3.param1][/B]  Calidad:[B][makelist3.param5][/B]  Server:[B][makelist3.param3][/B]        </title>
+<link>$doregex[id3]</link>
+<thumbnail>http://www.seriespapaya.com/[makelist1.param1]</thumbnail>
+<fanart>http://www.seriespapaya.com/[makelist1.param1]</fanart>
+]]></listrepeat>
+<expres><![CDATA[idioma[\w\W\s]{0,17}images\/(.*?)\.p[\w\W\s]{0,30}fecha\"\>\n(.*?)<[\w\W\s]{0,117}(Streama.*?|Gamo.*?|Vidoz.*?|Openlo.*?|Kingv.*?)<[\w\W\s]{0,37}href="(.*?)"[\w\W\s]{0,87}calidad">\n(.*?)<]]></expres>
+<page>http://www.seriespapaya.com/[makelist2.param1]</page>
+</regex>
+
+
+
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver, resolveurl
+    url = '$doregex[link]'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = resolveurl.resolve(url)
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+<regex>
+<name>link</name>
+<expres>location\.href=\'(.*?)\'</expres>
+<page>[makelist3.param4]</page>[makelist3.param2]
+</regex>
+
+
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/series.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart></item>
+
+
+
+
+
+
+
+<item>
+<title>[COLOR lightyellow][B]INKA SERIES[/B] [/COLOR]</title>
+
+<link>$doregex[makelist1]</link>
+
+
+<regex>
+    <name>makelist1</name> movies  (all pages)
+ <listrepeat><![CDATA[
+<title>[makelist1.param2]   </title>
+<link>$doregex[makelist2]</link>
+<fanart>[makelist1.param3]</fanart>
+<thumbnail>[makelist1.param3]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re, requests
+def GetLSProData(page_data,Cookie_Jar,m):
+
+################################################################## FORMULARY #################################################################
+ starturl = 'http://www.inkaseries.com/ultimas-series-agregadas/'     ### usually, ~ 'http://website.com/category/' ###
+ categorylink = '' ### check the number of the param ###
+ centerurl = 'page/'      ### something like  '/page/' ###
+ firstpage = 1 ### probably  = 1 ###
+ endurl = '/' ### can be empty ###    ### endurl without final / (SLASH) ###
+#
+ dataregex = 'poster\"\shref="(.*?)"\stitle="(.*?)".*?src="(.*?)"'      ### To adapt ###
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:50.0) Gecko/20100101 Firefox/50.0', 'Referer': ''}      ### To adapt ###
+##############################################################################################################################################
+
+############################## GENERIC PART #####################################
+ fullurl = starturl + centerurl + str(firstpage) + endurl + categorylink #
+ source = requests.get(fullurl, headers= headers).text #
+ data = [] #
+#
+ last = 8 #
+ while firstpage <= last: #
+    try: #
+        fullurl = starturl + centerurl + str(firstpage) + endurl + categorylink #
+        source = requests.get(fullurl, headers=headers).text #
+        data += re.findall(dataregex, source) #
+        firstpage += 1 #
+    except: #
+        pass #
+ return data #
+]]></expres><page></page>
+</regex>
+
+
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+
+<title>[makelist1.param2] - [makelist2.param3]    </title>
+<link>$doregex[makelist3]</link>
+<fanart>[makelist1.param3]</fanart>
+<thumbnail>[makelist1.param3]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[a\shref="(.*?)"\stitle="(T.*?)">(.*?)-]]></expres>
+<page>[makelist1.param1]</page>
+</regex>
+
+
+
+<regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+<title>[makelist1.param2] - [makelist2.param3]  | [B][makelist3.param4][/B]  [B][makelist3.param5][/B]  Server:[B][makelist3.param1][/B]        </title>
+<link>$doregex[id3]</link>
+<fanart>[makelist1.param3]</fanart>
+<thumbnail>[makelist1.param3]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[domain=(http://gamovideo.*?|https://vidoza.*?|https://kingvid.*?|https://openload.*?|https://streamango.*?|https://streamplay.*?|https://1fichier.*?)"\s.*?title="(.*?)".*?span>(.*?)<.*?<td>(.*?)<.*?<td>(.*?)<]]></expres>
+<page>[makelist2.param1]</page>
+</regex>
+	
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver, resolveurl
+    url = '[makelist3.param1]'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = resolveurl.resolve(url)
+    return u
+]]></expres>
+<page></page>
+</regex>
+	
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/series.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart></item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  <itm>
 <title>[B]Juego de Tronos[/B]  Seccion Especial </title>
 <link>http://ignorame</link>
@@ -568,182 +804,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 
 
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/series.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart></item>
-
-
-
-
-
-<item>
-<title>[B]SERIES PAPAYA[/B] [-] </title>
-<link>$doregex[makelist1]</link>
-
-
-
-
-
-
-<regex>
-<name>makelist1</name>
-<listrepeat><![CDATA[
-
-<title>[makelist1.param3]   </title>
-<link>$doregex[makelist2]</link>
-<thumbnail>http://www.seriespapaya.com/[makelist1.param1]</thumbnail>
-<fanart>http://www.seriespapaya.com/[makelist1.param1]</fanart>
-]]></listrepeat>
-<expres><![CDATA[src="(.*?)"[\w\W\s]{0,60}href="(.*?)".*?\">(.*?)<]]></expres>
-<page>$doregex[select]</page>
-</regex>
-<regex>
-<name>select</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m):
-   import xbmcgui
-   dialog = xbmcgui.Dialog()
-   ret = dialog.select('Elige tu Audio preferido ', ['Series Populares', 'Series Recomendadas', 'Series de Estreno'])
-   lists = ['http://www.seriespapaya.com/lista-series-populares/', 'http://www.seriespapaya.com/lista-series-recomendadas/','http://www.seriespapaya.com/lista-series-estrenos/']
-   return lists[ret]
-]]></expres>
-<page></page>
-</regex>
-
-
-<regex>
-<name>makelist2</name>
-<listrepeat><![CDATA[
-
-<title>[makelist1.param3] [makelist2.param2]     </title>
-<link>$doregex[makelist3]</link>
-<thumbnail>http://www.seriespapaya.com/[makelist1.param1]</thumbnail>
-<fanart>http://www.seriespapaya.com/[makelist1.param1]</fanart>
-]]></listrepeat>
-<expres><![CDATA[href="(.*?)".*?nbsp\;(.*?)<]]></expres>
-<page>http://www.seriespapaya.com/[makelist1.param2]</page>
-</regex>
-
-
-
-<regex>
-<name>makelist3</name>
-<listrepeat><![CDATA[
-
-<title>[makelist1.param3] [makelist2.param2] | Idioma:[B][makelist3.param1][/B]  Calidad:[B][makelist3.param5][/B]  Server:[B][makelist3.param3][/B]        </title>
-<link>$doregex[id3]</link>
-<thumbnail>http://www.seriespapaya.com/[makelist1.param1]</thumbnail>
-<fanart>http://www.seriespapaya.com/[makelist1.param1]</fanart>
-]]></listrepeat>
-<expres><![CDATA[idioma[\w\W\s]{0,17}images\/(.*?)\.p[\w\W\s]{0,30}fecha\"\>\n(.*?)<[\w\W\s]{0,117}(Streama.*?|Gamo.*?|Vidoz.*?|Openlo.*?|Kingv.*?)<[\w\W\s]{0,37}href="(.*?)"[\w\W\s]{0,87}calidad">\n(.*?)<]]></expres>
-<page>http://www.seriespapaya.com/[makelist2.param1]</page>
-</regex>
-
-
-
-
-<regex>
-<name>id3</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m):
-    import urlresolver, resolveurl
-    url = '$doregex[link]'
-    try:
-        u = urlresolver.resolve(url)
-    except:
-        u = resolveurl.resolve(url)
-    return u
-]]></expres>
-<page></page>
-</regex>
-
-<regex>
-<name>link</name>
-<expres>location\.href=\'(.*?)\'</expres>
-<page>[makelist3.param4]</page>[makelist3.param2]
-</regex>
-
-
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/series.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart></item>
-
-
-
-
-
-
-
-<item>
-<title>[B]INKA SERIES [/B] </title>
-
-<link>$doregex[makelist0]</link>
-
-<regex>
-<name>makelist0</name>
-<listrepeat><![CDATA[
-<title>Pagina [makelist0.param1]</title>
-<link>$doregex[makelist1]</link>
-]]></listrepeat>
-<expres>'(.*?)'</expres>
-<page>'1''2''3''4''5''6''7''8''9''10''11''12''13''14''15''16''17''18''19''20''21''22''23''24''25'</page>
-</regex>
-
-
-<regex>
-<name>makelist1</name>
-<listrepeat><![CDATA[
-
-<title>[makelist1.param2]   </title>
-<link>$doregex[makelist2]</link>
-<fanart>[makelist1.param3]</fanart>
-<thumbnail>[makelist1.param3]</thumbnail>
-]]></listrepeat>
-<expres><![CDATA[poster\"\shref="(.*?)"\stitle="(.*?)".*?src="(.*?)"]]></expres>
-<page>http://www.inkaseries.com/ultimas-series-agregadas/page/[makelist0.param1]/</page>
-</regex>
-
-
-
-
-<regex>
-<name>makelist2</name>
-<listrepeat><![CDATA[
-
-<title>[makelist1.param2] - [makelist2.param3]    </title>
-<link>$doregex[makelist3]</link>
-<fanart>[makelist1.param3]</fanart>
-<thumbnail>[makelist1.param3]</thumbnail>
-]]></listrepeat>
-<expres><![CDATA[a\shref="(.*?)"\stitle="(T.*?)">(.*?)-]]></expres>
-<page>[makelist1.param1]</page>
-</regex>
-
-
-
-<regex>
-<name>makelist3</name>
-<listrepeat><![CDATA[
-<title>[makelist1.param2] - [makelist2.param3]  | [B][makelist3.param4][/B]  [B][makelist3.param5][/B]  Server:[B][makelist3.param1][/B]        </title>
-<link>$doregex[id3]</link>
-<fanart>[makelist1.param3]</fanart>
-<thumbnail>[makelist1.param3]</thumbnail>
-]]></listrepeat>
-<expres><![CDATA[domain=(http://gamovideo.*?|https://vidoza.*?|https://kingvid.*?|https://openload.*?|https://streamango.*?|https://streamplay.*?|https://1fichier.*?)"\s.*?title="(.*?)".*?span>(.*?)<.*?<td>(.*?)<.*?<td>(.*?)<]]></expres>
-<page>[makelist2.param1]</page>
-</regex>
-	
-<regex>
-<name>id3</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m):
-    import urlresolver, resolveurl
-    url = '[makelist3.param1]'
-    try:
-        u = urlresolver.resolve(url)
-    except:
-        u = resolveurl.resolve(url)
-    return u
-]]></expres>
-<page></page>
-</regex>
-	
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/series.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart></item>
 
 
