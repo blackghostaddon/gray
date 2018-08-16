@@ -451,8 +451,23 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <item>
-<title>     [B]LimeTorrents[/B]  Estrenos Audio Latino </title>
+<title>     [B]LimeTorrents[/B]  Latino - Castellano - VO </title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
@@ -462,25 +477,20 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>[makelist.param2]</thumbnail>
 ]]></listrepeat>
 <expres>href=\"(http://itorrents.org/torrent/.*?torrent)\?title=(.*?)\"</expres>
-<page>https://www.limetorrents.cc/search/movies/latino/</page>
+<page>$doregex[select]</page>
 </regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
-</item>
 
-
-
-<item>
-<title>     [B]LimeTorrents[/B]  Estrenos Audio Castellano </title>
-<link>$doregex[makelist]</link>
 <regex>
-<name>makelist</name>
-<listrepeat><![CDATA[
-<title>[makelist.param2]</title>
-<link>plugin://plugin.video.quasar/play?uri=[makelist.param1]</link>
-<thumbnail>[makelist.param2]</thumbnail>
-]]></listrepeat>
-<expres>href=\"(http://itorrents.org/torrent/.*?torrent)\?title=(.*?)\"</expres>
-<page>https://www.limetorrents.cc/search/movies/castellano/</page>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+   import xbmcgui
+   dialog = xbmcgui.Dialog()
+   ret = dialog.select('Elige una Calidad ', ['Peliculas  Latino', 'Peliculas en Castellano', 'Top 100 Movies', 'Recent Movies', 'Recent TV Shows'])
+   lists = ['https://www.limetorrents.cc/search/movies/latino/', 'https://www.limetorrents.cc/search/movies/castellano/', 'https://www.limetorrents.cc/cat_top/16/Movies/', 'https://www.limetorrents.io/browse-torrents/Movies/', 'https://www.limetorrents.io/browse-torrents/TV-shows/']
+   return lists[ret]
+]]></expres>
+<page></page>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
 </item>
@@ -488,22 +498,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-
-<item>
-<title>     [B]LimeTorrents[/B]  TOP100 </title>
-<link>$doregex[makelist]</link>
-<regex>
-<name>makelist</name>
-<listrepeat><![CDATA[
-<title>[makelist.param2]</title>
-<link>plugin://plugin.video.quasar/play?uri=[makelist.param1]</link>
-<thumbnail>[makelist.param2]</thumbnail>
-]]></listrepeat>
-<expres>href=\"(http://itorrents.org/torrent/.*?torrent)\?title=(.*?)\"</expres>
-<page>https://www.limetorrents.cc/cat_top/16/Movies/</page>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
-</item>
 
 
 

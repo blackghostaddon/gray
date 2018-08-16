@@ -52,10 +52,35 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
+  <item>
+ <title>[B]Multicanales Televall[/B]   Espn FoxSports TDN TVC  </title>
+<link>$doregex[url]|Referer=http://depo.superligatv.com/unitdn.php&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
+ 
+ <regex>
+<name>url</name>
+<expres><![CDATA[source: "([^"]+)]]></expres>
+<page>http://agenda.superligatv.com/$doregex[select].html</page>
+</regex>
+
+	<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+   import xbmcgui
+   dialog = xbmcgui.Dialog()
+   ret = dialog.select('Elige un Canal ', ['espnla', 'espn2', 'unitdn', 'tdn', 'cdf', 'espn3', 'unidep', 'clarosport', 'foxsport2', 'imagentv', 'tvcdep', 'canal 5'])
+   lists = ['espnla', 'espn2', 'unitdn', 'tdn', 'cdf', 'espn3', 'unidep', 'clarosport', 'foxsport2', 'imagentv', 'tvcdep', 'tele5']
+   return lists[ret]
+]]></expres>
+<page></page>
+</regex>
+ 
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
-<item>
+
+<ite>
 <title>[B]Canales Sudamerica ESPN | FOXSPORTS | DIRECTV SPORTS | F1 [/B]  Baja Resolucion  ***</title>
 <link>$doregex[makelist]</link>
 <regex>
@@ -1175,7 +1200,7 @@ def GetLSProData(page_data,Cookie_Jar,m):#streamwatcher2013
 	 <regex>
         <name>canal</name>
         <expres>net\/embed\/(.*?)"</expres>
-        <page>http://cndf82.blogspot.com/p/who-2.html</page>
+        <page>http://cndf82.blogspot.com/p/who-2.html</page>cndf82.blogspot.com/p/who-2.html
     </regex>
 </item>
 
@@ -1338,31 +1363,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
-
-  <item>
- <title>[B]Multicanales Televall[/B]     </title>
-<link>$doregex[url]|Referer=http://depo.superligatv.com/unitdn.php&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
- 
- <regex>
-<name>url</name>
-<expres><![CDATA[source: "([^"]+)]]></expres>
-<page>http://agenda.superligatv.com/$doregex[select].html</page>
-</regex>
-
-	<regex>
-<name>select</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m):
-   import xbmcgui
-   dialog = xbmcgui.Dialog()
-   ret = dialog.select('Elige un Canal ', ['espnla', 'espn2', 'unitdn', 'tdn', 'cdf', 'espn3', 'unidep', 'clarosport', 'foxsport2', 'imagentv', 'tvcdep', 'canal 5'])
-   lists = ['espnla', 'espn2', 'unitdn', 'tdn', 'cdf', 'espn3', 'unidep', 'clarosport', 'foxsport2', 'imagentv', 'tvcdep', 'tele5']
-   return lists[ret]
-]]></expres>
-<page></page>
-</regex>
- 
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
