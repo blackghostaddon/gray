@@ -236,7 +236,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
-<title>     [B]PasateATorrent[/B]  CARTELERA   Castellano </title>
+<title>     [B]PasateATorrent[/B]  CARTELERA   Castellano *</title>
 <link>$doregex[makelist3]</link>
 
 
@@ -277,7 +277,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>[makelist2.param2]</thumbnail>
 </regex>
 ]]></listrepeat>
-<expres><![CDATA[alt="(.*?)".*?td>\n<td>(.*?)<.*?\n<td>(.*?)<.*?\n.*?href="(.*?torrent)"]]></expres>
+<expres><![CDATA[alt="(.*?)".*?<td>(.*?)<.*?<td>(.*?)<.*?href="(.*?torrent)"]]></expres>
 <page>[makelist2.param1]</page>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
