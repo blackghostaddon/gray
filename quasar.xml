@@ -236,36 +236,52 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
-<title>     [B]PasateATorrent[/B]  CARTELERA   Castellano *</title>
-<link>$doregex[makelist3]</link>
-
-
-<regex>
-<name>makelist3</name>
-<listrepeat><![CDATA[
-<title>Pagina [makelist3.param1]</title>
+<title>     [B]PasateATorrent[/B]  CARTELERA   Castellano </title>
 <link>$doregex[makelist2]</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
-
-]]></listrepeat>
-<expres>'(.*?)'</expres>
-<page>'1''2''3''4''5''6''7''8''9''10''11''12''13''14''15''16''17''18''19''20''21''22''23''24''25'</page>
-</regex>
-
-
 
 <regex>
-<name>makelist2</name>
-<listrepeat><![CDATA[
- 
+    <name>makelist2</name> movies  (all pages)
+ <listrepeat><![CDATA[
  <title>[UPPERCASE][B][makelist2.param3]   [/B][/UPPERCASE]  </title>
 <link>$doregex[makelist]</link>
 <thumbnail>[makelist2.param2]</thumbnail>
-</regex>
 ]]></listrepeat>
-<expres><![CDATA[imagen-post[\w\W\s]{0,8}href="(.*?)".*?src="(.*?)".*?bloque-inferior">(.*?)<]]></expres>
-<page>https://grantorrent.com/page/[makelist3.param1]/</page>
+<expres><![CDATA[#$pyFunction
+import re, requests
+def GetLSProData(page_data,Cookie_Jar,m):
+
+################################################################## FORMULARY #################################################################
+ starturl = 'https://grantorrent.com/'     ### usually, ~ 'http://website.com/category/' ###
+ categorylink = '' ### check the number of the param ###
+ centerurl = '/page/'      ### something like  '/page/' ###
+ firstpage = 1 ### probably  = 1 ###
+ endurl = '/' ### can be empty ###    ### endurl without final / (SLASH) ###
+#
+ dataregex = 'imagen-post[\w\W\s]{0,8}href="(.*?)".*?src="(.*?)".*?bloque-inferior">(.*?)<'      ### To adapt ###
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:50.0) Gecko/20100101 Firefox/50.0', 'Referer': ''}      ### To adapt ###
+##############################################################################################################################################
+
+############################## GENERIC PART #####################################
+ fullurl = starturl + categorylink + centerurl + str(firstpage) + endurl #
+ source = requests.get(fullurl, headers= headers).text #
+ data = [] #
+#
+ last = 6 #
+ while firstpage <= last: #
+    try: #
+        fullurl = starturl + categorylink + centerurl + str(firstpage) + endurl #
+        source = requests.get(fullurl, headers=headers).text #
+        data += re.findall(dataregex, source) #
+        firstpage += 1 #
+    except: #
+        pass #
+ return data #
+##########################################################by#twogun#and#jujuuj###
+]]></expres><page></page>
 </regex>
+
+
+
 
 
 <regex>
@@ -314,8 +330,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 def GetLSProData(page_data,Cookie_Jar,m):
    import xbmcgui
    dialog = xbmcgui.Dialog()
-   ret = dialog.select('Elige una Calidad ', ['Peliculas en DVDRIP', 'Peliculas en HD'])
-   lists = ['http://www.mejortorrent.com/torrents-de-peliculas.html','http://www.mejortorrent.com/torrents-de-peliculas-hd-alta-definicion.html']
+   ret = dialog.select('Elige una Calidad ', ['Peliculas en DVDRIP', 'Peliculas en HD', 'Documentales'])
+   lists = ['http://www.mejortorrent.com/torrents-de-peliculas.html','http://www.mejortorrent.com/torrents-de-peliculas-hd-alta-definicion.html', 'http://www.mejortorrent.org/torrents-de-documentales.html']
    return lists[ret]
 ]]></expres>
 <page></page>
@@ -359,7 +375,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
-<title>     [B]Estrenos[/B] Castellano </title>
+<title>     [B]Estrenos[/B] Castellano *</title>
 <link>$doregex[makelist2]</link>
 
 
@@ -368,12 +384,12 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>makelist2</name>
 <listrepeat><![CDATA[
  
- <title>[UPPERCASE][B] [makelist2.param5][/B][/UPPERCASE]   Calidad:[makelist2.param3]  </title>
+ <title>[UPPERCASE][B] [makelist2.param3][/B][/UPPERCASE]   Calidad:[makelist2.param4]  </title>
 <link>$doregex[makelist]</link>
 <thumbnail>[makelist2.param2]</thumbnail>
 </regex>
 ]]></listrepeat>
-<expres><![CDATA[imagen-post[\w\W\s]{0,8}href="(.*?)".*?src="(.*?)".*?bloque-inferior">(.*?)<]]></expres>
+<expres><![CDATA[imagen-post[\w\W\s]{0,8}href="(.*?)".*?src="(.*?)".*?bloque-inferior">(.*?)< .*?bloque-superior">(.*?)<]]></expres>
 <page>https://grantorrent.com</page>
 </regex>
 
@@ -392,10 +408,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
 
 </item>
-
-
-
-
 
 
 
