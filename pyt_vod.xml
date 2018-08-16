@@ -724,40 +724,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	
 	
 	
-<item>
-<title>[B]ESTRENOS[/B] [CineVall] </title>
-
-<link>$doregex[makelist3]</link>
-
-
-
-
-
- <regex>
-<name>makelist3</name>
-<listrepeat><![CDATA[
-<title>[makelist3.param3]</title>
- <link>$doregex[finalURL]|Referer=http://www.cinevall.website&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36</link>
-<thumbnail>[makelist3.param2]</thumbnail>
- <regex>
-<name>finalURL</name>
-<expres>file: \'(.*?)\'</expres>
-<page>[makelist3.param1]</page>
-<referer>http://www.cinevall.website/release/2018/</referer>
-</regex>
- </item>
-]]></listrepeat>
-<expres>poster[\w\W\s]{0,15}href="(.*?)".*?src="(.*?)".*?lt="(.*?)"</expres>
-<page>http://www.cinevall.website/movies/</page>
-</regex>
-
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
- </item>
-
-
- 
-	
-	
 	
 	
  	
@@ -894,7 +860,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
  
  
-<item>
+<itm>
 <title>[B]ESTRENOS[/B]  [Bajui] </title>
 
 <link>$doregex[makelist2]</link>
@@ -942,10 +908,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 ]]></expres><page></page>
 </regex>
-
-
-
-
 
 
 		
