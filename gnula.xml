@@ -527,7 +527,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  source = requests.get(fullurl, headers= headers).text #
  data = [] #
 #
- last = 5 #
+ last = 2 #
  while firstpage <= last: #
     try: #
         fullurl = starturl + centerurl + str(firstpage) + endurl + categorylink #
@@ -537,7 +537,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
     except: #
         pass #
  return data #
-
 ]]></expres><page></page>
 </regex>
 
