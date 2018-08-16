@@ -512,11 +512,11 @@ import re, requests
 def GetLSProData(page_data,Cookie_Jar,m):
 
 ################################################################## FORMULARY #################################################################
- starturl = 'http://onwatchseries.to/'     ### usually, ~ 'http://website.com/category/' ###
+ starturl = 'https://www1.swatchseries.to/'     ### usually, ~ 'http://website.com/category/' ###
  categorylink = '' ### check the number of the param ###
  centerurl = 'series/'      ### something like  '/page/' ###
  firstpage = 1 ### probably  = 1 ###
- endurl = '/' ### can be empty ###    ### endurl without final / (SLASH) ###
+ endurl = '' ### can be empty ###    ### endurl without final / (SLASH) ###
 #
  dataregex = 'title="Track(.*?)Online[\w\W\s]{0,60}src="(.*?)"[\w\W\s]{0,12}Series(.*?)"[\w\W\s]{0,770}href="(.*?)"'      ### To adapt ###
  headers = {'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:50.0) Gecko/20100101 Firefox/50.0', 'Referer': ''}      ### To adapt ###
