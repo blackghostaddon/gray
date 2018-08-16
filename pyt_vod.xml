@@ -720,38 +720,18 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	
 	
 	
-	   <item>
-<title>[B]ESTRENOS[/B] [CineVall] website</title>
-
-  <link>$doregex[makelist3]</link>
-
- <regex>
-<name>makelist3</name>
-<listrepeat><![CDATA[
-<title>[makelist3.param3]</title>
- <link>$doregex[finalURL]|Referer=http://www.cinevall.website&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36</link>
-<thumbnail>[makelist3.param2]</thumbnail>
- </item>
-]]></listrepeat>
-<expres>poster[\w\W\s]{0,15}href="(.*?)".*?src="(.*?)".*?lt="(.*?)"</expres>
-<page>http://www.cinevall.website/release/2018/</page>
-</regex>
-
- <regex>
-<name>finalURL</name>
-<expres>file: \'(.*?)\'</expres>
-<page>[makelist3.param1]</page>
-<referer>http://www.cinevall.website/release/2018/</referer>
-</regex>
-
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
- </item>
 
 	
-	   <item>
-<title>[B]ESTRENOS[/B] [CineVall] website</title>
+	
+	
+<item>
+<title>[B]ESTRENOS[/B] [CineVall] </title>
 
-  <link>$doregex[makelist3]</link>
+<link>$doregex[makelist3]</link>
+
+
+
+
 
  <regex>
 <name>makelist3</name>
@@ -768,48 +748,82 @@ def GetLSProData(page_data,Cookie_Jar,m):
  </item>
 ]]></listrepeat>
 <expres>poster[\w\W\s]{0,15}href="(.*?)".*?src="(.*?)".*?lt="(.*?)"</expres>
-<page>http://www.cinevall.website/release/2018/</page>
+<page>http://www.cinevall.website/movies/</page>
 </regex>
-
-
 
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
  </item>
 
 
-	
-	
-	
-	
-	
  
- 
-   <itm>
-<title>[B]ESTRENOS[/B] [CineVall] Audio Latino  ***</title>
+	
+	
+	
+	
+ 	
+<item>
+<title>[B]ESTRENOS[/B] [CineVall] </title>
 
-  <link>$doregex[makelist3]</link>
+<link>$doregex[makelist3]</link>
 
 
-   <regex>
-<name>makelist3</name>
-<listrepeat><![CDATA[
-<title>[makelist3.param2]</title>
+
+<regex>
+    <name>makelist3</name> movies  (all pages)
+ <listrepeat><![CDATA[
+<title>[makelist3.param3]</title>
  <link>$doregex[finalURL]|Referer=http://www.cinevall.website&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36</link>
+<thumbnail>[makelist3.param2]</thumbnail>
  <regex>
 <name>finalURL</name>
 <expres>file: \'(.*?)\'</expres>
-<page>http://www.cinevall-online.com/[makelist3.param1].html</page>
-<referer>http://www.cinevall-online.com/tuyamia.html</referer>
+<page>[makelist3.param1]</page>
+<referer>http://www.cinevall.website/release/2018/</referer>
 </regex>
-<thumbnail>http://www.cinevall-online.com/[makelist3.param3]</thumbnail>
  </item>
 ]]></listrepeat>
-<expres>href="(.*?).html.*?text:\s\'(.*?)\&.*?src="(.*?)"</expres>
-<page>http://www.cinevall-online.com/estrenos.html</page>
+<expres><![CDATA[#$pyFunction
+import re, requests
+def GetLSProData(page_data,Cookie_Jar,m):
+
+################################################################## FORMULARY #################################################################
+ starturl = 'http://www.cinevall.website/movies/'     ### usually, ~ 'http://website.com/category/' ###
+ categorylink = '' ### check the number of the param ###
+ centerurl = 'page/'      ### something like  '/page/' ###
+ firstpage = 1 ### probably  = 1 ###
+ endurl = '/' ### can be empty ###    ### endurl without final / (SLASH) ###
+#
+ dataregex = 'poster[\w\W\s]{0,15}href="(.*?)".*?src="(.*?)".*?lt="(.*?)"'      ### To adapt ###
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:50.0) Gecko/20100101 Firefox/50.0', 'Referer': ''}      ### To adapt ###
+##############################################################################################################################################
+
+############################## GENERIC PART #####################################
+ fullurl = starturl + centerurl + str(firstpage) + endurl + categorylink #
+ source = requests.get(fullurl, headers= headers).text #
+ data = [] #
+#
+ last = 3 #
+ while firstpage <= last: #
+    try: #
+        fullurl = starturl + centerurl + str(firstpage) + endurl + categorylink #
+        source = requests.get(fullurl, headers=headers).text #
+        data += re.findall(dataregex, source) #
+        firstpage += 1 #
+    except: #
+        pass #
+ return data #
+
+]]></expres><page></page>
 </regex>
+
+
+ 
+
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
  </item>
 
+ 
+   
 	
 	
 	
