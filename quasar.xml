@@ -375,7 +375,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
-<title>     [B]Estrenos[/B] Castellano *</title>
+<title>     [B]Estrenos[/B] Castellano </title>
 <link>$doregex[makelist2]</link>
 
 
@@ -389,7 +389,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>[makelist2.param2]</thumbnail>
 </regex>
 ]]></listrepeat>
-<expres><![CDATA[imagen-post[\w\W\s]{0,8}href="(.*?)".*?src="(.*?)".*?bloque-inferior">(.*?)< .*?bloque-superior">(.*?)<]]></expres>
+<expres><![CDATA[imagen-post[\w\W\s]{0,8}href="(.*?)".*?src="(.*?)".*?bloque-inferior">(.*?)<.*?bloque-superior">(.*?)<]]></expres>
 <page>https://grantorrent.com</page>
 </regex>
 
