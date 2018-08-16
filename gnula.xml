@@ -492,6 +492,87 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
+<item>
+<title>[COLOR lightyellow][B]ONWatchSeries[/B] [/COLOR] VO </title>
+
+      <link>$doregex[makelist3]</link>
+
+
+
+<regex>
+    <name>makelist3</name> movies  (all pages)
+ <listrepeat><![CDATA[
+<title>[makelist3.param1] </title>
+<link>$doregex[makelist2]</link>
+<thumbnail>[makelist3.param2]</thumbnail>
+<fanart>[makelist3.param2]</fanart>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re, requests
+def GetLSProData(page_data,Cookie_Jar,m):
+
+################################################################## FORMULARY #################################################################
+ starturl = 'http://onwatchseries.to/'     ### usually, ~ 'http://website.com/category/' ###
+ categorylink = '' ### check the number of the param ###
+ centerurl = 'series/'      ### something like  '/page/' ###
+ firstpage = 1 ### probably  = 1 ###
+ endurl = '/' ### can be empty ###    ### endurl without final / (SLASH) ###
+#
+ dataregex = 'title="Track(.*?)Online[\w\W\s]{0,60}src="(.*?)"[\w\W\s]{0,12}Series(.*?)"[\w\W\s]{0,770}href="(.*?)"'      ### To adapt ###
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:50.0) Gecko/20100101 Firefox/50.0', 'Referer': ''}      ### To adapt ###
+##############################################################################################################################################
+
+############################## GENERIC PART #####################################
+ fullurl = starturl + centerurl + str(firstpage) + endurl + categorylink #
+ source = requests.get(fullurl, headers= headers).text #
+ data = [] #
+#
+ last = 5 #
+ while firstpage <= last: #
+    try: #
+        fullurl = starturl + centerurl + str(firstpage) + endurl + categorylink #
+        source = requests.get(fullurl, headers=headers).text #
+        data += re.findall(dataregex, source) #
+        firstpage += 1 #
+    except: #
+        pass #
+ return data #
+
+]]></expres><page></page>
+</regex>
+
+
+
+  <regex>
+	<name>makelist2</name>
+	<listrepeat><![CDATA[
+	   <title>[B][makelist2.param1] [/B][makelist2.param3]-[makelist2.param4]</title>
+	   <link>$doregex[makelist]</link>
+	       <thumbnail>[makelist3.param2]</thumbnail>
+	  	]]></listrepeat>
+	<expres><![CDATA[itemprop="name">(Season.*?)<|href="(.*?)"[\w\W\s]{0,70}itemprop="name.*>(.*?)\&[\w\W\s]{0,12}nbsp;(.*?)<]]></expres>
+	<page>[makelist3.param4]</page>
+ </regex>
+
+
+
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+  <title>[makelist3.param1] [makelist2.param3] // server: [makelist.param1] </title>
+  <urlsolve>[makelist.param2]</urlsolve>
+      <thumbnail>[makelist3.param2]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[download_link_(.*?)\.[\w\W\s]{0,1090}Delete link (http.*?)']]></expres>
+<page>[makelist2.param2]</page>
+</regex>
+
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/series.png</thumbnail>
+</item>
+
+
+
 
 
 
@@ -1409,7 +1490,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<item>
+<itm>
 <title>[B]SeriesDanko[/B]  Ultimas Actualizaciones OFF </title>
 <link>$doregex[makelist4]</link>
 
@@ -1739,70 +1820,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-
-
-
-<item>
-<title>[B]ONWatchSeries[/B]  VO </title>
-
-      <link>$doregex[makelist4]</link>
-
-	<regex>
-   <name>makelist4</name>
-   <listrepeat><![CDATA[
-       <title>Pagina [makelist4.param1]</title>
-       <link>$doregex[makelist3]</link>
-<thumbnail></thumbnail>
-   ]]></listrepeat>
-   <expres><![CDATA[paginado:"(.*?)";]]></expres>
-   <page>https://raw.githubusercontent.com/blackghostaddon/gray/master/kozm.txt</page>
-   <cookieJar></cookieJar>
-</regex>
-
-
-  <regex>
-	<name>makelist3</name>
-	<listrepeat><![CDATA[
-	   <title>[makelist3.param1] </title>
-	   <link>$doregex[makelist2]</link>
-	       <thumbnail>[makelist3.param2]</thumbnail>
-		   <fanart>[makelist3.param2]</fanart>
-	  	]]></listrepeat>
-	<expres><![CDATA[title="Track(.*?)Online[\w\W\s]{0,60}src="(.*?)"[\w\W\s]{0,12}Series(.*?)"[\w\W\s]{0,770}href="(.*?)"]]></expres>
-	<page>http://onwatchseries.to/series/[makelist4.param1]</page>
- </regex>
-
-
-
-
-
-  <regex>
-	<name>makelist2</name>
-	<listrepeat><![CDATA[
-	   <title>[B][makelist2.param1] [/B][makelist2.param3]-[makelist2.param4]</title>
-	   <link>$doregex[makelist]</link>
-	       <thumbnail>[makelist3.param2]</thumbnail>
-	  	]]></listrepeat>
-	<expres><![CDATA[itemprop="name">(Season.*?)<|href="(.*?)"[\w\W\s]{0,70}itemprop="name.*>(.*?)\&[\w\W\s]{0,12}nbsp;(.*?)<]]></expres>
-	<page>[makelist3.param4]</page>
- </regex>
-
-
-
-
-<regex>
-<name>makelist</name>
-<listrepeat><![CDATA[
-  <title>[makelist3.param1] [makelist2.param3] // server: [makelist.param1] </title>
-  <urlsolve>[makelist.param2]</urlsolve>
-      <thumbnail>[makelist3.param2]</thumbnail>
-]]></listrepeat>
-<expres><![CDATA[download_link_(.*?)\.[\w\W\s]{0,1090}Delete link (http.*?)']]></expres>
-<page>[makelist2.param2]</page>
-</regex>
-
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/series.png</thumbnail>
-</item>
 
 
 
