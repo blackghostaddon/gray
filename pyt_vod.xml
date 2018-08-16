@@ -133,7 +133,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
-<title>[B][  ][/B]  [B]BUSCAR PELICULA[/B]   </title>
+<title>[B][  ][/B]  [B]BUSCAR PELICULA [D][/B]   </title>
 
 <link>$doregex[lista]</link>
  
@@ -245,7 +245,93 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-
+<item>
+<title>[B][  ][/B]  [B]BUSCAR PELICULA [K][/B]   </title>
+<link>$doregex[lista]</link>
+ 
+<regex>
+<name>lista</name>
+  <listrepeat><![CDATA[
+         <SetViewMode>55</SetViewMode>
+         <title>$pyFunction:'[lista.param3]'.replace(".mp4", "  ").replace(".avi", "  ").replace(".mkv", "")</title>
+        <link>$doregex[getUrl]</link>
+        <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail>
+        ]]></listrepeat>
+<expres><![CDATA[href=\"(.*?,(.*?)\..*?)\".*?preview">(.*?mkv|.*?mp4|.*?avi)<]]><expres>
+<page>http://k-bagi.com/action/SearchFiles?Phrase=MagyckPi&amp;Mode=List&amp;Type=Video&amp;SizeFromMB=0&amp;SizeToMB=0&amp;pageNumber=10</page>
+<rawpost>Phrase=$doregex[search]&__RequestVerificationToken=$doregex[tok]</rawpost>
+<referer>http://k-bagi.com/action/SearchFiles</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar>d248aa4e1e697a53b195098a52759e8d21507325199</cookieJar>
+</regex>
+ 
+ 
+ 
+<regex>
+<name>search</name>
+<expres><![CDATA[#$pyFunction
+import xbmc
+import xbmcaddon
+import xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+    dialog = xbmcgui.Dialog()
+    d = dialog.input('Busca tu pelicula o serie favorita:', type=xbmcgui.INPUT_ALPHANUM).replace(" ", "+")
+    return d
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+ 
+ 
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://k-bagi.com/[lista.param1]</page>
+<referer>http://k-bagi.com/</referer>
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+ 
+ 
+ 
+<regex><name>getUrl</name>
+<expres><![CDATA[#$pyFunction
+import re , requests ,json
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+ ref = 'http://k-bagi.com/'
+ url='http://k-bagi.com[lista.param1]'
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux i686; rv:42.0) Gecko/20100101 Firefox/42.0 Iceweasel/42.0', 'Referer': ref ,
+            'X-Requested-With' : 'XMLHttpRequest' , 'Accept' : '*/*'}
+ session = requests.Session()
+ r = session.get(url, headers=headers)
+ rv1 = r.cookies
+ 
+ vfile , vtoken = re.findall('action/DownloadFile.*?fileId.*?value="(.*?)".*?Token".*?value="(.*?)"', r.text)[0]
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr = requests.post('http://k-bagi.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers,cookies=rv1 , data=data_a).text
+ nrj=json.loads(nr)
+ nr = nrj['Content']
+ r2 = re.findall(r'(?s)value=\"(.*?)\"', nr)[0]
+ data_a ={'__RequestVerificationToken': r2 , 'Username': 'maladelanovela' , 'Password' : 'tacones'}
+ nr1 = requests.post('http://k-bagi.com/action/Account/Login', headers=headers,cookies = rv1 , data=data_a)
+ print nr1.headers['Set-Cookie']
+ rasp = re.findall('ASPXAUTH_v2=(.*?);', nr1.headers['Set-Cookie'])[0]
+ rv1['.ASPXAUTH_v2'] = rasp
+ data_a ={'fileId': vfile , '__RequestVerificationToken': vtoken}
+ nr3 = requests.post('http://k-bagi.com/action/DownloadFile?location=fi&f=%s'%vfile , headers=headers, cookies = rv1 , data=data_a).text
+ r3 = re.findall('DownloadUrl":"(.*?)"', nr3)[0]
+ print r3
+ return r3
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+ 
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail>
+</item>
 
 
 
@@ -585,7 +671,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>id3</name>
 <expres><![CDATA[#$pyFunction
 def GetLSProData(page_data,Cookie_Jar,m):
-   import urlresolver
+   import urlresolver, resolveurl
    url = '[makelist.param2]'
    try:
      u = urlresolver.resolve(url)
@@ -712,7 +798,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>id3</name>
 <expres><![CDATA[#$pyFunction
 def GetLSProData(page_data,Cookie_Jar,m):
-    import urlresolver
+    import urlresolver, resolveurl
     url = '[makelist.param1]'
     try:
         u = urlresolver.resolve(url)
@@ -816,7 +902,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>id3</name>
 <expres><![CDATA[#$pyFunction
 def GetLSProData(page_data,Cookie_Jar,m):
-    import urlresolver
+    import urlresolver, resolveurl
     url = '[makelist3.param1]'
     try:
         u = urlresolver.resolve(url)
@@ -1050,7 +1136,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>id3</name>
 <expres><![CDATA[#$pyFunction
 def GetLSProData(page_data,Cookie_Jar,m):
-    import urlresolver
+    import urlresolver, resolveurl
     url = '$doregex[uno]'
     try:
         u = urlresolver.resolve(url)
@@ -1187,7 +1273,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>id3</name>
 <expres><![CDATA[#$pyFunction
 def GetLSProData(page_data,Cookie_Jar,m):
-    import urlresolver
+    import urlresolver, resolveurl
     url = '[makelist3.param1]'
     try:
         u = urlresolver.resolve(url)
@@ -1257,7 +1343,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>id3</name>
 <expres><![CDATA[#$pyFunction
 def GetLSProData(page_data,Cookie_Jar,m):
-    import urlresolver
+    import urlresolver, resolveurl
     url = '[makelist3.param1]'
     try:
         u = urlresolver.resolve(url)
@@ -1318,7 +1404,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>id3</name>
 <expres><![CDATA[#$pyFunction
 def GetLSProData(page_data,Cookie_Jar,m):
-    import urlresolver
+    import urlresolver, resolveurl
     url = '[makelist.param1]'
     try:
         u = urlresolver.resolve(url)
@@ -1406,7 +1492,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  <name>id3</name>
  <expres><![CDATA[#$pyFunction
  def GetLSProData(page_data,Cookie_Jar,m):
-     import urlresolver
+     import urlresolver, resolveurl
 	 import resolveurl
      url = '[makelist3.param1]'
      try:
@@ -1500,7 +1586,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>id3</name>
 <expres><![CDATA[#$pyFunction
 def GetLSProData(page_data,Cookie_Jar,m):
-    import urlresolver
+    import urlresolver, resolveurl
     url = '[makelist2.param1]'
     try:
         u = urlresolver.resolve(url)
@@ -1571,7 +1657,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>id3</name>
 <expres><![CDATA[#$pyFunction
 def GetLSProData(page_data,Cookie_Jar,m):
-    import urlresolver
+    import urlresolver, resolveurl
     url = '[makelist2.param1]'
     try:
         u = urlresolver.resolve(url)
@@ -1627,7 +1713,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>id3</name>
 <expres><![CDATA[#$pyFunction
 def GetLSProData(page_data,Cookie_Jar,m):
-    import urlresolver
+    import urlresolver, resolveurl
     url = '[makelist.param1]'
     try:
         u = urlresolver.resolve(url)
@@ -1835,7 +1921,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>id3</name>
 <expres><![CDATA[#$pyFunction
 def GetLSProData(page_data,Cookie_Jar,m):
-    import urlresolver
+    import urlresolver, resolveurl
     url = '[makelist.param1]'
     try:
         u = urlresolver.resolve(url)
@@ -1908,7 +1994,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>id3</name>
 <expres><![CDATA[#$pyFunction
 def GetLSProData(page_data,Cookie_Jar,m):
-    import urlresolver
+    import urlresolver, resolveurl
     url = '[makelist.param1]'
     try:
         u = urlresolver.resolve(url)
@@ -2023,7 +2109,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>id3</name>
 <expres><![CDATA[#$pyFunction
 def GetLSProData(page_data,Cookie_Jar,m):
-    import urlresolver
+    import urlresolver, resolveurl
     url = '[makelist3.param1]'
     try:
         u = urlresolver.resolve(url)
@@ -2081,7 +2167,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>id3</name>
 <expres><![CDATA[#$pyFunction
 def GetLSProData(page_data,Cookie_Jar,m):
-    import urlresolver
+    import urlresolver, resolveurl
     url = '[makelist3.param1]'
     try:
         u = urlresolver.resolve(url)
@@ -2141,7 +2227,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>id3</name>
 <expres><![CDATA[#$pyFunction
 def GetLSProData(page_data,Cookie_Jar,m):
-    import urlresolver
+    import urlresolver, resolveurl
     url = '[makelist3.param1]'
     try:
         u = urlresolver.resolve(url)
@@ -2200,7 +2286,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>id3</name>
 <expres><![CDATA[#$pyFunction
 def GetLSProData(page_data,Cookie_Jar,m):
-    import urlresolver
+    import urlresolver, resolveurl
     url = '$doregex[link]'
     try:
         u = urlresolver.resolve(url)
@@ -2314,7 +2400,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>id3</name>
 <expres><![CDATA[#$pyFunction
 def GetLSProData(page_data,Cookie_Jar,m):
-    import urlresolver
+    import urlresolver, resolveurl
     url = '$doregex[link]'
     try:
         u = urlresolver.resolve(url)
@@ -2409,7 +2495,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>id3</name>
 <expres><![CDATA[#$pyFunction
 def GetLSProData(page_data,Cookie_Jar,m):
-    import urlresolver
+    import urlresolver, resolveurl
     url = '[makelist3.param1]'
     try:
         u = urlresolver.resolve(url)
@@ -2662,7 +2748,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>id3</name>
 <expres><![CDATA[#$pyFunction
 def GetLSProData(page_data,Cookie_Jar,m):
-    import urlresolver
+    import urlresolver, resolveurl
     url = 'https://openload.co/f/[makelist.param1]'
     try:
         u = urlresolver.resolve(url)
