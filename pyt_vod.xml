@@ -724,10 +724,12 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	
 
 
+	
+	
  
  
    <item>
-<title>[B]ESTRENOS[/B] [CineVall] Audio Latino  </title>
+<title>[B]ESTRENOS[/B] [CineVall] Audio Latino  *</title>
 
   <link>$doregex[makelist3]</link>
 
@@ -736,7 +738,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>makelist3</name>
 <listrepeat><![CDATA[
 <title>[makelist3.param2]</title>
- <link>$doregex[finalURL]|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36&amp;Referer=http://www.cinevall-online.com/tuyamia.html</link>
+ <link>$doregex[finalURL]|Referer=http://www.cinevall-online.com&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36</link>
  <regex>
 <name>finalURL</name>
 <expres>file: \'(.*?)\'</expres>
@@ -757,7 +759,34 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	
 	
 	
-	
+ 
+ 
+   <item>
+<title>[B]ESTRENOS[/B] [CineVall] Audio Latino  ***</title>
+
+  <link>$doregex[makelist3]</link>
+
+
+   <regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+<title>[makelist3.param2]</title>
+ <link>$doregex[finalURL]|Referer=http://www.cinevall.website&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36</link>
+ <regex>
+<name>finalURL</name>
+<expres>file: \'(.*?)\'</expres>
+<page>http://www.cinevall-online.com/[makelist3.param1].html</page>
+<referer>http://www.cinevall-online.com/tuyamia.html</referer>
+</regex>
+<thumbnail>http://www.cinevall-online.com/[makelist3.param3]</thumbnail>
+ </item>
+]]></listrepeat>
+<expres>href="(.*?).html.*?text:\s\'(.*?)\&.*?src="(.*?)"</expres>
+<page>http://www.cinevall-online.com/estrenos.html</page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
+ </item>
+
 	
 	
 	
