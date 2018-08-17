@@ -47,7 +47,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-
+[COLOR lightgreen][makelist.param1] [/COLOR]  [COLOR deepskyblue][makelist.param2] [/COLOR][COLOR lightslategray][makelist.param3] [/COLOR] [COLOR skyblue][B][makelist.param5] [/B] [/COLOR][COLOR lightyellow] [makelist.param6] [/COLOR]  [COLOR lightblue][[makelist.param4]] [/COLOR]
 
 
 
@@ -64,8 +64,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>makelist</name>
 <listrepeat><![CDATA[
 
-<title>[COLOR lightgreen][makelist.param1] [/COLOR]  [COLOR deepskyblue][makelist.param2] [/COLOR][COLOR lightslategray][makelist.param3] [/COLOR] [COLOR skyblue][B][makelist.param5] [/B] [/COLOR][COLOR lightyellow] [makelist.param6] [/COLOR]  [COLOR lightblue][[makelist.param4]] [/COLOR]</title>
-<link>plugin://program.plexus/?url=$doregex[hash]&amp;mode=1&amp;name=Adryanlist+[makelist.param5]+Arenavision</link>
+<title>$pyFunction:'[COLOR lightgreen][makelist.param1] [/COLOR]  [COLOR deepskyblue][makelist.param2] [/COLOR][COLOR lightslategray][makelist.param3] [/COLOR] [COLOR skyblue][B][makelist.param5] [/B] [/COLOR][COLOR lightyellow] [makelist.param6] [/COLOR]  [COLOR lightblue][[makelist.param4]] [/COLOR]'.replace('>','Canal ')</title>
+<link>plugin://program.plexus/?url=$doregex[hash]&amp;mode=1&amp;name=BlackGhost+[makelist.param5]+Arenavision</link>
 			<regex>
 			<name>hash</name>
 			<expres>this.loadPlayer\("(.*?)"</expres>
@@ -139,8 +139,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 def GetLSProData(page_data,Cookie_Jar,m):
    import xbmcgui
    dialog = xbmcgui.Dialog()
-   ret = dialog.select('Elige un Liga ', ['LA LIGA', 'LA LIGA 2', 'PREMIER LEAGUE', 'UEFA CHAMPIONS LEAGUE', 'COPA DE ESPAÑA', 'BUNDESLIGA', 'FRANCE LIGUE 1', 'PORTUGAL A LIGA', 'EFL CUP', 'COPA LIBERTADORES', 'COPA SUDAMERICANA', 'USA MLS', 'COLOMBIA PRIMERA', 'MEXICO LIGA MX', 'MEXICO COPA MX', 'CHILE LEAGUE', 'ARGENTINA SUPERLIGA'])
-   lists = ['SPANISH LA LIGA', 'SPANISH LA LIGA 2', 'PREMIER LEAGUE', 'UEFA CHAMPIONS LEAGUE', 'SPANISH CUP', 'BUNDESLIGA', 'FRANCE LIGUE 1', 'PORTUGAL A LIGA', 'EFL CUP', 'COPA LIBERTADORES', 'COPA SUDAMERICANA', 'USA MLS', 'COLOMBIA PRIMERA', 'MEXICO LIGA MX', 'MEXICO COPA MX', 'CHILE LEAGUE', 'ARGENTINA SUPERLIGA']
+   ret = dialog.select('Elige un Liga ', ['LA LIGA', 'LA LIGA 2', 'PREMIER LEAGUE', 'UEFA CHAMPIONS LEAGUE', 'COPA DE ESPAÑA', 'BUNDESLIGA', 'FRANCE LEAGUE 1', 'SERIE A ITALIA', 'PORTUGAL A LIGA', 'EFL CUP', 'COPA LIBERTADORES', 'COPA SUDAMERICANA', 'USA MLS', 'COLOMBIA PRIMERA', 'MEXICO LIGA MX', 'MEXICO COPA MX', 'CHILE LEAGUE', 'ARGENTINA SUPERLIGA'])
+   lists = ['SPANISH LEAGUE', 'SPANISH LEAGUE 2', 'PREMIER LEAGUE', 'UEFA CHAMPIONS LEAGUE', 'SPANISH CUP', 'BUNDESLIGA', 'FRANCE LEAGUE 1', 'ITALY SERIE A', 'PORTUGAL A LIGA', 'EFL CUP', 'COPA LIBERTADORES', 'COPA SUDAMERICANA', 'USA MLS', 'COLOMBIA PRIMERA', 'MEXICO LIGA MX', 'MEXICO COPA MX', 'CHILE LEAGUE', 'ARGENTINA SUPERLIGA']
    return lists[ret]
 ]]></expres>
 <page></page>
@@ -153,11 +153,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-
-
-
-
-
+ 
 
 
 
@@ -175,7 +171,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>makelist3</name>
 <listrepeat><![CDATA[
 
-<title>[COLOR white][B][makelist3.param1] [/B] [COLOR white][[makelist3.param2]]  [/COLOR][/COLOR]</title>
+<title>[COLOR white][B][makelist3.param1] [/B] [COLOR white][[makelist3.param2]] [/COLOR][/COLOR]</title>
 <link>$doregex[makelist2]</link>
 ]]></listrepeat>
 <expres>categoria":"(.*?)","items":"(.*?)"</expres>
@@ -185,8 +181,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>makelist2</name>
 <listrepeat><![CDATA[
-<SetwatchMode>55</SetwatchMode>
-<title>[COLOR lightslategray][makelist2.param2] [COLOR white][makelist2.param3] [COLOR white] [B][makelist2.param5][/B] [/COLOR][/COLOR][/COLOR]</title>
+<title>$pyFunction:'[COLOR lightslategray][makelist2.param2] [COLOR white][makelist2.param3] [COLOR white] [B][makelist2.param5][/B] [/COLOR][/COLOR][/COLOR]'.replace('\/','-')</title>
 <link>$doregex[makelist]</link>
 ]]></listrepeat>
 <expres>"id":"(.*?)","fecha":"(.*?)","hora":"(.*?)","categoria":"(.*?)","titulo":"(.*?)"</expres>
@@ -201,7 +196,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<SetwatchMode>55</SetwatchMode>
+
 <title> [COLOR white] [B][makelist2.param5][/B] [/COLOR] [I] Canal  [makelist.param1]  idioma:[makelist.param3] [/I]</title>
 <link>plugin://program.plexus/?url=[makelist.param2]&amp;mode=1&amp;name=BlackAddon</link>
 </item>
@@ -227,114 +222,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
 
 
-
-
-
-
  
-<item>
-<title>  [B]Ultimos canales Agregados[/B]</title>
-<link>$doregex[makelist]</link>
-
-
-<regex>
-<name>makelist</name>
-<listrepeat><![CDATA[
-<title>[B][makelist.param1][/B]   -agregado: [makelist.param3] </title> 
-<link>plugin://program.plexus/?url=[makelist.param2]&amp;mode=1</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/acestreams.png</thumbnail>
-]]></listrepeat>
-<expres>title="(.*?)"[\w\W\s]{0,160}content wrap">(.*?)<[\w\W\s]{0,510}datetime="(.*?)"</expres>
-<page>https://acestreamid.com</page>
-<agent>Mozilla</agent>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/acestreams.png</thumbnail>
-</item>
-
-
-
-				
-				
-
-
-			<iem>
-<title>Canales Deportivos España & Mexico </title>
-			<link>$doregex[makelist]</link>
-<regex>
-<name>makelist</name>
-<listrepeat><![CDATA[
-			<title>[COLOR white][I][makelist.param2] [/I][/COLOR][COLOR lightslategray]                            [/COLOR]</title>
-
-			<link>plugin://program.plexus/?url=$doregex[hash]&amp;mode=1&amp;name=BlackAddon+[makelist.param2]</link>
-
-			<regex>
-			<name>hash</name>
-			<expres>\/embed\/(.*?)"</expres>
-			<page>http://freelive365.com/[makelist.param1]</page>
-			<referer>http://freelive365.com/</referer>
-			</regex>
-			<regex>
-			<name>code</name>
-			<expres>$pyFunction:('[makelist.param1]').replace(' ','%20')</expres>
-			<page></page>
-			</regex>
-
-
-			<thumbnail>http://freelive365.com/[makelist.param3]</thumbnail>
-]]></listrepeat>
-<expres>href='(.*?)\&[\w\W\s]{0,95}70%>(.*?)<[\w\W\s]{0,25}src="(.*?)"</expres>
-<page>http://freelive365.com/live_info.php?id=6</page>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/acestreams.png</thumbnail>
-</item>
-
-
-
-
-
-		<iem>
-<title>Acestream Television por Paises</title>
-<link>$doregex[makelist2]</link>
-
-
-<regex>
-<name>makelist2</name>
-<listrepeat><![CDATA[
-			<title>[COLOR  skyblue] [makelist2.param2][/COLOR]</title>
-<link>$doregex[makelist]</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/acestreams.png</thumbnail>
-]]></listrepeat>
-<expres>acestream:"(.*?)" pais:"(.*?)";</expres>
-<page>https://raw.githubusercontent.com/blackghostaddon/gray/master/kozm.txt</page>
-</regex>
-
-
-<regex>
-<name>makelist</name>
-<listrepeat><![CDATA[
-			<title>[COLOR white] [makelist.param2][/COLOR]</title>
-
-			<link>plugin://program.plexus/?url=$doregex[hash]&amp;mode=1&amp;name=BlackAddon( [makelist.param2] )</link>
-
-			<regex>
-			<name>hash</name>
-			<expres>torrentstream.org\/embed\/(.*?)"</expres
-			<page>$doregex[URL]</page>
-			</regex>
-			<regex>
-			<name>URL</name>
-			<expres>allowfullscreen src="(.*?)"</expres>
-			<page>http://freelive365.com/[makelist.param1]</page>
-			</regex>
-
-			<thumbnail>http://freelive365.com/[makelist.param3]</thumbnail>
-]]></listrepeat>
-<expres>href='(.*?)'[\w\W\s]{0,65}70%>(.*?)<[\w\W\s]{0,25}src="(.*?)"</expres>
-<page>http://freelive365.com/[makelist2.param1]</page>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/acestreams.png</thumbnail>
-</item>
-
 
 
 
@@ -419,61 +307,12 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-
-
-
-<iem>
-<title>[COLOR white][B] Agenda Arenavision  [COLOR white] Server [COLOR white][in][/COLOR] [Horarios] [/COLOR][/B][/COLOR]</title>
-<link>$doregex[makelist]</link>
-<regex>
-<name>makelist</name>
-<listrepeat><![CDATA[
-<item><title> [COLOR lightgreen][makelist.param1]  [/COLOR]  [COLOR white][makelist.param2] [/COLOR]  [COLOR lightslategray][makelist.param3] [/COLOR]  [COLOR lightblue][makelist.param4] [/COLOR] [COLOR white][B][makelist.param5] [/B] [/COLOR]   [COLOR lightslategray]Canal [makelist.param6]  - [makelist.param7] [/COLOR]  </title>
-<link>plugin://program.plexus/?url=$doregex[hash]&amp;mode=1&amp;name=BlackAddon+[makelist.param5]+Arenavision</link>
-			<regex>
-			<name>hash</name>
-			<expres>this.loadPlayer\("(.*?)"</expres>
-			<page>http://www.arenavision.in/[makelist.param6]</page>
-			<referer>http://www.arenavision.in</referer>
-			<setcookie>beget=begetok</setcookie>
-			</regex>
-			<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/acestreams.png</thumbnail>
-</item>
-]]></listrepeat>
-<expres><![CDATA[230px">(.*?)<[\w\W\s]{0,50}px">(.*?)<[\w\W\s]{0,50}px">(.*?)<[\w\W\s]{0,50}px">(.*?)<[\w\W\s]{0,50}px">(.*?)<[\w\W\s]{0,50}px">([0-9]+).* (\[.*?\])<]]></expres>
-<page>http://arenavision.ru/guide</page>
-<Agent>Mozilla</Agent>
-<referer>http://www.arenavision.ru</referer>
-<setcookie>beget=begetok</setcookie>
-</regex><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/acestreams.png</thumbnail>
-</item>
-
-
-
-
-
-
+ 
 
 
 
 
  
-
-<itm>
-<title>[COLOR white][B] Agenda Arenavision  [COLOR white] Server [COLOR white][avezy][/COLOR]  [/COLOR][/B][/COLOR]</title>
-<link>$doregex[makelist]</link>
-<regex>
-<name>makelist</name>
-<listrepeat><![CDATA[
-<item><title>[COLOR lightslategray][makelist.param1][/COLOR] [COLOR blue][makelist.param2] [/COLOR][COLOR white][makelist.param3][/COLOR]</title>
-<link>plugin://program.plexus/?url=[makelist.param4]&amp;mode=1&amp;name=BlackAddon+[makelist.param3]+Arenavision</link>
-</item>
-]]></listrepeat>
-<expres><![CDATA[center'>(.*?)<[\w\W\s]{0,120}<td>(.*?)<br>(.*?)<[\w\W\s]{0,40}acestream://(.*?)"]]></expres>
-<page>https://avezy.tk/</page>
-<Agent>Mozilla</Agent>
-</regex><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/acestreams.png</thumbnail>
-</item>
 
 
 
