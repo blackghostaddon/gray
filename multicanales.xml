@@ -241,23 +241,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<iem>
-<title>[B]Multicanal TDN Univision [/B]   </title>
-
-<link>$doregex[GetPageUrl]|User-Agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+rv%3A11.0%29+like+Gecko</link>
-<regex>
-<name>GetPageUrl</name>
-<expres>source: '(.*?)'</expres>
-<page>http://livesports.pw/embeddeporte2.php?file=tnduni&amp;width=650&amp;height=397</page>
-<cookieJar></cookieJar>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-
-
-
-
-
 
 
 <item>
@@ -293,42 +276,9 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
+ 
 
-
-
-<iem>
-<title>[B]Multicanal ESPN3 MX [/B]   </title>
-
-<link>$doregex[GetPageUrl]|User-Agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+rv%3A11.0%29+like+Gecko</link>
-<regex>
-<name>GetPageUrl</name>
-<expres>source: '(.*?)'</expres>
-<page>http://livesports.pw/embeddeporte2.php?file=espntressmx&amp;width=650&amp;height=397</page>
-<cookieJar></cookieJar>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-
-
-
-
-
-
-
-<iem>
-<title>[B]Multicanal ESPN2 MX  [/B]   </title>
-
-<link>$doregex[GetPageUrl]|User-Agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+rv%3A11.0%29+like+Gecko</link>
-<regex>
-<name>GetPageUrl</name>
-<expres>source: '(.*?)'</expres>
-<page>http://livesports.pw/embeddeporte2.php?file=espndosmx&amp;width=650&amp;height=397</page>
-<cookieJar></cookieJar>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-
-
+ 
 
 
 <item>
@@ -342,52 +292,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <cookieJar></cookieJar>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-
-
-
-<item>
-<title>[B]Multicanal TDN Univision  [/B]   </title>
-
-<link>$doregex[GetPageUrl]|User-Agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+rv%3A11.0%29+like+Gecko</link>
-<regex>
-<name>GetPageUrl</name>
-<expres>source: '(.*?)'</expres>
-<page>http://livesports.pw/embeddeporte2.php?file=tnduni&amp;width=650&amp;height=397</page>
-<cookieJar></cookieJar>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-
-
-
-
-<item>
-<title>[B]Multicanal Espn2 MX  [/B]   </title>
-
-<link>$doregex[GetPageUrl]|User-Agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+rv%3A11.0%29+like+Gecko</link>
-<regex>
-<name>GetPageUrl</name>
-<expres>source: '(.*?)'</expres>
-<page>http://livesports.pw/embeddeporte2.php?file=espndosmx&amp;width=650&amp;height=397</page>
-<cookieJar></cookieJar>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-<item>
-<title>[B]MulticanalBein ñ [/B]   </title>
-
-<link>$doregex[GetPageUrl]|User-Agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+rv%3A11.0%29+like+Gecko</link>
-<regex>
-<name>GetPageUrl</name>
-<expres>source: '(.*?)'</expres>
-<page>http://livesports.pw/embeddeporte2.php?file=beinsportn&amp;width=650&amp;height=397</page>
-<cookieJar></cookieJar>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-
-
 
 
 
@@ -1109,7 +1013,7 @@ def GetLSProData(page_data,Cookie_Jar,m):#streamwatcher2013
   source=requests.get(re.findall('src="(.*?kastream[^"]+)',page_data)[0],headers={'Referer':'http://futbolchile.net/canales/kas720.html'}).text
   return 'http://'+re.findall('Clappr.Player[\w\W]*?source.+?//([^\'"]+)',jsunpack.unpack(re.findall('id="Player"(?s)(.*?)</script',source)[0]).replace('\\',''))[0]+'|User-Agent=iPad'
 ]]></expres>
-<page>http://cdn.zonasports.es/c-6x.php</page>
+<page>http://futbolchile.net/canales/kas720.html</page>
 </regex>
 </item>
 
