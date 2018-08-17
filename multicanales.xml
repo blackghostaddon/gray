@@ -222,6 +222,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
+
 <item>
 <title>[B]Multicanal GolTV Latino[/B]   </title>
 
@@ -345,7 +346,45 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
+<item>
+<title>[B]Multicanal TDN Univision  [/B]   </title>
 
+<link>$doregex[GetPageUrl]|User-Agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+rv%3A11.0%29+like+Gecko</link>
+<regex>
+<name>GetPageUrl</name>
+<expres>source: '(.*?)'</expres>
+<page>http://livesports.pw/embeddeporte2.php?file=tnduni&amp;width=650&amp;height=397</page>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+
+
+
+<item>
+<title>[B]Multicanal Espn2 MX  [/B]   </title>
+
+<link>$doregex[GetPageUrl]|User-Agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+rv%3A11.0%29+like+Gecko</link>
+<regex>
+<name>GetPageUrl</name>
+<expres>source: '(.*?)'</expres>
+<page>http://livesports.pw/embeddeporte2.php?file=espndosmx&amp;width=650&amp;height=397</page>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+<item>
+<title>[B]MulticanalBein ñ [/B]   </title>
+
+<link>$doregex[GetPageUrl]|User-Agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+rv%3A11.0%29+like+Gecko</link>
+<regex>
+<name>GetPageUrl</name>
+<expres>source: '(.*?)'</expres>
+<page>http://livesports.pw/embeddeporte2.php?file=beinsportn&amp;width=650&amp;height=397</page>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
@@ -509,7 +548,7 @@ item>
 
 
 <item>
-<title>[B]Multicanal Zonasport01[/B]     fstream  NEW  </title>
+<title>[B]Multicanal Zonasport01[/B]      </title>
 
 <link>http://$doregex[ip]$doregex[m3u8]$doregex[hls]|User-Agent=iPad</link>
 			<regex>
@@ -553,7 +592,7 @@ item>
 
 
 <item>
-<title>[B]Multicanal Zonasport02[/B]     fstream    </title>
+<title>[B]Multicanal Zonasport02[/B]      </title>
 <link>http://$doregex[ip]$doregex[m3u8]$doregex[hls]|User-Agent=iPad</link>
 			<regex>
 			<name>ip</name>
@@ -597,7 +636,7 @@ item>
 
 
 <item>
-<title>[B]Multicanal Zonasport03[/B]     fstream    </title>
+<title>[B]Multicanal Zonasport03[/B]         </title>
 
 <link>http://$doregex[ip]$doregex[m3u8]$doregex[hls]|User-Agent=iPad</link>
 			<regex>
@@ -642,7 +681,7 @@ item>
 
 
 <item>
-<title>[B]Multicanal Zonasport04[/B]     fstream    </title>
+<title>[B]Multicanal Zonasport04[/B]       </title>
 
 <link>http://$doregex[ip]$doregex[m3u8]$doregex[hls]|User-Agent=iPad</link>
 			<regex>
@@ -721,6 +760,18 @@ def GetLSProData(page_data,Cookie_Jar,m):#streamwatcher2013
 </item>
 
 
+
+ <item>
+<title>[B]Multicanal Zonasport07[/B]   [COLOR blue]SD[/COLOR]    </title>
+ 
+<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://cdn.zonasports.es/c-7x.php</link>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+ <item>
+<title>[B]Multicanal Zonasport08[/B]   [COLOR blue]SD[/COLOR]    </title>
+ 
+<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://cdn.zonasports.es/c-8x.php</link>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
@@ -872,7 +923,7 @@ def GetLSProData(page_data,Cookie_Jar,m):#streamwatcher2013
 
 
  <item>
-<title>[B]Multicanal RIVO 02[/B]     </title>
+<title>[B]Multicanal RIVO 02[/B]   EN  </title>
 <link>$doregex[get-id]</link>
 <regex>
 <name>get-id</name>
@@ -908,7 +959,7 @@ def GetLSProData(page_data,Cookie_Jar,m):#streamwatcher2013
 
 
 <item>
-<title>[B]Multicanal RIVO 04[/B]  33f   </title>
+<title>[B]Multicanal RIVO 04[/B]    </title>
 <link>$doregex[geturl]</link>
     <regex>
         <name>geturl</name>
@@ -1048,7 +1099,6 @@ def GetLSProData(page_data,Cookie_Jar,m):#streamwatcher2013
 
 <item>
 <title>[B]Multicanal Futbol Chile 02[/B]        </title>
-
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
@@ -1056,17 +1106,16 @@ def GetLSProData(page_data,Cookie_Jar,m):#streamwatcher2013
 import re,requests
 def GetLSProData(page_data,Cookie_Jar,m):#streamwatcher2013
   from urlresolver.plugins.lib import jsunpack
-  source=requests.get(re.findall('file=([^"]+)',page_data)[0],headers={'Referer':'http://futbolchile.net/canales/kas720.html'}).text
-  return 'http://kastream.biz/embed.php?file='+re.findall('Clappr.Player[\w\W]*?source.+?//([^\'"]+)',jsunpack.unpack(re.findall('id="Player"(?s)(.*?)</script',source)[0]).replace('\\',''))[0]+'|User-Agent=iPad'
+  source=requests.get(re.findall('src="(.*?kastream[^"]+)',page_data)[0],headers={'Referer':'http://futbolchile.net/canales/kas720.html'}).text
+  return 'http://'+re.findall('Clappr.Player[\w\W]*?source.+?//([^\'"]+)',jsunpack.unpack(re.findall('id="Player"(?s)(.*?)</script',source)[0]).replace('\\',''))[0]+'|User-Agent=iPad'
 ]]></expres>
-<page>http://futbolchile.net/canales/kas720.html</page>
+<page>http://cdn.zonasports.es/c-6x.php</page>
 </regex>
 </item>
 
 
-
  <item>
-<title>[B]Multicanal Futbol Chile 03[/B]        </title>
+<title>[B]Multicanal Futbol Chile 03[/B]    [COLOR blue]SD[/COLOR]    </title>
  
 <link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://futbolchile.net/canales/tel720.html</link>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
@@ -1411,7 +1460,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
   <item>
- <title>[B]Multicanal ESPN Deportes[/B]     *</title>
+ <title>[B]Multicanal ESPN Deportes[/B]    OFF</title>
 <link>$doregex[url]|Referer=http://depo.superligatv.com/unitdn.php&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
  
  <regex>
@@ -1732,89 +1781,13 @@ def GetLSProData(page_data,Cookie_Jar,m):
     <regex>
         <name>getunpacked</name>
         <expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)' )</expres>
-        <page>http://whostreams.net/embed/$doregex[canal]</page>
+        <page>http://whostreams.net/embed/aswpcq</page>
         <referer>http://whostreams.net/</referer>
         <connection>keep-alive</connection>
-    </regex>
-	 <regex>
-        <name>canal</name>
-        <expres>net\/embed\/(.*?)"</expres>
-        <page>http://robertrc.bget.ru/reproductor/06.php</page>
     </regex>
 </item>
 
 
-
- <item>
-<title>[B]Multicanal ElGoles 07[/B]  Zony   </title>
-<link>http://$doregex[ip]$doregex[m3u8]</link>
-<regex>
-<name>ip</name>
-<expres>redirect=(.*)</expres>
-<page>http://cdn.pubzony.com:1935/loadbalancer</page>
-</regex>
-<regex>
-<name>m3u8</name>
-<expres>ea \+ "(.*?)"</expres>
-<page>http://www.zony.tv/membedplayer/$doregex[canal]/2/680/380</page>
-<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
-<referer>http://www.zony.tv</referer>
-</regex>
-<regex>
-<name>canal</name>
-<expres>channel='(.*?)'</expres>
-<page>http://robertrc.bget.ru/reproductor/07.php</page>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-	
-
-
- <item>
-<title>[B]Multicanal ElGoles 08[/B]  EZ </title>
-<link>http://$doregex[ip]$doregex[m3u8]</link>
-<regex>
-<name>ip</name>
-<expres>redirect=(.*)</expres>
-<page>http://cdn.pubezcast.com:1935/loadbalancer</page>
-</regex>
-<regex>
-<name>m3u8</name>
-<expres>ea \+ "(.*?)"</expres>
-<page>http://ezcast.tv/membedplayer/$doregex[canal]/2/680/380</page>
-<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
-<referer>http://ezcast.tv</referer>
-</regex>
-<regex>
-<name>canal</name>
-<expres>channel='(.*?)'</expres>
-<page>http://robertrc.bget.ru/reproductor/08.php</page>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-	
-
-
- <item>
-<title>[B]Multicanal ElGoles 09[/B]  Uc </title>
-<link>http://$doregex[ip]$doregex[m3u8]</link>
-<regex>
-<name>ip</name>
-<expres>redirect=(.*)</expres>
-<page>http://www.pubucaster.com:1935/loadbalancer</page>
-</regex>
-<regex>
-<name>m3u8</name>
-<expres>ea \+ "(.*?)"</expres>
-<page>http://www.embeducaster.com/membedplayer/$doregex[canal]/2/680/380</page>
-<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
-<referer>http://www.embeducaster.com</referer>
-</regex>
-<regex>
-<name>canal</name>
-<expres>channel='(.*?)'</expres>
-<page>http://robertrc.bget.ru/reproductor/09.php</page>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-	
 
 
  <item>
@@ -1870,25 +1843,19 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
  <item>
 <title>[B]Multicanal[/B] TikiTaka 01 [I] [/I]</title>
-<link>http://$doregex[ip]$doregex[m3u8]</link>
+<link>$doregex[url]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64; rv:56.0) Gecko/20100101 Firefox/56.0&amp;Referer=http://static.castto.me</link>
 <regex>
-<name>ip</name>
-<expres>redirect=(.*)</expres>
-<page>http://www.liveflashpublisher.com:1935/loadbalancer</page>
+<name>url</name>
+<expres><![CDATA[source src="([^"]+)]]></expres>
+<page>http://static.castto.me/embedlivesrvjs.php?channel=$doregex[getid]&amp;vw=720&amp;vh=420</page>
+<referer>http://estadionline.ml/canal1.php</referer>
 </regex>
 <regex>
-<name>m3u8</name>
-<expres>ea \+ "(.*?)"</expres>
-<page>http://www.liveflashplayer.org/membedplayer/$doregex[canal]/2/680/380</page>
-<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
-<referer>http://www.liveflashplayer.org</referer>
-</regex>
-<regex>
-<name>canal</name>
-<expres>channel='(.*?)'</expres>
+<name>getid</name>
+<expres><![CDATA[fid="([^"]+)]]></expres>
 <page>http://estadionline.ml/canal1.php</page>
+<referer>http://estadionline.ml/canal1.php</referer>
 </regex>
-	 
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 	
 
@@ -1918,7 +1885,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 	
  <item>
-<title>[B]Multicanal[/B] TikiTaka 03 [I]  *[/I]</title>
+<title>[B]Multicanal[/B] TikiTaka 03 [I]  [/I]</title>
 <link>http://$doregex[ip]$doregex[m3u8]</link>
 <regex>
 <name>ip</name>
@@ -1950,8 +1917,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	
 	
 	
- <it>
-<title>[B]Multicanal[/B] TikiTaka 02 [I] [/I]</title>
+ <im>
+<title>[B]Multicanal[/B] TikiTaka 01 [I] [/I]</title>
 <link>$doregex[url]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64; rv:56.0) Gecko/20100101 Firefox/56.0&amp;Referer=http://static.castto.me</link>
 <regex>
 <name>url</name>
@@ -1962,8 +1929,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>getid</name>
 <expres><![CDATA[fid="([^"]+)]]></expres>
-<page>http://estadionline.ml/canal2.php</page>
-<referer>http://estadionline.ml/canal2.php</referer>
+<page>http://estadionline.ml/canal1.php</page>
+<referer>http://estadionline.ml/canal1.php</referer>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
@@ -2073,7 +2040,89 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
+<item>
+<title>[B]Multicanal MotoGP España[/B]   </title>
 
+<link>$doregex[GetPageUrl]|User-Agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+rv%3A11.0%29+like+Gecko</link>
+<regex>
+<name>GetPageUrl</name>
+<expres>source: '(.*?)'</expres>
+<page>http://livesports.pw/embeddeporte2.php?file=motogpm&amp;width=650&amp;height=397</page>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+
+
+<item>
+<title>[B]Multicanal Formula 1 España[/B]   </title>
+
+<link>$doregex[GetPageUrl]|User-Agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+rv%3A11.0%29+like+Gecko</link>
+<regex>
+<name>GetPageUrl</name>
+<expres>source: '(.*?)'</expres>
+<page>http://livesports.pw/embeddeporte2.php?file=m_f1&amp;width=650&amp;height=397</page>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+
+
+<item>
+<title>[B]Multicanal GolTV España[/B]   </title>
+
+<link>$doregex[GetPageUrl]|User-Agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+rv%3A11.0%29+like+Gecko</link>
+<regex>
+<name>GetPageUrl</name>
+<expres>source: '(.*?)'</expres>
+<page>http://livesports.pw/embeddeporte2.php?file=golesp&amp;width=650&amp;height=397</page>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+
+<item>
+<title>[B]Multicanal Liga 123[/B]   </title>
+
+<link>$doregex[GetPageUrl]|User-Agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+rv%3A11.0%29+like+Gecko</link>
+<regex>
+<name>GetPageUrl</name>
+<expres>source: '(.*?)'</expres>
+<page>http://livesports.pw/embeddeporte2.php?file=ligaunodostres&amp;width=650&amp;height=397</page>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+<item>
+<title>[B]Multicanal Bein La Liga[/B]   </title>
+
+<link>$doregex[GetPageUrl]|User-Agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+rv%3A11.0%29+like+Gecko</link>
+<regex>
+<name>GetPageUrl</name>
+<expres>source: '(.*?)'</expres>
+<page>http://livesports.pw/embeddeporte2.php?file=barligas&amp;width=650&amp;height=397</page>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+
+
+<item>
+<title>[B]Multicanal Bein Sports[/B]   </title>
+
+<link>$doregex[GetPageUrl]|User-Agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+rv%3A11.0%29+like+Gecko</link>
+<regex>
+<name>GetPageUrl</name>
+<expres>source: '(.*?)'</expres>
+<page>http://livesports.pw/embeddeporte2.php?file=beinsport&amp;width=650&amp;height=397</page>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
@@ -2234,13 +2283,15 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-	<itm>
-<title> fasldgusd  [I]    [/I]</title>
+	<item>
+<title>    </title>
 <link>$$LSPlayOnlyOne$$</link>
 <link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://soloveo.com/afox1.html</link>
  <link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://soloveo.com/afox2.html</link>
  <link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://soloveo.com/afox3.html</link>
  <link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://soloveo.com/afox4.html</link>
+
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 	
 
@@ -2460,7 +2511,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
  
 
-<item>
+<ite>
 <title>smndsmnd  </title>
 
 <link>http://$doregex[ip]$doregex[m3u8]$doregex[hls]|User-Agent=iPad</link>
