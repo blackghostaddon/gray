@@ -1269,7 +1269,42 @@ def GetLSProData(page_data,Cookie_Jar,m):#streamwatcher2013
 
 
 
-kas
+
+
+
+
+  <item>
+ <title>[B]Multicanal PlayCast 101[/B]     </title>
+
+ <link>$doregex[getDecodedCode]|referer=</link>
+ 
+<regex>
+<name>getDecodedCode</name>
+<expres>$pyFunction:base64.b64decode($doregex[getEncodedCode])</expres>
+<page></page>
+</regex>
+
+<regex>
+<name>getEncodedCode</name>
+<expres>curl = "(.*?)"</expres>
+<page>https://www.playcast.se/stream.php?id=151</page>
+<referer>http://tuttosportweb.fi/au18/update/ch2.html</referer>
+<agent>Mozilla/5.0 (Windows NT 6.3; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0</agent>
+<cookieJar></cookieJar>
+</regex>
+
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+
+
+
+
+
+
+
+
+
 
 
 
