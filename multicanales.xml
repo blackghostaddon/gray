@@ -80,32 +80,60 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<ite>
-<title>[B]Canales Sudamerica ESPN | FOXSPORTS | DIRECTV SPORTS | F1 [/B]  Baja Resolucion  ***</title>
+
+
+ <item>
+<title>[B]Multicanales  SUR[/B]  BajaResolucion</title>
 <link>$doregex[makelist]</link>
-<regex>
+   <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title>[makelist.param1]  [makelist.param4]</title>
-<link>http://$doregex[ip]$doregex[m3u8]</link>
+<title>$pyFunction:'[UPPERCASE][makelist.param1][/UPPERCASE]'.replace('en-vivo.html',' ').replace('-',' ')</title>
+<link>http://$doregex[ip]$doregex[m3u8]$doregex[m3u82]</link>
+]]></listrepeat>
+<expres><![CDATA[href="(.*?html)"]]></expres>
+<page>http://tvpor-internet.com/envivo/</page>
+</regex>
+
 <regex>
 <name>ip</name>
 <expres>redirect=(.*)</expres>
-<page>http://[makelist.param3]:1935/loadbalancer</page>
-<referer>http://www.tv-porinternet.com/directv-sports-en-vivo-por-internet/</referer>
+<page>$doregex[loader]</page>
+</regex>
+<regex>
+<name>loader</name>
+<expres>url: "(.*?)"</expres>
+<page>$doregex[server]/hembedplayer/$doregex[canal]/1/590/390</page>
+<referer>http://tvpor-internet.com</referer>
 </regex>
 <regex>
 <name>m3u8</name>
-<expres>ea \+ "([^"]+)</expres>
-<page>http://[makelist.param4]/membedplayer/[makelist.param2]/1/500/400</page>
-<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
-<referer>http://www.tv-porinternet.com/directv-sports-en-vivo-por-internet/</referer>
+<expres>ea \+ "(.*?)"</expres>
+<page>$doregex[server]/hembedplayer/$doregex[canal]/1/590/390</page>
+<referer>http://tvpor-internet.com</referer>
 </regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail>
-]]></listrepeat>
-<expres>type:"Deportes" canal="(.*?)" channel="(.*?)" pub="(.*?)" server="(.*?)"</expres>
-<page>https://raw.githubusercontent.com/blackghostaddon/gray/master/servers.txt</page>
+<regex>
+<name>m3u82</name>
+<expres>hlsUrl \+ enableVideo\(\"(.*?)"</expres>
+<page>$doregex[server]/hembedplayer/$doregex[canal]/1/590/390</page>
+<referer></referer>
 </regex>
+<regex>
+<name>server</name>
+<expres>javascript\' src=\'(http://.*?)\/</expres>
+<page>$doregex[pagina]</page>
+</regex>
+<regex>
+<name>canal</name>
+<expres>channel='(.*?)'</expres>
+<page>$doregex[pagina]</page>
+</regex>
+<regex>
+<name>pagina</name>
+<expres>href="(http://tvpor.*?)"</expres>
+<page>http://tvpor-internet.com/envivo/[makelist.param1]</page>
+</regex>
+
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
