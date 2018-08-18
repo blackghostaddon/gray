@@ -2290,7 +2290,7 @@ http://www.zony.tv/membedplayer/hvgcfcxszszszszsz/1/730/420
 	
 	<item>
 <title>[B]Multicanal en preuebas [/B]   [COLOR blue]SD[/COLOR]    </title>
-<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=https://telerium.tv/embed/25057.html</link>
+<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=https://telerium.tv/embed/$doregex[select].html</link>
 <regex>
 <name>select</name>
 <expres><![CDATA[#$pyFunction
