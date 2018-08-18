@@ -2240,10 +2240,30 @@ def GetLSProData(page_data,Cookie_Jar,m):
  <link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=https://telerium.tv/embed/25110.html<</link>
  <link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=https://telerium.tv/embed/25062.html<</link>
  <link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=https://telerium.tv/embed/25063.html<</link>
-
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 	
+	<item>
+<title>[B]Multicanal en preuebas [/B]   [COLOR blue]SD[/COLOR]    </title>
+<link>$$LSPlayOnlyOne$$</link>
+<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=https://telerium.tv/embed/25057.html</link>
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+   import xbmcgui
+   dialog = xbmcgui.Dialog()
+   ret = dialog.select('Elige un Canal ', ['Canal 1', 'Canal 2', 'Canal 3', 'Canal 4', 'Canal 5'])
+   lists = ['25057', '25110', '25060', '25062', '25063']
+   return lists[ret]
+]]></expres>
+<page></page>
+</regex>
+
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+
 
 
 
