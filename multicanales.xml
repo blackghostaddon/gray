@@ -2233,19 +2233,10 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-	<item>
-<title>[B]Multicanal en preuebas [/B]   [COLOR blue]SD[/COLOR]    </title>
-<link>$$LSPlayOnlyOne$$</link>
-<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=https://telerium.tv/embed/25057.html<l</link>
- <link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=https://telerium.tv/embed/25110.html<</link>
- <link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=https://telerium.tv/embed/25062.html<</link>
- <link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=https://telerium.tv/embed/25063.html<</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
+	
 	
 	<item>
 <title>[B]Multicanal en preuebas [/B]   [COLOR blue]SD[/COLOR]    </title>
-<link>$$LSPlayOnlyOne$$</link>
 <link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=https://telerium.tv/embed/25057.html</link>
 <regex>
 <name>select</name>
@@ -2264,7 +2255,16 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-
+<item>
+<title>TEST</title>
+<link>$$LSPlayOnlyOne$$</link>
+<link>$doregex[finalURL]$$lsname=TEST</link>
+<regex>
+<name>finalURL</name>
+<expres>$pyFunction: 'plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=https://telerium.tv/embed/25057.html$$LSPlayOnlyOne$$' if not 'plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=https://telerium.tv/embed/25057.html$$LSPlayOnlyOne$$'=='' else 'plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=https://telerium.tv/embed/25062.html$$LSPlayOnlyOne$$'</expres>
+<page></page>
+</regex>
+</item>
 
 
 <item>
