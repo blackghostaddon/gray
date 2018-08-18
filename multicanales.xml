@@ -1742,7 +1742,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	
 </item>
 
-http://www.zony.tv/membedplayer/hvgcfcxszszszszsz/1/730/420
 
  <item>
 <title>[B]Multicanal ElGoles 07[/B]  zony</title>
@@ -1793,7 +1792,7 @@ http://www.zony.tv/membedplayer/hvgcfcxszszszszsz/1/730/420
 <regex>
 <name>canal</name>
 <expres>channel='(.*?)'</expres>
-<page>hthttp://robertrc.bget.ru/reproductor/08.php</page>
+<page>http://robertrc.bget.ru/reproductor/08.php</page>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
