@@ -1744,7 +1744,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	
 	
 	<item>
-<title>[B]Multicanal ElGoles 06[/B]   *  </title>
+<title>[B]Multicanal ElGoles 11[/B]   *  </title>
 <link>$doregex[geturl]</link>
     <regex>
         <name>geturl</name>
@@ -1762,74 +1762,15 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	<regex>
 <name>canal</name>
 <expres>iframe src="(.*?)"</expres>
-<page>http://robertrc.bget.ru/reproductor/06.php</page>
+<page>http://robertrc.bget.ru/reproductor/11.php</page>
 </regex>
-	
-	
-	
-	
 </item>
 
 
- <item>
-<title>[B]Multicanal ElGoles 07[/B]  zony</title>
-<link>http://$doregex[ip]$doregex[m3u8]</link>
-<regex>
-<name>ip</name>
-<expres>redirect=(.*)</expres>
-<page>http://pubzony.com:1935/loadbalancer</page>
-</regex>
-<regex>
-<name>m3u8</name>
-<expres>ea \+ "(.*?)"</expres>
-<page>http://www.zony.tv/membedplayer/$doregex[canal]/1/730/420</page>
-<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
-<referer>http://www.zony.tv</referer>
-</regex>
-<regex>
-<name>canal</name>
-<expres>channel='(.*?)'</expres>
-<page>http://robertrc.bget.ru/reproductor/07.php</page>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-
- <item>
-<title>[B]Multicanal ElGoles 08[/B]  ezcast</title>
-<link>http://$doregex[ip]$doregex[m3u8]</link>
-<regex>
-<name>ip</name>
-<expres>redirect=(.*)</expres>
-<page>http://www.pubucaster.com:1935/loadbalancer</page>
-</regex>
-<regex>
-<name>m3u8</name>
-<expres>ea \+ "(.*?)"</expres>
-<page>http://www.ucasterplayer.com/membedplayer/directvcomadrita/1/590/390</page>
-<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
-<referer>http://www.ucasterplayer.com</referer>
-</regex>
-<regex>
-<name>loader</name>
-<expres>url: "(.*?)"</expres>
-<page>http://www.ucasterplayer.com/membedplayer/directvcomadrita/1/590/390</page>
-<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
-<referer>http://www.ucasterplayer.com</referer>
-</regex>
-
-<regex>
-<name>canal</name>
-<expres>channel='(.*?)'</expres>
-<page>http://robertrc.bget.ru/reproductor/08.php</page>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
 
-
-
-http://tvpor-internet.com/directv-sports-en-vivo.html
 
  <item>
 <title>[B]Multicanal ElGoles 10[/B]  wide</title>
@@ -1847,6 +1788,11 @@ http://tvpor-internet.com/directv-sports-en-vivo.html
 
 
 
+
+ 
+
+
+ 
 
 
 
@@ -2307,6 +2253,574 @@ http://tvpor-internet.com/directv-sports-en-vivo.html
 <title>[B]Multicanal[/B] VerLiga [I] Partidazo [/I] up</title>
  <link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=https://verliga1.net/tv/verliga.php</link>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/esp.jpg</thumbnail></item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <item>
+<title>[B]Multicanal ElGoles 07[/B]  </title>
+<link>http://$doregex[ip]$doregex[m3u8]$doregex[m3u82]</link>
+<regex>
+<name>ip</name>
+<expres>redirect=(.*)</expres>
+<page>$doregex[loader]</page>
+</regex>
+<regex>
+<name>loader</name>
+<expres>url: "(.*?)"</expres>
+<page>$doregex[server]/hembedplayer/$doregex[canal]/1/590/390</page>
+<referer>http://robertrc.bget.ru</referer>
+</regex>
+<regex>
+<name>m3u8</name>
+<expres>ea \+ "(.*?)"</expres>
+<page>$doregex[server]/hembedplayer/$doregex[canal]/1/590/390</page>
+<referer>http://robertrc.bget.ru</referer>
+</regex>
+<regex>
+<name>m3u82</name>
+<expres>hlsUrl \+ enableVideo\(\"(.*?)"</expres>
+<page>$doregex[server]/hembedplayer/$doregex[canal]/1/590/390</page>
+<referer></referer>
+</regex>
+<regex>
+<name>server</name>
+<expres>javascript\' src=\'(http://.*?)\/</expres>
+<page>http://robertrc.bget.ru/reproductor/07.php</page>
+</regex>
+<regex>
+<name>canal</name>
+<expres>channel='(.*?)'</expres>
+<page>http://robertrc.bget.ru/reproductor/07.php</page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+
+
+
+
+
+
+
+
+
+ <item>
+<title>[B]Multicanal ElGoles 08[/B]   </title>
+<link>http://$doregex[ip]$doregex[m3u8]$doregex[m3u82]</link>
+<regex>
+<name>ip</name>
+<expres>redirect=(.*)</expres>
+<page>$doregex[loader]</page>
+</regex>
+<regex>
+<name>loader</name>
+<expres>url: "(.*?)"</expres>
+<page>$doregex[server]/hembedplayer/$doregex[canal]/1/590/390</page>
+<referer>http://robertrc.bget.ru</referer>
+</regex>
+<regex>
+<name>m3u8</name>
+<expres>ea \+ "(.*?)"</expres>
+<page>$doregex[server]/hembedplayer/$doregex[canal]/1/590/390</page>
+<referer>http://robertrc.bget.ru</referer>
+</regex>
+<regex>
+<name>m3u82</name>
+<expres>hlsUrl \+ enableVideo\(\"(.*?)"</expres>
+<page>$doregex[server]/hembedplayer/$doregex[canal]/1/590/390</page>
+<referer></referer>
+</regex>
+<regex>
+<name>server</name>
+<expres>javascript\' src=\'(http://.*?)\/</expres>
+<page>http://robertrc.bget.ru/reproductor/08.php</page>
+</regex>
+<regex>
+<name>canal</name>
+<expres>channel='(.*?)'</expres>
+<page>http://robertrc.bget.ru/reproductor/08.php</page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+
+ <item>
+<title>[B]Multicanal ElGoles 09[/B]   </title>
+<link>http://$doregex[ip]$doregex[m3u8]$doregex[m3u82]</link>
+<regex>
+<name>ip</name>
+<expres>redirect=(.*)</expres>
+<page>$doregex[loader]</page>
+</regex>
+<regex>
+<name>loader</name>
+<expres>url: "(.*?)"</expres>
+<page>$doregex[server]/hembedplayer/$doregex[canal]/1/590/390</page>
+<referer>http://robertrc.bget.ru</referer>
+</regex>
+<regex>
+<name>m3u8</name>
+<expres>ea \+ "(.*?)"</expres>
+<page>$doregex[server]/hembedplayer/$doregex[canal]/1/590/390</page>
+<referer>http://robertrc.bget.ru</referer>
+</regex>
+<regex>
+<name>m3u82</name>
+<expres>hlsUrl \+ enableVideo\(\"(.*?)"</expres>
+<page>$doregex[server]/hembedplayer/$doregex[canal]/1/590/390</page>
+<referer></referer>
+</regex>
+<regex>
+<name>server</name>
+<expres>javascript\' src=\'(http://.*?)\/</expres>
+<page>http://robertrc.bget.ru/reproductor/09.php</page>
+</regex>
+<regex>
+<name>canal</name>
+<expres>channel='(.*?)'</expres>
+<page>http://robertrc.bget.ru/reproductor/09.php</page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+
+ <item>
+<title>[B]Multicanal ElGoles 12[/B]   </title>
+<link>http://$doregex[ip]$doregex[m3u8]$doregex[m3u82]</link>
+<regex>
+<name>ip</name>
+<expres>redirect=(.*)</expres>
+<page>$doregex[loader]</page>
+</regex>
+<regex>
+<name>loader</name>
+<expres>url: "(.*?)"</expres>
+<page>$doregex[server]/hembedplayer/$doregex[canal]/1/590/390</page>
+<referer>http://robertrc.bget.ru</referer>
+</regex>
+<regex>
+<name>m3u8</name>
+<expres>ea \+ "(.*?)"</expres>
+<page>$doregex[server]/hembedplayer/$doregex[canal]/1/590/390</page>
+<referer>http://robertrc.bget.ru</referer>
+</regex>
+<regex>
+<name>m3u82</name>
+<expres>hlsUrl \+ enableVideo\(\"(.*?)"</expres>
+<page>$doregex[server]/hembedplayer/$doregex[canal]/1/590/390</page>
+<referer></referer>
+</regex>
+<regex>
+<name>server</name>
+<expres>javascript\' src=\'(http://.*?)\/</expres>
+<page>http://robertrc.bget.ru/reproductor/12.php</page>
+</regex>
+<regex>
+<name>canal</name>
+<expres>channel='(.*?)'</expres>
+<page>http://robertrc.bget.ru/reproductor/12.php</page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+
+
+
+
+
+ <item>
+<title>[B]Multicanal ElGoles 13[/B]   </title>
+<link>http://$doregex[ip]$doregex[m3u8]$doregex[m3u82]</link>
+<regex>
+<name>ip</name>
+<expres>redirect=(.*)</expres>
+<page>$doregex[loader]</page>
+</regex>
+<regex>
+<name>loader</name>
+<expres>url: "(.*?)"</expres>
+<page>$doregex[server]/hembedplayer/$doregex[canal]/1/590/390</page>
+<referer>http://robertrc.bget.ru</referer>
+</regex>
+<regex>
+<name>m3u8</name>
+<expres>ea \+ "(.*?)"</expres>
+<page>$doregex[server]/hembedplayer/$doregex[canal]/1/590/390</page>
+<referer>http://robertrc.bget.ru</referer>
+</regex>
+<regex>
+<name>m3u82</name>
+<expres>hlsUrl \+ enableVideo\(\"(.*?)"</expres>
+<page>$doregex[server]/hembedplayer/$doregex[canal]/1/590/390</page>
+<referer></referer>
+</regex>
+<regex>
+<name>server</name>
+<expres>javascript\' src=\'(http://.*?)\/</expres>
+<page>http://robertrc.bget.ru/reproductor/13.php</page>
+</regex>
+<regex>
+<name>canal</name>
+<expres>channel='(.*?)'</expres>
+<page>http://robertrc.bget.ru/reproductor/13.php</page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+ <item>
+<title>[B]Multicanal ElGoles 14[/B]   </title>
+<link>http://$doregex[ip]$doregex[m3u8]$doregex[m3u82]</link>
+<regex>
+<name>ip</name>
+<expres>redirect=(.*)</expres>
+<page>$doregex[loader]</page>
+</regex>
+<regex>
+<name>loader</name>
+<expres>url: "(.*?)"</expres>
+<page>$doregex[server]/hembedplayer/$doregex[canal]/1/590/390</page>
+<referer>http://robertrc.bget.ru</referer>
+</regex>
+<regex>
+<name>m3u8</name>
+<expres>ea \+ "(.*?)"</expres>
+<page>$doregex[server]/hembedplayer/$doregex[canal]/1/590/390</page>
+<referer>http://robertrc.bget.ru</referer>
+</regex>
+<regex>
+<name>m3u82</name>
+<expres>hlsUrl \+ enableVideo\(\"(.*?)"</expres>
+<page>$doregex[server]/hembedplayer/$doregex[canal]/1/590/390</page>
+<referer></referer>
+</regex>
+<regex>
+<name>server</name>
+<expres>javascript\' src=\'(http://.*?)\/</expres>
+<page>http://robertrc.bget.ru/reproductor/14.php</page>
+</regex>
+<regex>
+<name>canal</name>
+<expres>channel='(.*?)'</expres>
+<page>http://robertrc.bget.ru/reproductor/14.php</page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+
+ <item>
+<title>[B]Multicanal ElGoles 15[/B]   </title>
+<link>http://$doregex[ip]$doregex[m3u8]$doregex[m3u82]</link>
+<regex>
+<name>ip</name>
+<expres>redirect=(.*)</expres>
+<page>$doregex[loader]</page>
+</regex>
+<regex>
+<name>loader</name>
+<expres>url: "(.*?)"</expres>
+<page>$doregex[server]/hembedplayer/$doregex[canal]/1/590/390</page>
+<referer>http://robertrc.bget.ru</referer>
+</regex>
+<regex>
+<name>m3u8</name>
+<expres>ea \+ "(.*?)"</expres>
+<page>$doregex[server]/hembedplayer/$doregex[canal]/1/590/390</page>
+<referer>http://robertrc.bget.ru</referer>
+</regex>
+<regex>
+<name>m3u82</name>
+<expres>hlsUrl \+ enableVideo\(\"(.*?)"</expres>
+<page>$doregex[server]/hembedplayer/$doregex[canal]/1/590/390</page>
+<referer></referer>
+</regex>
+<regex>
+<name>server</name>
+<expres>javascript\' src=\'(http://.*?)\/</expres>
+<page>http://robertrc.bget.ru/reproductor/15.php</page>
+</regex>
+<regex>
+<name>canal</name>
+<expres>channel='(.*?)'</expres>
+<page>http://robertrc.bget.ru/reproductor/15.php</page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+ <item>
+<title>[B]Multicanal ElGoles 16[/B]   </title>
+<link>http://$doregex[ip]$doregex[m3u8]$doregex[m3u82]</link>
+<regex>
+<name>ip</name>
+<expres>redirect=(.*)</expres>
+<page>$doregex[loader]</page>
+</regex>
+<regex>
+<name>loader</name>
+<expres>url: "(.*?)"</expres>
+<page>$doregex[server]/hembedplayer/$doregex[canal]/1/590/390</page>
+<referer>http://robertrc.bget.ru</referer>
+</regex>
+<regex>
+<name>m3u8</name>
+<expres>ea \+ "(.*?)"</expres>
+<page>$doregex[server]/hembedplayer/$doregex[canal]/1/590/390</page>
+<referer>http://robertrc.bget.ru</referer>
+</regex>
+<regex>
+<name>m3u82</name>
+<expres>hlsUrl \+ enableVideo\(\"(.*?)"</expres>
+<page>$doregex[server]/hembedplayer/$doregex[canal]/1/590/390</page>
+<referer></referer>
+</regex>
+<regex>
+<name>server</name>
+<expres>javascript\' src=\'(http://.*?)\/</expres>
+<page>http://robertrc.bget.ru/reproductor/16.php</page>
+</regex>
+<regex>
+<name>canal</name>
+<expres>channel='(.*?)'</expres>
+<page>http://robertrc.bget.ru/reproductor/16.php</page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+
+
+ <item>
+<title>[B]Multicanal ElGoles 17[/B]   </title>
+<link>http://$doregex[ip]$doregex[m3u8]$doregex[m3u82]</link>
+<regex>
+<name>ip</name>
+<expres>redirect=(.*)</expres>
+<page>$doregex[loader]</page>
+</regex>
+<regex>
+<name>loader</name>
+<expres>url: "(.*?)"</expres>
+<page>$doregex[server]/hembedplayer/$doregex[canal]/1/590/390</page>
+<referer>http://robertrc.bget.ru</referer>
+</regex>
+<regex>
+<name>m3u8</name>
+<expres>ea \+ "(.*?)"</expres>
+<page>$doregex[server]/hembedplayer/$doregex[canal]/1/590/390</page>
+<referer>http://robertrc.bget.ru</referer>
+</regex>
+<regex>
+<name>m3u82</name>
+<expres>hlsUrl \+ enableVideo\(\"(.*?)"</expres>
+<page>$doregex[server]/hembedplayer/$doregex[canal]/1/590/390</page>
+<referer></referer>
+</regex>
+<regex>
+<name>server</name>
+<expres>javascript\' src=\'(http://.*?)\/</expres>
+<page>http://robertrc.bget.ru/reproductor/17.php</page>
+</regex>
+<regex>
+<name>canal</name>
+<expres>channel='(.*?)'</expres>
+<page>http://robertrc.bget.ru/reproductor/17.php</page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+
+
+ <item>
+<title>[B]Multicanal ElGoles 18[/B]   </title>
+<link>http://$doregex[ip]$doregex[m3u8]$doregex[m3u82]</link>
+<regex>
+<name>ip</name>
+<expres>redirect=(.*)</expres>
+<page>$doregex[loader]</page>
+</regex>
+<regex>
+<name>loader</name>
+<expres>url: "(.*?)"</expres>
+<page>$doregex[server]/hembedplayer/$doregex[canal]/1/590/390</page>
+<referer>http://robertrc.bget.ru</referer>
+</regex>
+<regex>
+<name>m3u8</name>
+<expres>ea \+ "(.*?)"</expres>
+<page>$doregex[server]/hembedplayer/$doregex[canal]/1/590/390</page>
+<referer>http://robertrc.bget.ru</referer>
+</regex>
+<regex>
+<name>m3u82</name>
+<expres>hlsUrl \+ enableVideo\(\"(.*?)"</expres>
+<page>$doregex[server]/hembedplayer/$doregex[canal]/1/590/390</page>
+<referer></referer>
+</regex>
+<regex>
+<name>server</name>
+<expres>javascript\' src=\'(http://.*?)\/</expres>
+<page>http://robertrc.bget.ru/reproductor/18.php</page>
+</regex>
+<regex>
+<name>canal</name>
+<expres>channel='(.*?)'</expres>
+<page>http://robertrc.bget.ru/reproductor/18.php</page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+
+
+
+
+ <item>
+<title>[B]Multicanal ElGoles 19[/B]   </title>
+<link>http://$doregex[ip]$doregex[m3u8]$doregex[m3u82]</link>
+<regex>
+<name>ip</name>
+<expres>redirect=(.*)</expres>
+<page>$doregex[loader]</page>
+</regex>
+<regex>
+<name>loader</name>
+<expres>url: "(.*?)"</expres>
+<page>$doregex[server]/hembedplayer/$doregex[canal]/1/590/390</page>
+<referer>http://robertrc.bget.ru</referer>
+</regex>
+<regex>
+<name>m3u8</name>
+<expres>ea \+ "(.*?)"</expres>
+<page>$doregex[server]/hembedplayer/$doregex[canal]/1/590/390</page>
+<referer>http://robertrc.bget.ru</referer>
+</regex>
+<regex>
+<name>m3u82</name>
+<expres>hlsUrl \+ enableVideo\(\"(.*?)"</expres>
+<page>$doregex[server]/hembedplayer/$doregex[canal]/1/590/390</page>
+<referer></referer>
+</regex>
+<regex>
+<name>server</name>
+<expres>javascript\' src=\'(http://.*?)\/</expres>
+<page>http://robertrc.bget.ru/reproductor/19.php</page>
+</regex>
+<regex>
+<name>canal</name>
+<expres>channel='(.*?)'</expres>
+<page>http://robertrc.bget.ru/reproductor/19.php</page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+
+
+
+
+ <item>
+<title>[B]Multicanal ElGoles 20[/B]   </title>
+<link>http://$doregex[ip]$doregex[m3u8]$doregex[m3u82]</link>
+<regex>
+<name>ip</name>
+<expres>redirect=(.*)</expres>
+<page>$doregex[loader]</page>
+</regex>
+<regex>
+<name>loader</name>
+<expres>url: "(.*?)"</expres>
+<page>$doregex[server]/hembedplayer/$doregex[canal]/1/590/390</page>
+<referer>http://robertrc.bget.ru</referer>
+</regex>
+<regex>
+<name>m3u8</name>
+<expres>ea \+ "(.*?)"</expres>
+<page>$doregex[server]/hembedplayer/$doregex[canal]/1/590/390</page>
+<referer>http://robertrc.bget.ru</referer>
+</regex>
+<regex>
+<name>m3u82</name>
+<expres>hlsUrl \+ enableVideo\(\"(.*?)"</expres>
+<page>$doregex[server]/hembedplayer/$doregex[canal]/1/590/390</page>
+<referer></referer>
+</regex>
+<regex>
+<name>server</name>
+<expres>javascript\' src=\'(http://.*?)\/</expres>
+<page>http://robertrc.bget.ru/reproductor/20.php</page>
+</regex>
+<regex>
+<name>canal</name>
+<expres>channel='(.*?)'</expres>
+<page>http://robertrc.bget.ru/reproductor/20.php</page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
 
 
 
