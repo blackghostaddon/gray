@@ -3287,7 +3287,44 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
+  <item>
+ <title>[B][COLOR deepskyblue]Multicanal[/COLOR][COLOR lightblue] BullAnguero[/B][/COLOR]  [COLOR lightslategray]    [/COLOR] </title>
+<link>$doregex[rtmp] playpath=$doregex[canal]_$doregex[playpath]$doregex[playpath2] swfUrl=http://p.castamp.com/cplayer.swf live=true timeout=15 swfVfy=1 pageUrl=http://www.castamp.com/embed.php?c=$doregex[canal]&amp;tk=$doregex[it]&amp;vwidth=680&amp;vheight=440</link>
 
+<regex>
+<name>canal</name>	 
+<expres>channel="(.*?)";</expres>	 
+<page>http://estadionline.ml/canal1.php</page> 
+</regex>
+	
+<regex>
+<name>it</name>	 
+<expres>Agent:"(.*?)";</expres>	 
+<page>http://adryanlist.org/adryan/fuckit.php</page> 
+</regex>
+
+<regex>
+<name>rtmp</name>
+<expres>.*(?![^"']+50.7.118.3)(?![^"']+50.7.128.2)(rtmp:[^"']+)</expres>
+<page>http://www.castamp.com/embed.php?c=$doregex[canal]&amp;tk=$doregex[it]&amp;vwidth=680&amp;vheight=440</page>
+ <referer>http://estadionline.ml/canal1.php</referer>
+</regex>
+
+<regex>
+<name>playpath</name>
+<expres>fuifa.*?_(.*?)'</expres>
+<page>http://www.castamp.com/embed.php?c=$doregex[canal]&amp;tk=$doregex[it]&amp;vwidth=680&amp;vheight=440</page>
+ <referer>http://estadionline.ml/canal1.php</referer>
+</regex>
+<regex>
+<name>playpath2</name>
+<expres>fuifa.*?unescape.*?'(.*?)'\W</expres>
+<page>http://www.castamp.com/embed.php?c=$doregex[canal]&amp;tk=$doregex[it]&amp;vwidth=680&amp;vheight=440</page>
+ <referer>http://estadionline.ml/canal1.php</referer>
+</regex>
+<thumbnail>http://adryanlist.org/adryan/img/deportes.jpg</thumbnail></item>
+ 
+ 
 
 
 
