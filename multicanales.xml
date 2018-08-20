@@ -1314,7 +1314,29 @@ def GetLSProData(page_data,Cookie_Jar,m):#streamwatcher2013
 <regex>
 <name>getEncodedCode</name>
 <expres>curl = "(.*?)"</expres>
-<page>http://www.playcast.se/stream.php?id=151</page>
+<page>https://www.playcast.se/stream.php?id=151</page>
+<referer>http://tuttosportweb.fi/au18/update/ch2.html</referer>
+<agent>Mozilla/5.0 (Windows NT 10.0; WOW64; rv:56.0) Gecko/20100101 Firefox/56.0</agent>
+</regex>
+
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+  <item>
+ <title>[B]Multicanal PlayCast 102[/B]   *sss*  </title>
+
+ <link>$doregex[getDecodedCode]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64; rv:56.0) Gecko/20100101 Firefox/56.0&amp;Referer=https://www.playcast.se/stream.php</link>
+ 
+<regex>
+<name>getDecodedCode</name>
+<expres>$pyFunction:base64.b64decode($doregex[getEncodedCode])</expres>
+<page></page>
+</regex>
+
+<regex>
+<name>getEncodedCode</name>
+<expres>curl = "(.*?)"</expres>
+<page>https://www.playcast.se/stream.php?id=152</page>
 <referer>http://tuttosportweb.fi/au18/update/ch2.html</referer>
 <agent>Mozilla/5.0 (Windows NT 10.0; WOW64; rv:56.0) Gecko/20100101 Firefox/56.0</agent>
 </regex>
