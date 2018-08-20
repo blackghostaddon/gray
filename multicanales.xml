@@ -1309,9 +1309,9 @@ def GetLSProData(page_data,Cookie_Jar,m):#streamwatcher2013
 
 
   <item>
- <title>[B]Multicanal PlayCast 101[/B]     </title>
+ <title>[B]Multicanal PlayCast 101[/B]   **  </title>
 
- <link>$doregex[getDecodedCode]|User-Agent=ipad</link>
+ <link>$doregex[getDecodedCode]|User-Agent=ipad&amp;Referer=http://tuttosportweb.fi</link>
  
 <regex>
 <name>getDecodedCode</name>
