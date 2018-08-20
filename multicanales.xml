@@ -328,18 +328,11 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-
  <item>
-<title>[B]Multicanal LLWS[/B]   [COLOR blue]SD 1[/COLOR]    </title>
+<title>[B]Multicanal LLWS[/B]   [COLOR blue]SD [/COLOR]    </title>
  
-<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://sawlive.tv/embed/zardronlim</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-
- <item>
-<title>[B]Multicanal LLWS[/B]   [COLOR blue]SD 2[/COLOR]    </title>
- 
-<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://www.wiz1.net/ch49</link>
+<sportsdevil>http://www.wiz1.net/ch49</sportsdevil>}
+<referer>http://www.wiz1.net</referer>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
