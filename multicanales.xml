@@ -1299,18 +1299,7 @@ def GetLSProData(page_data,Cookie_Jar,m):#streamwatcher2013
 
 
 
-
-https://www.playcast.se/stream.php?id=151&width=100%25&height=100%25&stretching=uniform
-
-
-
-aHR0cHM6Ly9hbGNhbGluZS52aXBjYXN0LnNlL2hscy9jaDJhbGxjYXN0MjAyMS5tM3U4P3NlY3VyZ    curl = "aHR0cHM6Ly9hbGNhbGluZS52aXBjYXN0LnNlL2hscy9jaDJhbGxjYXN0MjAyMS5tM3U4P3NlY3VyZT1jMlZ5ZG1WeVgzUnBiV1U5T0M4eU1DOHlNREU0SURrNk1URTZNRE1nVUUwbWFHRnphRjkyWVd4MVpUMW1TMU4wVlcxQlpIQXdjMWhaVmxSaGFqTnVibmxCUFQwbWRtRnNhV1J0YVc1MWRHVnpQVEU0TUNaemRISnRYMnhsYmoweE9RPT0mZXhwaXJlcz0xNTM0ODAzMDYzJm1kNT1xNDZ4OHVEYy1OT2p2V3k2WnVEZnlR";
-
-
-https://alcaline.vipcast.se/hls/ch2allcast2021.m3u8?secure=c2VydmVyX3RpbWU9OC8yMC8yMDE4IDk6MTE6MDMgUE0maGFzaF92YWx1ZT1mS1N0VW1BZHAwc1hZVlRhajNubnlBPT0mdmFsaWRtaW51dGVzPTE4MCZzdHJtX2xlbj0xOQ==&expires=1534803063&md5=q46x8uDc-NOjvWy6ZuDfyQ
-
-https://alcaline.vipcast.se/hls/ch2allcast2021.m3u8?secure=c2VydmVyX3RpbWU9OC8yMC8yMDE4IDk6MTE6MDMgUE0maGFzaF92YWx1ZT1mS1N0VW1BZHAwc1hZVlRhajNubnlBPT0mdmFsaWRtaW51dGVzPTE4MCZzdHJtX2xlbj0xOQ==&expires=1534803063&md5=q46x8uDc-NOjvWy6ZuDfyQ
-
+ 
   <item>
  <title>[B]Multicanal PlayCast 101[/B]   *sss*  </title>
 
