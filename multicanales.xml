@@ -2435,9 +2435,25 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
+ <item>
+<title>111</title>
+ <link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=https://www.playcast.se/stream.php?id=151</link>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/esp.jpg</thumbnail></item>
+
+ <item>
+<title>111</title>
+ <link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://tuttosportweb.fi/au18/update/ch2.html</link>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/esp.jpg</thumbnail></item>
+
+
+ <item>
+<title>111</title>
+ <link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://estadionline.ml/canal1.php</link>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/esp.jpg</thumbnail></item>
 
 
 
+ 
 
 
 
@@ -3293,9 +3309,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 			<page>http://www.tv-porinternet.com/directv-sports-en-vivo-por-internet/</page>
 			</regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-
-
 
 
 
