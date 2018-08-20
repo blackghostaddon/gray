@@ -10,6 +10,24 @@
 
 
  
+<item>
+<title>[COLOR blue]Agenda RojaDirecta[/COLOR] [Sportsdevil]</title>
+<link>ignorme</link>
+<jsonrpc>plugin://plugin.video.SportsDevil/?item=url=livesports/rojadirecta.me.cfg&amp;mode=1</jsonrpc>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+ 
+<item>
+<title>[COLOR blue]Agenda WIZ[/COLOR] [Sportsdevil]</title>
+<link>ignorme</link>
+<jsonrpc>plugin://plugin.video.SportsDevil/?item=url=livesports/wiz1.net.cfg&amp;mode=1</jsonrpc>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+<item>
+<title>[COLOR blue]Agenda DailyDeports[/COLOR] [Sportsdevil]</title>
+<link>ignorme</link>
+<jsonrpc>plugin://plugin.video.SportsDevil/?item=url=livesports/dailydeports.pw.cfg&amp;mode=1</jsonrpc>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
@@ -3031,10 +3049,9 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
-<title>Agenda RojaDirecta [Sportsdevil]</title>
+<title>[COLOR cyan]Agenda RojaDirecta[/COLOR] [Sportsdevil]</title>
 <link>ignorme</link>
 <jsonrpc>plugin://plugin.video.SportsDevil/?item=url=livesports/rojadirecta.me.cfg&amp;mode=1</jsonrpc>
-
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 <item>
