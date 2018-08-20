@@ -2271,12 +2271,12 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
-<title>[B]Multicanal[/B] VerLiga [I] Bein Sport [/I] up</title>
+<title>[B]Multicanal[/B] VerLiga [I] Bein La Liga [/I] up</title>
 <link>https:$doregex[get-id]|Referer=https://vergol.com/canales/live3/beinsport.php&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
 <regex>
 <name>get-id</name>
 <expres>source: '([^']+)</expres>
-<page>https://vergol.com/canales/live3/beinsport.php</page>
+<page>https://vergol.com/canales/live3/verliga.php</page>
 <referer>https://vergol.com/live3/beinsport.php</referer>
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
 </regex>
@@ -2287,7 +2287,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
  
  
-<item>
+<!--item>
 <title>[B]Multicanal[/B] VerLiga [I] Bein Max 1 [/I] up</title>
 <link>https:$doregex[get-id]|Referer=https://vergol.com/canales/live3/beinsport.php&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
 <regex>
@@ -2324,7 +2324,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <referer>https://vergol.com/live3/beinsport.php</referer>
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
 </regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/esp.jpg</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/esp.jpg</thumbnail></item-->
 
  
  
@@ -2335,7 +2335,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>get-id</name>
 <expres>source: '([^']+)</expres>
-<page>https://vergol.com/canales/live3/campeones.php</page>
+<page>https://vergol.com/canales/live3/campeoness.php</page>
 <referer>https://vergol.com/live3/beinsport.php</referer>
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
 </regex>
@@ -2350,14 +2350,12 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>get-id</name>
 <expres>source: '([^']+)</expres>
-<page>https://vergol.com/canales/live1/plusdeportes1.php</page>
+<page>https://vergol.com/canales/live1/plusdeporte1.php</page>
 <referer>https://vergol.com/live3/beinsport.php</referer>
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/esp.jpg</thumbnail></item>
 
- 
- 
  
  
   
@@ -2367,7 +2365,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>get-id</name>
 <expres>source: '([^']+)</expres>
-<page>https://vergol.com/canales/live1/plusdeportes2.php</page>
+<page>https://vergol.com/canales/live1/plusdeporte2.php</page>
 <referer>https://vergol.com/live3/beinsport.php</referer>
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
 </regex>
@@ -2388,7 +2386,19 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/esp.jpg</thumbnail></item>
 
  
- 
+   
+ <item>
+<title>[B]Multicanal[/B] VerLiga [I] Golf[/I] up</title>
+<link>https:$doregex[get-id]|Referer=https://vergol.com/canales/live3/beinsport.php&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
+<regex>
+<name>get-id</name>
+<expres>source: '([^']+)</expres>
+<page>https://vergol.com/canales/live1/golf.php</page>
+<referer>https://vergol.com/live3/beinsport.php</referer>
+<agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/esp.jpg</thumbnail></item>
+
    
  <item>
 <title>[B]Multicanal[/B] VerLiga [I] MotoGP [/I] up</title>
