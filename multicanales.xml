@@ -3330,6 +3330,57 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
  
 
+ 
+ 
+ 
+ 
+  
+ <item>
+<title>[B]Multicanal[/B] Directv[I] [/I]</title>
+<link>https://$doregex[url]$doregex[getid]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64; rv:56.0) Gecko/20100101 Firefox/56.0&amp;Referer=https://player.limpi.tv</link>
+
+
+<regex>
+<name>url</name>
+<expres>(.*?)</expres>
+<page>https://www.limpi.tv/loadbalance</page>
+<referer></referer>
+</regex>
+
+
+<regex>
+<name>getid</name>
+<expres><![CDATA[loadbalance \+ "([^"]+)]]></expres>
+<page>https://player.limpi.tv/embed/40163</page>
+<referer></referer>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+	
+ <item>
+<title>[B]Multicanal[/B] TyC Sports[I] [/I]</title>
+<link>https://$doregex[url]$doregex[getid]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64; rv:56.0) Gecko/20100101 Firefox/56.0&amp;Referer=https://player.limpi.tv</link>
+
+
+<regex>
+<name>url</name>
+<expres>(.*?)</expres>
+<page>https://www.limpi.tv/loadbalance</page>
+<referer></referer>
+</regex>
+
+
+<regex>
+<name>getid</name>
+<expres><![CDATA[loadbalance \+ "([^"]+)]]></expres>
+<page>https://player.limpi.tv/embed/40133</page>
+<referer></referer>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+	
+
+	
+	
+	
 
 
 <iem>
