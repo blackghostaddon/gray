@@ -849,7 +849,7 @@ def GetLSProData(page_data,Cookie_Jar,m):#streamwatcher2013
 
 
  <item>
-<title>[B]Multicanal RIVO 01[/B]   Wide Server  </title>
+<title>[B]Multicanal RIVO 01[/B] Wide Server  </title>
 <link>$doregex[get-id]</link>
 <regex>
 <name>get-id</name>
@@ -862,7 +862,7 @@ def GetLSProData(page_data,Cookie_Jar,m):#streamwatcher2013
 def GetLSProData(page_data,Cookie_Jar,m):
    import xbmcgui
    dialog = xbmcgui.Dialog()
-   ret = dialog.select('Elige un Canal ', ['Canal 1 Sur', 'Canal 2 English', 'Canal 3 Norte', 'Canal 4', 'Canal 5'])
+   ret = dialog.select('Elige un Canal ', ['Canal 1 Sur', 'Canal 2 English', 'Canal 3 Norte - Univision Deportes', 'Canal 4', 'Canal 5'])
    lists = ['23442', '16968', '24910', '25144', '24855']
    return lists[ret]
 ]]></expres>
@@ -1255,7 +1255,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
   <item>
  <title>[B]Multicanal Univision TDN[/B]     </title>
-<link>$doregex[url]|Referer=http://depo.superligatv.com/unitdn.php&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
+<link>$doregex[url]|Referer=http://www.televalltv.net/&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
  
  <regex>
 <name>url</name>
@@ -1277,7 +1277,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
   <item>
  <title>[B]Multicanal TVC Deportes[/B]     </title>
-<link>$doregex[url]|Referer=http://depo.superligatv.com/unitdn.php&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
+<link>$doregex[url]|Referer=http://www.televalltv.net/&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
  
  <regex>
 <name>url</name>
