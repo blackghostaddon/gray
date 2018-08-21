@@ -929,7 +929,7 @@ def GetLSProData(page_data,Cookie_Jar,m):#streamwatcher2013
 def GetLSProData(page_data,Cookie_Jar,m):
    import xbmcgui
    dialog = xbmcgui.Dialog()
-   ret = dialog.select('Elige un Canal ', ['Canal 1', 'Canal 2 ', 'Canal 3'])
+   ret = dialog.select('Elige un Canal ', ['Canal 1', 'Canal 2 ', 'Canal 3', 'Canal 4', 'Canal 5'])
    lists = ['http://in.xrivonet.info/34f.html', 'http://in.xrivonet.info/022c.html', 'http://in.xrivonet.info/018d.html', 'http://kastream.biz/lates.html', 'http://kastream.biz/bi.html']
    return lists[ret]
 ]]></expres>
@@ -985,32 +985,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 
 
-
-<item>
-<title>[B]Multicanal Futbol Chile 02[/B]        </title>
-<link>$doregex[makelist]</link>
-<regex>
-<name>makelist</name>
-<expres><![CDATA[#$pyFunction
-import re,requests
-def GetLSProData(page_data,Cookie_Jar,m):#streamwatcher2013
-  from urlresolver.plugins.lib import jsunpack
-  source=requests.get(re.findall('src="(.*?kastream[^"]+)',page_data)[0],headers={'Referer':'http://futbolchile.net/canales/kas720.html'}).text
-  return 'http://'+re.findall('Clappr.Player[\w\W]*?source.+?//([^\'"]+)',jsunpack.unpack(re.findall('id="Player"(?s)(.*?)</script',source)[0]).replace('\\',''))[0]+'|User-Agent=iPad'
-]]></expres>
-<page>http://futbolchile.net/canales/kas720.html</page>
-</regex>
-</item>
-
-
- <item>
-<title>[B]Multicanal Futbol Chile 03[/B]    [COLOR blue]SD[/COLOR]    </title>
+'http://futbolchile.net/canales/kas720.html
  
-<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://futbolchile.net/canales/tel720.html</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-
-
  
  
 
@@ -1051,54 +1027,9 @@ def GetLSProData(page_data,Cookie_Jar,m):#streamwatcher2013
 </item>
 
 
+
 <item>
 <title>[B]Multicanal AndresFutbol 02[/B]     </title>
-<link>$doregex[geturl]</link>
-    <regex>
-        <name>geturl</name>
-        <expres>source:"(.*?)"</expres>
-        <page>$doregex[getunpacked]</page>
-    </regex>
-    <regex>
-        <name>getunpacked</name>
-        <expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)' )</expres>
-        <page>http://whostreams.net/embed/$doregex[canal]</page>
-        <referer>http://whostreams.net/</referer>
-        <connection>keep-alive</connection>
-    </regex>
-	 <regex>
-        <name>canal</name>
-        <expres>net\/embed\/(.*?)"</expres>
-        <page>http://cndf83.blogspot.com/p/vtv-2.html</page>
-    </regex>
-</item>
-
-
-<item>
-<title>[B]Multicanal AndresFutbol 03[/B]    </title>
-<link>$doregex[geturl]</link>
-    <regex>
-        <name>geturl</name>
-        <expres>source:"(.*?)"</expres>
-        <page>$doregex[getunpacked]</page>
-    </regex>
-    <regex>
-        <name>getunpacked</name>
-        <expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)' )</expres>
-        <page>http://whostreams.net/embed/$doregex[canal]</page>
-        <referer>http://whostreams.net/</referer>
-        <connection>keep-alive</connection>
-    </regex>
-	 <regex>
-        <name>canal</name>
-        <expres>net\/embed\/(.*?)"</expres>
-        <page>http://cndf83.blogspot.com/p/vtv-3.html</page>
-    </regex>
-</item>
-
-
-<item>
-<title>[B]Multicanal AndresFutbol 04[/B]     </title>
 <link>$doregex[geturl]</link>
     <regex>
         <name>geturl</name>
@@ -1120,59 +1051,10 @@ def GetLSProData(page_data,Cookie_Jar,m):#streamwatcher2013
 </item>
 
 
-<item>
-<title>[B]Multicanal AndresFutbol 05[/B]     </title>
-<link>$doregex[geturl]</link>
-    <regex>
-        <name>geturl</name>
-        <expres>source:"(.*?)"</expres>
-        <page>$doregex[getunpacked]</page>
-    </regex>
-    <regex>
-        <name>getunpacked</name>
-        <expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)' )</expres>
-        <page>http://whostreams.net/embed/$doregex[canal]</page>
-        <referer>http://whostreams.net/</referer>
-        <connection>keep-alive</connection>
-    </regex>
-	 <regex>
-        <name>canal</name>
-        <expres>net\/embed\/(.*?)"</expres>
-        <page>http://cndf83.blogspot.com/p/who-2.html</page>cndf83.blogspot.com/p/who-2.html
-    </regex>
-</item>
-
-
- 
-<item>
-<title>[B]Multicanal AndresFutbol 06[/B]     </title>
-<link>$doregex[geturl]</link>
-    <regex>
-        <name>geturl</name>
-        <expres>source:"(.*?)"</expres>
-        <page>$doregex[getunpacked]</page>
-    </regex>
-    <regex>
-        <name>getunpacked</name>
-        <expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)' )</expres>
-        <page>http://whostreams.net/embed/$doregex[canal]</page>
-        <referer>http://whostreams.net/</referer>
-        <connection>keep-alive</connection>
-    </regex>
-	 <regex>
-        <name>canal</name>
-        <expres>net\/embed\/(.*?)"</expres>
-        <page>http://cndf83.blogspot.com/p/who-3.html</page>
-    </regex>
-</item>
-
-
- 
- 
  
   
 <item>
-<title>[B]Multicanal AndresFutbol 07[/B]     </title>
+<title>[B]Multicanal AndresFutbol 03[/B]     </title>
 <link>$doregex[geturl]</link>
     <regex>
         <name>geturl</name>
@@ -1196,103 +1078,7 @@ def GetLSProData(page_data,Cookie_Jar,m):#streamwatcher2013
 
 
 
-  
-<item>
-<title>[B]Multicanal AndresFutbol 08[/B]     </title>
-<link>$doregex[geturl]</link>
-    <regex>
-        <name>geturl</name>
-        <expres>source:"(.*?)"</expres>
-        <page>$doregex[getunpacked]</page>
-    </regex>
-    <regex>
-        <name>getunpacked</name>
-        <expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)' )</expres>
-        <page>http://whostreams.net/embed/$doregex[canal]</page>
-        <referer>http://whostreams.net/</referer>
-        <connection>keep-alive</connection>
-    </regex>
-	 <regex>
-        <name>canal</name>
-        <expres>net\/embed\/(.*?)"</expres>
-        <page>http://cndf83.blogspot.com/p/net-2.html</page>
-    </regex>
-</item>
-
-
-  
-<item>
-<title>[B]Multicanal AndresFutbol 09[/B]     </title>
-<link>$doregex[geturl]</link>
-    <regex>
-        <name>geturl</name>
-        <expres>source:"(.*?)"</expres>
-        <page>$doregex[getunpacked]</page>
-    </regex>
-    <regex>
-        <name>getunpacked</name>
-        <expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)' )</expres>
-        <page>http://whostreams.net/embed/$doregex[canal]</page>
-        <referer>http://whostreams.net/</referer>
-        <connection>keep-alive</connection>
-    </regex>
-	 <regex>
-        <name>canal</name>
-        <expres>net\/embed\/(.*?)"</expres>
-        <page>http://cndf83.blogspot.com/p/net-3.html</page>
-    </regex>
-</item>
-
-
-
-
-
-
-
  
-  <item>
- <title>[B]Multicanal PlayCast 101[/B]   *sss*  </title>
-
- <link>$doregex[getDecodedCode]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64; rv:56.0) Gecko/20100101 Firefox/56.0&amp;Referer=https://www.playcast.se/stream.php</link>
- 
-<regex>
-<name>getDecodedCode</name>
-<expres>$pyFunction:base64.b64decode($doregex[getEncodedCode])</expres>
-<page></page>
-</regex>
-
-<regex>
-<name>getEncodedCode</name>
-<expres>curl = "(.*?)"</expres>
-<page>https://www.playcast.se/stream.php?id=151</page>
-<referer>http://tuttosportweb.fi/au18/update/ch2.html</referer>
-<agent>Mozilla/5.0 (Windows NT 10.0; WOW64; rv:56.0) Gecko/20100101 Firefox/56.0</agent>
-</regex>
-
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-
-  <item>
- <title>[B]Multicanal PlayCast 102[/B]   *sss*  </title>
-
- <link>$doregex[getDecodedCode]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64; rv:56.0) Gecko/20100101 Firefox/56.0&amp;Referer=https://www.playcast.se/stream.php</link>
- 
-<regex>
-<name>getDecodedCode</name>
-<expres>$pyFunction:base64.b64decode($doregex[getEncodedCode])</expres>
-<page></page>
-</regex>
-
-<regex>
-<name>getEncodedCode</name>
-<expres>curl = "(.*?)"</expres>
-<page>https://www.playcast.se/stream.php?id=152</page>
-<referer>http://tuttosportweb.fi/au18/update/ch2.html</referer>
-<agent>Mozilla/5.0 (Windows NT 10.0; WOW64; rv:56.0) Gecko/20100101 Firefox/56.0</agent>
-</regex>
-
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
 
 
 
@@ -1549,7 +1335,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
-<title>[B]Multicanal BR [/B]    </title>
+<title>[B]Multicanales Brasileños[/B]    </title>
 <link>$doregex[geturl]</link>
     <regex>
         <name>geturl</name>
@@ -1697,7 +1483,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>canal</name>
 <expres>channel='(.*?)'</expres>
-<page>http://capodeportes.net/reproductor2/canal10.php</page>
+<page>http://capodeportes.net/reproductor2/canal2.php</page>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
@@ -1707,46 +1493,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-
-
- 
-<item>
-<title>[B] RIVO Sports [/B] [COLOR lime][I]  SportsDevil [Descarga last version desde BlackGhost Repo]  [/I][/COLOR]</title>
-<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://in.xrivonet.info/a$doregex[select].html</link>
-<regex>
-<name>select</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m):
-   import xbmcgui
-   dialog = xbmcgui.Dialog()
-   ret = dialog.select('Elige un Canal ', ['Canal 1', 'Canal 2', 'Canal 3', 'Canal 4', 'Canal 5', 'Canal 6', 'Canal 7', 'Canal 8', 'Canal 9', 'Canal 10', 'Canal 11', 'Canal 12', 'Canal 13', 'Canal 14', 'Canal 15'])
-   lists = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15']
-   return lists[ret]
-]]></expres>
-<page></page>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-
-
-
-
-<item>
-<title>[B] Capodeportes [/B] [COLOR lime][I]  SportsDevil [Descarga last version desde BlackGhost Repo]  [/I][/COLOR]</title>
-<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://capodeportes.net/reproductor2/canal$doregex[select].php</link>
-<regex>
-<name>select</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m):
-   import xbmcgui
-   dialog = xbmcgui.Dialog()
-   ret = dialog.select('Elige un Canal ', ['Canal 1', 'Canal 2', 'Canal 3', 'Canal 4', 'Canal 5', 'Canal 6', 'Canal 7', 'Canal 8', 'Canal 9', 'Canal 10', 'Canal 11', 'Canal 12', 'Canal 13', 'Canal 14', 'Canal 15', 'Canal 16', 'Canal 17', 'Canal 18', 'Canal 19', 'Canal 20', 'Canal 21', 'Canal 22', 'Canal 23', 'Canal 24', 'Canal 25', 'Canal 26', 'Canal 27', 'Canal 28', 'Canal 29', 'Canal 30', 'Canal 31', 'Canal 32', 'Canal 33', 'Canal 34', 'Canal 35', 'Canal 36', 'Canal 37', 'Canal 38', 'Canal 39', 'Canal 40', 'Canal 41', 'Canal 42'])
-   lists = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', '41', '42']
-   return lists[ret]
-]]></expres>
-<page></page>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
@@ -1773,25 +1519,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-
-<item>
-<title>[B] ElGoles [/B] [COLOR lime][I]  SportsDevil [Descarga last version desde BlackGhost Repo]  [/I][/COLOR]</title>
-<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://robertrc.bget.ru/reproductor/$doregex[select].php</link>
-<regex>
-<name>select</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m):
-   import xbmcgui
-   dialog = xbmcgui.Dialog()
-   ret = dialog.select('Elige un Canal ', ['Canal 6 Principal', 'Canal 7', 'Canal 8', 'Canal 9', 'Canal 10', 'Canal 11', 'Canal 12', 'Canal 13', 'Canal 14', 'Canal 15', 'Canal 16', 'Canal 17', 'Canal 18', 'Canal 19', 'Canal 20', 'Canal 21', 'Canal 22', 'Canal 23', 'Canal 24', 'Canal 25', 'Canal 26', 'Canal 27', 'Canal 28', 'Canal 29', 'Canal 30'])
-   lists = ['06', '07', '08', '09', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30']
-   return lists[ret]
-]]></expres>
-<page></page>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-
+ 
 
 
 
@@ -1847,6 +1575,19 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 	<item><title>                           </title><link>http://ignora.me</link><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 	<item><title> [B]C A N A L E S  D E  E S P A Ñ A  [/B] </title><link>http://ignora.me</link><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
@@ -1862,7 +1603,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	
 	
 	
-	<item>
+	<tem>
 <title>[B]Multicanal ElGoles 11[/B]   *  </title>
 <link>$doregex[geturl]</link>
     <regex>
@@ -1962,10 +1703,26 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 	
+ <item>
+<title>[B]Multicanal[/B] TikiTaka 02 [I] [/I]</title>
+<link>$doregex[url]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64; rv:56.0) Gecko/20100101 Firefox/56.0&amp;Referer=http://static.castto.me</link>
+<regex>
+<name>url</name>
+<expres><![CDATA[source src="([^"]+)]]></expres>
+<page>http://static.castto.me/embedlivesrvjs.php?channel=$doregex[getid]&amp;vw=720&amp;vh=420</page>
+<referer>http://estadionline.ml/canal1.php</referer>
+</regex>
+<regex>
+<name>getid</name>
+<expres><![CDATA[fid="([^"]+)]]></expres>
+<page>http://estadionline.ml/canal2.php</page>
+<referer>http://estadionline.ml/canal2.php</referer>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 	
 
- <item>
+ <!--item>
 <title>[B]Multicanal[/B] TikiTaka 02 [I]  *[/I]</title>
 <link>http://$doregex[ip]$doregex[m3u8]</link>
 <regex>
@@ -2009,7 +1766,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page>http://estadionline.ml/canal3.php</page>
 </regex>
 	 
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item-->
 	
 
 	
@@ -2021,22 +1778,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	
 	
 	
- <im>
-<title>[B]Multicanal[/B] TikiTaka 01 [I] [/I]</title>
-<link>$doregex[url]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64; rv:56.0) Gecko/20100101 Firefox/56.0&amp;Referer=http://static.castto.me</link>
-<regex>
-<name>url</name>
-<expres><![CDATA[source src="([^"]+)]]></expres>
-<page>http://static.castto.me/embedlivesrvjs.php?channel=$doregex[getid]&amp;vw=720&amp;vh=420</page>
-<referer>http://estadionline.ml/canal1.php</referer>
-</regex>
-<regex>
-<name>getid</name>
-<expres><![CDATA[fid="([^"]+)]]></expres>
-<page>http://estadionline.ml/canal1.php</page>
-<referer>http://estadionline.ml/canal1.php</referer>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
@@ -2436,7 +2177,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
- <item>
+ <!--item>
 <title>[B]Multicanal ElGoles 07[/B]  </title>
 <link>http://$doregex[ip]$doregex[m3u8]$doregex[m3u82]</link>
 <regex>
@@ -2930,7 +2671,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <expres>channel='(.*?)'</expres>
 <page>http://robertrc.bget.ru/reproductor/20.php</page>
 </regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item-->
 
 
 
