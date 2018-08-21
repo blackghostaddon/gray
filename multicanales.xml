@@ -2201,8 +2201,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-
-
 <item>
 <title>[B]Multicanal MotoGP España[/B]   </title>
 
@@ -3379,6 +3377,32 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	
 
 	
+<item>
+<title>[B]Multicanal[/B] TikiTaka 02 [I]  [/I]</title>
+<link>http://$doregex[Igor_Rangel_IP]/loadbalance/63895542913919338661/playlist.m3u8$doregex[Igor_Rangel_AuthSign]|User-Agent=iPhone</link>
+<regex>
+<name>Igor_Rangel_IP</name>
+<expres>location:http://(.*)/loadbalance</expres>
+<page>$doregex[Igor_Rangel_Page]</page>
+<noredirect>true</noredirect>
+<includeheaders></includeheaders>
+</regex>
+<regex>
+<name>Igor_Rangel_AuthSign</name>
+<expres>m3u8(.*)</expres>
+<page>$doregex[Igor_Rangel_Page]</page>
+</regex>
+
+<regex>
+<name>Igor_Rangel_Page</name>
+<expres>"(.*m3u8.*?)"</expres>
+<page>https://pxstream.tv/embed/losm1cka125h/</page>
+<referer>http://agenda.superligatv.com/foxsport2.html</referer>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+
 	
 	
 
