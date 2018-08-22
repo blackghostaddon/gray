@@ -60,7 +60,7 @@
 def GetLSProData(page_data,Cookie_Jar,m):
    import xbmcgui
    dialog = xbmcgui.Dialog()
-   ret = dialog.select('Elige un Canal ', ['telemundo', 'univision', 'unimas', 'Deportes', 'EspnDeportes', 'FoxDeportes', 'Deportes2'])
+   ret = dialog.select('Elige un Canal ', ['Telemundo', 'Univision', 'Unimas', 'Univision Deportes', 'EspnDeportes', 'FoxDeportes', 'Univision  Deportes 2'])
    lists = ['http://whostreams.net/embed/6otcp42qvvs', 'http://whostreams.net/embed/yjz92igvajl5l9', 'http://whostreams.net/embed/le2di', 'http://whostreams.net/embed/k35qrdo5h', 'http://whostreams.net/embed/2gzsuk67y', 'http://whostreams.net/embed/vume8720', 'http://whostreams.net/embed/8vzxl3yuc']
    return lists[ret]
 ]]></expres>
@@ -86,7 +86,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 def GetLSProData(page_data,Cookie_Jar,m):
    import xbmcgui
    dialog = xbmcgui.Dialog()
-   ret = dialog.select('Elige un Canal ', ['espnla', 'espn2', 'unitdn', 'tdn', 'cdf', 'espn3', 'unidep', 'clarosport', 'foxsport2', 'imagentv', 'tvcdep', 'canal 5'])
+   ret = dialog.select('Elige un Canal ', ['ESPN LA', 'ESPN 2', 'UNIVISION TDN', 'TDN', 'CDF', 'ESPN 3', 'UNIVISION DEPORTES', 'CLARO SPORTS', 'FOX SPORTS 2', 'IMAGEN TV', 'TVC DEPORTES', 'canal 5'])
    lists = ['espnla', 'espn2', 'unitdn', 'tdn', 'cdf', 'espn3', 'unidep', 'clarosport', 'foxsport2', 'imagentv', 'tvcdep', 'tele5']
    return lists[ret]
 ]]></expres>
@@ -242,7 +242,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
 
 
-<item>
+<!--item>
 <title>[B]Multicanal UFC[/B]   </title>
 
 <link>$doregex[GetPageUrl]|User-Agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+rv%3A11.0%29+like+Gecko</link>
@@ -337,7 +337,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page>http://livesports.pw/embeddeporte2.php?file=foxaccion&amp;width=650&amp;height=397</page>
 <cookieJar></cookieJar>
 </regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item-->
 
 
 
@@ -862,7 +862,7 @@ def GetLSProData(page_data,Cookie_Jar,m):#streamwatcher2013
 def GetLSProData(page_data,Cookie_Jar,m):
    import xbmcgui
    dialog = xbmcgui.Dialog()
-   ret = dialog.select('Elige un Canal ', ['Canal 1 Sur', 'Canal 2 English', 'Canal 3 Norte - Univision Deportes', 'Canal 4', 'Canal 5'])
+   ret = dialog.select('Elige un Canal ', ['Canal 1 Sur - Univision Deportes', 'Canal 2 English', 'Canal 3 Norte - Univision Deportes', 'Canal 4', 'Canal 5 - Norte Fox Sports'])
    lists = ['23442', '16968', '24910', '25144', '24855']
    return lists[ret]
 ]]></expres>
@@ -929,7 +929,7 @@ def GetLSProData(page_data,Cookie_Jar,m):#streamwatcher2013
 def GetLSProData(page_data,Cookie_Jar,m):
    import xbmcgui
    dialog = xbmcgui.Dialog()
-   ret = dialog.select('Elige un Canal ', ['Canal 1', 'Canal 2 ', 'Canal 3', 'Canal 4', 'Canal 5'])
+   ret = dialog.select('Elige un Canal ', ['Canal 1 - Norte - Univision Deportes', 'Canal 2 - Norte - Fox Deportes', 'Canal 3 - Norte - Fox Deportes', 'Canal 4 - norte - univision deportes', 'Canal 5'])
    lists = ['http://in.xrivonet.info/34f.html', 'http://in.xrivonet.info/022c.html', 'http://in.xrivonet.info/018d.html', 'http://kastream.biz/lates.html', 'http://kastream.biz/bi.html']
    return lists[ret]
 ]]></expres>
@@ -1005,7 +1005,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
-<title>[B]Multicanal AndresFutbol 01[/B]    </title>
+<title>[B]Multicanal AndresFutbol 01[/B]  (Sur)  </title>
 <link>$doregex[geturl]</link>
     <regex>
         <name>geturl</name>
@@ -1054,7 +1054,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
   
 <item>
-<title>[B]Multicanal AndresFutbol 03[/B]     </title>
+<title>[B]Multicanal AndresFutbol 03[/B]   (Norte)  </title>
 <link>$doregex[geturl]</link>
     <regex>
         <name>geturl</name>
