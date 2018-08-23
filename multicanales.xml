@@ -1636,7 +1636,28 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	
 	
 	
+		<tem>
+<title>[B]Multicanal ElGoles 6[/B]   *  </title>
+<link>$doregex[geturl]</link>
+    <regex>
+        <name>geturl</name>
+        <expres>source:"(.*?)\?auto</expres>
+        <page>$doregex[getunpacked]</page>
+    </regex>
+    <regex>
+        <name>getunpacked</name>
+        <expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)' )</expres>
+        <page>$doregex[canal]</page>
+        <referer>http://whostreams.net/</referer>
+        <connection>keep-alive</connection>
+    </regex>
 	
+	<regex>
+<name>canal</name>
+<expres>iframe src="(.*?)"</expres>
+<page>http://elgoles.me/6.html</page>
+</regex>
+</item>
 	
 	
 	<tem>
@@ -1658,7 +1679,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	<regex>
 <name>canal</name>
 <expres>iframe src="(.*?)"</expres>
-<page>http://robertrc.bget.ru/reproductor/11.php</page>
+<page>http://elgoles.me/11.html</page>
 </regex>
 </item>
 
@@ -2212,7 +2233,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
- <!--item>
+ <item>
 <title>[B]Multicanal ElGoles 07[/B]  </title>
 <link>http://$doregex[ip]$doregex[m3u8]$doregex[m3u82]</link>
 <regex>
@@ -2241,12 +2262,12 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>server</name>
 <expres>javascript\' src=\'(http://.*?)\/</expres>
-<page>http://robertrc.bget.ru/reproductor/07.php</page>
+<page>http://elgoles.me/07.html</page>
 </regex>
 <regex>
 <name>canal</name>
 <expres>channel='(.*?)'</expres>
-<page>http://robertrc.bget.ru/reproductor/07.php</page>
+<page>http://elgoles.me/07.html</page>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
@@ -2289,12 +2310,12 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>server</name>
 <expres>javascript\' src=\'(http://.*?)\/</expres>
-<page>http://robertrc.bget.ru/reproductor/08.php</page>
+<page>http://elgoles.me/08.html</page>
 </regex>
 <regex>
 <name>canal</name>
 <expres>channel='(.*?)'</expres>
-<page>http://robertrc.bget.ru/reproductor/08.php</page>
+<page>http://elgoles.me/08.html</page>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
@@ -2329,12 +2350,12 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>server</name>
 <expres>javascript\' src=\'(http://.*?)\/</expres>
-<page>http://robertrc.bget.ru/reproductor/09.php</page>
+<page>http://elgoles.me/09.html</page>
 </regex>
 <regex>
 <name>canal</name>
 <expres>channel='(.*?)'</expres>
-<page>http://robertrc.bget.ru/reproductor/09.php</page>
+<page>http://elgoles.me/09.html</page>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
@@ -2369,12 +2390,12 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>server</name>
 <expres>javascript\' src=\'(http://.*?)\/</expres>
-<page>http://robertrc.bget.ru/reproductor/12.php</page>
+<page>http://elgoles.me/12.html</page>
 </regex>
 <regex>
 <name>canal</name>
 <expres>channel='(.*?)'</expres>
-<page>http://robertrc.bget.ru/reproductor/12.php</page>
+<page>http://elgoles.me/12.html</page>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
@@ -2413,12 +2434,12 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>server</name>
 <expres>javascript\' src=\'(http://.*?)\/</expres>
-<page>http://robertrc.bget.ru/reproductor/13.php</page>
+<page>http://elgoles.me/13.html</page>
 </regex>
 <regex>
 <name>canal</name>
 <expres>channel='(.*?)'</expres>
-<page>http://robertrc.bget.ru/reproductor/13.php</page>
+<page>http://elgoles.me/13.html</page>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
@@ -2452,12 +2473,12 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>server</name>
 <expres>javascript\' src=\'(http://.*?)\/</expres>
-<page>http://robertrc.bget.ru/reproductor/14.php</page>
+<page>http://elgoles.me/14.html</page>
 </regex>
 <regex>
 <name>canal</name>
 <expres>channel='(.*?)'</expres>
-<page>http://robertrc.bget.ru/reproductor/14.php</page>
+<page>http://elgoles.me/14.html</page>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
@@ -2492,12 +2513,12 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>server</name>
 <expres>javascript\' src=\'(http://.*?)\/</expres>
-<page>http://robertrc.bget.ru/reproductor/15.php</page>
+<page>http://elgoles.me/15.html</page>
 </regex>
 <regex>
 <name>canal</name>
 <expres>channel='(.*?)'</expres>
-<page>http://robertrc.bget.ru/reproductor/15.php</page>
+<page>http://elgoles.me/15.html</page>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
@@ -2531,12 +2552,12 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>server</name>
 <expres>javascript\' src=\'(http://.*?)\/</expres>
-<page>http://robertrc.bget.ru/reproductor/16.php</page>
+<page>http://elgoles.me/16.html</page>
 </regex>
 <regex>
 <name>canal</name>
 <expres>channel='(.*?)'</expres>
-<page>http://robertrc.bget.ru/reproductor/16.php</page>
+<page>http://elgoles.me/16.html</page>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
@@ -2572,12 +2593,12 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>server</name>
 <expres>javascript\' src=\'(http://.*?)\/</expres>
-<page>http://robertrc.bget.ru/reproductor/17.php</page>
+<page>http://elgoles.me/17.html</page>
 </regex>
 <regex>
 <name>canal</name>
 <expres>channel='(.*?)'</expres>
-<page>http://robertrc.bget.ru/reproductor/17.php</page>
+<page>http://elgoles.me/17.html</page>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
@@ -2613,12 +2634,12 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>server</name>
 <expres>javascript\' src=\'(http://.*?)\/</expres>
-<page>http://robertrc.bget.ru/reproductor/18.php</page>
+<page>http://elgoles.me/18.html</page>
 </regex>
 <regex>
 <name>canal</name>
 <expres>channel='(.*?)'</expres>
-<page>http://robertrc.bget.ru/reproductor/18.php</page>
+<page>http://elgoles.me/18.html</page>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
@@ -2656,12 +2677,12 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>server</name>
 <expres>javascript\' src=\'(http://.*?)\/</expres>
-<page>http://robertrc.bget.ru/reproductor/19.php</page>
+<page>http://elgoles.me/19.html</page>
 </regex>
 <regex>
 <name>canal</name>
 <expres>channel='(.*?)'</expres>
-<page>http://robertrc.bget.ru/reproductor/19.php</page>
+<page>http://elgoles.me/19.html</page>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
@@ -2699,14 +2720,14 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>server</name>
 <expres>javascript\' src=\'(http://.*?)\/</expres>
-<page>http://robertrc.bget.ru/reproductor/20.php</page>
+<page>http://elgoles.me/20.html</page>
 </regex>
 <regex>
 <name>canal</name>
 <expres>channel='(.*?)'</expres>
-<page>http://robertrc.bget.ru/reproductor/20.php</page>
+<page>http://elgoles.me/20.html</page>
 </regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item-->
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
