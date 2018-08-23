@@ -1178,8 +1178,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
   <item>
- <title>[B]Multicanal ESPN[/B] *    </title>
-<link>$doregex[url]|Referer=http://fut.superligatv.com&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
+ <title>[B]Multicanal ESPN[/B]    </title>
+<link>$doregex[url]|Referer=http://agenda.superligatv.com/foxsport2.html&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
  
  <regex>
 <name>url</name>
@@ -1194,7 +1194,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
   <item>
  <title>[B]Multicanal ESPN 2[/B]     </title>
-<link>$doregex[url]|Referer=http://superligatv.com&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
+<link>$doregex[url]|Referer=http://www.grupovalltv.net/&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
  
  <regex>
 <name>url</name>
