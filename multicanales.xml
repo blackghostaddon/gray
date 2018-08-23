@@ -1636,7 +1636,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	
 	
 	
-		<tem>
+		<item>
 <title>[B]Multicanal ElGoles 6[/B]   *  </title>
 <link>$doregex[geturl]</link>
     <regex>
@@ -1660,7 +1660,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 	
 	
-	<tem>
+	<item>
 <title>[B]Multicanal ElGoles 11[/B]   *  </title>
 <link>$doregex[geturl]</link>
     <regex>
