@@ -3151,6 +3151,34 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	
 	
 
+  <item>
+<title>[B]Multicanal[/B] TikiTaka 02ssss [I]  [/I]</title>
+<link>[Igor_Rangel_Page]|User-Agent=iPhone</link>
+
+<regex>
+<name>Igor_Rangel_Page</name>
+<expres>'(.*m3u8.*?)'</expres>
+<page>https://pxstream.tv/embed/hyfe8ic126wm/</page>
+<referer>http://agenda.superligatv.com/tvcdep.html</referer>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+  <item>
+<title>[B]Multicanal[/B] TikiTaka 02ssss [I]  [/I]</title>
+<link>[Igor_Rangel_Page]|Referer=http://agenda.superligatv.com/tvcdep.html</link>
+
+<regex>
+<name>Igor_Rangel_Page</name>
+<expres>'(.*m3u8.*?)'</expres>
+<page>https://pxstream.tv/embed/hyfe8ic126wm/</page>
+<referer>http://agenda.superligatv.com/tvcdep.html</referer>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+
+
+
 
 <iem>
 <Title>regex futbolibre</title>
