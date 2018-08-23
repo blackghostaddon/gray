@@ -1022,7 +1022,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	 <regex>
         <name>canal</name>
         <expres>net\/embed\/(.*?)"</expres>
-        <page>http://cndf83.blogspot.com/p/vtv-1.html</page>http://cndf83.blogspot.com/p
+        <page>http://cndf84.blogspot.com/p/vtv-1.html</page>http://cndf84.blogspot.com/p
     </regex>
 </item>
 
@@ -1046,12 +1046,14 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	 <regex>
         <name>canal</name>
         <expres>net\/embed\/(.*?)"</expres>
-        <page>http://cndf83.blogspot.com/p/who-1.html</page>
+        <page>http://cndf84.blogspot.com/p/w-1.html</page>
     </regex>
 </item>
 
 
  
+
+
   
 <item>
 <title>[B]Multicanal AndresFutbol 03[/B]   (Norte)  </title>
@@ -1071,18 +1073,52 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	 <regex>
         <name>canal</name>
         <expres>net\/embed\/(.*?)"</expres>
-        <page>http://cndf83.blogspot.com/p/net-1.html</page>
+        <page>http://cndf84.blogspot.com/p/net-1.html</page>
     </regex>
 </item>
 
 
 
 
- 
 
 
 
-
+<iem>
+<title>[B]Multicanal AndresFutbol [/B]  Todos    </title>
+<link>$doregex[geturl]</link>
+    <regex>
+        <name>geturl</name>
+        <expres>source:"(.*?)"</expres>
+        <page>$doregex[getunpacked]</page>
+    </regex>
+    <regex>
+        <name>getunpacked</name>
+        <expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)' )</expres>
+        <page>http://whostreams.net/embed/$doregex[canal]</page>
+        <referer>http://whostreams.net/</referer>
+        <connection>keep-alive</connection>
+    </regex>
+	 <regex>
+        <name>canal</name>
+        <expres>net\/embed\/(.*?)"</expres>
+        <page>$doregex[select]</page>
+    </regex>
+	
+		<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+   import xbmcgui
+   dialog = xbmcgui.Dialog()
+   ret = dialog.select('Elige un Canal ', ['vtv-1', 'vtv-2', 'vtv-3', 'who-1', 'who-2', 'who-3', 'net-1', 'net-2', 'net-3', 'w-1', 'w-2', 'w-3', 'w-1-1', 'w-2-2', 'w-3-3'])
+   lists = ['http://cndf84.blogspot.com/p/vtv-1.html', 'http://cndf84.blogspot.com/p/vtv-2.html', 'http://cndf84.blogspot.com/p/vtv-3.html', 'http://cndf84.blogspot.com/p/who-1.html', 'http://cndf84.blogspot.com/p/who-2.html', 'http://cndf84.blogspot.com/p/who-3.html', 'http://cndf84.blogspot.com/p/net-1.html', 'http://cndf84.blogspot.com/p/net-2.html', 'http://cndf84.blogspot.com/p/net-3.html', 'http://cndf84.blogspot.com/p/w-1.html', 'http://cndf84.blogspot.com/p/w-2.html', 'http://cndf84.blogspot.com/p/w-3.html', 'http://cndf84.blogspot.com/p/w-1-1.html', 'http://cndf84.blogspot.com/p/w-2-2.html', 'http://cndf84.blogspot.com/p/w-3-3.html']
+   return lists[ret]
+]]></expres>
+<page></page>
+</regex>
+	
+	
+</item>
 
 
 
