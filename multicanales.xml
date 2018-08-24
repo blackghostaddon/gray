@@ -60,13 +60,14 @@
 def GetLSProData(page_data,Cookie_Jar,m):
    import xbmcgui
    dialog = xbmcgui.Dialog()
-   ret = dialog.select('Elige un Canal ', ['Telemundo', 'Univision', 'Unimas', 'Univision Deportes', 'EspnDeportes', 'FoxDeportes', 'Univision  Deportes 2'])
-   lists = ['http://whostreams.net/embed/6otcp42qvvs', 'http://whostreams.net/embed/yjz92igvajl5l9', 'http://whostreams.net/embed/le2di', 'http://whostreams.net/embed/k35qrdo5h', 'http://whostreams.net/embed/2gzsuk67y', 'http://whostreams.net/embed/vume8720', 'http://whostreams.net/embed/8vzxl3yuc']
+   ret = dialog.select('Elige un Canal ', ['Telemundo', 'Univision', 'Unimas', 'Univision Deportes', 'EspnDeportes', 'FoxDeportes', 'Univision  Deportes 2', 'EstrellaTV', 'Galavision'])
+   lists = ['http://whostreams.net/embed/6otcp42qvvs', 'http://whostreams.net/embed/yjz92igvajl5l9', 'http://whostreams.net/embed/le2di', 'http://whostreams.net/embed/k35qrdo5h', 'http://whostreams.net/embed/2gzsuk67y', 'http://whostreams.net/embed/vume8720', 'http://whostreams.net/embed/8vzxl3yuc', 'http://whostreams.net/embed/jnyz0sm1hth78y', 'http://whostreams.net/embed/la10qyt9ohls7y']
    return lists[ret]
 ]]></expres>
 <page></page>
 </regex>
 </item>
+
 
 
 
@@ -229,17 +230,55 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
+http://widestream.io/embed-1053
+
+http://aztecalive-lh.akamaihd.net/i/0qm7cjvop_1@502476/index_3_av-p.m3u8
+
+<itEm>
+<title>[B]Multicanal PSN Deportes [/B]   Univision Deportes  </title>
+<link>http://sced.cdnak.neulion.net/250/nlds/univision/as/live/udnoo_hd_ipad.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail>
+</item>
 
 
 <itEm>
 <title>[B]Multicanal PSN Deportes [/B]     </title>
-<link>https://mp4.vaughnsoft.net/live?app=live&amp;port=2935&amp;stream=live_psn97v|Referer=https://vaughnlive.tv/</link>
+<link>https://mp4.vaughnsoft.net/live?app=live&amp;port=2935&amp;stream=live_$doregex[canal]|Referer=https://vaughnlive.tv/</link>
+<regex>
+<name>canal</name>
+<expres>\/(rivo.*?)'</expres>
+<page>https://vaughnlive.tv/browse/espanol&a=mvn&b=1503155067510</page>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail>
 </item>
 
 
-
+<itEm>
+<title>[B]Multicanal Telemundo Deportes [/B]     </title>
+<link>https://mp4.vaughnsoft.net/live?app=live&amp;port=2935&amp;stream=live_$doregex[canal]|Referer=https://vaughnlive.tv/</link>
+<regex>
+<name>canal</name>
+<expres>\/(anahi.*?)'</expres>
+<page>https://vaughnlive.tv/browse/espanol&a=mvn&b=1503155067510</page>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail>
+</item>
 
  
+ <itEm>
+<title>[B]Multicanal Telemundo Deportes [/B]     </title>
+<link>https://mp4.vaughnsoft.net/live?app=live&amp;port=2935&amp;stream=live_$doregex[canal]|Referer=https://vaughnlive.tv/</link>
+<regex>
+<name>canal</name>
+<expres>\/(tele.*?)'</expres>
+<page>https://vaughnlive.tv/browse/espanol&a=mvn&b=1503155067510</page>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail>
+</item>
+
 
 
 <!--item>
