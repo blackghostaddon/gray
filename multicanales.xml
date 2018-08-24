@@ -1636,7 +1636,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	
 	
 	
-		<item>
+		<!--item>
 <title>[B]Multicanal ElGoles 6[/B]   *  </title>
 <link>$doregex[geturl]</link>
     <regex>
@@ -1697,7 +1697,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <expres>file:"([^"]+)</expres>
 <page>http://widestream.io/embed-32669</page>
 </regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item-->
 
 
 
@@ -1939,7 +1939,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<item>
+<!--item>
 <title>[B]Multicanal MotoGP España[/B]   </title>
 
 <link>$doregex[GetPageUrl]|User-Agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+rv%3A11.0%29+like+Gecko</link>
@@ -2021,7 +2021,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page>http://livesports.pw/embeddeporte2.php?file=beinsport&amp;width=650&amp;height=397</page>
 <cookieJar></cookieJar>
 </regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item-->
 
 
 
@@ -2030,12 +2030,12 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
-<title>[B]Multicanal[/B] VerLiga [I] Bein La Liga [/I] up</title>
+<title>[B]Multicanal[/B] VerLiga [I] Bein La Liga [/I] </title>
 <link>https:$doregex[get-id]|Referer=https://vergol.com/canales/live3/beinsport.php&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
 <regex>
 <name>get-id</name>
 <expres>source: '([^']+)</expres>
-<page>https://vergol.com/canales/live3/verliga.php</page>
+<page>https://vergol.com/live3/verliga.php</page>
 <referer>https://vergol.com/live3/beinsport.php</referer>
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
 </regex>
@@ -2089,12 +2089,12 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
  
  <item>
-<title>[B]Multicanal[/B] VerLiga [I] Campeones [/I] up</title>
+<title>[B]Multicanal[/B] VerLiga [I] Campeones [/I] </title>
 <link>https:$doregex[get-id]|Referer=https://vergol.com/canales/live3/beinsport.php&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
 <regex>
 <name>get-id</name>
 <expres>source: '([^']+)</expres>
-<page>https://vergol.com/canales/live3/campeoness.php</page>
+<page>https://vergol.com/live3/campeones.php</page>
 <referer>https://vergol.com/live3/beinsport.php</referer>
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
 </regex>
@@ -2104,12 +2104,12 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
   
  <item>
-<title>[B]Multicanal[/B] VerLiga [I] Deportes 1 [/I] up</title>
+<title>[B]Multicanal[/B] VerLiga [I] Deportes 1 [/I] </title>
 <link>https:$doregex[get-id]|Referer=https://vergol.com/canales/live3/beinsport.php&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
 <regex>
 <name>get-id</name>
 <expres>source: '([^']+)</expres>
-<page>https://vergol.com/canales/live1/plusdeporte1.php</page>
+<page>https://vergol.com/live1/plusdeportes1.php</page>
 <referer>https://vergol.com/live3/beinsport.php</referer>
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
 </regex>
@@ -2119,12 +2119,12 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
   
  <item>
-<title>[B]Multicanal[/B] VerLiga [I] Deportes 2 [/I] up</title>
+<title>[B]Multicanal[/B] VerLiga [I] Deportes 2 [/I] </title>
 <link>https:$doregex[get-id]|Referer=https://vergol.com/canales/live3/beinsport.php&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
 <regex>
 <name>get-id</name>
 <expres>source: '([^']+)</expres>
-<page>https://vergol.com/canales/live1/plusdeporte2.php</page>
+<page>https://vergol.com/live1/plusdeportes2.php</page>
 <referer>https://vergol.com/live3/beinsport.php</referer>
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
 </regex>
@@ -2133,31 +2133,74 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
   
  <item>
-<title>[B]Multicanal[/B] VerLiga [I] Liga 123[/I] up</title>
+<title>[B]Multicanal[/B] VerLiga [I] Liga 123[/I] </title>
 <link>https:$doregex[get-id]|Referer=https://vergol.com/canales/live3/beinsport.php&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
 <regex>
 <name>get-id</name>
 <expres>source: '([^']+)</expres>
-<page>https://vergol.com/canales/live3/liga123.php</page>
+<page>https://vergol.com/live3/liga123.php</page>
 <referer>https://vergol.com/live3/beinsport.php</referer>
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/esp.jpg</thumbnail></item>
 
+ 
  
    
  <item>
-<title>[B]Multicanal[/B] VerLiga [I] Golf[/I] up</title>
+<title>[B]Multicanal[/B] VerLiga [I] GolTV[/I] </title>
 <link>https:$doregex[get-id]|Referer=https://vergol.com/canales/live3/beinsport.php&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
 <regex>
 <name>get-id</name>
 <expres>source: '([^']+)</expres>
-<page>https://vergol.com/canales/live1/golf.php</page>
+<page>https://vergol.com/live1/goltv.php</page>
 <referer>https://vergol.com/live3/beinsport.php</referer>
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/esp.jpg</thumbnail></item>
 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+ <item>
+<title>[B]Multicanal[/B] VerLiga [I] Golf[/I] </title>
+<link>https:$doregex[get-id]|Referer=https://vergol.com/canales/live3/beinsport.php&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
+<regex>
+<name>get-id</name>
+<expres>source: '([^']+)</expres>
+<page>https://vergol.com/live1/golf.php</page>
+<referer>https://vergol.com/live3/beinsport.php</referer>
+<agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/esp.jpg</thumbnail></item>
+
+   
+    
+   
+ <item>
+<title>[B]Multicanal[/B] VerLiga [I] Teledeporte[/I] </title>
+<link>https:$doregex[get-id]|Referer=https://vergol.com/canales/live3/beinsport.php&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
+<regex>
+<name>get-id</name>
+<expres>source: '([^']+)</expres>
+<page>https://vergol.com/live1/teledeporte.php</page>
+<referer>https://vergol.com/live3/beinsport.php</referer>
+<agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/esp.jpg</thumbnail></item>
+
+   
+   
+   
+   
+   
+   
+   
+   
    
  <item>
 <title>[B]Multicanal[/B] VerLiga [I] MotoGP [/I] up</title>
@@ -2233,7 +2276,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
- <item>
+ <!--item>
 <title>[B]Multicanal ElGoles 07[/B]  </title>
 <link>http://$doregex[ip]$doregex[m3u8]$doregex[m3u82]</link>
 <regex>
@@ -2727,7 +2770,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <expres>channel='(.*?)'</expres>
 <page>http://elgoles.me/20.html</page>
 </regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item-->
 
 
 
@@ -3030,31 +3073,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	
 	
 
-  <item>
-<title>[B]Multicanal[/B] TikiTaka 02ssss [I] *** [/I]</title>
-<link>$doregex[Igor_Rangel_Page]|User-Agent=iPhone</link>
 
-<regex>
-<name>Igor_Rangel_Page</name>
-<expres>file: '(.*?)'</expres>
-<page>https://pxstream.tv/embed/hyfe8ic126wm/</page>
-<referer>http://agenda.superligatv.com/tvcdep.html</referer>
-<agent>Mozilla/5.0 (Windows NT 6.3; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0</agent>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-  <item>
-<title>[B]Multicanal[/B] TikiTaka 02ssss [I]  [/I]</title>
-<link>$doregex[Igor_Rangel_Page]|Referer=http://agenda.superligatv.com/tvcdep.html</link>
-
-<regex>
-<name>Igor_Rangel_Page</name>
-<expres>file: '(.*?)'</expres>
-<page>https://pxstream.tv/embed/hyfe8ic126wm/</page>
-<referer>http://agenda.superligatv.com/tvcdep.html</referer>
-<agent>Mozilla/5.0 (Windows NT 6.3; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0</agent>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
