@@ -4,13 +4,13 @@
 
 
 
-<itm>
+<item>
 <title>[UPPERCASE][COLOR skyblue]  #0[/UPPERCASE][/COLOR] </title>
 <link>https:$doregex[get-id]|Referer=http://vergol.com/live/plus1.php&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
 <regex>
 <name>get-id</name>
 <expres>source: '(.*?)'</expres>
-<page>http://vergol.com/live/plus1.php</page>
+<page>https://vergol.com/canales/live/plus1.php</page>
 <referer>http://vercanalestv.com/tv/nacionales/canal-plus-1.html</referer>
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
 </regex>
@@ -18,35 +18,19 @@
 
 
 
-
 <item>
 <title>[UPPERCASE][COLOR skyblue]  #0[/UPPERCASE][/COLOR] </title>
- <link>http://$doregex[ip]$doregex[m3u8]$doregex[hls]</link>
-			<regex>
-			<name>ip</name>
-			<expres>redirect=(.*)</expres>
-			<page>http://www.pubfstream.com:1935/loadbalancer</page>
-			</regex>
-			<regex>
-			<name>m3u8</name>
-			<expres>ea \+ "(.*?)"</expres>
-			<page>http://www.playerfs.com/membedplayer/$doregex[ch]/1/650/400</page>
-			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
-			<referer>http://www.playerfs.com</referer>
-			</regex>
-			<regex>
-			<name>hls</name>
-			<expres>hlsUrl \+ \(\"(.*?)"</expres>
-			<page>http://www.playerfs.com/membedplayer/$doregex[ch]/1/650/400</page>
-			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
-			<referer>http://www.playerfs.com</referer>
-			</regex>
-			<regex>
-			<name>ch</name>
-			<expres>channel='(.*?)'</expres>
-			<page>http://cinestrenostv.tv/canales/envivo/plus1.html</page>
-			</regex>
+<link>https:$doregex[get-id]|Referer=https://vertelevision.tv/tv/nacionales/canal-cero.php&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
+<regex>
+<name>get-id</name>
+<expres>source: '(.*?)'</expres>
+<page>https://vergol.com/canales/live/plus1.php</page>
+<referer>https://vertelevision.tv/tv/nacionales/canal-cero.php</referer>
+<agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
+</regex>
 <thumbnail>http://adryanlist.org/adryan/img/esp.png</thumbnail><info>Recuerda hacer tu donacion para seguir mejorando Adryanlist en     http://paypal.me/Adryanlist</info></item>
+
+
 
 
 

@@ -3031,26 +3031,28 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	
 
   <item>
-<title>[B]Multicanal[/B] TikiTaka 02ssss [I]  [/I]</title>
-<link>[Igor_Rangel_Page]|User-Agent=iPhone</link>
+<title>[B]Multicanal[/B] TikiTaka 02ssss [I] *** [/I]</title>
+<link>$doregex[Igor_Rangel_Page]|User-Agent=iPhone</link>
 
 <regex>
 <name>Igor_Rangel_Page</name>
-<expres>'(.*m3u8.*?)'</expres>
+<expres>file: '(.*?)'</expres>
 <page>https://pxstream.tv/embed/hyfe8ic126wm/</page>
 <referer>http://agenda.superligatv.com/tvcdep.html</referer>
+<agent>Mozilla/5.0 (Windows NT 6.3; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0</agent>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
   <item>
 <title>[B]Multicanal[/B] TikiTaka 02ssss [I]  [/I]</title>
-<link>[Igor_Rangel_Page]|Referer=http://agenda.superligatv.com/tvcdep.html</link>
+<link>$doregex[Igor_Rangel_Page]|Referer=http://agenda.superligatv.com/tvcdep.html</link>
 
 <regex>
 <name>Igor_Rangel_Page</name>
-<expres>'(.*m3u8.*?)'</expres>
+<expres>file: '(.*?)'</expres>
 <page>https://pxstream.tv/embed/hyfe8ic126wm/</page>
 <referer>http://agenda.superligatv.com/tvcdep.html</referer>
+<agent>Mozilla/5.0 (Windows NT 6.3; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0</agent>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
