@@ -87,13 +87,12 @@ def GetLSProData(page_data,Cookie_Jar,m):
 def GetLSProData(page_data,Cookie_Jar,m):
    import xbmcgui
    dialog = xbmcgui.Dialog()
-   ret = dialog.select('Elige un Canal ', ['ESPN LA', 'ESPN 2', 'UNIVISION TDN', 'TDN', 'CDF', 'ESPN 3', 'UNIVISION DEPORTES', 'CLARO SPORTS', 'FOX SPORTS 2', 'IMAGEN TV', 'TVC DEPORTES', 'canal 5'])
-   lists = ['espnla', 'espn2', 'unitdn', 'tdn', 'cdf', 'espn3', 'unidep', 'clarosport', 'foxsport2', 'imagentv', 'tvcdep', 'tele5']
+   ret = dialog.select('Elige un Canal ', ['ESPN LA', 'ESPN 2', 'UNIVISION TDN', 'TDN', 'CDF', 'ESPN 3', 'ESPN 3 - LA LIGA', 'UNIVISION DEPORTES', 'CLARO SPORTS', 'FOX SPORTS LA', 'FOX SPORTS 2', 'IMAGEN TV', 'TVC DEPORTES', 'Canal 5', 'Azteca 7'])
+   lists = ['espnla', 'espn2', 'unitdn', 'tdn', 'cdf', 'espn3', 'espn3la', 'unidep', 'clarosport', 'Fox Sports LA', 'foxsport2', 'imagentv', 'tvcdep', 'tele5', 'azteca7']
    return lists[ret]
 ]]></expres>
 <page></page>
-</regex>
- 
+</regex> 
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
@@ -168,6 +167,31 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
+
+
+
+  <item>
+ <title>[COLOR yellow][B]Multicanales Televall[/B] [/COLOR]  TELEVISION  </title>
+<link>$doregex[makelist]</link>
+ 
+ <regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param2]</title>
+<link>$doregex[url]|Referer=http://depo.superligatv.com/unitdn.php&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
+<thumbnail>http://agenda.superligatv.com/[makelist.param3]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[a\shref="(.*?)"[\w\W\s]{0,33}location\(\'(.*?)\.h[\w\W\s]{0,45}src="(ga.*?)"]]></expres>
+<page>http://tvpor-internet.com/envivo/</page>
+</regex>
+  
+ <regex>
+<name>url</name>
+<expres><![CDATA[source: "([^"]+)]]></expres>
+<page>http://agenda.superligatv.com/[makelist.param1]</page>
+</regex>
+
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
