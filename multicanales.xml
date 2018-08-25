@@ -2690,13 +2690,13 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>loader</name>
 <expres>url: "(.*?)"</expres>
 <page>$doregex[server]/hembedplayer/$doregex[canal]/1/590/390</page>
-<referer>http://robertrc.bget.ru</referer>
+<referer>http://elgoles.me/</referer>
 </regex>
 <regex>
 <name>m3u8</name>
 <expres>ea \+ "(.*?)"</expres>
 <page>$doregex[server]/hembedplayer/$doregex[canal]/1/590/390</page>
-<referer>http://robertrc.bget.ru</referer>
+<referer>http://elgoles.me/</referer>
 </regex>
 <regex>
 <name>m3u82</name>
@@ -2738,13 +2738,13 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>loader</name>
 <expres>url: "(.*?)"</expres>
 <page>$doregex[server]/hembedplayer/$doregex[canal]/1/590/390</page>
-<referer>http://robertrc.bget.ru</referer>
+<referer>http://elgoles.me/</referer>
 </regex>
 <regex>
 <name>m3u8</name>
 <expres>ea \+ "(.*?)"</expres>
 <page>$doregex[server]/hembedplayer/$doregex[canal]/1/590/390</page>
-<referer>http://robertrc.bget.ru</referer>
+<referer>http://elgoles.me/</referer>
 </regex>
 <regex>
 <name>m3u82</name>
@@ -2778,13 +2778,13 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>loader</name>
 <expres>url: "(.*?)"</expres>
 <page>$doregex[server]/hembedplayer/$doregex[canal]/1/590/390</page>
-<referer>http://robertrc.bget.ru</referer>
+<referer>http://elgoles.me/</referer>
 </regex>
 <regex>
 <name>m3u8</name>
 <expres>ea \+ "(.*?)"</expres>
 <page>$doregex[server]/hembedplayer/$doregex[canal]/1/590/390</page>
-<referer>http://robertrc.bget.ru</referer>
+<referer>http://elgoles.me/</referer>
 </regex>
 <regex>
 <name>m3u82</name>
@@ -2818,13 +2818,13 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>loader</name>
 <expres>url: "(.*?)"</expres>
 <page>$doregex[server]/hembedplayer/$doregex[canal]/1/590/390</page>
-<referer>http://robertrc.bget.ru</referer>
+<referer>http://elgoles.me/</referer>
 </regex>
 <regex>
 <name>m3u8</name>
 <expres>ea \+ "(.*?)"</expres>
 <page>$doregex[server]/hembedplayer/$doregex[canal]/1/590/390</page>
-<referer>http://robertrc.bget.ru</referer>
+<referer>http://elgoles.me/</referer>
 </regex>
 <regex>
 <name>m3u82</name>
@@ -2862,13 +2862,13 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>loader</name>
 <expres>url: "(.*?)"</expres>
 <page>$doregex[server]/hembedplayer/$doregex[canal]/1/590/390</page>
-<referer>http://robertrc.bget.ru</referer>
+<referer>http://elgoles.me/</referer>
 </regex>
 <regex>
 <name>m3u8</name>
 <expres>ea \+ "(.*?)"</expres>
 <page>$doregex[server]/hembedplayer/$doregex[canal]/1/590/390</page>
-<referer>http://robertrc.bget.ru</referer>
+<referer>http://elgoles.me/</referer>
 </regex>
 <regex>
 <name>m3u82</name>
@@ -2901,13 +2901,13 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>loader</name>
 <expres>url: "(.*?)"</expres>
 <page>$doregex[server]/hembedplayer/$doregex[canal]/1/590/390</page>
-<referer>http://robertrc.bget.ru</referer>
+<referer>http://elgoles.me/</referer>
 </regex>
 <regex>
 <name>m3u8</name>
 <expres>ea \+ "(.*?)"</expres>
 <page>$doregex[server]/hembedplayer/$doregex[canal]/1/590/390</page>
-<referer>http://robertrc.bget.ru</referer>
+<referer>http://elgoles.me/</referer>
 </regex>
 <regex>
 <name>m3u82</name>
@@ -2941,13 +2941,13 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>loader</name>
 <expres>url: "(.*?)"</expres>
 <page>$doregex[server]/hembedplayer/$doregex[canal]/1/590/390</page>
-<referer>http://robertrc.bget.ru</referer>
+<referer>http://elgoles.me/</referer>
 </regex>
 <regex>
 <name>m3u8</name>
 <expres>ea \+ "(.*?)"</expres>
 <page>$doregex[server]/hembedplayer/$doregex[canal]/1/590/390</page>
-<referer>http://robertrc.bget.ru</referer>
+<referer>http://elgoles.me/</referer>
 </regex>
 <regex>
 <name>m3u82</name>
@@ -2980,13 +2980,13 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>loader</name>
 <expres>url: "(.*?)"</expres>
 <page>$doregex[server]/hembedplayer/$doregex[canal]/1/590/390</page>
-<referer>http://robertrc.bget.ru</referer>
+<referer>http://elgoles.me/</referer>
 </regex>
 <regex>
 <name>m3u8</name>
 <expres>ea \+ "(.*?)"</expres>
 <page>$doregex[server]/hembedplayer/$doregex[canal]/1/590/390</page>
-<referer>http://robertrc.bget.ru</referer>
+<referer>http://elgoles.me/</referer>
 </regex>
 <regex>
 <name>m3u82</name>
@@ -3021,13 +3021,13 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>loader</name>
 <expres>url: "(.*?)"</expres>
 <page>$doregex[server]/hembedplayer/$doregex[canal]/1/590/390</page>
-<referer>http://robertrc.bget.ru</referer>
+<referer>http://elgoles.me/</referer>
 </regex>
 <regex>
 <name>m3u8</name>
 <expres>ea \+ "(.*?)"</expres>
 <page>$doregex[server]/hembedplayer/$doregex[canal]/1/590/390</page>
-<referer>http://robertrc.bget.ru</referer>
+<referer>http://elgoles.me/</referer>
 </regex>
 <regex>
 <name>m3u82</name>
@@ -3062,13 +3062,13 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>loader</name>
 <expres>url: "(.*?)"</expres>
 <page>$doregex[server]/hembedplayer/$doregex[canal]/1/590/390</page>
-<referer>http://robertrc.bget.ru</referer>
+<referer>http://elgoles.me/</referer>
 </regex>
 <regex>
 <name>m3u8</name>
 <expres>ea \+ "(.*?)"</expres>
 <page>$doregex[server]/hembedplayer/$doregex[canal]/1/590/390</page>
-<referer>http://robertrc.bget.ru</referer>
+<referer>http://elgoles.me/</referer>
 </regex>
 <regex>
 <name>m3u82</name>
@@ -3105,13 +3105,13 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>loader</name>
 <expres>url: "(.*?)"</expres>
 <page>$doregex[server]/hembedplayer/$doregex[canal]/1/590/390</page>
-<referer>http://robertrc.bget.ru</referer>
+<referer>http://elgoles.me/</referer>
 </regex>
 <regex>
 <name>m3u8</name>
 <expres>ea \+ "(.*?)"</expres>
 <page>$doregex[server]/hembedplayer/$doregex[canal]/1/590/390</page>
-<referer>http://robertrc.bget.ru</referer>
+<referer>http://elgoles.me/</referer>
 </regex>
 <regex>
 <name>m3u82</name>
@@ -3148,13 +3148,13 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>loader</name>
 <expres>url: "(.*?)"</expres>
 <page>$doregex[server]/hembedplayer/$doregex[canal]/1/590/390</page>
-<referer>http://robertrc.bget.ru</referer>
+<referer>http://elgoles.me/</referer>
 </regex>
 <regex>
 <name>m3u8</name>
 <expres>ea \+ "(.*?)"</expres>
 <page>$doregex[server]/hembedplayer/$doregex[canal]/1/590/390</page>
-<referer>http://robertrc.bget.ru</referer>
+<referer>http://elgoles.me/</referer>
 </regex>
 <regex>
 <name>m3u82</name>
