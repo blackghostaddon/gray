@@ -34,6 +34,21 @@
 
 
 
+ <item>
+ <title>[COLOR yellow][B]Multicanal DailyDeports[/B] [/COLOR]    </title>
+<link>$doregex[makelist2]</link>
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>[makelist2.param1] - [makelist2.param2]   </title>
+<link>http://185.172.110.39:80/hls/10[makelist2.param3].m3u8</link>
+]]></listrepeat>
+<expres><![CDATA[<b>(.*?)<.*?font>(.*?)<.*?stream1(.*?)\.html"]]></expres>
+<page>http://dailydeports.pw/</page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item-->
+
+
 
 
 
@@ -1378,9 +1393,12 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
- <item>
+
+
+
+<item>
  <title>[B]Multicanal 101[/B]     </title>
-<link>http://185.172.110.39:80/hls/101.m3u8</link>
+<link>http://185.172.110.39:80/hls/102.m3u8</link>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item-->
 
 
