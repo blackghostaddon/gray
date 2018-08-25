@@ -251,7 +251,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-
+ 
 
 
 <itEm>
@@ -1378,7 +1378,43 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
+ <item>
+ <title>[B]Multicanal 101[/B]     </title>
+<link>http://185.172.110.39:80/hls/101.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item-->
 
+
+
+
+<item>
+ <title>[B]Multicanal 102[/B]     </title>
+<link>http://185.172.110.39:80/hls/102.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item-->
+
+
+
+
+<item>
+ <title>[B]Multicanal 103[/B]     </title>
+<link>http://185.172.110.39:80/hls/103.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item-->
+
+
+
+
+
+<item>
+ <title>[B]Multicanal 104[/B]     </title>
+<link>http://185.172.110.39:80/hls/104.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item-->
+
+
+
+
+<item>
+ <title>[B]Multicanal 105[/B]     </title>
+<link>http://185.172.110.39:80/hls/105.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item-->
 
 
 
