@@ -1219,7 +1219,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-  <item>
+  <!--item>
  <title>[B]Multicanal ESPN[/B]    </title>
 <link>$doregex[url]|Referer=http://agenda.superligatv.com/foxsport2.html&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
  
@@ -1366,7 +1366,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page>http://depo.superligatv.com/tvcdep.php?width=720&amp;height=406</page>
 </regex>
  
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item-->
 
 
 
@@ -1488,7 +1488,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
-<title>[B]Multicanal HD Szonline BR[/B]    </title>
+<title>[B]Multicanal HD SportZonLine[/B]    </title>
 <link>$doregex[geturl]</link>
     <regex>
         <name>geturl</name>
@@ -1529,55 +1529,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-
- <item>
-<title>[B]Multicanal Capo[/B]   </title>
-<link>http://$doregex[ip]$doregex[m3u8]$doregex[m3u82]</link>
-<regex>
-<name>ip</name>
-<expres>redirect=(.*)</expres>
-<page>$doregex[loader]</page>
-</regex>
-<regex>
-<name>loader</name>
-<expres>url: "(.*?)"</expres>
-<page>$doregex[server]/hembedplayer/$doregex[canal]/1/590/390</page>
-<referer>http://capodeportes.net</referer>
-</regex>
-<regex>
-<name>m3u8</name>
-<expres>ea \+ "(.*?)"</expres>
-<page>$doregex[server]/hembedplayer/$doregex[canal]/1/590/390</page>
-<referer>http://capodeportes.net</referer>
-</regex>
-<regex>
-<name>m3u82</name>
-<expres>hlsUrl \+ enableVideo\(\"(.*?)"</expres>
-<page>$doregex[server]/hembedplayer/$doregex[canal]/1/590/390</page>
-<referer></referer>
-</regex>
-<regex>
-<name>server</name>
-<expres>javascript\'\ssrc=\'(http://.*?)\/</expres>
-<page>http://capodeportes.net/reproductor2/canal10.php</page>
-</regex>
-<regex>
-<name>canal</name>
-<expres>channel='(.*?)'</expres>
-<page>http://capodeportes.net/reproductor2/canal2.php</page>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-
-
-
-
-
-
-
-
-
-
+ 
 
 
 
@@ -1823,6 +1775,68 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 	
 
+	
+ <item> 
+<title>[B]Multicanal[/B] TikiTaka 03 [I] [/I]</title>
+<link>$doregex[url]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64; rv:56.0) Gecko/20100101 Firefox/56.0&amp;Referer=http://static.castto.me/embedlivesrvjs.php?channel=354661332&vw=720&vh=420</link>
+<regex>
+<name>url</name>
+<expres><![CDATA[source src="([^"]+)]]></expres>
+<page>http://static.castto.me/embedlivesrvjs.php?channel=$doregex[getid]&amp;vw=720&amp;vh=420</page>
+<referer>http://estadionline.ml/canal1.php</referer>
+</regex>
+<regex>
+<name>getid</name>
+<expres><![CDATA[fid="([^"]+)]]></expres>
+<page>http://estadionline.ml/canal3.php</page>
+<referer>http://estadionline.ml/canal3.php</referer>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+	
+	
+	
+	
+ <item>
+<title>[B]Multicanal[/B] TikiTaka 04 [I] [/I]</title>
+<link>http://$doregex[ip]$doregex[m3u8]$doregex[m3u82]</link>
+<regex>
+<name>ip</name>
+<expres>redirect=(.*)</expres>
+<page>$doregex[loader]</page>
+</regex>
+<regex>
+<name>loader</name>
+<expres>url: "(.*?)"</expres>
+<page>$doregex[server]/hembedplayer/$doregex[canal]/1/590/390</page>
+<referer>http://estadionline.ml</referer>
+</regex>
+<regex>
+<name>m3u8</name>
+<expres>ea \+ "(.*?)"</expres>
+<page>$doregex[server]/hembedplayer/$doregex[canal]/1/590/390</page>
+<referer>http://estadionline.ml</referer>
+</regex>
+<regex>
+<name>m3u82</name>
+<expres>hlsUrl \+ enableVideo\(\"(.*?)"</expres>
+<page>$doregex[server]/hembedplayer/$doregex[canal]/1/590/390</page>
+<referer></referer>
+</regex>
+<regex>
+<name>server</name>
+<expres>javascript\' src=\'(http://.*?)\/</expres>
+<page>http://estadionline.ml/canal4.php</page>
+</regex>
+<regex>
+<name>canal</name>
+<expres>channel='(.*?)'</expres>
+<page>http://estadionline.ml/canal4.php</page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+	
+	
  <!--item>
 <title>[B]Multicanal[/B] TikiTaka 02 [I]  *[/I]</title>
 <link>http://$doregex[ip]$doregex[m3u8]</link>
