@@ -7,22 +7,6 @@
 
 
 
- <item>
-<title> [COLOR black]•[/COLOR]    [COLOR white][B]EXTRA[/COLOR][COLOR lightblue]TIME [/COLOR][/B]  [COLOR white] [I][/I][/COLOR]</title>
-<link>$doregex[makelist]</link>
-<externallink>https://raw.githubusercontent.com/blackghostaddon/gray/master/multicanales.xml</externallink>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail>
-</item>
-
-
- <item>
-<title> [COLOR black]•[/COLOR]    [COLOR white][B]ACE[/COLOR][COLOR lightblue]STREAMS [/COLOR][/B]  [COLOR lightslategray] [I]LA LIGA [/I][/COLOR]</title>
-<link>$doregex[makelist]</link>
-<externallink>https://raw.githubusercontent.com/blackghostaddon/gray/master/plexus.xml</externallink>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/acestream.png</thumbnail>
-</item>
-
-
 
 
  
