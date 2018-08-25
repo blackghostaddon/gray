@@ -103,7 +103,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
  <regex>
 <name>url</name>
-<expres><![CDATA["(http.*m3u8[^"]+)]]></expres>
+<expres><![CDATA["(http.*?m3u8[^"]+)]]></expres>
 <page>$doregex[select]</page>
 </regex>
 
@@ -113,7 +113,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 def GetLSProData(page_data,Cookie_Jar,m):
    import xbmcgui
    dialog = xbmcgui.Dialog()
-   ret = dialog.select('Elige un Canal ', ['ESPN LA', 'ESPN 2', 'UNIVISION TDN', 'TDN', 'CDF', 'ESPN 3', 'ESPN 3 - LA LIGA', 'UNIVISION DEPORTES', 'CLARO SPORTS', 'FOX SPORTS LA', 'FOX SPORTS 2', 'IMAGEN TV', 'TVC DEPORTES', 'Canal 5', 'Azteca 7'])
+   ret = dialog.select('Elige un Canal ', ['Directv 2', 'Directv plus', 'CDF', 'ESPN', 'ESPN2'])
    lists = ['http://www.superligatv.com/directv-2-hd-en-vivo-por-internet/', 'http://www.superligatv.com/directv-plus-en-vivo-por-internet/', 'http://www.superligatv.com/cdf-sports-en-vivo-por-internet/', 'http://www.superligatv.com/espn-en-vivo-por-internet/', 'http://www.superligatv.com/espn-2-en-vivo-por-internet/']
    return lists[ret]
 ]]></expres>
