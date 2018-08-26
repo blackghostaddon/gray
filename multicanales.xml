@@ -34,7 +34,7 @@
 
 
 
- <item>
+ <ite>
  <title>[COLOR yellow][B]Multicanal DailyDeports[/B] [/COLOR]    </title>
 <link>$doregex[makelist2]</link>
 <regex>
@@ -86,7 +86,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-  <item>
+  <ite>
  <title>[COLOR yellow][B]Multicanales Televall[/B] [/COLOR]  Espn - FoxSports-  TDN - TVC  </title>
 <link>$doregex[url]|Referer=http://depo.superligatv.com/unitdn.php&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
  
@@ -113,7 +113,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
   <item>
- <title>[COLOR yellow][B]Multicanales Televall 2[/B] [/COLOR]  Espn - FoxSports-  TDN - TVC  </title>
+ <title>[COLOR yellow][B]Multicanales Televall [/B] [/COLOR]  Espn - FoxSports-  TDN - TVC  </title>
 <link>$doregex[url]|Referer=http://depo.superligatv.com/unitdn.php&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
  
  <regex>
