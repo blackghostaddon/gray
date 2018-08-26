@@ -128,8 +128,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 def GetLSProData(page_data,Cookie_Jar,m):
    import xbmcgui
    dialog = xbmcgui.Dialog()
-   ret = dialog.select('Elige un Canal ', ['Directv 2', 'Directv plus', 'CDF', 'ESPN', 'ESPN2'])
-   lists = ['http://www.superligatv.com/directv-2-hd-en-vivo-por-internet/', 'http://www.superligatv.com/directv-plus-en-vivo-por-internet/', 'http://www.superligatv.com/cdf-sports-en-vivo-por-internet/', 'http://www.superligatv.com/espn-en-vivo-por-internet/', 'http://www.superligatv.com/espn-2-en-vivo-por-internet/']
+   ret = dialog.select('Elige un Canal ', ['Directv 2', 'Directv plus', 'CDF', 'ESPN', 'ESPN2', 'TDN', 'CANAL 5', 'AZTECA 7', 'UNIVISION', 'FOX DEPORTES', 'FOX SPORTS 2'])
+   lists = ['http://www.superligatv.com/directv-2-hd-en-vivo-por-internet/', 'http://www.superligatv.com/directv-plus-en-vivo-por-internet/', 'http://www.superligatv.com/cdf-sports-en-vivo-por-internet/', 'http://www.superligatv.com/espn-en-vivo-por-internet/', 'http://www.superligatv.com/espn-2-en-vivo-por-internet/', 'http://www.superligatv.com/tdn-mx-hd-en-vivo-por-internet/', 'http://www.superligatv.com/canal-5-en-vivo-por-internet/', 'http://www.superligatv.com/azteca-7-en-vivo-por-internet/', 'http://www.superligatv.com/univision-en-vivo-por-internet/', 'http://www.superligatv.com/fox-deportes-en-vivo/', 'http://www.superligatv.com/fox-sports-2-en-vivo-por-internet/']
    return lists[ret]
 ]]></expres>
 <page></page>
