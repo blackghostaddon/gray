@@ -3374,6 +3374,78 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
+<item>
+<title> [COLOR black]•[/COLOR]    [COLOR white][B]RUSSIAN[/COLOR][COLOR lightblue]SPORTS [/COLOR][/B]  [COLOR lightslategray] [I]Sport Channels[/I][/COLOR]</title>
+
+<link>$doregex[makelist]</link>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+   <title>[COLOR lightblue]   [makelist.param2]    [/COLOR]   </title>
+   <link>$doregex[url]|Referer=http://api.peer5.com/jwplayer7/assets/flashls.provider.swf</link>
+   <thumbnail>http://5match.co[makelist.param4]</thumbnail>
+]]></listrepeat>
+<expres>href="(.*?)"[\w\W\s]{0,130}title="(.*?)"[\w\W\s]{0,2}alt="(.*?)"[\w\W\s]{0,2}src="(.*?)"</expres>
+<page>http://5match.co</page>
+</regex>
+
+
+
+<regex>
+<name>url</name>
+<expres>file: '(.*?)'</expres>
+<page>$doregex[url2]</page>
+</regex>
+
+<regex>
+<name>url2</name>
+<expres>iframe.*?src="(.*?)"</expres>
+<page>http://5match.co[makelist.param1]</page>
+</regex>
+
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+ 
+
+<item>
+<title> [COLOR black]•[/COLOR]    [COLOR white][B]STREAM[/COLOR][COLOR lightblue]KING [/COLOR][/B]  [COLOR lightslategray] [I]Sports[/I][/COLOR]</title>
+   <link>$doregex[makelist]</link>
+
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+   <title>[COLOR dodgerblue]  [makelist.param3]  [/COLOR]</title>
+   <link>$doregex[getUrl]|Referer=http://api.peer5.com/jwplayer7/assets/flashls.provider.swf$$lsname=BlackAddon-[makelist.param3]</link>
+
+   <regex>
+<name>getUrl</name>
+<expres>file: '(.*?)',</expres>
+<page>http://sportsvideoline3.pw/player?channel=[makelist.param1]&amp;player=jwplayer7</page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[href=\"\/(.*?)".*?src="(.*?)".*?alt="(.*?)"]]></expres>
+<page>http://2streamking.co/</page>
+</regex>
+  <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail>
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
  
