@@ -82,13 +82,47 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 			<item>
 		<title>•  [B]TotalPlay[/B]  [ Opcion [B]RegioTV[/B] ][B]  [/B]  </title>
-<link>NA</link>
-<externallink>http://srregio.xyz/IPTV/regiotv.m3u</externallink>
+<externallink>$doregex[select]</externallink>
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+   import xbmcgui
+   dialog = xbmcgui.Dialog()
+   ret = dialog.select('Seleciona una Lista ', ['RegioFlix', 'RegioTV', 'smartTV', 'Deportes', 'LigaMX', 'Alterna'])
+   lists = ['ttp://srregio.xyz/IPTV/regioflix.m3u', 'http://srregio.xyz/IPTV/regiotv.m3u', 'http://srregio.xyz/IPTV/smartv.m3u', 'http://srregio.xyz/IPTV/deportes.m3u', 'http://srregio.xyz/IPTV/ligamx.m3u', 'http://srregio.xyz/IPTV/alterna.m3u']
+   return lists[ret]
+]]></expres>
+<page></page>
+</regex>
  			<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/img/tp.jpg</thumbnail>
 <fanart>https://raw.githubusercontent.com/blackghostaddon/gray/img/fanart.jpg</fanart></item>
 
 
 
+ 
+			<item>
+		<title>•  [B]TotalPlay[/B]  [ Opcion [B]CeceGeek[/B] ][B]  [/B]  </title>
+<link>NA</link>
+<externallink>$doregex[select]</externallink>
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+   import xbmcgui
+   dialog = xbmcgui.Dialog()
+   ret = dialog.select('Seleciona una Lista ', ['Lista SeriesIPTV', 'Lista Cineflixx', 'Lista Pelis-TV-Depor', 'Lista 340IPTVLatin', 'Lista DeportesYmas', 'Lista PELISyTV', 'Lista seriesytv', 'Lista canalesIPTV440', 'ListaTVyPeliss', 'Lista PelisyTV700', 'Lista tvypelism3u', 'Lista 358IPTV-vip', 'Lista ultimaspelis', 'Lista Pelis-TV-Depor', 'Lista 358IPTV-vip'])
+   lists = ['http://bit.ly/SeriesIPTV', 'http://bit.ly/Cineflixx', 'http://bit.ly/Pelis-TV-Depor', 'http://bit.ly/340IPTVLatin', 'http://bit.ly/DeportesYmas', 'http://bit.ly/PELISyTV', 'http://bit.ly/seriesytv', 'http://bit.ly/canalesIPTV440', 'http://bit.ly/TVyPeliss', 'http://bit.ly/PelisyTV700', 'http://bit.ly/tvypelism3u', 'http://bit.ly/358IPTV-vip', 'http://bit.ly/ultimaspelis', 'http://bit.ly/Pelis-TV-Depor', 'http://bit.ly/358IPTV-vip']
+   return lists[ret]
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/img/tp.jpg</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/img/fanart.jpg</fanart>
+</item>
+
+ 
+    
  
 
 
@@ -177,7 +211,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <expres>listapelis.*?NibbleTVdecode\(\"TV(.*?)\"</expres>
 <page>http://www.nibbletv.info/Listas-M3U</page>
 </regex>
-
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/img/tp.jpg</thumbnail>
 <fanart>https://raw.githubusercontent.com/blackghostaddon/gray/img/fanart.jpg</fanart></item>
 
@@ -188,27 +221,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-
-<item>
-<title>[B]Selecciona una lista de CECEGEEK[/B]</title>
-
-<link>NA</link>
-<externallink>$doregex[select]</externallink>
-<regex>
-<name>select</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m):
-   import xbmcgui
-   dialog = xbmcgui.Dialog()
-   ret = dialog.select('Seleciona una Lista ', ['http://bit.ly/SeriesIPTV', 'http://bit.ly/Cineflixx', 'http://bit.ly/Pelis-TV-Depor', 'http://bit.ly/340IPTVLatin', 'http://bit.ly/DeportesYmas', 'http://bit.ly/PELISyTV', 'http://bit.ly/seriesytv', 'http://bit.ly/canalesIPTV440', 'http://bit.ly/TVyPeliss', 'http://bit.ly/PelisyTV700', 'http://bit.ly/tvypelism3u', 'http://bit.ly/358IPTV-vip', 'http://bit.ly/ultimaspelis'])
-   lists = ['http://bit.ly/SeriesIPTV', 'http://bit.ly/Cineflixx', 'http://bit.ly/Pelis-TV-Depor', 'http://bit.ly/340IPTVLatin', 'http://bit.ly/DeportesYmas', 'http://bit.ly/PELISyTV', 'http://bit.ly/seriesytv', 'http://bit.ly/canalesIPTV440', 'http://bit.ly/TVyPeliss', 'http://bit.ly/PelisyTV700', 'http://bit.ly/tvypelism3u', 'http://bit.ly/358IPTV-vip', 'http://bit.ly/ultimaspelis']
-   return lists[ret]
-]]></expres>
-<page></page>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/img/tp.jpg</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/img/fanart.jpg</fanart>
-</item>
+ 
 
 
 
