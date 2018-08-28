@@ -2544,6 +2544,63 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
  
  
+
+
+ <item>
+<title>[B]PELIX[/B] </title>
+
+<link>$doregex[makelist2]</link>
+
+
+<regex>
+    <name>makelist2</name> movies  (all pages)
+ <listrepeat><![CDATA[
+<title> [makelist2.param3]   </title>
+<link>$doregex[makelist3]</link>
+<fanart>[makelist2.param2]</fanart>
+ <thumbnail>[makelist2.param2]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[base-used[\w\W\w]{0,65}href="(.*?)"[\w\W\w]{0,65}src="(.*?)".*?alt="(.*?)"]]></expres>
+ <page>http://pelix.tv</page>
+<agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36</agent>
+</regex>
+
+
+  <regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+<title>[makelist2.param3]  Server:[makelist3.param1]</title>
+ <link>$doregex[id3]</link>
+ <fanart>[makelist2.param2]</fanart>
+  <thumbnail>[makelist2.param2]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[(https://streamango.*?|http://xvidstage.*?|http://uptobox.*?|https://openload.*?|https://userscloud.*?|https://ok.*?|https://uptostream.*?|https://vidoza.*?|https://www.rapidvideo.*?|https://jawcloud.*?|https://fastpla.*?)"]]></expres>
+ <page>[makelist2.param1]</page>
+<agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36</agent>
+</regex>
+
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver, resolveurl
+    url = '[makelist3.param1]'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = resolveurl.resolve(url)
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
+ </item>
+ 
+
+
  
  
  
@@ -2745,6 +2802,9 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
  
+ 
+ 
+ 
 
 	
 <item>
@@ -2793,16 +2853,11 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-	
-
-	
-
-4175286704
-
+	 
 	
 	
 	
-<item>
+<itm>
 <title> Hotel transilvania 3</title>
 <link>$doregex[makelist]</link>
 

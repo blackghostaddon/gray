@@ -42,8 +42,7 @@
 <listrepeat><![CDATA[
 <title>[B][makelist2.param2] [/B][COLOR yellow][makelist2.param3][/COLOR] [COLOR blue] [makelist2.param4] [makelist2.param5] [makelist2.param6] [/COLOR]  </title>
 <link>$doregex[getDecodedCode]</link>
-<thumbnail>[makelist2.param3]</thumbnail>
-<fanart>[makelist2.param3]</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail>
 ]]></listrepeat>
 <expres><![CDATA[strong.*?href="http://www.tuttosportweb.fi/(.*?)".*?blank">(.*?)<.*?ong>(.*?)<|\n(0.*?|1.*?|2.*?)<|\n(0.*?|1.*?|2.*?)<|\n(0.*?|1.*?|2.*?)\n]]></expres>
 <page>http://tuttosportweb.fi/</page>
