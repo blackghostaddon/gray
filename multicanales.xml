@@ -3685,22 +3685,17 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 
 
-<item>
-<title>CNews (p)</title>
-<link>plugin://script.module.tvone1111/list_channels/29</link>
-</item>
-
 
 <item>
-<title>CNews (p)</title>
+<title>CNews (1)</title>
+<link>ignorme</link>
 <jsonrpc>plugin://script.module.tvone1111/list_channels/29</jsonrpc>
-<link></link>
 </item>
 
 <item>
-<title>CNews (p)</title>
+<title>CNews (2)</title>
+<link>ignorme</link>
 <jsonrpc>plugin://plugin.video.SportsDevil/?item=url=customs/tvone1.tv.cfg&amp;mode=1</jsonrpc>
-<link></link>
 </item>
 
 
