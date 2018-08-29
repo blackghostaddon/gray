@@ -296,7 +296,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
 
 
-<itEm>
+<itm>
 <title>[B]Multicanal PSN Deportes [/B]   Univision Deportes  </title>
 <link>http://sced.cdnak.neulion.net/250/nlds/univision/as/live/udnoo_hd_ipad.m3u8</link>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail>
@@ -933,7 +933,7 @@ def GetLSProData(page_data,Cookie_Jar,m):#streamwatcher2013
 
 
  <item>
-<title>[B]Multicanal RIVO 01[/B] Wide Server  </title>
+<title>[B]Multicanal RIVO Streams[/B] Wide Server  </title>
 <link>$doregex[get-id]</link>
 <regex>
 <name>get-id</name>
@@ -946,8 +946,8 @@ def GetLSProData(page_data,Cookie_Jar,m):#streamwatcher2013
 def GetLSProData(page_data,Cookie_Jar,m):
    import xbmcgui
    dialog = xbmcgui.Dialog()
-   ret = dialog.select('Elige un Canal ', ['Canal 1 Sur - Univision Deportes', 'Canal 2 English', 'Canal 3 Norte - Univision Deportes', 'Canal 4', 'Canal 5 - Norte Fox Sports'])
-   lists = ['23442', '16968', '24910', '25144', '24855']
+   ret = dialog.select('Elige un Canal ', ['Canal 1 Sur - Univision Deportes', 'Canal 2 English', 'Canal 3 Norte - Univision Deportes', 'Canal 4 Norte', 'Canal 5  - univision deportes'])
+   lists = ['23442', '16968', '24910', '25288', '24855']
    return lists[ret]
 ]]></expres>
 <page></page>
@@ -957,8 +957,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<item>
-<title>[B]Multicanal RIVO 02[/B] WhoStrems Server   </title>
+<itm>
+<title>[B]Multicanal RIVO streams[/B] WhoStrems Server   </title>
 <link>$doregex[geturl]</link>
     <regex>
         <name>geturl</name>
@@ -1014,7 +1014,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
    import xbmcgui
    dialog = xbmcgui.Dialog()
    ret = dialog.select('Elige un Canal ', ['Canal 1 - Norte - Univision Deportes', 'Canal 2 - Norte - Fox Deportes', 'Canal 3 - Norte - Fox Deportes', 'Canal 4 - norte - univision deportes', 'Canal 5'])
-   lists = ['http://in.xrivonet.info/34f.html', 'http://in.xrivonet.info/022c.html', 'http://in.xrivonet.info/018d.html', 'http://kastream.biz/lates.html', 'http://kastream.biz/bi.html']
+   lists = ['http://in.xrivonet.info/34f.html', 'http://in.xrivonet.info/022c.html', 'http://in.xrivonet.info/018d.html', 'http://in.xrivonet.info/030c.html', 'http://kastream.biz/bi.html']
    return lists[ret]
 ]]></expres>
 <page></page>
@@ -1114,7 +1114,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
-<title>[B]Multicanal AndresFutbol 02[/B]     </title>
+<title>[B]Multicanal AndresFutbol 02[/B]   (sur)  </title>
 <link>$doregex[geturl]</link>
     <regex>
         <name>geturl</name>
@@ -1433,7 +1433,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
- <title>[B]Multicanal 102[/B]     </title>
+ <title>[B]Multicanal 102[/B]   Norte - Espn mx  </title>
 <link>http://185.172.110.39:80/hls/102.m3u8</link>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item-->
 
@@ -1441,7 +1441,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
- <title>[B]Multicanal 103[/B]     </title>
+ <title>[B]Multicanal 103[/B]    Norte - FS2 </title>
 <link>http://185.172.110.39:80/hls/103.m3u8</link>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item-->
 
@@ -1450,7 +1450,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
- <title>[B]Multicanal 104[/B]     </title>
+ <title>[B]Multicanal 104[/B]   Norte - Univision TDN  </title>
 <link>http://185.172.110.39:80/hls/104.m3u8</link>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item-->
 
@@ -1458,7 +1458,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
- <title>[B]Multicanal 105[/B]     </title>
+ <title>[B]Multicanal 105[/B]   Sur  </title>
 <link>http://185.172.110.39:80/hls/105.m3u8</link>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item-->
 
