@@ -33,18 +33,45 @@
 
 
 
-
- <ite>
- <title>[COLOR yellow][B]Multicanal DailyDeports[/B] [/COLOR]    </title>
+ <item>
+ <title>[COLOR yellow][B]Multicanal TodoDeportesWeb[/B] [/COLOR]    </title>
 <link>$doregex[makelist2]</link>
-<regex>
+
+  <regex>
 <name>makelist2</name>
 <listrepeat><![CDATA[
-<title>[makelist2.param1] [COLOR blue][B][makelist2.param2]  [/B][/COLOR] </title>
-<link>http://185.172.110.39:80/hls/10[makelist2.param3].m3u8</link>
+<title>[B][makelist2.param2] [/B][COLOR yellow][makelist2.param3][/COLOR] [COLOR blue] [makelist2.param4] [makelist2.param5] [makelist2.param6] [/COLOR]  </title>
+<link>$doregex[getDecodedCode]</link>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail>
 ]]></listrepeat>
-<expres><![CDATA[<b>(.*?)<.*?font>(.*?)<.*?stream1(.*?)\.html"]]></expres>
-<page>http://dailydeports.pw/</page>
+<expres><![CDATA[strong.*?href="http://www.tuttosportweb.fi/(.*?)".*?blank">(.*?)<.*?ong>(.*?)<|\n(0.*?|1.*?|2.*?)<|\n(0.*?|1.*?|2.*?)<|\n(0.*?|1.*?|2.*?)\n]]></expres>
+<page>http://tuttosportweb.fi/</page>
+</regex>
+
+
+<regex>
+<name>getDecodedCode</name>
+<expres>$pyFunction:base64.b64decode('$doregex[m3u8]')</expres>
+<page></page>
+</regex>
+
+<regex>
+<name>m3u8</name>
+<expres>curl = "(.*?)"</expres>
+<page>https://www.playcast.se/stream.php?id=$doregex[Canal]</page>
+<referer>http://www.playcast.se/static/player.js</referer>
+<agent>Mozilla/5.0 (Windows NT 6.3; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0</agent>
+<cookieJar></cookieJar>
+</regex>
+
+
+<regex>
+<name>Canal</name>
+<expres>script\'\>id=\'(.*?)\'</expres>
+<page>http://www.tuttosportweb.fi/update/[makelist2.param1]</page>
+<referer>http://www.tuttosportweb.fi/</referer>
+<agent>Mozilla/5.0 (Windows NT 6.3; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0</agent>
+<cookieJar></cookieJar>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
@@ -1050,7 +1077,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
  
  
- 
+
+
  
  
  
@@ -3654,18 +3682,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
  
 
-	
-	
-
-
-
-
-
-
-
-
-<iem>
-<Title>regex futbolibre</title>
+	<iteddm>
+<Title>regex playcast</title>
 <link>$doregex[getDecodedCode]|referer=http://futbollibre.online/cdn-cgi/apps/head/_8TcguhGAY1pkXXQrzoa_JPjxIk.js</link>
 <regex>
 <name>getDecodedCode</name>
@@ -3682,3 +3700,146 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 <thumbnail></thumbnail>
 </item> 
+	
+
+
+
+
+
+
+
+
+<item>
+<Title>regex playcast</title>
+<link>$doregex[getDecodedCode]</link>
+<regex>
+<name>getDecodedCode</name>
+<expres>$pyFunction:base64.b64decode($doregex[getEncodedCode])</expres>
+<page></page>
+</regex>
+
+<regex>
+<name>getEncodedCode</name>
+<expres>curl = "(.*?)"</expres>
+<page>https://www.playcast.se/stream.php?id=152</page>
+<referer>http://www.playcast.se/static/player.js</referer>
+<agent>Mozilla/5.0 (Windows NT 6.3; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0</agent>
+<cookieJar></cookieJar>
+</regex>
+
+<thumbnail></thumbnail>
+</item> 
+
+
+
+
+<item>
+<title>CNews (480p)</title>
+<link>$doregex[url]|Cookie=$get_cookies$</link>
+<regex>
+   <name>url</name>   
+   <expres>NAME="480.*\n(http[^\#]+)</expres>  #Change 480 to 240,380,720 or 1080 for different quality#
+   <page>$doregex[url2]&redirect=0</page>
+   <referer>http://www.dailymotion.com/</referer>
+   <cookieJar/>
+</regex>
+<regex>
+   <name>url2</name>
+   <expres>$pyFunction:'$doregex[jsonurl]'.replace('\/','/')</expres>
+   <page/>
+</regex>
+<regex>
+   <name>jsonurl</name>
+   <expres>mpegURL","url":"([^"]+)</expres>
+   <page>http://www.dailymotion.com/embed/video/x3b68jn</page>
+   <cookieJar/>
+</regex>
+</item>
+
+
+<item>
+<title>CNews (480p)</title>
+<link>$doregex[url]|Cookie=$get_cookies$</link>
+<regex>
+   <name>url</name>   
+   <expres>NAME="480.*\n(http[^\#]+)</expres>  #Change 480 to 240,380,720 or 1080 for different quality#
+   <page>$doregex[url2]&redirect=0</page>
+   <referer>http://www.dailymotion.com/</referer>
+   <cookieJar/>
+</regex>
+<regex>
+   <name>url2</name>
+   <expres>$pyFunction:'$doregex[jsonurl]'.replace('\/','/')</expres>
+   <page/>
+</regex>
+<regex>
+   <name>jsonurl</name>
+   <expres>mpegURL","url":"([^"]+)</expres>
+   <page>https://www.dailymotion.com/video/x6sng2b</page>
+   <cookieJar/>
+</regex>
+</item>
+
+<item>
+<title>Resumenes de Partidos</title>
+<link>$doregex[makelist2]</link>
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>[makelist2.param1]</title>
+<link>$doregex[makelist1]</link>
+]]></listrepeat>
+<expres><![CDATA[class="title\sthreadtitle.*?href="(.*?)">(.*?)<]]></expres>
+<page>http://forum.rojadirecta.es/forumdisplay.php?21-Res%FAmenes-y-goles-(Highlights)</page>
+</regex>
+
+
+
+
+
+
+$doregex[makelist1]
+
+
+<link>$doregex[url]|Cookie=$get_cookies$</link>
+<regex>
+   <name>url</name>   
+   <expres>NAME="480.*\n(http[^\#]+)</expres>  #Change 480 to 240,380,720 or 1080 for different quality#
+   <page>$doregex[url2]&redirect=0</page>
+   <referer>http://www.dailymotion.com/</referer>
+   <cookieJar/>
+</regex>
+<regex>
+   <name>url2</name>
+   <expres>$pyFunction:'$doregex[jsonurl]'.replace('\/','/')</expres>
+   <page/>
+</regex>
+<regex>
+   <name>jsonurl</name>
+   <expres>mpegURL","url":"([^"]+)</expres>
+   <page>http://www.dailymotion.com/embed/video/x6sng2b</page> 
+   <cookieJar/>
+</regex>
+</item>
+
+
+
+
+
+
+<item>
+<title>CNews (1)</title>
+<link>ignorme</link>
+<jsonrpc>plugin://script.module.tvone1111/list_channels/29</jsonrpc>
+</item>
+
+<item>
+<title>CNews (2)</title>
+<link>ignorme</link>
+<jsonrpc>plugin://plugin.video.SportsDevil/?item=url=customs/tvone1.tv.cfg&amp;mode=1</jsonrpc>
+</item>
+
+
+
+
