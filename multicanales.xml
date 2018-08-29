@@ -1814,15 +1814,91 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-
-
-
-
-
-
+ <item>
+<title>[B]Multicanal[/B] TikiTaka 01 [I] [/I]</title>
+<link>http://$doregex[ip]$doregex[m3u8]$doregex[m3u82]</link>
+<regex>
+<name>ip</name>
+<expres>redirect=(.*)</expres>
+<page>$doregex[loader]</page>
+</regex>
+<regex>
+<name>loader</name>
+<expres>url: "(.*?)"</expres>
+<page>$doregex[server]/hembedplayer/$doregex[canal]/1/590/390</page>
+<referer>http://estadionline.ml/</referer>
+</regex>
+<regex>
+<name>m3u8</name>
+<expres>ea \+ "(.*?)"</expres>
+<page>$doregex[server]/hembedplayer/$doregex[canal]/1/590/390</page>
+<referer>http://estadionline.ml/z</referer>
+</regex>
+<regex>
+<name>m3u82</name>
+<expres>hlsUrl \+ enableVideo\(\"(.*?)"</expres>
+<page>$doregex[server]/hembedplayer/$doregex[canal]/1/590/390</page>
+<referer></referer>
+</regex>
+<regex>
+<name>server</name>
+<expres>g=\'2.*?javascript\' src=\'(http://.*?)\/</expres>
+<page>http://estadionline.ml/canal1.php</page>
+</regex>
+<regex>
+<name>canal</name>
+<expres>channel='(.*?)'</expres>
+<page>http://estadionline.ml/canal1.php</page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
  <item>
+<title>[B]Multicanal[/B] TikiTaka 02 [I] [/I]</title>
+<link>http://$doregex[ip]$doregex[m3u8]$doregex[m3u82]</link>
+<regex>
+<name>ip</name>
+<expres>redirect=(.*)</expres>
+<page>$doregex[loader]</page>
+</regex>
+<regex>
+<name>loader</name>
+<expres>url: "(.*?)"</expres>
+<page>$doregex[server]/hembedplayer/$doregex[canal]/1/590/390</page>
+<referer>http://estadionline.ml/</referer>
+</regex>
+<regex>
+<name>m3u8</name>
+<expres>ea \+ "(.*?)"</expres>
+<page>$doregex[server]/hembedplayer/$doregex[canal]/1/590/390</page>
+<referer>http://estadionline.ml/z</referer>
+</regex>
+<regex>
+<name>m3u82</name>
+<expres>hlsUrl \+ enableVideo\(\"(.*?)"</expres>
+<page>$doregex[server]/hembedplayer/$doregex[canal]/1/590/390</page>
+<referer></referer>
+</regex>
+<regex>
+<name>server</name>
+<expres>g=\'2.*?javascript\' src=\'(http://.*?)\/</expres>
+<page>http://estadionline.ml/canal2.php</page>
+</regex>
+<regex>
+<name>canal</name>
+<expres>channel='(.*?)'</expres>
+<page>http://estadionline.ml/canal2.php</page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+
+
+
+
+
+
+ <!--item>
 <title>[B]Multicanal[/B] TikiTaka 01 [I] [/I]</title>
 <link>$doregex[url]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64; rv:56.0) Gecko/20100101 Firefox/56.0&amp;Referer=http://static.castto.me/embedlivesrvjs.php?channel=1820780381&vw=720&vh=420</link>
 <regex>
