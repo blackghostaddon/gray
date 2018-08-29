@@ -1715,7 +1715,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	
 	
 	
-		<item>
+		<!--item>
 <title>[B]Multicanal ElGoles 6[/B]   *  </title>
 <link>$doregex[geturl]</link>
     <regex>
@@ -1760,7 +1760,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <expres>iframe src="(.*?)"</expres>
 <page>http://elgoles.me/11-2</page>
 </regex>
-</item>
+</item-->
 
 
 
