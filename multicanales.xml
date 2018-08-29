@@ -2256,31 +2256,23 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>get-id</name>
 <expres>source: '(.*?)'</expres>
-<page>https:$doregex[pag]</page>
 <rawpost>password=12345</rawpost>
 <connection>keep-alive</connection>
 <accept>*/*</accept>
 <X-Req>XMLHttpRequest</X-Req>
-<cookieJar>d2732eaef183a775c4293a179eee06a4d1507131962</cookieJar>
-<referer>https://vergol.com/</referer>
-<agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
 <cookieJar></cookieJar>
-</regex>
-<regex>
-<name>pag</name>
-<expres>src="(.*?)"</expres>
 <page>https:$doregex[page2]</page>
 <referer>https://verliga1.net/</referer>
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
-<cookieJar></cookieJar>
 </regex>
 <regex>
 <name>page2</name>
-<expres>src="(//[^"]+)</expres>
+<expres>src="([^"]+)</expres>
 <page>https://verliga1.net$doregex[page3]</page>
 <referer>https://verliga1.net/</referer>
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
 </regex>
+ 
 <regex>
 <name>page3</name>
 <expres>450" src="([^"]+)</expres>
@@ -2307,27 +2299,19 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <connection>keep-alive</connection>
 <accept>*/*</accept>
 <X-Req>XMLHttpRequest</X-Req>
-<cookieJar>d2732eaef183a775c4293a179eee06a4d1507131962</cookieJar>
-<page>https:$doregex[pag]</page>
-<referer>https://vergol.com/</referer>
-<agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
 <cookieJar></cookieJar>
-</regex>
-<regex>
-<name>pag</name>
-<expres>src="(.*?)"</expres>
 <page>https:$doregex[page2]</page>
 <referer>https://verliga1.net/</referer>
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
-<cookieJar></cookieJar>
 </regex>
 <regex>
 <name>page2</name>
-<expres>src="(//[^"]+)</expres>
+<expres>src="([^"]+)</expres>
 <page>https://verliga1.net$doregex[page3]</page>
 <referer>https://verliga1.net/</referer>
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
 </regex>
+<regex>
 <regex>
 <name>page3</name>
 <expres>450" src="([^"]+)</expres>
@@ -2355,29 +2339,20 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <connection>keep-alive</connection>
 <accept>*/*</accept>
 <X-Req>XMLHttpRequest</X-Req>
-<cookieJar>d2732eaef183a775c4293a179eee06a4d1507131962</cookieJar>
-<page>https:$doregex[pag]</page>
-<referer>https://vergol.com/</referer>
-<agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
 <cookieJar></cookieJar>
-</regex>
-<regex>
-<name>pag</name>
-<expres>src="(.*?)"</expres>
 <page>https:$doregex[page2]</page>
 <referer>https://verliga1.net/</referer>
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
-<cookieJar></cookieJar>
 </regex>
 <regex>
 <name>page2</name>
-<expres>src="(//[^"]+)</expres>
+<expres>src="([^"]+)</expres>
 <page>https://verliga1.net$doregex[page3]</page>
 <referer>https://verliga1.net/</referer>
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
 </regex>
 <regex>
-<name>page3</name>
+ <name>page3</name>
 <expres>450" src="([^"]+)</expres>
 <page>https://verliga1.net/ver-movistar-campeones-online-gratis-en-directo-por-internet/</page>
 <referer>https://verliga1.net/</referer>
@@ -2401,23 +2376,14 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <connection>keep-alive</connection>
 <accept>*/*</accept>
 <X-Req>XMLHttpRequest</X-Req>
-<cookieJar>d2732eaef183a775c4293a179eee06a4d1507131962</cookieJar>
-<page>https:$doregex[pag]</page>
-<referer>https://vergol.com/</referer>
-<agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
 <cookieJar></cookieJar>
-</regex>
-<regex>
-<name>pag</name>
-<expres>src="(.*?)"</expres>
 <page>https:$doregex[page2]</page>
 <referer>https://verliga1.net/</referer>
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
-<cookieJar></cookieJar>
 </regex>
 <regex>
 <name>page2</name>
-<expres>src="(//[^"]+)</expres>
+<expres>src="([^"]+)</expres>
 <page>https://verliga1.net$doregex[page3]</page>
 <referer>https://verliga1.net/</referer>
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
@@ -2448,23 +2414,14 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <connection>keep-alive</connection>
 <accept>*/*</accept>
 <X-Req>XMLHttpRequest</X-Req>
-<cookieJar>d2732eaef183a775c4293a179eee06a4d1507131962</cookieJar>
-<page>https:$doregex[pag]</page>
-<referer>https://vergol.com/</referer>
-<agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
 <cookieJar></cookieJar>
-</regex>
-<regex>
-<name>pag</name>
-<expres>src="(.*?)"</expres>
 <page>https:$doregex[page2]</page>
 <referer>https://verliga1.net/</referer>
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
-<cookieJar></cookieJar>
 </regex>
 <regex>
 <name>page2</name>
-<expres>src="(//[^"]+)</expres>
+<expres>src="([^"]+)</expres>
 <page>https://verliga1.net$doregex[page3]</page>
 <referer>https://verliga1.net/</referer>
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
@@ -2494,23 +2451,14 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <connection>keep-alive</connection>
 <accept>*/*</accept>
 <X-Req>XMLHttpRequest</X-Req>
-<cookieJar>d2732eaef183a775c4293a179eee06a4d1507131962</cookieJar>
-<page>https:$doregex[pag]</page>
-<referer>https://vergol.com/</referer>
-<agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
 <cookieJar></cookieJar>
-</regex>
-<regex>
-<name>pag</name>
-<expres>src="(.*?)"</expres>
 <page>https:$doregex[page2]</page>
 <referer>https://verliga1.net/</referer>
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
-<cookieJar></cookieJar>
 </regex>
 <regex>
 <name>page2</name>
-<expres>src="(//[^"]+)</expres>
+<expres>src="([^"]+)</expres>
 <page>https://verliga1.net$doregex[page3]</page>
 <referer>https://verliga1.net/</referer>
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
@@ -2541,23 +2489,14 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <connection>keep-alive</connection>
 <accept>*/*</accept>
 <X-Req>XMLHttpRequest</X-Req>
-<cookieJar>d2732eaef183a775c4293a179eee06a4d1507131962</cookieJar>
-<page>https:$doregex[pag]</page>
-<referer>https://vergol.com/</referer>
-<agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
 <cookieJar></cookieJar>
-</regex>
-<regex>
-<name>pag</name>
-<expres>src="(.*?)"</expres>
 <page>https:$doregex[page2]</page>
 <referer>https://verliga1.net/</referer>
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
-<cookieJar></cookieJar>
 </regex>
 <regex>
 <name>page2</name>
-<expres>400" src="(//[^"]+)</expres>
+<expres>src="([^"]+)</expres>
 <page>https://verliga1.net$doregex[page3]</page>
 <referer>https://verliga1.net/</referer>
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
@@ -2583,27 +2522,18 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>get-id</name>
 <expres>source: '(.*?)'</expres>
-<page>https:$doregex[pag]</page>
 <rawpost>password=12345</rawpost>
 <connection>keep-alive</connection>
 <accept>*/*</accept>
 <X-Req>XMLHttpRequest</X-Req>
-<cookieJar>d2732eaef183a775c4293a179eee06a4d1507131962</cookieJar>
-<referer>https://vergol.com/</referer>
-<agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
 <cookieJar></cookieJar>
-</regex>
-<regex>
-<name>pag</name>
-<expres>src="(.*?)"</expres>
 <page>https:$doregex[page2]</page>
 <referer>https://verliga1.net/</referer>
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
-<cookieJar></cookieJar>
 </regex>
 <regex>
 <name>page2</name>
-<expres>400" src="(//ver[^"]+)</expres>
+<expres>src="([^"]+)</expres>
 <page>https://verliga1.net$doregex[page3]</page>
 <referer>https://verliga1.net/</referer>
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
@@ -2633,23 +2563,14 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <connection>keep-alive</connection>
 <accept>*/*</accept>
 <X-Req>XMLHttpRequest</X-Req>
-<cookieJar>d2732eaef183a775c4293a179eee06a4d1507131962</cookieJar>
-<page>https:$doregex[pag]</page>
-<referer>https://vergol.com/</referer>
-<agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
 <cookieJar></cookieJar>
-</regex>
-<regex>
-<name>pag</name>
-<expres>src="(.*?)"</expres>
 <page>https:$doregex[page2]</page>
 <referer>https://verliga1.net/</referer>
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
-<cookieJar></cookieJar>
 </regex>
 <regex>
 <name>page2</name>
-<expres>src="(//[^"]+)</expres>
+<expres>src="([^"]+)</expres>
 <page>https://verliga1.net$doregex[page3]</page>
 <referer>https://verliga1.net/</referer>
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
@@ -2679,23 +2600,14 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <connection>keep-alive</connection>
 <accept>*/*</accept>
 <X-Req>XMLHttpRequest</X-Req>
-<cookieJar>d2732eaef183a775c4293a179eee06a4d1507131962</cookieJar>
-<page>https:$doregex[pag]</page>
-<referer>https://vergol.com/</referer>
-<agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
 <cookieJar></cookieJar>
-</regex>
-<regex>
-<name>pag</name>
-<expres>src="(.*?)"</expres>
 <page>https:$doregex[page2]</page>
 <referer>https://verliga1.net/</referer>
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
-<cookieJar></cookieJar>
 </regex>
 <regex>
 <name>page2</name>
-<expres>src="(//[^"]+)</expres>
+<expres>src="([^"]+)</expres>
 <page>https://verliga1.net$doregex[page3]</page>
 <referer>https://verliga1.net/</referer>
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
@@ -2725,23 +2637,14 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <connection>keep-alive</connection>
 <accept>*/*</accept>
 <X-Req>XMLHttpRequest</X-Req>
-<cookieJar>d2732eaef183a775c4293a179eee06a4d1507131962</cookieJar>
-<page>https:$doregex[pag]</page>
-<referer>https://vergol.com/</referer>
-<agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
 <cookieJar></cookieJar>
-</regex>
-<regex>
-<name>pag</name>
-<expres>src="(.*?)"</expres>
 <page>https:$doregex[page2]</page>
 <referer>https://verliga1.net/</referer>
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
-<cookieJar></cookieJar>
 </regex>
 <regex>
 <name>page2</name>
-<expres>src="(//[^"]+)</expres>
+<expres>src="([^"]+)</expres>
 <page>https://verliga1.net$doregex[page3]</page>
 <referer>https://verliga1.net/</referer>
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
@@ -2769,23 +2672,14 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <connection>keep-alive</connection>
 <accept>*/*</accept>
 <X-Req>XMLHttpRequest</X-Req>
-<cookieJar>d2732eaef183a775c4293a179eee06a4d1507131962</cookieJar>
-<page>https:$doregex[pag]</page>
-<referer>https://vergol.com/</referer>
-<agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
 <cookieJar></cookieJar>
-</regex>
-<regex>
-<name>pag</name>
-<expres>src="(.*?)"</expres>
 <page>https:$doregex[page2]</page>
 <referer>https://verliga1.net/</referer>
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
-<cookieJar></cookieJar>
 </regex>
 <regex>
 <name>page2</name>
-<expres>src="(//[^"]+)</expres>
+<expres>src="([^"]+)</expres>
 <page>https://verliga1.net$doregex[page3]</page>
 <referer>https://verliga1.net/</referer>
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
