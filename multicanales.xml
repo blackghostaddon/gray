@@ -2176,13 +2176,21 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>get-id</name>
 <expres>source: '([^']+)</expres>
-<page>https://vergol.com/canales/live3/verligaa.php</page>
+<page>https://vergol.com/live3/verliga.php</page>
+
+<rawpost>password=12345</rawpost>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar>d2732eaef183a775c4293a179eee06a4d1507131962</cookieJar>
+
 <referer>https://vergol.com/live3/beinsport.php</referer>
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/esp.jpg</thumbnail></item>
 
  
+
 
 
  
@@ -2249,6 +2257,11 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>get-id</name>
 <expres>source: '(.*?)'</expres>
 <page>https:$doregex[pag]</page>
+<rawpost>password=12345</rawpost>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar>d2732eaef183a775c4293a179eee06a4d1507131962</cookieJar>
 <referer>https://vergol.com/</referer>
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
 <cookieJar></cookieJar>
@@ -2290,6 +2303,11 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>get-id</name>
 <expres>source: '(.*?)'</expres>
+<rawpost>password=12345</rawpost>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar>d2732eaef183a775c4293a179eee06a4d1507131962</cookieJar>
 <page>https:$doregex[pag]</page>
 <referer>https://vergol.com/</referer>
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
@@ -2333,6 +2351,11 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>get-id</name>
 <expres>source: '(.*?)'</expres>
+<rawpost>password=12345</rawpost>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar>d2732eaef183a775c4293a179eee06a4d1507131962</cookieJar>
 <page>https:$doregex[pag]</page>
 <referer>https://vergol.com/</referer>
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
@@ -2374,6 +2397,11 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>get-id</name>
 <expres>source: '(.*?)'</expres>
+<rawpost>password=12345</rawpost>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar>d2732eaef183a775c4293a179eee06a4d1507131962</cookieJar>
 <page>https:$doregex[pag]</page>
 <referer>https://vergol.com/</referer>
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
@@ -2416,6 +2444,11 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>get-id</name>
 <expres>source: '(.*?)'</expres>
+<rawpost>password=12345</rawpost>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar>d2732eaef183a775c4293a179eee06a4d1507131962</cookieJar>
 <page>https:$doregex[pag]</page>
 <referer>https://vergol.com/</referer>
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
@@ -2457,6 +2490,11 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>get-id</name>
 <expres>source: '(.*?)'</expres>
+<rawpost>password=12345</rawpost>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar>d2732eaef183a775c4293a179eee06a4d1507131962</cookieJar>
 <page>https:$doregex[pag]</page>
 <referer>https://vergol.com/</referer>
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
@@ -2499,6 +2537,11 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>get-id</name>
 <expres>source: '(.*?)'</expres>
+<rawpost>password=12345</rawpost>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar>d2732eaef183a775c4293a179eee06a4d1507131962</cookieJar>
 <page>https:$doregex[pag]</page>
 <referer>https://vergol.com/</referer>
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
@@ -2541,6 +2584,11 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>get-id</name>
 <expres>source: '(.*?)'</expres>
 <page>https:$doregex[pag]</page>
+<rawpost>password=12345</rawpost>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar>d2732eaef183a775c4293a179eee06a4d1507131962</cookieJar>
 <referer>https://vergol.com/</referer>
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
 <cookieJar></cookieJar>
@@ -2581,6 +2629,11 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>get-id</name>
 <expres>source: '(.*?)'</expres>
+<rawpost>password=12345</rawpost>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar>d2732eaef183a775c4293a179eee06a4d1507131962</cookieJar>
 <page>https:$doregex[pag]</page>
 <referer>https://vergol.com/</referer>
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
@@ -2622,6 +2675,11 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>get-id</name>
 <expres>source: '(.*?)'</expres>
+<rawpost>password=12345</rawpost>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar>d2732eaef183a775c4293a179eee06a4d1507131962</cookieJar>
 <page>https:$doregex[pag]</page>
 <referer>https://vergol.com/</referer>
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
@@ -2663,6 +2721,11 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>get-id</name>
 <expres>source: '(.*?)'</expres>
+<rawpost>password=12345</rawpost>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar>d2732eaef183a775c4293a179eee06a4d1507131962</cookieJar>
 <page>https:$doregex[pag]</page>
 <referer>https://vergol.com/</referer>
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
@@ -2702,6 +2765,11 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>get-id</name>
 <expres>source: '(.*?)'</expres>
+<rawpost>password=12345</rawpost>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar>d2732eaef183a775c4293a179eee06a4d1507131962</cookieJar>
 <page>https:$doregex[pag]</page>
 <referer>https://vergol.com/</referer>
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
