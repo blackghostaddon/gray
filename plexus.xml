@@ -515,24 +515,22 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-
-
-
-
-
-
-	<item>
-<title>[B][COLOR white]ALLFON TV [/B][/COLOR]</title>
-<link>na</link>
-<externallink>http://allfon-tv.pro/autogenplaylist/allfontv.m3u</externallink>
-
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/acestreams.png</thumbnail>
-</item>
-
+ 
 
 <item>
-<title>[B][COLOR white]ALL ACESTREAMS (a)[/B][/COLOR]</title>
+<title>[B][COLOR white]ALL ACESTREAMS [/B][/COLOR]</title>
+<link>$doregex[makelist2]</link>
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+	<title>$pyFunction:'[B][COLOR white][makelist2.param2][/B][/COLOR]'.replace('.',' ').replace('m3u','')</title>
 <link>$doregex[makelist]</link>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/acestreams.png</thumbnail>
+]]></listrepeat>
+<expres>a href="(.*?m3u)">(.*?m3u)<</expres>
+<page>http://91.92.66.82/trash/ttv-list/</page>
+<agent>Kodi/15.2 (Windows NT 6.1) App_Bitness/32 Version/15.2-Git:20151019-02e7013</agent>
+</regex>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
@@ -541,11 +539,28 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/acestreams.png</thumbnail>
 ]]></listrepeat>
 <expres>EXTINF.*?,(.*?)\n.*?id=(.*?)\&</expres>
-<page>http://pomoyka.lib.emergate.net/trash/ttv-list/ttv.all.iproxy.m3u</page>
+<page>http://91.92.66.82/trash/ttv-list/[makelist2.param1]</page>
 <agent>Kodi/15.2 (Windows NT 6.1) App_Bitness/32 Version/15.2-Git:20151019-02e7013</agent>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/acestreams.png</thumbnail>
 </item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -563,7 +578,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/acestreams.png</thumbnail>
 ]]></listrepeat>
 <expres>EXTINF.*?,(.*?)\n.*?acestream:\/\/(.*)</expres>
-<page>http://pomoyka.lib.emergate.net/trash/ttv-list/ttv.sport.player.m3u</page>
+<page>http://91.92.66.82/trash/ttv-list/ttv.sport.player.m3u</page>
 <agent>Kodi/15.2 (Windows NT 6.1) App_Bitness/32 Version/15.2-Git:20151019-02e7013</agent>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/acestreams.png</thumbnail>
