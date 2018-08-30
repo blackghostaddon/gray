@@ -531,6 +531,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page>http://91.92.66.82/trash/ttv-list/</page>
 <agent>Kodi/15.2 (Windows NT 6.1) App_Bitness/32 Version/15.2-Git:20151019-02e7013</agent>
 </regex>
+
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
@@ -538,10 +539,11 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	<link>plugin://program.plexus/?url=[makelist.param2]&amp;mode=1&amp;name=BlackAddon+Arenavision</link>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/acestreams.png</thumbnail>
 ]]></listrepeat>
-<expres>EXTINF.*?,(.*?)\n.*?id=(.*?)\&</expres>
+<expres>EXTINF.*?,(.*?)\nacestream://(.*?)\n</expres>
 <page>http://91.92.66.82/trash/ttv-list/[makelist2.param1]</page>
 <agent>Kodi/15.2 (Windows NT 6.1) App_Bitness/32 Version/15.2-Git:20151019-02e7013</agent>
 </regex>
+
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/acestreams.png</thumbnail>
 </item>
 
