@@ -562,7 +562,7 @@ item>
 
 <item>
 <title>[B] VipRacing [/B] [COLOR lime][I]  [Sportsdevil Requerido]  [/I][/COLOR]</title>
-<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://vipracing.info/channel/canal-$doregex[select]</link>
+<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://vipracing.info/channel/canal-$doregex[select]%26referer=http://cdn.zonasports.es%26title=test</link>
 <regex>
 <name>select</name>
 <expres><![CDATA[#$pyFunction
@@ -805,13 +805,13 @@ def GetLSProData(page_data,Cookie_Jar,m):#streamwatcher2013
  <item>
 <title>[B]Multicanal Zonasport07[/B]   [COLOR blue]SD[/COLOR]    </title>
  
-<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://cdn.zonasports.es/c-7x.php</link>
+<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://cdn.zonasports.es/c-7x.php%26referer=http://cdn.zonasports.es%26title=test 07</link>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
  <item>
 <title>[B]Multicanal Zonasport08[/B]   [COLOR blue]SD[/COLOR]    </title>
  
-<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://cdn.zonasports.es/c-8x.php</link>
+<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://cdn.zonasports.es/c-8x.php%26referer=http://cdn.zonasports.es%26title=test 08</link>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
@@ -1123,7 +1123,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	 <regex>
         <name>canal</name>
         <expres>net\/embed\/(.*?)"</expres>
-        <page>http://cndf84.blogspot.com/p/vtv-1.html</page>http://cndf84.blogspot.com/p
+        <page>http://cndf85.blogspot.com/p/vtv-1.html</page>http://cndf85.blogspot.com/p
     </regex>
 </item>
 
@@ -1147,7 +1147,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	 <regex>
         <name>canal</name>
         <expres>net\/embed\/(.*?)"</expres>
-        <page>http://cndf84.blogspot.com/p/w-1.html</page>
+        <page>http://cndf85.blogspot.com/p/w-1.html</page>
     </regex>
 </item>
 
@@ -1174,7 +1174,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	 <regex>
         <name>canal</name>
         <expres>net\/embed\/(.*?)"</expres>
-        <page>http://cndf84.blogspot.com/p/net-1.html</page>
+        <page>http://cndf85.blogspot.com/p/net-1.html</page>
     </regex>
 </item>
 
@@ -1212,7 +1212,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
    import xbmcgui
    dialog = xbmcgui.Dialog()
    ret = dialog.select('Elige un Canal ', ['vtv-1', 'vtv-2', 'vtv-3', 'who-1', 'who-2', 'who-3', 'net-1', 'net-2', 'net-3', 'w-1', 'w-2', 'w-3', 'w-1-1', 'w-2-2', 'w-3-3'])
-   lists = ['http://cndf84.blogspot.com/p/vtv-1.html', 'http://cndf84.blogspot.com/p/vtv-2.html', 'http://cndf84.blogspot.com/p/vtv-3.html', 'http://cndf84.blogspot.com/p/who-1.html', 'http://cndf84.blogspot.com/p/who-2.html', 'http://cndf84.blogspot.com/p/who-3.html', 'http://cndf84.blogspot.com/p/net-1.html', 'http://cndf84.blogspot.com/p/net-2.html', 'http://cndf84.blogspot.com/p/net-3.html', 'http://cndf84.blogspot.com/p/w-1.html', 'http://cndf84.blogspot.com/p/w-2.html', 'http://cndf84.blogspot.com/p/w-3.html', 'http://cndf84.blogspot.com/p/w-1-1.html', 'http://cndf84.blogspot.com/p/w-2-2.html', 'http://cndf84.blogspot.com/p/w-3-3.html']
+   lists = ['http://cndf85.blogspot.com/p/vtv-1.html', 'http://cndf85.blogspot.com/p/vtv-2.html', 'http://cndf85.blogspot.com/p/vtv-3.html', 'http://cndf85.blogspot.com/p/who-1.html', 'http://cndf85.blogspot.com/p/who-2.html', 'http://cndf85.blogspot.com/p/who-3.html', 'http://cndf85.blogspot.com/p/net-1.html', 'http://cndf85.blogspot.com/p/net-2.html', 'http://cndf85.blogspot.com/p/net-3.html', 'http://cndf85.blogspot.com/p/w-1.html', 'http://cndf85.blogspot.com/p/w-2.html', 'http://cndf85.blogspot.com/p/w-3.html', 'http://cndf85.blogspot.com/p/w-1-1.html', 'http://cndf85.blogspot.com/p/w-2-2.html', 'http://cndf85.blogspot.com/p/w-3-3.html']
    return lists[ret]
 ]]></expres>
 <page></page>
@@ -3400,7 +3400,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[finalURL]$$lsname=TEST</link>
 <regex>
 <name>finalURL</name>
-<expres>$pyFunction: 'plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://maxdeportv.net/indexa.php?canal=1$$LSPlayOnlyOne$$' if not 'plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://maxdeportv.net/indexa.php?canal=1$$LSPlayOnlyOne$$'=='' else 'plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://maxdeportv.net/indexa.php?canal=5$$LSPlayOnlyOne$$'</expres>
+<expres>$pyFunction: 'plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://maxdeportv.net/indexa.php?canal=1%26Referer=http://maxdeportv.net/$$LSPlayOnlyOne$$' if not 'plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://maxdeportv.net/indexa.php?canal=1%26Referer=http://maxdeportv.net/$$LSPlayOnlyOne$$'=='' else 'plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://maxdeportv.net/indexa.php?canal=5%26Referer=http://maxdeportv.net/$$LSPlayOnlyOne$$'</expres>
 <page></page>
 </regex>
 </item>
