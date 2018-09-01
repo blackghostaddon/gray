@@ -560,6 +560,22 @@ item>
 
 
 
+<item>
+<title>[B] VipRacing [/B] [COLOR lime][I]  [Sportsdevil Requerido]  [/I][/COLOR]</title>
+<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://vipracing.info/channel/canal-$doregex[select]</link>
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+   import xbmcgui
+   dialog = xbmcgui.Dialog()
+   ret = dialog.select('Elige un Canal ', ['Canal 0 Liga MX', 'Canal 2 Liga MX', 'Canal 3 Liga MX', 'Canal 5 F1 practica', 'Canal 15 F1 practica', 'Canal 25 F1 practica', 'Canal 35 F1 practica'])
+   lists = ['0', '2', '3', '5', '15', '25', '35']
+   return lists[ret]
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
@@ -1426,7 +1442,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <item>
  <title>[B]Multicanal 101[/B]     </title>
-<link>http://185.172.110.39:80/hls/102.m3u8</link>
+<link>http://185.172.110.39:80/hls/101.m3u8</link>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item-->
 
 
@@ -1826,13 +1842,13 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>loader</name>
 <expres>url: "(.*?)"</expres>
 <page>$doregex[server]/hembedplayer/$doregex[canal]/1/590/390</page>
-<referer>http://estadionline.ml/</referer>
+<referer>http://estadionline.ml/canal1.php</referer>
 </regex>
 <regex>
 <name>m3u8</name>
 <expres>ea \+ "(.*?)"</expres>
 <page>$doregex[server]/hembedplayer/$doregex[canal]/1/590/390</page>
-<referer>http://estadionline.ml/z</referer>
+<referer>http://estadionline.ml/canal1.php</referer>
 </regex>
 <regex>
 <name>m3u82</name>
@@ -1865,13 +1881,13 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>loader</name>
 <expres>url: "(.*?)"</expres>
 <page>$doregex[server]/hembedplayer/$doregex[canal]/1/590/390</page>
-<referer>http://estadionline.ml/</referer>
+<referer>http://estadionline.ml/canal1.php</referer>
 </regex>
 <regex>
 <name>m3u8</name>
 <expres>ea \+ "(.*?)"</expres>
 <page>$doregex[server]/hembedplayer/$doregex[canal]/1/590/390</page>
-<referer>http://estadionline.ml/z</referer>
+<referer>http://estadionline.ml/canal1.php</referer>
 </regex>
 <regex>
 <name>m3u82</name>
@@ -3879,5 +3895,24 @@ $doregex[makelist1]
 </item>
 
 
+<item>
+<title>[COLOR white]abre olpair python[/COLOR]</title>
+<link>$doregex[noticia]</link>
+<regex>
+<name>noticia</name>
+<expres><![CDATA[#$pyFunction 
+def GetLSProData(page_data,Cookie_Jar,m): 
+ import xbmcgui
+ import webbrowser 
+ dialogo = xbmcgui.Dialog() 
+ Nombre_seleccion = dialogo.select('[COLOR white]seleccione pair[/COLOR]', ['[COLOR orange]olpair[/COLOR]'])
+ web_lanzada = ['https://olpair.com/'] 
+ return webbrowser.open(web_lanzada[Nombre_seleccion]) 
+]]></expres>
+ <page></page>
+</regex>
 
+<thumbnail>https://i.imgur.com/yGTsSPk.jpg</thumbnail>
+<fanart>https://i.imgur.com/bg6n3AV.png</fanart>
+</item>
 
