@@ -82,6 +82,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 			<item>
 		<title>•  [B]TotalPlay[/B]  [ Opcion [B]RegioTV[/B] ][B]  [/B]  </title>
+		<link>NA</link>
 <externallink>$doregex[select]</externallink>
 <regex>
 <name>select</name>
