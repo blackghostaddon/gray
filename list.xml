@@ -7,7 +7,7 @@
 <link>NA</link>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/icon.png</thumbnail>
 <fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
-<info>The BlackGhost Addon 
+<info>[COLOR yellow][B]The BlackGhost[/B][/COLOR]
 Bienvenid@ a BlackGhost, un Addon de entretenimiento para compartir y disfrutar.  
 *Puedes apoyar al Addon haciendo una donación voluntaria, la cual servirá para mantener activo el Addon y para el mantenimiento y soporte del mismo. Tu donación es anónima y no importa la cantidad ¡Con tu aportación haces la diferencia! 
 Si deseas hacer una donación por favor accede en el siguiente enlace, de antemano ¡Gracias!
@@ -19,8 +19,7 @@ http://paypal.me/blackghost</info>
 <title>Apoya este Proyecto, Haz tu [B]Donacion[/B] por Paypal en  [B]https://paypal.me/blackghost[/B] o al correo blackaddon@mail.com  </title>
 <link>NA</link>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/paypal.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
-<info>Bienvenid@ a BlackGhost, un Addon de entretenimiento para compartir y disfrutar.  
-*Puedes apoyar al Addon haciendo una donación voluntaria, la cual servirá para mantener activo el Addon y para el mantenimiento y soporte del mismo. Tu donación es anónima y no importa la cantidad ¡Con tu aportación haces la diferencia! 
+<info>Puedes apoyar al Addon haciendo una donación voluntaria, la cual servirá para mantener activo el Addon y para el mantenimiento y soporte del mismo. Tu donación es anónima y no importa la cantidad ¡Con tu aportación haces la diferencia! 
 Si deseas hacer una donación por favor accede en el siguiente enlace, de antemano ¡Gracias!
 http://paypal.me/blackghost</info>
 </item>
@@ -62,8 +61,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 ]]></expres>
 <page></page>
 </regex>
-<info>Los mejores multicanales para ver eventos Deportivos.
-*Puedes apoyar al Addon haciendo una donación voluntaria, la cual servirá para mantener activo el Addon y para el mantenimiento y soporte del mismo. Tu donación es anónima y no importa la cantidad ¡Con tu aportación haces la diferencia! 
+<info>[COLOR yellow][B]Multicanales para eventos Deportivos.[/COLOR][/B]
+Puedes apoyar al Addon haciendo una donación voluntaria, la cual servirá para mantener activo el Addon y para el mantenimiento y soporte del mismo. Tu donación es anónima y no importa la cantidad ¡Con tu aportación haces la diferencia! 
 Si deseas hacer una donación por favor accede en el siguiente enlace, de antemano ¡Gracias!
 http://paypal.me/blackghost</info>
 </item>
@@ -85,8 +84,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 <fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/acestream.png</thumbnail>
-<info>Canales  y eventos por Acestreams, necesitas tener instalado el addon Plexus, ademas si tienes Android tener la app acestream engine instalada y corriendo en segundo plano antes de visualizar un canal
-*Puedes apoyar al Addon haciendo una donación voluntaria, la cual servirá para mantener activo el Addon y para el mantenimiento y soporte del mismo. Tu donación es anónima y no importa la cantidad ¡Con tu aportación haces la diferencia! 
+<info>[COLOR yellow][B]Eventos por Acestreams.[/COLOR][/B]Puedes apoyar al Addon haciendo una donación voluntaria, la cual servirá para mantener activo el Addon y para el mantenimiento y soporte del mismo. Tu donación es anónima y no importa la cantidad ¡Con tu aportación haces la diferencia! 
 Si deseas hacer una donación por favor accede en el siguiente enlace, de antemano ¡Gracias!
 http://paypal.me/blackghost</info>
 </item>
@@ -107,8 +105,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page></page>
 </regex>
 
-<info>Peliculas por Streaming
-*Puedes apoyar al Addon haciendo una donación voluntaria, la cual servirá para mantener activo el Addon y para el mantenimiento y soporte del mismo. Tu donación es anónima y no importa la cantidad ¡Con tu aportación haces la diferencia! 
+<info>[COLOR yellow][B]Peliculas por Streaming.[/COLOR][/B]
+Puedes apoyar al Addon haciendo una donación voluntaria, la cual servirá para mantener activo el Addon y para el mantenimiento y soporte del mismo. Tu donación es anónima y no importa la cantidad ¡Con tu aportación haces la diferencia! 
 Si deseas hacer una donación por favor accede en el siguiente enlace, de antemano ¡Gracias!
 http://paypal.me/blackghost</info>
 </item>
@@ -157,9 +155,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 ]]></expres>
 <page></page>
 </regex>
-<info>Mira Peliculas y series por Torrents; Necesitas el addon Quasar o Elementum instalado.
-
-*Puedes apoyar al Addon haciendo una donación voluntaria, la cual servirá para mantener activo el Addon y para el mantenimiento y soporte del mismo. Tu donación es anónima y no importa la cantidad ¡Con tu aportación haces la diferencia! 
+<info>[COLOR yellow][B]Peliculas y series por Torrents es necesario el addon Quasar o Elementum[/COLOR][/B]
+Puedes apoyar al Addon haciendo una donación voluntaria, la cual servirá para mantener activo el Addon y para el mantenimiento y soporte del mismo. Tu donación es anónima y no importa la cantidad ¡Con tu aportación haces la diferencia! 
 Si deseas hacer una donación por favor accede en el siguiente enlace, de antemano ¡Gracias!
 http://paypal.me/blackghost</info>
 </item>
@@ -196,6 +193,10 @@ def GetLSProData(page_data,Cookie_Jar,m):
 ]]></expres>
 <page></page>
 </regex>
+<info>[COLOR yellow][B]Canales de la Television Española[/COLOR][/B]
+
+Si deseas hacer una donación por favor accede en el siguiente enlace, de antemano ¡Gracias!
+http://paypal.me/blackghost</info>
 </item>
 
 
@@ -213,12 +214,20 @@ def GetLSProData(page_data,Cookie_Jar,m):
 ]]></expres>
 <page></page>
 </regex>
+<info>[COLOR yellow][B]Canales de Mexico[/COLOR][/B]
+
+Si deseas hacer una donación por favor accede en el siguiente enlace, de antemano ¡Gracias!
+http://paypal.me/blackghost</info>
 </item>
 
 <item>
 <title>TotalPlay</title>
 <link>http://ignorame</link><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/tp.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 <externallink>https://raw.githubusercontent.com/blackghostaddon/gray/master/totalp.xml</externallink>
+<info>[COLOR yellow][B]Listas Populares de Television Latina[/COLOR][/B]
+Puedes apoyar al Addon haciendo una donación voluntaria, la cual servirá para mantener activo el Addon y para el mantenimiento y soporte del mismo. Tu donación es anónima y no importa la cantidad ¡Con tu aportación haces la diferencia! 
+Si deseas hacer una donación por favor accede en el siguiente enlace, de antemano ¡Gracias!
+http://paypal.me/blackghost</info>
 </item>
 
 
