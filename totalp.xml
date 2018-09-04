@@ -164,7 +164,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <item>
 <title>•  [B]TotalPlay[/B]  [ Opcion [B]Claro[/B] ][B]   [/B]  </title>
 <link>NA</link>2
-<externallink>https://raw.githubusercontent.com/blackghostaddon/gray/claro.m3u</externallink>
+<externallink>https://raw.githubusercontent.com/blackghostaddon/gray/master/claro.m3u</externallink>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/img/tp.jpg</thumbnail>
 <fanart>https://raw.githubusercontent.com/blackghostaddon/gray/img/fanart.jpg</fanart></item>
 
@@ -177,7 +177,13 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
- 
+ <item>
+<title>•  [B]TotalPlay[/B]  [ Opcion [B]Rocha IPTV[/B] ][B]   [/B]  </title>
+<link>NA</link>2
+<externallink>http://rochaprivada.000webhostapp.com/androidtv.m3u</externallink>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/img/tp.jpg</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/img/fanart.jpg</fanart></item>
+
 
 
 
