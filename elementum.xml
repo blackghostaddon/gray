@@ -208,7 +208,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  <item>
 <title>     [COLOR yellow][B]PelisMag.Net[/B]  Castellano + Buscador de Peliculas y Series[/COLOR] </title>
 <link>http://ignora.me</link>
-<externallink>https://raw.githubusercontent.com/blackghostaddon/gray/master/pelismag.xml</externallink>
+<externallink>https://raw.githubusercontent.com/blackghostaddon/gray/master/pelismagelementum.xml</externallink>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
 </item>
 
