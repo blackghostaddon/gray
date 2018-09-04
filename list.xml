@@ -7,11 +7,9 @@
 <link>NA</link>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/icon.png</thumbnail>
 <fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
-<info>The BlackGhost Addon\n\n
-Bienvenid@ a BlackGhost, un Addon de entretenimiento para compartir y disfrutar. Así que prepara palomitas, ponte cómod@ y disfruta de la Lista. 
-\n
-*Puedes apoyar al Addon haciendo una donación voluntaria, la cual servirá para mantener activo el Addon y para el mantenimiento y soporte del mismo. Tu donación es anónima y no importa la cantidad ¡Con tu aportación haces la diferencia!
-\n
+<info>The BlackGhost Addon 
+Bienvenid@ a BlackGhost, un Addon de entretenimiento para compartir y disfrutar.  
+*Puedes apoyar al Addon haciendo una donación voluntaria, la cual servirá para mantener activo el Addon y para el mantenimiento y soporte del mismo. Tu donación es anónima y no importa la cantidad ¡Con tu aportación haces la diferencia! 
 Si deseas hacer una donación por favor accede en el siguiente enlace, de antemano ¡Gracias!
 http://paypal.me/blackghost</info>
 </item>
@@ -21,10 +19,8 @@ http://paypal.me/blackghost</info>
 <title>Apoya este Proyecto, Haz tu [B]Donacion[/B] por Paypal en  [B]https://paypal.me/blackghost[/B] o al correo blackaddon@mail.com  </title>
 <link>NA</link>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/paypal.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
-<info>Bienvenid@ a BlackGhost, un Addon de entretenimiento para compartir y disfrutar. Así que prepara palomitas, ponte cómod@ y disfruta de la Lista. 
-\n
-*Puedes apoyar al Addon haciendo una donación voluntaria, la cual servirá para mantener activo el Addon y para el mantenimiento y soporte del mismo. Tu donación es anónima y no importa la cantidad ¡Con tu aportación haces la diferencia!
-\n
+<info>Bienvenid@ a BlackGhost, un Addon de entretenimiento para compartir y disfrutar.  
+*Puedes apoyar al Addon haciendo una donación voluntaria, la cual servirá para mantener activo el Addon y para el mantenimiento y soporte del mismo. Tu donación es anónima y no importa la cantidad ¡Con tu aportación haces la diferencia! 
 Si deseas hacer una donación por favor accede en el siguiente enlace, de antemano ¡Gracias!
 http://paypal.me/blackghost</info>
 </item>
@@ -66,7 +62,10 @@ def GetLSProData(page_data,Cookie_Jar,m):
 ]]></expres>
 <page></page>
 </regex>
-<info>Los mejores multicanales para ver eventos Deportivos.</info>
+<info>Los mejores multicanales para ver eventos Deportivos.
+*Puedes apoyar al Addon haciendo una donación voluntaria, la cual servirá para mantener activo el Addon y para el mantenimiento y soporte del mismo. Tu donación es anónima y no importa la cantidad ¡Con tu aportación haces la diferencia! 
+Si deseas hacer una donación por favor accede en el siguiente enlace, de antemano ¡Gracias!
+http://paypal.me/blackghost</info>
 </item>
 
 
@@ -86,7 +85,10 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 <fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/acestream.png</thumbnail>
-<info>Canales  y eventos por Acestreams, necesitas tener instalado el addon Plexus, ademas si tienes Android tener la app acestream engine instalada y corriendo en segundo plano antes de visualizar un canal </info>
+<info>Canales  y eventos por Acestreams, necesitas tener instalado el addon Plexus, ademas si tienes Android tener la app acestream engine instalada y corriendo en segundo plano antes de visualizar un canal
+*Puedes apoyar al Addon haciendo una donación voluntaria, la cual servirá para mantener activo el Addon y para el mantenimiento y soporte del mismo. Tu donación es anónima y no importa la cantidad ¡Con tu aportación haces la diferencia! 
+Si deseas hacer una donación por favor accede en el siguiente enlace, de antemano ¡Gracias!
+http://paypal.me/blackghost</info>
 </item>
 
 
@@ -105,7 +107,10 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page></page>
 </regex>
 
-<info>Peliculas por Streaming</info>
+<info>Peliculas por Streaming
+*Puedes apoyar al Addon haciendo una donación voluntaria, la cual servirá para mantener activo el Addon y para el mantenimiento y soporte del mismo. Tu donación es anónima y no importa la cantidad ¡Con tu aportación haces la diferencia! 
+Si deseas hacer una donación por favor accede en el siguiente enlace, de antemano ¡Gracias!
+http://paypal.me/blackghost</info>
 </item>
 
 
@@ -152,7 +157,11 @@ def GetLSProData(page_data,Cookie_Jar,m):
 ]]></expres>
 <page></page>
 </regex>
-<info>Mira Peliculas y series por Torrents; Necesitas el addon Quasar o Elementum instalado.</info>
+<info>Mira Peliculas y series por Torrents; Necesitas el addon Quasar o Elementum instalado.
+
+*Puedes apoyar al Addon haciendo una donación voluntaria, la cual servirá para mantener activo el Addon y para el mantenimiento y soporte del mismo. Tu donación es anónima y no importa la cantidad ¡Con tu aportación haces la diferencia! 
+Si deseas hacer una donación por favor accede en el siguiente enlace, de antemano ¡Gracias!
+http://paypal.me/blackghost</info>
 </item>
 
 
