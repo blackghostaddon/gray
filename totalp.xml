@@ -162,7 +162,14 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
-<title>•  [B]TotalPlay[/B]  [ Opcion [B]pastebin[/B] ][B]   [/B]  </title>
+<title>•  [B]TotalPlay[/B]  [ Opcion [B]Claro[/B] ][B]   [/B]  </title>
+<link>NA</link>2
+<externallink>https://raw.githubusercontent.com/blackghostaddon/gray/claro.m3u</externallink>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/img/tp.jpg</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/img/fanart.jpg</fanart></item>
+
+<item>
+<title>•  [B]TotalPlay[/B]  [ Opcion [B]Pastebin[/B] ][B]   [/B]  </title>
 <link>NA</link>2
 <externallink>https://pastebin.com/raw/P7BEGxd0</externallink>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/img/tp.jpg</thumbnail>
