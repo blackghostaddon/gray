@@ -136,11 +136,22 @@ def GetLSProData(page_data,Cookie_Jar,m):
 def GetLSProData(page_data,Cookie_Jar,m):
   import xbmc
   xbmc.executebuiltin("XBMC.Notification(BlackGhost,[B]Haz tu Donacion \nen [COLOR yellow]paypal.me/blackghost[/COLOR] [/B] ,10000)")
-  return 'https://raw.githubusercontent.com/blackghostaddon/gray/master/quasar.xml'
+  return 'https://raw.githubusercontent.com/blackghostaddon/gray/master/$doregex[select].xml'
 ]]></expres>
 <page></page>
 </regex>
-<info>Mira Peliculas y series por Torrents; Necesitas el addon Quasar instalado.</info>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+   import xbmcgui
+   dialog = xbmcgui.Dialog()
+   ret = dialog.select('Seleciona el Reproductor que tengas instalado en tu kodi ', ['Quasar', 'Elementum'])
+   lists = ['quasar', 'elementum']
+   return lists[ret]
+]]></expres>
+<page></page>
+</regex>
+<info>Mira Peliculas y series por Torrents; Necesitas el addon Quasar o Elementum instalado.</info>
 </item>
 
 
