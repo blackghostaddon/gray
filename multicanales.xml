@@ -1828,11 +1828,9 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-
-
  <item>
-<title>[B]Multicanal[/B] TikiTaka 01 [I] [/I]</title>
-<link>http://$doregex[ip]$doregex[m3u8]$doregex[m3u82]</link>
+<title>[B]Multicanal[/B] TikiTaka 01 [I] *[/I]</title>
+<link>https://$doregex[ip]$doregex[m3u8]</link>
 <regex>
 <name>ip</name>
 <expres>redirect=(.*)</expres>
@@ -1849,12 +1847,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <expres>ea \+ "(.*?)"</expres>
 <page>$doregex[server]/hembedplayer/$doregex[canal]/1/590/390</page>
 <referer>http://estadionline.ml/canal1.php</referer>
-</regex>
-<regex>
-<name>m3u82</name>
-<expres>hlsUrl \+ enableVideo\(\"(.*?)"</expres>
-<page>$doregex[server]/hembedplayer/$doregex[canal]/1/590/390</page>
-<referer></referer>
 </regex>
 <regex>
 <name>server</name>
