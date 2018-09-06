@@ -1010,7 +1010,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
  
 <item>
-<title>[B]Multicanal RIVO 03[/B]  Kas Server  </title>
+<title>[B]Multicanal RIVO Streams[/B]  Kas Server  </title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
@@ -1030,7 +1030,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
    import xbmcgui
    dialog = xbmcgui.Dialog()
    ret = dialog.select('Elige un Canal ', ['Canal 1 - Norte - Univision Deportes', 'Canal 2 - Norte - Fox Deportes', 'Canal 3 - Norte - Fox Deportes', 'Canal 4 - norte - univision deportes', 'Canal 5'])
-   lists = ['http://in.xrivonet.info/34f.html', 'http://in.xrivonet.info/022c.html', 'http://in.xrivonet.info/018d.html', 'http://in.xrivonet.info/030c.html', 'http://kastream.biz/bi.html']
+   lists = ['http://in.xrivonet.info/35f.html', 'http://in.xrivonet.info/022c.html', 'http://in.xrivonet.info/018d.html', 'http://in.xrivonet.info/030c.html', 'http://in.xrivonet.info/39f.html']
    return lists[ret]
 ]]></expres>
 <page></page>
