@@ -1858,7 +1858,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 <regex>
 <name>server</name>
-<expres>javascript\' src=\'(http://.*?)\/</expres>
+<expres>javascript' src='(http://.*?)\/s</expres>
 <page>http://estadionline.ml/canal1.php</page>
 </regex>
 <regex>
