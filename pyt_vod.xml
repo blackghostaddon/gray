@@ -2927,7 +2927,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
-<title>space filmes Deadpool 2</title>
+<title>space filmes Deadpool </title>
 <link>$doregex[servidor]</link>
 <regex>
 <name>servidor</name>
@@ -2936,14 +2936,17 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <title>[COLOR lime] - [/COLOR] [COLOR white] Servidor [servidor.param2][/COLOR]</title>
 <urlsolve>$doregex[getUrl]</urlsolve>
 ]]></listrepeat>
-<expres><![CDATA[movie_links.*\n.*\n.*?href="(.*?)".+?(Streamango|Openload)]]></expres>
+<expres><![CDATA[movie_links.*?\n.*?\n.*?href="(.*?)".*?(Openload|Streamango|Vidoza)]]></expres>
 <page>https://spacefilmes.xyz/watch-movies/Deadpool-2-35</page>
 </regex>
+
+
 <regex>
 <name>getUrl</name>
 <expres>src="([^"]+)</expres>
 <page>[servidor.param1]</page>
 </regex>
+
 </item>
 
 
