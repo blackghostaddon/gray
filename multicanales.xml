@@ -2326,7 +2326,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
    <item>
 <title>[B]Multicanal[/B] OchoTv [I] Goltv [/I] </title>
-<link>$doregex[get-id]</link>
+<link>$doregex[get-id|Referer=http://lacalleochotv.org&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
 <regex>
 <name>get-id</name>
 <expres>source: '([^']+)</expres>
@@ -2340,7 +2340,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
   
   <item>
 <title>[B]Multicanal[/B] OchoTv [I] Deportes 1 [/I] </title>
-<link>$doregex[get-id]</link>
+<link>$doregex[get-id|Referer=http://lacalleochotv.org&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
 <regex>
 <name>get-id</name>
 <expres>source: '([^']+)</expres>
@@ -2356,7 +2356,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
   <item>
 <title>[B]Multicanal[/B] OchoTv [I] Deportes 2 [/I] </title>
-<link>$doregex[get-id]</link>
+<link>$doregex[get-id|Referer=http://lacalleochotv.org&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
 <regex>
 <name>get-id</name>
 <expres>source: '([^']+)</expres>
@@ -2372,7 +2372,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
   
   <item>
 <title>[B]Multicanal[/B] OchoTv [I] Golf [/I] </title>
-<link>$doregex[get-id]</link>
+<link>$doregex[get-id|Referer=http://lacalleochotv.org&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
 <regex>
 <name>get-id</name>
 <expres>source: '([^']+)</expres>
@@ -2388,7 +2388,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
    <item>
 <title>[B]Multicanal[/B] OchoTv [I] Teledeporte [/I] </title>
-<link>$doregex[get-id]</link>
+<link>$doregex[get-id|Referer=http://lacalleochotv.org&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
 <regex>
 <name>get-id</name>
 <expres>source: '([^']+)</expres>
@@ -2415,7 +2415,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
    <item>
 <title>[B]Multicanal[/B] OchoTv [I] Bein [/I] </title>
-<link>$doregex[get-id]</link>
+<link>$doregex[get-id|Referer=http://lacalleochotv.org&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
 <regex>
 <name>get-id</name>
 <expres>source: '([^']+)</expres>
@@ -2441,7 +2441,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
    <item>
 <title>[B]Multicanal[/B] OchoTv [I] MotoGP [/I] </title>
-<link>$doregex[get-id]</link>
+<link>$doregex[get-id|Referer=http://lacalleochotv.org&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
 <regex>
 <name>get-id</name>
 <expres>source: '([^']+)</expres>
@@ -2469,7 +2469,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
     <item>
 <title>[B]Multicanal[/B] OchoTv [I] Formula 1 [/I] </title>
-<link>$doregex[get-id]</link>
+<link>$doregex[get-id|Referer=http://lacalleochotv.org&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
 <regex>
 <name>get-id</name>
 <expres>source: '([^']+)</expres>
@@ -2501,7 +2501,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
   
     <item>
 <title>[B]Multicanal[/B] OchoTv [I] La Liga [/I] </title>
-<link>$doregex[get-id]</link>
+<link>$doregex[get-id|Referer=http://lacalleochotv.org&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
 <regex>
 <name>get-id</name>
 <expres>source: '([^']+)</expres>
