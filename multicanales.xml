@@ -33,7 +33,7 @@
 
 
 
- <item>
+ <iem>
  <title>[COLOR yellow][B]Multicanal TodoDeportesWeb[/B] [/COLOR]    </title>
 <link>$doregex[makelist2]</link>
 
@@ -58,7 +58,7 @@
 <regex>
 <name>m3u8</name>
 <expres>curl = "(.*?)"</expres>
-<page>https://www.playcast.se/stream.php?id=$doregex[Canal]</page>
+<page>http://www.playcast.se/stream.php?id=$doregex[Canal]</page>
 <referer>http://www.playcast.se/static/player.js</referer>
 <agent>Mozilla/5.0 (Windows NT 6.3; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0</agent>
 <cookieJar></cookieJar>
@@ -67,7 +67,7 @@
 
 <regex>
 <name>Canal</name>
-<expres>script\'\>id=\'(.*?)\'</expres>
+<expres>id=\'(.*?)\'</expres>
 <page>http://www.tuttosportweb.fi/update/[makelist2.param1]</page>
 <referer>http://www.tuttosportweb.fi/</referer>
 <agent>Mozilla/5.0 (Windows NT 6.3; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0</agent>
