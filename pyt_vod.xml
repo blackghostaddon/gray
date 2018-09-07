@@ -245,7 +245,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<item>
+<itm>
 <title>[B][  ][/B]  [B]BUSCAR PELICULA [K][/B]   </title>
 <link>$doregex[lista]</link>
  
