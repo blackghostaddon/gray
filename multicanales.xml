@@ -1053,14 +1053,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
- 
- 
- 
- 
- 
- 
- 
- 
 
 <item>
 <title>[B]Multicanal Futbol Chile 01[/B]        </title>
@@ -1080,8 +1072,21 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	 <regex>
         <name>canal</name>
         <expres>net\/embed\/(.*?)"</expres>
-        <page>http://futbolchile.net/canales/who720.html</page>
+        <page>http://futbolchile.net/canales/who$doregex[select].html</page>
     </regex>
+	<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+   import xbmcgui
+   dialog = xbmcgui.Dialog()
+   ret = dialog.select('Elige un Canal ', ['360', '480', '720'])
+   lists = ['360', '480', '720']
+   return lists[ret]
+]]></expres>
+<page></page>
+</regex>
+
 </item>
 
 
@@ -2319,22 +2324,208 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/esp.jpg</thumbnail></item-->
 
  
+   <item>
+<title>[B]Multicanal[/B] OchoTv [I] Goltv [/I] </title>
+<link>$doregex[get-id]</link>
+<regex>
+<name>get-id</name>
+<expres>source: '([^']+)</expres>
+<page>http://lacalleochotv.org/magu/espana/goltv.php</page>
+<referer>http://lacalleochotv.org/</referer>
+<agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/esp.jpg</thumbnail></item>
+
+ 
+  
+  <item>
+<title>[B]Multicanal[/B] OchoTv [I] Deportes 1 [/I] </title>
+<link>$doregex[get-id]</link>
+<regex>
+<name>get-id</name>
+<expres>source: '([^']+)</expres>
+<page>http://lacalleochotv.org/magu/espana/deporte1.php</page>
+<referer>http://lacalleochotv.org/</referer>
+<agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/esp.jpg</thumbnail></item>
+
  
  
  
  
+  <item>
+<title>[B]Multicanal[/B] OchoTv [I] Deportes 2 [/I] </title>
+<link>$doregex[get-id]</link>
+<regex>
+<name>get-id</name>
+<expres>source: '([^']+)</expres>
+<page>http://lacalleochotv.org/magu/espana/deporte2.php</page>
+<referer>http://lacalleochotv.org/</referer>
+<agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/esp.jpg</thumbnail></item>
+
+ 
+ 
+ 
+  
+  <item>
+<title>[B]Multicanal[/B] OchoTv [I] Golf [/I] </title>
+<link>$doregex[get-id]</link>
+<regex>
+<name>get-id</name>
+<expres>source: '([^']+)</expres>
+<page>http://lacalleochotv.org/magu/espana/movgolf.php</page>
+<referer>http://lacalleochotv.org/</referer>
+<agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/esp.jpg</thumbnail></item>
+
  
  
  
  
+   <item>
+<title>[B]Multicanal[/B] OchoTv [I] Teledeporte [/I] </title>
+<link>$doregex[get-id]</link>
+<regex>
+<name>get-id</name>
+<expres>source: '([^']+)</expres>
+<page>http://lacalleochotv.org$doregex[canal]</page>
+<referer>http://lacalleochotv.org/</referer>
+<agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
+</regex>
+<regex>
+<name>canal</name>
+<expres>iframe src="(.*?)"</expres>
+<page>http://lacalleochotv.org$doregex[opc]</page>
+<referer>http://lacalleochotv.org/</referer>
+<agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
+</regex>
+<regex>
+<name>opc</name>
+<expres>opciones" src="(.*?)"</expres>
+<page>http://lacalleochotv.org/teledeporte-online-en-directo2-gratis/</page>
+<referer>http://lacalleochotv.org/</referer>
+<agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/esp.jpg</thumbnail></item>
+
+
+   <item>
+<title>[B]Multicanal[/B] OchoTv [I] Bein [/I] </title>
+<link>$doregex[get-id]</link>
+<regex>
+<name>get-id</name>
+<expres>source: '([^']+)</expres>
+<page>http://lacalleochotv.org$doregex[canal]</page>
+<referer>http://lacalleochotv.org/</referer>
+<agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
+</regex>
+<regex>
+<name>canal</name>
+<expres>iframe src="(.*?)"</expres>
+<page>http://lacalleochotv.org$doregex[opc]</page>
+<referer>http://lacalleochotv.org/</referer>
+<agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
+</regex>
+<regex>
+<name>opc</name>
+<expres>opciones" src="(.*?)"</expres>
+<page>http://lacalleochotv.org/bein-sports-gratis/</page>
+<referer>http://lacalleochotv.org/</referer>
+<agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/esp.jpg</thumbnail></item>
+
+   <item>
+<title>[B]Multicanal[/B] OchoTv [I] MotoGP [/I] </title>
+<link>$doregex[get-id]</link>
+<regex>
+<name>get-id</name>
+<expres>source: '([^']+)</expres>
+<page>http://lacalleochotv.org$doregex[canal]</page>
+<referer>http://lacalleochotv.org/</referer>
+<agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
+</regex>
+<regex>
+<name>canal</name>
+<expres>iframe src="(.*?)"</expres>
+<page>http://lacalleochotv.org$doregex[opc]</page>
+<referer>http://lacalleochotv.org/</referer>
+<agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
+</regex>
+<regex>
+<name>opc</name>
+<expres>opciones" src="(.*?)"</expres>
+<page>http://lacalleochotv.org/mundial-de-motos-en.directo/</page>
+<referer>http://lacalleochotv.org/</referer>
+<agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/esp.jpg</thumbnail></item>
+
  
  
+    <item>
+<title>[B]Multicanal[/B] OchoTv [I] Formula 1 [/I] </title>
+<link>$doregex[get-id]</link>
+<regex>
+<name>get-id</name>
+<expres>source: '([^']+)</expres>
+<page>http://lacalleochotv.org$doregex[canal]</page>
+<referer>http://lacalleochotv.org/</referer>
+<agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
+</regex>
+<regex>
+<name>canal</name>
+<expres>iframe src="(.*?)"</expres>
+<page>http://lacalleochotv.org$doregex[opc]</page>
+<referer>http://lacalleochotv.org/</referer>
+<agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
+</regex>
+<regex>
+<name>opc</name>
+<expres>opciones" src="(.*?)"</expres>
+<page>http://lacalleochotv.org/formula-1-online-en-directo2-gratis/</page>
+<referer>http://lacalleochotv.org/</referer>
+<agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/esp.jpg</thumbnail></item>
+
  
  
  
  
 
   
+    <item>
+<title>[B]Multicanal[/B] OchoTv [I] La Liga [/I] </title>
+<link>$doregex[get-id]</link>
+<regex>
+<name>get-id</name>
+<expres>source: '([^']+)</expres>
+<page>http://lacalleochotv.org$doregex[canal]</page>
+<referer>http://lacalleochotv.org/</referer>
+<agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
+</regex>
+<regex>
+<name>canal</name>
+<expres>iframe src="(.*?)"</expres>
+<page>http://lacalleochotv.org$doregex[opc]</page>
+<referer>http://lacalleochotv.org/</referer>
+<agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
+</regex>
+<regex>
+<name>opc</name>
+<expres>opciones" src="(.*?)"</expres>
+<page>http://lacalleochotv.org/la-liga-tv-online-en-directo/</page>
+<referer>http://lacalleochotv.org/</referer>
+<agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/esp.jpg</thumbnail></item>
+
+ 
  
  
  
