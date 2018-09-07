@@ -2927,14 +2927,14 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
-<title>space filmes Deadpool </title>
+<title>space filmes Deadpool 2 </title>
 <link>$doregex[servidor]</link>
 <regex>
 <name>servidor</name>
 <listrepeat><![CDATA[
 <SetViewMode>55</SetViewMode>
 <title>[COLOR lime] - [/COLOR] [COLOR white] Servidor [servidor.param2][/COLOR]</title>
-<urlsolve>$doregex[getUrl]</urlsolve>
+<link>$doregex[id3]</link>
 ]]></listrepeat>
 <expres><![CDATA[movie_links.*?\n.*?\n.*?href="(.*?)".*?(Openload|Streamango|Vidoza)]]></expres>
 <page>https://spacefilmes.xyz/watch-movies/Deadpool-2-35</page>
@@ -2945,6 +2945,21 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>getUrl</name>
 <expres>src="([^"]+)</expres>
 <page>[servidor.param1]</page>
+</regex>
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver, resolveurl
+    url = 'https://openload.co/f/[makelist.param1]'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = resolveurl.resolve(url)
+    return u
+]]></expres>
+<page></page>
 </regex>
 
 </item>
