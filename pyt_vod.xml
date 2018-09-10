@@ -2993,7 +2993,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <expres><![CDATA[#$pyFunction
 def GetLSProData(page_data,Cookie_Jar,m):
     import urlresolver, resolveurl
-    url = 'https://doregex[link]'
+    url = 'https://[makelist3.param1'.replace('\/','/')
     try:
         u = urlresolver.resolve(url)
     except:
@@ -3013,8 +3013,9 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
+
  <item>
- <title>test 2</title>
+ <title>test 3 </title>
 <link>$doregex[makelist3]</link>
 
 
@@ -3022,7 +3023,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>makelist3</name>
 <listrepeat><![CDATA[
 <title> [makelist2.param2]              server: [makelist3.param1]</title>
-<urlsolve>https://$doregex[link]</urlsolve>
+<link>$doregex[id3]</link>
 <thumbnail>[makelist2.param2]</thumbnail>
 <fanart>[makelist2.param2]</fanart>
 ]]></listrepeat>
@@ -3030,6 +3031,20 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page>https://embed.pelishd24.com/embed/2778677344/</page>
 </regex>
 
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver, resolveurl
+    url = 'https://[makelist3.param1'
+    try:
+        u = urlresolver.resolve(url).replace('\/','/')
+    except:
+        u = resolveurl.resolve(url).replace('\/','/')
+    return u
+]]></expres>
+<page></page>
+</regex>
 
 <regex>
 <name>link</name>
@@ -3038,5 +3053,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart></item>
+
 
 
