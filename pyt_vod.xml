@@ -2972,7 +2972,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
  <item>
- <title>test 8 </title>
+ <title>test 10 </title>
 <link>$doregex[makelist3]</link>
 
 
@@ -2980,7 +2980,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>makelist3</name>
 <listrepeat><![CDATA[
 <title> [makelist2.param2]              server: [makelist3.param1]</title>
-<urlsolve>$pyFunction:'https://[makelist3.param1]'</urlsolve>.replace('\/','/')
+<urlsolve>$pyFunction:'https://[makelist3.param1]'.replace('///','/')</urlsolve>
 <thumbnail>[makelist2.param2]</thumbnail>
 <fanart>[makelist2.param2]</fanart>
 ]]></listrepeat>
@@ -2995,7 +2995,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
  <item>
- <title>test 7 </title>
+ <title>test 11 </title>
 <link>$doregex[makelist3]</link>
 
 
@@ -3028,7 +3028,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <regex>
 <name>link</name>
-<expres>$pyFunction:'[makelist3.param1]'.replace("\/", "/")</expres>
+<expres>$pyFunction:'[makelist3.param1]'.replace("//", "/")</expres>
 <page></page>
 </regex>
 
@@ -3038,7 +3038,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
  <item>
- <title>test 9 </title>
+ <title>test 12 </title>
 <link>$doregex[makelist3]</link>
 
 
@@ -3046,7 +3046,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>makelist3</name>
 <listrepeat><![CDATA[
 <title> [makelist2.param2]              server: [makelist3.param1]</title>
-<urlsolve>$pyFunction:'https://[makelist3.param1]'.replace('\\/','/')</urlsolve>
+<urlsolve>$pyFunction:'https://[makelist3.param1]'.replace('//','/')</urlsolve>
 <thumbnail>[makelist2.param2]</thumbnail>
 <fanart>[makelist2.param2]</fanart>
 ]]></listrepeat>
