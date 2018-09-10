@@ -2968,7 +2968,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
  <item>
- <title>test 13 </title>
+ <title>test 15 </title>
 <link>$doregex[makelist3]</link>
 
 
@@ -2976,7 +2976,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>makelist3</name>
 <listrepeat><![CDATA[
 <title> [makelist2.param2]              server: [makelist3.param1]</title>
-<urlsolve>$pyFunction:'https://[makelist3.param1]'.replace('\\/','/')</urlsolve>
+<urlsolve>$pyFunction:'https://[makelist3.param1]'.replace('\/','')</urlsolve>
 <thumbnail>[makelist2.param2]</thumbnail>
 <fanart>[makelist2.param2]</fanart>
 ]]></listrepeat>
@@ -2993,7 +2993,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
  <item>
- <title>test 14 </title>
+ <title>test 16</title>
 <link>$doregex[makelist3]</link>
 
 
@@ -3001,7 +3001,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>makelist3</name>
 <listrepeat><![CDATA[
 <title> [makelist2.param2]              server: [makelist3.param1]</title>
-<urlsolve>$pyFunction:'https://[makelist3.param1]'.replace('\\\/','/')</urlsolve>
+<urlsolve>$pyFunction:'https://[makelist3.param1]'.replace('\','')</urlsolve>
 <thumbnail>[makelist2.param2]</thumbnail>
 <fanart>[makelist2.param2]</fanart>
 ]]></listrepeat>
@@ -3013,3 +3013,24 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart></item>
 
 
+
+
+ <item>
+ <title>test 17 </title>
+<link>$doregex[makelist3]</link>
+
+
+<regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+<title> [makelist2.param2]              server: [makelist3.param1]</title>
+<urlsolve>$pyFunction:'https://[makelist3.param1]'.replace('/','')</urlsolve>
+<thumbnail>[makelist2.param2]</thumbnail>
+<fanart>[makelist2.param2]</fanart>
+]]></listrepeat>
+<expres><![CDATA[\/(openload.co.*?|streamango.com.*?|streamcherry.com.*?)"]]></expres>
+<page>https://embed.pelishd24.com/embed/2778677344/</page>
+</regex>
+
+
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart></item>
