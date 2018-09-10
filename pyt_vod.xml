@@ -2972,7 +2972,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
  <item>
- <title>test 1 </title>
+ <title>test 2 </title>
 <link>$doregex[makelist3]</link>
 
 
@@ -2984,7 +2984,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>[makelist2.param2]</thumbnail>
 <fanart>[makelist2.param2]</fanart>
 ]]></listrepeat>
-<expres><![CDATA[\/(openload\.co.*?|streamango\.com.*?|streamcherry\.com.*?)"]]></expres>
+<expres><![CDATA[\/(openload.co.*?|streamango.com.*?|streamcherry.com.*?)"]]></expres>
 <page>https://embed.pelishd24.com/embed/2778677344/</page>
 </regex>
 
@@ -3015,7 +3015,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
  <item>
- <title>test 3 </title>
+ <title>test 4 </title>
 <link>$doregex[makelist3]</link>
 
 
@@ -3027,7 +3027,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>[makelist2.param2]</thumbnail>
 <fanart>[makelist2.param2]</fanart>
 ]]></listrepeat>
-<expres><![CDATA[\/(openload\.co.*?|streamango\.com.*?|streamcherry\.com.*?)"]]></expres>
+<expres><![CDATA[\/(openload.co.*?|streamango.com.*?|streamcherry.com.*?)"]]></expres>
 <page>https://embed.pelishd24.com/embed/2778677344/</page>
 </regex>
 
