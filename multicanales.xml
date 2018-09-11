@@ -293,7 +293,45 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
- 
+ <item>
+<title>Azteca 7 :: MEXICO VS USA</title>
+
+<link>$doregex[url]|Referer=https://player.limpi.tv/embed&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36</link>
+<regex>
+   <name>url</name>   
+   <expres>"file": "(.*?)"</expres>  
+   <page>$doregex[temp]/41023</page>
+   <referer>https://player.limpi.tv/</referer>
+   <cookieJar/>
+</regex>
+
+<regex>
+   <name>temp</name>   
+   <expres>src="(.*?)\'</expres>  
+   <page>https://player.limpi.tv/embed.js</page>
+   <cookieJar/>
+</regex>
+</item>
+
+ <item>
+<title>PSN :: MEXICO VS USA</title>
+
+<link>$doregex[url]|Referer=https://player.limpi.tv/embed&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36</link>
+<regex>
+   <name>url</name>   
+   <expres>"file": "(.*?)"</expres>  
+   <page>$doregex[temp]/41171</page>
+   <referer>https://player.limpi.tv/</referer>
+   <cookieJar/>
+</regex>
+
+<regex>
+   <name>temp</name>   
+   <expres>src="(.*?)\'</expres>  
+   <page>https://player.limpi.tv/embed.js</page>
+   <cookieJar/>
+</regex>
+</item>
 
 
 <itm>
@@ -973,7 +1011,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<itm>
+<item>
 <title>[B]Multicanal RIVO streams[/B] WhoStrems Server   </title>
 <link>$doregex[geturl]</link>
     <regex>
@@ -1000,7 +1038,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
    import xbmcgui
    dialog = xbmcgui.Dialog()
    ret = dialog.select('Elige un Canal ', ['Canal 1', 'Canal 2 ', 'Canal 3'])
-   lists = ['33f.html', '40f.html', '012c.html']
+   lists = ['34f.html', '40f.html', '012c.html']
    return lists[ret]
 ]]></expres>
 <page></page>
@@ -4038,7 +4076,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-$doregex[makelist1]
 
 
 <link>$doregex[url]|Cookie=$get_cookies$</link>
