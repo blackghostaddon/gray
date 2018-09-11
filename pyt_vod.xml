@@ -2989,8 +2989,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>https:[makelist0.param2]</thumbnail>
 <fanart>https:[makelist0.param2]</fanart>
 ]]></listrepeat>
-<expres><![CDATA[TPost C.*?href="(.*?)".*?src="(.*?)".*?Title">(.*?)<"]]></expres>
-<page>https://pelishd24.com/peliculas/page/1/</page>
+<expres><![CDATA[TPost\sC.*?href="(.*?)".*?src="(.*?)".*?itle">(.*?)<]]></expres>
+<page>https://pelishd24.com/peliculas/page/2/</page>
 </regex>
 
 <regex>
