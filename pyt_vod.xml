@@ -2978,44 +2978,54 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
  
  <item>
- <title>milla 22 </title>
+ <title>Pelis24HD </title>
+<link>$doregex[makelist0]</link>
+
+<regex>
+<name>makelist0</name>
+<listrepeat><![CDATA[
+<title>[makelist0.param3]</title>
 <link>$doregex[makelist]</link>
-
-
+<thumbnail>https:[makelist0.param2]</thumbnail>
+<fanart>https:[makelist0.param2]</fanart>
+]]></listrepeat>
+<expres><![CDATA[TPost C.*?href="(.*?)".*?src="(.*?)".*?Title">(.*?)<"]]></expres>
+<page>https://pelishd24.com/peliculas/page/1/</page>
+</regex>
 
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-<title> ver opciones</title>
+<title>[makelist.param1]</title>
 <link>$doregex[makelist2]</link>
-<thumbnail>[makelist0.param2]</thumbnail>
-<fanart>[makelist0.param2]</fanart>
+<thumbnail>https:[makelist0.param2]</thumbnail>
+<fanart>https:[makelist0.param2]</fanart>
 ]]></listrepeat>
 <expres><![CDATA[iframe.*?src="(.*?)"]]></expres>
-<page>https://pelishd24.com/pelicula/milla-22/</page>
+<page>[makelist0.param1]</page>
 </regex>
 
 
 <regex>
 <name>makelist2</name>
 <listrepeat><![CDATA[
-<title> ver opciones</title>
+<title>[makelist2.param1] ver opciones</title>
 <link>$doregex[makelist3]</link>
-<thumbnail>[makelist0.param2]</thumbnail>
-<fanart>[makelist0.param2]</fanart>
+<thumbnail>https:[makelist0.param2]</thumbnail>
+<fanart>https:[makelist0.param2]</fanart>
 ]]></listrepeat>
 <expres><![CDATA[src="(.*?embed.*?)"]]></expres>
-<page>https://pelishd24.com/?trembed=1&trid=5793&trtype=1</page>
+<page>[makelist.param1]1</page>
 </regex>
 
 
 <regex>
 <name>makelist3</name>
 <listrepeat><![CDATA[
-<title> [makelist2.param2]              server: [makelist3.param1]</title>
+<title>[makelist0.param3]              server: [makelist3.param1]</title>
 <link>$doregex[id3]</link>
-<thumbnail>[makelist0.param2]</thumbnail>
-<fanart>[makelist0.param2]</fanart>
+<thumbnail>https:[makelist0.param2]</thumbnail>
+<fanart>https:[makelist0.param2]</fanart>
 ]]></listrepeat>
 <expres><![CDATA[\/(openload.co.*?|streamango.com.*?|streamcherry.com.*?)"]]></expres>
 <page>[makelist2.param1]</page>
