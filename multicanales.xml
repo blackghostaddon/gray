@@ -4102,10 +4102,9 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<title>test</title>
-<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://in.xrivonet.info/32f.html%26referer=http://in.xrivonet.info/32f.html</link>
-http://in.xrivonet.info/32f.html
-
+<title>test spor</title>
+<sportsdevil>http://in.xrivonet.info/32f.html</sportsdevil>
+<referer>http://in.xrivonet.info/32f.html</referer>
 <thumbnail>https://i.imgur.com/yGTsSPk.jpg</thumbnail>
 <fanart>https://i.imgur.com/bg6n3AV.png</fanart>
 </item>
