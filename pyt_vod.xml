@@ -410,7 +410,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  source = requests.get(fullurl, headers= headers).text #
  data = [] #
 #
- last = 3 #
+ last = 4 #
  while firstpage <= last: #
     try: #
         fullurl = starturl + centerurl + str(firstpage) + endurl + categorylink #
@@ -768,7 +768,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  source = requests.get(fullurl, headers= headers).text #
  data = [] #
 #
- last = 3 #
+ last = 5 #
  while firstpage <= last: #
     try: #
         fullurl = starturl + centerurl + str(firstpage) + endurl + categorylink #
@@ -895,7 +895,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  source = requests.get(fullurl, headers= headers).text #
  data = [] #
 #
- last = 3 #
+ last = 6 #
  while firstpage <= last: #
     try: #
         fullurl = starturl + centerurl + str(firstpage) + endurl + categorylink #
@@ -1532,7 +1532,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  source = requests.get(fullurl, headers= headers).text #
  data = [] #
 #
- last = 4 #
+ last = 6 #
  while firstpage <= last: #
     try: #
         fullurl = starturl + centerurl + str(firstpage) + endurl + categorylink #
@@ -1800,7 +1800,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  source = requests.get(fullurl, headers= headers).text #
  data = [] #
 #
- last = 4 #
+ last = 6 #
  while firstpage <= last: #
     try: #
         fullurl = starturl + centerurl + str(firstpage) + endurl + categorylink #
@@ -2052,7 +2052,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  source = requests.get(fullurl, headers= headers).text #
  data = [] #
 #
- last = 4 #
+ last = 7 #
  while firstpage <= last: #
     try: #
         fullurl = starturl + centerurl + str(firstpage) + endurl + categorylink #
@@ -2334,7 +2334,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  source = requests.get(fullurl, headers= headers).text #
  data = [] #
 #
- last = 7 #
+ last = 8 #
  while firstpage <= last: #
     try: #
         fullurl = starturl + centerurl + str(firstpage) + endurl + categorylink #
@@ -2440,7 +2440,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  source = requests.get(fullurl, headers= headers).text #
  data = [] #
 #
- last = 3 #
+ last = 6 #
  while firstpage <= last: #
     try: #
         fullurl = starturl + centerurl + str(firstpage) + endurl + categorylink #
@@ -3011,7 +3011,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  source = requests.get(fullurl, headers= headers).text #
  data = [] #
 #
- last = 6 #
+ last = 9 #
  while firstpage <= last: #
     try: #
         fullurl = starturl + centerurl + str(firstpage) + endurl + categorylink #
@@ -3121,7 +3121,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  source = requests.get(fullurl, headers= headers).text #
  data = [] #
 #
- last = 6 #
+ last = 9 #
  while firstpage <= last: #
     try: #
         fullurl = starturl + centerurl + str(firstpage) + endurl + categorylink #
@@ -3234,7 +3234,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  source = requests.get(fullurl, headers= headers).text #
  data = [] #
 #
- last = 6 #
+ last = 9 #
  while firstpage <= last: #
     try: #
         fullurl = starturl + centerurl + str(firstpage) + endurl + categorylink #
@@ -3347,7 +3347,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  source = requests.get(fullurl, headers= headers).text #
  data = [] #
 #
- last = 6 #
+ last = 9 #
  while firstpage <= last: #
     try: #
         fullurl = starturl + centerurl + str(firstpage) + endurl + categorylink #
