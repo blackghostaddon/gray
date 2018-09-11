@@ -293,6 +293,16 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
+
+
+
+
+
+
+
+
+
+
  <item>
 <title>Azteca 7 :: MEXICO VS USA</title>
 
@@ -312,6 +322,10 @@ def GetLSProData(page_data,Cookie_Jar,m):
    <cookieJar/>
 </regex>
 </item>
+
+
+
+
 
  <item>
 <title>PSN :: MEXICO VS USA</title>
@@ -1321,6 +1335,59 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
+
+
+
+
+ <item>
+ <title>[B]Multicanal ESPN 2 Mexico[/B]    </title>
+
+<link>$doregex[url]|Referer=https://player.limpi.tv/embed&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36</link>
+<regex>
+   <name>url</name>   
+   <expres>"file": "(.*?)"</expres>  
+   <page>$doregex[temp]/40720</page>
+   <referer>https://player.limpi.tv/</referer>
+   <cookieJar/>
+</regex>
+
+<regex>
+   <name>temp</name>   
+   <expres>src="(.*?)\'</expres>  
+   <page>https://player.limpi.tv/embed.js</page>
+   <cookieJar/>
+</regex>
+</item>
+
+
+ <item>
+ <title>[B]Multicanal ESPN 2 Mexico[/B]    </title>
+
+<link>$doregex[url]|Referer=https://player.limpi.tv/embed&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36</link>
+<regex>
+   <name>url</name>   
+   <expres>"file": "(.*?)"</expres>  
+   <page>$doregex[temp]/40720</page>
+   <referer>https://player.limpi.tv/</referer>
+   <cookieJar/>
+</regex>
+
+<regex>
+   <name>temp</name>   
+   <expres>src="(.*?)\'</expres>  
+   <page>https://player.limpi.tv/embed.js</page>
+   <cookieJar/>
+</regex>
+</item>
+
+
+
+
+
+
+
+
+
   <!--item>
  <title>[B]Multicanal ESPN[/B]    </title>
 <link>$doregex[url]|Referer=http://agenda.superligatv.com/foxsport2.html&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
@@ -1893,7 +1960,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 <regex>
 <name>server</name>
-<expres>javascript' src='(http://.*?)\/s</expres>
+<expres>javascript' src='(https://.*?)\/s</expres>
 <page>http://estadionline.ml/canal1.php</page>
 </regex>
 <regex>
@@ -1905,7 +1972,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
  <item>
-<title>[B]Multicanal[/B] TikiTaka 02 [I] [/I]</title>
+<title>[B]Multicanal[/B] TikiTaka 02 [I] * [/I]</title>
 <link>http://$doregex[ip]$doregex[m3u8]$doregex[m3u82]</link>
 <regex>
 <name>ip</name>
@@ -1932,7 +1999,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 <regex>
 <name>server</name>
-<expres>g=\'2.*?javascript\' src=\'(http://.*?)\/</expres>
+<expres>g=\'2.*?javascript\' src=\'(https://.*?)\/</expres>
 <page>http://estadionline.ml/canal2.php</page>
 </regex>
 <regex>
