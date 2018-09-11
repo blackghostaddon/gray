@@ -1960,7 +1960,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 <regex>
 <name>server</name>
-<expres>javascript' src='(https://.*?)\/s</expres>
+<expres>javascript' src='(https://.*?)\/</expres>
 <page>http://estadionline.ml/canal1.php</page>
 </regex>
 <regex>
@@ -1999,7 +1999,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 <regex>
 <name>server</name>
-<expres>g=\'2.*?javascript\' src=\'(https://.*?)\/</expres>
+<expres>javascript\' src=\'(https://.*?)\/</expres>
 <page>http://estadionline.ml/canal2.php</page>
 </regex>
 <regex>
