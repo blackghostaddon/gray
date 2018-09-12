@@ -3344,7 +3344,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 <regex>
 <name>server</name>
-<expres>\/script.*?src=\'(http.*?)\/</expres>
+<expres>\/script.*?javascript.*?src=\'(http.*?)\/</expres>
 <page>http://elgoles.me/8-2</page>
 </regex>
 <regex>
