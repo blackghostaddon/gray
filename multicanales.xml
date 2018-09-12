@@ -1180,7 +1180,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	 <regex>
         <name>canal</name>
         <expres>net\/embed\/(.*?)"</expres>
-        <page>http://cndf85.blogspot.com/p/vtv-1.html</page>http://cndf85.blogspot.com/p
+        <page>http://cndf86.blogspot.com/p/vtv-1.html</page>http://cndf86.blogspot.com/p
     </regex>
 </item>
 
@@ -1204,7 +1204,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	 <regex>
         <name>canal</name>
         <expres>net\/embed\/(.*?)"</expres>
-        <page>http://cndf85.blogspot.com/p/w-1.html</page>
+        <page>http://cndf86.blogspot.com/p/w-1.html</page>
     </regex>
 </item>
 
@@ -1231,7 +1231,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	 <regex>
         <name>canal</name>
         <expres>net\/embed\/(.*?)"</expres>
-        <page>http://cndf85.blogspot.com/p/net-1.html</page>
+        <page>http://cndf86.blogspot.com/p/net-1.html</page>
     </regex>
 </item>
 
@@ -1269,7 +1269,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
    import xbmcgui
    dialog = xbmcgui.Dialog()
    ret = dialog.select('Elige un Canal ', ['vtv-1', 'vtv-2', 'vtv-3', 'who-1', 'who-2', 'who-3', 'net-1', 'net-2', 'net-3', 'w-1', 'w-2', 'w-3', 'w-1-1', 'w-2-2', 'w-3-3'])
-   lists = ['http://cndf85.blogspot.com/p/vtv-1.html', 'http://cndf85.blogspot.com/p/vtv-2.html', 'http://cndf85.blogspot.com/p/vtv-3.html', 'http://cndf85.blogspot.com/p/who-1.html', 'http://cndf85.blogspot.com/p/who-2.html', 'http://cndf85.blogspot.com/p/who-3.html', 'http://cndf85.blogspot.com/p/net-1.html', 'http://cndf85.blogspot.com/p/net-2.html', 'http://cndf85.blogspot.com/p/net-3.html', 'http://cndf85.blogspot.com/p/w-1.html', 'http://cndf85.blogspot.com/p/w-2.html', 'http://cndf85.blogspot.com/p/w-3.html', 'http://cndf85.blogspot.com/p/w-1-1.html', 'http://cndf85.blogspot.com/p/w-2-2.html', 'http://cndf85.blogspot.com/p/w-3-3.html']
+   lists = ['http://cndf86.blogspot.com/p/vtv-1.html', 'http://cndf86.blogspot.com/p/vtv-2.html', 'http://cndf86.blogspot.com/p/vtv-3.html', 'http://cndf86.blogspot.com/p/who-1.html', 'http://cndf86.blogspot.com/p/who-2.html', 'http://cndf86.blogspot.com/p/who-3.html', 'http://cndf86.blogspot.com/p/net-1.html', 'http://cndf86.blogspot.com/p/net-2.html', 'http://cndf86.blogspot.com/p/net-3.html', 'http://cndf86.blogspot.com/p/w-1.html', 'http://cndf86.blogspot.com/p/w-2.html', 'http://cndf86.blogspot.com/p/w-3.html', 'http://cndf86.blogspot.com/p/w-1-1.html', 'http://cndf86.blogspot.com/p/w-2-2.html', 'http://cndf86.blogspot.com/p/w-3-3.html']
    return lists[ret]
 ]]></expres>
 <page></page>
@@ -1972,7 +1972,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
  <item>
-<title>[B]Multicanal[/B] TikiTaka 02 [I] * [/I]</title>
+<title>[B]Multicanal[/B] TikiTaka 02 [I]  [/I]</title>
 <link>http://$doregex[ip]$doregex[m3u8]$doregex[m3u82]</link>
 <regex>
 <name>ip</name>
