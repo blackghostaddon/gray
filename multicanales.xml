@@ -1602,13 +1602,89 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 
 
+ <item>
+<title>Afizzionados</title>
+<link>$doregex[url]|Referer=https://player.limpi.tv/embed&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36</link>
+<regex>
+   <name>url</name>   
+   <expres>"file": "(.*?)"</expres>  
+   <page>$doregex[temp]/$doregex[canal]</page>
+   <referer>https://player.limpi.tv/</referer>
+   <cookieJar/>
+</regex>
+
+<regex> 
+   <name>temp</name>   
+   <expres>src="(.*?)\'</expres>  
+   <page>https://player.limpi.tv/embed.js</page>
+   <cookieJar/>
+</regex>
+
+<regex> 
+   <name>canal</name>   
+   <expres>id='(.*?)'</expres>  
+   <page>http://cablegratis.tv/canal-en-vivo/afizzionados</page>
+   <cookieJar/>
+</regex>
+</item>
 
 
 
 
 
+ <item>
+<title>Claro Sports</title>
+<link>$doregex[url]|Referer=https://player.limpi.tv/embed&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36</link>
+<regex>
+   <name>url</name>   
+   <expres>"file": "(.*?)"</expres>  
+   <page>$doregex[temp]/$doregex[canal]</page>
+   <referer>https://player.limpi.tv/</referer>
+   <cookieJar/>
+</regex>
+
+<regex> 
+   <name>temp</name>   
+   <expres>src="(.*?)\'</expres>  
+   <page>https://player.limpi.tv/embed.js</page>
+   <cookieJar/>
+</regex>
+
+<regex> 
+   <name>canal</name>   
+   <expres>id='(.*?)'</expres>  
+   <page>http://cablegratis.tv/canal-en-vivo/claro-sports</page>
+   <cookieJar/>
+</regex>
+</item>
 
 
+
+ <item>
+<title>Bein ñ Sports</title>
+<link>$doregex[url]|Referer=https://player.limpi.tv/embed&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36</link>
+<regex>
+   <name>url</name>   
+   <expres>"file": "(.*?)"</expres>  
+   <page>$doregex[temp]/$doregex[canal]</page>
+   <referer>https://player.limpi.tv/</referer>
+   <cookieJar/>
+</regex>
+
+<regex> 
+   <name>temp</name>   
+   <expres>src="(.*?)\'</expres>  
+   <page>https://player.limpi.tv/embed.js</page>
+   <cookieJar/>
+</regex>
+
+<regex> 
+   <name>canal</name>   
+   <expres>id='(.*?)'</expres>  
+   <page>http://cablegratis.tv/canal-en-vivo/bein-n-sports</page>
+   <cookieJar/>
+</regex>
+</item>
 
 
 
