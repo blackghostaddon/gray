@@ -3296,7 +3296,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 <regex>
 <name>server</name>
-<expres>\/script.*?src=\'(http.*?)\/</expres>
+<expres>g=\'1.*?src='(http.*?)\/</expres>
 <page>http://elgoles.me/7-2</page>
 </regex>
 <regex>
@@ -3384,7 +3384,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 <regex>
 <name>server</name>
-<expres>\/script.*?src=\'(http.*?)\/</expres>
+<expres>g=\'1.*?src='(http.*?)\/</expres>
 <page>http://elgoles.me/9-2</page>
 </regex>
 <regex>
@@ -3424,7 +3424,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 <regex>
 <name>server</name>
-<expres>\/script.*?src=\'(http.*?)\/</expres>
+<expres>g=\'1.*?src='(http.*?)\/</expres>
 <page>http://elgoles.me/12-2</page>
 </regex>
 <regex>
@@ -3468,7 +3468,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 <regex>
 <name>server</name>
-<expres>\/script.*?src=\'(http.*?)\/</expres>
+<expres>g=\'1.*?src='(http.*?)\/</expres>
 <page>http://elgoles.me/13-2</page>
 </regex>
 <regex>
@@ -3507,7 +3507,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 <regex>
 <name>server</name>
-<expres>\/script.*?src=\'(http.*?)\/</expres>
+<expres>g=\'1.*?src='(http.*?)\/</expres>
 <page>http://elgoles.me/14-2</page>
 </regex>
 <regex>
@@ -3547,7 +3547,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 <regex>
 <name>server</name>
-<expres>\/script.*?src=\'(http.*?)\/</expres>
+<expres>g=\'1.*?src='(http.*?)\/</expres>
 <page>http://elgoles.me/15-2</page>
 </regex>
 <regex>
@@ -3586,7 +3586,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 <regex>
 <name>server</name>
-<expres>\/script.*?src=\'(http.*?)\/</expres>
+<expres>g=\'1.*?src='(http.*?)\/</expres>
 <page>http://elgoles.me/16-2</page>
 </regex>
 <regex>
@@ -3627,7 +3627,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 <regex>
 <name>server</name>
-<expres>\/script.*?src=\'(http.*?)\/</expres>
+<expres>g=\'1.*?src='(http.*?)\/</expres>
 <page>http://elgoles.me/17-2</page>
 </regex>
 <regex>
@@ -3668,7 +3668,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 <regex>
 <name>server</name>
-<expres>\/script.*?src=\'(http.*?)\/</expres>
+<expres>g=\'1.*?src='(http.*?)\/</expres>
 <page>http://elgoles.me/18-2</page>
 </regex>
 <regex>
@@ -3711,7 +3711,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 <regex>
 <name>server</name>
-<expres>\/script.*?src=\'(http.*?)\/</expres>
+<expres>g=\'1.*?src='(http.*?)\/</expres>
 <page>http://elgoles.me/19-2</page>
 </regex>
 <regex>
@@ -3754,7 +3754,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 <regex>
 <name>server</name>
-<expres>\/script.*?src=\'(http.*?)\/</expres>
+<expres>g=\'1.*?src='(http.*?)\/</expres>
 <page>http://elgoles.me/20-2</page>
 </regex>
 <regex>
