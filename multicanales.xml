@@ -111,9 +111,50 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 
 
-http://agenda.superligatv.com/foxsport.html
 
   <item>
+ <title>[COLOR yellow][B]Multicanales Televall [/B] [/COLOR]  Espn - FoxSports-  TDN - TVC - y muchos mas </title>
+
+<link>$doregex[makelist]</link>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+   <title>[COLOR lightblue]   [makelist.param2]    [/COLOR]   </title>
+<link>$doregex[url]|Referer=https://player.limpi.tv/embed&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36</link>
+   <thumbnail>[makelist.param3]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[<li.*?\n.*?canal-en-vivo\/(.*?)".*?title="(.*?)".*?\n.*?src="(.*?)"]]></expres>
+<page>http://cablegratis.tv/</page>
+</regex>
+<regex>
+   <name>url</name>   
+   <expres>"file": "(.*?)"</expres>  
+   <page>$doregex[temp]/$doregex[canal]</page>
+   <referer>https://player.limpi.tv/</referer>
+   <cookieJar/>
+</regex>
+<regex> 
+   <name>temp</name>   
+   <expres>src="(.*?)\'</expres>  
+   <page>https://player.limpi.tv/embed.js</page>
+   <cookieJar/>
+</regex>
+<regex> 
+   <name>canal</name>   
+   <expres>id='(.*?)'</expres>  
+   <page>http://cablegratis.tv/canal-en-vivo/[makelist.param1]</page>
+   <cookieJar/>
+</regex>
+ </item>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  <itm>
  <title>[COLOR yellow][B]Multicanales Televall [/B] [/COLOR]  Espn - FoxSports-  TDN - TVC - new </title>
 <link>$doregex[url]|Referer=http://depo.superligatv.com/unitdn.php&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
  
@@ -1686,44 +1727,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 </item>
 
-
- <item>
-<title>Cable Gratis Latino</title>
-
-<link>$doregex[makelist]</link>
-
-<regex>
-<name>makelist</name>
-<listrepeat><![CDATA[
-   <title>[COLOR lightblue]   [makelist.param2]    [/COLOR]   </title>
-<link>$doregex[url]|Referer=https://player.limpi.tv/embed&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36</link>
-   <thumbnail>[makelist.param3]</thumbnail>
-]]></listrepeat>
-<expres><![CDATA[<li.*?\n.*?canal-en-vivo\/(.*?)".*?title="(.*?)".*?\n.*?src="(.*?)"]]></expres>
-<page>http://cablegratis.tv/</page>
-</regex>
-<regex>
-   <name>url</name>   
-   <expres>"file": "(.*?)"</expres>  
-   <page>$doregex[temp]/$doregex[canal]</page>
-   <referer>https://player.limpi.tv/</referer>
-   <cookieJar/>
-</regex>
-<regex> 
-   <name>temp</name>   
-   <expres>src="(.*?)\'</expres>  
-   <page>https://player.limpi.tv/embed.js</page>
-   <cookieJar/>
-</regex>
-<regex> 
-   <name>canal</name>   
-   <expres>id='(.*?)'</expres>  
-   <page>http://cablegratis.tv/canal-en-vivo/[makelist.param3]</page>
-   <cookieJar/>
-</regex>
-
-</item>
-
+ 
 
 
 
