@@ -327,26 +327,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
- <iem>
-<title>PSN :: MEXICO VS USA</title>
-
-<link>$doregex[url]|Referer=https://player.limpi.tv/embed&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36</link>
-<regex>
-   <name>url</name>   
-   <expres>"file": "(.*?)"</expres>  
-   <page>$doregex[temp]/41171</page>
-   <referer>https://player.limpi.tv/</referer>
-   <cookieJar/>
-</regex>
-
-<regex> 
-   <name>temp</name>   
-   <expres>src="(.*?)\'</expres>  
-   <page>https://player.limpi.tv/embed.js</page>
-   <cookieJar/>
-</regex>
-</item>
-
 
 <itm>
 <title>[B]Multicanal PSN Deportes [/B]   Univision Deportes  </title>
@@ -1555,6 +1535,26 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
+
+ <item>
+<title>ESPN </title>
+
+<link>$doregex[url]|Referer=https://player.limpi.tv/embed&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36</link>
+<regex>
+   <name>url</name>   
+   <expres>"file": "(.*?)"</expres>  
+   <page>$doregex[temp]/40452</page>
+   <referer>https://player.limpi.tv/</referer>
+   <cookieJar/>
+</regex>
+
+<regex> 
+   <name>temp</name>   
+   <expres>src="(.*?)\'</expres>  
+   <page>https://player.limpi.tv/embed.js</page>
+   <cookieJar/>
+</regex>
+</item>
 
 
 
