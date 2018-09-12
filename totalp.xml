@@ -59,9 +59,9 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 			<item>
-		<title>•  [B]TotalPlay[/B]  [ Opcion [B]TecnoTV[/B] ][B]  [/B]  </title>
+		<title>•  [B]TotalPlay[/B]  [ Opcion [B]TecnoTV[/B] ][B] ts [/B]  </title>
 <link>NA</link>
-<externallink>$doregex[select]</externallink>
+<externallink>$doregex[select]$$TSDOWNLOADER$$</externallink>
 <regex>
 <name>select</name>
 <expres><![CDATA[#$pyFunction
@@ -181,7 +181,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  <item>
 <title>•  [B]TotalPlay[/B]  [ Opcion [B]Rocha IPTV[/B] ][B]   [/B]  </title>
 <link>NA</link>2
-<externallink>http://rochaprivada.000webhostapp.com/androidtv.m3u</externallink>
+<externallink>http://rochaprivada.000webhostapp.com/androidtv.m3u$$TSDOWNLOADER$$</externallink>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/img/tp.jpg</thumbnail>
 <fanart>https://raw.githubusercontent.com/blackghostaddon/gray/img/fanart.jpg</fanart></item>
 
