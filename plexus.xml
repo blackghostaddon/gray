@@ -69,7 +69,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 			<regex>
 			<name>hash</name>
 			<expres>this.loadPlayer\("(.*?)"</expres>
-			<page>http://cdn1.arenavision.co.in/$doregex[canal]</page>
+			<page>http://cdn5.arenavision.link/$doregex[canal]</page>
 			<referer>http://cdn.arenavision.biz</referer>
 			<setcookie>beget=begetok</setcookie>
 			</regex>
@@ -111,7 +111,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 			<regex>
 			<name>hash</name>
 			<expres>this.loadPlayer\("(.*?)"</expres>
-			<page>http://cdn1.arenavision.co.in/$doregex[canal]</page>
+			<page>http://cdn5.arenavision.link/$doregex[canal]</page>
 			<referer>https://arenavision.us/</referer>
 			<setcookie>beget=begetok</setcookie>
 			</regex>
@@ -230,7 +230,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 			<regex>
 			<name>hash</name>
 			<expres>this.loadPlayer\("(.*?)"</expres>
-			<page>http://cdn1.arenavision.co.in/$doregex[canal]</page>
+			<page>http://cdn5.arenavision.link/$doregex[canal]</page>
 			<referer>https://arenavision.us/</referer>
 			<setcookie>beget=begetok</setcookie>
 			</regex>
