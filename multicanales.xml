@@ -303,7 +303,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
- <item>
+ <i||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||em>
 <title>Azteca 7 :: MEXICO VS USA</title>
 
 <link>$doregex[url]|Referer=https://player.limpi.tv/embed&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36</link>
@@ -327,7 +327,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
- <item>
+ <iem>
 <title>PSN :: MEXICO VS USA</title>
 
 <link>$doregex[url]|Referer=https://player.limpi.tv/embed&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36</link>
@@ -339,7 +339,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
    <cookieJar/>
 </regex>
 
-<regex>
+<regex> 
    <name>temp</name>   
    <expres>src="(.*?)\'</expres>  
    <page>https://player.limpi.tv/embed.js</page>
@@ -357,7 +357,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <itEm>
 <title>[B]Multicanal PSN Deportes (Rivo) [/B]     </title>
-<link>https://mp4.vaughnsoft.net/live?app=live&amp;port=2935&amp;stream=live_rivotv1|Referer=https://vaughnlive.tv/</link>
+<link>https://mp4.vaughnsoft.net/live?app=live&amp;port=2935&amp;stream=live_rivdeportes|Referer=https://vaughnlive.tv/</link>
  <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail>
 </item>
 
@@ -1025,7 +1025,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<item>
+<itm>
 <title>[B]Multicanal RIVO streams[/B] WhoStrems Server   </title>
 <link>$doregex[geturl]</link>
     <regex>
@@ -1061,7 +1061,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
  
-<item>
+<itm>
 <title>[B]Multicanal RIVO Streams[/B]  Kas Server  </title>
 <link>$doregex[makelist]</link>
 <regex>
@@ -1334,51 +1334,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-
-
-
-
-
- <item>
- <title>[B]Multicanal ESPN 2 Mexico[/B]    </title>
-
-<link>$doregex[url]|Referer=https://player.limpi.tv/embed&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36</link>
-<regex>
-   <name>url</name>   
-   <expres>"file": "(.*?)"</expres>  
-   <page>$doregex[temp]/40720</page>
-   <referer>https://player.limpi.tv/</referer>
-   <cookieJar/>
-</regex>
-
-<regex>
-   <name>temp</name>   
-   <expres>src="(.*?)\'</expres>  
-   <page>https://player.limpi.tv/embed.js</page>
-   <cookieJar/>
-</regex>
-</item>
-
-
- <item>
- <title>[B]Multicanal ESPN 2 Mexico[/B]    </title>
-
-<link>$doregex[url]|Referer=https://player.limpi.tv/embed&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36</link>
-<regex>
-   <name>url</name>   
-   <expres>"file": "(.*?)"</expres>  
-   <page>$doregex[temp]/40720</page>
-   <referer>https://player.limpi.tv/</referer>
-   <cookieJar/>
-</regex>
-
-<regex>
-   <name>temp</name>   
-   <expres>src="(.*?)\'</expres>  
-   <page>https://player.limpi.tv/embed.js</page>
-   <cookieJar/>
-</regex>
-</item>
 
 
 
