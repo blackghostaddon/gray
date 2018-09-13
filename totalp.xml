@@ -235,9 +235,14 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
- 
+  <itm>
+	<title>•  [B]TotalPlay[/B]  [ Opcion [B]Temp[/B]  ][B]     [/B]   </title>
+	<link>NA</link>2
+<externallink>http://mylatinotv.com:25461/get.php?username=demosep2&amp;password=RLootpDPHu&amp;type=m3u_plus&amp;output=m3u8</externallink>
 
-
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/img/tp.jpg</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/img/fanart.jpg</fanart>
+</item>
 
 
  <itm>
