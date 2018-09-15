@@ -1046,7 +1046,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<itm>
+<item>
 <title>[B]Multicanal RIVO streams[/B] WhoStrems Server   </title>
 <link>$doregex[geturl]</link>
     <regex>
@@ -1082,7 +1082,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
  
-<itm>
+<item>
 <title>[B]Multicanal RIVO Streams[/B]  Kas Server  </title>
 <link>$doregex[makelist]</link>
 <regex>
