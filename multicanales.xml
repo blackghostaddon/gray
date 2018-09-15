@@ -1012,7 +1012,10 @@ def GetLSProData(page_data,Cookie_Jar,m):#streamwatcher2013
 </item>
 
 
-
+<item>
+<title>[B]Multicanal Zonasport16[/B]         </title>
+    <link>https://d3smc1u5ys296h.cloudfront.net/index.m3u8|User-Agent=ipad</link>
+</item>
 
 
 
