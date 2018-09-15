@@ -666,7 +666,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>https://$doregex[ip]$doregex[m3u8]</link>
 			<regex>
 			<name>ip</name>
-			<expres>ea = "(.*?)"</expres>
+			<expres>javascript.*?\n.*?ea = "(.*?)"</expres>
 			<page>https://www.playerfs.com/sharedcdn/hembedplayer/$doregex[canal]/1/700/400/$doregex[stream]</page>
 			<agent>Mozilla/5.0 (Windows NT 10.0; WOW64; rv:56.0) Gecko/20100101 Firefox/56.0</agent>
 			<referer>http://zonasports.es/cha-x.php</referer>
@@ -699,7 +699,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>https://$doregex[ip]$doregex[m3u8]</link>
 			<regex>
 			<name>ip</name>
-			<expres>ea = "(.*?)"</expres>
+			<expres>javascript.*?\n.*?ea = "(.*?)"</expres>
 			<page>https://www.playerfs.com/sharedcdn/hembedplayer/$doregex[canal]/1/700/400/$doregex[stream]</page>
 			<agent>Mozilla/5.0 (Windows NT 10.0; WOW64; rv:56.0) Gecko/20100101 Firefox/56.0</agent>
 			<referer>http://zonasports.es/cha-x.php</referer>
@@ -736,7 +736,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>https://$doregex[ip]$doregex[m3u8]</link>
 			<regex>
 			<name>ip</name>
-			<expres>ea = "(.*?)"</expres>
+			<expres>javascript.*?\n.*?ea = "(.*?)"</expres>
 			<page>https://www.playerfs.com/sharedcdn/hembedplayer/$doregex[canal]/1/700/400/$doregex[stream]</page>
 			<agent>Mozilla/5.0 (Windows NT 10.0; WOW64; rv:56.0) Gecko/20100101 Firefox/56.0</agent>
 			<referer>http://zonasports.es/cha-x.php</referer>
@@ -770,7 +770,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>https://$doregex[ip]$doregex[m3u8]</link>
 			<regex>
 			<name>ip</name>
-			<expres>ea = "(.*?)"</expres>
+			<expres>javascript.*?\n.*?ea = "(.*?)"</expres>
 			<page>https://www.playerfs.com/sharedcdn/hembedplayer/$doregex[canal]/1/700/400/$doregex[stream]</page>
 			<agent>Mozilla/5.0 (Windows NT 10.0; WOW64; rv:56.0) Gecko/20100101 Firefox/56.0</agent>
 			<referer>http://zonasports.es/cha-x.php</referer>
@@ -2056,7 +2056,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>https://$doregex[ip]$doregex[m3u8]</link>
 <regex>
 <name>ip</name>
-<expres>ea = "(.*?)"</expres>
+<expres>javascript.*?\n.*?ea = "(.*?)"</expres>
 <page>$doregex[server]/hembedplayer/$doregex[canal]/1/590/390</page>
 <referer>http://estadionline.ml/canal1.php</referer>
 </regex>
@@ -2092,7 +2092,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>https://$doregex[ip]$doregex[m3u8]$doregex[m3u82]</link>
 <regex>
 <name>ip</name>
-<expres>ea = "(.*?)"</expres>
+<expres>javascript.*?\n.*?ea = "(.*?)"</expres>
 <page>$doregex[server]/hembedplayer/$doregex[canal]/1/590/390</page>
 <referer>http://estadionline.ml/canal1.php</referer>
 </regex>
