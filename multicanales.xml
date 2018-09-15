@@ -2037,21 +2037,42 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-
-
-
-
-
-
-
-
-
+ <item>
+<title>[B]Multicanal[/B] TikiTaka 01 [I] ***[/I]</title>
+<link>$doregex[ip]</link>
+<regex>
+<name>ip</name>
+<expres>file: "(.*?)"</expres>
+<page>http://veecast.net/embed/estdionline-h1cn4</page>
+<referer>http://estadionline.ml/canal1.php</referer>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
 
 
  <item>
+<title>[B]Multicanal[/B] TikiTaka 02 [I] ***[/I]</title>
+<link>$doregex[ip]</link>
+<regex>
+<name>ip</name>
+<expres>file: "(.*?)"</expres>
+<page>http://veecast.net/embed/estadio22-dppph</page>
+<referer>http://estadionline.ml/canal1.php</referer>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+
+
+
+
+
+
+
+
+ <itm>
 <title>[B]Multicanal[/B] TikiTaka 01 [I] *[/I]</title>
 <link>https://$doregex[ip]$doregex[m3u8]</link>
 <regex>
@@ -2087,7 +2108,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
- <item>
+ <itm>
 <title>[B]Multicanal[/B] TikiTaka 02 [I]  [/I]</title>
 <link>https://$doregex[ip]$doregex[m3u8]$doregex[m3u82]</link>
 <regex>
