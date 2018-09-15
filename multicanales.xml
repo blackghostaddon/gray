@@ -663,38 +663,28 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <item>
 <title>[B]Multicanal Zonasport01[/B]      </title>
-
-<link>http://$doregex[ip]$doregex[m3u8]$doregex[hls]|User-Agent=iPad</link>
+<link>https://$doregex[ip]$doregex[m3u8]</link>
 			<regex>
 			<name>ip</name>
-			<expres>redirect=(.*)</expres>
-			<page>http://www.pubfstream.com:1935/loadbalancer</page>
-			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<expres>ea = "(.*?)"</expres>
+			<page>https://www.playerfs.com/sharedcdn/hembedplayer/$doregex[canal]/1/700/400/$doregex[stream]</page>
+			<agent>Mozilla/5.0 (Windows NT 10.0; WOW64; rv:56.0) Gecko/20100101 Firefox/56.0</agent>
 			<referer>http://www.playerfs.com</referer>
 			</regex>
 			<regex>
 			<name>m3u8</name>
 			<expres>ea \+ "([^"]+)</expres>
-			<page>http://www.playerfs.com/sharedcdn/membedplayer/$doregex[canal]/1/700/400/$doregex[stream]</page>
-			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
-			<referer>http://www.playerfs.com</referer>
-			</regex>
-			<regex>
-			<name>hls</name>
-			<expres>hlsUrl \+ \(\"([^"]+)</expres>
-			<page>http://www.playerfs.com/sharedcdn/membedplayer/$doregex[canal]/1/700/400/$doregex[stream]</page>
-			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<page>https://www.playerfs.com/sharedcdn/hembedplayer/$doregex[canal]/1/700/400/$doregex[stream]</page>
+			<agent>Mozilla/5.0 (Windows NT 10.0; WOW64; rv:56.0) Gecko/20100101 Firefox/56.0</agent>
 			<referer>http://www.playerfs.com</referer>
 			</regex>
 		<regex>
 			<name>stream</name>
 			<expres>fid="([^"]+)</expres>
 			<page>http://www.playerfs.com/sharedcdn/sharedcdnEmbed.js?channel=$doregex[canal]</page>
-			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<agent>Mozilla/5.0 (Windows NT 10.0; WOW64; rv:56.0) Gecko/20100101 Firefox/56.0</agent>
 			<referer>http://www.playerfs.com</referer>
 			</regex>
-
-
 			<regex>
 			<name>canal</name>
 			<expres>channel='(.*?)'</expres>
@@ -704,36 +694,28 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-
 <item>
 <title>[B]Multicanal Zonasport02[/B]      </title>
-<link>http://$doregex[ip]$doregex[m3u8]$doregex[hls]|User-Agent=iPad</link>
+<link>https://$doregex[ip]$doregex[m3u8]</link>
 			<regex>
 			<name>ip</name>
-			<expres>redirect=(.*)</expres>
-			<page>http://www.pubfstream.com:1935/loadbalancer</page>
-			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<expres>ea = "(.*?)"</expres>
+			<page>https://www.playerfs.com/sharedcdn/hembedplayer/$doregex[canal]/1/700/400/$doregex[stream]</page>
+			<agent>Mozilla/5.0 (Windows NT 10.0; WOW64; rv:56.0) Gecko/20100101 Firefox/56.0</agent>
 			<referer>http://www.playerfs.com</referer>
 			</regex>
 			<regex>
 			<name>m3u8</name>
 			<expres>ea \+ "([^"]+)</expres>
-			<page>http://www.playerfs.com/sharedcdn/membedplayer/$doregex[canal]/1/700/400/$doregex[stream]</page>
-			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
-			<referer>http://www.playerfs.com</referer>
-			</regex>
-			<regex>
-			<name>hls</name>
-			<expres>hlsUrl \+ \(\"([^"]+)</expres>
-			<page>http://www.playerfs.com/sharedcdn/membedplayer/$doregex[canal]/1/700/400/$doregex[stream]</page>
-			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<page>https://www.playerfs.com/sharedcdn/hembedplayer/$doregex[canal]/1/700/400/$doregex[stream]</page>
+			<agent>Mozilla/5.0 (Windows NT 10.0; WOW64; rv:56.0) Gecko/20100101 Firefox/56.0</agent>
 			<referer>http://www.playerfs.com</referer>
 			</regex>
 		<regex>
 			<name>stream</name>
 			<expres>fid="([^"]+)</expres>
 			<page>http://www.playerfs.com/sharedcdn/sharedcdnEmbed.js?channel=$doregex[canal]</page>
-			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<agent>Mozilla/5.0 (Windows NT 10.0; WOW64; rv:56.0) Gecko/20100101 Firefox/56.0</agent>
 			<referer>http://www.playerfs.com</referer>
 			</regex>
 			<regex>
@@ -751,38 +733,28 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <item>
 <title>[B]Multicanal Zonasport03[/B]         </title>
-
-<link>http://$doregex[ip]$doregex[m3u8]$doregex[hls]|User-Agent=iPad</link>
+<link>https://$doregex[ip]$doregex[m3u8]</link>
 			<regex>
 			<name>ip</name>
-			<expres>redirect=(.*)</expres>
-			<page>http://www.pubfstream.com:1935/loadbalancer</page>
-			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<expres>ea = "(.*?)"</expres>
+			<page>https://www.playerfs.com/sharedcdn/hembedplayer/$doregex[canal]/1/700/400/$doregex[stream]</page>
+			<agent>Mozilla/5.0 (Windows NT 10.0; WOW64; rv:56.0) Gecko/20100101 Firefox/56.0</agent>
 			<referer>http://www.playerfs.com</referer>
 			</regex>
 			<regex>
 			<name>m3u8</name>
 			<expres>ea \+ "([^"]+)</expres>
-			<page>http://www.playerfs.com/sharedcdn/membedplayer/$doregex[canal]/1/700/400/$doregex[stream]</page>
-			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
-			<referer>http://www.playerfs.com</referer>
-			</regex>
-			<regex>
-			<name>hls</name>
-			<expres>hlsUrl \+ \(\"([^"]+)</expres>
-			<page>http://www.playerfs.com/sharedcdn/membedplayer/$doregex[canal]/1/700/400/$doregex[stream]</page>
-			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<page>https://www.playerfs.com/sharedcdn/hembedplayer/$doregex[canal]/1/700/400/$doregex[stream]</page>
+			<agent>Mozilla/5.0 (Windows NT 10.0; WOW64; rv:56.0) Gecko/20100101 Firefox/56.0</agent>
 			<referer>http://www.playerfs.com</referer>
 			</regex>
 		<regex>
 			<name>stream</name>
 			<expres>fid="([^"]+)</expres>
 			<page>http://www.playerfs.com/sharedcdn/sharedcdnEmbed.js?channel=$doregex[canal]</page>
-			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<agent>Mozilla/5.0 (Windows NT 10.0; WOW64; rv:56.0) Gecko/20100101 Firefox/56.0</agent>
 			<referer>http://www.playerfs.com</referer>
 			</regex>
-
-
 			<regex>
 			<name>canal</name>
 			<expres>channel='(.*?)'</expres>
@@ -793,8 +765,41 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-
 <item>
+<title>[B]Multicanal Zonasport04[/B]  -       </title>
+<link>https://$doregex[ip]$doregex[m3u8]</link>
+			<regex>
+			<name>ip</name>
+			<expres>ea = "(.*?)"</expres>
+			<page>https://www.playerfs.com/sharedcdn/hembedplayer/$doregex[canal]/1/700/400/$doregex[stream]</page>
+			<agent>Mozilla/5.0 (Windows NT 10.0; WOW64; rv:56.0) Gecko/20100101 Firefox/56.0</agent>
+			<referer>http://www.playerfs.com</referer>
+			</regex>
+			<regex>
+			<name>m3u8</name>
+			<expres>ea \+ "([^"]+)</expres>
+			<page>https://www.playerfs.com/sharedcdn/hembedplayer/$doregex[canal]/1/700/400/$doregex[stream]</page>
+			<agent>Mozilla/5.0 (Windows NT 10.0; WOW64; rv:56.0) Gecko/20100101 Firefox/56.0</agent>
+			<referer>http://www.playerfs.com</referer>
+			</regex>
+		<regex>
+			<name>stream</name>
+			<expres>fid="([^"]+)</expres>
+			<page>http://www.playerfs.com/sharedcdn/sharedcdnEmbed.js?channel=$doregex[canal]</page>
+			<agent>Mozilla/5.0 (Windows NT 10.0; WOW64; rv:56.0) Gecko/20100101 Firefox/56.0</agent>
+			<referer>http://www.playerfs.com</referer>
+			</regex>
+			<regex>
+			<name>canal</name>
+			<expres>channel='(.*?)'</expres>
+			<page>http://zonasports.es/cha-x.php?id=4</page>
+			</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+
+
+<itm>
 <title>[B]Multicanal Zonasport04[/B]       </title>
 
 <link>http://$doregex[ip]$doregex[m3u8]$doregex[hls]|User-Agent=iPad</link>
