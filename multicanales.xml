@@ -378,7 +378,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <itEm>
 <title>[B]Multicanal PSN Deportes (Rivo) [/B]     </title>
-<link>https://mp4.vaughnsoft.net/live?app=live&amp;port=2935&amp;stream=live_rivdeportes|Referer=https://vaughnlive.tv/</link>
+<link>https://mp4.vaughnsoft.net/live?app=live&amp;port=2935&amp;stream=live_rivdeportes2|Referer=https://vaughnlive.tv/</link>
  <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail>
 </item>
 
@@ -1530,17 +1530,16 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-
 <item>
  <title>[B]Multicanal 101[/B]    Sur WinSport</title>
-<link>http://185.172.110.39:80/hls/1001.m3u8</link>
+<link>http://185.172.110.39:80/hls/101.m3u8</link>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item-->
 
 
 
 <item>
  <title>[B]Multicanal 102[/B]   Norte - Espn Deportes  </title>
-<link>http://185.172.110.39:80/hls/1002.m3u8</link>
+<link>http://185.172.110.39:80/hls/102.m3u8</link>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item-->
 
 
@@ -1548,7 +1547,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <item>
  <title>[B]Multicanal 103[/B]    Norte - FS2 </title>
-<link>http://185.172.110.39:80/hls/1003.m3u8</link>
+<link>http://185.172.110.39:80/hls/103.m3u8</link>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item-->
 
 
@@ -1557,7 +1556,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <item>
  <title>[B]Multicanal 104[/B]   Norte - Univision TDN  </title>
-<link>http://185.172.110.39:80/hls/1004.m3u8</link>
+<link>http://185.172.110.39:80/hls/104.m3u8</link>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item-->
 
 
@@ -1565,9 +1564,15 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <item>
  <title>[B]Multicanal 105[/B]   Sur  </title>
-<link>http://185.172.110.39:80/hls/1005.m3u8</link>
+<link>http://185.172.110.39:80/hls/105.m3u8</link>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item-->
 
+
+
+<item>
+ <title>[B]Multicanal 105[/B]  Canelo vs GGG </title>
+<link>http://185.172.110.39:80/hls/111.m3u8</link>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item-->
 
 
 
@@ -3849,6 +3854,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
+ http://handrefut.blogspot.com/p/ch04.html
+ http://handrefut.blogspot.com/p/ch09.html
  
  
  
