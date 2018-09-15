@@ -154,8 +154,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
  
  
-  <itm>
- <title>[COLOR yellow][B]Multicanales Televall [/B] [/COLOR]  Espn - FoxSports-  TDN - TVC - new </title>
+  <item>
+ <title>[COLOR yellow][B]Multicanales Televall 2 [/B] [/COLOR]  Espn - FoxSports-  TDN - TVC - new </title>
 <link>$doregex[url]|Referer=http://depo.superligatv.com/unitdn.php&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
  
  <regex>
@@ -170,8 +170,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 def GetLSProData(page_data,Cookie_Jar,m):
    import xbmcgui
    dialog = xbmcgui.Dialog()
-   ret = dialog.select('Elige un Canal ', ['ESPN LA', 'ESPN 2', 'UNIVISION TDN', 'TDN', 'CDF', 'ESPN 3', 'ESPN 3 - LA LIGA', 'UNIVISION DEPORTES', 'CLARO SPORTS', 'FOX SPORTS LA', 'FOX SPORTS 2', 'IMAGEN TV', 'TVC DEPORTES', 'Canal 5', 'Azteca 7'])
-   lists = ['espnla', 'espn2', 'unitdn', 'tdn', 'cdf', 'espn3', 'espn3la', 'unidep', 'clarosport', 'foxsportla', 'foxsport2', 'imagentv', 'tvcdep', 'tele5', 'azteca7']
+   ret = dialog.select('Elige un Canal ', ['SPACE Canelo vs GGG', 'ESPN LA', 'ESPN 2', 'UNIVISION TDN', 'TDN', 'CDF', 'ESPN 3', 'ESPN 3 - LA LIGA', 'UNIVISION DEPORTES', 'CLARO SPORTS', 'FOX SPORTS LA', 'FOX SPORTS 2', 'IMAGEN TV', 'TVC DEPORTES', 'Canal 5', 'Azteca 7'])
+   lists = ['space', 'espnla', 'espn2', 'unitdn', 'tdn', 'cdf', 'espn3', 'espn3la', 'unidep', 'clarosport', 'foxsportla', 'foxsport2', 'imagentv', 'tvcdep', 'tele5', 'azteca7']
    return lists[ret]
 ]]></expres>
 <page></page>
@@ -1578,6 +1578,28 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
+
+
+
+ <item>
+<title>SPACE Canelo vs GGG </title>
+
+<link>$doregex[url]|Referer=https://player.limpi.tv/embed&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36</link>
+<regex>
+   <name>url</name>   
+   <expres>"file": "(.*?)"</expres>  
+   <page>$doregex[temp]/40445</page>
+   <referer>https://player.limpi.tv/</referer>
+   <cookieJar/>
+</regex>
+
+<regex> 
+   <name>temp</name>   
+   <expres>src="(.*?)\'</expres>  
+   <page>https://player.limpi.tv/embed.js</page>
+   <cookieJar/>
+</regex>
+</item>
 
 
 
