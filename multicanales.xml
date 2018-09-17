@@ -11,23 +11,18 @@
 
  
 <item>
-<title>[COLOR blue]Agenda RojaDirecta[/COLOR] [Sportsdevil]</title>
+<title> [COLOR skyblue]•[/COLOR]    [COLOR white][B]ROJA[/COLOR][COLOR lightblue]DIRECTA [/COLOR][/B]  [COLOR lightslategray] [I]SD[/I][/COLOR]</title>
 <link>ignorme</link>
 <jsonrpc>plugin://plugin.video.SportsDevil/?item=url=livesports/rojadirecta.me.cfg&amp;mode=1</jsonrpc>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
  
 <item>
-<title>[COLOR blue]Agenda WIZ[/COLOR] [Sportsdevil]</title>
+<title> [COLOR skyblue]•[/COLOR]    [COLOR white][B]WIZ[/COLOR][COLOR lightblue]SPORTS [/COLOR][/B]  [COLOR lightslategray] [I]SD[/I][/COLOR]</title>
 <link>ignorme</link>
 <jsonrpc>plugin://plugin.video.SportsDevil/?item=url=livesports/wiz1.net.cfg&amp;mode=1</jsonrpc>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
-<item>
-<title>[COLOR blue]Agenda DailyDeports[/COLOR] [Sportsdevil]</title>
-<link>ignorme</link>
-<jsonrpc>plugin://plugin.video.SportsDevil/?item=url=livesports/dailydeports.pw.cfg&amp;mode=1</jsonrpc>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
@@ -2118,6 +2113,41 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
 
 
+
+
+
+ 
+
+  <item>
+<title>[B]Multicanal[/B] TikiTaka 01 [I]  [/I]</title>
+<link>$doregex[link]|User-Agent=iPhone</link>
+<regex>
+<name>link</name>
+<expres>src: "(.*?)"</expres>
+<page>https://pxstream.tv/embed/ftzjsn2h87zo/</page>
+<noredirect>true</noredirect>
+<includeheaders></includeheaders>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+
+
+
+  <item>
+<title>[B]Multicanal[/B] TikiTaka 02 [I]  [/I]</title>
+<link>$doregex[link]|User-Agent=iPhone</link>
+<regex>
+<name>link</name>
+<expres>src: "(.*?)"</expres>
+<page>https://pxstream.tv/embed/23bb40kim9wv/</page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+
+
+
  
 
 
@@ -2128,7 +2158,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
- <item>
+ <!--item>
 <title>[B]Multicanal[/B] TikiTaka 01 [I] ***[/I]</title>
 <link>$doregex[ip]</link>
 <regex>
@@ -2396,7 +2426,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
- <it>
+ <!--it>
 <title>[B]Multicanal[/B] TikiTaka 03 [I] [/I]</title>
 <link>$doregex[url]|User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64; rv:56.0) Gecko/20100101 Firefox/56.0&amp;Referer=http://estadionline.ml/canal1.php</link>
 <regex>
@@ -2498,7 +2528,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<!--item>
+<item>
 <title>[B]Multicanal MotoGP España[/B]   </title>
 
 <link>$doregex[GetPageUrl]|User-Agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+rv%3A11.0%29+like+Gecko</link>
@@ -3399,40 +3429,19 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<item>
-<title>TEST</title>
-<link>$$LSPlayOnlyOne$$</link>
-<link>$doregex[finalURL]$$lsname=TEST</link>
-<regex>
-<name>finalURL</name>
-<expres>$pyFunction: 'plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://maxdeportv.net/indexa.php?canal=1%26Referer=http://maxdeportv.net/$$LSPlayOnlyOne$$' if not 'plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://maxdeportv.net/indexa.php?canal=1%26Referer=http://maxdeportv.net/$$LSPlayOnlyOne$$'=='' else 'plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://maxdeportv.net/indexa.php?canal=5%26Referer=http://maxdeportv.net/$$LSPlayOnlyOne$$'</expres>
-<page></page>
-</regex>
-</item>
 
 
 
 
 <item>
-<title>[COLOR cyan]Agenda RojaDirecta[/COLOR] [Sportsdevil]</title>
-<link>ignorme</link>
-<jsonrpc>plugin://plugin.video.SportsDevil/?item=url=livesports/rojadirecta.me.cfg&amp;mode=1</jsonrpc>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-<item>
-<title>Calle 8 [Sportsdevil]</title>
+<title> [COLOR skyblue]•[/COLOR]    [COLOR white][B]CALLE[/COLOR][COLOR lightblue]OCHO [/COLOR][/B]  [COLOR lightslategray] [I]SD[/I][/COLOR]</title>
 <link>ignorme</link>
 <jsonrpc>plugin://plugin.video.SportsDevil/?item=url=customs/calleocho.cfg&amp;mode=1</jsonrpc>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-<item>
-<title>Telefive GB [Sportsdevil]</title>
-<link>ignorme</link>
-<jsonrpc>plugin://plugin.video.SportsDevil/?item=url=customs/telefivegb.cfg&amp;mode=1</jsonrpc>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 <item>
-<title>Cinestrenos TV [Sportsdevil]</title>
+<title> [COLOR skyblue]•[/COLOR]    [COLOR white][B]CINE[/COLOR][COLOR lightblue]ESTRENOS [/COLOR][/B]  [COLOR lightslategray] [I]SD[/I][/COLOR]</title>
 <link>ignorme</link>
 <jsonrpc>plugin://plugin.video.SportsDevil/?item=url=customs/cinestrenostv.tv.cfg&amp;mode=1</jsonrpc>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
@@ -3440,7 +3449,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
-<title>VerenDirecto [Sportsdevil]</title>
+<title> [COLOR skyblue]•[/COLOR]    [COLOR white][B]VER[/COLOR][COLOR lightblue]ENDIRECTO [/COLOR][/B]  [COLOR lightslategray] [I]SD[/I][/COLOR]</title>
 <link>ignorme</link>
 <jsonrpc>plugin://plugin.video.SportsDevil/?item=url=customs/verdirectotv.cfg&amp;mode=1</jsonrpc>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
@@ -3450,7 +3459,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
-<title>VerCanales [Sportsdevil]</title>
+<title> [COLOR skyblue]•[/COLOR]    [COLOR white][B]VER[/COLOR][COLOR lightblue]CANALES[/COLOR][/B]  [COLOR lightslategray] [I]SD[/I][/COLOR]</title>
 <link>ignorme</link>
 <jsonrpc>plugin://plugin.video.SportsDevil/?item=url=customs/vercanalestv.cfg&amp;mode=1</jsonrpc>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
@@ -3464,7 +3473,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
-<title> [COLOR black]•[/COLOR]    [COLOR white][B]RUSSIAN[/COLOR][COLOR lightblue]SPORTS [/COLOR][/B]  [COLOR lightslategray] [I]Sport Channels[/I][/COLOR]</title>
+<title> [COLOR skyblue]•[/COLOR]    [COLOR white][B]RUSSIAN[/COLOR][COLOR lightblue]SPORTS [/COLOR][/B]  [COLOR lightslategray] [I]Sport Channels[/I][/COLOR]</title>
 
 <link>$doregex[makelist]</link>
 
@@ -3499,7 +3508,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
 
 <item>
-<title> [COLOR black]•[/COLOR]    [COLOR white][B]STREAM[/COLOR][COLOR lightblue]KING [/COLOR][/B]  [COLOR lightslategray] [I]Sports[/I][/COLOR]</title>
+<title> [COLOR skyblue]•[/COLOR]    [COLOR white][B]STREAM[/COLOR][COLOR lightblue]KING [/COLOR][/B]  [COLOR lightslategray] [I]Sports[/I][/COLOR]</title>
    <link>$doregex[makelist]</link>
 
 
@@ -3534,13 +3543,24 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
+<item>
+<title>TEST</title>
+<link>$$LSPlayOnlyOne$$</link>
+<link>$doregex[finalURL]$$lsname=TEST</link>
+<regex>
+<name>finalURL</name>
+<expres>$pyFunction: 'plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://maxdeportv.net/indexa.php?canal=1%26Referer=http://maxdeportv.net/$$LSPlayOnlyOne$$' if not 'plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://maxdeportv.net/indexa.php?canal=1%26Referer=http://maxdeportv.net/$$LSPlayOnlyOne$$'=='' else 'plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://maxdeportv.net/indexa.php?canal=5%26Referer=http://maxdeportv.net/$$LSPlayOnlyOne$$'</expres>
+<page></page>
+</regex>
+</item>
+
 
 
 
  
 
 
-<itm>
+<!--itm>
     <title>footbie regex</title>
 	
 <link>$doregex[makelist2]</link>
@@ -3889,13 +3909,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-
-<item>
-<title>CNews (2)</title>
-<link>ignorme</link>
-<jsonrpc>plugin://plugin.video.SportsDevil/?item=url=customs/tvone1.tv.cfg&amp;mode=1</jsonrpc>
-</item>
-
+ 
 
 <item>
 <title>[COLOR white]abre olpair python[/COLOR]</title>
@@ -3916,32 +3930,13 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <thumbnail>https://i.imgur.com/yGTsSPk.jpg</thumbnail>
 <fanart>https://i.imgur.com/bg6n3AV.png</fanart>
-</item>
-
+</item-->
 
 <item>
 
 
 
-<title>test spor</title>
-<sportsdevil>http://in.xrivonet.info/32f.html</sportsdevil>
-<referer>http://in.xrivonet.info/32f.html</referer>
-<thumbnail>https://i.imgur.com/yGTsSPk.jpg</thumbnail>
-<fanart>https://i.imgur.com/bg6n3AV.png</fanart>
-</item>
-
-
-<title>test spor</title>
-<sportsdevil>http://player.latino-webtv.com/channels/azteca7.html</sportsdevil>
-<referer>http://lacalleochotv.org/magu/mexin/azteca7.html</referer>
-<thumbnail>https://i.imgur.com/yGTsSPk.jpg</thumbnail>
-<fanart>https://i.imgur.com/bg6n3AV.png</fanart>
-</item>
-
-
-
- http://handrefut.blogspot.com/p/ch04.html
- http://handrefut.blogspot.com/p/ch09.html
+ 
  
  
  
