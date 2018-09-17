@@ -332,26 +332,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
- <i||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||em>
-<title>Azteca 7 :: MEXICO VS USA</title>
-
-<link>$doregex[url]|Referer=https://player.limpi.tv/embed&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36</link>
-<regex>
-   <name>url</name>   
-   <expres>source: "(.*?)"</expres>  
-   <page>$doregex[temp]/41023</page>
-   <referer>https://player.limpi.tv/</referer>
-   <cookieJar/>
-</regex>
-
-<regex>
-   <name>temp</name>   
-   <expres>src="(.*?)\'</expres>  
-   <page>https://player.limpi.tv/embed.js</page>
-   <cookieJar/>
-</regex>
-</item>
-
 
 
 
@@ -621,7 +601,7 @@ item>
 
 
 
-<item>
+<itm>
 <title>[B] VipRacing [/B] [COLOR lime][I]  [Sportsdevil Requerido]  [/I][/COLOR]</title>
 <link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://vipracing.info/channel/canal-$doregex[select]%26referer=http://cdn.zonasports.es%26title=test</link>
 <regex>
