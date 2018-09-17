@@ -204,16 +204,14 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-
-
  <item>
-<title>[COLOR yellow][B]Multicanales  SUR[/B]  [/COLOR] BajaResolucion</title>
+<title>[COLOR yellow][B]Multicanales  SUR[/B]  [/COLOR] Baja-Resolucion</title>
 <link>$doregex[makelist]</link>
    <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
 <title>$pyFunction:'[UPPERCASE][makelist.param1][/UPPERCASE]'.replace('en-vivo.html',' ').replace('-',' ')</title>
-<link>http://$doregex[ip]$doregex[m3u8]$doregex[m3u82]</link>
+<link>https://$doregex[ip]$doregex[m3u8]$doregex[m3u82]</link>
 ]]></listrepeat>
 <expres><![CDATA[href="(.*?html)"]]></expres>
 <page>http://tvpor-internet.com/envivo/</page>
@@ -221,12 +219,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <regex>
 <name>ip</name>
-<expres>redirect=(.*)</expres>
-<page>$doregex[loader]</page>
-</regex>
-<regex>
-<name>loader</name>
-<expres>url: "(.*?)"</expres>
+<expres>javascript.*?\n.*?ea = "(.*?)"</expres>
 <page>$doregex[server]/hembedplayer/$doregex[canal]/1/590/390</page>
 <referer>http://tvpor-internet.com</referer>
 </regex>
@@ -240,11 +233,11 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>m3u82</name>
 <expres>hlsUrl \+ enableVideo\(\"(.*?)"</expres>
 <page>$doregex[server]/hembedplayer/$doregex[canal]/1/590/390</page>
-<referer></referer>
+<referer>http://tvpor-internet.com</referer>
 </regex>
 <regex>
 <name>server</name>
-<expres>javascript\' src=\'(http.*?)\/</expres>
+<expres>javascript\' src=\'(.*?)\/</expres>
 <page>$doregex[pagina]</page>
 </regex>
 <regex>
