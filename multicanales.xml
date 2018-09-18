@@ -211,7 +211,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>makelist</name>
 <listrepeat><![CDATA[
 <title>$pyFunction:'[UPPERCASE][makelist.param1][/UPPERCASE]'.replace('en-vivo.html',' ').replace('-',' ')</title>
-<link>https://$doregex[ip]$doregex[m3u8]|Referer=http://www.playerfs.com/&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64; rv:56.0) Gecko/20100101 Firefox/56.0</link>
+<link>https://$doregex[ip]$doregex[m3u8]|Referer=http://tvpor-internet.com/&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64; rv:56.0) Gecko/20100101 Firefox/56.0</link>
 ]]></listrepeat>
 <expres><![CDATA[href="(.*?html)"]]></expres>
 <page>http://tvpor-internet.com/envivo/</page>
