@@ -1334,6 +1334,154 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
+  <item>
+ <title>[B]Multicanal ESPN[/B]    </title>
+<link>$doregex[url]|Referer=http://agenda.superligatv.com/foxsport2.html&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
+  <regex>
+<name>url</name>
+<expres><![CDATA[file: "([^"]+)]]></expres>
+<page>http://agenda.superligatv.com/espn.html</page>
+</regex>
+ 
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+
+
+
+
+
+
+
+  <item>
+ <title>[B]Multicanal ESPN 2[/B]     </title>
+<link>$doregex[url]|Referer=http://www.grupovalltv.net/&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
+ 
+ <regex>
+<name>url</name>
+<expres><![CDATA[file: "([^"]+)]]></expres>
+<page>http://agenda.superligatv.com/espn2.html</page>
+</regex>
+ <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+  <item>
+ <title>[B]Multicanal ESPN 3[/B]     </title>
+<link>$doregex[url]|Referer=http://agenda.superligatv.com/foxsport2.html&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
+ 
+ <regex>
+<name>url</name>
+<expres><![CDATA[file: "([^"]+)]]></expres>
+<page>http://agenda.superligatv.com/espn3.html</page>
+</regex>
+ 
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+
+  <item>
+ <title>[B]Multicanal ESPN Deportes[/B]    OFF</title>
+<link>$doregex[url]|Referer=http://depo.superligatv.com/unitdn.php&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
+ 
+ <regex>
+<name>url</name>
+<expres><![CDATA[file: "([^"]+)]]></expres>
+<page>http://agenda.superligatv.com/espndep.html</page>
+</regex>
+ 
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+
+
+
+  <item>
+ <title>[B]Multicanal Fox Sports[/B]     </title>
+<link>$doregex[url]|Referer=http://depo.superligatv.com/unitdn.php&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
+ 
+ <regex>
+<name>url</name>
+<expres><![CDATA[file: "([^"]+)]]></expres>
+<page>http://agenda.superligatv.com/foxsport.html</page>
+</regex>
+ 
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+  <item>
+ <title>[B]Multicanal Fox Sports 2[/B]     </title>
+<link>$doregex[url]|Referer=http://depo.superligatv.com/unitdn.php&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
+ 
+ <regex>
+<name>url</name>
+<expres><![CDATA[file: "([^"]+)]]></expres>
+<page>http://agenda.superligatv.com/foxsport2.html</page>
+</regex>
+ 
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+
+  <item>
+ <title>[B]Multicanal Fox Sports 3[/B]     </title>
+<link>$doregex[url]|Referer=http://depo.superligatv.com/unitdn.php&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
+ 
+ <regex>
+<name>url</name>
+<expres><![CDATA[file: "([^"]+)]]></expres>
+<page>http://agenda.superligatv.com/foxsport3.html</page>
+</regex>
+ 
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+
+
+  <item>
+ <title>[B]Multicanal TDN[/B] **    </title>
+<link>$doregex[url]|Referer=http://depo.superligatv.com/unitdn.php&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
+ 
+ <regex>
+<name>url</name>
+<expres><![CDATA[file: "([^"]+)]]></expres>
+<page>http://agenda.superligatv.com/tdnmx.html</page>
+</regex>
+ 
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+
+  <item>
+ <title>[B]Multicanal Univision TDN[/B]     </title>
+<link>$doregex[url]|Referer=http://www.televalltv.net/&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
+ 
+ <regex>
+<name>url</name>
+<expres><![CDATA[file: "([^"]+)]]></expres>
+<page>http://agenda.superligatv.com/unitdn.html</page>
+</regex>
+ 
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+
+
+
+
+
+
+
+
+
+  <item>
+ <title>[B]Multicanal TVC Deportes[/B]     </title>
+<link>$doregex[url]|Referer=http://www.televalltv.net/&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
+ 
+ <regex>
+<name>url</name>
+<expres><![CDATA[file: "([^"]+)]]></expres>
+<page>http://agenda.superligatv.com/tvcdep.html</page>
+</regex>
+ 
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
@@ -1366,8 +1514,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <expres><![CDATA[source: "([^"]+)]]></expres>
 <page>http://depo.superligatv.com/espn2.php</page>
 </regex>
- 
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+ <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
   <item>
  <title>[B]Multicanal ESPN 3[/B]     </title>
@@ -1552,7 +1699,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
  <item>
-<title>SPACE Canelo vs GGG </title>
+<title>SPACE  </title>
 
 <link>$doregex[url]|Referer=https://player.limpi.tv/embed&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36</link>
 <regex>
