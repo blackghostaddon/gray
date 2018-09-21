@@ -1402,6 +1402,18 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
+  <item>
+ <title>[B]Multicanal Azteca 7[/B]    </title>
+<link>$doregex[url]|Referer=http://agenda.superligatv.com/foxsport2.html&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
+  <regex>
+<name>url</name>
+<expres><![CDATA["(.*?m3u8)"]]></expres>
+<page>http://agenda.superligatv.com/azteca7.html</page>
+</regex>
+ 
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
 
 
 
