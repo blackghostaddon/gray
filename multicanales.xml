@@ -3247,7 +3247,86 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
  
  
- 
+   
+ <item>
+<title>[B]Multicanal[/B] VerLiga [I] Bein Max 1 [/I]</title>
+<link>https:$doregex[get-id]|Referer=https://vergol.com/canales/live3/beinsport.php&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
+<regex>
+<name>get-id</name>
+<expres>source: '(.*?)'</expres>
+<rawpost>password=12345</rawpost>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+<page>https:$doregex[page2]</page>
+<referer>https://verliga1.net/</referer>
+<agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
+</regex>
+<regex>
+<name>page2</name>
+<expres>src="([^"]+)</expres>
+<page>https://verliga1.net/tv/deportes/beinmax1.php</page>
+<referer>https://verliga1.net/</referer>
+<agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
+</regex>
+<regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/esp.jpg</thumbnail></item>
+
+ <item>
+<title>[B]Multicanal[/B] VerLiga [I] Bein Max 2 [/I]</title>
+<link>https:$doregex[get-id]|Referer=https://vergol.com/canales/live3/beinsport.php&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
+<regex>
+<name>get-id</name>
+<expres>source: '(.*?)'</expres>
+<rawpost>password=12345</rawpost>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+<page>https:$doregex[page2]</page>
+<referer>https://verliga1.net/</referer>
+<agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
+</regex>
+<regex>
+<name>page2</name>
+<expres>src="([^"]+)</expres>
+<page>https://verliga1.net/tv/deportes/beinmax2.php</page>
+<referer>https://verliga1.net/</referer>
+<agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
+</regex>
+<regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/esp.jpg</thumbnail></item>
+
+
+
+ <item>
+<title>[B]Multicanal[/B] VerLiga [I] Bein Max 3 [/I]</title>
+<link>https:$doregex[get-id]|Referer=https://vergol.com/canales/live3/beinsport.php&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
+<regex>
+<name>get-id</name>
+<expres>source: '(.*?)'</expres>
+<rawpost>password=12345</rawpost>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+<page>https:$doregex[page2]</page>
+<referer>https://verliga1.net/</referer>
+<agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
+</regex>
+<regex>
+<name>page2</name>
+<expres>src="([^"]+)</expres>
+<page>https://verliga1.net/tv/deportes/beinmax3.php</page>
+<referer>https://verliga1.net/</referer>
+<agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
+</regex>
+<regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/esp.jpg</thumbnail></item>
+
+
+
  
   <item>
 <title>[B]Multicanal[/B] VerLiga [I] Deportes 1 [/I]</title>

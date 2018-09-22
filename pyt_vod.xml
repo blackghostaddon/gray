@@ -410,7 +410,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  source = requests.get(fullurl, headers= headers).text #
  data = [] #
 #
- last = 4 #
+ last = 8 #
  while firstpage <= last: #
     try: #
         fullurl = starturl + centerurl + str(firstpage) + endurl + categorylink #
@@ -514,7 +514,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  source = requests.get(fullurl, headers= headers).text #
  data = [] #
 #
- last = 5 #
+ last = 7 #
  while firstpage <= last: #
     try: #
         fullurl = starturl + centerurl + str(firstpage) + endurl + categorylink #
@@ -728,7 +728,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	
  	
 <item>
-<title>[B]ESTRENOS[/B] [CineVall] </title>
+<title>[B]ESTRENOS[/B] [CineVall Latino] </title>
 
 <link>$doregex[makelist3]</link>
 
@@ -1465,7 +1465,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  <thumbnail>[makelist2.param3]</thumbnail>
  <fanart>[makelist2.param3]</fanart>
  ]]></listrepeat>
- <expres><![CDATA[href='(https://openload.*?|https://powvideo.*?|http://uptobox.*?|https://vidabc.*?|http://uptobox.*?|https://clip.*?)']]></expres>
+ <expres><![CDATA[href='(https://openload.*?|https://powvideo.*?|https://uptobox.*?|https://vidabc.*?|http://uptobox.*?|https://clip.*?|https://vidoza.*?)']]></expres>
  <page>[makelist2.param1]</page>
  </regex>
 
@@ -1489,8 +1489,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  </item>
 
 
-
-
+https://vidoza.net/k1fsn3komly2.html
 
 
 
@@ -1510,14 +1509,14 @@ def GetLSProData(page_data,Cookie_Jar,m):
  <listrepeat><![CDATA[
 <title>[makelist3.param1] ([makelist3.param1]) </title>
 <link>$doregex[makelist2]</link>
-<thumbnail>http://allpeliculas.com/source/movies/poster/[makelist3.param4]/thumbs/poster-1.jpg</thumbnail>
+<thumbnail>http://allpeliculas.io/source/movies/poster/[makelist3.param4]/thumbs/poster-1.jpg</thumbnail>
 ]]></listrepeat>
 <expres><![CDATA[#$pyFunction
 import re, requests
 def GetLSProData(page_data,Cookie_Jar,m):
 
 ################################################################## FORMULARY #################################################################
- starturl = 'http://allpeliculas.com/movies/newmovies?'     ### usually, ~ 'http://website.com/category/' ###
+ starturl = 'http://allpeliculas.io/movies/newmovies?'     ### usually, ~ 'http://website.com/category/' ###
  categorylink = '' ### check the number of the param ###
  centerurl = 'page='      ### something like  '/page/' ###
  firstpage = 1 ### probably  = 1 ###
@@ -1547,19 +1546,16 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 
 
- 
-
-
 
 <regex>
 <name>makelist2</name>
 <listrepeat><![CDATA[
-<title>[B][makelist3.param1][/B] - [makelist2.param2]</title>
+<title>[B][makelist3.param1][/B] [makelist2.param2]</title>
 <link>$doregex[id3]</link>
-<thumbnail>http://allpeliculas.com/source/movies/poster/[makelist3.param4]/thumbs/poster-1.jpg</thumbnail>
+<thumbnail>http://allpeliculas.io/source/movies/poster/[makelist3.param4]/thumbs/poster-1.jpg</thumbnail>
 ]]></listrepeat>
 <expres><![CDATA[data-link="(.*?)">(.*?)<]]></expres>
-<page>http://allpeliculas.com/pelicula/[makelist3.param3]</page>
+<page>http://allpeliculas.io/pelicula/[makelist3.param3]</page>
 </regex>
 
 
