@@ -1426,7 +1426,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
  <item>
- <title>[B]DESCARGAS 2020[/B]  Audio Latino - Castellano *</title>
+ <title>[B]DESCARGAS 2020[/B]  Audio Latino - Castellano </title>
 
  <link>$doregex[makelist2]</link>
 
@@ -1461,7 +1461,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  <name>makelist3</name>
  <listrepeat><![CDATA[
  <title> [makelist2.param2] server:[makelist3.param1]</title>
-  <urlsolve>[makelist3.param1]</urlsolve>
+<link>$doregex[id3]</link>
  <thumbnail>[makelist2.param3]</thumbnail>
  <fanart>[makelist2.param3]</fanart>
  ]]></listrepeat>
