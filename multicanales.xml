@@ -2355,7 +2355,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[link]|User-Agent=iPhone</link>
 <regex>
 <name>link</name>
-<expres>src: "(.*?)"</expres>
+<expres>source: "(.*?)"</expres>
 <page>$doregex[link2]</page>
 <noredirect>true</noredirect>
 <includeheaders></includeheaders>
@@ -2365,8 +2365,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>link2</name>
 <expres>iframe src="(.*?)"</expres>
 <page>http://estadionline.ml/canal1.php</page>
-<noredirect>true</noredirect>
-<includeheaders></includeheaders>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
@@ -2379,7 +2377,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[link]|User-Agent=iPhone</link>
 <regex>
 <name>link</name>
-<expres>src: "(.*?)"</expres>
+<expres>source: "(.*?)"</expres>
 <page>$doregex[link2]</page>
 <noredirect>true</noredirect>
 <includeheaders></includeheaders>
@@ -2388,7 +2386,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>link2</name>
 <expres>iframe src="(.*?)"</expres>
-<page>http://estadionline.ml/canal1.php</page>
+<page>http://estadionline.ml/canal2.php</page>
 <noredirect>true</noredirect>
 <includeheaders></includeheaders>
 </regex>
