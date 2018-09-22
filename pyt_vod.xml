@@ -1426,7 +1426,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
  <item>
- <title>[B]DESCARGAS 2020[/B]  Audio Latino - Castellano *</title>
+ <title>[B]DESCARGAS 2020[/B]  Audio Latino - Castellano </title>
 
  <link>$doregex[makelist2]</link>
 
@@ -1469,20 +1469,20 @@ def GetLSProData(page_data,Cookie_Jar,m):
  <page>[makelist2.param1]</page>
  </regex>
 
- <regex>
- <name>id3</name>
- <expres><![CDATA[#$pyFunction
- def GetLSProData(page_data,Cookie_Jar,m):
-     import urlresolver, resolveurl
-     url = '[makelist3.param1]'
-     try:
-         u = urlresolver.resolve(url)
-     except:
-         u = resolveurl.resolve(url)
-     return u
- ]]></expres>
- <page></page>
- </regex>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver, resolveurl
+    url = '[makelist2.param1]'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = resolveurl.resolve(url)
+    return u
+]]></expres>
+<page></page>
+</regex>
 
  <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
  </item>
