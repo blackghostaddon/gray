@@ -2356,7 +2356,15 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>link</name>
 <expres>src: "(.*?)"</expres>
-<page>https://pxstream.tv/embed/ftzjsn2h87zo/</page>
+<page>$doregex[link2]</page>
+<noredirect>true</noredirect>
+<includeheaders></includeheaders>
+</regex>
+
+<regex>
+<name>link2</name>
+<expres>iframe src="(.*?)"</expres>
+<page>http://estadionline.ml/canal1.php</page>
 <noredirect>true</noredirect>
 <includeheaders></includeheaders>
 </regex>
@@ -2372,7 +2380,17 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>link</name>
 <expres>src: "(.*?)"</expres>
-<page>https://pxstream.tv/embed/23bb40kim9wv/</page>
+<page>$doregex[link2]</page>
+<noredirect>true</noredirect>
+<includeheaders></includeheaders>
+</regex>
+
+<regex>
+<name>link2</name>
+<expres>iframe src="(.*?)"</expres>
+<page>http://estadionline.ml/canal1.php</page>
+<noredirect>true</noredirect>
+<includeheaders></includeheaders>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
