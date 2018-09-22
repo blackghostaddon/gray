@@ -3193,7 +3193,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>page2</name>
 <expres>src="([^"]+)</expres>
-<page>https://verliga1.net$doregex[page3]</page>
+<page>https:$doregex[page3]</page>
 <referer>https://verliga1.net/</referer>
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
 </regex>
@@ -3621,6 +3621,493 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
+
+
+
+
+ <item>
+<title>[B]Multicanal ElGoles 07[/B]**  </title>
+<link>http://$doregex[ip]$doregex[m3u8]|Referer=http://elgoles.me/&amp;User-Agent=Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A402 Safari/604.1</link>
+<regex>
+<name>ip</name>
+<expres>redirect=(.*)</expres>
+<page>$doregex[loader]</page>
+<agent>Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A402 Safari/604.1</agent>
+<referer>http://elgoles.me</referer>
+</regex>		
+<regex>
+<name>loader</name>
+<expres>url: "(.*?)"</expres>
+<page>$doregex[server]/membedplayer/$doregex[canal]/1/700/400</page>
+<agent>Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A402 Safari/604.1</agent>
+<referer>http://elgoles.me</referer>
+</regex>
+<regex>
+<name>m3u8</name>
+<expres>ea \+ "([^"]+)</expres>
+<page>$doregex[server]/membedplayer/$doregex[canal]/1/700/400</page>
+<agent>Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A402 Safari/604.1</agent>
+<referer>http://elgoles.me</referer>
+</regex>
+<regex>
+<name>server</name>
+<expres>'(http.*?)\/static</expres>
+<page>http://elgoles.me/7-2</page>
+</regex>
+<regex>
+<name>canal</name>
+<expres>channel='(.*?)'</expres>
+<page>http://elgoles.me/7-2</page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+ <item>
+<title>[B]Multicanal ElGoles 08[/B]**  </title>
+<link>http://$doregex[ip]$doregex[m3u8]|Referer=http://elgoles.me/&amp;User-Agent=Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A402 Safari/604.1</link>
+<regex>
+<name>ip</name>
+<expres>redirect=(.*)</expres>
+<page>$doregex[loader]</page>
+<agent>Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A402 Safari/604.1</agent>
+<referer>http://elgoles.me</referer>
+</regex>		
+<regex>
+<name>loader</name>
+<expres>url: "(.*?)"</expres>
+<page>$doregex[server]/membedplayer/$doregex[canal]/1/700/400</page>
+<agent>Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A402 Safari/604.1</agent>
+<referer>http://elgoles.me</referer>
+</regex>
+<regex>
+<name>m3u8</name>
+<expres>ea \+ "([^"]+)</expres>
+<page>$doregex[server]/membedplayer/$doregex[canal]/1/700/400</page>
+<agent>Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A402 Safari/604.1</agent>
+<referer>http://elgoles.me</referer>
+</regex>
+<regex>
+<name>server</name>
+<expres>'(http.*?)\/static</expres>
+<page>http://elgoles.me/8-2</page>
+</regex>
+<regex>
+<name>canal</name>
+<expres>channel='(.*?)'</expres>
+<page>http://elgoles.me/8-2</page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+
+ <item>
+<title>[B]Multicanal ElGoles 09[/B]**  </title>
+<link>https://$doregex[ip]$doregex[m3u8]|Referer=http://elgoles.me/&amp;User-Agent=Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A402 Safari/604.1</link>
+<regex>
+<name>ip</name>
+<expres>redirect=(.*)</expres>
+<page>$doregex[loader]</page>
+<agent>Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A402 Safari/604.1</agent>
+<referer>http://elgoles.me</referer>
+</regex>		
+<regex>
+<name>loader</name>
+<expres>url: "(.*?)"</expres>
+<page>$doregex[server]/membedplayer/$doregex[canal]/1/700/400</page>
+<agent>Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A402 Safari/604.1</agent>
+<referer>http://elgoles.me</referer>
+</regex>
+<regex>
+<name>m3u8</name>
+<expres>ea \+ "([^"]+)</expres>
+<page>$doregex[server]/membedplayer/$doregex[canal]/1/700/400</page>
+<agent>Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A402 Safari/604.1</agent>
+<referer>http://elgoles.me</referer>
+</regex>
+<regex>
+<name>server</name>
+<expres>'(http.*?)\/static</expres>
+<page>http://elgoles.me/9-2</page>
+</regex>
+<regex>
+<name>canal</name>
+<expres>channel='(.*?)'</expres>
+<page>http://elgoles.me/9-2</page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <item>
+<title>[B]Multicanal ElGoles 12[/B]**  </title>
+<link>http://$doregex[ip]$doregex[m3u8]|Referer=http://elgoles.me/&amp;User-Agent=Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A402 Safari/604.1</link>
+<regex>
+<name>ip</name>
+<expres>redirect=(.*)</expres>
+<page>$doregex[loader]</page>
+<agent>Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A402 Safari/604.1</agent>
+<referer>http://elgoles.me</referer>
+</regex>		
+<regex>
+<name>loader</name>
+<expres>url: "(.*?)"</expres>
+<page>$doregex[server]/membedplayer/$doregex[canal]/1/700/400</page>
+<agent>Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A402 Safari/604.1</agent>
+<referer>http://elgoles.me</referer>
+</regex>
+<regex>
+<name>m3u8</name>
+<expres>ea \+ "([^"]+)</expres>
+<page>$doregex[server]/membedplayer/$doregex[canal]/1/700/400</page>
+<agent>Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A402 Safari/604.1</agent>
+<referer>http://elgoles.me</referer>
+</regex>
+<regex>
+<name>server</name>
+<expres>'(http.*?)\/static</expres>
+<page>http://elgoles.me/12-2</page>
+</regex>
+<regex>
+<name>canal</name>
+<expres>channel='(.*?)'</expres>
+<page>http://elgoles.me/12-2</page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+ <item>
+<title>[B]Multicanal ElGoles 13[/B]**  </title>
+<link>http://$doregex[ip]$doregex[m3u8]|Referer=http://elgoles.me/&amp;User-Agent=Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A402 Safari/604.1</link>
+<regex>
+<name>ip</name>
+<expres>redirect=(.*)</expres>
+<page>$doregex[loader]</page>
+<agent>Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A402 Safari/604.1</agent>
+<referer>http://elgoles.me</referer>
+</regex>		
+<regex>
+<name>loader</name>
+<expres>url: "(.*?)"</expres>
+<page>$doregex[server]/membedplayer/$doregex[canal]/1/700/400</page>
+<agent>Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A402 Safari/604.1</agent>
+<referer>http://elgoles.me</referer>
+</regex>
+<regex>
+<name>m3u8</name>
+<expres>ea \+ "([^"]+)</expres>
+<page>$doregex[server]/membedplayer/$doregex[canal]/1/700/400</page>
+<agent>Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A402 Safari/604.1</agent>
+<referer>http://elgoles.me</referer>
+</regex>
+<regex>
+<name>server</name>
+<expres>'(http.*?)\/static</expres>
+<page>http://elgoles.me/13-2</page>
+</regex>
+<regex>
+<name>canal</name>
+<expres>channel='(.*?)'</expres>
+<page>http://elgoles.me/13-2</page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+
+ <item>
+<title>[B]Multicanal ElGoles 14[/B]**  </title>
+<link>https://$doregex[ip]$doregex[m3u8]|Referer=http://elgoles.me/&amp;User-Agent=Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A402 Safari/604.1</link>
+<regex>
+<name>ip</name>
+<expres>redirect=(.*)</expres>
+<page>$doregex[loader]</page>
+<agent>Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A402 Safari/604.1</agent>
+<referer>http://elgoles.me</referer>
+</regex>		
+<regex>
+<name>loader</name>
+<expres>url: "(.*?)"</expres>
+<page>$doregex[server]/membedplayer/$doregex[canal]/1/700/400</page>
+<agent>Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A402 Safari/604.1</agent>
+<referer>http://elgoles.me</referer>
+</regex>
+<regex>
+<name>m3u8</name>
+<expres>ea \+ "([^"]+)</expres>
+<page>$doregex[server]/membedplayer/$doregex[canal]/1/700/400</page>
+<agent>Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A402 Safari/604.1</agent>
+<referer>http://elgoles.me</referer>
+</regex>
+<regex>
+<name>server</name>
+<expres>'(http.*?)\/static</expres>
+<page>http://elgoles.me/14-2</page>
+</regex>
+<regex>
+<name>canal</name>
+<expres>channel='(.*?)'</expres>
+<page>http://elgoles.me/14-2</page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+
+
+
+
+
+
+
+ <item>
+<title>[B]Multicanal ElGoles 15[/B]**  </title>
+<link>http://$doregex[ip]$doregex[m3u8]|Referer=http://elgoles.me/&amp;User-Agent=Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A402 Safari/604.1</link>
+<regex>
+<name>ip</name>
+<expres>redirect=(.*)</expres>
+<page>$doregex[loader]</page>
+<agent>Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A402 Safari/604.1</agent>
+<referer>http://elgoles.me</referer>
+</regex>		
+<regex>
+<name>loader</name>
+<expres>url: "(.*?)"</expres>
+<page>$doregex[server]/membedplayer/$doregex[canal]/1/700/400</page>
+<agent>Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A402 Safari/604.1</agent>
+<referer>http://elgoles.me</referer>
+</regex>
+<regex>
+<name>m3u8</name>
+<expres>ea \+ "([^"]+)</expres>
+<page>$doregex[server]/membedplayer/$doregex[canal]/1/700/400</page>
+<agent>Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A402 Safari/604.1</agent>
+<referer>http://elgoles.me</referer>
+</regex>
+<regex>
+<name>server</name>
+<expres>'(http.*?)\/static</expres>
+<page>http://elgoles.me/15-2</page>
+</regex>
+<regex>
+<name>canal</name>
+<expres>channel='(.*?)'</expres>
+<page>http://elgoles.me/15-2</page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+ <item>
+<title>[B]Multicanal ElGoles 16[/B]**  </title>
+<link>http://$doregex[ip]$doregex[m3u8]|Referer=http://elgoles.me/&amp;User-Agent=Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A402 Safari/604.1</link>
+<regex>
+<name>ip</name>
+<expres>redirect=(.*)</expres>
+<page>$doregex[loader]</page>
+<agent>Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A402 Safari/604.1</agent>
+<referer>http://elgoles.me</referer>
+</regex>		
+<regex>
+<name>loader</name>
+<expres>url: "(.*?)"</expres>
+<page>$doregex[server]/membedplayer/$doregex[canal]/1/700/400</page>
+<agent>Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A402 Safari/604.1</agent>
+<referer>http://elgoles.me</referer>
+</regex>
+<regex>
+<name>m3u8</name>
+<expres>ea \+ "([^"]+)</expres>
+<page>$doregex[server]/membedplayer/$doregex[canal]/1/700/400</page>
+<agent>Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A402 Safari/604.1</agent>
+<referer>http://elgoles.me</referer>
+</regex>
+<regex>
+<name>server</name>
+<expres>'(http.*?)\/static</expres>
+<page>http://elgoles.me/16-2</page>
+</regex>
+<regex>
+<name>canal</name>
+<expres>channel='(.*?)'</expres>
+<page>http://elgoles.me/16-2</page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+
+ <item>
+<title>[B]Multicanal ElGoles 17[/B]**  </title>
+<link>http://$doregex[ip]$doregex[m3u8]|Referer=http://elgoles.me/&amp;User-Agent=Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A402 Safari/604.1</link>
+<regex>
+<name>ip</name>
+<expres>redirect=(.*)</expres>
+<page>$doregex[loader]</page>
+<agent>Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A402 Safari/604.1</agent>
+<referer>http://elgoles.me</referer>
+</regex>		
+<regex>
+<name>loader</name>
+<expres>url: "(.*?)"</expres>
+<page>$doregex[server]/membedplayer/$doregex[canal]/1/700/400</page>
+<agent>Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A402 Safari/604.1</agent>
+<referer>http://elgoles.me</referer>
+</regex>
+<regex>
+<name>m3u8</name>
+<expres>ea \+ "([^"]+)</expres>
+<page>$doregex[server]/membedplayer/$doregex[canal]/1/700/400</page>
+<agent>Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A402 Safari/604.1</agent>
+<referer>http://elgoles.me</referer>
+</regex>
+<regex>
+<name>server</name>
+<expres>'(http.*?)\/static</expres>
+<page>http://elgoles.me/17-2</page>
+</regex>
+<regex>
+<name>canal</name>
+<expres>channel='(.*?)'</expres>
+<page>http://elgoles.me/17-2</page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <item>
+<title>[B]Multicanal ElGoles 18[/B]**  </title>
+<link>https://$doregex[ip]$doregex[m3u8]|Referer=http://elgoles.me/&amp;User-Agent=Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A402 Safari/604.1</link>
+<regex>
+<name>ip</name>
+<expres>redirect=(.*)</expres>
+<page>$doregex[loader]</page>
+<agent>Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A402 Safari/604.1</agent>
+<referer>http://elgoles.me</referer>
+</regex>		
+<regex>
+<name>loader</name>
+<expres>url: "(.*?)"</expres>
+<page>$doregex[server]/membedplayer/$doregex[canal]/1/700/400</page>
+<agent>Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A402 Safari/604.1</agent>
+<referer>http://elgoles.me</referer>
+</regex>
+<regex>
+<name>m3u8</name>
+<expres>ea \+ "([^"]+)</expres>
+<page>$doregex[server]/membedplayer/$doregex[canal]/1/700/400</page>
+<agent>Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A402 Safari/604.1</agent>
+<referer>http://elgoles.me</referer>
+</regex>
+<regex>
+<name>server</name>
+<expres>'(http.*?)\/static</expres>
+<page>http://elgoles.me/18-2</page>
+</regex>
+<regex>
+<name>canal</name>
+<expres>channel='(.*?)'</expres>
+<page>http://elgoles.me/18-2</page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+ <item>
+<title>[B]Multicanal ElGoles 19[/B]**  </title>
+<link>http://$doregex[ip]$doregex[m3u8]|Referer=http://elgoles.me/&amp;User-Agent=Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A402 Safari/604.1</link>
+<regex>
+<name>ip</name>
+<expres>redirect=(.*)</expres>
+<page>$doregex[loader]</page>
+<agent>Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A402 Safari/604.1</agent>
+<referer>http://elgoles.me</referer>
+</regex>		
+<regex>
+<name>loader</name>
+<expres>url: "(.*?)"</expres>
+<page>$doregex[server]/membedplayer/$doregex[canal]/1/700/400</page>
+<agent>Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A402 Safari/604.1</agent>
+<referer>http://elgoles.me</referer>
+</regex>
+<regex>
+<name>m3u8</name>
+<expres>ea \+ "([^"]+)</expres>
+<page>$doregex[server]/membedplayer/$doregex[canal]/1/700/400</page>
+<agent>Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A402 Safari/604.1</agent>
+<referer>http://elgoles.me</referer>
+</regex>
+<regex>
+<name>server</name>
+<expres>'(http.*?)\/static</expres>
+<page>http://elgoles.me/19-2</page>
+</regex>
+<regex>
+<name>canal</name>
+<expres>channel='(.*?)'</expres>
+<page>http://elgoles.me/19-2</page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+
+ <item>
+<title>[B]Multicanal ElGoles 20[/B]**  </title>
+<link>http://$doregex[ip]$doregex[m3u8]|Referer=http://elgoles.me/&amp;User-Agent=Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A402 Safari/604.1</link>
+<regex>
+<name>ip</name>
+<expres>redirect=(.*)</expres>
+<page>$doregex[loader]</page>
+<agent>Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A402 Safari/604.1</agent>
+<referer>http://elgoles.me</referer>
+</regex>		
+<regex>
+<name>loader</name>
+<expres>url: "(.*?)"</expres>
+<page>$doregex[server]/membedplayer/$doregex[canal]/1/700/400</page>
+<agent>Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A402 Safari/604.1</agent>
+<referer>http://elgoles.me</referer>
+</regex>
+<regex>
+<name>m3u8</name>
+<expres>ea \+ "([^"]+)</expres>
+<page>$doregex[server]/membedplayer/$doregex[canal]/1/700/400</page>
+<agent>Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A402 Safari/604.1</agent>
+<referer>http://elgoles.me</referer>
+</regex>
+<regex>
+<name>server</name>
+<expres>'(http.*?)\/static</expres>
+<page>http://elgoles.me/20-2</page>
+</regex>
+<regex>
+<name>canal</name>
+<expres>channel='(.*?)'</expres>
+<page>http://elgoles.me/20-2</page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
