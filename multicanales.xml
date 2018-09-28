@@ -2355,8 +2355,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[link]|User-Agent=iPhone</link>
 <regex>
 <name>link</name>
-<expres>source: "(.*?)"</expres>
-<page>$doregex[link2]</page>
+<expres>source: '(.*?)'</expres>
+<page>http://estadionline.ml/canal1.php</page>
 <noredirect>true</noredirect>
 <includeheaders></includeheaders>
 </regex>
@@ -2372,7 +2372,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-  <item>
+  <itm>
 <title>[B]Multicanal[/B] TikiTaka 02 [I]  [/I]</title>
 <link>$doregex[link]|User-Agent=iPhone</link>
 <regex>
@@ -4372,6 +4372,35 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
  
+ 
+ 
+ <item>
+<title>fox 1</title>
+<link>$doregex[ip]|Referer=http://iptvcanales.com&amp;User-Agent=Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A402 Safari/604.1</link>
+<regex>
+<name>ip</name>
+<expres>src=\'(http.*?m3u8)\'</expres>
+<page>http://iptvcanales.com/index.php/channel-latino-en-vivo/?canal=FOX1&amp;n_canal=FOX1_HD_SUB</page>
+<agent>Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A402 Safari/604.1</agent>
+<referer>http://iptvcanales.com</referer>
+<setcookie>user=170984;</setcookie>
+</regex>		
+</item>
+
+
+
+ <item>
+<title>fox 1</title>
+<link>$doregex[ip]|Referer=http://iptvcanales.com&amp;User-Agent=Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A402 Safari/604.1</link>
+<regex>
+<name>ip</name>
+<expres>src=\'(http.*?m3u8)\'</expres>
+<page>http://iptvcanales.com/index.php/channel-latino-en-vivo/?canal=FOX1&amp;n_canal=FOX1_HD_SUB</page>
+<agent>Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A402 Safari/604.1</agent>
+<referer>http://iptvcanales.com</referer>
+<setcookie>user=170984;</setcookie>
+</regex>		
+</item>
 
 
 <!--itm>
