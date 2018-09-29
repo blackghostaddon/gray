@@ -107,6 +107,10 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
+
+http://whostreams.net/embed/2gzsuk67y
+http://whostreams.net/embed/vume8720
+
   <item>
  <title>[COLOR yellow][B]Multicanales Televall [/B] [/COLOR]  Espn - FoxSports-  TDN - TVC - y muchos mas </title>
 
@@ -729,7 +733,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <item>
 <title>[B]Multicanal Zonasport03[/B]         </title>
-<link>https://$doregex[ip]$doregex[m3u8]|Referer=http://www.playerfs.com/&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64; rv:56.0) Gecko/20100101 Firefox/56.0</link>
+<link>https://$doregex[ip]$doregex[m3u8]|Referer=http://gozonasports.me&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64; rv:56.0) Gecko/20100101 Firefox/56.0</link>
 <regex>
 <name>ip</name>
 <expres>redirect=(.*)</expres>
@@ -773,7 +777,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <item>
 <title>[B]Multicanal Zonasport04[/B]       </title>
-<link>https://$doregex[ip]$doregex[m3u8]|Referer=http://www.playerfs.com/&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64; rv:56.0) Gecko/20100101 Firefox/56.0</link>
+<link>https://$doregex[ip]$doregex[m3u8]|Referer=http://gozonasports.me&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64; rv:56.0) Gecko/20100101 Firefox/56.0</link>
 <regex>
 <name>ip</name>
 <expres>redirect=(.*)</expres>
@@ -981,6 +985,16 @@ def GetLSProData(page_data,Cookie_Jar,m):#streamwatcher2013
 
 
 
+
+<item>
+<title>[B]Multicanal Zonasport12[/B]     wide   </title>
+<link>$doregex[get-id]</link>
+<regex>
+<name>get-id</name>
+<expres>file:"([^"]+)</expres>
+<page>http://widestream.io/embed-1053</page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
@@ -1284,10 +1298,9 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-
-
+
 <item>
-<title>[B]Multicanal AndresFutbol [/B]  Canelos vs GGG   </title>
+<title>[B]Multicanal AndresFutbol [/B]  all </title>
 <link>$doregex[geturl]</link>
     <regex>
         <name>geturl</name>
