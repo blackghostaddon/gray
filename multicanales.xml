@@ -3722,8 +3722,9 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
+
  <item>
-<title>[B]Multicanal ElGoles 14[/B]**  </title>
+<title>[B]Multicanal ElGoles 14[/B] </title>
 <link>https://$doregex[ip]$doregex[m3u8]|Referer=http://elgoles.me/&amp;User-Agent=Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A402 Safari/604.1</link>
 <regex>
 <name>ip</name>
@@ -3749,11 +3750,13 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>server</name>
 <expres>'(http.*?)\/static</expres>
+<agent>Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A402 Safari/604.1</agent>
 <page>http://elgoles.me/14-2</page>
 </regex>
 <regex>
 <name>canal</name>
 <expres>channel='(.*?)'</expres>
+<agent>Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A402 Safari/604.1</agent>
 <page>http://elgoles.me/14-2</page>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
@@ -4206,7 +4209,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
  <item>
-<title>fox 1</title>
+<title>fox 1 *</title>
 <link>$doregex[ip]|Referer=http://iptvcanales.com&amp;User-Agent=Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A402 Safari/604.1</link>
 <regex>
 <name>ip</name>
@@ -4214,9 +4217,24 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page>http://iptvcanales.com/index.php/channel-latino-en-vivo/?canal=FOX1&amp;n_canal=FOX1_HD_SUB</page>
 <agent>Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A402 Safari/604.1</agent>
 <referer>http://iptvcanales.com</referer>
-<setcookie>user=170984;</setcookie>
+<setcookie>$doregex[cook]</setcookie>
+</regex>		
+
+<regex>
+<name>cook</name>
+<expres>document.cookie = "(.*?)";</expres>
+<page>http://iptvcanales.com/</page>
+<agent>Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A402 Safari/604.1</agent>
+<referer>http://iptvcanales.com</referer>
 </regex>		
 </item>
+
+
+
+
+
+
+
 
 
 <!--itm>
