@@ -202,7 +202,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<item>
+<itm>
 <title>[B][  ][/B]    [B]BUSCAR SERIE[/B] kabagi</title>
 <link>$doregex[lista]</link>
  
@@ -1607,4 +1607,31 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/series.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 </item>
 
+	
+
+	
+	
+	 <item>
+<title>AC  2</title>
+<link>$doregex[id3]</link>
+
+
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver, resolveurl
+    url = 'https://vidlink.org/embed/5b614ef8914be6d66c73afce'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = resolveurl.resolve(url)
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+</item>
+	
 	
