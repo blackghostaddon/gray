@@ -1612,25 +1612,10 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	
 	
 	 <item>
-<title>AC  2</title>
-<link>$doregex[id3]</link>
+<title>AC  ss2</title>
+<urlsolve>https://vidlink.org/embed/5b614ef8914be6d66c73afce</urlsolve>
 
 
-
-<regex>
-<name>id3</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m):
-    import urlresolver, resolveurl
-    url = 'https://vidlink.org/embed/5b614ef8914be6d66c73afce'
-    try:
-        u = urlresolver.resolve(url)
-    except:
-        u = resolveurl.resolve(url)
-    return u
-]]></expres>
-<page></page>
-</regex>
 
 </item>
 	
