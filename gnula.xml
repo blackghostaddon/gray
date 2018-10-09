@@ -316,7 +316,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>https://www.thetvdb.com/banners/seasons/5bb139c427fac.jpg</thumbnail>
 <fanart>https://www.thetvdb.com/banners/fanart/original/5b64fce0a1129.jpg</fanart>
 ]]></listrepeat>
-<expres><![CDATA[href="(.*?)".*?nbsp\;(.*?)<]]></expres>
+<expres><![CDATA[href="(.*?)".*?nbsp\;(9x.*?)<]]></expres>
 <page>http://www.seriespapaya.com/serie/the-walking-dead.html</page>
 </regex>
 
@@ -326,7 +326,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>makelist3</name>
 <listrepeat><![CDATA[
 
-<title>[makelist1.param1] [makelist2.param2] | Idioma:[B][makelist3.param1][/B]  Calidad:[B][makelist3.param5][/B]  Server:[B][makelist3.param3][/B]        </title>
+<title>TWD [makelist2.param2] | Idioma:[B][makelist3.param1][/B]  Calidad:[B][makelist3.param5][/B]  Server:[B][makelist3.param3][/B]        </title>
 <link>$doregex[id3]</link>
 <thumbnail>https://www.thetvdb.com/banners/seasons/5bb139c427fac.jpg</thumbnail>
 <fanart>https://www.thetvdb.com/banners/fanart/original/5b64fce0a1129.jpg</fanart>
