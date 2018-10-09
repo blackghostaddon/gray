@@ -2409,7 +2409,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
   <itm>
 <title>[B]Multicanal[/B] TikiTaka 02 [I]  [/I]</title>
-<link>$doregex[link]|User-Agent=iPhone</link>
+<link>https://ssh101.com/m3u8/dyn/estadionlinehd2/index.m3u8|User-Agent=iPhone</link>
 <regex>
 <name>link</name>
 <expres>source: "(.*?)"</expres>
@@ -3666,6 +3666,46 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
+ <item>
+<title>[B]Multicanal ElGoles 11[/B]**  </title>
+<link>https://$doregex[ip]$doregex[m3u8]|Referer=http://elgoles.me/&amp;User-Agent=Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A402 Safari/604.1</link>
+<regex>
+<name>ip</name>
+<expres>redirect=(.*)</expres>
+<page>$doregex[loader]</page>
+<agent>Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A402 Safari/604.1</agent>
+<referer>http://elgoles.me</referer>
+</regex>		
+<regex>
+<name>loader</name>
+<expres>url: "(.*?)"</expres>
+<page>$doregex[server]/membedplayer/$doregex[canal]/1/700/400</page>
+<agent>Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A402 Safari/604.1</agent>
+<referer>http://elgoles.me</referer>
+</regex>
+<regex>
+<name>m3u8</name>
+<expres>ea \+ "([^"]+)</expres>
+<page>$doregex[server]/membedplayer/$doregex[canal]/1/700/400</page>
+<agent>Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A402 Safari/604.1</agent>
+<referer>http://elgoles.me</referer>
+</regex>
+<regex>
+<name>server</name>
+<expres>'(http.*?)\/static</expres>
+<page>http://elgoles.me/11-2</page>
+</regex>
+<regex>
+<name>canal</name>
+<expres>channel='(.*?)'</expres>
+<page>http://elgoles.me/11-2</page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+
+
+
 
 
 
@@ -3799,7 +3839,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
  <item>
 <title>[B]Multicanal ElGoles 15[/B]**  </title>
-<link>http://$doregex[ip]$doregex[m3u8]|Referer=http://elgoles.me/&amp;User-Agent=Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A402 Safari/604.1</link>
+<link>https://$doregex[ip]$doregex[m3u8]|Referer=http://elgoles.me/&amp;User-Agent=Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A402 Safari/604.1</link>
 <regex>
 <name>ip</name>
 <expres>redirect=(.*)</expres>
@@ -3924,7 +3964,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
  <item>
 <title>[B]Multicanal ElGoles 18[/B]**  </title>
-<link>https://$doregex[ip]$doregex[m3u8]|Referer=http://elgoles.me/&amp;User-Agent=Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A402 Safari/604.1</link>
+<link>https://$doregex[ip]$doregex[m3u8]|Referer=$doregex[server]/&amp;User-Agent=Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A402 Safari/604.1</link>
 <regex>
 <name>ip</name>
 <expres>redirect=(.*)</expres>
