@@ -2439,17 +2439,28 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>link</name>
 <expres>source: '(.*?)'</expres>
-<page>http://estadionline.ml/canal1.php</page>
+<page>http://estadionline.com/canal1.php</page>
 <noredirect>true</noredirect>
 <includeheaders></includeheaders>
 </regex>
 
-<regex>
-<name>link2</name>
-<expres>iframe src="(.*?)"</expres>
-<page>http://estadionline.ml/canal1.php</page>
-</regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+  <item>
+<title>[B]Multicanal[/B] TikiTaka 02 [I]  [/I]</title>
+<link>$doregex[link]|User-Agent=iPhone</link>
+<regex>
+<name>link</name>
+<expres>source: '(.*?)'</expres>
+<page>http://estadionline.com/canal2.php</page>
+<noredirect>true</noredirect>
+<includeheaders></includeheaders>
+</regex>
+
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
 
 
 
