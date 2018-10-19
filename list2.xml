@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+
+<item>
+<title>[B]B L A C K[/B] G H O S T </title>
+<externallink>na</externallink>
+<link>NA</link>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/icon.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
+<info>[COLOR yellow][B]The BlackGhost[/B][/COLOR]
+Bienvenid@ a BlackGhost, un Addon de entretenimiento para compartir y disfrutar.  
+*Puedes apoyar al Addon haciendo una donación voluntaria, la cual servirá para mantener activo el Addon y para el mantenimiento y soporte del mismo. Tu donación es anónima y no importa la cantidad ¡Con tu aportación haces la diferencia! 
+Si deseas hacer una donación por favor accede en el siguiente enlace, de antemano ¡Gracias!
+http://paypal.me/blackghost</info>
+</item>
+
+
+<item>
+<title>Apoya este Proyecto, Haz tu [B]Donacion[/B] por Paypal en  [B]https://paypal.me/blackghost[/B] o al correo blackaddon@mail.com  </title>
+<link>NA</link>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/paypal.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
+<info>Puedes apoyar al Addon haciendo una donación voluntaria, la cual servirá para mantener activo el Addon y para el mantenimiento y soporte del mismo. Tu donación es anónima y no importa la cantidad ¡Con tu aportación haces la diferencia! 
+Si deseas hacer una donación por favor accede en el siguiente enlace, de antemano ¡Gracias!
+http://paypal.me/blackghost</info>
+</item>
+
+
+
+
+
+
+<iem>
+<title>Deportes</title>
+<link>http://ignorame</link><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
+
+<externallink>$doregex[notice]</externallink>
+<regex>
+<name>notice</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import xbmc
+  xbmc.executebuiltin("XBMC.Notification(BlackGhost,[B]Donaciones: en [COLOR yellow]paypal.me/blackghost[/COLOR] [/B] ,10000)")
+  return 'https://raw.githubusercontent.com/blackghostaddon/gray/master/deportes.xml'
+]]></expres>
+<page></page>
+</regex>
+
+</item>
+
+<item>
+<title>Extratime</title>
+<link>http://ignorame</link><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/extratime.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
+<externallink>$doregex[notice]</externallink>
+<regex>
+<name>notice</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import xbmc
+  xbmc.executebuiltin("XBMC.Notification(BlackGhost,[B]Haz tu Donacion \nen [COLOR yellow]paypal.me/blackghost[/COLOR] [/B] ,10000)")
+  return 'https://raw.githubusercontent.com/blackghostaddon/gray/master/multicanales.xml'
+]]></expres>
+<page></page>
+</regex>
+<info>[COLOR yellow][B]Multicanales para eventos Deportivos.[/COLOR][/B]
+Puedes apoyar al Addon haciendo una donación voluntaria, la cual servirá para mantener activo el Addon y para el mantenimiento y soporte del mismo. Tu donación es anónima y no importa la cantidad ¡Con tu aportación haces la diferencia! 
+Si deseas hacer una donación por favor accede en el siguiente enlace, de antemano ¡Gracias!
+http://paypal.me/blackghost</info>
+</item>
+
+
+<item>
+<title>Acestreams</title>
+<link>http://ignorame</link>
+<externallink>$doregex[notice]</externallink>
+<regex>
+<name>notice</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import xbmc
+  xbmc.executebuiltin("XBMC.Notification(BlackGhost,[B]Haz tu Donacion \nen [COLOR yellow]paypal.me/blackghost[/COLOR] [/B] ,10000)")
+  return 'https://raw.githubusercontent.com/blackghostaddon/gray/master/plexus.xml'
+]]></expres>
+<page></page>
+</regex>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/acestream.png</thumbnail>
+<info>[COLOR yellow][B]Eventos por Acestreams.[/COLOR][/B]Puedes apoyar al Addon haciendo una donación voluntaria, la cual servirá para mantener activo el Addon y para el mantenimiento y soporte del mismo. Tu donación es anónima y no importa la cantidad ¡Con tu aportación haces la diferencia! 
+Si deseas hacer una donación por favor accede en el siguiente enlace, de antemano ¡Gracias!
+http://paypal.me/blackghost</info>
+</item>
+
+
+<item>
+<title>Peliculas</title>
+<link>http://ignorame</link><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
+<externallink>$doregex[notice]</externallink>
+<regex>
+<name>notice</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import xbmc
+  xbmc.executebuiltin("XBMC.Notification(BlackGhost,[B]Haz tu Donacion \nen [COLOR yellow]paypal.me/blackghost[/COLOR] [/B] ,10000)")
+  return 'https://raw.githubusercontent.com/blackghostaddon/gray/master/pyt_vod.xml'
+]]></expres>
+<page></page>
+</regex>
+
+<info>[COLOR yellow][B]Peliculas por Streaming.[/COLOR][/B]
+Puedes apoyar al Addon haciendo una donación voluntaria, la cual servirá para mantener activo el Addon y para el mantenimiento y soporte del mismo. Tu donación es anónima y no importa la cantidad ¡Con tu aportación haces la diferencia! 
+Si deseas hacer una donación por favor accede en el siguiente enlace, de antemano ¡Gracias!
+http://paypal.me/blackghost</info>
+</item>
+
+
+<item>
+<title>Series de TV </title>
+<link>http://ignorame</link><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/series.png</thumbnail>
+	<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
+<externallink>$doregex[notice]</externallink>
+<regex>
+<name>notice</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import xbmc
+  xbmc.executebuiltin("XBMC.Notification(BlackGhost,[B]Haz tu Donacion \nen [COLOR yellow]paypal.me/blackghost[/COLOR] [/B] ,10000)")
+  return 'https://raw.githubusercontent.com/blackghostaddon/gray/master/gnula.xml'
+]]></expres>
+<page></page>
+</regex>
+</item>
+
+<item>
+<title>Torrents [COLOR lightslategray] [/COLOR]</title>
+<link>http://ignorame</link><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
+<externallink>$doregex[notice]</externallink>
+<regex>
+<name>notice</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import xbmc
+  xbmc.executebuiltin("XBMC.Notification(BlackGhost,[B]Haz tu Donacion \nen [COLOR yellow]paypal.me/blackghost[/COLOR] [/B] ,10000)")
+  return 'https://raw.githubusercontent.com/blackghostaddon/gray/master/$doregex[select].xml'
+]]></expres>
+<page></page>
+</regex>
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+   import xbmcgui
+   dialog = xbmcgui.Dialog()
+   ret = dialog.select('Seleciona el Reproductor que tengas instalado en tu kodi ', ['Quasar', 'Elementum'])
+   lists = ['quasar', 'elementum']
+   return lists[ret]
+]]></expres>
+<page></page>
+</regex>
+<info>[COLOR yellow][B]Peliculas y series por Torrents es necesario el addon Quasar o Elementum[/COLOR][/B]
+Puedes apoyar al Addon haciendo una donación voluntaria, la cual servirá para mantener activo el Addon y para el mantenimiento y soporte del mismo. Tu donación es anónima y no importa la cantidad ¡Con tu aportación haces la diferencia! 
+Si deseas hacer una donación por favor accede en el siguiente enlace, de antemano ¡Gracias!
+http://paypal.me/blackghost</info>
+</item>
+
+
+<item>
+<title>KIDS [COLOR lightslategray] [/COLOR] -</title>
+<link>http://ignorame</link><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/kids.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
+<externallink>$doregex[notice]</externallink>
+<regex>
+<name>notice</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import xbmc
+  xbmc.executebuiltin("XBMC.Notification(BlackGhost,[B]Haz tu Donacion \nen [COLOR yellow]paypal.me/blackghost[/COLOR] [/B] ,10000)")
+  return 'https://raw.githubusercontent.com/blackghostaddon/gray/master/infantiles.xml'
+]]></expres>
+<page></page>
+</regex>
+</item>
+
+
+<item>
+<title>España </title>
+<link>http://ignorame</link><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/esp.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
+<externallink>$doregex[notice]</externallink>
+<regex>
+<name>notice</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import xbmc
+  xbmc.executebuiltin("XBMC.Notification(BlackGhost,[B]Haz tu Donacion \nen [COLOR yellow]paypal.me/blackghost[/COLOR] [/B] ,10000)")
+  return 'https://raw.githubusercontent.com/blackghostaddon/gray/master/esp.xml'
+]]></expres>
+<page></page>
+</regex>
+<info>[COLOR yellow][B]Canales de la Television Española[/COLOR][/B]
+
+Si deseas hacer una donación por favor accede en el siguiente enlace, de antemano ¡Gracias!
+http://paypal.me/blackghost</info>
+</item>
+
+
+<item>
+<title>Mexico </title>
+<link>http://ignorame</link><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/mexico.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
+<externallink>$doregex[notice]</externallink>
+<regex>
+<name>notice</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import xbmc
+  xbmc.executebuiltin("XBMC.Notification(BlackGhost,[B]Haz tu Donacion \nen [COLOR yellow]paypal.me/blackghost[/COLOR] [/B] ,10000)")
+  return 'https://raw.githubusercontent.com/blackghostaddon/gray/master/mx.xml'
+]]></expres>
+<page></page>
+</regex>
+<info>[COLOR yellow][B]Canales de Mexico[/COLOR][/B]
+
+Si deseas hacer una donación por favor accede en el siguiente enlace, de antemano ¡Gracias!
+http://paypal.me/blackghost</info>
+</item>
+
+<item>
+<title>TotalPlay</title>
+<link>http://ignorame</link><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/tp.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
+<externallink>https://raw.githubusercontent.com/blackghostaddon/gray/master/totalp.xml</externallink>
+<info>[COLOR yellow][B]Listas Populares de Television Latina[/COLOR][/B]
+Puedes apoyar al Addon haciendo una donación voluntaria, la cual servirá para mantener activo el Addon y para el mantenimiento y soporte del mismo. Tu donación es anónima y no importa la cantidad ¡Con tu aportación haces la diferencia! 
+Si deseas hacer una donación por favor accede en el siguiente enlace, de antemano ¡Gracias!
+http://paypal.me/blackghost</info>
+</item>
+
+
+<item>
+<title>[B]Television 24/7[/B]</title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param2]</title>
+<link>https://mp4.vaughnsoft.net/live?app=live&amp;port=2935&amp;stream=live_[makelist.param1]|Referer=https://vaughnlive.tv/</link>
+<thumbnail>http://cdn.vaughnsoft.com/vaughnsoft/vaughn/img_profiles/[makelist.param2]_320.jpg</thumbnail>
+]]></listrepeat>
+<expres>a href="/(.*?)"[\w\W\s]{0,22}browseTxt">(.*?)<</expres>
+<page>https://vaughnlive.tv/browse/espanol&amp;a=mvn</page>
+<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/247.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
+</item>
+
+
+	
+	
+<item>
+<title>[COLOR white][B]IPTV[/B] [/COLOR][COLOR lightslategray][World Servers Updated Daily][/COLOR] </title>
+<link>http://ignorame</link><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/iptv.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
+<externallink>$doregex[notice]</externallink>
+<regex>
+<name>notice</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import xbmc
+  xbmc.executebuiltin("XBMC.Notification(BlackGhost,[B]Haz tu Donacion \nen [COLOR yellow]paypal.me/blackghost[/COLOR] [/B] ,10000)")
+  return 'https://raw.githubusercontent.com/blackghostaddon/gray/master/iptv.xml'
+]]></expres>
+<page></page>
+</regex>
+</item>
+
+<item>
+<title>Entretenimiento</title>
+<link>http://ignorame</link><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/entretenimiento.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
+<externallink>$doregex[notice]</externallink>
+<regex>
+<name>notice</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import xbmc
+  xbmc.executebuiltin("XBMC.Notification(BlackGhost,[B]Haz tu Donacion \nen [COLOR yellow]paypal.me/blackghost[/COLOR] [/B] ,10000)")
+  return 'https://raw.githubusercontent.com/blackghostaddon/gray/master/ent.xml'
+]]></expres>
+<page></page>
+</regex>
+</item>
+
+
+
+
+<item>
+<title>Paises </title>
+<link>http://ignorame</link><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/paises.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
+<externallink>$doregex[notice]</externallink>
+<regex>
+<name>notice</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import xbmc
+  xbmc.executebuiltin("XBMC.Notification(BlackGhost,[B]Haz tu Donacion \nen [COLOR yellow]paypal.me/blackghost[/COLOR] [/B] ,10000)")
+  return 'https://raw.githubusercontent.com/blackghostaddon/gray/master/paises.xml'
+]]></expres>
+<page></page>
+</regex>
+</item>
+
+
+
+<item>
+<title>[B]Mas listas[/B]</title>
+
+<link>NA</link>
+<externallink>$doregex[select]</externallink>
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+   import xbmcgui
+   dialog = xbmcgui.Dialog()
+   ret = dialog.select('Seleciona una Lista ', ['Sr Regio', 'BassFox', 'TecnoTV', 'MospyTV'])
+   lists = ['http://srregio.xyz', 'https://goo.gl/YuhGky', 'http://tecnotv.xyz/addon/index.htm', 'http://www.blog.kodipro.org/Supermospy%20TV.xml']
+   return lists[ret]
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/mas.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
+</item>
+
+
+
+<!--
+
+
+
+<item>
+<title>Fitness-</title>
+<link>http://ignorame</link><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fitness.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
+<externallink>https://raw.githubusercontent.com/blackghostaddon/gray/master/fitness.xml</externallink>
+</item>
+
+
+
+
+
