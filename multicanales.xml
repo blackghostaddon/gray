@@ -1030,7 +1030,7 @@ def GetLSProData(page_data,Cookie_Jar,m):#streamwatcher2013
 
 
 <item>
-<title>[B]Multicanal Zonasport12[/B]     wide   </title>
+<title>[B]Multicanal Zonasport12[/B]     wide (chivas69 telemundo)   </title>
 <link>$doregex[get-id]</link>
 <regex>
 <name>get-id</name>
