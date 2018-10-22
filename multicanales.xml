@@ -1343,70 +1343,76 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 http://widestream.io/embed-24910
 
-<itm>
-<title>[B]Multicanal RIVO streams[/B] WhoStrems Server   </title>
-<link>$doregex[geturl]</link>
-    <regex>
-        <name>geturl</name>
-        <expres>source:"(.*?)"</expres>
-        <page>$doregex[getunpacked]</page>
-    </regex>
-    <regex>
-        <name>getunpacked</name>
-        <expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)' )</expres>
-        <page>http://whostreams.net/embed/$doregex[canal]</page>
-        <referer>http://whostreams.net/</referer>
-        <connection>keep-alive</connection>
-    </regex>
-	 <regex>
-        <name>canal</name>
-        <expres>net\/embed\/(.*?)"</expres>
-        <page>http://in.xrivonet.info/$doregex[select]</page>
-    </regex>
-	<regex>
-<name>select</name>
+<item>
+<title>[B]Multicanal RIVO streams[/B] 01 </title>
+<link>$doregex[get-url]</link>
+<regex>
+<name>get-url</name>
 <expres><![CDATA[#$pyFunction
+from resolveurl.plugins.lib import jsunpack
 def GetLSProData(page_data,Cookie_Jar,m):
-   import xbmcgui
-   dialog = xbmcgui.Dialog()
-   ret = dialog.select('Elige un Canal ', ['Canal 1', 'Canal 2 ', 'Canal 3'])
-   lists = ['34f.html', '40f.html', '012c.html']
-   return lists[ret]
+    import re
+    import requests
+    mozhdr = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+              'Referer': 'http://in.xrivonet.info/'}
+    url = 'http://in.xrivonet.info/31g.html'
+    html = requests.get(url, headers=mozhdr).text
+    cid = re.findall("id='([^']+).+?telerium", html)[0]
+    eurl = 'https://telerium.tv/embed/25018.html'.format(cid)
+    ehtml = requests.get(eurl, headers=mozhdr).text
+    edata = re.findall('(eval\(function\(p,a,c,k,e,d.*)', ehtml)[0]
+    epage = jsunpack.unpack(edata).replace('\\', '')
+    strvar = re.findall('source:([^,]+),mime', epage)[0]
+    str1 = re.findall('{}=atob\(rSt\(([^)]+)'.format(strvar), epage)[0]
+    str2 = re.findall('{}="([^"]+)'.format(str1), epage)[0][::-1].decode('base64')
+    tok1, tok2 = re.findall('{url:atob\(rSt\(([^)]+)\)\)\+atob\(rSt\(([^)]+)', epage)[0]
+    tok1 = re.findall('{}="([^"]+)'.format(tok1), epage)[0][::-1].decode('base64')
+    tok2 = re.findall('{}="([^"]+)'.format(tok2), epage)[0][::-1].decode('base64')
+    tokurl = 'https:{}{}'.format(tok1, tok2)
+    mozhdr['Referer'] = eurl
+    token = requests.get(tokurl, headers=mozhdr).text[::-1][1:-1]
+    strurl = 'https:{}{}|Referer={}&User-Agent={}'.format(str2, token, eurl, mozhdr['User-Agent'])
+    return strurl
 ]]></expres>
 <page></page>
 </regex>
 </item>
 
-
+<item>
+<title>[B]Multicanal RIVO streams[/B] 05 </title>
+<link>$doregex[get-url]</link>
+<regex>
+<name>get-url</name>
+<expres><![CDATA[#$pyFunction
+from resolveurl.plugins.lib import jsunpack
+def GetLSProData(page_data,Cookie_Jar,m):
+    import re
+    import requests
+    mozhdr = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+              'Referer': 'http://in.xrivonet.info/'}
+    url = 'http://in.xrivonet.info/35g.html'
+    html = requests.get(url, headers=mozhdr).text
+    cid = re.findall("id='([^']+).+?telerium", html)[0]
+    eurl = 'https://telerium.tv/embed/25018.html'.format(cid)
+    ehtml = requests.get(eurl, headers=mozhdr).text
+    edata = re.findall('(eval\(function\(p,a,c,k,e,d.*)', ehtml)[0]
+    epage = jsunpack.unpack(edata).replace('\\', '')
+    strvar = re.findall('source:([^,]+),mime', epage)[0]
+    str1 = re.findall('{}=atob\(rSt\(([^)]+)'.format(strvar), epage)[0]
+    str2 = re.findall('{}="([^"]+)'.format(str1), epage)[0][::-1].decode('base64')
+    tok1, tok2 = re.findall('{url:atob\(rSt\(([^)]+)\)\)\+atob\(rSt\(([^)]+)', epage)[0]
+    tok1 = re.findall('{}="([^"]+)'.format(tok1), epage)[0][::-1].decode('base64')
+    tok2 = re.findall('{}="([^"]+)'.format(tok2), epage)[0][::-1].decode('base64')
+    tokurl = 'https:{}{}'.format(tok1, tok2)
+    mozhdr['Referer'] = eurl
+    token = requests.get(tokurl, headers=mozhdr).text[::-1][1:-1]
+    strurl = 'https:{}{}|Referer={}&User-Agent={}'.format(str2, token, eurl, mozhdr['User-Agent'])
+    return strurl
+]]></expres>
+<page></page>
+</regex>
+</item>
  
-<itm>
-<title>[B]Multicanal RIVO Streams[/B]  Kas Server  </title>
-<link>$doregex[makelist]</link>
-<regex>
-<name>makelist</name>
-<expres><![CDATA[#$pyFunction
-import re,requests
-def GetLSProData(page_data,Cookie_Jar,m):#streamwatcher2013
-  from urlresolver.plugins.lib import jsunpack
-  source=requests.get(re.findall('src="(.*?kastream[^"]+)',page_data)[0],headers={'Referer':'http://in.xrivonet.info/34f.html'}).text
-  return 'http://'+re.findall('Clappr.Player[\w\W]*?source.+?//([^\'"]+)',jsunpack.unpack(re.findall('id="Player"(?s)(.*?)</script',source)[0]).replace('\\',''))[0]+'|User-Agent=iPad'
-]]></expres>
-<page>$doregex[select]</page>
-</regex>
-<regex>
-<name>select</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m):
-   import xbmcgui
-   dialog = xbmcgui.Dialog()
-   ret = dialog.select('Elige un Canal ', ['Canal 1 - Norte - Univision Deportes', 'Canal 2 - Norte - Fox Deportes', 'Canal 3 - Norte - Fox Deportes', 'Canal 4 - norte - univision deportes', 'Canal 5'])
-   lists = ['http://in.xrivonet.info/vi4.html', 'http://in.xrivonet.info/022c.html', 'http://in.xrivonet.info/018d.html', 'http://in.xrivonet.info/030c.html', 'http://in.xrivonet.info/39f.html']
-   return lists[ret]
-]]></expres>
-<page></page>
-</regex>
-</item>
-
  
 
 
@@ -1541,40 +1547,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
  
  
-    <item>
-<title>[B]Multicanal Futbol Chile 02[/B]   ***    </title>
-<link>$doregex[get-url]</link>
-<regex>
-<name>get-url</name>
-<expres><![CDATA[#$pyFunction
-from resolveurl.plugins.lib import jsunpack
-def GetLSProData(page_data,Cookie_Jar,m):
-    import re
-    import requests
-    mozhdr = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
-              'Referer': 'http://maxdeportv.net/'}
-    url = 'http://maxdeportv.net/indexa.php/?canal=1'
-    html = requests.get(url, headers=mozhdr).text
-    cid = re.findall("id='([^']+).+?telerium", html)[0]
-    eurl = 'https://telerium.tv/embed/25018.html'.format(cid)
-    ehtml = requests.get(eurl, headers=mozhdr).text
-    edata = re.findall('(eval\(function\(p,a,c,k,e,d.*)', ehtml)[0]
-    epage = jsunpack.unpack(edata).replace('\\', '')
-    strvar = re.findall('source:([^,]+),mime', epage)[0]
-    str1 = re.findall('{}=atob\(rSt\(([^)]+)'.format(strvar), epage)[0]
-    str2 = re.findall('{}="([^"]+)'.format(str1), epage)[0][::-1].decode('base64')
-    tok1, tok2 = re.findall('{url:atob\(rSt\(([^)]+)\)\)\+atob\(rSt\(([^)]+)', epage)[0]
-    tok1 = re.findall('{}="([^"]+)'.format(tok1), epage)[0][::-1].decode('base64')
-    tok2 = re.findall('{}="([^"]+)'.format(tok2), epage)[0][::-1].decode('base64')
-    tokurl = 'https:{}{}'.format(tok1, tok2)
-    mozhdr['Referer'] = eurl
-    token = requests.get(tokurl, headers=mozhdr).text[::-1][1:-1]
-    strurl = 'https:{}{}|Referer={}&User-Agent={}'.format(str2, token, eurl, mozhdr['User-Agent'])
-    return strurl
-]]></expres>
-<page></page>
-</regex>
-</item>
 
  
  
