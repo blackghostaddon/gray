@@ -4541,7 +4541,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
  
 <item>
-<title>telerium</title>
+<title>teleriusssm</title>
 
 <link>$doregex[get-url]</link>
 
@@ -4556,7 +4556,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
     url = 'http://vipracing.info/channel/canal-2'
     html = requests.get(url, headers=mozhdr).text
     cid = re.findall("id='([^']+).+?telerium", html)[0]
-    eurl = 'https://telerium.tv/embed/{}.html'.format(cid)
+    eurl = 'https://telerium.tv/embed/25073.html'.format(cid)
     ehtml = requests.get(eurl, headers=mozhdr).text
     edata = re.findall('(eval\(function\(p,a,c,k,e,d.*)', ehtml)[0]
     epage = jsunpack.unpack(edata).replace('\\', '')
@@ -4592,7 +4592,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
     url = 'http://vipracing.info/channel/canal-0'
     html = requests.get(url, headers=mozhdr).text
     cid = re.findall("id='([^']+).+?telerium", html)[0]
-    eurl = 'https://telerium.tv/embed/{}.html'.format(cid)
+    eurl = 'https://telerium.tv/embed/25337.html'.format(cid)
     ehtml = requests.get(eurl, headers=mozhdr).text
     edata = re.findall('(eval\(function\(p,a,c,k,e,d.*)', ehtml)[0]
     epage = jsunpack.unpack(edata).replace('\\', '')
@@ -4614,9 +4614,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <item>
 <title>telerium</title>
-
 <link>$doregex[get-url]</link>
-
 <name>get-url</name>
 <expres><![CDATA[#$pyFunction
 from resolveurl.plugins.lib import jsunpack
@@ -4628,7 +4626,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
     url = 'http://vipracing.info/channel/canal-3'
     html = requests.get(url, headers=mozhdr).text
     cid = re.findall("id='([^']+).+?telerium", html)[0]
-    eurl = 'https://telerium.tv/embed/{}.html'.format(cid)
+    eurl = 'https://telerium.tv/embed/25716.html'.format(cid)
     ehtml = requests.get(eurl, headers=mozhdr).text
     edata = re.findall('(eval\(function\(p,a,c,k,e,d.*)', ehtml)[0]
     epage = jsunpack.unpack(edata).replace('\\', '')
