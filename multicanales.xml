@@ -2200,6 +2200,25 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
  
 
+ <item>
+<title>TNT SPORTS</title>
+
+<link>$doregex[url]|Referer=https://player.limpi.tv/embed&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36</link>
+<regex>
+   <name>url</name>   
+   <expres>source: "(.*?)"</expres>  
+   <page>$doregex[temp]/42733</page>
+   <referer>https://player.limpi.tv/</referer>
+   <cookieJar/>
+</regex>
+
+<regex> 
+   <name>temp</name>   
+   <expres>src="(.*?)\'</expres>  
+   <page>https://player.limpi.tv/embed.js</page>
+   <cookieJar/>
+</regex>
+</item>
 
 
 
@@ -2805,6 +2824,76 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 </item>
 
+
+<item>
+<title>[B]Multicanal MOTOGP[/B]   </title>
+<link>$doregex[get-url]</link>
+<regex>
+<name>get-url</name>
+<expres><![CDATA[#$pyFunction
+from resolveurl.plugins.lib import jsunpack
+def GetLSProData(page_data,Cookie_Jar,m):
+    import re
+    import requests
+    mozhdr = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+              'Referer': 'https://vertelevision.tv/'}
+    url = 'https://vertelevision.tv/tv/deportes/motogp.php'
+    html = requests.get(url, headers=mozhdr).text
+    cid = re.findall("id='([^']+).+?telerium", html)[0]
+    eurl = 'https://telerium.tv/embed/{}.html'.format(cid)
+    ehtml = requests.get(eurl, headers=mozhdr).text
+    edata = re.findall('(eval\(function\(p,a,c,k,e,d.*)', ehtml)[0]
+    epage = jsunpack.unpack(edata).replace('\\', '')
+    strvar = re.findall('source:([^,]+),mime', epage)[0]
+    str1 = re.findall('{}=atob\(rSt\(([^)]+)'.format(strvar), epage)[0]
+    str2 = re.findall('{}="([^"]+)'.format(str1), epage)[0][::-1].decode('base64')
+    tok1, tok2 = re.findall('{url:atob\(rSt\(([^)]+)\)\)\+atob\(rSt\(([^)]+)', epage)[0]
+    tok1 = re.findall('{}="([^"]+)'.format(tok1), epage)[0][::-1].decode('base64')
+    tok2 = re.findall('{}="([^"]+)'.format(tok2), epage)[0][::-1].decode('base64')
+    tokurl = 'https:{}{}'.format(tok1, tok2)
+    mozhdr['Referer'] = eurl
+    token = requests.get(tokurl, headers=mozhdr).text[::-1][1:-1]
+    strurl = 'https:{}{}|Referer={}&User-Agent={}'.format(str2, token, eurl, mozhdr['User-Agent'])
+    return strurl
+]]></expres>
+<page></page>
+</regex>
+</item>
+
+<item>
+<title>[B]Multicanal FORMULA 1[/B]   </title>
+<link>$doregex[get-url]</link>
+<regex>
+<name>get-url</name>
+<expres><![CDATA[#$pyFunction
+from resolveurl.plugins.lib import jsunpack
+def GetLSProData(page_data,Cookie_Jar,m):
+    import re
+    import requests
+    mozhdr = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+              'Referer': 'https://vertelevision.tv/'}
+    url = 'https://vertelevision.tv/tv/deportes/formula1.php'
+    html = requests.get(url, headers=mozhdr).text
+    cid = re.findall("id='([^']+).+?telerium", html)[0]
+    eurl = 'https://telerium.tv/embed/{}.html'.format(cid)
+    ehtml = requests.get(eurl, headers=mozhdr).text
+    edata = re.findall('(eval\(function\(p,a,c,k,e,d.*)', ehtml)[0]
+    epage = jsunpack.unpack(edata).replace('\\', '')
+    strvar = re.findall('source:([^,]+),mime', epage)[0]
+    str1 = re.findall('{}=atob\(rSt\(([^)]+)'.format(strvar), epage)[0]
+    str2 = re.findall('{}="([^"]+)'.format(str1), epage)[0][::-1].decode('base64')
+    tok1, tok2 = re.findall('{url:atob\(rSt\(([^)]+)\)\)\+atob\(rSt\(([^)]+)', epage)[0]
+    tok1 = re.findall('{}="([^"]+)'.format(tok1), epage)[0][::-1].decode('base64')
+    tok2 = re.findall('{}="([^"]+)'.format(tok2), epage)[0][::-1].decode('base64')
+    tokurl = 'https:{}{}'.format(tok1, tok2)
+    mozhdr['Referer'] = eurl
+    token = requests.get(tokurl, headers=mozhdr).text[::-1][1:-1]
+    strurl = 'https:{}{}|Referer={}&User-Agent={}'.format(str2, token, eurl, mozhdr['User-Agent'])
+    return strurl
+]]></expres>
+<page></page>
+</regex>
+</item>
 
 
 
