@@ -1158,20 +1158,75 @@ def GetLSProData(page_data,Cookie_Jar,m):#streamwatcher2013
 </item>
 
 
+<item>
+<title>[B]Multicanal Zonasport07[/B]          </title>
+<link>$doregex[get-url]</link>
+<regex>
+<name>get-url</name>
+<expres><![CDATA[#$pyFunction
+from resolveurl.plugins.lib import jsunpack
+def GetLSProData(page_data,Cookie_Jar,m):
+    import re
+    import requests
+    mozhdr = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+              'Referer': 'http://zonasports.es/'}
+    url = 'http://zonasports.es/cha-x.php?id=7'
+    html = requests.get(url, headers=mozhdr).text
+    cid = re.findall("id='([^']+).+?telerium", html)[0]
+    eurl = 'https://telerium.tv/embed/{}.html'.format(cid)
+    ehtml = requests.get(eurl, headers=mozhdr).text
+    edata = re.findall('(eval\(function\(p,a,c,k,e,d.*)', ehtml)[0]
+    epage = jsunpack.unpack(edata).replace('\\', '')
+    strvar = re.findall('source:([^,]+),mime', epage)[0]
+    str1 = re.findall('{}=atob\(rSt\(([^)]+)'.format(strvar), epage)[0]
+    str2 = re.findall('{}="([^"]+)'.format(str1), epage)[0][::-1].decode('base64')
+    tok1, tok2 = re.findall('{url:atob\(rSt\(([^)]+)\)\)\+atob\(rSt\(([^)]+)', epage)[0]
+    tok1 = re.findall('{}="([^"]+)'.format(tok1), epage)[0][::-1].decode('base64')
+    tok2 = re.findall('{}="([^"]+)'.format(tok2), epage)[0][::-1].decode('base64')
+    tokurl = 'https:{}{}'.format(tok1, tok2)
+    mozhdr['Referer'] = eurl
+    token = requests.get(tokurl, headers=mozhdr).text[::-1][1:-1]
+    strurl = 'https:{}{}|Referer={}&User-Agent={}'.format(str2, token, eurl, mozhdr['User-Agent'])
+    return strurl
+]]></expres>
+<page></page>
+</regex>
+</item>
 
- <item>
-<title>[B]Multicanal Zonasport07[/B]   [COLOR blue]SD[/COLOR]    </title>
- 
-<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://cdn.zonasports.es/c-7x.php%26referer=http://cdn.zonasports.es%26title=test 07</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
- <item>
-<title>[B]Multicanal Zonasport08[/B]   [COLOR blue]SD[/COLOR]    </title>
- 
-<link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=http://cdn.zonasports.es/c-8x.php%26referer=http://cdn.zonasports.es%26title=test 08</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-
+<item>
+<title>[B]Multicanal Zonasport08[/B]          </title>
+<link>$doregex[get-url]</link>
+<regex>
+<name>get-url</name>
+<expres><![CDATA[#$pyFunction
+from resolveurl.plugins.lib import jsunpack
+def GetLSProData(page_data,Cookie_Jar,m):
+    import re
+    import requests
+    mozhdr = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+              'Referer': 'http://zonasports.es/'}
+    url = 'http://zonasports.es/cha-x.php?id=8'
+    html = requests.get(url, headers=mozhdr).text
+    cid = re.findall("id='([^']+).+?telerium", html)[0]
+    eurl = 'https://telerium.tv/embed/{}.html'.format(cid)
+    ehtml = requests.get(eurl, headers=mozhdr).text
+    edata = re.findall('(eval\(function\(p,a,c,k,e,d.*)', ehtml)[0]
+    epage = jsunpack.unpack(edata).replace('\\', '')
+    strvar = re.findall('source:([^,]+),mime', epage)[0]
+    str1 = re.findall('{}=atob\(rSt\(([^)]+)'.format(strvar), epage)[0]
+    str2 = re.findall('{}="([^"]+)'.format(str1), epage)[0][::-1].decode('base64')
+    tok1, tok2 = re.findall('{url:atob\(rSt\(([^)]+)\)\)\+atob\(rSt\(([^)]+)', epage)[0]
+    tok1 = re.findall('{}="([^"]+)'.format(tok1), epage)[0][::-1].decode('base64')
+    tok2 = re.findall('{}="([^"]+)'.format(tok2), epage)[0][::-1].decode('base64')
+    tokurl = 'https:{}{}'.format(tok1, tok2)
+    mozhdr['Referer'] = eurl
+    token = requests.get(tokurl, headers=mozhdr).text[::-1][1:-1]
+    strurl = 'https:{}{}|Referer={}&User-Agent={}'.format(str2, token, eurl, mozhdr['User-Agent'])
+    return strurl
+]]></expres>
+<page></page>
+</regex>
+</item>
 
 <!--item>
 <title>[B]Multicanal Zonasport07[/B]     247bay    </title>
@@ -1258,6 +1313,76 @@ def GetLSProData(page_data,Cookie_Jar,m):#streamwatcher2013
 
 
 <item>
+<title>[B]Multicanal Zonasport11[/B]         </title>
+<link>$doregex[get-url]</link>
+<regex>
+<name>get-url</name>
+<expres><![CDATA[#$pyFunction
+from resolveurl.plugins.lib import jsunpack
+def GetLSProData(page_data,Cookie_Jar,m):
+    import re
+    import requests
+    mozhdr = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+              'Referer': 'http://zonasports.es/'}
+    url = 'http://zonasports.es/cha-x.php?id=11'
+    html = requests.get(url, headers=mozhdr).text
+    cid = re.findall("id='([^']+).+?telerium", html)[0]
+    eurl = 'https://telerium.tv/embed/{}.html'.format(cid)
+    ehtml = requests.get(eurl, headers=mozhdr).text
+    edata = re.findall('(eval\(function\(p,a,c,k,e,d.*)', ehtml)[0]
+    epage = jsunpack.unpack(edata).replace('\\', '')
+    strvar = re.findall('source:([^,]+),mime', epage)[0]
+    str1 = re.findall('{}=atob\(rSt\(([^)]+)'.format(strvar), epage)[0]
+    str2 = re.findall('{}="([^"]+)'.format(str1), epage)[0][::-1].decode('base64')
+    tok1, tok2 = re.findall('{url:atob\(rSt\(([^)]+)\)\)\+atob\(rSt\(([^)]+)', epage)[0]
+    tok1 = re.findall('{}="([^"]+)'.format(tok1), epage)[0][::-1].decode('base64')
+    tok2 = re.findall('{}="([^"]+)'.format(tok2), epage)[0][::-1].decode('base64')
+    tokurl = 'https:{}{}'.format(tok1, tok2)
+    mozhdr['Referer'] = eurl
+    token = requests.get(tokurl, headers=mozhdr).text[::-1][1:-1]
+    strurl = 'https:{}{}|Referer={}&User-Agent={}'.format(str2, token, eurl, mozhdr['User-Agent'])
+    return strurl
+]]></expres>
+<page></page>
+</regex>
+</item>
+
+<item>
+<title>[B]Multicanal Zonasport12[/B]         </title>
+<link>$doregex[get-url]</link>
+<regex>
+<name>get-url</name>
+<expres><![CDATA[#$pyFunction
+from resolveurl.plugins.lib import jsunpack
+def GetLSProData(page_data,Cookie_Jar,m):
+    import re
+    import requests
+    mozhdr = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+              'Referer': 'http://zonasports.es/'}
+    url = 'http://zonasports.es/cha-x.php?id=12'
+    html = requests.get(url, headers=mozhdr).text
+    cid = re.findall("id='([^']+).+?telerium", html)[0]
+    eurl = 'https://telerium.tv/embed/{}.html'.format(cid)
+    ehtml = requests.get(eurl, headers=mozhdr).text
+    edata = re.findall('(eval\(function\(p,a,c,k,e,d.*)', ehtml)[0]
+    epage = jsunpack.unpack(edata).replace('\\', '')
+    strvar = re.findall('source:([^,]+),mime', epage)[0]
+    str1 = re.findall('{}=atob\(rSt\(([^)]+)'.format(strvar), epage)[0]
+    str2 = re.findall('{}="([^"]+)'.format(str1), epage)[0][::-1].decode('base64')
+    tok1, tok2 = re.findall('{url:atob\(rSt\(([^)]+)\)\)\+atob\(rSt\(([^)]+)', epage)[0]
+    tok1 = re.findall('{}="([^"]+)'.format(tok1), epage)[0][::-1].decode('base64')
+    tok2 = re.findall('{}="([^"]+)'.format(tok2), epage)[0][::-1].decode('base64')
+    tokurl = 'https:{}{}'.format(tok1, tok2)
+    mozhdr['Referer'] = eurl
+    token = requests.get(tokurl, headers=mozhdr).text[::-1][1:-1]
+    strurl = 'https:{}{}|Referer={}&User-Agent={}'.format(str2, token, eurl, mozhdr['User-Agent'])
+    return strurl
+]]></expres>
+<page></page>
+</regex>
+</item>
+
+<item>
 <title>[B]Multicanal Zonasport13[/B]         </title>
     <link>$doregex[geturl]</link>
     <regex>
@@ -1299,13 +1424,48 @@ def GetLSProData(page_data,Cookie_Jar,m):#streamwatcher2013
         <page>http://gozonasports.me/cha-x.php?id=14</page>
     </regex>
 </item>
-
-
+<item>
+<title>[B]Multicanal Zonasport15[/B]         </title>
+    <link>$doregex[geturl]</link>
+    <regex>
+        <name>geturl</name>
+        <expres>source:"(.*?)"</expres>
+        <page>$doregex[getunpacked]</page>
+    </regex>
+    <regex>
+        <name>getunpacked</name>
+        <expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)' )</expres>
+        <page>http://whostreams.net/embed/$doregex[canal]</page>
+        <referer>http://whostreams.net/</referer>
+        <connection>keep-alive</connection>
+    </regex>
+	 <regex>
+        <name>canal</name>
+        <expres>net\/embed\/(.*?)"</expres>
+        <page>http://gozonasports.me/cha-x.php?id=15</page>
+    </regex>
+</item>
 <item>
 <title>[B]Multicanal Zonasport16[/B]         </title>
-    <link>https://d3smc1u5ys296h.cloudfront.net/index.m3u8|User-Agent=ipad</link>
+    <link>$doregex[geturl]</link>
+    <regex>
+        <name>geturl</name>
+        <expres>source:"(.*?)"</expres>
+        <page>$doregex[getunpacked]</page>
+    </regex>
+    <regex>
+        <name>getunpacked</name>
+        <expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)' )</expres>
+        <page>http://whostreams.net/embed/$doregex[canal]</page>
+        <referer>http://whostreams.net/</referer>
+        <connection>keep-alive</connection>
+    </regex>
+	 <regex>
+        <name>canal</name>
+        <expres>net\/embed\/(.*?)"</expres>
+        <page>http://gozonasports.me/cha-x.php?id=15</page>
+    </regex>
 </item>
-
 
 
 
