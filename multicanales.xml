@@ -1400,9 +1400,10 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	 <regex>
         <name>canal</name>
         <expres>net\/embed\/(.*?)"</expres>
-        <page>http://gozonasports.me/cha-x.php?id=13</page>
+        <page>http://zonasports.es/cha-x.php?id=13</page>
     </regex>
 </item>
+
 <item>
 <title>[B]Multicanal Zonasport14[/B]         </title>
     <link>$doregex[geturl]</link>
@@ -1421,7 +1422,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	 <regex>
         <name>canal</name>
         <expres>net\/embed\/(.*?)"</expres>
-        <page>http://gozonasports.me/cha-x.php?id=14</page>
+        <page>http://zonasports.es/cha-x.php?id=14</page>
     </regex>
 </item>
 <item>
@@ -1442,7 +1443,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	 <regex>
         <name>canal</name>
         <expres>net\/embed\/(.*?)"</expres>
-        <page>http://gozonasports.me/cha-x.php?id=15</page>
+        <page>http://zonasports.es/cha-x.php?id=15</page>
     </regex>
 </item>
 <item>
@@ -1463,7 +1464,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	 <regex>
         <name>canal</name>
         <expres>net\/embed\/(.*?)"</expres>
-        <page>http://gozonasports.me/cha-x.php?id=15</page>
+        <page>http://zonasports.es/cha-x.php?id=15</page>
     </regex>
 </item>
 
