@@ -3018,7 +3018,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
     return strurl
 ]]></expres>
 <page></page>
-</regex>
+</regex><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 </item>
 
 <item>
@@ -3053,7 +3053,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
     return strurl
 ]]></expres>
 <page></page>
-</regex>
+</regex><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 </item>
 
 
@@ -3061,14 +3061,81 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
  
+  <item>
+<title>[B]Multicanal[/B] TikiTaka 01 [I] u [/I]</title>
 
+<link>https://$doregex[ip]$doregex[m3u8]|Referer=http://estadionline.com/&amp;User-Agent=Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A402 Safari/604.1</link>
+<regex>
+<name>ip</name>
+<expres>redirect=(.*)</expres>
+<page>$doregex[loader]</page>
+<agent>Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A402 Safari/604.1</agent>
+<referer>http://estadionline.com/canal1.php</referer>
+</regex>		
+<regex>
+<name>loader</name>
+<expres>url: "(.*?)"</expres>
+<page>$doregex[server]/membedplayer/$doregex[canal]/1/700/400</page>
+<agent>Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A402 Safari/604.1</agent>
+<referer>http://estadionline.com/canal1.php</referer>
+</regex>
+<regex>
+<name>m3u8</name>
+<expres>videoplayer\.src .*?ea \+ "([^"]+)</expres>
+<page>$doregex[server]/membedplayer/$doregex[canal]/1/700/400</page>
+<agent>Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A402 Safari/604.1</agent>
+<referer>http://estadionline.com/canal1.php</referer>
+</regex>
+<regex>
+<name>server</name>
+<expres>'(http.*?)\/static</expres>
+<page>http://estadionline.com/canal1.php</page>
+</regex>
+<regex>
+<name>canal</name>
+<expres>channel='(.*?)'</expres>
+<page>http://estadionline.com/canal1.php</page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
-
-
-
- 
 
   <item>
+<title>[B]Multicanal[/B] TikiTaka 02 [I] t [/I]</title>
+<link>$doregex[get-url]</link>
+<regex>
+<name>get-url</name>
+<expres><![CDATA[#$pyFunction
+from resolveurl.plugins.lib import jsunpack
+def GetLSProData(page_data,Cookie_Jar,m):
+    import re
+    import requests
+    mozhdr = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
+              'Referer': 'http://estadionline.com/canal2.php'}
+    url = 'http://estadionline.com/canal2.php'
+    html = requests.get(url, headers=mozhdr).text
+    cid = re.findall("id='([^']+).+?telerium", html)[0]
+    eurl = 'https://telerium.tv/embed/{}.html'.format(cid)
+    ehtml = requests.get(eurl, headers=mozhdr).text
+    edata = re.findall('(eval\(function\(p,a,c,k,e,d.*)', ehtml)[0]
+    epage = jsunpack.unpack(edata).replace('\\', '')
+    strvar = re.findall('source:([^,]+),mime', epage)[0]
+    str1 = re.findall('{}=atob\(rSt\(([^)]+)'.format(strvar), epage)[0]
+    str2 = re.findall('{}="([^"]+)'.format(str1), epage)[0][::-1].decode('base64')
+    tok1, tok2 = re.findall('{url:atob\(rSt\(([^)]+)\)\)\+atob\(rSt\(([^)]+)', epage)[0]
+    tok1 = re.findall('{}="([^"]+)'.format(tok1), epage)[0][::-1].decode('base64')
+    tok2 = re.findall('{}="([^"]+)'.format(tok2), epage)[0][::-1].decode('base64')
+    tokurl = 'https:{}{}'.format(tok1, tok2)
+    mozhdr['Referer'] = eurl
+    token = requests.get(tokurl, headers=mozhdr).text[::-1][1:-1]
+    strurl = 'https:{}{}|Referer={}&User-Agent={}'.format(str2, token, eurl, mozhdr['User-Agent'])
+    return strurl
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+ 
+
+  <itm>
 <title>[B]Multicanal[/B] TikiTaka 01 [I]  [/I]</title>
 <link>$doregex[link]|User-Agent=iPhone</link>
 <regex>
