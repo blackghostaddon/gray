@@ -2258,7 +2258,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
- <title>[B]Multicanal 101[/B]    Sur WinSport</title>
+ <title>[B]Multicanal dailydeport 101[/B]     </title>
 <link>http://$doregex[url]:80/hls/101.m3u8</link>
  <regex>
 <name>url</name>
@@ -2270,7 +2270,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
- <title>[B]Multicanal 102[/B]   Norte - Espn Deportes  </title>
+ <title>[B]Multicanal dailydeport 102[/B]    </title>
 <link>http://$doregex[url]:80/hls/102.m3u8</link>
  <regex>
 <name>url</name>
@@ -2283,7 +2283,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
- <title>[B]Multicanal 103[/B]    Norte - FS2 </title>
+ <title>[B]Multicanal dailydeport 103[/B]    </title>
 <link>http://$doregex[url]:80/hls/103.m3u8</link>
  <regex>
 <name>url</name>
@@ -2300,7 +2300,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
- <title>[B]Multicanal 104[/B]   Norte - Univision TDN  </title>
+ <title>[B]Multicanal dailydeport 104[/B]     </title>
 <link>http://$doregex[url]:80/hls/104.m3u8</link>
  <regex>
 <name>url</name>
@@ -2313,7 +2313,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
- <title>[B]Multicanal 105[/B]   Sur * </title>
+ <title>[B]Multicanal dailydeport  105[/B]   </title>
 <link>http://$doregex[url]:80/hls/105.m3u8</link>
  <regex>
 <name>url</name>
@@ -2325,9 +2325,73 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
- <title>[B]Multicanal 111[/B]   </title>
-<link>http://185.172.110.39:80/hls/111.m3u8</link>
+ <title>[B]Multicanal dailydeport  106[/B]   </title>
+<link>http://$doregex[url]:80/hls/105.m3u8</link>
+ <regex>
+<name>url</name>
+<expres><![CDATA[\%22\/\/(.*?)\%3]]></expres>
+<page>http://nowlive.pro/1/103.html?id=106</page>
+</regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item-->
+
+
+
+<item>
+ <title>[B]Multicanal dailydeport  107[/B]   </title>
+<link>http://$doregex[url]:80/hls/105.m3u8</link>
+ <regex>
+<name>url</name>
+<expres><![CDATA[\%22\/\/(.*?)\%3]]></expres>
+<page>http://nowlive.pro/1/103.html?id=107</page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item-->
+
+
+
+<item>
+ <title>[B]Multicanal dailydeport  108[/B]   </title>
+<link>http://$doregex[url]:80/hls/105.m3u8</link>
+ <regex>
+<name>url</name>
+<expres><![CDATA[\%22\/\/(.*?)\%3]]></expres>
+<page>http://nowlive.pro/1/103.html?id=108</page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item-->
+
+
+<item>
+ <title>[B]Multicanal dailydeport  109[/B]   </title>
+<link>http://$doregex[url]:80/hls/105.m3u8</link>
+ <regex>
+<name>url</name>
+<expres><![CDATA[\%22\/\/(.*?)\%3]]></expres>
+<page>http://nowlive.pro/1/103.html?id=109</page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item-->
+
+
+<item>
+ <title>[B]Multicanal dailydeport  110[/B]   </title>
+<link>http://$doregex[url]:80/hls/105.m3u8</link>
+ <regex>
+<name>url</name>
+<expres><![CDATA[\%22\/\/(.*?)\%3]]></expres>
+<page>http://nowlive.pro/1/103.html?id=110</page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item-->
+
+
+<item>
+ <title>[B]Multicanal dailydeport  111[/B]   </title>
+<link>http://$doregex[url]:80/hls/105.m3u8</link>
+ <regex>
+<name>url</name>
+<expres><![CDATA[\%22\/\/(.*?)\%3]]></expres>
+<page>http://nowlive.pro/1/103.html?id=111</page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item-->
+
+
 
 
  
