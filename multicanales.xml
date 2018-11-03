@@ -160,7 +160,7 @@ http://whostreams.net/embed/vume8720
  <regex>
 <name>url</name>
 <expres><![CDATA[source: "([^"]+)]]></expres>
-<page>http://agenda.superligatv.com/$doregex[select].html</page>
+<page>http://canales.grupovalltv.net/$doregex[select].html</page>
 </regex>
 
 	<regex>
@@ -1853,11 +1853,11 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
  <item>
  <title>[B]Multicanal Bein es[/B]    </title>
-<link>$doregex[url]|Referer=http://agenda.superligatv.com/foxsport2.html&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
+<link>$doregex[url]|Referer=http://canales.grupovalltv.net/foxsport2.html&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
   <regex>
 <name>url</name>
 <expres><![CDATA["(.*?m3u8)"]]></expres>
-<page>http://agenda.superligatv.com/beines.html</page>
+<page>http://canales.grupovalltv.net/beines.html</page>
 </regex>
  <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
@@ -1865,11 +1865,11 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
  <item>
  <title>[B]Multicanal Universo[/B]    </title>
-<link>$doregex[url]|Referer=http://agenda.superligatv.com/foxsport2.html&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
+<link>$doregex[url]|Referer=http://canales.grupovalltv.net/foxsport2.html&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
   <regex>
 <name>url</name>
 <expres><![CDATA["(.*?m3u8)"]]></expres>
-<page>http://agenda.superligatv.com/universo.html</page>
+<page>http://canales.grupovalltv.net/universo.html</page>
 </regex>
  <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
@@ -1877,11 +1877,11 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
   <item>
  <title>[B]Multicanal Canal 2[/B]    </title>
-<link>$doregex[url]|Referer=http://agenda.superligatv.com/foxsport2.html&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
+<link>$doregex[url]|Referer=http://canales.grupovalltv.net/foxsport2.html&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
   <regex>
 <name>url</name>
 <expres><![CDATA["(.*?m3u8)"]]></expres>
-<page>http://agenda.superligatv.com/canal2.html</page>
+<page>http://canales.grupovalltv.net/canal2.html</page>
 </regex>
  <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
@@ -1889,11 +1889,11 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
   <item>
  <title>[B]Multicanal Canal 5[/B]    </title>
-<link>$doregex[url]|Referer=http://agenda.superligatv.com/foxsport2.html&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
+<link>$doregex[url]|Referer=http://canales.grupovalltv.net/foxsport2.html&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
   <regex>
 <name>url</name>
 <expres><![CDATA["(.*?m3u8)"]]></expres>
-<page>http://agenda.superligatv.com/canal5.html</page>
+<page>http://canales.grupovalltv.net/canal5.html</page>
 </regex>
  
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
@@ -1902,11 +1902,11 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
   <item>
  <title>[B]Multicanal Azteca 7[/B]    </title>
-<link>$doregex[url]|Referer=http://agenda.superligatv.com/foxsport2.html&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
+<link>$doregex[url]|Referer=http://canales.grupovalltv.net/foxsport2.html&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
   <regex>
 <name>url</name>
 <expres><![CDATA["(.*?m3u8)"]]></expres>
-<page>http://agenda.superligatv.com/azteca7.html</page>
+<page>http://canales.grupovalltv.net/azteca7.html</page>
 </regex>
  
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
@@ -1917,11 +1917,11 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
   <item>
  <title>[B]Multicanal Nueve[/B]    </title>
-<link>$doregex[url]|Referer=http://agenda.superligatv.com/foxsport2.html&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
+<link>$doregex[url]|Referer=http://canales.grupovalltv.net/foxsport2.html&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
   <regex>
 <name>url</name>
 <expres><![CDATA["(.*?m3u8)"]]></expres>
-<page>http://agenda.superligatv.com/nueve.html</page>
+<page>http://canales.grupovalltv.net/nueve.html</page>
 </regex>
  
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
@@ -1933,11 +1933,11 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
   <item>
  <title>[B]Multicanal ESPN[/B]    </title>
-<link>$doregex[url]|Referer=http://agenda.superligatv.com/foxsport2.html&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
+<link>$doregex[url]|Referer=http://canales.grupovalltv.net/foxsport2.html&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
   <regex>
 <name>url</name>
 <expres><![CDATA["(.*?m3u8)"]]></expres>
-<page>http://agenda.superligatv.com/espn.html</page>
+<page>http://canales.grupovalltv.net/espn.html</page>
 </regex>
  
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
@@ -1946,7 +1946,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-
+http://canales.grupovalltv.net/espn2.html
   
 
   <item>
@@ -1956,18 +1956,18 @@ def GetLSProData(page_data,Cookie_Jar,m):
  <regex>
 <name>url</name>
 <expres><![CDATA["(.*?m3u8)"]]></expres>
-<page>http://agenda.superligatv.com/espn2.html</page>
+<page>http://canales.grupovalltv.net/espn2.html</page>
 </regex>
  <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
   <item>
  <title>[B]Multicanal ESPN 3[/B]     </title>
-<link>$doregex[url]|Referer=http://agenda.superligatv.com/foxsport2.html&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
+<link>$doregex[url]|Referer=http://canales.grupovalltv.net/foxsport2.html&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
  
  <regex>
 <name>url</name>
 <expres><![CDATA["(.*?m3u8)"]]></expres>
-<page>http://agenda.superligatv.com/espn3.html</page>
+<page>http://canales.grupovalltv.net/espn3.html</page>
 </regex>
  
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
@@ -1981,7 +1981,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  <regex>
 <name>url</name>
 <expres><![CDATA["(.*?m3u8)"]]></expres>
-<page>http://agenda.superligatv.com/espndep.html</page>
+<page>http://canales.grupovalltv.net/espndep.html</page>
 </regex>
  
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
@@ -1997,7 +1997,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  <regex>
 <name>url</name>
 <expres><![CDATA["(.*?m3u8)"]]></expres>
-<page>http://agenda.superligatv.com/foxsport.html</page>
+<page>http://canales.grupovalltv.net/foxsport.html</page>
 </regex>
  
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
@@ -2009,7 +2009,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  <regex>
 <name>url</name>
 <expres><![CDATA["(.*?m3u8)"]]></expres>
-<page>http://agenda.superligatv.com/foxsport2.html</page>
+<page>http://canales.grupovalltv.net/foxsport2.html</page>
 </regex>
  
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
@@ -2023,7 +2023,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  <regex>
 <name>url</name>
 <expres><![CDATA["(.*?m3u8)"]]></expres>
-<page>http://agenda.superligatv.com/foxsport3.html</page>
+<page>http://canales.grupovalltv.net/foxsport3.html</page>
 </regex>
  
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
@@ -2038,7 +2038,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  <regex>
 <name>url</name>
 <expres><![CDATA["(.*?m3u8)"]]></expres>
-<page>http://agenda.superligatv.com/tdn.html</page>
+<page>http://canales.grupovalltv.net/tdn.html</page>
 </regex>
  
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
@@ -2052,7 +2052,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  <regex>
 <name>url</name>
 <expres><![CDATA[file: "([^"]+)]]></expres>
-<page>http://agenda.superligatv.com/unitdn.html</page>
+<page>http://canales.grupovalltv.net/unitdn.html</page>
 </regex>
  
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
@@ -2068,7 +2068,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  <regex>
 <name>url</name>
 <expres><![CDATA["(.*?m3u8)"]]></expres>
-<page>http://agenda.superligatv.com/claro.html</page>
+<page>http://canales.grupovalltv.net/claro.html</page>
 </regex>
  
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
@@ -2088,7 +2088,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  <regex>
 <name>url</name>
 <expres><![CDATA["(.*?m3u8)"]]></expres>
-<page>http://agenda.superligatv.com/tvcdep.html</page>
+<page>http://canales.grupovalltv.net/tvcdep.html</page>
 </regex>
  
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
@@ -2099,7 +2099,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
   <!--item>
  <title>[B]Multicanal ESPN[/B]    </title>
-<link>$doregex[url]|Referer=http://agenda.superligatv.com/foxsport2.html&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
+<link>$doregex[url]|Referer=http://canales.grupovalltv.net/foxsport2.html&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
  
  <regex>
 <name>url</name>
@@ -2128,7 +2128,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
   <item>
  <title>[B]Multicanal ESPN 3[/B]     </title>
-<link>$doregex[url]|Referer=http://agenda.superligatv.com/foxsport2.html&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
+<link>$doregex[url]|Referer=http://canales.grupovalltv.net/foxsport2.html&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
  
  <regex>
 <name>url</name>
