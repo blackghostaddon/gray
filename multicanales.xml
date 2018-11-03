@@ -1701,7 +1701,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	 <regex>
         <name>canal</name>
         <expres>net\/embed\/(.*?)"</expres>
-        <page>https://cndf87.blogspot.com/p/vtv-1.html</page>https://cndf87.blogspot.com/p
+        <page>https://cndf88.blogspot.com/p/vtv-1.html</page>https://cndf88.blogspot.com/p
     </regex>
 </item>
 
@@ -1725,7 +1725,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	 <regex>
         <name>canal</name>
         <expres>net\/embed\/(.*?)"</expres>
-        <page>https://cndf87.blogspot.com/p/w-1.html</page>
+        <page>https://cndf88.blogspot.com/p/w-1.html</page>
     </regex>
 </item>
 
@@ -1752,7 +1752,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	 <regex>
         <name>canal</name>
         <expres>net\/embed\/(.*?)"</expres>
-        <page>https://cndf87.blogspot.com/p/net-1.html</page>
+        <page>https://cndf88.blogspot.com/p/net-1.html</page>
     </regex>
 </item>
 
@@ -1789,7 +1789,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
    import xbmcgui
    dialog = xbmcgui.Dialog()
    ret = dialog.select('Elige un Canal ', ['vtv-1', 'vtv-2', 'vtv-3', 'who-1', 'who-2', 'who-3', 'net-1', 'net-2', 'net-3', 'w-1', 'w-2', 'w-3', 'w-1-1', 'w-2-2', 'w-3-3'])
-   lists = ['https://cndf87.blogspot.com/p/vtv-1.html', 'https://cndf87.blogspot.com/p/vtv-2.html', 'https://cndf87.blogspot.com/p/vtv-3.html', 'https://cndf87.blogspot.com/p/who-1.html', 'https://cndf87.blogspot.com/p/who-2.html', 'https://cndf87.blogspot.com/p/who-3.html', 'https://cndf87.blogspot.com/p/net-1.html', 'https://cndf87.blogspot.com/p/net-2.html', 'https://cndf87.blogspot.com/p/net-3.html', 'https://cndf87.blogspot.com/p/w-1.html', 'https://cndf87.blogspot.com/p/w-2.html', 'https://cndf87.blogspot.com/p/w-3.html', 'https://cndf87.blogspot.com/p/w-1.html', 'https://cndf87.blogspot.com/p/w-2.html', 'https://cndf87.blogspot.com/p/w-3.html']
+   lists = ['https://cndf88.blogspot.com/p/vtv-1.html', 'https://cndf88.blogspot.com/p/vtv-2.html', 'https://cndf88.blogspot.com/p/vtv-3.html', 'https://cndf88.blogspot.com/p/who-1.html', 'https://cndf88.blogspot.com/p/who-2.html', 'https://cndf88.blogspot.com/p/who-3.html', 'https://cndf88.blogspot.com/p/net-1.html', 'https://cndf88.blogspot.com/p/net-2.html', 'https://cndf88.blogspot.com/p/net-3.html', 'https://cndf88.blogspot.com/p/w-1.html', 'https://cndf88.blogspot.com/p/w-2.html', 'https://cndf88.blogspot.com/p/w-3.html', 'https://cndf88.blogspot.com/p/w-1.html', 'https://cndf88.blogspot.com/p/w-2.html', 'https://cndf88.blogspot.com/p/w-3.html']
    return lists[ret]
 ]]></expres>
 <page></page>
@@ -1799,7 +1799,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 
 
-https://cndf87.blogspot.com/p/vtv-2.html#
+https://cndf88.blogspot.com/p/vtv-2.html#
 
 
 
@@ -2263,7 +2263,7 @@ http://canales.grupovalltv.net/espn2.html
  <regex>
 <name>url</name>
 <expres><![CDATA[\%22\/\/(.*?)\%3]]></expres>
-<page>http://nowlive.pro/1/103.html?id=101</page>
+<page>http://nowlive.pro/1/101.html?id=101</page>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item-->
 
@@ -2275,7 +2275,7 @@ http://canales.grupovalltv.net/espn2.html
  <regex>
 <name>url</name>
 <expres><![CDATA[\%22\/\/(.*?)\%3]]></expres>
-<page>http://nowlive.pro/1/103.html?id=102</page>
+<page>http://nowlive.pro/1/102.html?id=102</page>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item-->
 
@@ -2305,7 +2305,7 @@ http://canales.grupovalltv.net/espn2.html
  <regex>
 <name>url</name>
 <expres><![CDATA[\%22\/\/(.*?)\%3]]></expres>
-<page>http://nowlive.pro/1/103.html?id=104</page>
+<page>http://nowlive.pro/1/104.html?id=104</page>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item-->
 
@@ -2318,7 +2318,7 @@ http://canales.grupovalltv.net/espn2.html
  <regex>
 <name>url</name>
 <expres><![CDATA[\%22\/\/(.*?)\%3]]></expres>
-<page>http://nowlive.pro/1/103.html?id=105</page>
+<page>http://nowlive.pro/1/105.html?id=105</page>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item-->
 
@@ -2330,7 +2330,7 @@ http://canales.grupovalltv.net/espn2.html
  <regex>
 <name>url</name>
 <expres><![CDATA[\%22\/\/(.*?)\%3]]></expres>
-<page>http://nowlive.pro/1/103.html?id=106</page>
+<page>http://nowlive.pro/1/106.html?id=106</page>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item-->
 
@@ -2342,7 +2342,7 @@ http://canales.grupovalltv.net/espn2.html
  <regex>
 <name>url</name>
 <expres><![CDATA[\%22\/\/(.*?)\%3]]></expres>
-<page>http://nowlive.pro/1/103.html?id=107</page>
+<page>http://nowlive.pro/1/107.html?id=107</page>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item-->
 
@@ -2354,7 +2354,7 @@ http://canales.grupovalltv.net/espn2.html
  <regex>
 <name>url</name>
 <expres><![CDATA[\%22\/\/(.*?)\%3]]></expres>
-<page>http://nowlive.pro/1/103.html?id=108</page>
+<page>http://nowlive.pro/1/108.html?id=108</page>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item-->
 
@@ -2365,7 +2365,7 @@ http://canales.grupovalltv.net/espn2.html
  <regex>
 <name>url</name>
 <expres><![CDATA[\%22\/\/(.*?)\%3]]></expres>
-<page>http://nowlive.pro/1/103.html?id=109</page>
+<page>http://nowlive.pro/1/109.html?id=109</page>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item-->
 
@@ -2376,18 +2376,18 @@ http://canales.grupovalltv.net/espn2.html
  <regex>
 <name>url</name>
 <expres><![CDATA[\%22\/\/(.*?)\%3]]></expres>
-<page>http://nowlive.pro/1/103.html?id=110</page>
+<page>http://nowlive.pro/1/110.html?id=110</page>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item-->
 
 
 <item>
- <title>[B]Multicanal dailydeport  111[/B]   </title>
+ <title>[B]Multicanal dailydeport  111[/B]  * </title>
 <link>http://$doregex[url]:80/hls/105.m3u8</link>
  <regex>
 <name>url</name>
 <expres><![CDATA[\%22\/\/(.*?)\%3]]></expres>
-<page>http://nowlive.pro/1/103.html?id=111</page>
+<page>http://nowlive.pro/1/111.html?id=111</page>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item-->
 
