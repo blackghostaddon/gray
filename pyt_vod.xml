@@ -1097,7 +1097,7 @@ import re, requests
 def GetLSProData(page_data,Cookie_Jar,m):
 
 ################################################################## FORMULARY #################################################################
- starturl = 'http://miradetodo.io/'     ### usually, ~ 'http://website.com/category/' ###
+ starturl = 'http://miradetodo.net/'     ### usually, ~ 'http://website.com/category/' ###
  categorylink = '?s' ### check the number of the param ###
  centerurl = 'page/'      ### something like  '/page/' ###
  firstpage = 1 ### probably  = 1 ###
@@ -2315,7 +2315,7 @@ import re, requests
 def GetLSProData(page_data,Cookie_Jar,m):
 
 ################################################################## FORMULARY #################################################################
- starturl = 'http://miradetodo.io/'     ### usually, ~ 'http://website.com/category/' ###
+ starturl = 'http://miradetodo.net/'     ### usually, ~ 'http://website.com/category/' ###
  categorylink = '' ### check the number of the param ###
  centerurl = 'page/'      ### something like  '/page/' ###
  firstpage = 1 ### probably  = 1 ###
