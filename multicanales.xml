@@ -17,7 +17,7 @@
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
  
-<item>
+<itm>
 <title> [COLOR skyblue]•[/COLOR]    [COLOR white][B]WIZ[/COLOR][COLOR lightblue]SPORTS [/COLOR][/B]  [COLOR lightslategray] [I]SD[/I][/COLOR]</title>
 <link>ignorme</link>
 <jsonrpc>plugin://plugin.video.SportsDevil/?item=url=livesports/wiz1.net.cfg&amp;mode=1</jsonrpc>
@@ -26,49 +26,6 @@
 
 
 
-
-
- <iem>
- <title>[COLOR yellow][B]Multicanal TodoDeportesWeb[/B] [/COLOR]    </title>
-<link>$doregex[makelist2]</link>
-
-  <regex>
-<name>makelist2</name>
-<listrepeat><![CDATA[
-<title>[B][makelist2.param2] [/B][COLOR yellow][makelist2.param3][/COLOR] [COLOR blue] [makelist2.param4] [makelist2.param5] [makelist2.param6] [/COLOR]  </title>
-<link>$doregex[getDecodedCode]</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail>
-]]></listrepeat>
-<expres><![CDATA[strong.*?href="http://www.tuttosportweb.fi/(.*?)".*?blank">(.*?)<.*?ong>(.*?)<|\n(0.*?|1.*?|2.*?)<|\n(0.*?|1.*?|2.*?)<|\n(0.*?|1.*?|2.*?)\n]]></expres>
-<page>http://tuttosportweb.fi/</page>
-</regex>
-
-
-<regex>
-<name>getDecodedCode</name>
-<expres>$pyFunction:base64.b64decode('$doregex[m3u8]')</expres>
-<page></page>
-</regex>
-
-<regex>
-<name>m3u8</name>
-<expres>curl = "(.*?)"</expres>
-<page>http://www.playcast.se/stream.php?id=$doregex[Canal]</page>
-<referer>http://www.playcast.se/static/player.js</referer>
-<agent>Mozilla/5.0 (Windows NT 6.3; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0</agent>
-<cookieJar></cookieJar>
-</regex>
-
-
-<regex>
-<name>Canal</name>
-<expres>id=\'(.*?)\'</expres>
-<page>http://www.tuttosportweb.fi/update/[makelist2.param1]</page>
-<referer>http://www.tuttosportweb.fi/</referer>
-<agent>Mozilla/5.0 (Windows NT 6.3; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0</agent>
-<cookieJar></cookieJar>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
@@ -108,8 +65,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-http://whostreams.net/embed/2gzsuk67y
-http://whostreams.net/embed/vume8720
 
   <item>
  <title>[COLOR yellow][B]Multicanales Televall [/B] [/COLOR]  Espn - FoxSports-  TDN - TVC - y muchos mas </title>
@@ -285,50 +240,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<iem>
-<title>[B]Multicanales MaxDeportes LigaSantander | LigaMX | LigaColombia | Ligas Sudamerica [/B]  [mips]    </title>
-
- <link>http://$doregex[ip]$doregex[m3u8]$doregex[hls]</link>
-			<regex>
-			<name>ip</name>
-			<expres>redirect=(.*)</expres>
-			<page>http://cdn.mipspublisher.com:1935/loadbalancer</page>
-			</regex>
-			<regex>
-			<name>m3u8</name>
-			<expres>ea \+ "([^"]+)</expres>
-			<page>http://www.mipsplayer.net/membedplayer/$doregex[ch]/1/650/400</page>
-			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
-			<referer>http://www.mipsplayer.net</referer>
-			</regex>
-			<regex>
-			<name>hls</name>
-			<expres>hlsUrl \+ \(\"([^"]+)</expres>
-			<page>http://www.mipsplayer.net/membedplayer/$doregex[ch]/1/650/400</page>
-			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
-			<referer>http://www.mipsplayer.net</referer>
-			</regex>
-			<regex>
-			<name>ch</name>
-			<expres>$doregex[select]</expres>
-			<page></page>
-			</regex>
-
- <regex>
-<name>select</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m):
-   import xbmcgui
-   dialog = xbmcgui.Dialog()
-   ret = dialog.select('Elige un Canal ', ['max2a3', 'max3a3', 'max7a3', 'max10a2', 'max13a1', 'max16a2', 'max18a5', 'max20a1', 'max31a3', 'max32a2', 'max34a4', 'max36a1'])
-   lists = ['max2a3', 'max3a3', 'max7a3', 'max10a2', 'max13a1', 'max16a2', 'max18a5', 'max20a1', 'max31a3', 'max32a2', 'max34a4', 'max36a1']
-   return lists[ret]
-]]></expres>
-<page></page>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail>
-
-</item>
 
 
 
@@ -341,18 +252,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-
-
-
-
-
-
-
-<itm>
-<title>[B]Multicanal PSN Deportes [/B]   Univision Deportes  </title>
-<link>http://sced.cdnak.neulion.net/250/nlds/univision/as/live/udnoo_hd_ipad.m3u8</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail>
-</item>
 
 
 <itEm>
@@ -364,6 +263,14 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
+
+
+
+<itEm>
+<title>[B]Multicanal Sr Regio [/B]     </title>
+<link>https://mp4.vaughnsoft.net/live?app=live&amp;port=2935&amp;stream=live_srregio|Referer=https://vaughnlive.tv/</link>
+ <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail>
+</item>
 
 
 
@@ -438,7 +345,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
  
  
- <item>
+ <!--item>
 <title>[B]Multicanal VIP 03 [/B]     </title>
 <link>$doregex[get-url]</link>
 <regex>
@@ -655,14 +562,14 @@ def GetLSProData(page_data,Cookie_Jar,m):
 ]]></expres>
 <page></page>
 </regex>
-</item>
+</item-->
  
  
  
 
 
  <item>
-<title>[B]Multicanal univision (Chivas69) [/B]     </title>
+<title>[B]Multicanal 1 (Chivas69) [/B]     </title>
 
 <link>$doregex[url]|Referer=https://player.limpi.tv/&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36</link>
 <regex>
@@ -682,7 +589,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex> 
    <name>canal</name>   
    <expres>id='(.*?)'</expres>  
-   <page>http://anahix11.com/univi.php</page>
+   <page>http://anahix11.com/canal7.php</page>
    <cookieJar/>
 </regex>
 </item>
@@ -691,13 +598,13 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
  <item>
-<title>[B]Multicanal unimas (Chivas69) [/B]     </title>
+<title>[B]Multicanal 2 (Chivas69) [/B]     </title>
 
-<link>$doregex[url]|Referer=https://player.limpi.tv/embed&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36</link>
+<link>$doregex[url]|Referer=https://player.limpi.tv/&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36</link>
 <regex>
    <name>url</name>   
    <expres>source: "(.*?)"</expres>  
-   <page>$doregex[temp]/41487</page>
+   <page>$doregex[temp]/$doregex[canal]</page>
    <referer>https://player.limpi.tv/</referer>
    <cookieJar/>
 </regex>
@@ -708,7 +615,45 @@ def GetLSProData(page_data,Cookie_Jar,m):
    <page>https://player.limpi.tv/embed.js</page>
    <cookieJar/>
 </regex>
+<regex> 
+   <name>canal</name>   
+   <expres>id='(.*?)'</expres>  
+   <page>http://anahix11.com/chivas3.php</page>
+   <cookieJar/>
+</regex>
 </item>
+
+
+
+
+
+
+ <item>
+<title>[B]Multicanal 3 (Chivas69) [/B]     </title>
+
+<link>$doregex[url]|Referer=https://player.limpi.tv/&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36</link>
+<regex>
+   <name>url</name>   
+   <expres>source: "(.*?)"</expres>  
+   <page>$doregex[temp]/$doregex[canal]</page>
+   <referer>https://player.limpi.tv/</referer>
+   <cookieJar/>
+</regex>
+
+<regex> 
+   <name>temp</name>   
+   <expres>src="(.*?)\'</expres>  
+   <page>https://player.limpi.tv/embed.js</page>
+   <cookieJar/>
+</regex>
+<regex> 
+   <name>canal</name>   
+   <expres>i', id='(.*?)'</expres>  
+   <page>http://www.chivass69.com/deportes/</page>
+   <cookieJar/>
+</regex>
+</item>
+
 
 
 
