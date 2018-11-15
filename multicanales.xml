@@ -273,6 +273,13 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
+<itEm>
+<title>[B]Multicanal TecnoTV [/B]     </title>
+<link>https://mp4.vaughnsoft.net/live?app=live&amp;port=2935&amp;stream=live_atecnotv|Referer=https://vaughnlive.tv/</link>
+ <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail>
+</item>
+
+
 
 
 
@@ -597,7 +604,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
  <item>
-<title>[B]Multicanal 2 (Chivas69) [/B]     </title>
+<title>[B]Multicanal 2 (Chivas69 - Telemundo) [/B]     </title>
 
 <link>$doregex[url]|Referer=https://player.limpi.tv/&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36</link>
 <regex>
@@ -1743,7 +1750,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	 <regex>
         <name>canal</name>
         <expres>net\/embed\/(.*?)"</expres>
-        <page>https://cndf88.blogspot.com/p/vtv-1.html</page>https://cndf88.blogspot.com/p
+        <page>https://cndf89.blogspot.com/p/vtv-1.html</page>https://cndf89.blogspot.com/p
     </regex>
 </item>
 
@@ -1767,7 +1774,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	 <regex>
         <name>canal</name>
         <expres>net\/embed\/(.*?)"</expres>
-        <page>https://cndf88.blogspot.com/p/w-1.html</page>
+        <page>https://cndf89.blogspot.com/p/w-1.html</page>
     </regex>
 </item>
 
@@ -1794,7 +1801,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	 <regex>
         <name>canal</name>
         <expres>net\/embed\/(.*?)"</expres>
-        <page>https://cndf88.blogspot.com/p/net-1.html</page>
+        <page>https://cndf89.blogspot.com/p/net-1.html</page>
     </regex>
 </item>
 
@@ -1831,7 +1838,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
    import xbmcgui
    dialog = xbmcgui.Dialog()
    ret = dialog.select('Elige un Canal ', ['vtv-1', 'vtv-2', 'vtv-3', 'who-1', 'who-2', 'who-3', 'net-1', 'net-2', 'net-3', 'w-1', 'w-2', 'w-3', 'w-1-1', 'w-2-2', 'w-3-3'])
-   lists = ['https://cndf88.blogspot.com/p/vtv-1.html', 'https://cndf88.blogspot.com/p/vtv-2.html', 'https://cndf88.blogspot.com/p/vtv-3.html', 'https://cndf88.blogspot.com/p/who-1.html', 'https://cndf88.blogspot.com/p/who-2.html', 'https://cndf88.blogspot.com/p/who-3.html', 'https://cndf88.blogspot.com/p/net-1.html', 'https://cndf88.blogspot.com/p/net-2.html', 'https://cndf88.blogspot.com/p/net-3.html', 'https://cndf88.blogspot.com/p/w-1.html', 'https://cndf88.blogspot.com/p/w-2.html', 'https://cndf88.blogspot.com/p/w-3.html', 'https://cndf88.blogspot.com/p/w-1.html', 'https://cndf88.blogspot.com/p/w-2.html', 'https://cndf88.blogspot.com/p/w-3.html']
+   lists = ['https://cndf89.blogspot.com/p/vtv-1.html', 'https://cndf89.blogspot.com/p/vtv-2.html', 'https://cndf89.blogspot.com/p/vtv-3.html', 'https://cndf89.blogspot.com/p/who-1.html', 'https://cndf89.blogspot.com/p/who-2.html', 'https://cndf89.blogspot.com/p/who-3.html', 'https://cndf89.blogspot.com/p/net-1.html', 'https://cndf89.blogspot.com/p/net-2.html', 'https://cndf89.blogspot.com/p/net-3.html', 'https://cndf89.blogspot.com/p/w-1.html', 'https://cndf89.blogspot.com/p/w-2.html', 'https://cndf89.blogspot.com/p/w-3.html', 'https://cndf89.blogspot.com/p/w-1.html', 'https://cndf89.blogspot.com/p/w-2.html', 'https://cndf89.blogspot.com/p/w-3.html']
    return lists[ret]
 ]]></expres>
 <page></page>
@@ -1841,7 +1848,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 
 
-https://cndf88.blogspot.com/p/vtv-2.html#
+https://cndf89.blogspot.com/p/vtv-2.html#
 
 
 
