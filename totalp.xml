@@ -68,8 +68,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 def GetLSProData(page_data,Cookie_Jar,m):
    import xbmcgui
    dialog = xbmcgui.Dialog()
-   ret = dialog.select('Seleciona una Lista ', ['opcion Lista ', 'opcion Lista 2', 'opcion Lista 3', 'opcion Lista 4', 'opcion peliculas', 'opcion esp', 'opcion fta'])
-   lists = ['http://tecnotv.xyz/lista.m3u', 'http://tecnotv.xyz/lista2.m3u', 'http://tecnotv.xyz/lista3.m3u', 'http://tecnotv.xyz/lista4.m3u', 'http://tecnotv.xyz/peliculas.m3u', 'http://tecnotv.xyz/esp.m3u', 'http://tecnotv.xyz/fta.m3u']
+   ret = dialog.select('Seleciona una Lista ', ['opcion Lista ', 'opcion Peliculas', 'opcion Alterna', 'opcion Espana, 'opcion FTA'])
+   lists = ['http://tecnotv.xyz/lista.m3u', 'http://tecnotv.xyz/peliculas.m3u', 'http://tecnotv.xyz/alterna.m3u', 'http://tecnotv.xyz/esp.m3u', 'http://tecnotv.xyz/fta.m3u']
    return lists[ret]
 ]]></expres>
 <page></page>
@@ -91,7 +91,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
    import xbmcgui
    dialog = xbmcgui.Dialog()
    ret = dialog.select('Seleciona una Lista ', ['RegioFlix', 'RegioTV', 'smartTV', 'Deportes', 'LigaMX', 'Alterna'])
-   lists = ['ttp://srregio.xyz/IPTV/regioflix.m3u', 'http://srregio.xyz/IPTV/regiotv.m3u', 'http://srregio.xyz/IPTV/smartv.m3u', 'http://srregio.xyz/IPTV/deportes.m3u', 'http://srregio.xyz/IPTV/ligamx.m3u', 'http://srregio.xyz/IPTV/alterna.m3u']
+   lists = ['http://srregio.xyz/IPTV/regioflix.m3u', 'http://srregio.xyz/IPTV/regiotv.m3u', 'http://srregio.xyz/IPTV/smartv.m3u', 'http://srregio.xyz/IPTV/deportes.m3u', 'http://srregio.xyz/IPTV/ligamx.m3u', 'http://srregio.xyz/IPTV/alterna.m3u']
    return lists[ret]
 ]]></expres>
 <page></page>
@@ -139,14 +139,14 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <item>
 <title>•  [B]TotalPlay[/B]  [ Opcion [B]TVPremium HD[/B] ][B]   [/B]  </title>
 <link>NA</link>2
-<externallink>http://tvpremiumhd.club/lista.m3u</externallink>
+<externallink>http://tvpremiumhd.club/hd/lista.m3u</externallink>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/img/tp.jpg</thumbnail>
 <fanart>https://raw.githubusercontent.com/blackghostaddon/gray/img/fanart.jpg</fanart></item>
 
 <item>
 <title>•  [B]TotalPlay[/B]  [ Opcion [B]TVPremium TV[/B] ][B]   [/B]  </title>
 <link>NA</link>2
-<externallink>http://tvpremiumhd.club/tv.m3u</externallink>
+<externallink>http://tvpremiumhd.club/hd/tv.m3u</externallink>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/img/tp.jpg</thumbnail>
 <fanart>https://raw.githubusercontent.com/blackghostaddon/gray/img/fanart.jpg</fanart></item>
 
@@ -178,13 +178,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
- <item>
-<title>•  [B]TotalPlay[/B]  [ Opcion [B]Rocha IPTV[/B] ][B]   [/B]  </title>
-<link>NA</link>2
-<externallink>http://rochaprivada.000webhostapp.com/androidtv.m3u$$TSDOWNLOADER$$</externallink>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/img/tp.jpg</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/img/fanart.jpg</fanart></item>
-
 
 
 
@@ -202,7 +195,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>m3u8</name>
 <expres>NibbleTVdecode\(\"TV(.*?)\"</expres>
-<page>http://www.nibbletv.info/Listas-M3U</page>
+<page>https://www.nibbletv.info/Lista-Gratis</page>
 </regex>
 
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/img/tp.jpg</thumbnail>
@@ -223,7 +216,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>m3u8</name>
 <expres>listapelis.*?NibbleTVdecode\(\"TV(.*?)\"</expres>
-<page>http://www.nibbletv.info/Listas-M3U</page>
+<page>https://www.nibbletv.info/Lista-Gratis</page>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/img/tp.jpg</thumbnail>
 <fanart>https://raw.githubusercontent.com/blackghostaddon/gray/img/fanart.jpg</fanart></item>
@@ -235,14 +228,9 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-  <item>
-	<title>•  [B]TotalPlay[/B]  [ Opcion [B]Temp[/B]  ][B]     [/B]   </title>
-	<link>NA</link>2
-<externallink>http://mylatinotv.com:25461/get.php?username=demosep2&amp;password=RLootpDPHu&amp;type=m3u_plus&amp;output=m3u8</externallink>
 
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/img/tp.jpg</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/img/fanart.jpg</fanart>
-</item>
+
+
 
 
 
