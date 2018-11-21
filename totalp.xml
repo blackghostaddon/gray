@@ -68,7 +68,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 def GetLSProData(page_data,Cookie_Jar,m):
    import xbmcgui
    dialog = xbmcgui.Dialog()
-   ret = dialog.select('Seleciona una Lista ', ['opcion Lista ', 'opcion Peliculas', 'opcion Alterna', 'opcion Espana, 'opcion FTA'])
+   ret = dialog.select('Seleciona una Lista ', ['opcion Lista', 'opcion Peliculas', 'opcion Alterna', 'opcion Espana', 'opcion FTA'])
    lists = ['http://tecnotv.xyz/lista.m3u', 'http://tecnotv.xyz/peliculas.m3u', 'http://tecnotv.xyz/alterna.m3u', 'http://tecnotv.xyz/esp.m3u', 'http://tecnotv.xyz/fta.m3u']
    return lists[ret]
 ]]></expres>
