@@ -923,7 +923,7 @@ item>
 
 
 
-<item>
+<!--item>
 <title>[B]Multicanal Zonasport01[/B]      </title>
 <link>https://$doregex[ip]$doregex[m3u8]|Referer=http://www.playerfs.com/&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64; rv:56.0) Gecko/20100101 Firefox/56.0</link>
 <regex>
@@ -1300,7 +1300,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
- <item>
+ <!--item>
 <title>[B]Multicanal Zonasport09[/B]    wide     </title>
 <link>$doregex[get-id]</link>
 <regex>
@@ -1479,7 +1479,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
         <expres>net\/embed\/(.*?)"</expres>
         <page>http://zonasports.es/cha-x.php?id=15</page>
     </regex>
-</item>
+</item-->
 
 
 
@@ -3744,7 +3744,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <accept>*/*</accept>
 <X-Req>XMLHttpRequest</X-Req>
 <cookieJar>d2732eaef183a775c4293a179eee06a4d1507131962</cookieJar>
-<referer>https://vergol.com/live3/beinsport.php</referer>
+<referer>https://verliga1.net/tv/inicio.php</referer>
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/esp.jpg</thumbnail></item>
@@ -3801,14 +3801,14 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>get-id</name>
 <expres>source: '([^']+)</expres>
-<page>http://lacalleochotv.org/magu/espana1/goltv.php</page>/magu/espana1/goltv.html
+<page>http://lacalleochotv.org/magu/espana1/goltv.html</page>/magu/espana1/goltv.html
 <referer>http://lacalleochotv.org/</referer>
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/esp.jpg</thumbnail></item>
 
  
-  
+  http://lacalleochotv.org/magu/espana1/goltv.html
  <item>
 <title>[B]Multicanal[/B] OchoTv [I] Deportes 1 [/I] </title>
 <link>$doregex[get-id]|Referer=http://lacalleochotv.org&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
