@@ -262,14 +262,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<itEm>
-<title>[B]Multicanal TDN Mex  [/B]     </title>
-<link>http://54.39.52.89:25461/live/cablegratis/usalatinotedoychancee/12.m3u8</link>
- <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail>
-</item>
-
-
-
 
 
 <itEm>
@@ -3183,42 +3175,13 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
   <item>
 <title>[B]Multicanal[/B] TikiTaka 01 [I] t [/I]</title>
-<link>$doregex[get-url]</link>
-<regex>
-<name>get-url</name>
-<expres><![CDATA[#$pyFunction
-from resolveurl.plugins.lib import jsunpack
-def GetLSProData(page_data,Cookie_Jar,m):
-    import re
-    import requests
-    mozhdr = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
-              'Referer': 'http://revolucionariostv.eu'}
-    url = 'http://revolucionariostv.eu/elitegol/Repros/c1.php'
-    html = requests.get(url, headers=mozhdr).text
-    cid = re.findall("id='([^']+).+?telerium", html)[0]
-    eurl = 'https://telerium.tv/embed/{}.html'.format(cid)
-    ehtml = requests.get(eurl, headers=mozhdr).text
-    edata = re.findall('(eval\(function\(p,a,c,k,e,d.*)', ehtml)[0]
-    epage = jsunpack.unpack(edata).replace('\\', '')
-    strvar = re.findall('source:([^,]+),mime', epage)[0]
-    str1 = re.findall('{}=atob\(rSt\(([^)]+)'.format(strvar), epage)[0]
-    str2 = re.findall('{}="([^"]+)'.format(str1), epage)[0][::-1].decode('base64')
-    tok1, tok2 = re.findall('{url:atob\(rSt\(([^)]+)\)\)\+atob\(rSt\(([^)]+)', epage)[0]
-    tok1 = re.findall('{}="([^"]+)'.format(tok1), epage)[0][::-1].decode('base64')
-    tok2 = re.findall('{}="([^"]+)'.format(tok2), epage)[0][::-1].decode('base64')
-    tokurl = 'https:{}{}'.format(tok1, tok2)
-    mozhdr['Referer'] = eurl
-    token = requests.get(tokurl, headers=mozhdr).text[::-1][1:-1]
-    strurl = 'https:{}{}|Referer={}&User-Agent={}'.format(str2, token, eurl, mozhdr['User-Agent'])
-    return strurl
-]]></expres>
-<page></page>
-</regex>
+<link>http://api.djlive.pl/hls/theisra.m3u8</link>
+
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
  
 
   <item>
-<title>[B]Multicanal[/B] TikiTaka 01 [I] t [/I]</title>
+<title>[B]Multicanal[/B] TikiTaka 02 [I] t [/I]</title>
 <link>$doregex[get-url]</link>
 <regex>
 <name>get-url</name>
@@ -3263,20 +3226,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>link</name>
 <expres>source: '(.*?)'</expres>
 <page>http://estadionline.com/canal1.php</page>
-<noredirect>true</noredirect>
-<includeheaders></includeheaders>
-</regex>
-
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-
-  <item>
-<title>[B]Multicanal[/B] TikiTaka 02 [I]  [/I]</title>
-<link>$doregex[link]|User-Agent=iPhone</link>
-<regex>
-<name>link</name>
-<expres>source: '(.*?)'</expres>
-<page>http://estadionline.com/canal2.php</page>
 <noredirect>true</noredirect>
 <includeheaders></includeheaders>
 </regex>
