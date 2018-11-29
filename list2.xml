@@ -238,7 +238,7 @@ http://paypal.me/blackghost</info>
 <name>makelist</name>
 <listrepeat><![CDATA[
 <title>[makelist.param2]</title>
-<link>https://mp4.vaughnsoft.net/live?app=live&amp;port=2935&amp;stream=live_[makelist.param1]|Referer=https://vaughnlive.tv/</link>
+<link>https://mp4-rem.vaughnsoft.net/live?app=live&amp;port=2935&amp;stream=live_[makelist.param1]|Referer=https://vaughn.live</link>
 <thumbnail>http://cdn.vaughnsoft.com/vaughnsoft/vaughn/img_profiles/[makelist.param2]_320.jpg</thumbnail>
 ]]></listrepeat>
 <expres>a href="/(.*?)"[\w\W\s]{0,22}browseTxt">(.*?)<</expres>
