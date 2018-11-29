@@ -251,11 +251,11 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-
+https://mp4-rem.vaughnsoft.net/play/live_rvvdep.flv?&secure=XzJx7uTRSG9h_KRViJlZsQ&expires=1543543548&ip=189.187.141.178
 
 <itEm>
 <title>[B]Multicanal PSN Deportes (Rivo) [/B]     </title>
-<link>https://mp4.vaughnsoft.net/live?app=live&amp;port=2935&amp;stream=live_rvvdep|Referer=https://vaughnlive.tv/</link>
+<link>https://mp4-rem.vaughnsoft.net/live?app=live&amp;port=2935&amp;stream=live_rvvdep|Referer=https://vaughn.live</link>
  <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail>
 </item>
 
@@ -266,7 +266,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <itEm>
 <title>[B]Multicanal Sr Regio [/B]     </title>
-<link>https://mp4.vaughnsoft.net/live?app=live&amp;port=2935&amp;stream=live_24_7_srregio|Referer=https://vaughnlive.tv/</link>
+<link>https://mp4-rem.vaughnsoft.net/live?app=live&amp;port=2935&amp;stream=live_24_7_srregio|Referer=https://vaughn.live</link>
  <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail>
 </item>
 
@@ -274,7 +274,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <itEm>
 <title>[B]Multicanal TecnoTV [/B]     </title>
-<link>https://mp4.vaughnsoft.net/live?app=live&amp;port=2935&amp;stream=live_atecnotv|Referer=https://vaughnlive.tv/</link>
+<link>https://mp4-rem.vaughnsoft.net/live?app=live&amp;port=2935&amp;stream=live_atecnotv|Referer=https://vaughn.live</link>
  <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail>
 </item>
 
@@ -1486,6 +1486,15 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
+ <item>
+<title>[B]Multicanal RIVO 01 [/B]   </title>
+<link>$doregex[get-id]</link>
+<regex>
+<name>get-id</name>
+<expres>file:"([^"]+)</expres>
+<page>http://widestream.io/embed-44241</page> 
+</regex>
+ <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
@@ -1516,7 +1525,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-
+nrw2ahw46f42td
 
 
 
@@ -2833,7 +2842,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
  <itEm>
 <title>[B]Multicanal[/B] TikiTaka 01 [I] estable [/I]</title>
-<link>https://mp4.vaughnsoft.net/live?app=live&amp;port=2935&amp;stream=live_estadirevo5|Referer=https://vaughnlive.tv/</link>
+<link>https://mp4-rem.vaughnsoft.net/live?app=live&amp;port=2935&amp;stream=live_estadirevo5|Referer=https://vaughn.live</link>
  <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail>
 </item>
 
