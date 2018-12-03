@@ -203,7 +203,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 <regex>
 <name>server</name>
-<expres>javascript\' src=\'(http://.*?)\/</expres>
+<expres>javascript\' src=\'(https://.*?)\/</expres>
 <page>$doregex[pagina]</page>
 </regex>
 <regex>
@@ -954,7 +954,7 @@ item>
 </regex>
 <regex>
 <name>server</name>
-<expres>javascript\' src=\'(http://.*?)\/</expres>
+<expres>javascript\' src=\'(https://.*?)\/</expres>
 <page>http://zonasports.es/cha-x.php?id=1</page>
 </regex>
 <regex>
@@ -998,7 +998,7 @@ item>
 </regex>
 <regex>
 <name>server</name>
-<expres>javascript\' src=\'(http://.*?)\/</expres>
+<expres>javascript\' src=\'(https://.*?)\/</expres>
 <page>http://zonasports.es/cha-x.php?id=2</page>
 </regex>
 <regex>
@@ -1045,7 +1045,7 @@ item>
 </regex>
 <regex>
 <name>server</name>
-<expres>javascript\' src=\'(http://.*?)\/</expres>
+<expres>javascript\' src=\'(https://.*?)\/</expres>
 <page>http://zonasports.es/cha-x.php?id=3</page>
 </regex>
 <regex>
@@ -1089,7 +1089,7 @@ item>
 </regex>
 <regex>
 <name>server</name>
-<expres>javascript\' src=\'(http://.*?)\/</expres>
+<expres>javascript\' src=\'(https://.*?)\/</expres>
 <page>http://zonasports.es/cha-x.php?id=4</page>
 </regex>
 <regex>
@@ -1146,7 +1146,68 @@ item>
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 <item>
+<title>[B]Multicanal Zonasport05[/B]     247bay    </title>
+<link>http://$doregex[ip]$doregex[m3u8]</link>
+			<regex>
+			<name>ip</name>
+			<expres>redirect=(.*)</expres>
+			<page>http://www.publish247.xyz:1935/loadbalancer</page>
+			</regex>
+			<regex>
+			<name>m3u8</name>
+			<expres>ea \+ "([^"]+)</expres>
+			<page>http://www.247bay.tv/membedplayer/$doregex[canal]/2/750/420</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.247bay.tv</referer>
+			</regex>
+			<regex>
+			<name>canal</name>
+			<expres>channel='(.*?)'</expres>
+			<page>http://cdn.zonasports.me/c-5x.php</page>
+			</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+<item>
+<title>[B]Multicanal Zonasport06[/B]     247bay    </title>
+<link>http://$doregex[ip]$doregex[m3u8]</link>
+			<regex>
+			<name>ip</name>
+			<expres>redirect=(.*)</expres>
+			<page>http://www.publish247.xyz:1935/loadbalancer</page>
+			</regex>
+			<regex>
+			<name>m3u8</name>
+			<expres>ea \+ "([^"]+)</expres>
+			<page>http://www.247bay.tv/membedplayer/$doregex[canal]/2/750/420</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.247bay.tv</referer>
+			</regex>
+			<regex>
+			<name>canal</name>
+			<expres>channel='(.*?)'</expres>
+			<page>http://cdn.zonasports.me/c-6x.php</page>
+			</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+
+
+
+<itm>
 <title>[B]Multicanal Zonasport05[/B]        </title>
 <link>$doregex[makelist]</link>
 <regex>
@@ -1165,7 +1226,7 @@ def GetLSProData(page_data,Cookie_Jar,m):#streamwatcher2013
 
 
 
-<item>
+<itm>
 <title>[B]Multicanal Zonasport06[/B]          </title>
 <link>$doregex[makelist]</link>
 <regex>
@@ -1182,75 +1243,6 @@ def GetLSProData(page_data,Cookie_Jar,m):#streamwatcher2013
 </item>
 
 
-<item>
-<title>[B]Multicanal Zonasport07[/B]          </title>
-<link>$doregex[get-url]</link>
-<regex>
-<name>get-url</name>
-<expres><![CDATA[#$pyFunction
-from resolveurl.plugins.lib import jsunpack
-def GetLSProData(page_data,Cookie_Jar,m):
-    import re
-    import requests
-    mozhdr = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
-              'Referer': 'http://zonasports.es/'}
-    url = 'http://zonasports.es/cha-x.php?id=7'
-    html = requests.get(url, headers=mozhdr).text
-    cid = re.findall("id='([^']+).+?telerium", html)[0]
-    eurl = 'https://telerium.tv/embed/{}.html'.format(cid)
-    ehtml = requests.get(eurl, headers=mozhdr).text
-    edata = re.findall('(eval\(function\(p,a,c,k,e,d.*)', ehtml)[0]
-    epage = jsunpack.unpack(edata).replace('\\', '')
-    strvar = re.findall('source:([^,]+),mime', epage)[0]
-    str1 = re.findall('{}=atob\(rSt\(([^)]+)'.format(strvar), epage)[0]
-    str2 = re.findall('{}="([^"]+)'.format(str1), epage)[0][::-1].decode('base64')
-    tok1, tok2 = re.findall('{url:atob\(rSt\(([^)]+)\)\)\+atob\(rSt\(([^)]+)', epage)[0]
-    tok1 = re.findall('{}="([^"]+)'.format(tok1), epage)[0][::-1].decode('base64')
-    tok2 = re.findall('{}="([^"]+)'.format(tok2), epage)[0][::-1].decode('base64')
-    tokurl = 'https:{}{}'.format(tok1, tok2)
-    mozhdr['Referer'] = eurl
-    token = requests.get(tokurl, headers=mozhdr).text[::-1][1:-1]
-    strurl = 'https:{}{}|Referer={}&User-Agent={}'.format(str2, token, eurl, mozhdr['User-Agent'])
-    return strurl
-]]></expres>
-<page></page>
-</regex>
-</item>
-
-<item>
-<title>[B]Multicanal Zonasport08[/B]          </title>
-<link>$doregex[get-url]</link>
-<regex>
-<name>get-url</name>
-<expres><![CDATA[#$pyFunction
-from resolveurl.plugins.lib import jsunpack
-def GetLSProData(page_data,Cookie_Jar,m):
-    import re
-    import requests
-    mozhdr = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
-              'Referer': 'http://zonasports.es/'}
-    url = 'http://zonasports.es/cha-x.php?id=8'
-    html = requests.get(url, headers=mozhdr).text
-    cid = re.findall("id='([^']+).+?telerium", html)[0]
-    eurl = 'https://telerium.tv/embed/{}.html'.format(cid)
-    ehtml = requests.get(eurl, headers=mozhdr).text
-    edata = re.findall('(eval\(function\(p,a,c,k,e,d.*)', ehtml)[0]
-    epage = jsunpack.unpack(edata).replace('\\', '')
-    strvar = re.findall('source:([^,]+),mime', epage)[0]
-    str1 = re.findall('{}=atob\(rSt\(([^)]+)'.format(strvar), epage)[0]
-    str2 = re.findall('{}="([^"]+)'.format(str1), epage)[0][::-1].decode('base64')
-    tok1, tok2 = re.findall('{url:atob\(rSt\(([^)]+)\)\)\+atob\(rSt\(([^)]+)', epage)[0]
-    tok1 = re.findall('{}="([^"]+)'.format(tok1), epage)[0][::-1].decode('base64')
-    tok2 = re.findall('{}="([^"]+)'.format(tok2), epage)[0][::-1].decode('base64')
-    tokurl = 'https:{}{}'.format(tok1, tok2)
-    mozhdr['Referer'] = eurl
-    token = requests.get(tokurl, headers=mozhdr).text[::-1][1:-1]
-    strurl = 'https:{}{}|Referer={}&User-Agent={}'.format(str2, token, eurl, mozhdr['User-Agent'])
-    return strurl
-]]></expres>
-<page></page>
-</regex>
-</item>
 
 <!--item>
 <title>[B]Multicanal Zonasport07[/B]     247bay    </title>
@@ -1324,76 +1316,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-
-<item>
-<title>[B]Multicanal Zonasport11[/B]         </title>
-<link>$doregex[get-url]</link>
-<regex>
-<name>get-url</name>
-<expres><![CDATA[#$pyFunction
-from resolveurl.plugins.lib import jsunpack
-def GetLSProData(page_data,Cookie_Jar,m):
-    import re
-    import requests
-    mozhdr = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
-              'Referer': 'http://zonasports.es/'}
-    url = 'http://zonasports.es/cha-x.php?id=11'
-    html = requests.get(url, headers=mozhdr).text
-    cid = re.findall("id='([^']+).+?telerium", html)[0]
-    eurl = 'https://telerium.tv/embed/{}.html'.format(cid)
-    ehtml = requests.get(eurl, headers=mozhdr).text
-    edata = re.findall('(eval\(function\(p,a,c,k,e,d.*)', ehtml)[0]
-    epage = jsunpack.unpack(edata).replace('\\', '')
-    strvar = re.findall('source:([^,]+),mime', epage)[0]
-    str1 = re.findall('{}=atob\(rSt\(([^)]+)'.format(strvar), epage)[0]
-    str2 = re.findall('{}="([^"]+)'.format(str1), epage)[0][::-1].decode('base64')
-    tok1, tok2 = re.findall('{url:atob\(rSt\(([^)]+)\)\)\+atob\(rSt\(([^)]+)', epage)[0]
-    tok1 = re.findall('{}="([^"]+)'.format(tok1), epage)[0][::-1].decode('base64')
-    tok2 = re.findall('{}="([^"]+)'.format(tok2), epage)[0][::-1].decode('base64')
-    tokurl = 'https:{}{}'.format(tok1, tok2)
-    mozhdr['Referer'] = eurl
-    token = requests.get(tokurl, headers=mozhdr).text[::-1][1:-1]
-    strurl = 'https:{}{}|Referer={}&User-Agent={}'.format(str2, token, eurl, mozhdr['User-Agent'])
-    return strurl
-]]></expres>
-<page></page>
-</regex>
-</item>
-
-<item>
-<title>[B]Multicanal Zonasport12[/B]         </title>
-<link>$doregex[get-url]</link>
-<regex>
-<name>get-url</name>
-<expres><![CDATA[#$pyFunction
-from resolveurl.plugins.lib import jsunpack
-def GetLSProData(page_data,Cookie_Jar,m):
-    import re
-    import requests
-    mozhdr = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
-              'Referer': 'http://zonasports.es/'}
-    url = 'http://zonasports.es/cha-x.php?id=12'
-    html = requests.get(url, headers=mozhdr).text
-    cid = re.findall("id='([^']+).+?telerium", html)[0]
-    eurl = 'https://telerium.tv/embed/{}.html'.format(cid)
-    ehtml = requests.get(eurl, headers=mozhdr).text
-    edata = re.findall('(eval\(function\(p,a,c,k,e,d.*)', ehtml)[0]
-    epage = jsunpack.unpack(edata).replace('\\', '')
-    strvar = re.findall('source:([^,]+),mime', epage)[0]
-    str1 = re.findall('{}=atob\(rSt\(([^)]+)'.format(strvar), epage)[0]
-    str2 = re.findall('{}="([^"]+)'.format(str1), epage)[0][::-1].decode('base64')
-    tok1, tok2 = re.findall('{url:atob\(rSt\(([^)]+)\)\)\+atob\(rSt\(([^)]+)', epage)[0]
-    tok1 = re.findall('{}="([^"]+)'.format(tok1), epage)[0][::-1].decode('base64')
-    tok2 = re.findall('{}="([^"]+)'.format(tok2), epage)[0][::-1].decode('base64')
-    tokurl = 'https:{}{}'.format(tok1, tok2)
-    mozhdr['Referer'] = eurl
-    token = requests.get(tokurl, headers=mozhdr).text[::-1][1:-1]
-    strurl = 'https:{}{}|Referer={}&User-Agent={}'.format(str2, token, eurl, mozhdr['User-Agent'])
-    return strurl
-]]></expres>
-<page></page>
-</regex>
-</item>
 
 <item>
 <title>[B]Multicanal Zonasport13[/B]         </title>
@@ -1477,7 +1399,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	 <regex>
         <name>canal</name>
         <expres>net\/embed\/(.*?)"</expres>
-        <page>http://zonasports.es/cha-x.php?id=15</page>
+        <page>http://zonasports.es/cha-x.php?id=16</page>
     </regex>
 </item-->
 
