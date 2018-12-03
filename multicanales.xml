@@ -923,7 +923,7 @@ item>
 
 
 
-<!--item>
+<item>
 <title>[B]Multicanal Zonasport01[/B]      </title>
 <link>https://$doregex[ip]$doregex[m3u8]|Referer=http://www.playerfs.com/&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64; rv:56.0) Gecko/20100101 Firefox/56.0</link>
 <regex>
@@ -1300,7 +1300,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
- <!--item>
+ <item>
 <title>[B]Multicanal Zonasport09[/B]    wide     </title>
 <link>$doregex[get-id]</link>
 <regex>
