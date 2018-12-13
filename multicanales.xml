@@ -255,7 +255,7 @@ https://mp4-rem.vaughnsoft.net/play/live_rvvdep.flv?&secure=XzJx7uTRSG9h_KRViJlZ
 
 <itEm>
 <title>[B]Multicanal PSN Deportes (Rivo) [/B]     </title>
-<link>https://mp4-rem.vaughnsoft.net/live?app=live&amp;port=2935&amp;stream=live_rvv2|Referer=https://vaughn.live</link>
+<link>https://mp4-rem.vaughnsoft.net/live?app=live&amp;port=2935&amp;stream=live_rvv3|Referer=https://vaughn.live</link>
  <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail>
 </item>
 
@@ -1177,7 +1177,7 @@ item>
 			<regex>
 			<name>canal</name>
 			<expres>channel='(.*?)'</expres>
-			<page>http://cdn.zonasports.me/c-5x.php</page>
+			<page>http://zonasports.es/cha-x.php?id=5</page>
 			</regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
@@ -1199,7 +1199,7 @@ item>
 			<regex>
 			<name>canal</name>
 			<expres>channel='(.*?)'</expres>
-			<page>http://cdn.zonasports.me/c-6x.php</page>
+			<page>http://zonasports.es/cha-x.php?id=6</page>
 			</regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
