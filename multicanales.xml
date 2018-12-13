@@ -1316,28 +1316,7 @@ def GetLSProData(page_data,Cookie_Jar,m):#streamwatcher2013
 
 
 
-
-<item>
-<title>[B]Multicanal Zonasport13[/B]         </title>
-    <link>$doregex[geturl]</link>
-    <regex>
-        <name>geturl</name>
-        <expres>source:"(.*?)"</expres>
-        <page>$doregex[getunpacked]</page>
-    </regex>
-    <regex>
-        <name>getunpacked</name>
-        <expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)' )</expres>
-        <page>http://whostreams.net/embed/$doregex[canal]</page>
-        <referer>http://whostreams.net/</referer>
-        <connection>keep-alive</connection>
-    </regex>
-	 <regex>
-        <name>canal</name>
-        <expres>net\/embed\/(.*?)"</expres>
-        <page>http://zonasports.es/cha-x.php?id=13</page>
-    </regex>
-</item>
+ 
 
 <item>
 <title>[B]Multicanal Zonasport14[/B]         </title>
