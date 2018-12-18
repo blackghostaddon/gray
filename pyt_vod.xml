@@ -1933,7 +1933,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
  
  
- <item>
+ <iem>
 <title>[B]CANALPELIS[/B] </title>
  <link>$doregex[makelist2]</link>
  
