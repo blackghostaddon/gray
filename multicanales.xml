@@ -1490,7 +1490,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	 <regex>
         <name>canal</name>
         <expres>net\/embed\/(.*?)"</expres>
-        <page>https://cndf90.blogspot.com/p/vtv-1.html</page>https://cndf90.blogspot.com/p
+        <page>https://cndf91.blogspot.com/p/vtv-1.html</page>https://cndf91.blogspot.com/p
     </regex>
 </item>
 
@@ -1514,7 +1514,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	 <regex>
         <name>canal</name>
         <expres>net\/embed\/(.*?)"</expres>
-        <page>https://cndf90.blogspot.com/p/w-1.html</page>
+        <page>https://cndf91.blogspot.com/p/w-1.html</page>
     </regex>
 </item>
 
@@ -1541,7 +1541,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	 <regex>
         <name>canal</name>
         <expres>net\/embed\/(.*?)"</expres>
-        <page>https://cndf90.blogspot.com/p/net-1.html</page>
+        <page>https://cndf91.blogspot.com/p/net-1.html</page>
     </regex>
 </item>
 
@@ -1578,7 +1578,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
    import xbmcgui
    dialog = xbmcgui.Dialog()
    ret = dialog.select('Elige un Canal ', ['vtv-1', 'vtv-2', 'vtv-3', 'who-1', 'who-2', 'who-3', 'net-1', 'net-2', 'net-3', 'w-1', 'w-2', 'w-3', 'w-1-1', 'w-2-2', 'w-3-3'])
-   lists = ['https://cndf90.blogspot.com/p/vtv-1.html', 'https://cndf90.blogspot.com/p/vtv-2.html', 'https://cndf90.blogspot.com/p/vtv-3.html', 'https://cndf90.blogspot.com/p/who-1.html', 'https://cndf90.blogspot.com/p/who-2.html', 'https://cndf90.blogspot.com/p/who-3.html', 'https://cndf90.blogspot.com/p/net-1.html', 'https://cndf90.blogspot.com/p/net-2.html', 'https://cndf90.blogspot.com/p/net-3.html', 'https://cndf90.blogspot.com/p/w-1.html', 'https://cndf90.blogspot.com/p/w-2.html', 'https://cndf90.blogspot.com/p/w-3.html', 'https://cndf90.blogspot.com/p/w-1.html', 'https://cndf90.blogspot.com/p/w-2.html', 'https://cndf90.blogspot.com/p/w-3.html']
+   lists = ['https://cndf91.blogspot.com/p/vtv-1.html', 'https://cndf91.blogspot.com/p/vtv-2.html', 'https://cndf91.blogspot.com/p/vtv-3.html', 'https://cndf91.blogspot.com/p/who-1.html', 'https://cndf91.blogspot.com/p/who-2.html', 'https://cndf91.blogspot.com/p/who-3.html', 'https://cndf91.blogspot.com/p/net-1.html', 'https://cndf91.blogspot.com/p/net-2.html', 'https://cndf91.blogspot.com/p/net-3.html', 'https://cndf91.blogspot.com/p/w-1.html', 'https://cndf91.blogspot.com/p/w-2.html', 'https://cndf91.blogspot.com/p/w-3.html', 'https://cndf91.blogspot.com/p/w-1.html', 'https://cndf91.blogspot.com/p/w-2.html', 'https://cndf91.blogspot.com/p/w-3.html']
    return lists[ret]
 ]]></expres>
 <page></page>
@@ -1587,12 +1587,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	
 </item>
 
-
-https://cndf90.blogspot.com/p/vtv-2.html#
-
-
-
-
+ 
 
 
 
@@ -2445,40 +2440,6 @@ http://canales.grupovalltv.net/espn2.html
  
 
 
-
-<item>
-<title>[B]Multicanales Brasileños[/B]    </title>
-<link>$doregex[geturl]</link>
-    <regex>
-        <name>geturl</name>
-        <expres>source:"(.*?)"</expres>
-        <page>$doregex[getunpacked]</page>
-    </regex>
-    <regex>
-        <name>getunpacked</name>
-        <expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)' )</expres>
-        <page>http://whostreams.net/embed/$doregex[canal]</page>
-        <referer>http://whostreams.net/</referer>
-        <connection>keep-alive</connection>
-    </regex>
-	 <regex>
-        <name>canal</name>
-        <expres>net\/embed\/(.*?)"</expres>
-        <page>http://sportzonline.xyz/channels/br/br$doregex[select].html</page>
-    </regex>
-	<regex>
-<name>select</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m):
-   import xbmcgui
-   dialog = xbmcgui.Dialog()
-   ret = dialog.select('Elige un Canal ', ['Canal 1', 'Canal 2', 'Canal 3', 'Canal 4', 'Canal 5'])
-   lists = ['1', '2', '3', '4', '5']
-   return lists[ret]
-]]></expres>
-<page></page>
-</regex>
-</item>
 
 
 
