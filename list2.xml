@@ -162,7 +162,7 @@ http://paypal.me/blackghost</info>
 </item>
 
 
-<item>
+<im>
 <title>KIDS [COLOR lightslategray] [/COLOR] -</title>
 <link>http://ignorame</link><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/kids.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 <externallink>$doregex[notice]</externallink>
