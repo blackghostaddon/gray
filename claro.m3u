@@ -1,458 +1,283 @@
 #EXTM3U
-#EXTINF:-1,DISCOVERY THEATER
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL351/PROFILE03.m3u8
-#EXTINF:-1,HISTORY
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL353/PROFILE03.m3u8
-#EXTINF:-1,NATGEO WILD
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL355/PROFILE03.m3u8
-#EXTINF:-1,DISCOVERY WORLD
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL356/PROFILE03.m3u8
-#EXTINF:-1,DISCOVERY CHANNEL
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL371/PROFILE03.m3u8
-#EXTINF:-1,ANIMAL PLANET
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL373/PROFILE03.m3u8
-#EXTINF:-1,H&H
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL374/PROFILE03.m3u8
-#EXTINF:-1,NATGEO
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL377/PROFILE03.m3u8
-#EXTINF:-1,LIFETIME
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL379/PROFILE03.m3u8
-#EXTINF:-1, DISCOVERY SCIENCE
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL381/PROFILE03.m3u8
-#EXTINF:-1,DISCOVERY CIVILIZATION
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL382/PROFILE03.m3u8
-#EXTINF:-1,DISCOVERY TURBO
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL383/PROFILE03.m3u8
-#EXTINF:-1,TLC
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL386/PROFILE03.m3u8
-#EXTINF:-1,WOBI
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL387/PROFILE03.m3u8
-#EXTINF:-1,EL FINANCIERO BLOOMERANG
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL610/PROFILE03.m3u8
-#EXTINF:-1,DISCOVERY THEATER HD
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL351/PROFILE05.m3u8
-#EXTINF:-1,HISTORY HD
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL353/PROFILE05.m3u8
-#EXTINF:-1,NATGEO WILD HD
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL355/PROFILE05.m3u8
-#EXTINF:-1,DISCOVERY WORLD HD
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL356/PROFILE05.m3u8
-#EXTINF:-1,DISCOVERY CHANNEL HD
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL371/PROFILE05.m3u8
-#EXTINF:-1,ANIMAL PLANET HD
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL373/PROFILE05.m3u8
-#EXTINF:-1,H&H HD
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL374/PROFILE05.m3u8
-#EXTINF:-1,NATGEO HD
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL377/PROFILE05.m3u8
-#EXTINF:-1,LIFETIME HD
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL379/PROFILE05.m3u8
-#EXTINF:-1, DISCOVERY SCIENCE HD
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL381/PROFILE05.m3u8
-#EXTINF:-1,DISCOVERY CIVILIZATION HD
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL382/PROFILE05.m3u8
-#EXTINF:-1,DISCOVERY TURBO HD
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL383/PROFILE05.m3u8
-#EXTINF:-1,TLC HD
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL386/PROFILE05.m3u8
-#EXTINF:-1,WOBI HD
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL387/PROFILE05.m3u8
-#EXTINF:-1,EL FINANCIERO BLOOMERANG HD
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL610/PROFILE05.m3u8
-#EXTINF:-1,ESPN +
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL516/PROFILE03.m3u8
-#EXTINF:-1,ESPN 3
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL520/PROFILE03.m3u8
-#EXTINF:-1,FOX SPORTS
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL522/PROFILE03.m3u8
-#EXTINF:-1,FOX SPORTS 2
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL527/PROFILE03.m3u8
-#EXTINF:-1,PX
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL528/PROFILE03.m3u8
-#EXTINF:-1,ESPN
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL558/PROFILE03.m3u8
-#EXTINF:-1,ESPN 2
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL561/PROFILE03.m3u8
-#EXTINF:-1,ESPN + HD
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL516/PROFILE05.m3u8
-#EXTINF:-1,ESPN 3 HD
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL520/PROFILE05.m3u8
-#EXTINF:-1,FOX SPORTS HD
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL522/PROFILE05.m3u8
-#EXTINF:-1,FOX SPORTS 2 HD
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL527/PROFILE05.m3u8
-#EXTINF:-1,PX HD
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL528/PROFILE05.m3u8
-#EXTINF:-1,ESPN HD
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL558/PROFILE05.m3u8
-#EXTINF:-1,ESPN 2 HD
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL561/PROFILE05.m3u8
-#EXTINF:-1,FOX HD
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL201/PROFILE03.m3u8
-#EXTINF:-1,SONY
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL203/PROFILE03.m3u8
-#EXTINF:-1,WB
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL205/PROFILE03.m3u8
-#EXTINF:-1,UNIVERSAL HD
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL207/PROFILE03.m3u8
-#EXTINF:-1,FX HD
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL209/PROFILE03.m3u8
-#EXTINF:-1,A&E HD
+#EXTINF:-1 ,A&E
 http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL211/PROFILE03.m3u8
-#EXTINF:-1,AXN HD
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL213/PROFILE03.m3u8
-#EXTINF:-1,TRUTV HD
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL215/PROFILE03.m3u8
-#EXTINF:-1,COMEDY CENTRAL
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL217/PROFILE03.m3u8
-#EXTINF:-1,UNICABLE
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL218/PROFILE03.m3u8
-#EXTINF:-1,HOLATV
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL219/PROFILE03.m3u8
-#EXTINF:-1,FASHIONTV
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL220/PROFILE03.m3u8
-#EXTINF:-1,AZCORAZON
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL250/PROFILE03.m3u8
-#EXTINF:-1,FOX
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL251/PROFILE03.m3u8
-#EXTINF:-1,BBC ENTRETAINMENT
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL253/PROFILE03.m3u8
-#EXTINF:-1,E!
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL255/PROFILE03.m3u8
-#EXTINF:-1,UNIVERSAL
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL256/PROFILE03.m3u8
-#EXTINF:-1,SYFY
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL257/PROFILE03.m3u8
-#EXTINF:-1,FX
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL258/PROFILE03.m3u8
-#EXTINF:-1,ID
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL263/PROFILE03.m3u8
-#EXTINF:-1,TNT SERIES
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL266/PROFILE03.m3u8
-#EXTINF:-1,EL GOURMET
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL268/PROFILE03.m3u8
-#EXTINF:-1,GARAGE TV
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL269/PROFILE03.m3u8
-#EXTINF:-1,GLITZ
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL270/PROFILE03.m3u8
-#EXTINF:-1,FOXLIFE
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL271/PROFILE03.m3u8
-#EXTINF:-1,DISTRITO COMEDIA
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL272/PROFILE03.m3u8
-#EXTINF:-1,TBS
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL273/PROFILE03.m3u8
-#EXTINF:-1,TLNOVELAS
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL275/PROFILE03.m3u8
-#EXTINF:-1,tve
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL651/PROFILE03.m3u8
-#EXTINF:-1,CANAL DE LAS ESTRELLAS
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL102/PROFILE03.m3u8
-#EXTINF:-1,CANAL 5
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL105/PROFILE03.m3u8
-#EXTINF:-1,AZTECA 7
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL107/PROFILE03.m3u8
-#EXTINF:-1,GALAVISION
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL109/PROFILE03.m3u8
-#EXTINF:-1,ONCE TV
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL111/PROFILE03.m3u8
-#EXTINF:-1,AZTECA 13
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL113/PROFILE03.m3u8
-#EXTINF:-1,CANAL 40
+#EXTINF:-1 ,ADN 40
 http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL140/PROFILE03.m3u8
-#EXTINF:-1,MULTIMEDIOS TV
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL167/PROFILE03.m3u8
-#EXTINF:-1,AZCLIC
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL725/PROFILE03.m3u8
-#EXTINF:-1,CANAL DE LAS ESTRELLAS HD
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL102/PROFILE05.m3u8
-#EXTINF:-1,CANAL 5 HD
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL105/PROFILE05.m3u8
-#EXTINF:-1,AZTECA 7 HD
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL107/PROFILE05.m3u8
-#EXTINF:-1,GALAVISION HD
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL109/PROFILE05.m3u8
-#EXTINF:-1,ONCE TV HD
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL111/PROFILE05.m3u8
-#EXTINF:-1,AZTECA 13 HD
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL113/PROFILE05.m3u8
-#EXTINF:-1,CANAL 40 HD
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL140/PROFILE05.m3u8
-#EXTINF:-1,MULTIMEDIOS TV HD
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL167/PROFILE05.m3u8
-#EXTINF:-1,AZCLIC HD
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL725/PROFILE05.m3u8
-#EXTINF:-1,FOX 1 HD
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL415/PROFILE03.m3u8
-#EXTINF:-1,FOX ACTION HD
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL416/PROFILE03.m3u8
-#EXTINF:-1,FOX MOVIES HD
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL417/PROFILE03.m3u8
-#EXTINF:-1,FOX CINEMA
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL421/PROFILE03.m3u8
-#EXTINF:-1,FOX CLASSIC
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL424/PROFILE03.m3u8
-#EXTINF:-1,AZCINEMA
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL425/PROFILE03.m3u8
-#EXTINF:-1,CINECANAL
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL430/PROFILE03.m3u8
-#EXTINF:-1,TNT
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL435/PROFILE03.m3u8
-#EXTINF:-1,GOLDEN
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL436/PROFILE03.m3u8
-#EXTINF:-1,FILMZONE
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL440/PROFILE03.m3u8
-#EXTINF:-1,DEPELICULA
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL442/PROFILE03.m3u8
-#EXTINF:-1,AMC
+#EXTINF:-1 ,ADN 40
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL2/PROFILE03.m3u8
+#EXTINF:-1 ,ALJAZEERA
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL192/PROFILE03.m3u8
+#EXTINF:-1 ,AMC
 http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL444/PROFILE03.m3u8
-#EXTINF:-1,SPACE
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL445/PROFILE03.m3u8
-#EXTINF:-1,FOXCINEMA
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL472/PROFILE03.m3u8
-#EXTINF:-1,FOXCLASSIC
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL478/PROFILE03.m3u8
-#EXTINF:-1,CINECANAL
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL480/PROFILE03.m3u8
-#EXTINF:-1,CINEMAX
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL481/PROFILE03.m3u8
-#EXTINF:-1,TNT
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL482/PROFILE03.m3u8
-#EXTINF:-1,EDGE
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL484/PROFILE03.m3u8
-#EXTINF:-1,AMC
+#EXTINF:-1 ,AMC
 http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL490/PROFILE03.m3u8
-#EXTINF:-1,SPACE
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL491/PROFILE03.m3u8
-#EXTINF:-1,STUDIOUNIVERSAL
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL492/PROFILE03.m3u8
-#EXTINF:-1,I.SAT
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL495/PROFILE03.m3u8
-#EXTINF:-1,TCM
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL496/PROFILE03.m3u8
-#EXTINF:-1,MTV LIVE
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL701/PROFILE03.m3u8
-#EXTINF:-1,TELEHIT
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL702/PROFILE03.m3u8
-#EXTINF:-1,VHR
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL703/PROFILE03.m3u8
-#EXTINF:-1,MTV
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL726/PROFILE03.m3u8
-#EXTINF:-1,MTV HITS
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL727/PROFILE03.m3u8
-#EXTINF:-1,1CLASSICS
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL728/PROFILE03.m3u8
-#EXTINF:-1,RITMOSON
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL731/PROFILE03.m3u8
-#EXTINF:-1,BANDAMAX
+#EXTINF:-1 ,ANIMAL PLANET
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL373/PROFILE03.m3u8
+#EXTINF:-1 ,ANTENA 3
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL199/PROFILE03.m3u8
+#EXTINF:-1 ,AXN
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL213/PROFILE03.m3u8
+#EXTINF:-1 ,AYM SPORT
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL576/PROFILE03.m3u8
+#EXTINF:-1 ,AZCLIC
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL725/PROFILE03.m3u8
+#EXTINF:-1 ,AZCORAZON
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL250/PROFILE03.m3u8
+#EXTINF:-1 ,AZMUNDO
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL276/PROFILE03.m3u8
+#EXTINF:-1 ,AZTECA 1
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL23/PROFILE03.m3u8
+#EXTINF:-1 ,AZTECA 40 HD
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL40/PROFILE03.m3u8
+#EXTINF:-1 ,AZTECA 7
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL7/PROFILE03.m3u8
+#EXTINF:-1 ,AZTECA 7 HD
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL107/PROFILE03.m3u8
+#EXTINF:-1 ,AZTECA CINEMA
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL425/PROFILE03.m3u8
+#EXTINF:-1 ,AZTECA UNO
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL113/PROFILE03.m3u8
+#EXTINF:-1 ,BABY TV
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL116/PROFILE03.m3u8
+#EXTINF:-1 ,BANDAMAX
 http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL732/PROFILE03.m3u8
-#EXTINF:-1,MTV LIVE HD
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL701/PROFILE05.m3u8
-#EXTINF:-1,TELEHIT HD
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL702/PROFILE05.m3u8
-#EXTINF:-1,VHR HD
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL703/PROFILE05.m3u8
-#EXTINF:-1,MTV HD
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL726/PROFILE05.m3u8
-#EXTINF:-1,MTV HITS HD
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL727/PROFILE05.m3u8
-#EXTINF:-1,1CLASSICS HD
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL728/PROFILE05.m3u8
-#EXTINF:-1,RITMOSON HD
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL731/PROFILE05.m3u8
-#EXTINF:-1,BANDAMAX HD
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL732/PROFILE05.m3u8
-#EXTINF:-1,Foro TV
+#EXTINF:-1 ,BBC NEWS
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL191/PROFILE03.m3u8
+#EXTINF:-1 ,BLOOMBERG
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL190/PROFILE03.m3u8
+#EXTINF:-1 ,BOOMERANG
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL324/PROFILE03.m3u8
+#EXTINF:-1 ,CADENA H
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL169/PROFILE03.m3u8
+#EXTINF:-1 ,CANAL 5
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL105/PROFILE03.m3u8
+#EXTINF:-1 ,CANAL 5 HD
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL55/PROFILE03.m3u8
+#EXTINF:-1 ,CANAL JUDICIAL
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL196/PROFILE03.m3u8
+#EXTINF:-1 ,CANAL NUEVE
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL109/PROFILE03.m3u8
+#EXTINF:-1 ,CANAL ONCE
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL111/PROFILE03.m3u8
+#EXTINF:-1 ,CARTOON NETWORK
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL320/PROFILE03.m3u8
+#EXTINF:-1 ,CINECANAL
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL430/PROFILE03.m3u8
+#EXTINF:-1 ,CINEMAX
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL481/PROFILE03.m3u8
+#EXTINF:-1 ,CNN USA
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL185/PROFILE03.m3u8
+#EXTINF:-1 ,CNN USA SD
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL186/PROFILE03.m3u8
+#EXTINF:-1 ,COMEDY CENTRAL
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL217/PROFILE03.m3u8
+#EXTINF:-1 ,COMEDY CENTRAL
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL341/PROFILE03.m3u8
+#EXTINF:-1 ,CORAZON
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL45/PROFILE03.m3u8
+#EXTINF:-1 ,DEPELICULA
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL335/PROFILE03.m3u8
+#EXTINF:-1 ,DEPELICULA HD
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL335/PROFILE03.m3u8
+#EXTINF:-1 ,DISCOVERY CHANNEL
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL371/PROFILE03.m3u8
+#EXTINF:-1 ,DISCOVERY CIVILIZATION
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL382/PROFILE03.m3u8
+#EXTINF:-1 ,DISCOVERY KIDS
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL303/PROFILE03.m3u8
+#EXTINF:-1 ,DISCOVERY THEATER
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL351/PROFILE03.m3u8
+#EXTINF:-1 ,DISCOVERY WORLD
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL356/PROFILE03.m3u8
+#EXTINF:-1 ,DISNEY CHANNEL
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL312/PROFILE03.m3u8
+#EXTINF:-1 ,DISNEY JR
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL308/PROFILE03.m3u8
+#EXTINF:-1 ,DISTRITO COMEDIA
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL272/PROFILE03.m3u8
+#EXTINF:-1 ,DISTRITO COMEDIA HD
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL272/PROFILE03.m3u8
+#EXTINF:-1 ,DPELICULA PLUS
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL442/PROFILE03.m3u8
+#EXTINF:-1 ,DW
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL654/PROFILE03.m3u8
+#EXTINF:-1 ,E! ENTRETAIMENT
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL255/PROFILE03.m3u8
+#EXTINF:-1 ,EDGE
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL484/PROFILE03.m3u8
+#EXTINF:-1 ,ESPN
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL558/PROFILE03.m3u8
+#EXTINF:-1 ,ESPN 2
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL561/PROFILE03.m3u8
+#EXTINF:-1 ,ESPN 3
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL520/PROFILE03.m3u8
+#EXTINF:-1 ,ESPN+
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL516/PROFILE03.m3u8
+#EXTINF:-1 ,ESTRELLAS
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL102/PROFILE03.m3u8
+#EXTINF:-1 ,EURO CHANNEL
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL136/PROFILE03.m3u8
+#EXTINF:-1 ,FILM&ARTS
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL137/PROFILE03.m3u8
+#EXTINF:-1 ,FORMULA TV
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL161/PROFILE03.m3u8
+#EXTINF:-1 ,FORO TV
 http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL104/PROFILE03.m3u8
-#EXTINF:-1,MILENIO
-http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL603/PROFILE03.m3u8 
-
-#EXTINF:0 tvg-logo="http://www.artsploitationfilms.com/wp-content/uploads/2018/02/TRAUMA-Teaser-poster-TerrorMolins-1.jpg", Trauma | REGIOFLIX
-http://regioflix.com/jek141218/tr4um42017SRREGIO.mkv
-#EXTINF:0 tvg-logo="http://es.web.img3.acsta.net/r_1280_720/medias/nmedia/18/82/42/49/20415955.jpg", Solo en casa 2 Perdido en Nueva York | REGIOFLIX
-http://regioflix.com/jek141218/SoloEnCasa2SRREGIO.mkv
-#EXTINF:0 tvg-logo="http://es.web.img3.acsta.net/r_1280_720/pictures/18/07/18/09/54/4158587.jpg", Escuela para Fracasados | REGIOFLIX
-http://regioflix.com/jek141218/n1ghtsch00l2018SRREGIO.mkv
-#EXTINF:0 tvg-logo="https://i2.wp.com/cdn.flickeringmyth.com/wp-content/uploads/2018/10/Elves-1.jpg", Elves Subtitulado | REGIOFLIX
-https://archive.org/download/ElvesSubSRREGIO/ElvesSubSRREGIO.mkv
-#EXTINF:0 tvg-logo="http://es.web.img3.acsta.net/r_1280_720/pictures/18/05/16/12/03/5770902.jpg", Plan de Escape 2 | REGIOFLIX
-http://regioflix.com/jek141218/3sc4p3pl4n20118SRREGIO.mkv
-#EXTINF:0 tvg-logo="https://m.media-amazon.com/images/M/MV5BMjAzOTM2OTAyNF5BMl5BanBnXkFtZTgwNTg5ODg1NTM@._V1_SY1000_SX675_AL_.jpg", Christopher Robin | REGIOFLIX
-http://regioflix.com/jek141218/chr1st0ph3rr0b1nSRREGIO.mkv
-#EXTINF:0 tvg-logo="http://www.tintacinefila.com/wp-content/uploads/2018/10/0001001524.jpg", Nace una Estrella | REGIOFLIX
-http://regioflix.com/jek141218/NaceunaestrellaSUBSRREGIO.mkv
-#EXTINF:0 tvg-logo="http://es.web.img3.acsta.net/r_1280_720/pictures/18/05/22/12/30/2682531.jpg", Mowgli| REGIOFLIX
-http://regioflix.com/jek141218/m0wgl1l3g3nd0fth3jungl3SREGIO.mkv
-#EXTINF:0 tvg-logo="https://m.media-amazon.com/images/M/MV5BMTgyODU5NTYzMF5BMl5BanBnXkFtZTgwMjA2OTcyNTM@._V1_.jpg", Dark Crimes | REGIOFLIX
-http://regioflix.com/jek141218/Darkcrimes2018SRREGIO.mkv
-#EXTINF:0 tvg-logo="https://i.prcdn.co/img?regionKey=8gCXtyw0izqLpnVLM%2FuUUQ%3D%3D&scale=100", Pie Pequeno | REGIOFLIX
-http://regioflix.com/jek141218/PiePquenoSRREGIO.mkv
-#EXTINF:0 tvg-logo="http://es.web.img3.acsta.net/r_1280_720/pictures/18/07/16/16/19/2321171.jpg", Kin SUBTITULADO | REGIOFLIX
-http://regioflix.com/jek141218/KinSubSRREGIO.mkv
-#EXTINF:0 tvg-logo="http://1.bp.blogspot.com/-jb-mwCT8b6k/VkuHdE1dtcI/AAAAAAAAgrA/oVXoEPUgwjE/s640/Una_Buena_Receta_Poster_Argentino_JPosters.png", Una Buena Receta | REGIOFLIX
-http://regioflix.com/jek141218/UnaBuenaRecetaSRREGIO.mkv
-#EXTINF:0 tvg-logo="http://gnula.nu/wp-content/uploads/2018/12/My_Little_Pony_Best_Gift_Ever_poster_usa.jpg", My Little Pony | REGIOFLIX
-http://regioflix.com/jek141218/myl1ttl3p0nyfr13ndsh1p1sm4g1cb3stg1ft3v3rSRREGIO.mkv
-#EXTINF:0 tvg-logo="http://es.web.img3.acsta.net/r_1280_720/pictures/16/09/28/17/19/570746.jpg", Animales Fantasticos y Donde Encontrarlos | REGIOFLIX
-http://regioflix.com/jek141218/AnimalesFantsticosyDondeEncontrarlosSRREGIO.mkv
-#EXTINF:0 tvg-logo="http://es.web.img3.acsta.net/r_1280_720/pictures/18/10/10/16/04/5479886.jpg", Las Cronicas de Navidad | REGIOFLIX
-http://regioflix.com/jek141218/CronicasDeNavidadSRREGIO.mkv
-#EXTINF:0 tvg-logo="https://m.media-amazon.com/images/M/MV5BMjM5MDk2NDIxMF5BMl5BanBnXkFtZTgwNjU5NDk3NTM@._V1_.jpg", Depredador 2018 | REGIOFLIX
-http://regioflix.com/jek141218/th3pr3d4t0r2018SRREGIO.mkv
-#EXTINF:0 tvg-logo="http://es.web.img3.acsta.net/r_1280_720/pictures/18/08/14/15/35/4396669.jpg", La Monja | REGIOFLIX
-http://regioflix.com/jek141218/LaMonjaSRREGIO.mkv
-#EXTINF:0 tvg-logo="http://es.web.img3.acsta.net/r_1280_720/pictures/18/09/05/18/45/0995261.jpg", La Noche de Halloween | REGIOFLIX
-http://regioflix.com/jek141218/LaNochedeHalloween2018SRREGIO.mkv
-#EXTINF:0 tvg-logo="http://www.elfinanciero.com.mx/uploads/2018/04/24/b2945042291524605808.jpeg", Venom | REGIOFLIX
-http://regioflix.com/jek141218/VENOMLATSRREGIO.mkv
-#EXTINF:0 tvg-logo="https://netzoe.com/wp-content/uploads/2018/09/ya_veremos_xxlg-717x1024.jpg", Ya Veremos | REGIOFLIX
-http://regioflix.com/jek141218/y4v3r3m0s2018SRREGIO.mkv
-#EXTINF:0 tvg-logo="http://www.elfinanciero.com.mx/uploads/2018/04/24/b2945042291524605808.jpeg", Venom Subtitulada | REGIOFLIX
-http://regioflix.com/jek141218/v3n0m2018hdrip720psubespSRREGIO.mkv
-#EXTINF:0 tvg-logo="http://es.web.img2.acsta.net/r_1280_720/medias/nmedia/18/82/96/95/20067607.jpg", El Gato en el Sombrero | REGIOFLIX
-https://archive.org/download/325465NavidadRegio/325465NavidadRegio.mkv
-#EXTINF:0 tvg-logo="https://images-na.ssl-images-amazon.com/images/I/71ry1Dw6nBL._SY445_.jpg", Charlie y la Fabrica de Chocolate | REGIOFLIX
-https://archive.org/download/Navidad23112018SRREGIO/Navidad23112018SRREGIO.mkv
-#EXTINF:0 tvg-logo="http://es.web.img2.acsta.net/r_1280_720/medias/nmedia/18/82/42/47/20420623.jpg", Solo en Casa | REGIOFLIX
-https://archive.org/download/Navidad0223112018SRREGIO/Navidad0223112018SRREGIO.mkv
-#EXTINF:0 tvg-logo="http://es.web.img3.acsta.net/r_1280_720/medias/nmedia/18/85/67/69/19852620.jpg", Operacion Regalo | REGIOFLIX
-https://archive.org/download/Navidad321SRREGIO/Navidad321SRREGIO.mkv
-#EXTINF:0 tvg-logo="https://imgc.allpostersimages.com/img/print/u-g-F4S60G0.jpg?w=304&h=450", El Grinch | REGIOFLIX
-https://archive.org/download/601000SRREGIO/601000SRREGIO.mkv
-#EXTINF:0 tvg-logo="https://imgc.allpostersimages.com/img/print/posters/regreso-al-futuro_a-G-1651411-0.jpg", Volver al Futuro | REGIOFLIX
-https://archive.org/download/VolvAFuSRREGIO/VolvAFuSRREGIO.mkv
-#EXTINF:0 tvg-logo="https://m.media-amazon.com/images/M/MV5BMTY0Nzg2Mzg2OV5BMl5BanBnXkFtZTgwNjE1NDM4NTM@._V1_.jpg", La Bruja en la Ventana SUBTITULADO | REGIOFLIX
-https://archive.org/download/70452SRREGIO/70452SRREGIO.mkv
-#EXTINF:0 tvg-logo="https://vignette.wikia.nocookie.net/doblaje/images/e/ee/Eso_%281990%29_Car%C3%A1tula.jpg/revision/latest?cb=20171020012317&path-prefix=es", Eso (It) 1990 | REGIOFLIX
-https://archive.org/download/17350SRREGIO/17350SRREGIO.mp4
-#EXTINF:0 tvg-logo="https://m.media-amazon.com/images/M/MV5BZjM2ZTU5M2ItYzU2My00NGE1LWFmNzEtNTM3M2M5Y2ZlZTdlXkEyXkFqcGdeQXVyMzQyMjU3MjI@._V1_.jpg", Eres mi Pasion | SRREGIO.NET
-https://archive.org/download/3rSRREGIOd/3rSRREGIOd.mp4
-#EXTINF:0 tvg-logo="https://vignette.wikia.nocookie.net/doblaje/images/8/81/Bad_Cat_movie_poster.jpg/revision/latest?cb=20170501140634&path-prefix=es", Bad Cat | SRREGIO.NET
-https://archive.org/download/k0tSRR3610/k0tSRR3610.mkv
-#EXTINF:0 tvg-logo="https://m.media-amazon.com/images/M/MV5BMTU0MjAwMDkxNV5BMl5BanBnXkFtZTgwMTA4ODIxNjM@._V1_.jpg", Next Gen | SRREGIO.NET
-https://archive.org/download/n3xSRR3610/n3xSRR3610.mkv
-#EXTINF:0 tvg-logo="http://s3-eu-west-1.amazonaws.com/abandomedia/db/foto/db_32657_27.jpg", Tragedy Girls | SRREGIO.NET
-https://archive.org/download/tr4gSRREG10/tr4gSRREG10.mkv
-#EXTINF:0 tvg-logo="http://blog.audiomu.com/wp-content/uploads/2018/06/hereditary-poster-2.jpg", El Legado del Diablo | SRREGIO.NET
-https://archive.org/download/hed14SRRE610/hed14SRRE610.mkv
-#EXTINF:0 tvg-logo="http://style.shockvisual.net/wp-content/uploads/2017/11/todo-el-dinero-del-mundo.jpg", Todo El Dinero Del Mundo | REGIOFLIX
-http://regiotv.xyz/todoeldinerodelmundo
-#EXTINF:0 tvg-logo="https://lasentinel.net/wp-content/uploads/sites/5/2017/11/ENT-Mudbound_IMG-2.jpg", Mudbound | REGIOFLIX
-http://srregio.xyz/mudbound
-#EXTINF:0 tvg-logo="https://i0.wp.com/teaser-trailer.com/wp-content/uploads/The-Cured-Philippines-poster.jpg?ssl=1", The Cured 
-http://srregio.xyz/thecure
-#EXTINF:0 tvg-logo="http://es.web.img2.acsta.net/r_1280_720/medias/nmedia/18/66/99/88/20350578.jpg", Los Extranos 
-http://regiotv.xyz/losextranos
-#EXTINF:0 tvg-logo="https://dld73rc7kvi9r.cloudfront.net/cineimage/poster/large/banner-5857152831507565202.jpg", Hasta Pronto Christoper Robin 
-http://regiotv.xyz/christoperrobin
-#EXTINF:0 tvg-logo="http://es.web.img3.acsta.net/r_1280_720/medias/nmedia/18/86/21/14/19828283.jpg", Talento De Barrio 
-http://regiotv.xyz/talentodebarrio
-#EXTINF:0 tvg-logo="https://1.bp.blogspot.com/-QhVGoY0iE7o/WlO7gegXBkI/AAAAAAAACHs/VM5rexxAYVUhfula67f7r7gpOuq_6akIgCLcBGAs/s1600/Mom%2BAnd%2BDad.jpg", Mom & Dad SUB 
-http://regiotv.xyz/momanddad
-#EXTINF:0 tvg-logo="https://1.bp.blogspot.com/-QhVGoY0iE7o/WlO7gegXBkI/AAAAAAAACHs/VM5rexxAYVUhfula67f7r7gpOuq_6akIgCLcBGAs/s1600/Mom%2BAnd%2BDad.jpg", Mom & Dad 
-http://regiotv.xyz/momanddadLAT
-#EXTINF:0 tvg-logo="https://imagenes.gatotv.com/categorias/peliculas/posters/24_horas_para_vivir.jpg", 24hrs Para Sobrevivir SUB 
-http://regiotv.xyz/24hrssobrevivir
-#EXTINF:0 tvg-logo="http://style.shockvisual.net/wp-content/uploads/2018/04/pesadilla.jpg", Pesadilla Siniestra 
-http://regiotv.xyz/pesadillasiniestra
-#EXTINF:0 tvg-logo="https://vignette.wikia.nocookie.net/doblaje/images/c/cd/10000.jpg/revision/latest?cb=20090919041142&path-prefix=es", 10000 B.C 
-https://movies1.ottmex.com/disk1/accion/10000.MP4
-#EXTINF:0 tvg-logo="https://fanart.tv/api/download.php?type=download&image=125991&section=3", 12 Rounds 3 Lockdown 
-https://movies1.ottmex.com/disk1/accion/12.r0unds.3.l0ckd0wn.2016.dvdrip.latino.gnula1.mp4.mp4
-#EXTINF:0 tvg-logo="https://http2.mlstatic.com/dvd-13-guerreros-the-13th-warrior-john-mctiernan-ban-D_NQ_NP_192121-MLM20703940513_052016-F.jpg", 13 Guerreros 
-https://movies1.ottmex.com/disk1/accion/13guerreros.MP4
-#EXTINF:0 tvg-logo="http://fdzeta.com/subir/images/jLGYP.jpg", Todo Poderoso 
-https://bit.ly/2GajoTS
-#EXTINF:0 tvg-logo="https://i.pinimg.com/originals/95/6e/17/956e17f1164ebb2a6d9a95e6a89f4041.jpg", La Leyenda de la Nahuala 
-https://bit.ly/2wBzaYz
-#EXTINF:0 tvg-logo="https://vignette.wikia.nocookie.net/doblaje/images/2/25/Mul%C3%A1n_p%C3%B3ster_2.jpg/revision/latest?cb=20161112223133&path-prefix=es", Mulan 
-https://movies1.ottmex.com/disk1/drama/Mulan.2009.mp4
-#EXTINF:0 tvg-logo="https://3.bp.blogspot.com/-nFLhtyQDFR4/Vux-PnZCpZI/AAAAAAAAirU/F3mcY7HNSn067Zy3LkRDonZbjMMM3GxkQ/s00/Que_Culpa_Tiene_el_Ni%25C3%25B1o_Poster_JPosters.jpg", Que Culpa Tiene el Nino 
-https://bit.ly/2wBG4x8
-#EXTINF:0 tvg-logo="https://images-na.ssl-images-amazon.com/images/I/61id7dm4b6L._SY679_.jpg", Terminator 2 
-https://movies1.ottmex.com/vod/peliculas/sci-fi/Terminator.2.mkv
-#EXTINF:0 tvg-logo="https://i2.wp.com/cdn.cinepapaya.com/stat/img/static-cp/cine/movietranslation/3-idiotas-poster-1494884216.jpg?resize=692%2C1024&ssl=1", 3 idiotas 
-http://srregio.xyz/regioflix/3idiotas
-#EXTINF:0 tvg-logo="http://www.cailegdl.com/wp-content/uploads/2018/03/red_sparrow_poster.jpg", Operacion Red Sparrow 
-http://regiotv.xyz/regioflix/redsparrow
-#EXTINF:0 tvg-logo="https://4.bp.blogspot.com/-0dx-Z5jsVyw/Ws5bDjzstgI/AAAAAAAAoq0/Cbhps_UNSJQN_dBN7i16qSUUuH2PWjiMQCLcBGAs/s1600/Anon_Poster_UK_JPosters.jpg", Anon 
-http://srregio.xyz/regioflix/anon
-#EXTINF:0 tvg-logo="https://static1.squarespace.com/static/592f3443db29d6c96a19b5dc/t/59f10287b7411c32b423485c/1508967068270/Samson.png", Samson 
-http://srregio.xyz/regioflix/samson
-#EXTINF:0 tvg-logo="https://4.bp.blogspot.com/-C2P_LCyOn6Q/WjJGd2Z-JZI/AAAAAAAAaiU/RU9mzczQwWgHFqvl__LPSRH9gn5yYsW4ACLcBGAs/s1600/1517%2Btres%2Ba%2Bparis.jpg", 15:17 Tren a Paris 
-http://srregio.xyz/regioflix/trenaparis
-#EXTINF:0 tvg-logo="http://es.web.img3.acsta.net/r_1280_720/medias/nmedia/18/78/40/96/20433085.jpg", La Fuerza De La Ilusion 
-https://archive.org/download/LFdlISRREGIO/LFdlISRREGIO.mkv
-#EXTINF:0 tvg-logo="http://turquesapop.fm/wp-content/uploads/2018/01/when-we-met-poster.jpg", Cuando nos Conocimos 
-https://archive.org/download/CuNoCoSRREGIO/CuNoCoSRREGIO.mkv
-#EXTINF:0 tvg-logo="http://www.fotogramas.es/var/ezflow_site/storage/images/peliculas/la-forma-del-agua/135589642-3-esl-ES/La-forma-del-agua.jpg", La Forma del Agua SUBTITULADO 
-https://archive.org/download/ThSRREGIO_201802/ThSRREGIO.mkv
-#EXTINF:0 tvg-logo="https://images-na.ssl-images-amazon.com/images/M/MV5BMTQ5MjQ0OTA4OF5BMl5BanBnXkFtZTcwNTkxODYyOQ@@._V1_UY268_CR3,0,182,268_AL_.jpg", Nosotros Los Nobles 
-https://archive.org/download/NoLoNoSRREGIO_20180212/NoLoNoSRREGIO.mp4
-#EXTINF:0 tvg-logo="http://www.joblo.com/posters/images/full/cloverfield-3-poster-xl.jpg", The Cloverfield Paradox 
-https://ia801509.us.archive.org/32/items/tcSRREGIO/tcSRREGIO.mp4
-#EXTINF:0 tvg-logo="https://cdn.traileraddict.com/content/vertical-entertainment/terminus-poster.jpg", Terminus 
-https://archive.org/download/TerSSRREGIO/TerSSRREGIO.mkv
-#EXTINF:0 tvg-logo="https://images-na.ssl-images-amazon.com/images/I/51Gh9OaWVcL.jpg", Deadpool 
-https://archive.org/download/DeSRREGIO_201802/DeSRREGIO.mkv
-#EXTINF:0 tvg-logo="https://i1.wp.com/www.proximosestrenos.com.ar/wp-content/uploads/2015/04/poster-intensamente.jpg", Intensamente 
-https://archive.org/download/IntMSRREGIO/IntMSRREGIO.mkv
-#EXTINF:0 tvg-logo="https://i1.wp.com/bloody-disgusting.com/wp-content/uploads/2017/10/jigsaw-poster.jpg", JIGSAW VIII 
-https://archive.org/download/JS8SRREGIO_201801/JS8SRREGIO.mkv
-#EXTINF:0 tvg-logo="https://larryfire.files.wordpress.com/2016/09/18.jpg", Doctor Strange 
-https://ia801505.us.archive.org/11/items/dsSRREGIO/dsSRREGIO.mp4
-#EXTINF:0 tvg-logo="https://i.ytimg.com/vi/aXM71fy0HOw/movieposter.jpg", Redada Asesina 
-https://archive.org/download/ReAsSRREGIO/ReAsSRREGIO.mkv
-#EXTINF:0 tvg-logo="http://www.fotogramas.es/var/ezflow_site/storage/images/media/imagenes/recursos/js/137663962-1-esl-ES/js.jpg", SAW VIII SUBTITULADO 
-https://archive.org/download/SVIIISRREGIO/SVIIISRREGIO.mkv
-#EXTINF:0 tvg-logo="https://cdn.cinematerial.com/p/297x/i38iqtjb/konvert-russian-movie-poster-md.jpg", Konvert SUBTITULADO 
-https://archive.org/download/KonSRREGIO/KonSRREGIO.mkv
-#EXTINF:0 tvg-logo="https://s-media-cache-ak0.pinimg.com/originals/e3/be/cf/e3becf68be3b70267da3bc3def5ed075.jpg", Civil War 
-https://archive.org/download/CiWaSRREGIO/CiWaSRREGIO.mkv
-#EXTINF:0 tvg-logo="http://multianime.com.mx/wp-content/uploads/2017/06/melanie-zombie-jpg.jpg", Melanie Apocalipsis Zombie 
-https://archive.org/download/meapzoSRRREGIO/meapzoSRRREGIO.mkv
-#EXTINF:0 tvg-logo="https://vignette2.wikia.nocookie.net/doblaje/images/b/b3/Fragile-2.jpg/revision/latest?cb=20131104070609&path-prefix=es", Fragiles 
-https://archive.org/download/FraSRREGIO/FraSRREGIO.mkv
-#EXTINF:0 tvg-logo="https://s-media-cache-ak0.pinimg.com/originals/a2/5f/28/a25f2804fc990551b81458dc2c261140.jpg", Atomica 
-https://archive.org/download/AtoSRRegio/AtoSRRegio.mkv
-#EXTINF:0 tvg-logo="https://pics.filmaffinity.com/gam_man_da_song_si-869494436-large.jpg", Zombiology 
-https://archive.org/download/Zy.SRREGIO/Zy.SRREGIO.mkv
-#EXTINF:0 tvg-logo="https://pics.filmaffinity.com/house_of_the_witch_night_of_the_witch_tv-754308582-large.jpg", La Noche de la Bruja 
-https://archive.org/download/howibr.SRREGIO/h0us3.0f.th3.w1tch.SRREGIO.mkv
-#EXTINF:0 tvg-logo="http://cdn.bloody-disgusting.com/wp-content/uploads/2016/08/ouija_two_ver4_xlg.jpg", Quija 
-https://archive.org/download/quiSRREGIO/quiSRREGIO.mkv
-#EXTINF:0 tvg-logo="https://images.moviepilot.com/images/c_limit,q_auto:good,w_600/gr7omjwa0gueamswfgbc/jeepers-creepers-3-poster-revealed-but-are-the-fan-posters-better.jpg", Jeepers Creepers 3 
-https://archive.org/download/JeeCre3SRREGIO/JeeCre3SRREGIO.mkv
-#EXTINF:0 tvg-logo="http://www.aytojaen.es/portal/RecursosWeb/IMAGENES/1/0_16765_1.jpg", Valerian y la ciudad de los mil planetas 
-https://archive.org/download/ValeSRREGIO/ValeSRREGIO.mkv
-#EXTINF:0 tvg-logo="https://imagessl6.casadellibro.com/m/ig/6/2650976.jpg", El Rostro De Un Angel 
-https://archive.org/download/angelSRREGIO/el.rostro.de.un.angelSRREGIO.mkv
-#EXTINF:0 tvg-logo="https://images-na.ssl-images-amazon.com/images/M/MV5BMTQ5NTE5OTI2MV5BMl5BanBnXkFtZTgwNzc1NzY1NDE@._V1_.jpg", Una Loca Pelicula de The Walking Dead 
-https://archive.org/download/DocumentalZombieSRREGIO/The%20Walking%20DeadSRREGIO.mkv
-#EXTINF:0 tvg-logo="http://www.miracine.com/imagenes/peliculas/Sangre-por-sangre.jpg", Sangre por Sangre 
-https://archive.org/download/54n6r3.SrRegio/Sangre.por.Sangre.SrRegio.mp4
-#EXTINF:0 tvg-logo="http://br.web.img3.acsta.net/c_215_290/pictures/17/09/06/11/27/0502981.jpg", Wheelman 
-https://archive.org/download/96352487.SRREGIO.NET/96352487.SRREGIO.NET.mp4
-#EXTINF:0 tvg-logo="http://www.dreadcentral.com/wp-content/uploads/2016/03/amityville_the_awakening.jpg", Amytiville El Despertar 
-https://archive.org/download/4w4k3n1ng.SRREGIO/4w4k3n1ng.SRREGIO.mkv
-#EXTINF:0 tvg-logo="https://upload.wikimedia.org/wikipedia/en/5/53/L.O.R.D_Legend_of_Ravaging_Dynasties_poster.jpeg", L.O.R.D The Legend Of Ravaging Dynasties 
-https://archive.org/download/L.SRREGIOt/L.SRREGIOt.mkv
-#EXTINF:0 tvg-logo="https://imgc.allpostersimages.com/img/print/posters/remember-the-titans_a-G-8032900-0.jpg", Duelo de Titanes 
-https://archive.org/download/dudtitSRREGIO/Duelo%20de%20Titanes.SRREGIO.mkv
-#EXTINF:0 tvg-logo="http://photos1.blogger.com/blogger/3339/858/1600/rv_bigreleaseposter.jpg", Locas Vacaciones Sobre Ruedas 
-https://archive.org/download/PacruedSRREGIO.NET/PacruedSRREGIO.NET.mkv
-#EXTINF:0 tvg-logo="https://4.bp.blogspot.com/-8liUO6T7xKk/WN6efg85dzI/AAAAAAAAT6k/lpWPvh7Bkogfe6YzYKSzuvaFWcUjqjVIwCK4B/s1600/17492367_1249808975105083_2074598002289798083_o.jpg", Annabelle La Creacion 
-https://archive.org/download/4nnSRREGIO.NET/4nnSRREGIO.NET.mkv
-#EXTINF:0 tvg-logo="https://s-media-cache-ak0.pinimg.com/originals/61/55/32/61553207d1d9594c8d0313fcdd145d63.jpg", Colors CASTELLANO 
-https://archive.org/download/SRREGIO.NETColores/Cos.7p.CAS.avi.mp4
-#EXTINF:0 tvg-logo="https://movierob.files.wordpress.com/2017/04/get-out.jpg?w=203&h=300", Huye 
-https://ia601500.us.archive.org/27/items/Cheverefans0012017/cheverefans%200012017.mp4?null=
-#EXTINF:0 tvg-logo="https://i1.wp.com/bloody-disgusting.com/wp-content/uploads/2017/05/Alien-Covenant-2.jpg?resize=503%2C755", Alien Covenant 
-http://ow.ly/SgXZ30eXN93?CONEXION?null=
-#EXTINF:0 tvg-logo="http://images.eonline.com/eol_images/Entire_Site/2014516//rs_634x939-140616200855-634.Guardians-of-the-Galaxy-Posters.1.ms.061614.jpg", Guardianes de la Galaxia 
-https://goo.gl/sFaEVq
-#EXTINF:0 tvg-logo="http://www.leelibros.com/biblioteca/files/images/El_Cementerio_Viviente.jpg", Cementerio de Mascotas 
-https://archive.org/download/06052017AQC06052017/06052017_AQC.avi
-
-
-
-
+#EXTINF:-1 ,FOX
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL201/PROFILE03.m3u8
+#EXTINF:-1 ,FOX ACTION
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL416/PROFILE03.m3u8
+#EXTINF:-1 ,FOX CHANNEL
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL251/PROFILE03.m3u8
+#EXTINF:-1 ,FOX CINEMA
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL421/PROFILE03.m3u8
+#EXTINF:-1 ,FOX CLASSICS
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL424/PROFILE03.m3u8
+#EXTINF:-1 ,FOX LIFE
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL271/PROFILE03.m3u8
+#EXTINF:-1 ,FOX MOVIES
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL417/PROFILE03.m3u8
+#EXTINF:-1 ,FOX NEWS
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL188/PROFILE03.m3u8
+#EXTINF:-1 ,FOX SERIES
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL415/PROFILE03.m3u8
+#EXTINF:-1 ,FOX SPORTS
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL522/PROFILE03.m3u8
+#EXTINF:-1 ,FOX SPORTS
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL194/PROFILE03.m3u8
+#EXTINF:-1 ,FOX SPORTS 2
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL173/PROFILE03.m3u8
+#EXTINF:-1 ,FOX SPORTS 2
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL527/PROFILE03.m3u8
+#EXTINF:-1 ,FOX SPORTS 3
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL178/PROFILE03.m3u8
+#EXTINF:-1 ,FOX SPORTS HD
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL194/PROFILE03.m3u8
+#EXTINF:-1 ,FX
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL209/PROFILE03.m3u8
+#EXTINF:-1 ,FXM
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL332/PROFILE03.m3u8
+#EXTINF:-1 ,FXM
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL440/PROFILE03.m3u8
+#EXTINF:-1 ,GARAJE TV
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL269/PROFILE03.m3u8
+#EXTINF:-1 ,GLITZ
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL270/PROFILE03.m3u8
+#EXTINF:-1 ,GOLDEN
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL123/PROFILE03.m3u8
+#EXTINF:-1 ,GOLDEN PLUS
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL436/PROFILE03.m3u8
+#EXTINF:-1 ,GOLF
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL179/PROFILE03.m3u8
+#EXTINF:-1 ,GOURMET
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL268/PROFILE03.m3u8
+#EXTINF:-1 ,H&H
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL374/PROFILE03.m3u8
+#EXTINF:-1 ,HISTORY
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL353/PROFILE03.m3u8
+#EXTINF:-1 ,HLN CHANNEL
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL197/PROFILE03.m3u8
+#EXTINF:-1 ,I SAT
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL495/PROFILE03.m3u8
+#EXTINF:-1 ,ID
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL263/PROFILE03.m3u8
+#EXTINF:-1 ,iHOLA TV
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL219/PROFILE03.m3u8
+#EXTINF:-1 ,INGENIO TV
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL401/PROFILE03.m3u8
+#EXTINF:-1 ,LAS ESTRELLAS
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL52/PROFILE03.m3u8
+#EXTINF:-1 ,LIFETIME
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL379/PROFILE03.m3u8
+#EXTINF:-1 ,MAS CHIC
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL221/PROFILE03.m3u8
+#EXTINF:-1 ,MEXIQUENSE TV
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL44/PROFILE03.m3u8
+#EXTINF:-1 ,MILENIO TV
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL603/PROFILE03.m3u8
+#EXTINF:-1 ,MORBIDO
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL470/PROFILE03.m3u8
+#EXTINF:-1 ,MTV
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL726/PROFILE03.m3u8
+#EXTINF:-1 ,MTV HITS
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL727/PROFILE03.m3u8
+#EXTINF:-1 ,MTV LIVE
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL701/PROFILE03.m3u8
+#EXTINF:-1 ,MULTIMEDIOS
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL167/PROFILE03.m3u8
+#EXTINF:-1 ,NAT GEO
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL377/PROFILE03.m3u8
+#EXTINF:-1 ,NATGEO WILD
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL355/PROFILE03.m3u8
+#EXTINF:-1 ,NICJ JR.
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL310/PROFILE03.m3u8
+#EXTINF:-1 ,NICK
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL315/PROFILE03.m3u8
+#EXTINF:-1 ,NICK HD
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL317/PROFILE03.m3u8
+#EXTINF:-1 ,NICKTOONS
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL314/PROFILE03.m3u8
+#EXTINF:-1 ,PX SPORTS
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL528/PROFILE03.m3u8
+#EXTINF:-1 ,RMS
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL731/PROFILE03.m3u8
+#EXTINF:-1 ,SCI
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL381/PROFILE03.m3u8
+#EXTINF:-1 ,SONY
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL203/PROFILE03.m3u8
+#EXTINF:-1 ,SPACE
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL445/PROFILE03.m3u8
+#EXTINF:-1 ,SPACE HD
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL491/PROFILE03.m3u8
+#EXTINF:-1 ,STUDIO
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL492/PROFILE03.m3u8
+#EXTINF:-1 ,SUNDANCE
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL69/PROFILE03.m3u8
+#EXTINF:-1 ,SYFY
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL257/PROFILE03.m3u8
+#EXTINF:-1 ,TBS
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL273/PROFILE03.m3u8
+#EXTINF:-1 ,TCM
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL496/PROFILE03.m3u8
+#EXTINF:-1 ,TCM HD
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL496/PROFILE03.m3u8
+#EXTINF:-1 ,TELHIT PLUS
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL702/PROFILE03.m3u8
+#EXTINF:-1 ,TIIN
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL325/PROFILE03.m3u8
+#EXTINF:-1 ,TLC
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL386/PROFILE03.m3u8
+#EXTINF:-1 ,TLNOVELAS
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL275/PROFILE03.m3u8
+#EXTINF:-1 ,TNT
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL435/PROFILE03.m3u8
+#EXTINF:-1 ,TNT HD
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL482/PROFILE03.m3u8
+#EXTINF:-1 ,TNT SERIES
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL266/PROFILE03.m3u8
+#EXTINF:-1 ,TOONCAST
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL328/PROFILE03.m3u8
+#EXTINF:-1 ,TOTALPLAY TV
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL1/PROFILE03.m3u8
+#EXTINF:-1 ,TRU TV
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL215/PROFILE03.m3u8
+#EXTINF:-1 ,TVE
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL651/PROFILE03.m3u8
+#EXTINF:-1 ,UNICABLE
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL66/PROFILE03.m3u8
+#EXTINF:-1 ,UNIVERSAL
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL207/PROFILE03.m3u8
+#EXTINF:-1 ,VH1
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL735/PROFILE03.m3u8
+#EXTINF:-1 ,VH1 CLASSICS
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL728/PROFILE03.m3u8
+#EXTINF:-1 ,VH1 HD
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL703/PROFILE03.m3u8
+#EXTINF:-1 ,WARNER
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL205/PROFILE03.m3u8
+#EXTINF:-1 ,WOBI
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL387/PROFILE03.m3u8
+#EXTINF:-1 ,XD
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL322/PROFILE03.m3u8
+#EXTINF:-1 ,UNICABLE
+http://sl.cdn.iutpcdn.com/LIVE/H01/CANAL218/PROFILE03.m3u8
