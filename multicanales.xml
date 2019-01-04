@@ -1384,9 +1384,6 @@ def GetLSProData(page_data,Cookie_Jar,m):#streamwatcher2013
 
 
 
-
-
-
  <item>
 <title>[B]Multicanal RIVO 01 [/B]   </title>
 <link>$doregex[get-id]</link>
@@ -1394,6 +1391,19 @@ def GetLSProData(page_data,Cookie_Jar,m):#streamwatcher2013
 <name>get-id</name>
 <expres>file:"([^"]+)</expres>
 <page>http://widestream.io/embed-44241</page> 
+</regex>
+ <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+
+
+ <item>
+<title>[B]Multicanal RIVO 01-2 [/B]   </title>
+<link>$doregex[get-id]</link>
+<regex>
+<name>get-id</name>
+<expres>file:"([^"]+)</expres>
+<page>http://widestream.io/embed-44251</page> 
 </regex>
  <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
@@ -1415,7 +1425,7 @@ def GetLSProData(page_data,Cookie_Jar,m):#streamwatcher2013
 	 <regex>
         <name>canal</name>
         <expres>net\/embed\/(.*?)"</expres>
-        <page>http://in.xrivonet.info/32h.html</page>
+        <page>http://in.xrivonet.info/11c.html</page>
     </regex>
 </item>
 
@@ -1490,9 +1500,10 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	 <regex>
         <name>canal</name>
         <expres>net\/embed\/(.*?)"</expres>
-        <page>https://cndf91.blogspot.com/p/vtv-1.html</page>https://cndf91.blogspot.com/p
+        <page>https://cndf92.blogspot.com/p/vtv-1.html</page>https://cndf92.blogspot.com/p
     </regex>
 </item>
+
 
 
 
@@ -1514,7 +1525,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	 <regex>
         <name>canal</name>
         <expres>net\/embed\/(.*?)"</expres>
-        <page>https://cndf91.blogspot.com/p/w-1.html</page>
+        <page>https://cndf92.blogspot.com/p/w-1.html</page>
     </regex>
 </item>
 
@@ -1541,7 +1552,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	 <regex>
         <name>canal</name>
         <expres>net\/embed\/(.*?)"</expres>
-        <page>https://cndf91.blogspot.com/p/net-1.html</page>
+        <page>https://cndf92.blogspot.com/p/net-1.html</page>
     </regex>
 </item>
 
@@ -1578,7 +1589,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
    import xbmcgui
    dialog = xbmcgui.Dialog()
    ret = dialog.select('Elige un Canal ', ['vtv-1', 'vtv-2', 'vtv-3', 'who-1', 'who-2', 'who-3', 'net-1', 'net-2', 'net-3', 'w-1', 'w-2', 'w-3', 'w-1-1', 'w-2-2', 'w-3-3'])
-   lists = ['https://cndf91.blogspot.com/p/vtv-1.html', 'https://cndf91.blogspot.com/p/vtv-2.html', 'https://cndf91.blogspot.com/p/vtv-3.html', 'https://cndf91.blogspot.com/p/who-1.html', 'https://cndf91.blogspot.com/p/who-2.html', 'https://cndf91.blogspot.com/p/who-3.html', 'https://cndf91.blogspot.com/p/net-1.html', 'https://cndf91.blogspot.com/p/net-2.html', 'https://cndf91.blogspot.com/p/net-3.html', 'https://cndf91.blogspot.com/p/w-1.html', 'https://cndf91.blogspot.com/p/w-2.html', 'https://cndf91.blogspot.com/p/w-3.html', 'https://cndf91.blogspot.com/p/w-1.html', 'https://cndf91.blogspot.com/p/w-2.html', 'https://cndf91.blogspot.com/p/w-3.html']
+   lists = ['https://cndf92.blogspot.com/p/vtv-1.html', 'https://cndf92.blogspot.com/p/vtv-2.html', 'https://cndf92.blogspot.com/p/vtv-3.html', 'https://cndf92.blogspot.com/p/who-1.html', 'https://cndf92.blogspot.com/p/who-2.html', 'https://cndf92.blogspot.com/p/who-3.html', 'https://cndf92.blogspot.com/p/net-1.html', 'https://cndf92.blogspot.com/p/net-2.html', 'https://cndf92.blogspot.com/p/net-3.html', 'https://cndf92.blogspot.com/p/w-1.html', 'https://cndf92.blogspot.com/p/w-2.html', 'https://cndf92.blogspot.com/p/w-3.html', 'https://cndf92.blogspot.com/p/w-1.html', 'https://cndf92.blogspot.com/p/w-2.html', 'https://cndf92.blogspot.com/p/w-3.html']
    return lists[ret]
 ]]></expres>
 <page></page>
