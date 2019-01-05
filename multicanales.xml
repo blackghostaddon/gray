@@ -2796,7 +2796,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
  
- <itEm>
+ <itm>
 <title>[B]Multicanal[/B] TikiTaka 01 [I] estable [/I]</title>
 <link>https://mp4-rem.vaughnsoft.net/live?app=live&amp;port=2935&amp;stream=live_estadirevo5|Referer=https://vaughn.live</link>
  <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail>
@@ -2850,12 +2850,77 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
  
+ <item>
+<title>[B]Multicanal[/B] TikiTaka Estable [I] [/I]</title>
+<link>$doregex[ip]</link>
+<regex>
+<name>ip</name>
+<expres>source: '(.*?)'</expres>
+<page>http://revolucionariostv.eu/elitegol/Repros/estable1.php</page>
+<referer>http://revolucionariostv.eu</referer>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
 
+ <item>
+<title>[B]Multicanal[/B] TikiTaka 01 [I] [/I]</title>
+<link>$doregex[ip]</link>
+<regex>
+<name>ip</name>
+<expres>source: '(.*?)'</expres>
+<page>http://revolucionariostv.eu/elitegol/Repros/c1.php</page>
+<referer>http://revolucionariostv.eu</referer>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+ <item>
+<title>[B]Multicanal[/B] TikiTaka 02 [I] [/I]</title>
+<link>$doregex[ip]</link>
+<regex>
+<name>ip</name>
+<expres>source: '(.*?)'</expres>
+<page>http://revolucionariostv.eu/elitegol/Repros/c2.php</page>
+<referer>http://revolucionariostv.eu</referer>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
+ <item>
+<title>[B]Multicanal[/B] TikiTaka 03 [I] [/I]</title>
+<link>$doregex[ip]</link>
+<regex>
+<name>ip</name>
+<expres>source: '(.*?)'</expres>
+<page>http://revolucionariostv.eu/elitegol/Repros/c3.php</page>
+<referer>http://revolucionariostv.eu</referer>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+
+ <item>
+<title>[B]Multicanal[/B] TikiTaka 04 [I] [/I]</title>
+<link>$doregex[ip]</link>
+<regex>
+<name>ip</name>
+<expres>source: '(.*?)'</expres>
+<page>http://revolucionariostv.eu/elitegol/Repros/c4.php</page>
+<referer>http://revolucionariostv.eu</referer>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+ <item>
+<title>[B]Multicanal[/B] TikiTaka 05 [I] [/I]</title>
+<link>$doregex[ip]</link>
+<regex>
+<name>ip</name>
+<expres>source: '(.*?)'</expres>
+<page>http://revolucionariostv.eu/elitegol/Repros/c5.php</page>
+<referer>http://revolucionariostv.eu</referer>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
