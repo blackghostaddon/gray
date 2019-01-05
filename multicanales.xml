@@ -1399,7 +1399,27 @@ def GetLSProData(page_data,Cookie_Jar,m):#streamwatcher2013
 
 
 
- 
+ <item>
+<title>[B]Multicanal Zonasport13[/B]         </title>
+    <link>$doregex[geturl]</link>
+    <regex>
+        <name>geturl</name>
+        <expres>source:"(.*?)"</expres>
+        <page>$doregex[getunpacked]</page>
+    </regex>
+    <regex>
+        <name>getunpacked</name>
+        <expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)' )</expres>
+        <page>http://whostreams.net/embed/$doregex[canal]</page>
+        <referer>http://whostreams.net/</referer>
+        <connection>keep-alive</connection>
+    </regex>
+	 <regex>
+        <name>canal</name>
+        <expres>net\/embed\/(.*?)"</expres>
+        <page>http://zonasports.es/cha-x.php?id=13</page>
+    </regex>
+</item>
 
 <item>
 <title>[B]Multicanal Zonasport14[/B]         </title>
@@ -1467,6 +1487,10 @@ def GetLSProData(page_data,Cookie_Jar,m):#streamwatcher2013
 
 
 
+
+
+
+
  <item>
 <title>[B]Multicanal RIVO 01 [/B]   </title>
 <link>$doregex[get-id]</link>
@@ -1481,7 +1505,7 @@ def GetLSProData(page_data,Cookie_Jar,m):#streamwatcher2013
 
 
  <item>
-<title>[B]Multicanal RIVO 01-2 [/B]   </title>
+<title>[B]Multicanal RIVO 02 [/B]   </title>
 <link>$doregex[get-id]</link>
 <regex>
 <name>get-id</name>
@@ -1490,8 +1514,8 @@ def GetLSProData(page_data,Cookie_Jar,m):#streamwatcher2013
 </regex>
  <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
- 
-<title>[B]Multicanal RIVO 02 [/B]   </title>
+  <item>
+<title>[B]Multicanal RIVO 03 [/B]   </title>
     <link>$doregex[geturl]</link>
     <regex>
         <name>geturl</name>
@@ -1513,7 +1537,23 @@ def GetLSProData(page_data,Cookie_Jar,m):#streamwatcher2013
 </item>
 
 
+  <item>
+<title>[B]Multicanal RIVO 04 [/B]   </title>
+    <link>$doregex[geturl]</link>
+    <regex>
+        <name>geturl</name>
+        <expres>source:"(.*?)"</expres>
+        <page>$doregex[getunpacked]</page>
+    </regex>
+    <regex>
+        <name>getunpacked</name>
+        <expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)' )</expres>
+        <page>http://whostreams.net/embed/nrw2ahw46f42td</page>
+        <referer>http://whostreams.net/</referer>
+        <connection>keep-alive</connection>
+    </regex>
 
+</item>
 
 
 <item>
