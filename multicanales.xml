@@ -3460,10 +3460,10 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/esp.jpg</thumbnail></item>
 
  
-  http://lacalleochotv.org/magu/espana1/goltv.html
+ 
  <item>
-<title>[B]Multicanal[/B] OchoTv [I] Deportes 1 [/I] </title>
-<link>$doregex[get-id]|Referer=http://lacalleochotv.org&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
+<title>[B]Multicanal[/B] OchoTv [I] Deportes 1* [/I] </title>
+<link>$doregex[get-id]</link>
 <regex>
 <name>get-id</name>
 <expres>source: '([^']+)</expres>
