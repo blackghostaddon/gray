@@ -32,7 +32,7 @@
 
 
 <item>
-<title>[COLOR yellow][B]Multicanales CHIVAS69[/B][/COLOR] Telemundo  </title>
+<title>[COLOR lightyellow][B]Multicanales CHIVAS69[/B][/COLOR] Telemundo  </title>
 
     <link>$doregex[geturl]</link>
     <regex>
@@ -50,7 +50,7 @@
 </item> 
 
 <item>
-<title>[COLOR yellow][B]Multicanales CHIVAS69[/B][/COLOR] Telemundo  </title>
+<title>[COLOR lightyellow][B]Multicanales CHIVAS69[/B][/COLOR] Univision Deportes  </title>
 
     <link>$doregex[geturl]</link>
     <regex>
@@ -68,7 +68,7 @@
 </item> 
 
 <item>
-<title>[COLOR yellow][B]Multicanales CHIVAS69[/B][/COLOR] EstrellaTV  </title>
+<title>[COLOR lightyellow][B]Multicanales CHIVAS69[/B][/COLOR] EstrellaTV  </title>
 
     <link>$doregex[geturl]</link>
     <regex>
@@ -86,7 +86,7 @@
 </item> 
 
 <item>
-<title>[COLOR yellow][B]Multicanales CHIVAS69[/B][/COLOR] Deportes </title>
+<title>[COLOR lightyellow][B]Multicanales CHIVAS69[/B][/COLOR] Deportes </title>
 
     <link>$doregex[geturl]</link>
     <regex>
