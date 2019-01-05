@@ -32,7 +32,7 @@
 
 
 <item>
-<title>[COLOR yellow][B]Multicanales CHIVAS69[/B][/COLOR] Telemundo - Univision - EspnDeportes - FoxDeportes - Unimas - Deportes </title>
+<title>[COLOR yellow][B]Multicanales CHIVAS69[/B][/COLOR] Telemundo  </title>
 
     <link>$doregex[geturl]</link>
     <regex>
@@ -43,24 +43,66 @@
     <regex>
         <name>getunpacked</name>
         <expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)' )</expres>
-        <page>$doregex[select]</page>
+        <page>http://whostreams.net/embed/6otcp42qvvs</page>
         <referer>http://whostreams.net/</referer>
         <connection>keep-alive</connection>
     </regex>
-	
-	<regex>
-<name>select</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m):
-   import xbmcgui
-   dialog = xbmcgui.Dialog()
-   ret = dialog.select('Elige un Canal ', ['Telemundo', 'Univision ', 'EstrellaTV', 'ESPN Deportes', 'Univision  Deportes 2', 'EstrellaTV', 'Galavision'])
-   lists = ['http://whostreams.net/embed/6otcp42qvvs', 'http://whostreams.net/embed/yjz92igvajl5l9', 'http://whostreams.net/embed/jnyz0sm1hth78y', 'http://whostreams.net/embed/2gzsuk67y', 'http://whostreams.net/embed/8vzxl3yuc', 'http://whostreams.net/embed/jnyz0sm1hth78y', 'http://whostreams.net/embed/la10qyt9ohls7y']
-   return lists[ret]
-]]></expres>
-<page></page>
-</regex>
-</item>
+</item> 
+
+<item>
+<title>[COLOR yellow][B]Multicanales CHIVAS69[/B][/COLOR] Telemundo  </title>
+
+    <link>$doregex[geturl]</link>
+    <regex>
+        <name>geturl</name>
+        <expres>source:"(.*?)"</expres>
+        <page>$doregex[getunpacked]</page>
+    </regex>
+    <regex>
+        <name>getunpacked</name>
+        <expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)' )</expres>
+        <page>http://whostreams.net/embed/k35qrdo5h</page>
+        <referer>http://whostreams.net/</referer>
+        <connection>keep-alive</connection>
+    </regex>
+</item> 
+
+<item>
+<title>[COLOR yellow][B]Multicanales CHIVAS69[/B][/COLOR] EstrellaTV  </title>
+
+    <link>$doregex[geturl]</link>
+    <regex>
+        <name>geturl</name>
+        <expres>source:"(.*?)"</expres>
+        <page>$doregex[getunpacked]</page>
+    </regex>
+    <regex>
+        <name>getunpacked</name>
+        <expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)' )</expres>
+        <page>http://whostreams.net/embed/jnyz0sm1hth78y</page>
+        <referer>http://whostreams.net/</referer>
+        <connection>keep-alive</connection>
+    </regex>
+</item> 
+
+<item>
+<title>[COLOR yellow][B]Multicanales CHIVAS69[/B][/COLOR] Deportes </title>
+
+    <link>$doregex[geturl]</link>
+    <regex>
+        <name>geturl</name>
+        <expres>source:"(.*?)"</expres>
+        <page>$doregex[getunpacked]</page>
+    </regex>
+    <regex>
+        <name>getunpacked</name>
+        <expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)' )</expres>
+        <page>http://whostreams.net/embed/2gzsuk67y</page>
+        <referer>http://whostreams.net/</referer>
+        <connection>keep-alive</connection>
+    </regex>
+</item> 
+
 
 
 
@@ -574,7 +616,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
  <item>
-<title>[B]Multicanal 1 (Chivas69) [/B]     </title>
+<title>[B]Multicanal 1 (Chivas69) [/B]  Unimas   </title>
 
 <link>$doregex[url]|Referer=https://player.limpi.tv/&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36</link>
 <regex>
@@ -599,7 +641,24 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 </item>
 
+ <item>
+<title>[B]Multicanal 1 (Chivas69) [/B]  Unimas 2  </title>
 
+<link>$doregex[url]|Referer=https://player.limpi.tv/&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36</link>
+<regex>
+   <name>url</name>   
+   <expres>source: "(.*?)"</expres>  
+   <page>$doregex[temp]/42919</page>
+   <referer>https://player.limpi.tv/</referer>
+   <cookieJar/>
+</regex>
+<regex> 
+   <name>temp</name>   
+   <expres>src="(.*?)\'</expres>  
+   <page>https://player.limpi.tv/embed.js</page>
+   <cookieJar/>
+</regex>
+</item>
 
 
  <item>
@@ -628,7 +687,31 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 </item>
 
+ <item>
+<title>[B]Multicanal 2 (Chivas69 - Univision) [/B]     </title>
 
+<link>$doregex[url]|Referer=https://player.limpi.tv/&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36</link>
+<regex>
+   <name>url</name>   
+   <expres>source: "(.*?)"</expres>  
+   <page>$doregex[temp]/$doregex[canal]</page>
+   <referer>https://player.limpi.tv/</referer>
+   <cookieJar/>
+</regex>
+
+<regex> 
+   <name>temp</name>   
+   <expres>src="(.*?)\'</expres>  
+   <page>https://player.limpi.tv/embed.js</page>
+   <cookieJar/>
+</regex>
+<regex> 
+   <name>canal</name>   
+   <expres>id='(.*?)'</expres>  
+   <page>http://anahix11.com/univi.php</page>
+   <cookieJar/>
+</regex>
+</item>
 
 
 
