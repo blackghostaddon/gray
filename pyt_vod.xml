@@ -1456,7 +1456,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>[makelist2.param2]</thumbnail>
 <fanart>[makelist2.param2]</fanart>
 ]]></listrepeat>
-<expres><![CDATA[a\shref='(https:\/\/upto.*?|https:\/\/open.*?|https:\/\/powvideo)'\srel]]></expres>
+<expres><![CDATA[a\shref='(https:\/\/upto.*?|https:\/\/open.*?|https:\/\/powvideo.*?)'\srel]]></expres>
 <page>[makelist2.param1]</page>
 </regex>
 
