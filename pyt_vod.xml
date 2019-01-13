@@ -3441,9 +3441,12 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
+<item>
+<title>La Monja</title>
 
+<link>http://ligatv.net:25461/movie/cinevall/08012019/628.mp4</link>
 
-
+</item>
 
 
 
@@ -3457,7 +3460,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-   <title>[makelist0.param3]   server:[makelist.param1]</title>
+   <title>El Conjuro 2   server:[makelist.param1]</title>
    <urlsolve>[makelist.param2]</urlsolve>
    <thumbnail>[makelist0.param2]</thumbnail>
 ]]></listrepeat>
