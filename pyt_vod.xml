@@ -449,7 +449,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
     d=''
     strdata=strdata.split(' ')
     for strchar in strdata:
-        d += chr(int(strchar)-4)
+        d += chr(int(strchar)-5)
     return d
 
   embeds = {'OnlineUpToBox' : 'https://uptobox.com/%s',
