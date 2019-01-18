@@ -262,7 +262,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
-<title>[B]ESTRENOS LATINOS  [/B]</title>
+<title>[B]ESTRENOS LATINOS  [/B] *</title>
 
 <link>$doregex[makelist0]</link>
 
@@ -313,7 +313,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>makelist</name>
 <listrepeat><![CDATA[
    <title>[makelist0.param3]   server:[makelist.param1]</title>
-   <urlsolve>[makelist.param2]</urlsolve>
+   <link>$doregex[id3]</link>
    <thumbnail>[makelist0.param2]</thumbnail>
 ]]></listrepeat>
 <expres><![CDATA[#$pyFunction
@@ -347,6 +347,23 @@ def GetLSProData(page_data,Cookie_Jar,m):
 ]]></expres>
 <page>[makelist0.param1]</page>
 </regex>
+
+	<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+   import urlresolver, resolveurl
+   url = '[makelist.param2]'
+   try:
+     u = urlresolver.resolve(url)
+   except:
+     u = resolveurl.resolve(url)
+   return u
+]]></expres>
+<page></page>
+</regex>
+
+
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail>
 </item>
 
@@ -421,7 +438,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-   <title>[makelist0.param3]   server:[makelist.param1]  - [makelist.param2]</title>
+   <title>[makelist0.param3]   server:[makelist.param1] </title>
    <urlsolve>[makelist.param2]</urlsolve>
    <thumbnail></thumbnail>
 ]]></listrepeat>
@@ -471,8 +488,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-	
-	
 	
 	
 	
@@ -613,17 +628,15 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	
  	
 <item>
-<title>[B]ESTRENOS[/B] [CineVall Latino] </title>
+<title>[B]ESTRENOS[/B] [CineVall Latino] *</title>
 
-<link>$doregex[makelist3]|Referer=http://www.cinevall.website&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36</link>
-
-
+<link>$doregex[makelist3]</link>
 
 <regex>
     <name>makelist3</name> movies  (all pages)
  <listrepeat><![CDATA[
 <title>[makelist3.param3]</title>
- <link>$doregex[finalURL]</link>
+ <link>$doregex[finalURL]|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36</link>
 <thumbnail>[makelist3.param2]</thumbnail>
  <regex>
 <name>finalURL</name>
