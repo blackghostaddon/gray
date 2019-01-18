@@ -421,7 +421,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-   <title>[makelist0.param3]   server:[makelist.param1]</title>
+   <title>[makelist0.param3]   server:[makelist.param1]  - [makelist.param2]</title>
    <urlsolve>[makelist.param2]</urlsolve>
    <thumbnail></thumbnail>
 ]]></listrepeat>
@@ -609,13 +609,13 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	
 	
 	
-	|Referer=http://www.cinevall.website&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+	
 	
  	
 <item>
-<title>[B]ESTRENOS[/B] [CineVall Latino] *</title>
+<title>[B]ESTRENOS[/B] [CineVall Latino] </title>
 
-<link>$doregex[makelist3]</link>
+<link>$doregex[makelist3]|Referer=http://www.cinevall.website&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36</link>
 
 
 
