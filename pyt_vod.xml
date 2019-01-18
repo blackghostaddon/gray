@@ -383,7 +383,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
-<title>[B]ESTRENOS ESPAÑA     [/B]</title>
+<title>[B]ESTRENOS ESPAÑA  *   [/B]</title>
 
 <link>$doregex[makelist0]</link>
 
@@ -438,7 +438,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-   <title>[makelist0.param3]   server:[makelist.param1] </title>
+   <title>[makelist0.param3]   server:[makelist.param1] - [makelist.param2] </title>
    <urlsolve>[makelist.param2]</urlsolve>
    <thumbnail></thumbnail>
 ]]></listrepeat>
