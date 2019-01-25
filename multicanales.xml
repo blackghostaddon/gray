@@ -1623,7 +1623,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	 <regex>
         <name>canal</name>
         <expres>net\/embed\/(.*?)"</expres>
-        <page>https://cndf92.blogspot.com/p/vtv-1.html</page>https://cndf92.blogspot.com/p
+        <page>https://cndf94.blogspot.com/p/vtv-1.html</page>https://cndf94.blogspot.com/p
     </regex>
 </item>
 
@@ -1648,7 +1648,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	 <regex>
         <name>canal</name>
         <expres>net\/embed\/(.*?)"</expres>
-        <page>https://cndf92.blogspot.com/p/w-1.html</page>
+        <page>https://cndf94.blogspot.com/p/w-1.html</page>
     </regex>
 </item>
 
@@ -1675,7 +1675,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	 <regex>
         <name>canal</name>
         <expres>net\/embed\/(.*?)"</expres>
-        <page>https://cndf92.blogspot.com/p/net-1.html</page>
+        <page>https://cndf94.blogspot.com/p/net-1.html</page>
     </regex>
 </item>
 
@@ -1712,7 +1712,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
    import xbmcgui
    dialog = xbmcgui.Dialog()
    ret = dialog.select('Elige un Canal ', ['vtv-1', 'vtv-2', 'vtv-3', 'who-1', 'who-2', 'who-3', 'net-1', 'net-2', 'net-3', 'w-1', 'w-2', 'w-3', 'w-1-1', 'w-2-2', 'w-3-3'])
-   lists = ['https://cndf92.blogspot.com/p/vtv-1.html', 'https://cndf92.blogspot.com/p/vtv-2.html', 'https://cndf92.blogspot.com/p/vtv-3.html', 'https://cndf92.blogspot.com/p/who-1.html', 'https://cndf92.blogspot.com/p/who-2.html', 'https://cndf92.blogspot.com/p/who-3.html', 'https://cndf92.blogspot.com/p/net-1.html', 'https://cndf92.blogspot.com/p/net-2.html', 'https://cndf92.blogspot.com/p/net-3.html', 'https://cndf92.blogspot.com/p/w-1.html', 'https://cndf92.blogspot.com/p/w-2.html', 'https://cndf92.blogspot.com/p/w-3.html', 'https://cndf92.blogspot.com/p/w-1.html', 'https://cndf92.blogspot.com/p/w-2.html', 'https://cndf92.blogspot.com/p/w-3.html']
+   lists = ['https://cndf94.blogspot.com/p/vtv-1.html', 'https://cndf94.blogspot.com/p/vtv-2.html', 'https://cndf94.blogspot.com/p/vtv-3.html', 'https://cndf94.blogspot.com/p/who-1.html', 'https://cndf94.blogspot.com/p/who-2.html', 'https://cndf94.blogspot.com/p/who-3.html', 'https://cndf94.blogspot.com/p/net-1.html', 'https://cndf94.blogspot.com/p/net-2.html', 'https://cndf94.blogspot.com/p/net-3.html', 'https://cndf94.blogspot.com/p/w-1.html', 'https://cndf94.blogspot.com/p/w-2.html', 'https://cndf94.blogspot.com/p/w-3.html', 'https://cndf94.blogspot.com/p/w-1.html', 'https://cndf94.blogspot.com/p/w-2.html', 'https://cndf94.blogspot.com/p/w-3.html']
    return lists[ret]
 ]]></expres>
 <page></page>
