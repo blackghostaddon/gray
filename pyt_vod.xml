@@ -313,7 +313,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>makelist</name>
 <listrepeat><![CDATA[
    <title>[makelist0.param3]   server:[makelist.param1]</title>
-  <link>$doregex[id3]</link>
+  <urlsolve>[makelist.param2]</urlsolve>
    <thumbnail>[makelist0.param2]</thumbnail>
 ]]></listrepeat>
 <expres><![CDATA[#$pyFunction
@@ -348,20 +348,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page>[makelist0.param1]</page>
 </regex>
 
-<regex>
-<name>id3</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m):
-    import urlresolver, resolveurl
-    url = '[makelist.param1]'
-    try:
-        u = urlresolver.resolve(url)
-    except:
-        u = resolveurl.resolve(url)
-    return u
-]]></expres>
-<page></page>
-</regex>
+ 
 
 
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail>
