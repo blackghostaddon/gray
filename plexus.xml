@@ -117,10 +117,10 @@ def GetLSProData(page_data,Cookie_Jar,m):
 			<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/acestreams.png</thumbnail>
 
 ]]></listrepeat>
-<expres><![CDATA[87px\">(.*?)<[\w\W\s]{0,30}">(.*?)<[\w\W\s]{0,32}">(.*?)<[\w\W\s]{0,32}">(.*?)<[\w\W\s]{0,32}">(.*?)<[\w\W\s]{0,52}"(>[0-9]+)]]></expres>
+<expres><![CDATA[87px\">(.*?)<[\w\W\s]{0,32}">(.*?)<[\w\W\s]{0,32}">(.*?)<[\w\W\s]{0,32}">(.*?)<[\w\W\s]{0,32}">(.*?)<[\w\W\s]{0,52}\"(>[0-9]+)]]></expres>
 <page>http://arenavision.$doregex[select]/guide</page>
-<Agent>Mozilla</Agent>
-<referer>http://cdn.arenavision.biz</referer>
+<agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
+<referer>http://arenavision.us</referer>
 <setcookie>beget=begetok</setcookie>
  </regex>
  
@@ -141,9 +141,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/acestreams.png</thumbnail>
 </item>
 	
-	
-	
-	
+
 	
 
 
