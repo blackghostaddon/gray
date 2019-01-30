@@ -295,64 +295,48 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 https://mp4-rem.vaughnsoft.net/play/live_rvvdep.flv?&secure=XzJx7uTRSG9h_KRViJlZsQ&expires=1543543548&ip=189.187.141.178
 
-<itEm>
-<title>[B]Multicanal PSN Deportes (Rivo) [/B]     </title>
-<link>https://mp4-rem.vaughnsoft.net/live?app=live&amp;port=2935&amp;stream=live_rvv4|Referer=https://vaughn.live</link>
- <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail>
-</item>
-
-
-
-
-
-
-<itm>
-<title>[B]Multicanal Sr Regio [/B]     </title>
-<link>https://mp4-rem.vaughnsoft.net/live?app=live&amp;port=2935&amp;stream=live_regio_tv|Referer=https://vaughn.live</link>
- <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail>
-</item>
-
-
-
-<itm>
-<title>[B]Multicanal TecnoTV [/B]     </title>
-<link>https://mp4-rem.vaughnsoft.net/live?app=live&amp;port=2935&amp;stream=live_atecnotv|Referer=https://vaughn.live</link>
- <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail>
-</item>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <item>
+<title>[B]Multicanal PSN Deportes (Rivo) [/B]  *  </title>
+<link>https://mp4-rem.vaughnsoft.net/play/live?app=live&amp;port=2935&amp;stream=live_mega_chavo|Referer=https://vaughn.live</link>
+ <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail>
+</item>
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<itm>
 <title>[B]Multicanal VIP 00 [/B]     </title>
 <link>$doregex[get-url]</link>
 <regex>
@@ -614,51 +598,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
  
 
+ 
 
- <item>
-<title>[B]Multicanal 1 (Chivas69) [/B]  Unimas   </title>
-
-<link>$doregex[url]|Referer=https://player.limpi.tv/&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36</link>
-<regex>
-   <name>url</name>   
-   <expres>source: "(.*?)"</expres>  
-   <page>$doregex[temp]/$doregex[canal]</page>
-   <referer>https://player.limpi.tv/</referer>
-   <cookieJar/>
-</regex>
-
-<regex> 
-   <name>temp</name>   
-   <expres>src="(.*?)\'</expres>  
-   <page>https://player.limpi.tv/embed.js</page>
-   <cookieJar/>
-</regex>
-<regex> 
-   <name>canal</name>   
-   <expres>tv\/live\/(.*?)"</expres>  
-   <page>http://anahix11.com/canal7.php</page>
-   <cookieJar/>
-</regex>
-</item>
-
- <item>
-<title>[B]Multicanal 1 (Chivas69) [/B]  Unimas 2  </title>
-
-<link>$doregex[url]|Referer=https://player.limpi.tv/&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36</link>
-<regex>
-   <name>url</name>   
-   <expres>source: "(.*?)"</expres>  
-   <page>$doregex[temp]/42919</page>
-   <referer>https://player.limpi.tv/</referer>
-   <cookieJar/>
-</regex>
-<regex> 
-   <name>temp</name>   
-   <expres>src="(.*?)\'</expres>  
-   <page>https://player.limpi.tv/embed.js</page>
-   <cookieJar/>
-</regex>
-</item>
 
 
  <item>
