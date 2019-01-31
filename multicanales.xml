@@ -157,7 +157,7 @@
  <regex>
 <name>url</name>
 <expres><![CDATA[source: "([^"]+)]]></expres>
-<page>http://canales.grupovalltv.net/$doregex[select].html</page>
+<page>http://canales.iptvvall.com/$doregex[select].html</page>
 </regex>
 
 	<regex>
@@ -1712,11 +1712,11 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
  <item>
  <title>[B]Multicanal Bein es[/B]    </title>
-<link>$doregex[url]|Referer=http://canales.grupovalltv.net/foxsport2.html&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
+<link>$doregex[url]|Referer=http://canales.iptvvall.com/foxsport2.html&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
   <regex>
 <name>url</name>
 <expres><![CDATA["(.*?m3u8)"]]></expres>
-<page>http://canales.grupovalltv.net/beines.html</page>
+<page>http://canales.iptvvall.com/beines.html</page>
 </regex>
  <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
@@ -1728,11 +1728,11 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
   <item>
  <title>[B]Multicanal Canal 2[/B]    </title>
-<link>$doregex[url]|Referer=http://canales.grupovalltv.net/foxsport2.html&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
+<link>$doregex[url]|Referer=http://canales.iptvvall.com/foxsport2.html&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
   <regex>
 <name>url</name>
 <expres><![CDATA["(.*?m3u8)"]]></expres>
-<page>http://canales.grupovalltv.net/canal2.html</page>
+<page>http://canales.iptvvall.com/canal2.html</page>
 </regex>
  <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
@@ -1740,11 +1740,11 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
   <item>
  <title>[B]Multicanal Canal 5[/B]    </title>
-<link>$doregex[url]|Referer=http://canales.grupovalltv.net/foxsport2.html&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
+<link>$doregex[url]|Referer=http://canales.iptvvall.com/foxsport2.html&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
   <regex>
 <name>url</name>
 <expres><![CDATA["(.*?m3u8)"]]></expres>
-<page>http://canales.grupovalltv.net/canal5.html</page>
+<page>http://canales.iptvvall.com/canal5.html</page>
 </regex>
  
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
@@ -1753,11 +1753,11 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
   <item>
  <title>[B]Multicanal Azteca 7[/B]    </title>
-<link>$doregex[url]|Referer=http://canales.grupovalltv.net/foxsport2.html&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
+<link>$doregex[url]|Referer=http://canales.iptvvall.com/foxsport2.html&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
   <regex>
 <name>url</name>
 <expres><![CDATA["(.*?m3u8)"]]></expres>
-<page>http://canales.grupovalltv.net/azteca7.html</page>
+<page>http://canales.iptvvall.com/azteca7.html</page>
 </regex>
  
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
@@ -1768,11 +1768,11 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
   <item>
  <title>[B]Multicanal Nueve[/B]    </title>
-<link>$doregex[url]|Referer=http://canales.grupovalltv.net/foxsport2.html&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
+<link>$doregex[url]|Referer=http://canales.iptvvall.com/foxsport2.html&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
   <regex>
 <name>url</name>
 <expres><![CDATA["(.*?m3u8)"]]></expres>
-<page>http://canales.grupovalltv.net/nueve.html</page>
+<page>http://canales.iptvvall.com/nueve.html</page>
 </regex>
  
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
@@ -1784,11 +1784,11 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
   <item>
  <title>[B]Multicanal ESPN[/B]    </title>
-<link>$doregex[url]|Referer=http://canales.grupovalltv.net/foxsport2.html&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
+<link>$doregex[url]|Referer=http://canales.iptvvall.com/foxsport2.html&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
   <regex>
 <name>url</name>
 <expres><![CDATA["(.*?m3u8)"]]></expres>
-<page>http://canales.grupovalltv.net/espn.html</page>
+<page>http://canales.iptvvall.com/espn.html</page>
 </regex>
  
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
@@ -1797,8 +1797,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-http://canales.grupovalltv.net/espn2.html
-  
+http://canales.iptvvall.com/espn2.html
+  http://canales.iptvvall.com/espn.html
 
   <item>
  <title>[B]Multicanal ESPN 2[/B]     </title>
@@ -1807,18 +1807,18 @@ http://canales.grupovalltv.net/espn2.html
  <regex>
 <name>url</name>
 <expres><![CDATA["(.*?m3u8)"]]></expres>
-<page>http://canales.grupovalltv.net/espn2.html</page>
+<page>http://canales.iptvvall.com/espn2.html</page>
 </regex>
  <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
   <item>
  <title>[B]Multicanal ESPN 3[/B]     </title>
-<link>$doregex[url]|Referer=http://canales.grupovalltv.net/foxsport2.html&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
+<link>$doregex[url]|Referer=http://canales.iptvvall.com/foxsport2.html&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
  
  <regex>
 <name>url</name>
 <expres><![CDATA["(.*?m3u8)"]]></expres>
-<page>http://canales.grupovalltv.net/espn3.html</page>
+<page>http://canales.iptvvall.com/espn3.html</page>
 </regex>
  
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
@@ -1835,7 +1835,7 @@ http://canales.grupovalltv.net/espn2.html
  <regex>
 <name>url</name>
 <expres><![CDATA["(.*?m3u8)"]]></expres>
-<page>http://canales.grupovalltv.net/foxsport.html</page>
+<page>http://canales.iptvvall.com/foxsport.html</page>
 </regex>
  
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
@@ -1847,7 +1847,7 @@ http://canales.grupovalltv.net/espn2.html
  <regex>
 <name>url</name>
 <expres><![CDATA["(.*?m3u8)"]]></expres>
-<page>http://canales.grupovalltv.net/foxsport2.html</page>
+<page>http://canales.iptvvall.com/foxsport2.html</page>
 </regex>
  
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
@@ -1861,7 +1861,7 @@ http://canales.grupovalltv.net/espn2.html
  <regex>
 <name>url</name>
 <expres><![CDATA["(.*?m3u8)"]]></expres>
-<page>http://canales.grupovalltv.net/foxsport3.html</page>
+<page>http://canales.iptvvall.com/foxsport3.html</page>
 </regex>
  
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
@@ -1876,7 +1876,7 @@ http://canales.grupovalltv.net/espn2.html
  <regex>
 <name>url</name>
 <expres><![CDATA["(.*?m3u8)"]]></expres>
-<page>http://canales.grupovalltv.net/tdn.html</page>
+<page>http://canales.iptvvall.com/tdn.html</page>
 </regex>
  
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
@@ -1890,7 +1890,7 @@ http://canales.grupovalltv.net/espn2.html
  <regex>
 <name>url</name>
 <expres><![CDATA[file: "([^"]+)]]></expres>
-<page>http://canales.grupovalltv.net/unitdn.html</page>
+<page>http://canales.iptvvall.com/unitdn.html</page>
 </regex>
  
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
@@ -1906,7 +1906,7 @@ http://canales.grupovalltv.net/espn2.html
  <regex>
 <name>url</name>
 <expres><![CDATA["(.*?m3u8)"]]></expres>
-<page>http://canales.grupovalltv.net/claro.html</page>
+<page>http://canales.iptvvall.com/claro.html</page>
 </regex>
  
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
@@ -1926,7 +1926,7 @@ http://canales.grupovalltv.net/espn2.html
  <regex>
 <name>url</name>
 <expres><![CDATA["(.*?m3u8)"]]></expres>
-<page>http://canales.grupovalltv.net/tvcdep.html</page>
+<page>http://canales.iptvvall.com/tvcdep.html</page>
 </regex>
  
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
@@ -1937,7 +1937,7 @@ http://canales.grupovalltv.net/espn2.html
 
   <!--item>
  <title>[B]Multicanal ESPN[/B]    </title>
-<link>$doregex[url]|Referer=http://canales.grupovalltv.net/foxsport2.html&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
+<link>$doregex[url]|Referer=http://canales.iptvvall.com/foxsport2.html&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
  
  <regex>
 <name>url</name>
@@ -1966,7 +1966,7 @@ http://canales.grupovalltv.net/espn2.html
 
   <item>
  <title>[B]Multicanal ESPN 3[/B]     </title>
-<link>$doregex[url]|Referer=http://canales.grupovalltv.net/foxsport2.html&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
+<link>$doregex[url]|Referer=http://canales.iptvvall.com/foxsport2.html&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
  
  <regex>
 <name>url</name>
