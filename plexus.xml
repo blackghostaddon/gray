@@ -92,6 +92,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	
 	
 	
+
 	<item>
 <title>[COLOR black]•[/COLOR][COLOR white]  [B]AGENDA ARENAVISION[/B][/COLOR] [COLOR lightslategray] elige el server[/COLOR]</title>
 <link>$doregex[makelist]</link>
@@ -117,7 +118,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 			<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/acestreams.png</thumbnail>
 
 ]]></listrepeat>
-<expres><![CDATA[87px\">(.*?)<[\w\W\s]{0,32}">(.*?)<[\w\W\s]{0,32}">(.*?)<[\w\W\s]{0,32}">(.*?)<[\w\W\s]{0,32}">(.*?)<[\w\W\s]{0,52}\"(>[0-9]+)]]></expres>
+<expres><![CDATA[style13\">(.*?)<[\w\W\s]{0,32}">(.*?)<[\w\W\s]{0,32}">(.*?)<[\w\W\s]{0,32}">(.*?)<[\w\W\s]{0,32}">(.*?)<[\w\W\s]{0,52}\"(>[0-9]+)]]></expres>
 <page>http://arenavision.$doregex[select]/guide</page>
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
 <referer>http://arenavision.us</referer>
@@ -171,7 +172,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 </item>
 ]]></listrepeat>
-<expres><![CDATA[87px\">(.*?)<[\w\W\s]{0,30}">(.*?)<[\w\W\s]{0,32}">(.*?)<[\w\W\s]{0,32}">$doregex[select]<[\w\W\s]{0,32}">(.*?)<[\w\W\s]{0,52}"(>[0-9]+)]]></expres>
+<expres><![CDATA[style13\">(.*?)<[\w\W\s]{0,30}">(.*?)<[\w\W\s]{0,32}">(.*?)<[\w\W\s]{0,32}">$doregex[select]<[\w\W\s]{0,32}">(.*?)<[\w\W\s]{0,52}"(>[0-9]+)]]></expres>
 <page>http://arenavision.in/guide</page>
 <Agent>Mozilla</Agent>
 <referer>https://arenavision.us/guide</referer>
@@ -290,7 +291,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 </item>
 ]]></listrepeat>
-<expres><![CDATA[87px\">(.*?)<[\w\W\s]{0,30}">(.*?)<[\w\W\s]{0,32}">(.*?)<[\w\W\s]{0,32}">USA NFL<[\w\W\s]{0,32}">(.*?)<[\w\W\s]{0,52}"(>[0-9]+)]]></expres>
+<expres><![CDATA[style13\">(.*?)<[\w\W\s]{0,30}">(.*?)<[\w\W\s]{0,32}">(.*?)<[\w\W\s]{0,32}">USA NFL<[\w\W\s]{0,32}">(.*?)<[\w\W\s]{0,52}"(>[0-9]+)]]></expres>
 <page>http://arenavision.in/guide</page>
 <Agent>Mozilla</Agent>
 <referer>https://arenavision.us/guide</referer>
