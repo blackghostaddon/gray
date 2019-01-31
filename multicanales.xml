@@ -295,7 +295,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 https://mp4-rem.vaughnsoft.net/play/live_rvvdep.flv?&secure=XzJx7uTRSG9h_KRViJlZsQ&expires=1543543548&ip=189.187.141.178
 
-<item>
+<itm>
 <title>[B]Multicanal PSN Deportes (Rivo) [/B]  *  </title>
 <link>https://mp4-rem.vaughnsoft.net/play/live?app=live&amp;port=2935&amp;stream=live_mega_chavo|Referer=https://vaughn.live</link>
  <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail>
@@ -305,6 +305,18 @@ https://mp4-rem.vaughnsoft.net/play/live_rvvdep.flv?&secure=XzJx7uTRSG9h_KRViJlZ
 
  
 
+ <itm>
+<title>tetetsd</title>
+<link>https://mp4-rem.vaughnsoft.net/play/live_katyhd.flv?&secure=$doregex[secure]|Referer=https://vaughn.live&Origin=https://vaughn.live&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36</link>
+<regex>
+   <name>secure</name>   
+   <expres>var\smp4StreamUrl.*?secure=(.*?)"</expres>  
+   <page>https://vaughn.live/katyhd</page>
+   <referer>https://vaughn.live/katyhd</referer>
+   <cookieJar/>
+</regex>
+ <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail>
+</item>
 
 
 
@@ -2737,12 +2749,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
  
- <itm>
-<title>[B]Multicanal[/B] TikiTaka 01 [I] estable [/I]</title>
-<link>https://mp4-rem.vaughnsoft.net/live?app=live&amp;port=2935&amp;stream=live_estadirevo5|Referer=https://vaughn.live</link>
- <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail>
-</item>
-
 
 
   <itm>

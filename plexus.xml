@@ -4,26 +4,26 @@
 
 
 <item>
-<title>[COLOR white][B][  ][/B][/COLOR]  [COLOR lightblue][B]BUSCAR CANAL ACESTREAM[/B] [/COLOR][COLOR white] [/COLOR] </title>
+<title>[COLOR white][B][  ][/B][/COLOR]  [COLOR lightblue][B]BUSCAR CANAL ACESTREAM[/B] [/COLOR][COLOR white]* [/COLOR] </title>
 <link>$doregex[lista]</link>
 
 <regex>
 <name>lista</name>
-  <listrepeat><![CDATA[
-         
+  <listrepeat><![CDATA[         
 		 <title>[lista.param2]</title>
         <link>plugin://program.plexus/?url=[lista.param1]&amp;mode=1&amp;name=BlackAddon+[lista.param2]</link>
 		<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/acestream.png</thumbnail>
 		]]></listrepeat>
 <expres><![CDATA[acestream:\/\/(.*?)">(.*?)<]]><expres>
-<page>https://acestreamsearch.com/en/index.php</page>
+<page>https://acestreamsearch.com/en/</page>
 <rawpost>cn=$doregex[search]</rawpost>
-<referer>https://acestreamsearch.com/en/index.php</referer>
+<referer>https://acestreamsearch.com/en/</referer>
 <connection>keep-alive</connection>
 <accept>*/*</accept>
 <X-Req>XMLHttpRequest</X-Req>
 <cookieJar></cookieJar>
 </regex>
+
 
 <regex>
 <name>search</name>
