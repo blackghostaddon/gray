@@ -238,7 +238,14 @@ http://paypal.me/blackghost</info>
 <name>makelist</name>
 <listrepeat><![CDATA[
 <title>[makelist.param2]</title>
-<link>https://mp4-rem.vaughnsoft.net/live?app=live&amp;port=2935&amp;stream=live_[makelist.param1]|Referer=https://vaughn.live</link>
+<link>https://mp4-rem.vaughnsoft.net/play/live_[makelist.param1].flv?&secure=$doregex[secure]|Referer=https://vaughn.live&Origin=https://vaughn.live&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36</link>
+<regex>
+   <name>secure</name>   
+   <expres>var\smp4StreamUrl.*?secure=(.*?)"</expres>  
+   <page>https://vaughn.live/[makelist.param1]</page>
+   <referer>https://vaughn.live/[makelist.param1]</referer>
+   <cookieJar/>
+</regex>
 <thumbnail>http://cdn.vaughnsoft.com/vaughnsoft/vaughn/img_profiles/[makelist.param2]_320.jpg</thumbnail>
 ]]></listrepeat>
 <expres>a href="/(.*?)"[\w\W\s]{0,22}browseTxt">(.*?)<</expres>
@@ -251,6 +258,17 @@ http://paypal.me/blackghost</info>
 </item>
 
 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 <item>
