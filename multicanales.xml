@@ -297,7 +297,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
  
 <item>
-<title>[B]Multicanal PSN Deportes (Rivo) [/B]  *  </title>
+<title>[B]Multicanal PSN Deportes (Rivo) [/B]  </title>
 <link>https://mp4-rem.vaughnsoft.net/play/live_katyhd.flv?&secure=$doregex[secure]|Referer=https://vaughn.live&Origin=https://vaughn.live&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36</link>
 <regex>
    <name>secure</name>   
