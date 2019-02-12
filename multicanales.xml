@@ -49,6 +49,9 @@
     </regex>
 </item> 
 
+
+
+
 <item>
 <title>[COLOR lightyellow][B]Multicanales CHIVAS69[/B][/COLOR] Univision Deportes  </title>
 
@@ -66,6 +69,10 @@
         <connection>keep-alive</connection>
     </regex>
 </item> 
+
+
+
+
 
 <item>
 <title>[COLOR lightyellow][B]Multicanales CHIVAS69[/B][/COLOR] EstrellaTV  </title>
@@ -104,6 +111,23 @@
 </item> 
 
 
+<item>
+<title>[COLOR lightyellow][B]Multicanales CHIVAS69[/B][/COLOR] Univision </title>
+
+    <link>$doregex[geturl]</link>
+    <regex>
+        <name>geturl</name>
+        <expres>source:"(.*?)"</expres>
+        <page>$doregex[getunpacked]</page>
+    </regex>
+    <regex>
+        <name>getunpacked</name>
+        <expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)' )</expres>
+        <page>http://whostreams.net/embed/yjz92igvajl5l9</page>
+        <referer>http://whostreams.net/</referer>
+        <connection>keep-alive</connection>
+    </regex>
+</item> 
 
 
 
@@ -605,7 +629,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
- <item>
+ <!--item>
 <title>[B]Multicanal 2 (Chivas69 - Telemundo) [/B]     </title>
 
 <link>$doregex[url]|Referer=https://player.limpi.tv/&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36</link>
@@ -684,7 +708,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
    <page>http://www.chivass69.com/deportes/</page>
    <cookieJar/>
 </regex>
-</item>
+</item-->
 
 
 
@@ -2742,7 +2766,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
 
 
-  <itm>
+  <!--itm>
 <title>[B]Multicanal[/B] TikiTaka 01 [I] t [/I]</title>
 <link>http://api.djlive.pl/hls/theisra.m3u8</link>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
@@ -3322,7 +3346,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<item>
+<!--item>
 <title>[B]Multicanal[/B] VerLiga [I] Bein La Liga [/I] directo</title>
 <link>https:$doregex[get-id]|Referer=https://vergol.com/canales/live3/beinsport.php&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
 <regex>
@@ -3337,7 +3361,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <referer>https://verliga1.net/tv/inicio.php</referer>
 <agent>Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</agent>
 </regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/esp.jpg</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/esp.jpg</thumbnail></item-->
 
  
 
@@ -3385,7 +3409,10 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/esp.jpg</thumbnail></item-->
 
  
-  <item>
+ 
+ 
+ 
+  <!--item>
 <title>[B]Multicanal[/B] OchoTv [I] Goltv [/I] </title>
 <link>$doregex[get-id]|Referer=http://lacalleochotv.org&amp;User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0</link>
 <regex>
@@ -3949,7 +3976,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  <item>
 <title>[B]Multicanal[/B] VerLiga [I] Partidazo [/I] up</title>
  <link>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3Dstreams%26url=https://verliga1.net/tv/verliga.php</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/esp.jpg</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/esp.jpg</thumbnail></item-->
 
 
  
