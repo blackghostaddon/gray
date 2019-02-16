@@ -262,7 +262,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
-<title>[B]ESTRENOS LATINOS  [/B] *</title>
+<title>[B]ESTRENOS LATINOS  [/B] </title>
 
 <link>$doregex[makelist0]</link>
 
@@ -370,7 +370,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
-<title>[B]ESTRENOS ESPAÑA  *   [/B]</title>
+<title>[B]ESTRENOS ESPAÑA  * [/B]</title>
 
 <link>$doregex[makelist0]</link>
 
@@ -1469,7 +1469,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
-<title>[B]PELISPLANET[/B]     up   </title>
+<title>[B]PELISPLANET[/B]       </title>
 
 <link>$doregex[makelist2]</link>
 
@@ -2155,7 +2155,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
  
  <item>
-<title>[B]CIBERPELICULAS[/B]    **</title>
+<title>[B]CIBERPELICULAS[/B]    </title>
  <link>$doregex[makelist2]</link>
  
    <regex>
@@ -2265,7 +2265,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
  
  
- <item>
+ <im>
 <title>[B]MIRADETODO[/B]    ***</title>
 
 <link>$doregex[makelist1]</link>
@@ -3167,9 +3167,9 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-   <title>[makelist.param2]</title>
+   <title>[makelist.param1]</title>
    <urlsolve>[makelist.param2]</urlsolve>
-   <thumbnail></thumbnail>
+   <thumbnail>[makelist0.param2]</thumbnail>
 ]]></listrepeat>
 <expres><![CDATA[#$pyFunction
 def GetLSProData(page_data,Cookie_Jar,m):
@@ -3178,7 +3178,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
     d=''
     strdata=strdata.split(' ')
     for strchar in strdata:
-        d += chr(int(strchar)-4)
+        d += chr(int(strchar)-5)
     return d
 
   embeds = {'OnlineUpToBox' : 'https://uptobox.com/%s',
@@ -3259,7 +3259,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
     d=''
     strdata=strdata.split(' ')
     for strchar in strdata:
-        d += chr(int(strchar)-4)
+        d += chr(int(strchar)-5)
     return d
 
   embeds = {'OnlineUpToBox' : 'https://uptobox.com/%s',
@@ -3392,43 +3392,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<item>
-<title>space filmes Deadpool 2 </title>
-<link>$doregex[servidor]</link>
-<regex>
-<name>servidor</name>
-<listrepeat><![CDATA[
-<SetViewMode>55</SetViewMode>
-<title>[COLOR lime] - [/COLOR] [COLOR white] Servidor [servidor.param2][/COLOR]</title>
-<link>$doregex[id3]</link>
-]]></listrepeat>
-<expres><![CDATA[movie_links.*?\n.*?\n.*?href="(.*?)".*?(Openload|Streamango|Vidoza)]]></expres>
-<page>https://spacefilmes.xyz/watch-movies/Deadpool-2-35</page>
-</regex>
-
-
-<regex>
-<name>getUrl</name>
-<expres>src="([^"]+)</expres>
-<page>[servidor.param1]</page>
-</regex>
-
-<regex>
-<name>id3</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m):
-    import urlresolver, resolveurl
-    url = 'https://openload.co/f/[makelist.param1]'
-    try:
-        u = urlresolver.resolve(url)
-    except:
-        u = resolveurl.resolve(url)
-    return u
-]]></expres>
-<page></page>
-</regex>
-
-</item>
 
 
 
@@ -3436,65 +3399,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-
-
-
-<item>
-<title>La Monja</title>
-
-<link>http://ligatv.net:25461/movie/cinevall/08012019/628.mp4</link>
-
-</item>
-
-
-
-
-
-<item>
-<title>El Conjuro 2</title>
-
-<link>$doregex[makelist]</link>
-
-<regex>
-<name>makelist</name>
-<listrepeat><![CDATA[
-   <title>El Conjuro 2   server:[makelist.param1]</title>
-   <urlsolve>[makelist.param2]</urlsolve>
-   <thumbnail>[makelist0.param2]</thumbnail>
-]]></listrepeat>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m):
-  import re
-  def dec(strdata):
-    d=''
-    strdata=strdata.split(' ')
-    for strchar in strdata:
-        d += chr(int(strchar)-4)
-    return d
-
-  embeds = {'OnlineUpToBox' : 'https://uptobox.com/%s',
-            'OnlineYourUpload' : 'https://www.yourupload.com/watch/%s',
-            'TheVideoMe' : 'https://thevideo.me/embed-%s.html',
-            'OnlineFilesCDN' : 'https://filescdn.com/%s',
-            'OnlineGD' : '/protect/gdredirect.php?l=%s',
-            'OnlineUsersCloud' : 'https://userscloud.com/%s',
-            'OnlineUsersFiles' : 'https://usersfiles.com/%s',
-            'OnlineOkRu' : 'https://ok.ru/video/%s',
-            'OnlineOpenload' : 'https://openload.co/f/%s',
-            'OnlineStreamango' : 'https://streamango.com/f/%s',
-            'OnlineRapidVideo' : 'https://www.rapidvideo.com/v/%s',
-            'OnlineMega': 'https://mega.nz/#!%s',
-            'Trailer' : 'https://www.youtube.com/watch?v=%s'}
-  srcs = []
-  items = re.findall('class="link.+?onlinelink"\s*service="([^"]+)"\s*data="([^"]+)',page_data)
-  for embed,sdata in items:
-    srcs.append((embed.replace('Online',''), embeds[embed]%dec(sdata)))
-  return srcs
-]]></expres>
-<page>https://www.cinecalidad.to/pelicula/el-conjuro-2-el-caso-enfield-onlineeeee2-descarga/</page>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail>
-</item>
 
 
 

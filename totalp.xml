@@ -9,7 +9,7 @@
 
 
 <item>
-<title>•  [B]TotalPlay[/B]  [ Opcion [B]TecnoTV[/B] ][B] ts [/B]  </title>
+<title>•  [B]TotalPlay[/B]  [ Opcion [B]TecnoTV[/B] ][B]  [/B]  </title>
 <link>NA</link>
 <externallink>$doregex[select]$$TSDOWNLOADER$$</externallink>
 <regex>
