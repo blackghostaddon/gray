@@ -1427,7 +1427,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<item>
+<im>
 <title>[B]PELIS LOCURA[/B] Castellano </title>
 
 <link>$doregex[makelist2]</link>
@@ -2155,7 +2155,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
  
  <item>
-<title>[B]CIBERPELICULAS[/B] </title>
+<title>[B]CIBERPELICULAS[/B]    **</title>
  <link>$doregex[makelist2]</link>
  
    <regex>
@@ -2174,7 +2174,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>makelist3</name>
 <listrepeat><![CDATA[
 <title>[makelist2.param2]  Server:[makelist3.param1]</title>
- <link>$doregex[id3]</link>
+ <urlsolve>[makelist3.param1]</urlsolve>
  <fanart>[makelist2.param3]</fanart>
   <thumbnail>[makelist2.param3]</thumbnail>
 ]]></listrepeat>
@@ -2184,23 +2184,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 
 
-<regex>
-<name>id3</name>
-<expres><![CDATA[#$pyFunction
-def GetLSProData(page_data,Cookie_Jar,m):
-    import urlresolver, resolveurl
-    url = '[makelist3.param1]'
-    try:
-        u = urlresolver.resolve(url)
-    except:
-        u = resolveurl.resolve(url)
-    return u
-]]></expres>
-<page></page>
-</regex>
-
-
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
+<info>urlsolve</info>
  </item>
  
  
@@ -2281,7 +2266,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
  
  <item>
-<title>[B]MIRADETODO[/B] </title>
+<title>[B]MIRADETODO[/B]    ***</title>
 
 <link>$doregex[makelist1]</link>
 
@@ -2348,7 +2333,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>makelist3</name>
 <listrepeat><![CDATA[
 <title>[B][makelist1.param3][/B]  Server:[makelist3.param1]</title>
- <link>$doregex[id3]</link>
+ <urlsolve>$doregex[link]</urlsolve>
 <fanart>[makelist1.param2]</fanart>
 <thumbnail>[makelist1.param2]</thumbnail>
 ]]></listrepeat>
@@ -2357,7 +2342,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36</agent>
 </regex>
 
-<regex>
+<!--regex>
 <name>id3</name>
 <expres><![CDATA[#$pyFunction
 def GetLSProData(page_data,Cookie_Jar,m):
@@ -2370,7 +2355,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
     return u
 ]]></expres>
 <page></page>
-</regex>
+</regex-->
 
 <regex>
 <name>link</name>
@@ -2555,7 +2540,7 @@ import re, requests
 def GetLSProData(page_data,Cookie_Jar,m):
 
 ################################################################## FORMULARY #################################################################
- starturl = 'http://fanpelis.com/movies/'     ### usually, ~ 'http://website.com/category/' ###
+ starturl = 'https://fanpelis.com/movies/'     ### usually, ~ 'http://website.com/category/' ###
  categorylink = '' ### check the number of the param ###
  centerurl = 'page/'      ### something like  '/page/' ###
  firstpage = 1 ### probably  = 1 ###
