@@ -1001,7 +1001,7 @@ item>
 
 
 <item>
-<title>[B]Multicanal Zonasport02[/B]   *   </title>
+<title>[B]Multicanal Zonasport02[/B]      </title>
 <link>https://$doregex[ip]$doregex[m3u8]|Referer=http://www.playerfs.com/&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64; rv:56.0) Gecko/20100101 Firefox/56.0</link>
 <regex>
 <name>ip</name>
@@ -1025,7 +1025,7 @@ item>
 <regex>
 <name>stream</name>
 <expres>fid="([^"]+)</expres>
-<page>$doregex[server]/sharedcdn/sharedcdnEmbed.js?channel=$doregex[canal2]</page>
+<page>$doregex[server]/sharedcdn/sharedcdnEmbed.js?channel=$doregex[canal]</page>
 <agent>Mozilla/5.0 (Windows NT 10.0; WOW64; rv:56.0) Gecko/20100101 Firefox/56.0</agent>
 <referer>http://zonasports.es</referer>
 </regex>
@@ -1037,11 +1037,6 @@ item>
 <regex>
 <name>canal</name>
 <expres>channel='(.*?)'</expres>
-<page>http://zonasports.es/cha-x.php?id=2</page>
-</regex>
-<regex>
-<name>canal2</name>
-<expres>js\?channel=(.*?)'</expres>
 <page>http://zonasports.es/cha-x.php?id=2</page>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
