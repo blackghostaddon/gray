@@ -2088,11 +2088,11 @@ http://canales.iptvvall.com/espn2.html
 
 
 <item>
- <title>[B]Multicanal dailydeport 101[/B]     </title>
+ <title>[B]Multicanal dailydeport 101[/B]  *   </title>
 <link>http://$doregex[url]:80/hls/101.m3u8</link>
  <regex>
 <name>url</name>
-<expres><![CDATA[\%22\/\/(.*?)\%3]]></expres>
+<expres><![CDATA[\%22\/\/(.*?)\%3A80]]></expres>
 <page>http://nowlive.pro/1/101.html?id=101</page>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item-->
@@ -2104,7 +2104,7 @@ http://canales.iptvvall.com/espn2.html
 <link>http://$doregex[url]:80/hls/102.m3u8</link>
  <regex>
 <name>url</name>
-<expres><![CDATA[\%22\/\/(.*?)\%3]]></expres>
+<expres><![CDATA[\%22\/\/(.*?)\%3A80]]></expres>
 <page>http://nowlive.pro/1/102.html?id=102</page>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item-->
@@ -2117,7 +2117,7 @@ http://canales.iptvvall.com/espn2.html
 <link>http://$doregex[url]:80/hls/103.m3u8</link>
  <regex>
 <name>url</name>
-<expres><![CDATA[\%22\/\/(.*?)\%3]]></expres>
+<expres><![CDATA[\%22\/\/(.*?)\%3A80]]></expres>
 <page>http://nowlive.pro/1/103.html?id=103</page>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item-->
@@ -2134,7 +2134,7 @@ http://canales.iptvvall.com/espn2.html
 <link>http://$doregex[url]:80/hls/104.m3u8</link>
  <regex>
 <name>url</name>
-<expres><![CDATA[\%22\/\/(.*?)\%3]]></expres>
+<expres><![CDATA[\%22\/\/(.*?)\%3A80]]></expres>
 <page>http://nowlive.pro/1/104.html?id=104</page>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item-->
@@ -2147,7 +2147,7 @@ http://canales.iptvvall.com/espn2.html
 <link>http://$doregex[url]:80/hls/105.m3u8</link>
  <regex>
 <name>url</name>
-<expres><![CDATA[\%22\/\/(.*?)\%3]]></expres>
+<expres><![CDATA[\%22\/\/(.*?)\%3A80]]></expres>
 <page>http://nowlive.pro/1/105.html?id=105</page>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item-->
@@ -2159,7 +2159,7 @@ http://canales.iptvvall.com/espn2.html
 <link>http://$doregex[url]:80/hls/105.m3u8</link>
  <regex>
 <name>url</name>
-<expres><![CDATA[\%22\/\/(.*?)\%3]]></expres>
+<expres><![CDATA[\%22\/\/(.*?)\%3A80]]></expres>
 <page>http://nowlive.pro/1/106.html?id=106</page>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item-->
@@ -2171,19 +2171,19 @@ http://canales.iptvvall.com/espn2.html
 <link>http://$doregex[url]:80/hls/105.m3u8</link>
  <regex>
 <name>url</name>
-<expres><![CDATA[\%22\/\/(.*?)\%3]]></expres>
+<expres><![CDATA[\%22\/\/(.*?)\%3A80]]></expres>
 <page>http://nowlive.pro/1/107.html?id=107</page>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item-->
 
-
+http://nowlive.pro/1/105.html?id=105
 
 <item>
  <title>[B]Multicanal dailydeport  108[/B]   </title>
 <link>http://$doregex[url]:80/hls/105.m3u8</link>
  <regex>
 <name>url</name>
-<expres><![CDATA[\%22\/\/(.*?)\%3]]></expres>
+<expres><![CDATA[\%22\/\/(.*?)\%3A80]]></expres>
 <page>http://nowlive.pro/1/108.html?id=108</page>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item-->
@@ -2194,7 +2194,7 @@ http://canales.iptvvall.com/espn2.html
 <link>http://$doregex[url]:80/hls/105.m3u8</link>
  <regex>
 <name>url</name>
-<expres><![CDATA[\%22\/\/(.*?)\%3]]></expres>
+<expres><![CDATA[\%22\/\/(.*?)\%3A80]]></expres>
 <page>http://nowlive.pro/1/109.html?id=109</page>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item-->
@@ -2205,7 +2205,7 @@ http://canales.iptvvall.com/espn2.html
 <link>http://$doregex[url]:80/hls/105.m3u8</link>
  <regex>
 <name>url</name>
-<expres><![CDATA[\%22\/\/(.*?)\%3]]></expres>
+<expres><![CDATA[\%22\/\/(.*?)\%3A80]]></expres>
 <page>http://nowlive.pro/1/110.html?id=110</page>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item-->
@@ -2216,7 +2216,7 @@ http://canales.iptvvall.com/espn2.html
 <link>http://$doregex[url]:80/hls/105.m3u8</link>
  <regex>
 <name>url</name>
-<expres><![CDATA[\%22\/\/(.*?)\%3]]></expres>
+<expres><![CDATA[\%22\/\/(.*?)\%3A80]]></expres>
 <page>http://nowlive.pro/1/111.html?id=111</page>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item-->
