@@ -1556,7 +1556,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	 <regex>
         <name>canal</name>
         <expres>net\/embed\/(.*?)"</expres>
-        <page>https://cndf94.blogspot.com/p/vtv-1.html</page>https://cndf94.blogspot.com/p
+        <page>https://www.futbolblogcl.com/p/canal-1.html</page>
     </regex>
 </item>
 
@@ -1581,7 +1581,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	 <regex>
         <name>canal</name>
         <expres>net\/embed\/(.*?)"</expres>
-        <page>https://cndf94.blogspot.com/p/w-1.html</page>
+       <page>https://www.futbolblogcl.com/p/canal-2.html</page>
     </regex>
 </item>
 
@@ -1608,7 +1608,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	 <regex>
         <name>canal</name>
         <expres>net\/embed\/(.*?)"</expres>
-        <page>https://cndf94.blogspot.com/p/net-1.html</page>
+        <page>https://www.futbolblogcl.com/p/canal-3.html</page>
     </regex>
 </item>
 
@@ -1616,8 +1616,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-
-<item>
+
+<itm>
 <title>[B]Multicanal AndresFutbol [/B]  all </title>
 <link>$doregex[geturl]</link>
     <regex>
