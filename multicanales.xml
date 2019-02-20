@@ -2649,18 +2649,110 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
- <item>
-<title>[B]Multicanal[/B] TikiTaka 01 [I] [/I]</title>
-<link>$doregex[ip]</link>
-<regex>
-<name>ip</name>
-<expres>source: '(.*?)'</expres>
-<page>http://revolucionariostv.eu/elitegol/Repros/c1.php</page>
-<referer>http://revolucionariostv.eu</referer>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
- 
+<item>
+<title>[B]Multicanal[/B] TikiTaka 01 [I]  [/I]</title>
+<link>$doregex[get-url]</link>
+<regex>
+<name>get-url</name>
+<expres><![CDATA[#$pyFunction
+from resolveurl.plugins.lib import jsunpack
+def GetLSProData(page_data,Cookie_Jar,m):
+    import re
+    import requests
+    mozhdr = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0', 'Referer': 'http://revolucionariostv.eu/'}
+    url = 'http://revolucionariostv.eu/elitegol/Repros/c1.php'
+    html = requests.get(url, headers=mozhdr, verify=False).text
+    cid = re.findall('id="([^"]+).+?telerium', html)[0]
+    eurl = 'https://telerium.tv/embed/{}.html'.format(cid)
+    ehtml = requests.get(eurl, headers=mozhdr,verify=False).text
+    edata = re.findall('(eval\(function\(p,a,c,k,e,d.*)', ehtml)[0]
+    epage = jsunpack.unpack(edata).replace('\\', '')
+    refvar1,refvar2 = re.findall('url:atob\((\w+)\).*?atob\((\w+)\)', epage)[0]
+    refvar3 = re.findall('country,(\w+),', epage)[0]
+    file = re.findall('{}="([^"]+)'.format(refvar3), epage)[0].decode('base64')
+    url_part1 = re.findall('{}="([^"]+)'.format(refvar1), epage)[0].decode('base64')
+    url_part2 = re.findall('{}="([^"]+)'.format(refvar2), epage)[0].decode('base64')
+    tokurl = 'https://telerium.tv{}{}'.format(url_part1, url_part2)
+    mozhdr['Referer'] = eurl
+    token = requests.get(tokurl, headers=mozhdr, verify=False).text[1:-1]
+    return 'https:{}{}|Referer={}&User-Agent={}'.format(file, token, eurl, mozhdr['User-Agent'])
+]]></expres>
+<page></page>
+</regex>
+</item>
+
+
+
+
+
+<item>
+<title>[B]Multicanal[/B] TikiTaka 02 [I]  [/I]</title>
+<link>$doregex[get-url]</link>
+<regex>
+<name>get-url</name>
+<expres><![CDATA[#$pyFunction
+from resolveurl.plugins.lib import jsunpack
+def GetLSProData(page_data,Cookie_Jar,m):
+    import re
+    import requests
+    mozhdr = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0', 'Referer': 'http://revolucionariostv.eu/'}
+    url = 'http://revolucionariostv.eu/elitegol/Repros/c2.php'
+    html = requests.get(url, headers=mozhdr, verify=False).text
+    cid = re.findall('id="([^"]+).+?telerium', html)[0]
+    eurl = 'https://telerium.tv/embed/{}.html'.format(cid)
+    ehtml = requests.get(eurl, headers=mozhdr,verify=False).text
+    edata = re.findall('(eval\(function\(p,a,c,k,e,d.*)', ehtml)[0]
+    epage = jsunpack.unpack(edata).replace('\\', '')
+    refvar1,refvar2 = re.findall('url:atob\((\w+)\).*?atob\((\w+)\)', epage)[0]
+    refvar3 = re.findall('country,(\w+),', epage)[0]
+    file = re.findall('{}="([^"]+)'.format(refvar3), epage)[0].decode('base64')
+    url_part1 = re.findall('{}="([^"]+)'.format(refvar1), epage)[0].decode('base64')
+    url_part2 = re.findall('{}="([^"]+)'.format(refvar2), epage)[0].decode('base64')
+    tokurl = 'https://telerium.tv{}{}'.format(url_part1, url_part2)
+    mozhdr['Referer'] = eurl
+    token = requests.get(tokurl, headers=mozhdr, verify=False).text[1:-1]
+    return 'https:{}{}|Referer={}&User-Agent={}'.format(file, token, eurl, mozhdr['User-Agent'])
+]]></expres>
+<page></page>
+</regex>
+</item>
+
+
+
+
+
+<item>
+<title>[B]Multicanal[/B] TikiTaka 03 [I]  [/I]</title>
+<link>$doregex[get-url]</link>
+<regex>
+<name>get-url</name>
+<expres><![CDATA[#$pyFunction
+from resolveurl.plugins.lib import jsunpack
+def GetLSProData(page_data,Cookie_Jar,m):
+    import re
+    import requests
+    mozhdr = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0', 'Referer': 'http://revolucionariostv.eu/'}
+    url = 'http://revolucionariostv.eu/elitegol/Repros/c3.php'
+    html = requests.get(url, headers=mozhdr, verify=False).text
+    cid = re.findall('id="([^"]+).+?telerium', html)[0]
+    eurl = 'https://telerium.tv/embed/{}.html'.format(cid)
+    ehtml = requests.get(eurl, headers=mozhdr,verify=False).text
+    edata = re.findall('(eval\(function\(p,a,c,k,e,d.*)', ehtml)[0]
+    epage = jsunpack.unpack(edata).replace('\\', '')
+    refvar1,refvar2 = re.findall('url:atob\((\w+)\).*?atob\((\w+)\)', epage)[0]
+    refvar3 = re.findall('country,(\w+),', epage)[0]
+    file = re.findall('{}="([^"]+)'.format(refvar3), epage)[0].decode('base64')
+    url_part1 = re.findall('{}="([^"]+)'.format(refvar1), epage)[0].decode('base64')
+    url_part2 = re.findall('{}="([^"]+)'.format(refvar2), epage)[0].decode('base64')
+    tokurl = 'https://telerium.tv{}{}'.format(url_part1, url_part2)
+    mozhdr['Referer'] = eurl
+    token = requests.get(tokurl, headers=mozhdr, verify=False).text[1:-1]
+    return 'https:{}{}|Referer={}&User-Agent={}'.format(file, token, eurl, mozhdr['User-Agent'])
+]]></expres>
+<page></page>
+</regex>
+</item>
 
 
   <!--itm>
