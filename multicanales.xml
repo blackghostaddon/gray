@@ -360,7 +360,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
     mozhdr = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0', 'Referer': 'http://vipracing.info/'}
     url = 'http://vipracing.info/channel/canal-0'
     html = requests.get(url, headers=mozhdr, verify=False).text
-    cid = re.findall('id="([^"]+).+?telerium', html)[0]
+    cid = re.findall('id='([^']+).+?telerium', html)[0]
     eurl = 'https://telerium.tv/embed/{}.html'.format(cid)
     ehtml = requests.get(eurl, headers=mozhdr,verify=False).text
     edata = re.findall('(eval\(function\(p,a,c,k,e,d.*)', ehtml)[0]
@@ -2663,7 +2663,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
     mozhdr = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0', 'Referer': 'http://revolucionariostv.eu/'}
     url = 'http://revolucionariostv.eu/elitegol/Repros/c1.php'
     html = requests.get(url, headers=mozhdr, verify=False).text
-    cid = re.findall('id="([^"]+).+?telerium', html)[0]
+    cid = re.findall('id='([^']+).+?telerium', html)[0]
     eurl = 'https://telerium.tv/embed/{}.html'.format(cid)
     ehtml = requests.get(eurl, headers=mozhdr,verify=False).text
     edata = re.findall('(eval\(function\(p,a,c,k,e,d.*)', ehtml)[0]
@@ -2699,7 +2699,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
     mozhdr = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0', 'Referer': 'http://revolucionariostv.eu/'}
     url = 'http://revolucionariostv.eu/elitegol/Repros/c2.php'
     html = requests.get(url, headers=mozhdr, verify=False).text
-    cid = re.findall('id="([^"]+).+?telerium', html)[0]
+    cid = re.findall('id='([^']+).+?telerium', html)[0]
     eurl = 'https://telerium.tv/embed/{}.html'.format(cid)
     ehtml = requests.get(eurl, headers=mozhdr,verify=False).text
     edata = re.findall('(eval\(function\(p,a,c,k,e,d.*)', ehtml)[0]
@@ -2735,7 +2735,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
     mozhdr = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0', 'Referer': 'http://revolucionariostv.eu/'}
     url = 'http://revolucionariostv.eu/elitegol/Repros/c3.php'
     html = requests.get(url, headers=mozhdr, verify=False).text
-    cid = re.findall('id="([^"]+).+?telerium', html)[0]
+    cid = re.findall('id='([^']+).+?telerium', html)[0]
     eurl = 'https://telerium.tv/embed/{}.html'.format(cid)
     ehtml = requests.get(eurl, headers=mozhdr,verify=False).text
     edata = re.findall('(eval\(function\(p,a,c,k,e,d.*)', ehtml)[0]
