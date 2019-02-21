@@ -357,8 +357,8 @@ from resolveurl.plugins.lib import jsunpack
 def GetLSProData(page_data,Cookie_Jar,m):
     import re
     import requests
-    mozhdr = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0', 'Referer': 'http://vipracing.info/'}
-    url = 'http://vipracing.info/channel/canal-0'
+    mozhdr = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0', 'Referer': 'http://vipracing.icu/channel/canal-0'}
+    url = 'http://vipracing.icu/channel/canal-0'
     html = requests.get(url, headers=mozhdr, verify=False).text
     cid = re.findall('id=\'(.*?)\'.+?telerium', html)[0]
     eurl = 'https://telerium.tv/embed/{}.html'.format(cid)
@@ -382,6 +382,30 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
+ 
+<item>
+<title>[B]Multicanal VIP 02 [/B]     </title>
+<link>$doregex[get-url]$doregex[get-token]|Referer=https://nlive.club/stream/1/38986.html&amp;Origin=https://nlive.club&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:65.0) Gecko/20100101 Firefox/65.0</link>
+
+
+<regex>
+   <name>get-url</name>   
+   <expres>curl = "(.*?)"</expres>  
+   <page>https://nlive.club/stream/1/38986.html</page>
+   <referer>http://vipracing.icu/channel/canal-2</referer>
+     <Agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:65.0) Gecko/20100101 Firefox/65.0</Agent>
+   
+</regex>
+
+<regex>
+   <name>get-token</name>   
+   <expres>token":"(.*?)"</expres>  
+   <page>https://nlive.club/getToken.php</page>
+   <referer>https://nlive.club/stream/1/38986.html</referer>
+   <Agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:65.0) Gecko/20100101 Firefox/65.0</Agent>
+</regex>
+ <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail>
+</item>
 
 
 
@@ -2732,7 +2756,7 @@ from resolveurl.plugins.lib import jsunpack
 def GetLSProData(page_data,Cookie_Jar,m):
     import re
     import requests
-    mozhdr = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0', 'Referer': 'http://revolucionariostv.eu/'}
+    mozhdr = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0', 'Referer': 'http://revolucionariostv.eu'}
     url = 'http://revolucionariostv.eu/elitegol/Repros/c3.php'
     html = requests.get(url, headers=mozhdr, verify=False).text
     cid = re.findall('id=\'(.*?)\'.+?telerium', html)[0]
