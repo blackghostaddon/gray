@@ -360,11 +360,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <expres>href=\'(.*?torrent)\'</expres>
 <page>http://www.mejortorrent.com/secciones.php?sec=descargas&amp;ap=contar&amp;tabla=peliculas&amp;id=[makelist2.param1]&amp;link_bajar=1</page>
 </regex>
-
-
-
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
-
 </item>
 
 
@@ -372,7 +368,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<item>
+<itm>
 <title>     [B]Estrenos[/B] Castellano  **</title>
 <link>$doregex[makelist2]</link>
 
@@ -440,7 +436,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <item>
 <title>     [B]PirateBay[/B]  Estrenos Audio Latino </title>
 <link>$doregex[makelist]</link>
-
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
@@ -453,13 +448,27 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page>https://thepiratebay.org/search/latino/0/3/201</page>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
-
 </item>
 
 
 
 
+<item>
+<title>     [B]PirateBay[/B]  Estrenos Audio España </title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+   <title>[makelist.param3]</title>
 
+    <link>plugin://plugin.video.quasar/play?uri=[makelist.param4]</link>
+ <thumbnail>[makelist.param2]</thumbnail>
+]]></listrepeat>
+<expres>class="detName.*?href="(.*?)".*?title="(.*?)">(.*?)<[\w\W\s]{0,20}href=\"(.*?)\"</expres>
+<page>https://thepiratebay.org/search/castellano/0/3/201</page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
+</item>
 
 
 
@@ -494,14 +503,13 @@ def GetLSProData(page_data,Cookie_Jar,m):
    import xbmcgui
    dialog = xbmcgui.Dialog()
    ret = dialog.select('Elige una Seccion', ['Peliculas  Latino', 'Peliculas en Castellano', 'Top 100 Movies', 'Recent Movies', 'Recent TV Shows'])
-   lists = ['https://www.limetorrents.cc/search/movies/latino/', 'https://www.limetorrents.cc/search/movies/castellano/', 'https://www.limetorrents.cc/cat_top/16/Movies/', 'https://www.limetorrents.io/browse-torrents/Movies/', 'https://www.limetorrents.io/browse-torrents/TV-shows/']
+   lists = ['https://www.limetorrents.info/search/all/latino/date/1/', 'https://www.limetorrents.info/search/all/castellano/date/1/', 'https://www.limetorrents.info/cat_top/16/Movies/', 'https://www.limetorrents.info/top100', 'https://www.limetorrents.info/browse-torrents/TV-shows/seeds/1/']
    return lists[ret]
 ]]></expres>
 <page></page>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
 </item>
-
 
 
 
@@ -538,7 +546,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <expres>href=\/torrent\/(.*?)\/.*?b>(.*?)<</expres>
 <page>$doregex[select]</page>
 </regex>
-
 <regex>
 <name>select</name>
 <expres><![CDATA[#$pyFunction
@@ -551,8 +558,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 ]]></expres>
 <page></page>
 </regex>
-
-
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/torrent.png</thumbnail>
 </item>
 
