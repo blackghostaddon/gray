@@ -179,7 +179,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-
 <regex>
 <name>makelist0</name>
 <listrepeat><![CDATA[

@@ -639,33 +639,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
- <item>
-<title>[B]Multicanal 1 (Chivas69) [/B]  FoxDeportes   </title>
-
-<link>$doregex[url]|Referer=https://player.limpi.tv/&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36</link>
-<regex>
-   <name>url</name>   
-   <expres>source: "(.*?)"</expres>  
-   <page>$doregex[temp]/$doregex[canal]</page>
-   <referer>https://player.limpi.tv/</referer>
-   <cookieJar/>
-</regex>
-
-<regex> 
-   <name>temp</name>   
-   <expres>src="(.*?)\'</expres>  
-   <page>https://player.limpi.tv/embed.js</page>
-   <cookieJar/>
-</regex>
-<regex> 
-   <name>canal</name>   
-   <expres>tv\/live\/(.*?)"</expres>  
-   <page>http://anahix11.com/foxmex.php</page>
-   <cookieJar/>
-</regex>
-</item>
-
-
 
 <!--item>
 <title>[B]Multicanal UFC[/B]   </title>
