@@ -44,7 +44,7 @@
         <name>getunpacked</name>
         <expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)' )</expres>
         <page>http://whostreams.net/embed/6otcp42qvvs</page>
-        <referer>http://whostreams.net/</referer>
+        <referer>http://www.chivass69.com/</referer>
         <connection>keep-alive</connection>
     </regex>
 </item> 
@@ -65,7 +65,7 @@
         <name>getunpacked</name>
         <expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)' )</expres>
         <page>http://whostreams.net/embed/k35qrdo5h</page>
-        <referer>http://whostreams.net/</referer>
+        <referer>http://www.chivass69.com/</referer>
         <connection>keep-alive</connection>
     </regex>
 </item> 
@@ -87,7 +87,7 @@
         <name>getunpacked</name>
         <expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)' )</expres>
         <page>http://whostreams.net/embed/jnyz0sm1hth78y</page>
-        <referer>http://whostreams.net/</referer>
+        <referer>http://www.chivass69.com/</referer>
         <connection>keep-alive</connection>
     </regex>
 </item> 
@@ -107,7 +107,7 @@
         <name>getunpacked</name>
         <expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)' )</expres>
         <page>http://whostreams.net/embed/yjz92igvajl5l9</page>
-        <referer>http://whostreams.net/</referer>
+        <referer>http://www.chivass69.com/</referer>
         <connection>keep-alive</connection>
     </regex>
 </item> 
@@ -1282,7 +1282,7 @@ def GetLSProData(page_data,Cookie_Jar,m):#streamwatcher2013
         <name>getunpacked</name>
         <expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)' )</expres>
         <page>http://whostreams.net/embed/$doregex[canal]</page>
-        <referer>http://whostreams.net/</referer>
+        <referer>http://zonasports.es/</referer>
         <connection>keep-alive</connection>
     </regex>
 	 <regex>
@@ -1304,7 +1304,7 @@ def GetLSProData(page_data,Cookie_Jar,m):#streamwatcher2013
         <name>getunpacked</name>
         <expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)' )</expres>
         <page>http://whostreams.net/embed/$doregex[canal]</page>
-        <referer>http://whostreams.net/</referer>
+        <referer>http://zonasports.es</referer>
         <connection>keep-alive</connection>
     </regex>
 	 <regex>
@@ -1325,7 +1325,7 @@ def GetLSProData(page_data,Cookie_Jar,m):#streamwatcher2013
         <name>getunpacked</name>
         <expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)' )</expres>
         <page>http://whostreams.net/embed/$doregex[canal]</page>
-        <referer>http://whostreams.net/</referer>
+        <referer>http://zonasports.es</referer>
         <connection>keep-alive</connection>
     </regex>
 	 <regex>
@@ -1346,7 +1346,7 @@ def GetLSProData(page_data,Cookie_Jar,m):#streamwatcher2013
         <name>getunpacked</name>
         <expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)' )</expres>
         <page>http://whostreams.net/embed/$doregex[canal]</page>
-        <referer>http://whostreams.net/</referer>
+        <referer>http://zonasports.es</referer>
         <connection>keep-alive</connection>
     </regex>
 	 <regex>
@@ -1418,7 +1418,7 @@ def GetLSProData(page_data,Cookie_Jar,m):#streamwatcher2013
         <name>getunpacked</name>
         <expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)' )</expres>
         <page>http://whostreams.net/embed/$doregex[canal]</page>
-        <referer>http://whostreams.net/</referer>
+        <referer>http://futbolchile.net/</referer>
         <connection>keep-alive</connection>
     </regex>
 	 <regex>
@@ -1467,7 +1467,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
         <name>getunpacked</name>
         <expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)' )</expres>
         <page>http://whostreams.net/embed/$doregex[canal]</page>
-        <referer>http://whostreams.net/</referer>
+        <referer>https://www.futbolblogcl.com</referer>
         <connection>keep-alive</connection>
     </regex>
 	 <regex>
@@ -1492,7 +1492,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
         <name>getunpacked</name>
         <expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)' )</expres>
         <page>http://whostreams.net/embed/$doregex[canal]</page>
-        <referer>http://whostreams.net/</referer>
+        <referer>https://www.futbolblogcl.com</referer>
         <connection>keep-alive</connection>
     </regex>
 	 <regex>
@@ -1519,7 +1519,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
         <name>getunpacked</name>
         <expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)' )</expres>
         <page>http://whostreams.net/embed/$doregex[canal]</page>
-        <referer>http://whostreams.net/</referer>
+        <referer>https://www.futbolblogcl.com</referer>
         <connection>keep-alive</connection>
     </regex>
 	 <regex>
@@ -1546,7 +1546,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
         <name>getunpacked</name>
         <expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)' )</expres>
         <page>http://whostreams.net/embed/$doregex[canal]</page>
-        <referer>http://whostreams.net/</referer>
+        <referer>https://www.futbolblogcl.com</referer>
         <connection>keep-alive</connection>
     </regex>
 	 <regex>
@@ -2454,7 +2454,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
         <name>getunpacked</name>
         <expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)' )</expres>
         <page>http://whostreams.net/embed/$doregex[canal]</page>
-        <referer>http://whostreams.net/</referer>
+        <referer>http://sportzonline.xyz</referer>
         <connection>keep-alive</connection>
     </regex>
 	 <regex>
