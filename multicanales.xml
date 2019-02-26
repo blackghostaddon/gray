@@ -1534,7 +1534,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <itm>
-<title>[B]Multicanal AndresFutbol [/B]  all </title>
+<title>[B]Multicanal AndresFutbol [/B]  todos </title>
 <link>$doregex[geturl]</link>
     <regex>
         <name>geturl</name>
@@ -1545,7 +1545,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
         <name>getunpacked</name>
         <expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)' )</expres>
         <page>http://whostreams.net/embed/$doregex[canal]</page>
-        <referer>https://www.futbolblogcl.com</referer>
+        <referer>https://cndf94.blogspot.com/</referer>
         <connection>keep-alive</connection>
     </regex>
 	 <regex>
@@ -1570,7 +1570,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	
 </item>
 
- 
+
 
 
 
