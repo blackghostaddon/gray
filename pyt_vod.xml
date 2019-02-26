@@ -280,7 +280,7 @@ import re, requests
 def GetLSProData(page_data,Cookie_Jar,m):
 
 ################################################################## FORMULARY #################################################################
- starturl = 'http://www.cinecalidad.to/'     ### usually, ~ 'http://website.com/category/' ###
+ starturl = 'https://www.cinecalidad.to/'     ### usually, ~ 'http://website.com/category/' ###
  categorylink = '' ### check the number of the param ###
  centerurl = 'page/'      ### something like  '/page/' ###
  firstpage = 1 ### probably  = 1 ###
@@ -388,7 +388,7 @@ import re, requests
 def GetLSProData(page_data,Cookie_Jar,m):
 
 ################################################################## FORMULARY #################################################################
- starturl = 'http://www.cinecalidad.to/espana/'     ### usually, ~ 'http://website.com/category/' ###
+ starturl = 'https://www.cinecalidad.to/espana/'     ### usually, ~ 'http://website.com/category/' ###
  categorylink = '' ### check the number of the param ###
  centerurl = 'page/'      ### something like  '/page/' ###
  firstpage = 1 ### probably  = 1 ###
@@ -3144,7 +3144,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>[makelist0.param2]</thumbnail>
 ]]></listrepeat>
 <expres><![CDATA[post_box.*?href="([^"]+).*?src="([^"]+).*?alt="([^"]+).*?title="([^"]+)]]></expres>
-<page>http://www.cinecalidad.to/espana/?s=$doregex[buscar]</page>
+<page>https://www.cinecalidad.to/espana/?s=$doregex[buscar]</page>
 </regex>
 
 <regex>
@@ -3225,7 +3225,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>[makelist0.param2]</thumbnail>
 ]]></listrepeat>
 <expres><![CDATA[post_box.*?href="([^"]+).*?src="([^"]+).*?alt="([^"]+).*?title="([^"]+)]]></expres>
-<page>http://www.cinecalidad.to/?s=$doregex[buscar]</page>
+<page>https://www.cinecalidad.to/?s=$doregex[buscar]</page>
 </regex>
 
 <regex>
