@@ -280,13 +280,13 @@ import re, requests
 def GetLSProData(page_data,Cookie_Jar,m):
 
 ################################################################## FORMULARY #################################################################
- starturl = 'https://www.cinecalidad.to/'     ### usually, ~ 'http://website.com/category/' ###
+ starturl = 'https://www.cinecalidad.to/'     ### usually, ~ 'http://website.com/category/' ### 
  categorylink = '' ### check the number of the param ###
  centerurl = 'page/'      ### something like  '/page/' ###
  firstpage = 1 ### probably  = 1 ###
  endurl = '/' ### can be empty ###    ### endurl without final / (SLASH) ###
 #
- dataregex = 'post_box.*?href="([^"]+).*?src="([^"]+).*?alt="([^"]+).*?title="([^"]+)'      ### To adapt ###
+ dataregex = 'post_box.*?href=([^>]+).*?src=(.*?jpg).*?alt="([^"]+).*?title="([^"]+)'      ### To adapt ###
  headers = {'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:50.0) Gecko/20100101 Firefox/50.0', 'Referer': ''}      ### To adapt ###
 ##############################################################################################################################################
 
@@ -308,6 +308,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 ]]></expres><page></page>
 </regex>
+
 
 <regex>
 <name>makelist</name>
@@ -370,7 +371,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
-<title>[B]ESTRENOS ESPAÑA  * [/B]</title>
+<title>[B]ESTRENOS ESPAÑA   [/B]</title>
 
 <link>$doregex[makelist0]</link>
 
@@ -394,7 +395,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  firstpage = 1 ### probably  = 1 ###
  endurl = '/' ### can be empty ###    ### endurl without final / (SLASH) ###
 #
- dataregex = 'post_box.*?href="([^"]+).*?src="([^"]+).*?alt="([^"]+).*?title="([^"]+)'      ### To adapt ###
+ dataregex = 'post_box.*?href=(.*?)\>.*?src=(.*?jpg).*?alt="([^"]+).*?title="([^"]+)'      ### To adapt ###
  headers = {'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:50.0) Gecko/20100101 Firefox/50.0', 'Referer': ''}      ### To adapt ###
 ##############################################################################################################################################
 
