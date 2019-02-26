@@ -28,7 +28,18 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 </item>
 
-
+                        
+http://srregio.xyz/IPTV/regioflix.m3u
+http://srregio.xyz/IPTV/regiotv.m3u
+http://srregio.xyz/IPTV/tv.m3u
+http://srregio.xyz/IPTV/deportes.m3u
+http://srregio.xyz/IPTV/alterna.m3u
+http://srregio.xyz/IPTV/alterna2.m3u
+http://srregio.xyz/IPTV/spain.m3u	
+						
+						
+						
+lista addon: https://srregio.net/
 
 			<item>
 		<title>•  [B]TotalPlay[/B]  [ Opcion [B]RegioTV[/B] ][B]  [/B]  </title>
@@ -40,8 +51,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 def GetLSProData(page_data,Cookie_Jar,m):
    import xbmcgui
    dialog = xbmcgui.Dialog()
-   ret = dialog.select('Seleciona una Lista ', ['RegioFlix', 'RegioTV', 'smartTV', 'Deportes', 'LigaMX', 'Alterna'])
-   lists = ['http://srregio.xyz/IPTV/regioflix.m3u', 'http://srregio.xyz/IPTV/regiotv.m3u', 'http://srregio.xyz/IPTV/smartv.m3u', 'http://srregio.xyz/IPTV/deportes.m3u', 'http://srregio.xyz/IPTV/ligamx.m3u', 'http://srregio.xyz/IPTV/alterna.m3u']
+   ret = dialog.select('Seleciona una Lista ', ['RegioFlix', 'RegioTV', 'smartTV', 'Deportes', 'Alterna', 'Alterna 2'])
+   lists = ['http://srregio.xyz/IPTV/regioflix.m3u', 'http://srregio.xyz/IPTV/regiotv.m3u', 'http://srregio.xyz/IPTV/smartv.m3u', 'http://srregio.xyz/IPTV/deportes.m3u', 'http://srregio.xyz/IPTV/alterna.m3u', 'http://srregio.xyz/IPTV/alterna2.m3u']
    return lists[ret]
 ]]></expres>
 <page></page>
