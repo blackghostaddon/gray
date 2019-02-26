@@ -60,7 +60,7 @@ Bienvenid@ a BlackGhost, un Addon de entretenimiento para compartir y disfrutar.
 Si deseas hacer una donación por favor accede en el siguiente enlace, de antemano ¡Gracias!
 http://paypal.me/blackghost</info></item> 
     <item>
-  <title>[B][COLOR yellow] desde [COLOR orange][5 dlls][/COLOR] [/COLOR] [COLOR blue][5 euros]  [COLOR lime][100 MNX]  [/COLOR]ingresando a [/COLOR][/B]</title><link>na</link><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/donador.png</thumbnail>
+  <title>[B][COLOR yellow]al correo blackaddon@mail.com [/COLOR]o ingresando a [/B]</title><link>na</link><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/donador.png</thumbnail>
 <fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart><info>[COLOR yellow][B]The BlackGhost[/B][/COLOR]
 Bienvenid@ a BlackGhost, un Addon de entretenimiento para compartir y disfrutar.  
 *Puedes apoyar al Addon haciendo una donación voluntaria, la cual servirá para mantener activo el Addon y para el mantenimiento y soporte del mismo. Tu donación es anónima y no importa la cantidad ¡Con tu aportación haces la diferencia! 
@@ -248,10 +248,9 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 </item>
 
-<item> <title>[UPPERCASE] [COLOR white] ----[ Codigo Temporal:[/UPPERCASE][B] [COLOR lime] febrero 23 [/COLOR]]---- [/COLOR][/B]</title><link>na</link>
+<item> <title>[UPPERCASE] [COLOR white] ----[ Ayuda y Soporte en Telegrsm:[/UPPERCASE][B] [COLOR lime] @blackghostkodi[/COLOR]]---- [/COLOR][/B]</title><link>na</link>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/icon.png</thumbnail>
 <fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
-</item>
 
 
   <item> <title>[B] [COLOR lightskyblue]Si ya has realizado una donacion envia un mensaje al correo: [/COLOR][/B]</title><link>na</link>
