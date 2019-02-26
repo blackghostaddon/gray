@@ -341,7 +341,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
             'OnlineMega': 'https://mega.nz/#!%s',
             'Trailer' : 'https://www.youtube.com/watch?v=%s'}
   srcs = []
-  items = re.findall('class="link.+?onlinelink"\s*service="([^"]+)"\s*data="([^"]+)',page_data)
+  items = re.findall('class="link.+?onlinelink"\s*service=(.*?)\s*data="([^"]+)',page_data)
   for embed,sdata in items:
     srcs.append((embed.replace('Online',''), embeds[embed]%dec(sdata)))
   return srcs
@@ -350,7 +350,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 
  
-
+class="link onlinelink" service=OnlineOpenload data="55 84 83 86 60 74 121 104 110 102 108"
 
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail>
 </item>
@@ -454,7 +454,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
             'OnlineMega': 'https://mega.nz/#!%s',
             'Trailer' : 'https://www.youtube.com/watch?v=%s'}
   srcs = []
-  items = re.findall('class="link.+?onlinelink"\s*service="([^"]+)"\s*data="([^"]+)',page_data)
+  items = re.findall('class="link.+?onlinelink"\s*service=(.*?)\sdata="([^"]+)',page_data)
   for embed,sdata in items:
     srcs.append((embed.replace('Online',''), embeds[embed]%dec(sdata)))
   return srcs
