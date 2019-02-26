@@ -59,7 +59,9 @@ Bienvenid@ a BlackGhost, un Addon de entretenimiento para compartir y disfrutar.
 *Puedes apoyar al Addon haciendo una donación voluntaria, la cual servirá para mantener activo el Addon y para el mantenimiento y soporte del mismo. Tu donación es anónima y no importa la cantidad ¡Con tu aportación haces la diferencia! 
 Si deseas hacer una donación por favor accede en el siguiente enlace, de antemano ¡Gracias!
 http://paypal.me/blackghost</info></item> 
-    <item>
+ 
+
+ <item>
   <title>[B][COLOR yellow]al correo blackaddon@mail.com [/COLOR]o ingresando a [/B]</title><link>na</link><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/donador.png</thumbnail>
 <fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart><info>[COLOR yellow][B]The BlackGhost[/B][/COLOR]
 Bienvenid@ a BlackGhost, un Addon de entretenimiento para compartir y disfrutar.  
@@ -73,142 +75,11 @@ Bienvenid@ a BlackGhost, un Addon de entretenimiento para compartir y disfrutar.
 *Puedes apoyar al Addon haciendo una donación voluntaria, la cual servirá para mantener activo el Addon y para el mantenimiento y soporte del mismo. Tu donación es anónima y no importa la cantidad ¡Con tu aportación haces la diferencia! 
 Si deseas hacer una donación por favor accede en el siguiente enlace, de antemano ¡Gracias!
 http://paypal.me/blackghost</info></item>   
-  
-<!--item> <title>[B][UPPERCASE] [COLOR white] Edgar Legaspi [/COLOR][/B][/UPPERCASE]</title><link>na</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/donador.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart></item> 
-  	<item> <title>[B][UPPERCASE] [COLOR white]Robert Villa [/COLOR][/B][/UPPERCASE]</title><link>na</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/donador.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart></item> 
-  	<item> <title>[B][UPPERCASE] [COLOR white]Eddy Contreras [/COLOR][/B][/UPPERCASE]</title><link>na</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/donador.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart></item> 
-  	<item> <title>[B][UPPERCASE] [COLOR white]Nestor Soto Lopez [/COLOR][/B][/UPPERCASE]</title><link>na</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/donador.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart></item> 
-  	<item> <title>[B][UPPERCASE] [COLOR white]Oliver Carlos Lidon [/COLOR][/B][/UPPERCASE]</title><link>na</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/donador.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart></item> 
- 	<item> <title>[B][UPPERCASE] [COLOR white] Rogelio Leon [/COLOR][/B][/UPPERCASE]</title><link>na</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/donador.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart></item> 
-  	<item> <title>[B][UPPERCASE] [COLOR white]Manuel Calderero [/COLOR][/B][/UPPERCASE]</title><link>na</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/donador.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart></item> 
-  	<item> <title>[B][UPPERCASE] [COLOR white]Denys Yanes [/COLOR][/B][/UPPERCASE]</title><link>na</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/donador.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart></item> 
- 	<item> <title>[B][UPPERCASE] [COLOR white] Alejandro Martinez Reyes [/COLOR][/B][/UPPERCASE]</title><link>na</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/donador.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart></item> 
-  	<item> <title>[B][UPPERCASE] [COLOR white]Jose Manuel Velarde Valenzuela [/COLOR][/B][/UPPERCASE]</title><link>na</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/donador.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart></item> 
-  	<item> <title>[B][UPPERCASE] [COLOR white]Sergio Rios [/COLOR][/B][/UPPERCASE]</title><link>na</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/donador.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart></item> 
- 	<item> <title>[B][UPPERCASE] [COLOR white] Antonio Sánchez [/COLOR][/B][/UPPERCASE]</title><link>na</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/donador.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart></item> 
-  
-	<!--item> <title>[B][UPPERCASE] [COLOR white]roberto arriaza [/COLOR][/B][/UPPERCASE]</title><link>na</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/donador.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart></item> 
-               <item> <title>[B][UPPERCASE] [COLOR white]sergio moreno [/COLOR][/B][/UPPERCASE]</title><link>na</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/donador.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart></item> 
-             <item> <title>[B][UPPERCASE] [COLOR white]l jeske[/COLOR][/B][/UPPERCASE]</title><link>na</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/donador.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart></item> 
-  
-  
-             <item> <title>[B][UPPERCASE] [COLOR white]amado mendez[/COLOR][/B][/UPPERCASE]</title><link>na</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/donador.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart></item> 
 
-           <item> <title>[B][UPPERCASE] [COLOR white]Reeder Calderon[/COLOR][/B][/UPPERCASE]</title><link>na</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/donador.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart></item> 
-       <item> <title>[B][UPPERCASE] [COLOR white]Marco grados[/COLOR][/B][/UPPERCASE]</title><link>na</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/donador.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart></item> 
- 
-       <item> <title>[B][UPPERCASE] [COLOR white]fabian espinel[/COLOR][/B][/UPPERCASE]</title><link>na</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/donador.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart></item> 
- 
-     <item> <title>[B][UPPERCASE] [COLOR white]*just_for_you*[/COLOR][/B][/UPPERCASE]</title><link>na</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/donador.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart></item> 
-   <item> <title>[B][UPPERCASE] [COLOR white]mariela yanez[/COLOR][/B][/UPPERCASE]</title><link>na</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/donador.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart></item> 
- <item> <title>[B][UPPERCASE] [COLOR white]edgar legaspi[/COLOR][/B][/UPPERCASE]</title><link>na</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/donador.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart></item> 
- <item> <title>[B][UPPERCASE] [COLOR white]roberto arriaza[/COLOR][/B][/UPPERCASE]</title><link>na</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/donador.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart></item>
- <item> <title>[B][UPPERCASE] [COLOR white]ruben arias[/COLOR][/B][/UPPERCASE]</title><link>na</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/donador.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart></item>
- <item> <title>[B][UPPERCASE] [COLOR white]antonio torres  [/COLOR][/B][/UPPERCASE]</title><link>na</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/donador.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart></item>
- <item> <title>[B][UPPERCASE] [COLOR white]ivan saldana[/COLOR][/B][/UPPERCASE]</title><link>na</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/donador.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart></item>
- <item> <title>[B][UPPERCASE] [COLOR white]miguel angel guzman  [/COLOR][/B][/UPPERCASE]</title><link>na</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/donador.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart></item>
- <item> <title>[B][UPPERCASE] [COLOR white]luis ramirez lopez[/COLOR][/B][/UPPERCASE]</title><link>na</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/donador.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart></item>
- <item> <title>[B][UPPERCASE] [COLOR white]rogelio leon[/COLOR][/B][/UPPERCASE]</title><link>na</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/donador.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart></item>
- <item> <title>[B][UPPERCASE] [COLOR white]óscar iván flores[/COLOR][/B][/UPPERCASE]</title><link>na</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/donador.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart></item>
- <item> <title>[B][UPPERCASE] [COLOR white]gaudencio   junco[/COLOR][/B][/UPPERCASE]</title><link>na</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/donador.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart></item>
- <item> <title>[B][UPPERCASE] [COLOR white]jose cruz[/COLOR][/B][/UPPERCASE]</title><link>na</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/donador.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart></item>
- <item> <title>[B][UPPERCASE] [COLOR white]emilio fernandez  [/COLOR][/B][/UPPERCASE]</title><link>na</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/donador.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart></item>
- <item> <title>[B][UPPERCASE] [COLOR white]jesus villasol rodriguez[/COLOR][/B][/UPPERCASE]</title><link>na</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/donador.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart></item>
- <item> <title>[B][UPPERCASE] [COLOR white]aquilino josé santos [/COLOR][/B][/UPPERCASE]</title><link>na</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/donador.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart></item>
- <item> <title>[B][UPPERCASE] [COLOR white]jose maria platero [/COLOR][/B][/UPPERCASE]</title><link>na</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/donador.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart></item>
- <item> <title>[B][UPPERCASE] [COLOR white]daniela reyes  [/COLOR][/B][/UPPERCASE]</title><link>na</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/donador.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart></item>
- <item> <title>[B][UPPERCASE] [COLORwhite]eduardo vargas[/COLOR][/B][/UPPERCASE]</title><link>na</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/donador.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart></item>
- <item> <title>[B][UPPERCASE] [COLOR white]jesus jimenez [/COLOR][/B][/UPPERCASE]</title><link>na</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/donador.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart></item>
- <item> <title>[B][UPPERCASE] [COLOR white]antonio jesús ayllon [/COLOR][/B][/UPPERCASE]</title><link>na</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/donador.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart></item>
- <item> <title>[B][UPPERCASE] [COLOR white]luis hernandez morales[/COLOR][/B][/UPPERCASE]</title><link>na</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/donador.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart></item>
- <item> <title>[B][UPPERCASE] [COLOR white]mario chable  [/COLOR][/B][/UPPERCASE]</title><link>na</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/donador.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart></item>
-  <item> <title>[B][UPPERCASE] [COLOR yellow]gracias por su donación  y apoyo![/COLOR][/B][/UPPERCASE]</title><link>na</link>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/donador.png</thumbnail>
-<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart></item-->     
+
+
+
+
 
 
 
@@ -221,7 +92,8 @@ http://paypal.me/blackghost</info></item>
 
 
 <item>
-<title>[B][UPPERCASE] [COLOR yellow]ingresar al addon[/COLOR][/B] [/UPPERCASE]</title><link>na</link>
+<title>[B][UPPERCASE] [COLOR yellow]ingresar al addon[/COLOR][/B] [/UPPERCASE]</title>
+<link>na</link>
 <externallink>http://cliffpelotas.webcindario.com/bg/$doregex[password].xml</externallink>
 <regex>
 <name>password</name>
@@ -237,6 +109,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page></page>
 <cookieJar></cookieJar>
 </regex>
+
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/icon.png</thumbnail>
 <fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 </item>
