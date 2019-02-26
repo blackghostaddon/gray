@@ -341,7 +341,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
             'OnlineMega': 'https://mega.nz/#!%s',
             'Trailer' : 'https://www.youtube.com/watch?v=%s'}
   srcs = []
-  items = re.findall('class=\"link\sonlinelink\"\sservice=(.*?mango|.*?ideo|.*?load).*?data="(.*?)"',page_data)
+  items = re.findall('class=\"link\sonlinelink\"\sservice=(.*?)\sdata="(.*?)"',page_data)
   for embed,sdata in items:
     srcs.append((embed.replace('Online',''), embeds[embed]%dec(sdata)))
   return srcs
@@ -350,7 +350,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 
  
-class="link onlinelink" service=OnlineOpenload data="55 84 83 86 60 74 121 104 110 102 108"
 
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail>
 </item>
@@ -371,7 +370,7 @@ class="link onlinelink" service=OnlineOpenload data="55 84 83 86 60 74 121 104 1
 
 
 <item>
-<title>[B]ESTRENOS ESPAÑA  ** [/B]</title>
+<title>[B]ESTRENOS ESPAÑA  [/B]</title>
 
 <link>$doregex[makelist0]</link>
 
@@ -426,7 +425,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-   <title>[makelist0.param3]   server:[makelist.param1] - [makelist.param2] </title>
+   <title>[makelist0.param3]   server:[makelist.param1] </title>
    <urlsolve>[makelist.param2]</urlsolve>
    <thumbnail></thumbnail>
 ]]></listrepeat>
