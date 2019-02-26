@@ -1533,7 +1533,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<itm>
+<item>
 <title>[B]Multicanal AndresFutbol [/B]  todos </title>
 <link>$doregex[geturl]</link>
     <regex>
