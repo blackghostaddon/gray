@@ -1299,7 +1299,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
         <expres>net\/embed\/(.*?)"</expres>
         <page>http://zonasports.es/cha-x.php?id=16</page>
     </regex>
-</item-->
+</item>
 
 
 
@@ -1858,7 +1858,7 @@ http://nowlive.pro/1/105.html?id=105
 
  
 
- <item>
+ <ite>
 <title>LikeTV -- Sports</title>
 <link>$doregex[makelist]</link>
 <regex>
@@ -2442,59 +2442,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 	
 	
-	
-		<!--item>
-<title>[B]Multicanal ElGoles 6[/B]   *  </title>
-<link>$doregex[geturl]</link>
-    <regex>
-        <name>geturl</name>
-        <expres>source:"(.*?)\?auto</expres>
-        <page>$doregex[getunpacked]</page>
-    </regex>
-    <regex>
-        <name>getunpacked</name>
-        <expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)' )</expres>
-        <page>$doregex[canal]</page>
-        <referer>http://whostreams.net/</referer>
-        <connection>keep-alive</connection>
-    </regex>
-	
-	<regex>
-<name>canal</name>
-<expres>iframe src="(.*?)"</expres>
-<page>http://elgoles.me/6-2</page>
-</regex>
-</item>
-	
-	
-	<item>
-<title>[B]Multicanal ElGoles 11[/B]   *  </title>
-<link>$doregex[geturl]</link>
-    <regex>
-        <name>geturl</name>
-        <expres>source:"(.*?)\?auto</expres>
-        <page>$doregex[getunpacked]</page>
-    </regex>
-    <regex>
-        <name>getunpacked</name>
-        <expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)' )</expres>
-        <page>$doregex[canal]</page>
-        <referer>http://whostreams.net/</referer>
-        <connection>keep-alive</connection>
-    </regex>
-	
-	<regex>
-<name>canal</name>
-<expres>iframe src="(.*?)"</expres>
-<page>http://elgoles.me/11-2</page>
-</regex>
-</item-->
-
-
-
-
-
-
 
 
 
@@ -3816,41 +3763,39 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
- <item>
+
+<item>
 <title>[B]Multicanal ElGoles 06[/B]  </title>
-<link>http://$doregex[ip]$doregex[m3u8]|Referer=http://elgoles.me/&amp;User-Agent=Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A402 Safari/604.1</link>
+<link>$doregex[get-url]</link>
 <regex>
-<name>ip</name>
-<expres>redirect=(.*)</expres>
-<page>$doregex[loader]</page>
-<agent>Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A402 Safari/604.1</agent>
-<referer>http://elgoles.me</referer>
-</regex>		
-<regex>
-<name>loader</name>
-<expres>url: "(.*?)"</expres>
-<page>$doregex[server]/membedplayer/$doregex[canal]/1/700/400</page>
-<agent>Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A402 Safari/604.1</agent>
-<referer>http://elgoles.me</referer>
+<name>get-url</name>
+<expres><![CDATA[#$pyFunction
+from resolveurl.plugins.lib import jsunpack
+def GetLSProData(page_data,Cookie_Jar,m):
+    import re
+    import requests
+    mozhdr = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0', 'Referer': 'http://elgoles.me/11-2'}
+    url = 'http://elgoles.me/6-2'
+    html = requests.get(url, headers=mozhdr, verify=False).text
+    cid = re.findall('id=\'(.*?)\'.+?telerium', html)[0]
+    eurl = 'https://telerium.tv/embed/{}.html'.format(cid)
+    ehtml = requests.get(eurl, headers=mozhdr,verify=False).text
+    edata = re.findall('(eval\(function\(p,a,c,k,e,d.*)', ehtml)[0]
+    epage = jsunpack.unpack(edata).replace('\\', '')
+    refvar1,refvar2 = re.findall('url:atob\((\w+)\).*?atob\((\w+)\)', epage)[0]
+    refvar3 = re.findall('country,(\w+),', epage)[0]
+    file = re.findall('{}="([^"]+)'.format(refvar3), epage)[0].decode('base64')
+    url_part1 = re.findall('{}="([^"]+)'.format(refvar1), epage)[0].decode('base64')
+    url_part2 = re.findall('{}="([^"]+)'.format(refvar2), epage)[0].decode('base64')
+    tokurl = 'https://telerium.tv{}{}'.format(url_part1, url_part2)
+    mozhdr['Referer'] = eurl
+    token = requests.get(tokurl, headers=mozhdr, verify=False).text[1:-1]
+    return 'https:{}{}|Referer={}&User-Agent={}'.format(file, token, eurl, mozhdr['User-Agent'])
+]]></expres>
+<page></page>
 </regex>
-<regex>
-<name>m3u8</name>
-<expres>ea \+ "([^"]+)</expres>
-<page>$doregex[server]/membedplayer/$doregex[canal]/1/700/400</page>
-<agent>Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A402 Safari/604.1</agent>
-<referer>http://elgoles.me</referer>
-</regex>
-<regex>
-<name>server</name>
-<expres>'(http.*?)\/static</expres>
-<page>http://elgoles.me/6-2</page>
-</regex>
-<regex>
-<name>canal</name>
-<expres>channel='(.*?)'</expres>
-<page>http://elgoles.me/6-2</page>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+</item>
+
 
 
 <item>
@@ -3865,7 +3810,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
         <name>getunpacked</name>
         <expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)' )</expres>
         <page>http://whostreams.net/embed/$doregex[canal]</page>
-        <referer>http://whostreams.net/</referer>
+        <referer>http://elgoles.me/</referer>
         <connection>keep-alive</connection>
     </regex>
 	 <regex>
@@ -3873,6 +3818,39 @@ def GetLSProData(page_data,Cookie_Jar,m):
         <expres>net\/embed\/(.*?)"</expres>
         <page>http://elgoles.me/7-2/</page>
     </regex>
+</item>
+
+
+<item>
+<title>[B]Multicanal ElGoles 08[/B]  </title>
+<link>$doregex[get-url]</link>
+<regex>
+<name>get-url</name>
+<expres><![CDATA[#$pyFunction
+from resolveurl.plugins.lib import jsunpack
+def GetLSProData(page_data,Cookie_Jar,m):
+    import re
+    import requests
+    mozhdr = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0', 'Referer': 'http://elgoles.me/11-2'}
+    url = 'http://elgoles.me/8-2'
+    html = requests.get(url, headers=mozhdr, verify=False).text
+    cid = re.findall('id=\'(.*?)\'.+?telerium', html)[0]
+    eurl = 'https://telerium.tv/embed/{}.html'.format(cid)
+    ehtml = requests.get(eurl, headers=mozhdr,verify=False).text
+    edata = re.findall('(eval\(function\(p,a,c,k,e,d.*)', ehtml)[0]
+    epage = jsunpack.unpack(edata).replace('\\', '')
+    refvar1,refvar2 = re.findall('url:atob\((\w+)\).*?atob\((\w+)\)', epage)[0]
+    refvar3 = re.findall('country,(\w+),', epage)[0]
+    file = re.findall('{}="([^"]+)'.format(refvar3), epage)[0].decode('base64')
+    url_part1 = re.findall('{}="([^"]+)'.format(refvar1), epage)[0].decode('base64')
+    url_part2 = re.findall('{}="([^"]+)'.format(refvar2), epage)[0].decode('base64')
+    tokurl = 'https://telerium.tv{}{}'.format(url_part1, url_part2)
+    mozhdr['Referer'] = eurl
+    token = requests.get(tokurl, headers=mozhdr, verify=False).text[1:-1]
+    return 'https:{}{}|Referer={}&User-Agent={}'.format(file, token, eurl, mozhdr['User-Agent'])
+]]></expres>
+<page></page>
+</regex>
 </item>
 
 
@@ -3930,7 +3908,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
- <item>
+ <!--item>
 <title>[B]Multicanal ElGoles 11[/B]  </title>
 <link>http://$doregex[ip]$doregex[m3u8]|Referer=http://elgoles.me/&amp;User-Agent=Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A402 Safari/604.1</link>
 <regex>
@@ -3964,7 +3942,43 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <expres>channel='(.*?)'</expres>
 <page>http://elgoles.me/11-2</page>
 </regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item-->
+
+
+
+
+<item>
+<title>[B]Multicanal ElGoles 12[/B]  </title>
+<link>$doregex[get-url]</link>
+<regex>
+<name>get-url</name>
+<expres><![CDATA[#$pyFunction
+from resolveurl.plugins.lib import jsunpack
+def GetLSProData(page_data,Cookie_Jar,m):
+    import re
+    import requests
+    mozhdr = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0', 'Referer': 'http://elgoles.me/11-2'}
+    url = 'http://elgoles.me/12-2'
+    html = requests.get(url, headers=mozhdr, verify=False).text
+    cid = re.findall('id=\'(.*?)\'.+?telerium', html)[0]
+    eurl = 'https://telerium.tv/embed/{}.html'.format(cid)
+    ehtml = requests.get(eurl, headers=mozhdr,verify=False).text
+    edata = re.findall('(eval\(function\(p,a,c,k,e,d.*)', ehtml)[0]
+    epage = jsunpack.unpack(edata).replace('\\', '')
+    refvar1,refvar2 = re.findall('url:atob\((\w+)\).*?atob\((\w+)\)', epage)[0]
+    refvar3 = re.findall('country,(\w+),', epage)[0]
+    file = re.findall('{}="([^"]+)'.format(refvar3), epage)[0].decode('base64')
+    url_part1 = re.findall('{}="([^"]+)'.format(refvar1), epage)[0].decode('base64')
+    url_part2 = re.findall('{}="([^"]+)'.format(refvar2), epage)[0].decode('base64')
+    tokurl = 'https://telerium.tv{}{}'.format(url_part1, url_part2)
+    mozhdr['Referer'] = eurl
+    token = requests.get(tokurl, headers=mozhdr, verify=False).text[1:-1]
+    return 'https:{}{}|Referer={}&User-Agent={}'.format(file, token, eurl, mozhdr['User-Agent'])
+]]></expres>
+<page></page>
+</regex>
+</item>
+
 
 
 
@@ -3982,7 +3996,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
         <name>getunpacked</name>
         <expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)' )</expres>
         <page>http://whostreams.net/embed/$doregex[canal]</page>
-        <referer>http://whostreams.net/</referer>
+        <referer>http://elgoles.me/</referer>
         <connection>keep-alive</connection>
     </regex>
 	 <regex>
@@ -4071,80 +4085,51 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
- <item>
+
+
+<item>
 <title>[B]Multicanal ElGoles 16[/B]  </title>
-<link>https://$doregex[ip]$doregex[m3u8]|Referer=http://elgoles.me/&amp;User-Agent=Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A402 Safari/604.1</link>
-<regex>
-<name>ip</name>
-<expres>redirect=(.*)</expres>
-<page>$doregex[loader]</page>
-<agent>Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A402 Safari/604.1</agent>
-<referer>http://elgoles.me</referer>
-</regex>		
-<regex>
-<name>loader</name>
-<expres>url: "(.*?)"</expres>
-<page>$doregex[server]/membedplayer/$doregex[canal]/1/700/400</page>
-<agent>Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A402 Safari/604.1</agent>
-<referer>http://elgoles.me</referer>
-</regex>
-<regex>
-<name>m3u8</name>
-<expres>videoplayer\.src .*?ea \+ "([^"]+)</expres>
-<page>$doregex[server]/membedplayer/$doregex[canal]/1/700/400</page>
-<agent>Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A402 Safari/604.1</agent>
-<referer>http://elgoles.me</referer>
-</regex>
-<regex>
-<name>server</name>
-<expres>'(http.*?)\/static</expres>
-<page>http://elgoles.me/16-2</page>
-</regex>
-<regex>
-<name>canal</name>
-<expres>channel='(.*?)'</expres>
-<page>http://elgoles.me/16-2</page>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+    <link>$doregex[geturl]</link>
+    <regex>
+        <name>geturl</name>
+        <expres>source:"(.*?)"</expres>
+        <page>$doregex[getunpacked]</page>
+    </regex>
+    <regex>
+        <name>getunpacked</name>
+        <expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)' )</expres>
+        <page>http://whostreams.net/embed/$doregex[canal]</page>
+        <referer>http://elgoles.me/</referer>
+        <connection>keep-alive</connection>
+    </regex>
+	 <regex>
+        <name>canal</name>
+        <expres>net\/embed\/(.*?)"</expres>
+        <page>http://elgoles.me/16-2/</page>
+    </regex>
+</item>
 
-
-
-
- <item>
+<item>
 <title>[B]Multicanal ElGoles 17[/B]  </title>
-<link>https://$doregex[ip]$doregex[m3u8]|Referer=http://elgoles.me/&amp;User-Agent=Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A402 Safari/604.1</link>
-<regex>
-<name>ip</name>
-<expres>redirect=(.*)</expres>
-<page>$doregex[loader]</page>
-<agent>Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A402 Safari/604.1</agent>
-<referer>http://elgoles.me</referer>
-</regex>		
-<regex>
-<name>loader</name>
-<expres>url: "(.*?)"</expres>
-<page>$doregex[server]/membedplayer/$doregex[canal]/1/700/400</page>
-<agent>Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A402 Safari/604.1</agent>
-<referer>http://elgoles.me</referer>
-</regex>
-<regex>
-<name>m3u8</name>
-<expres>videoplayer\.src .*?ea \+ "([^"]+)</expres>
-<page>$doregex[server]/membedplayer/$doregex[canal]/1/700/400</page>
-<agent>Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A402 Safari/604.1</agent>
-<referer>http://elgoles.me</referer>
-</regex>
-<regex>
-<name>server</name>
-<expres>'(http.*?)\/static</expres>
-<page>http://elgoles.me/17-2</page>
-</regex>
-<regex>
-<name>canal</name>
-<expres>channel='(.*?)'</expres>
-<page>http://elgoles.me/17-2</page>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+    <link>$doregex[geturl]</link>
+    <regex>
+        <name>geturl</name>
+        <expres>source:"(.*?)"</expres>
+        <page>$doregex[getunpacked]</page>
+    </regex>
+    <regex>
+        <name>getunpacked</name>
+        <expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)' )</expres>
+        <page>http://whostreams.net/embed/$doregex[canal]</page>
+        <referer>http://elgoles.me/</referer>
+        <connection>keep-alive</connection>
+    </regex>
+	 <regex>
+        <name>canal</name>
+        <expres>net\/embed\/(.*?)"</expres>
+        <page>http://elgoles.me/17-2/</page>
+    </regex>
+</item>
 
 
  <item>
@@ -4184,43 +4169,28 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
- <item>
+
+<item>
 <title>[B]Multicanal ElGoles 20[/B]  </title>
-<link>https://$doregex[ip]$doregex[m3u8]|Referer=http://elgoles.me/&amp;User-Agent=Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A402 Safari/604.1</link>
-<regex>
-<name>ip</name>
-<expres>redirect=(.*)</expres>
-<page>$doregex[loader]</page>
-<agent>Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A402 Safari/604.1</agent>
-<referer>http://elgoles.me</referer>
-</regex>		
-<regex>
-<name>loader</name>
-<expres>url: "(.*?)"</expres>
-<page>$doregex[server]/membedplayer/$doregex[canal]/1/700/400</page>
-<agent>Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A402 Safari/604.1</agent>
-<referer>http://elgoles.me</referer>
-</regex>
-<regex>
-<name>m3u8</name>
-<expres>videoplayer\.src .*?ea \+ "([^"]+)</expres>
-<page>$doregex[server]/membedplayer/$doregex[canal]/1/700/400</page>
-<agent>Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A402 Safari/604.1</agent>
-<referer>http://elgoles.me</referer>
-</regex>
-<regex>
-<name>server</name>
-<expres>'(http.*?)\/static</expres>
-<page>http://elgoles.me/18-2</page>
-</regex>
-<regex>
-<name>canal</name>
-<expres>channel='(.*?)'</expres>
-<page>http://elgoles.me/18-2</page>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-
+    <link>$doregex[geturl]</link>
+    <regex>
+        <name>geturl</name>
+        <expres>source:"(.*?)"</expres>
+        <page>$doregex[getunpacked]</page>
+    </regex>
+    <regex>
+        <name>getunpacked</name>
+        <expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)' )</expres>
+        <page>http://whostreams.net/embed/$doregex[canal]</page>
+        <referer>http://elgoles.me/</referer>
+        <connection>keep-alive</connection>
+    </regex>
+	 <regex>
+        <name>canal</name>
+        <expres>net\/embed\/(.*?)"</expres>
+        <page>http://elgoles.me/20-2/</page>
+    </regex>
+</item>
 
 
 
