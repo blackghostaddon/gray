@@ -478,6 +478,136 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 </item>
 
+<item>
+<title>[B]Multicanal MAX 03 [/B]     </title>
+<link>$doregex[get-url]</link>
+<regex>
+<name>get-url</name>
+<expres><![CDATA[#$pyFunction
+from resolveurl.plugins.lib import jsunpack
+def GetLSProData(page_data,Cookie_Jar,m):
+    import re
+    import requests
+    mozhdr = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0', 'Referer': 'http://maxdeportv.net/'}
+    url = 'http://maxdeportv.net/indexa.php?canal=3'
+    html = requests.get(url, headers=mozhdr, verify=False).text
+    cid = re.findall('id="([^"]+).+?telerium', html)[0]
+    eurl = 'https://telerium.tv/embed/{}.html'.format(cid)
+    ehtml = requests.get(eurl, headers=mozhdr,verify=False).text
+    edata = re.findall('(eval\(function\(p,a,c,k,e,d.*)', ehtml)[0]
+    epage = jsunpack.unpack(edata).replace('\\', '')
+    refvar1,refvar2 = re.findall('url:atob\((\w+)\).*?atob\((\w+)\)', epage)[0]
+    refvar3 = re.findall('country,(\w+),', epage)[0]
+    file = re.findall('{}="([^"]+)'.format(refvar3), epage)[0].decode('base64')
+    url_part1 = re.findall('{}="([^"]+)'.format(refvar1), epage)[0].decode('base64')
+    url_part2 = re.findall('{}="([^"]+)'.format(refvar2), epage)[0].decode('base64')
+    tokurl = 'https://telerium.tv{}{}'.format(url_part1, url_part2)
+    mozhdr['Referer'] = eurl
+    token = requests.get(tokurl, headers=mozhdr, verify=False).text[1:-1]
+    return 'https:{}{}|Referer={}&User-Agent={}'.format(file, token, eurl, mozhdr['User-Agent'])
+]]></expres>
+<page></page>
+</regex>
+</item>
+
+
+<item>
+<title>[B]Multicanal MAX 04 [/B]     </title>
+<link>$doregex[get-url]</link>
+<regex>
+<name>get-url</name>
+<expres><![CDATA[#$pyFunction
+from resolveurl.plugins.lib import jsunpack
+def GetLSProData(page_data,Cookie_Jar,m):
+    import re
+    import requests
+    mozhdr = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0', 'Referer': 'http://maxdeportv.net/'}
+    url = 'http://maxdeportv.net/indexa.php?canal=4'
+    html = requests.get(url, headers=mozhdr, verify=False).text
+    cid = re.findall('id="([^"]+).+?telerium', html)[0]
+    eurl = 'https://telerium.tv/embed/{}.html'.format(cid)
+    ehtml = requests.get(eurl, headers=mozhdr,verify=False).text
+    edata = re.findall('(eval\(function\(p,a,c,k,e,d.*)', ehtml)[0]
+    epage = jsunpack.unpack(edata).replace('\\', '')
+    refvar1,refvar2 = re.findall('url:atob\((\w+)\).*?atob\((\w+)\)', epage)[0]
+    refvar3 = re.findall('country,(\w+),', epage)[0]
+    file = re.findall('{}="([^"]+)'.format(refvar3), epage)[0].decode('base64')
+    url_part1 = re.findall('{}="([^"]+)'.format(refvar1), epage)[0].decode('base64')
+    url_part2 = re.findall('{}="([^"]+)'.format(refvar2), epage)[0].decode('base64')
+    tokurl = 'https://telerium.tv{}{}'.format(url_part1, url_part2)
+    mozhdr['Referer'] = eurl
+    token = requests.get(tokurl, headers=mozhdr, verify=False).text[1:-1]
+    return 'https:{}{}|Referer={}&User-Agent={}'.format(file, token, eurl, mozhdr['User-Agent'])
+]]></expres>
+<page></page>
+</regex>
+</item>
+
+
+<item>
+<title>[B]Multicanal MAX 05 [/B]     </title>
+<link>$doregex[get-url]</link>
+<regex>
+<name>get-url</name>
+<expres><![CDATA[#$pyFunction
+from resolveurl.plugins.lib import jsunpack
+def GetLSProData(page_data,Cookie_Jar,m):
+    import re
+    import requests
+    mozhdr = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0', 'Referer': 'http://maxdeportv.net/'}
+    url = 'http://maxdeportv.net/indexa.php?canal=5'
+    html = requests.get(url, headers=mozhdr, verify=False).text
+    cid = re.findall('id="([^"]+).+?telerium', html)[0]
+    eurl = 'https://telerium.tv/embed/{}.html'.format(cid)
+    ehtml = requests.get(eurl, headers=mozhdr,verify=False).text
+    edata = re.findall('(eval\(function\(p,a,c,k,e,d.*)', ehtml)[0]
+    epage = jsunpack.unpack(edata).replace('\\', '')
+    refvar1,refvar2 = re.findall('url:atob\((\w+)\).*?atob\((\w+)\)', epage)[0]
+    refvar3 = re.findall('country,(\w+),', epage)[0]
+    file = re.findall('{}="([^"]+)'.format(refvar3), epage)[0].decode('base64')
+    url_part1 = re.findall('{}="([^"]+)'.format(refvar1), epage)[0].decode('base64')
+    url_part2 = re.findall('{}="([^"]+)'.format(refvar2), epage)[0].decode('base64')
+    tokurl = 'https://telerium.tv{}{}'.format(url_part1, url_part2)
+    mozhdr['Referer'] = eurl
+    token = requests.get(tokurl, headers=mozhdr, verify=False).text[1:-1]
+    return 'https:{}{}|Referer={}&User-Agent={}'.format(file, token, eurl, mozhdr['User-Agent'])
+]]></expres>
+<page></page>
+</regex>
+</item>
+
+<item>
+<title>[B]Multicanal MAX 06 [/B]     </title>
+<link>$doregex[get-url]</link>
+<regex>
+<name>get-url</name>
+<expres><![CDATA[#$pyFunction
+from resolveurl.plugins.lib import jsunpack
+def GetLSProData(page_data,Cookie_Jar,m):
+    import re
+    import requests
+    mozhdr = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0', 'Referer': 'http://maxdeportv.net/'}
+    url = 'http://maxdeportv.net/indexa.php?canal=6'
+    html = requests.get(url, headers=mozhdr, verify=False).text
+    cid = re.findall('id="([^"]+).+?telerium', html)[0]
+    eurl = 'https://telerium.tv/embed/{}.html'.format(cid)
+    ehtml = requests.get(eurl, headers=mozhdr,verify=False).text
+    edata = re.findall('(eval\(function\(p,a,c,k,e,d.*)', ehtml)[0]
+    epage = jsunpack.unpack(edata).replace('\\', '')
+    refvar1,refvar2 = re.findall('url:atob\((\w+)\).*?atob\((\w+)\)', epage)[0]
+    refvar3 = re.findall('country,(\w+),', epage)[0]
+    file = re.findall('{}="([^"]+)'.format(refvar3), epage)[0].decode('base64')
+    url_part1 = re.findall('{}="([^"]+)'.format(refvar1), epage)[0].decode('base64')
+    url_part2 = re.findall('{}="([^"]+)'.format(refvar2), epage)[0].decode('base64')
+    tokurl = 'https://telerium.tv{}{}'.format(url_part1, url_part2)
+    mozhdr['Referer'] = eurl
+    token = requests.get(tokurl, headers=mozhdr, verify=False).text[1:-1]
+    return 'https:{}{}|Referer={}&User-Agent={}'.format(file, token, eurl, mozhdr['User-Agent'])
+]]></expres>
+<page></page>
+</regex>
+</item>
+
 
  <item>
 <title>[B]Multicanal MAX 07 [/B]     </title>
@@ -544,317 +674,78 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 </item>
  
- http://nlive.club/stream/1/38986.html
- http://nlive.club/stream/1/38990.html
- 
- 
- 
 
  
-
- 
-
-
-
- <!--item>
-<title>[B]Multicanal 2 (Chivas69 - Telemundo) [/B]     </title>
-
-<link>$doregex[url]|Referer=https://player.limpi.tv/&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36</link>
-<regex>
-   <name>url</name>   
-   <expres>source: "(.*?)"</expres>  
-   <page>$doregex[temp]/$doregex[canal]</page>
-   <referer>https://player.limpi.tv/</referer>
-   <cookieJar/>
-</regex>
-
-<regex> 
-   <name>temp</name>   
-   <expres>src="(.*?)\'</expres>  
-   <page>https://player.limpi.tv/embed.js</page>
-   <cookieJar/>
-</regex>
-<regex> 
-   <name>canal</name>   
-   <expres>id='(.*?)'</expres>  
-   <page>http://anahix11.com/chivas3.php</page>
-   <cookieJar/>
-</regex>
-</item>
-
  <item>
-<title>[B]Multicanal 2 (Chivas69 - Univision) [/B]     </title>
-
-<link>$doregex[url]|Referer=https://player.limpi.tv/&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36</link>
+<title>[B]Multicanal MAX 09 [/B]     </title>
+<link>$doregex[get-url]</link>
 <regex>
-   <name>url</name>   
-   <expres>source: "(.*?)"</expres>  
-   <page>$doregex[temp]/$doregex[canal]</page>
-   <referer>https://player.limpi.tv/</referer>
-   <cookieJar/>
-</regex>
-
-<regex> 
-   <name>temp</name>   
-   <expres>src="(.*?)\'</expres>  
-   <page>https://player.limpi.tv/embed.js</page>
-   <cookieJar/>
-</regex>
-<regex> 
-   <name>canal</name>   
-   <expres>id='(.*?)'</expres>  
-   <page>http://anahix11.com/univi.php</page>
-   <cookieJar/>
+<name>get-url</name>
+<expres><![CDATA[#$pyFunction
+from resolveurl.plugins.lib import jsunpack
+def GetLSProData(page_data,Cookie_Jar,m):
+    import re
+    import requests
+    mozhdr = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0', 'Referer': 'http://maxdeportv.net/'}
+    url = 'http://maxdeportv.net/indexa.php?canal=9'
+    html = requests.get(url, headers=mozhdr, verify=False).text
+    cid = re.findall('id="([^"]+).+?telerium', html)[0]
+    eurl = 'https://telerium.tv/embed/{}.html'.format(cid)
+    ehtml = requests.get(eurl, headers=mozhdr,verify=False).text
+    edata = re.findall('(eval\(function\(p,a,c,k,e,d.*)', ehtml)[0]
+    epage = jsunpack.unpack(edata).replace('\\', '')
+    refvar1,refvar2 = re.findall('url:atob\((\w+)\).*?atob\((\w+)\)', epage)[0]
+    refvar3 = re.findall('country,(\w+),', epage)[0]
+    file = re.findall('{}="([^"]+)'.format(refvar3), epage)[0].decode('base64')
+    url_part1 = re.findall('{}="([^"]+)'.format(refvar1), epage)[0].decode('base64')
+    url_part2 = re.findall('{}="([^"]+)'.format(refvar2), epage)[0].decode('base64')
+    tokurl = 'https://telerium.tv{}{}'.format(url_part1, url_part2)
+    mozhdr['Referer'] = eurl
+    token = requests.get(tokurl, headers=mozhdr, verify=False).text[1:-1]
+    return 'https:{}{}|Referer={}&User-Agent={}'.format(file, token, eurl, mozhdr['User-Agent'])
+]]></expres>
+<page></page>
 </regex>
 </item>
-
-
-
-
+ 
+ 
+ 
  <item>
-<title>[B]Multicanal 3 (Chivas69) [/B]  Deportes   </title>
-
-<link>$doregex[url]|Referer=https://player.limpi.tv/&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36</link>
+<title>[B]Multicanal MAX 10 [/B]     </title>
+<link>$doregex[get-url]</link>
 <regex>
-   <name>url</name>   
-   <expres>source: "(.*?)"</expres>  
-   <page>$doregex[temp]/$doregex[canal]</page>
-   <referer>https://player.limpi.tv/</referer>
-   <cookieJar/>
+<name>get-url</name>
+<expres><![CDATA[#$pyFunction
+from resolveurl.plugins.lib import jsunpack
+def GetLSProData(page_data,Cookie_Jar,m):
+    import re
+    import requests
+    mozhdr = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0', 'Referer': 'http://maxdeportv.net/'}
+    url = 'http://maxdeportv.net/indexa.php?canal=10'
+    html = requests.get(url, headers=mozhdr, verify=False).text
+    cid = re.findall('id="([^"]+).+?telerium', html)[0]
+    eurl = 'https://telerium.tv/embed/{}.html'.format(cid)
+    ehtml = requests.get(eurl, headers=mozhdr,verify=False).text
+    edata = re.findall('(eval\(function\(p,a,c,k,e,d.*)', ehtml)[0]
+    epage = jsunpack.unpack(edata).replace('\\', '')
+    refvar1,refvar2 = re.findall('url:atob\((\w+)\).*?atob\((\w+)\)', epage)[0]
+    refvar3 = re.findall('country,(\w+),', epage)[0]
+    file = re.findall('{}="([^"]+)'.format(refvar3), epage)[0].decode('base64')
+    url_part1 = re.findall('{}="([^"]+)'.format(refvar1), epage)[0].decode('base64')
+    url_part2 = re.findall('{}="([^"]+)'.format(refvar2), epage)[0].decode('base64')
+    tokurl = 'https://telerium.tv{}{}'.format(url_part1, url_part2)
+    mozhdr['Referer'] = eurl
+    token = requests.get(tokurl, headers=mozhdr, verify=False).text[1:-1]
+    return 'https:{}{}|Referer={}&User-Agent={}'.format(file, token, eurl, mozhdr['User-Agent'])
+]]></expres>
+<page></page>
 </regex>
-
-<regex> 
-   <name>temp</name>   
-   <expres>src="(.*?)\'</expres>  
-   <page>https://player.limpi.tv/embed.js</page>
-   <cookieJar/>
-</regex>
-<regex> 
-   <name>canal</name>   
-   <expres>380.*?id=\'(.*?)\'</expres>  
-   <page>http://www.chivass69.com/deportes/</page>
-   <cookieJar/>
-</regex>
-</item-->
-
-
-
-
-<!--item>
-<title>[B]Multicanal UFC[/B]   </title>
-
-<link>$doregex[GetPageUrl]|User-Agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+rv%3A11.0%29+like+Gecko</link>
-<regex>
-<name>GetPageUrl</name>
-<expres>source: '(.*?)'</expres>
-<page>http://livesports.pw/embeddeporte2.php?file=ufv&amp;width=650&amp;height=397</page>
-<cookieJar></cookieJar>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<item>
-<title>[B]Multicanal GolTV Latino[/B]   </title>
-
-<link>$doregex[GetPageUrl]|User-Agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+rv%3A11.0%29+like+Gecko</link>
-<regex>
-<name>GetPageUrl</name>
-<expres>source: '(.*?)'</expres>
-<page>http://livesports.pw/embeddeporte2.php?file=goltvlatinosss&amp;width=650&amp;height=397</page>
-<cookieJar></cookieJar>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-
-
+</item>
  
-
-
-
-
-
-<item>
-<title>[B]Multicanal TyC Sports[/B]   </title>
-
-<link>$doregex[GetPageUrl]|User-Agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+rv%3A11.0%29+like+Gecko</link>
-<regex>
-<name>GetPageUrl</name>
-<expres>source: '(.*?)'</expres>
-<page>http://livesports.pw/embeddeporte2.php?file=TYCSPORT&amp;width=650&amp;height=397</page>
-<cookieJar></cookieJar>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-
-
-
-
-
-
-
-<item>
-<title>[B]Multicanal VTV Uruguay[/B]   </title>
-
-<link>$doregex[GetPageUrl]|User-Agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+rv%3A11.0%29+like+Gecko</link>
-<regex>
-<name>GetPageUrl</name>
-<expres>source: '(.*?)'</expres>
-<page>http://livesports.pw/embeddeporte2.php?file=vtv&amp;width=650&amp;height=397</page>
-<cookieJar></cookieJar>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-
-
+ 
  
 
  
-
-
-<item>
-<title>[B]Multicanal Fox Accion  [/B]   </title>
-
-<link>$doregex[GetPageUrl]|User-Agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+WOW64%3B+Trident%2F7.0%3B+rv%3A11.0%29+like+Gecko</link>
-<regex>
-<name>GetPageUrl</name>
-<expres>source: '(.*?)'</expres>
-<page>http://livesports.pw/embeddeporte2.php?file=foxaccion&amp;width=650&amp;height=397</page>
-<cookieJar></cookieJar>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item-->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- 
-
-<item>
-<title>[B]Multicanal MaxDeportes 09 [COLOR lightyellow] DirectvSports [/COLOR] [/B]</title>
-<link>http://cdn.whostreams.net:8081/wsedge/$doregex[canal]/playlist.m3u8?wmsAuthSign=$doregex[code]</link>
-<regex>
-<name>canal</name>
-<expres>net\/embed\/([^"]+)</expres>
-<page>http://maxdeportv.net/indexa.php?canal=9</page>
-</regex>
-<regex>
-<name>code</name>
-<expres>\|(c2V.*?)\|</expres>
-<page>http://whostreams.net/embed/$doregex[canal]</page>
-</regex>
-</item>
-
-
-
-item>
-<title>[B]Multicanal MaxDeportes 01 [COLOR yellow] Final Real Madrid - Liverpool FC  [/COLOR] [/B]</title>
-<link>http://cdn.whostreams.net:8081/wsedge/$doregex[canal]/playlist.m3u8?wmsAuthSign=$doregex[code]</link>
-<regex>
-<name>canal</name>
-<expres>net\/embed\/([^"]+)</expres>
-<page>http://maxdeportv.net/indexa.php?canal=1</page>
-</regex>
-<regex>
-<name>code</name>
-<expres>parent\|(.*?)\|</expres>
-<page>http://whostreams.net/embed/$doregex[canal]</page>
-</regex>
-</item>
-
-<item>
-<title>[B]Multicanal MaxDeportes 03 [COLOR yellow] Final Real Madrid - Liverpool FC  [/COLOR] [/B]</title>
-<link>http://cdn.whostreams.net:8081/wsedge/$doregex[canal]/playlist.m3u8?wmsAuthSign=$doregex[code]</link>
-<regex>
-<name>canal</name>
-<expres>net\/embed\/([^"]+)</expres>
-<page>http://maxdeportv.net/indexa.php?canal=3</page>
-</regex>
-<regex>
-<name>code</name>
-<expres>parent\|(.*?)\|</expres>
-<page>http://whostreams.net/embed/$doregex[canal]</page>
-</regex>
-</item>
-
-<item>
-<title>[B]Multicanal MaxDeportes 05 [COLOR yellow] Final Real Madrid - Liverpool FC  [/COLOR] [/B]</title>
-<link>http://cdn.whostreams.net:8081/wsedge/$doregex[canal]/playlist.m3u8?wmsAuthSign=$doregex[code]</link>
-<regex>
-<name>canal</name>
-<expres>net\/embed\/([^"]+)</expres>
-<page>http://maxdeportv.net/indexa.php?canal=5</page>
-</regex>
-<regex>
-<name>code</name>
-<expres>parent\|(.*?)\|</expres>
-<page>http://whostreams.net/embed/$doregex[canal]</page>
-</regex>
-</item>
-
-
-
-<item>
-<title>[B]Multicanal MaxDeportes 07 [COLOR yellow] Final Real Madrid - Liverpool FC  [/COLOR] [/B]</title>
-<link>http://cdn.whostreams.net:8081/wsedge/$doregex[canal]/playlist.m3u8?wmsAuthSign=$doregex[code]</link>
-<regex>
-<name>canal</name>
-<expres>net\/embed\/([^"]+)</expres>
-<page>http://maxdeportv.net/indexa.php?canal=7</page>
-</regex>
-<regex>
-<name>code</name>
-<expres>parent\|(.*?)\|</expres>
-<page>http://whostreams.net/embed/$doregex[canal]</page>
-</regex>
-</item>
-
-
-<item>
-<title>[B]Multicanal MaxDeportes 10 [COLOR yellow] Final Real Madrid - Liverpool FC  [/COLOR] [/B]</title>
-<link>http://cdn.whostreams.net:8081/wsedge/$doregex[canal]/playlist.m3u8?wmsAuthSign=$doregex[code]</link>
-<regex>
-<name>canal</name>
-<expres>net\/embed\/([^"]+)</expres>
-<page>http://maxdeportv.net/indexa.php?canal=10</page>
-</regex>
-<regex>
-<name>code</name>
-<expres>parent\|(.*?)\|</expres>
-<page>http://whostreams.net/embed/$doregex[canal]</page>
-</regex>
-</item-->
-
-
-
-
-
 
 
 
@@ -1160,88 +1051,74 @@ item>
 
 
 
-
-<itm>
-<title>[B]Multicanal Zonasport05[/B]        </title>
-<link>$doregex[makelist]</link>
+<item>
+<title>[B]Multicanal Zonasport07[/B]         </title>
+<link>$doregex[get-url]</link>
 <regex>
-<name>makelist</name>
+<name>get-url</name>
 <expres><![CDATA[#$pyFunction
-import re,requests
-def GetLSProData(page_data,Cookie_Jar,m):#streamwatcher2013
-  from urlresolver.plugins.lib import jsunpack
-  source=requests.get(re.findall('src="(.*?kastream[^"]+)',page_data)[0],headers={'Referer':'http://cdn.zonasports.es/c-5x.php'}).text
-  return 'http://'+re.findall('Clappr.Player[\w\W]*?source.+?//([^\'"]+)',jsunpack.unpack(re.findall('id="Player"(?s)(.*?)</script',source)[0]).replace('\\',''))[0]+'|User-Agent=iPad'
+from resolveurl.plugins.lib import jsunpack
+def GetLSProData(page_data,Cookie_Jar,m):
+    import re
+    import requests
+    mozhdr = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0', 'Referer': 'http://zonasports.es/live.php?id=7'}
+    url = 'http://zonasports.es/live.php?id=7'
+    html = requests.get(url, headers=mozhdr, verify=False).text
+    cid = re.findall('id=\'(.*?)\'.+?telerium', html)[0]
+    eurl = 'https://telerium.tv/embed/{}.html'.format(cid)
+    ehtml = requests.get(eurl, headers=mozhdr,verify=False).text
+    edata = re.findall('(eval\(function\(p,a,c,k,e,d.*)', ehtml)[0]
+    epage = jsunpack.unpack(edata).replace('\\', '')
+    refvar1,refvar2 = re.findall('url:atob\((\w+)\).*?atob\((\w+)\)', epage)[0]
+    refvar3 = re.findall('country,(\w+),', epage)[0]
+    file = re.findall('{}="([^"]+)'.format(refvar3), epage)[0].decode('base64')
+    url_part1 = re.findall('{}="([^"]+)'.format(refvar1), epage)[0].decode('base64')
+    url_part2 = re.findall('{}="([^"]+)'.format(refvar2), epage)[0].decode('base64')
+    tokurl = 'https://telerium.tv{}{}'.format(url_part1, url_part2)
+    mozhdr['Referer'] = eurl
+    token = requests.get(tokurl, headers=mozhdr, verify=False).text[1:-1]
+    return 'https:{}{}|Referer={}&User-Agent={}'.format(file, token, eurl, mozhdr['User-Agent'])
 ]]></expres>
-<page>http://cdn.zonasports.es/c-5x.php</page>
+<page></page>
 </regex>
 </item>
 
 
-
-
-<itm>
-<title>[B]Multicanal Zonasport06[/B]          </title>
-<link>$doregex[makelist]</link>
-<regex>
-<name>makelist</name>
-<expres><![CDATA[#$pyFunction
-import re,requests
-def GetLSProData(page_data,Cookie_Jar,m):#streamwatcher2013
-  from urlresolver.plugins.lib import jsunpack
-  source=requests.get(re.findall('src="(.*?kastream[^"]+)',page_data)[0],headers={'Referer':'http://cdn.zonasports.es/c-5x.php'}).text
-  return 'http://'+re.findall('Clappr.Player[\w\W]*?source.+?//([^\'"]+)',jsunpack.unpack(re.findall('id="Player"(?s)(.*?)</script',source)[0]).replace('\\',''))[0]+'|User-Agent=iPad'
-]]></expres>
-<page>http://cdn.zonasports.es/c-6x.php</page>
-</regex>
-</item>
-
-
-
-<!--item>
-<title>[B]Multicanal Zonasport07[/B]     247bay    </title>
-<link>http://$doregex[ip]$doregex[m3u8]</link>
-			<regex>
-			<name>ip</name>
-			<expres>redirect=(.*)</expres>
-			<page>https://www.duderent.com/loadbalancer</page>
-			</regex>
-			<regex>
-			<name>m3u8</name>
-			<expres>ea \+ "([^"]+)</expres>
-			<page>http://www.247bay.tv/membedplayer/$doregex[canal]/2/750/420</page>
-			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
-			<referer>http://www.247bay.tv</referer>
-			</regex>
-			<regex>
-			<name>canal</name>
-			<expres>channel='(.*?)'</expres>
-			<page>http://cdn.zonasports.me/c-7x.php</page>
-			</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 <item>
-<title>[B]Multicanal Zonasport08[/B]     247bay    </title>
-<link>http://$doregex[ip]$doregex[m3u8]</link>
-			<regex>
-			<name>ip</name>
-			<expres>redirect=(.*)</expres>
-			<page>https://www.duderent.com/loadbalancer</page>
-			</regex>
-			<regex>
-			<name>m3u8</name>
-			<expres>ea \+ "([^"]+)</expres>
-			<page>http://www.247bay.tv/membedplayer/$doregex[canal]/2/750/420</page>
-			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
-			<referer>http://www.247bay.tv</referer>
-			</regex>
-			<regex>
-			<name>canal</name>
-			<expres>channel='(.*?)'</expres>
-			<page>http://cdn.zonasports.me/c-8x.php</page>
-			</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item-->
+<title>[B]Multicanal Zonasport08[/B]         </title>
+<link>$doregex[get-url]</link>
+<regex>
+<name>get-url</name>
+<expres><![CDATA[#$pyFunction
+from resolveurl.plugins.lib import jsunpack
+def GetLSProData(page_data,Cookie_Jar,m):
+    import re
+    import requests
+    mozhdr = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0', 'Referer': 'http://zonasports.es/live.php?id=8'}
+    url = 'http://zonasports.es/live.php?id=8'
+    html = requests.get(url, headers=mozhdr, verify=False).text
+    cid = re.findall('id=\'(.*?)\'.+?telerium', html)[0]
+    eurl = 'https://telerium.tv/embed/{}.html'.format(cid)
+    ehtml = requests.get(eurl, headers=mozhdr,verify=False).text
+    edata = re.findall('(eval\(function\(p,a,c,k,e,d.*)', ehtml)[0]
+    epage = jsunpack.unpack(edata).replace('\\', '')
+    refvar1,refvar2 = re.findall('url:atob\((\w+)\).*?atob\((\w+)\)', epage)[0]
+    refvar3 = re.findall('country,(\w+),', epage)[0]
+    file = re.findall('{}="([^"]+)'.format(refvar3), epage)[0].decode('base64')
+    url_part1 = re.findall('{}="([^"]+)'.format(refvar1), epage)[0].decode('base64')
+    url_part2 = re.findall('{}="([^"]+)'.format(refvar2), epage)[0].decode('base64')
+    tokurl = 'https://telerium.tv{}{}'.format(url_part1, url_part2)
+    mozhdr['Referer'] = eurl
+    token = requests.get(tokurl, headers=mozhdr, verify=False).text[1:-1]
+    return 'https:{}{}|Referer={}&User-Agent={}'.format(file, token, eurl, mozhdr['User-Agent'])
+]]></expres>
+<page></page>
+</regex>
+</item>
+
+
 
 
 
@@ -1269,6 +1146,74 @@ def GetLSProData(page_data,Cookie_Jar,m):#streamwatcher2013
 
 
 
+
+
+
+<item>
+<title>[B]Multicanal Zonasport11[/B]         </title>
+<link>$doregex[get-url]</link>
+<regex>
+<name>get-url</name>
+<expres><![CDATA[#$pyFunction
+from resolveurl.plugins.lib import jsunpack
+def GetLSProData(page_data,Cookie_Jar,m):
+    import re
+    import requests
+    mozhdr = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0', 'Referer': 'http://zonasports.es/'}
+    url = 'http://zonasports.es/live.php?id=11'
+    html = requests.get(url, headers=mozhdr, verify=False).text
+    cid = re.findall('javascript\'\>id=\'(.*?)\'.*?telerium', html)[0]
+    eurl = 'https://telerium.tv/embed/{}.html'.format(cid)
+    ehtml = requests.get(eurl, headers=mozhdr,verify=False).text
+    edata = re.findall('(eval\(function\(p,a,c,k,e,d.*)', ehtml)[0]
+    epage = jsunpack.unpack(edata).replace('\\', '')
+    refvar1,refvar2 = re.findall('url:atob\((\w+)\).*?atob\((\w+)\)', epage)[0]
+    refvar3 = re.findall('country,(\w+),', epage)[0]
+    file = re.findall('{}="([^"]+)'.format(refvar3), epage)[0].decode('base64')
+    url_part1 = re.findall('{}="([^"]+)'.format(refvar1), epage)[0].decode('base64')
+    url_part2 = re.findall('{}="([^"]+)'.format(refvar2), epage)[0].decode('base64')
+    tokurl = 'https://telerium.tv{}{}'.format(url_part1, url_part2)
+    mozhdr['Referer'] = eurl
+    token = requests.get(tokurl, headers=mozhdr, verify=False).text[1:-1]
+    return 'https:{}{}|Referer={}&User-Agent={}'.format(file, token, eurl, mozhdr['User-Agent'])
+]]></expres>
+<page></page>
+</regex>
+</item>
+
+
+
+<item>
+<title>[B]Multicanal Zonasport12[/B]         </title>
+<link>$doregex[get-url]</link>
+<regex>
+<name>get-url</name>
+<expres><![CDATA[#$pyFunction
+from resolveurl.plugins.lib import jsunpack
+def GetLSProData(page_data,Cookie_Jar,m):
+    import re
+    import requests
+    mozhdr = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0', 'Referer': 'http://zonasports.es/'}
+    url = 'http://zonasports.es/live.php?id=12'
+    html = requests.get(url, headers=mozhdr, verify=False).text
+    cid = re.findall('javascript\'\>id=\'(.*?)\'.*?telerium', html)[0]
+    eurl = 'https://telerium.tv/embed/{}.html'.format(cid)
+    ehtml = requests.get(eurl, headers=mozhdr,verify=False).text
+    edata = re.findall('(eval\(function\(p,a,c,k,e,d.*)', ehtml)[0]
+    epage = jsunpack.unpack(edata).replace('\\', '')
+    refvar1,refvar2 = re.findall('url:atob\((\w+)\).*?atob\((\w+)\)', epage)[0]
+    refvar3 = re.findall('country,(\w+),', epage)[0]
+    file = re.findall('{}="([^"]+)'.format(refvar3), epage)[0].decode('base64')
+    url_part1 = re.findall('{}="([^"]+)'.format(refvar1), epage)[0].decode('base64')
+    url_part2 = re.findall('{}="([^"]+)'.format(refvar2), epage)[0].decode('base64')
+    tokurl = 'https://telerium.tv{}{}'.format(url_part1, url_part2)
+    mozhdr['Referer'] = eurl
+    token = requests.get(tokurl, headers=mozhdr, verify=False).text[1:-1]
+    return 'https:{}{}|Referer={}&User-Agent={}'.format(file, token, eurl, mozhdr['User-Agent'])
+]]></expres>
+<page></page>
+</regex>
+</item>
 
  <item>
 <title>[B]Multicanal Zonasport13[/B]         </title>
@@ -1375,17 +1320,6 @@ def GetLSProData(page_data,Cookie_Jar,m):#streamwatcher2013
 
 
 
- <!--item>
-<title>[B]Multicanal RIVO 02 [/B]   </title>
-<link>$doregex[get-id]</link>
-<regex>
-<name>get-id</name>
-<expres>file:"([^"]+)</expres>
-<page>http://widestream.io/embed-44251</page> 
-</regex>
- <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item-->
- 
-
 
   <item>
 <title>[B]Multicanal RIVO 04 [/B]   </title>
@@ -1403,6 +1337,8 @@ def GetLSProData(page_data,Cookie_Jar,m):#streamwatcher2013
         <connection>keep-alive</connection>
     </regex>
 </item>
+
+
 
 
 <item>
@@ -1450,86 +1386,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
 
  
- 
- 
-
-
-<item>
-<title>[B]Multicanal AndresFutbol 01[/B]  (Sur)  </title>
-<link>$doregex[geturl]</link>
-    <regex>
-        <name>geturl</name>
-        <expres>source:"(.*?)"</expres>
-        <page>$doregex[getunpacked]</page>
-    </regex>
-    <regex>
-        <name>getunpacked</name>
-        <expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)' )</expres>
-        <page>http://whostreams.net/embed/$doregex[canal]</page>
-        <referer>https://www.futbolblogcl.com</referer>
-        <connection>keep-alive</connection>
-    </regex>
-	 <regex>
-        <name>canal</name>
-        <expres>net\/embed\/(.*?)"</expres>
-        <page>https://www.futbolblogcl.com/p/canal-1.html</page>
-    </regex>
-</item>
-
-
-
-
-<item>
-<title>[B]Multicanal AndresFutbol 02[/B]   (sur)  </title>
-<link>$doregex[geturl]</link>
-    <regex>
-        <name>geturl</name>
-        <expres>source:"(.*?)"</expres>
-        <page>$doregex[getunpacked]</page>
-    </regex>
-    <regex>
-        <name>getunpacked</name>
-        <expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)' )</expres>
-        <page>http://whostreams.net/embed/$doregex[canal]</page>
-        <referer>https://www.futbolblogcl.com</referer>
-        <connection>keep-alive</connection>
-    </regex>
-	 <regex>
-        <name>canal</name>
-        <expres>net\/embed\/(.*?)"</expres>
-       <page>https://www.futbolblogcl.com/p/canal-2.html</page>
-    </regex>
-</item>
-
-
- 
-
-
-  
-<item>
-<title>[B]Multicanal AndresFutbol 03[/B]   (Norte)  </title>
-<link>$doregex[geturl]</link>
-    <regex>
-        <name>geturl</name>
-        <expres>source:"(.*?)"</expres>
-        <page>$doregex[getunpacked]</page>
-    </regex>
-    <regex>
-        <name>getunpacked</name>
-        <expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)' )</expres>
-        <page>http://whostreams.net/embed/$doregex[canal]</page>
-        <referer>https://www.futbolblogcl.com</referer>
-        <connection>keep-alive</connection>
-    </regex>
-	 <regex>
-        <name>canal</name>
-        <expres>net\/embed\/(.*?)"</expres>
-        <page>https://www.futbolblogcl.com/p/canal-3.html</page>
-    </regex>
-</item>
-
-
-
 
 
 
@@ -1583,7 +1439,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-
 <itm>
 <title>[B]Multicanal WIZHD 10[I]  [/I][/B]</title>
 <link>$doregex[url]</link>
@@ -1618,13 +1473,22 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
+
+
+
+
+
+
+
+
  <item>
  <title>[B]Multicanal Bein es[/B]    </title>
 <link>$doregex[url]|Referer=http://canales.iptvvall.com/foxsport2.html&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
   <regex>
 <name>url</name>
-<expres><![CDATA["(.*?m3u8)"]]></expres>
+<expres><![CDATA["(http.*?m3u8)"]]></expres>
 <page>http://canales.iptvvall.com/beines.html</page>
+<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
 </regex>
  <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
@@ -1697,6 +1561,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>url</name>
 <expres><![CDATA["(.*?m3u8)"]]></expres>
 <page>http://canales.iptvvall.com/espn.html</page>
+<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
 </regex>
  
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
@@ -1705,19 +1570,19 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-http://canales.iptvvall.com/espn2.html
-  http://canales.iptvvall.com/espn.html
-
   <item>
  <title>[B]Multicanal ESPN 2[/B]     </title>
-<link>$doregex[url]|Referer=http://www.grupovalltv.net/&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
- 
+<link>$doregex[url]|Referer=http://www.grupovalltv.net/&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link> 
  <regex>
 <name>url</name>
 <expres><![CDATA["(.*?m3u8)"]]></expres>
 <page>http://canales.iptvvall.com/espn2.html</page>
+<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
 </regex>
- <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+ <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail>
+ </item>
+ 
+ 
 
   <item>
  <title>[B]Multicanal ESPN 3[/B]     </title>
@@ -1728,8 +1593,7 @@ http://canales.iptvvall.com/espn2.html
 <expres><![CDATA["(.*?m3u8)"]]></expres>
 <page>http://canales.iptvvall.com/espn3.html</page>
 </regex>
- 
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+ <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
@@ -1840,156 +1704,6 @@ http://canales.iptvvall.com/espn2.html
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
-
-
-
-  <!--item>
- <title>[B]Multicanal ESPN[/B]    </title>
-<link>$doregex[url]|Referer=http://canales.iptvvall.com/foxsport2.html&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
- 
- <regex>
-<name>url</name>
-<expres><![CDATA[source: "([^"]+)]]></expres>
-<page>http://depo.superligatv.com/espn.php</page>
-</regex>
- 
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-
-
-
-
-
-
-  <item>
- <title>[B]Multicanal ESPN 2[/B]     </title>
-<link>$doregex[url]|Referer=http://www.grupovalltv.net/&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
- 
- <regex>
-<name>url</name>
-<expres><![CDATA[source: "([^"]+)]]></expres>
-<page>http://depo.superligatv.com/espn2.php</page>
-</regex>
- <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-  <item>
- <title>[B]Multicanal ESPN 3[/B]     </title>
-<link>$doregex[url]|Referer=http://canales.iptvvall.com/foxsport2.html&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
- 
- <regex>
-<name>url</name>
-<expres><![CDATA[source: "([^"]+)]]></expres>
-<page>http://depo.superligatv.com/espn3.php</page>
-</regex>
- 
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-
-
-  <item>
- <title>[B]Multicanal ESPN Deportes[/B]    OFF</title>
-<link>$doregex[url]|Referer=http://depo.superligatv.com/unitdn.php&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
- 
- <regex>
-<name>url</name>
-<expres><![CDATA[source: "([^"]+)]]></expres>
-<page>http://depo.superligatv.com/espndep.php</page>
-</regex>
- 
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-
-
-
-
-  <item>
- <title>[B]Multicanal Fox Sports[/B]     </title>
-<link>$doregex[url]|Referer=http://depo.superligatv.com/unitdn.php&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
- 
- <regex>
-<name>url</name>
-<expres><![CDATA[source: "([^"]+)]]></expres>
-<page>http://depo.superligatv.com/foxsport.php</page>
-</regex>
- 
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-  <item>
- <title>[B]Multicanal Fox Sports 2[/B]     </title>
-<link>$doregex[url]|Referer=http://depo.superligatv.com/unitdn.php&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
- 
- <regex>
-<name>url</name>
-<expres><![CDATA[source: "([^"]+)]]></expres>
-<page>http://depo.superligatv.com/foxsport2.php</page>
-</regex>
- 
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-
-
-  <item>
- <title>[B]Multicanal Fox Sports 3[/B]     </title>
-<link>$doregex[url]|Referer=http://depo.superligatv.com/unitdn.php&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
- 
- <regex>
-<name>url</name>
-<expres><![CDATA[source: "([^"]+)]]></expres>
-<page>http://depo.superligatv.com/foxsport3.php?width=720&height=406</page>
-</regex>
- 
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-
-
-
-  <item>
- <title>[B]Multicanal TDN[/B] **    </title>
-<link>$doregex[url]|Referer=http://depo.superligatv.com/unitdn.php&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
- 
- <regex>
-<name>url</name>
-<expres><![CDATA[source: "([^"]+)]]></expres>
-<page>http://depo.superligatv.com/tdnmx.php?width=720&height=406</page>
-</regex>
- 
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-
-
-  <item>
- <title>[B]Multicanal Univision TDN[/B]     </title>
-<link>$doregex[url]|Referer=http://www.televalltv.net/&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
- 
- <regex>
-<name>url</name>
-<expres><![CDATA[source: "([^"]+)]]></expres>
-<page>http://depo.superligatv.com/unitdn.php</page>
-</regex>
- 
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
-
-
-
-
-
-
-
-
-
-
-
-  <item>
- <title>[B]Multicanal TVC Deportes[/B]     </title>
-<link>$doregex[url]|Referer=http://www.televalltv.net/&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
- 
- <regex>
-<name>url</name>
-<expres><![CDATA[source: "([^"]+)]]></expres>
-<page>http://depo.superligatv.com/tvcdep.php?width=720&amp;height=406</page>
-</regex>
- 
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item-->
 
 
 
@@ -2164,6 +1878,7 @@ http://nowlive.pro/1/105.html?id=105
 
 
 
+
  <item>
 <title>SPACE  </title>
 
@@ -2231,7 +1946,7 @@ http://nowlive.pro/1/105.html?id=105
  <item>
 <title>ESPN 2 </title>
 
-<link>$doregex[url]|Referer=https://player.limpi.tv/embed&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36</link>
+<link>$doregex[url]|Referer=https://player.limpi.tv/embed/&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36</link>
 <regex>
    <name>url</name>   
    <expres>source: "(.*?)"</expres>  
@@ -2260,7 +1975,7 @@ http://nowlive.pro/1/105.html?id=105
  <item>
 <title>FoxSport  </title>
 
-<link>$doregex[url]|Referer=https://player.limpi.tv/embed&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36</link>
+<link>$doregex[url]|Referer=https://player.limpi.tv/embed/&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36</link>
 <regex>
    <name>url</name>   
    <expres>source: "(.*?)"</expres>  
