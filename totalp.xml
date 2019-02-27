@@ -241,7 +241,38 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
- 
+  <item>
+<title>LikeTV -- Sports</title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param3]</title>
+<link>$doregex[url]|Referer=http://www.liketvw.com/embed/foxsports2&amp;Origin=http://www.liketvw.com&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36</link>
+<thumbnail>[makelist.param2]</thumbnail>
+
+<regex>
+   <name>url</name>   
+   <expres>source:\s"([^"]+)</expres>  
+   <page>http://www.liketvw.com/embed/$doregex[temp]</page>
+   <referer>http://www.liketvw.com/embed/foxsports2</referer>
+   <cookieJar/>
+</regex>
+
+<regex> 
+   <name>temp</name>   
+   <expres>javascript.*?id="(.*?)\'</expres>  
+   <page>http://www.liketvw.com[makelist.param1]</page>
+   <cookieJar/>
+</regex>
+
+]]></listrepeat>
+<expres><![CDATA[href="(\/chan.*?)"[\w\W\w]{0,155}src="(.*?)"[\w\W\s]{0,45}h4>(.*?)<]]></expres>
+<page>http://www.liketvw.com</page>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
 
 
 
