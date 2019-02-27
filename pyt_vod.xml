@@ -472,7 +472,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-
+ csCCnX6ny
 
 
 	
@@ -3224,7 +3224,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[makelist]</link>
 <thumbnail>[makelist0.param2]</thumbnail>
 ]]></listrepeat>
-<expres><![CDATA[post_box.*?href="([^"]+).*?src="([^"]+).*?alt="([^"]+).*?title="([^"]+)]]></expres>
+<expres><![CDATA[post_box.*?href=([^>]+).*?src=(.*?jpg).*?alt="([^"]+).*?title="([^"]+)]]></expres>
 <page>https://www.cinecalidad.to/?s=$doregex[buscar]</page>
 </regex>
 
@@ -3276,7 +3276,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
             'OnlineMega': 'https://mega.nz/#!%s',
             'Trailer' : 'https://www.youtube.com/watch?v=%s'}
   srcs = []
-  items = re.findall('class="link.+?onlinelink"\s*service="([^"]+)"\s*data="([^"]+)',page_data)
+  items = re.findall('class=\"link\sonlinelink\"\sservice=(.*?)\sdata="(.*?)"',page_data)
   for embed,sdata in items:
     srcs.append((embed.replace('Online',''), embeds[embed]%dec(sdata)))
   return srcs
