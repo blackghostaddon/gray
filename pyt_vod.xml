@@ -3132,10 +3132,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <item>
 <title>[B]BUSCAR pelicula [/B] Audio Castellano</title>
-
-
 <link>$doregex[makelist0]</link>
-
 <regex>
 <name>makelist0</name>
 <listrepeat><![CDATA[
@@ -3146,7 +3143,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <expres><![CDATA[post_box.*?href="([^"]+).*?src="([^"]+).*?alt="([^"]+).*?title="([^"]+)]]></expres>
 <page>https://www.cinecalidad.to/espana/?s=$doregex[buscar]</page>
 </regex>
-
 <regex>
 <name>buscar</name>
 <expres><![CDATA[#$pyFunction
@@ -3161,9 +3157,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page></page>
 <cookieJar></cookieJar>
 </regex>
-
-
-
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
@@ -3248,7 +3241,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-   <title>[makelist.param1]</title>
+   <title>[makelist0.param3] - [makelist.param2] </title>
    <urlsolve>[makelist.param2]</urlsolve>
    <thumbnail>[makelist0.param2]</thumbnail>
 ]]></listrepeat>
