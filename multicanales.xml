@@ -1859,13 +1859,13 @@ http://nowlive.pro/1/105.html?id=105
  
 
  <item>
-<title>LikeTV - Sports</title>
+<title>LikeTV * Sports</title>
 <link>$doregex[makelist]</link>
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
 <title>[makelist.param3]</title>
-<link>$doregex[url]|Referer=http://www.liketvw.com/&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36</link>
+<link>$doregex[url]|Referer=http://live.liketvw.com/&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36</link>
 <thumbnail>[makelist.param2]</thumbnail>
 
 <regex>
