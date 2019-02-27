@@ -127,7 +127,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 </item>
 ]]></listrepeat>
-<expres><![CDATA[style13\">(.*?)<[\w\W\s]{0,30}">(.*?)<[\w\W\s]{0,32}">(.*?)<[\w\W\s]{0,32}">$doregex[select]<[\w\W\s]{0,32}">(.*?)<[\w\W\s]{0,52}"(>[0-9]+)]]></expres>
+<expres><![CDATA[style13">(.*?)<[\w\W\s]{0,32}">(.*?)<[\w\W\s]{0,32}">(.*?)<[\w\W\s]{0,32}">$doregex[select]<[\w\W\s]{0,32}">(.*?)<[\w\W\s]{0,52}"(>[0-9]+)]]></expres>
 <page>http://arenavision.us/guide</page>
 <Agent>Mozilla</Agent>
 <referer>https://arenavision.us/guide</referer>
