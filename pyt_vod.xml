@@ -3241,9 +3241,9 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>makelist</name>
 <listrepeat><![CDATA[
-   <title>[makelist0.param3] - [makelist.param2] </title>
-   <urlsolve>[makelist.param2]</urlsolve>
-   <thumbnail>[makelist0.param2]</thumbnail>
+<title>[makelist0.param3] - [makelist.param1] </title>
+<urlsolve>[makelist.param2]</urlsolve>
+<thumbnail>[makelist0.param2]</thumbnail>
 ]]></listrepeat>
 <expres><![CDATA[#$pyFunction
 def GetLSProData(page_data,Cookie_Jar,m):
