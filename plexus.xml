@@ -306,46 +306,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-
-<item>
-<title>[COLOR white][B] LIVE FOOTBALL [/B][/COLOR]</title>
-
-<link>$doregex[makelist2]</link>
-
-
-<regex>
-<name>makelist2</name>
-<listrepeat><![CDATA[
- <title>$pyFunction:('[UPPERCASE][makelist2.param2][/UPPERCASE]').replace('-',' ')</title>
-<link>$doregex[makelist]</link>
- ]]></listrepeat>
-<expres><![CDATA[link[\w\W\s]{0,15}www.lfootball.ws\/(.*?)-(.*?).html]]></expres>
-<page>http://www.lfootball.ws/</page>
-<agent>Mozilla</agent>
-</regex>
-
-
-
-
-<regex>
-<name>makelist</name>
-<listrepeat><![CDATA[
- <title>$pyFunction:('[makelist2.param2]').replace('-',' ')</title>
-<link>plugin://program.plexus/?url=[makelist.param1]&amp;mode=1&amp;name=BlackAddon+[makelist2.param2]  </link>
-]]></listrepeat>
-<expres><![CDATA[acestream://(.*?)"]]></expres>
-<page>http://www.lfootball.ws/[makelist2.param1]-[makelist2.param2].html</page>
-<agent>Mozilla</agent>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/acestreams.png</thumbnail>
-</item>
-
-
-
-
-
-
-
 <item>
 <title>[COLOR white][B] LIVE FOOTBALL  [COLOR yellow]OL[/COLOR][/B][/COLOR]</title>
 
@@ -362,7 +322,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 ]]></listrepeat>
 <expres><![CDATA[h3>(.*?)CEST|<b>(.*?)<.*?\n.*?li>(.*?)<.*?href="(\/.*?)">(.*?)<]]></expres>
-<page>http://www.livefootballol.me/live-football-streaming-2016.html</page>
+<page>https://www.livefootballol.me/live-football-streaming-2019.html</page>
 <agent>Mozilla</agent>
 </regex>
 
