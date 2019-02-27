@@ -348,7 +348,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
-<title>[B]Multicanal VIP 00 [/B]   i  </title>
+<title>[B]Multicanal VIP 01 [/B]     </title>
 <link>$doregex[get-url]</link>
 <regex>
 <name>get-url</name>
@@ -382,30 +382,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
- 
-<item>
-<title>[B]Multicanal VIP 02 [/B]     </title>
-<link>$doregex[get-url]$doregex[get-token]|Referer=https://nlive.club/stream/1/38986.html&amp;Origin=https://nlive.club&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:65.0) Gecko/20100101 Firefox/65.0</link>
-
-
-<regex>
-   <name>get-url</name>   
-   <expres>curl = "(.*?)"</expres>  
-   <page>https://nlive.club/stream/1/38986.html</page>
-   <referer>http://vipracing.icu/channel/canal-2</referer>
-     <Agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:65.0) Gecko/20100101 Firefox/65.0</Agent>
-   
-</regex>
-
-<regex>
-   <name>get-token</name>   
-   <expres>token":"(.*?)"</expres>  
-   <page>https://nlive.club/getToken.php</page>
-   <referer>https://nlive.club/stream/1/38986.html</referer>
-   <Agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:65.0) Gecko/20100101 Firefox/65.0</Agent>
-</regex>
- <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail>
-</item>
 
 
 
@@ -3763,7 +3739,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-
+<urlsolve>[makelist.param2]</urlsolve>
 <item>
 <title>[B]Multicanal ElGoles 06[/B]  </title>
 <link>$doregex[get-url]</link>
