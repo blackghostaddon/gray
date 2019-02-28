@@ -404,7 +404,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
-<title>[B]Multicanal VIP 03 [/B]     </title>
+<title>[B]Multicanal VIP 03 [/B]  *   </title>
 <link>$doregex[get-url]</link>
 <regex>
 <name>get-url</name>
@@ -414,7 +414,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
     import re
     import requests
     mozhdr = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0', 'Referer': 'http://vipracing.icu/channel/canal-0'}
-    url = 'http://vipracing.icu/channel/canal-25'
+    url = 'http://vipracing.icu/channel/canal-3'
     html = requests.get(url, headers=mozhdr, verify=False).text
     cid = re.findall('id=\'(.*?)\'.+?telerium', html)[0]
     eurl = 'https://telerium.tv/embed/{}.html'.format(cid)
