@@ -3794,9 +3794,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<urlsolve>[makelist.param2]</urlsolve>
 <item>
-<title>[B]Multicanal ElGoles 06[/B]  </title>
+<title>[B]Multicanal ElGoles 06[/B] * </title>
 <link>$doregex[get-url]</link>
 <regex>
 <name>get-url</name>
@@ -3805,7 +3804,7 @@ from resolveurl.plugins.lib import jsunpack
 def GetLSProData(page_data,Cookie_Jar,m):
     import re
     import requests
-    mozhdr = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0', 'Referer': 'http://elgoles.me/11-2'}
+    mozhdr = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0', 'Referer': 'hhttp://elgoles.me/6-2'}
     url = 'http://elgoles.me/6-2'
     html = requests.get(url, headers=mozhdr, verify=False).text
     cid = re.findall('id=\'(.*?)\'.+?telerium', html)[0]
@@ -3815,17 +3814,19 @@ def GetLSProData(page_data,Cookie_Jar,m):
     epage = jsunpack.unpack(edata).replace('\\', '')
     refvar1,refvar2 = re.findall('url:atob\((\w+)\).*?atob\((\w+)\)', epage)[0]
     refvar3 = re.findall('country,(\w+),', epage)[0]
-    file = re.findall('{}="([^"]+)'.format(refvar3), epage)[0].decode('base64')
+    file = re.findall('{}="([^"]+)'.format(refvar3), epage)[0].decode('base64').replace('ssl4', 'ssl2')
     url_part1 = re.findall('{}="([^"]+)'.format(refvar1), epage)[0].decode('base64')
     url_part2 = re.findall('{}="([^"]+)'.format(refvar2), epage)[0].decode('base64')
     tokurl = 'https://telerium.tv{}{}'.format(url_part1, url_part2)
     mozhdr['Referer'] = eurl
-    token = requests.get(tokurl, headers=mozhdr, verify=False).text[1:-1]
-    return 'https:{}{}|Referer={}&User-Agent={}'.format(file, token, eurl, mozhdr['User-Agent'])
+    token = requests.get(tokurl, headers=mozhdr, verify=False).text[::-1][1:-1]
+    return 'https:{}{}|Referer={}&User-Agent={}&Origin=https://telerium.tv'.format(file, token, eurl, mozhdr['User-Agent'])
 ]]></expres>
 <page></page>
 </regex>
 </item>
+
+
 
 
 
