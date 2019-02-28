@@ -335,18 +335,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 <item>
 <title>[B]Multicanal VIP 01 [/B]     </title>
 <link>$doregex[get-url]</link>
@@ -367,18 +355,85 @@ def GetLSProData(page_data,Cookie_Jar,m):
     epage = jsunpack.unpack(edata).replace('\\', '')
     refvar1,refvar2 = re.findall('url:atob\((\w+)\).*?atob\((\w+)\)', epage)[0]
     refvar3 = re.findall('country,(\w+),', epage)[0]
-    file = re.findall('{}="([^"]+)'.format(refvar3), epage)[0].decode('base64')
+    file = re.findall('{}="([^"]+)'.format(refvar3), epage)[0].decode('base64').replace('ssl4', 'ssl2')
     url_part1 = re.findall('{}="([^"]+)'.format(refvar1), epage)[0].decode('base64')
     url_part2 = re.findall('{}="([^"]+)'.format(refvar2), epage)[0].decode('base64')
     tokurl = 'https://telerium.tv{}{}'.format(url_part1, url_part2)
     mozhdr['Referer'] = eurl
-    token = requests.get(tokurl, headers=mozhdr, verify=False).text[1:-1]
-    return 'https:{}{}|Referer={}&User-Agent={}'.format(file, token, eurl, mozhdr['User-Agent'])
+    token = requests.get(tokurl, headers=mozhdr, verify=False).text[::-1][1:-1]
+    return 'https:{}{}|Referer={}&User-Agent={}&Origin=https://telerium.tv'.format(file, token, eurl, mozhdr['User-Agent'])
 ]]></expres>
 <page></page>
 </regex>
 </item>
 
+
+<item>
+<title>[B]Multicanal VIP 02 [/B]     </title>
+<link>$doregex[get-url]</link>
+<regex>
+<name>get-url</name>
+<expres><![CDATA[#$pyFunction
+from resolveurl.plugins.lib import jsunpack
+def GetLSProData(page_data,Cookie_Jar,m):
+    import re
+    import requests
+    mozhdr = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0', 'Referer': 'http://vipracing.icu/channel/canal-0'}
+    url = 'http://vipracing.icu/channel/canal-15'
+    html = requests.get(url, headers=mozhdr, verify=False).text
+    cid = re.findall('id=\'(.*?)\'.+?telerium', html)[0]
+    eurl = 'https://telerium.tv/embed/{}.html'.format(cid)
+    ehtml = requests.get(eurl, headers=mozhdr,verify=False).text
+    edata = re.findall('(eval\(function\(p,a,c,k,e,d.*)', ehtml)[0]
+    epage = jsunpack.unpack(edata).replace('\\', '')
+    refvar1,refvar2 = re.findall('url:atob\((\w+)\).*?atob\((\w+)\)', epage)[0]
+    refvar3 = re.findall('country,(\w+),', epage)[0]
+    file = re.findall('{}="([^"]+)'.format(refvar3), epage)[0].decode('base64').replace('ssl4', 'ssl2')
+    url_part1 = re.findall('{}="([^"]+)'.format(refvar1), epage)[0].decode('base64')
+    url_part2 = re.findall('{}="([^"]+)'.format(refvar2), epage)[0].decode('base64')
+    tokurl = 'https://telerium.tv{}{}'.format(url_part1, url_part2)
+    mozhdr['Referer'] = eurl
+    token = requests.get(tokurl, headers=mozhdr, verify=False).text[::-1][1:-1]
+    return 'https:{}{}|Referer={}&User-Agent={}&Origin=https://telerium.tv'.format(file, token, eurl, mozhdr['User-Agent'])
+]]></expres>
+<page></page>
+</regex>
+</item>
+
+
+
+
+<item>
+<title>[B]Multicanal VIP 03 [/B]     </title>
+<link>$doregex[get-url]</link>
+<regex>
+<name>get-url</name>
+<expres><![CDATA[#$pyFunction
+from resolveurl.plugins.lib import jsunpack
+def GetLSProData(page_data,Cookie_Jar,m):
+    import re
+    import requests
+    mozhdr = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0', 'Referer': 'http://vipracing.icu/channel/canal-0'}
+    url = 'http://vipracing.icu/channel/canal-25'
+    html = requests.get(url, headers=mozhdr, verify=False).text
+    cid = re.findall('id=\'(.*?)\'.+?telerium', html)[0]
+    eurl = 'https://telerium.tv/embed/{}.html'.format(cid)
+    ehtml = requests.get(eurl, headers=mozhdr,verify=False).text
+    edata = re.findall('(eval\(function\(p,a,c,k,e,d.*)', ehtml)[0]
+    epage = jsunpack.unpack(edata).replace('\\', '')
+    refvar1,refvar2 = re.findall('url:atob\((\w+)\).*?atob\((\w+)\)', epage)[0]
+    refvar3 = re.findall('country,(\w+),', epage)[0]
+    file = re.findall('{}="([^"]+)'.format(refvar3), epage)[0].decode('base64').replace('ssl4', 'ssl2')
+    url_part1 = re.findall('{}="([^"]+)'.format(refvar1), epage)[0].decode('base64')
+    url_part2 = re.findall('{}="([^"]+)'.format(refvar2), epage)[0].decode('base64')
+    tokurl = 'https://telerium.tv{}{}'.format(url_part1, url_part2)
+    mozhdr['Referer'] = eurl
+    token = requests.get(tokurl, headers=mozhdr, verify=False).text[::-1][1:-1]
+    return 'https:{}{}|Referer={}&User-Agent={}&Origin=https://telerium.tv'.format(file, token, eurl, mozhdr['User-Agent'])
+]]></expres>
+<page></page>
+</regex>
+</item>
 
 
 
@@ -4773,6 +4828,57 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
  
- 
+ <item>
+<title>  LiveOnSat : Broadcasting Channels </title>
+<thumbnail>http://liveonsat.com/images/LJ_banner_main_FLAG.jpg</thumbnail>
+<link>$doregex[makelist0]</link>
+
+<regex>
+<name>makelist0</name>
+<listrepeat><![CDATA[
+<title>$pyFunction:('[UPPERCASE][makelist0.param3][makelist0.param6][/UPPERCASE]').replace('_','').replace('CL','CHAMPIONS LEAGUE')</title>
+<link>$doregex[makelist]</link>      
+<thumbnail>http://liveonsat.com/[makelist0.param2][makelist0.param5]</thumbnail>
+]]></listrepeat>  
+<expres>_self" href="(.*?)">\s*.*?src="(images[^"]+)"\s*alt="([^"]+)"|_self" href="(.*?)">\s*.*?src="(images\/[^_]+([^.]+)[^"]+)"</expres>
+<page>http://liveonsat.com/quickindex.html</page>
+  </regex>
+  
+ <regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[COLOR orange][makelist.param1] [/COLOR] [COLOR yellow][makelist.param3][/COLOR]  [makelist.param2]  </title>
+<link>$doregex[makelistB]</link>
+<NOTPlayable></NOTPlayable>
+]]></listrepeat>
+<expres>time_head"*>(.*?)<|(?s)sans-serif">([^<]+)<\/div>.*?ST: (\d+:\d+)</expres>
+<page>http://liveonsat.com/[makelist0.param1][makelist0.param4]?selTZ=6</page>
+</regex>
+
+   <regex>
+<name>makelistB</name>
+<listrepeat><![CDATA[
+<title>[makelistB.param1]     [COLOR yellow][makelistB.param2][/COLOR]</title>
+<link>$doregex[makelist2]</link>
+<NOTPlayable></NOTPlayable>
+]]></listrepeat>
+<expres>(?s)([makelist.param2])<\/div>.*?ST: (\d+:\d+).*?div class = fLeft_live>(.*?)<\/div></expres>
+<page>http://liveonsat.com/[makelist0.param1][makelist0.param4]?selTZ=6</page>
+</regex>
+
+ <regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>  [COLOR lime][makelist2.param1][/COLOR][COLOR slategrey][makelist2.param3][/COLOR] </title>
+<link>$doregex[NOLINKSSORRY]</link>
+<NOTPlayable></NOTPlayable>
+]]></listrepeat>
+<expres>onmouseout="return nd..;">([^<]*(beIN|Liga|Deportes|Gol|Antena 3|BT|Sky|Canal\+[^<]+rance|RTS D|TeleClub|TV5 Monde|France |TF1|W9|RMC|Eleven|usa|RAI)[^<]+)<|onmouseout="return nd..;">(.*?)<</expres>
+<page>[makelistB.param3]</page>
+</regex>
+
+</item>
+
+selTZ=1 in url is to modificate if u r not in TIME ZONE GMT+1 PARIS MADRID
  
  
