@@ -3386,7 +3386,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<itm>
+<item>
 <title>test</title>
  <urlsolve>https://goodplay.co/gd/player.php?v=1aqnsZ-wqXBOpCbpPVKzf0ktSkYNp21Oo</urlsolve>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
@@ -3396,7 +3396,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<itm>
+<item>
 <title>test2</title>
  <urlsolve>https://oload.tv/embed/IxCWSLLfIDQ/https%3A%2F%2Fverpeliculasultra.com%2Faccion%2F1101%2FL</urlsolve>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
