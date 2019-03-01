@@ -18,7 +18,7 @@ http://paypal.me/blackghost</info>
 
 
   <item>
-  <title>[B][COLOR yellow]BlackGhost, como cada año necesita de tu apoyo[/COLOR][/B]</title><link>na</link><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/donador.png</thumbnail>
+  <title>[B][COLOR yellow]BlackGhost, necesita de tu apoyo[/COLOR][/B]</title><link>na</link><thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/donador.png</thumbnail>
 <fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart><info>[COLOR yellow][B]The BlackGhost[/B][/COLOR]
 Bienvenid@ a BlackGhost, un Addon de entretenimiento para compartir y disfrutar.  
 *Puedes apoyar al Addon haciendo una donación voluntaria, la cual servirá para mantener activo el Addon y para el mantenimiento y soporte del mismo. Tu donación es anónima y no importa la cantidad ¡Con tu aportación haces la diferencia! 
@@ -122,7 +122,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 </item>
 
-<item> <title>[UPPERCASE] [COLOR white] ----[ Ayuda y Soporte en Telegrsm:[/UPPERCASE][B] [COLOR lime] @blackghostkodi[/COLOR]]---- [/COLOR][/B]</title><link>na</link>
+<item> <title>[UPPERCASE] [COLOR white] ----[ Ayuda y Soporte en Telegram:[/UPPERCASE][B] [COLOR lime] @blackghostkodi[/COLOR]]---- [/COLOR][/B]</title><link>na</link>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/icon.png</thumbnail>
 <fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
 
