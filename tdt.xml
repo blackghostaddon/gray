@@ -1,7 +1,44 @@
 
 
 
+<item>
+<title>NOVA </title>
+<link>https://livestartover.atresmedia.com/nova/bitrate_3.m3u8|User-Agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Mobile Safari/537.36&amp;Referer=http://teleonline.org/canal/nova/</link>
+<thumbnail></thumbnail>
+<fanart></fanart>
+</item>
 
+
+<item>
+<title>La 1</title>
+<link>http://hlsliveamdgl1-lh.akamaihd.net/i/hlslive_1@584095/index_1500_av-p.m3u8|User-Agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Mobile Safari/537.36&amp;Referer=http://teleonline.org/canal/nova/</link>
+<thumbnail></thumbnail>
+<fanart></fanart>
+</item>
+
+
+<item>
+<title>La 2</title>
+<link>http://hlsliveamdgl0-lh.akamaihd.net/i/hlslive_1@586367/master.m3u8|User-Agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Mobile Safari/537.36&amp;Referer=http://teleonline.org/canal/nova/</link>
+<thumbnail></thumbnail>
+<fanart></fanart>
+</item>
+
+
+<item>
+<title>antena 3 </title>
+<link>https://livestartover.atresmedia.com/antena3/bitrate_3.m3u8|User-Agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Mobile Safari/537.36&amp;Referer=http://teleonline.org/canal/nova/</link>
+<thumbnail></thumbnail>
+<fanart></fanart>
+</item>
+
+
+<item>
+<title>cuatro </title>
+<link>https://livehlsdai-i.akamaihd.net/hls/live/571643/cuatro/bitrate_2.m3u8|User-Agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Mobile Safari/537.36&amp;Referer=http://teleonline.org/canal/nova/</link>
+<thumbnail></thumbnail>
+<fanart></fanart>
+</item>
 
 
 
