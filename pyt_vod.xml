@@ -2627,12 +2627,111 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
  
 
+ 
+ <item>
+<title>[B]TVPELIS[/B]  </title>
+<link>$doregex[makelist2]</link>
+
+<regex>
+    <name>makelist2</name> movies  (all pages)
+ <listrepeat><![CDATA[
+<title>[makelist2.param2] </title>
+ <link>$doregex[makelist3]</link>
+ <fanart>[makelist2.param3]</fanart>
+  <thumbnail>[makelist2.param3]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re, requests
+def GetLSProData(page_data,Cookie_Jar,m):
+
+################################################################## FORMULARY #################################################################
+ starturl = 'http://www.tvpelis.tv/genero/$doregex[select]/'     ### usually, ~ 'http://website.com/category/' ###
+ categorylink = '' ### check the number of the param ###
+ centerurl = 'page/'      ### something like  '/page/' ###
+ firstpage = 1 ### probably  = 1 ###
+ endurl = '/' ### can be empty ###    ### endurl without final / (SLASH) ###
+#
+ dataregex = 'article\sid.*?href="(.*?)"[\w\W\s]{0,9}Ver(.*?)Online[\w\W\s]{0,30}src="(.*?)"'      ### To adapt ###
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:50.0) Gecko/20100101 Firefox/50.0', 'Referer': ''}      ### To adapt ###
+##############################################################################################################################################
+
+############################## GENERIC PART #####################################
+ fullurl = starturl + centerurl + str(firstpage) + endurl + categorylink #
+ source = requests.get(fullurl, headers= headers).text #
+ data = [] #
+#
+ last = 4 #
+ while firstpage <= last: #
+    try: #
+        fullurl = starturl + centerurl + str(firstpage) + endurl + categorylink #
+        source = requests.get(fullurl, headers=headers).text #
+        data += re.findall(dataregex, source) #
+        firstpage += 1 #
+    except: #
+        pass #
+ return data #
+]]></expres><page></page>
+</regex>
+ 
+   <regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+   import xbmcgui
+   dialog = xbmcgui.Dialog()
+   ret = dialog.select('Selecciona un Server para evitar Bloqueo', ['Audio Castellano', 'Audio Latino', 'Subtituladas'])
+   lists = ['castellano', 'latino', 'vose']
+   return lists[ret]
+]]></expres>
+<page></page>
+</regex>
+ 
+ 
+ 
+ 
+ 
+   <regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+<title>[makelist2.param2] [COLOR cyan]Decodificar:[makelist3.param1][/COLOR]</title>
+ <link>$doregex[makelist4]</link>
+ <fanart>[makelist2.param3]</fanart>
+  <thumbnail>[makelist2.param3]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[iframe src="(.*?)"]]></expres>
+ <page>http://www.tvpelis.tv/monky-2017/</page>
+</regex>
+ 
+ 
+ 
+  <regex>
+<name>makelist4</name>
+<listrepeat><![CDATA[
+<title>[makelist2.param2] [COLOR cyan]Server:[makelist4.param1][/COLOR]</title>
+ <urlsolve>[makelist4.param1]</urlsolve>
+ <fanart>[makelist2.param3]</fanart>
+  <thumbnail>[makelist2.param3]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[iframe src="(.*?)"]]></expres>
+ <page>http://www.tvpelis.tv[makelist3.param1]</page>
+</regex>
+
+
+
+
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
+ </item>
+ 
+ 
+ 
+ 
+ 
 
 
 
 
  <item>
-<title>[B]PELICULAS ULTRA[/B]  CASTELLANO </title>
+<title>[B]PELICULAS ULTRA[/B]   </title>
 <link>$doregex[makelist2]</link>
 <regex>
     <name>makelist2</name> movies  (all pages)
@@ -2647,7 +2746,7 @@ import re, requests
 def GetLSProData(page_data,Cookie_Jar,m):
 
 ################################################################## FORMULARY #################################################################
- starturl = 'https://verpeliculasultra.com/xfsearch/iframe-espanol/'     ### usually, ~ 'http://website.com/category/' ###
+ starturl = 'https://verpeliculasultra.com/xfsearch/iframe-$doregex[select]/'     ### usually, ~ 'http://website.com/category/' ###
  categorylink = '' ### check the number of the param ###
  centerurl = 'page/'      ### something like  '/page/' ###
  firstpage = 1 ### probably  = 1 ###
@@ -2676,69 +2775,20 @@ def GetLSProData(page_data,Cookie_Jar,m):
 ]]></expres><page></page>
 </regex>
  
-
-<regex>
-<name>makelist3</name>
-<listrepeat><![CDATA[
-<title>[makelist2.param3] [COLOR gray]Server:[makelist3.param1][/COLOR]</title>
- <urlsolve>[makelist3.param1]</urlsolve>
- <fanart>https://verpeliculasultra.com[makelist2.param2]</fanart>
-  <thumbnail>https://verpeliculasultra.com[makelist2.param2]</thumbnail>
-]]></listrepeat>
-<expres><![CDATA[iframe src="(http.*?)"]]></expres>
- <page>[makelist2.param1]</page>
-<agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36</agent>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
-<info>urlsolve</info>
- </item>
-
  
- <item>
-<title>[B]PELICULAS ULTRA[/B]  LATINO  </title>
-<link>$doregex[makelist2]</link>
-<regex>
-    <name>makelist2</name> movies  (all pages)
- <listrepeat><![CDATA[
-<title> [makelist2.param3] </title>
- <link>$doregex[makelist3]</link>
- <fanart>https://verpeliculasultra.com[makelist2.param2]</fanart>
-  <thumbnail>https://verpeliculasultra.com[makelist2.param2]</thumbnail>
-]]></listrepeat>
+    <regex>
+<name>select</name>
 <expres><![CDATA[#$pyFunction
-import re, requests
 def GetLSProData(page_data,Cookie_Jar,m):
-
-################################################################## FORMULARY #################################################################
- starturl = 'https://verpeliculasultra.com/xfsearch/iframe-latino/'     ### usually, ~ 'http://website.com/category/' ###
- categorylink = '' ### check the number of the param ###
- centerurl = 'page/'      ### something like  '/page/' ###
- firstpage = 1 ### probably  = 1 ###
- endurl = '/' ### can be empty ###    ### endurl without final / (SLASH) ###
-#
- dataregex = 'shortf-img[\w\W\s]{0,20}href="(.*?)"[\w\W\s]{0,45}src="(.*?)".*?alt="(.*?)"'      ### To adapt ###
- headers = {'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:50.0) Gecko/20100101 Firefox/50.0', 'Referer': ''}      ### To adapt ###
-##############################################################################################################################################
-
-############################## GENERIC PART #####################################
- fullurl = starturl + centerurl + str(firstpage) + endurl + categorylink #
- source = requests.get(fullurl, headers= headers).text #
- data = [] #
-#
- last = 4 #
- while firstpage <= last: #
-    try: #
-        fullurl = starturl + centerurl + str(firstpage) + endurl + categorylink #
-        source = requests.get(fullurl, headers=headers).text #
-        data += re.findall(dataregex, source) #
-        firstpage += 1 #
-    except: #
-        pass #
- return data #
-
-]]></expres><page></page>
+   import xbmcgui
+   dialog = xbmcgui.Dialog()
+   ret = dialog.select('Selecciona un Server para evitar Bloqueo', ['Audio Castellano', 'Audio Latino', 'Subtitulada'])
+   lists = ['espanol', 'latino', 'subtitulada']
+   return lists[ret]
+]]></expres>
+<page></page>
 </regex>
- 
+
 
 <regex>
 <name>makelist3</name>
@@ -2756,8 +2806,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <info>urlsolve</info>
  </item>
 
-
-
+ 
 
 
 
