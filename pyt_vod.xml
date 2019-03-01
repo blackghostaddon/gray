@@ -2629,7 +2629,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
  
  <item>
-<title>[B]TVPELIS[/B]  </title>
+<title>[B]TV-PELIS[/B]  </title>
 <link>$doregex[makelist2]</link>
 
 <regex>
@@ -2708,7 +2708,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>makelist4</name>
 <listrepeat><![CDATA[
 <title>[makelist2.param2] [COLOR cyan]Server:[makelist4.param1][/COLOR]</title>
- <urlsolve>[makelist4.param1]</urlsolve>
+ <link>$doregex[id3]</link>
  <fanart>[makelist2.param3]</fanart>
   <thumbnail>[makelist2.param3]</thumbnail>
 ]]></listrepeat>
@@ -2716,7 +2716,20 @@ def GetLSProData(page_data,Cookie_Jar,m):
  <page>http://www.tvpelis.tv[makelist3.param1]</page>
 </regex>
 
-
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver, resolveurl
+    url = 'https://[makelist4.param1]'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = resolveurl.resolve(url)
+    return u
+]]></expres>
+<page></page>
+</regex>
 
 
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
@@ -2794,7 +2807,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>makelist3</name>
 <listrepeat><![CDATA[
 <title>[makelist2.param3] [COLOR gray]Server:[makelist3.param1][/COLOR]</title>
- <urlsolve>[makelist3.param1]</urlsolve>
+ <link>$doregex[id3]</link>
  <fanart>https://verpeliculasultra.com[makelist2.param2]</fanart>
   <thumbnail>https://verpeliculasultra.com[makelist2.param2]</thumbnail>
 ]]></listrepeat>
@@ -2802,8 +2815,23 @@ def GetLSProData(page_data,Cookie_Jar,m):
  <page>[makelist2.param1]</page>
 <agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36</agent>
 </regex>
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver, resolveurl
+    url = 'https://[makelist3.param1]'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = resolveurl.resolve(url)
+    return u
+]]></expres>
+<page></page>
+</regex>
+
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
-<info>urlsolve</info>
  </item>
 
  
