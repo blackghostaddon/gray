@@ -723,7 +723,43 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
+
 <item>
+<title>[B]Multicanal Zonasport02[/B]         </title>
+<link>$doregex[get-url]</link>
+<regex>
+<name>get-url</name>
+<expres><![CDATA[#$pyFunction
+from resolveurl.plugins.lib import jsunpack
+def GetLSProData(page_data,Cookie_Jar,m):
+    import re
+    import requests
+    mozhdr = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0', 'Referer': 'http://zonasports.es/'}
+    url = 'http://zonasports.es/live.php?id=2'
+    html = requests.get(url, headers=mozhdr, verify=False).text
+    cid = re.findall('javascript\'\>id=\'(.*?)\'.*?telerium', html)[0]
+    eurl = 'https://telerium.tv/embed/{}.html'.format(cid)
+    ehtml = requests.get(eurl, headers=mozhdr,verify=False).text
+    edata = re.findall('(eval\(function\(p,a,c,k,e,d.*)', ehtml)[0]
+    epage = jsunpack.unpack(edata).replace('\\', '')
+    refvar1,refvar2 = re.findall('url:atob\((\w+)\).*?atob\((\w+)\)', epage)[0]
+    refvar3 = re.findall('country,(\w+),', epage)[0]
+    file = re.findall('{}="([^"]+)'.format(refvar3), epage)[0].decode('base64')
+    url_part1 = re.findall('{}="([^"]+)'.format(refvar1), epage)[0].decode('base64')
+    url_part2 = re.findall('{}="([^"]+)'.format(refvar2), epage)[0].decode('base64')
+    tokurl = 'https://telerium.tv{}{}'.format(url_part1, url_part2)
+    mozhdr['Referer'] = eurl
+    token = requests.get(tokurl, headers=mozhdr, verify=False).text[1:-1]
+    return 'https:{}{}|Referer={}&User-Agent={}'.format(file, token, eurl, mozhdr['User-Agent'])
+]]></expres>
+<page></page>
+</regex>
+</item>
+
+
+
+
+<!--item>
 <title>[B]Multicanal Zonasport02[/B]      </title>
 <link>https://$doregex[ip]$doregex[m3u8]|Referer=http://www.playerfs.com/&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64; rv:56.0) Gecko/20100101 Firefox/56.0</link>
 <regex>
@@ -762,7 +798,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <expres>channel='(.*?)'</expres>
 <page>http://zonasports.es/cha-x.php?id=2</page>
 </regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item-->
 
 
 
@@ -1038,7 +1074,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
- <item>
+ <!--item>
 <title>[B]Multicanal Zonasport09[/B]       </title>
 <link>$doregex[get-id]</link>
 <regex>
@@ -1057,7 +1093,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <expres>file:"([^"]+)</expres>
 <page>http://widestream.io/embed-7231</page>
 </regex>
-<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item-->
 
 
 
@@ -1229,11 +1265,45 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>get-id</name>
 <expres>file:"([^"]+)</expres>
 <page>http://widestream.io/embed-44241</page> 
+ <referer>http://in.xrivonet.info/psntv.html</referer>
 </regex>
  <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
 
+  <item>
+<title>[B]Multicanal RIVO 02 [/B]   </title>
+    <link>$doregex[geturl]</link>
+    <regex>
+        <name>geturl</name>
+        <expres>source:"(.*?)"</expres>
+        <page>$doregex[getunpacked]</page>
+    </regex>
+    <regex>
+        <name>getunpacked</name>
+        <expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)' )</expres>
+        <page>http://whostreams.net/embed/usgiekr4ctgh</page>
+        <referer>http://in.xrivonet.info/psntv2.html</referer>
+        <connection>keep-alive</connection>
+    </regex>
+</item>
+
+  <item>
+<title>[B]Multicanal RIVO 02 [/B]   </title>
+    <link>$doregex[geturl]</link>
+    <regex>
+        <name>geturl</name>
+        <expres>source:"(.*?)"</expres>
+        <page>$doregex[getunpacked]</page>
+    </regex>
+    <regex>
+        <name>getunpacked</name>
+        <expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)' )</expres>
+        <page>http://whostreams.net/embed/6mtcoqvjen</page>
+        <referer>http://in.xrivonet.info/psntv3.html</referer>
+        <connection>keep-alive</connection>
+    </regex>
+</item>
 
 
   <item>
@@ -1248,14 +1318,14 @@ def GetLSProData(page_data,Cookie_Jar,m):
         <name>getunpacked</name>
         <expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)' )</expres>
         <page>http://whostreams.net/embed/nrw2ahw46f42td</page>
-        <referer>http://in.xrivonet.info/</referer>nrw2ahw46f42td
+        <referer>http://in.xrivonet.info/psntv.html</referer>
         <connection>keep-alive</connection>
     </regex>
 </item>
 
 
 
-
+http://in.xrivonet.info/psntv4.html
 
 
 
