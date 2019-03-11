@@ -115,42 +115,7 @@
 
 
 
-  <item>
- <title>[COLOR yellow][B]Multicanales Televall [/B] [/COLOR]  Espn - FoxSports-  TDN - TVC - y muchos mas </title>
 
-<link>$doregex[makelist]</link>
-
-<regex>
-<name>makelist</name>
-<listrepeat><![CDATA[
-   <title>[COLOR lightblue]   [makelist.param2]    [/COLOR]   </title>
-<link>$doregex[url]|Referer=https://player.limpi.tv/embed&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36</link>
-   <thumbnail>[makelist.param3]</thumbnail>
-]]></listrepeat>
-<expres><![CDATA[<li.*?\n.*?canal-en-vivo\/(.*?)".*?title="(.*?)".*?\n.*?src="(.*?)"]]></expres>
-<page>http://cablegratis.tv/</page>
-</regex>
-<regex>
-   <name>url</name>   
-   <expres>source: "(.*?)"</expres>  
-   <page>$doregex[temp]/$doregex[canal]</page>
-   <referer>https://player.limpi.tv/</referer>
-   <cookieJar/>
-</regex>
-<regex> 
-   <name>temp</name>   
-   <expres>src="(.*?)\'</expres>  
-   <page>https://player.limpi.tv/embed.js</page>
-   <cookieJar/>
-</regex>
-<regex> 
-   <name>canal</name>   
-   <expres>id='(.*?)'</expres>  
-   <page>http://cablegratis.tv/canal-en-vivo/[makelist.param1]</page>
-   <cookieJar/>
-</regex>
- </item>
- 
  
  
  
@@ -164,7 +129,7 @@
  <regex>
 <name>url</name>
 <expres><![CDATA[source: "([^"]+)]]></expres>
-<page>http://canales.iptvvall.com/$doregex[select].html</page>
+<page>http://stream.televall.website/$doregex[select].php</page>
 </regex>
 
 	<regex>
@@ -1626,11 +1591,11 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
  <item>
  <title>[B]Multicanal Bein es[/B]    </title>
-<link>$doregex[url]|Referer=http://canales.iptvvall.com/foxsport2.html&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
+<link>$doregex[url]|Referer=http://stream.televall.website/foxsport2.html&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
   <regex>
 <name>url</name>
 <expres><![CDATA["(http.*?m3u8)"]]></expres>
-<page>http://canales.iptvvall.com/beines.html</page>
+<page>http://stream.televall.website/beines.php</page>
 <agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
 </regex>
  <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
@@ -1643,11 +1608,11 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
   <item>
  <title>[B]Multicanal Canal 2[/B]    </title>
-<link>$doregex[url]|Referer=http://canales.iptvvall.com/foxsport2.html&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
+<link>$doregex[url]|Referer=http://stream.televall.website/foxsport2.html&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
   <regex>
 <name>url</name>
 <expres><![CDATA["(.*?m3u8)"]]></expres>
-<page>http://canales.iptvvall.com/canal2.html</page>
+<page>http://stream.televall.website/canal2.php</page>
 </regex>
  <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
@@ -1655,11 +1620,11 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
   <item>
  <title>[B]Multicanal Canal 5[/B]    </title>
-<link>$doregex[url]|Referer=http://canales.iptvvall.com/foxsport2.html&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
+<link>$doregex[url]|Referer=http://stream.televall.website/foxsport2.html&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
   <regex>
 <name>url</name>
 <expres><![CDATA["(.*?m3u8)"]]></expres>
-<page>http://canales.iptvvall.com/canal5.html</page>
+<page>http://stream.televall.website/canal5.php</page>
 </regex>
  
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
@@ -1668,11 +1633,11 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
   <item>
  <title>[B]Multicanal Azteca 7[/B]    </title>
-<link>$doregex[url]|Referer=http://canales.iptvvall.com/foxsport2.html&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
+<link>$doregex[url]|Referer=http://stream.televall.website/foxsport2.html&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
   <regex>
 <name>url</name>
 <expres><![CDATA["(.*?m3u8)"]]></expres>
-<page>http://canales.iptvvall.com/azteca7.html</page>
+<page>http://stream.televall.website/azteca7.php</page>
 </regex>
  
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
@@ -1683,11 +1648,11 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
   <item>
  <title>[B]Multicanal Nueve[/B]    </title>
-<link>$doregex[url]|Referer=http://canales.iptvvall.com/foxsport2.html&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
+<link>$doregex[url]|Referer=http://stream.televall.website/foxsport2.html&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
   <regex>
 <name>url</name>
 <expres><![CDATA["(.*?m3u8)"]]></expres>
-<page>http://canales.iptvvall.com/nueve.html</page>
+<page>http://stream.televall.website/nueve.php</page>
 </regex>
  
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
@@ -1699,11 +1664,11 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
   <item>
  <title>[B]Multicanal ESPN[/B]    </title>
-<link>$doregex[url]|Referer=http://canales.iptvvall.com/foxsport2.html&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
+<link>$doregex[url]|Referer=http://stream.televall.website/foxsport2.html&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
   <regex>
 <name>url</name>
 <expres><![CDATA["(.*?m3u8)"]]></expres>
-<page>http://canales.iptvvall.com/espn.html</page>
+<page>http://stream.televall.website/espn.php</page>
 <agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
 </regex>
  
@@ -1719,7 +1684,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  <regex>
 <name>url</name>
 <expres><![CDATA["(.*?m3u8)"]]></expres>
-<page>http://canales.iptvvall.com/espn2.html</page>
+<page>http://stream.televall.website/espn2.php</page>
 <agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
 </regex>
  <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail>
@@ -1729,12 +1694,12 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
   <item>
  <title>[B]Multicanal ESPN 3[/B]     </title>
-<link>$doregex[url]|Referer=http://canales.iptvvall.com/foxsport2.html&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
+<link>$doregex[url]|Referer=http://stream.televall.website/foxsport2.html&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
  
  <regex>
 <name>url</name>
 <expres><![CDATA["(.*?m3u8)"]]></expres>
-<page>http://canales.iptvvall.com/espn3.html</page>
+<page>http://stream.televall.website/espn3.php</page>
 </regex>
  <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
@@ -1750,7 +1715,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  <regex>
 <name>url</name>
 <expres><![CDATA["(.*?m3u8)"]]></expres>
-<page>http://canales.iptvvall.com/foxsport.html</page>
+<page>http://stream.televall.website/foxsport.php</page>
 </regex>
  
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
@@ -1762,7 +1727,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  <regex>
 <name>url</name>
 <expres><![CDATA["(.*?m3u8)"]]></expres>
-<page>http://canales.iptvvall.com/foxsport2.html</page>
+<page>http://stream.televall.website/foxsport2.php</page>
 </regex>
  
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
@@ -1776,7 +1741,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  <regex>
 <name>url</name>
 <expres><![CDATA["(.*?m3u8)"]]></expres>
-<page>http://canales.iptvvall.com/foxsport3.html</page>
+<page>http://stream.televall.website/foxsport3.php</page>
 </regex>
  
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
@@ -1791,7 +1756,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  <regex>
 <name>url</name>
 <expres><![CDATA["(.*?m3u8)"]]></expres>
-<page>http://canales.iptvvall.com/tdn.html</page>
+<page>http://stream.televall.website/tdn.php</page>
 </regex>
  
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
@@ -1805,7 +1770,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  <regex>
 <name>url</name>
 <expres><![CDATA[file: "([^"]+)]]></expres>
-<page>http://canales.iptvvall.com/unitdn.html</page>
+<page>http://stream.televall.website/unitdn.php</page>
 </regex>
  
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
@@ -1821,7 +1786,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  <regex>
 <name>url</name>
 <expres><![CDATA["(.*?m3u8)"]]></expres>
-<page>http://canales.iptvvall.com/claro.html</page>
+<page>http://stream.televall.website/claro.php</page>
 </regex>
  
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
@@ -1841,7 +1806,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  <regex>
 <name>url</name>
 <expres><![CDATA["(.*?m3u8)"]]></expres>
-<page>http://canales.iptvvall.com/tvcdep.html</page>
+<page>http://stream.televall.website/tvcdep.php</page>
 </regex>
  
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
@@ -2034,7 +1999,31 @@ http://nowlive.pro/1/105.html?id=105
 
 
 
+  <item>
+<title>TDN</title>
+<link>$doregex[url]|Referer=http://premiumtvchannels.com&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36</link>
+<regex>
+   <name>url</name>   
+   <expres>file: "(.*?)"</expres>  
+   <page>http://premiumtvchannels.com/clappr/tdn.php</page>
+   <referer>http://premiumtvchannels.com</referer>
+   <cookieJar/>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
  
+ 
+  <item>
+<title>Fox Sports 1</title>
+<link>$doregex[url]|Referer=http://premiumtvchannels.com&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36</link>
+<regex>
+   <name>url</name>   
+   <expres>file: "(.*?)"</expres>  
+   <page>http://premiumtvchannels.com/clappr/foxsports1latino.php</page>
+   <referer>http://premiumtvchannels.com</referer>
+   <cookieJar/>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
  
  
@@ -2044,7 +2033,7 @@ http://nowlive.pro/1/105.html?id=105
  
  
  
- <item>
+ <!--item>
 <title>TNT SPORTS</title>
 
 <link>$doregex[url]|Referer=https://player.limpi.tv/embed&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36</link>
@@ -2300,7 +2289,7 @@ http://nowlive.pro/1/105.html?id=105
    <page>http://cablegratis.tv/canal-en-vivo/bein-n-sports</page>
    <cookieJar/>
 </regex>
-</item>
+</item-->
 
  
 
