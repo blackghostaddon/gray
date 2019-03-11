@@ -1611,7 +1611,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[url]|Referer=http://stream.televall.website/foxsport2.html&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
   <regex>
 <name>url</name>
-<expres><![CDATA["(.*?m3u8)"]]></expres>
+<expres><![CDATA["(.*?m3u8.*?)"]]></expres>
 <page>http://stream.televall.website/canal2.php</page>
 </regex>
  <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
@@ -1623,7 +1623,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[url]|Referer=http://stream.televall.website/foxsport2.html&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
   <regex>
 <name>url</name>
-<expres><![CDATA["(.*?m3u8)"]]></expres>
+<expres><![CDATA["(.*?m3u8.*?)"]]></expres>
 <page>http://stream.televall.website/canal5.php</page>
 </regex>
  
@@ -1632,11 +1632,11 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
   <item>
- <title>[B]Multicanal Azteca 7[/B]    </title>
+ <title>[B]Multicanal Azteca 7[/B]  *  </title>
 <link>$doregex[url]|Referer=http://stream.televall.website/foxsport2.html&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
   <regex>
 <name>url</name>
-<expres><![CDATA["(.*?m3u8)"]]></expres>
+<expres><![CDATA["(.*?m3u8.*?)"]]></expres>
 <page>http://stream.televall.website/azteca7.php</page>
 </regex>
  
@@ -1651,7 +1651,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[url]|Referer=http://stream.televall.website/foxsport2.html&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
   <regex>
 <name>url</name>
-<expres><![CDATA["(.*?m3u8)"]]></expres>
+<expres><![CDATA["(.*?m3u8.*?)"]]></expres>
 <page>http://stream.televall.website/nueve.php</page>
 </regex>
  
@@ -1667,7 +1667,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[url]|Referer=http://stream.televall.website/foxsport2.html&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
   <regex>
 <name>url</name>
-<expres><![CDATA["(.*?m3u8)"]]></expres>
+<expres><![CDATA["(.*?m3u8.*?)"]]></expres>
 <page>http://stream.televall.website/espn.php</page>
 <agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
 </regex>
@@ -1683,7 +1683,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[url]|Referer=http://www.grupovalltv.net/&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link> 
  <regex>
 <name>url</name>
-<expres><![CDATA["(.*?m3u8)"]]></expres>
+<expres><![CDATA["(.*?m3u8.*?)"]]></expres>
 <page>http://stream.televall.website/espn2.php</page>
 <agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
 </regex>
@@ -1698,7 +1698,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
  <regex>
 <name>url</name>
-<expres><![CDATA["(.*?m3u8)"]]></expres>
+<expres><![CDATA["(.*?m3u8.*?)"]]></expres>
 <page>http://stream.televall.website/espn3.php</page>
 </regex>
  <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
@@ -1714,7 +1714,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
  <regex>
 <name>url</name>
-<expres><![CDATA["(.*?m3u8)"]]></expres>
+<expres><![CDATA["(.*?m3u8.*?)"]]></expres>
 <page>http://stream.televall.website/foxsport.php</page>
 </regex>
  
@@ -1726,7 +1726,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
  <regex>
 <name>url</name>
-<expres><![CDATA["(.*?m3u8)"]]></expres>
+<expres><![CDATA["(.*?m3u8.*?)"]]></expres>
 <page>http://stream.televall.website/foxsport2.php</page>
 </regex>
  
@@ -1740,7 +1740,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
  <regex>
 <name>url</name>
-<expres><![CDATA["(.*?m3u8)"]]></expres>
+<expres><![CDATA["(.*?m3u8.*?)"]]></expres>
 <page>http://stream.televall.website/foxsport3.php</page>
 </regex>
  
@@ -1755,7 +1755,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
  <regex>
 <name>url</name>
-<expres><![CDATA["(.*?m3u8)"]]></expres>
+<expres><![CDATA["(.*?m3u8.*?)"]]></expres>
 <page>http://stream.televall.website/tdn.php</page>
 </regex>
  
@@ -1785,7 +1785,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
  <regex>
 <name>url</name>
-<expres><![CDATA["(.*?m3u8)"]]></expres>
+<expres><![CDATA["(.*?m3u8.*?)"]]></expres>
 <page>http://stream.televall.website/claro.php</page>
 </regex>
  
@@ -1805,7 +1805,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
  <regex>
 <name>url</name>
-<expres><![CDATA["(.*?m3u8)"]]></expres>
+<expres><![CDATA["(.*?m3u8.*?)"]]></expres>
 <page>http://stream.televall.website/tvcdep.php</page>
 </regex>
  
