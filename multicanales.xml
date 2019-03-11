@@ -4922,6 +4922,33 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 </item>
 
-selTZ=1 in url is to modificate if u r not in TIME ZONE GMT+1 PARIS MADRID
+
+
+<item>
+<title>CNews (480p)</title>
+<link>$doregex[url]|Cookie=$get_cookies$</link>
+<regex>
+   <name>url</name>   
+   <expres>NAME="480.*\n(http[^\#]+)</expres>  #Change 480 to 240,380,720 or 1080 for different quality#
+   <page>$doregex[url2]&redirect=0</page>
+   <referer>http://www.dailymotion.com/</referer>
+   <cookieJar/>
+</regex>
+<regex>
+   <name>url2</name>
+   <expres>$pyFunction:'$doregex[jsonurl]'.replace('\/','/')</expres>
+   <page/>
+</regex>
+<regex>
+   <name>jsonurl</name>
+   <expres>mpegURL","url":"([^"]+)</expres>
+   <page>http://www.dailymotion.com/embed/video/x3b68jn</page>
+   <cookieJar/>
+</regex>
+</item>
  
+<item>
+<title>CNews (480p)</title>
+<link>http://cliffpelotas.webcindario.com/bg/youtube.php?v=utZX_HCcg80</link> 
+</item>
  
