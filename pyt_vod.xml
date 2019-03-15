@@ -613,8 +613,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	
 	
 	
- 	
-<!--item>
+<item>
 <title>[B]ESTRENOS[/B] [CineVall Latino] </title>
 
 <link>$doregex[makelist3]</link>
@@ -623,11 +622,11 @@ def GetLSProData(page_data,Cookie_Jar,m):
     <name>makelist3</name> movies  (all pages)
  <listrepeat><![CDATA[
 <title>[makelist3.param3]</title>
- <link>$doregex[finalURL]|Referer=http://www.cinevall.website/&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64; rv:56.0) Gecko/20100101 Firefox/56.0</link>
+ <link>$doregex[finalURL]|Referer=http://ligatv.net/&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64; rv:56.0) Gecko/20100101 Firefox/56.0</link>
 <thumbnail>[makelist3.param2]</thumbnail>
  <regex>
 <name>finalURL</name>
-<expres>iframe\ssrc=\"(.*?)\"</expres>file: '
+<expres>file: "(.*?)\"</expres>
 <page>[makelist3.param1]</page>
 <referer>http://www.cinevall.website/release/2018/</referer>
 <agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36</agent>
@@ -672,10 +671,12 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
 
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/fanart.jpg</fanart>
- </item-->
+ </item>
 
  
-   
+ 
+ 
+ 
 	
 	
 	
