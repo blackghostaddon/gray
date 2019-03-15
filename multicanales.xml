@@ -414,9 +414,9 @@ def GetLSProData(page_data,Cookie_Jar,m):
     import re
     import requests
     mozhdr = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0', 'Referer': 'http://vipracing.icu/channel/canal-0'}
-    url = 'http://vipracing.icu/channel/canal-$doregex[canal]/frame'
+    url = 'http://vipracing.icu/channel/canal-$doregex[canal]'
     html = requests.get(url, headers=mozhdr, verify=False).text
-    cid = re.findall('\>id=\'(.*?)\'.+?telerium', html)[0]
+    cid = re.findall('id=\'(.*?)\'.+?telerium', html)[0]
     eurl = 'https://telerium.tv/embed/{}.html'.format(cid)
     ehtml = requests.get(eurl, headers=mozhdr,verify=False).text
     edata = re.findall('(eval\(function\(p,a,c,k,e,d.*)', ehtml)[0]
@@ -440,8 +440,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 def GetLSProData(page_data,Cookie_Jar,m):
    import xbmcgui
    dialog = xbmcgui.Dialog()
-   ret = dialog.select('Selecciona un Canal', ['canal 6', 'Canal 6'])
-   lists = ['5', '6']
+   ret = dialog.select('Selecciona un Canal', ['Canal 3', 'canal 5', 'Canal 6', 'Canal 15'])
+   lists = ['3', '5', '6', '15']
    return lists[ret]
 ]]></expres>
 <page></page>
