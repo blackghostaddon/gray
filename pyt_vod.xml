@@ -622,7 +622,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
     <name>makelist3</name> movies  (all pages)
  <listrepeat><![CDATA[
 <title>[makelist3.param3]</title>
- <link>$doregex[finalURL]|Referer=http://ligatv.net/&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64; rv:56.0) Gecko/20100101 Firefox/56.0</link>
+ <link>$doregex[finalURL]|Referer=http://www.cinevall.website&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; WOW64; rv:56.0) Gecko/20100101 Firefox/56.0</link>
 <thumbnail>[makelist3.param2]</thumbnail>
  <regex>
 <name>finalURL</name>
