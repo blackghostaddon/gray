@@ -440,12 +440,13 @@ def GetLSProData(page_data,Cookie_Jar,m):
 def GetLSProData(page_data,Cookie_Jar,m):
    import xbmcgui
    dialog = xbmcgui.Dialog()
-   ret = dialog.select('Selecciona un Canal', ['Canal 3', 'canal 5', 'Canal 6', 'Canal 15'])
-   lists = ['3', '5', '6', '15']
+   ret = dialog.select('Selecciona un Canal', ['Canal 3', 'canal 5', 'Canal 6', 'Canal 15', 'Canal 16'])
+   lists = ['3', '5', '6', '15', '16']
    return lists[ret]
 ]]></expres>
 <page></page>
 </regex>
+</item>
 
 
 
