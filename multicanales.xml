@@ -1254,7 +1254,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 
   <item>
-<title>[B]Multicanal RIVO 02 [/B]   </title>
+<title>[B]Multicanal RIVO 03 [/B]   </title>
     <link>$doregex[geturl]</link>
     <regex>
         <name>geturl</name>
@@ -1294,7 +1294,7 @@ http://in.xrivonet.info/psntv4.html
 
 
 
-  <item>
+  <!--item>
 <title>[B]Multicanal SoloVeo [FoxSport] [/B]   </title>
     <link>$doregex[geturl]</link>
     <regex>
@@ -1309,43 +1309,8 @@ http://in.xrivonet.info/psntv4.html
         <referer>https://soloveo.com</referer>
         <connection>keep-alive</connection>
     </regex>	
-</item>
+</item-->
 
-
-
-  <item>
-<title>[B]Multicanal SoloVeo [FoxSport 2] [/B]   </title>
-    <link>$doregex[geturl]</link>
-    <regex>
-        <name>geturl</name>
-        <expres>source:"(.*?)"</expres>
-        <page>$doregex[getunpacked]</page>
-    </regex>
-    <regex>
-        <name>getunpacked</name>
-        <expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)' )</expres>
-        <page>http://whostreams.net/embed/o11w83nq2seshz7</page>
-        <referer>https://soloveo.com</referer>
-        <connection>keep-alive</connection>
-    </regex>	
-</item>
-
-  <item>
-<title>[B]Multicanal SoloVeo [UDN] [/B]   </title>
-    <link>$doregex[geturl]</link>
-    <regex>
-        <name>geturl</name>
-        <expres>source:"(.*?)"</expres>
-        <page>$doregex[getunpacked]</page>
-    </regex>
-    <regex>
-        <name>getunpacked</name>
-        <expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)' )</expres>
-        <page>http://whostreams.net/embed/k35qrdo5h</page>
-        <referer>https://soloveo.com</referer>
-        <connection>keep-alive</connection>
-    </regex>	
-</item>
 
 
 
@@ -1663,15 +1628,20 @@ http://www.liketvw.com/embed/tdn
 
 
   <item>
- <title>[B]Multicanal ESPN[/B]    </title>
+ <title>[B]Multicanal ESPN[/B]   * </title>
 <link>$doregex[url]|Referer=http://stream.televall.website/foxsport2.html&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
   <regex>
 <name>url</name>
 <expres><![CDATA["(.*?m3u8.*?)"]]></expres>
-<page>http://stream.televall.website/espn.php</page>
+<page>http://stream.televall.website/$doregex[canal].php</page>
 <agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
 </regex>
- 
+  <regex>
+<name>canal</name>
+<expres><![CDATA[javascript.*?id="(.*?)"]]></expres>
+<page>http://www.televall.website/espn.html</page>
+<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+</regex> 
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 
 
@@ -1680,28 +1650,64 @@ http://www.liketvw.com/embed/tdn
 
   <item>
  <title>[B]Multicanal ESPN 2[/B]     </title>
-<link>$doregex[url]|Referer=http://www.grupovalltv.net/&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link> 
- <regex>
+<link>$doregex[url]|Referer=http://stream.televall.website/foxsport2.html&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
+  <regex>
 <name>url</name>
 <expres><![CDATA["(.*?m3u8.*?)"]]></expres>
-<page>http://stream.televall.website/espn2.php</page>
+<page>http://stream.televall.website/$doregex[canal].php</page>
 <agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
 </regex>
- <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail>
- </item>
- 
+  <regex>
+<name>canal</name>
+<expres><![CDATA[javascript.*?id="(.*?)"]]></expres>
+<page>http://www.televall.website/espn2.html</page>
+<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+</regex> 
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+
  
 
   <item>
  <title>[B]Multicanal ESPN 3[/B]     </title>
 <link>$doregex[url]|Referer=http://stream.televall.website/foxsport2.html&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
- 
- <regex>
+  <regex>
 <name>url</name>
 <expres><![CDATA["(.*?m3u8.*?)"]]></expres>
-<page>http://stream.televall.website/espn3.php</page>
+<page>http://stream.televall.website/$doregex[canal].php</page>
+<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
 </regex>
- <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+  <regex>
+<name>canal</name>
+<expres><![CDATA[javascript.*?id="(.*?)"]]></expres>
+<page>http://www.televall.website/espn3.html</page>
+<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+</regex> 
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+
+  <item>
+ <title>[B]Multicanal ESPN Plus[/B]     </title>
+<link>$doregex[url]|Referer=http://stream.televall.website/foxsport2.html&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
+  <regex>
+<name>url</name>
+<expres><![CDATA["(.*?m3u8.*?)"]]></expres>
+<page>http://stream.televall.website/$doregex[canal].php</page>
+<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+</regex>
+  <regex>
+<name>canal</name>
+<expres><![CDATA[javascript.*?id="(.*?)"]]></expres>
+<page>http://www.televall.website/espnplus.html</page>
+<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+</regex> 
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+
+
 
 
 
@@ -1710,56 +1716,113 @@ http://www.liketvw.com/embed/tdn
 
   <item>
  <title>[B]Multicanal Fox Sports[/B]     </title>
-<link>$doregex[url]|Referer=http://stream.televall.website/&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
- 
- <regex>
+<link>$doregex[url]|Referer=http://stream.televall.website/foxsport2.html&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
+  <regex>
 <name>url</name>
 <expres><![CDATA["(.*?m3u8.*?)"]]></expres>
-<page>http://stream.televall.website/foxsport.php</page>
+<page>http://stream.televall.website/$doregex[canal].php</page>
+<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
 </regex>
- 
+  <regex>
+<name>canal</name>
+<expres><![CDATA[javascript.*?id="(.*?)"]]></expres>
+<page>http://www.televall.website/foxsport.html</page>
+<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+</regex> 
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+
+
+
+
+
 
   <item>
  <title>[B]Multicanal Fox Sports 2[/B]     </title>
-<link>$doregex[url]|Referer=http://stream.televall.website/&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
- 
- <regex>
+<link>$doregex[url]|Referer=http://stream.televall.website/foxsport2.html&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
+  <regex>
 <name>url</name>
 <expres><![CDATA["(.*?m3u8.*?)"]]></expres>
-<page>http://stream.televall.website/foxsport2.php</page>
+<page>http://stream.televall.website/$doregex[canal].php</page>
+<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
 </regex>
- 
+  <regex>
+<name>canal</name>
+<expres><![CDATA[javascript.*?id="(.*?)"]]></expres>
+<page>http://www.televall.website/foxsport2.html</page>
+<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+</regex> 
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
 
 
 
   <item>
  <title>[B]Multicanal Fox Sports 3[/B]     </title>
-<link>$doregex[url]|Referer=http://stream.televall.website/&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
- 
- <regex>
+<link>$doregex[url]|Referer=http://stream.televall.website/foxsport2.html&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
+  <regex>
 <name>url</name>
 <expres><![CDATA["(.*?m3u8.*?)"]]></expres>
-<page>http://stream.televall.website/foxsport3.php</page>
+<page>http://stream.televall.website/$doregex[canal].php</page>
+<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
 </regex>
- 
+  <regex>
+<name>canal</name>
+<expres><![CDATA[javascript.*?id="(.*?)"]]></expres>
+<page>http://www.televall.website/foxsport3.html</page>
+<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+</regex> 
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+
+
+  <item>
+ <title>[B]Multicanal Univision Deportes [/B]    </title>
+<link>$doregex[url]|Referer=http://stream.televall.website/foxsport2.html&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
+  <regex>
+<name>url</name>
+<expres><![CDATA["(.*?m3u8.*?)"]]></expres>
+<page>http://stream.televall.website/$doregex[canal].php</page>
+<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+</regex>
+  <regex>
+<name>canal</name>
+<expres><![CDATA[javascript.*?id="(.*?)"]]></expres>
+<page>http://www.televall.website/unidep.html</page>
+<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+</regex> 
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+
+
 
 
 
 
   <item>
  <title>[B]Multicanal TDN[/B]    </title>
-<link>$doregex[url]|Referer=http://stream.televall.website/&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
- 
- <regex>
+<link>$doregex[url]|Referer=http://stream.televall.website/foxsport2.html&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
+  <regex>
 <name>url</name>
 <expres><![CDATA["(.*?m3u8.*?)"]]></expres>
-<page>http://stream.televall.website/tdn.php</page>
+<page>http://stream.televall.website/$doregex[canal].php</page>
+<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
 </regex>
- 
+  <regex>
+<name>canal</name>
+<expres><![CDATA[javascript.*?id="(.*?)"]]></expres>
+<page>http://www.televall.website/tdn.html</page>
+<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+</regex> 
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+
+
+
+
+
 
   <item>
  <title>[B]Multicanal TDN[/B]    </title>
