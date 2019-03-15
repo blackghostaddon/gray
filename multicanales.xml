@@ -403,6 +403,53 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
+<item>
+<title>[B]Multicanal VIP MAX [/B]  *   </title>
+<link>$doregex[get-url]</link>
+<regex>
+<name>get-url</name>
+<expres><![CDATA[#$pyFunction
+from resolveurl.plugins.lib import jsunpack
+def GetLSProData(page_data,Cookie_Jar,m):
+    import re
+    import requests
+    mozhdr = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0', 'Referer': 'http://vipracing.icu/channel/canal-0'}
+    url = 'http://vipracing.icu/channel/canal-$doregex[canal]/frame'
+    html = requests.get(url, headers=mozhdr, verify=False).text
+    cid = re.findall('\>id=\'(.*?)\'.+?telerium', html)[0]
+    eurl = 'https://telerium.tv/embed/{}.html'.format(cid)
+    ehtml = requests.get(eurl, headers=mozhdr,verify=False).text
+    edata = re.findall('(eval\(function\(p,a,c,k,e,d.*)', ehtml)[0]
+    epage = jsunpack.unpack(edata).replace('\\', '')
+    refvar1,refvar2 = re.findall('url:atob\((\w+)\).*?atob\((\w+)\)', epage)[0]
+    refvar3 = re.findall('country,(\w+),', epage)[0]
+    file = re.findall('{}="([^"]+)'.format(refvar3), epage)[0].decode('base64').replace('ssl4', 'ssl2')
+    url_part1 = re.findall('{}="([^"]+)'.format(refvar1), epage)[0].decode('base64')
+    url_part2 = re.findall('{}="([^"]+)'.format(refvar2), epage)[0].decode('base64')
+    tokurl = 'https://telerium.tv{}{}'.format(url_part1, url_part2)
+    mozhdr['Referer'] = eurl
+    token = requests.get(tokurl, headers=mozhdr, verify=False).text[::-1][1:-1]
+    return 'https:{}{}|Referer={}&User-Agent={}&Origin=https://telerium.tv'.format(file, token, eurl, mozhdr['User-Agent'])
+]]></expres>
+<page></page>
+</regex>
+
+  <regex>
+<name>canal</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+   import xbmcgui
+   dialog = xbmcgui.Dialog()
+   ret = dialog.select('Selecciona un Canal', ['canal 6', 'Canal 6'])
+   lists = ['5', '6']
+   return lists[ret]
+]]></expres>
+<page></page>
+</regex>
+
+
+
+</item>
 
 <item>
 <title>[B]Multicanal MAX 01 [/B]   </title>
