@@ -2679,6 +2679,11 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
+ 
+
+
+
+
 
 <item>
 <title>[B]Multicanal[/B] TikiTaka 01 [I]  [/I]</title>
@@ -2691,12 +2696,19 @@ def GetLSProData(page_data,Cookie_Jar,m):
 			<regex>
 			<name>m3u8</name>
 			<expres>ea \+ "([^"]+)</expres>
-			<page>https://www.playuc.live/hembedplayer/estadiotv/3/730/430</page>
+			<page>https://www.playuc.live/hembedplayer/$doregex[canal]/3/730/430</page>
 			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
 			<referer>http://www.247bay.tv</referer>
 			</regex>
+			<regex>
+			<name>canal</name>
+			<expres>channel='(.*?)'</expres>
+			<page>https://estadionline.es/</page>
+			</regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 </item>
+
+
 
 
 
@@ -2718,14 +2730,46 @@ def GetLSProData(page_data,Cookie_Jar,m):
 			<regex>
 			<name>canal</name>
 			<expres>channel='(.*?)'</expres>
-			<page>http://revolucionariostv.eu/elitegol/Repros/estable1.php</page>
+			<page>http://revolucionariostv.eu/elitegol/Repros/c2.php</page>
 			</regex>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
 </item>
 
 
+
+
+
 <item>
 <title>[B]Multicanal[/B] TikiTaka 03 [I]  [/I]</title>
+<link>https://$doregex[ip]$doregex[m3u8]</link>
+			<regex>
+			<name>ip</name>
+			<expres>redirect=(.*)</expres>
+			<page>https://www.lquest123b.top/loadbalancer?</page>
+			</regex>
+			<regex>
+			<name>m3u8</name>
+			<expres>ea \+ "([^"]+)</expres>
+			<page>https://www.playuc.live/hembedplayer/$doregex[canal]/3/730/430</page>
+			<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+			<referer>http://www.247bay.tv</referer>
+			</regex>
+			<regex>
+			<name>canal</name>
+			<expres>channel='(.*?)'</expres>
+			<page>http://revolucionariostv.eu/elitegol/Repros/c3.php</page>
+			</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+</item>
+
+
+
+
+
+
+
+<item>
+<title>[B]Multicanal[/B] TikiTaka estable02 [I]  [/I]</title>
 <link>https://$doregex[ip]$doregex[m3u8]</link>
 			<regex>
 			<name>ip</name>
