@@ -1874,14 +1874,14 @@ http://www.liketvw.com/embed/tdn
 
 
 
-
+|Referer=http://www.televall.website/tdn.html&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
 
 
 
 
   <item>
- <title>[B]Multicanal TDN[/B]    </title>
-<link>$doregex[url]|Referer=http://www.televall.website/tdn.html&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
+ <title>[B]Multicanal TDN[/B]    ***</title>
+<link>$doregex[url]</link>
  
  <regex>
 <name>url</name>
@@ -1895,7 +1895,7 @@ http://www.liketvw.com/embed/tdn
 
   <item>
  <title>[B]Multicanal Univision TDN[/B]    </title>
-<link>$doregex[url]|Referer=http://www.televall.website/tdn.html&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36</link>
+<link>$doregex[url]</link>
  
  <regex>
 <name>url</name>
