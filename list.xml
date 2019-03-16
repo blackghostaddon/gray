@@ -94,7 +94,7 @@ http://paypal.me/blackghost</info></item>
 <item>
 <title>[B][UPPERCASE] [COLOR yellow]ingresar al addon[/COLOR][/B] [/UPPERCASE]</title>
 <link>na</link>
-<externallink>http://cliffpelotas.webcindario.com/bg/$doregex[password].xml</externallink>
+<externallink>http://blackghost.co/in/$doregex[password].xml</externallink>
 <regex>
 <name>password</name>
 <expres><![CDATA[#$pyFunction
