@@ -850,13 +850,13 @@ def GetLSProData(page_data,Cookie_Jar,m):
     epage = jsunpack.unpack(edata).replace('\\', '')
     refvar1,refvar2 = re.findall('url:atob\((\w+)\).*?atob\((\w+)\)', epage)[0]
     refvar3 = re.findall('country,(\w+),', epage)[0]
-    file = re.findall('{}="([^"]+)'.format(refvar3), epage)[0].decode('base64')
+    file = re.findall('{}="([^"]+)'.format(refvar3), epage)[0].decode('base64').replace('ssl4', 'ssl2')
     url_part1 = re.findall('{}="([^"]+)'.format(refvar1), epage)[0].decode('base64')
     url_part2 = re.findall('{}="([^"]+)'.format(refvar2), epage)[0].decode('base64')
     tokurl = 'https://telerium.tv{}{}'.format(url_part1, url_part2)
     mozhdr['Referer'] = eurl
     token = requests.get(tokurl, headers=mozhdr, verify=False).text[::-1][1:-1]
-    return 'https:{}{}|Referer={}&User-Agent={}'.format(file, token, eurl, mozhdr['User-Agent'])
+    return 'https:{}{}|Referer={}&User-Agent={}&Origin=https://telerium.tv'.format(file, token, eurl, mozhdr['User-Agent'])
 ]]></expres>
 <page></page>
 </regex>
@@ -885,13 +885,13 @@ def GetLSProData(page_data,Cookie_Jar,m):
     epage = jsunpack.unpack(edata).replace('\\', '')
     refvar1,refvar2 = re.findall('url:atob\((\w+)\).*?atob\((\w+)\)', epage)[0]
     refvar3 = re.findall('country,(\w+),', epage)[0]
-    file = re.findall('{}="([^"]+)'.format(refvar3), epage)[0].decode('base64')
+    file = re.findall('{}="([^"]+)'.format(refvar3), epage)[0].decode('base64').replace('ssl7', 'ssl1')
     url_part1 = re.findall('{}="([^"]+)'.format(refvar1), epage)[0].decode('base64')
     url_part2 = re.findall('{}="([^"]+)'.format(refvar2), epage)[0].decode('base64')
     tokurl = 'https://telerium.tv{}{}'.format(url_part1, url_part2)
     mozhdr['Referer'] = eurl
     token = requests.get(tokurl, headers=mozhdr, verify=False).text[::-1][1:-1]
-    return 'https:{}{}|Referer={}&User-Agent={}'.format(file, token, eurl, mozhdr['User-Agent'])
+    return 'https:{}{}|Referer={}&User-Agent={}&Origin=https://telerium.tv'.format(file, token, eurl, mozhdr['User-Agent'])
 ]]></expres>
 <page></page>
 </regex>
