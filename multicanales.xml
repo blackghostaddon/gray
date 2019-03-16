@@ -465,7 +465,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
     mozhdr = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0', 'Referer': 'http://maxdeportv.net/'}
     url = 'http://maxdeportv.net/indexa.php?canal=$doregex[canal]'
     html = requests.get(url, headers=mozhdr, verify=False).text
-    cid = re.findall('id=\"(.*?)\".+?telerium', html)[0]
+    cid = re.findall('id="(.*?)".+?telerium', html)[0]
     eurl = 'https://telerium.tv/embed/{}.html'.format(cid)
     ehtml = requests.get(eurl, headers=mozhdr,verify=False).text
     edata = re.findall('(eval\(function\(p,a,c,k,e,d.*)', ehtml)[0]
@@ -2539,9 +2539,115 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	
 	
 
+<item>
+<title>[B]Multicanal[/B] TuMarcador 01 [I]  [/I]</title>
+<link>$doregex[ip]</link>
+			<regex>
+			<name>ip</name>
+			<expres>file: '(.*?)'</expres>
+			<page>https://tumarcador.xyz/ac1.php</page>
+			</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+</item>
 
 
+<item>
+<title>[B]Multicanal[/B] TuMarcador 02 [I]  [/I]</title>
+<link>$doregex[ip]</link>
+			<regex>
+			<name>ip</name>
+			<expres>file: '(.*?)'</expres>
+			<page>https://tumarcador.xyz/ac2.php</page>
+			</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+</item>
 
+
+ 
+ 
+<item>
+<title>[B]Multicanal[/B] TuMarcador 03 [I]  [/I]</title>
+<link>$doregex[ip]</link>
+			<regex>
+			<name>ip</name>
+			<expres>file: '(.*?)'</expres>
+			<page>https://tumarcador.xyz/ac3.php</page>
+			</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+</item>
+
+
+ 
+ 
+<item>
+<title>[B]Multicanal[/B] TuMarcador 04 [I]  [/I]</title>
+<link>$doregex[ip]</link>
+			<regex>
+			<name>ip</name>
+			<expres>file: '(.*?)'</expres>
+			<page>https://tumarcador.xyz/ac4.php</page>
+			</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+</item>
+
+
+ 
+ 
+<item>
+<title>[B]Multicanal[/B] TuMarcador 05 [I]  [/I]</title>
+<link>$doregex[ip]</link>
+			<regex>
+			<name>ip</name>
+			<expres>file: '(.*?)'</expres>
+			<page>https://tumarcador.xyz/ac5.php</page>
+			</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+</item>
+
+
+ 
+ 
+<item>
+<title>[B]Multicanal[/B] TuMarcador 06[I]  [/I]</title>
+<link>$doregex[ip]</link>
+			<regex>
+			<name>ip</name>
+			<expres>file: '(.*?)'</expres>
+			<page>https://tumarcador.xyz/ac6.php</page>
+			</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+</item>
+
+
+ 
+ 
+<item>
+<title>[B]Multicanal[/B] TuMarcador 07 [I]  [/I]</title>
+<link>$doregex[ip]</link>
+			<regex>
+			<name>ip</name>
+			<expres>file: '(.*?)'</expres>
+			<page>https://tumarcador.xyz/ac7.php</page>
+			</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+</item>
+
+
+ 
+ 
+<item>
+<title>[B]Multicanal[/B] TuMarcador 08 [I]  [/I]</title>
+<link>$doregex[ip]</link>
+			<regex>
+			<name>ip</name>
+			<expres>file: '(.*?)'</expres>
+			<page>https://tumarcador.xyz/ac8php</page>
+			</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/deportes.png</thumbnail></item>
+</item>
+
+
+ 
  
 
 
