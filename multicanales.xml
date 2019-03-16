@@ -929,7 +929,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
-<title>[B]Multicanal Zonasport11[/B]         </title>
+<title>[B]Multicanal Zonasport11[/B]   t      </title>
 <link>$doregex[get-url]</link>
 <regex>
 <name>get-url</name>
@@ -939,7 +939,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
     import re
     import requests
     mozhdr = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0', 'Referer': 'http://zonasports.es/'}
-    url = 'http://zonasports.es/live.php?id=11'
+    url = 'http://zonasports.es/cha-x.php?id=11'
     html = requests.get(url, headers=mozhdr, verify=False).text
     cid = re.findall('javascript\'\>id=\'(.*?)\'.*?telerium', html)[0]
     eurl = 'https://telerium.tv/embed/{}.html'.format(cid)
@@ -953,7 +953,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
     url_part2 = re.findall('{}="([^"]+)'.format(refvar2), epage)[0].decode('base64')
     tokurl = 'https://telerium.tv{}{}'.format(url_part1, url_part2)
     mozhdr['Referer'] = eurl
-    token = requests.get(tokurl, headers=mozhdr, verify=False).text[1:-1]
+    token = requests.get(tokurl, headers=mozhdr, verify=False).text[::-1][1:-1]
     return 'https:{}{}|Referer={}&User-Agent={}'.format(file, token, eurl, mozhdr['User-Agent'])
 ]]></expres>
 <page></page>
@@ -963,7 +963,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
-<title>[B]Multicanal Zonasport12[/B]         </title>
+<title>[B]Multicanal Zonasport12[/B]  t       </title>
 <link>$doregex[get-url]</link>
 <regex>
 <name>get-url</name>
@@ -973,7 +973,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
     import re
     import requests
     mozhdr = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0', 'Referer': 'http://zonasports.es/'}
-    url = 'http://zonasports.es/live.php?id=12'
+    url = 'http://zonasports.es/cha-x.php?id=12'
     html = requests.get(url, headers=mozhdr, verify=False).text
     cid = re.findall('javascript\'\>id=\'(.*?)\'.*?telerium', html)[0]
     eurl = 'https://telerium.tv/embed/{}.html'.format(cid)
@@ -987,7 +987,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
     url_part2 = re.findall('{}="([^"]+)'.format(refvar2), epage)[0].decode('base64')
     tokurl = 'https://telerium.tv{}{}'.format(url_part1, url_part2)
     mozhdr['Referer'] = eurl
-    token = requests.get(tokurl, headers=mozhdr, verify=False).text[1:-1]
+    token = requests.get(tokurl, headers=mozhdr, verify=False).text[::-1][1:-1]
     return 'https:{}{}|Referer={}&User-Agent={}'.format(file, token, eurl, mozhdr['User-Agent'])
 ]]></expres>
 <page></page>
