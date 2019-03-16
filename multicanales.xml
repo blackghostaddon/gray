@@ -831,7 +831,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
-<title>[B]Multicanal Zonasport07[/B]         </title>
+<title>[B]Multicanal Zonasport07[/B]   t      </title>
 <link>$doregex[get-url]</link>
 <regex>
 <name>get-url</name>
@@ -855,7 +855,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
     url_part2 = re.findall('{}="([^"]+)'.format(refvar2), epage)[0].decode('base64')
     tokurl = 'https://telerium.tv{}{}'.format(url_part1, url_part2)
     mozhdr['Referer'] = eurl
-    token = requests.get(tokurl, headers=mozhdr, verify=False).text[1:-1]
+    token = requests.get(tokurl, headers=mozhdr, verify=False).text[::-1][1:-1]
     return 'https:{}{}|Referer={}&User-Agent={}'.format(file, token, eurl, mozhdr['User-Agent'])
 ]]></expres>
 <page></page>
@@ -890,7 +890,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
     url_part2 = re.findall('{}="([^"]+)'.format(refvar2), epage)[0].decode('base64')
     tokurl = 'https://telerium.tv{}{}'.format(url_part1, url_part2)
     mozhdr['Referer'] = eurl
-    token = requests.get(tokurl, headers=mozhdr, verify=False).text[1:-1]
+    token = requests.get(tokurl, headers=mozhdr, verify=False).text[::-1][1:-1]
     return 'https:{}{}|Referer={}&User-Agent={}'.format(file, token, eurl, mozhdr['User-Agent'])
 ]]></expres>
 <page></page>
