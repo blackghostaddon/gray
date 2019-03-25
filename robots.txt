@@ -1,5 +1,0 @@
-User-agent: *
-Disallow: /
-Disallow: /adryan
-Disallow: /*.xml$
-Disallow: /*.m3u$

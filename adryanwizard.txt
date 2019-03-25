@@ -1,5 +1,0 @@
-name="Instalar Wizard 1.1 [No incluye Quasar]"
-url="https://archive.org/download/adryanwizardnov17/adryanwizard.zip"
-img="http://i.imgur.com/XekH37W.png"
-fanart="http://adryanlist.org/adryan/img/fanart.jpg"
-description="Instala la imagen AdryanList para Kodi 17 en [B][COLOR aquamarine]Windows[/COLOR][/B]"
