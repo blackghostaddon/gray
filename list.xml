@@ -112,21 +112,3 @@ http://paypal.me/blackghost</info></item>
 <thumbnail>http://blackghost.co/gray/img/icon.png</thumbnail>
 <fanart>http://blackghost.co/gray/img/fanart.jpg</fanart></item> 
 
-
-
-<item>
-<title>[UPPERCASE][B][COLOR yellow]------>[/COLOR][COLOR lime]  Dale click Aqui para [I][COLOR lightgreen]Activar Turbo[/COLOR][/I][/COLOR][COLOR yellow]  <------[/COLOR][/B][/UPPERCASE]</title>
-<link>$doregex[canal]</link>
-<regex>
-<name>canal</name>
-<expres><![CDATA[#$pyFunction
-import re, requests, xbmc, xbmcaddon, xbmcgui, time
-def GetLSProData(page_data,Cookie_Jar,m):
-  addon = xbmcaddon.Addon('plugin.video.blackghost')
-  Link = addon.openSettings()
-  return Link
-]]></expres>
-<page></page>
-</regex>
-<info>Dale Click aqui para abrir el Panel de Configuracion del addon  y activar el turbo</info>
-</item>
