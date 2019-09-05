@@ -46,48 +46,36 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 
 
-  <item> <title>Solicita tu Codigo en [B]blackaddon@mail.com[/B] es gratuito</title><link>na</link>
+  <item> <title>Solicita tu Codigo en es gratuito</title><link>na</link>
+<thumbnail>http://blackghost.co/gray/img/icon.png</thumbnail>
+<fanart>http://blackghost.co/gray/img/fanart.jpg</fanart></item> 
+  
+  <item> <title>[COLOR yellow][B]blackaddon@mail.com[/B] [/COLOR]</title><link>na</link>
+<thumbnail>http://blackghost.co/gray/img/icon.png</thumbnail>
+<fanart>http://blackghost.co/gray/img/fanart.jpg</fanart></item> 
+  
+  <item> <title>es completamente [COLOR lightgreen]gratuito[/COLOR]</title><link>na</link>
 <thumbnail>http://blackghost.co/gray/img/icon.png</thumbnail>
 <fanart>http://blackghost.co/gray/img/fanart.jpg</fanart></item> 
 
-  <item>
-  <title>[B][COLOR lightyellow]BlackGhost, necesita de tu apoyo[/COLOR][/B]</title><link>na</link><thumbnail>http://blackghost.co/gray/img/donador.png</thumbnail>
-<fanart>http://blackghost.co/gray/img/fanart.jpg</fanart><info>[COLOR lightyellow][B]The BlackGhost[/B][/COLOR]
-Bienvenid@ a BlackGhost, un Addon de entretenimiento para compartir y disfrutar.  
-*Puedes apoyar al Addon haciendo una donación voluntaria, la cual servirá para mantener activo el Addon y para el mantenimiento y soporte del mismo. Tu donación es anónima y no importa la cantidad ¡Con tu aportación haces la diferencia! 
-Si deseas hacer una donación por favor accede en el siguiente enlace, de antemano ¡Gracias!
-http://paypal.me/blackghost</info></item> 
-<item>
-  <title>[B][COLOR lightyellow]Para seguir en funcionamiento y mantenimiento en busca de mejorar la actualizacion y busqueda de mas opciones de Visualizacion de contenido.[/COLOR][/B]</title><link>na</link><thumbnail>http://blackghost.co/gray/img/donador.png</thumbnail>
-<fanart>http://blackghost.co/gray/img/fanart.jpg</fanart><info>[COLOR lightyellow][B]The BlackGhost[/B][/COLOR]
-Bienvenid@ a BlackGhost, un Addon de entretenimiento para compartir y disfrutar.  
-*Puedes apoyar al Addon haciendo una donación voluntaria, la cual servirá para mantener activo el Addon y para el mantenimiento y soporte del mismo. Tu donación es anónima y no importa la cantidad ¡Con tu aportación haces la diferencia! 
-Si deseas hacer una donación por favor accede en el siguiente enlace, de antemano ¡Gracias!
-http://paypal.me/blackghost</info></item> 
+<item> <title>[B][UPPERCASE] [COLOR white] -------- [/COLOR][/B][/UPPERCASE]</title><link>na</link>
+<thumbnail>http://blackghost.co/gray/img/icon.png</thumbnail>
+<fanart>http://blackghost.co/gray/img/fanart.jpg</fanart>
+</item>
 
+
+  <item> <title>Apoya con una donacion</title><link>na</link>
+<thumbnail>http://blackghost.co/gray/img/icon.png</thumbnail>
+<fanart>http://blackghost.co/gray/img/fanart.jpg</fanart></item> 
+  
+  <item> <title>por un codigo permanente</title><link>na</link>
+<thumbnail>http://blackghost.co/gray/img/icon.png</thumbnail>
+<fanart>http://blackghost.co/gray/img/fanart.jpg</fanart></item> 
  
-    <item>
-  <title>[B][COLOR lightyellow]Es por eso, que puedes Apoyarnos,  [/COLOR][/B] [B][COLOR lightyellow]Con  una donacion voluntarias  por [COLOR lightblue][UPPERCASE]Paypal [/UPPERCASE][/COLOR][/COLOR][/B]</title><link>na</link><thumbnail>http://blackghost.co/gray/img/donador.png</thumbnail>
-<fanart>http://blackghost.co/gray/img/fanart.jpg</fanart><info>[COLOR lightyellow][B]The BlackGhost[/B][/COLOR]
-Bienvenid@ a BlackGhost, un Addon de entretenimiento para compartir y disfrutar.  
-*Puedes apoyar al Addon haciendo una donación voluntaria, la cual servirá para mantener activo el Addon y para el mantenimiento y soporte del mismo. Tu donación es anónima y no importa la cantidad ¡Con tu aportación haces la diferencia! 
-Si deseas hacer una donación por favor accede en el siguiente enlace, de antemano ¡Gracias!
-http://paypal.me/blackghost</info></item> 
-
+  <item> <title>[COLOR yellow][B]http://paypal.me/blackghost[/B] [/COLOR]</title><link>na</link>
+<thumbnail>http://blackghost.co/gray/img/icon.png</thumbnail>
+<fanart>http://blackghost.co/gray/img/fanart.jpg</fanart></item> 
  
-
-      <item>
-  <title>[B][COLOR lightlightyellow] http://paypal.me/blackghost [/COLOR][/B]</title><link>na</link><thumbnail>http://blackghost.co/gray/img/donador.png</thumbnail>
-<fanart>http://blackghost.co/gray/img/fanart.jpg</fanart><info>[COLOR lightyellow][B]The BlackGhost[/B][/COLOR]
-Bienvenid@ a BlackGhost, un Addon de entretenimiento para compartir y disfrutar.  
-*Puedes apoyar al Addon haciendo una donación voluntaria, la cual servirá para mantener activo el Addon y para el mantenimiento y soporte del mismo. Tu donación es anónima y no importa la cantidad ¡Con tu aportación haces la diferencia! 
-Si deseas hacer una donación por favor accede en el siguiente enlace, de antemano ¡Gracias!
-http://paypal.me/blackghost</info></item>   
-
-
-
-
-
 
 
 
@@ -99,16 +87,4 @@ http://paypal.me/blackghost</info></item>
 <thumbnail>http://blackghost.co/gray/img/icon.png</thumbnail>
 <fanart>http://blackghost.co/gray/img/fanart.jpg</fanart>
 
-
-
-  <item> <title>---</title><link>na</link>
-<thumbnail>http://blackghost.co/gray/img/icon.png</thumbnail>
-<fanart>http://blackghost.co/gray/img/fanart.jpg</fanart></item> 
-
-
-
-
-  <item> <title>Solicita tu Codigo en [B]blackaddon@mail.com[/B] es gratuito</title><link>na</link>
-<thumbnail>http://blackghost.co/gray/img/icon.png</thumbnail>
-<fanart>http://blackghost.co/gray/img/fanart.jpg</fanart></item> 
 
