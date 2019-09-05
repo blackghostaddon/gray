@@ -44,11 +44,11 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 
 
-  <item> <title>Solicita tu Codigo en es gratuito</title><link>na</link>
+  <item> <title>Solicita tu Codigo en:</title><link>na</link>
 <thumbnail>http://blackghost.co/gray/img/icon.png</thumbnail>
 <fanart>http://blackghost.co/gray/img/fanart.jpg</fanart></item> 
   
-  <item> <title>[COLOR yellow][B]blackaddon@mail.com[/B] [/COLOR]</title><link>na</link>
+  <item> <title>[COLOR blue][B]blackaddon@mail.com[/B] [/COLOR]</title><link>na</link>
 <thumbnail>http://blackghost.co/gray/img/icon.png</thumbnail>
 <fanart>http://blackghost.co/gray/img/fanart.jpg</fanart></item> 
   
@@ -70,18 +70,21 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>http://blackghost.co/gray/img/icon.png</thumbnail>
 <fanart>http://blackghost.co/gray/img/fanart.jpg</fanart></item> 
  
-  <item> <title>[COLOR yellow][B]http://paypal.me/blackghost[/B] [/COLOR]</title><link>na</link>
+  <item> <title>[COLOR skyblue][B]http://paypal.me/blackghost[/B] [/COLOR]</title><link>na</link>
 <thumbnail>http://blackghost.co/gray/img/icon.png</thumbnail>
 <fanart>http://blackghost.co/gray/img/fanart.jpg</fanart></item> 
  
 
 
 
+<item> <title>[UPPERCASE] [COLOR white] Ayuda y Soporte en Telegram[/UPPERCASE][/COLOR]</title><link>na</link>
+<thumbnail>http://blackghost.co/gray/img/icon.png</thumbnail>
+<fanart>http://blackghost.co/gray/img/fanart.jpg</fanart>
 
 
 
 
-<item> <title>[UPPERCASE] [COLOR white] [ Ayuda y Soporte en Telegram:[/UPPERCASE][B] [COLOR lime] @blackghostkodi[/COLOR]]---- [/COLOR][/B]</title><link>na</link>
+<item> <title>[B]grupo: [COLOR lime] @blackghostkodi[/COLOR][/B]</title><link>na</link>
 <thumbnail>http://blackghost.co/gray/img/icon.png</thumbnail>
 <fanart>http://blackghost.co/gray/img/fanart.jpg</fanart>
 
