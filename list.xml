@@ -4,15 +4,75 @@
 
 
 
- <item> <title>[B][UPPERCASE] [COLOR white] -------- [/COLOR][/B][/UPPERCASE]</title><link>na</link>
+ <item> <title>[B][UPPERCASE] [COLOR white]   [/COLOR][/B][/UPPERCASE]</title><link>na</link>
 <thumbnail>http://blackghost.co/gray/img/icon.png</thumbnail>
 <fanart>http://blackghost.co/gray/img/fanart.jpg</fanart></item> 
 
 
 
 
-
 <item>
+<title>[B][UPPERCASE] [COLOR lightyellow]ingresar al addon[/COLOR][/B] [/UPPERCASE]</title>
+
+
+<info>
+Para Obtener un Codigo de activacion permanente realiza una donacion en:
+
+[COLOR skyblue][B]http://paypal.me/blackghost[/B][/COLOR]
+
+al correo blackaddon@mail.com
+
+http://blackghost.co
+  </info>
+  
+<link>NA</link>  
+<externallink>$doregex[code]</externallink>  
+ 
+<regex>
+<name>code</name>  
+<expres><![CDATA[#$pyFunction
+import xbmc, xbmcaddon, xbmcgui, re, urllib
+def GetLSProData(page_data,Cookie_Jar,m):
+  path = xbmc.translatePath("special://profile/" + "addon_data/plugin.video.blackghost/")
+  addon = xbmcaddon.Addon('plugin.video.blackghost')
+  addon_version = addon.getAddonInfo('version')
+  profile = xbmc.translatePath(addon.getAddonInfo('profile').decode('utf-8'))
+  
+  file = "code.txt"
+  
+  try:
+      f = open(path + file, 'r')
+      HERE = f.read()
+      f.close()
+      xbmc.executebuiltin("XBMC.Notification( [COLOR lime][B]Codigo Activado ![/B][/COLOR] , [COLOR lightblue]No olvides seguir apoyando.[/COLOR], 2000)")
+      
+  except:
+      dialog = xbmcgui.Dialog()
+      xbmc.executebuiltin("XBMC.Notification( Realiza tu Donativo, paypal.me/blackghost, 3000)")
+      HERE = dialog.input('[COLOR yellow]Ingresa el Codigo Permanente o de Invitacion semanal:[/COLOR] ', type=xbmcgui.INPUT_ALPHANUM)
+      
+      
+      OPT = "http://blackghost.co/in/"
+    
+      HERE = HERE.replace("&amp;", "&").replace(" ", "%20")
+      HERE = OPT + HERE + ".xml"
+      f = open(path + file, 'w')
+      f.write(HERE)
+      f.close()  
+      savednotif = "XBMC.Notification( [COLOR blue]El Codigo ha sido Guardado[/COLOR], Recuerda Apoyar este el Proyecto, 7000)"
+      xbmc.executebuiltin(savednotif)
+      
+  return HERE
+  
+ ]]></expres>
+<page></page>
+</regex>
+
+<thumbnail>http://blackghost.co/gray/img/icon.png</thumbnail>
+<fanart>http://blackghost.co/gray/img/fanart.jpg</fanart>
+</item>
+
+<!--item>
 <title>[B][UPPERCASE] [COLOR lightyellow]ingresar al addon[/COLOR][/B] [/UPPERCASE]</title>
 <link>na</link>
 <externallink>http://blackghost.co/in/$doregex[password].xml</externallink>
@@ -34,14 +94,13 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>http://blackghost.co/gray/img/icon.png</thumbnail>
 <fanart>http://blackghost.co/gray/img/fanart.jpg</fanart>
 
-</item>
+</item-->
 
 
 
-<item> <title>[B][UPPERCASE] [COLOR white] -------- [/COLOR][/B][/UPPERCASE]</title><link>na</link>
+ <item> <title>[B][UPPERCASE] [COLOR white]   [/COLOR][/B][/UPPERCASE]</title><link>na</link>
 <thumbnail>http://blackghost.co/gray/img/icon.png</thumbnail>
-<fanart>http://blackghost.co/gray/img/fanart.jpg</fanart>
-</item>
+<fanart>http://blackghost.co/gray/img/fanart.jpg</fanart></item> 
 
 
   <item> <title>Solicita tu Codigo en:</title><link>na</link>
@@ -88,7 +147,12 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>http://blackghost.co/gray/img/icon.png</thumbnail>
 <fanart>http://blackghost.co/gray/img/fanart.jpg</fanart>
  
- 
+  <item> <title>[B][UPPERCASE] [COLOR white]   [/COLOR][/B][/UPPERCASE]</title><link>na</link>
+<thumbnail>http://blackghost.co/gray/img/icon.png</thumbnail>
+<fanart>http://blackghost.co/gray/img/fanart.jpg</fanart></item> 
+	 <item> <title>[B][UPPERCASE] [COLOR white]   [/COLOR][/B][/UPPERCASE]</title><link>na</link>
+<thumbnail>http://blackghost.co/gray/img/icon.png</thumbnail>
+<fanart>http://blackghost.co/gray/img/fanart.jpg</fanart></item> 
   
 <item>
  <title>[COLOR orange][B] ● [COLOR lime] [ELIMINAR][/COLOR] [COLOR lightgreen] Codigo Guardado[/COLOR] ●[/B][/COLOR]</title>
