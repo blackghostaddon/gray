@@ -11,7 +11,7 @@
 
 
 
-<item>
+<iem>
 <title>[B][UPPERCASE] [COLOR lightyellow]ingresar al addon[/COLOR][/B] [/UPPERCASE]</title>
 
 
@@ -72,7 +72,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <fanart>http://blackghost.webcindario.com/gray/img/fanart.jpg</fanart>
 </item>
 
-<!--item>
+<item>
 <title>[B][UPPERCASE] [COLOR lightyellow]ingresar al addon[/COLOR][/B] [/UPPERCASE]</title>
 <link>na</link>
 <externallink>http://blackghost.webcindario.com/in/$doregex[password].xml</externallink>
@@ -94,7 +94,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>http://blackghost.webcindario.com/gray/img/icon.png</thumbnail>
 <fanart>http://blackghost.webcindario.com/gray/img/fanart.jpg</fanart>
 
-</item-->
+</item>
 
 
 
