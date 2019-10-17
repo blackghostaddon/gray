@@ -4,14 +4,14 @@
 
 
 
- <item> <title>[B][UPPERCASE] [COLOR yellow]  !!!  Problemas tecnicos  con el server !!! [/COLOR][/B][/UPPERCASE]</title><link>na</link>
-<thumbnail>http://blackghost.webcindario.com/gray/img/icon.png</thumbnail>
-<fanart>http://blackghost.webcindario.com/gray/img/fanart.jpg</fanart></item> 
+ <item> <title>[B][UPPERCASE] [COLOR yellow]       [/COLOR][/B][/UPPERCASE]</title><link>na</link>
+<thumbnail>http://blackghost.co/gray/img/icon.png</thumbnail>
+<fanart>http://blackghost.co/gray/img/fanart.jpg</fanart></item> 
 
 
 
 
-<iem>
+<item>
 <title>[B][UPPERCASE] [COLOR lightyellow]ingresar al addon[/COLOR][/B] [/UPPERCASE]</title>
 
 
@@ -52,7 +52,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
       HERE = dialog.input('[COLOR yellow]Ingresa el Codigo Permanente o de Invitacion semanal:[/COLOR] ', type=xbmcgui.INPUT_ALPHANUM)
       
       
-      OPT = "http://blackghost.webcindario.com/in/"
+      OPT = "http://blackghost.co/in/"
     
       HERE = HERE.replace("&amp;", "&").replace(" ", "%20")
       HERE = OPT + HERE + ".xml"
@@ -68,14 +68,14 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page></page>
 </regex>
 
-<thumbnail>http://blackghost.webcindario.com/gray/img/icon.png</thumbnail>
-<fanart>http://blackghost.webcindario.com/gray/img/fanart.jpg</fanart>
+<thumbnail>http://blackghost.co/gray/img/icon.png</thumbnail>
+<fanart>http://blackghost.co/gray/img/fanart.jpg</fanart>
 </item>
 
-<item>
+<!--item>
 <title>[B][UPPERCASE] [COLOR lightyellow]ingresar al addon[/COLOR][/B] [/UPPERCASE]</title>
 <link>na</link>
-<externallink>http://blackghost.webcindario.com/in/$doregex[password].xml</externallink>
+<externallink>http://blackghost.co/in/$doregex[password].xml</externallink>
 <regex>
 <name>password</name>
 <expres><![CDATA[#$pyFunction
@@ -91,65 +91,65 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <cookieJar></cookieJar>
 </regex>
 
-<thumbnail>http://blackghost.webcindario.com/gray/img/icon.png</thumbnail>
-<fanart>http://blackghost.webcindario.com/gray/img/fanart.jpg</fanart>
+<thumbnail>http://blackghost.co/gray/img/icon.png</thumbnail>
+<fanart>http://blackghost.co/gray/img/fanart.jpg</fanart>
 
-</item>
+</item-->
 
 
 
  <item> <title>[B][UPPERCASE] [COLOR white]   [/COLOR][/B][/UPPERCASE]</title><link>na</link>
-<thumbnail>http://blackghost.webcindario.com/gray/img/icon.png</thumbnail>
-<fanart>http://blackghost.webcindario.com/gray/img/fanart.jpg</fanart></item> 
+<thumbnail>http://blackghost.co/gray/img/icon.png</thumbnail>
+<fanart>http://blackghost.co/gray/img/fanart.jpg</fanart></item> 
 
 
   <item> <title>Solicita tu Codigo en:</title><link>na</link>
-<thumbnail>http://blackghost.webcindario.com/gray/img/icon.png</thumbnail>
-<fanart>http://blackghost.webcindario.com/gray/img/fanart.jpg</fanart></item> 
+<thumbnail>http://blackghost.co/gray/img/icon.png</thumbnail>
+<fanart>http://blackghost.co/gray/img/fanart.jpg</fanart></item> 
   
   <item> <title>[COLOR blue][B]blackaddon@mail.com[/B] [/COLOR]</title><link>na</link>
-<thumbnail>http://blackghost.webcindario.com/gray/img/icon.png</thumbnail>
-<fanart>http://blackghost.webcindario.com/gray/img/fanart.jpg</fanart></item> 
+<thumbnail>http://blackghost.co/gray/img/icon.png</thumbnail>
+<fanart>http://blackghost.co/gray/img/fanart.jpg</fanart></item> 
   
   <item> <title>es completamente [COLOR lightgreen]gratuito[/COLOR]</title><link>na</link>
-<thumbnail>http://blackghost.webcindario.com/gray/img/icon.png</thumbnail>
-<fanart>http://blackghost.webcindario.com/gray/img/fanart.jpg</fanart></item> 
+<thumbnail>http://blackghost.co/gray/img/icon.png</thumbnail>
+<fanart>http://blackghost.co/gray/img/fanart.jpg</fanart></item> 
 
 <item> <title>[B][UPPERCASE] [COLOR white]      [/COLOR][/B][/UPPERCASE]</title><link>na</link>
-<thumbnail>http://blackghost.webcindario.com/gray/img/icon.png</thumbnail>
-<fanart>http://blackghost.webcindario.com/gray/img/fanart.jpg</fanart>
+<thumbnail>http://blackghost.co/gray/img/icon.png</thumbnail>
+<fanart>http://blackghost.co/gray/img/fanart.jpg</fanart>
 </item>
 
 
   <item> <title>Apoya con una donacion</title><link>na</link>
-<thumbnail>http://blackghost.webcindario.com/gray/img/icon.png</thumbnail>
-<fanart>http://blackghost.webcindario.com/gray/img/fanart.jpg</fanart></item> 
+<thumbnail>http://blackghost.co/gray/img/icon.png</thumbnail>
+<fanart>http://blackghost.co/gray/img/fanart.jpg</fanart></item> 
   
   <item> <title>por un codigo permanente</title><link>na</link>
-<thumbnail>http://blackghost.webcindario.com/gray/img/icon.png</thumbnail>
-<fanart>http://blackghost.webcindario.com/gray/img/fanart.jpg</fanart></item> 
+<thumbnail>http://blackghost.co/gray/img/icon.png</thumbnail>
+<fanart>http://blackghost.co/gray/img/fanart.jpg</fanart></item> 
  
   <item> <title>[COLOR skyblue][B]http://paypal.me/blackghost[/B] [/COLOR]</title><link>na</link>
-<thumbnail>http://blackghost.webcindario.com/gray/img/icon.png</thumbnail>
-<fanart>http://blackghost.webcindario.com/gray/img/fanart.jpg</fanart></item> 
+<thumbnail>http://blackghost.co/gray/img/icon.png</thumbnail>
+<fanart>http://blackghost.co/gray/img/fanart.jpg</fanart></item> 
  
 
 
 
-<item> <title>[UPPERCASE] [COLOR white] Ayuda y Soporte en Telegram[/UPPERCASE][/COLOR]</title><link>na</link>
-<thumbnail>http://blackghost.webcindario.com/gray/img/icon.png</thumbnail>
-<fanart>http://blackghost.webcindario.com/gray/img/fanart.jpg</fanart>
+<item> <title>[UPPERCASE][COLOR white]Ayuda y Soporte en Telegram[/UPPERCASE][/COLOR]</title><link>na</link>
+<thumbnail>http://blackghost.co/gray/img/icon.png</thumbnail>
+<fanart>http://blackghost.co/gray/img/fanart.jpg</fanart>
 
 
 
 
 <item>       <title>[B]grupo:[COLOR skyblue] @blackghostkodi[/B][/COLOR]</title><link>na</link>
-<thumbnail>http://blackghost.webcindario.com/gray/img/icon.png</thumbnail>
-<fanart>http://blackghost.webcindario.com/gray/img/fanart.jpg</fanart>
+<thumbnail>http://blackghost.co/gray/img/icon.png</thumbnail>
+<fanart>http://blackghost.co/gray/img/fanart.jpg</fanart>
  
   <item> <title>[B][UPPERCASE] [COLOR white]   [/COLOR][/B][/UPPERCASE]</title><link>na</link>
-<thumbnail>http://blackghost.webcindario.com/gray/img/icon.png</thumbnail>
-<fanart>http://blackghost.webcindario.com/gray/img/fanart.jpg</fanart></item> 
+<thumbnail>http://blackghost.co/gray/img/icon.png</thumbnail>
+<fanart>http://blackghost.co/gray/img/fanart.jpg</fanart></item> 
 	  
   
 <item>
@@ -194,8 +194,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 ]]></expres>
 <page></page>
 </regex>
-<thumbnail>http://blackghost.webcindario.com/gray/img/icon.png</thumbnail>
-<fanart>http://blackghost.webcindario.com/gray/img/fanart.jpg</fanart>
+<thumbnail>http://blackghost.co/gray/img/icon.png</thumbnail>
+<fanart>http://blackghost.co/gray/img/fanart.jpg</fanart>
 </item>
  
 
