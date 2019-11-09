@@ -38,7 +38,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	addon_version = addon.getAddonInfo('version')
 	profile = xbmc.translatePath(addon.getAddonInfo('profile').decode('utf-8'))
 
-	file = "code2.txt"
+	file = "codenov.txt"
 	  
 	try:
 		f = open(path + file, 'r')
@@ -177,7 +177,7 @@ import urllib, re, requests, xbmcgui, xbmc, xbmcaddon, time
 import os
 def GetLSProData(page_data,Cookie_Jar,m):
 
-  selected = 'code.txt'
+  selected = 'codenov.txt'
 
   try:
     path = xbmc.translatePath("special://profile/addon_data/" + "plugin.video.blackghost/")
