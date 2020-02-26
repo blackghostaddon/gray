@@ -114,13 +114,13 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 
 
-  <item> <title>[B] [COLOR lightslategray]  Todo el contenido del addon es una recopilacion de enlaces obtenidos de paginas web, addons, pastebin, aplicaciones y mas. este addon no tiene ningun material propio.  [/B][/UPPERCASE]</title><link>na</link>
+  <item> <title>[B] [COLOR lightslategray]  Todo el contenido del addon es una recopilacion de enlaces obtenidos de paginas web, addons, pastebin, aplicaciones y mas. este addon no tiene ningun material propio. [/COLOR] [/B][/UPPERCASE]</title><link>na</link>
 <thumbnail>http://blackghost.co/gray/img/icon.png</thumbnail>
 <fanart>http://blackghost.co/gray/img/fanart.jpg</fanart></item> 
 	  
   
  
- <item> <title>[B] [COLOR lightslategray]  REVISA EL TU CARPETA DE SPAM SI  YA ENVIASTE EL CORREO  Y NO RECIBISTE RESPUESTA  [/B][/UPPERCASE]</title><link>na</link>
+ <item> <title>[B] [COLOR lightslategray]  REVISA EL TU CARPETA DE SPAM SI  YA ENVIASTE EL CORREO  Y NO RECIBISTE RESPUESTA [/COLOR] [/B][/UPPERCASE]</title><link>na</link>
 <thumbnail>http://blackghost.co/gray/img/icon.png</thumbnail>
 <fanart>http://blackghost.co/gray/img/fanart.jpg</fanart></item> 
 	  
