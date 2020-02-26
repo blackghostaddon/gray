@@ -4,15 +4,11 @@
 
 
 
- <item> <title>[B][UPPERCASE] [COLOR yellow]       [/COLOR][/B][/UPPERCASE]</title><link>na</link>
+ <item> <title>           </title><link>na</link>
 <thumbnail>http://blackghost.co/gray/img/icon.png</thumbnail>
 <fanart>http://blackghost.co/gray/img/fanart.jpg</fanart></item> 
 
-
-
-
-<item>
-<title>[B][UPPERCASE] [COLOR lightyellow]ingresar al addon[/COLOR][/B] [/UPPERCASE]</title>
+<item><title>[B][UPPERCASE] [COLOR deepskyblue]ingresar al addon[/COLOR][/B] [/UPPERCASE]</title>
 
 
 <info>
@@ -37,7 +33,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	addon = xbmcaddon.Addon('plugin.video.blackghost')
 	addon_version = addon.getAddonInfo('version')
 	profile = xbmc.translatePath(addon.getAddonInfo('profile').decode('utf-8'))
-
 	file = "codenov.txt"
 	  
 	try:
@@ -75,88 +70,62 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <fanart>http://blackghost.co/gray/img/fanart.jpg</fanart>
 </item>
 
-<!--item>
-<title>[B][UPPERCASE] [COLOR lightyellow]ingresar al addon[/COLOR][/B] [/UPPERCASE]</title>
-<link>na</link>
-<externallink>http://blackghost.co/in/$doregex[password].xml</externallink>
-<regex>
-<name>password</name>
-<expres><![CDATA[#$pyFunction
-import xbmc
-import xbmcaddon
-import xbmcgui
-def GetLSProData(page_data,Cookie_Jar,m):
-    dialog = xbmcgui.Dialog()
-    d = dialog.input('Codigo de Invitacion:', type=xbmcgui.INPUT_ALPHANUM).replace(" ", "")
-    return d
-]]></expres>
-<page></page>
-<cookieJar></cookieJar>
-</regex>
-
-<thumbnail>http://blackghost.co/gray/img/icon.png</thumbnail>
-<fanart>http://blackghost.co/gray/img/fanart.jpg</fanart>
-
-</item-->
-
-
-
- <item> <title>[B][UPPERCASE] [COLOR white]   [/COLOR][/B][/UPPERCASE]</title><link>na</link>
+ <item> <title>           </title><link>na</link>
 <thumbnail>http://blackghost.co/gray/img/icon.png</thumbnail>
 <fanart>http://blackghost.co/gray/img/fanart.jpg</fanart></item> 
 
 
-  <item> <title>Solicita tu Codigo en:</title><link>na</link>
+
+  <item> <title>Solicita tu Codigo Gratuito en:</title><link>na</link>
 <thumbnail>http://blackghost.co/gray/img/icon.png</thumbnail>
 <fanart>http://blackghost.co/gray/img/fanart.jpg</fanart></item> 
   
-  <item> <title>[COLOR blue][B]blackaddon@mail.com[/B] [/COLOR]</title><link>na</link>
+  <item> <title>[COLOR deepskyblue][B]blackaddon@mail.com[/B] [/COLOR]</title><link>na</link>
 <thumbnail>http://blackghost.co/gray/img/icon.png</thumbnail>
 <fanart>http://blackghost.co/gray/img/fanart.jpg</fanart></item> 
   
-  <item> <title>es completamente [COLOR lightgreen]gratuito[/COLOR]</title><link>na</link>
+
 <thumbnail>http://blackghost.co/gray/img/icon.png</thumbnail>
 <fanart>http://blackghost.co/gray/img/fanart.jpg</fanart></item> 
 
-<item> <title>[B][UPPERCASE] [COLOR white]      [/COLOR][/B][/UPPERCASE]</title><link>na</link>
+<item> <title>          </title><link>na</link>
 <thumbnail>http://blackghost.co/gray/img/icon.png</thumbnail>
 <fanart>http://blackghost.co/gray/img/fanart.jpg</fanart>
 </item>
 
 
-  <item> <title>Apoya con una donacion</title><link>na</link>
-<thumbnail>http://blackghost.co/gray/img/icon.png</thumbnail>
-<fanart>http://blackghost.co/gray/img/fanart.jpg</fanart></item> 
-  
-  <item> <title>por un codigo permanente</title><link>na</link>
-<thumbnail>http://blackghost.co/gray/img/icon.png</thumbnail>
-<fanart>http://blackghost.co/gray/img/fanart.jpg</fanart></item> 
- 
-  <item> <title>[COLOR skyblue][B]http://paypal.me/blackghost[/B] [/COLOR]</title><link>na</link>
-<thumbnail>http://blackghost.co/gray/img/icon.png</thumbnail>
-<fanart>http://blackghost.co/gray/img/fanart.jpg</fanart></item> 
- 
 
-
-
-<item> <title>[UPPERCASE][COLOR white]Ayuda y Soporte en Telegram[/UPPERCASE][/COLOR]</title><link>na</link>
+<item> <title>Ayuda y Soporte en Telegram</title><link>na</link>
 <thumbnail>http://blackghost.co/gray/img/icon.png</thumbnail>
 <fanart>http://blackghost.co/gray/img/fanart.jpg</fanart>
+</item>
 
-
-
-
-<item>       <title>[B]grupo:[COLOR skyblue] @blackghostkodi[/B][/COLOR]</title><link>na</link>
+<item>       <title>[B][COLOR deepskyblue] @BlackGhostKodi[/B][/COLOR]</title><link>na</link>
 <thumbnail>http://blackghost.co/gray/img/icon.png</thumbnail>
 <fanart>http://blackghost.co/gray/img/fanart.jpg</fanart>
  
-  <item> <title>[B][UPPERCASE] [COLOR white]  REVISA EL TU CARPETA DE SPAM SI  YA ENVIASTE EL CORREO  Y NO RECIBISTE RESPUESTA  [/COLOR][/B][/UPPERCASE]</title><link>na</link>
+</item>
+ 
+ 
+ 
+ <item> <title>          </title><link>na</link>
+<thumbnail>http://blackghost.co/gray/img/icon.png</thumbnail>
+<fanart>http://blackghost.co/gray/img/fanart.jpg</fanart>
+</item>
+
+
+  <item> <title>[B] [COLOR lightslategray]  Todo el contenido del addon es una recopilacion de enlaces obtenidos de paginas web, addons, pastebin, aplicaciones y mas. este addon no tiene ningun material propio.  [/B][/UPPERCASE]</title><link>na</link>
 <thumbnail>http://blackghost.co/gray/img/icon.png</thumbnail>
 <fanart>http://blackghost.co/gray/img/fanart.jpg</fanart></item> 
 	  
   
-<item>
- <title>[COLOR lightslategray][B] ●  [ELIMINAR]  Codigo Guardado  ● [/B][/COLOR]</title>
+ 
+ <item> <title>[B] [COLOR lightslategray]  REVISA EL TU CARPETA DE SPAM SI  YA ENVIASTE EL CORREO  Y NO RECIBISTE RESPUESTA  [/B][/UPPERCASE]</title><link>na</link>
+<thumbnail>http://blackghost.co/gray/img/icon.png</thumbnail>
+<fanart>http://blackghost.co/gray/img/fanart.jpg</fanart></item> 
+	  
+  
+<item><title>[COLOR lightslategray][B] ●  [ELIMINAR]  Codigo Guardado  ● [/B][/COLOR]</title>
 
 
 <info>
@@ -176,9 +145,7 @@ tambien  si has ingresado  [I]incorrectamente[/I] el  codigo.
 import urllib, re, requests, xbmcgui, xbmc, xbmcaddon, time
 import os
 def GetLSProData(page_data,Cookie_Jar,m):
-
   selected = 'codenov.txt'
-
   try:
     path = xbmc.translatePath("special://profile/addon_data/" + "plugin.video.blackghost/")
     addon = xbmcaddon.Addon('plugin.video.blackghost')
@@ -189,7 +156,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
     
     xbmc.executebuiltin("XBMC.Notification(Hecho !, Codigo Borrado\nCon exito !, 4000)")
     return 'https://raw.githubusercontent.com/blackghostaddon/gray/master/list.xml'
-
   except:
 	xbmc.executebuiltin("XBMC.Notification([COLOR yellow]No hay Codigo Guardado ![/COLOR],puedes ingresar un codigo nuevamente, 4000)")
 	return 'https://raw.githubusercontent.com/blackghostaddon/gray/master/list.xml'
@@ -200,5 +166,3 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>http://blackghost.co/gray/img/icon.png</thumbnail>
 <fanart>http://blackghost.co/gray/img/fanart.jpg</fanart>
 </item>
- 
-
