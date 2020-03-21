@@ -5,8 +5,8 @@
 
 
  <item> <title>           </title><link>na</link>
-<thumbnail>http://blackghost.co/gray/img/icon.png</thumbnail>
-<fanart>http://blackghost.co/gray/img/fanart.jpg</fanart></item> 
+<thumbnail>https://addonblack.000webhostapp.com/gray/img/icon.png</thumbnail>
+<fanart>https://addonblack.000webhostapp.com/gray/img/fanart.jpg</fanart></item> 
 
 <item><title>[B][UPPERCASE] [COLOR deepskyblue]ingresar al addon[/COLOR][/B] [/UPPERCASE]</title>
 
@@ -18,7 +18,7 @@ Para Obtener un Codigo de activacion permanente realiza una donacion en:
 
 al correo blackaddon@mail.com
 
-http://blackghost.co
+
   </info>
   
 <link>NA</link>  
@@ -45,7 +45,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 		xbmc.executebuiltin("XBMC.Notification( Realiza tu Donativo, paypal.me/blackghost, 1000)")
 		HERE = dialog.input('[COLOR white]Ingresa el [COLOR lightgreen][B]Codigo Permanente[/B][/COLOR] o de [COLOR yellow][B]Invitacion semanal[/B][/COLOR]:[/COLOR] ', type=xbmcgui.INPUT_ALPHANUM)
 		if 'g' in HERE:			
-			OPT = "http://blackghost.co/in/"
+			OPT = "https://addonblack.000webhostapp.com/in/"
 			HERE = HERE.replace("&amp;", "&").replace(" ", "%20")
 			HERE = OPT + HERE + ".xml"
 			f = open(path + file, 'w')
@@ -55,7 +55,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 			xbmc.executebuiltin(savednotif)
 			return HERE	  
 		else:
-			OPT = "http://blackghost.co/in/"
+			OPT = "https://addonblack.000webhostapp.com/in/"
 			HERE = HERE.replace("&amp;", "&").replace(" ", "%20")
 			HERE = OPT + HERE + ".xml"
 			savednotif = "XBMC.Notification( [COLOR blue]Codigo valido[/COLOR], Gracias!, 1000)"
@@ -66,63 +66,63 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page></page>
 </regex>
 
-<thumbnail>http://blackghost.co/gray/img/icon.png</thumbnail>
-<fanart>http://blackghost.co/gray/img/fanart.jpg</fanart>
+<thumbnail>https://addonblack.000webhostapp.com/gray/img/icon.png</thumbnail>
+<fanart>https://addonblack.000webhostapp.com/gray/img/fanart.jpg</fanart>
 </item>
 
  <item> <title>           </title><link>na</link>
-<thumbnail>http://blackghost.co/gray/img/icon.png</thumbnail>
-<fanart>http://blackghost.co/gray/img/fanart.jpg</fanart></item> 
+<thumbnail>https://addonblack.000webhostapp.com/gray/img/icon.png</thumbnail>
+<fanart>https://addonblack.000webhostapp.com/gray/img/fanart.jpg</fanart></item> 
 
 
 
   <item> <title>Solicita tu Codigo Gratuito en:</title><link>na</link>
-<thumbnail>http://blackghost.co/gray/img/icon.png</thumbnail>
-<fanart>http://blackghost.co/gray/img/fanart.jpg</fanart></item> 
+<thumbnail>https://addonblack.000webhostapp.com/gray/img/icon.png</thumbnail>
+<fanart>https://addonblack.000webhostapp.com/gray/img/fanart.jpg</fanart></item> 
   
   <item> <title>[COLOR deepskyblue][B]blackaddon@mail.com[/B] [/COLOR]</title><link>na</link>
-<thumbnail>http://blackghost.co/gray/img/icon.png</thumbnail>
-<fanart>http://blackghost.co/gray/img/fanart.jpg</fanart></item> 
+<thumbnail>https://addonblack.000webhostapp.com/gray/img/icon.png</thumbnail>
+<fanart>https://addonblack.000webhostapp.com/gray/img/fanart.jpg</fanart></item> 
   
 
-<thumbnail>http://blackghost.co/gray/img/icon.png</thumbnail>
-<fanart>http://blackghost.co/gray/img/fanart.jpg</fanart></item> 
+<thumbnail>https://addonblack.000webhostapp.com/gray/img/icon.png</thumbnail>
+<fanart>https://addonblack.000webhostapp.com/gray/img/fanart.jpg</fanart></item> 
 
 <item> <title>          </title><link>na</link>
-<thumbnail>http://blackghost.co/gray/img/icon.png</thumbnail>
-<fanart>http://blackghost.co/gray/img/fanart.jpg</fanart>
+<thumbnail>https://addonblack.000webhostapp.com/gray/img/icon.png</thumbnail>
+<fanart>https://addonblack.000webhostapp.com/gray/img/fanart.jpg</fanart>
 </item>
 
 
 
 <item> <title>Ayuda y Soporte en Telegram</title><link>na</link>
-<thumbnail>http://blackghost.co/gray/img/icon.png</thumbnail>
-<fanart>http://blackghost.co/gray/img/fanart.jpg</fanart>
+<thumbnail>https://addonblack.000webhostapp.com/gray/img/icon.png</thumbnail>
+<fanart>https://addonblack.000webhostapp.com/gray/img/fanart.jpg</fanart>
 </item>
 
 <item>       <title>[B][COLOR deepskyblue] @BlackGhostKodi[/B][/COLOR]</title><link>na</link>
-<thumbnail>http://blackghost.co/gray/img/icon.png</thumbnail>
-<fanart>http://blackghost.co/gray/img/fanart.jpg</fanart>
+<thumbnail>https://addonblack.000webhostapp.com/gray/img/icon.png</thumbnail>
+<fanart>https://addonblack.000webhostapp.com/gray/img/fanart.jpg</fanart>
  
 </item>
  
  
  
  <item> <title>          </title><link>na</link>
-<thumbnail>http://blackghost.co/gray/img/icon.png</thumbnail>
-<fanart>http://blackghost.co/gray/img/fanart.jpg</fanart>
+<thumbnail>https://addonblack.000webhostapp.com/gray/img/icon.png</thumbnail>
+<fanart>https://addonblack.000webhostapp.com/gray/img/fanart.jpg</fanart>
 </item>
 
 
   <item> <title>[B] [COLOR lightslategray]  Todo el contenido del addon es una recopilacion de enlaces obtenidos de paginas web, addons, pastebin, aplicaciones y mas. este addon no tiene ningun material propio. [/COLOR] [/B][/UPPERCASE]</title><link>na</link>
-<thumbnail>http://blackghost.co/gray/img/icon.png</thumbnail>
-<fanart>http://blackghost.co/gray/img/fanart.jpg</fanart></item> 
+<thumbnail>https://addonblack.000webhostapp.com/gray/img/icon.png</thumbnail>
+<fanart>https://addonblack.000webhostapp.com/gray/img/fanart.jpg</fanart></item> 
 	  
   
  
  <item> <title>[B] [COLOR lightslategray]  REVISA EL TU CARPETA DE SPAM SI  YA ENVIASTE EL CORREO  Y NO RECIBISTE RESPUESTA [/COLOR] [/B][/UPPERCASE]</title><link>na</link>
-<thumbnail>http://blackghost.co/gray/img/icon.png</thumbnail>
-<fanart>http://blackghost.co/gray/img/fanart.jpg</fanart></item> 
+<thumbnail>https://addonblack.000webhostapp.com/gray/img/icon.png</thumbnail>
+<fanart>https://addonblack.000webhostapp.com/gray/img/fanart.jpg</fanart></item> 
 	  
   
 <item><title>[COLOR lightslategray][B] ●  [ELIMINAR]  Codigo Guardado  ● [/B][/COLOR]</title>
@@ -163,6 +163,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 ]]></expres>
 <page></page>
 </regex>
-<thumbnail>http://blackghost.co/gray/img/icon.png</thumbnail>
-<fanart>http://blackghost.co/gray/img/fanart.jpg</fanart>
+<thumbnail>https://addonblack.000webhostapp.com/gray/img/icon.png</thumbnail>
+<fanart>https://addonblack.000webhostapp.com/gray/img/fanart.jpg</fanart>
 </item>
