@@ -33,7 +33,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	addon = xbmcaddon.Addon('plugin.video.blackghost')
 	addon_version = addon.getAddonInfo('version')
 	profile = xbmc.translatePath(addon.getAddonInfo('profile').decode('utf-8'))
-	file = "codenov.txt"
+	file = "codemar.txt"
 	  
 	try:
 		f = open(path + file, 'r')
