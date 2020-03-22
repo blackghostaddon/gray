@@ -4,9 +4,6 @@
 
 
 
- <item> <title>           </title><link>na</link>
-<thumbnail>https://addonblack.000webhostapp.com/gray/img/icon.png</thumbnail>
-<fanart>https://addonblack.000webhostapp.com/gray/img/fanart.jpg</fanart></item> 
 
 <item><title>[B][UPPERCASE] [COLOR deepskyblue]ingresar al addon[/COLOR][/B] [/UPPERCASE]</title>
 
@@ -76,26 +73,30 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-  <item> <title>Solicita tu Codigo Gratuito en:</title><link>na</link>
+
+<item> <title>Obten el [COLOR palegreen][B]Codigo Semanal[/B][/COLOR] Gratuito en nuestra APP          </title><link>na</link>
+<thumbnail>https://addonblack.000webhostapp.com/gray/img/icon.png</thumbnail>
+<fanart>https://addonblack.000webhostapp.com/gray/img/fanart.jpg</fanart>
+</item>
+
+  <item> <title>Descarga e Instala </title><link>na</link>
 <thumbnail>https://addonblack.000webhostapp.com/gray/img/icon.png</thumbnail>
 <fanart>https://addonblack.000webhostapp.com/gray/img/fanart.jpg</fanart></item> 
   
-  <item> <title>[COLOR deepskyblue][B]blackaddon@mail.com[/B] [/COLOR]</title><link>na</link>
+<item> <title>[COLOR deepskyblue][B]http://bit.ly/blackghostapp[/B] [/COLOR]</title><link>na</link>
 <thumbnail>https://addonblack.000webhostapp.com/gray/img/icon.png</thumbnail>
 <fanart>https://addonblack.000webhostapp.com/gray/img/fanart.jpg</fanart></item> 
   
 
-<thumbnail>https://addonblack.000webhostapp.com/gray/img/icon.png</thumbnail>
-<fanart>https://addonblack.000webhostapp.com/gray/img/fanart.jpg</fanart></item> 
 
-<item> <title>          </title><link>na</link>
+ 
+ <item> <title>          </title><link>na</link>
 <thumbnail>https://addonblack.000webhostapp.com/gray/img/icon.png</thumbnail>
 <fanart>https://addonblack.000webhostapp.com/gray/img/fanart.jpg</fanart>
 </item>
 
 
-
-<item> <title>Ayuda y Soporte en Telegram</title><link>na</link>
+<item> <title>Grupo en Telegram</title><link>na</link>
 <thumbnail>https://addonblack.000webhostapp.com/gray/img/icon.png</thumbnail>
 <fanart>https://addonblack.000webhostapp.com/gray/img/fanart.jpg</fanart>
 </item>
@@ -106,23 +107,17 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
 </item>
  
- 
- 
- <item> <title>          </title><link>na</link>
+  <item> <title>Los Usuarios de IOS, continuar mandando el correo</title><link>na</link>
 <thumbnail>https://addonblack.000webhostapp.com/gray/img/icon.png</thumbnail>
 <fanart>https://addonblack.000webhostapp.com/gray/img/fanart.jpg</fanart>
 </item>
 
-
-  <item> <title>[B] [COLOR lightslategray]  Todo el contenido del addon es una recopilacion de enlaces obtenidos de paginas web, addons, pastebin, aplicaciones y mas. este addon no tiene ningun material propio. [/COLOR] [/B][/UPPERCASE]</title><link>na</link>
-<thumbnail>https://addonblack.000webhostapp.com/gray/img/icon.png</thumbnail>
-<fanart>https://addonblack.000webhostapp.com/gray/img/fanart.jpg</fanart></item> 
-	  
   
- 
- <item> <title>[B] [COLOR lightslategray]  REVISA EL TU CARPETA DE SPAM SI  YA ENVIASTE EL CORREO  Y NO RECIBISTE RESPUESTA [/COLOR] [/B][/UPPERCASE]</title><link>na</link>
+   <item> <title>solicitando el codigo a [B]addonblack@mail.com[/B]</title><link>na</link>
 <thumbnail>https://addonblack.000webhostapp.com/gray/img/icon.png</thumbnail>
-<fanart>https://addonblack.000webhostapp.com/gray/img/fanart.jpg</fanart></item> 
+<fanart>https://addonblack.000webhostapp.com/gray/img/fanart.jpg</fanart>
+</item>
+
 	  
   
 <item><title>[COLOR lightslategray][B] ●  [ELIMINAR]  Codigo Guardado  ● [/B][/COLOR]</title>
