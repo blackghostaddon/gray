@@ -55,7 +55,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 			OPT = "http://blackaddon.com/in/"
 			HERE = HERE.replace("&amp;", "&").replace(" ", "%20")
 			HERE = OPT + HERE + ".xml"
-			savednotif = "XBMC.Notification( [COLOR blue]Codigo valido[/COLOR], Gracias!, 1000)"
+			savednotif = "XBMC.Notification( [COLOR blue]Cargando Codigo...[/COLOR], Gracias!, 1000)"
 			xbmc.executebuiltin(savednotif)
 			return HERE
 	return HERE  
