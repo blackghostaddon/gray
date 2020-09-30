@@ -69,63 +69,87 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<item> <title>[B][UPPERCASE] [COLOR white] -------- [/COLOR][/B][/UPPERCASE]</title><link>na</link>
-<thumbnail>http://blackghost.co/gray/img/icon.png</thumbnail>
-<fanart>http://blackghost.co/gray/img/fanart.jpg</fanart>
-</item>
-
-
-  <item> <title>Solicita tu Codigo en es gratuito</title><link>na</link>
-<thumbnail>http://blackghost.co/gray/img/icon.png</thumbnail>
-<fanart>http://blackghost.co/gray/img/fanart.jpg</fanart></item> 
-  
-  <item> <title>[COLOR yellow][B]blackaddon@mail.com[/B] [/COLOR]</title><link>na</link>
-<thumbnail>http://blackghost.co/gray/img/icon.png</thumbnail>
-<fanart>http://blackghost.co/gray/img/fanart.jpg</fanart></item> 
-  
-  <item> <title>es completamente [COLOR lightgreen]gratuito[/COLOR]</title><link>na</link>
-<thumbnail>http://blackghost.co/gray/img/icon.png</thumbnail>
-<fanart>http://blackghost.co/gray/img/fanart.jpg</fanart></item> 
-
-<item> <title>[B][UPPERCASE] [COLOR white] -------- [/COLOR][/B][/UPPERCASE]</title><link>na</link>
-<thumbnail>http://blackghost.co/gray/img/icon.png</thumbnail>
-<fanart>http://blackghost.co/gray/img/fanart.jpg</fanart>
-</item>
-
-
-  <item> <title>Apoya con una donacion</title><link>na</link>
-<thumbnail>http://blackghost.co/gray/img/icon.png</thumbnail>
-<fanart>http://blackghost.co/gray/img/fanart.jpg</fanart></item> 
-  
-  <item> <title>por un codigo permanente</title><link>na</link>
-<thumbnail>http://blackghost.co/gray/img/icon.png</thumbnail>
-<fanart>http://blackghost.co/gray/img/fanart.jpg</fanart></item> 
- 
-  <item> <title>[COLOR yellow][B]http://paypal.me/blackghost[/B] [/COLOR]</title><link>na</link>
-<thumbnail>http://blackghost.co/gray/img/icon.png</thumbnail>
-<fanart>http://blackghost.co/gray/img/fanart.jpg</fanart></item> 
- 
 
 
 
 
-<item> <title>Obten el [COLOR palegreen][B]Codigo Semanal[/B][/COLOR] Gratuito en nuestra APP          </title><link>na</link>
+<item> <title>Obten el [COLOR palegreen][B]Codigo Semanal[/B][/COLOR] Gratuito en nuestra APP Blackghost para Android</title><link>na</link>
 <thumbnail>http://blackaddon.com/gray/img/icon.png</thumbnail>
 <fanart>http://blackaddon.com/gray/img/fanart.jpg</fanart>
 </item>
 
-  <item> <title>Descarga e Instala </title><link>na</link>
-<thumbnail>http://blackaddon.com/gray/img/icon.png</thumbnail>
-<fanart>http://blackaddon.com/gray/img/fanart.jpg</fanart></item> 
-  
-<item> <title>[COLOR deepskyblue][B]http://bit.ly/blackghostapp[/B] [/COLOR]</title><link>na</link>
+  <item> <title>Descarga e Instala: [COLOR deepskyblue][B]http://blackaddon.com/app[/B] [/COLOR]</title><link>na</link>
 <thumbnail>http://blackaddon.com/gray/img/icon.png</thumbnail>
 <fanart>http://blackaddon.com/gray/img/fanart.jpg</fanart></item> 
   
 
 
-<item> <title>[UPPERCASE] [COLOR white] [ Ayuda y Soporte en Telegram:[/UPPERCASE][B] [COLOR lime] @blackghostkodi[/COLOR]]---- [/COLOR][/B]</title><link>na</link>
+  <item> <title>App Recomendada [COLOR yellow]TELEFINA[/B]: [COLOR deepskyblue][B]http://blackaddon.com/telefina[/B] [/COLOR]</title><link>na</link>
+<thumbnail>http://blackaddon.com/gray/img/icon.png</thumbnail>
+<fanart>http://blackaddon.com/gray/img/fanart.jpg</fanart></item> 
+
+
+
+
+
+<item> <title>[UPPERCASE] [COLOR white] [ Grupo Telegram:[/UPPERCASE][B] [COLOR lime] @blackghostkodi[/COLOR]]---- [/COLOR][/B]</title><link>na</link>
 <thumbnail>http://blackghost.co/gray/img/icon.png</thumbnail>
 <fanart>http://blackghost.co/gray/img/fanart.jpg</fanart>
 
 
+
+ 
+  <item> <title>Los Usuarios de IOS, continuar mandando el correo</title><link>na</link>
+<thumbnail>http://blackaddon.com/gray/img/icon.png</thumbnail>
+<fanart>http://blackaddon.com/gray/img/fanart.jpg</fanart>
+</item>
+
+  
+   <item> <title>solicitando el codigo a [B]addonblack@mail.com[/B]</title><link>na</link>
+<thumbnail>http://blackaddon.com/gray/img/icon.png</thumbnail>
+<fanart>http://blackaddon.com/gray/img/fanart.jpg</fanart>
+</item>
+
+	  
+  
+<item><title>[COLOR lightslategray][B] ●  [ELIMINAR]  Codigo Guardado  ● [/B][/COLOR]</title>
+
+
+<info>
+Elimina el Codigo Permanente 
+-
+o el Codigo de INVITACION semanal  si  ya ha caducado para poder volver a ingresar un [B]NUEVO[/B] codigo
+-
+tambien  si has ingresado  [I]incorrectamente[/I] el  codigo.
+  </info>
+  
+<link>NA</link>  
+<externallink>$doregex[code]</externallink>  
+ 
+<regex>
+<name>code</name>  
+<expres><![CDATA[#$pyFunction
+import urllib, re, requests, xbmcgui, xbmc, xbmcaddon, time
+import os
+def GetLSProData(page_data,Cookie_Jar,m):
+  selected = 'codemar21.txt'
+  try:
+    path = xbmc.translatePath("special://profile/addon_data/" + "plugin.video.blackghost/")
+    addon = xbmcaddon.Addon('plugin.video.blackghost')
+    addon_version = addon.getAddonInfo('version')
+    profile = xbmc.translatePath(addon.getAddonInfo('profile').decode('utf-8'))
+      
+    os.remove (path + selected)
+    
+    xbmc.executebuiltin("XBMC.Notification(Hecho !, Codigo Borrado\nCon exito !, 4000)")
+    return 'https://raw.githubusercontent.com/blackghostaddon/gray/master/list.xml'
+  except:
+	xbmc.executebuiltin("XBMC.Notification([COLOR yellow]No hay Codigo Guardado ![/COLOR],puedes ingresar un codigo nuevamente, 4000)")
+	return 'https://raw.githubusercontent.com/blackghostaddon/gray/master/list.xml'
+  
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://blackaddon.com/gray/img/icon.png</thumbnail>
+<fanart>http://blackaddon.com/gray/img/fanart.jpg</fanart>
+</item>
