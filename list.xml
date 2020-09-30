@@ -82,13 +82,22 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>http://blackaddon.com/gray/img/icon.png</thumbnail>
 <fanart>http://blackaddon.com/gray/img/fanart.jpg</fanart></item> 
   
+    <item> <title> </title><link>na</link>
+<thumbnail>http://blackaddon.com/gray/img/icon.png</thumbnail>
+<fanart>http://blackaddon.com/gray/img/fanart.jpg</fanart>
+</item>
 
 
-  <item> <title>App Recomendada [COLOR yellow]TELEFINA[/B]: [COLOR deepskyblue][B]http://blackaddon.com/telefina[/B] [/COLOR]</title><link>na</link>
+
+  <item> <title>App Recomendada [COLOR yellow][B]TELEFINA[/B]: [COLOR deepskyblue][B]http://blackaddon.com/telefina[/B] [/COLOR]</title><link>na</link>
 <thumbnail>http://blackaddon.com/gray/img/icon.png</thumbnail>
 <fanart>http://blackaddon.com/gray/img/fanart.jpg</fanart></item> 
 
 
+  <item> <title> </title><link>na</link>
+<thumbnail>http://blackaddon.com/gray/img/icon.png</thumbnail>
+<fanart>http://blackaddon.com/gray/img/fanart.jpg</fanart>
+</item>
 
 
 
@@ -98,17 +107,12 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
- 
-  <item> <title>Los Usuarios de IOS, continuar mandando el correo</title><link>na</link>
+   <item> <title> </title><link>na</link>
 <thumbnail>http://blackaddon.com/gray/img/icon.png</thumbnail>
 <fanart>http://blackaddon.com/gray/img/fanart.jpg</fanart>
 </item>
 
-  
-   <item> <title>solicitando el codigo a [B]addonblack@mail.com[/B]</title><link>na</link>
-<thumbnail>http://blackaddon.com/gray/img/icon.png</thumbnail>
-<fanart>http://blackaddon.com/gray/img/fanart.jpg</fanart>
-</item>
+
 
 	  
   
