@@ -1,41 +1,70 @@
-﻿
-
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
 
 
 
 
- <item> <title>[B][UPPERCASE] [COLOR white] -------- [/COLOR][/B][/UPPERCASE]</title><link>na</link>
-<thumbnail>http://blackghost.co/gray/img/icon.png</thumbnail>
-<fanart>http://blackghost.co/gray/img/fanart.jpg</fanart></item> 
+
+<item><title>[B][UPPERCASE] [COLOR deepskyblue]ingresar al addon[/COLOR][/B] [/UPPERCASE]</title>
 
 
+<info>
+Para Obtener un Codigo de activacion permanente realiza una donacion en:
+
+[COLOR skyblue][B]http://paypal.me/blackghost[/B][/COLOR]
+
+al correo blackaddon@mail.com
 
 
-
-<item>
-<title>[B][UPPERCASE] [COLOR lightyellow]ingresar al addon[/COLOR][/B] [/UPPERCASE]</title>
-<link>na</link>
-<externallink>http://blackghost.co/in/$doregex[password].xml</externallink>
+  </info>
+  
+<link>NA</link>  
+<externallink>$doregex[code]</externallink>  
+ 
 <regex>
-<name>password</name>
+<name>code</name>  
 <expres><![CDATA[#$pyFunction
-import xbmc
-import xbmcaddon
-import xbmcgui
+import xbmc, xbmcaddon, xbmcgui, re, urllib
 def GetLSProData(page_data,Cookie_Jar,m):
-    dialog = xbmcgui.Dialog()
-    d = dialog.input('Codigo de Invitacion:', type=xbmcgui.INPUT_ALPHANUM).replace(" ", "")
-    return d
-]]></expres>
+	path = xbmc.translatePath("special://profile/" + "addon_data/plugin.video.blackghost/")
+	addon = xbmcaddon.Addon('plugin.video.blackghost')
+	addon_version = addon.getAddonInfo('version')
+	profile = xbmc.translatePath(addon.getAddonInfo('profile').decode('utf-8'))
+	file = "codemar21.txt"
+	  
+	try:
+		f = open(path + file, 'r')
+		HERE = f.read()
+		f.close()
+		xbmc.executebuiltin("XBMC.Notification( [COLOR lime][B]Codigo Activado ![/B][/COLOR] , [COLOR lightblue]No olvides seguir apoyando.[/COLOR], 2000)")
+	except:
+		dialog = xbmcgui.Dialog()
+		xbmc.executebuiltin("XBMC.Notification( Realiza tu Donativo, paypal.me/blackghost, 1000)")
+		HERE = dialog.input('[COLOR white]Ingresa el [COLOR lightgreen][B]Codigo Permanente[/B][/COLOR] o de [COLOR yellow][B]Invitacion semanal[/B][/COLOR]:[/COLOR] ', type=xbmcgui.INPUT_ALPHANUM)
+		if 'g' in HERE:			
+			OPT = "http://blackaddon.com/in/"
+			HERE = HERE.replace("&amp;", "&").replace(" ", "%20")
+			HERE = OPT + HERE + ".xml"
+			f = open(path + file, 'w')
+			f.write(HERE)
+			f.close()
+			savednotif = "XBMC.Notification( [COLOR blue]El Codigo ha sido Guardado[/COLOR], Gracias por Apoyar el proyecto, 2000)"
+			xbmc.executebuiltin(savednotif)
+			return HERE	  
+		else:
+			OPT = "http://blackaddon.com/in/"
+			HERE = HERE.replace("&amp;", "&").replace(" ", "%20")
+			HERE = OPT + HERE + ".xml"
+			savednotif = "XBMC.Notification( [COLOR blue]Cargando Codigo...[/COLOR], Gracias!, 1000)"
+			xbmc.executebuiltin(savednotif)
+			return HERE
+	return HERE  
+ ]]></expres>
 <page></page>
-<cookieJar></cookieJar>
 </regex>
 
-<thumbnail>http://blackghost.co/gray/img/icon.png</thumbnail>
-<fanart>http://blackghost.co/gray/img/fanart.jpg</fanart>
-
+<thumbnail>http://blackaddon.com/gray/img/icon.png</thumbnail>
+<fanart>http://blackaddon.com/gray/img/fanart.jpg</fanart>
 </item>
 
 
@@ -80,7 +109,19 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
+<item> <title>Obten el [COLOR palegreen][B]Codigo Semanal[/B][/COLOR] Gratuito en nuestra APP          </title><link>na</link>
+<thumbnail>http://blackaddon.com/gray/img/icon.png</thumbnail>
+<fanart>http://blackaddon.com/gray/img/fanart.jpg</fanart>
+</item>
 
+  <item> <title>Descarga e Instala </title><link>na</link>
+<thumbnail>http://blackaddon.com/gray/img/icon.png</thumbnail>
+<fanart>http://blackaddon.com/gray/img/fanart.jpg</fanart></item> 
+  
+<item> <title>[COLOR deepskyblue][B]http://bit.ly/blackghostapp[/B] [/COLOR]</title><link>na</link>
+<thumbnail>http://blackaddon.com/gray/img/icon.png</thumbnail>
+<fanart>http://blackaddon.com/gray/img/fanart.jpg</fanart></item> 
+  
 
 
 <item> <title>[UPPERCASE] [COLOR white] [ Ayuda y Soporte en Telegram:[/UPPERCASE][B] [COLOR lime] @blackghostkodi[/COLOR]]---- [/COLOR][/B]</title><link>na</link>
