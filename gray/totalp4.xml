@@ -28,7 +28,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/tp.png</thumbnail>
 <fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/fanart.jpg</fanart>
 </item>
-<item><!-- black 02 -->
+<ite><!-- black 02 -->
 <title>•  [B]BlackTV 02[/B]</title>
 <link>na</link>
 <externallink>http://blackghost.live/nov6/tv2.php</externallink>
@@ -36,7 +36,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/tp.png</thumbnail>
 <fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/fanart.jpg</fanart>
 </item>
-<item><!-- black 03 -->
+<ite><!-- black 03 -->
 <title>•  [B]BlackTV 03[/B] </title>
 <link>na</link>
 <externallink>http://blackghost.live/nov6/tv3.php</externallink>
@@ -44,7 +44,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/tp.png</thumbnail>
 <fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/fanart.jpg</fanart>
 </item>
-<item><!-- black 04 -->
+<ite><!-- black 04 -->
 <title>•  [B]BlackTV 04[/B]</title>
 <link>na</link>
 <externallink>http://blackghost.live/nov6/tv4.php</externallink>
@@ -52,7 +52,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/tp.png</thumbnail>
 <fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/fanart.jpg</fanart>
 </item>
-<item><!-- black 05 -->
+<ite><!-- black 05 -->
 <title>•  [B]BlackTV 05[/B]</title>
 <link>NA</link>
 <externallink>https://blackghost.live/nov6/tv5.php</externallink>
@@ -60,7 +60,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/tp.png</thumbnail>
 <fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/fanart.jpg</fanart>
 </item>
-<item><!-- black 06 -->
+<ite><!-- black 06 -->
 <title>•  [B]BlackTV 06[/B]</title>
 <link>NA</link>
 <externallink>https://blackghost.live/nov6/tv6.php</externallink>
@@ -68,7 +68,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/tp.png</thumbnail>
 <fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/fanart.jpg</fanart>
 </item>
-<item><!-- black 07 -->
+<ite><!-- black 07 -->
 <title>•  [B]BlackTV 07[/B]</title>
 <link>NA</link>
 <externallink>https://blackghost.live/nov6/tv7.php</externallink>
@@ -76,7 +76,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/tp.png</thumbnail>
 <fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/fanart.jpg</fanart>
 </item>
-<item><!-- black 08 -->
+<ite><!-- black 08 -->
 <title>•  [B]BlackTV 08[/B]</title>
 <link>NA</link>
 <externallink>https://blackghost.live/nov6/tv8.php</externallink>
@@ -84,14 +84,14 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/tp.png</thumbnail>
 <fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/fanart.jpg</fanart>
 </item>
-<item><!-- black 09 -->
+<ite><!-- black 09 -->
 <title>•  [B]BlackTV 09[/B]</title>
 <link>NA</link>
 <externallink>https://blackghost.live/nov6/tv9.php</externallink>
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/tp.png</thumbnail>
 <fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/fanart.jpg</fanart>
 </item>
-<item><!-- black 10 -->
+<ite><!-- black 10 -->
 <title>•  [B]BlackTV 10[/B]</title>
 <link>NA</link>
 <externallink>https://blackghost.live/nov6/tv10.php</externallink>
@@ -99,7 +99,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/tp.png</thumbnail>
 <fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/fanart.jpg</fanart>
 </item>
-<item><!-- black 11 -->
+<ite><!-- black 11 -->
 <title>•  [B]BlackTV 11[/B]</title>
 <link>NA</link>
 <externallink>https://blackghost.live/nov6/tv11.php?f=.m3u</externallink>
@@ -107,7 +107,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/tp.png</thumbnail>
 <fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/fanart.jpg</fanart>
 </item>
-<item><!-- black 12 -->
+<ite><!-- black 12 -->
 <title>•  [B]BlackTV 12[/B]</title>
 <link>NA</link>
 <externallink>https://blackghost.live/nov6/tv12.php?f=.m3u</externallink>
@@ -115,7 +115,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/tp.png</thumbnail>
 <fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/fanart.jpg</fanart>
 </item>
-<item><!-- black 13 -->
+<ite><!-- black 13 -->
 <title>•  [B]BlackTV 13[/B]</title>
 <link>NA</link>
 <externallink>https://blackghost.live/nov6/tv13.php</externallink>
@@ -123,7 +123,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/tp.png</thumbnail>
 <fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/fanart.jpg</fanart>
 </item>
-<item><!-- black 14 -->
+<ite><!-- black 14 -->
 <title>•  [B]BlackTV 14[/B]</title>
 <link>NA</link>
 <externallink>https://blackghost.live/nov6/tv14.php</externallink>
@@ -131,7 +131,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/tp.png</thumbnail>
 <fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/fanart.jpg</fanart>
 </item>
-<item><!-- black 15 -->
+<ite><!-- black 15 -->
 <title>•  [B]BlackTV 15[/B]</title>
 <link>NA</link>
 <externallink>https://blackghost.live/nov6/tv15.php</externallink>
@@ -139,7 +139,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/tp.png</thumbnail>
 <fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/fanart.jpg</fanart>
 </item>
-<item><!-- black 16 -->
+<ite><!-- black 16 -->
 <title>•  [B]BlackTV 16[/B]</title>
 <link>NA</link>
 <externallink>https://blackghost.live/nov6/tv16.php</externallink>
@@ -147,7 +147,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/tp.png</thumbnail>
 <fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/fanart.jpg</fanart>
 </item>
-<item><!-- black 17 -->
+<ite><!-- black 17 -->
 <title>•  [B]BlackTV 17[/B]</title>
 <link>NA</link>
 <externallink>https://blackghost.live/nov6/tv17.php</externallink>
@@ -163,7 +163,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/tp.png</thumbnail>
 <fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/fanart.jpg</fanart>
 </item>
-<item><!-- black 19 -->
+<ite><!-- black 19 -->
 <title>•  [B]BlackTV 19[/B]</title>
 <link>NA</link>
 <externallink>https://blackghost.live/nov6/tv19.php</externallink>
@@ -179,7 +179,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/tp.png</thumbnail>
 <fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/fanart.jpg</fanart>
 </item>
-<item><!-- black 21 -->
+<ite><!-- black 21 -->
 <title>•  [B]BlackTV 21[/B]</title>
 <link>NA</link>
 <externallink>https://blackghost.live/nov6/tv21.php?f=.m3u</externallink>
@@ -187,7 +187,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/tp.png</thumbnail>
 <fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/fanart.jpg</fanart>
 </item>
-<item><!-- black 22 -->
+<ite><!-- black 22 -->
 <title>•  [B]BlackTV 22[/B]</title>
 <link>NA</link>
 <externallink>https://blackghost.live/nov6/tv22.php?f=.m3u</externallink>
@@ -201,7 +201,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<item><!-- black LP -->
+<ite><!-- black LP -->
 <title>•  [B]BlackTV LP[/B]</title>
 <link>NA</link>
 <externallink>http://blackghost.live/scr/lplatin.php?file=.m3u8</externallink>
@@ -357,7 +357,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 
 
-<item><!-- black MX 1 -->
+<ite><!-- black MX 1 -->
 <title>•  [B]BlackTV MX 01[/B] Solo Mexico</title>
 <link>na</link>
 <externallink>http://blackghost.live/nov6/tvmx.m3u</externallink>
@@ -365,7 +365,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/fanart.jpg</fanart>
 </item>
 
-<item><!-- black MX 2 -->
+<ite><!-- black MX 2 -->
 <title>•  [B]BlackTV MX 02[/B] Solo Mexico</title>
 <link>na</link>
 <externallink>http://blackghost.live/nov6/tvmx2.m3u</externallink>
@@ -411,7 +411,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 
 
-<item><!-- ESP IPTV1 -->
+<ite><!-- ESP IPTV1 -->
 <title>•  [B]ESPAÑA IPTV 1[/B]</title>
 <link>NA</link>
 <externallink>http://blackghost.live/nov6/tves.m3u</externallink>
@@ -421,7 +421,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 
  
-<item><!-- ESP IPTV2 -->
+<ite><!-- ESP IPTV2 -->
 <title>•  [B]ESPAÑA IPTV 2[/B]</title>
 <link>NA</link>
 <externallink>https://blackghost.live/nov6/tves2.php?file=.m3u</externallink>
@@ -430,7 +430,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/fanart.jpg</fanart>
 </item>
 
-<item><!-- ESP IPTV3 -->
+<ite><!-- ESP IPTV3 -->
 <title>•  [B]ESPAÑA IPTV 3[/B]</title>
 <link>NA</link>
 <externallink>https://blackghost.live/scr/lookplay.php?file=.m3u8</externallink>
@@ -439,7 +439,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/fanart.jpg</fanart>
 </item>
 
-<item><!-- ESP IPTV4 -->
+<ite><!-- ESP IPTV4 -->
 <title>•  [B]ESPAÑA IPTV 4[/B]</title>
 <link>NA</link>
 <externallink>https://blackghost.live/nov6/tves4.php?f=.m3u</externallink>
@@ -448,7 +448,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/fanart.jpg</fanart>
 </item>
 
-<item><!-- ESP IPTV5 -->
+<ite><!-- ESP IPTV5 -->
 <title>•  [B]ESPAÑA IPTV 5[/B]</title>
 <link>NA</link>
 <externallink>https://blackghost.live/nov6/tves5.m3u</externallink>
