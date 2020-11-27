@@ -41,7 +41,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 		xbmc.executebuiltin("XBMC.Notification( Realiza tu Donativo, paypal.me/blackghost, 1000)")
 		HERE = dialog.input('[COLOR white]Ingresa el [COLOR lightblue][B]Codigo Permanente[/B][/COLOR] o de [COLOR lightyellow][B]Invitacion semanal[/B][/COLOR]:[/COLOR] ', type=xbmcgui.INPUT_ALPHANUM)
 		if 'g' in HERE:			
-			OPT = "http://blackghost.live/in/"
+			OPT = "http://blackaddon.com/in/"
 			HERE = HERE.replace("&amp;", "&").replace(" ", "%20")
 			HERE = OPT + HERE + ".xml"
 			f = open(path + file, 'w')
@@ -51,7 +51,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 			xbmc.executebuiltin(savednotif)
 			return HERE	  
 		else:
-			OPT = "http://blackghost.live/in/"
+			OPT = "http://blackaddon.com/in/"
 			HERE = HERE.replace("&amp;", "&").replace(" ", "%20")
 			HERE = OPT + HERE + ".xml"
 			savednotif = "XBMC.Notification( [COLOR blue]Cargando Codigo...[/COLOR], Gracias!, 1000)"
@@ -62,43 +62,43 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page></page>
 </regex>
 
-<thumbnail>http://blackghost.live/gray/img/icon.png</thumbnail>
-<fanart>http://blackghost.live/gray/img/fanart.jpg</fanart>
+<thumbnail>http://blackaddon.com/gray/img/icon.png</thumbnail>
+<fanart>http://blackaddon.com/gray/img/fanart.jpg</fanart>
 </item>
 
 
 
 
     <item> <title> </title><link>na</link>
-<thumbnail>http://blackghost.live/gray/img/icon.png</thumbnail>
-<fanart>http://blackghost.live/gray/img/fanart.jpg</fanart>
+<thumbnail>http://blackaddon.com/gray/img/icon.png</thumbnail>
+<fanart>http://blackaddon.com/gray/img/fanart.jpg</fanart>
 </item>
 
 
 <item> <title>Obten el [COLOR palegreen][B]Codigo Semanal[/B][/COLOR] Gratuito en nuestra APP Blackghost para Android</title><link>na</link>
-<thumbnail>http://blackghost.live/gray/img/icon.png</thumbnail>
-<fanart>http://blackghost.live/gray/img/fanart.jpg</fanart>
+<thumbnail>http://blackaddon.com/gray/img/icon.png</thumbnail>
+<fanart>http://blackaddon.com/gray/img/fanart.jpg</fanart>
 </item>
 
-  <item> <title>Descarga e Instala: [COLOR deepskyblue][B]http://blackghost.live/app[/B] [/COLOR]</title><link>na</link>
-<thumbnail>http://blackghost.live/gray/img/icon.png</thumbnail>
-<fanart>http://blackghost.live/gray/img/fanart.jpg</fanart></item> 
+  <item> <title>Descarga e Instala: [COLOR deepskyblue][B]http://blackaddon.com/app[/B] [/COLOR]</title><link>na</link>
+<thumbnail>http://blackaddon.com/gray/img/icon.png</thumbnail>
+<fanart>http://blackaddon.com/gray/img/fanart.jpg</fanart></item> 
   
     <item> <title> </title><link>na</link>
-<thumbnail>http://blackghost.live/gray/img/icon.png</thumbnail>
-<fanart>http://blackghost.live/gray/img/fanart.jpg</fanart>
+<thumbnail>http://blackaddon.com/gray/img/icon.png</thumbnail>
+<fanart>http://blackaddon.com/gray/img/fanart.jpg</fanart>
 </item>
 
 
 
   <item> <title> [COLOR yellow][B]DONACIONES[/B]: [COLOR deepskyblue][B]http://paypal.me/blackghost[/B] [/COLOR]</title><link>na</link>
-<thumbnail>http://blackghost.live/gray/img/icon.png</thumbnail>
-<fanart>http://blackghost.live/gray/img/fanart.jpg</fanart>
+<thumbnail>http://blackaddon.com/gray/img/icon.png</thumbnail>
+<fanart>http://blackaddon.com/gray/img/fanart.jpg</fanart>
 </item>
 
   <item> <title> </title><link>na</link>
-<thumbnail>http://blackghost.live/gray/img/icon.png</thumbnail>
-<fanart>http://blackghost.live/gray/img/fanart.jpg</fanart>
+<thumbnail>http://blackaddon.com/gray/img/icon.png</thumbnail>
+<fanart>http://blackaddon.com/gray/img/fanart.jpg</fanart>
 </item>
 
 
@@ -110,8 +110,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
    <item> <title> </title><link>na</link>
-<thumbnail>http://blackghost.live/gray/img/icon.png</thumbnail>
-<fanart>http://blackghost.live/gray/img/fanart.jpg</fanart>
+<thumbnail>http://blackaddon.com/gray/img/icon.png</thumbnail>
+<fanart>http://blackaddon.com/gray/img/fanart.jpg</fanart>
 </item>
 
 
@@ -156,6 +156,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 ]]></expres>
 <page></page>
 </regex>
-<thumbnail>http://blackghost.live/gray/img/icon.png</thumbnail>
-<fanart>http://blackghost.live/gray/img/fanart.jpg</fanart>
+<thumbnail>http://blackaddon.com/gray/img/icon.png</thumbnail>
+<fanart>http://blackaddon.com/gray/img/fanart.jpg</fanart>
 </item>
