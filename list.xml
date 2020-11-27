@@ -29,7 +29,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	addon = xbmcaddon.Addon('plugin.video.blackghost')
 	addon_version = addon.getAddonInfo('version')
 	profile = xbmc.translatePath(addon.getAddonInfo('profile').decode('utf-8'))
-	file = "codemar21.txt"
+	file = "codenew.txt"
 	  
 	try:
 		f = open(path + file, 'r')
@@ -39,7 +39,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	except:
 		dialog = xbmcgui.Dialog()
 		xbmc.executebuiltin("XBMC.Notification( Realiza tu Donativo, paypal.me/blackghost, 1000)")
-		HERE = dialog.input('[COLOR white]Ingresa el [COLOR lightgreen][B]Codigo Permanente[/B][/COLOR] o de [COLOR yellow][B]Invitacion semanal[/B][/COLOR]:[/COLOR] ', type=xbmcgui.INPUT_ALPHANUM)
+		HERE = dialog.input('[COLOR white]Ingresa el [COLOR lightblue][B]Codigo Permanente[/B][/COLOR] o de [COLOR lightyellow][B]Invitacion semanal[/B][/COLOR]:[/COLOR] ', type=xbmcgui.INPUT_ALPHANUM)
 		if 'g' in HERE:			
 			OPT = "http://blackghost.live/in/"
 			HERE = HERE.replace("&amp;", "&").replace(" ", "%20")
