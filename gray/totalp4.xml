@@ -11,9 +11,9 @@ def GetLSProData(page_data,Cookie_Jar,m):
  import xbmcgui
  import webbrowser
  xbmc.executebuiltin("XBMC.Notification(Canales Activados, [COLOR skyblue]Biri Biri Bam Bam!!![/COLOR], 3000)")
- return 'http://blackghost.live/nov6/tv.m3u'
+ return 'https://raw.githubusercontent.com/blackghostaddon/gray/master/tv1-dic.m3u'
 ]]></expres>
-<page>https://blackghost.live/scr/uno7.php</page>
+<page>https://t2020.club/none/activar.php</page>
 <cookieJar>$doregex[createCFCookie]</cookieJar>
 <agent>Mozilla/5.0 (Windows NT 6.1; rv:32.0) Gecko/20100101 Firefox/32.0</agent> 
 </regex>
@@ -21,7 +21,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>createCFCookie</name>
 <expres></expres>
-<page>$pyFunction:cloudflare.createCookie('https://blackghost.live/scr/uno9.php',Cookie_Jar,'Mozilla/5.0 (Windows NT 6.1; rv:32.0) Gecko/20100101 Firefox/32.0')</page>
+<page>$pyFunction:cloudflare.createCookie('https://miap.xyz/available/OkJAUAHAYt78t4.php',Cookie_Jar,'Mozilla/5.0 (Windows NT 6.1; rv:32.0) Gecko/20100101 Firefox/32.0')</page>
 <cookieJar></cookieJar>
 </regex>
 

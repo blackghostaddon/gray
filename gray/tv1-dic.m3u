@@ -1,0 +1,542 @@
+#EXTM3U
+
+#EXTINF:-1 tvg-logo="https://i.imgur.com/L0zLsl9.png" ,BLACKGHOST
+http://blackghost.live/TV/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/3akxcS6.png", http://paypal.me/blackghost
+http://blackghost.live/TV/serverkey.m3u8}
+#EXTINF:-1 tvg-logo="https://i.imgur.com/L0zLsl9.png" ,Si no te cargan
+http://blackghost.live/TV/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/L0zLsl9.png" ,Activa los canales en la App
+http://blackghost.live/TV/serverkey.m3u8
+
+
+
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/zhYNPhN/BABY-TV-IPTVFR.jpg" groupo-titulo="KIDS",Baby tv
+https://miap.xyz/11/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/zHhDwmc/Boomerang.jpg" groupo-titulo="KIDS",Boomerang
+https://miap.xyz/20/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/xzLfc7H/CARTOON-NETWORK.jpg" groupo-titulo="KIDS",Cartoon Network
+https://miap.xyz/24/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/9vCsk23/Discovery-kids.jpg" groupo-titulo="KIDS",Discovery Kids
+https://miap.xyz/36/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/fCZtnhg/Disney-Channel.jpg" groupo-titulo="KIDS",Disney Channel
+https://miap.xyz/44/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/1LdvjvS/disney-jr.jpg" groupo-titulo="KIDS",Disney JR
+https://miap.xyz/45/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/3fw5rVq/Disney-XD.jpg" groupo-titulo="KIDS",Disney XD
+https://miap.xyz/46/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/VHt7dPy/Natgeo-Kids.jpg" groupo-titulo="KIDS",Natgeo Kids
+https://miap.xyz/102/serverkey.m3u8
+#EXTINF:-1  tvg-logo="https://i.ibb.co/7NwLTsD/Nickelodeon.jpg" groupo-titulo="KIDS",Nickelodeon
+https://miap.xyz/104/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/pJg6krr/Nick2.jpg" groupo-titulo="KIDS",Nick 2
+https://miap.xyz/105/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/88VkhCV/Nick.jpg" groupo-titulo="KIDS",Nick JR
+https://miap.xyz/106/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Qc0H7KL/Tooncas.jpg" groupo-titulo="KIDS",Tooncast
+https://miap.xyz/129/serverkey.m3u8
+
+
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/44sPNz6/ANIMAL-PLANET-PTVFR.jpg" groupo-titulo="CULTURA",Animal Planet
+https://miap.xyz/7/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/NjDXVDR/DISCOVERY-CH.jpg" groupo-titulo="CULTURA",Discovery Channel
+https://miap.xyz/33/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/TBGGSCW/Discovery-Turbo.jpg" groupo-titulo="CULTURA",Discovery Turbo
+https://miap.xyz/42/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/BfyZBKN/Discovery-Theater.jpg" groupo-titulo="CULTURA",Discovery Theater
+https://miap.xyz/39/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/dm6LP29/DISCOVERY-SIEN.jpg" groupo-titulo="CULTURA",Discovery Sciences
+https://miap.xyz/38/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/ch2ZYsF/DISCOVERY-HH.jpg" groupo-titulo="CULTURA",Discovery H&H
+https://miap.xyz/35/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/xYLmdYv/Investigation-Discovery.jpg" groupo-titulo="CULTURA",Investigation Discovery
+https://miap.xyz/89/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/k5K4zhV/TLCIPTVFR.jpg" groupo-titulo="CULTURA",TLC
+https://miap.xyz/40/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/cgckk3C/history-IPTVFR-2018-09-05-10-53-17-UTC.jpg" groupo-titulo="CULTURA",History
+https://miap.xyz/83/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Pct56fs/H2-IPTVFR-2018-09-05-10-53-17-UTC.jpg" groupo-titulo="CULTURA",H2
+https://miap.xyz/93/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/dW4yXbn/Nat-Geo-Wild.jpg" groupo-titulo="CULTURA",Nat Geo Wild
+https://miap.xyz/103/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/9vd9PF1/National-Geograp.jpg" groupo-titulo="CULTURA",National Geographic
+https://miap.xyz/131/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/cw167v4/EL-GURMET.jpg" groupo-titulo="CULTURA",El Gourmet
+https://miap.xyz/49/serverkey.m3u8
+#EXTINF:-1 tvg-logo=".jpg" groupo-titulo="ENTRETENIMIENTO",Justicia TV
+https://miap.xyz/22/serverkey.m3u8
+
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/QrRCnrz/AMC.jpg" groupo-titulo="CINE Y SERIES",Amc
+https://miap.xyz/6/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/DRjDMwJ/a-amp-e.jpg" groupo-titulo="CINE Y SERIES",A&e
+https://miap.xyz/3/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Cht20hW/Warner-Channel.jpg" groupo-titulo="CINE Y SERIES",Warner channenel
+https://miap.xyz/167/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/C2f4bRr/FOX.jpg" groupo-titulo="CINE Y SERIES",Fox Channel
+https://miap.xyz/64/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/ZYFNymr/Universal-channel.jpg" groupo-titulo="CINE Y SERIES",Universal
+https://miap.xyz/138/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/N6DphvY/FOX-LIFE.jpg" groupo-titulo="CINE Y SERIES",Fox Life
+https://miap.xyz/65/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/qyvKB8G/AXN.jpg" groupo-titulo="CINE Y SERIES",Axn
+https://miap.xyz/9/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/5stn54k/SONY.jpg" groupo-titulo="CINE Y SERIES",Sony
+https://miap.xyz/113/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/DrVNhdy/Tnt.jpg" groupo-titulo="CINE Y SERIES",Tnt
+https://miap.xyz/127/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/XL3MB0M/SPACE.jpg" groupo-titulo="CINE Y SERIES",Space
+https://miap.xyz/114/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/zRgy97L/Studio-Universal.jpg" groupo-titulo="CINE Y SERIES",Studio Universal
+https://miap.xyz/115/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/jWCp9z8/FX-IP.jpg" groupo-titulo="CINE Y SERIES",Fx
+https://miap.xyz/56/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/C21DyYX/FXHD.jpg" groupo-titulo="CINE Y SERIES",Fx Movie
+https://miap.xyz/78/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/nBBrf9v/TBS.jpg" groupo-titulo="CINE Y SERIES",Tbs
+https://miap.xyz/119/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/zWdwvx0/TCM.jpg" groupo-titulo="CINE Y SERIES",Tcm
+https://miap.xyz/120/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/thdx4Hh/CINE-CANAL.jpg" groupo-titulo="CINE Y SERIES",Cine canal
+https://miap.xyz/22/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/nb8sVg6/CINEMAX.png" groupo-titulo="CINE Y SERIES",Cinemax
+https://miap.xyz/316/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/XkbYPqj/Paramount.jpg" groupo-titulo="CINE Y SERIES",Paramount
+https://miap.xyz/108/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/BVBCfBN/Comedy-Central.jpg" groupo-titulo="CINE Y SERIES",Comedy Central
+https://miap.xyz/123/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/nzQnqbq/cl-sundance-channel-m.png" groupo-titulo="CINE Y SERIES",Sundance tv
+https://miap.xyz/116/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/8MHWNXv/Cinelatino.jpg" groupo-titulo="CINE Y SERIES",Cine Latino
+https://miap.xyz/23/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/PmFm7mZ/TNT-SERIES.jpg" groupo-titulo="CINE Y SERIES",Tnt Series
+https://miap.xyz/128/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/RDDrkc4/FOX-ACTION.jpg" groupo-titulo="CINE Y SERIES",Fox Premium Action
+https://miap.xyz/146/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/rwRhvNV/FOX-CINEMA.jpg" groupo-titulo="CINE Y SERIES",Fox Premium Cinema
+https://miap.xyz/148/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/rwRhvNV/FOX-CINEMA.jpg" groupo-titulo="CINE Y SERIES",Fox Premium Cinema sub
+https://miap.xyz/144/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/nCzFtNW/fox-comedy.jpg" groupo-titulo="CINE Y SERIES",Fox Premium Comedy
+https://miap.xyz/150/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/tsjrQQm/FOX-CLASSIC-IPTVFR.jpg" groupo-titulo="CINE Y SERIES",Fox Premium Classics
+https://miap.xyz/149/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/9bsHPy5/fox-family.jpghttps://i.ibb.co/9bsHPy5/fox-family.jpg"groupo-titulo="CINE Y SERIES",Fox Premium Family
+https://miap.xyz/151/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/dky8jRH/fox-series.jpg" groupo-titulo="CINE Y SERIES",Fox Premium Series
+https://miap.xyz/153/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/dky8jRH/fox-series.jpg" groupo-titulo="CINE Y SERIES",Fox Premium Series SUB
+https://miap.xyz/74/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Sd5rT28/fox-movies.jpg" groupo-titulo="CINE Y SERIES",Fox Premium Movies
+https://miap.xyz/152/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/547dCNk/GOLDEN.jpg" groupo-titulo="CINE Y SERIES",Golden
+https://miap.xyz/79/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/547dCNk/GOLDEN.jpg" groupo-titulo="CINE Y SERIES",Golden Premier
+https://miap.xyz/80/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/7jB4d7C/hbo.jpg" groupo-titulo="CINE Y SERIES",HBO
+https://miap.xyz/155/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/7jB4d7C/hbo.jpg" groupo-titulo="CINE Y SERIES",HBO SUB
+https://miap.xyz/162/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/CHd4GZ3/hbo2.jpg" groupo-titulo="CINE Y SERIES",HBO 2
+https://miap.xyz/156/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/P5hWtZW/HBO-PLUS-IPTVFR.jpg" groupo-titulo="CINE Y SERIES",HBO plus
+https://miap.xyz/159/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/8Xfjmtm/HBO-Family.jpg" groupo-titulo="CINE Y SERIES",HBO Family
+https://miap.xyz/157/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/7jB4d7C/hbo.jpg" groupo-titulo="CINE Y SERIES",HBO Signature
+https://miap.xyz/161/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/mCnTRrK/max-prime.jpg" groupo-titulo="CINE Y SERIES",HBO Mundi
+https://miap.xyz/158/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/w4XFprt/MAX-IPTVFR.jpg" groupo-titulo="CINE Y SERIES",HBO Pop
+https://miap.xyz/160/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/w4XFprt/MAX-IPTVFR.jpg" groupo-titulo="CINE Y SERIES",HBO EXTREME
+https://miap.xyz/163/serverkey.m3u8
+
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/tDbjmNX/AZ-CORA.jpg" groupo-titulo="ENTRETENIMIENTO",Az Corazon
+https://miap.xyz/4/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/K9FqCPZ/LIFETIME.jpg" groupo-titulo="ENTRETENIMIENTO",Lifetime
+https://miap.xyz/92/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/txXLPPC/MAS-CHIC.jpg" groupo-titulo="ENTRETENIMIENTO",Mas Chic
+https://miap.xyz/93/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/MPG6FJd/AZ-MUND.jpg" groupo-titulo="ENTRETENIMIENTO",Az Mundo
+https://miap.xyz/5/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/dmXRZHr/HOLATV.jpg" groupo-titulo="ENTRETENIMIENTO",Hola TV
+https://miap.xyz/84/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/51wjY61/logo-multimedios-2.png" groupo-titulo="ENTRETENIMIENTO",Multimedios
+https://miap.xyz/100/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/kymB7WM/telemundo.jpg" groupo-titulo="ENTRETENIMIENTO",Telemundo
+https://miap.xyz/166/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/FzGc99Y/DHEI.jpg" groupo-titulo="ENTRETENIMIENTO",DHE
+https://miap.xyz/34/serverkey.m3u8
+
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/jVXwWrx/Direc-TV-Sport.jpg" groupo-titulo="DEPORTES",Directv Sports
+https://miap.xyz/170/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/3CvW4td/Direc-TV-Sports-2.jpg" groupo-titulo="DEPORTES",Directv sports-2
+https://miap.xyz/169/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Kyqmwzm/FOX-Sports.jpg" groupo-titulo="DEPORTES",Fox Sports 1 [latm]
+https://miap.xyz/70/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/QPXNN31/Fox-sports-2.jpg" groupo-titulo="DEPORTES",Fox Sports 2 [latm]
+https://miap.xyz/71/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/QPXNN31/Fox-sports-2.jpg" groupo-titulo="DEPORTES",Fox Sports 3 [latm]
+https://miap.xyz/72/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/hR12DVr/FOX-Sports-MEXICO.jpg" groupo-titulo="DEPORTES",Fox Sports 1 [MEX]
+https://miap.xyz/67/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/s3jL7db/Fox-sports-2-MEXICO.jpg" groupo-titulo="DEPORTES",Fox Sports 2 [MEX]
+https://miap.xyz/68/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/37NkJdN/Fox-sports-3-MEXICO.jpg" groupo-titulo="DEPORTES",Fox Sports 3 [MEX]
+https://miap.xyz/69/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/x7BC4yr/ESPN.jpg" groupo-titulo="DEPORTES",Espn 1 (latm)
+https://miap.xyz/57/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/RDL2s6z/ESPN-2.jpg" groupo-titulo="DEPORTES",Espn 2 (latm)
+https://miap.xyz/58/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/P5FM3cy/espn3.jpg" groupo-titulo="DEPORTES",Espn 3 (latm)
+https://miap.xyz/59/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Mn6RsTZ/ESPN-PLUS.jpg" groupo-titulo="DEPORTES",Espn Plus (latm)
+https://miap.xyz/54/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/8DKpDq1/ESPN-MX.jpg" groupo-titulo="DEPORTES",Espn (MEX)
+https://miap.xyz/51/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/RDL2s6z/ESPN-2.jpg" groupo-titulo="DEPORTES",Espn 2 (MEX)
+https://miap.xyz/52/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/P5FM3cy/espn3.jpg" groupo-titulo="DEPORTES",Espn 3 (MEX)
+https://miap.xyz/53/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/S5QNysK/TDN-UNIVI.jpg" groupo-titulo="DEPORTES",Univision TUDN
+https://miap.xyz/131/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/MfHFy9Q/CLARO-SPORTS.jpg" groupo-titulo="DEPORTES",Claro Sports Latinoamerica
+https://miap.xyz/31/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://www.golfchannel.com/sites/default/files/new_golf_channel_logo_304.jpg" groupo-titulo="DEPORTES",Golf Channel
+https://miap.xyz/81/serverkey.m3u8
+
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/PDH7DhW/CNN-IPTVFR-2018-09-05-10-53-17-UTC.jpg" groupo-titulo="NOTICIAS",Cnn espanol
+https://miap.xyz/14/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/61626QC/cnn-internacional-iptv.jpg" groupo-titulo="NOTICIAS",Cnn internacional [USA]
+https://miap.xyz/15/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/fSRX1nw/GTo-Mw-YPgp71-X-kkdyydnl-Hr9-IVP1ls4l-NC8l-TPi-NU6mz-Fvd-U3-S7-Bp7z-EKd-JH4-PQ7r-Y.png" groupo-titulo="NOTICIAS",ADN 40
+https://miap.xyz/148/serverkey.m3u8
+
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/d6JRTP3/200px-MTV-Logo-svg.png" groupo-titulo="MUSICA",MTV
+https://miap.xyz/97/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/yYmNVpn/1200px-MTV-Live-svg.png" groupo-titulo="MUSICA",MTV Live
+https://miap.xyz/99/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/YNcfn34/ar-mtv-hits-m.png" groupo-titulo="MUSICA",MTV Hits
+https://miap.xyz/98/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://www.comteco.com.bo/img/upload/canales/htv.png" groupo-titulo="MUSICA",HTV
+https://miap.xyz/164/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/0fGkNRC/VH1.jpg" groupo-titulo="MUSICA",Vh1
+https://miap.xyz/140/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/CnyQC8x/VH1-CLASSIC.jpg" groupo-titulo="MUSICA",Vh1 Classics
+https://miap.xyz/104/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/wC1cy7m/CONCERT.jpg" groupo-titulo="MUSICA",Concert Channel
+https://miap.xyz/143/serverkey.m3u8
+
+
+#EXTINF:-1 tvg-id="" tvg-name="24/7 | Alf" tvg-logo="https://i.ibb.co/nffZLsM/alf.jpg" groupo-titulo="24/7",Alf
+https://miap.xyz/278/serverkey.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="24/7 | Animaniacs" tvg-logo="https://i.ibb.co/TBM0WnG/animaniacs.png" groupo-titulo="24/7",Animaniacs
+https://miap.xyz/279/serverkey.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="24/7 | Bob Sponja" tvg-logo="https://i.ibb.co/D97KcxT/Bob-esponja-logotipo.png" groupo-titulo="24/7",Bob Sponja
+https://miap.xyz/280/serverkey.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="24/7 | Cantinflas" tvg-logo="https://i.ibb.co/X3fwsY5/cantinflas.jpg" groupo-titulo="24/7",Cantinflas
+https://miap.xyz/281/serverkey.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="24/7 | Chespirito" tvg-logo="https://i.ibb.co/Z2R10tm/chespitito.webp" groupo-titulo="24/7",Chespirito
+https://miap.xyz/282/serverkey.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="24/7 | Correcaminos" tvg-logo="https://i.ibb.co/rtRHtBv/Correcaminos.gif" groupo-titulo="24/7",Correcaminos
+https://miap.xyz/283/serverkey.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="24/7 | Dr House" tvg-logo="https://i.ibb.co/tzK4pnL/dr-house.jpg" groupo-titulo="24/7",Dr House
+https://miap.xyz/284/serverkey.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="24/7 | Dragon Ball GT" tvg-logo="https://i.ibb.co/dr2Ktk0/dragon-ball-gt.jpg" groupo-titulo="24/7",Dragon Ball GT
+https://miap.xyz/285/serverkey.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="24/7 | Dragon Ball" tvg-logo="https://i.ibb.co/k5j2TXC/Dragon-Ball.png" groupo-titulo="24/7",Dragon Ball
+https://miap.xyz/286/serverkey.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="24/7 | Dragon Ball SUPER" tvg-logo="https://i.ibb.co/zS94rtL/untitled-1-77.jpg" groupo-titulo="24/7",Dragon Ball SUPER
+https://miap.xyz/287/serverkey.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="24/7 | Dragon Ball Z" tvg-logo="https://i.ibb.co/FmWRNrg/dragon-ball-z.png" groupo-titulo="24/7",Dragon Ball Z
+https://miap.xyz/288/serverkey.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="24/7 | El chavo del 8" tvg-logo="https://i.ibb.co/72hD6vr/el-chavo-8.png" groupo-titulo="24/7",El chavo del 8
+https://miap.xyz/289/serverkey.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="24/7 | Futurama" tvg-logo="https://i.ibb.co/bL26qMQ/futarama.jpg" groupo-titulo="24/7",Futurama
+https://miap.xyz/291/serverkey.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="24/7 | La Pantera Rosa" tvg-logo="https://i.ibb.co/QkGf0Rs/325e4c7dbe8bcc1.png" groupo-titulo="24/7",La Pantera Rosa
+https://miap.xyz/292/serverkey.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="24/7 | La Teoria Del Big Bang" tvg-logo="https://i.ibb.co/wBr51DW/f67e6ad05f9bf34290e6048e74e54d1c.jpg" groupo-titulo="24/7",La Teoria Del Big Bang
+https://miap.xyz/293/serverkey.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="24/7 | Los 3 chiflados" tvg-logo="https://i.ibb.co/p0kpTS8/Los-tres-chiflados-Serie-de-TV-609417213-large.jpg" groupo-titulo="24/7",Los 3 chiflados
+https://miap.xyz/295/serverkey.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="24/7 | Los Caballeros del Zodiaco" tvg-logo="https://i.ibb.co/KrhGZkF/332-3323318-thumb-image-logo-de-los-caballeros-del-zodiaco.png" groupo-titulo="24/7",Los Caballeros del Zodiaco
+https://miap.xyz/297/serverkey.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="24/7 | Los Simpson 2" tvg-logo="https://i.ibb.co/tQcwBgK/122274696f1c7a37438e3452c79fb81d.jpg" groupo-titulo="24/7",Los Simpson 2
+https://miap.xyz/299/serverkey.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="24/7 | Los Simpson" tvg-logo="https://i.ibb.co/tQcwBgK/122274696f1c7a37438e3452c79fb81d.jpg" groupo-titulo="24/7",Los Simpson
+https://miap.xyz/300/serverkey.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="24/7 | Malcolm El De En Medio" tvg-logo="https://i.ibb.co/f8rB62f/AL.png" groupo-titulo="24/7",Malcolm El De En Medio
+https://miap.xyz/301/serverkey.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="24/7 | Mr. Bean" tvg-logo="https://i.ibb.co/GcRNWCC/9-QUdhxw-VT94-Op-Pp-Gfohcs-OZ9-RNnseb-I-KJm-O0w-Z02me1-Ip-T3e-Gk-WMJHBa-HI-Pt-HX5-Tggp-G9-Zs-Ivc-I0.jpg" groupo-titulo="24/7",Mr. Bean
+https://miap.xyz/302/serverkey.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="24/7 | Naruto" tvg-logo="https://i.ibb.co/m9ZMSdw/3f0d1afe64a74343c0f173faec9df8e0.jpg" groupo-titulo="24/7",Naruto
+https://miap.xyz/303/serverkey.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="24/7 | Padre De Familia" tvg-logo="https://i.ibb.co/yQv0bwJ/family-logo.jpg" groupo-titulo="24/7",Padre De Familia
+https://miap.xyz/304/serverkey.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="24/7 | Peliculas 2018" tvg-logo="https://i.ibb.co/Kjdj5HW/vector-cinema-icons-concept.jpg" groupo-titulo="24/7",Peliculas 2018
+https://miap.xyz/305/serverkey.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="24/7 | Pokemon" tvg-logo="https://i.ibb.co/0h9W3sQ/Pokemon-Logo.jpg" groupo-titulo="24/7",Pokemon
+https://miap.xyz/308/serverkey.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="24/7 | Smallville" tvg-logo="https://i.ibb.co/bm3DVCc/logo-smallville.jpg" groupo-titulo="24/7",Smallville
+https://miap.xyz/309/serverkey.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="24/7 | South Park" tvg-logo="https://i.ibb.co/nkjmRSy/1200px-South-park-sign-svg.png" groupo-titulo="24/7",South Park
+https://miap.xyz/310/serverkey.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="24/7 | Thundercats" tvg-logo="https://i.ibb.co/gFngXZZ/Thundercats-Logo-large.jpg" groupo-titulo="24/7",Thundercats
+https://miap.xyz/311/serverkey.m3u8
+
+
+
+#EXTINF:-1 tvg-logo="https://cdn.mitvstatic.com/channels/las-estrellas-m.png" groupo-titulo="Mexico",Las Estrellas
+https://miap.xyz/90/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e8/Foro_TV_2016_NewLogo.jpg" groupo-titulo="Mexico",Foro tv
+https://miap.xyz/149/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/0/07/Logotipo-Canal-5-M%C3%A9xico.png" groupo-titulo="Mexico",Canal 5
+https://miap.xyz/21/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://www.mimorelia.com/wp-content/uploads/2019/01/noticias/24/azteca.jpg" groupo-titulo="Mexico",Azteca 7
+https://miap.xyz/147/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://startvmexico.com/wp-content/uploads/2018/10/nueve.png" groupo-titulo="Mexico",Nu9ve
+https://miap.xyz/143/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://miratv.club/miratvnew/private/upload/az%20corazon.png" groupo-titulo="Mexico",Az Corazon
+https://miap.xyz/4/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://condista.com/wp-content/uploads/2018/08/az-clic-2.png" groupo-titulo="Mexico",Az Clic
+https://miap.xyz/142/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://200.77.160.48:8090/izzi/v3/img/dummy-img/channels/AZTECA_UNO_HD.png" groupo-titulo="Mexico",Az uno
+https://miap.xyz/146/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://miratv.club/miratvnew/private/upload/AZMUNDO.jpg" groupo-titulo="Mexico",Az Mundo
+https://miap.xyz/5/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://www.cablemaster.com.mx/images/Logos/adn40.jpg" groupo-titulo="Mexico",ADN 40
+https://miap.xyz/148/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://miratv.club/miratvnew/private/upload/IMAGENTELE.png" groupo-titulo="Mexico",Imagen TV
+#EXTINF:-1 tvg-logo="https://miratv.club/miratvnew/private/upload/rve.png" groupo-titulo="Mexico",TVE
+https://miap.xyz/109/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://empresasmonterrey.com/wp-content/uploads/2015/06/TELEVISA-MONTERREY.jpg" groupo-titulo="Mexico",Televisa monterrey
+https://miap.xyz/152/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://sport-tv-guide.live/images/tv-station-multimedios-tv-1152.png" groupo-titulo="Mexico",Multimedios
+https://miap.xyz/150/serverkey.m3u8
+
+
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/TeleSUR-Logo.svg/240px-TeleSUR-Logo.svg.png" groupo-titulo="Venezuela",TeleSur 
+https://d2ajt1gpdtnw25.cloudfront.net/mbliveMain/480p/chunklist/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://corazonllanero.com/main/static/img/isotipocoll.png" groupo-titulo="Venezuela",Corazon Llanero
+https://5.189.191.70:1935/corazonllanerotvweb/corazonllanerotvweb/chunklis/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://promar.tv/wp-content/uploads/2016/09/promar-logo.png" groupo-titulo="Venezuela",Promar Tv
+https://vcp1.myplaytv.com/promar/promar/chunklist/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://lateletuya.com/wp-content/uploads/2019/09/logoTLT_horizontal_2019_blanco.png" groupo-titulo="Venezuela",La tele tuya
+https://backup9.lateletuya.com/TeLeTeve/stream.stream/playlist/serverkey.m3u8
+
+
+
+#EXTINF:-1 tvg-id="" tvg-name="xx" tvg-logo="https://i.ibb.co/2t2ZdXs/TELE-ARGE.jpg" groupo-titulo="Argentina",Television Publica
+https://miap.xyz/210/serverkey.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="xx" tvg-logo="https://i.ibb.co/5F9BykT/ar-telefe-m.png" groupo-titulo="Argentina",Telefe
+https://miap.xyz/121/serverkey.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="xx" tvg-logo="https://i.ibb.co/rtV1yvC/ENCUENTRO.jpg" groupo-titulo="Argentina",Todo Noticias TN
+https://miap.xyz/221/serverkey.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="xx" tvg-logo="https://i.ibb.co/p4VztQk/ar-el-trece-m.png" groupo-titulo="Argentina",El trece
+https://miap.xyz/213/serverkey.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="xx" tvg-logo="https://i.ibb.co/tPWH422/NUEVE.jpg" groupo-titulo="Argentina",El Nueve
+https://miap.xyz/211/serverkey.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="xx" tvg-logo="https://i.ibb.co/DgTK0PR/CRONICATV.jpg" groupo-titulo="Argentina",Trece Max
+https://miap.xyz/222/serverkey.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="xx" tvg-logo="https://i.ibb.co/R2GzXHM/Telemax.png" groupo-titulo="Argentina",Telemax
+https://miap.xyz/223/serverkey.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="xx" tvg-logo="https://i.ibb.co/ngxxXzP/CINE.jpg" groupo-titulo="Argentina",CINE.AR
+https://miap.xyz/219/serverkey.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="xx" tvg-logo="https://i.ibb.co/yfJXRWy/247-Noticias.png" groupo-titulo="Argentina",24/7 Noticias
+https://miap.xyz/226/serverkey.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="xx" tvg-logo="https://i.ibb.co/vqJRhYN/c5n-tv.jpg" groupo-titulo="Argentina",C5N
+https://miap.xyz/207/serverkey.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="xx" tvg-logo="https://i.ibb.co/d7yLKNc/america.jpg" groupo-titulo="Argentina",America TV
+https://miap.xyz/209/serverkey.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="xx" tvg-logo="https://i.ibb.co/pXZt7rd/A24.png" groupo-titulo="Argentina",A24
+https://miap.xyz/208/serverkey.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="xx" tvg-logo="https://i.ibb.co/QrZq81j/El-Garage-TV.png" groupo-titulo="Argentina",El Garage TV
+https://miap.xyz/225/serverkey.m3u8
+#EXTINF:-1, tvg-id="" tvg-name="xx" tvg-logo="https://i.ibb.co/kx9yJtg/Argentinisima.jpg" groupo-titulo="Argentina",Argentinisima
+https://miap.xyz/227/serverkey.m3u8
+
+
+#EXTINF:-1 tvg-id="" tvg-name="xx" tvg-logo="https://imgur.com/gnhELOi.png" groupo-titulo="Colombia",RedTv
+https://infored.lcdn.claro.net.co/Content/hls_clear/Live/Channel(REDTVHD)/index/serverkey.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="xx" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/d/d4/Trece2017.png" groupo-titulo="Colombia",Trece
+https://miap.xyz/191/serverkey.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="xx" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/0/05/CanalRCNNuestrateleInternacional2019.png" groupo-titulo="Colombia",RCN 2
+https://miap.xyz/241/serverkey.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="xx" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/0/05/CanalRCNNuestrateleInternacional2019.png" groupo-titulo="Colombia",RCN
+https://miap.xyz/121/serverkey.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="xx" tvg-logo="https://venezolanossiempre.files.wordpress.com/2018/04/f5b96-logoeltiempo.jpg" groupo-titulo="Colombia",El Tiempo
+https://miap.xyz/238/serverkey.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="xx" tvg-logo="https://i.ibb.co/qy7F0zN/CARACOL-INT.jpg" groupo-titulo="Colombia",Caracol 2
+https://miap.xyz/235/serverkey.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="xx" tvg-logo="https://i.ibb.co/JjfNJBR/caracol-tv.jpg" groupo-titulo="Colombia",Caracol
+https://miap.xyz/19/serverkey.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="xx" tvg-logo="https://oer2go.org:81/wikipedia_es_all_2016-02/I/m/CTV_LOGO.png" groupo-titulo="Colombia",Cantinazo
+https://miap.xyz/234/serverkey.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="xx" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Channel_1_%28Colombia%29_-_2017_logo.svg/1200px-Channel_1_%28Colombia%29_-_2017_logo.svg.png" groupo-titulo="Colombia",Canal Uno
+https://miap.xyz/233/serverkey.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="xx" tvg-logo="https://lh3.googleusercontent.com/-x7zN4RKXaR4/VhAVobXrg0I/AAAAAAAAByc/RNxc57Z-ZM8/s300-Ic42/canal-capital-en-vivo.png" groupo-titulo="Colombia",Canal Capital
+https://miap.xyz/230/serverkey.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="xx" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/City_tv_Bogot%C3%A1_logo.svg/1200px-City_tv_Bogot%C3%A1_logo.svg.png" groupo-titulo="Colombia",City TV.
+https://miap.xyz/26/serverkey.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="xx" tvg-logo="" groupo-titulo="Colombia",City Tv
+https://miap.xyz/236/serverkey.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="xx" tvg-logo="" groupo-titulo="Colombia",Cosmovision
+https://miap.xyz/237/serverkey.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="xx" tvg-logo="" groupo-titulo="Colombia",La Kalle
+https://miap.xyz/239/serverkey.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="xx" tvg-logo="" groupo-titulo="Colombia",NTN24
+https://miap.xyz/240/serverkey.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="xx" tvg-logo="" groupo-titulo="Colombia",Senal Colombia
+https://miap.xyz/242/serverkey.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="xx" tvg-logo="" groupo-titulo="Colombia",Tacho Pistacho
+https://miap.xyz/243/serverkey.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="xx" tvg-logo="" groupo-titulo="Colombia",TeleAntioquia
+https://miap.xyz/244/serverkey.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="xx" tvg-logo="" groupo-titulo="Colombia",Telecafe
+https://miap.xyz/245/serverkey.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="xx" tvg-logo="" groupo-titulo="Colombia",Telecaribe
+https://miap.xyz/246/serverkey.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="xx" tvg-logo="" groupo-titulo="Colombia",Telemedellin
+https://miap.xyz/247/serverkey.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="xx" tvg-logo="" groupo-titulo="Colombia",Telepacifico
+https://miap.xyz/248/serverkey.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="xx" tvg-logo="" groupo-titulo="Colombia",Canal Trece
+https://miap.xyz/249/serverkey.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="xx" tvg-logo="" groupo-titulo="Colombia",Tvgro
+https://miap.xyz/250/serverkey.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="xx" tvg-logo="" groupo-titulo="Colombia",Teleamiga
+https://miap.xyz/251/serverkey.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="xx" tvg-logo="" groupo-titulo="Colombia",Televid
+https://miap.xyz/252/serverkey.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="xx" tvglogo="" groupo-titulo="Colombia",Canal Institucional
+https://miap.xyz/231/serverkey.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="xx" tvg-logo="" groupo-titulo="Colombia",Canal Tro
+https://miap.xyz/232/serverkey.m3u8
+
+
+
+#EXTINF:-1 tvg-id="" tvg-name="xx" tvg-logo="https://i.ibb.co/smvN6yQ/TVPRU.png" groupo-titulo="Peru",Tv Peru
+https://miap.xyz/182/serverkey.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="xx" tvg-logo="https://i.ibb.co/yWBfSvr/Peru-MAGICO.jpg" groupo-titulo="Peru",Peru Magico
+https://miap.xyz/176/serverkey.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="xx" tvg-logo="https://i.ibb.co/WDP6HZH/PANAMERICANO.jpg" groupo-titulo="Peru",Panamericana
+https://miap.xyz/172/serverkey.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="xx" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/7/74/Frecuencia_Latina_HD.jpg" groupo-titulo="Peru",Frecuencia Latina
+https://miap.xyz/171/serverkey.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="xx" tvg-logo="https://i.ibb.co/NFXTMpX/AMERICA-TV-Peru.png" groupo-titulo="Peru",America TV
+https://miap.xyz/169/serverkey.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="xx" tvg-logo="https://i.ibb.co/ccy79wk/ATVPeru.png" groupo-titulo="Peru",ATV
+https://miap.xyz/170/serverkey.m3u8
+
+
+
+#EXTINF:-1 tvg-id="" tvg-name="xx" tvg-logo="https://i.ibb.co/Zh523G9/Movistar-Plus.png" groupo-titulo="Peru",Movistar Plus
+https://miap.xyz/175/serverkey.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="xx" tvg-logo="https://i.ibb.co/nC1PYnY/Ctc-Cusco.png" groupo-titulo="Peru",Ctc Cusco
+https://miap.xyz/178/serverkey.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="xx" tvg-logo="https://i.ibb.co/kmf9y61/Ovacion.png" groupo-titulo="Peru",Ovacion
+https://miap.xyz/179/serverkey.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="xx" tvg-logo="https://i.ibb.co/m8g6YHv/Antares-TV.jpg" groupo-titulo="Peru",Antares TV
+https://miap.xyz/180/serverkey.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="xx" tvg-logo="https://i.ibb.co/tmCFDVt/TV-Peru-Noticias.jpg" groupo-titulo="Peru",TV Peru Noticias
+https://miap.xyz/183/serverkey.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="xx" tvg-logo="https://i.ibb.co/Nyrf5sv/La-Tele.jpg" groupo-titulo="Peru",La Tele
+https://miap.xyz/184/serverkey.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="xx" tvg-logo="https://i.ibb.co/DLwBLcB/Canal-IPE.jpg" groupo-titulo="Peru",Canal IPE
+https://miap.xyz/185/serverkey.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="xx" tvg-logo="https://i.ibb.co/jHGBLqX/Canal-N.png" groupo-titulo="Peru",Canal N
+https://miap.xyz/187/serverkey.m3u8
+
+
+
+#EXTINF:-1, tvg-logo="https://i.ibb.co/qJTRdDB/13C.png" groupo-titulo="Chile",13C
+https://miap.xyz/188/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/RhM0qRd/13i.png" groupo-titulo="Chile",13i
+https://miap.xyz/189/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/7CGtDXf/24-Horas.png" groupo-titulo="Chile",24 Horas
+https://miap.xyz/190/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/7jT5q53/Teletrak.jpg" groupo-titulo="Chile",Teletrak HD
+https://miap.xyz/200/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/4VrcHBx/Chilevision.jpg" groupo-titulo="Chile",Chilevision
+https://miap.xyz/201/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/ZTgTwRM/La-Red.png" groupo-titulo="Chile",La Red
+https://miap.xyz/202/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Yc4Vfsp/Mega.jpg" groupo-titulo="Chile",Mega
+https://miap.xyz/203/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/mv50381/TVN.jpg" groupo-titulo="Chile",TVN
+https://miap.xyz/205/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/znzLp4p/CNN.jpg" groupo-titulo="Chile",CNN
+https://miap.xyz/206/serverkey.m3u8
+
+
+
+#EXTINF:-1 tvg-logo="" groupo-titulo="Ecuador",Canal Uno
+https://miap.xyz/156/serverkey.m3u8
+#EXTINF:-1 tvg-logo="" groupo-titulo="Ecuador",Canela Tv
+https://miap.xyz/157/serverkey.m3u8
+#EXTINF:-1 tvg-logo="" groupo-titulo="Ecuador",Ecuador TV
+https://miap.xyz/158/serverkey.m3u8
+#EXTINF:-1 tvg-logo="" groupo-titulo="Ecuador",Ecuavisa
+https://miap.xyz/159/serverkey.m3u8
+#EXTINF:-1 tvg-logo="" groupo-titulo="Ecuador",Gamavision
+https://miap.xyz/160/serverkey.m3u8
+#EXTINF:-1 tvg-logo="" groupo-titulo="Ecuador",Gol TV
+https://miap.xyz/161/serverkey.m3u8
+#EXTINF:-1 tvg-logo="" groupo-titulo="Ecuador",Oromar
+https://miap.xyz/162/serverkey.m3u8
+#EXTINF:-1 tvg-logo="" groupo-titulo="Ecuador",Rts
+https://miap.xyz/163/serverkey.m3u8
+#EXTINF:-1 tvg-logo="" groupo-titulo="Ecuador",Tc Television
+https://miap.xyz/164/serverkey.m3u8
+#EXTINF:-1 tvg-logo="" groupo-titulo="Ecuador",Teleamazonas
+https://miap.xyz/165/serverkey.m3u8
+#EXTINF:-1 tvg-logo="" groupo-titulo="Ecuador",Televicentro
+https://miap.xyz/166/serverkey.m3u8
+#EXTINF:-1 tvg-logo="" groupo-titulo="Ecuador",ECDF
+https://miap.xyz/167/serverkey.m3u8
+
+
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/02WHdCW/Wipr-Canal-6.png" groupo-titulo="Puerto Rico",Wipr Canal 6
+https://miap.xyz/269/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/k3XKjZ2/MEGATV.jpg" groupo-titulo="Puerto Rico",Mega TV
+https://miap.xyz/270/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/st6nDtq/Telemundo-Puerto-Rico.png" groupo-titulo="Puerto Rico",Telemundo
+https://miap.xyz/271/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/JnF1nG5/UNIVISION-PUERTO-RICO.jpg" groupo-titulo="Puerto Rico",Univision
+https://miap.xyz/105/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/7SjG0wc/WAPA-PUERTORICO.jpg" groupo-titulo="Puerto Rico",Wapa
+https://miap.xyz/273/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Kz8BJrk/WAPA-2-PUERTO-RICO.jpg" groupo-titulo="Puerto Rico",Wapa 2
+https://miap.xyz/274/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/J7Z3Gts/WAPA-AMERICA.jpg" groupo-titulo="Puerto Rico",Wapa America
+https://miap.xyz/275/serverkey.m3u8
+
+
+
+#EXTINF:-1 tvg-logo="https://i.ibb.co/GpXGh18/RPC.jpg" groupo-titulo="Paraguay",RPC
+https://miap.xyz/263/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/qWpsJcM/Telefuturo.jpg" groupo-titulo="Paraguay",Telefuturo
+https://miap.xyz/264/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/M7nxPFj/Tigo-Sports.jpg" groupo-titulo="Paraguay",Tigo Sports
+https://miap.xyz/266/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/3R4Sdz7/Tigo-Sports-PLUS.jpg" groupo-titulo="Paraguay",Tigo Sports Plus
+https://miap.xyz/267/serverkey.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/RjnBz97/Unicanal.jpg" groupo-titulo="Paraguay",Unicanal
+https://miap.xyz/268/serverkey.m3u8
+
+
+
+
+
+
+
