@@ -4,7 +4,7 @@
 
 
 
-<item><title>[B][UPPERCASE] [COLOR deepskyblue]ingresar al addon[/COLOR][/B] [/UPPERCASE]</title>
+<item><title>[B][UPPERCASE] [COLOR deepskyblue]ingresar al Addon[/COLOR][/B] [/UPPERCASE]</title>
 
 
 <info>
@@ -41,9 +41,9 @@ def GetLSProData(page_data,Cookie_Jar,m):
 		xbmc.executebuiltin("XBMC.Notification( Realiza tu Donativo, paypal.me/blackghost, 1000)")
 		HERE = dialog.input('[COLOR white]Ingresa el [COLOR lightblue][B]Codigo Permanente[/B][/COLOR] o de [COLOR lightyellow][B]Invitacion semanal[/B][/COLOR]:[/COLOR] ', type=xbmcgui.INPUT_ALPHANUM)
 		if 'g' in HERE:			
-			OPT = "http://blackaddon.com/in/"
+			OPT = "https://adryanlist.blogspot.com/p/"
 			HERE = HERE.replace("&amp;", "&").replace(" ", "%20")
-			HERE = OPT + HERE + ".xml"
+			HERE = OPT + HERE + ".html"
 			f = open(path + file, 'w')
 			f.write(HERE)
 			f.close()
@@ -51,9 +51,9 @@ def GetLSProData(page_data,Cookie_Jar,m):
 			xbmc.executebuiltin(savednotif)
 			return HERE	  
 		else:
-			OPT = "http://blackaddon.com/in/"
+			OPT = "https://adryanlist.blogspot.com/p/"
 			HERE = HERE.replace("&amp;", "&").replace(" ", "%20")
-			HERE = OPT + HERE + ".xml"
+			HERE = OPT + HERE + ".html"
 			savednotif = "XBMC.Notification( [COLOR blue]Cargando Codigo...[/COLOR], Gracias!, 1000)"
 			xbmc.executebuiltin(savednotif)
 			return HERE
