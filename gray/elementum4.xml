@@ -1,0 +1,2535 @@
+ <SetViewMode>55</SetViewMode>
+ <!-- BUSCADORES  TOP-->
+
+
+ 
+ 
+ <item> <!--  mitorrent latino   -->
+<title>     [B] [COLOR skyblue]BUSCADOR[/COLOR] [/B]  MiTorrents Latinos</title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+
+<title>[makelist.param4] [[makelist.param1]]</title>
+<link>plugin://plugin.video.elementum/play?uri=$doregex[magnet]</link>
+<thumbnail>[makelist.param3]</thumbnail>
+<regex>
+<name>magnet</name>
+<expres>href="(magnet.*?)"</expres>
+<page>[makelist.param2]</page>
+</regex> 
+]]></listrepeat>
+<expres><![CDATA[lg-4\s*calidad-(.*?)".*?\n.*?href="(.*?)".*?\n.*?\n.*?src="(.*?)".*?Descargar\s*(.*?)"]]></expres>
+<page>https://mitorrent.net/search-result/?search_query=$doregex[buscaralgo]</page>
+</regex>
+<regex>
+<name>buscaralgo</name>
+<expres><![CDATA[#$pyFunction
+import xbmc
+import xbmcaddon
+import xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+    dialog = xbmcgui.Dialog()
+    d = dialog.input('Buscar Pelicula: ejemplo: Batman', type=xbmcgui.INPUT_ALPHANUM).replace(" ", "+")
+    return d
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+</item>
+  
+<item><!--   todopeliculas -->
+<title>     [B] [COLOR skyblue]BUSCADOR[/COLOR] [/B]  Todo-Peliculas</title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param1]</title>
+<link>plugin://plugin.video.elementum/play?uri=$doregex[magnet]</link>
+<thumbnail>[makelist.param3]</thumbnail>
+<regex>
+<name>magnet</name>
+<expres>window\.open\(\'(.*?)\'</expres>
+<page>https://www.todo-peliculas.net$doregex[link]</page>
+</regex>         
+<regex>
+<name>link</name>
+<expres>torrent_download.*?href=\"(.*?)\"</expres>
+<page>https://www.todo-peliculas.net[makelist.param2]</page>
+</regex>   
+]]></listrepeat>
+<expres><![CDATA[moditemfdb.*?\n.*?title="(.*?)".*?href="(.*?)".*?src="(.*?)"]]></expres>
+<page>https://www.todo-peliculas.net/buscar?searchword=$doregex[buscaralgo]&amp;ordering=&amp;searchphrase=all</page>
+</regex>  
+<regex>
+<name>buscaralgo</name>
+<expres><![CDATA[#$pyFunction
+import xbmc
+import xbmcaddon
+import xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+    dialog = xbmcgui.Dialog()
+    d = dialog.input('Buscar Pelicula: ejemplo: Batman', type=xbmcgui.INPUT_ALPHANUM).replace(" ", "%20")
+    return d
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+</item>
+ 
+<item><!--  ELITETORRENT -->
+<title>     [B] [COLOR skyblue]BUSCADOR[/COLOR] [/B]  EliteTorrent </title>
+<link>$doregex[makelist2]</link>
+  
+  <regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>[COLOR yellow][makelist2.param3] [/COLOR] Calidad:[B][makelist2.param6][/B]  Idioma:[B][makelist2.param5][/B]</title>
+<link>plugin://plugin.video.elementum/play?uri=$doregex[makelist]</link>
+<thumbnail>https://www.elitetorrent.io[makelist2.param2]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[imagen\"[\W\w]*?href="(.*?)"[\W\w]*?data\-src\=\"(.*?)".*?title="(.*?)".*?alt="(.*?)"[\W\w]*?data\-src.*?images/(.*?)\.png[\W\w]*?<i>(.*?)<]]></expres>
+<page>https://www.elitetorrent.io/?s=$doregex[buscaralgo]&amp;x=0&amp;y=0</page>
+</regex> 
+
+
+
+
+<regex>
+<name>buscaralgo</name>
+<expres><![CDATA[#$pyFunction
+import xbmc
+import xbmcaddon
+import xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+    dialog = xbmcgui.Dialog()
+    d = dialog.input('Buscar Pelicula: ejemplo: Batman', type=xbmcgui.INPUT_ALPHANUM).replace(" ", "-")
+    return d
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+
+
+<regex>
+<name>makelist</name>
+<expres>href="(magnet.*?)"</expres>
+<page>[makelist2.param1]</page>
+</regex>    
+
+ 
+<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+</item>
+
+
+
+<item><!--  fantorrent -->
+<title>     [B] [COLOR skyblue]BUSCADOR[/COLOR] [/B]  FANTorrent Latino</title>
+
+
+
+<link>$doregex[makelist]</link>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param3]</title>
+<link>$doregex[makelist2]</link>
+<thumbnail>[makelist.param1]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[(?s)cover">[\w\W]*?src="(.+?)"[\w\W]*?href="(.*?)">(.*?)<]]></expres>
+<page>https://fantorrent.com/buscar/?buscar=$doregex[buscaralgo]</page>
+</regex>
+
+<regex>
+<name>buscaralgo</name>
+<expres><![CDATA[#$pyFunction
+import xbmc
+import xbmcaddon
+import xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+    dialog = xbmcgui.Dialog()
+    d = dialog.input('Buscar Pelicula: ejemplo: Batman', type=xbmcgui.INPUT_ALPHANUM).replace(" ", "+")
+    return d
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>[makelist2.param2] [makelist2.param3]  </title>
+<link>plugin://plugin.video.elementum/play?uri=[makelist2.param4]</link>
+<thumbnail>[makelist.param1]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[th>(Desca.*?)<|td>(.*?)<[\w\W]*?<td>(.*?)<[\w\W]*?href="(magnet.*?)"]]></expres>
+<page>[makelist.param2]</page>
+</regex>
+
+
+
+
+
+
+
+
+<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+</item>
+
+
+
+
+
+<!-- item>
+
+<title>     [B] [COLOR skyblue]BUSCADOR[/COLOR] [/B]  ElMejorTorrent Castellano </title>
+<link>$doregex[makelist2]</link>
+
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+  <title>$pyFunction:'[UPPERCASE][B] [makelist2.param2][/B][/UPPERCASE] [I][makelist2.param3][/I]'.replace("-", " ")</title>
+<link>plugin://plugin.video.elementum/play?uri=http://www.mejortorrent.com$doregex[makelist]</link>
+<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+
+</regex>
+]]></listrepeat>
+<expres><![CDATA[peli-descargar-torrent\-(.*?)\-(.*?).html.*?color\:gray.*?>(.*?)<]]></expres>
+<page>http://www.mejortorrentt.org/secciones.php?sec=buscador&amp;valor=$doregex[search]</page>
+</regex>
+
+
+
+<regex>
+<name>search</name>
+<expres><![CDATA[#$pyFunction
+import xbmc
+import xbmcaddon
+import xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+    dialog = xbmcgui.Dialog()
+    d = dialog.input('Buscar Pelicula: ejemplo: Batman', type=xbmcgui.INPUT_ALPHANUM).replace(" ", "+")
+    return d
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>makelist</name>
+<expres>href=\'(.*?torrent)\'</expres>
+<page>http://www.mejortorrentt.org/secciones.php?sec=descargas&amp;ap=contar&amp;tabla=peliculas&amp;id=[makelist2.param1]&amp;link_bajar=1</page>
+</regex>
+
+
+<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+
+</item-->
+
+<item><!--   POPCORNO -->
+<title>     [B] [COLOR skyblue]BUSCADOR[/COLOR] [/B]  PopCornTime    </title>
+<link>$doregex[makelist2]</link>
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>[COLOR lightyellow][makelist2.param5][/COLOR]</title>
+<link>$doregex[makelist]</link>
+<thumbnail>[makelist2.param4]</thumbnail>
+]]></listrepeat>
+<expres>actors":"(.*?)","description":"(.*?)".*?id":"(.*?)".*?poster_big":"(.*?)".*?title":"(.*?)"</expres>
+<page>https://api.apiumadomain.com/list?sort=seeds&amp;short=1&amp;cb=&amp;quality=720p,1080p,3d&amp;page=1&amp;keywords=$doregex[buscaralgo]</page>
+</regex>  
+
+
+<regex>
+<name>buscaralgo</name>
+<expres><![CDATA[#$pyFunction
+import xbmc
+import xbmcaddon
+import xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+    dialog = xbmcgui.Dialog()
+    d = dialog.input('Buscar Pelicula: ejemplo: Batman', type=xbmcgui.INPUT_ALPHANUM).replace(" ", "-")
+    return d
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[COLOR lightyellow][makelist.param1][/COLOR] [COLOR lightgreen] Idioma:[B][makelist.param3][/B] [/COLOR][COLOR gray] Calidad:[makelist.param4][/COLOR]</title>
+<link>plugin://plugin.video.elementum/play?uri=magnet:?xt=urn:btih:[makelist.param2]</link>
+<thumbnail>[makelist2.param4]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA["file":"(.*?)".*?id":"(.*?)".*?language":"(.*?)".*?quality":"(.*?)".*?torrent_magnet":"(.*?)"]]></expres>
+<page>http://watch.popcorntime-online.ch/cblackghost.html?imdb=[makelist2.param3]</page>
+</regex>     
+<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+</item>
+
+
+
+ <!-- SITIOS  LA-ES -->
+
+
+ 
+<item><!--    ESTRENOS LATINOS -->
+<title>     [B]ESTRENOS  LATINO  [/B] </title>
+
+<link>$doregex[makelist0]</link>
+
+
+<regex>
+    <name>makelist0</name> movies  (all pages)
+ <listrepeat><![CDATA[
+   <title>[makelist0.param3]</title>
+<link>plugin://plugin.video.elementum/play?uri=$doregex[uno]</link>
+ <regex>
+<name>uno</name>
+<expres>href\=\"(magnet.*?)\"</expres>
+<page>https://www.cinecalidad.to/$doregex[dos]</page>
+</regex>
+<regex>
+<name>dos</name>
+<expres>href\=\"\/(pr.*?)"</expres>
+<page>[makelist0.param1]</page>
+</regex>
+<thumbnail>[makelist0.param2]</thumbnail>
+<fanart>[makelist0.param2]</fanart>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re, requests
+def GetLSProData(page_data,Cookie_Jar,m):
+
+################################################################## FORMULARY #################################################################
+ starturl = 'https://www.cinecalidad.to/'     ### usually, ~ 'http://website.com/category/' ### 
+ categorylink = '' ### check the number of the param ###
+ centerurl = 'page/'      ### something like  '/page/' ###
+ firstpage = 1 ### probably  = 1 ###
+ endurl = '/' ### can be empty ###    ### endurl without final / (SLASH) ###
+#
+ dataregex = 'post_box.*?href=([^>]+).*?src=(.*?jpg).*?alt="([^"]+).*?title="([^"]+)'      ### To adapt ###
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:50.0) Gecko/20100101 Firefox/50.0', 'Referer': ''}      ### To adapt ###
+##############################################################################################################################################
+
+############################## GENERIC PART #####################################
+ fullurl = starturl + centerurl + str(firstpage) + endurl + categorylink #
+ source = requests.get(fullurl, headers= headers).text #
+ data = [] #
+#
+ last = 9 #
+ while firstpage <= last: #
+    try: #
+        fullurl = starturl + centerurl + str(firstpage) + endurl + categorylink #
+        source = requests.get(fullurl, headers=headers).text #
+        data += re.findall(dataregex, source) #
+        firstpage += 1 #
+    except: #
+        pass #
+ return data #
+
+]]></expres><page></page>
+</regex>
+<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+</item>
+
+ 
+<item><!--  ESTRENOS CASTELLANO -->
+<title>     [B]ESTRENOS  ESPAÑA  [/B] </title>
+
+<link>$doregex[makelist0]</link>
+
+
+<regex>
+    <name>makelist0</name> movies  (all pages)
+ <listrepeat><![CDATA[
+   <title>[makelist0.param3]</title>
+<link>plugin://plugin.video.elementum/play?uri=$doregex[uno]</link>
+ <regex>
+<name>uno</name>
+<expres> href\=\"(magnet.*?)\"</expres>
+<page>https://www.cinecalidad.to/$doregex[dos]</page>
+</regex>
+<regex>
+<name>dos</name>
+<expres>href\=\"\/(pr.*?)"</expres>
+<page>[makelist0.param1]</page>
+</regex>
+<thumbnail>[makelist0.param2]</thumbnail>
+<fanart>[makelist0.param2]</fanart>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re, requests
+def GetLSProData(page_data,Cookie_Jar,m):
+
+################################################################## FORMULARY #################################################################
+ starturl = 'https://www.cinecalidad.to/espana/'     ### usually, ~ 'http://website.com/category/' ### 
+ categorylink = '' ### check the number of the param ###
+ centerurl = 'page/'      ### something like  '/page/' ###
+ firstpage = 1 ### probably  = 1 ###
+ endurl = '/' ### can be empty ###    ### endurl without final / (SLASH) ###
+#
+ dataregex = 'post_box.*?href=([^>]+).*?src=(.*?jpg).*?alt="([^"]+).*?title="([^"]+)'      ### To adapt ###
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:50.0) Gecko/20100101 Firefox/50.0', 'Referer': ''}      ### To adapt ###
+##############################################################################################################################################
+
+############################## GENERIC PART #####################################
+ fullurl = starturl + centerurl + str(firstpage) + endurl + categorylink #
+ source = requests.get(fullurl, headers= headers).text #
+ data = [] #
+#
+ last = 9 #
+ while firstpage <= last: #
+    try: #
+        fullurl = starturl + centerurl + str(firstpage) + endurl + categorylink #
+        source = requests.get(fullurl, headers=headers).text #
+        data += re.findall(dataregex, source) #
+        firstpage += 1 #
+    except: #
+        pass #
+ return data #
+
+]]></expres><page></page>
+</regex>
+<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+</item>
+
+
+
+<item><!--  DIVX TOTAL  --> 1
+<title>     [B]DIVX-TOTAL[/B] Castellano </title>
+<link>$doregex[makelist]</link>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+   <title>[COLOR lightblue][B][makelist.param2][/B][/COLOR] ([makelist.param3])</title>
+    <link>plugin://plugin.video.elementum/play?uri=$doregex[link2]</link>
+ <thumbnail>$doregex[img]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re,requests
+def GetLSProData(page_data,Cookie_Jar,m):
+  count=3;pn=1;data=[]
+  while pn <= int(count):
+     page='https://www.divxtotal.la/peliculas-2/page/'+str(pn)+'/';source=requests.get(page).content.decode('ascii','ignore')
+     data +=re.findall('href="(.*?)".*?title="(.*?)".*?\n.*?\"\>(.*?)<',source);pn +=1
+  return data
+]]></expres>
+<page>https://www.divxtotal.la/peliculas-2/</page>
+</regex>
+
+
+<regex>
+<name>link2</name>
+ <expres>$pyFunction:base64.b64decode("$doregex[link]")</expres>
+<page>[makelist.param1]</page>
+</regex>
+
+
+<regex>
+<name>link</name>
+<expres><![CDATA[\'(aHR0.*?)\']]></expres>
+<page>[makelist.param1]</page>
+</regex>
+
+
+<regex>
+<name>img</name>
+<expres><![CDATA[width="150"\s*src="(.*?)"]]></expres>
+<page>[makelist.param1]</page>
+</regex>
+
+<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+</item>
+
+<item><!--  ELITE TORRENT  --> 2
+<title>     [B]ELITE TORRENTS[/B]   </title>
+<link>$doregex[makelist2]</link>
+  
+  <regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>[COLOR orange][B][makelist2.param3][/B] [/COLOR] Calidad:[B][makelist2.param6][/B] idioma: [B][makelist2.param5][/B] </title>
+<link>plugin://plugin.video.elementum/play?uri=$doregex[magnet]</link>
+<thumbnail>https://www.elitetorrent.is[makelist2.param2]</thumbnail>https://www.elitetorrent.is/
+<regex>
+<name>magnet</name>
+<expres>href="(magnet.*?)"</expres>
+<page>[makelist2.param1]</page>
+</regex>    
+]]></listrepeat>
+<expres><![CDATA[imagen\"[\W\w]*?href="(.*?)"[\W\w]*?data\-src\=\"(.*?)".*?title="(.*?)".*?alt="(.*?)"[\W\w]*?data\-src.*?images/(.*?)\.png[\W\w]*?<i>(.*?)<]]></expres>
+<page>$doregex[select]</page>
+</regex> 
+
+
+
+
+
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+   import xbmcgui
+   dialog = xbmcgui.Dialog()
+   ret = dialog.select('Elige una Seccion ', ['Latino', 'Estrenos', 'Subtituladas', 'Castellano'])
+   lists = ['https://www.elitetorrent.is/idioma/espanol-latino-1/', 'https://www.elitetorrent.is/estrenos-20/', 'https://www.elitetorrent.is/idioma/vose-3/', 'https://www.elitetorrent.is/idioma/espanol/']
+   return lists[ret]
+]]></expres>
+<page></page>
+</regex>
+
+<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+</item>
+ 
+<itm><!--  GRANTORRENT  OFFFFFF--> 3
+<title>     [B]Estrenos[/B] Castellano  **</title>
+<link>$doregex[makelist2]</link>
+
+
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+ 
+ <title>[UPPERCASE][B] [makelist2.param3][/B][/UPPERCASE]   Calidad:[makelist2.param4]  </title>
+<link>$doregex[makelist]</link>
+<thumbnail>[makelist2.param2]</thumbnail>
+</regex>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data, Cookie_Jar,m):
+  import re,requests,HTMLParser,cfscrape
+  ua='Mozilla/5.0 (Windows NT 10; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36'
+  scraper = cfscrape.create_scraper()
+  source=scraper.get("https://grantorrent.io", headers={'User-Agent': ua}, verify=False)
+  return re.findall('imagen-post[\w\W\s]{0,8}href="(.*?)".*?src="(.*?)".*?bloque-inferior">(.*?)<.*?bloque-superior">(.*?)<',source.text)
+]]></expres>
+<page></page>
+</regex>
+
+
+
+
+
+
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+  <title>[UPPERCASE][B] [makelist2.param5][/B][/UPPERCASE]  Calidad:[makelist.param1]  Tamaño:[makelist.param2]  </title>
+<link>plugin://plugin.video.elementum/play?uri=[makelist.param3]</link>
+<thumbnail>[makelist2.param2]</thumbnail>
+</regex>
+]]></listrepeat>
+<expres><![CDATA[alt="(.*?)".*?<td>(.*?)<.*?<td>(.*?)<.*?href="(.*?torrent)"]]></expres>
+<page>[makelist2.param1]</page>
+</regex>
+<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+
+</item>
+
+ <itm><!--  DON TORREENT  --> 4
+<title>     [B]DON TORRENT [/B] [I]Castellano[/I]</title>
+
+
+<link>$doregex[makelist3]</link>
+
+
+<regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+<title>[makelist3.param1]</title>
+<link>$doregex[makelist2]</link>
+]]></listrepeat>
+<expres>-(.*?)=(.*?)"</expres>
+<page>-Peliculas=descargar-peliculas"-Peliculas HD=descargar-peliculas/hd"-Peliculas 4K=peliculas/4K"</page>
+</regex>                                               
+
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>$pyFunction:('[makelist2.param3]').replace('hd',' HD').replace('uploads', '').replace('imagenes', '').replace('peliculas', '').replace('series', '').replace('/', ' ').replace('4k', ' 4K')</title>
+<link>$doregex[makelist]</link>
+<thumbnail>https:[makelist2.param2]</thumbnail>
+]]></listrepeat>
+<expres>href="(.*?)".*?\n.*?src="(.*?peliculas\/(.*?)\..*?)"</expres>
+<page>http://dontorrent.org/[makelist3.param2]</page>
+</regex>
+
+
+
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist2.param3] - [makelist.param1]</title>
+<link>plugin://plugin.video.elementum/play?uri=$doregex[mag]</link>
+<thumbnail>https:[makelist2.param2]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[ormato\:.*?>(.*?)<[\w\W]*?href=\'(.*?)\']]></expres>
+<page>https://dontorrent.org[makelist2.param1]</page>
+</regex>                                               
+
+
+
+
+<regex>
+<name>mag</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data, Cookie_Jar,m):
+  import re,requests,HTMLParser,cfscrape
+  ua='Mozilla/5.0 (Windows NT 10; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36'
+  scraper = cfscrape.create_scraper()
+  source=scraper.get("https:[makelist.param2]", headers={'User-Agent': ua}, verify=False)
+  return requests.get(source).headers['Location']
+]]></expres>
+<page></page>
+</regex>                                               
+
+
+
+
+
+<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+
+</item>
+ 
+ <itm><!--  MEJOR TORENT  OFFFFFF  --> 5
+<title>     [B]MEJORTORRENT[/B]  Castellano </title>
+<link>$doregex[makelist2]</link>
+
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>$doregex[name] </title>
+<link>plugin://plugin.video.elementum/play?uri=http://www.mejortorrentt.org$doregex[getfile]</link>
+<thumbnail>http://www.mejortorrentt.org/uploads/imagenes/peliculas/$doregex[imagen].jpg</thumbnail>
+]]></listrepeat>
+<expres>peli-descargar-torrent-(.*?)-.*?\n.*?\/uploads\/imagenes\/peliculas\/(.*?)\.jpg</expres>
+<page>$doregex[select]</page>
+</regex>
+
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+   import xbmcgui
+   dialog = xbmcgui.Dialog()
+   ret = dialog.select('Elige una Calidad ', ['Peliculas en DVDRIP', 'Peliculas en HD', 'Documentales'])
+   lists = ['http://www.mejortorrentt.org/torrents-de-peliculas.html','http://www.mejortorrentt.org/torrents-de-peliculas-hd-alta-definicion.html', 'http://www.mejortorrentt.org/torrents-de-documentales.html']
+   return lists[ret]
+]]></expres>
+<page></page>
+</regex>
+
+<regex>
+<name>imagen</name>
+<expres>$pyFunction:'[makelist2.param2]'.replace(" ", "%20")</expres>
+<page></page>
+</regex>
+<regex>
+<name>name</name>
+<expres>$pyFunction:'[makelist2.param2]'.replace(".", " ").replace("_", " ").replace("-", " ")</expres>
+<page></page>
+</regex>
+
+http://www.mejortorrentt.org/uploads/downloads/380848018
+
+
+<regex>
+<name>getfile</name>
+<expres>post\(\'(.*?)\'</expres>
+<page>http://www.mejortorrentt.org/secciones.php?sec=descargas&amp;ap=contar&amp;tabla=peliculas&amp;id=[makelist2.param1]&amp;link_bajar=1</page>
+</regex>
+<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+</item>
+
+
+<item><!--  SUB TORRENTS   --> 6
+<title>     [B]SUBTORRENTS[/B] Peliculas Subtituladas</title>
+<link>$doregex[makelist]</link>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+   <title>[COLOR lightblue][B][makelist.param3][/B][/COLOR]</title>
+    <link>plugin://plugin.video.elementum/play?uri=$doregex[link]</link>
+ <thumbnail>$doregex[img]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re,requests
+def GetLSProData(page_data,Cookie_Jar,m):
+  count=3;pn=1;data=[]
+  while pn <= int(count):
+     page='https://www.subtorrents.la/peliculas-subtituladas/page/'+str(pn)+'/?filtro=estrenos';source=requests.get(page).content.decode('ascii','ignore')
+     data +=re.findall('vertThseccion[\w\W]*?href="(.*?)"\s*title="(.*?)">(.*?)<',source);pn +=1
+  return data
+]]></expres>
+<page></page>
+</regex>
+
+<regex>
+<name>link</name>
+<expres><![CDATA[href="(http.*?\.torrent)"]]></expres>
+<page>[makelist.param1]</page>
+</regex>
+
+
+<regex>
+<name>img</name>
+<expres><![CDATA[carat".*?src="(.*?)"]]></expres>
+<page>[makelist.param1]</page>
+</regex>
+
+<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+</item>
+
+<item><!--   SUBTORRENT SERIES --> 6
+<title>     [B]SUBTORRENTS[/B] Series Subtituladas </title>
+<link>$doregex[makelist1]</link>
+
+<regex>
+<name>makelist1</name>
+<listrepeat><![CDATA[
+   <title>[COLOR lightblue][B][makelist1.param2][/B][/COLOR] </title>
+<link>$doregex[makelist]</link>
+<thumbnail>[makelist1.param3]</thumbnail>       
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re,requests
+def GetLSProData(page_data,Cookie_Jar,m):
+  count=3;pn=1;data=[]
+  while pn <= int(count):
+     page='https://www.subtorrents.la/series-1/page/'+str(pn)+'/';source=requests.get(page).content.decode('ascii','ignore')
+     data +=re.findall('td>[\w\W]*?href="(.*?)".*?title="(.*?)"[\w\W]*?src="(.*?)"[\w\W]*?140px',source);pn +=1
+  return data
+]]></expres>
+<page></page>
+</regex>
+
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+   <title>[COLOR lightblue][B][makelist.param1][/B][/COLOR]        [makelist.param3]</title>
+    <link>plugin://plugin.video.elementum/play?uri=[makelist.param2]</link>
+	<thumbnail>[makelist1.param3]</thumbnail>     
+]]></listrepeat>
+<expres><![CDATA[ostrar.*?apitulos.*?la\s(.*?)"|capitulonombre[\w\W]*?href="(.*?)".*?title="(.*?)"]]></expres>
+<page>[makelist1.param1]</page>
+</regex>
+
+
+
+<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+</item>
+
+
+
+<item><!--  zona TORRENTS   --> 6
+<title>     [B]ZONATORRENTS[/B] ultimas </title>
+<link>$doregex[makelist1]</link>
+
+<regex>
+<name>makelist1</name>
+<listrepeat><![CDATA[
+   <title>[COLOR lightblue][B][makelist1.param3][/B][/COLOR] ([makelist1.param4])  [makelist1.param5]</title>
+<link>$doregex[makelist]</link>
+<thumbnail>https:[makelist1.param2]</thumbnail>   
+<info>[makelist1.param6]</info>         
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re,requests
+def GetLSProData(page_data,Cookie_Jar,m):
+  count=3;pn=1;data=[]
+  while pn <= int(count):
+     page='https://zonatorrent.tv/pelicula-3/page/'+str(pn)+'/';source=requests.get(page).content.decode('ascii','ignore')
+     data +=re.findall('<a href="(.+?)"\srel="bookmark[\w\W]*?src="(.+?)"[\w\W]*?Title">(.+?)<[\w\W]*?Year">(.+?)<[\w\W]*?Qlty">(.+?)<[\w\W]*?Description"><p>(.+?)<',source);pn +=1
+  return data
+]]></expres>
+<page></page>
+</regex>
+
+
+
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+   <title>  [makelist.param2]     [makelist.param3]</title>
+    <link>plugin://plugin.video.elementum/play?uri=[makelist.param1]</link>
+	<thumbnail>https:[makelist1.param2]</thumbnail>   
+<info>[makelist1.param6]</info>     
+]]></listrepeat>
+<expres><![CDATA[Num">.*?href="(.*?\.torrent)"\sclass[\w\W]*?Idioma">(.*?)<[\w\W]*?<span>(.*?)</]]></expres>
+<page>[makelist1.param1]</page>
+</regex>
+
+
+
+<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+</item>
+
+
+
+
+<item><!--  ZONA TORRENTS  -->
+<title>     [B]ZONATORRENT[/B]   </title>
+<link>$doregex[makelist]</link>
+<regex>
+    <name>makelist</name> movies  (all pages)
+ <listrepeat><![CDATA[
+<title>[makelist.param3]</title>
+<link>plugin://plugin.video.elementum/play?uri=$doregex[link]</link>
+<thumbnail>[makelist.param2]</thumbnail>      
+<regex>
+<name>link</name>
+<expres>"(htt.*?torrent)"</expres>
+<page>[makelist.param1]</page>
+</regex>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re, requests
+def GetLSProData(page_data,Cookie_Jar,m):
+
+################################################################## FORMULARY #################################################################
+ starturl = 'http://zonatorrent.tv/'     ### usually, ~ 'http://website.com/category/' ### 
+ categorylink = '' ### check the number of the param ###
+ centerurl = 'page/'      ### something like  '/page/' ###
+ firstpage = 1 ### probably  = 1 ###
+ endurl = '?s=$doregex[select]' ### can be empty ###    ### endurl without final / (SLASH) ###
+#
+ dataregex = 'TPost C.*?\n.*?href="(.*?)" .*?src="(.*?)".*?Title">(.*?)<'      ### To adapt ###
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:50.0) Gecko/20100101 Firefox/50.0', 'Referer': ''}      ### To adapt ###
+##############################################################################################################################################
+
+############################## GENERIC PART #####################################
+ fullurl = starturl + centerurl + str(firstpage) + endurl + categorylink #
+ source = requests.get(fullurl, headers= headers).text #
+ data = [] #
+#
+ last = 4 #
+ while firstpage <= last: #
+    try: #
+        fullurl = starturl + centerurl + str(firstpage) + endurl + categorylink #
+        source = requests.get(fullurl, headers=headers).text #
+        data += re.findall(dataregex, source) #
+        firstpage += 1 #
+    except: #
+        pass #
+ return data #
+
+]]></expres><page></page>
+</regex>
+
+	<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+   import xbmcgui
+   dialog = xbmcgui.Dialog()
+   ret = dialog.select('Elige un Idioma ', ['[COLOR yellow]Español[/COLOR]', '[COLOR lime]Latino[/COLOR]', '[COLOR blue]Subtitulado[/COLOR]'])
+   lists = ['spanish', 'latino', 'Subtitulado']
+   return lists[ret]
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+</item>
+ 
+ 
+<item> <!--  ALL CALIDAD  --> 
+<title>     [B]ALLCALIDAD[/B] Latino </title>
+<link>$doregex[makelist2]</link>
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>[COLOR white][makelist2.param3][/COLOR]</title>
+<link>plugin://plugin.video.elementum/play?uri=$doregex[id3]</link>
+<thumbnail>[makelist2.param2]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re,requests
+def GetLSProData(page_data,Cookie_Jar,m):
+  count=10;pn=1;data=[]
+  while pn <= int(count):
+     page='https://allcalidad.la/page/'+str(pn)+'/';source=requests.get(page).content.decode('ascii','ignore')
+     data +=re.findall('(?s)ah-imagge" href="(.+?)"[\w\W]*?src="(.+?)"[\w\W]*?title="(.+?)"',source);pn +=1
+  return data
+]]></expres>
+<page></page>
+</regex>
+  
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[href="(magnet.*?)"]]></expres>>
+<page>[makelist2.param1]</page>
+</regex>
+
+
+
+
+
+<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+</item>
+
+
+ 
+<item><!--  fantorrent -->
+<title>     [B]FANTORRENT[/B] Latino </title>
+
+
+
+<link>$doregex[makelist]</link>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param3]</title>
+<link>$doregex[makelist2]</link>
+<thumbnail>[makelist.param1]</thumbnail>
+]]></listrepeat>
+
+<expres><![CDATA[#$pyFunction
+import re,requests
+def GetLSProData(page_data,Cookie_Jar,m):
+  count=9;pn=1;data=[]
+  while pn <= int(count):
+     page='https://fantorrent.com/descargar-peliculas-fanp/page/'+str(pn)+'/';source=requests.get(page).content.decode('ascii','ignore')
+     data +=re.findall('(?s)cover">[\w\W]*?src="(.+?)"[\w\W]*?href="(.*?)">(.*?)<',source);pn +=1
+  return data
+]]></expres>
+<page>https://fantorrent.com/descargar-peliculas-fanp/</page>
+</regex>
+
+
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>[makelist2.param2] [makelist2.param3]  </title>
+<link>plugin://plugin.video.elementum/play?uri=[makelist2.param4]</link>
+<thumbnail>[makelist.param1]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[th>(Desca.*?)<|td>(.*?)<[\w\W]*?<td>(.*?)<[\w\W]*?href="(magnet.*?)"]]></expres>
+<page>[makelist.param2]</page>
+</regex>
+
+
+
+
+<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+</item>
+
+ 
+ 
+ <item><!--  TODO PELICULAS   -->
+<title>     [B]TODOPELICULAS[/B]   </title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param2]</title>
+<link>plugin://plugin.video.elementum/play?uri=$doregex[magnet]</link>
+<thumbnail>[makelist.param3]</thumbnail>
+<regex>
+<name>magnet</name>
+<expres>window\.open\(\'(.*?)\'</expres>
+<page>https://www.todo-peliculas.net/$doregex[link]</page>
+</regex>         
+<regex>
+<name>link</name>
+<expres>torrent_download.*?href=\"(.*?)\"</expres>
+<page>https://www.todo-peliculas.net[makelist.param1]</page>
+</regex>   
+]]></listrepeat>
+<expres><![CDATA[<li>.*?href="(\/torrents.*?)".*?title="(.*?)".*?src="(.*?)"]]></expres>
+<page>https://www.todo-peliculas.net/</page>
+</regex>  
+<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+</item>
+ 
+<item><!--  NEW PELIS   -->
+<title>     [B]NEW PELIS[/B]  [I] Latino[/I] </title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param3] [[makelist.param4]]</title>
+<link>plugin://plugin.video.elementum/play?uri=$doregex[magnet]</link>
+<thumbnail>[makelist.param2]</thumbnail>
+<regex>
+<name>magnet</name>
+<expres>href="(magnet.*?)"</expres>
+<page>[makelist.param1]</page>
+</regex> 
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re,requests
+def GetLSProData(page_data,Cookie_Jar,m):
+  count=5;pn=1;data=[]
+  while pn <= int(count):
+     page='http://newpelis.co/page/'+str(pn)+'/';source=requests.get(page).content.decode('ascii','ignore')
+     data +=re.findall('ah-imagge"\s*href="(.*?)".*?src="(.*?)".*?title="(.*?)"[\w\W]*?Idioma.*?">(.*?)<',source);pn +=1
+  return data
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+</item>
+ 
+<item><!--  MI TORRENT  -->
+<title>     [B]MI-TORRENT[/B]  [I] Latino[/I] </title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param4] [[makelist.param1]]</title>
+<link>plugin://plugin.video.elementum/play?uri=$doregex[magnet]</link>
+<thumbnail>[makelist.param3]</thumbnail>
+<regex>
+<name>magnet</name>
+<expres>href="(magnet.*?)"</expres>
+<page>[makelist.param2]</page>
+</regex> 
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re,requests
+def GetLSProData(page_data,Cookie_Jar,m):
+  count=5;pn=1;data=[]
+  while pn <= int(count):
+     page='https://mitorrent.net/page/'+str(pn)+'/';source=requests.get(page).content.decode('ascii','ignore')
+     data +=re.findall('lg-4\s*calidad-(.*?)".*?\n.*?href="(.*?)".*?\n.*?\n.*?src="(.*?)".*?Descargar\s*(.*?)"',source);pn +=1
+  return data
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+</item>
+ 
+<item><!--   TORRENT DE PELICULAS -->
+<title>     [B]TORRENT DE PELICULAS[/B]  [I] [/I] </title>
+
+ <link>$doregex[regex]</link> 
+ 
+<regex>
+ <name>regex</name>  
+ <listrepeat><![CDATA[
+   <title>[B][regex.param3][/B]</title>
+    <link>plugin://plugin.video.elementum/play?uri=$doregex[regex1]&image=imageurl&player=0</link>
+    <thumbnail>[regex.param2]</thumbnail>
+   <fanart>[regex.param2]</fanart>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re,requests
+def GetLSProData(page_data,Cookie_Jar,m):
+  count=5;pn=1;data=[]
+  while pn <= int(count):
+    page='http://torrentsdepeliculas.org/page/'+str(pn)+'/';source=requests.get(page).content.decode('ascii','ignore')
+    data +=re.findall('(?s)article__header"[\w\W]*?href="(.*?)"[\w\W]*?src="(.*?)".*?alt="(.*?)"',source);pn +=1
+  return data]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>regex1</name>
+<expres><![CDATA[href="(.*?\.torrent)"]]></expres>
+<page>[regex.param1]</page>
+</regex>
+<regex>
+<name>calidad</name>
+<expres><![CDATA[Formato:.*?>(.*?)<]]></expres>
+<page>[regex.param1]</page>
+</regex>
+
+</item>
+  
+<item><!--   TORRENT PELIS 4K -->
+<title>     [B]PELICULAS 4K[/B]  [I] [/I] </title>
+
+ <link>$doregex[regex]</link> 
+ 
+<regex>
+ <name>regex</name>  
+ <listrepeat><![CDATA[
+   <title>[B][regex.param3][/B]</title>
+    <link>plugin://plugin.video.elementum/play?uri=$doregex[regex1]&image=imageurl&player=0</link>
+    <thumbnail>[regex.param2]</thumbnail>
+   <fanart>[regex.param2]</fanart>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re,requests
+def GetLSProData(page_data,Cookie_Jar,m):
+  count=5;pn=1;data=[]
+  while pn <= int(count):
+    page='https://torrentsdepeliculas.org/4k/page/'+str(pn)+'/';source=requests.get(page).content.decode('ascii','ignore')
+    data +=re.findall('(?s)article__header"[\w\W]*?href="(.*?)"[\w\W]*?src="(.*?)".*?alt="(.*?)"',source);pn +=1
+  return data]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>regex1</name>
+<expres><![CDATA[href="(.*?\.torrent)"]]></expres>
+<page>[regex.param1]</page>
+</regex>
+<regex>
+<name>calidad</name>
+<expres><![CDATA[Formato:.*?>(.*?)<]]></expres>
+<page>[regex.param1]</page>
+</regex>
+
+</item>
+ 
+ <item><!--   TORRENTAZO -->
+<title>     [B]TORRENTAZO[/B]  [I] [/I] </title>
+ <link>$doregex[makelist2]</link> 
+ 
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>[B][makelist2.param2][/B] </title>
+<link>$doregex[regex]</link> 
+]]></listrepeat>
+<expres><![CDATA[item\-link\"\s*href=\"(\/p.*?)".*?menu-title">(.*?)<]]></expres>
+<page>http://www.torrentazo.com/</page>
+</regex>
+
+
+ 
+<regex>
+ <name>regex</name>  
+ <listrepeat><![CDATA[
+   <title>[B][regex.param3][/B]  [regex.param4]</title>
+    <link>$doregex[regex1]</link>
+    <thumbnail>https://www.torrentazo.com[regex.param2]</thumbnail>
+   <fanart>https://www.torrentazo.com[regex.param2]</fanart>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re,requests
+def GetLSProData(page_data,Cookie_Jar,m):
+  count=1;pn=1;data=[]
+  while pn <= int(count):
+    page='http://www.torrentazo.com[makelist2.param1]?limit='+str(pn)+'';source=requests.get(page).content.decode('ascii','ignore')
+    data +=re.findall('(?s)catItemImage "[\w\W]*?href="(.*?)"[\w\W]*?src="(.*?)"\s*alt="(.*?)"[\w\W]*?dorange".*?\n\s*(.*?)\n',source);pn +=1
+  return data]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+
+
+
+<regex>
+<name>regex1</name>
+<listrepeat><![CDATA[
+<title>[regex1.param2]</title>
+<link>plugin://plugin.video.elementum/play?uri=https://www.torrentazo.com[regex1.param1]&image=imageurl&player=0</link>
+<thumbnail>https://www.torrentazo.com[regex.param2]</thumbnail>
+<fanart>https://www.torrentazo.com[regex.param2]</fanart> 
+]]></listrepeat>
+<expres><![CDATA[botonx66" href="(.*?\.torrent)".*?">(.*?)<]]></expres>
+<page>https://www.torrentazo.com[regex.param1]</page>
+</regex>
+
+<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+</item>
+ 
+ 
+ 
+   
+<item><!--  SERIES MAGNET   -->
+<title>     [B]SERIES MAGNET[/B] [I] Castellano [/I] </title>
+
+
+<link>$doregex[makelist2]</link>
+
+<regex>
+    <name>makelist2</name> movies  (all pages)
+ <listrepeat><![CDATA[
+<title>[makelist2.param4]</title>
+<link>$doregex[makelist]</link>
+<fanart>[makelist2.param3]</fanart>
+<thumbnail>[makelist2.param3]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re, requests
+def GetLSProData(page_data,Cookie_Jar,m):
+
+################################################################## FORMULARY #################################################################
+ starturl = 'https://pelismag.net/series'     ### usually, ~ 'http://website.com/category/' ###
+ categorylink = '' ### check the number of the param ###
+ centerurl = '?p='      ### something like  '/page/' ###
+ firstpage = 0 ### probably  = 1 ###
+ endurl = '' ### can be empty ###    ### endurl without final / (SLASH) ###
+#
+ dataregex = 'href="(se.*?)".*?gratis\s(.*?)\storrent.*?src=(.*?jpg)\salt="(.*?)"'      ### To adapt ###
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:50.0) Gecko/20100101 Firefox/50.0', 'Referer': ''}      ### To adapt ###
+##############################################################################################################################################
+
+############################## GENERIC PART #####################################
+ fullurl = starturl + centerurl + str(firstpage) + endurl + categorylink #
+ source = requests.get(fullurl, headers= headers).text #
+ data = [] #
+#
+ last = 11 #
+ while firstpage <= last: #
+    try: #
+        fullurl = starturl + centerurl + str(firstpage) + endurl + categorylink #
+        source = requests.get(fullurl, headers=headers).text #
+        data += re.findall(dataregex, source) #
+        firstpage += 1 #
+    except: #
+        pass #
+ return data #
+
+]]></expres><page></page>
+</regex>
+
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+    <title>[makelist.param2]</title>
+    <link>plugin://plugin.video.elementum/play?uri=[makelist.param3]</link>
+	<thumbnail>[makelist2.param3]</thumbnail>
+	<fanart>[makelist2.param3]</fanart>
+]]></listrepeat>
+<expres><![CDATA[sub-group-(.*?)">(.*?)<[\w\W\s]{0,34}href=(.*?)>]]></expres>
+<page>https://pelismag.net/[makelist2.param1]</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+</item>
+
+
+ <item><!--  PELIS MAGNET  -->
+<title>     [B]PELIS MAGNET[/B]   </title>
+<link>$doregex[makelist]</link>
+
+<regex>
+    <name>makelist</name> movies  (all pages)
+ <listrepeat><![CDATA[
+<title>[makelist.param4]</title>
+<link>$doregex[makelist0]</link>
+<thumbnail>[makelist.param3]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re, requests
+def GetLSProData(page_data,Cookie_Jar,m):
+
+################################################################## FORMULARY #################################################################
+ starturl = 'https://pelismag.net/$doregex[select]'     ### usually, ~ 'http://website.com/category/' ###
+ categorylink = '' ### check the number of the param ###
+ centerurl = '?p='      ### something like  '/page/' ###
+ firstpage = 0 ### probably  = 1 ###
+ endurl = '' ### can be empty ###    ### endurl without final / (SLASH) ###
+#
+ dataregex = 'href="(pe.*?)".*?gratis\s(.*?)\storrent.*?src=(.*?jpg)\salt="(.*?)"'      ### To adapt ###
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:50.0) Gecko/20100101 Firefox/50.0', 'Referer': ''}      ### To adapt ###
+##############################################################################################################################################
+
+############################## GENERIC PART #####################################
+ fullurl = starturl + centerurl + str(firstpage) + endurl + categorylink #
+ source = requests.get(fullurl, headers= headers).text #
+ data = [] #
+#
+ last = 5 #
+ while firstpage <= last: #
+    try: #
+        fullurl = starturl + centerurl + str(firstpage) + endurl + categorylink #
+        source = requests.get(fullurl, headers=headers).text #
+        data += re.findall(dataregex, source) #
+        firstpage += 1 #
+    except: #
+        pass #
+ return data #
+
+]]></expres><page></page>
+</regex>
+
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+   import xbmcgui
+   dialog = xbmcgui.Dialog()
+   ret = dialog.select('Seleciona una Lista ', ['Estrenos', 'Las mas Populares', 'Mejores Valoradas'])
+   lists = ['estrenos', 'principal', 'rating']
+   return lists[ret]
+]]></expres>
+<page></page>
+</regex>
+
+
+
+<regex>
+<name>makelist0</name>
+<listrepeat><![CDATA[
+<title>[makelist.param4] - [makelist0.param1]</title>
+<link>plugin://plugin.video.elementum/play?uri=[makelist0.param2]</link>
+ <thumbnail>[makelist.param3]</thumbnail>          
+]]></listrepeat>
+<expres>bttns\sa.(.*?)'[\w\W\s]{0,57}href=(.*?)\sclass</expres>
+<page>https://pelismag.net/[makelist.param1]</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+
+<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+</item>
+
+
+
+
+
+ 
+<item><!--  PIRATEBAY LAT-CAST  -->
+<title>     [COLOR deepskyblue][B]PIRATEBAY[/B][/COLOR]  Latino/Castellano </title>
+<link>$doregex[makelist]</link>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param3]</title>
+<link>plugin://plugin.video.elementum/play?uri=[makelist.param4]</link>
+<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re,requests
+def GetLSProData(page_data,Cookie_Jar,m):
+  count=5;pn=0;data=[]
+  while pn <= int(count):
+     page='https://thepiratebay.org/search/$doregex[select]/'+str(pn)+'/3/201';source=requests.get(page).content.decode('ascii','ignore')
+     data +=re.findall('class="detName.*?href="(.*?)".*?title="(.*?)">(.*?)<[\w\W\s]{0,20}href=\"(.*?)\"',source);pn +=1
+  return data
+]]></expres>
+<page></page>
+</regex>
+
+
+	<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+   import xbmcgui
+   dialog = xbmcgui.Dialog()
+   ret = dialog.select('Elige un Idioma ', ['[COLOR yellow]Español[/COLOR]', '[COLOR lime]Latino[/COLOR]'])
+   lists = ['castellano', 'latino']
+   return lists[ret]
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+</item>
+
+<item><!--  LIMETORENT LAT-.CAST  -->
+<title>     [COLOR deepskyblue][B]LIMETORRENTS[/B][/COLOR]  Latino - Castellano - VO </title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>$pyFunction:'[makelist.param2]'.replace('-',' ')</title>
+<link>plugin://plugin.video.elementum/play?uri=[makelist.param1]</link>
+<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+]]></listrepeat>
+<expres>href=\"(http://itorrents.org/torrent/.*?torrent)\?title=(.*?)\"</expres>
+<page>$doregex[select]</page>
+</regex>
+
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+   import xbmcgui
+   dialog = xbmcgui.Dialog()
+   ret = dialog.select('Elige una Seccion', ['Peliculas  Latino', 'Peliculas en Castellano', 'Top 100 Movies', 'Recent TV Shows'])
+   lists = ['https://www.limetorrents.info/search/all/latino/date/1/', 'https://www.limetorrents.info/search/all/castellano/date/1/', 'https://www.limetorrents.info/cat_top/16/Movies/', 'https://www.limetorrents.info/browse-torrents/TV-shows/seeds/1/']
+   return lists[ret]
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+</item>
+
+
+ <!--  SITIOS INTERNACIONALES-->
+
+
+<item>
+<title>     [COLOR deepskyblue][B]POPCORN TIME[/B][/COLOR]   </title>
+<link>$doregex[makelist2]</link>
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>[COLOR lightyellow][makelist2.param5][/COLOR]</title>
+<link>$doregex[makelist]</link>
+<thumbnail>[makelist2.param4]</thumbnail>
+]]></listrepeat>
+<expres>actors":"(.*?)","description":"(.*?)".*?id":"(.*?)".*?poster_big":"(.*?)".*?title":"(.*?)"</expres>
+<page>https://api.apiumadomain.com/list?sort=seeds&amp;short=1&amp;cb=&amp;quality=720p,1080p,3d&amp;page=1</page>
+</regex>   
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[COLOR lightyellow][makelist.param1][/COLOR] [COLOR lightgreen] Idioma:[B][makelist.param3][/B] [/COLOR][COLOR gray] Calidad:[makelist.param4][/COLOR]</title>
+<link>plugin://plugin.video.elementum/play?uri=magnet:?xt=urn:btih:[makelist.param2]</link>
+<thumbnail>[makelist2.param4]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA["file":"(.*?)".*?id":"(.*?)".*?language":"(.*?)".*?quality":"(.*?)".*?torrent_magnet":"(.*?)"]]></expres>
+<page>http://watch.popcorntime-online.ch/cblackghost.html?imdb=[makelist2.param3]</page>
+</regex>     
+<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+</item>
+  
+ 
+ <item>
+<title>     [COLOR deepskyblue][B]YIFI MOVIES[/B][/COLOR]  VO </title>
+<link>$doregex[makelist2]</link>
+
+
+<regex>
+    <name>makelist2</name> movies  (all pages)
+ <listrepeat><![CDATA[
+<title>[makelist2.param3] </title>
+<link>$doregex[makelist]</link>
+<thumbnail>[makelist2.param2]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re, requests
+def GetLSProData(page_data,Cookie_Jar,m):
+
+################################################################## FORMULARY #################################################################
+ starturl = 'https://yts.am/browse-movies?'     ### usually, ~ 'http://website.com/category/' ### 
+ categorylink = '' ### check the number of the param ###
+ centerurl = 'page='      ### something like  '/page/' ###
+ firstpage = 1 ### probably  = 1 ###
+ endurl = '' ### can be empty ###    ### endurl without final / (SLASH) ###
+#
+ dataregex = 'lg-4">\n.*?href="(.*?)".*?\n.*?\n.*?src="(.*?)".*?alt="(.*?)download'      ### To adapt ###
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:50.0) Gecko/20100101 Firefox/50.0', 'Referer': ''}      ### To adapt ###
+##############################################################################################################################################
+
+############################## GENERIC PART #####################################
+ fullurl = starturl + centerurl + str(firstpage) + endurl + categorylink #
+ source = requests.get(fullurl, headers= headers).text #
+ data = [] #
+#
+ last = 6 #
+ while firstpage <= last: #
+    try: #
+        fullurl = starturl + centerurl + str(firstpage) + endurl + categorylink #
+        source = requests.get(fullurl, headers=headers).text #
+        data += re.findall(dataregex, source) #
+        firstpage += 1 #
+    except: #
+        pass #
+ return data #
+
+]]></expres><page></page>
+</regex>
+
+
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param3] - [makelist.param1]</title>
+<link>plugin://plugin.video.elementum/play?uri=[makelist.param2]</link>
+<thumbnail>[makelist2.param2]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[quality-size">(.*?)<.*?\n.*?download2-big\"\shref="(h.*?)".*?ownload(.*?)Torren]]></expres>
+<page>[makelist2.param1]</page>
+</regex>                                               
+
+<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+
+</item>
+ 
+ <item>
+<title>     [COLOR deepskyblue][B]YOURBIT TORRENTS[/B][/COLOR]  Top100   Recientes </title>
+<link>$doregex[makelist]</link>
+<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+ <title>[makelist.param3]</title>
+<link>plugin://plugin.video.elementum/play?uri=https://yourbittorrent.com/down/[makelist.param1].torrent</link>
+</regex>
+]]></listrepeat>
+<expres><![CDATA[href="\/torrent\/(.*?)\/(.*?)">(.*?)<]]></expres>
+<page>https://yourbittorrent.com/movies.html</page>
+<agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36</agent>
+</regex>
+<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+
+</item>
+
+<item>
+<title>     [COLOR deepskyblue][B]PIRATEBAY[/B] [/COLOR] Tops100   Movies and TVShows </title>
+<link>$doregex[makelist]</link>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>$pyFunction:'[makelist.param1]'.replace('.',' ')</title>
+<link>plugin://plugin.video.elementum/play?uri=[makelist.param2]</link>
+ <thumbnail>[makelist.param2]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[<title.*?CDATA\[(.*?)\][\w\W\s]{0,20}link>(.*?)<]]></expres>
+<page>$doregex[select]</page>
+</regex>
+
+
+
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+   import xbmcgui
+   dialog = xbmcgui.Dialog()
+   ret = dialog.select('Elige una Seccion ', ['Top 100 Movies', 'Top 100 Movies HD', 'Top 100 TV-Shows HD', 'Top 100 TV-Shows'])
+   lists = ['https://thepiratebay.org/rss/top100/201', 'https://thepiratebay.org/rss/top100/207', 'https://thepiratebay.org/rss/top100/208', 'https://thepiratebay.org/rss/top100/205']
+   return lists[ret]
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+</item>
+
+<item>
+  <title>     [COLOR deepskyblue][B]ETTV [/B][/COLOR] VO    </title>
+<link>$doregex[makelist]</link>
+
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+   
+   <title>[B][makelist.param1][/B]   </title>
+   <link>plugin://plugin.video.elementum/play?uri=$doregex[torrent]</link>
+ <thumbnail>[makelist.param1]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[nowrap.*?title="(.*?)"\shref="(.*?)"]]></expres>
+<page>$doregex[select]</page>
+</regex>
+
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+   import xbmcgui
+   dialog = xbmcgui.Dialog()
+   ret = dialog.select('Elige una Opcion ', ['[B] LATEST TORRENTS[/B]  ETTV', '[B] LATEST MOVIES[/B]  ETTV ', '[B] LATEST TVSHOWS[/B]  ETTV'])
+   lists = ['https://www.ettv.tv/torrents.php', 'https://www.ettv.tv/torrents.php?parent_cat=Movies', 'https://www.ettv.tv/torrents.php?parent_cat=TV&parent_cat=TV&amp;sort=seeders&amp;order=desc']
+   return lists[ret]
+]]></expres>
+<page></page>
+</regex>
+
+
+<regex>
+<name>torrent</name>
+<expres><![CDATA[href="(magnet.*?)"]]></expres>
+<page>https://www.ettv.tv[makelist.param2]</page>
+</regex>
+
+<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+
+</item>
+
+
+ <!-- BUSCADORES  PIE -->
+
+<item>
+<title>     [B] [COLOR skyblue]BUSCADOR[/COLOR] [/B] DE SERIES  (eztv)  </title>
+<link>$doregex[makelist]</link>
+
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+   
+   <title>[B][makelist.param2][/B]    </title>
+   <link>plugin://plugin.video.elementum/play?uri=[makelist.param1]</link>
+ <thumbnail>[makelist2.param4]</thumbnail>
+
+]]></listrepeat>
+<expres><![CDATA[href="(magnet.*?)".*?title="(.*?)Magnet\sLink]]></expres>
+<page>https://eztv.ag/search/$doregex[search]</page>
+</regex>
+
+
+
+
+
+<regex>
+<name>search</name>
+<expres><![CDATA[#$pyFunction
+import xbmc
+import xbmcaddon
+import xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+    dialog = xbmcgui.Dialog()
+    d = dialog.input('Buscar Serie: ejemplo: The Walking Dead', type=xbmcgui.INPUT_ALPHANUM).replace(" ", "-")
+    return d
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+
+<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+
+</item>
+
+<item>
+<title>     [B] [COLOR skyblue]BUSCADOR[/COLOR] [/B] ETTV  </title>
+<link>$doregex[makelist]</link>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+   
+   <title>[B][makelist.param2][/B] [makelist.param3] Uploaded:[makelist.param4] Seeds:[makelist.param5]  </title>
+   <link>plugin://plugin.video.elementum/play?uri=$doregex[torrent]</link>
+
+]]></listrepeat>
+<expres><![CDATA[nowrap.*?href="(.*?)"><b>(.*?)<.*?nowrap;'>(.*?)<.*?nowrap;'>(.*?)[\w\W\s]{0,160}green'><b>(.*?)<]]></expres>
+<page>https://www.ettv.tv/torrents-search.php?search=$doregex[search]</page>
+</regex>
+
+<regex>
+<name>search</name>
+<expres><![CDATA[#$pyFunction
+import xbmc
+import xbmcaddon
+import xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+    dialog = xbmcgui.Dialog()
+    d = dialog.input('Buscar Pelicula: ejemplo: Batman', type=xbmcgui.INPUT_ALPHANUM).replace(" ", "+")
+    return d
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>torrent</name>
+<expres><![CDATA[href="(magnet.*?)"]]></expres>
+<page>https://www.ettv.tv[makelist.param1]</page>
+</regex>
+
+<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+
+</item>
+ 
+  
+<item>
+<title>     [B] [COLOR skyblue]BUSCADOR[/COLOR] [/B] PIRATEBAY  </title>
+<link>$doregex[makelist]</link>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param3]</title>
+<link>plugin://plugin.video.elementum/play?uri=[makelist.param4]</link>
+ <thumbnail>[makelist.param2]</thumbnail>
+</listrepeat>
+<expres><![CDATA[class="detName.*?href="(.*?)".*?title="(.*?)">(.*?)<[\w\W]*?href=\"(.*?)\"]]></expres>
+<page>http://thepiratebay.org/search/$doregex[buscaralgo]/0/99/0</page>
+<referer>http://thepiratebay.org</referer>
+</regex>
+
+
+
+<regex>
+<name>buscaralgo</name>
+<expres><![CDATA[#$pyFunction
+import xbmc
+import xbmcaddon
+import xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+    dialog = xbmcgui.Dialog()
+    d = dialog.input('Buscar Pelicula: ejemplo: Batman', type=xbmcgui.INPUT_ALPHANUM).replace(" ", "%20")
+    return d
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+
+<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+
+</item>
+
+
+<item>
+<title>     [B] [COLOR skyblue]BUSCADOR[/COLOR] [/B] TOROS.CO  </title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>$pyFunction:'[makelist.param2]'.replace('-',' ').replace('.html',' ')</title>
+<link>plugin://plugin.video.elementum/play?uri=https://www.toros2.com/tor/[makelist.param1].torrent</link>
+<thumbnail>[makelist.param2]</thumbnail>
+]]></listrepeat>
+<expres>href="\/torrent\/(.*?)/(.*?)"></expres>
+<page>https://www.toros2.com/movie/torrents/$doregex[buscaralgo].html?v=&amp;smi=&amp;sma=&amp;i=50&amp;sort=seeds&amp;o=desc</page>
+</regex>                                               
+<regex>
+<name>buscaralgo</name>
+<expres><![CDATA[#$pyFunction
+import xbmc
+import xbmcaddon
+import xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+    dialog = xbmcgui.Dialog()
+    d = dialog.input('Buscar Pelicula: ejemplo: Batman', type=xbmcgui.INPUT_ALPHANUM).replace(" ", "-")
+    return d
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+
+</item>
+
+
+ <item>
+<title>     [B] [COLOR skyblue]BUSCADOR[/COLOR] [/B] YIFY  </title>
+<link>$doregex[makelist2]</link>
+
+
+<regex>
+    <name>makelist2</name> movies  (all pages)
+ <listrepeat><![CDATA[
+<title>[makelist2.param3] </title>
+<link>$doregex[makelist]</link>
+<thumbnail>[makelist2.param2]</thumbnail>
+]]></listrepeat>
+<expres>col-lg-4.*?\n.*?href="(.*?)".*?\n.*?\n.*?src="(.*?)".*?alt="(.*?)\sdownload</expres>
+<page>https://yts.am/browse-movies/$doregex[buscaralgo]/all/all/0/latest</page>
+</regex>
+
+ 
+
+ 
+ <regex>
+<name>buscaralgo</name>
+<expres><![CDATA[#$pyFunction
+import xbmc
+import xbmcaddon
+import xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+    dialog = xbmcgui.Dialog()
+    d = dialog.input('Buscar Pelicula: ejemplo: Batman', type=xbmcgui.INPUT_ALPHANUM).replace(" ", "%20")
+    return d
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param3] - [makelist.param1]</title>
+<link>plugin://plugin.video.elementum/play?uri=[makelist.param2]</link>
+<thumbnail>[makelist2.param2]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[quality-size">(.*?)<.*?\n.*?download2-big\"\shref="(h.*?)".*?ownload(.*?)Torren]]></expres>
+<page>[makelist2.param1]</page>
+</regex>                                               
+
+<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+
+</item>
+ 
+ 
+
+<item>
+<title>     [B] [COLOR skyblue]BUSCADOR[/COLOR] [/B] DIVX TOTAL  </title>
+<link>$doregex[makelist]</link>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+   <title>[COLOR lightblue][B][makelist.param2][/B][/COLOR] </title>
+    <link>plugin://plugin.video.elementum/play?uri=$doregex[link]</link>
+ <thumbnail>$doregex[img]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re,requests
+def GetLSProData(page_data,Cookie_Jar,m):
+  count=2;pn=1;data=[]
+  while pn <= int(count):
+     page='https://www.divxtotal.la/page/'+str(pn)+'/?s=$doregex[buscaralgo]';source=requests.get(page).content.decode('ascii','ignore')
+     data +=re.findall('text-left".*?\n.*?href="(.*?)".*?title="(.*?)">(.*?)<',source);pn +=1
+  return data
+]]></expres>
+<page></page>
+</regex>
+
+
+
+
+ <regex>
+<name>buscaralgo</name>
+<expres><![CDATA[#$pyFunction
+import xbmc
+import xbmcaddon
+import xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+    dialog = xbmcgui.Dialog()
+    d = dialog.input('Buscar Pelicula: ejemplo: Batman', type=xbmcgui.INPUT_ALPHANUM).replace(" ", "+")
+    return d
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>link</name>
+<expres><![CDATA[linktorrent\"\s*href=\"(.*?)\"]]></expres>
+<page>[makelist.param1]</page>
+</regex>
+<regex>
+<name>img</name>
+<expres><![CDATA[width="150"\s*src="(.*?)"]]></expres>
+<page>[makelist.param1]</page>
+</regex>
+
+
+
+
+
+<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+</item>
+
+
+<item>
+<title>     [B] [COLOR skyblue]BUSCADOR[/COLOR] [/B] PELISMAGNET </title>
+<link>$doregex[makelist2]</link>
+
+
+<regex>
+<name>makelist2</name>
+  <listrepeat><![CDATA[         
+<title>[makelist2.param4]</title>
+<link>$doregex[makelist0]</link>
+<fanart>[makelist2.param3]</fanart>
+<thumbnail>[makelist2.param3]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[href="(pe.*?)".*?gratis\s(.*?)\storrent.*?src=(.*?jpg)\salt="(.*?)"]]></expres>
+<page>https://pelismag.net/buscadorx</page>
+<rawpost>q=$doregex[search]</rawpost>
+<referer>https://pelismag.net/principal</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar>d4c5d3e56ebfd1d8f9244d377c7a120051534003126</cookieJar>
+</regex>
+
+
+<regex>
+<name>search</name>
+<expres><![CDATA[#$pyFunction
+import xbmc
+import xbmcaddon
+import xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+    dialog = xbmcgui.Dialog()
+    d = dialog.input('Busca tu Pelicula favorita:', type=xbmcgui.INPUT_ALPHANUM).replace(" ", "+")
+    return d
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+
+
+<regex>
+<name>makelist0</name>
+<listrepeat><![CDATA[
+<title>[makelist2.param4] - [makelist0.param1]</title>
+<link>plugin://plugin.video.elementum/play?uri=[makelist0.param2]</link>
+<fanart>[makelist2.param3]</fanart>
+<thumbnail>[makelist2.param3]</thumbnail>       
+]]></listrepeat>
+<expres><![CDATA[bttns\s*a.(.*?)\'.*?\n.*?\n.*?href=(.*?)\s*class]]></expres>
+<page>https://pelismag.net/[makelist2.param1]</page>
+<referer></referer>
+<cookieJar></cookieJar>
+</regex>
+<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+</item>
+
+ 
+
+<item>
+<title>     [B] [COLOR skyblue]BUSCADOR[/COLOR] [/B] 1337x.to </title>
+<link>$doregex[makelist2]</link>
+
+
+<regex>
+<name>makelist2</name>
+  <listrepeat><![CDATA[         
+<title>[B][makelist2.param3][/B]  size:[COLOR yellow][makelist2.param4][/COLOR] Seeds[COLOR lime][makelist2.param5][/COLOR]</title>
+<link>plugin://plugin.video.elementum/play?uri=$doregex[torrent]</link>
+<fanart>[makelist2.param3]</fanart>
+<thumbnail>https://$doregex[poster]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[coll-1 name.*?flaticon-(.*?)"><.*?href="(.*?)">(.*?)<[\W\w]*?size mob.*?>(.*?)<.*?seeds">(.*?)<]]></expres>
+<page>https://www.1337x.to/search/joker/1/</page>
+</regex>
+
+
+
+
+
+<regex>
+<name>poster</name>
+<expres><![CDATA[torrent-image[\W\w]*?src="(.*?)"]]></expres>
+<page>https://www.1337x.to/torrent/4190226/Joker-2019-BluRay-1080p-YTS-YIFY/</page>
+</regex>
+
+<regex>
+<name>torrent</name>
+<expres>href=("magnet.*?)"</expres>
+<page>https://www.1337x.to/torrent/4190226/Joker-2019-BluRay-1080p-YTS-YIFY/</page>
+</regex>
+
+
+
+
+
+<regex>
+<name>search</name>
+<expres><![CDATA[#$pyFunction
+import xbmc
+import xbmcaddon
+import xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+    dialog = xbmcgui.Dialog()
+    d = dialog.input('Busca tu Pelicula favorita:', type=xbmcgui.INPUT_ALPHANUM).replace(" ", "+")
+    return d
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+
+
+
+
+<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+</item>
+
+<item>
+<title>     [B] [COLOR skyblue]BUSCADOR[/COLOR] [/B] Torrentazo </title>
+ <link>$doregex[regex]</link> 
+ 
+
+
+ 
+<regex>
+ <name>regex</name>  
+ <listrepeat><![CDATA[
+   <title>[B][regex.param3][/B]  [regex.param4]</title>
+    <link>$doregex[regex1]</link>
+    <thumbnail>https://www.torrentazo.com[regex.param2]</thumbnail>
+   <fanart>https://www.torrentazo.com[regex.param2]</fanart>
+]]></listrepeat>
+<expres><![CDATA[(?s)catItemImage "[\w\W]*?href="(.*?)"[\w\W]*?src="(.*?)"\s*alt="(.*?)"[\w\W]*?dorange".*?\n\s*(.*?)\n]]></expres>
+<page>http://www.torrentazo.com/sjk2filter.html?isc=1&amp;ordering=alpha&amp;searchword=$doregex[buscar]&amp;theme=sj-template</page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>buscar</name>
+<expres><![CDATA[#$pyFunction
+import xbmc
+import xbmcaddon
+import xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+    dialog = xbmcgui.Dialog()
+    d = dialog.input('Busca tu Pelicula:', type=xbmcgui.INPUT_ALPHANUM).replace(" ", "%20")
+    return d
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>regex1</name>
+<listrepeat><![CDATA[
+<title>[regex1.param2]</title>
+<link>plugin://plugin.video.elementum/play?uri=https://www.torrentazo.com[regex1.param1]&image=imageurl&player=0</link>
+<thumbnail>https://www.torrentazo.com[regex.param2]</thumbnail>
+<fanart>https://www.torrentazo.com[regex.param2]</fanart> 
+]]></listrepeat>
+<expres><![CDATA[botonx66" href="(.*?\.torrent)".*?">(.*?)<]]></expres>
+<page>https://www.torrentazo.com[regex.param1]</page>
+</regex>
+<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+</item>
+ 
+ 
+<item>
+<title>     [B] [COLOR skyblue]BUSCADOR[/COLOR] [/B]  TorrentdePeliculas </title>
+
+ <link>$doregex[regex]</link> 
+ 
+<regex>
+ <name>regex</name>  
+ <listrepeat><![CDATA[
+   <title>[B][regex.param3][/B]</title>
+    <link>plugin://plugin.video.elementum/play?uri=$doregex[regex1]&image=imageurl&player=0</link>
+    <thumbnail>[regex.param2]</thumbnail>
+   <fanart>[regex.param2]</fanart>
+]]></listrepeat>
+<expres><![CDATA[(?s)article__header"[\w\W]*?href="(.*?)"[\w\W]*?src="(.*?)".*?alt="(.*?)"]]></expres>
+<page>http://torrentsdepeliculas.org/?s=$doregex[buscar]</page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>buscar</name>
+<expres><![CDATA[#$pyFunction
+import xbmc
+import xbmcaddon
+import xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+    dialog = xbmcgui.Dialog()
+    d = dialog.input('Busca tu Pelicula:', type=xbmcgui.INPUT_ALPHANUM).replace(" ", "+")
+    return d
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>regex1</name>
+<expres><![CDATA[href="(.*?\.torrent)"]]></expres>
+<page>[regex.param1]</page>
+</regex>
+<regex>
+<name>calidad</name>
+<expres><![CDATA[Formato:.*?>(.*?)<]]></expres>
+<page>[regex.param1]</page>
+</regex>
+
+</item>
+ 
+ 
+  
+ 
+ 
+<item><!--  torrentz2.eu  -->
+<title>     [COLOR deepskyblue][B]TORRENTSZ 2[/B][/COLOR]  Latino/Castellano </title>
+<link>$doregex[makelist]</link>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param2] </title>
+<link>plugin://plugin.video.elementum/play?uri=magnet:?xt=urn:btih:[makelist.param1]</link>
+<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[<dt><a\shref=\/(.*?)>(.*?)<.*?video]]></expres>
+<page>https://torrentz2.eu/searchA?f=$doregex[select]&amp;safe=1</page>
+</regex>
+
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+   import xbmcgui
+   dialog = xbmcgui.Dialog()
+   ret = dialog.select('Ultimos agregados: ', ['[COLOR yellow]Español[/COLOR]', '[COLOR lime]Latino[/COLOR]'])
+   lists = ['castellano', 'latino']
+   return lists[ret]
+]]></expres>
+<page></page>
+</regex>
+
+<regex>
+<name>hash</name>
+<expres><![CDATA[info\_hash\:\s(.*?)<]]></expres>
+<page>https://torrentz2.eu[makelist.param1]</page>
+</regex>
+
+<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+</item>
+ 
+<item><!--  torrentz2.eu buscador -->
+<title>     [COLOR deepskyblue][B]TORRENTSZ 2[/B][/COLOR]  Buscador </title>
+<link>$doregex[makelist]</link>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param2] </title>
+<link>plugin://plugin.video.elementum/play?uri=magnet:?xt=urn:btih:[makelist.param1]</link>
+<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+]]></listrepeat>
+
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data, Cookie_Jar,m):
+  import re,requests,HTMLParser,cfscrape
+  ua='Mozilla/5.0 (Windows NT 10; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36'
+  scraper = cfscrape.create_scraper()
+  source=scraper.get("http://torrentz2.eu/search?f=$doregex[buscaralgo]&safe=1", headers={'User-Agent': ua}, verify=False)
+  return re.findall('<dt><a\shref=\/(.*?)>(.*?)<.*?video',source.text)
+]]></expres>
+<page></page>
+</regex>
+
+
+
+<regex>
+<name>buscaralgo</name>
+<expres><![CDATA[#$pyFunction
+import xbmc
+import xbmcaddon
+import xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+    dialog = xbmcgui.Dialog()
+    d = dialog.input('Buscar Pelicula: ejemplo: Batman', type=xbmcgui.INPUT_ALPHANUM).replace(" ", "+")
+    return d
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>hash</name>
+<expres><![CDATA[info\_hash\:\s(.*?)<]]></expres>
+<page>https://torrentz2.eu[makelist.param1]</page>
+</regex>
+
+
+
+
+<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+</item>
+
+ 
+ 
+<item><!--  pctnew  -->
+<title>     [COLOR deepskyblue][B]PCTNEW[/B][/COLOR]  en pruebas </title>
+<link>$doregex[makelist]</link>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param3]   [makelist.param4] </title>
+<link>plugin://plugin.video.elementum/play?uri=https:$doregex[hash]</link>
+<thumbnail>http:[makelist.param2]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[<li>.*?href="(.*?)".*?src="(.*?)".*?<h2>(.*?)<.*?span>(.*?)<]]></expres>
+<page>https://pctnew.org/estrenos-de-cine/</page>
+</regex>
+
+
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+   import xbmcgui
+   dialog = xbmcgui.Dialog()
+   ret = dialog.select('Ultimos agregados: ', ['[COLOR yellow]Español[/COLOR]', '[COLOR lime]Latino[/COLOR]'])
+   lists = ['castellano', 'latino']
+   return lists[ret]
+]]></expres>
+<page></page>
+</regex>
+
+<regex>
+<name>hash</name>
+<expres><![CDATA[window\.location\.href = "(.*?)"]]></expres>descargar-torrent\/(.*?)"
+<page>[makelist.param1]</page>
+</regex>
+
+
+
+<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+</item>
+
+<link>$doregex[makelist]</link>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>sp op1</title>
+<link>plugin://plugin.video.elementum/play?uri=magnet:?xt=urn:btih:6e9aad08f557194208d32ba2d8dfe3b75cf04b50&dn=Sucker.Punch.2011.EXTENDED.720p.BluRay.H264.AAC-RARBG&tr=http%3A%2F%2Ftracker.trackerfix.com%3A80%2Fannounce&tr=udp%3A%2F%2F9.rarbg.me%3A2730&tr=udp%3A%2F%2F9.rarbg.to%3A2860</link>
+
+<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+</item>
+
+
+<item>
+<title>sp op2</title>
+<link>plugin://plugin.video.elementum/play?uri=magnet:?xt=urn:btih:13e2b01c311149c71e74bf7cb5df1584b147d59c&dn=Sucker.Punch.2011.EXTENDED.1080p.BluRay.x265-RARBG&tr=http%3A%2F%2Ftracker.trackerfix.com%3A80%2Fannounce&tr=udp%3A%2F%2F9.rarbg.me%3A2830&tr=udp%3A%2F%2F9.rarbg.to%3A2910</link>
+
+<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+</item>
+
+
+
+
+<item>
+<title>sp op3</title>
+<link>plugin://plugin.video.elementum/play?uri=magnet:?xt=urn:btih:16a3a5635266af5ddf2c81623426be0b70921a4d&dn=Sucker.Punch.2011.Extended.Cut.1080p.BluRay.x264-Japhson&tr=http%3A%2F%2Ftracker.trackerfix.com%3A80%2Fannounce&tr=udp%3A%2F%2F9.rarbg.me%3A2750&tr=udp%3A%2F%2F9.rarbg.to%3A2720</link>
+
+<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+</item>
+
+
+
+
+
+
+
+
+
+<item>
+<title>[B][COLOR darkorange]Cinetorrent [COLOR blue]Buscador de Peliculas[/COLOR][/B]</title>
+<link>$doregex[makelist]</link>
+ 
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param4] [COLOR lime] [ [makelist.param2] ] [/COLOR]</title>
+<link>$doregex[makelist1]</link>
+<thumbnail>[makelist.param1]</thumbnail>
+<fanart>[makelist.param1]</fanart>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re , requests , xbmc , xbmcaddon , xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+    url= 'http://cinetorrent.co/buscar/?buscar=$doregex[buscador]'
+    agent = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36'}
+    extraer = requests.get(url, headers=agent)
+    links = re.findall('src="(.*?)".*\n.*\n.*\n.*\n.*\n.*?li>(.+?)<.*\n.*\n.*\n.*\n.*?href="(.*?)">(.*?)<', extraer.text)
+    return links
+]]></expres>
+<page></page>
+<info></info>
+</regex>
+
+<regex>
+<name>buscador</name>
+<expres><![CDATA[#$pyFunction
+import xbmc
+import xbmcaddon
+import xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+    dialog = xbmcgui.Dialog()
+    d = dialog.input('Escribe Nombre de la Pelicula', type=xbmcgui.INPUT_ALPHANUM).replace(" ", "+")
+    return d
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>makelist1</name>
+<listrepeat><![CDATA[
+<title>Ver en: [COLOR lime][makelist1.param2] [COLOR yellow][makelist1.param1] [COLOR blue][makelist1.param3][/COLOR]</title>
+<link>plugin://plugin.video.elementum/play?uri=[makelist1.param4]</link>
+<thumbnail>[makelist.param1]</thumbnail>
+<fanart>[makelist.param1]</fanart>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re , requests , xbmc , xbmcaddon , xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+    url= '[makelist.param3]'
+    agent = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36'}
+    extraer = requests.get(url, headers=agent)
+    links = re.findall('tr>.*\n.*?td>(.*?)<.*\n.*?td>(.*?)<.*\n.*\n.*?td>(.*?)<.*\n.*\n.*\n.*\n.*\n.*\n.*?href="(.*?)"', extraer.text)
+    return links   
+]]></expres>
+<page></page>
+<info></info>
+</regex>
+
+__________________________________________________________________________________________________________
+
+<item>
+<title>[B][COLOR darkorange]Cinetorrent [COLOR blue]Peliculas[/COLOR][/B]</title>
+<link>$doregex[paginas]</link>
+
+<regex>
+<name>paginas</name>
+<listrepeat><![CDATA[
+<title>Pagina [paginas.param1]</title>
+<link>$doregex[makelist]</link>
+<thumbnail></thumbnail>
+]]></listrepeat>
+<expres>'(.*?)'</expres>
+<page>'1''2''3''4''5''6''7''8''9''10''11''12''13''14''15''16''17''18''19''20''21''22''23''24''25''26''27''28''29''30''31''32''33''34''35''36''37''38''39''40''41''42''43''44''45''46''47''48''49''50''51''52''53''54''55''56''57'</page>
+</regex>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param4] [COLOR lime] [ [makelist.param2] ] [/COLOR]</title>
+<link>$doregex[makelist1]</link>
+<thumbnail>[makelist.param1]</thumbnail>
+<fanart>[makelist.param1]</fanart>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re , requests , xbmc , xbmcaddon , xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+    url= 'http://cinetorrent.co/peliculas/page/[paginas.param1]'
+    agent = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36'}
+    extraer = requests.get(url, headers=agent)
+    links = re.findall('src="(.*?)".*\n.*\n.*\n.*\n.*\n.*?li>(.*?)<.*\n.*\n.*\n.*\n.*?href="(.*?)">(.*?)<', extraer.text)
+    return links   
+]]></expres>
+<page></page>
+<info></info>
+</regex>
+
+<regex>
+<name>makelist1</name>
+<listrepeat><![CDATA[
+<title>Ver en: [COLOR lime][makelist1.param2] [COLOR yellow][makelist1.param1] [COLOR blue][makelist1.param3][/COLOR]</title>
+<link>plugin://plugin.video.elementum/play?uri=[makelist1.param4]</link>
+<thumbnail>[makelist.param1]</thumbnail>
+<fanart>[makelist.param1]</fanart>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re , requests , xbmc , xbmcaddon , xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+    url= '[makelist.param3]'
+    agent = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36'}
+    extraer = requests.get(url, headers=agent)
+    links = re.findall('tr>.*\n.*?td>(.*?)<.*\n.*?td>(.*?)<.*\n.*\n.*?td>(.*?)<.*\n.*\n.*\n.*\n.*\n.*\n.*?href="(.*?)"', extraer.text)
+    return links   
+]]></expres>
+<page></page>
+<info></info>
+</regex>
+
+__________________________________________________________________________________________________
+
+
+<item>
+<title>[B][COLOR darkorange]Cinetorrent [COLOR blue]Peliculas 4K[/COLOR][/B]</title>
+<link>$doregex[paginas]</link>
+
+<regex>
+<name>paginas</name>
+<listrepeat><![CDATA[
+<title>Pagina [paginas.param1]</title>
+<link>$doregex[makelist]</link>
+<thumbnail></thumbnail>
+]]></listrepeat>
+<expres>'(.*?)'</expres>
+<page>'1''2''3''4''5''6'</page>
+</regex>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param4] [COLOR lime] [ [makelist.param2] ] [/COLOR]</title>
+<link>$doregex[makelist1]</link>
+<thumbnail>[makelist.param1]</thumbnail>
+<fanart>[makelist.param1]</fanart>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re , requests , xbmc , xbmcaddon , xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+    url= 'http://cinetorrent.co/quality/4k-2160p/page/[paginas.param1]'
+    agent = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36'}
+    extraer = requests.get(url, headers=agent)
+    links = re.findall('src="(.*?)".*\n.*\n.*\n.*\n.*\n.*?li>(.*?)<.*\n.*\n.*\n.*\n.*?href="(.*?)">(.*?)<', extraer.text)
+    return links   
+]]></expres>
+<page></page>
+<info></info>
+</regex>
+
+<regex>
+<name>makelist1</name>
+<listrepeat><![CDATA[
+<title>Ver en: [COLOR lime][makelist1.param2] [COLOR yellow][makelist1.param1] [COLOR blue][makelist1.param3][/COLOR]</title>
+<link>plugin://plugin.video.elementum/play?uri=[makelist1.param4]</link>
+<thumbnail>[makelist.param1]</thumbnail>
+<fanart>[makelist.param1]</fanart>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re , requests , xbmc , xbmcaddon , xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+    url= '[makelist.param3]'
+    agent = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36'}
+    extraer = requests.get(url, headers=agent)
+    links = re.findall('tr>.*\n.*?td>(.*?)<.*\n.*?td>(.*?)<.*\n.*\n.*?td>(.*?)<.*\n.*\n.*\n.*\n.*\n.*\n.*?href="(.*?)"', extraer.text)
+    return links   
+]]></expres>
+<page></page>
+<info></info>
+</regex>
+
+__________________________________________________________________________________________________
+
+
+<item>
+<title>[B][COLOR darkorange]Cinetorrent [COLOR blue]Peliculas 1080 Dual[/COLOR][/B]</title>
+<link>$doregex[paginas]</link>
+
+<regex>
+<name>paginas</name>
+<listrepeat><![CDATA[
+<title>Pagina [paginas.param1]</title>
+<link>$doregex[makelist]</link>
+<thumbnail></thumbnail>
+]]></listrepeat>
+<expres>'(.*?)'</expres>
+<page>'1''2''3''4''5''6''7''8''9''10''11''12''13''14''15''16''17''18''19''20''21''22''23''24''25''26''27''28''29''30''31''32''33''34''35''36''37''38''39''40''41''42''43''44''45''46''47''48''49''50''51''52''53''54''55''56''57''58''59''60''61''62''63''64''65''66''67''68''69''70''71''72''73''74''75''76''77''78''79''80''81''82''83''84''85''86''87''88''89''90''91''92''93''94''95''96''97''98''99''100''101'</page>
+</regex>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param4] [COLOR lime] [ [makelist.param2] ] [/COLOR]</title>
+<link>$doregex[makelist1]</link>
+<thumbnail>[makelist.param1]</thumbnail>
+<fanart>[makelist.param1]</fanart>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re , requests , xbmc , xbmcaddon , xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+    url= 'http://cinetorrent.co/quality/1080p-dual/page/[paginas.param1]'
+    agent = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36'}
+    extraer = requests.get(url, headers=agent)
+    links = re.findall('src="(.*?)".*\n.*\n.*\n.*\n.*\n.*?li>(.*?)<.*\n.*\n.*\n.*\n.*?href="(.*?)">(.*?)<', extraer.text)
+    return links   
+]]></expres>
+<page></page>
+<info></info>
+</regex>
+
+<regex>
+<name>makelist1</name>
+<listrepeat><![CDATA[
+<title>Ver en: [COLOR lime][makelist1.param2] [COLOR yellow][makelist1.param1] [COLOR blue][makelist1.param3][/COLOR]</title>
+<link>plugin://plugin.video.elementum/play?uri=[makelist1.param4]</link>
+<thumbnail>[makelist.param1]</thumbnail>
+<fanart>[makelist.param1]</fanart>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re , requests , xbmc , xbmcaddon , xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+    url= '[makelist.param3]'
+    agent = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36'}
+    extraer = requests.get(url, headers=agent)
+    links = re.findall('tr>.*\n.*?td>(.*?)<.*\n.*?td>(.*?)<.*\n.*\n.*?td>(.*?)<.*\n.*\n.*\n.*\n.*\n.*\n.*?href="(.*?)"', extraer.text)
+    return links   
+]]></expres>
+<page></page>
+<info></info>
+</regex>
+
+__________________________________________________________________________________________________
+
+
+<item>
+<title>[B][COLOR darkorange]Cinetorrent [COLOR blue]Peliculas 1080[/COLOR][/B]</title>
+<link>$doregex[paginas]</link>
+
+<regex>
+<name>paginas</name>
+<listrepeat><![CDATA[
+<title>Pagina [paginas.param1]</title>
+<link>$doregex[makelist]</link>
+<thumbnail></thumbnail>
+]]></listrepeat>
+<expres>'(.*?)'</expres>
+<page>'1''2''3''4''5''6''7''8''9''10''11''12''13''14''15''16''17''18''19''20''21''22''23''24''25''26''27''28''29''30'</page>
+</regex>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param4] [COLOR lime] [ [makelist.param2] ] [/COLOR]</title>
+<link>$doregex[makelist1]</link>
+<thumbnail>[makelist.param1]</thumbnail>
+<fanart>[makelist.param1]</fanart>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re , requests , xbmc , xbmcaddon , xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+    url= 'https://cinetorrent.co/quality/1080p/page/[paginas.param1]'
+    agent = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36'}
+    extraer = requests.get(url, headers=agent)
+    links = re.findall('src="(.*?)".*\n.*\n.*\n.*\n.*\n.*?li>(.*?)<.*\n.*\n.*\n.*\n.*?href="(.*?)">(.*?)<', extraer.text)
+    return links   
+]]></expres>
+<page></page>
+<info></info>
+</regex>
+
+<regex>
+<name>makelist1</name>
+<listrepeat><![CDATA[
+<title>Ver en: [COLOR lime][makelist1.param2] [COLOR yellow][makelist1.param1] [COLOR blue][makelist1.param3][/COLOR]</title>
+<link>plugin://plugin.video.elementum/play?uri=[makelist1.param4]</link>
+<thumbnail>[makelist.param1]</thumbnail>
+<fanart>[makelist.param1]</fanart>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re , requests , xbmc , xbmcaddon , xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+    url= '[makelist.param3]'
+    agent = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36'}
+    extraer = requests.get(url, headers=agent)
+    links = re.findall('tr>.*\n.*?td>(.*?)<.*\n.*?td>(.*?)<.*\n.*\n.*?td>(.*?)<.*\n.*\n.*\n.*\n.*\n.*\n.*?href="(.*?)"', extraer.text)
+    return links   
+]]></expres>
+<page></page>
+<info></info>
+</regex>
+
+
+
+
+
+
+
+

@@ -1,0 +1,5056 @@
+
+ <SetViewMode>55</SetViewMode>
+
+<!--buscadores-->
+
+<item>
+<title>[COLOR skyblue][B][  ][/B]    [B]BUSCAR SERIE[/B] miradetodo [/COLOR]</title>
+<link>$doregex[makelist1]</link>
+
+
+
+
+<regex>
+ <name>makelist1</name> movies  (all pages)
+ <listrepeat><![CDATA[
+ 
+ <title> [makelist1.param3]   </title>
+<link>$doregex[makelist2]</link>
+ <thumbnail>[makelist1.param2]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[item">.*?\n.*?href="(.*?)".*?\n.*?\n.*?src="(.*?)".*?alt="(.*?)"]]></expres>
+<page>https://miradetodo.co/?s=$doregex[buscar]</page>
+</regex>
+
+
+
+
+
+<regex>
+<name>buscar</name>
+<expres><![CDATA[#$pyFunction
+import xbmc
+import xbmcaddon
+import xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+    dialog = xbmcgui.Dialog()
+    d = dialog.input('Busca una Serie:', type=xbmcgui.INPUT_ALPHANUM).replace(" ", "+")
+    return d
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>[makelist1.param3] [makelist2.param1]  [makelist2.param3] [I]emitido:[makelist2.param4][/I]     </title>
+<link>$doregex[makelist0]</link>
+ <thumbnail>[makelist1.param2]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[numerando\">(.*?)<.*?href="(.*?)">(.*?)<.*?date">(.*?)<]]></expres>
+<page>[makelist1.param1]</page>
+</regex>
+
+<regex>
+<name>makelist0</name>
+<listrepeat><![CDATA[
+<title>[makelist1.param3] [makelist2.param1]  [makelist2.param3] opcion:[makelist0.param1]    </title>
+<link>$doregex[makelist3]</link>
+ <thumbnail>[makelist1.param2]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[tit\"\>(.*?)<.*?data\-lazy\-src\=\"(.*?)\"]]></expres>
+<page>[makelist2.param2]</page>
+</regex>
+
+<regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+<title>[makelist1.param3] [makelist2.param1] - [makelist3.param2] </title>
+<link>$doregex[id3]</link>
+ <thumbnail>[makelist1.param2]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[a\shref="(.*?)".*?\n.*?\n.*?\n.*?\n.*?span>(.*?)<]]></expres>
+<page>[makelist0.param2]</page>
+</regex>
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver, resolveurl
+    url = '$doregex[serv]'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'doregex[dos]'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+<regex>
+<name>serv</name>
+<expres><![CDATA[iframe src="(.*?)"]]></expres>
+<page>[makelist3.param1]</page>
+</regex>
+
+  <regex>
+    <name>dos</name>
+    <expres><![CDATA[#$pyFunction
+def GetLSProData(page_data, Cookie_Jar,m,url='$doregex[serv]'):
+  import re,requests,xbmc,urlresolver
+  from urlresolver.plugins.lib import jsunpack
+  ua ='Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36'
+  s=requests.session()
+  rsource=s.get(url, headers={'User-Agent': ua},  verify=False)
+  source=s.get(url, headers={'User-Agent': ua},  verify=False)
+  pack = re.findall('javascript.*?(eval\(function\(p,a,c,k,e,d.*)', source.text)[0]
+  unpack=jsunpack.unpack(pack).replace('\\','')
+  u = re.findall('file:\s*"(http.*?)"', unpack)[0]+'|User-Agent='+ua
+  return u
+]]></expres>
+    <page></page>
+  </regex>
+
+<thumbnail>http://blackghost.live/gray/img/series.png</thumbnail><fanart>http://blackghost.live/gray/img/fanart.jpg</fanart>
+</item>
+
+<itm>
+<title>[COLOR skyblue][B][  ][/B]    [B]BUSCAR SERIE[/B] seriespapaya [/COLOR]</title>
+<link>$doregex[makelist1]</link>
+
+
+<regex>
+<name>makelist1</name>
+<listrepeat><![CDATA[
+<title>$pyFunction:('[makelist1.param1]').replace('\\u00f1','n').replace('\\u00a0',' ')</title>
+<thumbnail>http://www.seriespapaya.nu/[makelist1.param2]</thumbnail>
+<fanart>http://www.seriespapaya.nu/[makelist1.param2]</fanart>
+<link>$doregex[makelist2]</link>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re , requests , xbmc , xbmcaddon , xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+    url= 'http://www.seriespapaya.nu/buscar.php?term=' + BuscadorBG()
+    agent = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36'}
+    extraer = requests.get(url, headers=agent)
+    links = re.findall('titulo\":\"(.*?)\".*?img".*?"(.*?)".*?serie\\\/(.*?)\"', extraer.text)
+    return links
+def BuscadorBG():
+    teclado = xbmcgui.Dialog()
+    Respuesta_BG = teclado.input('Buscar Serie: Elite', type=xbmcgui.INPUT_ALPHANUM).replace(" ", "+").replace("\xf1", "n")
+    return Respuesta_BG
+]]></expres>
+<page></page>
+</regex>
+
+
+
+
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+
+<title>[makelist1.param1] [makelist2.param2]     </title>
+<link>$doregex[makelist3]</link>
+<thumbnail>http://www.seriespapaya.nu/[makelist1.param2]</thumbnail>
+<fanart>http://www.seriespapaya.nu/[makelist1.param2]</fanart>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re , requests , xbmc , xbmcaddon , xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+    url= 'http://www.seriespapaya.nu/serie/[makelist1.param3]'
+    agent = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36'}
+    extraer = requests.get(url, headers=agent)
+    links = re.findall('visco" href="(.+?)".*?nbsp\;(.+?)<', extraer.text)
+    return links
+]]></expres>
+<page></page>
+</regex>
+
+
+
+<regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+
+<title>[makelist1.param1] [makelist2.param2] | Idioma:[B][makelist3.param1][/B]  Calidad:[B][makelist3.param5][/B]  Server:[B][makelist3.param3][/B]        </title>
+<link>$doregex[id3]</link>
+<thumbnail>http://www.seriespapaya.nu/[makelist1.param2]</thumbnail>
+<fanart>http://www.seriespapaya.nu/[makelist1.param2]</fanart>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re , requests , xbmc , xbmcaddon , xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+    url= 'http://www.seriespapaya.nu/[makelist2.param1]'
+    agent = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36'}
+    extraer = requests.get(url, headers=agent)
+    links = re.findall('didioma[\w\W\s]{0,17}images/(.*?).p[\w\W\s]{0,30}dfecha.*?\n(.*?)<.*?\n.*?\n.*?\/\>\s(Upto.*?|Gamo.*?|Vido.*?|Streamch.*?|Gounlimi.*?|Uqload.*?|Ok.*?|Upstreamt.*?|Fembed.*?|Clipwatch.*?)<.*?\n.*?\n.*?href="(.*?)" .*?\n.*?\n.*?dcalidad.*?\n(.*?)<', extraer.text)
+    return links
+]]></expres>
+<page></page>
+</regex>
+
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver, resolveurl
+    url = '$doregex[link]'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = '$doregex[dos]'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+
+<regex>
+<name>link</name>
+<expres><![CDATA[#$pyFunction
+import re , requests , xbmc , xbmcaddon , xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+    url= 'http://www.seriespapaya.nu[makelist3.param4]/'
+    agent = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36', 'Referer': 'https://www.seriespapaya.nu/serie/elite.html'}
+    extraer = requests.get(url, headers=agent)
+    links = re.findall("location\.href='(.+?)'", extraer.content)[0]
+    return links
+]]></expres>
+<expres></expres>
+<page></page>
+</regex>
+
+  <regex>
+    <name>dos</name>
+    <expres><![CDATA[#$pyFunction
+def GetLSProData(page_data, Cookie_Jar,m,url='$doregex[link]'):
+  import re,requests,xbmc,urlresolver
+  from urlresolver.plugins.lib import jsunpack
+  ua ='Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36'
+  s=requests.session()
+  rsource=s.get(url, headers={'User-Agent': ua},  verify=False)
+  source=s.get(url, headers={'User-Agent': ua},  verify=False)
+  pack = re.findall('javascript.*?(eval\(function\(p,a,c,k,e,d.*)', source.text)[0]
+  unpack=jsunpack.unpack(pack)
+  u = re.findall('file:\s*"(http.*?)"', unpack)[0]+'|User-Agent='+ua
+  return u
+]]></expres>
+    <page></page>
+  </regex>
+
+
+<thumbnail>http://blackghost.live/gray/img/series.png</thumbnail><fanart>http://blackghost.live/gray/img/fanart.jpg</fanart></item>
+ 
+ 
+ 
+<item>
+<title>[COLOR skyblue][B][  ][/B]    [B]BUSCAR SERIE[/B] seriespapaya [/COLOR]</title>
+<link>$doregex[makelist2]</link>
+
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>$pyFunction:('[COLOR skyblue][makelist2.param1] [/COLOR]').replace('\u00f1','n').replace('\u00a0',' ')</title>
+<thumbnail>http://www.seriespapaya.net/$doregex[name]</thumbnail>
+<link>$doregex[makelist]</link>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re , requests , xbmc , xbmcaddon , xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+    url= 'http://www.seriespapaya.net/buscar.php?term=' + Buscador()
+    agente = {'User-Agent':'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36'}
+    extraer = requests.get(url, headers=agente)
+    ExpresBlack = re.findall('titulo\":\"(.*?)\".*?img".*?"(.*?)".*?serie\\\/(.*?)\"', extraer.text)
+    return ExpresBlack
+def Buscador():
+    teclado = xbmcgui.Dialog()
+    Respuesta_Buscador = teclado.input('Buscar Serie: Elite', type=xbmcgui.INPUT_ALPHANUM).replace(" ", "+").replace("\xf1", "n")
+    return Respuesta_Buscador
+]]></expres>
+<page></page>
+</regex>
+
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist2.param1] [COLOR lightblue][B] [makelist.param4][/B][/COLOR] </title>
+<thumbnail>http://www.seriespapaya.net/$doregex[name]</thumbnail>
+<link>$doregex[makelist0]</link>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re , requests , xbmc , xbmcaddon , xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+    url= 'https://www.seriespapaya.nu/serie/[makelist2.param3]'
+    agente = {'User-Agent':'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36'}
+    extraer = requests.get(url, headers=agente)
+    ExpresBlack = re.findall('(?s)location = "([^"]+).*? href="([^"]+).*?img src="([^"]+).*?;([^<]+).*?', extraer.text)
+    return ExpresBlack
+]]></expres>
+<page></page>
+</regex>
+
+
+<regex>
+<name>makelist0</name>
+<listrepeat><![CDATA[
+<title>[makelist2.param1] [COLOR lightblue][B] [makelist.param4][/B][/COLOR] [COLOR white] [makelist0.param3] [COLOR lightskyblue][makelist0.param5] [COLOR blue]idioma [makelist0.param1][/COLOR] </title>
+<thumbnail>https://www.seriespapaya.nu/$doregex[name]</thumbnail>
+<link>$doregex[id3]</link>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re , requests , xbmc , xbmcaddon , xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+    url= 'https://www.seriespapaya.nu/[makelist.param2]'
+    agente = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36', 'Referer': 'https://www.seriespapaya.nu/serie/breaking-bad.html'}
+    extraer = requests.get(url, headers=agente)
+    ExpresBlack = re.findall('idioma[\w\W\s]{0,47}images\/(.*?)\.p[\w\W\s]{0,80}fecha\"\>\n(.*?)<[\w\W\s]{0,217}(Upto.*?|Gamo.*?|Vido.*?|Streamch.*?|Gounlimi.*?|Uqload.*?|Ok.*?|Upstreamt.*?|Fembed.*?|Clipwatch.*?)<[\w\W\s]{0,99}href="(.*?)"[\w\W\s]{0,88}calidad">\n(.*?)<', extraer.text)
+    return ExpresBlack
+]]></expres>
+<page></page>
+</regex>
+
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+import re,requests,xbmc,urlresolver,cookielib,urllib,urllib2
+from urlresolver.plugins.lib import jsunpack
+def GetLSProData(page_data,Cookie_Jar,m,url='$doregex[enlace]'):
+ 
+  if 'gamovideo' in url:
+    try:
+        ua = 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36'
+        s=requests.session()
+        rsource=s.get(url, headers={'User-Agent': ua},  verify=False)
+        source=s.get(url, headers={'User-Agent': ua},  verify=False)
+        pack = re.findall('javascript.*?(eval\(function\(p,a,c,k,e,d.*)', source.text)[0]
+        unpack=jsunpack.unpack(pack)
+        u = re.findall('file:\s*"(http.*?)"', unpack)[0]+'|User-Agent='+ua
+    except:
+        u = xbmc.executebuiltin("XBMC.Notification(BlackGhost,enlace Gamovideo caido, 4000)")
+    return u
+
+  elif 'flix' in url:
+    try:
+        mozhdr4 = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36', 'Referer': 'http://www.seriespapaya.net/[makelist0.param4]'}
+        html4 = requests.get(url, headers=mozhdr4, verify=False).text
+        edata = re.findall('javascript.*?(eval\(function\(p,a,c,k,e,d.*)', html4)[0]
+        epage = jsunpack.unpack(edata)
+        u = re.findall('(?s)vplayer.*?file\s*.*?"(.*?)"', epage, re.DOTALL)[0]
+    except:
+        u = xbmc.executebuiltin("XBMC.Notification(BlackGhost,enlace Flix caido, 4000)")
+    return u
+  elif 'clipwatching' in url:
+    try:
+        ua = 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36'
+        u = re.findall('sources: ..src: "(.*?)"',requests.get(url,headers={'user-agent':ua},verify=False).content)[0]
+    except:
+        u = xbmc.executebuiltin("XBMC.Notification(BlackGhost,enlace Clipwatching caido, 4000)")
+    return u
+  elif 'vidoza' in url:
+    try:
+        mozhdr4 = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36', 'Referer': 'http://www.seriespapaya.net/'}
+        html4 = requests.get(url, headers=mozhdr4, verify=False).text
+        u = re.findall('["\']?\s*(?:file|src)\s*["\']?\s*[:=,]?\s*["\'](?P<url>[^"\']+)(?:[^}>\]]+)["\']?\s*res', html4)[0] + '|User-Agent=' + 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36'
+    except:
+        u = xbmc.executebuiltin("XBMC.Notification(BlackGhost,enlace Vidoza caido, 4000)")
+    return u
+  elif 'openload' in url:
+    try:
+        mozhdr = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36', 'Referer': 'http://www.seriespapaya.net/[makelist0.param4]'}
+        u = xbmc.executebuiltin("XBMC.Notification(BlackGhost,Servidor Openload muerto , 4000)")
+    except:
+        u = xbmc.executebuiltin("XBMC.Notification(BlackGhost,Servidor Openload muerto, 4000)")
+    return u
+  elif 'uptobox' in url:
+    try:
+        mozhdr3 = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36', 'Referer': 'http://www.seriespapaya.net/[makelist0.param4]'}
+        html3 = requests.get(url, headers=mozhdr3, verify=False).text
+        part1 = re.findall('(by its owner|uploaded with File Uploader)', html3)[0]
+        u = xbmc.executebuiltin("XBMC.Notification(BlackGhost,enlace  borrado , 4000)")
+    except:
+        H = xbmc.executebuiltin("XBMC.Notification(Blackghost Uptobox,Limite 120minutos diarios con esta ip, 5000)")
+        u = resolveurl.resolve(url)
+    return u
+  else:
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = xbmc.executebuiltin("XBMC.Notification(BlackGhost,enlace [makelist0.param3] caido, 4000)")
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+<regex>
+<name>enlace</name>
+<expres><![CDATA[#$pyFunction
+import re , requests , xbmc , xbmcaddon , xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+    url= 'https://www.seriespapaya.nu/[makelist0.param4]'
+    agente = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36', 'Referer': 'https://www.seriespapaya.nu/serie/breaking-bad.html'}
+    extraer = requests.get(url, headers=agente)
+    ExpresBlack = re.findall("location\.href='(.*?)'", extraer.content)[0]
+    return ExpresBlack
+]]></expres>
+<page></page>
+</regex>
+
+
+<regex>
+<name>name</name>
+<expres>$pyFunction:('[makelist2.param2]').replace('\u00f1','%C3%B1').replace('\/','/')</expres>
+<page></page>
+</regex>
+
+
+<thumbnail>http://blackghost.live/gray/img/series.png</thumbnail><fanart>http://blackghost.live/gray/img/fanart.jpg</fanart></item>
+ 
+
+
+
+<item>
+<title>[COLOR skyblue][B][  ][/B]    [B]BUSCAR SERIE[/B] Danko Series [/COLOR]</title>
+
+<link>$doregex[makelist1]</link>
+
+
+
+<regex>
+<name>makelist1</name>
+<listrepeat><![CDATA[
+<title>[COLOR skyblue][makelist1.param2][/COLOR]   </title>
+<link>$doregex[makelist2]</link>
+<fanart>[makelist1.param3]</fanart>
+<thumbnail>[makelist1.param3]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[class="on".*?href="(.*?)".*?title="(.*?)".*?\n.*?src="(.*?)"]]></expres>
+<page>https://seriesdanko.net/?s=$doregex[buscar]</page>
+</regex>
+
+
+
+
+<regex>
+<name>buscar</name>
+<expres><![CDATA[#$pyFunction
+import xbmc
+import xbmcaddon
+import xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+    dialog = xbmcgui.Dialog()
+    d = dialog.input('Busca una Serie:', type=xbmcgui.INPUT_ALPHANUM).replace(" ", "+")
+    return d
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>[COLOR skyblue][makelist2.param2][/COLOR]   </title>
+<link>$doregex[makelist3]</link>
+<fanart>[makelist1.param3]</fanart>
+<thumbnail>[makelist1.param3]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[sape"[\w\W]*?href="(.*?)".*?">(.*?)<]]></expres>
+<page>[makelist1.param1]</page>
+</regex> 
+
+
+<regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+<title>[COLOR skyblue][makelist2.param2][/COLOR] Idioma:[B][makelist3.param1][/B] Server:[B][makelist3.param2][/B]  </title>
+<link>$doregex[id3]</link>
+<fanart>[makelist1.param3]</fanart>
+<thumbnail>[makelist1.param3]</thumbnail>
+]]></listrepeat>
+<expres>language\/(.*?)\.p[\w\W]*?domain=(.*?)"[\w\W]*?href="(.*?)"</expres>
+<page>[makelist2.param1]</page>
+</regex>
+
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver, resolveurl
+    url = '$doregex[link]'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = '$doregex[dos]'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+<regex>
+<name>link</name>
+<expres>palabra = "(.*?)"</expres>
+<page>https://seriesdanko.net[makelist3.param3]</page>
+</regex>
+
+  <regex>
+    <name>dos</name>
+    <expres><![CDATA[#$pyFunction
+def GetLSProData(page_data, Cookie_Jar,m,url='$doregex[link]'):
+  import re,requests,xbmc,urlresolver
+  from urlresolver.plugins.lib import jsunpack
+  ua ='Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36'
+  s=requests.session()
+  rsource=s.get(url, headers={'User-Agent': ua},  verify=False)
+  source=s.get(url, headers={'User-Agent': ua},  verify=False)
+  pack = re.findall('javascript.*?(eval\(function\(p,a,c,k,e,d.*)', source.text)[0]
+  unpack=jsunpack.unpack(pack).replace('\\','')
+  u = re.findall('file:\s*"(http.*?)"', unpack)[0]+'|User-Agent='+ua
+  return u
+]]></expres>
+    <page></page>
+  </regex>
+	
+<thumbnail>http://blackghost.live/gray/img/series.png</thumbnail><fanart>http://blackghost.live/gray/img/fanart.jpg</fanart></item>
+
+<item>
+<title>[COLOR skyblue][B][  ][/B]    [B]BUSCAR SERIE[/B] Pepe Series [/COLOR]</title>
+<link>$doregex[list3]</link>
+
+<regex>
+<name>list3</name>
+<listrepeat><![CDATA[
+<title>$pyFunction:'[B][COLOR lightblue][list3.param2][/B] [COLOR lightgreen]([list3.param3])[/COLOR][/COLOR] [list3.param6]'.replace('\u00e1', 'a').replace('\u00e9', 'e').replace('\u00ed', 'i').replace('\u00f3', 'o').replace('\u00fa', 'u').replace('\u00f1', 'ñ').replace('true', '[COLOR lime]Serie[/COLOR]').replace('false', '[COLOR red]Pelicula[/COLOR]')</title>
+<link>$doregex[list]</link>>
+<thumbnail>$pyFunction:'[list3.param5]'.replace('\\','')</thumbnail>
+<info>[list3.param4]</info>
+]]></listrepeat>
+<expres><![CDATA["id":(.*?),"name":"(.*?)","year":(.*?),"description":"(.*?)","poster":"(.*?)","is_series":(.*?),"]]></expres>
+<page>https://pepecine.com/secure/search/$doregex[buscar]</page>
+<referer>https://pepecine.com</referer>
+<agent>Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/533.20.25 (KHTML, like Gecko) Version/5.0.4 Safari/533.20.27</agent>
+</regex>
+
+
+
+<regex>
+<name>buscar</name>
+<expres><![CDATA[#$pyFunction
+import xbmc
+import xbmcaddon
+import xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+    dialog = xbmcgui.Dialog()
+    d = dialog.input('Busca tu pelicula:', type=xbmcgui.INPUT_ALPHANUM).replace(" ", "%20")
+    return d
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+
+
+
+
+
+
+
+
+<regex>
+<name>list</name>
+<listrepeat><![CDATA[
+<title>Temporada [list.param1] : Capitulos [list.param2]</title>
+<link>$doregex[list2]</link>>
+<thumbnail>$pyFunction:'[list3.param5]'.replace('\\','')</thumbnail>
+<info>[list3.param4]</info>
+]]></listrepeat>
+<expres><![CDATA["number":(.*?),"episode_count":(.*?),"]]></expres>
+<page>https://pepecine.com/secure/titles/[list3.param1]?titleId=[list3.param1]</page>
+<referer>https://pepecine.com</referer>
+<agent>Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/533.20.25 (KHTML, like Gecko) Version/5.0.4 Safari/533.20.27</agent>
+</regex>
+
+
+
+<regex>
+<name>list2</name>
+<listrepeat><![CDATA[
+<title>[list2.param1]x[list2.param2]   [list2.param3] </title>
+<link>$doregex[url]</link>>
+<thumbnail>$pyFunction:'[list3.param2]'.replace('\\','')</thumbnail>
+<info>[list3.param4]</info>
+]]></listrepeat>
+<expres><![CDATA[season_number":(.*?)\,.*?episode_number":(.*?)\,.*?name":"(.*?)"]]></expres>
+<page>https://pepecine.com/secure/titles/[list3.param1]?titleId=[list3.param1]&amp;seasonNumber=[list.param1]</page>
+<referer>https://pepecine.com</referer>
+<agent>Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/533.20.25 (KHTML, like Gecko) Version/5.0.4 Safari/533.20.27</agent>
+</regex>
+
+
+  
+<regex>
+<name>url</name>
+<listrepeat><![CDATA[
+<title>[list2.param1]x[list2.param2] [B]  [list2.param3] [COLOR lightblue][url.param4][/B][/COLOR]  [[COLOR lightyellow][B][url.param1][/B][/COLOR]]     Server:[B][url.param3][/B]</title>
+<link>$doregex[id3]</link>
+<thumbnail>$pyFunction:'[list3.param2]'.replace('\\','')</thumbnail>
+<info>[list3.param4]</info>
+]]></listrepeat>
+<expres><![CDATA[\/(.*?)\.png.*?url\"\:\"(http.*?\/(\w+)\..*?)".*?quality\"\:\"(.+?)\"]]></expres>
+<page>https://pepecine.com/secure/titles/[list3.param1]?titleId=[list3.param1]&amp;seasonNumber=[list2.param1]&amp;episodeNumber=[list2.param2]</page>
+<referer>ttps://pepecine.com/secure/titles/[list3.param1]</referer>
+<agent>Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/533.20.25 (KHTML, like Gecko) Version/5.0.4 Safari/533.20.27</agent>
+</regex>
+
+
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver, resolveurl
+    url = '[url.param2]'.replace('\\','')
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = '$doregex[dos]'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+<regex>
+<name>dos</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data, Cookie_Jar,m):
+  import re,requests,xbmc,urlresolver
+  from urlresolver.plugins.lib import jsunpack
+  url='[url.param2]'.replace('\\','')
+  ua ='Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36'
+  s=requests.session()
+  rsource=s.get(url, headers={'User-Agent': ua},  verify=False)
+  source=s.get(url, headers={'User-Agent': ua},  verify=False)
+  pack = re.findall('javascript.*?(eval\(function\(p,a,c,k,e,d.*)', source.text)[0]
+  unpack=jsunpack.unpack(pack)
+  u = re.findall('file:\s*"(http.*?)"', unpack)[0]+'|User-Agent='+ua
+  return u
+]]></expres>
+    <page></page>
+  </regex>
+
+<thumbnail>http://blackghost.live/gray/img/series.png</thumbnail><fanart>http://blackghost.live/gray/img/fanart.jpg</fanart>
+</item>
+ 
+
+ 
+
+ 
+<item>
+<title>[COLOR skyblue][B][  ][/B]    [B]BUSCAR SERIE[/B] Series Pepito [/COLOR]</title>
+<link>$doregex[makelist3]</link>
+
+
+<regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+<title>[COLOR white][makelist3.param3] [/COLOR]   </title>
+<link>$doregex[makelist2]</link>
+<thumbnail>[makelist3.param2]</thumbnail>
+
+]]></listrepeat>
+<expres><![CDATA[(?s)TPost C[\w\W]*?href=(http.*?)\s[\w\W]*?src=(http.*?)\s[\w\W]*?Title>(.*?)<]]></expres>
+<page>https://seriespepito.tv/?s=$doregex[buscar]&amp;post_type=ficha</page>
+<agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0</agent>
+<cookieJar></cookieJar>
+</regex>
+
+
+<regex>
+<name>buscar</name>
+<expres><![CDATA[#$pyFunction
+import xbmc
+import xbmcaddon
+import xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+    dialog = xbmcgui.Dialog()
+    d = dialog.input('Busca una Serie:', type=xbmcgui.INPUT_ALPHANUM).replace(" ", "+")
+    return d
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+
+
+
+
+
+
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>[COLOR white][makelist2.param1][makelist2.param2] [/COLOR]     [makelist2.param4] [makelist2.param5]</title>
+<link>$doregex[makelist]</link>
+<thumbnail>[makelist3.param2]</thumbnail>
+<fanart>http://blackghost.live/gray/img/fanart.jpg</fanart>
+]]></listrepeat>
+<expres><![CDATA[(?s)data-tab=.*?>(.*?)<.*?>(.*?)<|class=MvTbTtl.*?\n.*?href=(http.*?)\s>(.*?)<.*?pan>(.*?)<]]></expres>
+<page>[makelist3.param1]</page>
+<agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0</agent>
+<cookieJar></cookieJar>
+</regex>
+
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist2.param4] [makelist2.param5] [makelist.param2] server:[COLOR white][makelist.param1] [/COLOR]</title>
+<urlsolve>[makelist.param3]</urlsolve>
+<thumbnail>[makelist3.param2]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[(?s)domain=(gamo.*?|clip.*?|stream.*?|vido.*)"[\w\W]*?language.*?>(.*?)<[\w\W]*?data-enlace=(http.*?)\s]]></expres>
+<page>[makelist2.param3]</page>
+<agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0</agent>
+<referer>https://drive.google.com/drivefolders</referer>
+<cookieJar></cookieJar>
+</regex>
+
+
+<thumbnail>http://blackghost.live/gray/img/series.png</thumbnail><fanart>http://blackghost.live/gray/img/fanart.jpg</fanart>
+</item>
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <item>
+<title>[COLOR red][B][  ][/B]    [B]CASA DE PAPEL[/B] Temporada 4 [/COLOR]</title>
+<link>NA</link>
+<externallink>http://blackghost.live/gray/cpapel.xml</externallink>
+<thumbnail>http://blackghost.live/gray/img/series.png</thumbnail><fanart>http://blackghost.live/gray/img/fanart.jpg</fanart>
+</item>
+ 
+
+ 
+ 
+ 
+ 
+ 
+<ite> <!--EHDA -->
+<title>[COLOR lightyellow][B]SERIES EHDA[/B] [/COLOR] Castellano</title>
+<link>$doregex[makelist2]</link>
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>[B][makelist2.param3][/B] [COLOR gray]([makelist2.param4])[/COLOR] </title>
+<link>$doregex[makelist1]</link>
+<thumbnail>[makelist2.param2]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re,requests
+def GetLSProData(page_data,Cookie_Jar,m):
+  count=3;pn=1;data=[]
+  while pn <= int(count):
+     page='https://elhogardelaprendiz.es/series/page/'+str(pn)+'/';source=requests.get(page).content.decode('ascii','ignore')
+     data +=re.findall('class="TPost C"[\W\w]*?href="(.*?)"[\W\w]*?data-src="(.*?)"[\W\w]*?class="Title">(.*?)<[\W\w]*?Year">(.*?)<',source);pn +=1
+  return data
+]]></expres>
+<page></page>
+</regex>
+
+
+<regex>
+<name>makelist1</name>
+<listrepeat><![CDATA[
+<title>[COLOR deepskyblue][makelist1.param2] [makelist1.param1][/COLOR]        [makelist1.param3]    [makelist1.param6]  </title>
+<link>$doregex[makelist]</link>
+<thumbnail>[makelist2.param2]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[data-tab="(.*?)">(.*?)<|class="Num">(.*?)<.*?href="(.*?)".*?href="(.*?)">(.*?)<.*?span>(.*?)<]]></expres>
+<page>[makelist2.param1]</page>
+</regex>
+
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist1.param3]    [makelist1.param6]  Server [makelist.param1] </title>
+<link>$doregex[id3]</link>
+<thumbnail>[makelist2.param2]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[trembed\=(.*?)\&.*?\=(.*?)\&.*?\=([0-9]+)]]></expres>
+<page>[makelist1.param4]</page>
+</regex>
+
+
+
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver, resolveurl
+    url = '$doregex[link]'.replace('https', 'http')
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = resolveurl.resolve(url)
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+<regex>
+<name>link</name>
+<expres>\=\"(http.*?)\"</expres>
+<page>http://elhogardelaprendiz.es/?trembed=[makelist.param1]&amp;trid=[makelist.param2]&amp;trtype=[makelist.param3]</page>
+</regex>
+
+
+
+<thumbnail>http://blackghost.live/gray/img/peliculas.png</thumbnail><fanart>http://blackghost.live/gray/img/fanart.jpg</fanart>
+</item>
+ 
+<item><!--Series Papaya -->
+<title>[COLOR lightyellow][B]SERIES PAPAYA[/B] [/COLOR]</title>
+<link>$doregex[makelist1]</link>
+
+<regex>
+<name>makelist1</name>
+<listrepeat><![CDATA[
+
+<title>[makelist1.param3]</title>
+<link>$doregex[makelist2]</link>
+<thumbnail>http://www.seriespapaya.nu/[makelist1.param1]</thumbnail>
+<fanart>http://www.seriespapaya.nu/[makelist1.param1]</fanart>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re , requests , xbmc , xbmcaddon , xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+    url= '$doregex[select]'
+    agent = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36'}
+    extraer = requests.get(url, headers=agent)
+    links = re.findall('src="(.*?)"[\w\W\s]{0,60}href="(.*?)".*?\">(.*?)<', extraer.text)
+    return links
+]]></expres>
+<page></page>
+</regex>
+
+
+
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+   import xbmcgui
+   dialog = xbmcgui.Dialog()
+   ret = dialog.select('Elige tu Audio preferido ', ['Series Populares', 'Series Recomendadas', 'Series de Estreno'])
+   lists = ['http://www.seriespapaya.nu/lista-series-populares/', 'http://www.seriespapaya.nu/lista-series-recomendadas/','http://www.seriespapaya.nu/lista-series-estrenos/']
+   return lists[ret]
+]]></expres>
+<page></page>
+</regex>
+
+
+
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+
+<title>[makelist1.param3] [makelist2.param2]     </title>
+<link>$doregex[makelist3]</link>
+<thumbnail>http://www.seriespapaya.nu/[makelist1.param1]</thumbnail>
+<fanart>http://www.seriespapaya.nu/[makelist1.param1]</fanart>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re , requests , xbmc , xbmcaddon , xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+    url= 'http://www.seriespapaya.nu/[makelist1.param2]'
+    agent = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36'}
+    extraer = requests.get(url, headers=agent)
+    links = re.findall('visco" href="(.+?)".*?nbsp\;(.+?)<', extraer.text)
+    return links
+]]></expres>
+<page></page>
+</regex>
+
+
+
+<regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+
+<title>[makelist1.param3] [makelist2.param2] | Idioma:[B][makelist3.param1][/B]  Calidad:[B][makelist3.param5][/B]  Server:[B][makelist3.param3][/B]        </title>
+<link>$doregex[id3]</link>
+<thumbnail>http://www.seriespapaya.nu/[makelist1.param1]</thumbnail>
+<fanart>http://www.seriespapaya.nu/[makelist1.param1]</fanart>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re , requests , xbmc , xbmcaddon , xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+    url= 'http://www.seriespapaya.nu/[makelist2.param1]'
+    agent = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36'}
+    extraer = requests.get(url, headers=agent)
+    links = re.findall('didioma[\w\W\s]{0,17}images/(.*?).p[\w\W\s]{0,30}dfecha.*?\n(.*?)<.*?\n.*?\n.*?\/\>\s(Upto.*?|Gamo.*?|Vido.*?|Streamch.*?|Gounlimi.*?|Uqload.*?|Ok.*?|Upstreamt.*?|Fembed.*?|Clipwatch.*?)<.*?\n.*?\n.*?href="(.*?)" .*?\n.*?\n.*?dcalidad.*?\n(.*?)<', extraer.text)
+    return links
+]]></expres>
+<page></page>
+</regex>
+
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver, resolveurl
+    url = '$doregex[link]'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = '$doregex[dos]'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+<regex>
+<name>link</name>
+<expres><![CDATA[#$pyFunction
+import re , requests , xbmc , xbmcaddon , xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+    url= 'http://www.seriespapaya.nu[makelist3.param4]/'
+    agent = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36', 'Referer': 'https://www.seriespapaya.nu/serie/elite.html'}
+    extraer = requests.get(url, headers=agent)
+    links = re.findall("location\.href='(.+?)'", extraer.content)[0]
+    return links
+]]></expres>
+<expres></expres>
+<page></page>
+</regex>
+
+  <regex>
+    <name>dos</name>
+    <expres><![CDATA[#$pyFunction
+def GetLSProData(page_data, Cookie_Jar,m,url='$doregex[link]'):
+  import re,requests,xbmc,urlresolver
+  from urlresolver.plugins.lib import jsunpack
+  ua ='Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:74.0) Gecko/20100101 Firefox/74.0'
+  s=requests.session()
+  rsource=s.get(url, headers={'User-Agent': ua},  verify=False)
+  source=s.get(url, headers={'User-Agent': ua},  verify=False)
+  pack = re.findall('javascript.*?(eval\(function\(p,a,c,k,e,d.*)', source.text)[0]
+  unpack=jsunpack.unpack(pack).replace('\\','')
+  u = re.findall('file:\s"(http.+?)"', unpack)[0]+'|User-Agent='+ua
+  return u
+]]></expres>
+    <page></page>
+  </regex>
+
+
+
+<thumbnail>http://blackghost.live/gray/img/series.png</thumbnail><fanart>http://blackghost.live/gray/img/fanart.jpg</fanart></item>
+
+
+
+
+<item>
+<title>[COLOR lightyellow][B]SERIES PAPAYA[/B] [/COLOR] [I]por Cadenas NETFLIX - HBO - AMC[/I] </title>
+<link>$doregex[makelist8]</link>
+
+
+<regex>
+<name>makelist8</name>
+<listrepeat><![CDATA[
+<title>[makelist8.param1]</title>
+<link>$doregex[makelist2]</link>
+<thumbnail>http://blackghost.live/gray/img/series.png</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[Cadena="(.+?)"(.*?);]]></expres>
+<page>http://blackghost.live/gray/gnula-cadenas.php</page>
+</regex>
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>[makelist2.param1]</title>
+<link>$doregex[makelist]</link>
+<thumbnail>http://www.seriespapaya.net/[makelist2.param2]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA["[makelist8.param2]" name="(.*?)" img="(.*?)" url="(.*?)"]]></expres>
+<page>http://blackghost.live/gray/gnula-cadenas.php</page>
+</regex>
+
+
+
+
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist2.param1] [COLOR lightblue][B] [makelist.param4][/B][/COLOR] </title>
+<thumbnail>http://www.seriespapaya.net/$doregex[name]</thumbnail>
+<link>$doregex[makelist0]</link>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re , requests , xbmc , xbmcaddon , xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+    url= 'https://www.seriespapaya.nu/[makelist2.param3]'
+    agente = {'User-Agent':'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36'}
+    extraer = requests.get(url, headers=agente)
+    ExpresBlack = re.findall('(?s)location = "([^"]+).*? href="([^"]+).*?img src="([^"]+).*?;([^<]+).*?', extraer.text)
+    return ExpresBlack
+]]></expres>
+<page></page>
+</regex>
+
+
+<regex>
+<name>makelist0</name>
+<listrepeat><![CDATA[
+<title>[makelist2.param1] [COLOR lightblue][B] [makelist.param4][/B][/COLOR] [COLOR white] [makelist0.param3] [COLOR lightskyblue][makelist0.param5] [COLOR blue]idioma [makelist0.param1][/COLOR] </title>
+<thumbnail>https://www.seriespapaya.nu/$doregex[name]</thumbnail>
+<link>$doregex[id3]</link>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re , requests , xbmc , xbmcaddon , xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+    url= 'https://www.seriespapaya.nu/[makelist.param2]'
+    agente = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36', 'Referer': 'https://www.seriespapaya.nu/serie/breaking-bad.html'}
+    extraer = requests.get(url, headers=agente)
+    ExpresBlack = re.findall('idioma[\w\W\s]{0,47}images\/(.*?)\.p[\w\W\s]{0,80}fecha\"\>\n(.*?)<[\w\W\s]{0,217}(Upto.*?|Gamo.*?|Vido.*?|Streamch.*?|Gounlimi.*?|Uqload.*?|Ok.*?|Upstreamt.*?|Fembed.*?|Clipwatch.*?)<[\w\W\s]{0,99}href="(.*?)"[\w\W\s]{0,88}calidad">\n(.*?)<', extraer.text)
+    return ExpresBlack
+]]></expres>
+<page></page>
+</regex>
+
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+import re,requests,xbmc,urlresolver,cookielib,urllib,urllib2
+from urlresolver.plugins.lib import jsunpack
+def GetLSProData(page_data,Cookie_Jar,m,url='$doregex[enlace]'):
+ 
+  if 'gamovideo' in url:
+    try:
+        ua = 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36'
+        s=requests.session()
+        rsource=s.get(url, headers={'User-Agent': ua},  verify=False)
+        source=s.get(url, headers={'User-Agent': ua},  verify=False)
+        pack = re.findall('javascript.*?(eval\(function\(p,a,c,k,e,d.*)', source.text)[0]
+        unpack=jsunpack.unpack(pack)
+        u = re.findall('file:\s*"(http.*?)"', unpack)[0]+'|User-Agent='+ua
+    except:
+        u = xbmc.executebuiltin("XBMC.Notification(BlackGhost,enlace Gamovideo caido, 4000)")
+    return u
+
+  elif 'flix' in url:
+    try:
+        mozhdr4 = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36', 'Referer': 'http://www.seriespapaya.net/[makelist0.param4]'}
+        html4 = requests.get(url, headers=mozhdr4, verify=False).text
+        edata = re.findall('javascript.*?(eval\(function\(p,a,c,k,e,d.*)', html4)[0]
+        epage = jsunpack.unpack(edata)
+        u = re.findall('(?s)vplayer.*?file\s*.*?"(.*?)"', epage, re.DOTALL)[0]
+    except:
+        u = xbmc.executebuiltin("XBMC.Notification(BlackGhost,enlace Flix caido, 4000)")
+    return u
+  elif 'clipwatching' in url:
+    try:
+        ua = 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36'
+        u = re.findall('sources: ..src: "(.*?)"',requests.get(url,headers={'user-agent':ua},verify=False).content)[0]
+    except:
+        u = xbmc.executebuiltin("XBMC.Notification(BlackGhost,enlace Clipwatching caido, 4000)")
+    return u
+  elif 'vidoza' in url:
+    try:
+        mozhdr4 = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36', 'Referer': 'http://www.seriespapaya.net/'}
+        html4 = requests.get(url, headers=mozhdr4, verify=False).text
+        u = re.findall('["\']?\s*(?:file|src)\s*["\']?\s*[:=,]?\s*["\'](?P<url>[^"\']+)(?:[^}>\]]+)["\']?\s*res', html4)[0] + '|User-Agent=' + 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36'
+    except:
+        u = xbmc.executebuiltin("XBMC.Notification(BlackGhost,enlace Vidoza caido, 4000)")
+    return u
+  elif 'openload' in url:
+    try:
+        mozhdr = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36', 'Referer': 'http://www.seriespapaya.net/[makelist0.param4]'}
+        u = xbmc.executebuiltin("XBMC.Notification(BlackGhost,Servidor Openload muerto , 4000)")
+    except:
+        u = xbmc.executebuiltin("XBMC.Notification(BlackGhost,Servidor Openload muerto, 4000)")
+    return u
+  elif 'uptobox' in url:
+    try:
+        mozhdr3 = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36', 'Referer': 'http://www.seriespapaya.net/[makelist0.param4]'}
+        html3 = requests.get(url, headers=mozhdr3, verify=False).text
+        part1 = re.findall('(by its owner|uploaded with File Uploader)', html3)[0]
+        u = xbmc.executebuiltin("XBMC.Notification(BlackGhost,enlace  borrado , 4000)")
+    except:
+        H = xbmc.executebuiltin("XBMC.Notification(Blackghost Uptobox,Limite 120minutos diarios con esta ip, 5000)")
+        u = resolveurl.resolve(url)
+    return u
+  else:
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = xbmc.executebuiltin("XBMC.Notification(BlackGhost,enlace [makelist0.param3] caido, 4000)")
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+<regex>
+<name>enlace</name>
+<expres><![CDATA[#$pyFunction
+import re , requests , xbmc , xbmcaddon , xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+    url= 'https://www.seriespapaya.nu/[makelist0.param4]'
+    agente = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36', 'Referer': 'https://www.seriespapaya.nu/serie/breaking-bad.html'}
+    extraer = requests.get(url, headers=agente)
+    ExpresBlack = re.findall("location\.href='(.*?)'", extraer.content)[0]
+    return ExpresBlack
+]]></expres>
+<page></page>
+</regex>
+
+
+<regex>
+<name>name</name>
+<expres>$pyFunction:('[makelist2.param2]').replace('\u00f1','%C3%B1').replace('\/','/')</expres>
+<page></page>
+</regex>
+
+
+<thumbnail>http://blackghost.live/gray/img/series.png</thumbnail><fanart>http://blackghost.live/gray/img/fanart.jpg</fanart></item>
+ 
+
+
+
+
+
+<item><!--Pepe series -->
+<title>[COLOR lightyellow][B]PEPE SERIES[/B] [/COLOR]</title>
+<link>$doregex[list3]</link>
+
+<regex>
+<name>list3</name>
+<listrepeat><![CDATA[
+<title>$pyFunction:'[B][COLOR lightblue][list3.param2][/B][/COLOR]'.replace('\u00e1', 'a').replace('\u00e9', 'e').replace('\u00ed', 'i').replace('\u00f3', 'o').replace('\u00fa', 'u')</title>
+<link>$doregex[list]</link>>
+<thumbnail>$pyFunction:'[list3.param4]'.replace('\\','')</thumbnail>
+<info>[list3.param3]</info>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re,requests
+def GetLSProData(page_data,Cookie_Jar,m):
+  count=4;pn=1;data=[]
+  while pn <= int(count):
+     page='https://pepecine.com/secure/titles?type=series&page='+str(pn)+'';source=requests.get(page).content.decode('ascii','ignore')
+     data +=re.findall('"id":(.*?),"name":"(.*?)".*?description":"(.*?)",".*?poster":"(.*?)"',source);pn +=1
+  return data
+]]></expres>
+<page></page>
+<referer>https://pepecine.com</referer>
+<agent>Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/533.20.25 (KHTML, like Gecko) Version/5.0.4 Safari/533.20.27</agent>
+</regex>
+
+
+
+
+
+
+<regex>
+<name>list</name>
+<listrepeat><![CDATA[
+<title>Temporada [list.param1] : Capitulos [list.param2]</title>
+<link>$doregex[list2]</link>>
+<thumbnail>$pyFunction:'[list3.param4]'.replace('\\','')</thumbnail>
+<info>[list3.param3]</info>
+]]></listrepeat>
+<expres><![CDATA["number":(.*?),"episode_count":(.*?),"]]></expres>
+<page>https://pepecine.com/secure/titles/[list3.param1]?titleId=[list3.param1]</page>
+<referer>https://pepecine.com</referer>
+<agent>Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/533.20.25 (KHTML, like Gecko) Version/5.0.4 Safari/533.20.27</agent>
+</regex>
+
+
+
+<regex>
+<name>list2</name>
+<listrepeat><![CDATA[
+<title>[list2.param1]x[list2.param2]   [list2.param3] </title>
+<link>$doregex[url]</link>>
+<thumbnail>$pyFunction:'[list3.param4]'.replace('\\','')</thumbnail>
+<info>[list3.param3]</info>
+]]></listrepeat>
+<expres><![CDATA[season_number":(.*?)\,.*?episode_number":(.*?)\,.*?name":"(.*?)"]]></expres>
+<page>https://pepecine.com/secure/titles/[list3.param1]?titleId=[list3.param1]&amp;seasonNumber=[list.param1]</page>
+<referer>https://pepecine.com</referer>
+<agent>Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/533.20.25 (KHTML, like Gecko) Version/5.0.4 Safari/533.20.27</agent>
+</regex>
+
+
+  
+<regex>
+<name>url</name>
+<listrepeat><![CDATA[
+<title>[list2.param1]x[list2.param2] [B]  [list2.param3] [COLOR lightblue][url.param4][/B][/COLOR]  [[COLOR lightyellow][B][url.param1][/B][/COLOR]]     Server:[B][url.param3][/B]</title>
+<link>$doregex[id3]</link>
+<thumbnail>$pyFunction:'[list3.param4]'.replace('\\','')</thumbnail>
+<info>[list3.param3]</info>
+]]></listrepeat>
+<expres><![CDATA[\/(.*?)\.png.*?url\"\:\"(http.*?\/(\w+)\..*?)".*?quality\"\:\"(.+?)\"]]></expres>
+<page>https://pepecine.com/secure/titles/[list3.param1]?titleId=[list3.param1]&amp;seasonNumber=[list2.param1]&amp;episodeNumber=[list2.param2]</page>
+<referer>ttps://pepecine.com/secure/titles/[list3.param1]</referer>
+<agent>Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/533.20.25 (KHTML, like Gecko) Version/5.0.4 Safari/533.20.27</agent>
+</regex>
+
+
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver, resolveurl
+    url = '[url.param2]'.replace('\\','')
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = '$doregex[dos]'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+  <regex>
+    <name>dos</name>
+    <expres><![CDATA[#$pyFunction
+def GetLSProData(page_data, Cookie_Jar,m):
+  import re,requests,xbmc,urlresolver
+  from urlresolver.plugins.lib import jsunpack
+  url='[url.param2]'.replace('\\','')
+  ua ='Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36'
+  s=requests.session()
+  rsource=s.get(url, headers={'User-Agent': ua},  verify=False)
+  source=s.get(url, headers={'User-Agent': ua},  verify=False)
+  pack = re.findall('javascript.*?(eval\(function\(p,a,c,k,e,d.*)', source.text)[0]
+  unpack=jsunpack.unpack(pack)
+  u = re.findall('file:\s*"(http.*?)"', unpack)[0]+'|Referer=http://gamovideo.com/&User-Agent='+ua
+  return u
+]]></expres>
+    <page></page>
+  </regex>
+
+<thumbnail>http://blackghost.live/gray/img/series.png</thumbnail><fanart>http://blackghost.live/gray/img/fanart.jpg</fanart>
+</item>
+ 
+<item><!--inka series -->
+<title>[COLOR lightyellow][B]INKA SERIES[/B] [/COLOR]</title>
+<link>$doregex[makelist5]</link><regex><name>makelist1</name> movies  (all pages)
+ <listrepeat><![CDATA[
+<title>[makelist1.param2]   </title>
+<link>$doregex[makelist2]</link>
+<fanart>[makelist1.param3]</fanart>
+<thumbnail>[makelist1.param3]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re, requests
+def GetLSProData(page_data,Cookie_Jar,m):
+
+################################################################## FORMULARY #################################################################
+ starturl = 'https://www.inkaseries.tv/ultimas-series-agregadas/'     ### usually, ~ 'http://website.com/category/' ###
+ categorylink = '' ### check the number of the param ###
+ centerurl = 'page/'      ### something like  '/page/' ###
+ firstpage = 1 ### probably  = 1 ###
+ endurl = '/' ### can be empty ###    ### endurl without final / (SLASH) ###
+#
+ dataregex = 'class="poster.*?href="(.*?)".*?title="(.*?)".*?\n.*?src="(.*?)"'      ### To adapt ###
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:50.0) Gecko/20100101 Firefox/50.0', 'Referer': ''}      ### To adapt ###
+##############################################################################################################################################
+
+############################## GENERIC PART #####################################
+ fullurl = starturl + centerurl + str(firstpage) + endurl + categorylink #
+ source = requests.get(fullurl, headers= headers).text #
+ data = [] #
+#
+ last = 4 #
+ while firstpage <= last: #
+    try: #
+        fullurl = starturl + centerurl + str(firstpage) + endurl + categorylink #
+        source = requests.get(fullurl, headers=headers).text #
+        data += re.findall(dataregex, source) #
+        firstpage += 1 #
+    except: #
+        pass #
+ return data #
+]]></expres><page></page>
+</regex>
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>[makelist2.param2]   </title>
+<link>$doregex[makelist3]</link>
+<fanart>[makelist1.param3]</fanart>
+<thumbnail>[makelist1.param3]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[<td.*?\n.*?href="(.*?)".*?title="(.*?)"]]></expres>
+<page>[makelist1.param1]</page>
+</regex>
+<regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+<title>[makelist2.param2]  | [B][makelist3.param3]-[makelist3.param4][/B]  Server:[B][makelist3.param2][/B]        </title>
+<link>$doregex[id3]</link>
+<fanart>[makelist1.param3]</fanart>
+<thumbnail>[makelist1.param3]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[domain=(.*?)".*?title="(.*?)".*?\n<td>(.*?)\n.*?\n<td>(.*?)\n]]></expres>
+<page>[makelist2.param1]</page>
+</regex>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver, resolveurl
+    url = '[makelist3.param1]'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = '$doregex[dos]'
+    return u
+]]></expres>
+<page></page>
+</regex><externallink>http://blackghost.live/scr/inkaseries.php</externallink><regex>
+    <name>dos</name>    <expres><![CDATA[#$pyFunction
+def GetLSProData(page_data, Cookie_Jar,m,url='[makelist3.param1]'):
+  import re,requests,xbmc,urlresolver
+  from urlresolver.plugins.lib import jsunpack
+  ua ='Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36'
+  s=requests.session()
+  rsource=s.get(url, headers={'User-Agent': ua},  verify=False)
+  source=s.get(url, headers={'User-Agent': ua},  verify=False)
+  pack = re.findall('javascript.*?(eval\(function\(p,a,c,k,e,d.*)', source.text)[0]
+  unpack=jsunpack.unpack(pack).replace('\\','')
+  u = re.findall('file:\s*"(http.*?)"', unpack)[0]+'|User-Agent='+ua
+  return u
+]]></expres>
+    <page></page>
+  </regex>
+	
+<thumbnail>http://blackghost.live/gray/img/series.png</thumbnail><fanart>http://blackghost.live/gray/img/fanart.jpg</fanart></item>
+
+<item><!-- wiki series-->
+<title>[COLOR lightyellow][B]WIKISERIES[/B][/COLOR] Listado de Series </title>
+<link>$doregex[makelist2]</link>
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>[makelist2.param1]  </title>
+<link>$doregex[makelist0]</link>
+]]></listrepeat>
+<expres><![CDATA[ep-title.*?name">(.*?)<.*?href=\'(.*?)\']]></expres>
+<page>http://www.wikiseriesonline.nu/lista-de-series</page>
+</regex>
+
+
+
+
+
+<regex>
+<name>makelist0</name>
+<listrepeat><![CDATA[
+<title>[makelist0.param2] [makelist0.param3]    </title>
+<link>$doregex[makelist3]</link>
+<thumbnail>[makelist2.param1]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[ep-list-number.*?href="(.*?)".*?>(.*?)<.*?"name">(.*?)<]]></expres>
+<page>[makelist2.param2]</page>
+</regex>
+
+
+<regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+<title>[makelist3.param2] </title>
+<link>$doregex[id3]</link>
+]]></listrepeat>
+<expres><![CDATA[a\shref="(/reproducto.*?)\&t\=ver\s(.*?)"]]></expres>
+<page>[makelist0.param1]</page>
+</regex>
+
+
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver, resolveurl
+    url = '$doregex[makelist4]'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = '$doregex[oload]'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+<regex>
+<name>makelist4</name>
+<expres><![CDATA[frame src="(http.*?)"]]></expres>
+<page>http://www.wikiseriesonline.nu[makelist3.param1]</page>
+</regex>
+
+
+<regex>
+<name>oload</name>
+<expres><![CDATA[#$pyFunction:
+def GetLSProData(page_data,Cookie_Jar,m):
+
+
+   import cookielib
+   import re
+   import urllib
+   import urllib2
+
+   def read(url):
+       opener = urllib2.build_opener()
+       opener.addheaders = [('User-Agent', 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3163.100 Safari/537.36')]
+       response = opener.open(url)
+       data = response.read()
+       return data
+
+   def read_openload(url):
+       default_headers = dict()
+       default_headers["User-Agent"] = "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3163.100 Safari/537.36"
+       default_headers["Accept"] = "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8"
+       default_headers["Accept-Language"] = "es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3"
+       default_headers["Accept-Charset"] = "UTF-8"
+       default_headers["Accept-Encoding"] = "gzip"
+       cj = cookielib.MozillaCookieJar()
+       request_headers = default_headers.copy()
+       url = urllib.quote(url, safe="%/:=&?~#+!$,;'@()*[]")
+       handlers = [urllib2.HTTPHandler(debuglevel=False)]
+       handlers.append(NoRedirectHandler())
+       handlers.append(urllib2.HTTPCookieProcessor(cj))
+       opener = urllib2.build_opener(*handlers)
+       req = urllib2.Request(url, None, request_headers)
+       handle = opener.open(req, timeout=None)
+
+       return handle.headers.dict.get('location')
+
+   def decode(code, parseInt, _0x59ce16, _1x4bfb36):
+       import math
+
+       _0x1bf6e5 = ''
+       ke = []
+
+       for i in range(0, len(code[0:9*8]),8):
+           ke.append(int(code[i:i+8],16))
+
+       _0x439a49 = 0
+       _0x145894 = 0
+
+       while _0x439a49 < len(code[9*8:]):
+           _0x5eb93a = 64
+           _0x896767 = 0
+           _0x1a873b = 0
+           _0x3c9d8e = 0
+           while True:
+               if _0x439a49 + 1 >= len(code[9*8:]):
+                   _0x5eb93a = 143;
+
+               _0x3c9d8e = int(code[9*8+_0x439a49:9*8+_0x439a49+2], 16)
+               _0x439a49 +=2
+
+               if _0x1a873b < 6*5:
+                   _0x332549 = _0x3c9d8e & 63
+                   _0x896767 += _0x332549 << _0x1a873b
+               else:
+                   _0x332549 = _0x3c9d8e & 63
+                   _0x896767 += int(_0x332549 * math.pow(2, _0x1a873b))
+
+               _0x1a873b += 6
+               if not _0x3c9d8e >= _0x5eb93a: break
+
+           # _0x30725e = _0x896767 ^ ke[_0x145894 % 9] ^ _0x59ce16 ^ parseInt ^ _1x4bfb36
+           _0x30725e = _0x896767 ^ ke[_0x145894 % 9] ^ parseInt ^ _1x4bfb36
+           _0x2de433 = _0x5eb93a * 2 + 127
+
+           for i in range(4):
+               _0x3fa834 = chr(((_0x30725e & _0x2de433) >> (9*8/ 9)* i) - 1)
+               if _0x3fa834 != '$':
+                   _0x1bf6e5 += _0x3fa834
+               _0x2de433 = (_0x2de433 << (9*8/ 9))
+
+           _0x145894 += 1
+
+
+       url = "https://openload.co/stream/%s?mime=true" % _0x1bf6e5
+       return url
+
+   class NoRedirectHandler(urllib2.HTTPRedirectHandler):
+       def http_error_302(self, req, fp, code, msg, headers):
+           infourl = urllib.addinfourl(fp, headers, req.get_full_url())
+           infourl.status = code
+           infourl.code = code
+           return infourl
+
+       http_error_300 = http_error_302
+       http_error_301 = http_error_302
+       http_error_303 = http_error_302
+       http_error_307 = http_error_302
+
+   url = '$doregex[makelist4]'
+   data = read(url)
+   try:
+       try:
+           code = re.findall('p style="" id="[^"]+">(.*?)<\/p', data, flags=re.DOTALL)[0]
+       except:
+           code = re.findall('<p id=\".*?\" style=\"\">(.*?)<\/p', data, flags=re.DOTALL)[0]
+       _0x59ce16 = eval(re.findall('_0x59ce16=([^;]+)',data)[0].replace('parseInt', 'int'))
+       _1x4bfb36 = eval(re.findall('_1x4bfb36=([^;]+)',data)[0].replace('parseInt', 'int'))
+       parseInt  = eval(re.findall('_0x30725e,(\(parseInt.*?)\),',data)[0].replace('parseInt', 'int'))
+       url = decode(code, parseInt, _0x59ce16, _1x4bfb36)
+       url = read_openload(url)
+   except:
+       pass
+       return ''
+       
+   header_test = {'user-agent': 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3163.100 Safari/537.36'}
+   header_test = '|' + urllib.urlencode(header_test)
+   return url + header_test
+]]></expres>        
+<page></page>
+</regex>
+<thumbnail>http://blackghost.live/gray/img/series.png</thumbnail><fanart>http://blackghost.live/gray/img/fanart.jpg</fanart>
+</item>
+
+
+
+<item><!-- SERIES PEPITO-->
+<title>[COLOR lightyellow][B]SERIES PEPITO[/B][/COLOR] Listado de Series </title>
+<link>$doregex[makelist3]</link>
+
+
+
+<regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+<title>[COLOR white][makelist3.param3] [/COLOR]   </title>
+<link>$doregex[makelist2]</link>
+<thumbnail>[makelist3.param2]</thumbnail>
+
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re,requests
+def GetLSProData(page_data,Cookie_Jar,m):
+  count=4;pn=1;data=[]
+  while pn <= int(count):
+     page='http://seriespepito.tv/ultimas-series/page/'+str(pn)+'/';source=requests.get(page).content.decode('ascii','ignore')
+     data +=re.findall('(?s)TPost C[\w\W]*?href=(http.*?)\s[\w\W]*?src=(http.*?)\s[\w\W]*?Title>(.*?)<',source);pn +=1
+  return data
+]]></expres>
+<page></page>
+<agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0</agent>
+<cookieJar></cookieJar>
+</regex>
+
+
+
+
+
+
+
+
+
+
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>[COLOR white][makelist2.param1][makelist2.param2] [/COLOR]     [makelist2.param4] [makelist2.param5]</title>
+<link>$doregex[makelist]</link>
+<thumbnail>[makelist3.param2]</thumbnail>
+<fanart>http://blackghost.live/gray/img/fanart.jpg</fanart>
+]]></listrepeat>
+<expres><![CDATA[(?s)data-tab=.*?>(.*?)<.*?>(.*?)<|class=MvTbTtl.*?\n.*?href=(http.*?)\s>(.*?)<.*?pan>(.*?)<]]></expres>
+<page>[makelist3.param1]</page>
+<agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0</agent>
+<cookieJar></cookieJar>
+</regex>
+
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist2.param4] [makelist2.param5] [makelist.param2] server:[COLOR white][makelist.param1] [/COLOR]</title>
+<urlsolve>[makelist.param3]</urlsolve>
+<thumbnail>[makelist3.param2]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[(?s)domain=(gamo.*?|clip.*?|stream.*?|vido.*)"[\w\W]*?language.*?>(.*?)<[\w\W]*?data-enlace=(http.*?)\s]]></expres>
+<page>[makelist2.param3]</page>
+<agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0</agent>
+<referer>https://drive.google.com/drivefolders</referer>
+<cookieJar></cookieJar>
+</regex>
+
+
+<thumbnail>http://blackghost.live/gray/img/series.png</thumbnail><fanart>http://blackghost.live/gray/img/fanart.jpg</fanart>
+</item>
+
+
+
+
+
+
+<item><!--ON Watch -->
+<title>[COLOR lightyellow][B]ONWatchSeries[/B] [/COLOR] VO </title>
+
+      <link>$doregex[makelist3]</link>
+
+
+
+<regex>
+    <name>makelist3</name> movies  (all pages)
+ <listrepeat><![CDATA[
+<title>[makelist3.param1] </title>
+<link>$doregex[makelist2]</link>
+<thumbnail>[makelist3.param2]</thumbnail>
+<fanart>[makelist3.param2]</fanart>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re, requests
+def GetLSProData(page_data,Cookie_Jar,m):
+
+################################################################## FORMULARY #################################################################
+ starturl = 'https://www1.swatchseries.to/'     ### usually, ~ 'http://website.com/category/' ###
+ categorylink = '' ### check the number of the param ###
+ centerurl = 'series/'      ### something like  '/page/' ###
+ firstpage = 1 ### probably  = 1 ###
+ endurl = '' ### can be empty ###    ### endurl without final / (SLASH) ###
+#
+ dataregex = 'title="Track(.*?)Online[\w\W\s]{0,60}src="(.*?)"[\w\W\s]{0,12}Series(.*?)"[\w\W\s]{0,770}href="(.*?)"'      ### To adapt ###
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:50.0) Gecko/20100101 Firefox/50.0', 'Referer': ''}      ### To adapt ###
+##############################################################################################################################################
+
+############################## GENERIC PART #####################################
+ fullurl = starturl + centerurl + str(firstpage) + endurl + categorylink #
+ source = requests.get(fullurl, headers= headers).text #
+ data = [] #
+#
+ last = 2 #
+ while firstpage <= last: #
+    try: #
+        fullurl = starturl + centerurl + str(firstpage) + endurl + categorylink #
+        source = requests.get(fullurl, headers=headers).text #
+        data += re.findall(dataregex, source) #
+        firstpage += 1 #
+    except: #
+        pass #
+ return data #
+]]></expres><page></page>
+</regex>
+
+
+
+  <regex>
+	<name>makelist2</name>
+	<listrepeat><![CDATA[
+	   <title>[B][makelist2.param1] [/B][makelist2.param3]-[makelist2.param4]</title>
+	   <link>$doregex[makelist]</link>
+	       <thumbnail>[makelist3.param2]</thumbnail>
+	  	]]></listrepeat>
+	<expres><![CDATA[itemprop="name">(Season.*?)<|href="(.*?)"[\w\W\s]{0,70}itemprop="name.*>(.*?)\&[\w\W\s]{0,12}nbsp;(.*?)<]]></expres>
+	<page>[makelist3.param4]</page>
+ </regex>
+
+
+
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+  <title>[makelist3.param1] [makelist2.param3] // server: [makelist.param1] </title>
+  <urlsolve>[makelist.param2]</urlsolve>
+      <thumbnail>[makelist3.param2]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[download_link_(.*?)\.[\w\W\s]{0,1090}Delete link (http.*?)']]></expres>
+<page>[makelist2.param2]</page>
+</regex>
+
+<thumbnail>http://blackghost.live/gray/img/series.png</thumbnail>
+</item>
+
+<item><!--mira de todo -->
+<title>[COLOR lightyellow][B]MIRA DE TODO[/B][/COLOR]</title>
+<link>$doregex[makelist1]</link>
+
+<regex>
+    <name>makelist1</name> movies  (all pages)
+ <listrepeat><![CDATA[
+ <title> [makelist1.param3]   </title>
+<link>$doregex[makelist2]</link>
+ <thumbnail>[makelist1.param2]</thumbnail>
+
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re, requests
+def GetLSProData(page_data,Cookie_Jar,m):
+
+################################################################## FORMULARY #################################################################
+ starturl = 'https://miradetodo.co/series/'     ### usually, ~ 'http://website.com/category/' ###
+ categorylink = '' ### check the number of the param ###
+ centerurl = 'page/'      ### something like  '/page/' ###
+ firstpage = 1 ### probably  = 1 ###
+ endurl = '/' ### can be empty ###    ### endurl without final / (SLASH) ###
+#
+ dataregex = 'item\"\>.*?href="(.*?)".*?src="(.*?)".*?alt="(.*?)"'      ### To adapt ###
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:50.0) Gecko/20100101 Firefox/50.0', 'Referer': ''}      ### To adapt ###
+##############################################################################################################################################
+
+############################## GENERIC PART #####################################
+ fullurl = starturl + centerurl + str(firstpage) + endurl + categorylink #
+ source = requests.get(fullurl, headers= headers).text #
+ data = [] #
+#
+ last = 6 #
+ while firstpage <= last: #
+    try: #
+        fullurl = starturl + centerurl + str(firstpage) + endurl + categorylink #
+        source = requests.get(fullurl, headers=headers).text #
+        data += re.findall(dataregex, source) #
+        firstpage += 1 #
+    except: #
+        pass #
+ return data #
+
+]]></expres><page></page>
+</regex>
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>[makelist1.param3] [makelist2.param1]  [makelist2.param3] [I]emitido:[makelist2.param4][/I]     </title>
+<link>$doregex[makelist0]</link>
+ <thumbnail>[makelist1.param2]</thumbnail>
+
+]]></listrepeat>
+<expres><![CDATA[numerando\">(.*?)<.*?href="(.*?)">(.*?)<.*?date">(.*?)<]]></expres>
+<page>[makelist1.param1]</page>
+</regex>
+<regex>
+<name>makelist0</name>
+<listrepeat><![CDATA[
+<title>[makelist1.param3] [makelist2.param1]  [makelist2.param3] opcion:[makelist0.param1]    </title>
+<link>$doregex[makelist3]</link>
+ <thumbnail>[makelist1.param2]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[tit\"\>(.*?)<.*?data\-lazy\-src\=\"(.*?)\"]]></expres>
+<page>[makelist2.param2]</page>
+</regex>
+<regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+<title>[makelist1.param3] [makelist2.param1] - [makelist3.param2] </title>
+<link>$doregex[id3]</link>
+ <thumbnail>[makelist1.param2]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[a\shref="(.*?)".*?\n.*?\n.*?\n.*?\n.*?span>(.*?)<]]></expres>
+<page>[makelist0.param2]</page>
+</regex>
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver, resolveurl
+    url = '$doregex[serv]'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = resolveurl.resolve(url)
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+<regex>
+<name>serv</name>
+<expres><![CDATA[iframe src="(.*?)"]]></expres>
+<page>[makelist3.param1]</page>
+</regex>
+<thumbnail>http://blackghost.live/gray/img/series.png</thumbnail><fanart>http://blackghost.live/gray/img/fanart.jpg</fanart>
+</item>
+
+<itm><!--series24-->
+<title>[COLOR lightyellow][B]SERIES24[/B][/COLOR]</title>
+<link>$doregex[makelist3]</link>
+
+<regex>
+<name>makelist3</name>
+ <listrepeat><![CDATA[
+<title>[B][makelist3.param3][/B] </title>
+<link>$doregex[makelist2]</link>
+<thumbnail>[makelist3.param2]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re, requests
+def GetLSProData(page_data,Cookie_Jar,m):
+
+################################################################## FORMULARY #################################################################
+ starturl = 'https://series24.to/series/'     ### usually, ~ 'http://website.com/category/' ### 
+ categorylink = '' ### check the number of the param ###
+ centerurl = 'page/'      ### something like  '/page/' ###
+ firstpage = 1 ### probably  = 1 ###
+ endurl = '/' ### can be empty ###    ### endurl without final / (SLASH) ###
+#
+ dataregex = 'TPost\sC.*?\n.*?href="(.*?)".*?\n.*?\n.*?src="(.*?)".*?magen\s(.*?)"'      ### To adapt ###
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:50.0) Gecko/20100101 Firefox/50.0', 'Referer': ''}      ### To adapt ###
+##############################################################################################################################################
+
+############################## GENERIC PART #####################################
+ fullurl = starturl + centerurl + str(firstpage) + endurl + categorylink #
+ source = requests.get(fullurl, headers= headers).text #
+ data = [] #
+#
+ last = 4 #
+ while firstpage <= last: #
+    try: #
+        fullurl = starturl + centerurl + str(firstpage) + endurl + categorylink #
+        source = requests.get(fullurl, headers=headers).text #
+        data += re.findall(dataregex, source) #
+        firstpage += 1 #
+    except: #
+        pass #
+ return data #
+
+]]></expres><page></page>
+</regex>
+
+
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>[B][makelist3.param3][/B] - [B][makelist2.param2][/B] </title>
+<link>$doregex[makelist]</link>
+<thumbnail>[makelist3.param2]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[a\shref="(.*?)">(Capitu.*?)<]]></expres>
+<page>[makelist3.param1]</page>
+</regex>
+
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[B][makelist3.param3][/B] - [B][makelist2.param2][/B]  (Idioma:[makelist.param3])   Servidor:[makelist.param2]</title>
+<link>$doregex[dos]</link>
+<thumbnail>[makelist3.param2]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[domain=(.*?)".*?> (Gamo.*?)<.*?\n.*?span>(.*?o)]]></expres>
+<page>[makelist2.param1]</page>
+</regex>
+
+
+
+<regex>
+<name>dos</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data, Cookie_Jar,m,url='[makelist.param1]'):
+  import re,requests,xbmc,urlresolver
+  from urlresolver.plugins.lib import jsunpack
+  ua ='Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36'
+  s=requests.session()
+  rsource=s.get(url, headers={'User-Agent': ua},  verify=False)
+  source=s.get(url, headers={'User-Agent': ua},  verify=False)
+  pack = re.findall('javascript.*?(eval\(function\(p,a,c,k,e,d.*)', source.text)[0]
+  unpack=jsunpack.unpack(pack)
+  return re.findall('file:\s*"(http.*?)"', unpack)[0]+'|User-Agent='+ua
+]]></expres>
+    <page></page>
+  </regex>
+
+<thumbnail>http://blackghost.live/gray/img/series.png</thumbnail><fanart>http://blackghost.live/gray/img/fanart.jpg</fanart>
+</item>
+
+<item><!--wikiseries -->
+<title>[COLOR lightyellow][B]WIKI SERIES[/B][/COLOR]</title>
+<link>$doregex[makelist2]</link>
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>[makelist2.param3]     </title>
+<link>$doregex[makelist0]</link>
+<thumbnail>[makelist2.param1]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[39\;\".*?\n.*?src="(.*?)"[\w\W\s]{0,260}href="(.*?)"\stitle="(.*?)"]]></expres>
+<page>http://www.wikiseriesonline.nu/series/estrenos/page/1/</page>
+</regex>
+
+
+<regex>
+<name>makelist0</name>
+<listrepeat><![CDATA[
+<title>[makelist0.param2] [makelist0.param3]    </title>
+<link>$doregex[makelist3]</link>
+<thumbnail>[makelist2.param1]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[ep-list-number.*?href="(.*?)".*?>(.*?)<.*?"name">(.*?)<]]></expres>
+<page>[makelist2.param2]</page>
+</regex>
+
+
+<regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+<title>[makelist3.param2] </title>
+<link>$doregex[makelist4]</link>
+]]></listrepeat>
+<expres><![CDATA[a\shref="(/reproducto.*?)\&t\=ver\s(.*?)"]]></expres>
+<page>[makelist0.param1]</page>
+</regex>
+
+<regex>
+<name>makelist4</name>
+<listrepeat><![CDATA[
+<title>[makelist4.param1]   server:[makelist4.param2]     </title>
+<link>$doregex[id3]</link>
+]]></listrepeat>
+<expres><![CDATA[2>ver\s(.*?)<.*?\n.*?"(http.*?)"]]></expres>
+<page>http://www.wikiseriesonline.nu[makelist3.param1]</page>
+</regex>
+
+
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver, resolveurl
+    url = '[makelist4.param2]'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = '$doregex[dos]'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+
+  <regex>
+    <name>dos</name>
+    <expres><![CDATA[#$pyFunction
+def GetLSProData(page_data, Cookie_Jar,m,url='[makelist4.param2]'):
+  import re,requests,xbmc,urlresolver
+  from urlresolver.plugins.lib import jsunpack
+  ua ='Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36'
+  s=requests.session()
+  rsource=s.get(url, headers={'User-Agent': ua},  verify=False)
+  source=s.get(url, headers={'User-Agent': ua},  verify=False)
+  pack = re.findall('javascript.*?(eval\(function\(p,a,c,k,e,d.*)', source.text)[0]
+  unpack=jsunpack.unpack(pack).replace('\\','')
+  u = re.findall('file:\s*"(http.*?)"', unpack)[0]+'|User-Agent='+ua
+  return u
+]]></expres>
+    <page></page>
+  </regex>
+
+
+
+
+<thumbnail>http://blackghost.live/gray/img/series.png</thumbnail><fanart>http://blackghost.live/gray/img/fanart.jpg</fanart>
+</item>
+ 
+<item><!-- CUEVANA -->
+<title>[COLOR lightyellow][B]CUEVANA SERIES[/B][/COLOR]</title>
+<link>$doregex[makelist3]</link>
+
+
+<regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+<title>[makelist3.param3] </title>
+<link>$doregex[makelist2]</link>
+<thumbnail>[makelist3.param2]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[TPost C post[\s\W\w]{0,90}href="(.*?serie.*?)".*\n.*data-src="(.*?)".*\n.*\n.*?h2.*"\>(.*?)<]]></expres>
+<page>https://www.cuevana3.co/serie</page>
+</regex>
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>[makelist2.param3] </title>
+<link>$doregex[makelist]</link>
+<thumbnail>[makelist2.param2]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[true">\n.*\n.*TPost C post.*\n.*?href="(.*?)".*?\n.*?data-src="(.*?)"[\w\W\s]{0,120}Title">(.*?)<]]></expres>
+<page>[makelist3.param1]</page>
+</regex>
+
+ 
+  
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist2.param3] - [makelist.param2]  [I][makelist.param1] [/I]</title>
+<link>$doregex[id3]</link>
+<thumbnail>[makelist2.param2]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[domain=(.*?)"[\w\W\w]{0,80}<span>(.*?)<]]></expres>
+<page>[makelist2.param1]</page>
+</regex>
+
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver, resolveurl
+    url = '[makelist.param1]'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = resolveurl.resolve(url)
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+<thumbnail>http://blackghost.live/gray/img/peliculas.png</thumbnail>
+<fanart>http://blackghost.live/gray/img/fanart.jpg</fanart></item>
+
+<item><!--SERIES DANKO -->
+<title>[COLOR lightyellow][B]DANKO SERIES[/B] [/COLOR]</title>
+
+<link>$doregex[makelist1]</link>
+
+
+<regex>
+<name>makelist1</name>
+<listrepeat><![CDATA[
+<title>[COLOR skyblue][makelist1.param2][/COLOR]   </title>
+<link>$doregex[makelist2]</link>
+<fanart>[makelist1.param3]</fanart>
+<thumbnail>[makelist1.param3]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[href="(https:\/\/seriesdanko.net\/capitulos.*?)">(.*?)<]]></expres>
+<page>https://seriesdanko.net/</page>
+</regex>
+
+
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>[COLOR skyblue][makelist2.param2][/COLOR]   </title>
+<link>$doregex[makelist3]</link>
+<fanart>[makelist1.param3]</fanart>
+<thumbnail>[makelist1.param3]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[sape"[\w\W]*?href="(.*?)".*?">(.*?)<]]></expres>
+<page>[makelist1.param1]</page>
+</regex>
+
+
+
+<regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+<title>[COLOR skyblue][makelist2.param2][/COLOR] Idioma:[B][makelist3.param1][/B] Server:[B][makelist3.param2][/B]  </title>
+<link>$doregex[id3]</link>
+<fanart>[makelist1.param3]</fanart>
+<thumbnail>[makelist1.param3]</thumbnail>
+]]></listrepeat>
+<expres>language\/(.*?)\.p[\w\W]*?domain=(.*?)"[\w\W]*?href="(.*?)"</expres>
+<page>[makelist2.param1]</page>
+</regex>
+
+
+
+
+
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver, resolveurl
+    url = '$doregex[link]'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = '$doregex[dos]'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+<regex>
+<name>link</name>
+<expres>palabra = "(.*?)"</expres>
+<page>https://seriesdanko.net[makelist3.param3]</page>
+</regex>
+
+  <regex>
+    <name>dos</name>
+    <expres><![CDATA[#$pyFunction
+def GetLSProData(page_data, Cookie_Jar,m,url='$doregex[link]'):
+  import re,requests,xbmc,urlresolver
+  from urlresolver.plugins.lib import jsunpack
+  ua ='Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36'
+  s=requests.session()
+  rsource=s.get(url, headers={'User-Agent': ua},  verify=False)
+  source=s.get(url, headers={'User-Agent': ua},  verify=False)
+  pack = re.findall('javascript.*?(eval\(function\(p,a,c,k,e,d.*)', source.text)[0]
+  unpack=jsunpack.unpack(pack).replace('\\','')
+  u = re.findall('file:\s*"(http.*?)"', unpack)[0]+'|User-Agent='+ua
+  return u
+]]></expres>
+    <page></page>
+  </regex>
+	
+<thumbnail>http://blackghost.live/gray/img/series.png</thumbnail><fanart>http://blackghost.live/gray/img/fanart.jpg</fanart></item>
+
+
+
+
+<!--SERIES FLV -->
+<item>
+<title>[COLOR lightyellow][B]FLV SERIES[/B] Recientes[/COLOR]</title>
+
+<link>$doregex[makelist1]</link>
+
+
+<regex>
+<name>makelist1</name>
+<listrepeat><![CDATA[
+<title>[COLOR skyblue][makelist1.param2] [/COLOR]   </title>
+<link>$doregex[makelist2]</link>
+<fanart>[makelist1.param3]</fanart>
+<thumbnail>[makelist1.param3]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[class="on"\s*href="(.*?)"\s*title="(.*?)".*?\n.*?src="(.*?)"]]></expres>
+<page>http://seriesf.lv/</page>
+</regex>
+
+
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>[COLOR skyblue][makelist2.param2][/COLOR]   </title>
+<link>$doregex[makelist3]</link>
+<fanart>[makelist1.param3]</fanart>
+<thumbnail>[makelist1.param3]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[glyphicon-film.*?\n.*?href="(.*?)".*?">(.*?)<]]></expres>
+<page>[makelist1.param1]</page>
+</regex>
+
+
+
+<regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+<title>[COLOR skyblue][makelist2.param2][/COLOR] Idioma:[B][makelist3.param1][/B] Server:[B][makelist3.param3][/B]  </title>
+<link>$doregex[id3]</link>
+<fanart>[makelist1.param3]</fanart>
+<thumbnail>[makelist1.param3]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[images/(.*?).png.*?\n.*?domain=(.*?)"> (.*?)<.*?\n.*?href="(.*?)"]]></expres>
+<page>[makelist2.param1]</page>
+</regex>
+
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver, resolveurl
+    url = '$doregex[link]'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = '$doregex[dos]'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+<regex>
+<name>link</name>
+<expres><![CDATA[#$pyFunction
+import re,requests
+def GetLSProData(page_data,Cookie_Jar,m):
+  s0=requests.get('http://seriesf.lv[makelist3.param4]',headers={'user-agent':'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36','accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'},allow_redirects=False).headers['Location']
+  return requests.get(s0,headers={'user-agent':'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36','accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','accept-encoding':'gzip, deflate','connection':'keep-alive'},allow_redirects=False).url
+]]></expres>
+<page></page>
+</regex>
+
+  <regex>
+    <name>dos</name>
+    <expres><![CDATA[#$pyFunction
+def GetLSProData(page_data, Cookie_Jar,m,url='$doregex[link]'):
+  import re,requests,xbmc,urlresolver
+  from urlresolver.plugins.lib import jsunpack
+  ua ='Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36'
+  s=requests.session()
+  rsource=s.get(url, headers={'User-Agent': ua},  verify=False)
+  source=s.get(url, headers={'User-Agent': ua},  verify=False)
+  pack = re.findall('javascript.*?(eval\(function\(p,a,c,k,e,d.*)', source.text)[0]
+  unpack=jsunpack.unpack(pack).replace('\\','')
+  u = re.findall('file:\s*"(http.*?)"', unpack)[0]+'|User-Agent='+ua
+  return u
+]]></expres>
+    <page></page>
+  </regex>
+	
+<thumbnail>http://blackghost.live/gray/img/series.png</thumbnail>
+<fanart>http://blackghost.live/gray/img/fanart.jpg</fanart>
+</item>
+
+<item>
+<title>[COLOR lightyellow][B]FLV SERIES[/B] Capitulos Recientes [/COLOR]</title>
+
+ <link>$doregex[getc]</link>
+ 
+<regex>
+<name>getc</name>
+<listrepeat><![CDATA[
+<title> [getc.param1]</title>
+<link>$doregex[makelist2]</link>
+<thumbnail>http://blackghost.live/gray/img/series.png</thumbnail>
+<fanart>http://blackghost.live/gray/img/fanart.jpg</fanart>
+]]></listrepeat>
+<expres>'(.*?)'</expres>
+<page>'Animes','Series','Novelas'</page>
+</regex> 
+
+
+
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>[B][COLOR skyblue][makelist2.param3][/COLOR][/B]   </title>
+<link>$doregex[makelist3]</link>
+<fanart>[makelist2.param2]</fanart>
+<thumbnail>[makelist2.param2]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[tipo\=\"[getc.param1]".*?\n.*?\n.*?href="(.*?)".*?\n.*?src="(.*?)"\s*title="(.*?)Online]]></expres>
+<page>http://seriesf.lv/</page>
+</regex>
+
+
+
+<regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+<title>[COLOR skyblue][B][makelist2.param3][/B][/COLOR] Idioma:[B][makelist3.param1][/B] Server:[B][makelist3.param3][/B]  </title>
+<link>$doregex[id3]</link>
+<fanart>[makelist2.param2]</fanart>
+<thumbnail>[makelist2.param2]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[images/(.*?).png.*?\n.*?domain=(.*?)"> (.*?)<.*?\n.*?href="(.*?)"]]></expres>
+<page>[makelist2.param1]</page>
+</regex>
+
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver, resolveurl
+    url = '$doregex[link]'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = '$doregex[dos]'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+<regex>
+<name>link</name>
+<expres><![CDATA[#$pyFunction
+import re,requests
+def GetLSProData(page_data,Cookie_Jar,m):
+  s0=requests.get('http://seriesf.lv[makelist3.param4]',headers={'user-agent':'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36','accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'},allow_redirects=False).headers['Location']
+  return requests.get(s0,headers={'user-agent':'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36','accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','accept-encoding':'gzip, deflate','connection':'keep-alive'},allow_redirects=False).url
+]]></expres>
+<page></page>
+</regex>
+
+  <regex>
+    <name>dos</name>
+    <expres><![CDATA[#$pyFunction
+def GetLSProData(page_data, Cookie_Jar,m,url='$doregex[link]'):
+  import re,requests,xbmc,urlresolver
+  from urlresolver.plugins.lib import jsunpack
+  ua ='Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36'
+  s=requests.session()
+  rsource=s.get(url, headers={'User-Agent': ua},  verify=False)
+  source=s.get(url, headers={'User-Agent': ua},  verify=False)
+  pack = re.findall('javascript.*?(eval\(function\(p,a,c,k,e,d.*)', source.text)[0]
+  unpack=jsunpack.unpack(pack).replace('\\','')
+  u = re.findall('file:\s*"(http.*?)"', unpack)[0]+'|User-Agent='+ua
+  return u
+]]></expres>
+    <page></page>
+  </regex>
+	
+<thumbnail>http://blackghost.live/gray/img/series.png</thumbnail>
+<fanart>http://blackghost.live/gray/img/fanart.jpg</fanart>
+</item>
+
+<item>
+<title>[COLOR lightyellow][B]FLV SERIES[/B] por Letra[/COLOR]</title>
+
+<link>$doregex[makelist0]</link>
+
+
+<regex>
+<name>makelist0</name>
+<listrepeat><![CDATA[
+<title>[COLOR skyblue][makelist0.param1] [/COLOR]   </title>
+<link>$doregex[makelist1]</link>
+]]></listrepeat>
+<expres><![CDATA[\/letra\/(.*?)\/]]></expres>
+<page>http://seriesf.lv</page>
+</regex>
+
+
+
+
+
+
+<regex>
+<name>makelist1</name>
+<listrepeat><![CDATA[
+<title>[COLOR skyblue][makelist1.param3] [/COLOR]   </title>
+<link>$doregex[makelist2]</link>
+<fanart>[makelist1.param2]</fanart>
+<thumbnail>[makelist1.param2]</thumbnail>
+<info>[makelist1.param4]</info>
+]]></listrepeat>
+<expres><![CDATA[text-center".*?\n.*?href="(.*?)".*?\n.*?src="(.*?)".*?alt="(.*?)".*?\n.*?\n.*?\n.*?\n.*?\n.*?\n.*?\n.*?search-description">(.*?)<\/]]></expres>
+<page>http://seriesf.lv/letra/[makelist0.param1]/</page>
+</regex>
+
+
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>[COLOR skyblue][makelist2.param2][/COLOR]   </title>
+<link>$doregex[makelist3]</link>
+<fanart>[makelist1.param2]</fanart>
+<thumbnail>[makelist1.param2]</thumbnail>
+<info>[makelist1.param4]</info>
+]]></listrepeat>
+<expres><![CDATA[glyphicon-film.*?\n.*?href="(.*?)".*?">(.*?)<]]></expres>
+<page>[makelist1.param1]</page>
+</regex>
+
+
+
+<regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+<title>[COLOR skyblue][makelist2.param2][/COLOR] Idioma:[B][makelist3.param1][/B] Server:[B][makelist3.param3][/B]  </title>
+<link>$doregex[id3]</link>
+<fanart>[makelist1.param2]</fanart>
+<thumbnail>[makelist1.param2]</thumbnail>
+<info>[makelist1.param4]</info>
+]]></listrepeat>
+<expres><![CDATA[images/(.*?).png.*?\n.*?domain=(.*?)"> (.*?)<.*?\n.*?href="(.*?)"]]></expres>
+<page>[makelist2.param1]</page>
+</regex>
+
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver, resolveurl
+    url = '$doregex[link]'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = '$doregex[dos]'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+<regex>
+<name>link</name>
+<expres><![CDATA[#$pyFunction
+import re,requests
+def GetLSProData(page_data,Cookie_Jar,m):
+  s0=requests.get('http://seriesf.lv[makelist3.param4]',headers={'user-agent':'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36','accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'},allow_redirects=False).headers['Location']
+  return requests.get(s0,headers={'user-agent':'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36','accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','accept-encoding':'gzip, deflate','connection':'keep-alive'},allow_redirects=False).url
+]]></expres>
+<page></page>
+</regex>
+
+  <regex>
+    <name>dos</name>
+    <expres><![CDATA[#$pyFunction
+def GetLSProData(page_data, Cookie_Jar,m,url='$doregex[link]'):
+  import re,requests,xbmc,urlresolver
+  from urlresolver.plugins.lib import jsunpack
+  ua ='Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36'
+  s=requests.session()
+  rsource=s.get(url, headers={'User-Agent': ua},  verify=False)
+  source=s.get(url, headers={'User-Agent': ua},  verify=False)
+  pack = re.findall('javascript.*?(eval\(function\(p,a,c,k,e,d.*)', source.text)[0]
+  unpack=jsunpack.unpack(pack).replace('\\','')
+  u = re.findall('file:\s*"(http.*?)"', unpack)[0]+'|User-Agent='+ua
+  return u
+]]></expres>
+    <page></page>
+  </regex>
+	
+<thumbnail>http://blackghost.live/gray/img/series.png</thumbnail>
+<fanart>http://blackghost.live/gray/img/fanart.jpg</fanart>
+</item>
+
+
+
+
+
+
+<item> <!--  SERIES RETRO -->
+<title>[COLOR lightyellow][B]RETRO SERIES[/B] [/COLOR]</title>
+
+<link>$doregex[makelist2]</link>
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>[COLOR white][makelist2.param2][/COLOR] </title>
+<link>$doregex[makelist0]</link>
+<thumbnail>[makelist2.param1]</thumbnail>
+<info>[makelist2.param4]</info>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re,requests
+def GetLSProData(page_data,Cookie_Jar,m):
+  count=5;pn=1;data=[]
+  while pn <= int(count):
+     page='http://retroseriestv.com/seriestv/page/'+str(pn)+'/';source=requests.get(page).content.decode('ascii','ignore')
+     data +=re.findall('(?s)class="poster"[\w\W]*?src="(.*?)".*?alt="(.*?)"[\w\W]*?href="(.*?)"[\w\W]*?texto">(.*?)<',source);pn +=1
+  return data
+]]></expres>
+<page></page>
+</regex>
+
+
+
+
+<regex>
+<name>makelist0</name>
+<listrepeat><![CDATA[
+<title>[makelist0.param1]      [COLOR lightyellow][makelist0.param2][/COLOR] [B][makelist0.param4][/B] [COLOR gray][makelist0.param5][/COLOR]</title>
+<link>$doregex[makelist]</link>
+<thumbnail>[makelist2.param1]</thumbnail>
+<info>[makelist2.param4]</info>
+]]></listrepeat>
+<expres><![CDATA[class=\'title\'>(Temporada\s.*?)<|numerando\'>(.+?)<.*?href=\'(.+?)\'>(.+?)<.*?date\'>(.+?)<]]></expres>
+<page>[makelist2.param3]</page>
+ </regex>
+
+
+
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[COLOR lightyellow][makelist0.param2][/COLOR] [B][makelist0.param4][/B] [COLOR gray][makelist0.param5][/COLOR]   [B][COLOR lightyellow][makelist.param5][/COLOR][/B]  </title>
+<link>$doregex[id3]</link>
+<thumbnail>[makelist2.param1]</thumbnail>
+<info>[makelist2.param4]</info>
+]]></listrepeat>
+<expres><![CDATA[data-type='(.*?)'\s*data-post='(.*?)'\s*data-nume='(.*?)'.*?title'>(.*?)<.*?server'>(.*?)<]]></expres>
+<page>[makelist0.param3]</page>
+ </regex>
+  
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+import re,requests,urlresolver
+def GetLSProData(page_data,Cookie_Jar,m):
+  source=requests.post('https://retroseriestv.com/wp-admin/admin-ajax.php',headers={'user-agent':'Mozilla/5.0','host':'retroseriestv.com','referer':'https://retroseriestv.com/','x-requested-with':'XMLHttpRequest','accept':'*/*'},data={'action':'doo_player_ajax','post':'[makelist.param2]','nume':'[makelist.param3]','type':'[makelist.param1]'}).content.decode('ascii','ignore')
+  return urlresolver.resolve(re.findall('iframe.+?src=.(h[^\'"]+)',source)[0])
+]]></expres>
+<page></page>
+</regex>
+
+
+
+
+<thumbnail>http://blackghost.live/gray/img/series.png</thumbnail><fanart>http://blackghost.live/gray/img/fanart.jpg</fanart></item>
+
+
+
+
+
+<!-- ANIME-->
+<item>
+<title>[COLOR skyblue][B]ANIME FLV[/B][/COLOR]</title>
+<link>$doregex[scrape2]</link>
+
+<regex>
+<name>scrape2</name>
+<listrepeat><![CDATA[
+<title>[scrape2.param4] </title>
+<link>$doregex[scrape3]</link>
+<thumbnail>[scrape2.param3]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data, Cookie_Jar,m):
+  import re,requests,HTMLParser,cfscrape
+  ua='Mozilla/5.0 (Windows NT 10; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36'
+  scraper = cfscrape.create_scraper()
+  source=scraper.get("https://animeflv.net/browse?page=1", headers={'User-Agent': ua}, verify=False)
+  return re.findall('Anime\salt\sB.*?\n.*?href\=\"\/anime\/(.*?)\/(.*?)\".*?\n.*?\n.*?src="(.*?)".*?alt="(.*?)"',source.text)
+]]></expres>
+<page></page>
+<agent></agent>
+</regex>
+
+
+
+
+<regex>
+<name>scrape3</name>
+<listrepeat><![CDATA[
+<title>[scrape2.param4] - Capitulo [scrape3.param1] </title>
+<link>$doregex[scrape]</link>
+<thumbnail>[scrape2.param3]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data, Cookie_Jar,m):
+  import re,requests,HTMLParser,cfscrape
+  ua='Mozilla/5.0 (Windows NT 10; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36'
+  scraper = cfscrape.create_scraper()
+  source=scraper.get("https://animeflv.net/anime/[scrape2.param1]/[scrape2.param2]", headers={'User-Agent': ua}, verify=False)
+  return re.findall('\[([0-9]+),([0-9]+)',source.text)
+]]></expres>
+<page></page>
+<agent></agent>
+</regex>
+
+
+
+
+<regex>
+<name>scrape</name>
+<listrepeat><![CDATA[
+<title>[B][scrape2.param4][/B] - Capitulo [scrape3.param1]  [I]server:[scrape.param1][/I]</title>
+<link>$doregex[id3]</link>
+<thumbnail>[scrape2.param3]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data, Cookie_Jar,m):
+  import re,requests,HTMLParser,cfscrape
+  ua='Mozilla/5.0 (Windows NT 10; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36'
+  scraper = cfscrape.create_scraper()
+  source=scraper.get("https://animeflv.net/ver/[scrape3.param2]/[scrape2.param2]-[scrape3.param1]", headers={'User-Agent': ua}, verify=False)
+  return re.findall('server":"(.*?)".*?code":"(.*?)"',source.text)
+]]></expres>
+<page></page>
+<agent></agent>
+</regex>
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver, resolveurl
+    url = '$doregex[uno]'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = resolveurl.resolve(url)
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+<regex>
+<name>uno</name>
+<expres>$pyFunction:'[scrape.param2]'.replace("\/", "/")</expres>
+<page></page>
+</regex>
+
+</item>
+
+<item>
+<title>[COLOR skyblue][B]JK ANIME[/B][/COLOR]</title>
+<link>$doregex[makelist0]</link>
+<regex>
+ <name>makelist0</name>
+ <listrepeat><![CDATA[
+ <title>[makelist0.param1]</title>
+<link>$doregex[makelist2]</link>
+ <thumbnail>[makelist0.param3]</thumbnail>
+ <fanart>[makelist0.param3]</fanart>
+ ]]></listrepeat>
+ <expres><![CDATA[portada-title.*?\n.*?title="(.*?)".*?href="(.*?)".*?\n.*?\n.*?\n.*?src="(.*?)"]]></expres>
+ <page>https://jkanime.net/</page>
+</regex>
+<regex>
+    <name>makelist2</name> movies  (all pages)
+ <listrepeat><![CDATA[
+ <title>[makelist2.param2]  </title>
+<link>$doregex[makelist3]</link>
+ <thumbnail>[makelist0.param3]</thumbnail>
+ <fanart>[makelist0.param3]</fanart>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re, requests
+def GetLSProData(page_data,Cookie_Jar,m):
+
+################################################################## FORMULARY #################################################################
+ starturl = 'https://jkanime.net/ajax/pagination_episodes/$doregex[elid]/'     ### usually, ~ 'http://website.com/category/' ###
+ categorylink = '' ### check the number of the param ###
+ centerurl = ''      ### something like  '/page/' ###
+ firstpage = 1 ### probably  = 1 ###
+ endurl = '/' ### can be empty ###    ### endurl without final / (SLASH) ###
+#
+ dataregex = 'number":"(.*?)","title":"(.*?)"'      ### To adapt ###
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:50.0) Gecko/20100101 Firefox/50.0', 'Referer': ''}      ### To adapt ###
+##############################################################################################################################################
+
+############################## GENERIC PART #####################################
+ fullurl = starturl + centerurl + str(firstpage) + endurl + categorylink #
+ source = requests.get(fullurl, headers= headers).text #
+ data = [] #
+#
+ last = $doregex[paginas] #
+ while firstpage <= last: #
+    try: #
+        fullurl = starturl + centerurl + str(firstpage) + endurl + categorylink #
+        source = requests.get(fullurl, headers=headers).text #
+        data += re.findall(dataregex, source) #
+        firstpage += 1 #
+    except: #
+        pass #
+ return data #
+
+]]></expres><page></page>
+</regex>
+<regex>
+ <name>paginas</name>
+ <expres><![CDATA[href\=\"\#pag(.*?)" rel="nofollow.*?\n.*?</div>]]></expres>
+ <page>[makelist0.param2]</page>
+</regex>
+
+<regex>
+ <name>elid</name>
+ <expres><![CDATA[pagination_episodes\/(.*?)\/]]></expres>
+ <page>[makelist0.param2]</page>
+</regex>
+
+<regex>
+ <name>makelist3</name>
+ <listrepeat><![CDATA[
+ <title>[makelist2.param2] - Opcion [makelist3.param1] server:[makelist3.param2]</title>
+<link>$doregex[id3]</link>
+ <thumbnail>[makelist0.param3]</thumbnail>
+ <fanart>[makelist0.param3]</fanart>
+ ]]></listrepeat>
+ <expres>video\[(.*?)\].*?player_conte" src="(.*?open.*?|.*?okru.*?|.*?rapid.*?)"</expres>
+ <page>[makelist0.param2][makelist2.param1]/</page>
+</regex>
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver, resolveurl
+    url = '$doregex[link]'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = resolveurl.resolve(url)
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+<regex>
+<name>link</name>
+<expres>src="(.*?)"</expres>
+<page>[makelist3.param2]</page>
+</regex>
+<thumbnail>http://blackghost.live/gray/img/series.png</thumbnail><fanart>http://blackghost.live/gray/img/fanart.jpg</fanart>
+</item>	
+
+<item>
+<title>[B][COLOR blue]ANIMEBOOM[/COLOR][/B] </title>
+
+<link>$doregex[makelist1]</link>
+
+<regex>
+    <name>makelist1</name> movies  (all pages)
+ <listrepeat><![CDATA[
+ <title>  [makelist1.param4]  </title>
+<link>$doregex[makelist2]</link>
+ <thumbnail>[makelist1.param3]</thumbnail>
+ <fanart>[makelist1.param3]</fanart>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re, requests
+def GetLSProData(page_data,Cookie_Jar,m):
+
+################################################################## FORMULARY #################################################################
+ starturl = 'https://animeboom.net/'     ### usually, ~ 'http://website.com/category/' ### 
+ categorylink = '' ### check the number of the param ###
+ centerurl = '$doregex[select]?page='      ### something like  '/page/' ###
+ firstpage = 1 ### probably  = 1 ###
+ endurl = '' ### can be empty ###    ### endurl without final / (SLASH) ###
+#
+ dataregex = 'image\">.*?\n.*?href="(.*?)".*?title="(.*?)".*?\n.*?src="(.*?)".*?alt="(.*?)\"'      ### To adapt ###
+ headers = {'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:50.0) Gecko/20100101 Firefox/50.0', 'Referer': ''}      ### To adapt ###
+##############################################################################################################################################
+
+############################## GENERIC PART #####################################
+ fullurl = starturl + centerurl + str(firstpage) + endurl + categorylink #
+ source = requests.get(fullurl, headers= headers).text #
+ data = [] #
+#
+ last = 5 #
+ while firstpage <= last: #
+    try: #
+        fullurl = starturl + centerurl + str(firstpage) + endurl + categorylink #
+        source = requests.get(fullurl, headers=headers).text #
+        data += re.findall(dataregex, source) #
+        firstpage += 1 #
+    except: #
+        pass #
+ return data #
+]]></expres><page></page>
+</regex>
+
+
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+  import xbmcgui
+  dialog = xbmcgui.Dialog()
+  ret = dialog.select('Elige una pagina ', ['En Emision', 'Recien Agregadas', 'Television', 'ONA', 'OVA', 'Peliculas', 'Especiales'])
+  lists = ['emision', 'series', 'tv', 'ona', 'ova', 'peliculas', 'specials']
+  return lists[ret]
+]]></expres>
+ <page></page>
+ </regex>
+
+
+
+<regex>
+ <name>makelist2</name>
+ <listrepeat><![CDATA[
+ <title>[makelist2.param2]</title>
+<link>$doregex[makelist3]</link>
+ <thumbnail>[makelist1.param3]</thumbnail>
+ <fanart>[makelist1.param3]</fanart>
+ ]]></listrepeat>
+ <expres><![CDATA[li>.*?\n.*?href="(.*?)".*?title="(.*?)"]]></expres>
+ <page>[makelist1.param1]</page>
+</regex>
+
+
+
+
+<regex>
+ <name>makelist3</name>
+ <listrepeat><![CDATA[
+ <title>Opcion [makelist3.param1] server:[makelist3.param2]</title>
+<link>$doregex[id3]</link>
+ <thumbnail>[makelist1.param3]</thumbnail>
+ <fanart>[makelist1.param3]</fanart>
+ ]]></listrepeat>
+ <expres><![CDATA[video\[(.*?)\].*?src="(.*?)"]]></expres>
+ <page>[makelist2.param1]</page>
+</regex>
+
+
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver, resolveurl
+    url = '[makelist3.param2]'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = resolveurl.resolve(url)
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+<thumbnail>http://blackghost.live/gray/img/series.png</thumbnail><fanart>http://blackghost.live/gray/img/fanart.jpg</fanart>
+</item>	
+
+<item>
+<title>[B][COLOR blue]ANIMEBOOM[/COLOR][/B]  Buscador de Anime</title>
+<link>$doregex[makelist1]</link>
+<regex>
+    <name>makelist1</name> movies  (all pages)
+ <listrepeat><![CDATA[
+ <title>  [makelist1.param2]  </title>
+<link>$doregex[makelist2]</link>
+ <thumbnail>[makelist1.param3]</thumbnail>
+ <fanart>[makelist1.param3]</fanart>
+]]></listrepeat>
+<expres><![CDATA[search-results\_\_img.*?\n.*?href="(.*?)".*?title="(.*?)online.*?src="(.*?)"]]></expres>
+<page>https://animeboom.net/search?s=$doregex[buscar]</page>
+</regex>
+
+<regex>
+<name>buscar</name>
+<expres><![CDATA[#$pyFunction
+import xbmc
+import xbmcaddon
+import xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+    dialog = xbmcgui.Dialog()
+    d = dialog.input('Busca algun anime:', type=xbmcgui.INPUT_ALPHANUM).replace(" ", "+")
+    return d
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+ <name>makelist2</name>
+ <listrepeat><![CDATA[
+ <title>[makelist2.param2]</title>
+<link>$doregex[makelist3]</link>
+ <thumbnail>[makelist1.param3]</thumbnail>
+ <fanart>[makelist1.param3]</fanart>
+ ]]></listrepeat>
+ <expres><![CDATA[li>.*?\n.*?href="(.*?)".*?title="(.*?)"]]></expres>
+ <page>[makelist1.param1]</page>
+</regex>
+
+<regex>
+ <name>makelist3</name>
+ <listrepeat><![CDATA[
+ <title>Opcion [makelist3.param1] server:[makelist3.param2]</title>
+<link>$doregex[id3]</link>
+ <thumbnail>[makelist1.param3]</thumbnail>
+ <fanart>[makelist1.param3]</fanart>
+ ]]></listrepeat>
+ <expres><![CDATA[video\[(.*?)\].*?src="(.*?)"]]></expres>
+ <page>[makelist2.param1]</page>
+</regex>
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver, resolveurl
+    url = '[makelist3.param2]'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = resolveurl.resolve(url)
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+<thumbnail>http://blackghost.live/gray/img/series.png</thumbnail><fanart>http://blackghost.live/gray/img/fanart.jpg</fanart>
+</item>	
+		
+<item>
+<title>[COLOR skyblue][B]ANIME FLV[/B][/COLOR] Buscador de Anime</title>
+<link>$doregex[scrape2]</link>
+
+<regex>
+<name>scrape2</name>
+<listrepeat><![CDATA[
+<title>[scrape2.param4] </title>
+<link>$doregex[scrape3]</link>
+<thumbnail>[scrape2.param3]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data, Cookie_Jar,m):
+  import re,requests,HTMLParser,cfscrape
+  ua='Mozilla/5.0 (Windows NT 10; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36'
+  scraper = cfscrape.create_scraper()
+  source=scraper.get("https://animeflv.net/browse?q=$doregex[buscar]", headers={'User-Agent': ua}, verify=False)
+  return re.findall('Anime\salt\sB.*?\n.*?href\=\"\/anime\/(.*?)\/(.*?)\".*?\n.*?\n.*?src="(.*?)".*?alt="(.*?)"',source.text)
+]]></expres>
+<page></page>
+<agent></agent>
+</regex>
+
+<regex>
+<name>buscar</name>
+<expres><![CDATA[#$pyFunction
+import xbmc
+import xbmcaddon
+import xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+    dialog = xbmcgui.Dialog()
+    d = dialog.input('Busca evento:', type=xbmcgui.INPUT_ALPHANUM).replace(" ", "+")
+    return d
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+
+
+<regex>
+<name>scrape3</name>
+<listrepeat><![CDATA[
+<title>[scrape2.param4] - Capitulo [scrape3.param1] </title>
+<link>$doregex[scrape]</link>
+<thumbnail>[scrape2.param3]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data, Cookie_Jar,m):
+  import re,requests,HTMLParser,cfscrape
+  ua='Mozilla/5.0 (Windows NT 10; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36'
+  scraper = cfscrape.create_scraper()
+  source=scraper.get("https://animeflv.net/anime/[scrape2.param1]/[scrape2.param2]", headers={'User-Agent': ua}, verify=False)
+  return re.findall('\[([0-9]+),([0-9]+)',source.text)
+]]></expres>
+<page></page>
+<agent></agent>
+</regex>
+
+
+
+
+<regex>
+<name>scrape</name>
+<listrepeat><![CDATA[
+<title>[B][scrape2.param4][/B] - Capitulo [scrape3.param1]  [I]server:[scrape.param1][/I]</title>
+<link>$doregex[id3]</link>
+<thumbnail>[scrape2.param3]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data, Cookie_Jar,m):
+  import re,requests,HTMLParser,cfscrape
+  ua='Mozilla/5.0 (Windows NT 10; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36'
+  scraper = cfscrape.create_scraper()
+  source=scraper.get("https://animeflv.net/ver/[scrape3.param2]/[scrape2.param2]-[scrape3.param1]", headers={'User-Agent': ua}, verify=False)
+  return re.findall('server":"(.*?)".*?code":"(.*?)"',source.text)
+]]></expres>
+<page></page>
+<agent></agent>
+</regex>
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver, resolveurl
+    url = '$doregex[uno]'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = resolveurl.resolve(url)
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+<regex>
+<name>uno</name>
+<expres>$pyFunction:'[scrape.param2]'.replace("\/", "/")</expres>
+<page></page>
+</regex>
+<thumbnail>http://blackghost.live/gray/img/series.png</thumbnail><fanart>http://blackghost.live/gray/img/fanart.jpg</fanart>
+</item>	
+	
+
+<!-- test-->
+
+
+ <item>
+
+<title>[makelist1.param3] [makelist2.param1] - [makelist3.param2] </title>
+<link>$doregex[makelist3]</link>
+
+<regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+<title>[makelist3.param2]</title>
+<link>$doregex[makelist2]</link>
+ <thumbnail>[makelist3.param3]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[wp-show-posts-image[\w\W]*?href="(.*?)".*?title="(.*?)"[\w\W]*?ata-src="(.*?)"]]></expres>
+<page>https://seriesperu.com/programas-peruanos</page>
+</regex>
+
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>[makelist2.param2]</title>
+<link>$doregex[id3]</link>
+ <thumbnail>[makelist3.param3]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[wp-show-posts-image[\w\W]*?href="(.*?)".*?title="(.*?)"[\w\W]*?ata-src="(.*?)"]]></expres>
+<page>[makelist3.param1]</page>
+</regex>
+
+
+
+
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver, resolveurl
+    url = '$doregex[serv]'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = 'doregex[dos]'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+
+</item>
+
+
+<item>
+<title>[COLOR lightyellow][B]SERIES PERU[/B] [/COLOR]</title>
+<link>$doregex[makelist1]</link>
+
+<regex>
+<name>makelist1</name>
+<listrepeat><![CDATA[
+<title>[makelist1.param2]   </title>
+<link>$doregex[makelist2]</link>
+<thumbnail>[makelist1.param3]</thumbnail>
+<fanart>[makelist1.param3]</fanart>
+]]></listrepeat>
+<expres><![CDATA[wpsp\-image\-center[\w\W]*?href="(.*?)"[\w\W]*?title="(.*?)"[\w\W]*?data-src="(.*?)"]]></expres>
+<page>http://seriesperu.com/series-peruanas</page>
+</regex>
+
+
+
+
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+   import xbmcgui
+   dialog = xbmcgui.Dialog()
+   ret = dialog.select('Elige tu Audio preferido ', ['Series Populares', 'Series Recomendadas', 'Series de Estreno'])
+   lists = ['http://www.seriespapaya.nu/lista-series-populares/', 'http://www.seriespapaya.nu/lista-series-recomendadas/','http://www.seriespapaya.nu/lista-series-estrenos/']
+   return lists[ret]
+]]></expres>
+<page></page>
+</regex>
+
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+
+<title>[makelist1.param2] [makelist2.param1tp]    </title>
+<link>$doregex[makelist3]</link>
+<thumbnail>[makelist1.param3]</thumbnail>
+<fanart>[makelist1.param3]</fanart>
+]]></listrepeat>
+<expres><![CDATA[headline.*?href="(.*?)".*?bookmark\"\>(.*?)\<]]></expres>
+<page>[makelist1.param1]</page>
+</regex>
+
+
+
+<regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+
+<title>[makelist2.param2] Server:[B][makelist3.param2][/B]        </title>
+<link>$doregex[id3]</link>
+<thumbnail>[makelist1.param3]</thumbnail>
+<fanart>[makelist1.param3]</fanart>
+]]></listrepeat>
+<expres><![CDATA["(https://(www\.fembed.*?|embed\.mystream.*?|gounlimited.*?|/anavids.*?|hqq.*?)\/.*?)"]]></expres>
+<page>[makelist2.param1]</page>
+</regex>
+
+
+
+
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver, resolveurl
+    url = '[makelist3.param1]'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = '$doregex[dos]'
+    return u
+]]></expres>
+<page></page>
+</regex>
+
+<regex>
+    <name>dos</name>
+    <expres><![CDATA[#$pyFunction
+def GetLSProData(page_data, Cookie_Jar,m,url='[makelist3.param1]'):
+  import re,requests,xbmc,urlresolver
+  from urlresolver.plugins.lib import jsunpack
+  ua ='Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36'
+  s=requests.session()
+  rsource=s.get(url, headers={'User-Agent': ua},  verify=False)
+  source=s.get(url, headers={'User-Agent': ua},  verify=False)
+  pack = re.findall('javascript.*?(eval\(function\(p,a,c,k,e,d.*)', source.text)[0]
+  unpack=jsunpack.unpack(pack).replace('\\','')
+  u = re.findall('file:\s*"(http.*?)"', unpack)[0]+'|User-Agent='+ua
+  return u
+]]></expres>
+    <page></page>
+  </regex>
+
+<thumbnail>http://blackghost.live/gray/img/series.png</thumbnail><fanart>http://blackghost.live/gray/img/fanart.jpg</fanart></item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>testing</title>
+<link>$doregex[makelist0]</link>
+
+
+<regex>
+<name>makelist0</name>
+<listrepeat><![CDATA[
+<title>[makelist0.param1]</title>
+<link>$doregex[makelist2]</link>
+<thumbnail>[makelist0.param3]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[EXTINF.*?\,(.*?)\n(http.*?)\n]]></expres>
+<page>http://blackghost.live/scr/ser.php</page>
+<referer>http://photocall.tv/</referer>
+</regex>
+
+
+
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>[COLOR white][makelist2.param2][/COLOR]</title>
+<link>$doregex[id3]</link>
+]]></listrepeat>
+<expres><![CDATA[(?s)\\n,\\x5b\\x22(.{33})\\x22.*?\\n,\\x22\\x5b.*?\\x5d(.*?)\.mkv]]></expres>
+<page>[makelist0.param2]</page>
+<agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0</agent>
+<referer>https://drive.google.com/drivefolders</referer>
+<cookieJar></cookieJar>
+</regex>
+
+
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+import urlresolver
+def GetLSProData(page_data,Cookie_Jar,m):
+   return urlresolver.resolve('https://drive.google.com/file/d/[makelist2.param1]/view')
+]]></expres>
+<page></page>
+</regex>
+
+<regex>
+<name>name</name>
+<expres>$pyFunction:('[makelist.param3]').replace('\\/','/')</expres>
+<page></page>
+</regex>
+
+<thumbnail>http://blackghost.live/gray/img/series.png</thumbnail><fanart>http://blackghost.live/gray/img/fanart.jpg</fanart></item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<itm>
+<title>testing</title>
+<link>$doregex[makelist2]</link>
+
+
+
+
+
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>[COLOR white][makelist2.param2] [/COLOR]</title>
+<link>$doregex[id3]</link>
+<thumbnail>$doregex[name]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[(?s)x22(.{33})\\x22.*?\\n,\\x22(.*?)-(.*?)-(.*?)\.mkv]]></expres>
+<page>https://drive.google.com/drive/folders/10Bak28qzp8jciljw3Y3l6cWGxKTXqTR2</page>
+<agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0</agent>
+<referer>https://drive.google.com/drivefolders</referer>
+<cookieJar></cookieJar>
+</regex>
+
+
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+import urlresolver
+def GetLSProData(page_data,Cookie_Jar,m):
+   return urlresolver.resolve('https://drive.google.com/file/d/[makelist2.param1]/view')
+]]></expres>
+<page></page>
+</regex>
+
+<regex>
+<name>name</name>
+<expres>$pyFunction:('[makelist2.param3]').replace('\\/','/')</expres>
+<page></page>
+</regex>
+
+
+<thumbnail>http://blackghost.live/gray/img/series.png</thumbnail>
+<fanart>http://blackghost.live/gray/img/fanart.jpg</fanart>
+
+</item>
+
+
+
+<item>
+<title>TV Series</title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+  <title>[makelist.param3]  ([makelist.param4])</title>
+  <link>$doregex[makelist2]</link>
+  <info>[makelist.param5]</info>
+  <thumbnail>https://123tvseries.co/[makelist.param2]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re,requests
+def GetLSProData(page_data,Cookie_Jar,m):
+  count=5;pn=1;data=[]
+  while pn <= int(count):
+     page='https://123tvseries.co/tvseries/page/'+str(pn)+'/';source=requests.get(page).content.decode('ascii','ignore')
+     data +=re.findall('(?s)class="hover".+?(tvserie[^"]+).+?src.+?(admin[^"]+).+?main-title">([^<]+).+?Year">([^<]+).+?genre">([^<]+)',source);pn +=1
+  return data
+]]></expres>
+<page></page>
+</regex>
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+  <title>[makelist2.param1]</title>
+  <link>$doregex[makelist3]</link>
+  <info>[makelist.param5]</info>
+  <thumbnail>https://123tvseries.co/[makelist.param2]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re
+def GetLSProData(page_data,Cookie_Jar,m):
+  return re.findall('"text-color">([^<]+)(?s)(.*?)</table',re.findall('class="table">(?s)(.*?)<scrip',page_data)[0])
+]]></expres>
+<page>https://123tvseries.co/[makelist.param1]</page>
+</regex>
+<regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+  <title>[makelist3.param3]</title>
+  <link>$doregex[getUrl]</link>
+  <info>[makelist.param5]</info>
+  <thumbnail>https://123tvseries.co/[makelist.param2]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[href.+?(episo.+?-(\d+))">([^<]+)]]></expres>
+<page>[makelist2.param2]</page>
+</regex>
+<regex>
+<name>jdata</name>
+<expres><![CDATA[#$pyFunction
+import re,requests,json
+def GetLSProData(page_data,Cookie_Jar,m):
+  headers={'user-agent':'Mozilla/5.0','referer':'https://123tvseries.co/[makelist3.param1]'}
+  return requests.post('https://123tvseries.co/dbquery.php?action=loadPlayer',headers=headers,data={'action':'loadPlayer'}).json()
+]]></expres>
+<page></page>
+</regex>
+<regex>
+<name>getUrl</name>
+<expres><![CDATA[#$pyFunction
+import re,requests
+def GetLSProData(page_data,Cookie_Jar,m):
+  list=re.findall('player-container(?s)(.+?)</iframe',page_data)[0]
+  url,movID=re.findall('src="(.+?embed/([^?]+)[^"]+)',list)[0]
+  source=requests.get(url,headers={'user-agent':'Mozilla/5.0','referer':'https://123tvseries.co/[makelist2.param1]'}).content
+  mp4=re.findall('<video[\w\W]*?src="(.+?mp4[^"]+)',source)[-1];mp4='https:'+mp4 if mp4.startswith('//') else mp4
+  fUrl=requests.get(mp4,headers={'user-agent':'Mozilla/5.0','referer':url},cookies={'movie_id':movID,'engine':'html5'},allow_redirects=False)
+  return fUrl.headers['Location']
+]]></expres>
+<page>$doregex[jdata]</page>
+</regex>
+<thumbnail>https://123tvseries.co/img/logo.png</thumbnail>
+</item>
+
+
+
+
+
+<item>
+<title>Black List</title>
+<link>$doregex[makelist]</link>
+<thumbnail>https://123tvseries.co/admin/covers/233d0c1d9f7d0cb96383afee5c81148b</thumbnail>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+  <title>[makelist.param1]</title>
+  <link>$doregex[makelist2]</link>
+  <thumbnail>https://123tvseries.co/admin/covers/233d0c1d9f7d0cb96383afee5c81148b</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re
+def GetLSProData(page_data,Cookie_Jar,m):
+  return re.findall('"text-color">([^<]+)(?s)(.*?)</table',re.findall('class="table">(?s)(.*?)<scrip',page_data)[0])
+]]></expres>
+<page>https://123tvseries.co/tvserie/the-blacklist-subtitles-2741602</page>
+</regex>
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+  <title>[makelist2.param3]</title>
+  <link>$doregex[getUrl]</link>
+  <thumbnail>https://123tvseries.co/admin/covers/233d0c1d9f7d0cb96383afee5c81148b</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[href.+?(episo.+?-(\d+))">([^<]+)]]></expres>
+<page>[makelist.param2]</page>
+</regex>
+<regex>
+<name>jdata</name>
+<expres><![CDATA[#$pyFunction
+import re,requests,json
+def GetLSProData(page_data,Cookie_Jar,m):
+  headers={'user-agent':'Mozilla/5.0','referer':'https://123tvseries.co/[makelist2.param1]'}
+  return requests.post('https://123tvseries.co/dbquery.php?action=loadPlayer',headers=headers,data={'action':'loadPlayer'}).json()#content
+]]></expres>
+<page></page>
+</regex>
+<regex>
+<name>getUrl</name>
+<expres><![CDATA[#$pyFunction
+import re,requests
+def GetLSProData(page_data,Cookie_Jar,m):
+  list=re.findall('player-container(?s)(.+?)</iframe',page_data)[0]
+  url,movID=re.findall('src="(.+?embed/([^?]+)[^"]+)',list)[0]
+  source=requests.get(url,headers={'user-agent':'Mozilla/5.0','referer':'https://123tvseries.co/[makelist2.param1]'}).content
+  mp4=re.findall('<video[\w\W]*?src="(.+?mp4[^"]+)',source)[-1];mp4='https:'+mp4 if mp4.startswith('//') else mp4
+  fUrl=requests.get(mp4,headers={'user-agent':'Mozilla/5.0','referer':url},cookies={'movie_id':movID,'engine':'html5'},allow_redirects=False)
+  return fUrl.headers['Location']
+]]></expres>
+<page>$doregex[jdata]</page>
+</regex>
+<thumbnail>https://123tvseries.co/admin/covers/233d0c1d9f7d0cb96383afee5c81148b</thumbnail>
+</item>
+
+
+
+
+
+
+<item>
+<title>engvideo.</title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+  <title>[makelist.param1] [makelist.param3]</title>
+  <link>$doregex[getUrl]</link>
+  <thumbnail>https://engvideo.pro/media/filebrowser/video/series/3below-tales-of-arcadia/thumb_gKveLsS1bxHUJZlE5CFJFdjwBcW.jpg</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re,requests
+def GetLSProData(page_data,Cookie_Jar,m):
+  ref='https://engvideo.pro/en/serials/3below-tales-of-arcadia/';url=ref+'iframe/'
+  source=requests.get(url,headers={'user-agent':'Mozilla/5.0','referer':ref,'accept':'*/*'},cookies={'csrftoken':'$doregex[token]'}).content.replace('&#39;','\'')
+  return re.findall('(?s).pull-left.+?(\d+\.).+?[\'"](/en[^\'"]+).+?>([^<]+)',source)
+]]></expres>
+<page></page>
+</regex>
+<regex>
+<name>token</name>
+<expres><![CDATA[(?s)id="lang_form.+?value=[\'"]([^\'"]+)]]></expres>
+<page>https://engvideo.pro/en/serials/3below-tales-of-arcadia/</page>
+</regex>
+<regex>
+<name>getUrl</name>
+<expres><![CDATA[#$pyFunction
+import re,requests
+def GetLSProData(page_data,Cookie_Jar,m):
+  source=requests.get('https://engvideo.pro[makelist.param2]',headers={'user-agent':'Mozilla/5.0','referer':'https://engvideo.pro/en/serials/3below-tales-of-arcadia/','x-requested-with':'XMLHttpRequest','accept':'*/*'},cookies={'csrftoken':'$doregex[token]'}).content
+  return re.findall('(?s)<video.+?source\s*src=[\'"]([^\'"]+)',source)[0]+'|user-agent=ipad&referer=https://engvideo.pro[makelist.param2]'
+]]></expres>
+<page></page>
+</regex>
+</item>
+
+
+
+
+
+<item>
+<title>https://ffmovies.ru/ - Series Search</title>
+<link>$doregex[makelist]</link>
+<thumbnail>https://pbs.twimg.com/profile_images/768615067608768512/xn4YILrz_400x400.jpg</thumbnail>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+  <title>[makelist.param6] ([makelist.param5])</title>
+  <link>$doregex[makelist2]</link>
+  <thumbnail>[makelist.param4]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re,requests,urllib,xbmc
+def GetLSProData(page_data,Cookie_Jar,m):
+  def get_SearchQuery():
+     keyboard=xbmc.Keyboard();keyboard.setHeading('Enter Movie Name:');keyboard.doModal()
+     if keyboard.isConfirmed():
+        itext=urllib.quote_plus(keyboard.getText())
+     return itext
+  gtext=urllib.quote_plus(get_SearchQuery())
+  source=requests.get('https://ffmovies.ru/search?keyword='+gtext,headers={'user-agent':'Mozilla/5.0','referer':'https://ffmovies.ru/','accept':'*/*'}).content
+  if 'pagination' in source:
+    count=10;pn=1;data=[]
+    while pn <= int(count):
+     source=requests.get('https://ffmovies.ru/search?keyword='+gtext+'&page='+str(pn),headers={'user-agent':'Mozilla/5.0','referer':'https://ffmovies.ru/','accept':'*/*'}).content
+     data +=re.findall('"status".+?(\d+).+?(film.+?\.([^"]+)).+?src="(.*?images/(\d+)[^"]+)"\s*alt="([^"\|]+)',re.findall('"row movie-list">(?s)(.*?)pagi',source)[0]);pn +=1
+    return sorted(data,key=lambda k: k[4],reverse=True)
+  else:
+    data=re.findall('"status".+?(\d+).+?(film.+?\.([^"]+)).+?src="(.*?images/(\d+)[^"]+)"\s*alt="([^"\|]+)',re.findall('"row movie-list">(?s)(.*?)footer',source)[0])
+    return sorted(data,key=lambda k: k[4],reverse=True)
+]]></expres>
+<page></page>
+</regex>
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+  <title>Episode [makelist2.param3]  ([makelist.param5])</title>
+  <link>$doregex[getUrl]</link>
+  <thumbnail>[makelist.param4]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re,requests,time
+def GetLSProData(page_data,Cookie_Jar,m):
+  ndate=int(time.time())
+  source=requests.get('https://ffmovies.ru/ajax/film/servers/[makelist.param3]?ts=%s'%ndate,headers={'user-agent':'Mozilla/5.0','referer':'https://ffmovies.ru/[makelist.param2]','x-requested-with':'XMLHttpRequest','accept':'*/*'}).content.replace('\\','')
+  return re.findall('data-id="([^"]+).+?(film[^"]+)">([^<]+)',re.findall('"iframe"\s*data-id(?s)(.*?)</ul',source)[0])
+]]></expres>
+<page></page>
+</regex>
+<regex>
+<name>getUrl</name>
+<expres><![CDATA[#$pyFunction
+import re,requests,time
+def GetLSProData(page_data,Cookie_Jar,m):
+  ndate=int(time.time())
+  link='https://ffmovies.ru/ajax/episode/info?ts=%s&id=[makelist2.param1]&server=28'%(ndate)
+  source=requests.get(link,headers={'user-agent':'Mozilla/5.0','referer':'https://ffmovies.ru/[makelist2.param2]','x-requested-with':'XMLHttpRequest','accept':'*/*'}).content.replace('\\','')
+  stream=re.findall('"target":"([^"]+)',source)[0]
+  source=requests.get(stream,headers={'user-agent':'Mozilla/5.0','referer':'https://ffmovies.ru/[makelist2.param2]','accept':'*/*'}).content.replace('\\','')
+  return re.findall('mediaSources.+?file":"([^"]+)',source)[0]+'|user-agent=ipad&referer=https://ffmovies.ru/%s'%stream
+]]></expres>
+<page></page>
+</regex>
+</item>
+
+
+
+
+<item>
+<title>https://ffmovies.ru/</title>
+<link>$doregex[makelist]</link>
+<thumbnail>https://pbs.twimg.com/profile_images/768615067608768512/xn4YILrz_400x400.jpg</thumbnail>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+  <title>[makelist.param4]</title>
+  <link>$doregex[getUrl]</link>
+  <thumbnail>[makelist.param2]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re,requests
+def GetLSProData(page_data,Cookie_Jar,m):
+  count=10;pn=1;data=[]
+  while pn <= int(count):
+    source=requests.get('https://ffmovies.ru/filter?sort=post_date:desc&type[0]=movie&page='+str(pn),headers={'user-agent':'Mozilla/5.0','referer':'https://ffmovies.ru/','accept':'*/*'}).content
+    data +=re.findall('"item"\s*data-tip.+?tooltip/([^"]+).+?src="([^"]+).+?(film[^"]+).>([^<]+)',re.findall('"row movie-list">(?s)(.*?)pagi',source)[0]);pn +=1
+  return data
+]]></expres>
+<page></page>
+</regex>
+<regex>
+<name>getUrl</name>
+<expres><![CDATA[#$pyFunction
+import re,requests,time
+def GetLSProData(page_data,Cookie_Jar,m):
+  ndate=int(time.time())
+  source=requests.get('https://ffmovies.ru/ajax/film/servers/[makelist.param1]?ts=%s'%ndate,headers={'user-agent':'Mozilla/5.0','referer':'https://ffmovies.ru/[makelist.param3]','accept':'*/*'}).content.replace('\\','')
+  IDs,tok,ref=re.findall('(?s)"iframe"\s*data-id="([^"]+).+?data-id="([^"]+).+?(film[^"]+)',source)[0]
+  link='https://ffmovies.ru/ajax/episode/info?ts=%s&id=%s&server=%s'%(ndate,tok,IDs)  #&_=598  &_=694 
+  source=requests.get(link,headers={'user-agent':'Mozilla/5.0','referer':'https://ffmovies.ru/%s'%ref,'x-requested-with':'XMLHttpRequest','accept':'*/*'}).content.replace('\\','')
+  stream=re.findall('"target":"([^"]+)',source)[0]
+  source=requests.get(stream,headers={'user-agent':'Mozilla/5.0','referer':'https://ffmovies.ru/%s'%ref,'accept':'*/*'}).content.replace('\\','')
+  return re.findall('mediaSources.+?file":"([^"]+)',source)[0]+'|user-agent=ipad&referer=https://ffmovies.ru/%s'%stream
+]]></expres>
+<page>https://ffmovies.ru/[makelist.param3]</page>
+<referer>https://ffmovies.ru/movies</referer>
+</regex>
+</item>
+
+
+
+
+<item>
+<title>https://ffmovies.ru/ - Search</title>
+<link>$doregex[makelist]</link>
+<thumbnail>https://pbs.twimg.com/profile_images/768615067608768512/xn4YILrz_400x400.jpg</thumbnail>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+  <title>[makelist.param4] ([makelist.param5])</title>
+  <link>$doregex[makelist2]</link>
+  <thumbnail>[makelist.param1]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re,requests,time,urllib,xbmc
+def GetLSProData(page_data,Cookie_Jar,m):
+  def get_SearchQuery():
+     keyboard=xbmc.Keyboard();keyboard.setHeading('Enter Movie Name:');keyboard.doModal()
+     if keyboard.isConfirmed():
+        itext=urllib.quote_plus(keyboard.getText())
+     return itext
+  gtext=urllib.quote_plus(get_SearchQuery());ndate=int(time.time())
+  jdata=requests.get('https://ffmovies.ru/ajax/film/search?ts=%s&sort=year:desc&keyword=%s'%(ndate,gtext),headers={'user-agent':'Mozilla/5.0','referer':'https://ffmovies.ru/','x-requested-with':'XMLHttpRequest','accept':'*/*'}).content.replace('\\','')
+  return re.findall('src="([^"]+).+?(film.+?\.(.*?))">([^<]+).+?year.+?(\d+)',jdata)
+]]></expres>
+<page></page>
+</regex>
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+  <title>Episode [makelist2.param3] ([makelist.param4])</title>
+  <link>$doregex[getUrl]</link>
+  <thumbnail>[makelist.param1]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re,requests,time
+def GetLSProData(page_data,Cookie_Jar,m):
+  ndate=int(time.time())
+  source=requests.get('https://ffmovies.ru/ajax/film/servers/[makelist.param3]?ts=%s'%ndate,headers={'user-agent':'Mozilla/5.0','referer':'https://ffmovies.ru/[makelist.param2]','x-requested-with':'XMLHttpRequest','accept':'*/*'}).content.replace('\\','')
+  return re.findall('data-id="([^"]+).+?(film[^"]+)">([^<]+)',re.findall('"iframe"\s*data-id(?s)(.*?)</ul',source)[0])
+]]></expres>
+<page></page>
+</regex>
+<regex>
+<name>getUrl</name>
+<expres><![CDATA[#$pyFunction
+import re,requests,time
+def GetLSProData(page_data,Cookie_Jar,m):
+  ndate=int(time.time())
+  link='https://ffmovies.ru/ajax/episode/info?ts=%s&id=[makelist2.param1]&server=28'%(ndate)
+  source=requests.get(link,headers={'user-agent':'Mozilla/5.0','referer':'https://ffmovies.ru/[makelist2.param2]','x-requested-with':'XMLHttpRequest','accept':'*/*'}).content.replace('\\','')
+  stream=re.findall('"target":"([^"]+)',source)[0]
+  source=requests.get(stream,headers={'user-agent':'Mozilla/5.0','referer':'https://ffmovies.ru/[makelist2.param2]','accept':'*/*'}).content.replace('\\','')
+  return re.findall('mediaSources.+?file":"([^"]+)',source)[0]+'|user-agent=ipad&referer=https://ffmovies.ru/%s'%stream
+]]></expres>
+<page></page>
+</regex>
+</item>
+
+
+
+
+
+
+<item>
+<title>[B][COLOR darkorange]Anime YT[/COLOR][/B]</title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param3]</title>
+<link>$doregex[makelist1]</link>
+<thumbnail>[makelist.param1]</thumbnail>
+<fanart>[makelist.param1]</fanart>
+]]></listrepeat>
+<expres><![CDATA[img class="img-fluid" src="(.*?)".*\n.*\n.*\n.*?<div class="video-title"><a href="(.*?)">(.*?)<]]></expres>
+<page>https://ytanime.tv/ultimos-animes</page>
+</regex>
+ 
+<regex>
+<name>makelist1</name>
+<listrepeat><![CDATA[
+<title>[makelist1.param2] [makelist1.param3]</title>
+<link>$doregex[makelist2]</link>
+<thumbnail>[makelist.param1]</thumbnail>
+<fanart>[makelist.param1]</fanart>
+]]></listrepeat>
+<expres><![CDATA[<a href="(.*?)".*\n.*\n.*scope">(.*?)<.*\n.*?scope">(.*?)<]]></expres>
+<page>[makelist.param2]</page>
+</regex>
+ 
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>Episodio [makelist1.param2] [makelist1.param3]</title>
+<link>$doregex[makelist3]</link>
+<thumbnail>[makelist.param1]</thumbnail>
+<fanart>[makelist.param1]</fanart>
+]]></listrepeat>
+<expres><![CDATA[<iframe\s(src)="(.*?)".*?allowfullscreen]]></expres>
+<page>[makelist1.param1]</page>
+</regex>
+ 
+<regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+<title>[COLOR yellow]Play[/COLOR] [makelist1.param2] [makelist1.param3]</title>
+<inputstream>[makelist3.param2]</inputstream>
+<thumbnail>[makelist.param1]</thumbnail>
+<fanart>[makelist.param1]</fanart>
+]]></listrepeat>
+<expres><![CDATA[(file): "(.*?)"]]></expres>
+<page>[makelist2.param2]</page>
+</regex>
+ 
+
+</item>
+
+
+
+<item>
+<title>[B][COLOR darkorange]JK Anime[/COLOR][/B]</title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param2]</title>
+<link>$doregex[makelist1]</link>
+<thumbnail>[makelist.param5]</thumbnail>
+<fanart>[makelist.param5]</fanart>
+]]></listrepeat>
+<expres><![CDATA[<li><a href="/genero(.+?)"\s.*?>(.*?)<]]></expres>
+<page>https://jkanime.net</page>
+</regex>
+ 
+<regex>
+<name>makelist1</name>
+<listrepeat><![CDATA[
+<title>[makelist1.param1]</title>
+<link>$doregex[makelist2]</link>
+<thumbnail>[makelist1.param3]</thumbnail>
+<fanart></fanart>
+]]></listrepeat>
+<expres><![CDATA[portada-title">\n.*<a title="(.*?)".*?href="(.*?)".*\n.*\n.*\n.*src="(.*?)"]]></expres>
+<page>https://jkanime.net/genero[makelist.param1]</page>
+</regex>
+ 
+ 
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>[makelist2.param1]</title>
+<link>$doregex[makelist3]</link>
+<thumbnail>[makelist1.param3]</thumbnail>
+<fanart></fanart>
+]]></listrepeat>
+<expres><![CDATA[<a class="numbers" href="#pag(.*?)"]]></expres>
+<page>[makelist1.param2]</page>
+</regex>
+ 
+<regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+<title>[makelist2.param1]</title>
+<link>$doregex[makelist4]</link>
+<thumbnail>[makelist1.param3]</thumbnail>
+<fanart></fanart>
+]]></listrepeat>
+<expres><![CDATA[get\( '/ajax/(.*?/(.*?)/)']]></expres>
+<page>[makelist1.param2]</page>
+ 
+</regex>
+ 
+<regex>
+<name>makelist4</name>
+<listrepeat><![CDATA[
+<title>[makelist4.param2]</title>
+<link>$doregex[makelist5]</link>
+<thumbnail>[makelist1.param3]</thumbnail>
+<fanart></fanart>
+]]></listrepeat>
+<expres><![CDATA["number":"(.*?)","title":"(.*?)"]]></expres>
+<page>https://jkanime.net/index.php/ajax/[makelist3.param1][makelist2.param1]/?log=jk</page>
+</regex>
+ 
+<regex>
+<name>makelist5</name>
+<listrepeat><![CDATA[
+<title>[makelist5.param1]</title>
+<link>$doregex[makelist6]</link>
+<thumbnail>[makelist1.param3]</thumbnail>
+<fanart></fanart>
+]]></listrepeat>
+<expres><![CDATA[video(.*?) = '<iframe class="player_conte" src="(https://jkanime.net/jk.php.*?)"]]></expres>
+<page>[makelist1.param2]/[makelist4.param1]/</page>
+</regex>
+ 
+<regex>
+<name>makelist6</name>
+<listrepeat><![CDATA[
+<title>[makelist6.param1]</title>
+<link>[makelist6.param1]</link>
+<thumbnail>[makelist1.param3]</thumbnail>
+<fanart></fanart>
+]]></listrepeat>
+<expres><![CDATA[<source src="(.*?)"\stype='(.*?)/]]></expres>
+<page>[makelist5.param2]</page>
+</regex>
+ 
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+   import resolveurl
+   url = '[makelist6.param1]'
+   try:
+       u = resolveurl.resolve(url)
+   except:
+       u = '[makelist6.param1]'
+   return u
+]]></expres>
+<page></page>
+</regex>
+
+</item>
+
+<item>
+<title>[makelist6.param1]</title>
+<link>https://jkanime.net/stream/jkmedia/07d073792e5c609674ab7548d66d1bc7/a28e5f284a491ba9f012bd30c66f58ee/1/ddcb2ef9b01b6120b81055f995ca5558/|User-Agent=iPad</link>
+
+
+</item>
+
+
+
+
+<item>
+<title>[B][COLOR white]Danimados[/B][/COLOR]</title>
+<link>$doregex[makelist]</link>
+ 
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[COLOR white][makelist.param2] [makelist.param3][/COLOR]</title>
+<link>$doregex[makelist1]</link>
+<thumbnail>[makelist.param1]</thumbnail>
+<fanart>[makelist.param1]</fanart>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re , requests , xbmc , xbmcaddon , xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+    url= 'https://danimados.com/genero/series-clasicas/'
+    agent = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36','referer':'https://danimados.com/episodio/avatar-la-leyenda-de-aang-1x1/'}
+    extraer = requests.get(url, headers=agent)
+    links = re.findall('src=(.*?)\salt="(.*?)".*\n.*\n.*span>(.*?)<.*\n.*\n.*?href=(.*?)>', extraer.text)
+    return links
+]]></expres>
+<page></page>
+</regex>
+ 
+<regex>
+<name>makelist1</name>
+<listrepeat><![CDATA[
+<title>Capitulo: [makelist1.param1]</title>
+<link>$doregex[makelist2]</link>
+<thumbnail>[makelist.param1]</thumbnail>
+<fanart>[makelist.param1]</fanart>
+]]></listrepeat>
+<expres><![CDATA[class=numerando>(.*?)<.*\n.*\n.*?href=(.*?)>]]></expres>
+<page>[makelist.param4]</page>
+</regex>
+ 
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>[makelist1.param1] - Opcion:[makelist2.param0] - $doregex[makelist3]</title>
+<link>$doregex[id3]</link>
+<thumbnail>[makelist.param1]</thumbnail>
+<fanart>[makelist.param1]</fanart>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re , requests , xbmc , xbmcaddon , xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+    url= '[makelist1.param2]'
+    agent = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36','referer':'https://danimados.com/episodio/avatar-la-leyenda-de-aang-1x1/'}
+    extraer = requests.get(url, headers=agent)
+    links = re.findall('data-sv=(.+?).*?data-user="(.+?)"', extraer.text)
+    return links
+]]></expres>
+<page></page>
+</regex>
+ 
+ <regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver, resolveurl, xbmc
+    url = '$doregex[makelist3]'
+    try:
+        return urlresolver.resolve(url)
+    except:
+        return resolveurl.resolve(url)
+    return xbmc.executebuiltin("XBMC.Notification(Enlace no Soportado,Elige otra opcion, 3000)")
+]]></expres>
+<page></page>
+<referer>https://danimados.com/episodio/avatar-la-leyenda-de-aang-1x1/</referer>
+</regex>
+
+<regex>
+<name>makelist3</name>
+<expres><![CDATA[#$pyFunction
+import re , requests , xbmc , xbmcaddon , xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+    url= 'https://sv.danimados.com/gilberto.php?id=[makelist2.param2]&sv=[makelist2.param1]'
+    agent = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36','referer':'https://danimados.com/episodio/avatar-la-leyenda-de-aang-1x1/'}
+    extraer = requests.get(url, headers=agent)
+    links = re.findall('iframe data-source="(.+?)"', extraer.content)[0].decode('base64').replace('?autoplay=1','');links='https:'+links if links.startswith('//') else links
+    return links
+]]></expres>
+<page></page>
+</regex>
+ 
+</item>
+
+
+
+
+
+
+<item>
+<title>https://optimovision.tv/novelas-completas</title>
+<link>$doregex[makelist]</link>
+<thumbnail>https://optimovision.tv/images/logo/logo.png</thumbnail>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param3] - [makelist.param4] Eps</title>
+<link>$doregex[makelist2]</link>
+<thumbnail>https://optimovision.tv/[makelist.param2]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re,requests
+def GetLSProData(page_data,Cookie_Jar,m):
+  count=re.findall('(\d+)</a></li><li\s*class',page_data)[0];pn=1;data=[]
+  while pn <= int(count):
+    pages='https://optimovision.tv/novelas-completas/?page='+str(pn)
+    source=requests.get(pages,headers={'user-agent':'Mozilla/5.0','referer':'https://optimovision.tv/novelas-completas'}).content
+    data +=re.findall('(?s)href="([^"]+).+?src="([^"]+).\s*title="([^"]+).+?badge">(\d+)',re.findall('id=.list_videos(?s)(.*?)pagination',source)[0]);pn +=1
+  return data
+]]></expres>
+<page>https://optimovision.tv/novelas-completas</page>
+</regex>
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>[makelist2.param3]</title>
+<link>$doregex[getUrl]|user-agent=ipad&amp;referer=https://optimovision.tv/[makelist2.param1]</link>
+<thumbnail>[makelist2.param2]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re,requests
+def GetLSProData(page_data,Cookie_Jar,m):
+  if 'pagination' in page_data:
+    count=re.findall('>(\d+)</a></li><li>.+?prevnext',page_data)[0];pn=1;data=[]
+    while pn <= int(count):
+      pages='https://optimovision.tv[makelist.param1]?page='+str(pn)
+      source=requests.get(pages,headers={'user-agent':'Mozilla/5.0','referer':'https://optimovision.tv/novelas-completas'}).content
+      data +=re.findall('(?s)href="([^"]+).+?src="([^"]+).\s*title="([^"]+)',re.findall('id=.list_videos(?s)(.*?)pagination',source)[0]);pn +=1
+    return data
+  else:
+    return re.findall('(?s)href="([^"]+).+?src="([^"]+).\s*title="([^"]+)',re.findall('id=.list_videos(?s)(.*?)footer-container',page_data)[0])
+]]></expres>
+<page>https://optimovision.tv[makelist.param1]</page>
+<referer>https://optimovision.tv/novelas-completas</referer>
+</regex>
+<regex>
+<name>getUrl</name>
+<expres><![CDATA[<video.+?src="([^"]+)]]></expres>
+<page>https://optimovision.tv[makelist2.param1]</page>
+<referer>https://optimovision.tv[makelist.param1]</referer>
+</regex>
+</item>
+
+
+
+
+
+<item>
+<title>test</title>
+<link>$doregex[id3]</link>
+
+ <regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+import datetime
+import json
+import re
+import time
+import urllib
+import urlparse
+import xbmc
+
+from base import client
+
+url = ''
+
+def google_calidades(url='https://drive.google.com/file/d/1d6Czt1Tsu_PSkiZYr9dRmrhaLECddGT9ag/view&q=Original+1.9G'):
+    calidades = []
+    if xbmc.getCondVisibility('System.HasAddon(plugin.video.gdrive)'):
+        google_id = re.findall(
+            '[\/|=]([0-9a-zA-Z-_]{20,})[\&|\/|\s*]', url, re.I)
+        if len(google_id) < 0:
+            google_id = re.findall('[\/|=]([0-9a-zA-Z-_]{20,})', url, re.I)
+        if len(google_id) > 0:
+            google_id = google_id[0]
+        else:
+            google_id = None
+        if google_id:
+            calidades += ['Original GDrive']
+    if xbmc.getCondVisibility('System.HasAddon(plugin.googledrive)'):
+        google_id = re.findall(
+            '[\/|=]([0-9a-zA-Z-_]{20,})[\&|\/|\s*]', url, re.I)
+        if len(google_id) < 0:
+            google_id = re.findall('[\/|=]([0-9a-zA-Z-_]{20,})', url, re.I)
+        if len(google_id) > 0:
+            google_id = google_id[0]
+        else:
+            google_id = None
+        if google_id:
+            calidades += ['Original GoogleDrive']
+    try:
+        calidades += [x['quality'] for x in google(url)]
+    except:
+        pass
+    calidad_d = google_calidad_d(url)
+    if calidad_d != '':
+        calidades += [calidad_d]
+    return calidades
+
+
+def google_calidad_d(url='https://drive.google.com/file/d/1d6Czt1Tsu_PSkiZYr9dRmrhaLECddGT9ag/view&q=Original+1.9G'):
+    return google_d(url='https://drive.google.com/file/d/1d6Czt1Tsu_PSkiZYr9dRmrhaLECddGT9ag/view&q=Original+1.9G')[0]
+
+
+def google_d(url='https://drive.google.com/file/d/1d6Czt1Tsu_PSkiZYr9dRmrhaLECddGT9ag/view&q=Original+1.9G'):
+    calidad = ('', '')
+    try:
+        google_id = re.findall(
+            '[\/|=]([0-9a-zA-Z-_]{20,})[\&|\/|\s*]', url, re.I)
+        if len(google_id) < 0:
+            google_id = re.findall('[\/|=]([0-9a-zA-Z-_]{20,})', url, re.I)
+        if len(google_id) > 0:
+            google_id = google_id[0]
+        else:
+            return ('', '')
+        url = 'https://drive.google.com/uc?id={}&export=download'.format(
+            google_id)
+        headers = {'User-Agent': client.agent()}
+        result = client.request(url, output='extended', headers=headers)
+        try:
+            headers['user-agent'] = headers['User-Agent']
+            headers.pop('User-Agent')
+            headers.pop('Referer')
+            headers.pop('Accept-Language')
+        except:
+            pass
+        try:
+            headers['cookie'] = result[3].replace(' ','')
+        except:
+            pass
+        try:
+            size = re.findall('>\s*\((.*?)\)\s*<', result[0], re.I)
+            size = size[0]
+            calidad = re.findall(
+                '(\d{3,4}\s*[p|P]).*?\(%s\)' % (size), result[0], re.I)
+            if len(calidad) == 0:
+                calidad = re.findall('(4[k|K]).*?\(%s\)' %
+                                     (size), result[0], re.I)
+            if len(calidad) == 0:
+                calidad = re.findall('(2[k|K]).*?\(%s\)' %
+                                     (size), result[0], re.I)
+            if len(calidad) > 0:
+                size = 'Original ' + size + ' ' + calidad[0]
+            else:
+                size = 'Original ' + size
+
+        except:
+            size = ''
+        if ('Download anyway' in result[0] or 'Descargar de todos modos' in result[0]) and size != '':
+            confirm = re.findall(
+                'download_warning_\d*_{}=(.*?);'.format(google_id), headers['cookie'], re.I)
+            if (len(confirm) > 0):
+                now_timestamp = datetime.datetime.utcnow()
+                headers['cookie'] = headers['cookie'] + '; 1P_JAR=' + \
+                    now_timestamp.strftime('%Y-%m-%d-%H')
+                calidad = (size, 'https://drive.google.com/uc?export=download&confirm={}&id={}'.format(
+                    confirm[0], google_id) + '|' + urllib.urlencode(headers))
+        else:
+            return ('', '')
+    except:
+        return ('', '')
+    return calidad
+
+
+def google_final_link(url='https://drive.google.com/file/d/1d6Czt1Tsu_PSkiZYr9dRmrhaLECddGT9ag/view&q=Original+1.9G'):
+    calidad = urlparse.parse_qs(url)['q'][0]
+    url = url.split('&')[0]
+    if 'Original GoogleDrive' in calidad:
+        google_id = re.findall(
+            '[\/|=]([0-9a-zA-Z-_]{20,})[\&|\/|\s*]', url, re.I)
+        if len(google_id) < 0:
+            google_id = re.findall('[\/|=]([0-9a-zA-Z-_]{20,})', url, re.I)
+        if len(google_id) > 0:
+            google_id = google_id[0]
+        else:
+            google_id = None
+        if google_id:
+            return 'plugin://plugin.googledrive/?action=play&amp;item_id=%s&amp;driveid=10881668187261652636' % google_id
+    if 'Original GDrive' in calidad:
+        google_id = re.findall(
+            '[\/|=]([0-9a-zA-Z-_]{20,})[\&|\/|\s*]', url, re.I)
+        if len(google_id) < 0:
+            google_id = re.findall('[\/|=]([0-9a-zA-Z-_]{20,})', url, re.I)
+        if len(google_id) > 0:
+            google_id = google_id[0]
+        else:
+            google_id = None
+        if google_id:
+            return 'plugin://plugin.video.gdrive/?mode=video&amp;filename=%s&amp;content_type=video' % google_id
+    if 'Original' in calidad:
+        links = google_d(url)
+        return links[1]
+    else:
+        links = google(url)
+    for link in links:
+        if link['quality'] == calidad:
+            header_test = {
+                'user-agent': 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36'}
+            header_test = '|' + urllib.urlencode(header_test)
+            return link['url'] + header_test
+
+
+def google(url, ref=None):
+    try:
+        if 'lh3.googleusercontent' in url or 'bp.blogspot' in url:
+            newheaders = {
+                'User-Agent': 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36',
+                'Accept': '*/*',
+                'Host': 'lh3.googleusercontent.com',
+                'Accept-Language': 'en-US,en;q=0.8,de;q=0.6,es;q=0.4',
+                'Accept-Encoding': 'identity;q=1, *;q=0',
+                'Referer': ref,
+                'Connection': 'Keep-Alive',
+                'X-Client-Data': 'CJK2yQEIo7bJAQjEtskBCPqcygEIqZ3KAQjSncoBCKijygE=',
+                'Range': 'bytes=0-'
+            }
+            resp = client.request(
+                url, headers=newheaders, redirect=False, output='extended', timeout='10')
+            loc = resp[2]['Location']
+            c = resp[2]['Set-Cookie'].split(';')[0]
+            url = '%s|Cookie=%s' % (loc, c)
+            return url
+
+        if any(x in url for x in ['youtube.', 'docid=']):
+            url = 'https://drive.google.com/file/d/%s/view' % \
+                re.compile('docid=([\w-]+)').findall(url)[0]
+
+        netloc = urlparse.urlparse(url.strip().lower()).netloc
+        netloc = netloc.split('.google')[0]
+
+        if netloc == 'docs' or netloc == 'drive':
+            url = url.split('/preview', 1)[0]
+            url = url.replace('drive.google.com', 'docs.google.com')
+
+        headers = {'User-Agent': client.agent()}
+
+        result = client.request(url, output='extended', headers=headers)
+
+        try:
+            headers['Cookie'] = result[2]['Set-Cookie']
+        except:
+            pass
+
+        result = result[0]
+
+        if netloc == 'docs' or netloc == 'drive':
+            result = re.compile('"fmt_stream_map",(".+?")').findall(result)[0]
+            result = json.loads(result)
+            result = [i.split('|')[-1] for i in result.split(',')]
+            result = sum([googletag(i, append_height=True)
+                          for i in result], [])
+
+        elif netloc == 'photos':
+            result = result.replace('\r', '').replace(
+                '\n', '').replace('\t', '')
+            result = re.compile('"\d*/\d*x\d*.+?","(.+?)"').findall(result)[0]
+
+            result = result.replace('\\u003d', '=').replace('\\u0026', '&')
+            result = re.compile('url=(.+?)&').findall(result)
+            result = [urllib.unquote(i) for i in result]
+
+            result = sum([googletag(i, append_height=True)
+                          for i in result], [])
+
+        elif netloc == 'picasaweb':
+            id = re.compile('#(\d*)').findall(url)[0]
+
+            result = re.search('feedPreload:\s*(.*}]}})},',
+                               result, re.DOTALL).group(1)
+            result = json.loads(result)['feed']['entry']
+
+            if len(result) > 1:
+                result = [i for i in result if str(
+                    id) in i['link'][0]['href']][0]
+            elif len(result) == 1:
+                result = result[0]
+
+            result = result['media']['content']
+            result = [i['url'] for i in result if 'video' in i['type']]
+            result = sum([googletag(i, append_height=True)
+                          for i in result], [])
+
+        elif netloc == 'plus':
+            id = (urlparse.urlparse(url).path).split('/')[-1]
+
+            result = result.replace('\r', '').replace(
+                '\n', '').replace('\t', '')
+            result = result.split('"%s"' % id)[-1].split(']]')[0]
+
+            result = result.replace('\\u003d', '=').replace('\\u0026', '&')
+            result = re.compile('url=(.+?)&').findall(result)
+            result = [urllib.unquote(i) for i in result]
+
+            result = sum([googletag(i, append_height=True)
+                          for i in result], [])
+
+        result = sorted(result, key=lambda i: i.get('height', 0), reverse=True)
+
+        url = []
+        for q in ['4K', '1440p', '1080p', '720p', '480p', '360p']:
+            try:
+                url += [[i for i in result if i.get('quality') == q][0]]
+            except:
+                pass
+
+        for i in url:
+            i.pop('height', None)
+            i.update({'url': i['url'] + '|%s' % urllib.urlencode(headers)})
+
+        if not url:
+            return
+        return url
+    except:
+        return
+
+
+def googletag(url='https://drive.google.com/file/d/1d6Czt1Tsu_PSkiZYr9dRmrhaLECddGT9ag/view&q=Original+1.9G', append_height=False):
+    quality = re.compile('itag=(\d*)').findall(url)
+    quality += re.compile('=m(\d*)$').findall(url)
+    try:
+        quality = quality[0]
+    except:
+        return []
+
+    itag_map = {'151': {'quality': 'SD', 'height': 72}, '212': {'quality': 'SD', 'height': 480},
+                '313': {'quality': '4K', 'height': 2160},
+                '242': {'quality': 'SD', 'height': 240}, '315': {'quality': '4K', 'height': 2160},
+                '219': {'quality': 'SD', 'height': 480},
+                '133': {'quality': 'SD', 'height': 240}, '271': {'quality': '1440p', 'height': 1440},
+                '272': {'quality': '4K', 'height': 2160},
+                '137': {'quality': '1080p', 'height': 1080}, '136': {'quality': '720p', 'height': 720},
+                '135': {'quality': 'SD', 'height': 480},
+                '134': {'quality': 'SD', 'height': 360}, '82': {'quality': 'SD', 'height': 360},
+                '83': {'quality': 'SD', 'height': 480},
+                '218': {'quality': 'SD', 'height': 480}, '93': {'quality': 'SD', 'height': 360},
+                '84': {'quality': '720p', 'height': 720},
+                '170': {'quality': '1080p', 'height': 1080}, '167': {'quality': 'SD', 'height': 360},
+                '22': {'quality': '720p', 'height': 720},
+                '46': {'quality': '1080p', 'height': 1080}, '160': {'quality': 'SD', 'height': 144},
+                '44': {'quality': 'SD', 'height': 480},
+                '45': {'quality': '720p', 'height': 720}, '43': {'quality': 'SD', 'height': 360},
+                '94': {'quality': 'SD', 'height': 480},
+                '5': {'quality': 'SD', 'height': 240}, '6': {'quality': 'SD', 'height': 270},
+                '92': {'quality': 'SD', 'height': 240},
+                '85': {'quality': '1080p', 'height': 1080}, '308': {'quality': '1440p', 'height': 1440},
+                '278': {'quality': 'SD', 'height': 144},
+                '78': {'quality': 'SD', 'height': 480}, '302': {'quality': '720p', 'height': 720},
+                '303': {'quality': '1080p', 'height': 1080},
+                '245': {'quality': 'SD', 'height': 480}, '244': {'quality': 'SD', 'height': 480},
+                '247': {'quality': '720p', 'height': 720},
+                '246': {'quality': 'SD', 'height': 480}, '168': {'quality': 'SD', 'height': 480},
+                '266': {'quality': '4K', 'height': 2160},
+                '243': {'quality': 'SD', 'height': 360}, '264': {'quality': '1440p', 'height': 1440},
+                '102': {'quality': '720p', 'height': 720},
+                '100': {'quality': 'SD', 'height': 360}, '101': {'quality': 'SD', 'height': 480},
+                '95': {'quality': '720p', 'height': 720},
+                '248': {'quality': '1080p', 'height': 1080}, '96': {'quality': '1080p', 'height': 1080},
+                '91': {'quality': 'SD', 'height': 144},
+                '38': {'quality': '4K', 'height': 3072}, '59': {'quality': '480p', 'height': 480},
+                '17': {'quality': 'SD', 'height': 144},
+                '132': {'quality': 'SD', 'height': 240}, '18': {'quality': '360p', 'height': 360},
+                '37': {'quality': '1080p', 'height': 1080},
+                '35': {'quality': 'SD', 'height': 480}, '34': {'quality': 'SD', 'height': 360},
+                '298': {'quality': '720p', 'height': 720},
+                '299': {'quality': '1080p', 'height': 1080}, '169': {'quality': '720p', 'height': 720}}
+
+    if quality in itag_map:
+        quality = itag_map[quality]
+        if append_height:
+            return [{'quality': quality['quality'], 'height': quality['height'], 'url': url}]
+        else:
+            return [{'quality': quality['quality'], 'url': url}]
+    else:
+        return []
+
+
+def googlepass(url='https://drive.google.com/file/d/1d6Czt1Tsu_PSkiZYr9dRmrhaLECddGT9ag/view&q=Original+1.9G'):
+    try:
+        try:
+            headers = dict(urlparse.parse_qsl(url.rsplit('|', 1)[1]))
+        except:
+            headers = None
+        url = url.split('|')[0].replace('\\', '')
+        url = client.request(url, headers=headers, output='geturl')
+        if 'requiressl=yes' in url:
+            url = url.replace('http://', 'https://')
+        else:
+            url = url.replace('https://', 'http://')
+        if headers:
+            url += '|%s' % urllib.urlencode(headers)
+        return url
+    except:
+        return
+
+
+]]></expres>
+<page></page>
+<referer>https://danimados.com/episodio/avatar-la-leyenda-de-aang-1x1/</referer>
+</regex>
+
+
+
+
+<item>
+<title>[COLOR white]SeriesFlix[/COLOR] Buscador de Series</title>
+<link>$doregex[makelist]</link>
+ 
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param2] [COLOR lime][makelist.param5][/COLOR]</title>
+<link>$doregex[makelist1]</link>
+<thumbnail>[makelist.param1]</thumbnail>
+<fanart>[makelist.param1]</fanart>
+<info>[makelist.param6]</info>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re , requests , xbmc , xbmcaddon , xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+    url= 'https://seriesflix.co/?s=$doregex[buscador]'
+    agent = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36'}
+    extraer = requests.get(url, headers=agent)
+    links = re.findall('data-src="(.+?)".*\n.*\n.*\n.*\n.*?h2\sclass="Title">(.+?)<.*\n.*\n.*\n.*?href="(.+?)".*\n.*\n.*\n.*\n.*?data-src="(.+?)".*\n.*\n.*\n.*?Date">(.+?)<.*\n.*?Description.*\n.*?p>(.+?)<', extraer.text)
+    return links
+]]></expres>
+<page></page>
+</regex>
+ 
+<regex>
+<name>buscador</name>
+<expres><![CDATA[#$pyFunction
+import xbmc
+import xbmcaddon
+import xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+    dialog = xbmcgui.Dialog()
+    d = dialog.input('Escribe Nombre de la Pelicula', type=xbmcgui.INPUT_ALPHANUM).replace(" ", "+")
+    return d
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+ 
+<regex>
+<name>makelist1</name>
+<listrepeat><![CDATA[
+<title>[makelist1.param2] [COLOR lime][makelist1.param3][/COLOR]</title>
+<link>$doregex[makelist2]</link>
+<thumbnail>[makelist.param1]</thumbnail>
+<fanart>[makelist.param1]</fanart>
+<info>[makelist.param6]</info>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re , requests , xbmc , xbmcaddon , xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+    url= '[makelist.param3]'
+    agent = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36'}
+    extraer = requests.get(url, headers=agent)
+    links = re.findall('Title.*?href="(.+?)">(.+?)<span>(.+?)<', extraer.text)
+    return links
+]]></expres>
+<page></page>
+</regex>
+ 
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>[makelist2.param3]</title>
+<link>$doregex[makelist3]</link>
+<thumbnail>https:[makelist2.param1]</thumbnail>
+<fanart>https:[makelist2.param1]</fanart>
+<info>[makelist.param6]</info>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re , requests , xbmc , xbmcaddon , xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+    url= '[makelist1.param1]'
+    agent = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36'}
+    extraer = requests.get(url, headers=agent)
+    links = re.findall('MvTbImg\sB.*?src="(.+?)".*\n.*?href="(.+?)">(.+?)<', extraer.text)
+    return links
+]]></expres>
+<page></page>
+</regex>
+ 
+<regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+<title>[makelist2.param3] - [makelist3.param3] [makelist3.param4] [makelist3.param5] </title>
+<link>$doregex[id3]</link>
+<thumbnail>https:[makelist2.param1]</thumbnail>
+<fanart>https:[makelist2.param1]</fanart>
+<info>[makelist.param6]</info>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re , requests , xbmc , xbmcaddon , xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+    url= '[makelist2.param2]'
+    agent = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36'}
+    extraer = requests.get(url, headers=agent)
+    links = re.findall('data-key="(.+?)"[\w\W]*?-id="(.+?)"[\w\W]*?language.*?\s(.+?)<[\w\W]*?dns">(.+?)<[\w\W]*?equalizer">(.+?)<', extraer.text)
+    return links
+]]></expres>
+<page></page>
+</regex>
+ 
+ 
+<regex>
+<name>link</name>
+<expres>src="(.*?)"</expres>
+<page>https://seriesflix.co/?trembed=[makelist3.param1]&amp;trid=[makelist3.param2]&amp;trtype=2</page>
+</regex>
+ 
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver, resolveurl
+    url = '$doregex[link]'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = '$doregex[link]'
+    return u
+]]></expres>
+<page></page>
+</regex>
+</item>
+ 
+__________________________________________________________
+ 
+<item>
+<title>[COLOR white]SeriesFlix[/COLOR] Series</title>
+<link>$doregex[makelist]</link>
+ 
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param2] [COLOR lime][makelist.param5][/COLOR]</title>
+<link>$doregex[makelist1]</link>
+<thumbnail>[makelist.param1]</thumbnail>
+<fanart>[makelist.param1]</fanart>
+<info>[makelist.param6]</info>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re , requests , xbmc , xbmcaddon , xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+    url= 'https://seriesflix.co/ver-series-online/'
+    agent = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36'}
+    extraer = requests.get(url, headers=agent)
+    links = re.findall('data-src="(.+?)".*\n.*\n.*\n.*\n.*?h2\sclass="Title">(.+?)<.*\n.*\n.*\n.*?href="(.+?)".*\n.*\n.*\n.*\n.*?data-src="(.+?)".*\n.*\n.*\n.*?Date">(.+?)<.*\n.*?Description.*\n.*?p>(.+?)<', extraer.text)
+    return links
+]]></expres>
+<page></page>
+</regex>
+ 
+<regex>
+<name>makelist1</name>
+<listrepeat><![CDATA[
+<title>[makelist1.param2] [COLOR lime][makelist1.param3][/COLOR]</title>
+<link>$doregex[makelist2]</link>
+<thumbnail>[makelist.param1]</thumbnail>
+<fanart>[makelist.param1]</fanart>
+<info>[makelist.param6]</info>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re , requests , xbmc , xbmcaddon , xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+    url= '[makelist.param3]'
+    agent = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36'}
+    extraer = requests.get(url, headers=agent)
+    links = re.findall('Title.*?href="(.+?)">(.+?)<span>(.+?)<', extraer.text)
+    return links
+]]></expres>
+<page></page>
+</regex>
+ 
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>[makelist2.param3]</title>
+<link>$doregex[makelist3]</link>
+<thumbnail>https:[makelist2.param1]</thumbnail>
+<fanart>https:[makelist2.param1]</fanart>
+<info>[makelist.param6]</info>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re , requests , xbmc , xbmcaddon , xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+    url= '[makelist1.param1]'
+    agent = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36'}
+    extraer = requests.get(url, headers=agent)
+    links = re.findall('MvTbImg\sB.*?src="(.+?)".*\n.*?href="(.+?)">(.+?)<', extraer.text)
+    return links
+]]></expres>
+<page></page>
+</regex>
+ 
+<regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+<title>[makelist2.param3] - [makelist3.param3] [makelist3.param4] [makelist3.param5] </title>
+<link>$doregex[id3]</link>
+<thumbnail>https:[makelist2.param1]</thumbnail>
+<fanart>https:[makelist2.param1]</fanart>
+<info>[makelist.param6]</info>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re , requests , xbmc , xbmcaddon , xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+    url= '[makelist2.param2]'
+    agent = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36'}
+    extraer = requests.get(url, headers=agent)
+    links = re.findall('data-key="(.+?)"[\w\W]*?-id="(.+?)"[\w\W]*?language.*?\s(.+?)<[\w\W]*?dns">(.+?)<[\w\W]*?equalizer">(.+?)<', extraer.text)
+    return links
+]]></expres>
+<page></page>
+</regex>
+ 
+ 
+<regex>
+<name>link</name>
+<expres>src="(.*?)"</expres>
+<page>https://seriesflix.co/?trembed=[makelist3.param1]&amp;trid=[makelist3.param2]&amp;trtype=2</page>
+</regex>
+ 
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver, resolveurl
+    url = '$doregex[link]'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = '$doregex[link]'
+    return u
+]]></expres>
+<page></page>
+</regex>
+</item>
+ 
+__________________________________________________________
+ 
+<item>
+<title>[COLOR white]SeriesFlix[/COLOR] Generos</title>
+<link>$doregex[paginas]</link>
+ 
+<regex>
+<name>paginas</name>
+<listrepeat><![CDATA[
+<title>Genero [paginas.param1]</title>
+<link>$doregex[makelist]</link>
+<thumbnail></thumbnail>
+]]></listrepeat>
+<expres>'(.*?)'</expres>
+<page>'accion''animacion''anime''aventura''ciencia-ficcion''comedia''crimen''dc-comics''drama''dorama''fantasia''misterio''terror'</page>
+</regex>
+ 
+ 
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param2] [COLOR lime][makelist.param5][/COLOR]</title>
+<link>$doregex[makelist1]</link>
+<thumbnail>[makelist.param1]</thumbnail>
+<fanart>[makelist.param1]</fanart>
+<info>[makelist.param6]</info>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re , requests , xbmc , xbmcaddon , xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+    url= 'https://seriesflix.co/genero/[paginas.param1]'
+    agent = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36'}
+    extraer = requests.get(url, headers=agent)
+    links = re.findall('data-src="(.+?)".*\n.*\n.*\n.*\n.*?h2\sclass="Title">(.+?)<.*\n.*\n.*\n.*?href="(.+?)".*\n.*\n.*\n.*\n.*?data-src="(.+?)".*\n.*\n.*\n.*?Date">(.+?)<.*\n.*?Description.*\n.*?p>(.+?)<', extraer.text)
+    return links
+]]></expres>
+<page></page>
+</regex>
+ 
+<regex>
+<name>makelist1</name>
+<listrepeat><![CDATA[
+<title>[makelist1.param2] [COLOR lime][makelist1.param3][/COLOR]</title>
+<link>$doregex[makelist2]</link>
+<thumbnail>[makelist.param1]</thumbnail>
+<fanart>[makelist.param1]</fanart>
+<info>[makelist.param6]</info>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re , requests , xbmc , xbmcaddon , xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+    url= '[makelist.param3]'
+    agent = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36'}
+    extraer = requests.get(url, headers=agent)
+    links = re.findall('Title.*?href="(.+?)">(.+?)<span>(.+?)<', extraer.text)
+    return links
+]]></expres>
+<page></page>
+</regex>
+ 
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>[makelist2.param3]</title>
+<link>$doregex[makelist3]</link>
+<thumbnail>https:[makelist2.param1]</thumbnail>
+<fanart>https:[makelist2.param1]</fanart>
+<info>[makelist.param6]</info>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re , requests , xbmc , xbmcaddon , xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+    url= '[makelist1.param1]'
+    agent = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36'}
+    extraer = requests.get(url, headers=agent)
+    links = re.findall('MvTbImg\sB.*?src="(.+?)".*\n.*?href="(.+?)">(.+?)<', extraer.text)
+    return links
+]]></expres>
+<page></page>
+</regex>
+ 
+<regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+<title>[makelist2.param3] - [makelist3.param3] [makelist3.param4] [makelist3.param5] </title>
+<link>$doregex[id3]</link>
+<thumbnail>https:[makelist2.param1]</thumbnail>
+<fanart>https:[makelist2.param1]</fanart>
+<info>[makelist.param6]</info>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re , requests , xbmc , xbmcaddon , xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+    url= '[makelist2.param2]'
+    agent = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36'}
+    extraer = requests.get(url, headers=agent)
+    links = re.findall('data-key="(.+?)"[\w\W]*?-id="(.+?)"[\w\W]*?language.*?\s(.+?)<[\w\W]*?dns">(.+?)<[\w\W]*?equalizer">(.+?)<', extraer.text)
+    return links
+]]></expres>
+<page></page>
+</regex>
+ 
+ 
+<regex>
+<name>link</name>
+<expres>src="(.*?)"</expres>
+<page>https://seriesflix.co/?trembed=[makelist3.param1]&amp;trid=[makelist3.param2]&amp;trtype=2</page>
+</regex>
+ 
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver, resolveurl
+    url = '$doregex[link]'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = '$doregex[link]'
+    return u
+]]></expres>
+<page></page>
+</regex>
+</item>
+ 
+__________________________________________________________
+ 
+<item>
+<title>[COLOR white]SeriesFlix[/COLOR] Por Productoras</title>
+<link>$doregex[paginas]</link>
+ 
+<regex>
+<name>paginas</name>
+<listrepeat><![CDATA[
+<title>[paginas.param2]</title>
+<link>$doregex[makelist]</link>
+<thumbnail></thumbnail>
+]]></listrepeat>
+<expres>'(.*?)'-'(.*?)'</expres>
+<page>'series-de-netflix'-'Netflix''series-de-the-cw'-'The CW''series-de-hbo'-'HBO''series-de-fox'-'FOX''series-de-cbs'-'CBS''series-de-amazon'-'Amazon'</page>
+</regex>
+ 
+ 
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param2] [COLOR lime][makelist.param5][/COLOR]</title>
+<link>$doregex[makelist1]</link>
+<thumbnail>[makelist.param1]</thumbnail>
+<fanart>[makelist.param1]</fanart>
+<info>[makelist.param6]</info>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re , requests , xbmc , xbmcaddon , xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+    url= 'https://seriesflix.co/genero/[paginas.param1]'
+    agent = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36'}
+    extraer = requests.get(url, headers=agent)
+    links = re.findall('data-src="(.+?)".*\n.*\n.*\n.*\n.*?h2\sclass="Title">(.+?)<.*\n.*\n.*\n.*?href="(.+?)".*\n.*\n.*\n.*\n.*?data-src="(.+?)".*\n.*\n.*\n.*?Date">(.+?)<.*\n.*?Description.*\n.*?p>(.+?)<', extraer.text)
+    return links
+]]></expres>
+<page></page>
+</regex>
+ 
+<regex>
+<name>makelist1</name>
+<listrepeat><![CDATA[
+<title>[makelist1.param2] [COLOR lime][makelist1.param3][/COLOR]</title>
+<link>$doregex[makelist2]</link>
+<thumbnail>[makelist.param1]</thumbnail>
+<fanart>[makelist.param1]</fanart>
+<info>[makelist.param6]</info>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re , requests , xbmc , xbmcaddon , xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+    url= '[makelist.param3]'
+    agent = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36'}
+    extraer = requests.get(url, headers=agent)
+    links = re.findall('Title.*?href="(.+?)">(.+?)<span>(.+?)<', extraer.text)
+    return links
+]]></expres>
+<page></page>
+</regex>
+ 
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>[makelist2.param3]</title>
+<link>$doregex[makelist3]</link>
+<thumbnail>https:[makelist2.param1]</thumbnail>
+<fanart>https:[makelist2.param1]</fanart>
+<info>[makelist.param6]</info>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re , requests , xbmc , xbmcaddon , xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+    url= '[makelist1.param1]'
+    agent = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36'}
+    extraer = requests.get(url, headers=agent)
+    links = re.findall('MvTbImg\sB.*?src="(.+?)".*\n.*?href="(.+?)">(.+?)<', extraer.text)
+    return links
+]]></expres>
+<page></page>
+</regex>
+ 
+<regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+<title>[makelist2.param3] - [makelist3.param3] [makelist3.param4] [makelist3.param5] </title>
+<link>$doregex[id3]</link>
+<thumbnail>https:[makelist2.param1]</thumbnail>
+<fanart>https:[makelist2.param1]</fanart>
+<info>[makelist.param6]</info>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re , requests , xbmc , xbmcaddon , xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+    url= '[makelist2.param2]'
+    agent = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36'}
+    extraer = requests.get(url, headers=agent)
+    links = re.findall('data-key="(.+?)"[\w\W]*?-id="(.+?)"[\w\W]*?language.*?\s(.+?)<[\w\W]*?dns">(.+?)<[\w\W]*?equalizer">(.+?)<', extraer.text)
+    return links
+]]></expres>
+<page></page>
+</regex>
+ 
+ 
+<regex>
+<name>link</name>
+<expres>src="(.*?)"</expres>
+<page>https://seriesflix.co/?trembed=[makelist3.param1]&amp;trid=[makelist3.param2]&amp;trtype=2</page>
+</regex>
+ 
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver, resolveurl
+    url = '$doregex[link]'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = '$doregex[link]'
+    return u
+]]></expres>
+<page></page>
+</regex>
+</item>
+ 
+__________________________________________________________
+ 
+<item>
+<title>[COLOR white]SeriesFlix[/COLOR] Por Orden Alfabetico</title>
+<link>$doregex[paginas]</link>
+ 
+<regex>
+<name>paginas</name>
+<listrepeat><![CDATA[
+<title>Por la Letra: [paginas.param1]</title>
+<link>$doregex[makelist]</link>
+<thumbnail></thumbnail>
+]]></listrepeat>
+<expres>'(.*?)'</expres>
+<page>'a''b''c''d''e''f''g''h''i''j''k''l''m''n''o''p''q''r''s''t''u''v''w''x''y''z'</page>
+</regex>
+ 
+ 
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param2] [COLOR lime][makelist.param5][/COLOR]</title>
+<link>$doregex[makelist1]</link>
+<thumbnail>[makelist.param1]</thumbnail>
+<fanart>[makelist.param1]</fanart>
+<info>[makelist.param6]</info>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re , requests , xbmc , xbmcaddon , xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+    url= 'https://seriesflix.co/letras/[paginas.param1]'
+    agent = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36'}
+    extraer = requests.get(url, headers=agent)
+    links = re.findall('data-src="(.+?)".*\n.*\n.*\n.*\n.*?h2\sclass="Title">(.+?)<.*\n.*\n.*\n.*?href="(.+?)".*\n.*\n.*\n.*\n.*?data-src="(.+?)".*\n.*\n.*\n.*?Date">(.+?)<.*\n.*?Description.*\n.*?p>(.+?)<', extraer.text)
+    return links
+]]></expres>
+<page></page>
+</regex>
+ 
+<regex>
+<name>makelist1</name>
+<listrepeat><![CDATA[
+<title>[makelist1.param2] [COLOR lime][makelist1.param3][/COLOR]</title>
+<link>$doregex[makelist2]</link>
+<thumbnail>[makelist.param1]</thumbnail>
+<fanart>[makelist.param1]</fanart>
+<info>[makelist.param6]</info>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re , requests , xbmc , xbmcaddon , xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+    url= '[makelist.param3]'
+    agent = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36'}
+    extraer = requests.get(url, headers=agent)
+    links = re.findall('Title.*?href="(.+?)">(.+?)<span>(.+?)<', extraer.text)
+    return links
+]]></expres>
+<page></page>
+</regex>
+ 
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>[makelist2.param3]</title>
+<link>$doregex[makelist3]</link>
+<thumbnail>https:[makelist2.param1]</thumbnail>
+<fanart>https:[makelist2.param1]</fanart>
+<info>[makelist.param6]</info>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re , requests , xbmc , xbmcaddon , xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+    url= '[makelist1.param1]'
+    agent = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36'}
+    extraer = requests.get(url, headers=agent)
+    links = re.findall('MvTbImg\sB.*?src="(.+?)".*\n.*?href="(.+?)">(.+?)<', extraer.text)
+    return links
+]]></expres>
+<page></page>
+</regex>
+ 
+<regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+<title>[makelist2.param3] - [makelist3.param3] [makelist3.param4] [makelist3.param5] </title>
+<link>$doregex[id3]</link>
+<thumbnail>https:[makelist2.param1]</thumbnail>
+<fanart>https:[makelist2.param1]</fanart>
+<info>[makelist.param6]</info>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re , requests , xbmc , xbmcaddon , xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+ 
+    url= '[makelist2.param2]'
+    agent = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36'}
+    extraer = requests.get(url, headers=agent)
+    links = re.findall('data-key="(.+?)"[\w\W]*?-id="(.+?)"[\w\W]*?language.*?\s(.+?)<[\w\W]*?dns">(.+?)<[\w\W]*?equalizer">(.+?)<', extraer.text)
+    return links
+]]></expres>
+<page></page>
+</regex>
+ 
+ 
+<regex>
+<name>link</name>
+<expres>src="(.*?)"</expres>
+<page>https://seriesflix.co/?trembed=[makelist3.param1]&amp;trid=[makelist3.param2]&amp;trtype=2</page>
+</regex>
+ 
+<regex>
+<name>id3</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+    import urlresolver, resolveurl
+    url = '$doregex[link]'
+    try:
+        u = urlresolver.resolve(url)
+    except:
+        u = '$doregex[link]'
+    return u
+]]></expres>
+<page></page>
+</regex>
+</item>
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>subsmovies</title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+  <title>[makelist.param2]</title>
+  <link>$doregex[makelist2]</link>
+  <thumbnail>https://vignette.wikia.nocookie.net/lionheadthemovies/images/0/0b/The_movies_logo--screenshot_large.jpg</thumbnail>
+  <fanart>https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/80-movies-1570826605.png</fanart>
+]]></listrepeat>
+<expres><![CDATA[(?s)id="menu-item-\d+.+?href="([^"]+).>([^<]+)]]></expres>
+<page>https://subsmovies.club/</page>
+</regex>
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+  <title>[makelist2.param2]</title>
+  <link>$doregex[getUrl]</link>
+  <thumbnail>[makelist2.param3]</thumbnail>
+  <fanart>https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/80-movies-1570826605.png</fanart>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+import re,requests
+def GetLSProData(page_data,Cookie_Jar,m):#streamwatcher2013
+  msource=requests.get('[makelist.param1]',headers={'user-agent':'Mozilla/5.0','referer':'https://subsmovies.club/','accept':'*/*'},cookies=Cookie_Jar).content.replace('#038;','')
+  if 'class="navigation"' in msource:
+    lastpg=re.findall('>(\d+).+\n.+?Next',msource)[0]
+    data=re.findall('(?s)"entry-title.+?href="([^"]+).\s*title="([^"]+).+?src="([^"]+)',msource)
+    url='[makelist.param1]page/{}/'
+    for pn in range(2,int(lastpg)):
+       source=requests.get(url.format(pn),headers={'user-agent':'Mozilla/5.0','referer':'[makelist.param1]','accept':'*/*'}).content.replace('#038;','')
+       data +=re.findall('(?s)"entry-title.+?href="([^"]+).\s*title="([^"]+).+?src="([^"]+)',source)
+    return data
+  else:
+    return re.findall('(?s)"entry-title.+?href="([^"]+).\s*title="([^"]+).+?src="([^"]+)',msource)
+]]></expres>
+<page></page>
+</regex>
+<regex>
+<name>getUrl</name>
+<expres><![CDATA[#$pyFunction
+import re,requests
+def GetLSProData(page_data,Cookie_Jar,m):#streamwatcher2013
+  link=re.findall('src="(.+?video_embed.php[^"]+)',page_data)[0]
+  source=requests.get(link,headers={'user-agent':'Mozilla/5.0','referer':'[makelist2.param1]','accept':'*/*'},cookies=Cookie_Jar).content
+  url=re.findall('iframe.+?src="([^"]+)',source)[0]
+  source=requests.get(url,headers={'user-agent':'Mozilla/5.0','referer':link,'accept':'*/*'},cookies=Cookie_Jar).content
+  return re.findall('id=.my-video[\w\W]+?(?:source|src|file)="([^"]+)',source)[0]
+]]></expres>
+<page>[makelist2.param1]</page>
+<referer>[makelist.param1]</referer>
+</regex>
+<thumbnail>https://vignette.wikia.nocookie.net/lionheadthemovies/images/0/0b/The_movies_logo--screenshot_large.jpg</thumbnail>
+<fanart>https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/80-movies-1570826605.png</fanart>
+</item>
+
+
+
+
+

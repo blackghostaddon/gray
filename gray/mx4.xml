@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+ <item>
+<title>Unam TV </title>
+<link>$doregex[url]|User-Agent=Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</link>
+  <regex>
+<name>url</name>
+<expres><![CDATA["m3u8_url":"(.*?)"]]></expres>
+<page>https://livestream.com/accounts/27177136/events/8970901/player?</page>
+<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+</regex>
+</item>
+
+
+
+https://livestream.com/accounts/27177136/events/8970901/player?width=640&height=360&enableInfoAndActivity=true&defaultDrawer=&autoPlay=true&mute=false
+
+
+<item>
+<title>A+ </title>
+<link>http://aztecalive-lh.akamaihd.net/i/0qfv8evsp_1@458764/master.m3u8</link>
+<thumbnail></thumbnail>
+</item>
+
+
+<item>
+<title>Azteca 13(HD) </title>
+<link>http://aztkhlslive2-i.akamaihd.net/hls/live/629424/azuno/master.m3u8</link>
+<thumbnail></thumbnail>
+</item>
+
+
+
+ <item>
+<title>Azteca 13(HD) </title>
+<link>$doregex[url]|Referer=http://www.televallweb.site/aztecauno.html&amp;User-Agent=Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</link>
+  <regex>
+<name>url</name>
+<expres><![CDATA[source: "(.*?)"]]></expres>
+<page>http://www.televallweb.site/aztecauno.html</page>
+<agent>Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5</agent>
+<referer>http://www.televallweb.site/espn-3-en-vivo-por-internet/</referer>
+</regex>
+</item>
+
+
+
+
+<!--page>http://www.telerisatv.com/</page-->
+
+
+
+
+
+
+<item>
+<title>milenio</title>
+<link>http://bcoveliveios-i.akamaihd.net/hls/live/201661/57828478001/milenio_center_512k@51752.m3u8</link>
+</item>
+
+ <item>
+<title>Milenio YT</title>
+<link>http://blackghost.live/gray/ylive.php?c=UCFxHplbcoJK9m70c4VyTIxg</link>
+</item>
+ 
+ 
+<item>
+<title>Azteca 7  </title>
+<link>http://aztkhlslive-i.akamaihd.net/hls/live/572724/az7/master.m3u8</link>
+</item>
+
+ 
+<item>
+<title> A + [Azteca 7 - info7 Monterrey] </title>
+<link>https://stream.kystream.com/h9ydbwnjcoe/p7UAKSv6AZ_hi/index.m3u8|User-Agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0&amp;Referer=http://www.a-mas.mx/secciones/tvenvivo</link>
+</item>
+
+
+<item>
+<title>IMAGEN TV</title>
+<link>plugin://plugin.video.youtube/play/?video_id=$doregex[youtube]</link>_1WujXXLzkY
+<regex>
+<name>youtube</name>
+<expres>embed_id":"(.*?)"</expres>
+<page>http://www.imagentv.com/api/application/livestreaming?device=web</page>
+<referer>http://www.imagentv.com/en-vivo/</referer>
+</regex>
+</item>
+
+
+
+
+<item>
+<title>Tele Formula</title>
+<link>https://wms30.tecnoxia.com/radiof/abr_radioftele/playlist.m3u8</link>
+</item>
+
+
+
+
+<item>
+<title>Tele Formula</title>
+<link>https://wms30.tecnoxia.com:443/radiof/abr_radioftele/playlist.m3u8</link>
+
+
+</item>
+
+
+
+
+
+ 
+<item>
+<title>Multimedios</title>
+<link>https://mdstrm.com/live-stream-playlist/57b4dbf5dbbfc8f16bb63ce1.m3u8</link>
+</item>
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>Televisa Monterrey</title>
+<link>plugin://plugin.video.youtube/play/?video_id=$doregex[youtube]</link>
+<regex>
+<name>youtube</name>
+<expres>href\=\"https\:\/\/www.youtube.com\/watch\?v\=(.*?)"</expres>
+<page>https://www.youtube.com/embed/live_stream?channel=UCGDJLLphnP0zQQaE3kgo5Wg</page>
+</regex>
+</item>
+
+
+
+<item>
+<title>Televisa Guadalajara</title>
+<link>plugin://plugin.video.youtube/play/?video_id=$doregex[youtube]</link>
+<regex>
+<name>youtube</name>
+<expres>href\=\"https\:\/\/www.youtube.com\/watch\?v\=(.*?)"</expres>
+<page>https://www.youtube.com/embed/live_stream?channel=UCRujF_YxVVFmTRWURQH-Cww</page>
+</regex>
+</item>
+
+ 
+
+ 
+
+<item>
+<title>Televisa Veracruz</title>
+<link>plugin://plugin.video.youtube/play/?video_id=$doregex[youtube]</link>
+<regex>
+<name>youtube</name>
+<expres>href\=\"https\:\/\/www.youtube.com\/watch\?v\=(.*?)"</expres>
+<page>https://www.youtube.com/embed/live_stream?channel=UC5EnLdE7ASjYzWt7wvT-QSg</page>
+</regex>
+</item>
+
+ 
+
+
+<item>
+<title>Televisa Chihuahua</title>
+<link>plugin://plugin.video.youtube/play/?video_id=$doregex[youtube]</link>
+<regex>
+<name>youtube</name>
+<expres>href\=\"https\:\/\/www.youtube.com\/watch\?v\=(.*?)"</expres>
+<page>https://www.youtube.com/embed/live_stream?channel=UCjfxDe7In59Jbfw2HmIh_Vg</page>
+</regex>
+</item>
+
+ 
+
+
+<item>
+<title>Televisa Edo. de Mexico</title>
+<link>plugin://plugin.video.youtube/play/?video_id=$doregex[youtube]</link>
+<regex>
+<name>youtube</name>
+<expres>href\=\"https\:\/\/www.youtube.com\/watch\?v\=(.*?)"</expres>
+<page>https://www.youtube.com/embed/live_stream?channel=UC9DH82HVSf4katwMeUpY80w</page>
+</regex>
+</item>
+
+<item>
+<title>Televisa Queretaro</title>
+<link>plugin://plugin.video.youtube/play/?video_id=$doregex[youtube]</link>
+<regex>
+<name>youtube</name>
+<expres>href\=\"https\:\/\/www.youtube.com\/watch\?v\=(.*?)"</expres>
+<page>https://www.youtube.com/embed/live_stream?channel=UC9QNz6VS3gGz55dzxAQtgtA</page>
+</regex>
+</item>
+
+<item>
+<title>Televisa Zacatecas</title>
+<link>plugin://plugin.video.youtube/play/?video_id=$doregex[youtube]</link>
+<regex>
+<name>youtube</name>
+<expres>href\=\"https\:\/\/www.youtube.com\/watch\?v\=(.*?)"</expres>
+<page>https://www.youtube.com/embed/live_stream?channel=UCQb3i7gu9J8A4zzQU7j6C1Q</page>
+</regex>
+</item>
+
+
+<item>
+<title>Televisa Cd. Juarez</title>
+<link>plugin://plugin.video.youtube/play/?video_id=$doregex[youtube]</link>
+<regex>
+<name>youtube</name>
+<expres>href\=\"https\:\/\/www.youtube.com\/watch\?v\=(.*?)"</expres>
+<page>https://www.youtube.com/embed/live_stream?channel=UCot4t8PVKz8TT5xVM8Eb00w</page>
+</regex>
+</item>
+
+
+<item>
+<title>Televisa Del Bajio</title>
+<link>plugin://plugin.video.youtube/play/?video_id=$doregex[youtube]</link>
+<regex>
+<name>youtube</name>
+<expres>href\=\"https\:\/\/www.youtube.com\/watch\?v\=(.*?)"</expres>
+<page>https://www.youtube.com/embed/live_stream?channel=UC-uYy4_jIvDoJ4wigEv1S5A</page>
+</regex>
+</item>
+
+
+<item>
+<title>Televisa Del Golfo</title>
+<link>plugin://plugin.video.youtube/play/?video_id=$doregex[youtube]</link>
+<regex>
+<name>youtube</name>
+<expres>href\=\"https\:\/\/www.youtube.com\/watch\?v\=(.*?)"</expres>
+<page>https://www.youtube.com/embed/live_stream?channel=UCQ08tNTPiBn44c975S81ftg</page>
+</regex>
+</item>
+
+
+<item>
+<title>Televisa Sinaloa</title>
+<link>plugin://plugin.video.youtube/play/?video_id=$doregex[youtube]</link>
+<regex>
+<name>youtube</name>
+<expres>href\=\"https\:\/\/www.youtube.com\/watch\?v\=(.*?)"</expres>
+<page>https://www.youtube.com/embed/live_stream?channel=UCtm1LvYEIQ_NrfOUVJ08YhQ</page>
+</regex>
+</item>
+
+
+
+
+<item>
+<title>Televisa San Luis Potosi</title>
+<link>plugin://plugin.video.youtube/play/?video_id=$doregex[youtube]</link>
+<regex>
+<name>youtube</name>
+<expres>href\=\"https\:\/\/www.youtube.com\/watch\?v\=(.*?)"</expres>
+<page>https://www.youtube.com/embed/live_stream?channel=UCaRuyaHshLdq462E9_pLzdA</page>
+</regex>
+</item>
+
+
+
+<item>
+<title>Televisa Mexicalli</title>
+<link>plugin://plugin.video.youtube/play/?video_id=$doregex[youtube]</link>
+<regex>
+<name>youtube</name>
+<expres>href\=\"https\:\/\/www.youtube.com\/watch\?v\=(.*?)"</expres>
+<page>https://www.youtube.com/embed/live_stream?channel=UCcmuFsMIIIHO3LBqeBVfm8Q</page>
+</regex>
+</item>
+
+
+
+
+
+<item>
+<title>Televisa Puebla</title>
+<link>plugin://plugin.video.youtube/play/?video_id=$doregex[youtube]</link>
+<regex>
+<name>youtube</name>
+<expres>href\=\"https\:\/\/www.youtube.com\/watch\?v\=(.*?)"</expres>
+<page>https://www.youtube.com/embed/live_stream?channel=UC-HNztluSQSffhIWJTL-LUw</page>
+</regex>
+</item>
+
+
+
+
+
+<item>
+<title>Televisa Tijuana</title>
+<link>plugin://plugin.video.youtube/play/?video_id=$doregex[youtube]</link>
+<regex>
+<name>youtube</name>
+<expres>href\=\"https\:\/\/www.youtube.com\/watch\?v\=(.*?)"</expres>
+<page>https://www.youtube.com/embed/live_stream?channel=UCjwXjnO3BGePtB7gSKEpoqA</page>
+</regex>
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item>
+<title>RCG TV 1</title>
+<link>http://wowzacontrol.com:1935/stream34/stream34/playlist.m3u8</link>
+</item>
+
+<item>
+<title>RCG TV 2</title>
+<link>http://wowzacontrol.com:1935/stream23/stream23/playlist.m3u8</link>
+</item>
+
+<item>
+<title>RCG TV 3</title>
+<link>http://wowzacontrol.com:1935/stream56/stream56/playlist.m3u8</link>
+</item>
+
+
+
+
+
+
+<item><title>MULTIMEDIOS TV Laguna</title>
+<link>http://mdstrm.com/live-stream-playlist_700/57bf686a61ff39e1085d43e1.m3u8</link><thumbnail></thumbnail></item>
+
+<item><title>MULTIMEDIOS TV</title>
+<link>http://d34z3o74zqnctr.cloudfront.net/live-stream/57b4dbf5dbbfc8f16bb63ce1/publish/media_400.m3u8?dnt=true&amp;ref=http%3A%2F%2Fwww.multimedios.com%2Ftv%2Fenvivo%2Fmonterrey&amp;es=d34z3o74zqnctr.cloudfront.net&amp;proto=http&amp;time=1489543893915</link><thumbnail></thumbnail></item>
+
+
+
+
+
+
+<item>
+<title>Canal 9 Tabasco</title>
+<link>http://blackghost.live/scr/getc-okru.php</link>
+<thumbnail></thumbnail>
+</item>
+
+
+
+
+
+
+
+

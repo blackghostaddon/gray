@@ -1,0 +1,492 @@
+<SetViewMode>55</SetViewMode>
+
+
+	
+	
+<item>
+<title>[COLOR white][B][  ][/B][/COLOR]  [COLOR lightblue][B]BUSCAR CANAL ACESTREAM[/B] [/COLOR][COLOR white]Updated [/COLOR] </title>
+<link>$doregex[lista]</link>
+<regex>
+<name>lista</name>
+  <listrepeat><![CDATA[         
+		 <title>[lista.param2]</title>
+        <link>plugin://program.plexus/?url=[lista.param1]&amp;mode=1&amp;name=BlackAddon+[lista.param2]</link>
+		<thumbnail>http://blackghost.live/gray/img/acestream.png</thumbnail>
+		]]></listrepeat>
+<expres><![CDATA[acestream:\/\/(.*?)">(.*?)<]]><expres>
+<page>https://acestreamsearch.net/en/?q=$doregex[search]</page>
+<referer>https://acestreamsearch.com/en/</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+
+
+<regex>
+<name>search</name>
+<expres><![CDATA[#$pyFunction
+import xbmc
+import xbmcaddon
+import xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+    dialog = xbmcgui.Dialog()
+    d = dialog.input('Buscar  Canal: ejemplo: Sky Sports', type=xbmcgui.INPUT_ALPHANUM).replace(" ", "+")
+    return d
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+
+</item>
+</regex>
+<thumbnail>http://blackghost.live/gray/img/acestreams.png</thumbnail>
+</item>
+
+	
+<!--Agendas  AV--->
+	
+<item><!--Agendas  AV 1--->
+<title>[COLOR lime]●[/COLOR][COLOR white]  [B]AGENDA ARENAVISION[/B][/COLOR] [COLOR lightslategray] opcion 1*  [/COLOR]</title>
+
+<link>$doregex[makelist]</link>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[COLOR lime][makelist.param2][/COLOR] [COLOR skyblue][makelist.param3][/COLOR] [COLOR yellow][makelist.param4] [/COLOR] [COLOR red][makelist.param5][/COLOR] [COLOR lightblue][makelist.param6][/COLOR] </title>
+<link>plugin://program.plexus/?url=data:text/octet-stream;base64,$doregex[hash]&amp;mode=1&amp;name=BlackGhost+Arenavision</link>
+]]></listrepeat>
+<expres><![CDATA[tr\s*class="(.*?)".*?td>(.*?)<.*?<td>(.*?)<.*?<td>(.*?)<.*?<td>(.*?)<|a\s*href="(#av(.*?))"]]></expres>
+<page>https://linkotes.com/arenavision/</page>
+</regex>
+
+<regex>
+<name>hash</name>
+<expres>live":"(.+?)"</expres>
+<page>https://linkotes.com/arenavision/aj_canal.php</page>
+<rawpost>id=[makelist.param7]&nocatxe=0</rawpost>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<referer>https://linkotes.com/arenavision/</referer>
+<agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</agent>
+</regex>
+<thumbnail>http://blackghost.live/gray/img/acestreams.png</thumbnail>
+</item>
+
+	
+<item><!--Agendas  AV 2--->
+<title>[COLOR lime]●[/COLOR][COLOR white]  [B]AGENDA ARENAVISION[/B][/COLOR] [COLOR lightslategray] opcion 2  [/COLOR]</title>
+
+<link>$doregex[makelist]</link>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[COLOR lime][makelist.param2][/COLOR] [COLOR skyblue][makelist.param3][/COLOR] [COLOR yellow][makelist.param4] [/COLOR] [COLOR red][makelist.param5][/COLOR] [COLOR lightblue][makelist.param6][/COLOR] </title>
+<link>plugin://program.plexus/?url=$doregex[hash]&amp;mode=1&amp;name=BlackGhost+Arenavision</link>
+]]></listrepeat>
+<expres><![CDATA[tr\s*class="(.*?)".*?\n.*?td>(.*?)<.*?\n.*?td>(.*?)<.*?\n.*?td>(.*?)<.*?\n.*?td>(.*?)<|a\s*href="(#av(.*?))"]]></expres>
+<page>https://wiseplayvip.com/agenda-arenavision/</page>
+</regex>
+
+
+
+
+
+
+<regex>
+<name>hash</name>
+<expres>\\\/\\\/(.+?)"</expres>
+<page>https://wiseplayvip.com/agenda-arenavision/canal.php</page>
+<rawpost>id=[makelist.param7]&nocatxe=0</rawpost>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<referer>https://wiseplayvip.com/agenda-arenavision/</referer>
+<agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</agent>
+</regex>
+<thumbnail>http://blackghost.live/gray/img/acestreams.png</thumbnail>
+</item>
+
+
+<itm><!--Agendas  AV 3 --->
+<title>[COLOR lime]●[/COLOR][COLOR white]  [B]AGENDA ARENAVISION[/B][/COLOR] [COLOR lightslategray] opcion 3  [/COLOR]</title>
+<link>$doregex[makelist]</link>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[COLOR lightgreen][makelist.param1] [/COLOR]  [COLOR deepskyblue][makelist.param2] [/COLOR][COLOR lightslategray][makelist.param3] [/COLOR] [COLOR lightblue][[makelist.param4]] [/COLOR] [COLOR skyblue][B][makelist.param5] [/B] [/COLOR][COLOR lightyellow] [makelist.param6] [/COLOR]  </title>
+<link>plugin://program.plexus/?url=$doregex[hash]&amp;mode=1&amp;name=BlackGhost+[makelist.param5]+Arenavision</link>
+<thumbnail>http://blackghost.live/gray/img/acestreams.png</thumbnail>
+]]></listrepeat>
+	<expres><![CDATA[#$pyFunction
+import re,sucuri_cookie
+def GetLSProData(page_data,Cookie_Jar,m):
+  source=sucuri_cookie.createCookie('https://arenavision.in$doregex[guide]',Cookie_Jar,'Mozilla/5.0 (Windows NT 6.1; rv:14.0) Gecko/20100101 Firefox/14.0.1')
+  return re.findall('auto-style3">(.*?)<[\w\W]*?">(.*?)<[\w\W]*?">(.*?)<[\w\W]*?">(.*?)<[\w\W]*?">(.*?)<[\w\W]*?"(>[0-9]+)',source)
+]]></expres>
+<page></page>
+</regex>
+
+
+
+<regex>
+<name>guide</name>
+<expres><![CDATA[href="(\/.*?events-guide)\"\>EVENTS]]></expres>
+<page>https://arenavision.in/</page>
+</regex>
+
+
+
+<regex>
+<name>hash</name>
+<expres>id\:\"(.*?)"</expres>
+<page>https://stream.arenavision.cc/$doregex[canal]?eqwsndefdscdcs</page>
+<agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:71.0) Gecko/20100101 Firefox/71.0</agent>
+<referer>http://www.rojadirecta.me/</referer>
+</regex>
+
+<regex>
+<name>canal</name>			
+<expres>$pyFunction:'[makelist.param6]'.replace('>4','04').replace('>5','05').replace('>6','06').replace('>7','07').replace('>8','08').replace('>9','09').replace('>10','10').replace('>11','tk/11').replace('>12','12').replace('>13','13').replace('>14','14').replace('>15','15').replace('>16','16').replace('>17','17').replace('>18','18').replace('>19','19').replace('>20','20').replace('>21','21').replace('>22','22').replace('>23','23').replace('>24','24').replace('>25','25').replace('>26','26').replace('>27','27').replace('>28','28').replace('>29','29').replace('>30','30').replace('>31','31').replace('>32','32').replace('>33','33').replace('>34','34').replace('>35','35').replace('>1','01').replace('>>2','02').replace('>3','03')</expres>
+<page></page>
+</regex>
+
+ 
+
+   
+<thumbnail>http://blackghost.live/gray/img/acestreams.png</thumbnail>
+</item>
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+<item><!--Agendas  elgoles--->
+<title>[COLOR lime]●[/COLOR][COLOR white]  [B]AGENDA ELGOLES[/B][/COLOR] [COLOR lightslategray] updated [/COLOR]</title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+
+<title>[COLOR white][makelist.param1] [COLOR yellow] [I]Canal [makelist.param2][/I]  [/COLOR] </title>
+<link>plugin://program.plexus/?url=$doregex[hashde]&amp;mode=1&amp;name=BlackGhost+[makelist.param3]</link>
+<thumbnail>http://blackghost.live/gray/img/acestreams.png</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[\'t\'[\w\W]*?href.*?>\s(.*?)<\/[\w\W]*?elgoles\.me\/(.+?)\.php\>\s\<h4\>\sACE]]></expres>
+<page>https://elgoles.me/</page>
+ </regex>
+ 
+ <regex>
+<name>hashde</name>
+<expres>id=(.+?)"</expres>
+<page>-$doregex[hashde2]"</page>
+</regex>
+
+
+<regex>
+<name>hashde2</name>
+<expres>$pyFunction:base64.b64decode("$doregex[hash]")</expres>
+<page></page>
+</regex>
+ 
+<regex>
+<name>hash</name>
+<expres>atob\(\"(.*?)\"</expres>
+<page>http://elgoles.me/reproductor/[makelist.param2].php</page>
+</regex>
+
+ 
+<thumbnail>http://blackghost.live/gray/img/acestreams.png</thumbnail>
+</item>
+
+
+<item><!-- vipgoal -->
+<title>[COLOR lime]●[/COLOR][COLOR white]  [B]AGENDA VIPGOL[/B][/COLOR] [COLOR lightslategray] Canales [/COLOR]</title>
+<link>$doregex[makelist]</link>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[COLOR skyblue][#BG][/COLOR] [COLOR lightpink][B][makelist.param1][/B][/COLOR]</title>
+<link>plugin://program.plexus/?url=[makelist.param2]&amp;mode=1&amp;name=BlackAddon+PLEXUS</link>
+<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[name\s\=(.*?)<.*?enlace\s\=\s(.*?)\<]]></expres>
+<page>https://blackghost.live/scr/aces.php</page>
+</regex>
+
+<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail></item>
+
+<item><!-- vipgoal -->
+<title>[COLOR lime]●[/COLOR][COLOR white]  [B]AGENDA VIPGOL2[/B][/COLOR] [COLOR lightslategray] EVENTOS [/COLOR]</title>
+<link>$doregex[makelist]</link>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[COLOR skyblue][#BG][/COLOR] [COLOR lightpink][B][makelist.param1][/B][/COLOR]</title>
+<link>plugin://program.plexus/?url=[makelist.param2]&amp;mode=1&amp;name=BlackAddon+PLEXUS</link>
+<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[name = "(.+?)"enlace = "(.+?)"]]></expres>
+<page>https://blackghost.live/scr/aces2.php</page>
+</regex>
+
+<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail></item>
+
+
+
+
+<!--canales  AV--->
+	
+<item>
+<title>[COLOR lime]●[/COLOR][COLOR deepskyblue]  [B]CANALES ARENAVISION[/B][/COLOR] [COLOR lightslategray]   [/COLOR]</title>
+<link>$doregex[makelist]</link>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[BG] [makelist.param1]  ([makelist.param2])</title>
+<link>plugin://program.plexus/?url=[makelist.param2]&amp;mode=1&amp;name=BlackGhost+Arenavision</link>
+<thumbnail>http://blackghost.live/gray/img/acestreams.png</thumbnail>
+]]></listrepeat>
+<expres>(Can.*?)="(.*?)"</expres>
+<page>http://blackghost.live/gray/canalesac.txt</page>
+<agent></agent>
+</regex>
+   
+<thumbnail>http://blackghost.live/gray/img/acestreams.png</thumbnail>
+</item>
+	
+	
+	
+	
+	
+<item>
+<title>[COLOR lime]●[/COLOR][COLOR deepskyblue]  [B]CANALES ARENAVISION[/B][/COLOR] [COLOR lightslategray] opc2  [/COLOR]</title>
+<link>$doregex[makelist]</link>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param2]  $doregex[wstream]</title>
+<link>plugin://program.plexus/?url=$doregex[wstream]&amp;mode=1&amp;name=BlackGhost+Arenavision</link>
+<thumbnail>http://blackghost.live/gray/img/acestreams.png</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[leaf".*?href="(\/.*?)">(Ar.*?)<]]></expres>
+<page>https://arenavision.in/</page>
+<agent></agent>
+</regex>
+
+<regex>
+<name>canal</name>
+<expres>\?id=(.*?)"</expres>
+<page>https://arenavision.in[makelist.param1]</page>
+<agent></agent>
+</regex>
+
+
+<regex>
+<name>wstream</name>
+<expres><![CDATA[#$pyFunction
+import re,requests
+from urlresolver.plugins.lib import jsunpack
+def GetLSProData(page_data,Cookie_Jar,m):
+  link='https://arenavision.in[makelist.param1]'
+  source=requests.get(link,headers={'user-agent':'Mozilla/5.0','referer':'https://arenavision.in[makelist.param1]','accept':'*/*'}).content
+  source=jsunpack.unpack(re.findall('(document\.write\(unescape.*?\)\))',source)[0]).replace('\\', '')
+  return re.findall('Clappr.Player[\w\W]*?(?:source|src|file):\s*[\'"]([^\'"]+)',source)[0].decode('base64')
+]]></expres>
+<page></page>
+<referer>https://arenavision.in</referer>
+</regex>
+
+
+   
+<thumbnail>http://blackghost.live/gray/img/acestreams.png</thumbnail>
+</item>
+	
+
+
+<item>
+<title>[COLOR lime]●[/COLOR][COLOR white]  [B]RD ARENAVISION[/B][/COLOR] [COLOR lightslategray]  testing  [/COLOR]</title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[COLOR white][makelist.param1] [B][makelist.param2][/B][/COLOR]  [COLOR blue]Opcion[B][makelist.param3][/B] Idioma:[B][makelist.param4][/B]  [/COLOR] </title>
+<link>plugin://program.plexus/?url=$doregex[hash]&amp;mode=1&amp;name=BlackGhost+[makelist.param3]+Arenavision</link>
+<thumbnail>http://blackghost.live/gray/img/acestreams.png</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[class="t">(.*?)<[\w\W]*?name">(.*?)<[\w\W]*?Arena.*?ision(.*?)<.*?\n.*?td>(.*?)<[\w\W]*?href="(.*?)"]]></expres>
+<page>http://it.rojadirecta.eu/</page>
+</regex>
+ 
+<regex>
+<name>hash</name>
+<expres>\"\,id\:\"(.*?)"</expres>
+<page>[makelist.param5]</page>
+<referer>http://cdn1.arenavision.link</referer>
+</regex>
+ 
+
+<thumbnail>http://blackghost.live/gray/img/acestreams.png</thumbnail>
+</item>
+
+
+
+
+
+
+
+<!--Agendas ACESTREMS ID--->
+
+
+
+<item>
+<title>[COLOR white][B] ACESTREAM[COLOR deepskyblue]ID[/COLOR] [COLOR white][I] [/I] [/COLOR][/B][/COLOR]</title>
+<link>$doregex[makelist]</link>
+
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title> [COLOR deepskyblue] [B][makelist.param1] [/B][/COLOR]  Views:[COLOR yellow][makelist.param3] [/COLOR] </title>
+<link>$doregex[makelist2]</link>
+<thumbnail>http://blackghost.live/gray/img/acestreams.png</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[title="(.*?)"[\W\w]*?href="(.*?)"[\w\W]*?content.*?\n([0-9]+)]]></expres>
+<page>https://acestreamid.com/stat/channels</page>
+</regex>
+
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title> [COLOR deepskyblue] [B][makelist2.param1] [/B][/COLOR] opcion:[makelist2.param2]</title>
+<link>plugin://program.plexus/?url=[makelist2.param2]&amp;mode=1&amp;name=BlackAddon + [makelist.param1]</link>
+<thumbnail>http://blackghost.live/gray/img/acestreams.png</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[content"\stitle="(.+?)"[\W\w]*?acestream://(.+?)"]]></expres>
+<page>[makelist.param2]</page>
+</regex>
+
+<thumbnail>http://blackghost.live/gray/img/acestreams.png</thumbnail>
+</item>
+
+
+<!--Allfon--->
+<item>
+<title>[B][COLOR white]ALL ACESTREAMS ACELIVE[/B][/COLOR]</title>
+<link>$doregex[makelist]</link>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+	<title>[B][COLOR white] [makelist.param1]</title>
+	<link>plugin://program.plexus/?url=[makelist.param1]&amp;mode=1&amp;name=BlackAddon+Acestreams</link>
+<thumbnail>http://blackghost.live/gray/img/acestreams.png</thumbnail>
+]]></listrepeat>
+<expres><![CDATA["fname":\s"(.*?)\"]]></expres>
+<page>http://91.92.66.82/trash/ttv-list/acelive.json</page>
+<agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:71.0) Gecko/20100101 Firefox/71.0</agent>
+</regex>
+
+<thumbnail>http://blackghost.live/gray/img/acestreams.png</thumbnail>
+</item>
+<item>
+<title>[B][COLOR white]ALL Fon (a)[/B][/COLOR]</title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+	<title>[B][COLOR white][makelist.param1][/B][/COLOR]</title>
+	<link>plugin://program.plexus/?url=[makelist.param2]&amp;mode=1&amp;name=BlackAddon+Arenavision</link>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/acestreams.png</thumbnail>
+]]></listrepeat>
+<expres>EXTINF.*?,(.*?)\n.*?\n.*?\n.*?acestream:\/\/(.*)</expres>
+<page>http://91.92.66.82/trash/ttv-list/allfon.all.player.m3u</page>
+<agent>Kodi/15.2 (Windows NT 6.1) App_Bitness/32 Version/15.2-Git:20151019-02e7013</agent>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/acestreams.png</thumbnail>
+</item>
+<item>
+<title>[B][COLOR white]Ace All Player (b)[/B][/COLOR]</title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+	<title>[B][COLOR white][makelist.param1][/B][/COLOR]</title>
+	<link>plugin://program.plexus/?url=[makelist.param2]&amp;mode=1&amp;name=BlackAddon+Arenavision</link>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/acestreams.png</thumbnail>
+]]></listrepeat>
+<expres>EXTINF.*?,(.*?)\n.*?acestream:\/\/(.*)</expres>
+<page>http://91.92.66.82/trash/ttv-list/ace.all.player.m3u</page>
+<agent>Kodi/15.2 (Windows NT 6.1) App_Bitness/32 Version/15.2-Git:20151019-02e7013</agent>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/acestreams.png</thumbnail>
+</item>
+<item>
+<title>[B][COLOR white]As All Player (c)[/B][/COLOR]</title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+	<title>[B][COLOR white][makelist.param1][/B][/COLOR]</title>
+	<link>plugin://program.plexus/?url=[makelist.param2]&amp;mode=1&amp;name=BlackAddon+Arenavision</link>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/acestreams.png</thumbnail>
+]]></listrepeat>
+<expres>EXTINF.*?,(.*?)\n.*?acestream:\/\/(.*)</expres>
+<page>http://91.92.66.82/trash/ttv-list/as.all.player.m3u</page>
+<agent>Kodi/15.2 (Windows NT 6.1) App_Bitness/32 Version/15.2-Git:20151019-02e7013</agent>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/acestreams.png</thumbnail>
+</item>
+
+
+
+<item>
+<title>[B][COLOR white]As All Tag Player (d)[/B][/COLOR]</title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+	<title>[B][COLOR white][makelist.param1][/B][/COLOR]</title>
+	<link>plugin://program.plexus/?url=[makelist.param2]&amp;mode=1&amp;name=BlackAddon+Arenavision</link>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/acestreams.png</thumbnail>
+]]></listrepeat>
+<expres>EXTINF.*?,(.*?)\n.*?acestream:\/\/(.*)</expres>
+<page>http://91.92.66.82/trash/ttv-list/as.all.tag.player.m3u</page>
+<agent>Kodi/15.2 (Windows NT 6.1) App_Bitness/32 Version/15.2-Git:20151019-02e7013</agent>
+</regex>
+
+
+
+
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/img/acestreams.png</thumbnail>
+</item>
+
+
+
+http://bit.ly/2ToPe8s
+2bToPe8s
