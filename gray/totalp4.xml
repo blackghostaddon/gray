@@ -11,7 +11,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  import xbmcgui
  import webbrowser
  xbmc.executebuiltin("XBMC.Notification(Canales Activados, [COLOR skyblue]Biri Biri Bam Bam!!![/COLOR], 3000)")
- return 'https://raw.githubusercontent.com/blackghostaddon/gray/master/tv1-dic.m3u'
+ return 'https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/tv1-dic.m3u'
 ]]></expres>
 <page>https://t2020.club/none/activar.php</page>
 <cookieJar>$doregex[createCFCookie]</cookieJar>
