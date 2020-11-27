@@ -11,7 +11,7 @@
   <listrepeat><![CDATA[         
 		 <title>[lista.param2]</title>
         <link>plugin://program.plexus/?url=[lista.param1]&amp;mode=1&amp;name=BlackAddon+[lista.param2]</link>
-		<thumbnail>http://blackghost.live/gray/img/acestream.png</thumbnail>
+		<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/acestream.png</thumbnail>
 		]]></listrepeat>
 <expres><![CDATA[acestream:\/\/(.*?)">(.*?)<]]><expres>
 <page>https://acestreamsearch.net/en/?q=$doregex[search]</page>
@@ -40,7 +40,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 </item>
 </regex>
-<thumbnail>http://blackghost.live/gray/img/acestreams.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/acestreams.png</thumbnail>
 </item>
 
 	
@@ -72,7 +72,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <referer>https://linkotes.com/arenavision/</referer>
 <agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</agent>
 </regex>
-<thumbnail>http://blackghost.live/gray/img/acestreams.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/acestreams.png</thumbnail>
 </item>
 
 	
@@ -107,7 +107,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <referer>https://wiseplayvip.com/agenda-arenavision/</referer>
 <agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</agent>
 </regex>
-<thumbnail>http://blackghost.live/gray/img/acestreams.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/acestreams.png</thumbnail>
 </item>
 
 
@@ -120,7 +120,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <listrepeat><![CDATA[
 <title>[COLOR lightgreen][makelist.param1] [/COLOR]  [COLOR deepskyblue][makelist.param2] [/COLOR][COLOR lightslategray][makelist.param3] [/COLOR] [COLOR lightblue][[makelist.param4]] [/COLOR] [COLOR skyblue][B][makelist.param5] [/B] [/COLOR][COLOR lightyellow] [makelist.param6] [/COLOR]  </title>
 <link>plugin://program.plexus/?url=$doregex[hash]&amp;mode=1&amp;name=BlackGhost+[makelist.param5]+Arenavision</link>
-<thumbnail>http://blackghost.live/gray/img/acestreams.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/acestreams.png</thumbnail>
 ]]></listrepeat>
 	<expres><![CDATA[#$pyFunction
 import re,sucuri_cookie
@@ -158,7 +158,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
 
    
-<thumbnail>http://blackghost.live/gray/img/acestreams.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/acestreams.png</thumbnail>
 </item>
 	
 
@@ -191,7 +191,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <title>[COLOR white][makelist.param1] [COLOR yellow] [I]Canal [makelist.param2][/I]  [/COLOR] </title>
 <link>plugin://program.plexus/?url=$doregex[hashde]&amp;mode=1&amp;name=BlackGhost+[makelist.param3]</link>
-<thumbnail>http://blackghost.live/gray/img/acestreams.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/acestreams.png</thumbnail>
 ]]></listrepeat>
 <expres><![CDATA[\'t\'[\w\W]*?href.*?>\s(.*?)<\/[\w\W]*?elgoles\.me\/(.+?)\.php\>\s\<h4\>\sACE]]></expres>
 <page>https://elgoles.me/</page>
@@ -217,7 +217,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 
  
-<thumbnail>http://blackghost.live/gray/img/acestreams.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/acestreams.png</thumbnail>
 </item>
 
 
@@ -230,13 +230,13 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <listrepeat><![CDATA[
 <title>[COLOR skyblue][#BG][/COLOR] [COLOR lightpink][B][makelist.param1][/B][/COLOR]</title>
 <link>plugin://program.plexus/?url=[makelist.param2]&amp;mode=1&amp;name=BlackAddon+PLEXUS</link>
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/deportes.png</thumbnail>
 ]]></listrepeat>
 <expres><![CDATA[name\s\=(.*?)<.*?enlace\s\=\s(.*?)\<]]></expres>
 <page>https://blackghost.live/scr/aces.php</page>
 </regex>
 
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/deportes.png</thumbnail></item>
 
 <item><!-- vipgoal -->
 <title>[COLOR lime]●[/COLOR][COLOR white]  [B]AGENDA VIPGOL2[/B][/COLOR] [COLOR lightslategray] EVENTOS [/COLOR]</title>
@@ -247,13 +247,13 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <listrepeat><![CDATA[
 <title>[COLOR skyblue][#BG][/COLOR] [COLOR lightpink][B][makelist.param1][/B][/COLOR]</title>
 <link>plugin://program.plexus/?url=[makelist.param2]&amp;mode=1&amp;name=BlackAddon+PLEXUS</link>
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/deportes.png</thumbnail>
 ]]></listrepeat>
 <expres><![CDATA[name = "(.+?)"enlace = "(.+?)"]]></expres>
 <page>https://blackghost.live/scr/aces2.php</page>
 </regex>
 
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/deportes.png</thumbnail></item>
 
 
 
@@ -269,14 +269,14 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <listrepeat><![CDATA[
 <title>[BG] [makelist.param1]  ([makelist.param2])</title>
 <link>plugin://program.plexus/?url=[makelist.param2]&amp;mode=1&amp;name=BlackGhost+Arenavision</link>
-<thumbnail>http://blackghost.live/gray/img/acestreams.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/acestreams.png</thumbnail>
 ]]></listrepeat>
 <expres>(Can.*?)="(.*?)"</expres>
-<page>http://blackghost.live/gray/canalesac.txt</page>
+<page>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//canalesac.txt</page>
 <agent></agent>
 </regex>
    
-<thumbnail>http://blackghost.live/gray/img/acestreams.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/acestreams.png</thumbnail>
 </item>
 	
 	
@@ -292,7 +292,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <listrepeat><![CDATA[
 <title>[makelist.param2]  $doregex[wstream]</title>
 <link>plugin://program.plexus/?url=$doregex[wstream]&amp;mode=1&amp;name=BlackGhost+Arenavision</link>
-<thumbnail>http://blackghost.live/gray/img/acestreams.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/acestreams.png</thumbnail>
 ]]></listrepeat>
 <expres><![CDATA[leaf".*?href="(\/.*?)">(Ar.*?)<]]></expres>
 <page>https://arenavision.in/</page>
@@ -324,7 +324,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
    
-<thumbnail>http://blackghost.live/gray/img/acestreams.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/acestreams.png</thumbnail>
 </item>
 	
 
@@ -337,7 +337,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <listrepeat><![CDATA[
 <title>[COLOR white][makelist.param1] [B][makelist.param2][/B][/COLOR]  [COLOR blue]Opcion[B][makelist.param3][/B] Idioma:[B][makelist.param4][/B]  [/COLOR] </title>
 <link>plugin://program.plexus/?url=$doregex[hash]&amp;mode=1&amp;name=BlackGhost+[makelist.param3]+Arenavision</link>
-<thumbnail>http://blackghost.live/gray/img/acestreams.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/acestreams.png</thumbnail>
 ]]></listrepeat>
 <expres><![CDATA[class="t">(.*?)<[\w\W]*?name">(.*?)<[\w\W]*?Arena.*?ision(.*?)<.*?\n.*?td>(.*?)<[\w\W]*?href="(.*?)"]]></expres>
 <page>http://it.rojadirecta.eu/</page>
@@ -351,7 +351,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
  
 
-<thumbnail>http://blackghost.live/gray/img/acestreams.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/acestreams.png</thumbnail>
 </item>
 
 
@@ -374,7 +374,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <listrepeat><![CDATA[
 <title> [COLOR deepskyblue] [B][makelist.param1] [/B][/COLOR]  Views:[COLOR yellow][makelist.param3] [/COLOR] </title>
 <link>$doregex[makelist2]</link>
-<thumbnail>http://blackghost.live/gray/img/acestreams.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/acestreams.png</thumbnail>
 ]]></listrepeat>
 <expres><![CDATA[title="(.*?)"[\W\w]*?href="(.*?)"[\w\W]*?content.*?\n([0-9]+)]]></expres>
 <page>https://acestreamid.com/stat/channels</page>
@@ -385,13 +385,13 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <listrepeat><![CDATA[
 <title> [COLOR deepskyblue] [B][makelist2.param1] [/B][/COLOR] opcion:[makelist2.param2]</title>
 <link>plugin://program.plexus/?url=[makelist2.param2]&amp;mode=1&amp;name=BlackAddon + [makelist.param1]</link>
-<thumbnail>http://blackghost.live/gray/img/acestreams.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/acestreams.png</thumbnail>
 ]]></listrepeat>
 <expres><![CDATA[content"\stitle="(.+?)"[\W\w]*?acestream://(.+?)"]]></expres>
 <page>[makelist.param2]</page>
 </regex>
 
-<thumbnail>http://blackghost.live/gray/img/acestreams.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/acestreams.png</thumbnail>
 </item>
 
 
@@ -405,14 +405,14 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <listrepeat><![CDATA[
 	<title>[B][COLOR white] [makelist.param1]</title>
 	<link>plugin://program.plexus/?url=[makelist.param1]&amp;mode=1&amp;name=BlackAddon+Acestreams</link>
-<thumbnail>http://blackghost.live/gray/img/acestreams.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/acestreams.png</thumbnail>
 ]]></listrepeat>
 <expres><![CDATA["fname":\s"(.*?)\"]]></expres>
 <page>http://91.92.66.82/trash/ttv-list/acelive.json</page>
 <agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:71.0) Gecko/20100101 Firefox/71.0</agent>
 </regex>
 
-<thumbnail>http://blackghost.live/gray/img/acestreams.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/acestreams.png</thumbnail>
 </item>
 <item>
 <title>[B][COLOR white]ALL Fon (a)[/B][/COLOR]</title>

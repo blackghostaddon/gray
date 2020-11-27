@@ -37,7 +37,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page></page>
 <cookieJar></cookieJar>
 </regex>
-<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/torrent.png</thumbnail>
 </item>
   
 <item><!--   todopeliculas -->
@@ -77,7 +77,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page></page>
 <cookieJar></cookieJar>
 </regex>
-<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/torrent.png</thumbnail>
 </item>
  
 <item><!--  ELITETORRENT -->
@@ -121,7 +121,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>    
 
  
-<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/torrent.png</thumbnail>
 </item>
 
 
@@ -178,7 +178,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/torrent.png</thumbnail>
 </item>
 
 
@@ -196,7 +196,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <listrepeat><![CDATA[
   <title>$pyFunction:'[UPPERCASE][B] [makelist2.param2][/B][/UPPERCASE] [I][makelist2.param3][/I]'.replace("-", " ")</title>
 <link>plugin://plugin.video.elementum/play?uri=http://www.mejortorrent.com$doregex[makelist]</link>
-<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/torrent.png</thumbnail>
 
 </regex>
 ]]></listrepeat>
@@ -228,7 +228,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 
 
-<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/torrent.png</thumbnail>
 
 </item-->
 
@@ -273,7 +273,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <expres><![CDATA["file":"(.*?)".*?id":"(.*?)".*?language":"(.*?)".*?quality":"(.*?)".*?torrent_magnet":"(.*?)"]]></expres>
 <page>http://watch.popcorntime-online.ch/cblackghost.html?imdb=[makelist2.param3]</page>
 </regex>     
-<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/torrent.png</thumbnail>
 </item>
 
 
@@ -339,7 +339,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 ]]></expres><page></page>
 </regex>
-<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/torrent.png</thumbnail>
 </item>
 
  
@@ -400,7 +400,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 ]]></expres><page></page>
 </regex>
-<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/torrent.png</thumbnail>
 </item>
 
 
@@ -449,7 +449,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page>[makelist.param1]</page>
 </regex>
 
-<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/torrent.png</thumbnail>
 </item>
 
 <item><!--  ELITE TORRENT  --> 2
@@ -489,7 +489,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page></page>
 </regex>
 
-<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/torrent.png</thumbnail>
 </item>
  
 <itm><!--  GRANTORRENT  OFFFFFF--> 3
@@ -535,7 +535,7 @@ def GetLSProData(page_data, Cookie_Jar,m):
 <expres><![CDATA[alt="(.*?)".*?<td>(.*?)<.*?<td>(.*?)<.*?href="(.*?torrent)"]]></expres>
 <page>[makelist2.param1]</page>
 </regex>
-<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/torrent.png</thumbnail>
 
 </item>
 
@@ -602,7 +602,7 @@ def GetLSProData(page_data, Cookie_Jar,m):
 
 
 
-<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/torrent.png</thumbnail>
 
 </item>
  
@@ -654,7 +654,7 @@ http://www.mejortorrentt.org/uploads/downloads/380848018
 <expres>post\(\'(.*?)\'</expres>
 <page>http://www.mejortorrentt.org/secciones.php?sec=descargas&amp;ap=contar&amp;tabla=peliculas&amp;id=[makelist2.param1]&amp;link_bajar=1</page>
 </regex>
-<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/torrent.png</thumbnail>
 </item>
 
 
@@ -694,7 +694,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page>[makelist.param1]</page>
 </regex>
 
-<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/torrent.png</thumbnail>
 </item>
 
 <item><!--   SUBTORRENT SERIES --> 6
@@ -734,7 +734,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/torrent.png</thumbnail>
 </item>
 
 
@@ -780,7 +780,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/torrent.png</thumbnail>
 </item>
 
 
@@ -847,7 +847,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 ]]></expres>
 <page></page>
 </regex>
-<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/torrent.png</thumbnail>
 </item>
  
  
@@ -885,7 +885,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/torrent.png</thumbnail>
 </item>
 
 
@@ -933,7 +933,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/torrent.png</thumbnail>
 </item>
 
  
@@ -961,7 +961,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <expres><![CDATA[<li>.*?href="(\/torrents.*?)".*?title="(.*?)".*?src="(.*?)"]]></expres>
 <page>https://www.todo-peliculas.net/</page>
 </regex>  
-<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/torrent.png</thumbnail>
 </item>
  
 <item><!--  NEW PELIS   -->
@@ -990,7 +990,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 ]]></expres>
 <page></page>
 </regex>
-<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/torrent.png</thumbnail>
 </item>
  
 <item><!--  MI TORRENT  -->
@@ -1019,7 +1019,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 ]]></expres>
 <page></page>
 </regex>
-<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/torrent.png</thumbnail>
 </item>
  
 <item><!--   TORRENT DE PELICULAS -->
@@ -1148,7 +1148,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page>https://www.torrentazo.com[regex.param1]</page>
 </regex>
 
-<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/torrent.png</thumbnail>
 </item>
  
  
@@ -1292,7 +1292,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <cookieJar></cookieJar>
 </regex>
 
-<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/torrent.png</thumbnail>
 </item>
 
 
@@ -1309,7 +1309,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <listrepeat><![CDATA[
 <title>[makelist.param3]</title>
 <link>plugin://plugin.video.elementum/play?uri=[makelist.param4]</link>
-<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/torrent.png</thumbnail>
 ]]></listrepeat>
 <expres><![CDATA[#$pyFunction
 import re,requests
@@ -1336,7 +1336,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 ]]></expres>
 <page></page>
 </regex>
-<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/torrent.png</thumbnail>
 </item>
 
 <item><!--  LIMETORENT LAT-.CAST  -->
@@ -1347,7 +1347,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <listrepeat><![CDATA[
 <title>$pyFunction:'[makelist.param2]'.replace('-',' ')</title>
 <link>plugin://plugin.video.elementum/play?uri=[makelist.param1]</link>
-<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/torrent.png</thumbnail>
 ]]></listrepeat>
 <expres>href=\"(http://itorrents.org/torrent/.*?torrent)\?title=(.*?)\"</expres>
 <page>$doregex[select]</page>
@@ -1365,7 +1365,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 ]]></expres>
 <page></page>
 </regex>
-<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/torrent.png</thumbnail>
 </item>
 
 
@@ -1395,7 +1395,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <expres><![CDATA["file":"(.*?)".*?id":"(.*?)".*?language":"(.*?)".*?quality":"(.*?)".*?torrent_magnet":"(.*?)"]]></expres>
 <page>http://watch.popcorntime-online.ch/cblackghost.html?imdb=[makelist2.param3]</page>
 </regex>     
-<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/torrent.png</thumbnail>
 </item>
   
  
@@ -1458,14 +1458,14 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page>[makelist2.param1]</page>
 </regex>                                               
 
-<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/torrent.png</thumbnail>
 
 </item>
  
  <item>
 <title>     [COLOR deepskyblue][B]YOURBIT TORRENTS[/B][/COLOR]  Top100   Recientes </title>
 <link>$doregex[makelist]</link>
-<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/torrent.png</thumbnail>
 
 <regex>
 <name>makelist</name>
@@ -1478,7 +1478,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page>https://yourbittorrent.com/movies.html</page>
 <agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36</agent>
 </regex>
-<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/torrent.png</thumbnail>
 
 </item>
 
@@ -1511,7 +1511,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 ]]></expres>
 <page></page>
 </regex>
-<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/torrent.png</thumbnail>
 </item>
 
 <item>
@@ -1551,7 +1551,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page>https://www.ettv.tv[makelist.param2]</page>
 </regex>
 
-<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/torrent.png</thumbnail>
 
 </item>
 
@@ -1595,7 +1595,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <cookieJar></cookieJar>
 </regex>
 
-<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/torrent.png</thumbnail>
 
 </item>
 
@@ -1636,7 +1636,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page>https://www.ettv.tv[makelist.param1]</page>
 </regex>
 
-<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/torrent.png</thumbnail>
 
 </item>
  
@@ -1674,7 +1674,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <cookieJar></cookieJar>
 </regex>
 
-<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/torrent.png</thumbnail>
 
 </item>
 
@@ -1706,7 +1706,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page></page>
 <cookieJar></cookieJar>
 </regex>
-<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/torrent.png</thumbnail>
 
 </item>
 
@@ -1756,7 +1756,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page>[makelist2.param1]</page>
 </regex>                                               
 
-<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/torrent.png</thumbnail>
 
 </item>
  
@@ -1818,7 +1818,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/torrent.png</thumbnail>
 </item>
 
 
@@ -1875,7 +1875,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <referer></referer>
 <cookieJar></cookieJar>
 </regex>
-<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/torrent.png</thumbnail>
 </item>
 
  
@@ -1935,7 +1935,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/torrent.png</thumbnail>
 </item>
 
 <item>
@@ -1984,7 +1984,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <expres><![CDATA[botonx66" href="(.*?\.torrent)".*?">(.*?)<]]></expres>
 <page>https://www.torrentazo.com[regex.param1]</page>
 </regex>
-<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/torrent.png</thumbnail>
 </item>
  
  
@@ -2047,7 +2047,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <listrepeat><![CDATA[
 <title>[makelist.param2] </title>
 <link>plugin://plugin.video.elementum/play?uri=magnet:?xt=urn:btih:[makelist.param1]</link>
-<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/torrent.png</thumbnail>
 ]]></listrepeat>
 <expres><![CDATA[<dt><a\shref=\/(.*?)>(.*?)<.*?video]]></expres>
 <page>https://torrentz2.eu/searchA?f=$doregex[select]&amp;safe=1</page>
@@ -2072,7 +2072,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page>https://torrentz2.eu[makelist.param1]</page>
 </regex>
 
-<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/torrent.png</thumbnail>
 </item>
  
 <item><!--  torrentz2.eu buscador -->
@@ -2084,7 +2084,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <listrepeat><![CDATA[
 <title>[makelist.param2] </title>
 <link>plugin://plugin.video.elementum/play?uri=magnet:?xt=urn:btih:[makelist.param1]</link>
-<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/torrent.png</thumbnail>
 ]]></listrepeat>
 
 <expres><![CDATA[#$pyFunction
@@ -2124,7 +2124,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/torrent.png</thumbnail>
 </item>
 
  
@@ -2166,7 +2166,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/torrent.png</thumbnail>
 </item>
 
 <link>$doregex[makelist]</link>
@@ -2187,7 +2187,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <title>sp op1</title>
 <link>plugin://plugin.video.elementum/play?uri=magnet:?xt=urn:btih:6e9aad08f557194208d32ba2d8dfe3b75cf04b50&dn=Sucker.Punch.2011.EXTENDED.720p.BluRay.H264.AAC-RARBG&tr=http%3A%2F%2Ftracker.trackerfix.com%3A80%2Fannounce&tr=udp%3A%2F%2F9.rarbg.me%3A2730&tr=udp%3A%2F%2F9.rarbg.to%3A2860</link>
 
-<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/torrent.png</thumbnail>
 </item>
 
 
@@ -2195,7 +2195,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <title>sp op2</title>
 <link>plugin://plugin.video.elementum/play?uri=magnet:?xt=urn:btih:13e2b01c311149c71e74bf7cb5df1584b147d59c&dn=Sucker.Punch.2011.EXTENDED.1080p.BluRay.x265-RARBG&tr=http%3A%2F%2Ftracker.trackerfix.com%3A80%2Fannounce&tr=udp%3A%2F%2F9.rarbg.me%3A2830&tr=udp%3A%2F%2F9.rarbg.to%3A2910</link>
 
-<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/torrent.png</thumbnail>
 </item>
 
 
@@ -2205,7 +2205,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <title>sp op3</title>
 <link>plugin://plugin.video.elementum/play?uri=magnet:?xt=urn:btih:16a3a5635266af5ddf2c81623426be0b70921a4d&dn=Sucker.Punch.2011.Extended.Cut.1080p.BluRay.x264-Japhson&tr=http%3A%2F%2Ftracker.trackerfix.com%3A80%2Fannounce&tr=udp%3A%2F%2F9.rarbg.me%3A2750&tr=udp%3A%2F%2F9.rarbg.to%3A2720</link>
 
-<thumbnail>http://blackghost.live/gray/img/torrent.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/torrent.png</thumbnail>
 </item>
 
 

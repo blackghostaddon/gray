@@ -17,7 +17,7 @@
 <listrepeat><![CDATA[
 <title>[makelist2.param2] </title>
 <link>$doregex[getUrl]</link>
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 ]]></listrepeat>
 <expres>-(.*?)="(.*?)"</expres>
 
@@ -73,7 +73,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <referer>https://area51deportiva.com</referer>
 </regex>
 
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 </item>
 
 
@@ -157,7 +157,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <listrepeat><![CDATA[
 <title>[COLOR deepskyblue][B][#BG][/B][/COLOR] [B][COLOR yellow][makelist.param1][/COLOR]  [COLOR white][makelist.param3][/COLOR] [COLOR lightgreen][makelist.param5][/COLOR] [COLOR skyblue][makelist.param2][/COLOR]  [COLOR teal][makelist.param6][/COLOR][/B]</title>
 <link>$doregex[url]</link>
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 ]]></listrepeat>
 <expres><![CDATA[b>(A.*?)<|\#\".*?\n(.*?)\n.*?t">(.*?)<[\w\W]*?href="(.*?)".*?>(.*?)<.*?>(.*?)<]]></expres>
 <page>https://dpelota.com/agenda.php</page>
@@ -210,7 +210,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 
 
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail></item>
 
 <item><!-- MiFut -->
 <title>[COLOR palegreen]●[/COLOR][COLOR lightslategray]●[/COLOR][COLOR lightslategray]●[/COLOR]  [COLOR lightcyan][B]AGENDA [/COLOR][COLOR lightblue]MIFUT[/COLOR][/B]  [COLOR lightslategray] [/COLOR]</title>
@@ -253,8 +253,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page>http://mifut.ligatv.online/[getc.param3].php</page>
 </regex> 
 
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
-<fanart>http://blackghost.live/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/fanart.jpg</fanart>
 </item>
 
 
@@ -270,7 +270,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
     <listrepeat><![CDATA[
     <title>[COLOR pink][makelist.param1][/COLOR][B][makelist.param2] [makelist.param3][/B] [COLOR skyblue][makelist.param5][/COLOR]</title>
     <link>$doregex[getUrl]</link>
-    <thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+    <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
     ]]></listrepeat>
     <expres><![CDATA[tr\>\<th\>(.+?)\<|<tr>\n.*?td>(.*?)<[\w\W]*?\<td>(.*?)<[\w\W]*?href=\"(.*?)\">(.*?)\<]]></expres>
     <page>https://dailysport.space/</page>
@@ -327,7 +327,7 @@ def GetLSProData(page_data, Cookie_Jar,m):
 	<setcookie>challenge=BitMitigate.com</setcookie>
 	<agent>ipad</agent>
   </regex>
-	 <thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+	 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 </item>
 
 
@@ -335,13 +335,13 @@ def GetLSProData(page_data, Cookie_Jar,m):
 <ite><!-- directos -->
 <title>[COLOR lightslategray]●[/COLOR][COLOR lightpink]●[/COLOR][COLOR lightslategray]●[/COLOR]  [COLOR lightcyan][B]AGENDA [/COLOR][COLOR lightblue]DIRECTOS[/COLOR][/B]  [COLOR lightslategray]  [/COLOR]  </title>
 <link>$doregex[makelist1]</link>
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 <regex>
 <name>makelist1</name>
 <listrepeat><![CDATA[
 <title>[COLOR lightcyan][B][makelist1.param1][/COLOR] [COLOR skyblue][[makelist1.param2]][/COLOR] - [COLOR snow][makelist1.param3][/B][/COLOR]</title>
 <link>$doregex[makelist2]</link>
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 ]]></listrepeat>
 <expres><![CDATA[#$pyFunction
 import re, requests, time, datetime, sys
@@ -376,7 +376,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <listrepeat><![CDATA[
 <title>[COLOR skyblue][B][[makelist1.param3]][/COLOR] [COLOR snow][makelist2.param2][/B][/COLOR]</title>
 <link>[makelist2.param1]|Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Mobile Safari/537.36</link>
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 ]]></listrepeat>
 <expres><![CDATA[#$pyFunction
 import re, requests
@@ -407,7 +407,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
     <listrepeat><![CDATA[
     <title>[COLOR pink][makelist.param1][/COLOR][B][makelist.param2] [makelist.param3][/B]           [COLOR skyblue][makelist.param5][/COLOR] </title>
     <link>$doregex[getUrl]</link>
-    <thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+    <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
     ]]></listrepeat>
     <expres><![CDATA[colspan="5".*?center;">(.*?)<|tr>.*?\n.*?<td>(.*?)<.*?\n.*?<td>(.*?)<|\<td.*?href="(.*?)">(.*?)<\/]]></expres>
     <page>https://dailysport.space/</page>
@@ -458,7 +458,7 @@ def GetLSProData(page_data, Cookie_Jar,m):
 	<setcookie>challenge=BitMitigate.com</setcookie>
 	<agent>ipad</agent>
   </regex>
-	 <thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+	 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 </item>
 
 
@@ -472,13 +472,13 @@ def GetLSProData(page_data, Cookie_Jar,m):
 <listrepeat><![CDATA[
 <title>[COLOR skyblue][#BG] VipGoal [/COLOR] [COLOR lightpink][B][makelist.param1][/B][/COLOR]</title>
 <link>[makelist.param2]</link>
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 ]]></listrepeat>
 <expres><![CDATA[name\s\=(.*?)<.*?enlace\s\=\s(.*?)\<]]></expres>
 <page>https://blackghost.live/scr/</page>
 </regex>
 
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail></item>
 
 
 
@@ -491,7 +491,7 @@ def GetLSProData(page_data, Cookie_Jar,m):
 <listrepeat><![CDATA[
 <title>[B][COLOR white]   [makelist.param1] [/COLOR][COLOR deepskyblue]Canal [makelist.param2][/COLOR]    [COLOR lightslategray][I](elGoles)[/I][/COLOR][/B]</title>
 <link>http://blackghost.live/scr/tele.php?id=$doregex[canal]|Referer=https://telerium.live/embed/$doregex[canal].html&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0&origin=https://telerium.live</link>
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 ]]></listrepeat>
 <expres><![CDATA[\'t\'[\w\W]*?href.*?>\s(.*?)<\/[\w\W]*?elgoles\.me\/(.+?)\.php\>\<h4\>\sHTML]]></expres>
 <page>http://elgoles.me/</page>
@@ -507,7 +507,7 @@ def GetLSProData(page_data, Cookie_Jar,m):
 <setcookie>beget=begetok</setcookie>
 </regex>
  
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 </item>
 
 
@@ -521,7 +521,7 @@ def GetLSProData(page_data, Cookie_Jar,m):
 <listrepeat><![CDATA[
 <title>[COLOR deepskyblue][B][#BG][/B][/COLOR][getc.param1]  [COLOR skyblue][B][getc.param4] [/B][/COLOR]</title>
 <link>$doregex[getc2]</link>
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 ]]></listrepeat>
 <expres><![CDATA[class="t">(.*?)<[\w\W]*?left">(.*?)<[\w\W]*?href="(https.*?)"[\w\W]*?blank.*?\s(.*?)<]]></expres>
 <page>https://www.extremotvplay.com/</page>
@@ -534,7 +534,7 @@ def GetLSProData(page_data, Cookie_Jar,m):
 <listrepeat><![CDATA[
 <title>$pyFunction:'[COLOR deepskyblue][B][#BG][/B][/COLOR] [B][getc.param4] [/B] [getc2.param2] [COLOR lightslategray][I](ExtremoTvPlay)[/I][/COLOR]'.replace('canal','Opcion ')</title>
 <link>$doregex[id3]</link>
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 ]]></listrepeat>
 <expres><![CDATA[['|"](http.*?reproductor.*?\/(.*?)\.php)['|"]]]></expres>
 <page>[getc.param3]</page>
@@ -706,7 +706,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 
 
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 </item>
 
 
@@ -720,7 +720,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <listrepeat><![CDATA[
 <title>[COLOR deepskyblue][B][#BG][/B][/COLOR] [getc.param1] [COLOR skyblue][B][getc.param4] [/B][/COLOR]</title>
 <link>$doregex[getc2]</link>
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 ]]></listrepeat>
 <expres><![CDATA[class="t">(.*?)<[\w\W]*?left">(.*?)<[\w\W]*?href="(/.*?)"[\w\W]*?blank.*?\s(.*?)<]]></expres>
 <page>https://www.extremotvplay.com/</page>
@@ -733,7 +733,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <listrepeat><![CDATA[
 <title>$pyFunction:'[COLOR deepskyblue][B][#BG][/B][/COLOR] [B][getc.param4] [/B] [getc2.param2] [COLOR lightslategray][I](CapoDeportes)[/I][/COLOR]'.replace('canal','Opcion ')</title>
 <link>$doregex[id3]</link>
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 ]]></listrepeat>
 <expres><![CDATA[['|"](http.*?reproductor.*?\/(.*?)\.php)['|"]]]></expres>
 <page>https://www.extremotvplay.com[getc.param3]</page>
@@ -879,7 +879,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page>[getc2.param1]</page>
 </regex>
 
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 </item>
 
 
@@ -896,7 +896,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <listrepeat><![CDATA[
   <title>[COLOR orange][makelist3.param1][/COLOR] [COLOR yellow][makelist3.param2][/COLOR][COLOR skyblue][B][makelist3.param3][/B][/COLOR]        [I][makelist3.param5][/I] [COLOR lightslategray][I](eventlive)[/I][/COLOR]</title>
 <link>$doregex[getUrl]</link>
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 ]]></listrepeat>
 <expres><![CDATA[<h1.*?strong>(.*?)<|h2>.*?">(.*?)<|br\s*\/>(.*?)<|href="(.*?)".*?ff0000.*?>(.*?)<]]></expres>
 <page>https://daddylive.live/</page>
@@ -920,7 +920,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page>[makelist3.param4]</page>
 </regex>
 
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 </item>
 
 <item>  <!-- elixx-->
@@ -932,7 +932,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <listrepeat><![CDATA[
   <title>[COLOR orange][makelist3.param1][/COLOR] [COLOR lightblue][makelist3.param2][/COLOR]    [COLOR skyblue][B][makelist3.param4][/B][/COLOR]        [COLOR lightslategray][I](elixx)[/I][/COLOR]</title>
 <link>$doregex[getUrl]</link>
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 ]]></listrepeat>
 <expres><![CDATA[<h2.*?>(.+?)<|accordion">(.+?)<|href="(.+?)".*?\"\>(.+?)\<]]></expres>
 <page>http://elixx.me/schedule.html</page>
@@ -968,7 +968,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 
 
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 </item>
   
 <item><!-- PREMIERSPORT -->
@@ -980,7 +980,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <listrepeat><![CDATA[
   <title>[B][COLOR yellow][makelist3.param2][/B] [/COLOR]    [B][makelist3.param3][/B]  </title>
 <link>$doregex[getUrl]</link>
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 ]]></listrepeat>
 <expres><![CDATA[#$pyFunction
 def GetLSProData(page_data, Cookie_Jar,m):
@@ -1047,7 +1047,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <referer>https://freeservice.info/</referer>
 </regex>
 
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 </item>
 
 <item> <!-- SPORTZONE -->
@@ -1060,7 +1060,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
   <SetViewMode>550</SetViewMode>
   <title>[COLOR deepskyblue][#BG][/COLOR] [COLOR lightgreen][makelist.param1][/COLOR] [COLOR skyblue][B][makelist.param2][/B][/COLOR]   [COLOR lightslategray][I](sportzonline)[/I][/COLOR]</title>
   <link>$doregex[geturl]|Referer=http$doregex[canal]&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0&amp;Referer=https://sportzonline.to/</link>
-  <thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+  <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 ]]></listrepeat>
 <expres>(\d\d:\d\d)\s+(.+?)\|\s+https(.+?)\.php</expres>
 <page>http://sportzonline.to/prog.txt</page>
@@ -1084,7 +1084,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 
 
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail></item>
 
 <item><!-- streamhd247 -->
 <title>[COLOR palegreen]●[/COLOR][COLOR lightslategray]●[/COLOR][COLOR lightblue]●[/COLOR]  [COLOR lightcyan][B]AGENDA [/COLOR][COLOR lightblue]STREAMHD 247[/COLOR][/B]  [COLOR lightslategray]  [/COLOR] </title>
@@ -1098,7 +1098,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <listrepeat><![CDATA[
 <title>[getc.param3] [B][getc.param1][/B] [[getc.param2]]  [COLOR lightblue][getc.param4][/COLOR]  </title>
 <link>$doregex[fs]</link>
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 ]]></listrepeat>
 <expres><![CDATA[text-center h5.*?strong>(.*?)<[\w\W]*?<strong>(.*?)<[\w\W]*?<strong>(.*?)<[\w\W]*?<strong>(.*?)<[\w\W]*?href="(.*?)"]]></expres>
 <page>https://streamhd247.live/index.html</page>
@@ -1132,7 +1132,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 
 
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 </item>
 
 <item><!-- buff -->
@@ -1145,7 +1145,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <listrepeat><![CDATA[
   <title>[COLOR white] [makelist2.param1] [/COLOR] [COLOR yellow][makelist2.param2][/COLOR] [makelist2.param3]</title>
   <link>$doregex[getUrl]</link>
-   <thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+   <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 ]]></listrepeat>
 <expres><![CDATA[2020\s(\(.*?)\(|CH([0-9]+)(.*?)\)]]></expres>
 <page>https://buffstream.cc/</page>
@@ -1169,7 +1169,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
- <thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+ <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 
 </item>
 
@@ -1185,7 +1185,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <listrepeat><![CDATA[
   <title>[COLOR yellow] [makelist2.param1] [COLOR lime][makelist2.param2] [COLOR white][makelist2.param3] [makelist2.param4] [makelist2.param5][/COLOR]     [B][makelist2.param6][makelist2.param7][/B]</title>
   <link>$doregex[getUrl]</link>
-   <thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+   <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 ]]></listrepeat>
 <expres><![CDATA["_blank">(.*?)</a>(.*?)</|([0-9]+)\s(Oct)\s(.*?)\n|textarea\sname=\"(.*?)\"[\w\W]*?update\/(.+?)\.ht]]></expres>
 <page>https://blackghost.live/scr/agendaallcast.php</page>
@@ -1208,7 +1208,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page>http://www.sportsworldnet.eu/update/[makelist2.param7].html</page>
 </regex>
 
- <thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+ <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 
 </item>
 
@@ -1221,7 +1221,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <listrepeat><![CDATA[
 <title>[COLOR gold][B][makelist.param2][/B][/COLOR]</title>
 <link>$doregex[makelist1]</link>
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 ]]></listrepeat>
 <expres><![CDATA[<li><a href="(.*?)">(.*?)<.*]]></expres>
 <page>http://crackstreams.com/</page>
@@ -1269,7 +1269,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <setcookie>challenge=BitMitigate.com</setcookie>
 </regex>
 
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 </item>
 
 <item><!-- nowlive-->
@@ -1283,7 +1283,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
   
   <title>$pyFunction:'[COLOR lime][B][makelist3.param1][/B][/COLOR]  [COLOR lightyellow][makelist3.param2][/COLOR][COLOR yellow]    [B]  [makelist3.param4][/B][/COLOR]          [COLOR lightslategray][I](nowlive)[/I][/COLOR]'.replace('/p','[COLOR gray]----------------------[/COLOR]')</title>
    <link>$doregex[ws]</link>
-   <thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+   <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 ]]></listrepeat>
 <expres><![CDATA[red">(.+?)<|gold">(.+?)<|href="(.*?)".*?blank">(.*?)<]]></expres>
 <page>http://nowlive.pro/</page>
@@ -1305,7 +1305,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page>http://nowlive.pro[makelist3.param3]</page>
 </regex>
 
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 </item>
 
 <item><!-- SPORTZONE SPORTBAY-->
@@ -1317,7 +1317,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <listrepeat><![CDATA[
    <title>[COLOR deepskyblue][#BG][/COLOR] [COLOR white][makelist1.param1] [/COLOR]   </title>
 <link>$doregex[makelist]</link>
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 ]]></listrepeat>
 <expres>-(.*?)=(.*?)"</expres>
 <page>
@@ -1346,7 +1346,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <listrepeat><![CDATA[
    <title>[COLOR deepskyblue][#BG][/COLOR] [COLOR blue][makelist1.param1] [/COLOR] [COLOR lightblue][makelist.param1]   [/COLOR]   [COLOR lightslategray][I](sportbay)[/I][/COLOR]</title>
 <link>$doregex[id3]</link>
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 ]]></listrepeat>
 <expres>class="play".*?Watch\s*(.*?)".*?watch\/(.*?)\/</expres>
 <page>https://sportsbay.org/[makelist1.param2]</page>
@@ -1409,7 +1409,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</agent>
 </regex>
 
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 </item>
 
 <item><!-- CRIcFREE LIGAS-->
@@ -1461,7 +1461,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 
 
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 </item>
 
 <item><!-- CRIFREE-->
@@ -1474,7 +1474,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <listrepeat><![CDATA[
 <title>[COLOR yellow][makelist2.param1][/COLOR][COLOR lightpink][makelist2.param2][/COLOR] [COLOR palegreen][makelist2.param3][/COLOR] [COLOR pink][UPPERCASE][makelist2.param4][/UPPERCASE] - [UPPERCASE][makelist2.param5][/COLOR][/UPPERCASE]    [COLOR lightslategray][I](cricfree)[/I][/COLOR]</title>
 <link>$doregex[getUrl]</link>
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 ]]></listrepeat>
 <expres><![CDATA[h2\sclass="titile_icon">(.*?)<|td\swidth="60">(.*?)<[\w\W]*?title="(.*?)"[\w\W]*?href[\w\W]*?>(.*?)<[\w\W]*?href[\w\W]*?>(.*?)<[\w\W]*?watch_btn"[\w\W]*?href="(.*?)"]]></expres>
 <page>https://cricfree.stream/home</page>
@@ -1502,7 +1502,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 
 
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 </item>
   
   
@@ -1538,7 +1538,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 ]]></expres>
 <page>[makelist.param4]</page>
 </regex>
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 </item>
  
 <item>
@@ -1578,7 +1578,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page>[makelist.param5]</page>
 </regex>
 
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 </item>
 
  <item><!-- streamonsport-->
@@ -1591,7 +1591,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <listrepeat><![CDATA[
 <title>[makelist2.param2]</title>
 <link>$doregex[makelist]</link>
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 ]]></listrepeat>
 <expres><![CDATA[li\sclass=\".*?href="(.*?)">(.*?)<]]></expres>
 <page>https://www.streamonsport.net/</page>
@@ -1604,7 +1604,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <listrepeat><![CDATA[
 <title>[B][BG]  [makelist.param2][/B] [COLOR lightslategray][I](streamonsport)[/I][/COLOR]</title>
 <link>$doregex[id3]</link>
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 ]]></listrepeat>
 <expres><![CDATA[game-name".*?href="(.*?)".*?span>(.*?)<]]></expres>
 <page>[makelist2.param1]</page>
@@ -1653,7 +1653,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page>[makelist.param1]</page>
 </regex>
 
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail></item>([0-9]+)
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail></item>([0-9]+)
  
 <item><!-- nbastream-->
 <title>[COLOR lightslategray]●[/COLOR][COLOR lightslategray]●[/COLOR][COLOR deepskyblue]●[/COLOR]  [COLOR lightcyan][B]AGENDA [/COLOR][COLOR lightblue]NBA STREAMS[/COLOR][/B]  [COLOR lightslategray]   [/COLOR] </title>
@@ -1664,7 +1664,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <listrepeat><![CDATA[
 <title>[#BG] [makelist.param3]  [makelist.param2]  [COLOR lightslategray][I](nbastreams)[/I][/COLOR]</title>
 <link>$doregex[getdecode]|Referer=http://crackstreams.ga/nba/espn/1.php&amp;User-Agent=ipad</link>
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 ]]></listrepeat>
 <expres><![CDATA[\n<a\s*href='(.*?)'[\W\w]*?media-heading'>(.*?)<[\w\W]*?-(.*?)<]]></expres>
 <page>http://nbastreams.xyz/schedule/</page>
@@ -1689,7 +1689,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <expres>iframe.*?src="(.+?)"</expres>
 <page>[makelist.param1]</page>
 </regex>
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 </item>
 
 <item><!-- nbastream-->
@@ -1718,7 +1718,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 ]]></expres>
 <page>[makelist2.param1]</page>
 </regex>
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 </item>
 
 
@@ -1737,7 +1737,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <listrepeat><![CDATA[
   <title>[#BG] [COLOR white][makelist.param2] [COLOR skyblue][makelist.param1][/COLOR] [COLOR lightslategray][I](yourstream)[/I][/COLOR]</title>
   <inputstream>$doregex[getUrl]</inputstream>
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 ]]></listrepeat>
 <expres><![CDATA[#$pyFunction
 import re,requests
@@ -1761,7 +1761,7 @@ def GetLSProData(page_data, Cookie_Jar,m):
 <referer>http://yoursports.stream</referer>
 </regex>
 
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 </item>
  
 
@@ -1780,7 +1780,7 @@ def GetLSProData(page_data, Cookie_Jar,m):
 <title>[COLOR deepskyblue][B][#BG][/B][/COLOR] [B] [makelist.param1]     [COLOR slategrey][I] Canales Deportivos Sur[/COLOR][/I][/B]</title>
 <link>$doregex[url]</link>
 
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 ]]></listrepeat>
 <expres>-(.*?)=(.*?)"</expres>
 <page>
@@ -1823,7 +1823,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <expres>\'\>id\=\'(.*?)\'</expres>
 <page>https://dpelota.com/[makelist.param2].php</page>
 </regex>
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail></item>
 
 <itm><!-- adictostv -->
 <title> [COLOR skyblue]●[/COLOR]    [COLOR palegreen][B]ADICTOTV LATINOS[/B]  [/COLOR] [COLOR lightslategray] [/COLOR]</title>
@@ -1836,7 +1836,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <title>$pyFunction:'[list0.param2]'.replace('-',' ').replace('vivo','').replace('online','').replace('en',' ').replace('gratis',' ')</title>
 <link>$doregex[getUrl]</link>
 <thumbnail>https://adictosalatele.com[list0.param3]</thumbnail>
-<fanart>http://blackghost.live/gray/img/fanart.jpg</fanart>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/fanart.jpg</fanart>
 ]]></listrepeat>
 <expres>td>.*?\n.*?href="(\/\/.*?\/(.*?)\/)\".*?src="(.*?)"</expres>
 <page>https://adictosalatele.com/canales-latinos/</page>
@@ -1864,8 +1864,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page>http:[list0.param1]</page>
 </regex>
 
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
-<fanart>http://blackghost.live/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/fanart.jpg</fanart>
 </item>
 
 <itm> <!--freetv-->
@@ -1876,7 +1876,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <listrepeat><![CDATA[
 <title>[COLOR lightgreen][B][#BG] FreeLive:[/B][/COLOR]  [makelist.param1]</title>
 <link>$doregex[uno]$doregex[dos]|Referer=https://byetv.xyz&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36&amp;Origin=https://byetv.xyz</link>
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 ]]></listrepeat>
 <expres>-(.*?)=(.*?)"</expres>
 <page>-tnt Sport=67
@@ -1935,7 +1935,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 
 
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail></item>
 
 <item> <!--Zonasport-->
 <title> [COLOR skyblue]●[/COLOR]    [COLOR palegreen][B]ZONASPORT[/B]  [/COLOR] [COLOR lightslategray] [/COLOR]</title>
@@ -1948,7 +1948,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <listrepeat><![CDATA[
 <title>[COLOR deepskyblue][B][#BG][/B][/COLOR] Zonasport  [B][makelist.param1] [/B]</title>
 <link>$doregex[id3]</link>
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 ]]></listrepeat>
 <expres>-(.*?)=(.*?)"</expres>
 <page>
@@ -2141,7 +2141,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 
 
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail></item>
 
 <item><!-- CHIVAS69-->
 <title> [COLOR skyblue]●[/COLOR]    [COLOR palegreen][B]CHIVAS69[/B]  [/COLOR] [COLOR lightslategray] [/COLOR]</title>
@@ -2152,7 +2152,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <listrepeat><![CDATA[
 <title>[COLOR lightgreen][B][#BG] CHIVAS69[/B][/COLOR]  [makelist.param1]</title>
 <link>$doregex[geturl]|Referer=$doregex[canal]&amp;User-Agent=ipad&amp;Referer=http://anahix11.com/</link>
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 ]]></listrepeat>
 <expres>-(.*?)=(.*?)"</expres>
 <page>-Telemundo =http://anahix11.com/chivas3.php"-Univision=http://anahix11.com/univi.php"-Unimas=https://www.chivass69.com/unimas/"-nbc universo=http://anahix11.com/nbcuniverse.php"-TUDN=http://www.chivass69.com/deportes/"</page>
@@ -2177,7 +2177,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 		<referer>https://www.chivass69.com/</referer>
     </regex>
 			
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail></item>
 
 <item><!-- MiFut -->
 <title> [COLOR skyblue]●[/COLOR]    [COLOR palegreen][B]TELEVALL[/B]  [/COLOR] [COLOR lightslategray] [/COLOR]</title>
@@ -2224,8 +2224,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page>[getc.param1]</page>
 </regex> 
 
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
-<fanart>http://blackghost.live/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/fanart.jpg</fanart>
 </item>
 
 <item><!-- MiFut -->
@@ -2273,8 +2273,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page>[getc.param1]</page>
 </regex> 
 
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
-<fanart>http://blackghost.live/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/fanart.jpg</fanart>
 </item>
 
 <ite><!-- FutVALL -->
@@ -2353,8 +2353,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
-<fanart>http://blackghost.live/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/fanart.jpg</fanart>
 </item>
  
 <item>
@@ -2367,7 +2367,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <listrepeat><![CDATA[
 <title>[B][#BG][COLOR skyblue] [UPPERCASE]RIVOSPORTS [makelist.param1][/UPPERCASE][/B][/COLOR]</title>
 <link>$doregex[id3]</link>
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 ]]></listrepeat>
 <expres>-(.+?)=(.+?)"(.+?):</expres>
 <page>
@@ -2436,7 +2436,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page>[makelist.param2]</page>
 </regex>
 
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 </item>
 
 <item><!-- andres-->
@@ -2450,7 +2450,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <listrepeat><![CDATA[
 <title>$pyFunction:'[#BG] [B]FutbolAndres[/B][COLOR palegreen] Canal [makelist.param2][/COLOR]'.replace('-',' ')</title>
 <link>$doregex[id3]</link>
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 ]]></listrepeat>
 <expres><![CDATA[href=\"(http.*?la\/p\/(net.*?|len.*?|dup.*?)\..*?)\"]]></expres>
 <page>http://www.rojadirecta.me/</page>
@@ -2532,7 +2532,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page>[makelist.param1]</page>
 </regex>
 
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 
 </item>
 
@@ -2546,7 +2546,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <listrepeat><![CDATA[
 <title>[getc.param2]</title>
 <link>$doregex[wstream]</link>
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 ]]></listrepeat>
 <expres><![CDATA[<li><a href="c(.*?)\.p.*?Player">(.*?)<]]></expres>
 <page>https://datv.live/</page>
@@ -2597,7 +2597,7 @@ Canal-6="https://datv.live/afixo.php?file=c61"
 Canal-7="https://datv.live/afixo.php?file=c7"</page>
 </regex>
 
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 </item>
 
 
@@ -2650,7 +2650,7 @@ Canal-7="https://datv.live/afixo.php?file=c7"</page>
 <cookieJar>d2732eaef183a775c4293a179eee06a4d1507131962</cookieJar>
 </regex>
 
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 
 </item>
 
@@ -2663,7 +2663,7 @@ Canal-7="https://datv.live/afixo.php?file=c7"</page>
 <listrepeat><![CDATA[
 <title> [COLOR lightpink][B]ZONADEPORTIVA[/B]  [/COLOR] [makelist2.param2] - [makelist2.param3]</title>
 <link>$doregex[wstream]</link>
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 ]]></listrepeat>
 <expres><![CDATA[=live(.*?)\'[\w\W]*?td>(.*?)<[\w\W]*?th>(.*?)<]]></expres>
 <page>https://area51deportiva.com/channel.php</page>
@@ -2689,7 +2689,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
  
  
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 </item>
  
  
@@ -2705,7 +2705,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <listrepeat><![CDATA[
 <title>[COLOR lightgreen][B][#BG] DailySport[/COLOR]  [getc.param1][/B]  [I]  [/I]</title>
 <link>$doregex[getUrl]</link>
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 ]]></listrepeat>
 <expres>'(.*?)'</expres>
 <page>'1','2','3','4','5','6','7','8','9','10','11','12','13','14'</page>
@@ -2726,7 +2726,7 @@ def GetLSProData(page_data, Cookie_Jar,m):
 
 
 
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 </item>
 
 
@@ -2741,7 +2741,7 @@ def GetLSProData(page_data, Cookie_Jar,m):
 <listrepeat><![CDATA[
    <title>[COLOR lightgreen][B][#BG] ElGoles [/B][/COLOR]- [COLOR lightblue][makelist.param1]  [makelist.param2]    [/COLOR]   </title>
  <link>$doregex[url2]</link>
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 ]]></listrepeat>
 <expres>=(.*?)-(.*?)"</expres>
 <page>
@@ -2884,7 +2884,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
  
 
 
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 </item>
 
 <item> <!--Tikitaka  canales-->
@@ -2897,7 +2897,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <listrepeat><![CDATA[
 <title>[COLOR lightpink][B][BG][/B]  TIKITAKA [B][getc.param1] [/B][/COLOR]  </title>
 <link>$doregex[id3]</link>
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 ]]></listrepeat>
 <expres>-(.*?)="(.*?)"</expres>
 <page>
@@ -3000,7 +3000,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 </item>
 
 
@@ -3014,7 +3014,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <listrepeat><![CDATA[
 <title>[COLOR lightpink][B][BG][/B]  TIKITAKA [B][getc.param1] [/B][/COLOR]  </title>
 <inputstream>$doregex[mpd]</inputstream>
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 ]]></listrepeat>
 <expres>-(.*?)="(.*?)"</expres>
 <page>
@@ -3055,7 +3055,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <listrepeat><![CDATA[
 <title>[COLOR lightgreen][#BG] RevoTV [/COLOR]- [makelist.param1]</title>
 <link>$doregex[id3]</link>
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 ]]></listrepeat>
 <expres>-(.*?)=(.*?)"</expres>
 <page>
@@ -3175,7 +3175,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 </item>
 
 <ite> <!--adicto - $doregex[emitiendo] -->
@@ -3186,7 +3186,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <listrepeat><![CDATA[
 <title>[COLOR lightgreen][#BG] AdictoTV [/COLOR] [B][makelist.param1][/B]  </title>
 <link>$doregex[geturl]|Referer=$doregex[canal]&amp;User-Agent=ipad&amp;Referer=https://adictosalatele.com/&amp;Origin=https://streamcdn.to/</link>
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 ]]></listrepeat>
 <expres>-(.*?)=(.*?)"(.*?):</expres>
 <page>
@@ -3246,7 +3246,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <expres><![CDATA[(?s)[makelist.param3].*?ahora">\n\s\s\s(.*?)\n]]></expres>
 <page>http://www.formulatv.com/programacion/movistarplus/</page>
 </regex>
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 </item>
 
 
@@ -3340,7 +3340,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <expres><![CDATA[(?s)[list.param3].*?ahora">\n\s\s\s(.*?)\n]]></expres>
 <page>http://www.formulatv.com/programacion/movistarplus/</page>
 </regex>
-<thumbnail>http://blackghost.live/gray/img/esp.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/esp.png</thumbnail></item>
 
 
 
@@ -3355,7 +3355,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <listrepeat><![CDATA[
 <title>[COLOR lightgreen][B] VerGoles [/B][/COLOR]  [B][list.param2][/B]</title>
 <link>https:$doregex[get-id]|Referer=https://vergol.com/&amp;User-Agent=Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/48.0.2564.116 Chrome/48.0.2564.116 Safari/537.36</link>
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 
 <regex>
 <name>get-id</name>
@@ -3381,7 +3381,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 -live1/vamos=Vamos"
 -live1/plusdeportes=Movistar Plus Deportes"-live1/eurosport=Europort"-live1/eurosport2=Europort 2"-live1/teledeporte=Teledeporte"-live1/goltv=Gol TV"-live1/golf=Golf"-live1/toros=Toros TV"-live1/vtv=VTV Uruguay"-live1/tycsports=TyC Sports Argentina"-live1/telemundo=Telemundo Latino"-live1/barca=Barca TV"-live1/madridtv=Real Madrid TV"-live1/azteca7=Azteca 7 Mexico"-live1/foxaction=Fox Action Latino"</page>
 </regex>
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 </item>
 
 
@@ -3401,7 +3401,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <listrepeat><![CDATA[
 <title>[COLOR paleturquoise][B][#BG][/B][/COLOR] Opciones [UPPERCASE][makelist.param1][/UPPERCASE]</title>
 <link>$doregex[list]</link>
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 ]]></listrepeat>
 <expres>'(.*?)'</expres>
 <page>'espn','fox','nba','nfl','nhl','mlb','sport'</page>
@@ -3442,7 +3442,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 
 
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 </item>
 
 <item>
@@ -3453,7 +3453,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <listrepeat><![CDATA[
 <title>[COLOR paleturquoise][BG] [B][getc.param1][/B][/COLOR]</title>
  <link>$doregex[geturl]|Referer=https:$doregex[canal]&amp;User-Agent=ipad&amp;Referer=https://sportzonline.to/channels/hd/hd6.php</link>
- <thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+ <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 ]]></listrepeat>
 <expres>-(.*?)=(.*?)"</expres>
 <page>
@@ -3491,7 +3491,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
         <expres>iframe src="(.*?)"</expres>
         <page>[getc.param2]</page>
     </regex>
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail></item>
  
 <item>
 <title> [COLOR skyblue]●[/COLOR]    [COLOR paleturquoise][B]NOWGOAL[/B]  [/COLOR] [COLOR lightslategray] [/COLOR]</title>
@@ -3501,7 +3501,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <listrepeat><![CDATA[
 <title>[COLOR paleturquoise][NOWGOAL][COLOR white]  Channel [getc.param1][/COLOR][/COLOR]</title>
  <link>$doregex[geturl]|Referer=$doregex[canal]&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0&amp;Referer=https://nowagoal.xyz/</link>
- <thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+ <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 ]]></listrepeat>
 <expres>'(.*?)'</expres>
 <page>'1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','1','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40'</page>
@@ -3524,7 +3524,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
         <expres>iframe\s*src="(.*?)"</expres>
         <page>https://nowagoal.xyz/embed/ch[getc.param1].php</page>
     </regex>
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail></item>
 
 
 <item>
@@ -3562,7 +3562,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 ]]></expres>
 <page>[makelist.param1]</page>
 </regex>
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 </item>
 
 
@@ -3577,7 +3577,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <listrepeat><![CDATA[
 <title>[COLOR dpaleturquoise][B][#BG] [USA] [/COLOR] [makelist.param1] [/B]  </title>
 <link>$doregex[get]|Referer=https://live-tennis.stream/stream/45459.html&amp;User-Agent=ipad</link>
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 ]]></listrepeat>
 <expres><![CDATA[-(.*?)=(.*?)"]]></expres>
 <page>-Fox Sports 1=stream/45459"
@@ -3596,7 +3596,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page>https://live-tennis.stream/[makelist.param2].html</page>
 </regex>
 
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 </item>
  
 <item><!-- Sportsbay -->
@@ -3608,7 +3608,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <listrepeat><![CDATA[
 <title>[COLOR skyblue][B][getc.param1] [/B][/COLOR]</title>
 <link>$doregex[getc2]</link>
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 ]]></listrepeat>
 <expres><![CDATA[class="url summary" title="(.*?)" href="(.*?)"]]></expres>
 <page>https://sportsbay.org/sports/tv-channels</page>
@@ -3623,7 +3623,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <listrepeat><![CDATA[
 <title>$pyFunction:'[getc.param1] [COLOR lightslategray][I][getc2.param1][/I][/COLOR]'.replace('https://box-live.','').replace('stream','').replace('.html','')</title>
 <link>$doregex[id3]</link>
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 ]]></listrepeat>
 <expres><![CDATA['(http.*?stream\/stream.*?)']]></expres>
 <page>https://sportsbay.org[getc.param2]</page>
@@ -3677,7 +3677,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 
 
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 </item>
 
 <item><!-- YOURstream-->
@@ -3690,7 +3690,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <listrepeat><![CDATA[
   <title>[#BG] [COLOR white][makelist.param1] [COLOR skyblue][makelist.param2][/COLOR]</title>
   <inputstream>$doregex[getUrl]</inputstream>
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 ]]></listrepeat>
 <expres><![CDATA[#$pyFunction
 import re,requests
@@ -3717,7 +3717,7 @@ def GetLSProData(page_data, Cookie_Jar,m):
 <referer>http://yoursports.stream</referer>
 </regex>
 
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 </item>
 
  
@@ -3735,15 +3735,15 @@ def GetLSProData(page_data, Cookie_Jar,m):
 
 <item>
 <title>[COLOR palegreen]VipRacing [B]LMP beisbol Mexico[/B][/COLOR]  </title>
-<link>http://blackghost.live/gray/th.php?channel=ivanconvblogs</link>
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<link>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/th.php?channel=ivanconvblogs</link>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 </item>
   
   
 <item>
 <title>[COLOR palegreen]VipRacing [B]Telemundo (2) [/B][/COLOR]  </title>
 <link>https://wmaqlive-f.akamaihd.net/i/wmaqb1_1@24420/master.m3u8</link>
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 </item>
   
 <item>
@@ -3775,7 +3775,7 @@ def GetLSProData(page_data, Cookie_Jar,m):
 		<agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0</agent>
 		<referer>https://www.chivass69.com/deportes/</referer>
     </regex>
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 </item>
 
 
@@ -3787,7 +3787,7 @@ def GetLSProData(page_data, Cookie_Jar,m):
 <expres>source: '(.*?)'</expres>
 <page>https://live-tennis.stream/stream/71834.html</page>
 </regex>
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 </item>
 
 <item>
@@ -3798,7 +3798,7 @@ def GetLSProData(page_data, Cookie_Jar,m):
 <expres>source: '(.*?)'</expres>
 <page>https://live-tennis.stream/stream/72520.html</page>
 </regex>
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 </item>
 
 
@@ -3810,7 +3810,7 @@ def GetLSProData(page_data, Cookie_Jar,m):
 <expres>source: '(.*?)'</expres>
 <page>https://live-tennis.stream/stream/72521.html</page>
 </regex>
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 </item>
 
 
@@ -3822,7 +3822,7 @@ def GetLSProData(page_data, Cookie_Jar,m):
 <expres>source: '(.*?)'</expres>
 <page>https://live-tennis.stream/stream/69461.html</page>
 </regex>
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 </item>
 
 
@@ -3834,7 +3834,7 @@ def GetLSProData(page_data, Cookie_Jar,m):
 <expres>source: '(.*?)'</expres>
 <page>https://live-tennis.stream/stream/69549.html</page>
 </regex>
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 </item>
 
 
@@ -3856,7 +3856,7 @@ def GetLSProData(page_data, Cookie_Jar,m):
 <page>https://live-golf.stream/stream/45529.html</page>
 <referer>https://sportsbay.org/sports/tv-channels</referer>
 </regex>
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 </item>
 
 
@@ -3871,7 +3871,7 @@ def GetLSProData(page_data, Cookie_Jar,m):
 <page>https://live-golf.stream/stream/69177.html</page>
 <referer>https://sportsbay.org/sports/tv-channels</referer>
 </regex>
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 </item>
 
 
@@ -3883,7 +3883,7 @@ def GetLSProData(page_data, Cookie_Jar,m):
 <expres>source: '(.*?)'</expres>
 <page>https://live-golf.stream/stream/69175.html</page>
 </regex>
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 </item>
   
   
@@ -3897,7 +3897,7 @@ def GetLSProData(page_data, Cookie_Jar,m):
 <page>https://live-golf.stream/stream/69176.html</page>
 <referer>https://sportsbay.org/sports/tv-channels</referer>
 </regex>
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 </item>
 
  
@@ -3925,7 +3925,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 ]]></expres>
 <page></page>
 </regex>
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 </item> 
   
    
@@ -3952,7 +3952,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 ]]></expres>
 <page></page>
 </regex>
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 </item!---> 
 
 
@@ -3982,7 +3982,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 ]]></expres>
 <page></page>
 </regex>
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 </item> 
 
 
@@ -4017,7 +4017,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 </item>
 
 <item>
@@ -4028,7 +4028,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <expres>source: '(.*?)'</expres>
 <page>https://sportsbay.org/stream/1/54014.html</page>
 </regex>
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 </item>
 
 <item>
@@ -4039,7 +4039,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <expres>source: '(.*?)'</expres>
 <page>https://sportsbay.org/stream/1/54015.html</page>
 </regex>
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 </item>
  
  <itm> <!--09 sl-->
@@ -4071,7 +4071,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
         <expres><![CDATA[channel=(.*?)\&]]></expres>
         <page>http://vipracing.live/channel/espndeportes</page>
     </regex>
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 </item>
  
 
@@ -4114,7 +4114,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 
 
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 </item>
 	
  <itm>
@@ -4149,7 +4149,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 
 
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 </item>
 
 
@@ -4205,7 +4205,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
         <expres>iframe src="(.*?)"</expres>
         <page>http://sportzonline.to/channels/hd/hd6.php</page>
     </regex>
-	 <thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+	 <thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 </item>
   
 
@@ -4230,7 +4230,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page>https://area51deportiva.com/embed.php?id=live17</page>
 <referer>https://area51deportiva.com</referer>
 </regex>
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail></item>
 	
 
 
@@ -4251,7 +4251,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page>https://area51deportiva.com/embed.php?id=live18</page>
 <referer>https://area51deportiva.com</referer>
 </regex>
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail></item>
 	
 
 <item> <!--areadeportiva-->
@@ -4271,7 +4271,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page>https://area51deportiva.com/embed.php?id=live19</page>
 <referer>https://area51deportiva.com</referer>
 </regex>
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail></item>
 		
 	
 
@@ -4292,7 +4292,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page>https://area51deportiva.com/embed.php?id=live21</page>
 <referer>https://area51deportiva.com</referer>
 </regex>
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail></item>
 		
 	
 
@@ -4313,7 +4313,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page>https://area51deportiva.com/embed.php?id=live3</page>
 <referer>https://area51deportiva.com</referer>
 </regex>
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail></item>
 
 
 
@@ -4342,7 +4342,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	
 	
 	
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 </item>
 
 	
@@ -4373,7 +4373,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	
 	
 	
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 </item>
 
 
@@ -4399,7 +4399,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 ]]></expres>
 <page>http://pcast.pw/live/canalf1.php</page>
 </regex>	
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 </item>
 
 <itm>
@@ -4421,7 +4421,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 ]]></expres>
 <page>http://pcast.pw/live/skysport1de.php</page>
 </regex>	
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 </item>
 
 <itm>
@@ -4443,7 +4443,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 ]]></expres>
 <page>http://pcast.pw/live/skyf1.php</page>
 </regex>	
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 </item>
 
 	
@@ -4466,7 +4466,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 ]]></expres>
 <page>http://pcast.pw/live/plusdep1.php</page>
 </regex>	
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 </item>
 
 
@@ -4552,7 +4552,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <listrepeat><![CDATA[
 <title> Pagina [UPPERCASE][makelist.param1][/UPPERCASE]</title>
 <link>$doregex[list]</link>
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 ]]></listrepeat>
 <expres>'(.*?)'</expres>
 <page>'1','2','3','4','5','6','7','8','9','10','11','12','13','14','15',</page>
@@ -4596,7 +4596,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 
 </regex>
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail></item>
 
 <itm><!-- nbastream-->
 <title>[COLOR lightslategray]●[/COLOR][COLOR lightslategray]●[/COLOR][COLOR deepskyblue]●[/COLOR]  [COLOR lightcyan][B]AGENDA [/COLOR][COLOR lightblue]NBA STREAMS[/COLOR][/B]  [COLOR lightslategray]   [/COLOR] </title>
@@ -4607,7 +4607,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <listrepeat><![CDATA[
 <title>[#BG] [makelist.param3]  [makelist.param2]  [COLOR lightslategray][I](nbastreams)[/I][/COLOR]</title>
 <link>$doregex[getdecode]|Referer=http://crackstreams.ga/nba/espn/1.php&amp;User-Agent=ipad</link>
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 ]]></listrepeat>
 <expres><![CDATA[\n<a\s*href='(.*?)'[\W\w]*?media-heading'>(.*?)<[\w\W]*?-(.*?)<]]></expres>
 <page>http://nbastreams.xyz/schedule/</page>
@@ -4632,7 +4632,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <expres>iframe.*?src="(.+?)"</expres>
 <page>[makelist.param1]</page>
 </regex>
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail>
 </item>
 
 <item>
@@ -4682,7 +4682,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page>[primero.param1]</page>
 <connection>keep-alive</connection>
 </regex>
-<thumbnail>http://blackghost.live/gray/img/deportes.png</thumbnail></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray/img/deportes.png</thumbnail></item>
 
 <item>
 <title>[COLOR palegreen]●[/COLOR][COLOR lightslategray]●[/COLOR][COLOR lightslategray]●[/COLOR]  [COLOR paleturquoise][B]TEST  YOU LIST[/B]  [/COLOR] [COLOR lightslategray] Testing Area[/COLOR]</title>

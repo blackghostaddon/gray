@@ -114,7 +114,7 @@ def GetLSProData(page_data, Cookie_Jar,m,url='$doregex[serv]'):
     <page></page>
   </regex>
 
-<thumbnail>http://blackghost.live/gray/img/series.png</thumbnail><fanart>http://blackghost.live/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/series.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/fanart.jpg</fanart>
 </item>
 
 <itm>
@@ -251,7 +251,7 @@ def GetLSProData(page_data, Cookie_Jar,m,url='$doregex[link]'):
   </regex>
 
 
-<thumbnail>http://blackghost.live/gray/img/series.png</thumbnail><fanart>http://blackghost.live/gray/img/fanart.jpg</fanart></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/series.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/fanart.jpg</fanart></item>
  
  
  
@@ -424,7 +424,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 
 
-<thumbnail>http://blackghost.live/gray/img/series.png</thumbnail><fanart>http://blackghost.live/gray/img/fanart.jpg</fanart></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/series.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/fanart.jpg</fanart></item>
  
 
 
@@ -531,7 +531,7 @@ def GetLSProData(page_data, Cookie_Jar,m,url='$doregex[link]'):
     <page></page>
   </regex>
 	
-<thumbnail>http://blackghost.live/gray/img/series.png</thumbnail><fanart>http://blackghost.live/gray/img/fanart.jpg</fanart></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/series.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/fanart.jpg</fanart></item>
 
 <item>
 <title>[COLOR skyblue][B][  ][/B]    [B]BUSCAR SERIE[/B] Pepe Series [/COLOR]</title>
@@ -658,7 +658,7 @@ def GetLSProData(page_data, Cookie_Jar,m):
     <page></page>
   </regex>
 
-<thumbnail>http://blackghost.live/gray/img/series.png</thumbnail><fanart>http://blackghost.live/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/series.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/fanart.jpg</fanart>
 </item>
  
 
@@ -712,7 +712,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <title>[COLOR white][makelist2.param1][makelist2.param2] [/COLOR]     [makelist2.param4] [makelist2.param5]</title>
 <link>$doregex[makelist]</link>
 <thumbnail>[makelist3.param2]</thumbnail>
-<fanart>http://blackghost.live/gray/img/fanart.jpg</fanart>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/fanart.jpg</fanart>
 ]]></listrepeat>
 <expres><![CDATA[(?s)data-tab=.*?>(.*?)<.*?>(.*?)<|class=MvTbTtl.*?\n.*?href=(http.*?)\s>(.*?)<.*?pan>(.*?)<]]></expres>
 <page>[makelist3.param1]</page>
@@ -736,7 +736,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 
 
-<thumbnail>http://blackghost.live/gray/img/series.png</thumbnail><fanart>http://blackghost.live/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/series.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/fanart.jpg</fanart>
 </item>
 
 
@@ -754,8 +754,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
  <item>
 <title>[COLOR red][B][  ][/B]    [B]CASA DE PAPEL[/B] Temporada 4 [/COLOR]</title>
 <link>NA</link>
-<externallink>http://blackghost.live/gray/cpapel.xml</externallink>
-<thumbnail>http://blackghost.live/gray/img/series.png</thumbnail><fanart>http://blackghost.live/gray/img/fanart.jpg</fanart>
+<externallink>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//cpapel.xml</externallink>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/series.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/fanart.jpg</fanart>
 </item>
  
 
@@ -837,7 +837,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<thumbnail>http://blackghost.live/gray/img/peliculas.png</thumbnail><fanart>http://blackghost.live/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/peliculas.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/fanart.jpg</fanart>
 </item>
  
 <item><!--Series Papaya -->
@@ -983,7 +983,7 @@ def GetLSProData(page_data, Cookie_Jar,m,url='$doregex[link]'):
 
 
 
-<thumbnail>http://blackghost.live/gray/img/series.png</thumbnail><fanart>http://blackghost.live/gray/img/fanart.jpg</fanart></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/series.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/fanart.jpg</fanart></item>
 
 
 
@@ -998,10 +998,10 @@ def GetLSProData(page_data, Cookie_Jar,m,url='$doregex[link]'):
 <listrepeat><![CDATA[
 <title>[makelist8.param1]</title>
 <link>$doregex[makelist2]</link>
-<thumbnail>http://blackghost.live/gray/img/series.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/series.png</thumbnail>
 ]]></listrepeat>
 <expres><![CDATA[Cadena="(.+?)"(.*?);]]></expres>
-<page>http://blackghost.live/gray/gnula-cadenas.php</page>
+<page>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//gnula-cadenas.php</page>
 </regex>
 
 <regex>
@@ -1012,7 +1012,7 @@ def GetLSProData(page_data, Cookie_Jar,m,url='$doregex[link]'):
 <thumbnail>http://www.seriespapaya.net/[makelist2.param2]</thumbnail>
 ]]></listrepeat>
 <expres><![CDATA["[makelist8.param2]" name="(.*?)" img="(.*?)" url="(.*?)"]]></expres>
-<page>http://blackghost.live/gray/gnula-cadenas.php</page>
+<page>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//gnula-cadenas.php</page>
 </regex>
 
 
@@ -1158,7 +1158,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 
 
-<thumbnail>http://blackghost.live/gray/img/series.png</thumbnail><fanart>http://blackghost.live/gray/img/fanart.jpg</fanart></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/series.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/fanart.jpg</fanart></item>
  
 
 
@@ -1279,7 +1279,7 @@ def GetLSProData(page_data, Cookie_Jar,m):
     <page></page>
   </regex>
 
-<thumbnail>http://blackghost.live/gray/img/series.png</thumbnail><fanart>http://blackghost.live/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/series.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/fanart.jpg</fanart>
 </item>
  
 <item><!--inka series -->
@@ -1375,7 +1375,7 @@ def GetLSProData(page_data, Cookie_Jar,m,url='[makelist3.param1]'):
     <page></page>
   </regex>
 	
-<thumbnail>http://blackghost.live/gray/img/series.png</thumbnail><fanart>http://blackghost.live/gray/img/fanart.jpg</fanart></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/series.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/fanart.jpg</fanart></item>
 
 <item><!-- wiki series-->
 <title>[COLOR lightyellow][B]WIKISERIES[/B][/COLOR] Listado de Series </title>
@@ -1562,7 +1562,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 ]]></expres>        
 <page></page>
 </regex>
-<thumbnail>http://blackghost.live/gray/img/series.png</thumbnail><fanart>http://blackghost.live/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/series.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/fanart.jpg</fanart>
 </item>
 
 
@@ -1611,7 +1611,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <title>[COLOR white][makelist2.param1][makelist2.param2] [/COLOR]     [makelist2.param4] [makelist2.param5]</title>
 <link>$doregex[makelist]</link>
 <thumbnail>[makelist3.param2]</thumbnail>
-<fanart>http://blackghost.live/gray/img/fanart.jpg</fanart>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/fanart.jpg</fanart>
 ]]></listrepeat>
 <expres><![CDATA[(?s)data-tab=.*?>(.*?)<.*?>(.*?)<|class=MvTbTtl.*?\n.*?href=(http.*?)\s>(.*?)<.*?pan>(.*?)<]]></expres>
 <page>[makelist3.param1]</page>
@@ -1635,7 +1635,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 
 
-<thumbnail>http://blackghost.live/gray/img/series.png</thumbnail><fanart>http://blackghost.live/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/series.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/fanart.jpg</fanart>
 </item>
 
 
@@ -1718,7 +1718,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page>[makelist2.param2]</page>
 </regex>
 
-<thumbnail>http://blackghost.live/gray/img/series.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/series.png</thumbnail>
 </item>
 
 <item><!--mira de todo -->
@@ -1817,7 +1817,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <expres><![CDATA[iframe src="(.*?)"]]></expres>
 <page>[makelist3.param1]</page>
 </regex>
-<thumbnail>http://blackghost.live/gray/img/series.png</thumbnail><fanart>http://blackghost.live/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/series.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/fanart.jpg</fanart>
 </item>
 
 <itm><!--series24-->
@@ -1909,7 +1909,7 @@ def GetLSProData(page_data, Cookie_Jar,m,url='[makelist.param1]'):
     <page></page>
   </regex>
 
-<thumbnail>http://blackghost.live/gray/img/series.png</thumbnail><fanart>http://blackghost.live/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/series.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/fanart.jpg</fanart>
 </item>
 
 <item><!--wikiseries -->
@@ -2000,7 +2000,7 @@ def GetLSProData(page_data, Cookie_Jar,m,url='[makelist4.param2]'):
 
 
 
-<thumbnail>http://blackghost.live/gray/img/series.png</thumbnail><fanart>http://blackghost.live/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/series.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/fanart.jpg</fanart>
 </item>
  
 <item><!-- CUEVANA -->
@@ -2059,8 +2059,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page></page>
 </regex>
 
-<thumbnail>http://blackghost.live/gray/img/peliculas.png</thumbnail>
-<fanart>http://blackghost.live/gray/img/fanart.jpg</fanart></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/peliculas.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/fanart.jpg</fanart></item>
 
 <item><!--SERIES DANKO -->
 <title>[COLOR lightyellow][B]DANKO SERIES[/B] [/COLOR]</title>
@@ -2152,7 +2152,7 @@ def GetLSProData(page_data, Cookie_Jar,m,url='$doregex[link]'):
     <page></page>
   </regex>
 	
-<thumbnail>http://blackghost.live/gray/img/series.png</thumbnail><fanart>http://blackghost.live/gray/img/fanart.jpg</fanart></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/series.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/fanart.jpg</fanart></item>
 
 
 
@@ -2250,8 +2250,8 @@ def GetLSProData(page_data, Cookie_Jar,m,url='$doregex[link]'):
     <page></page>
   </regex>
 	
-<thumbnail>http://blackghost.live/gray/img/series.png</thumbnail>
-<fanart>http://blackghost.live/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/series.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/fanart.jpg</fanart>
 </item>
 
 <item>
@@ -2264,8 +2264,8 @@ def GetLSProData(page_data, Cookie_Jar,m,url='$doregex[link]'):
 <listrepeat><![CDATA[
 <title> [getc.param1]</title>
 <link>$doregex[makelist2]</link>
-<thumbnail>http://blackghost.live/gray/img/series.png</thumbnail>
-<fanart>http://blackghost.live/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/series.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/fanart.jpg</fanart>
 ]]></listrepeat>
 <expres>'(.*?)'</expres>
 <page>'Animes','Series','Novelas'</page>
@@ -2346,8 +2346,8 @@ def GetLSProData(page_data, Cookie_Jar,m,url='$doregex[link]'):
     <page></page>
   </regex>
 	
-<thumbnail>http://blackghost.live/gray/img/series.png</thumbnail>
-<fanart>http://blackghost.live/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/series.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/fanart.jpg</fanart>
 </item>
 
 <item>
@@ -2460,8 +2460,8 @@ def GetLSProData(page_data, Cookie_Jar,m,url='$doregex[link]'):
     <page></page>
   </regex>
 	
-<thumbnail>http://blackghost.live/gray/img/series.png</thumbnail>
-<fanart>http://blackghost.live/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/series.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/fanart.jpg</fanart>
 </item>
 
 
@@ -2539,7 +2539,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<thumbnail>http://blackghost.live/gray/img/series.png</thumbnail><fanart>http://blackghost.live/gray/img/fanart.jpg</fanart></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/series.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/fanart.jpg</fanart></item>
 
 
 
@@ -2735,7 +2735,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <expres>src="(.*?)"</expres>
 <page>[makelist3.param2]</page>
 </regex>
-<thumbnail>http://blackghost.live/gray/img/series.png</thumbnail><fanart>http://blackghost.live/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/series.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/fanart.jpg</fanart>
 </item>	
 
 <item>
@@ -2844,7 +2844,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page></page>
 </regex>
 
-<thumbnail>http://blackghost.live/gray/img/series.png</thumbnail><fanart>http://blackghost.live/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/series.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/fanart.jpg</fanart>
 </item>	
 
 <item>
@@ -2916,7 +2916,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page></page>
 </regex>
 
-<thumbnail>http://blackghost.live/gray/img/series.png</thumbnail><fanart>http://blackghost.live/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/series.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/fanart.jpg</fanart>
 </item>	
 		
 <item>
@@ -3019,7 +3019,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <expres>$pyFunction:'[scrape.param2]'.replace("\/", "/")</expres>
 <page></page>
 </regex>
-<thumbnail>http://blackghost.live/gray/img/series.png</thumbnail><fanart>http://blackghost.live/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/series.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/fanart.jpg</fanart>
 </item>	
 	
 
@@ -3175,7 +3175,7 @@ def GetLSProData(page_data, Cookie_Jar,m,url='[makelist3.param1]'):
     <page></page>
   </regex>
 
-<thumbnail>http://blackghost.live/gray/img/series.png</thumbnail><fanart>http://blackghost.live/gray/img/fanart.jpg</fanart></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/series.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/fanart.jpg</fanart></item>
 
 
 
@@ -3251,7 +3251,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page></page>
 </regex>
 
-<thumbnail>http://blackghost.live/gray/img/series.png</thumbnail><fanart>http://blackghost.live/gray/img/fanart.jpg</fanart></item>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/series.png</thumbnail><fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/fanart.jpg</fanart></item>
 
 
 
@@ -3306,8 +3306,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 
 
-<thumbnail>http://blackghost.live/gray/img/series.png</thumbnail>
-<fanart>http://blackghost.live/gray/img/fanart.jpg</fanart>
+<thumbnail>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/series.png</thumbnail>
+<fanart>https://raw.githubusercontent.com/blackghostaddon/gray/master/gray//img/fanart.jpg</fanart>
 
 </item>
 
