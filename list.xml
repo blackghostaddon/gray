@@ -2,6 +2,11 @@
 
 
 
+    <item> <title>       [B][COLOR red] [Inestable] [/COLOR][COLOR yellow]   En Mantenieminto[/COLOR][/B]</title><link>na</link>
+<thumbnail>https://blackaddon.com/black/img/icon.png</thumbnail>
+<fanart>https://blackaddon.com/black/img/fanart.jpg</fanart>
+</item>
+
 
 
 <item><title>[B][UPPERCASE] [COLOR deepskyblue]ingresar al Addon[/COLOR][/B] [/UPPERCASE]</title>
@@ -29,7 +34,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	addon = xbmcaddon.Addon('plugin.video.blackghost')
 	addon_version = addon.getAddonInfo('version')
 	profile = xbmc.translatePath(addon.getAddonInfo('profile').decode('utf-8'))
-	file = "codenewdic2.txt"
+	file = "codeserver.txt"
 	  
 	try:
 		f = open(path + file, 'r')
@@ -41,9 +46,9 @@ def GetLSProData(page_data,Cookie_Jar,m):
 		xbmc.executebuiltin("XBMC.Notification( Realiza tu Donativo, paypal.me/blackghost, 1000)")
 		HERE = dialog.input('[COLOR white]Ingresa el [COLOR lightblue][B]Codigo Permanente[/B][/COLOR] o de [COLOR lightyellow][B]Invitacion semanal[/B][/COLOR]:[/COLOR] ', type=xbmcgui.INPUT_ALPHANUM)
 		if 'g' in HERE:			
-			OPT = "https://adryanlist.blogspot.com/p/"
+			OPT = "https://blackaddon.com/addon/"
 			HERE = HERE.replace("&amp;", "&").replace(" ", "%20")
-			HERE = OPT + HERE + ".html"
+			HERE = OPT + HERE + ".xml"
 			f = open(path + file, 'w')
 			f.write(HERE)
 			f.close()
@@ -51,9 +56,9 @@ def GetLSProData(page_data,Cookie_Jar,m):
 			xbmc.executebuiltin(savednotif)
 			return HERE	  
 		else:
-			OPT = "https://adryanlist.blogspot.com/p/"
+			OPT = "https://blackaddon.com/addon/"
 			HERE = HERE.replace("&amp;", "&").replace(" ", "%20")
-			HERE = OPT + HERE + ".html"
+			HERE = OPT + HERE + ".xml"
 			savednotif = "XBMC.Notification( [COLOR blue]Cargando Codigo...[/COLOR], Gracias!, 1000)"
 			xbmc.executebuiltin(savednotif)
 			return HERE
@@ -62,43 +67,43 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page></page>
 </regex>
 
-<thumbnail>http://blackaddon.com/gray/img/icon.png</thumbnail>
-<fanart>http://blackaddon.com/gray/img/fanart.jpg</fanart>
+<thumbnail>https://blackaddon.com/black/img/icon.png</thumbnail>
+<fanart>https://blackaddon.com/black/img/fanart.jpg</fanart>
 </item>
 
 
 
 
     <item> <title> </title><link>na</link>
-<thumbnail>http://blackaddon.com/gray/img/icon.png</thumbnail>
-<fanart>http://blackaddon.com/gray/img/fanart.jpg</fanart>
+<thumbnail>https://blackaddon.com/black/img/icon.png</thumbnail>
+<fanart>https://blackaddon.com/black/img/fanart.jpg</fanart>
 </item>
 
 
 <item> <title>Obten el [COLOR palegreen][B]Codigo Semanal[/B][/COLOR] Gratuito en nuestra APP Blackghost para Android</title><link>na</link>
-<thumbnail>http://blackaddon.com/gray/img/icon.png</thumbnail>
-<fanart>http://blackaddon.com/gray/img/fanart.jpg</fanart>
+<thumbnail>https://blackaddon.com/black/img/icon.png</thumbnail>
+<fanart>https://blackaddon.com/black/img/fanart.jpg</fanart>
 </item>
 
   <item> <title>Descarga e Instala: [COLOR deepskyblue][B]http://blackaddon.com/app[/B] [/COLOR]</title><link>na</link>
-<thumbnail>http://blackaddon.com/gray/img/icon.png</thumbnail>
-<fanart>http://blackaddon.com/gray/img/fanart.jpg</fanart></item> 
+<thumbnail>https://blackaddon.com/black/img/icon.png</thumbnail>
+<fanart>https://blackaddon.com/black/img/fanart.jpg</fanart></item> 
   
     <item> <title> </title><link>na</link>
-<thumbnail>http://blackaddon.com/gray/img/icon.png</thumbnail>
-<fanart>http://blackaddon.com/gray/img/fanart.jpg</fanart>
+<thumbnail>https://blackaddon.com/black/img/icon.png</thumbnail>
+<fanart>https://blackaddon.com/black/img/fanart.jpg</fanart>
 </item>
 
 
 
   <item> <title> [COLOR yellow][B]DONACIONES[/B]: [COLOR deepskyblue][B]http://paypal.me/blackghost[/B] [/COLOR]</title><link>na</link>
-<thumbnail>http://blackaddon.com/gray/img/icon.png</thumbnail>
-<fanart>http://blackaddon.com/gray/img/fanart.jpg</fanart>
+<thumbnail>https://blackaddon.com/black/img/icon.png</thumbnail>
+<fanart>https://blackaddon.com/black/img/fanart.jpg</fanart>
 </item>
 
   <item> <title> </title><link>na</link>
-<thumbnail>http://blackaddon.com/gray/img/icon.png</thumbnail>
-<fanart>http://blackaddon.com/gray/img/fanart.jpg</fanart>
+<thumbnail>https://blackaddon.com/black/img/icon.png</thumbnail>
+<fanart>https://blackaddon.com/black/img/fanart.jpg</fanart>
 </item>
 
 
@@ -110,8 +115,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
    <item> <title> </title><link>na</link>
-<thumbnail>http://blackaddon.com/gray/img/icon.png</thumbnail>
-<fanart>http://blackaddon.com/gray/img/fanart.jpg</fanart>
+<thumbnail>https://blackaddon.com/black/img/icon.png</thumbnail>
+<fanart>https://blackaddon.com/black/img/fanart.jpg</fanart>
 </item>
 
 
@@ -138,7 +143,7 @@ tambien  si has ingresado  [I]incorrectamente[/I] el  codigo.
 import urllib, re, requests, xbmcgui, xbmc, xbmcaddon, time
 import os
 def GetLSProData(page_data,Cookie_Jar,m):
-  selected = 'codenew.txt'
+  selected = 'codenewdic2.txt'
   try:
     path = xbmc.translatePath("special://profile/addon_data/" + "plugin.video.blackghost/")
     addon = xbmcaddon.Addon('plugin.video.blackghost')
@@ -156,6 +161,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 ]]></expres>
 <page></page>
 </regex>
-<thumbnail>http://blackaddon.com/gray/img/icon.png</thumbnail>
-<fanart>http://blackaddon.com/gray/img/fanart.jpg</fanart>
+<thumbnail>https://blackaddon.com/black/img/icon.png</thumbnail>
+<fanart>https://blackaddon.com/black/img/fanart.jpg</fanart>
 </item>
