@@ -138,7 +138,7 @@ tambien  si has ingresado  [I]incorrectamente[/I] el  codigo.
 import urllib, re, requests, xbmcgui, xbmc, xbmcaddon, time
 import os
 def GetLSProData(page_data,Cookie_Jar,m):
-  selected = 'codenewdic2.txt'
+  selected = 'codeserver.txt'
   try:
     path = xbmc.translatePath("special://profile/addon_data/" + "plugin.video.blackghost/")
     addon = xbmcaddon.Addon('plugin.video.blackghost')
