@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-
-
-
-
+<items>
 
 <item><title>[B][UPPERCASE] [COLOR deepskyblue]ingresar al Addon[/COLOR][/B] [/UPPERCASE]</title>
 
@@ -103,11 +100,11 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<item> <title>[UPPERCASE] [COLOR white] Grupo Telegram:[/UPPERCASE][B] [COLOR lime] @blackghostkodi[/COLOR] [/COLOR][/B]</title><link>na</link>
+<item> 
+<title>[UPPERCASE] [COLOR white] Grupo Telegram:[/UPPERCASE][B] [COLOR lime] @blackghostkodi[/COLOR] [/COLOR][/B]</title><link>na</link>
 <thumbnail>http://blackghost.co/gray/img/icon.png</thumbnail>
 <fanart>http://blackghost.co/gray/img/fanart.jpg</fanart>
-
-
+</item>
 
    <item> <title> </title><link>na</link>
 <thumbnail>https://blackaddon.com/black/img/icon.png</thumbnail>
@@ -118,7 +115,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 	  
   
-<item><title>[COLOR lightslategray][B] ●  [ELIMINAR]  Codigo Guardado  ● [/B][/COLOR]</title>
+<item>
+<title>[COLOR lightslategray][B] ●  [ELIMINAR]  Codigo Guardado  ● [/B][/COLOR]</title>
 
 
 <info>
@@ -159,3 +157,5 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>https://blackaddon.com/black/img/icon.png</thumbnail>
 <fanart>https://blackaddon.com/black/img/fanart.jpg</fanart>
 </item>
+
+</items>
