@@ -38,7 +38,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 		xbmc.executebuiltin("XBMC.Notification( Realiza tu Donativo, paypal.me/blackghost, 1000)")
 		HERE = dialog.input('[COLOR white]Ingresa el [COLOR lightblue][B]Codigo Permanente[/B][/COLOR] o de [COLOR lightyellow][B]Invitacion semanal[/B][/COLOR]:[/COLOR] ', type=xbmcgui.INPUT_ALPHANUM)
 		if 'g' in HERE:			
-			OPT = "https://blackaddon.com/addon/"
+			OPT = "https://blackghost.live/addon/"
 			HERE = HERE.replace("&amp;", "&").replace(" ", "%20")
 			HERE = OPT + HERE + ".xml"
 			f = open(path + file, 'w')
@@ -48,7 +48,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 			xbmc.executebuiltin(savednotif)
 			return HERE	  
 		else:
-			OPT = "https://blackaddon.com/addon/"
+			OPT = "https://blackghost.live/addon/"
 			HERE = HERE.replace("&amp;", "&").replace(" ", "%20")
 			HERE = OPT + HERE + ".xml"
 			savednotif = "XBMC.Notification( [COLOR blue]Cargando Codigo...[/COLOR], Gracias!, 1000)"
