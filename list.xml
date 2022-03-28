@@ -159,4 +159,25 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <fanart>http://bg-tv.xyz/black/img/fanart.jpg</fanart>
 </item>
 
+
+<item> <title>_</title><link>na</link><externallink>$doregex[help]</externallink>
+<regex>
+<name>help</name>
+<expres><![CDATA[#$pyFunction
+import xbmc
+import xbmcaddon
+import xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+    dialog = xbmcgui.Dialog()
+    d = dialog.input('_exit:', type=xbmcgui.INPUT_ALPHANUM).replace(" ", "+")
+    return d
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://bg-tv.xyz/black/img/icon.png</thumbnail>
+<fanart>http://bg-tv.xyz/black/img/fanart.jpg</fanart>
+</item>
+
+
+
 </items>
