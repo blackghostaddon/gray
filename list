@@ -1,0 +1,166 @@
+<items>
+
+
+<item>
+<title>[B][UPPERCASE] [COLOR deepskyblue]ingresar al Addon[/COLOR][/B] [/UPPERCASE]</title>
+<link>NA</link>  
+<externallink>$doregex[code]</externallink> 
+<regex>
+<name>code</name>  
+<expres><![CDATA[#$pyFunction
+import xbmc, xbmcaddon, xbmcgui, re, urllib
+def GetLSProData(page_data,Cookie_Jar,m):
+	path = xbmc.translatePath("special://profile/" + "addon_data/plugin.video.blackghost/")
+	
+	file = "codeserver.txt"
+	  
+	try:
+		f = open(path + file, 'r')
+		HERE = f.read()
+		f.close()
+		xbmc.executebuiltin("XBMC.Notification( [COLOR lime][B]Codigo Activado ![/B][/COLOR] , [COLOR lightblue]No olvides seguir apoyando.[/COLOR], 2000)")
+	except:
+		dialog = xbmcgui.Dialog()
+		xbmc.executebuiltin("XBMC.Notification( Realiza tu Donativo, paypal.me/blackghost, 1000)")
+		HERE = dialog.input('[COLOR white]Ingresa el [COLOR lightblue][B]Codigo Permanente[/B][/COLOR] o de [COLOR lightyellow][B]Invitacion semanal[/B][/COLOR]:[/COLOR] ', type=xbmcgui.INPUT_ALPHANUM)
+		if 'g' in HERE:			
+			OPT = "http://bg-tv.xyz/addon/"
+			HERE = OPT + HERE + ".php"
+			f = open(path + file, 'w')
+			f.write(HERE)
+			f.close()
+			savednotif = "XBMC.Notification( [COLOR blue]El Codigo ha sido Guardado[/COLOR], Gracias por Apoyar el proyecto, 2000)"
+			xbmc.executebuiltin(savednotif)
+			return HERE	  
+		else:
+			OPT = "http://bg-tv.xyz/addon/"
+			HERE = OPT + HERE + ".php"
+			savednotif = "XBMC.Notification( [COLOR blue]Cargando Codigo...[/COLOR], Gracias!, 1000)"
+			xbmc.executebuiltin(savednotif)
+			return HERE
+	return HERE  
+ ]]></expres>
+<page></page>
+</regex> 
+<thumbnail>http://bg-tv.xyz/black/img/icon.png</thumbnail>
+<fanart>http://bg-tv.xyz/black/img/fanart.jpg</fanart>
+</item>
+
+
+
+ <item> <title> </title><link>na</link>
+<thumbnail>http://bg-tv.xyz/black/img/icon.png</thumbnail>
+<fanart>http://bg-tv.xyz/black/img/fanart.jpg</fanart>
+</item>
+
+
+<item> <title>Obten el [COLOR palegreen][B]Codigo Semanal[/B][/COLOR] Gratuito en nuestra APP Blackghost para Android</title><link>na</link>
+<thumbnail>http://bg-tv.xyz/black/img/icon.png</thumbnail>
+<fanart>http://bg-tv.xyz/black/img/fanart.jpg</fanart>
+</item>
+
+  <item> <title>Descarga e Instala: [COLOR deepskyblue][B]http://bg-tv.xyz/app[/B] [/COLOR]</title><link>na</link>
+<thumbnail>http://bg-tv.xyz/black/img/icon.png</thumbnail>
+<fanart>http://bg-tv.xyz/black/img/fanart.jpg</fanart></item> 
+  
+    <item> <title> </title><link>na</link>
+<thumbnail>http://bg-tv.xyz/black/img/icon.png</thumbnail>
+<fanart>http://bg-tv.xyz/black/img/fanart.jpg</fanart>
+</item>
+
+
+
+  <item> <title> [COLOR yellow][B]DONACIONES[/B]: [COLOR deepskyblue][B]http://paypal.me/blackghost[/B] [/COLOR]</title><link>na</link>
+<thumbnail>http://bg-tv.xyz/black/img/icon.png</thumbnail>
+<fanart>http://bg-tv.xyz/black/img/fanart.jpg</fanart>
+</item>
+
+  <item> <title> </title><link>na</link>
+<thumbnail>http://bg-tv.xyz/black/img/icon.png</thumbnail>
+<fanart>http://bg-tv.xyz/black/img/fanart.jpg</fanart>
+</item>
+
+
+
+<item> 
+<title>[UPPERCASE] [COLOR white] Grupo Telegram:[/UPPERCASE][B] [COLOR lime] @blackghostkodi[/COLOR] [/COLOR][/B]</title><link>na</link>
+<thumbnail>http://blackghost.co/gray/img/icon.png</thumbnail>
+<fanart>http://blackghost.co/gray/img/fanart.jpg</fanart>
+</item>
+
+<item> <title> </title>
+<link>na</link>
+<thumbnail>http://bg-tv.xyz/black/img/icon.png</thumbnail>
+<fanart>http://bg-tv.xyz/black/img/fanart.jpg</fanart>
+</item>
+
+
+
+	  
+  
+<item>
+<title>[COLOR lightslategray][B] ●  [ELIMINAR]  Codigo Guardado  ● [/B][/COLOR]</title>
+
+
+<info>
+Elimina el Codigo Permanente 
+-
+o el Codigo de INVITACION semanal  si  ya ha caducado para poder volver a ingresar un [B]NUEVO[/B] codigo
+-
+tambien  si has ingresado  [I]incorrectamente[/I] el  codigo.
+  </info>
+  
+<link>NA</link>  
+<externallink>$doregex[code]</externallink>  
+ 
+<regex>
+<name>code</name>  
+<expres><![CDATA[#$pyFunction
+import urllib, re, requests, xbmcgui, xbmc, xbmcaddon, time
+import os
+def GetLSProData(page_data,Cookie_Jar,m):
+  selected = 'codeserver.txt'
+  try:
+    path = xbmc.translatePath("special://profile/addon_data/" + "plugin.video.blackghost/")
+      
+    os.remove (path + selected)
+    
+    xbmc.executebuiltin("XBMC.Notification(Hecho !, Codigo Borrado\nCon exito !, 4000)")
+    return 'https://raw.githubusercontent.com/blackghostaddon/gray/master/list'
+  except:
+	xbmc.executebuiltin("XBMC.Notification([COLOR yellow]No hay Codigo Guardado ![/COLOR],puedes ingresar un codigo nuevamente, 4000)")
+	return 'https://raw.githubusercontent.com/blackghostaddon/gray/master/list'
+  
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://bg-tv.xyz/black/img/icon.png</thumbnail>
+<fanart>http://bg-tv.xyz/black/img/fanart.jpg</fanart>
+</item>
+
+
+<item> <title>_</title><link>na</link><externallink>$doregex[help]</externallink>
+<regex>
+<name>help</name>
+<expres><![CDATA[#$pyFunction
+import xbmc
+import xbmcaddon
+import xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+    dialog = xbmcgui.Dialog()
+    d = dialog.input('_exit:', type=xbmcgui.INPUT_ALPHANUM).replace(" ", "+")
+    return d
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://bg-tv.xyz/black/img/icon.png</thumbnail>
+<fanart>http://bg-tv.xyz/black/img/fanart.jpg</fanart>
+</item>
+
+
+
+
+
+</items>
+
+
