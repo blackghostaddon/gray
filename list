@@ -121,7 +121,7 @@ import os
 def GetLSProData(page_data,Cookie_Jar,m):
   selected = 'codeserver.txt'
   try:
-    path = xbmc.translatePath("special://profile/addon_data/" + "plugin.video.blackghost/")
+    path = xbmc.translatePath("special://profile/" + "addon_data/plugin.video.blackghost/")
       
     os.remove (path + selected)
     
