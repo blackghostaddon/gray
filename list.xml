@@ -179,5 +179,37 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 
 
+<item>
+<title>[COLOR white]Herramienta: Activar Turbo [Configuracion Addon][/COLOR]</title>
+<link>$doregex[canal]</link>
+<regex>
+<name>canal</name>
+<expres><![CDATA[#$pyFunction
+import xbmc, xbmcaddon, xbmcgui
+def GetLSProData(page_data,Cookie_Jar,m):
+   addon = xbmcaddon.Addon('plugin.video.blackghost')
+   streamLink = addon.openSettings()
+   return streamLink
+]]></expres>
+ <page></page>
+</regex>
+<thumbnail>http://bg-tv.xyz/black/img/icon.png</thumbnail>
+<fanart>http://bg-tv.xyz/black/img/fanart.jpg</fanart>
+ </item>
+
+
+<item>
+<title>[COLOR white]Herramienta: Instalar ResolveUrl[/COLOR]</title>
+<link>$doregex[id]</link>
+<regex>
+<name>id</name>
+<expres>$pyFunction:xbmc.executebuiltin('InstallAddon(script.module.resolveurl)')</expres>
+<page></page>
+<NOTPlayable>True</NOTPlayable>
+</regex>
+<thumbnail>http://bg-tv.xyz/black/img/icon.png</thumbnail>
+<fanart>http://bg-tv.xyz/black/img/fanart.jpg</fanart>
+</item>
+
 
 </items>
