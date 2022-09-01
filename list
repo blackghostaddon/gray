@@ -139,7 +139,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 
 
-<item> <title>_</title><link>na</link><externallink>$doregex[help]</externallink>
+<item> <title>   </title><link>na</link><externallink>$doregex[help]</externallink>
 <regex>
 <name>help</name>
 <expres><![CDATA[#$pyFunction
@@ -159,21 +159,10 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<item>
-<title>[COLOR white]Herramienta: [COLOR lightgreen]Activar Turbo[/COLOR] [Configuracion Addon][/COLOR]</title>
-<link>$doregex[canal]</link>
-<regex>
-<name>canal</name>
-<expres>$pyFunction:xbmcaddon.Addon(plugin.video.blackghost).openSettings()</expres>
-<page></page>
-</regex>
-<thumbnail>http://bg-tv.xyz/black/img/icon.png</thumbnail>
-<fanart>http://bg-tv.xyz/black/img/fanart.jpg</fanart>
- </item>
 
 
 <item>
-<title>[COLOR white]Herramienta: [COLOR lightgreen]Activar Turbo[/COLOR] [Configuracion Addon][/COLOR]</title>
+<title>[B][COLOR white]Herramienta: [COLOR lightgreen]Activar Turbo[/COLOR] [Configuracion Addon][/COLOR][/B]</title>
 <link>$doregex[canal]</link>
 <regex>
 <name>canal</name>
@@ -185,23 +174,10 @@ def GetLSProData(page_data,Cookie_Jar,m):
  </item>
 
 
-<item>
-<title>[COLOR white]Herramienta: [COLOR lightgreen]Activar Turbo[/COLOR] [Configuracion Addon][/COLOR]</title>
-<link>$doregex[canal]</link>
-<regex>
-<name>canal</name>
-<expres>$pyFunction:xbmc.executebuiltin('xbmcaddon.Addon(plugin.video.blackghost).openSettings()')</expres>
-<page></page>
-</regex>
-<thumbnail>http://bg-tv.xyz/black/img/icon.png</thumbnail>
-<fanart>http://bg-tv.xyz/black/img/fanart.jpg</fanart>
- </item>
-
-
 
 
 <item>
-<title>[COLOR white]Herramienta: Instalar ResolveUrl[/COLOR]</title>
+<title>[B][COLOR white]Herramienta: Instalar ResolveUrl[/COLOR][/B]</title>
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
