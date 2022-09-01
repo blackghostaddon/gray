@@ -162,7 +162,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
-<title>[B][COLOR white]Herramienta: [COLOR lightgreen]Activar Turbo[/COLOR] [Configuracion Addon][/COLOR][/B]</title>
+<title>[B][COLOR white]Herramienta: [COLOR lightgreen]Activar Turbo[/COLOR] [/COLOR][/B]</title>
 <link>$doregex[canal]</link>
 <regex>
 <name>canal</name>
