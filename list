@@ -164,12 +164,39 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>$doregex[canal]</link>
 <regex>
 <name>canal</name>
-<expres>$pyFunction:self.Addon.openSettings()</expres>
+<expres>$pyFunction:xbmcaddon.Addon(plugin.video.blackghost).openSettings()</expres>
 <page></page>
 </regex>
 <thumbnail>http://bg-tv.xyz/black/img/icon.png</thumbnail>
 <fanart>http://bg-tv.xyz/black/img/fanart.jpg</fanart>
  </item>
+
+
+<item>
+<title>[COLOR white]Herramienta: [COLOR lightgreen]Activar Turbo[/COLOR] [Configuracion Addon][/COLOR]</title>
+<link>$doregex[canal]</link>
+<regex>
+<name>canal</name>
+<expres>$pyFunction:xbmcaddon.Addon('plugin.video.blackghost').openSettings()</expres>
+<page></page>
+</regex>
+<thumbnail>http://bg-tv.xyz/black/img/icon.png</thumbnail>
+<fanart>http://bg-tv.xyz/black/img/fanart.jpg</fanart>
+ </item>
+
+
+<item>
+<title>[COLOR white]Herramienta: [COLOR lightgreen]Activar Turbo[/COLOR] [Configuracion Addon][/COLOR]</title>
+<link>$doregex[canal]</link>
+<regex>
+<name>canal</name>
+<expres>$pyFunction:xbmc.executebuiltin('xbmcaddon.Addon(plugin.video.blackghost).openSettings()')</expres>
+<page></page>
+</regex>
+<thumbnail>http://bg-tv.xyz/black/img/icon.png</thumbnail>
+<fanart>http://bg-tv.xyz/black/img/fanart.jpg</fanart>
+ </item>
+
 
 
 
