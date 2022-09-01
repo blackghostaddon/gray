@@ -160,22 +160,17 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
-<title>[COLOR white]Herramienta: Activar Turbo [Configuracion Addon][/COLOR]</title>
+<title>[COLOR white]Herramienta: [COLOR lightgreen]Activar Turbo[/COLOR] [Configuracion Addon][/COLOR]</title>
 <link>$doregex[canal]</link>
 <regex>
 <name>canal</name>
-<expres><![CDATA[#$pyFunction
-import xbmc, xbmcaddon, xbmcgui
-def GetLSProData(page_data,Cookie_Jar,m):
-   addon = xbmcaddon.Addon('plugin.video.blackghost')
-   streamLink = addon.openSettings()
-   return streamLink
-]]></expres>
- <page></page>
+<expres>$pyFunction:self.Addon.openSettings()</expres>
+<page></page>
 </regex>
 <thumbnail>http://bg-tv.xyz/black/img/icon.png</thumbnail>
 <fanart>http://bg-tv.xyz/black/img/fanart.jpg</fanart>
  </item>
+
 
 
 <item>
