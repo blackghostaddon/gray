@@ -116,21 +116,15 @@ tambien  si has ingresado  [I]incorrectamente[/I] el  codigo.
 <regex>
 <name>code</name>  
 <expres><![CDATA[#$pyFunction
-import urllib, re, requests, xbmcgui, xbmc, xbmcaddon, time
+from kodi_six import xbmc, xbmcgui, xbmcaddon, xbmcvfs
+#import urllib, re, requests, xbmcgui, xbmc, xbmcaddon, time
 import os
-def GetLSProData(page_data,Cookie_Jar,m):
+def GetLSProData(page_data,Cookie_Jar,m):  
+  xbmc.executebuiltin("Notification(BlackGhost,Eliminando Codigo Guardado,6000)")  
   selected = 'codeserver.txt'
-  try:
-    path = xbmc.translatePath("special://profile/" + "addon_data/plugin.video.blackghost/")
-      
-    os.remove (path + selected)
-    
-    xbmc.executebuiltin("XBMC.Notification(Hecho !, Codigo Borrado\nCon exito !, 4000)")
-    return 'https://raw.githubusercontent.com/blackghostaddon/gray/master/list'
-  except:
-	xbmc.executebuiltin("XBMC.Notification([COLOR yellow]No hay Codigo Guardado ![/COLOR],puedes ingresar un codigo nuevamente, 4000)")
-	return 'https://raw.githubusercontent.com/blackghostaddon/gray/master/list'
-  
+  path = xbmc.translatePath("special://profile/addon_data/" + "plugin.video.blackghost/")
+  os.remove (path + selected)  
+  return 'https://raw.githubusercontent.com/blackghostaddon/gray/master/list' 
 ]]></expres>
 <page></page>
 </regex>
@@ -162,7 +156,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
-<title>[B][COLOR white]Herramienta: [COLOR lightgreen]Activar Turbo[/COLOR] [/COLOR][/B]</title>
+<title>[B][COLOR white]Configuracion: [COLOR lightgreen]Activar Turbo[/COLOR] [/COLOR][/B]</title>
 <link>$doregex[canal]</link>
 <regex>
 <name>canal</name>
