@@ -18,10 +18,10 @@ def GetLSProData(page_data,Cookie_Jar,m):
 		f = open(path + file, 'r')
 		HERE = f.read()
 		f.close()
-		xbmc.executebuiltin("XBMC.Notification( [COLOR lime][B]Codigo Activado ![/B][/COLOR] , [COLOR lightblue]No olvides seguir apoyando.[/COLOR], 2000)")
+		xbmc.executebuiltin("Notification( [COLOR lime][B]Codigo Activado ![/B][/COLOR] , [COLOR lightblue]No olvides seguir apoyando.[/COLOR], 2000)")
 	except:
 		dialog = xbmcgui.Dialog()
-		xbmc.executebuiltin("XBMC.Notification( Realiza tu Donativo, paypal.me/blackghost, 1000)")
+		xbmc.executebuiltin("Notification( Realiza tu Donativo, paypal.me/blackghost, 1000)")
 		HERE = dialog.input('[COLOR white]Ingresa el [COLOR lightblue][B]Codigo Permanente[/B][/COLOR] o de [COLOR lightyellow][B]Invitacion semanal[/B][/COLOR]:[/COLOR] ', type=xbmcgui.INPUT_ALPHANUM)
 		if 'g' in HERE:			
 			OPT = "http://bg-tv.xyz/addon/"
@@ -29,13 +29,13 @@ def GetLSProData(page_data,Cookie_Jar,m):
 			f = open(path + file, 'w')
 			f.write(HERE)
 			f.close()
-			savednotif = "XBMC.Notification( [COLOR blue]El Codigo ha sido Guardado[/COLOR], Gracias por Apoyar el proyecto, 2000)"
+			savednotif = "Notification( [COLOR blue]El Codigo ha sido Guardado[/COLOR], Gracias por Apoyar el proyecto, 2000)"
 			xbmc.executebuiltin(savednotif)
 			return HERE	  
 		else:
 			OPT = "http://bg-tv.xyz/addon/"
 			HERE = OPT + HERE + ".php"
-			savednotif = "XBMC.Notification( [COLOR blue]Cargando Codigo...[/COLOR], Gracias!, 1000)"
+			savednotif = "Notification( [COLOR blue]Cargando Codigo...[/COLOR], Gracias!, 1000)"
 			xbmc.executebuiltin(savednotif)
 			return HERE
 	return HERE  
