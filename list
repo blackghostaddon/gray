@@ -7,9 +7,11 @@
 <regex>
 <name>code</name>  
 <expres><![CDATA[#$pyFunction
-import xbmc, xbmcaddon, xbmcgui, re, urllib
+import re,requests,base64,xbmc,six
+from kodi_six import xbmc,xbmcgui,xbmcaddon,xbmcvfs
+EJECUTAR_XBMC = xbmc if six.PY2 else xbmcvfs
 def GetLSProData(page_data,Cookie_Jar,m):
-	path = xbmc.translatePath("special://profile/" + "addon_data/plugin.video.blackghost/")
+	path = EJECUTAR_XBMC.translatePath('special://profile/addon_data/plugin.video.blackghost/')
 	
 	file = "codeserver.txt"
 	  
@@ -41,9 +43,13 @@ def GetLSProData(page_data,Cookie_Jar,m):
  ]]></expres>
 <page></page>
 </regex> 
+
 <thumbnail>http://bg-tv.xyz/black/img/icon.png</thumbnail>
 <fanart>http://bg-tv.xyz/black/img/fanart.jpg</fanart>
 </item>
+
+
+
 
 
 
@@ -52,32 +58,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <fanart>http://bg-tv.xyz/black/img/fanart.jpg</fanart>
 </item>
 
-
- 
-<item>
-<title>[COLOR orange][B][Temporal][/COLOR] Acceso desde [COLOR lightgreen]KODI 20[/COLOR][/B]</title>
-<link>NA</link>  
-<externallink>http://bg-tv.xyz/addon/$doregex[link].php</externallink>
-
-<regex>
-<name>link</name>
-<expres><![CDATA[#$pyFunction
-import xbmc
-import xbmcaddon
-import xbmcgui
-xbmc.executebuiltin("Notification(CODIGO SEMANAL, Te recomiendo \n regresar a kodi 19, 5000)")
-def GetLSProData(page_data,Cookie_Jar,m):
-    dialog = xbmcgui.Dialog()
-    d = dialog.input('Ingresa el codigo Temporal :', type=xbmcgui.INPUT_ALPHANUM)	
-    return d
-]]></expres>
-<page></page>
-<cookieJar></cookieJar>
-</regex>
-
-<thumbnail>http://bg-tv.xyz/black/img/icon.png</thumbnail>
-<fanart>http://bg-tv.xyz/black/img/fanart.jpg</fanart>
-</item>
 
 
 
