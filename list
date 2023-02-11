@@ -53,6 +53,34 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 
 
+ 
+<item>
+<title>[COLOR orange][B][Temporal][/COLOR] Acceso desde [COLOR lightgreen]KODI 20[/COLOR][/B]</title>
+<link>NA</link>  
+<externallink>http://bg-tv.xyz/addon/$doregex[link].php</externallink>
+
+<regex>
+<name>link</name>
+<expres><![CDATA[#$pyFunction
+import xbmc
+import xbmcaddon
+import xbmcgui
+xbmc.executebuiltin("Notification(CODIGO SEMANAL, Te recomiendo \n regresar a kodi 19, 5000)")
+def GetLSProData(page_data,Cookie_Jar,m):
+    dialog = xbmcgui.Dialog()
+    d = dialog.input('Ingresa el codigo Temporal :', type=xbmcgui.INPUT_ALPHANUM)	
+    return d
+]]></expres>
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+
+<thumbnail>http://bg-tv.xyz/black/img/icon.png</thumbnail>
+<fanart>http://bg-tv.xyz/black/img/fanart.jpg</fanart>
+</item>
+
+
+
 <item> <title>Obten el [COLOR palegreen][B]Codigo Semanal[/B][/COLOR] Gratuito en nuestra APP Blackghost para Android</title><link>na</link>
 <thumbnail>http://bg-tv.xyz/black/img/icon.png</thumbnail>
 <fanart>http://bg-tv.xyz/black/img/fanart.jpg</fanart>
