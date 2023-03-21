@@ -25,7 +25,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 		xbmc.executebuiltin("Notification( Realiza tu Donativo, paypal.me/blackghost, 1000)")
 		HERE = dialog.input('[COLOR white]Ingresa el [COLOR lightblue][B]Codigo Permanente[/B][/COLOR] o de [COLOR lightyellow][B]Invitacion semanal[/B][/COLOR]:[/COLOR] ', type=xbmcgui.INPUT_ALPHANUM)
 		if 'g' in HERE:			
-			OPT = "http://bg-tv.xyz/addon/"
+			OPT = "http://bgtv.site/addon/"
 			HERE = OPT + HERE + ".php"
 			f = open(path + file, 'w')
 			f.write(HERE)
@@ -34,7 +34,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 			xbmc.executebuiltin(savednotif)
 			return HERE	  
 		else:
-			OPT = "http://bg-tv.xyz/addon/"
+			OPT = "http://bgtv.site/addon/"
 			HERE = OPT + HERE + ".php"
 			savednotif = "Notification( [COLOR blue]Cargando Codigo...[/COLOR], Gracias!, 1000)"
 			xbmc.executebuiltin(savednotif)
@@ -44,8 +44,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page></page>
 </regex> 
 
-<thumbnail>http://bg-tv.xyz/black/img/icon.png</thumbnail>
-<fanart>http://bg-tv.xyz/black/img/fanart.jpg</fanart>
+<thumbnail>http://bgtv.site/black/img/icon.png</thumbnail>
+<fanart>http://bgtv.site/black/img/fanart.jpg</fanart>
 </item>
 
 
@@ -54,28 +54,28 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
  <item> <title> </title><link>na</link>
-<thumbnail>http://bg-tv.xyz/black/img/icon.png</thumbnail>
-<fanart>http://bg-tv.xyz/black/img/fanart.jpg</fanart>
+<thumbnail>http://bgtv.site/black/img/icon.png</thumbnail>
+<fanart>http://bgtv.site/black/img/fanart.jpg</fanart>
 </item>
 
 
 
 
 <item> <title>Obten el [COLOR palegreen][B]Codigo Semanal[/B][/COLOR] Gratuito en nuestra APP Blackghost para Android</title><link>na</link>
-<thumbnail>http://bg-tv.xyz/black/img/icon.png</thumbnail>
-<fanart>http://bg-tv.xyz/black/img/fanart.jpg</fanart>
+<thumbnail>http://bgtv.site/black/img/icon.png</thumbnail>
+<fanart>http://bgtv.site/black/img/fanart.jpg</fanart>
 </item>
 
-  <item> <title>Descarga e Instala: [COLOR deepskyblue][B]http://bg-tv.xyz/app[/B] [/COLOR]</title><link>na</link>
-<thumbnail>http://bg-tv.xyz/black/img/icon.png</thumbnail>
-<fanart>http://bg-tv.xyz/black/img/fanart.jpg</fanart></item> 
+  <item> <title>Descarga e Instala: [COLOR deepskyblue][B]http://bgtv.site/app[/B] [/COLOR]</title><link>na</link>
+<thumbnail>http://bgtv.site/black/img/icon.png</thumbnail>
+<fanart>http://bgtv.site/black/img/fanart.jpg</fanart></item> 
   
 
 
 
   <item> <title> [COLOR yellow][B]APOYA[/B]: [COLOR deepskyblue][B]paypal.me/blackghost[/B] [/COLOR]</title><link>na</link>
-<thumbnail>http://bg-tv.xyz/black/img/icon.png</thumbnail>
-<fanart>http://bg-tv.xyz/black/img/fanart.jpg</fanart>
+<thumbnail>http://bgtv.site/black/img/icon.png</thumbnail>
+<fanart>http://bgtv.site/black/img/fanart.jpg</fanart>
 </item>
 
 
@@ -103,8 +103,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 ]]></expres>
 <page></page>
 </regex>
-<thumbnail>http://bg-tv.xyz/black/img/icon.png</thumbnail>
-<fanart>http://bg-tv.xyz/black/img/fanart.jpg</fanart>
+<thumbnail>http://bgtv.site/black/img/icon.png</thumbnail>
+<fanart>http://bgtv.site/black/img/fanart.jpg</fanart>
 </item>
 
 
@@ -119,8 +119,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <expres>$pyFunction:xbmcaddon.Addon('plugin.video.blackghost').openSettings()</expres>
 <page></page>
 </regex>
-<thumbnail>http://bg-tv.xyz/black/img/icon.png</thumbnail>
-<fanart>http://bg-tv.xyz/black/img/fanart.jpg</fanart>
+<thumbnail>http://bgtv.site/black/img/icon.png</thumbnail>
+<fanart>http://bgtv.site/black/img/fanart.jpg</fanart>
  </item>
 
 
@@ -135,8 +135,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page></page>
 <NOTPlayable>True</NOTPlayable>
 </regex>
-<thumbnail>http://bg-tv.xyz/black/img/icon.png</thumbnail>
-<fanart>http://bg-tv.xyz/black/img/fanart.jpg</fanart>
+<thumbnail>http://bgtv.site/black/img/icon.png</thumbnail>
+<fanart>http://bgtv.site/black/img/fanart.jpg</fanart>
 </item>
 
 
@@ -172,8 +172,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 ]]></expres>
 <page></page>
 </regex>
-<thumbnail>http://bg-tv.xyz/black/img/icon.png</thumbnail>
-<fanart>http://bg-tv.xyz/black/img/fanart.jpg</fanart>
+<thumbnail>http://bgtv.site/black/img/icon.png</thumbnail>
+<fanart>http://bgtv.site/black/img/fanart.jpg</fanart>
 </item>
 
 
