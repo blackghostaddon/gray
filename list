@@ -1,14 +1,8 @@
 <items>
-<item>
-<title>[B][UPPERCASE] [COLOR yellow]!! EN MANTENIMIENTO TEMPORAL !! [/COLOR][/B] [/UPPERCASE]</title>
-<link>NA</link>
-<info>
-Estaremos  con algunos problemas estos dias por mantenimiento .
-si tienes Codigo permanente, elimina el codigo  y vuelve a ingresarlo . 
-</info>
-<thumbnail>http://bgtv.site/black/img/icon.png</thumbnail>
-<fanart>http://bgtv.site/black/img/fanart.jpg</fanart>
-</item>
+
+
+
+
 <item>
 <title>[B][UPPERCASE] [COLOR deepskyblue]ingresar al Addon[/COLOR][/B] [/UPPERCASE]</title>
 <link>NA</link>  
@@ -150,9 +144,11 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 	  
+	  
+	  
   
 <item>
-<title>[COLOR orange][B] ●  [ELIMINAR]  Codigo Guardado  ● [/B][/COLOR]</title>
+<title>[COLOR coral][B] ●  [ELIMINAR]  Codigo Guardado  ● [/B][/COLOR]</title>
 
 
 <info>
