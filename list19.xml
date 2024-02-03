@@ -2,10 +2,16 @@
 <items>
 
 
+<item>
+<title>[B][UPPERCASE] [COLOR deepskyblue]ingresar al Addon[/COLOR][/B] Acceso Libre por Aniversario. [/UPPERCASE]</title>
+<link>NA</link>  
+<externallink>http://bgtv.site/addon/free.php?f=.xml</externallink> 
+<thumbnail>http://bgtv.site/black/img/icon.png</thumbnail>
+<fanart>http://bgtv.site/black/img/fanart.jpg</fanart>
+</item>
 
 
-
-<item><title>[B][UPPERCASE] [COLOR deepskyblue]ingresar al Addon[/COLOR][/B] [/UPPERCASE]</title>
+<!--item><title>[B][UPPERCASE] [COLOR deepskyblue]ingresar al Addon[/COLOR][/B] [/UPPERCASE]</title>
 
 
 <info>
@@ -65,7 +71,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <thumbnail>http://bgtv.site/black/img/icon.png</thumbnail>
 <fanart>http://bgtv.site/black/img/fanart.jpg</fanart>
-</item>
+</item-->
 
 
 
