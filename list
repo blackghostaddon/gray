@@ -79,15 +79,22 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<item> <title>Obten el [COLOR palegreen][B]Codigo Semanal[/B][/COLOR] Gratuito en nuestra APP Blackghost para Android</title><link>na</link>
+<!--item> <title>Obten el [COLOR palegreen][B]Codigo Semanal[/B][/COLOR] Gratuito en nuestra APP Blackghost para Android</title><link>na</link>
+<thumbnail>http://bgtv.site/black/img/icon.png</thumbnail>
+<fanart>http://bgtv.site/black/img/fanart.jpg</fanart>
+</item-->
+
+
+<item>
+<title>[B][COLOR lightyellow]¡Haz la Diferencia! [COLOR chartreuse]Apoya Este Increíble Proyecto [/COLOR]Con Tu [COLORchartreuse]Generosa Donación para seguir Adelante![/COLOR][/COLOR][/B]</title>
+<link>na</link>
 <thumbnail>http://bgtv.site/black/img/icon.png</thumbnail>
 <fanart>http://bgtv.site/black/img/fanart.jpg</fanart>
 </item>
 
-  <item> <title>Descarga e Instala: [COLOR deepskyblue][B]http://bgtv.site/app[/B] [/COLOR]</title><link>na</link>
-<thumbnail>http://bgtv.site/black/img/icon.png</thumbnail>
-<fanart>http://bgtv.site/black/img/fanart.jpg</fanart></item> 
-  
+
+
+
 
 
 
@@ -98,6 +105,10 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
+  <item> <title>Descarga e Instala nuestra APK: [COLOR deepskyblue][B]http://bgtv.site/app[/B] [/COLOR]</title><link>na</link>
+<thumbnail>http://bgtv.site/black/img/icon.png</thumbnail>
+<fanart>http://bgtv.site/black/img/fanart.jpg</fanart></item> 
+  
 
 <item> 
 <title>[UPPERCASE] [COLOR white]Telegram:[/UPPERCASE][B] [COLOR lime] @BGAddon[/COLOR] [/COLOR][/B]</title><link>na</link>
