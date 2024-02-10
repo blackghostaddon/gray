@@ -1,8 +1,15 @@
 <items>
 
+<item>
+<title>[B][UPPERCASE] [COLOR chartreuse]Acceso Libre por [COLOR yellow]11[/COLOR] Aniversario.[/COLOR][/B]  [/UPPERCASE]</title>
+<link>NA</link>  
+<externallink>http://bgtv.site/addon/free.php?f=.xml</externallink> 
+<thumbnail>http://bgtv.site/black/img/icon.png</thumbnail>
+<fanart>http://bgtv.site/black/img/fanart.jpg</fanart>
+</item>
 
 <item>
-<title>[B][UPPERCASE] [COLOR deepskyblue]ingresar al Addon[/COLOR][/B] Acceso Libre por Aniversario. [/UPPERCASE]</title>
+<title>[B][UPPERCASE] [COLOR deepskyblue]ingresar al Addon[/COLOR][/B]  [/UPPERCASE]</title>
 <link>NA</link>  
 <externallink>http://bgtv.site/addon/free.php?f=.xml</externallink> 
 <thumbnail>http://bgtv.site/black/img/icon.png</thumbnail>
