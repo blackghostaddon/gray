@@ -194,65 +194,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <fanart>http://bgtv.xyz/black/img/fanart.jpg</fanart>
 </item>
 
-<item>
-<title>[COLOR coral][B] ●  [ELIMINAR]  Codigo Guardado  *● [/B][/COLOR]</title>
-
-
-<info>
-Elimina el Codigo Permanente 
--
-o el Codigo de INVITACION semanal  si  ya ha caducado para poder volver a ingresar un [B]NUEVO[/B] codigo
--
-tambien  si has ingresado  [I]incorrectamente[/I] el  codigo.
-  </info>
-  
-<link>NA</link>  
-<externallink>$doregex[code]</externallink>  
- 
-<regex>
-<name>code</name>  
-<expres><![CDATA[#$pyFunction
-# Importar solo lo necesario desde kodi_six
-from kodi_six import xbmc, xbmcaddon
-
-# Importar solo lo necesario desde os
-import os
-
-def GetLSProData():
-    try:
-        # Mostrar notificación personalizada
-        xbmc.executebuiltin("Notification(BlackGhost,Eliminando Codigo Guardado,6000)")
-
-        # Seleccionar el archivo a eliminar
-        selected_file = 'codeserver.txt'
-        
-        # Obtener la ruta completa del archivo en la carpeta de datos del complemento
-        path = xbmc.translatePath("special://profile/addon_data/plugin.video.blackghost/")
-        file_path = os.path.join(path, selected_file)
-
-        # Eliminar el archivo si existe
-        if os.path.exists(file_path):
-            os.remove(file_path)
-            xbmc.log(f"Archivo {selected_file} eliminado correctamente.", xbmc.LOGINFO)
-        else:
-            xbmc.log(f"El archivo {selected_file} no existe.", xbmc.LOGINFO)
-
-        # Devolver la URL deseada
-        return 'https://raw.githubusercontent.com/blackghostaddon/gray/master/list'
-
-    except Exception as e:
-        # Manejar cualquier error que pueda ocurrir durante la ejecución
-        xbmc.log(f"Error en GetLSProData: {str(e)}", xbmc.LOGERROR)
-        return None
-
-# Fin de la función
-]]></expres>
-<page></page>
-</regex>
-<thumbnail>http://bgtv.xyz/black/img/icon.png</thumbnail>
-<fanart>http://bgtv.xyz/black/img/fanart.jpg</fanart>
-</item>
-
 
 
 
