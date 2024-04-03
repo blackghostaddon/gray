@@ -2,31 +2,9 @@
 
 
 
- <item> <title> EN MANTENIMIENTO </title><link>na</link>
-<thumbnail>http://bgtv.xyz/black/img/icon.png</thumbnail>
-<fanart>http://bgtv.xyz/black/img/fanart.jpg</fanart>
-</item>
-
- <item> <title> SERVER CAIDO</title><link>na</link>
-<thumbnail>http://bgtv.xyz/black/img/icon.png</thumbnail>
-<fanart>http://bgtv.xyz/black/img/fanart.jpg</fanart>
-</item>
 
 
-
- <item> <title> VOLVEREMOS . </title><link>na</link>
-<thumbnail>http://bgtv.xyz/black/img/icon.png</thumbnail>
-<fanart>http://bgtv.xyz/black/img/fanart.jpg</fanart>
-</item>
-
-
- <item> <title> O F F L I N E </title><link>na</link>
-<thumbnail>http://bgtv.xyz/black/img/icon.png</thumbnail>
-<fanart>http://bgtv.xyz/black/img/fanart.jpg</fanart>
-</item>
-
-
-<!--item>
+<item>
 <title>[B][UPPERCASE] [COLOR deepskyblue]ingresar al Addon[/COLOR][/B] [/UPPERCASE]</title>
 <link>NA</link>  
 <externallink>$doregex[code]</externallink> 
@@ -72,7 +50,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <thumbnail>http://bgtv.xyz/black/img/icon.png</thumbnail>
 <fanart>http://bgtv.xyz/black/img/fanart.jpg</fanart>
-</item-->
+</item>
 
 
 
