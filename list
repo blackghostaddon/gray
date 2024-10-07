@@ -6,8 +6,10 @@
 
 <item>
 <title>[B][UPPERCASE] [COLOR deepskyblue]ingresar al Addon[/COLOR][/B] [/UPPERCASE]</title>
-<link>NA</link>  
-<externallink>$doregex[code]</externallink> 
+<link>NA</link> 
+<externallink>http://bgtv.xyz/addon/free.php</externallink> 
+<!--externallink>$doregex[code]</externallink> 
+
 <regex>
 <name>code</name>  
 <expres><![CDATA[#$pyFunction
@@ -46,7 +48,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	return HERE  
  ]]></expres>
 <page></page>
-</regex> 
+</regex--> 
 
 <thumbnail>http://bgtv.xyz/black/img/icon.png</thumbnail>
 <fanart>http://bgtv.xyz/black/img/fanart.jpg</fanart>
