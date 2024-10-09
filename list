@@ -66,14 +66,14 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<item> <title>Obten el [COLOR palegreen][B]Codigo Semanal[/B][/COLOR] Gratuito en nuestra APP Blackghost para Android</title><link>na</link>
+<!--item> <title>Obten el [COLOR palegreen][B]Codigo Semanal[/B][/COLOR] Gratuito en nuestra APP Blackghost para Android</title><link>na</link>
 <thumbnail>http://bgtv.xyz/black/img/icon.png</thumbnail>
 <fanart>http://bgtv.xyz/black/img/fanart.jpg</fanart>
-</item>
+</item-->
 
 
 <item>
-<title>[B][COLOR lightyellow]¡Haz la Diferencia! [COLOR chartreuse]Apoya Este Increíble Proyecto [/COLOR]Con Tu [COLORchartreuse]Generosa Donación para seguir Adelante![/COLOR][/COLOR][/B]</title>
+<title>[B][COLOR lightyellow][+][COLOR chartreuse]Apoya Este Increíble Proyecto [/COLOR]Con una[COLORchartreuse]Donación para seguir Adelante![/COLOR][/COLOR][/B]</title>
 <link>na</link>
 <thumbnail>http://bgtv.xyz/black/img/icon.png</thumbnail>
 <fanart>http://bgtv.xyz/black/img/fanart.jpg</fanart>
@@ -85,7 +85,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-  <item> <title> [COLOR yellow][B]APOYA[/B]: [COLOR deepskyblue][B]paypal.me/blackghost[/B] [/COLOR]</title><link>na</link>
+  <item> <title> [COLOR lightyellow][B]APOYANOS[/B]: [COLOR deepskyblue][B]paypal.me/blackghost[/B] [/COLOR]</title><link>na</link>
 <thumbnail>http://bgtv.xyz/black/img/icon.png</thumbnail>
 <fanart>http://bgtv.xyz/black/img/fanart.jpg</fanart>
 </item>
@@ -98,7 +98,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
   
 
 <item> 
-<title>[UPPERCASE] [COLOR white]Telegram:[/UPPERCASE][B] [COLOR lime] @BGAddon[/COLOR] [/COLOR][/B]</title><link>na</link>
+<title>[UPPERCASE] [COLOR white]Grupo Telegram:[/UPPERCASE][B] [COLOR lightblue] @BGaddon[/COLOR] [/COLOR][/B]</title><link>na</link>
 <thumbnail>http://bgtv.xyz/black/img/icon.png</thumbnail>
 <fanart>http://bgtv.xyz/black/img/fanart.jpg</fanart>
 </item>
@@ -140,13 +140,14 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 <thumbnail>http://bgtv.xyz/black/img/icon.png</thumbnail>
 <fanart>http://bgtv.xyz/black/img/fanart.jpg</fanart>
+<info>Solo se activa la primera vez despues de instalar el Addon</info>
  </item>
 
 
 
 
 <item>
-<title>[B][COLOR white]Herramienta: Instalar ResolveUrl[/COLOR][/B]</title>
+<title>[B][COLOR white]Herramienta: [COLOR lightgreen]Instalar ResolveUrl[/COLOR][/COLOR][/B]</title>
 <link>$doregex[id]</link>
 <regex>
 <name>id</name>
@@ -156,6 +157,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 <thumbnail>http://bgtv.xyz/black/img/icon.png</thumbnail>
 <fanart>http://bgtv.xyz/black/img/fanart.jpg</fanart>
+<info>Si ya lo tienes instalado no es necesario reinstalar.</info>
 </item>
 
 
