@@ -145,8 +145,44 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-
 <item>
+<title>[COLOR white]Dependencia ResolveURL: $doregex[ResolveUrl][/COLOR]</title>
+<link>$doregex[id]</link>
+
+
+<regex>
+<name>id</name>
+<expres>$pyFunction:xbmc.executebuiltin('InstallAddon(script.module.resolveurl)')</expres>
+<page></page>
+<NOTPlayable>True</NOTPlayable>
+</regex>
+
+<regex>
+<name>ResolveUrl</name>
+<expres>$pyFunction:('$doregex[ResolveUrl1]').replace('0','[COLOR orange]No,  Instalar Desde Aqui.').replace('1','[COLOR lime]Si, Instalado[/COLOR]').replace('False','[COLOR orange]No,  Instalar Desde Aqui.').replace('True','[COLOR lime]Si, Instalado[/COLOR]')</expres>
+<page></page>
+</regex>
+
+<regex>
+<name>ResolveUrl1</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+ import xbmc
+ xbmc.executebuiltin('UpdateAddonRepos')
+ xbmc.executebuiltin('UpdateAddonRepos')
+ hola = xbmc.getCondVisibility('System.HasAddon(script.module.resolveurl)')
+ return hola
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://bgtv.xyz/black/img/icon.png</thumbnail>
+<fanart>http://bgtv.xyz/black/img/fanart.jpg</fanart>
+<info>Si ya lo tienes instalado no es necesario reinstalar.</info>
+</item>
+
+
+
+<!--item>
 <title>[B][COLOR white]Herramienta: [COLOR lightgreen]Instalar ResolveUrl[/COLOR][/COLOR][/B]</title>
 <link>$doregex[id]</link>
 <regex>
@@ -158,7 +194,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>http://bgtv.xyz/black/img/icon.png</thumbnail>
 <fanart>http://bgtv.xyz/black/img/fanart.jpg</fanart>
 <info>Si ya lo tienes instalado no es necesario reinstalar.</info>
-</item>
+</item-->
 
 
 	  
