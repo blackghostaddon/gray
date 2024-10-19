@@ -130,7 +130,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <fanart>http://bgtv.xyz/black/img/fanart.jpg</fanart>
 </item>
 
-<item>
+<!--item>
 <title>[B][COLOR white]Configuracion: [COLOR lightgreen]Activar Turbo[/COLOR] [/COLOR][/B]</title>
 <link>$doregex[canal]</link>
 <regex>
@@ -141,7 +141,55 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>http://bgtv.xyz/black/img/icon.png</thumbnail>
 <fanart>http://bgtv.xyz/black/img/fanart.jpg</fanart>
 <info>Solo se activa la primera vez despues de instalar el Addon</info>
- </item>
+ </item-->
+ 
+<item>
+<title>[COLOR white]Configuracion Activar Turbo: $doregex[turbo][/COLOR]</title>
+<link>$doregex[idt]</link>
+
+<regex>
+<name>idt</name>
+<expres>$pyFunction:xbmcaddon.Addon('plugin.video.blackghost').openSettings()</expres>
+<page></page>
+<NOTPlayable>True</NOTPlayable>
+</regex>
+
+<regex>
+<name>turbo</name>
+<expres>$pyFunction:('$doregex[turbo1]').replace('0','[COLOR orange]No, Activalo Aqui').replace('1','[COLOR lime]Turbo, Activado[/COLOR]').replace('False','[COLOR orange]No,  Activalo Aqui.').replace('True','[COLOR lime][OK, Activado!!!][/COLOR]')</expres>
+<page></page>
+</regex>
+
+<regex>
+<name>turbo1</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+ import xbmc,os
+ path = xbmc.translatePath('special://profile/addon_data/plugin.video.blackghost/')
+ return os.path.exists(path)
+]]></expres>
+
+<expres><![CDATA[#$pyFunction
+import xbmc, xbmcvfs, six
+from kodi_six import xbmc, xbmcgui, xbmcaddon, xbmcvfs
+
+def GetLSProData(page_data,Cookie_Jar,m):
+    EJECUTAR_XBMC = xbmc if six.PY2 else xbmcvfs
+    path = EJECUTAR_XBMC.translatePath('special://profile/addon_data/plugin.video.blackghost/')
+    
+    if xbmcvfs.exists(path):        
+        return True
+    else:        
+        return False
+]]></expres>
+<page></page>
+</regex>
+<thumbnail>http://bgtv.xyz/black/img/icon.png</thumbnail>
+<fanart>http://bgtv.xyz/black/img/fanart.jpg</fanart>
+<info>Si ya te Aparece Activado, no hace falta Activar nuevamente.</info>
+</item>
+
+
 
 
 
