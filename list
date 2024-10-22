@@ -75,7 +75,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <item>
 <title>[B][COLOR chartreuse]Apoya Este Increíble Proyecto con una Donación para seguir Adelante![/COLOR][/B]</title>
 <link>na</link>
-<thumbnail>http://bgtv.xyz/black/img/paypalme2.png</thumbnail>
+<thumbnail>http://bgtv.xyz/black/img/paypalme.png</thumbnail>
 <fanart>http://bgtv.xyz/black/img/fanart.jpg</fanart>
 </item>
 
@@ -99,9 +99,10 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <item> 
 <title>[UPPERCASE] [COLOR white]Grupo Telegram:[/UPPERCASE][B] [COLOR lightblue] @BGaddon[/COLOR] [/COLOR][/B]</title><link>na</link>
-<thumbnail>http://bgtv.xyz/black/img/icon.png</thumbnail>
+<thumbnail>http://bgtv.xyz/black/img/telegram.png</thumbnail>
 <fanart>http://bgtv.xyz/black/img/fanart.jpg</fanart>
 </item>
+
 
 
 
