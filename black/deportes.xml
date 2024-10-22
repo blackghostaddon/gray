@@ -1,0 +1,822 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+
+
+<items>
+
+<SetViewMode>55</SetViewMode>
+
+
+
+<item><!--  CANALES INFINITY CHANNELS -->
+<title>  [COLOR lightgreen][B]CANALES [/COLOR][COLOR lightblue]INFINITY[/COLOR][/B]  [COLOR lightslategray] [/COLOR]</title>
+<link>NA</link>
+<externallink>http://bgtv.xyz/infinity.php?deportes</externallink>
+<thumbnail>http://bgtv.xyz/black/img/deportes.png</thumbnail>
+</item>
+
+<item><!--  CANALES INFINITY CHANNELS -->
+<title>  [COLOR lightgreen][B]CANALES [/COLOR][COLOR lightblue]FUTVALL[/COLOR][/B]  [COLOR lightslategray] [/COLOR]</title>
+<link>NA</link>
+<externallink>http://bgtv.xyz/infinity.php?futvall</externallink>
+<thumbnail>http://bgtv.xyz/black/img/deportes.png</thumbnail>
+</item>
+
+
+
+<item><!--  CANALES VIPGOAL -->
+<title>  [COLOR lightgreen][B]CANALES [/COLOR][COLOR lightblue]VIPGOAL[/COLOR][/B]  [COLOR lightslategray]  [/COLOR]  </title>
+<link>$doregex[makelist]</link>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[COLOR skyblue][#BG][/COLOR] [COLOR white][B][makelist.param1][/B][/COLOR]</title>
+<link>[makelist.param2]</link>
+<thumbnail>http://bgtv.xyz/black/img/deportes.png</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[name\s\=(.*?)<.*?enlace\s\=\s(.*?)\<]]></expres>
+<page>http://bgtv.xyz/play/vipgoal.php</page>
+</regex>
+
+<thumbnail>http://bgtv.xyz/black/img/deportes.png</thumbnail></item>
+
+
+
+<item> <!--  CANALES TARJETA -->
+<title>  [COLOR lightgreen][B]CANALES [/COLOR][COLOR lightblue]TARJETAROJA[/COLOR][/B]  [COLOR lightslategray] [/COLOR]</title>
+
+
+
+<link>$doregex[makelist]</link>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[COLOR lightblue][makelist.param1][/COLOR]</title>
+<link>$doregex[select]</link>
+<thumbnail>http://bgtv.xyz/black/img/deportes.png</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[="(.*?)"-"(.*?)"]]></expres>
+<page>http://bgtv.xyz/black/fut.txt</page>
+</regex>
+
+
+
+
+
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+   import xbmcgui
+   dialog = xbmcgui.Dialog()
+   ret = dialog.select('Elige Una opcion', ['Opcion 1','Opcion 2', 'Opcion 3'])
+   lists = ['$doregex[geturl2]|Referer=https://planetfastidious.net&Origin=https://planetfastidious.net&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36','$doregex[geturl5]|Referer=https://planetfastidious.net&Origin=https://planetfastidious.net&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36','$doregex[geturl4]|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0&amp;Origin=https://hoca2.com&amp;Referer=https://hoca2.com/']
+   return lists[ret]
+]]></expres>
+<page></page>
+</regex>
+
+
+
+<regex>
+<name>geturl2</name>
+<expres>src="(.*?)"</expres>
+<page>$doregex[getunpacked]</page>
+<referer>https://tarjetarojaenvivo.lat/player/2/[makelist.param2]</referer>
+</regex>
+<regex>
+<name>getunpacked</name>
+<expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)' )</expres>
+<page>$doregex[geturl]</page>
+<referer>https://tarjetarojaenvivo.lat/</referer>
+<connection>keep-alive</connection>
+</regex>
+<regex>
+<name>geturl</name>
+<expres><![CDATA[iframe src="(.+?)"]]></expres>
+<page>https://tarjetarojaenvivo.lat/player/2/[makelist.param2]</page>
+</regex>
+
+
+
+<regex>
+<name>geturl5</name>
+<expres>src="(.*?)"</expres>
+<page>$doregex[getunpacked5]</page>
+<referer>https://tarjetarojaenvivo.lat/</referer>
+</regex>
+
+<regex>
+<name>getunpacked5</name>
+<expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)' )</expres>
+<page>$doregex[geturl55]</page>
+<referer>https://tarjetarojaenvivo.lat/</referer>
+<connection>keep-alive</connection>
+</regex>
+
+<regex>
+<name>geturl55</name>
+<expres><![CDATA[iframe src="(.+?)"]]></expres>
+<page>https://tarjetarojaenvivo.lat/player/5/[makelist.param2]</page>
+</regex>
+
+
+
+<regex>
+<name>geturl4</name>
+<expres>$pyFunction:'$doregex[geturl2]'.replace('"','').replace(',','').replace('\/\/\/\/','//')</expres>
+<page>NA</page>
+</regex>
+
+<regex>
+<name>geturl44</name>
+<expres>return\(\["(.*?)"\]</expres>
+<page>https://hoca2.com/footy.php?player=desktop&amp;live=ufeed[makelist.param2]</page>
+<referer>https://tarjetarojaenvivo.lat/</referer>
+</regex>
+
+
+
+<thumbnail>http://bgtv.xyz/black/img/acestreams.png</thumbnail>
+</item>
+
+
+
+<item><!--CANALES DEPORTIVA SU -->
+<title>  [COLOR lightgreen][B]CANALES [/COLOR][COLOR lightblue]TUSDEPORTIVOS[/COLOR][/B]  [COLOR lightslategray] [/COLOR]</title>
+
+<link>$doregex[makelist3]</link>
+
+
+
+<regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+<title>[B][makelist3.param1][/B] </title>
+<link>$doregex[select_Url]</link>
+<thumbnail>http://bgtv.xyz/black/img/deportes.png</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[="(.*?)"-"(.*?)"]]></expres>
+<page>https://bgtv.xyz/black/fut2.txt</page>
+</regex>
+
+
+<regex>
+<name>select_Url</name>
+<expres>$pyFunction: '$doregex[geturl]|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0&amp;Origin=https://vodkapr3mium.com&amp;Referer=https://vodkapr3mium.com/' if not '$doregex[geturl]|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0&amp;Origin=https://vodkapr3mium.com&amp;Referer=https://vodkapr3mium.com/'=='' else 'https://ia601309.us.archive.org/4/items/20240222125627165/20240222125627165.mp4|User-Agent=iPhone'</expres>
+<page></page>
+</regex>
+
+<regex>
+<name>geturl</name>
+<expres>$pyFunction:'$doregex[geturl2]'.replace('"','').replace(',','').replace('\/\/\/\/','//')</expres>
+<page></page>
+</regex>
+
+<regex>
+<name>geturl2</name>
+<expres>return\(\["(.*?)"\]</expres>
+<page>https://vodkapr3mium.com/deportivo.php?player=desktop&amp;live=[makelist3.param2]</page>
+<referer>https://tucanaldeportivo.org/</referer>
+</regex>
+
+<regex>
+<name>id</name>
+<expres>fid="(.*?)"</expres>
+<page>$doregex[frame]</page>
+<referer>https://tucanaldeportivo.org/</referer>
+</regex>
+
+<regex>
+<name>frame</name>
+<expres><![CDATA[<iframe[\w\W\s]*?src="(.*?)"]]></expres>
+<page>https://tucanaldeportivo.org/ver/[makelist3.param1]</page>
+<referer>https://tucanaldeportivo.org/</referer>
+</regex>
+
+<thumbnail>http://bgtv.xyz/black/img/deportes.png</thumbnail>
+</item>
+
+
+
+
+<item>
+<title>  [COLOR lightgreen][B]CANALES [/COLOR][COLOR lightblue]STREAM TP[/COLOR][/B]  [COLOR lightslategray] [/COLOR]</title>
+
+<link>$doregex[makelist]</link>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[COLOR lightblue][makelist.param1][/COLOR] </title>
+<link>$doregex[m3u8]|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:122.0) Gecko/20100101 Firefox/122.0&amp;Origin=https://streamtp1.com&amp;Referer=https://streamtp1.com/</link>
+<thumbnail>http://bgtv.xyz/black/img/deportes.png</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[\s\s'(.*?)'.*?stream=(.*?)']]></expres>
+<page>https://streamtp1.com/</page>
+</regex>
+
+<regex>
+<name>m3u8</name>
+<expres><![CDATA[playbackURL.*?"(.*?)"]]></expres>
+<page>https://streamtp1.com/global1.php?stream=[makelist.param2]</page>
+</regex>
+
+
+<thumbnail>http://bgtv.xyz/black/img/deportes.png</thumbnail></item>
+
+
+
+
+
+
+
+<item><!--  CANALES WORLDSPORT -->
+<title>  [COLOR lightgreen][B]CANALES [/COLOR][COLOR lightblue]WORLD SPORTS [/COLOR][/B]  [COLOR lightslategray]  [/COLOR]  </title>
+
+<link>$doregex[makelist3]</link>
+
+<regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+<title>[B][makelist3.param1][/B]</title>
+<link>https://webhdrus.onlinehdhls.ru/lb/premium$doregex[id]/index.m3u8|Referer=https://olalivehdplay.ru/&amp;origin=https://olalivehdplay.ru&amp;user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36</link>
+<thumbnail>http://bgtv.xyz/black/img/deportes.png</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[="(.*?)","(.*?)",]]></expres>
+<page>http://bgtv.xyz/black/ws.php</page>
+</regex>
+
+<regex>
+<name>id</name>
+<expres><![CDATA[<iframe.*?ch-(.*?)"]]></expres>
+<page>[makelist3.param2]</page>
+</regex>
+
+<thumbnail>http://bgtv.xyz/black/img/deportes.png</thumbnail>
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item> <!--  CANALES TARJETA -->
+<title>  [COLOR lightcyan][B]AGENDA [/COLOR][COLOR lightblue]ROJA[/COLOR][/B]  [COLOR lightslategray] [/COLOR]</title>
+
+
+
+<link>$doregex[makelist]</link>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[COLOR lightblue][makelist.param1][/COLOR][COLOR orange]  ([makelist.param3])[/COLOR][COLOR gray] [makelist.param2][/COLOR]</title>
+<link>$doregex[select]</link>
+<thumbnail>http://bgtv.xyz/black/img/deportes.png</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[=(.*?),(.*?),(.*?)\n]]></expres>
+<page>https://bgtv.xyz/redcard.php</page>
+</regex>
+
+
+
+
+
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+   import xbmcgui
+   dialog = xbmcgui.Dialog()
+   ret = dialog.select('Elige Una opcion', ['Opcion 1','Opcion 2', 'Opcion 3'])
+   lists = ['$doregex[geturl2]|Referer=https://planetfastidious.net&Origin=https://planetfastidious.net&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36','$doregex[geturl5]|Referer=https://planetfastidious.net&Origin=https://planetfastidious.net&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36','$doregex[geturl4]|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0&amp;Origin=https://hoca2.com&amp;Referer=https://hoca2.com/']
+   return lists[ret]
+]]></expres>
+<page></page>
+</regex>
+
+
+
+<regex>
+<name>geturl2</name>
+<expres>src="(.*?)"</expres>
+<page>$doregex[getunpacked]</page>
+<referer>https://tarjetarojaenvivo.lat/player/2/[makelist.param2]</referer>
+</regex>
+<regex>
+<name>getunpacked</name>
+<expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)' )</expres>
+<page>$doregex[geturl]</page>
+<referer>https://tarjetarojaenvivo.lat/</referer>
+<connection>keep-alive</connection>
+</regex>
+<regex>
+<name>geturl</name>
+<expres><![CDATA[iframe src="(.+?)"]]></expres>
+<page>https://tarjetarojaenvivo.lat/player/2/[makelist.param2]</page>
+</regex>
+
+
+
+<regex>
+<name>geturl5</name>
+<expres>src="(.*?)"</expres>
+<page>$doregex[getunpacked5]</page>
+<referer>https://tarjetarojaenvivo.lat/</referer>
+</regex>
+
+<regex>
+<name>getunpacked5</name>
+<expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)' )</expres>
+<page>$doregex[geturl55]</page>
+<referer>https://tarjetarojaenvivo.lat/</referer>
+<connection>keep-alive</connection>
+</regex>
+
+<regex>
+<name>geturl55</name>
+<expres><![CDATA[iframe src="(.+?)"]]></expres>
+<page>https://tarjetarojaenvivo.lat/player/5/[makelist.param2]</page>
+</regex>
+
+
+
+<regex>
+<name>geturl4</name>
+<expres>$pyFunction:'$doregex[geturl2]'.replace('"','').replace(',','').replace('\/\/\/\/','//')</expres>
+<page>NA</page>
+</regex>
+
+<regex>
+<name>geturl44</name>
+<expres>return\(\["(.*?)"\]</expres>
+<page>https://hoca2.com/footy.php?player=desktop&amp;live=ufeed[makelist.param2]</page>
+<referer>https://tarjetarojaenvivo.lat/</referer>
+</regex>
+
+
+
+<thumbnail>http://bgtv.xyz/black/img/acestreams.png</thumbnail>
+</item>
+
+
+
+<item>
+<title>  [COLOR lightcyan][B]AGENDA [/COLOR][COLOR lightblue]STREAMTP[/COLOR][/B]  [COLOR lightslategray] [/COLOR]</title>
+
+
+<link>$doregex[makelist]</link>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param1] [COLOR lightblue][makelist.param2][/COLOR]  ([makelist.param3])</title>
+<link>$doregex[m3u8]|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:122.0) Gecko/20100101 Firefox/122.0&amp;Origin=https://streamtp1.com&amp;Referer=https://streamtp1.com/</link>
+<thumbnail>http://bgtv.xyz/black/img/deportes.png</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[=(.*?),(.*?),(.*?),(.*?)\n]]></expres>
+<page>https://bgtv.xyz/streamtp1.php</page>
+</regex>
+
+<regex>
+<name>m3u8</name>
+<expres><![CDATA[playbackURL.*?"(.*?)"]]></expres>
+<page>https://streamtp1.com/global1.php?stream=[makelist.param4]</page>
+</regex>
+
+
+<thumbnail>http://bgtv.xyz/black/img/deportes.png</thumbnail></item>
+
+
+
+
+
+
+<item><!--AGENDA DEPORTIVA SU -->
+<title>  [COLOR lightcyan][B]AGENDA [/COLOR][COLOR lightblue]DEPORTIVA SUR[/COLOR][/B]  [COLOR lightslategray] [/COLOR]</title>
+<link>$doregex[makelist3]</link>
+
+
+
+
+
+
+<regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+<title>[makelist3.param1] [B][makelist3.param2][/B] [COLOR skyblue][makelist3.param3][/COLOR] [COLOR orange]([makelist3.param4])[/COLOR]</title>
+<link>$doregex[geturl]|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0&amp;Origin=https://vodkapr3mium.com&amp;Referer=https://vodkapr3mium.com/</link>
+<thumbnail>http://bgtv.xyz/black/img/deportes.png</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[=(.*?),(.*?),(.*?),(.*?),(.*?),]]></expres>
+<page>http://bgtv.xyz/get/pelo.php</page>
+</regex>
+
+<regex>
+<name>geturl</name>
+<expres>$pyFunction:'$doregex[geturl2]'.replace('"','').replace(',','').replace('\/\/\/\/','//')</expres>
+<page></page>
+</regex>
+
+<regex>
+<name>geturl2</name>
+<expres><![CDATA[return\(\["(.*?)"\]]]></expres>
+<page>https://vodkapr3mium.com/deportivo.php?player=desktop&amp;live=$doregex[geturl3]</page>
+<referer>https://tucanaldeportivo.org/</referer>
+</regex>
+
+<regex>
+<name>geturl3</name>
+<expres><![CDATA[fid="(.*?)"]]></expres>
+<page>$doregex[geturl4]</page>
+<referer>https://tucanaldeportivo.org/</referer>
+</regex>
+<regex>
+<name>geturl4</name>
+<expres><![CDATA[<iframe[\w\W\s]*?src="(.*?)"]]></expres>
+<page>[makelist3.param5]</page>
+<referer>https://tucanaldeportivo.org/</referer>
+</regex>
+
+
+<thumbnail>http://bgtv.xyz/black/img/deportes.png</thumbnail>
+</item>
+
+
+
+
+
+
+<item><!--  AGENDA DADDYLIVE -->
+<title>  [COLOR lightcyan][B]AGENDA [/COLOR][COLOR lightblue]LIBREDEPORTES[/COLOR][/B]  [COLOR lightslategray]  [/COLOR]  </title>
+
+<link>$doregex[makelist3]</link>
+
+<regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+<title>[makelist3.param1][B][makelist3.param2][/B] - [makelist3.param3]</title>
+<link>https://xyzdddd.mizhls.ru/lb/premium[makelist3.param4]/index.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0&amp;Origin=https://ilovetoplay.xyz&amp;Referer=https://ilovetoplay.xyz/</link>
+<thumbnail>http://bgtv.xyz/black/img/deportes.png</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[=(.*?),(.*?),(.*?),(.*?),]]></expres>
+<page>https://bgtv.xyz/libre.php</page>
+</regex>
+
+
+
+<thumbnail>http://bgtv.xyz/black/img/deportes.png</thumbnail>
+<fanart>http://bgtv.xyz/black/img/fanart.jpg</fanart>
+</item>
+
+
+
+
+<item><!--AGENDA JEINZMACIAS-->
+<title>  [COLOR lightcyan][B]AGENDA [/COLOR][COLOR lightblue]JEINZM[/COLOR][/B]  [COLOR lightslategray] [/COLOR]</title>
+<link>NA</link>
+<externallink>http://bgtv.xyz/macias.php?macias</externallink>
+<thumbnail>http://bgtv.xyz/black/img/deportes.png</thumbnail>
+</item>
+
+<item> <!-- AGENDA SPORTZONE "https://hpkgqdbtnyresauf.cdnorange.net/ -->
+<title>  [COLOR lightcyan][B]AGENDA [/COLOR][COLOR lightblue]SPORTZONLINE[/COLOR][/B]  [COLOR lightslategray] [/COLOR] </title>
+
+<link>$doregex[makelist]</link>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+  <title>[COLOR deepskyblue][/COLOR] [COLOR lightgreen][makelist.param1][/COLOR] [COLOR skyblue][B][makelist.param2][/B][/COLOR]   [COLOR lightslategray][I][makelist.param4] [/I][/COLOR]</title> <link>$doregex[geturl2]|Referer=https://planetfastidious.net&amp;Origin=https://planetfastidious.net&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36</link> <referer>https://planetfastidious.net/</referer> <thumbnail>http://bgtv.xyz/black/img/deportes.png</thumbnail>
+]]></listrepeat>
+<expres>=(.*?),(.*?),(.*?),(.*?)\n</expres>
+<page>http://bgtv.xyz/loves.php?szone</page>
+</regex>
+
+<regex>
+<name>geturl2</name>
+<expres>src="(.*?)"</expres>
+<page>$doregex[getunpacked]</page>
+<referer>https://v5.sportsonline.si/</referer>
+</regex>
+
+<regex>
+<name>getunpacked</name>
+<expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)' )</expres>
+<page>$doregex[geturl]</page>
+<referer>https://v5.sportsonline.si/channels/hd/hd6.php</referer>
+<connection>keep-alive</connection>
+</regex>
+
+<regex>
+<name>geturl</name>
+<expres><![CDATA[iframe src="(.+?)"]]></expres>
+<page>[makelist.param3]</page>
+</regex>
+
+
+
+<thumbnail>http://bgtv.xyz/black/img/deportes.png</thumbnail>
+</item>
+ 
+
+<item><!--  AGENDA DADDYLIVE -->
+<title>  [COLOR lightcyan][B]AGENDA [/COLOR][COLOR lightblue]DADDYLIVE[/COLOR][/B]  [COLOR lightslategray]  [/COLOR]  </title>
+<link>NA</link>
+<externallink>http://bgtv.xyz/daddy.php?daddy</externallink>
+<thumbnail>http://bgtv.xyz/black/img/deportes.png</thumbnail>
+<fanart>http://bgtv.xyz/black/img/fanart.jpg</fanart>
+</item>
+
+<item> <!-- AGENDA ARENA SPORT -->
+<title>  [COLOR lightcyan][B]AGENDA [/COLOR][COLOR lightblue]ARENASPORT[/COLOR][/B]  [COLOR lightslategray] [/COLOR] </title>
+<link>NA</link>
+<externallink>http://bgtv.xyz/arena.php?arena</externallink>
+<thumbnail>http://bgtv.xyz/black/img/deportes.png</thumbnail>
+</item>
+ 
+
+<item> <!-- AGENDA ASSIA SPORT -->
+<title>  [COLOR lightcyan][B]AGENDA [/COLOR][COLOR lightblue]ASSIA[/COLOR][/B]  [COLOR lightslategray] [/COLOR] </title>
+<link>NA</link>
+<externallink>http://bgtv.xyz/assia.php?assia</externallink>
+<thumbnail>http://bgtv.xyz/black/img/deportes.png</thumbnail>
+</item>
+ 
+
+<item> <!-- AGENDA SPACE -->
+<title>  [COLOR lightcyan][B]AGENDA [/COLOR][COLOR lightblue]SPACE[/COLOR][/B][COLORyellow][B][/B][/COLOR] </title>
+<link>NA</link>
+<externallink>http://bgtv.xyz/space.php?space&amp;dir</externallink>
+<thumbnail>http://bgtv.xyz/black/img/deportes.png</thumbnail>
+</item>
+ 
+<item> <!-- AGENDA SPACEf1 -->
+<title>  [COLOR lightcyan][B]AGENDA [/COLOR][COLOR lightblue]F1[/COLOR][/B][COLOR yellow][B][/B][/COLOR] </title>
+<link>NA</link>
+<externallink>http://bgtv.xyz/space.php?space&amp;f1</externallink>
+<thumbnail>http://bgtv.xyz/black/img/deportes.png</thumbnail>
+</item>
+
+
+<item> <!-- AGENDA MRGAMES -->
+<title>  [COLOR lightcyan][B]AGENDA [/COLOR][COLOR lightblue]BUFFER[/COLOR][/B][COLORyellow][B][/B][/COLOR] </title>
+<link>NA</link>
+
+<externallink>http://bgtv.xyz/buffer.php?buff&amp;cat=$doregex[select]</externallink>
+
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+   import xbmcgui
+   dialog = xbmcgui.Dialog()
+   ret = dialog.select('Elige una opcion: ', ['SOCCER','NBA','MLB'])
+   lists = ['soccerstreams','nbastreams','mlbstreams']
+   return lists[ret]
+]]></expres>
+<page></page>
+</regex>
+<info>
+&#x25CF; FORMULA 1
+
+&#x25CF; SPORTS
+
+&#x25CF; NHL
+</info>
+
+<thumbnail>http://bgtv.xyz/black/img/deportes.png</thumbnail>
+</item>
+
+
+ <item>  <!-- AGENDA MRGAMES -->
+<title>  [COLOR lightcyan][B]AGENDA [/COLOR][COLOR lightblue]BUFFER2[/COLOR][/B][COLORyellow][B]  Formula 1, UFC , BOX[/B][/COLOR]</title>
+<link>NA</link>
+
+
+<externallink>http://bgtv.xyz/buffer.php?buff&amp;f1=$doregex[select]</externallink>
+
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+   import xbmcgui
+   dialog = xbmcgui.Dialog()
+   ret = dialog.select('Elige una opcion: ', ['MOTOR - F1','UFC','BOX'])
+   lists = ['formula1streams','ufcstreams','boxingstreams']
+   return lists[ret]
+]]></expres>
+<page></page>
+</regex>
+
+<thumbnail>http://bgtv.xyz/black/img/deportes.png</thumbnail>
+</item>
+ 
+ 
+ 
+
+ <item> <!-- AGENDA 1STREAMS -->
+<title>  [COLOR lightcyan][B]AGENDA [/COLOR][COLOR lightblue]1Stream[/COLOR][/B][COLORyellow][B][/B][/COLOR]</title>
+
+<link>$doregex[makelist3]</link>
+
+<regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+<title>[B][makelist3.param2][/B] - [makelist3.param3]</title>
+<link>$doregex[geturl]|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0&amp;Origin=https://1stream.eu&amp;Referer=https://1stream.eu/</link>
+<thumbnail>http://bgtv.xyz/black/img/deportes.png</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[\s\s<a href="(.*?)"[\w\W\s]*?<h4.*?>(.*?)<[\w\W\s]*?<p[\w\W\s]*?\n\s*(.*?)\s*<]]></expres>
+<page>https://1stream.eu/$doregex[select]</page>
+</regex>
+
+
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+   import xbmcgui
+   dialog = xbmcgui.Dialog()
+   ret = dialog.select('Elige Una opcion', ['F1 Streams','NBA', 'NFL','NHL','MLB','MMA','BOX'])
+   lists = ['f1streams','nbastreams','nflstreams','nhlstreams','mlbstreams','mmastreams','boxingstreams']
+   return lists[ret]
+]]></expres>
+<page></page>
+</regex>
+
+
+
+<regex>
+<name>geturl</name>
+<expres>$pyFunction:base64.b64decode('$doregex[ch]')</expres>
+<page></page>
+</regex>
+
+<regex>
+<name>ch</name>
+<expres>atob\(\"(.*?)"</expres>
+<page>[makelist3.param1]</page>
+<referer>[makelist3.param1]</referer>
+</regex>
+
+
+
+
+<thumbnail>http://bgtv.xyz/black/img/deportes.png</thumbnail>
+</item>
+
+
+
+
+ <item> <!-- AGENDA FAWA -->
+<title>  [COLOR lightcyan][B]AGENDA [/COLOR][COLOR lightblue]FAWA Streams[/COLOR][/B][COLORyellow][B][/B][/COLOR]</title>
+<link>NA</link>
+<info>
+&#x25CF; LALIGA
+
+&#x25CF; LA LIGA MX
+
+&#x25CF; FORMULA 1
+</info>
+<externallink>http://bgtv.xyz/fawa.php?fawa&amp;cat</externallink>
+<thumbnail>http://bgtv.xyz/black/img/deportes.png</thumbnail>
+</item>
+ 
+
+ <item> <!-- AGENDA SWBT -->
+<title>  [COLOR lightcyan][B]AGENDA [/COLOR][COLOR lightblue]SBTW Streams[/COLOR][/B][COLORyellow][B][/B][/COLOR]</title>
+<link>NA</link>
+<externallink>http://bgtv.xyz/sbtw.php?sbtw&amp;cat</externallink>
+<thumbnail>http://bgtv.xyz/black/img/deportes.png</thumbnail>
+</item>
+ 
+  <item> <!-- AGENDA SWBT -->
+<title>  [COLOR lightcyan][B]AGENDA [/COLOR][COLOR lightblue]PLENTY[/COLOR][/B][COLORyellow][B][/B][/COLOR]</title>
+<link>NA</link>
+<externallink>http://bgtv.xyz/planty.php?plenty&amp;cat</externallink>
+<thumbnail>http://bgtv.xyz/black/img/deportes.png</thumbnail>
+</item>
+
+ <item> <!-- AGENDA FREESPORTS -->
+<title>  [COLOR lightcyan][B]AGENDA [/COLOR][COLOR lightblue]FREE/SPORTS[/COLOR][/B][COLORyellow][B] [/B][/COLOR]</title>
+<link>NA</link>
+<info>
+&#x25CF; LALIGA
+&#x25CF; EPL
+&#x25CF; UEFA
+&#x25CF; NBA
+</info>
+<externallink>http://bgtv.xyz/loves.php?soccerhd&amp;cat</externallink>
+<thumbnail>http://bgtv.xyz/black/img/deportes.png</thumbnail>
+</item>
+
+
+
+
+
+
+
+
+<item>
+<title>F1 TV</title>
+<link>$doregex[play]|referer=https://streambtw.com/iframe/f1.php&amp;origin=https://streambtw.com&amp;user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36</link>
+<regex>
+<name>play</name>
+<expres><![CDATA[randomM3u8 = "(http.*?)"]]></expres>
+<page>http://streambtw.com/iframe/f1.php</page>
+</regex>
+<thumbnail>http://bgtv.xyz/black/img/deportes.png</thumbnail>
+<fanart>http://bgtv.xyz/black/img/fanart.jpg</fanart>
+</item>
+
+
+
+
+
+
+
+
+
+
+<item> <title>[COLOR lightpink][B]M. LaLiga [/B][/COLOR]</title> <link>https://webhdrus.onlinehdhls.ru/lb/premium84/index.m3u8|Referer=https://olalivehdplay.ru/&amp;origin=https://olalivehdplay.ru&amp;user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36</link> <thumbnail>http://bgtv.xyz/black/img/deportes.png</thumbnail> </item>
+<item> <title>[COLOR lightpink][B]Movistar +[/B][/COLOR]</title> <link>https://webhdrus.onlinehdhls.ru/lb/premium437/index.m3u8|Referer=https://olalivehdplay.ru/&amp;origin=https://olalivehdplay.ru&amp;user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36</link> <thumbnail>http://bgtv.xyz/black/img/deportes.png</thumbnail> </item>
+<item> <title>[COLOR lightpink][B]Movistar Campeones [/B][/COLOR]</title> <link>https://webhdrus.onlinehdhls.ru/lb/premium435/index.m3u8|Referer=https://olalivehdplay.ru/&amp;origin=https://olalivehdplay.ru&amp;user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36</link> <thumbnail>http://bgtv.xyz/black/img/deportes.png</thumbnail> </item>
+<item> <title>[COLOR lightblue][B]TUDN USA [/B][/COLOR]</title>  <link>https://webhdrus.onlinehdhls.ru/lb/premium66/index.m3u8|Referer=https://olalivehdplay.ru/&amp;origin=https://olalivehdplay.ru&amp;user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36</link> <thumbnail>http://bgtv.xyz/black/img/deportes.png</thumbnail> </item>
+<item> <title>[COLOR lightblue][B]FOX SPORT PREMIUM [/B][/COLOR]</title>  <link>https://webhdrus.onlinehdhls.ru/lb/premium830/index.m3u8|Referer=https://olalivehdplay.ru/&amp;origin=https://olalivehdplay.ru&amp;user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36</link> <thumbnail>http://bgtv.xyz/black/img/deportes.png</thumbnail> </item>
+
+
+
+
+
+
+
+
+
+<item> <title>****</title> 
+<link>https://webhdrus.onlinehdhls.ru/lb/premium11/index.m3u8|Referer=https://olalivehdplay.ru/&amp;origin=https://olalivehdplay.ru&amp;user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36</link>
+ <thumbnail>http://bgtv.xyz/black/img/deportes.png</thumbnail> </item>
+
+<item> <title>****</title> 
+<link>https://webhdrus.onlinehdhls.ru/lb/premium11/index.m3u8|Referer=https://viwlivehdplay.ru/&amp;origin=https://viwlivehdplay.ru&amp;user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36</link>
+ <thumbnail>http://bgtv.xyz/black/img/deportes.png</thumbnail> </item>
+
+
+
+
+<item> 
+<title> CapoPlay</title>
+<link>$doregex[makelist]</link>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[COLOR skyblue][#BG][/COLOR] [COLOR white][B][makelist.param1][/B][/COLOR]</title>
+<link>$doregex[playm]|Referer=https://capo2play.com/&amp;user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36&amp;origin=https://capo2play.com</link>
+<thumbnail>http://bgtv.xyz/black/img/deportes.png</thumbnail>
+]]></listrepeat>
+<expres><![CDATA["(.*?)"]]></expres>
+<page>"extremotvhp","extremotvhuawei","extremolenovo",</page> 
+</regex>
+
+<regex>
+<name>playm</name>
+<expres><![CDATA[$pyFunction:'$doregex[play]'.replace('"','').replace(',','').replace('\\/','/').replace('https','http')]]></expres>
+<page>https://capo2play.com/</page>
+</regex>
+
+
+<regex>
+<name>play</name>
+<expres><![CDATA[return\(\[(.*?)\]]]></expres>
+<page>https://capo2play.com/capo.php?player=mobile&amp;live=[makelist.param1]</page>
+<referer>https://www.capofut.net/</referer>
+</regex>
+
+
+
+<thumbnail>http://bgtv.xyz/black/img/deportes.png</thumbnail></item>
+
+
+
+
+
+
+
+</items>
+
+
