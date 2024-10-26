@@ -1,28 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
 
-
 <items>
 
 <SetViewMode>55</SetViewMode>
 
 
-
-<item><!--  CANALES INFINITY CHANNELS -->
+<!--  CANALES INFINITY CHANNELS
+<item>
 <title>  [COLOR lightgreen][B]CANALES [/COLOR][COLOR lightblue]INFINITY[/COLOR][/B]  [COLOR lightslategray] [/COLOR]</title>
 <link>NA</link>
 <externallink>http://bgtv.xyz/infinity.php?deportes</externallink>
 <thumbnail>http://bgtv.xyz/black/img/deportes.png</thumbnail>
 </item>
+ -->
+ 
 
-<!--  CANALES INFINITY CHANNELS -->
-<!--item>
+<!--  CANALES INFINITY CHANNELS 
+<item>
 <title>  [COLOR lightgreen][B]CANALES [/COLOR][COLOR lightblue]FUTVALL[/COLOR][/B]  [COLOR lightslategray] [/COLOR]</title>
 <link>NA</link>
 <externallink>http://bgtv.xyz/infinity.php?futvall</externallink>
 <thumbnail>http://bgtv.xyz/black/img/deportes.png</thumbnail>
-</item-->
-
+</item>
+-->
 
 
 <item><!--  CANALES VIPGOAL -->
@@ -124,10 +125,9 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 
 
-
 <regex>
 <name>geturl4</name>
-<expres>$pyFunction:'$doregex[geturl2]'.replace('"','').replace(',','').replace('\/\/\/\/','//')</expres>
+<expres>$pyFunction:'$doregex[geturl44]'.replace('"','').replace(',','').replace('\/\/\/\/','//')</expres>
 <page>NA</page>
 </regex>
 
@@ -202,6 +202,64 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
+<!--CANALES DEPORTIVA SU 
+<item>
+<title>  [COLOR lightgreen][B]CANALES [/COLOR][COLOR lightblue]TUDEPORTIVOS[/COLOR][/B]  [COLOR lightslategray] [/COLOR]</title>
+
+<link>$doregex[makelist3]</link>
+
+
+
+<regex>
+<name>makelist3</name>
+<listrepeat><![CDATA[
+<title>[B][makelist3.param2][/B] </title>
+<link>$doregex[select_Url]</link>
+<thumbnail>http://bgtv.xyz/black/img/deportes.png</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[ver/(.*?)"[\w\W\s]*?title="(.*?)"]]></expres>
+<page>https://tucanaldeportivo.org/canales.php</page>
+</regex>
+
+
+<regex>
+<name>select_Url</name>
+<expres>$pyFunction: '$doregex[geturl]|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0&amp;Origin=https://vodkapr3mium.com&amp;Referer=https://vodkapr3mium.com/' if not '$doregex[geturl]|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0&amp;Origin=https://vodkapr3mium.com&amp;Referer=https://vodkapr3mium.com/'=='' else 'https://ia601309.us.archive.org/4/items/20240222125627165/20240222125627165.mp4|User-Agent=iPhone'</expres>
+<page></page>
+</regex>
+
+<regex>
+<name>geturl</name>
+<expres>$pyFunction:'$doregex[geturl2]'.replace('"','').replace(',','').replace('\/\/\/\/','//')</expres>
+<page></page>
+</regex>
+
+<regex>
+<name>geturl2</name>
+<expres>return\(\["(.*?)"\]</expres>
+<page>https://vodkapr3mium.com/deportivo.php?player=desktop&amp;live=$doregex[id]</page>
+<referer>https://tucanaldeportivo.org/</referer>
+</regex>
+
+<regex>
+<name>id</name>
+<expres>fid="(.*?)"</expres>
+<page>$doregex[frame]</page>
+<referer>https://tucanaldeportivo.org/</referer>
+</regex>
+
+<regex>
+<name>frame</name>
+<expres><![CDATA[<iframe[\w\W\s]*?src="(.*?)"]]></expres>
+<page>https://tucanaldeportivo.org/ver/[makelist3.param1]</page>
+<referer>https://tucanaldeportivo.org/</referer>
+</regex>
+
+<thumbnail>http://bgtv.xyz/black/img/deportes.png</thumbnail>
+</item>
+-->
+
+
 
 <item>
 <title>  [COLOR lightgreen][B]CANALES [/COLOR][COLOR lightblue]STREAM TP[/COLOR][/B]  [COLOR lightslategray] [/COLOR]</title>
@@ -259,6 +317,29 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>http://bgtv.xyz/black/img/deportes.png</thumbnail>
 </item>
 
+<!-- CANALES FUTLIBRE 
+<item>
+<title>  [COLOR lightgreen][B]CANALES [/COLOR][COLOR lightblue]FUTLIBRE[/COLOR][/B]  [COLOR lightslategray] beta[/COLOR]</title>
+<link>NA</link>
+<externallink>http://bgtv.xyz/loves.php?libre</externallink>
+<thumbnail>http://bgtv.xyz/black/img/deportes.png</thumbnail>
+</item>
+-->
+
+
+
+
+<!-- AGENDA SAPCE 
+
+<item> 
+<title>  [COLOR lightcyan][B]AGENDA [/COLOR][COLOR lightblue]DEPORTES LIBRE[/COLOR][/B]  [COLOR lightslategray] [/COLOR]</title>
+<link>NA</link>
+<externallink>http://bgtv.xyz/loves.php?agendalibre</externallink>
+<thumbnail>http://bgtv.xyz/black/img/deportes.png</thumbnail>
+</item>
+ -->
+
+
 
 
 
@@ -276,7 +357,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item> <!--  CANALES TARJETA -->
-<title>  [COLOR lightcyan][B]AGENDA [/COLOR][COLOR lightblue]ROJA[/COLOR][/B]  [COLOR lightslategray] [/COLOR]</title>
+<title>  [COLOR lightcyan][B]AGENDA [/COLOR][COLOR lightblue]ROJA[/COLOR][/B]  [COLOR lightslategray] [I](Latino)[/I][/COLOR]</title>
 
 
 
@@ -358,7 +439,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <regex>
 <name>geturl4</name>
-<expres>$pyFunction:'$doregex[geturl2]'.replace('"','').replace(',','').replace('\/\/\/\/','//')</expres>
+<expres>$pyFunction:'$doregex[geturl44]'.replace('"','').replace(',','').replace('\/\/\/\/','//')</expres>
 <page>NA</page>
 </regex>
 
@@ -461,7 +542,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-
 <item><!--  AGENDA DADDYLIVE -->
 <title>  [COLOR lightcyan][B]AGENDA [/COLOR][COLOR lightblue]LIBREDEPORTES[/COLOR][/B]  [COLOR lightslategray]  [/COLOR]  </title>
 
@@ -488,7 +568,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item><!--AGENDA JEINZMACIAS-->
-<title>  [COLOR lightcyan][B]AGENDA [/COLOR][COLOR lightblue]JEINZM[/COLOR][/B]  [COLOR lightslategray] [/COLOR]</title>
+<title>  [COLOR lightcyan][B]AGENDA [/COLOR][COLOR lightblue]JEINZMA[/COLOR][/B]  [COLOR lightslategray] [/COLOR]</title>
 <link>NA</link>
 <externallink>http://bgtv.xyz/macias.php?macias</externallink>
 <thumbnail>http://bgtv.xyz/black/img/deportes.png</thumbnail>
@@ -534,6 +614,13 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>http://bgtv.xyz/black/img/deportes.png</thumbnail>
 </item>
  
+ <!--AGENDA SXLIVE -->
+<!--item>
+<title>  [COLOR lightcyan][B]AGENDA [/COLOR][COLOR lightblue]SXLIVE[/COLOR][/B]  [COLOR lightslategray] [/COLOR]</title>
+<link>NA</link>
+<externallink>http://bgtv.xyz/loves.php?sxlive</externallink>
+<thumbnail>http://bgtv.xyz/black/img/deportes.png</thumbnail>
+</item-->
 
 <item><!--  AGENDA DADDYLIVE -->
 <title>  [COLOR lightcyan][B]AGENDA [/COLOR][COLOR lightblue]DADDYLIVE[/COLOR][/B]  [COLOR lightslategray]  [/COLOR]  </title>
@@ -545,8 +632,20 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <item> <!-- AGENDA ARENA SPORT -->
 <title>  [COLOR lightcyan][B]AGENDA [/COLOR][COLOR lightblue]ARENASPORT[/COLOR][/B]  [COLOR lightslategray] [/COLOR] </title>
+<link>$doregex[makelist]</link>
+
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[COLOR lightblue][makelist.param1][/COLOR] ([makelist.param4])</title>
 <link>NA</link>
-<externallink>http://bgtv.xyz/arena.php?arena</externallink>
+<externallink>http://bgtv.xyz/arena.php?id4=[makelist.param2]&amp;name=[makelist.param3]</externallink>
+]]></listrepeat>
+<expres><![CDATA[=(.*?),(.*?),(.*?),(.*?),]]></expres>
+<page>http://bgtv.xyz/arena.php?arena</page>
+</regex>
+
+
 <thumbnail>http://bgtv.xyz/black/img/deportes.png</thumbnail>
 </item>
  
@@ -592,20 +691,13 @@ def GetLSProData(page_data,Cookie_Jar,m):
 ]]></expres>
 <page></page>
 </regex>
-<info>
-&#x25CF; FORMULA 1
-
-&#x25CF; SPORTS
-
-&#x25CF; NHL
-</info>
-
+<info>BlackGhost</info>
 <thumbnail>http://bgtv.xyz/black/img/deportes.png</thumbnail>
 </item>
 
 
  <item>  <!-- AGENDA MRGAMES -->
-<title>  [COLOR lightcyan][B]AGENDA [/COLOR][COLOR lightblue]BUFFER2[/COLOR][/B][COLORyellow][B]  Formula 1, UFC , BOX[/B][/COLOR]</title>
+<title>  [COLOR lightcyan][B]AGENDA [/COLOR][COLOR lightblue]BUFF:[/COLOR][/B][I]  Formula 1, UFC , BOX[/I]</title>
 <link>NA</link>
 
 
@@ -713,6 +805,22 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <thumbnail>http://bgtv.xyz/black/img/deportes.png</thumbnail>
 </item>
 
+<!-- AGENDA ARCADE
+ <item> 
+<title>  [COLOR lightcyan][B]AGENDA [/COLOR][COLOR lightblue]ARCADE[/COLOR][/B][COLORyellow][B] [/B][/COLOR]</title>
+<link>NA</link>
+<info>
+&#x25CF; LALIGA
+
+&#x25CF; EPL
+
+&#x25CF; UEFA
+</info>
+<externallink>http://bgtv.xyz/arcade.php?arcade&amp;cat</externallink>
+<thumbnail>http://bgtv.xyz/black/img/deportes.png</thumbnail>
+</item>
+ -->
+
  <item> <!-- AGENDA FREESPORTS -->
 <title>  [COLOR lightcyan][B]AGENDA [/COLOR][COLOR lightblue]FREE/SPORTS[/COLOR][/B][COLORyellow][B] [/B][/COLOR]</title>
 <link>NA</link>
@@ -751,8 +859,43 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
+<item><title>ESPN Disney+ [I](Formula 1)[/I]</title>
+<link>$doregex[m3u8]|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:122.0) Gecko/20100101 Firefox/122.0&amp;Origin=https://streamtp1.com&amp;Referer=https://streamtp1.com/</link>
+<regex>
+<name>m3u8</name>
+<expres><![CDATA[playbackURL.*?"(.*?)"]]></expres>
+<page>https://streamtp1.com/global1.php?stream=starplus01</page>
+</regex>
+<thumbnail>http://bgtv.xyz/black/img/deportes.png</thumbnail></item>
 
 
+
+<item><title>FOX SPORTS ARG [I](Formula 1)[/I]</title>
+<link>$doregex[m3u8]|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:122.0) Gecko/20100101 Firefox/122.0&amp;Origin=https://streamtp1.com&amp;Referer=https://streamtp1.com/</link>
+<regex>
+<name>m3u8</name>
+<expres><![CDATA[playbackURL.*?"(.*?)"]]></expres>
+<page>https://streamtp1.com/global1.php?stream=fox1ar</page>
+</regex>
+<thumbnail>http://bgtv.xyz/black/img/deportes.png</thumbnail></item>
+
+
+
+<item><title>ESPN DEPORTES [I](Formula 1)[/I]</title>
+<link>$doregex[m3u8]|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:122.0) Gecko/20100101 Firefox/122.0&amp;Origin=https://streamtp1.com&amp;Referer=https://streamtp1.com/</link>
+<regex>
+<name>m3u8</name>
+<expres><![CDATA[playbackURL.*?"(.*?)"]]></expres>
+<page>https://streamtp1.com/global1.php?stream=espn_deportes</page>
+</regex>
+<thumbnail>http://bgtv.xyz/black/img/deportes.png</thumbnail></item>
+
+
+
+
+
+
+<item> <title>[COLOR lightpink][B]DAZN F1[/B][/COLOR]</title> <link>https://webhdrus.onlinehdhls.ru/lb/premium537/index.m3u8|Referer=https://olalivehdplay.ru/&amp;origin=https://olalivehdplay.ru&amp;user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36</link> <thumbnail>http://bgtv.xyz/black/img/deportes.png</thumbnail> </item>
 
 <item> <title>[COLOR lightpink][B]M. LaLiga [/B][/COLOR]</title> <link>https://webhdrus.onlinehdhls.ru/lb/premium84/index.m3u8|Referer=https://olalivehdplay.ru/&amp;origin=https://olalivehdplay.ru&amp;user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36</link> <thumbnail>http://bgtv.xyz/black/img/deportes.png</thumbnail> </item>
 <item> <title>[COLOR lightpink][B]Movistar +[/B][/COLOR]</title> <link>https://webhdrus.onlinehdhls.ru/lb/premium437/index.m3u8|Referer=https://olalivehdplay.ru/&amp;origin=https://olalivehdplay.ru&amp;user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36</link> <thumbnail>http://bgtv.xyz/black/img/deportes.png</thumbnail> </item>
@@ -766,19 +909,6 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-
-
-<item> <title>****</title> 
-<link>https://webhdrus.onlinehdhls.ru/lb/premium11/index.m3u8|Referer=https://olalivehdplay.ru/&amp;origin=https://olalivehdplay.ru&amp;user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36</link>
- <thumbnail>http://bgtv.xyz/black/img/deportes.png</thumbnail> </item>
-
-<item> <title>****</title> 
-<link>https://webhdrus.onlinehdhls.ru/lb/premium11/index.m3u8|Referer=https://viwlivehdplay.ru/&amp;origin=https://viwlivehdplay.ru&amp;user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36</link>
- <thumbnail>http://bgtv.xyz/black/img/deportes.png</thumbnail> </item>
-
-
-
-
 <item> 
 <title> CapoPlay</title>
 <link>$doregex[makelist]</link>
@@ -787,16 +917,20 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <name>makelist</name>
 <listrepeat><![CDATA[
 <title>[COLOR skyblue][#BG][/COLOR] [COLOR white][B][makelist.param1][/B][/COLOR]</title>
-<link>$doregex[playm]|Referer=https://capo2play.com/&amp;user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36&amp;origin=https://capo2play.com</link>
+<link>$doregex[playm]|Referer=https://capo4play.com/&amp;user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36&amp;origin=https://capo4play.com</link>
 <thumbnail>http://bgtv.xyz/black/img/deportes.png</thumbnail>
 ]]></listrepeat>
 <expres><![CDATA["(.*?)"]]></expres>
-<page>"extremotvhp","extremotvhuawei","extremolenovo",</page> 
+<page>"extremotvhp","extremohuawei","extremolenovo",</page>  
+<accept>*/*</accept>
+<setcookie>u=4</setcookie>
 </regex>
+
+
 
 <regex>
 <name>playm</name>
-<expres><![CDATA[$pyFunction:'$doregex[play]'.replace('"','').replace(',','').replace('\\/','/').replace('https','http')]]></expres>
+<expres><![CDATA[$pyFunction:'$doregex[play]'.replace('"','').replace(',','').replace('\\/','/').replace('https','https')]]></expres>
 <page>https://capo2play.com/</page>
 </regex>
 
@@ -804,7 +938,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <regex>
 <name>play</name>
 <expres><![CDATA[return\(\[(.*?)\]]]></expres>
-<page>https://capo2play.com/capo.php?player=mobile&amp;live=[makelist.param1]</page>
+<page>https://capo4play.com/capo.php?player=mobile&amp;live=[makelist.param1]</page>
 <referer>https://www.capofut.net/</referer>
 </regex>
 
@@ -814,6 +948,121 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
+
+<item> 
+<title> CapoPlay 2</title>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[COLOR skyblue][#BG][/COLOR] [COLOR white][B][makelist.param1][/B][/COLOR]</title>
+<link>$doregex[playm]|user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36&amp;Referer=https://capo4play.com/&amp;Origin=https://capo4play.com</link>
+<thumbnail>http://bgtv.xyz/black/img/deportes.png</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[<b>(?!={3,})(.*?)<[\w\W\s]*?src="(.*?)"]]></expres>
+<page>https://www.capofut.net/</page> 
+</regex>
+
+<regex>
+<name>playm</name>
+<expres><![CDATA[$pyFunction:'$doregex[play]'.replace('"','').replace(',','').replace('\\/','/').replace('off6','off4')]]></expres>
+<page>https://capo4play.com/</page>
+</regex>
+<regex>
+<name>play</name>
+<expres><![CDATA[return\s\([\w\W\s]*?\[(.*?)\]]]></expres>
+<page>https://capo4play.com/capo.php?player=desktop&amp;live=$doregex[fid]</page>
+<referer>https://capo4play.com/</referer>
+<accept>*.*</accept>
+<connection>keep-alive</connection>
+<agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36</agent>
+</regex>
+<regex>
+<name>fid</name>
+<expres><![CDATA[fid="(.*?)"]]></expres>
+<page>[makelist.param2]</page>
+<referer>https://www.capofut.net/</referer>
+</regex>
+
+
+<thumbnail>http://bgtv.xyz/black/img/deportes.png</thumbnail></item>
+
+
+
+<item>
+<title>testing</title>
+<link>$doregex[groups]</link><regex>
+<name>groups</name>
+<listrepeat><![CDATA[
+  <title>[B][COLOR white][groups.param1][/COLOR][/B]</title>
+  <link>$doregex[play]</link>
+
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+
+def GetLSProData(page_data, Cookie_Jar, m):
+    import requests
+    import re
+    results = list()
+    data = requests.get(
+        "https://dlhd.so/schedule/schedule-generated.json").json()
+
+    for day, dayEvents in data.items():
+        results.append(
+            (f"[COLOR white]•[/COLOR] [COLOR orange]{day.split(' - ')[0] if ' - ' in day else day}[/COLOR]", "None"))
+        for competition, competitionEvents in dayEvents.items():
+            results.append(
+                (f"     [COLOR white]•[/COLOR] [COLOR yellow]{competition}[/COLOR]", "None"))
+            for competitionEvent in competitionEvents:
+                event = (
+                    f"          [COLOR white]•[/COLOR] [COLOR orange]{competitionEvent['time']} {competitionEvent['event']} [/COLOR]", "None")
+                if len(competitionEvent["channels"]) > 1:
+                    results.extend([(
+                        f"              [COLOR white]{link['channel_name']}[/COLOR]", link['channel_id']) for link in competitionEvent["channels"]])
+                else:
+                    event = list(event)
+                    event[1] = competitionEvent["channels"][0]["channel_id"]
+                    results.append(tuple(event))
+
+    return results
+]]></expres>
+<page></page>
+</regex>
+<regex>
+<name>play</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data, Cookie_Jar, m):
+    import requests
+    import re
+    import urllib.parse
+    HOST = "https://dlhd.so/"
+    url = "https://dlhd.so/stream/stream-[groups.param2].php"
+    USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:98.0) Gecko/20100101 Firefox/98.0"
+    data = requests.post(
+        url, headers={
+            'Referer': HOST,
+            'User-Agent': USER_AGENT,
+        }).text
+    iframe = re.compile('iframe src="(.*?)"').findall(data)[0]
+    iframeData = requests.get(
+        iframe, headers={
+            'Referer': url,
+            'User-Agent': USER_AGENT,
+        }).text
+
+    link = re.search(r"source:\s*'([^']+)'", iframeData).group(1)
+
+    parsed_url = urllib.parse.urlparse(iframe)
+    referer_base = f"{parsed_url.scheme}://{parsed_url.netloc}"
+    referer = urllib.parse.quote_plus(referer_base)
+    user_agent = urllib.parse.quote_plus(USER_AGENT)
+
+    return f'{link}|Referer={referer}/&Origin={referer}&Keep-Alive=true&User-Agent={user_agent}'
+
+]]></expres>
+<page></page>
+</regex>
+</item>
 
 
 
