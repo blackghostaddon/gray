@@ -870,6 +870,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
+
+
 <item><title>FOX SPORTS ARG [I](Formula 1)[/I]</title>
 <link>$doregex[m3u8]|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:122.0) Gecko/20100101 Firefox/122.0&amp;Origin=https://streamtp1.com&amp;Referer=https://streamtp1.com/</link>
 <regex>
@@ -881,12 +883,24 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<item><title>ESPN DEPORTES [I](Formula 1)[/I]</title>
+<item><title>ESPN DEPORTES [I](El Classico BAR / MAD)[/I]</title>
 <link>$doregex[m3u8]|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:122.0) Gecko/20100101 Firefox/122.0&amp;Origin=https://streamtp1.com&amp;Referer=https://streamtp1.com/</link>
 <regex>
 <name>m3u8</name>
 <expres><![CDATA[playbackURL.*?"(.*?)"]]></expres>
 <page>https://streamtp1.com/global1.php?stream=espn_deportes</page>
+</regex>
+<thumbnail>http://bgtv.xyz/black/img/deportes.png</thumbnail></item>
+
+
+
+<item><title>ESPN DEPORTES [I](El Classico BAR / MAD)[/I]</title>
+<link>$doregex[m3u8]|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:122.0) Gecko/20100101 Firefox/122.0&amp;Origin=https://la12hd.com&amp;Referer=https://la12hd.com/</link>
+<regex>
+<name>m3u8</name>
+<expres><![CDATA[playbackURL.*?"(.*?)"]]></expres>
+<page>https://la12hd.com/vivo/canal.php?stream=espndeportes</page>
+<referer>https://st.nowomi.quest/</referer>
 </regex>
 <thumbnail>http://bgtv.xyz/black/img/deportes.png</thumbnail></item>
 
