@@ -894,8 +894,92 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-
 <item> <title>[COLOR lightpink][B]DAZN F1[/B][/COLOR]</title> <link>https://webhdrus.onlinehdhls.ru/lb/premium537/index.m3u8|Referer=https://olalivehdplay.ru/&amp;origin=https://olalivehdplay.ru&amp;user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36</link> <thumbnail>http://bgtv.xyz/black/img/deportes.png</thumbnail> </item>
+
+
+<item> <!--  CANALES TARJETA -->
+<title>[COLOR lightpink][B]DAZN LaLiga [/B][/COLOR]</title>
+<link>$doregex[select]</link>
+
+
+
+<regex>
+<name>select</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m):
+   import xbmcgui
+   dialog = xbmcgui.Dialog()
+   ret = dialog.select('Elige Una opcion', ['Opcion 1','Opcion 2', 'Opcion 3'])
+   lists = ['$doregex[geturl2]|Referer=https://planetfastidious.net&Origin=https://planetfastidious.net&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36','$doregex[geturl5]|Referer=https://planetfastidious.net&Origin=https://planetfastidious.net&User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36','$doregex[geturl4]|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0&amp;Origin=https://hoca2.com&amp;Referer=https://hoca2.com/']
+   return lists[ret]
+]]></expres>
+<page></page>
+</regex>
+
+
+
+<regex>
+<name>geturl2</name>
+<expres>src="(.*?)"</expres>
+<page>$doregex[getunpacked]</page>
+<referer>https://tarjetarojaenvivo.lat/player/2/80</referer>
+</regex>
+<regex>
+<name>getunpacked</name>
+<expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)' )</expres>
+<page>$doregex[geturl]</page>
+<referer>https://tarjetarojaenvivo.lat/</referer>
+<connection>keep-alive</connection>
+</regex>
+<regex>
+<name>geturl</name>
+<expres><![CDATA[iframe src="(.+?)"]]></expres>
+<page>https://tarjetarojaenvivo.lat/player/2/80</page>
+</regex>
+
+
+
+<regex>
+<name>geturl5</name>
+<expres>src="(.*?)"</expres>
+<page>$doregex[getunpacked5]</page>
+<referer>https://tarjetarojaenvivo.lat/</referer>
+</regex>
+
+<regex>
+<name>getunpacked5</name>
+<expres>$pyFunction:get_unpacked(page_data,'(eval\(function\(p,a,c,k,e,d.*)' )</expres>
+<page>$doregex[geturl55]</page>
+<referer>https://tarjetarojaenvivo.lat/</referer>
+<connection>keep-alive</connection>
+</regex>
+
+<regex>
+<name>geturl55</name>
+<expres><![CDATA[iframe src="(.+?)"]]></expres>
+<page>https://tarjetarojaenvivo.lat/player/5/80</page>
+</regex>
+
+
+<regex>
+<name>geturl4</name>
+<expres>$pyFunction:'$doregex[geturl44]'.replace('"','').replace(',','').replace('\/\/\/\/','//')</expres>
+<page>NA</page>
+</regex>
+
+<regex>
+<name>geturl44</name>
+<expres>return\(\["(.*?)"\]</expres>
+<page>https://hoca2.com/footy.php?player=desktop&amp;live=ufeed80</page>
+<referer>https://tarjetarojaenvivo.lat/</referer>
+</regex>
+
+
+
+<thumbnail>http://bgtv.xyz/black/img/deportes.png</thumbnail>
+</item>
+
+
 
 <item> <title>[COLOR lightpink][B]M. LaLiga [/B][/COLOR]</title> <link>https://webhdrus.onlinehdhls.ru/lb/premium84/index.m3u8|Referer=https://olalivehdplay.ru/&amp;origin=https://olalivehdplay.ru&amp;user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36</link> <thumbnail>http://bgtv.xyz/black/img/deportes.png</thumbnail> </item>
 <item> <title>[COLOR lightpink][B]Movistar +[/B][/COLOR]</title> <link>https://webhdrus.onlinehdhls.ru/lb/premium437/index.m3u8|Referer=https://olalivehdplay.ru/&amp;origin=https://olalivehdplay.ru&amp;user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36</link> <thumbnail>http://bgtv.xyz/black/img/deportes.png</thumbnail> </item>
