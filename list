@@ -7,8 +7,8 @@
 <item>
 <title>[B][UPPERCASE] [COLOR deepskyblue]ingresar al Addon[/COLOR][/B] [/UPPERCASE]</title>
 <link>NA</link> 
-<externallink>http://bgtv.xyz/addon/free.php</externallink> 
-<!--externallink>$doregex[code]</externallink> 
+
+<externallink>$doregex[code]</externallink> 
 
 <regex>
 <name>code</name>  
@@ -48,7 +48,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	return HERE  
  ]]></expres>
 <page></page>
-</regex--> 
+</regex> 
 
 <thumbnail>http://bgtv.xyz/black/img/icon.png</thumbnail>
 <fanart>http://bgtv.xyz/black/img/fanart.jpg</fanart>
@@ -66,10 +66,10 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<!--item> <title>Obten el [COLOR palegreen][B]Codigo Semanal[/B][/COLOR] Gratuito en nuestra APP Blackghost para Android</title><link>na</link>
+<item> <title>Obten el [COLOR palegreen][B]Codigo Semanal[/B][/COLOR] Gratuito en Telegram @BGaddon | correo: blackaddon@mail.com</title><link>na</link>
 <thumbnail>http://bgtv.xyz/black/img/icon.png</thumbnail>
 <fanart>http://bgtv.xyz/black/img/fanart.jpg</fanart>
-</item-->
+</item>
 
 
 <item>
@@ -250,7 +250,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	  
 	  
   
-<!--item>
+<item>
 <title>[COLOR coral][B] ●  [ELIMINAR]  Codigo Guardado  ● [/B][/COLOR]</title>
 
 
@@ -282,7 +282,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 <thumbnail>http://bgtv.xyz/black/img/icon.png</thumbnail>
 <fanart>http://bgtv.xyz/black/img/fanart.jpg</fanart>
-</item-->
+</item>
 
 
 
