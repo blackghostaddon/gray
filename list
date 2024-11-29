@@ -27,9 +27,9 @@ def GetLSProData(page_data,Cookie_Jar,m):
 		f.close()
 		xbmc.executebuiltin("Notification( [COLOR lime][B]Codigo Activado ![/B][/COLOR] , [COLOR lightblue]No olvides seguir apoyando.[/COLOR], 2000)")
 	except:
-		dialog = xbmcgui.Dialog()
-		xbmc.executebuiltin("Notification( Realiza tu Donativo, paypal.me/blackghost, 1000)")
+		dialog = xbmcgui.Dialog()		
 		HERE = dialog.input('[COLOR white]Ingresa el [COLOR lightblue][B]Codigo Permanente[/B][/COLOR] o de [COLOR lightyellow][B]Invitacion semanal[/B][/COLOR]:[/COLOR] ', type=xbmcgui.INPUT_ALPHANUM)
+		xbmc.executebuiltin("Notification(Apoya este Proyecto, paypal.me/blackghost, 1000)")
 		if 'g' in HERE:			
 			OPT = "http://bgtv.live/addon/"
 			HERE = OPT + HERE + ".php"
