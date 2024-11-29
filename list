@@ -243,7 +243,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <regex>
 <name>vpn</name>
-<expres>$pyFunction:('$doregex[vpn1]').replace('0','[COLOR orange]ERROR, Server Saturado').replace('1','[COLOR lime]Cargado..., SERVER OK[/COLOR]').replace('True','[COLOR lime]ACTIVADO - OK [/COLOR]').replace('False','[COLOR orange]ERROR, Necesitas un VPN [/COLOR]')</expres>
+<expres>$pyFunction:('$doregex[vpn1]').replace('0','[COLOR orange]ERROR, Server Saturado').replace('1','[COLOR lime]Cargado..., SERVER OK[/COLOR]').replace('True','[COLOR lime]ACTIVADO - OK [/COLOR]').replace('False','[COLOR orange]ERROR, problemas para acceder a bgtv.live [/COLOR]')</expres>
 <page></page>
 </regex>
 
@@ -262,7 +262,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 			return False		
 	except:
 		requests.exceptions.RequestException
-		xbmc.executebuiltin("Notification( ERROR,Necesitas VPN, 1000)")
+		xbmc.executebuiltin("Notification( [COLORyellow]ERROR[/COLOR] Hay problemas para acceder a [COLORlime]bgtv.live[/COLOR], 1000)")
 		return False
  ]]></expres>
 <page></page>
