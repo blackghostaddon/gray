@@ -31,7 +31,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 		xbmc.executebuiltin("Notification( Realiza tu Donativo, paypal.me/blackghost, 1000)")
 		HERE = dialog.input('[COLOR white]Ingresa el [COLOR lightblue][B]Codigo Permanente[/B][/COLOR] o de [COLOR lightyellow][B]Invitacion semanal[/B][/COLOR]:[/COLOR] ', type=xbmcgui.INPUT_ALPHANUM)
 		if 'g' in HERE:			
-			OPT = "http://bgtv.pro/addon/"
+			OPT = "http://bgtv.live/addon/"
 			HERE = OPT + HERE + ".php"
 			f = open(path + file, 'w')
 			f.write(HERE)
@@ -40,7 +40,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 			xbmc.executebuiltin(savednotif)
 			return HERE	  
 		else:
-			OPT = "http://bgtv.pro/addon/"
+			OPT = "http://bgtv.live/addon/"
 			HERE = OPT + HERE + ".php"
 			savednotif = "Notification( [COLOR blue]Cargando Codigo...[/COLOR], Gracias!, 1000)"
 			xbmc.executebuiltin(savednotif)
@@ -50,16 +50,16 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page></page>
 </regex> 
 
-<thumbnail>http://bgtv.pro/black/img/icon.png</thumbnail>
-<fanart>http://bgtv.pro/black/img/fanart.jpg</fanart>
+<thumbnail>http://bgtv.live/black/img/icon.png</thumbnail>
+<fanart>http://bgtv.live/black/img/fanart.jpg</fanart>
 </item>
 
 
 
 
  <item> <title> </title><link>na</link>
-<thumbnail>http://bgtv.pro/black/img/icon.png</thumbnail>
-<fanart>http://bgtv.pro/black/img/fanart.jpg</fanart>
+<thumbnail>http://bgtv.live/black/img/icon.png</thumbnail>
+<fanart>http://bgtv.live/black/img/fanart.jpg</fanart>
 </item>
 
 
@@ -67,16 +67,16 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item> <title>Obten el [COLOR palegreen][B]Codigo Semanal[/B][/COLOR] Gratuito en Telegram @BGaddon | correo: blackaddon@mail.com</title><link>na</link>
-<thumbnail>http://bgtv.pro/black/img/icon.png</thumbnail>
-<fanart>http://bgtv.pro/black/img/fanart.jpg</fanart>
+<thumbnail>http://bgtv.live/black/img/icon.png</thumbnail>
+<fanart>http://bgtv.live/black/img/fanart.jpg</fanart>
 </item>
 
 
 <item>
 <title>[B][COLOR chartreuse]Apoya Este Increíble Proyecto con una Donación para seguir Adelante![/COLOR][/B]</title>
 <link>na</link>
-<thumbnail>http://bgtv.pro/black/img/paypalme.png</thumbnail>
-<fanart>http://bgtv.pro/black/img/fanart.jpg</fanart>
+<thumbnail>http://bgtv.live/black/img/paypalme.png</thumbnail>
+<fanart>http://bgtv.live/black/img/fanart.jpg</fanart>
 </item>
 
 
@@ -86,21 +86,21 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
   <item> <title> [COLOR lightyellow][B]APOYANOS[/B]: [COLOR deepskyblue][B]paypal.me/blackghost[/B] [/COLOR]</title><link>na</link>
-<thumbnail>http://bgtv.pro/black/img/paypalme.png</thumbnail>
-<fanart>http://bgtv.pro/black/img/fanart.jpg</fanart>
+<thumbnail>http://bgtv.live/black/img/paypalme.png</thumbnail>
+<fanart>http://bgtv.live/black/img/fanart.jpg</fanart>
 </item>
 
 
 
-  <!--item> <title>Descarga e Instala nuestra APK: [COLOR deepskyblue][B]http://bgtv.pro/app[/B] [/COLOR]</title><link>na</link>
-<thumbnail>http://bgtv.pro/black/img/icon.png</thumbnail>
-<fanart>http://bgtv.pro/black/img/fanart.jpg</fanart></item--> 
+  <!--item> <title>Descarga e Instala nuestra APK: [COLOR deepskyblue][B]http://bgtv.live/app[/B] [/COLOR]</title><link>na</link>
+<thumbnail>http://bgtv.live/black/img/icon.png</thumbnail>
+<fanart>http://bgtv.live/black/img/fanart.jpg</fanart></item--> 
   
 
 <item> 
 <title>[UPPERCASE] [COLOR white]Grupo Telegram:[/UPPERCASE][B] [COLOR lightblue] @BGaddon[/COLOR] [/COLOR][/B]</title><link>na</link>
-<thumbnail>http://bgtv.pro/black/img/telegram.png</thumbnail>
-<fanart>http://bgtv.pro/black/img/fanart.jpg</fanart>
+<thumbnail>http://bgtv.live/black/img/telegram.png</thumbnail>
+<fanart>http://bgtv.live/black/img/fanart.jpg</fanart>
 </item>
 
 
@@ -120,15 +120,15 @@ def GetLSProData(page_data,Cookie_Jar,m):
 ]]></expres>
 <page></page>
 </regex>
-<thumbnail>http://bgtv.pro/black/img/icon.png</thumbnail>
-<fanart>http://bgtv.pro/black/img/fanart.jpg</fanart>
+<thumbnail>http://bgtv.live/black/img/icon.png</thumbnail>
+<fanart>http://bgtv.live/black/img/fanart.jpg</fanart>
 </item-->
 
 
 
  <item> <title> </title><link>na</link>
-<thumbnail>http://bgtv.pro/black/img/icon.png</thumbnail>
-<fanart>http://bgtv.pro/black/img/fanart.jpg</fanart>
+<thumbnail>http://bgtv.live/black/img/icon.png</thumbnail>
+<fanart>http://bgtv.live/black/img/fanart.jpg</fanart>
 </item>
 
 <!--item>
@@ -139,8 +139,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <expres>$pyFunction:xbmcaddon.Addon('plugin.video.blackghost').openSettings()</expres>
 <page></page>
 </regex>
-<thumbnail>http://bgtv.pro/black/img/icon.png</thumbnail>
-<fanart>http://bgtv.pro/black/img/fanart.jpg</fanart>
+<thumbnail>http://bgtv.live/black/img/icon.png</thumbnail>
+<fanart>http://bgtv.live/black/img/fanart.jpg</fanart>
 <info>Solo se activa la primera vez despues de instalar el Addon</info>
  </item-->
  
@@ -185,8 +185,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 ]]></expres>
 <page></page>
 </regex>
-<thumbnail>http://bgtv.pro/black/img/icon.png</thumbnail>
-<fanart>http://bgtv.pro/black/img/fanart.jpg</fanart>
+<thumbnail>http://bgtv.live/black/img/icon.png</thumbnail>
+<fanart>http://bgtv.live/black/img/fanart.jpg</fanart>
 <info>Si ya te Aparece Activado, no hace falta Activar nuevamente. 
 
  Despues de Activar el Turbo / Instalar ResolverURL / Recuerda salir del Addon y volver a Entrar para que lo cambios  tengan efecto</info>
@@ -226,8 +226,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 ]]></expres>
 <page></page>
 </regex>
-<thumbnail>http://bgtv.pro/black/img/icon.png</thumbnail>
-<fanart>http://bgtv.pro/black/img/fanart.jpg</fanart>
+<thumbnail>http://bgtv.live/black/img/icon.png</thumbnail>
+<fanart>http://bgtv.live/black/img/fanart.jpg</fanart>
 <info>Si ya lo tienes instalado no es necesario reinstalar. 
 
  Despues de Activar el Turbo / Instalar ResolverURL / Recuerda salir del Addon y volver a Entrar para que lo cambios  tengan efecto</info>
@@ -253,7 +253,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <expres><![CDATA[#$pyFunction
 import re,requests,xbmc
 def GetLSProData(page_data,Cookie_Jar,m):
-	url = "http://bgtv.pro"	  
+	url = "http://bgtv.live"	  
 	try:
 		response = requests.get(url, timeout=10)
 		if response.status_code == 200 or response.status_code == 302:
@@ -283,8 +283,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page></page>
 <NOTPlayable>True</NOTPlayable>
 </regex>
-<thumbnail>http://bgtv.pro/black/img/icon.png</thumbnail>
-<fanart>http://bgtv.pro/black/img/fanart.jpg</fanart>
+<thumbnail>http://bgtv.live/black/img/icon.png</thumbnail>
+<fanart>http://bgtv.live/black/img/fanart.jpg</fanart>
 <info>Si ya lo tienes instalado no es necesario reinstalar.</info>
 </item-->
 
@@ -323,8 +323,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 ]]></expres>
 <page></page>
 </regex>
-<thumbnail>http://bgtv.pro/black/img/icon.png</thumbnail>
-<fanart>http://bgtv.pro/black/img/fanart.jpg</fanart>
+<thumbnail>http://bgtv.live/black/img/icon.png</thumbnail>
+<fanart>http://bgtv.live/black/img/fanart.jpg</fanart>
 </item-->
 
 
