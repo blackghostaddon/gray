@@ -187,7 +187,9 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 <thumbnail>http://bgtv.pro/black/img/icon.png</thumbnail>
 <fanart>http://bgtv.pro/black/img/fanart.jpg</fanart>
-<info>Si ya te Aparece Activado, no hace falta Activar nuevamente.\n Despues de Activar el Turbo / Instalar ResolverURL / Recuerda salir del Addon y volver a Entrar para que lo cambios  tenas efecto</info>
+<info>Si ya te Aparece Activado, no hace falta Activar nuevamente. 
+
+ Despues de Activar el Turbo / Instalar ResolverURL / Recuerda salir del Addon y volver a Entrar para que lo cambios  tengan efecto</info>
 </item>
 
 
@@ -226,7 +228,9 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 <thumbnail>http://bgtv.pro/black/img/icon.png</thumbnail>
 <fanart>http://bgtv.pro/black/img/fanart.jpg</fanart>
-<info>Si ya lo tienes instalado no es necesario reinstalar. \n Despues de Activar el Turbo / Instalar ResolverURL / Recuerda salir del Addon y volver a Entrar para que lo cambios  tenas efecto</info>
+<info>Si ya lo tienes instalado no es necesario reinstalar. 
+
+ Despues de Activar el Turbo / Instalar ResolverURL / Recuerda salir del Addon y volver a Entrar para que lo cambios  tengan efecto</info>
 </item>
 
 
@@ -239,7 +243,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <regex>
 <name>vpn</name>
-<expres>$pyFunction:('$doregex[turbo1]').replace('0','[COLOR orange]ERROR, Server Saturado').replace('1','[COLOR lime]Cargado..., SERVER OK[/COLOR]').replace('True','[COLOR lime]SERVER OK [/COLOR]').replace('False','[COLOR orange]ERROR, Necesitas un VPN [/COLOR]')</expres>
+<expres>$pyFunction:('$doregex[turbo1]').replace('0','[COLOR orange]ERROR, Server Saturado').replace('1','[COLOR lime]Cargado..., SERVER OK[/COLOR]').replace('True','[COLOR lime]ACTIVADO - OK [/COLOR]').replace('False','[COLOR orange]ERROR, Necesitas un VPN [/COLOR]')</expres>
 <page></page>
 </regex>
 
@@ -267,7 +271,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <thumbnail>http://bgtv.xyz/black/img/icon.png</thumbnail>
 <fanart>http://bgtv.xyz/black/img/fanart.jpg</fanart>
-<info>Despues de Activar el Turbo / Instalar ResolverURL / Recuerda salir del Addon y volver a Entrar para que lo cambios  tenas efecto</info>
+<info>  Despues de Activar el Turbo / Instalar ResolverURL / Recuerda salir del Addon y volver a Entrar para que lo cambios  tengan efecto</info>
 </item>
 
 <!--item>
