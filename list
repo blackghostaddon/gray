@@ -243,13 +243,13 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <regex>
 <name>vpn</name>
-<expres>$pyFunction:('$doregex[turbo1]').replace('0','[COLOR orange]ERROR, Server Saturado').replace('1','[COLOR lime]Cargado..., SERVER OK[/COLOR]').replace('True','[COLOR lime]ACTIVADO - OK [/COLOR]').replace('False','[COLOR orange]ERROR, Necesitas un VPN [/COLOR]')</expres>
+<expres>$pyFunction:('$doregex[vpn1]').replace('0','[COLOR orange]ERROR, Server Saturado').replace('1','[COLOR lime]Cargado..., SERVER OK[/COLOR]').replace('True','[COLOR lime]ACTIVADO - OK [/COLOR]').replace('False','[COLOR orange]ERROR, Necesitas un VPN [/COLOR]')</expres>
 <page></page>
 </regex>
 
 
 <regex>
-<name>turbo1</name>
+<name>vpn1</name>
 <expres><![CDATA[#$pyFunction
 import re,requests,xbmc
 def GetLSProData(page_data,Cookie_Jar,m):
