@@ -187,7 +187,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 <thumbnail>http://bgtv.pro/black/img/icon.png</thumbnail>
 <fanart>http://bgtv.pro/black/img/fanart.jpg</fanart>
-<info>Si ya te Aparece Activado, no hace falta Activar nuevamente.</info>
+<info>Si ya te Aparece Activado, no hace falta Activar nuevamente.\n Despues de Activar el Turbo / Instalar ResolverURL / Recuerda salir del Addon y volver a Entrar para que lo cambios  tenas efecto</info>
 </item>
 
 
@@ -226,10 +226,49 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 <thumbnail>http://bgtv.pro/black/img/icon.png</thumbnail>
 <fanart>http://bgtv.pro/black/img/fanart.jpg</fanart>
-<info>Si ya lo tienes instalado no es necesario reinstalar.</info>
+<info>Si ya lo tienes instalado no es necesario reinstalar. \n Despues de Activar el Turbo / Instalar ResolverURL / Recuerda salir del Addon y volver a Entrar para que lo cambios  tenas efecto</info>
 </item>
 
 
+
+
+<item>
+<title>[COLOR white][Beta] Server $doregex[vpn][/COLOR]</title>
+<link>NA</link>
+
+
+<regex>
+<name>vpn</name>
+<expres>$pyFunction:('$doregex[turbo1]').replace('0','[COLOR orange]ERROR, Server Saturado').replace('1','[COLOR lime]Cargado..., SERVER OK[/COLOR]').replace('True','[COLOR lime]SERVER OK [/COLOR]').replace('False','[COLOR orange]ERROR, Necesitas un VPN [/COLOR]')</expres>
+<page></page>
+</regex>
+
+
+<regex>
+<name>turbo1</name>
+<expres><![CDATA[#$pyFunction
+import re,requests,xbmc
+def GetLSProData(page_data,Cookie_Jar,m):
+	url = "http://bgtv.pro"	  
+	try:
+		response = requests.get(url, timeout=10)
+		if response.status_code == 200 or response.status_code == 302:
+			return True
+		else:
+			return False		
+	except:
+		requests.exceptions.RequestException
+		xbmc.executebuiltin("Notification( ERROR,Necesitas VPN, 1000)")
+		return False
+ ]]></expres>
+<page></page>
+</regex>
+
+
+<thumbnail>http://bgtv.xyz/black/img/icon.png</thumbnail>
+<fanart>http://bgtv.xyz/black/img/fanart.jpg</fanart>
+<info>Despues de Activar el Turbo / Instalar ResolverURL / Recuerda salir del Addon y volver a Entrar para que lo cambios  tenas efecto</info>
+</item>
 
 <!--item>
 <title>[B][COLOR white]Herramienta: [COLOR lightgreen]Instalar ResolveUrl[/COLOR][/COLOR][/B]</title>
