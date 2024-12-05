@@ -66,16 +66,18 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<item> <title>Obten el [COLOR palegreen][B]Codigo Semanal[/B][/COLOR] Gratuito en Telegram @BGaddon | correo: blackaddon@mail.com</title><link>na</link>
+<item> <title>Obten el [COLOR palegreen][B]Codigo Semanal[/B][/COLOR] Gratuito en Telegram [COLOR lightblue]@blck_ghst[/COLOR] o correo: [COLORlime]blackaddon@[B]mail.com[/B][/COLOR]</title><link>na</link>
 <thumbnail>http://bgtv.live/black/img/icon.png</thumbnail>
 <fanart>http://bgtv.live/black/img/fanart.jpg</fanart>
+<info>Ingresa al Grupo de Telegram y en el Mensaje Fijado encontraras el Codigo de acceso o envia un correo a blackaddon@mail.com. 
+</info>
 </item>
 
 
 <item>
 <title>[B][COLOR chartreuse]Apoya Este Increíble Proyecto con una Donación para seguir Adelante![/COLOR][/B]</title>
 <link>na</link>
-<thumbnail>http://bgtv.live/black/img/paypalme.png</thumbnail>
+<thumbnail>http://bgtv.live/black/img/pp.png</thumbnail>
 <fanart>http://bgtv.live/black/img/fanart.jpg</fanart>
 </item>
 
@@ -86,7 +88,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
   <item> <title> [COLOR lightyellow][B]APOYANOS[/B]: [COLOR deepskyblue][B]paypal.me/blackghost[/B] [/COLOR]</title><link>na</link>
-<thumbnail>http://bgtv.live/black/img/paypalme.png</thumbnail>
+<thumbnail>http://bgtv.live/black/img/pp.png</thumbnail>
 <fanart>http://bgtv.live/black/img/fanart.jpg</fanart>
 </item>
 
@@ -98,12 +100,16 @@ def GetLSProData(page_data,Cookie_Jar,m):
   
 
 <item> 
-<title>[UPPERCASE] [COLOR white]Grupo Telegram:[/UPPERCASE][B] [COLOR lightblue] @BGaddon[/COLOR] [/COLOR][/B]</title><link>na</link>
-<thumbnail>http://bgtv.live/black/img/telegram.png</thumbnail>
+<title>[UPPERCASE] [COLOR white]Grupo Telegram:[/UPPERCASE][B] [COLOR lightblue] @blck_ghst[/COLOR] [/COLOR][/B]</title><link>na</link>
+<thumbnail>http://bgtv.live/black/img/tg.png</thumbnail>
 <fanart>http://bgtv.live/black/img/fanart.jpg</fanart>
 </item>
 
-
+<item> 
+<title>[UPPERCASE] [COLOR white]Correo:[/UPPERCASE][B] [COLOR lightblue] blackaddon@mail.com[/COLOR] [/COLOR][/B]</title><link>na</link>
+<thumbnail>http://bgtv.live/black/img/mail.png</thumbnail>
+<fanart>http://bgtv.live/black/img/fanart.jpg</fanart>
+</item>
 
 
 <!--item> <title>   </title><link>na</link><externallink>$doregex[help]</externallink>
@@ -243,7 +249,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 <regex>
 <name>vpn</name>
-<expres>$pyFunction:('$doregex[vpn1]').replace('0','[COLOR orange]ERROR, Server Saturado').replace('1','[COLOR lime]Cargado..., SERVER OK[/COLOR]').replace('True','[COLOR lime]ACTIVADO - OK [/COLOR]').replace('False','[COLOR orange]ERROR, problemas para acceder a bgtv.live [/COLOR]')</expres>
+<expres>$pyFunction:('$doregex[vpn1]').replace('0','[COLOR orange]ERROR, problemas para acceder a bgtv.live').replace('1','[COLOR lime]Cargado..., SERVER OK[/COLOR]').replace('True','[COLOR lime]ACTIVADO - OK [/COLOR]').replace('False','[COLOR orange]ERROR, problemas para acceder a bgtv.live [/COLOR]')</expres>
 <page></page>
 </regex>
 
@@ -262,7 +268,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 			return False		
 	except:
 		requests.exceptions.RequestException
-		xbmc.executebuiltin("Notification( [COLORyellow]ERROR[/COLOR] Hay problemas para acceder a [COLORlime]bgtv.live[/COLOR], 1000)")
+		xbmc.executebuiltin("Notification( [COLORyellow]ERROR[/COLOR] Hay problemas para acceder a [COLORlime]bgtv.live[/COLOR] intenta cambiando DNS o usando VPN, 1000)")
 		return False
  ]]></expres>
 <page></page>
