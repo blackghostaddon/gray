@@ -243,13 +243,13 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
-<title>[COLOR white][Beta] Server $doregex[vpn][/COLOR]</title>
+<title>[COLOR white]Server [I](blackghost.site)[/I] $doregex[vpn][/COLOR]</title>
 <link>NA</link>
 
 
 <regex>
 <name>vpn</name>
-<expres>$pyFunction:('$doregex[vpn1]').replace('0','[COLOR orange]ERROR, problemas para acceder a blackghost.site').replace('1','[COLOR lime]Cargado..., SERVER OK[/COLOR]').replace('True','[COLOR lime]ACTIVADO - OK [/COLOR]').replace('False','[COLOR orange]ERROR, problemas para acceder a blackghost.site [/COLOR]')</expres>
+<expres>$pyFunction:('$doregex[vpn1]').replace('0','[COLOR orange]ERROR, problemas para acceder a blackghost.site').replace('1','[COLOR lime]Cargado..., SERVER OK[/COLOR]').replace('True','[COLOR lime]ACTIVADO - OK [/COLOR]').replace('False','[COLOR orange]ERROR, problemas para acceder al server  [/COLOR]')</expres>
 <page></page>
 </regex>
 
