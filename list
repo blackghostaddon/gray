@@ -300,7 +300,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	  
   
 <item>
-<title>[COLOR coral]Herramienta: [B] ●  [ELIMINAR]  Codigo [I]Permanente[/I] Guardado  ● [/B][/COLOR]</title>
+<title>[COLOR coral][B]Herramienta:  ●  [ELIMINAR]  Codigo [I]Permanente[/I] Guardado  ● [/B][/COLOR]</title>
 
 
 <info>
@@ -319,13 +319,13 @@ Si no hay codigo guardado marcara error.
 <regex>
 <name>code</name>  
 <expres><![CDATA[#$pyFunction
-from kodi_six import xbmc, xbmcgui, xbmcaddon, xbmcvfs
-#import urllib, re, requests, xbmcgui, xbmc, xbmcaddon, time
-import os
+import re,requests,base64,xbmc,six,os
+from kodi_six import xbmc,xbmcgui,xbmcaddon,xbmcvfs
+EJECUTAR_XBMC = xbmc if six.PY2 else xbmcvfs
 def GetLSProData(page_data,Cookie_Jar,m):  
   xbmc.executebuiltin("Notification(BlackGhost,Eliminando Codigo Guardado,6000)")  
   selected = 'codeserver.txt'
-  path = xbmc.translatePath("special://profile/addon_data/" + "plugin.video.blackghost/")
+  path = EJECUTAR_XBMC.translatePath('special://profile/addon_data/plugin.video.blackghost/')
   os.remove (path + selected)  
   return 'https://raw.githubusercontent.com/blackghostaddon/gray/master/list' 
 ]]></expres>
