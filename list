@@ -299,16 +299,18 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	  
 	  
   
-<!--item>
-<title>[COLOR coral][B] ●  [ELIMINAR]  Codigo Guardado  ● [/B][/COLOR]</title>
+<item>
+<title>[COLOR coral]Herramienta: [B] ●  [ELIMINAR]  Codigo [I]Permanente[/I] Guardado  ● [/B][/COLOR]</title>
 
 
 <info>
-Elimina el Codigo Permanente 
+Elimina el Codigo Permanente Guardado
 -
-o el Codigo de INVITACION semanal  si  ya ha caducado para poder volver a ingresar un [B]NUEVO[/B] codigo
+Elimina el Codigo  Permanente (si te marca error por cambio de dominio)
 -
-tambien  si has ingresado  [I]incorrectamente[/I] el  codigo.
+tambien  si has ingresado  [I]incorrectamente[/I] el  codigo permanente.
+-
+Si no hay codigo guardado marcara error.
   </info>
   
 <link>NA</link>  
@@ -331,7 +333,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 <thumbnail>http://blckghst.online/black/img/icon.png</thumbnail>
 <fanart>http://blckghst.online/black/img/fanart.jpg</fanart>
-</item-->
+</item>
 
 
 
