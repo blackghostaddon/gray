@@ -299,7 +299,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 	  
 	  
   
-<item>
+<!--item>
 <title>[COLOR coral][B]Herramienta:  ●  [ELIMINAR]  Codigo [I]Permanente[/I] Guardado  ● [/B][/COLOR]</title>
 
 
@@ -333,7 +333,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </regex>
 <thumbnail>http://blckghst.online/black/img/icon.png</thumbnail>
 <fanart>http://blckghst.online/black/img/fanart.jpg</fanart>
-</item>
+</item-->
 
 
 
