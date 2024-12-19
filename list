@@ -107,8 +107,9 @@ def GetLSProData(page_data,Cookie_Jar,m):
 </item>
 
   <item> 
-<title>[UPPERCASE] [COLOR white]Telegram:[/UPPERCASE][B] [COLOR lightblue] @error_0025[/COLOR][/COLOR][/B]</title><link>na</link>
-  <link>na</link>
+<title>[UPPERCASE] [COLOR white]Telegram:[/UPPERCASE][B] [COLOR lightblue] @error_0025[/COLOR][/COLOR][/B]</title>
+<link>na</link>
+
 <thumbnail>http://blckghst.site/black/img/icon.png</thumbnail>
 <fanart>http://blckghst.site/black/img/fanart.jpg</fanart></item> 
   
