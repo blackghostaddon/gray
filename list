@@ -31,7 +31,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 		HERE = dialog.input('[COLOR white]Ingresa el [COLOR lightblue][B]Codigo Permanente[/B][/COLOR] o de [COLOR lightyellow][B]Invitacion semanal[/B][/COLOR]:[/COLOR] ', type=xbmcgui.INPUT_ALPHANUM)
 		xbmc.executebuiltin("Notification(Apoya este Proyecto, paypal.me/blackghost, 1000)")
 		if 'g' in HERE:			
-			OPT = "http://blckghst.online/addon/"
+			OPT = "http://blckghst.site/addon/"
 			HERE = OPT + HERE + ".php"
 			f = open(path + file, 'w')
 			f.write(HERE)
@@ -40,7 +40,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 			xbmc.executebuiltin(savednotif)
 			return HERE	  
 		else:
-			OPT = "http://blckghst.online/addon/"
+			OPT = "http://blckghst.site/addon/"
 			HERE = OPT + HERE + ".php"
 			savednotif = "Notification( [COLOR blue]Cargando Codigo...[/COLOR], Gracias!, 1000)"
 			xbmc.executebuiltin(savednotif)
@@ -50,16 +50,16 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page></page>
 </regex> 
 
-<thumbnail>http://blckghst.online/black/img/icon.png</thumbnail>
-<fanart>http://blckghst.online/black/img/fanart.jpg</fanart>
+<thumbnail>http://blckghst.site/black/img/icon.png</thumbnail>
+<fanart>http://blckghst.site/black/img/fanart.jpg</fanart>
 </item>
 
 
 
 
  <item> <title> </title><link>na</link>
-<thumbnail>http://blckghst.online/black/img/icon.png</thumbnail>
-<fanart>http://blckghst.online/black/img/fanart.jpg</fanart>
+<thumbnail>http://blckghst.site/black/img/icon.png</thumbnail>
+<fanart>http://blckghst.site/black/img/fanart.jpg</fanart>
 </item>
 
 
@@ -67,8 +67,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item> <title>Obten el [COLOR palegreen][B]Codigo Semanal[/B][/COLOR] en el correo: [COLORlime][B]blackaddon@mail.com[/B][/COLOR] o Telegram[COLORlime][B]@error_0025[/B][/COLOR]</title><link>na</link>
-<thumbnail>http://blckghst.online/black/img/icon.png</thumbnail>
-<fanart>http://blckghst.online/black/img/fanart.jpg</fanart>
+<thumbnail>http://blckghst.site/black/img/icon.png</thumbnail>
+<fanart>http://blckghst.site/black/img/fanart.jpg</fanart>
 <info>Ingresa al Grupo de Telegram y en el Mensaje Fijado encontraras el Codigo de acceso o envia un correo a blackaddon@mail.com. 
 </info>
 </item>
@@ -77,8 +77,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <item>
 <title>[B][COLOR chartreuse]Apoya Este Increíble Proyecto con una Donación para seguir Adelante![/COLOR][/B]</title>
 <link>na</link>
-<thumbnail>http://blckghst.online/black/img/pp.png</thumbnail>
-<fanart>http://blckghst.online/black/img/fanart.jpg</fanart>
+<thumbnail>http://blckghst.site/black/img/pp.png</thumbnail>
+<fanart>http://blckghst.site/black/img/fanart.jpg</fanart>
 </item>
 
 
@@ -88,29 +88,29 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
   <item> <title> [COLOR lightyellow][B]APOYANOS[/B]: [COLOR deepskyblue][B]paypal.me/blackghost[/B] [/COLOR]</title><link>na</link>
-<thumbnail>http://blckghst.online/black/img/pp.png</thumbnail>
-<fanart>http://blckghst.online/black/img/fanart.jpg</fanart>
+<thumbnail>http://blckghst.site/black/img/pp.png</thumbnail>
+<fanart>http://blckghst.site/black/img/fanart.jpg</fanart>
 </item>
 
 
 
-  <!--item> <title>Descarga e Instala nuestra APK: [COLOR deepskyblue][B]http://blckghst.online/app[/B] [/COLOR]</title><link>na</link>
-<thumbnail>http://blckghst.online/black/img/icon.png</thumbnail>
-<fanart>http://blckghst.online/black/img/fanart.jpg</fanart></item--> 
+  <!--item> <title>Descarga e Instala nuestra APK: [COLOR deepskyblue][B]http://blckghst.site/app[/B] [/COLOR]</title><link>na</link>
+<thumbnail>http://blckghst.site/black/img/icon.png</thumbnail>
+<fanart>http://blckghst.site/black/img/fanart.jpg</fanart></item--> 
   
 
 
 <item> 
 <title>[UPPERCASE] [COLOR white]Correo:[/UPPERCASE][B] [COLOR lightblue] blackaddon@mail.com [/COLOR][/COLOR][/B]</title><link>na</link>
-<thumbnail>http://blckghst.online/black/img/mail.png</thumbnail>
-<fanart>http://blckghst.online/black/img/fanart.jpg</fanart>
+<thumbnail>http://blckghst.site/black/img/mail.png</thumbnail>
+<fanart>http://blckghst.site/black/img/fanart.jpg</fanart>
 </item>
 
   <item> 
 <title>[UPPERCASE] [COLOR white]Telegram:[/UPPERCASE][B] [COLOR lightblue] @error_0025[/COLOR][/COLOR][/B]</title><link>na</link>
   <link>na</link>
-<thumbnail>http://blckghst.online/black/img/icon.png</thumbnail>
-<fanart>http://blckghst.online/black/img/fanart.jpg</fanart></item> 
+<thumbnail>http://blckghst.site/black/img/icon.png</thumbnail>
+<fanart>http://blckghst.site/black/img/fanart.jpg</fanart></item> 
   
 
 
@@ -128,15 +128,15 @@ def GetLSProData(page_data,Cookie_Jar,m):
 ]]></expres>
 <page></page>
 </regex>
-<thumbnail>http://blckghst.online/black/img/icon.png</thumbnail>
-<fanart>http://blckghst.online/black/img/fanart.jpg</fanart>
+<thumbnail>http://blckghst.site/black/img/icon.png</thumbnail>
+<fanart>http://blckghst.site/black/img/fanart.jpg</fanart>
 </item-->
 
 
 
  <item> <title> </title><link>na</link>
-<thumbnail>http://blckghst.online/black/img/icon.png</thumbnail>
-<fanart>http://blckghst.online/black/img/fanart.jpg</fanart>
+<thumbnail>http://blckghst.site/black/img/icon.png</thumbnail>
+<fanart>http://blckghst.site/black/img/fanart.jpg</fanart>
 </item>
 
 <!--item>
@@ -147,8 +147,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <expres>$pyFunction:xbmcaddon.Addon('plugin.video.blackghost').openSettings()</expres>
 <page></page>
 </regex>
-<thumbnail>http://blckghst.online/black/img/icon.png</thumbnail>
-<fanart>http://blckghst.online/black/img/fanart.jpg</fanart>
+<thumbnail>http://blckghst.site/black/img/icon.png</thumbnail>
+<fanart>http://blckghst.site/black/img/fanart.jpg</fanart>
 <info>Solo se activa la primera vez despues de instalar el Addon</info>
  </item-->
  
@@ -193,8 +193,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 ]]></expres>
 <page></page>
 </regex>
-<thumbnail>http://blckghst.online/black/img/icon.png</thumbnail>
-<fanart>http://blckghst.online/black/img/fanart.jpg</fanart>
+<thumbnail>http://blckghst.site/black/img/icon.png</thumbnail>
+<fanart>http://blckghst.site/black/img/fanart.jpg</fanart>
 <info>Si ya te Aparece Activado, no hace falta Activar nuevamente. 
 
  Despues de Activar el Turbo / Instalar ResolverURL / Recuerda salir del Addon y volver a Entrar para que lo cambios  tengan efecto</info>
@@ -234,8 +234,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 ]]></expres>
 <page></page>
 </regex>
-<thumbnail>http://blckghst.online/black/img/icon.png</thumbnail>
-<fanart>http://blckghst.online/black/img/fanart.jpg</fanart>
+<thumbnail>http://blckghst.site/black/img/icon.png</thumbnail>
+<fanart>http://blckghst.site/black/img/fanart.jpg</fanart>
 <info>Si ya lo tienes instalado no es necesario reinstalar. 
 
  Despues de Activar el Turbo / Instalar ResolverURL / Recuerda salir del Addon y volver a Entrar para que lo cambios  tengan efecto</info>
@@ -245,13 +245,13 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item>
-<title>[COLOR white]Server [I](blckghst.online)[/I] $doregex[vpn][/COLOR]</title>
+<title>[COLOR white]Server [I](blckghst.site)[/I] $doregex[vpn][/COLOR]</title>
 <link>NA</link>
 
 
 <regex>
 <name>vpn</name>
-<expres>$pyFunction:('$doregex[vpn1]').replace('0','[COLOR orange]ERROR, problemas para acceder a blckghst.online').replace('1','[COLOR lime]Cargado..., SERVER OK[/COLOR]').replace('True','[COLOR lime]ACTIVADO - OK [/COLOR]').replace('False','[COLOR orange]ERROR, problemas para acceder al server  [/COLOR]')</expres>
+<expres>$pyFunction:('$doregex[vpn1]').replace('0','[COLOR orange]ERROR, problemas para acceder a blckghst.site').replace('1','[COLOR lime]Cargado..., SERVER OK[/COLOR]').replace('True','[COLOR lime]ACTIVADO - OK [/COLOR]').replace('False','[COLOR orange]ERROR, problemas para acceder al server  [/COLOR]')</expres>
 <page></page>
 </regex>
 
@@ -261,7 +261,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <expres><![CDATA[#$pyFunction
 import re,requests,xbmc
 def GetLSProData(page_data,Cookie_Jar,m):
-	url = "http://blckghst.online"	  
+	url = "http://blckghst.site"	  
 	try:
 		response = requests.get(url, timeout=10)
 		if response.status_code == 200 or response.status_code == 302:
@@ -270,7 +270,7 @@ def GetLSProData(page_data,Cookie_Jar,m):
 			return False		
 	except:
 		requests.exceptions.RequestException
-		xbmc.executebuiltin("Notification( [COLORyellow]ERROR[/COLOR] Hay problemas para acceder a [COLORlime]blckghst.online[/COLOR] intenta cambiando DNS o usando VPN, 1000)")
+		xbmc.executebuiltin("Notification( [COLORyellow]ERROR[/COLOR] Hay problemas para acceder a [COLORlime]blckghst.site[/COLOR] intenta cambiando DNS o usando VPN, 1000)")
 		return False
  ]]></expres>
 <page></page>
@@ -291,8 +291,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <page></page>
 <NOTPlayable>True</NOTPlayable>
 </regex>
-<thumbnail>http://blckghst.online/black/img/icon.png</thumbnail>
-<fanart>http://blckghst.online/black/img/fanart.jpg</fanart>
+<thumbnail>http://blckghst.site/black/img/icon.png</thumbnail>
+<fanart>http://blckghst.site/black/img/fanart.jpg</fanart>
 <info>Si ya lo tienes instalado no es necesario reinstalar.</info>
 </item-->
 
@@ -333,8 +333,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 ]]></expres>
 <page></page>
 </regex>
-<thumbnail>http://blckghst.online/black/img/icon.png</thumbnail>
-<fanart>http://blckghst.online/black/img/fanart.jpg</fanart>
+<thumbnail>http://blckghst.site/black/img/icon.png</thumbnail>
+<fanart>http://blckghst.site/black/img/fanart.jpg</fanart>
 </item>
 
 
