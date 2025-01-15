@@ -66,10 +66,10 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 
-<item> <title>Obten el [COLOR palegreen][B]Codigo Semanal[/B][/COLOR] en el correo: [COLORlime][B]blackaddon@mail.com[/B][/COLOR] o Telegram[COLORlime][B]@error_0025[/B][/COLOR]</title><link>na</link>
+<item> <title>Obten el [COLOR palegreen][B]Codigo Semanal[/B][/COLOR] en el correo: [COLORlime][B]blackaddon@icloud.com[/B][/COLOR] o Telegram[COLORlime][B]@error_0025[/B][/COLOR]</title><link>na</link>
 <thumbnail>http://bgtv.store/black/img/icon.png</thumbnail>
 <fanart>http://bgtv.store/black/img/fanart.jpg</fanart>
-<info>Ingresa al Grupo de Telegram y en el Mensaje Fijado encontraras el Codigo de acceso o envia un correo a blackaddon@mail.com. 
+<info>Ingresa al Grupo de Telegram y en el Mensaje Fijado encontraras el Codigo de acceso o envia un correo a blackaddon@icloud.com. 
 </info>
 </item>
 
@@ -101,8 +101,8 @@ def GetLSProData(page_data,Cookie_Jar,m):
 
 
 <item> 
-<title>[UPPERCASE] [COLOR white]Correo:[/UPPERCASE][B] [COLOR lightblue] blackaddon@mail.com [/COLOR][/COLOR][/B]</title><link>na</link>
-<thumbnail>http://bgtv.store/black/img/mail.png</thumbnail>
+<title>[UPPERCASE] [COLOR white]Correo:[/UPPERCASE][B] [COLOR lightblue] blackaddon@icloud.com [/COLOR][/COLOR][/B]</title><link>na</link>
+<thumbnail>http://bgtv.store/black/img/correo.png</thumbnail>
 <fanart>http://bgtv.store/black/img/fanart.jpg</fanart>
 </item>
 
