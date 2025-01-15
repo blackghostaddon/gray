@@ -79,6 +79,9 @@ def GetLSProData(page_data,Cookie_Jar,m):
 <link>na</link>
 <thumbnail>http://bgtv.store/black/img/pp.png</thumbnail>
 <fanart>http://bgtv.store/black/img/fanart.jpg</fanart>
+<info>⬇️¿Quieres apoyarnos y obtener un código permanente?⬇️
+Con una donación de €15 EUR, recibirás un código permanente, válido en todos tus dispositivos y  queda guardado en tu Kodi para siempre. 
+</info>
 </item>
 
 
@@ -90,6 +93,9 @@ def GetLSProData(page_data,Cookie_Jar,m):
   <item> <title> [COLOR lightyellow][B]APOYANOS[/B]: [COLOR deepskyblue][B]paypal.me/blackghost[/B] [/COLOR]</title><link>na</link>
 <thumbnail>http://bgtv.store/black/img/pp.png</thumbnail>
 <fanart>http://bgtv.store/black/img/fanart.jpg</fanart>
+<info>⬇️¿Quieres apoyarnos y obtener un código permanente?⬇️
+Con una donación de €15 EUR, recibirás un código permanente, válido en todos tus dispositivos y  queda guardado en tu Kodi para siempre. 
+</info>
 </item>
 
 
